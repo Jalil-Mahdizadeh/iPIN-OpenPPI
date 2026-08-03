@@ -1,0 +1,1768 @@
+{
+  "authorizations": {
+    "benchmark_and_estimand_design": true,
+    "canonical_reconciliation_accepted": true,
+    "label_construction": false,
+    "model_training": false,
+    "strict_construct_benchmark": false,
+    "structural_mapping": false
+  },
+  "check_counts": {
+    "fail": 0,
+    "pass": 152,
+    "warning": 4
+  },
+  "checks": [
+    {
+      "check_id": "manifest.sha256_sidecar",
+      "expected": {
+        "filename": "RECONCILIATION_MANIFEST.json",
+        "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+      },
+      "observed": {
+        "filename": "RECONCILIATION_MANIFEST.json",
+        "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.schema_version",
+      "expected": 1,
+      "observed": 1,
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.run_family",
+      "expected": "primary_reconciliation_v1",
+      "observed": "primary_reconciliation_v1",
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.task",
+      "expected": "source_reconciliation_and_identifier_construct_mapping",
+      "observed": "source_reconciliation_and_identifier_construct_mapping",
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.status",
+      "expected": "complete",
+      "observed": "complete",
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.source_reconciliation_performed",
+      "expected": true,
+      "observed": true,
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.label_construction_performed",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.model_training_performed",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.authorizations",
+      "expected": {
+        "label_construction": false,
+        "model_training": false,
+        "source_reconciliation": true,
+        "structural_mapping": false
+      },
+      "observed": {
+        "label_construction": false,
+        "model_training": false,
+        "source_reconciliation": true,
+        "structural_mapping": false
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.manifest_container_sif_sha256",
+      "expected": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "observed": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.manifest_reconciliation_version",
+      "expected": "0.1.0",
+      "observed": "0.1.0",
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.manifest_architecture",
+      "expected": "aarch64",
+      "observed": "aarch64",
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.host_architecture",
+      "expected": "aarch64",
+      "observed": "aarch64",
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.active_container_sha256",
+      "expected": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "observed": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.run_config_path",
+      "expected": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/reconciliation_primary_v1.yaml",
+      "observed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/reconciliation_primary_v1.yaml",
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.run_config_sha256",
+      "expected": "8b023d1575c0dcf8576a681f88978c1ce0740fece52af650e86d71f43b7cbf87",
+      "observed": "8b023d1575c0dcf8576a681f88978c1ce0740fece52af650e86d71f43b7cbf87",
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.configured_container_matches_active",
+      "expected": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+      "observed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.run_config_container_sha256",
+      "expected": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "observed": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.run_config_reconciliation_version",
+      "expected": "0.1.0",
+      "observed": "0.1.0",
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.policy_matches_run_config",
+      "expected": {
+        "mapping": {
+          "candidate_priority": {
+            "direct_uniprot_exact": 1,
+            "direct_uniprot_isoform1_alias": 2,
+            "ensembl_gene": 5,
+            "ensembl_protein": 3,
+            "ensembl_transcript": 4
+          },
+          "canonical_isoform_alias_suffix": "-1",
+          "canonical_projection_is_construct_exact": false,
+          "ensembl_database_mapping": {
+            "ensembl_gene": "Ensembl",
+            "ensembl_protein": "Ensembl_PRO",
+            "ensembl_transcript": "Ensembl_TRS"
+          },
+          "exact_construct_sequences_available": false,
+          "explicit_construct_boundaries_available": false,
+          "frozen_taxid": 9606,
+          "highest_assignable_construct_confidence": "C",
+          "protein_molecule_type_ac": "MI:0326",
+          "provider_pair_views_are_labels": false,
+          "stop_after_first_resolving_candidate_route": true,
+          "unreported_pairs_are_negative": false
+        },
+        "provider_counts": {
+          "HI-II-14": 13993,
+          "HuRI": 52569,
+          "Lit-BM": 13441,
+          "Test_space_screens-19": 1159
+        },
+        "sifts": {
+          "authorize_structural_mapping": false,
+          "authorize_structure_derived_labels": false,
+          "declared_uniprot_release": "2026.03",
+          "frozen_uniprot_release": "2026_02",
+          "releases_aligned": false,
+          "source_snapshot": "observed_2026-07-26"
+        }
+      },
+      "observed": {
+        "mapping": {
+          "candidate_priority": {
+            "direct_uniprot_exact": 1,
+            "direct_uniprot_isoform1_alias": 2,
+            "ensembl_gene": 5,
+            "ensembl_protein": 3,
+            "ensembl_transcript": 4
+          },
+          "canonical_isoform_alias_suffix": "-1",
+          "canonical_projection_is_construct_exact": false,
+          "ensembl_database_mapping": {
+            "ensembl_gene": "Ensembl",
+            "ensembl_protein": "Ensembl_PRO",
+            "ensembl_transcript": "Ensembl_TRS"
+          },
+          "exact_construct_sequences_available": false,
+          "explicit_construct_boundaries_available": false,
+          "frozen_taxid": 9606,
+          "highest_assignable_construct_confidence": "C",
+          "protein_molecule_type_ac": "MI:0326",
+          "provider_pair_views_are_labels": false,
+          "stop_after_first_resolving_candidate_route": true,
+          "unreported_pairs_are_negative": false
+        },
+        "provider_counts": {
+          "HI-II-14": 13993,
+          "HuRI": 52569,
+          "Lit-BM": 13441,
+          "Test_space_screens-19": 1159
+        },
+        "sifts": {
+          "authorize_structural_mapping": false,
+          "authorize_structure_derived_labels": false,
+          "declared_uniprot_release": "2026.03",
+          "frozen_uniprot_release": "2026_02",
+          "releases_aligned": false,
+          "source_snapshot": "observed_2026-07-26"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.mapping.stop_after_first_resolving_candidate_route",
+      "expected": true,
+      "observed": true,
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.mapping.exact_construct_sequences_available",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.mapping.explicit_construct_boundaries_available",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.mapping.highest_assignable_construct_confidence",
+      "expected": "C",
+      "observed": "C",
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.mapping.canonical_projection_is_construct_exact",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.mapping.unreported_pairs_are_negative",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.mapping.provider_pair_views_are_labels",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.sifts.releases_aligned",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.sifts.authorize_structural_mapping",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.sifts.authorize_structure_derived_labels",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.manifest_sha256",
+      "expected": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+      "observed": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.expected_sha256",
+      "expected": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+      "observed": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+      "status": "pass"
+    },
+    {
+      "check_id": "input.parse_manifest_sha256",
+      "expected": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa",
+      "observed": {
+        "actual": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa",
+        "manifest": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa",
+        "run_config": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.parse_manifest_complete_without_labels",
+      "expected": {
+        "label_construction_performed": false,
+        "model_training_performed": false,
+        "status": "complete"
+      },
+      "observed": {
+        "label_construction_performed": false,
+        "model_training_performed": false,
+        "status": "complete"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staging_validation_report_sha256",
+      "expected": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba",
+      "observed": {
+        "actual": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba",
+        "manifest": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba",
+        "run_config": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staging_validation_passed_for_same_parse_manifest",
+      "expected": {
+        "label_construction": false,
+        "parse_manifest_sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa",
+        "source_reconciliation": true,
+        "status": "pass"
+      },
+      "observed": {
+        "authorizations": {
+          "label_construction": false,
+          "model_training": false,
+          "source_reconciliation": true
+        },
+        "parse_manifest_sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa",
+        "status": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staging_parquet_sha256_verification",
+      "expected": "complete",
+      "observed": "complete",
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.production_reconciliation_was_clean",
+      "expected": true,
+      "observed": true,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.validator_checkout_matches_reconciliation_commit",
+      "expected": "d66d990a16592eb469f1b58643d982cb936c9083",
+      "observed": "d66d990a16592eb469f1b58643d982cb936c9083",
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.exact_table_inventory",
+      "expected": [
+        "evidence_mapping_summaries",
+        "huri_evidence_gene_pair_projections",
+        "huri_pair_reconciliation",
+        "participant_sequence_mappings",
+        "sifts_chain_mapping_audit"
+      ],
+      "observed": [
+        "evidence_mapping_summaries",
+        "huri_evidence_gene_pair_projections",
+        "huri_pair_reconciliation",
+        "participant_sequence_mappings",
+        "sifts_chain_mapping_audit"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.table_summary.evidence_mapping_summaries",
+      "expected": {
+        "file_rows": 773376,
+        "parts_equal_files": true,
+        "rows": 773376,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "table": "evidence_mapping_summaries"
+      },
+      "observed": {
+        "file_rows": 773376,
+        "files": 8,
+        "parts": 8,
+        "rows": 773376,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "table": "evidence_mapping_summaries"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.table_summary.huri_evidence_gene_pair_projections",
+      "expected": {
+        "file_rows": 220934,
+        "parts_equal_files": true,
+        "rows": 220934,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "table": "huri_evidence_gene_pair_projections"
+      },
+      "observed": {
+        "file_rows": 220934,
+        "files": 3,
+        "parts": 3,
+        "rows": 220934,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "table": "huri_evidence_gene_pair_projections"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.table_summary.huri_pair_reconciliation",
+      "expected": {
+        "file_rows": 81469,
+        "parts_equal_files": true,
+        "rows": 81469,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "table": "huri_pair_reconciliation"
+      },
+      "observed": {
+        "file_rows": 81469,
+        "files": 1,
+        "parts": 1,
+        "rows": 81469,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "table": "huri_pair_reconciliation"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.table_summary.participant_sequence_mappings",
+      "expected": {
+        "file_rows": 2213524,
+        "parts_equal_files": true,
+        "rows": 2213524,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "table": "participant_sequence_mappings"
+      },
+      "observed": {
+        "file_rows": 2213524,
+        "files": 23,
+        "parts": 23,
+        "rows": 2213524,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "table": "participant_sequence_mappings"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.table_summary.sifts_chain_mapping_audit",
+      "expected": {
+        "file_rows": 1007697,
+        "parts_equal_files": true,
+        "rows": 1007697,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "table": "sifts_chain_mapping_audit"
+      },
+      "observed": {
+        "file_rows": 1007697,
+        "files": 11,
+        "parts": 11,
+        "rows": 1007697,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "table": "sifts_chain_mapping_audit"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.expected_table_rows",
+      "expected": {
+        "evidence_mapping_summaries": 773376,
+        "huri_evidence_gene_pair_projections": 220934,
+        "huri_pair_reconciliation": 81469,
+        "participant_sequence_mappings": 2213524,
+        "sifts_chain_mapping_audit": 1007697
+      },
+      "observed": {
+        "evidence_mapping_summaries": 773376,
+        "huri_evidence_gene_pair_projections": 220934,
+        "huri_pair_reconciliation": 81469,
+        "participant_sequence_mappings": 2213524,
+        "sifts_chain_mapping_audit": 1007697
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.exact_parquet_file_inventory",
+      "expected": {
+        "count": 46,
+        "missing": [],
+        "unexpected": []
+      },
+      "observed": {
+        "count": 46,
+        "missing": [],
+        "unexpected": []
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.parquet_hash_size_row_integrity",
+      "expected": {
+        "mismatch_count": 0
+      },
+      "observed": {
+        "examples": [],
+        "mismatch_count": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.parquet_contract_and_metadata",
+      "expected": {
+        "mismatch_count": 0
+      },
+      "observed": {
+        "examples": [],
+        "mismatch_count": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "filesystem.immutable_link_free_exact_inventory",
+      "expected": {
+        "error_count": 0
+      },
+      "observed": {
+        "error_count": 0,
+        "examples": []
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.evidence_mapping_summaries.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.evidence_mapping_summaries.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.evidence_mapping_summaries.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_evidence_gene_pair_projections.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_evidence_gene_pair_projections.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_evidence_gene_pair_projections.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_pair_reconciliation.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_pair_reconciliation.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_pair_reconciliation.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participant_sequence_mappings.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participant_sequence_mappings.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participant_sequence_mappings.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_chain_mapping_audit.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_chain_mapping_audit.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_chain_mapping_audit.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.evidence_mapping_summaries.parse_manifest_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.evidence_mapping_summaries.reconciliation_version",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.evidence_mapping_summaries.reconciliation_git_commit",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.evidence_mapping_summaries.container_sif_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.evidence_mapping_summaries.schema_version",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.evidence_mapping_summaries.schema_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.evidence_mapping_summaries.label_authorized",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_evidence_gene_pair_projections.parse_manifest_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_evidence_gene_pair_projections.reconciliation_version",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_evidence_gene_pair_projections.reconciliation_git_commit",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_evidence_gene_pair_projections.container_sif_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_evidence_gene_pair_projections.schema_version",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_evidence_gene_pair_projections.schema_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_evidence_gene_pair_projections.label_authorized",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_pair_reconciliation.parse_manifest_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_pair_reconciliation.reconciliation_version",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_pair_reconciliation.reconciliation_git_commit",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_pair_reconciliation.container_sif_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_pair_reconciliation.schema_version",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_pair_reconciliation.schema_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.huri_pair_reconciliation.label_authorized",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.participant_sequence_mappings.parse_manifest_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.participant_sequence_mappings.reconciliation_version",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.participant_sequence_mappings.reconciliation_git_commit",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.participant_sequence_mappings.container_sif_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.participant_sequence_mappings.schema_version",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.participant_sequence_mappings.schema_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.participant_sequence_mappings.label_authorized",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.sifts_chain_mapping_audit.parse_manifest_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.sifts_chain_mapping_audit.reconciliation_version",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.sifts_chain_mapping_audit.reconciliation_git_commit",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.sifts_chain_mapping_audit.container_sif_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.sifts_chain_mapping_audit.schema_version",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.sifts_chain_mapping_audit.schema_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.sifts_chain_mapping_audit.label_authorized",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.source_link.extra_mapping_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.source_link.missing_mapping_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.source_link.copied_source_field_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.feature_counts.feature_count_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.feature_counts.ranged_feature_count_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.feature_counts.sequence_change_feature_count_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.deterministic_record_id_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.applicability_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.mapping_state_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.reference_usable_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.canonical_usable_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.construct_confidence_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.candidate_list_count_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.candidate_list_order_or_distinct_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.route_pruning_count_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.selected_route_presence_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.impossible_candidate_counts",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.mapped_reference_field_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.canonical_projection_field_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.prohibited_construct_or_label_claims",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.mapping_semantics.construct_missingness_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.frozen_sequence_references.candidate_sequence_orphans",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.frozen_sequence_references.candidate_hash_orphans",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.frozen_sequence_references.candidate_parent_orphans",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.frozen_sequence_references.mapped_hash_orphans",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "participant.frozen_sequence_references.canonical_projection_orphans",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.source_link.extra_summary_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.source_link.missing_summary_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.source_link.copied_source_field_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.recomputed_semantics.deterministic_record_id_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.recomputed_semantics.participant_count_aggregation_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.recomputed_semantics.usability_flag_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.recomputed_semantics.deterministic_pair_id_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.recomputed_semantics.prohibited_construct_or_label_claims",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "huri.projection_semantics.extra_projection_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "huri.projection_semantics.missing_projection_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "huri.projection_semantics.reconstructed_field_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "huri.projection_semantics.gene_pair_identifier_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "huri.projection_semantics.orf_pair_identifier_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "huri.pair_reconciliation_semantics.extra_pair_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "huri.pair_reconciliation_semantics.missing_pair_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "huri.pair_reconciliation_semantics.reconstructed_field_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.source_and_mapping_semantics.extra_audit_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.source_and_mapping_semantics.missing_audit_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.source_and_mapping_semantics.reconstructed_field_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.release_interval_authorization.release_guard_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.release_interval_authorization.unsupported_exact_identity_claims",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.release_interval_authorization.prohibited_structural_mapping_authorizations",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.release_interval_authorization.prohibited_label_authorizations",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.release_interval_authorization.structural_mapping_state_mismatches",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.parquet_recomputation_matches_frozen_expectations",
+      "expected": {
+        "evidence_totals": {
+          "binary_two_human_proteins": 663388,
+          "canonical_pair_usable": 629959,
+          "evidence_records": 773376,
+          "label_authorized": 0,
+          "reference_pair_usable": 620290,
+          "strict_construct_eligible": 0
+        },
+        "huri_representation_reconciliation": {
+          "HI-II-14": {
+            "detailed_evidence_rows": 49389,
+            "detailed_only_pairs": 0,
+            "detailed_ordered_orf_pairs": 23757,
+            "detailed_unique_gene_pairs": 13432,
+            "detailed_unique_orf_pairs": 15654,
+            "evidence_rows_with_unique_gene_pair": 49107,
+            "matched_pairs": 13432,
+            "pair_view_only_pairs": 201,
+            "pair_view_rows": 13633,
+            "pair_view_self_pairs": 518,
+            "provider_advertised_pairs": 13993,
+            "provider_minus_pair_view_rows": 360,
+            "union_gene_pairs": 13633,
+            "unresolved_gene_projection_rows": 282
+          },
+          "HuRI": {
+            "detailed_evidence_rows": 171545,
+            "detailed_only_pairs": 688,
+            "detailed_ordered_orf_pairs": 78886,
+            "detailed_unique_gene_pairs": 52649,
+            "detailed_unique_orf_pairs": 51842,
+            "evidence_rows_with_unique_gene_pair": 170621,
+            "matched_pairs": 51961,
+            "pair_view_only_pairs": 587,
+            "pair_view_rows": 52548,
+            "pair_view_self_pairs": 480,
+            "provider_advertised_pairs": 52569,
+            "provider_minus_pair_view_rows": 21,
+            "union_gene_pairs": 53236,
+            "unresolved_gene_projection_rows": 924
+          },
+          "Lit-BM": {
+            "detailed_only_pairs": 0,
+            "matched_pairs": 0,
+            "pair_view_only_pairs": 13441,
+            "pair_view_rows": 13441,
+            "pair_view_self_pairs": 683,
+            "provider_advertised_pairs": 13441,
+            "provider_minus_pair_view_rows": 0,
+            "union_gene_pairs": 13441
+          },
+          "Test_space_screens-19": {
+            "detailed_only_pairs": 0,
+            "matched_pairs": 0,
+            "pair_view_only_pairs": 1159,
+            "pair_view_rows": 1159,
+            "pair_view_self_pairs": 0,
+            "provider_advertised_pairs": 1159,
+            "provider_minus_pair_view_rows": 0,
+            "union_gene_pairs": 1159
+          }
+        },
+        "participant_mapping_states": {
+          "huri|ambiguous|D": 45,
+          "huri|canonical_isoform_alias_unique|C": 159053,
+          "huri|canonical_projection_only|C": 8685,
+          "huri|cross_reference_unique|C": 8547,
+          "huri|direct_identifier_unique|C": 264888,
+          "huri|sequence_equivalent_candidates|C": 69,
+          "huri|unmapped|unmapped": 581,
+          "intact_imex|ambiguous|D": 170,
+          "intact_imex|canonical_isoform_alias_unique|C": 9222,
+          "intact_imex|canonical_projection_only|C": 2355,
+          "intact_imex|cross_reference_unique|C": 2346,
+          "intact_imex|direct_identifier_unique|C": 1609261,
+          "intact_imex|not_applicable|not_applicable": 49652,
+          "intact_imex|out_of_scope|not_applicable": 57023,
+          "intact_imex|sequence_equivalent_candidates|C": 637,
+          "intact_imex|unmapped|unmapped": 40252,
+          "intact_imex|unresolved|D": 738
+        },
+        "participant_totals": {
+          "canonical_projection_usable": 2063972,
+          "construct_a_or_b": 0,
+          "label_authorized": 0,
+          "participants": 2213524,
+          "reference_sequence_usable": 2054023,
+          "strict_construct_eligible": 0
+        },
+        "sifts_release_alignment_audit": {
+          "chain_mapping_rows": 1007697,
+          "descending_interval_rows": 72,
+          "exact_sequence_identity_verified_rows": 0,
+          "frozen_out_of_bounds_rows": 0,
+          "human_absent_accessions": 781,
+          "human_additional_sequence_accessions": 84,
+          "human_chain_mapping_rows": 252678,
+          "human_distinct_accessions": 9812,
+          "human_primary_canonical_accessions": 8946,
+          "human_primary_field_without_canonical_accessions": 1,
+          "label_authorized_rows": 0,
+          "structural_mapping_authorized_rows": 0
+        }
+      },
+      "observed": {
+        "evidence_totals": {
+          "binary_two_human_proteins": 663388,
+          "canonical_pair_usable": 629959,
+          "evidence_records": 773376,
+          "label_authorized": 0,
+          "reference_pair_usable": 620290,
+          "strict_construct_eligible": 0
+        },
+        "huri_representation_reconciliation": {
+          "HI-II-14": {
+            "detailed_evidence_rows": 49389,
+            "detailed_only_pairs": 0,
+            "detailed_ordered_orf_pairs": 23757,
+            "detailed_unique_gene_pairs": 13432,
+            "detailed_unique_orf_pairs": 15654,
+            "evidence_rows_with_unique_gene_pair": 49107,
+            "matched_pairs": 13432,
+            "pair_view_only_pairs": 201,
+            "pair_view_rows": 13633,
+            "pair_view_self_pairs": 518,
+            "provider_advertised_pairs": 13993,
+            "provider_minus_pair_view_rows": 360,
+            "union_gene_pairs": 13633,
+            "unresolved_gene_projection_rows": 282
+          },
+          "HuRI": {
+            "detailed_evidence_rows": 171545,
+            "detailed_only_pairs": 688,
+            "detailed_ordered_orf_pairs": 78886,
+            "detailed_unique_gene_pairs": 52649,
+            "detailed_unique_orf_pairs": 51842,
+            "evidence_rows_with_unique_gene_pair": 170621,
+            "matched_pairs": 51961,
+            "pair_view_only_pairs": 587,
+            "pair_view_rows": 52548,
+            "pair_view_self_pairs": 480,
+            "provider_advertised_pairs": 52569,
+            "provider_minus_pair_view_rows": 21,
+            "union_gene_pairs": 53236,
+            "unresolved_gene_projection_rows": 924
+          },
+          "Lit-BM": {
+            "detailed_only_pairs": 0,
+            "matched_pairs": 0,
+            "pair_view_only_pairs": 13441,
+            "pair_view_rows": 13441,
+            "pair_view_self_pairs": 683,
+            "provider_advertised_pairs": 13441,
+            "provider_minus_pair_view_rows": 0,
+            "union_gene_pairs": 13441
+          },
+          "Test_space_screens-19": {
+            "detailed_only_pairs": 0,
+            "matched_pairs": 0,
+            "pair_view_only_pairs": 1159,
+            "pair_view_rows": 1159,
+            "pair_view_self_pairs": 0,
+            "provider_advertised_pairs": 1159,
+            "provider_minus_pair_view_rows": 0,
+            "union_gene_pairs": 1159
+          }
+        },
+        "participant_mapping_states": {
+          "huri|ambiguous|D": 45,
+          "huri|canonical_isoform_alias_unique|C": 159053,
+          "huri|canonical_projection_only|C": 8685,
+          "huri|cross_reference_unique|C": 8547,
+          "huri|direct_identifier_unique|C": 264888,
+          "huri|sequence_equivalent_candidates|C": 69,
+          "huri|unmapped|unmapped": 581,
+          "intact_imex|ambiguous|D": 170,
+          "intact_imex|canonical_isoform_alias_unique|C": 9222,
+          "intact_imex|canonical_projection_only|C": 2355,
+          "intact_imex|cross_reference_unique|C": 2346,
+          "intact_imex|direct_identifier_unique|C": 1609261,
+          "intact_imex|not_applicable|not_applicable": 49652,
+          "intact_imex|out_of_scope|not_applicable": 57023,
+          "intact_imex|sequence_equivalent_candidates|C": 637,
+          "intact_imex|unmapped|unmapped": 40252,
+          "intact_imex|unresolved|D": 738
+        },
+        "participant_totals": {
+          "canonical_projection_usable": 2063972,
+          "construct_a_or_b": 0,
+          "label_authorized": 0,
+          "participants": 2213524,
+          "reference_sequence_usable": 2054023,
+          "strict_construct_eligible": 0
+        },
+        "sifts_release_alignment_audit": {
+          "chain_mapping_rows": 1007697,
+          "descending_interval_rows": 72,
+          "exact_sequence_identity_verified_rows": 0,
+          "frozen_out_of_bounds_rows": 0,
+          "human_absent_accessions": 781,
+          "human_additional_sequence_accessions": 84,
+          "human_chain_mapping_rows": 252678,
+          "human_distinct_accessions": 9812,
+          "human_primary_canonical_accessions": 8946,
+          "human_primary_field_without_canonical_accessions": 1,
+          "label_authorized_rows": 0,
+          "structural_mapping_authorized_rows": 0
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.manifest_matches_parquet_recomputation",
+      "expected": {
+        "evidence_totals": {
+          "binary_two_human_proteins": 663388,
+          "canonical_pair_usable": 629959,
+          "evidence_records": 773376,
+          "label_authorized": 0,
+          "reference_pair_usable": 620290,
+          "strict_construct_eligible": 0
+        },
+        "huri_representation_reconciliation": {
+          "HI-II-14": {
+            "detailed_evidence_rows": 49389,
+            "detailed_only_pairs": 0,
+            "detailed_ordered_orf_pairs": 23757,
+            "detailed_unique_gene_pairs": 13432,
+            "detailed_unique_orf_pairs": 15654,
+            "evidence_rows_with_unique_gene_pair": 49107,
+            "matched_pairs": 13432,
+            "pair_view_only_pairs": 201,
+            "pair_view_rows": 13633,
+            "pair_view_self_pairs": 518,
+            "provider_advertised_pairs": 13993,
+            "provider_minus_pair_view_rows": 360,
+            "union_gene_pairs": 13633,
+            "unresolved_gene_projection_rows": 282
+          },
+          "HuRI": {
+            "detailed_evidence_rows": 171545,
+            "detailed_only_pairs": 688,
+            "detailed_ordered_orf_pairs": 78886,
+            "detailed_unique_gene_pairs": 52649,
+            "detailed_unique_orf_pairs": 51842,
+            "evidence_rows_with_unique_gene_pair": 170621,
+            "matched_pairs": 51961,
+            "pair_view_only_pairs": 587,
+            "pair_view_rows": 52548,
+            "pair_view_self_pairs": 480,
+            "provider_advertised_pairs": 52569,
+            "provider_minus_pair_view_rows": 21,
+            "union_gene_pairs": 53236,
+            "unresolved_gene_projection_rows": 924
+          },
+          "Lit-BM": {
+            "detailed_only_pairs": 0,
+            "matched_pairs": 0,
+            "pair_view_only_pairs": 13441,
+            "pair_view_rows": 13441,
+            "pair_view_self_pairs": 683,
+            "provider_advertised_pairs": 13441,
+            "provider_minus_pair_view_rows": 0,
+            "union_gene_pairs": 13441
+          },
+          "Test_space_screens-19": {
+            "detailed_only_pairs": 0,
+            "matched_pairs": 0,
+            "pair_view_only_pairs": 1159,
+            "pair_view_rows": 1159,
+            "pair_view_self_pairs": 0,
+            "provider_advertised_pairs": 1159,
+            "provider_minus_pair_view_rows": 0,
+            "union_gene_pairs": 1159
+          }
+        },
+        "participant_mapping_states": {
+          "huri|ambiguous|D": 45,
+          "huri|canonical_isoform_alias_unique|C": 159053,
+          "huri|canonical_projection_only|C": 8685,
+          "huri|cross_reference_unique|C": 8547,
+          "huri|direct_identifier_unique|C": 264888,
+          "huri|sequence_equivalent_candidates|C": 69,
+          "huri|unmapped|unmapped": 581,
+          "intact_imex|ambiguous|D": 170,
+          "intact_imex|canonical_isoform_alias_unique|C": 9222,
+          "intact_imex|canonical_projection_only|C": 2355,
+          "intact_imex|cross_reference_unique|C": 2346,
+          "intact_imex|direct_identifier_unique|C": 1609261,
+          "intact_imex|not_applicable|not_applicable": 49652,
+          "intact_imex|out_of_scope|not_applicable": 57023,
+          "intact_imex|sequence_equivalent_candidates|C": 637,
+          "intact_imex|unmapped|unmapped": 40252,
+          "intact_imex|unresolved|D": 738
+        },
+        "participant_totals": {
+          "canonical_projection_usable": 2063972,
+          "construct_a_or_b": 0,
+          "label_authorized": 0,
+          "participants": 2213524,
+          "reference_sequence_usable": 2054023,
+          "strict_construct_eligible": 0
+        },
+        "sifts_release_alignment_audit": {
+          "chain_mapping_rows": 1007697,
+          "descending_interval_rows": 72,
+          "exact_sequence_identity_verified_rows": 0,
+          "frozen_out_of_bounds_rows": 0,
+          "human_absent_accessions": 781,
+          "human_additional_sequence_accessions": 84,
+          "human_chain_mapping_rows": 252678,
+          "human_distinct_accessions": 9812,
+          "human_primary_canonical_accessions": 8946,
+          "human_primary_field_without_canonical_accessions": 1,
+          "label_authorized_rows": 0,
+          "structural_mapping_authorized_rows": 0
+        }
+      },
+      "observed": {
+        "evidence_totals": {
+          "binary_two_human_proteins": 663388,
+          "canonical_pair_usable": 629959,
+          "evidence_records": 773376,
+          "label_authorized": 0,
+          "reference_pair_usable": 620290,
+          "strict_construct_eligible": 0
+        },
+        "huri_representation_reconciliation": {
+          "HI-II-14": {
+            "detailed_evidence_rows": 49389,
+            "detailed_only_pairs": 0,
+            "detailed_ordered_orf_pairs": 23757,
+            "detailed_unique_gene_pairs": 13432,
+            "detailed_unique_orf_pairs": 15654,
+            "evidence_rows_with_unique_gene_pair": 49107,
+            "matched_pairs": 13432,
+            "pair_view_only_pairs": 201,
+            "pair_view_rows": 13633,
+            "pair_view_self_pairs": 518,
+            "provider_advertised_pairs": 13993,
+            "provider_minus_pair_view_rows": 360,
+            "union_gene_pairs": 13633,
+            "unresolved_gene_projection_rows": 282
+          },
+          "HuRI": {
+            "detailed_evidence_rows": 171545,
+            "detailed_only_pairs": 688,
+            "detailed_ordered_orf_pairs": 78886,
+            "detailed_unique_gene_pairs": 52649,
+            "detailed_unique_orf_pairs": 51842,
+            "evidence_rows_with_unique_gene_pair": 170621,
+            "matched_pairs": 51961,
+            "pair_view_only_pairs": 587,
+            "pair_view_rows": 52548,
+            "pair_view_self_pairs": 480,
+            "provider_advertised_pairs": 52569,
+            "provider_minus_pair_view_rows": 21,
+            "union_gene_pairs": 53236,
+            "unresolved_gene_projection_rows": 924
+          },
+          "Lit-BM": {
+            "detailed_only_pairs": 0,
+            "matched_pairs": 0,
+            "pair_view_only_pairs": 13441,
+            "pair_view_rows": 13441,
+            "pair_view_self_pairs": 683,
+            "provider_advertised_pairs": 13441,
+            "provider_minus_pair_view_rows": 0,
+            "union_gene_pairs": 13441
+          },
+          "Test_space_screens-19": {
+            "detailed_only_pairs": 0,
+            "matched_pairs": 0,
+            "pair_view_only_pairs": 1159,
+            "pair_view_rows": 1159,
+            "pair_view_self_pairs": 0,
+            "provider_advertised_pairs": 1159,
+            "provider_minus_pair_view_rows": 0,
+            "union_gene_pairs": 1159
+          }
+        },
+        "participant_mapping_states": {
+          "huri|ambiguous|D": 45,
+          "huri|canonical_isoform_alias_unique|C": 159053,
+          "huri|canonical_projection_only|C": 8685,
+          "huri|cross_reference_unique|C": 8547,
+          "huri|direct_identifier_unique|C": 264888,
+          "huri|sequence_equivalent_candidates|C": 69,
+          "huri|unmapped|unmapped": 581,
+          "intact_imex|ambiguous|D": 170,
+          "intact_imex|canonical_isoform_alias_unique|C": 9222,
+          "intact_imex|canonical_projection_only|C": 2355,
+          "intact_imex|cross_reference_unique|C": 2346,
+          "intact_imex|direct_identifier_unique|C": 1609261,
+          "intact_imex|not_applicable|not_applicable": 49652,
+          "intact_imex|out_of_scope|not_applicable": 57023,
+          "intact_imex|sequence_equivalent_candidates|C": 637,
+          "intact_imex|unmapped|unmapped": 40252,
+          "intact_imex|unresolved|D": 738
+        },
+        "participant_totals": {
+          "canonical_projection_usable": 2063972,
+          "construct_a_or_b": 0,
+          "label_authorized": 0,
+          "participants": 2213524,
+          "reference_sequence_usable": 2054023,
+          "strict_construct_eligible": 0
+        },
+        "sifts_release_alignment_audit": {
+          "chain_mapping_rows": 1007697,
+          "descending_interval_rows": 72,
+          "exact_sequence_identity_verified_rows": 0,
+          "frozen_out_of_bounds_rows": 0,
+          "human_absent_accessions": 781,
+          "human_additional_sequence_accessions": 84,
+          "human_chain_mapping_rows": 252678,
+          "human_distinct_accessions": 9812,
+          "human_primary_canonical_accessions": 8946,
+          "human_primary_field_without_canonical_accessions": 1,
+          "label_authorized_rows": 0,
+          "structural_mapping_authorized_rows": 0
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "blocker.evidence_gate.strict_construct_a_or_b_fraction",
+      "detail": "Frozen public records do not provide exact construct sequences and boundaries. Reference and canonical mappings are useful derived views, but none may be promoted to construct confidence A or B.",
+      "observed": {
+        "blueprint_threshold": 0.8,
+        "construct_a_or_b": 0,
+        "fraction": 0.0,
+        "participants": 2213524
+      },
+      "status": "warning"
+    },
+    {
+      "check_id": "blocker.ISSUE-0003",
+      "detail": "Public HuRI records do not reconstruct the complete selected, attempted, technically evaluable pair universe. Unreported pairs remain unknown and may not be converted into negatives.",
+      "observed": "open",
+      "status": "warning"
+    },
+    {
+      "check_id": "blocker.ISSUE-0004",
+      "detail": "The deterministic reconciliation quantifies detailed evidence, unique gene and ORF projections, orientations, self-pairs, and pair-view membership, but the public records do not exactly reproduce the provider headline transformation for HuRI or HI-II-14.",
+      "observed": "retained_as_source_limitation",
+      "status": "warning"
+    },
+    {
+      "check_id": "blocker.ISSUE-0005",
+      "detail": "SIFTS declares UniProt 2026.03 while the frozen sequence corpus is UniProt 2026_02. Exact structure mapping and structure-derived labels remain blocked.",
+      "observed": "open",
+      "status": "warning"
+    }
+  ],
+  "counts": {
+    "parquet_bytes": 366537644,
+    "parquet_files": 46,
+    "parquet_rows_across_tables": 4297000,
+    "tables": 5
+  },
+  "expectation_config": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/primary_reconciliation_validation_v1.yaml",
+  "expectation_config_sha256": "4634fefb9b7381b4e6c96b44dbfae398e37385b2fed24756f52cf14a2cfaf014",
+  "gate_id": "primary_reconciliation_integrity_v1",
+  "interpretation": "Pass certifies deterministic source reconciliation and honest uncertainty encoding. It does not satisfy the evidence gate's strict-construct, tested-universe, or release-aligned structural requirements.",
+  "known_blockers": [
+    {
+      "issue_id": "ISSUE-0003",
+      "reason": "Public HuRI records do not reconstruct the complete selected, attempted, technically evaluable pair universe. Unreported pairs remain unknown and may not be converted into negatives.",
+      "status": "open"
+    },
+    {
+      "issue_id": "ISSUE-0004",
+      "reason": "The deterministic reconciliation quantifies detailed evidence, unique gene and ORF projections, orientations, self-pairs, and pair-view membership, but the public records do not exactly reproduce the provider headline transformation for HuRI or HI-II-14.",
+      "status": "retained_as_source_limitation"
+    },
+    {
+      "issue_id": "ISSUE-0005",
+      "reason": "SIFTS declares UniProt 2026.03 while the frozen sequence corpus is UniProt 2026_02. Exact structure mapping and structure-derived labels remain blocked.",
+      "status": "open"
+    }
+  ],
+  "metrics": {
+    "evidence_totals": {
+      "binary_two_human_proteins": 663388,
+      "canonical_pair_usable": 629959,
+      "evidence_records": 773376,
+      "label_authorized": 0,
+      "reference_pair_usable": 620290,
+      "strict_construct_eligible": 0
+    },
+    "huri_representation_reconciliation": {
+      "HI-II-14": {
+        "detailed_evidence_rows": 49389,
+        "detailed_only_pairs": 0,
+        "detailed_ordered_orf_pairs": 23757,
+        "detailed_unique_gene_pairs": 13432,
+        "detailed_unique_orf_pairs": 15654,
+        "evidence_rows_with_unique_gene_pair": 49107,
+        "matched_pairs": 13432,
+        "pair_view_only_pairs": 201,
+        "pair_view_rows": 13633,
+        "pair_view_self_pairs": 518,
+        "provider_advertised_pairs": 13993,
+        "provider_minus_pair_view_rows": 360,
+        "union_gene_pairs": 13633,
+        "unresolved_gene_projection_rows": 282
+      },
+      "HuRI": {
+        "detailed_evidence_rows": 171545,
+        "detailed_only_pairs": 688,
+        "detailed_ordered_orf_pairs": 78886,
+        "detailed_unique_gene_pairs": 52649,
+        "detailed_unique_orf_pairs": 51842,
+        "evidence_rows_with_unique_gene_pair": 170621,
+        "matched_pairs": 51961,
+        "pair_view_only_pairs": 587,
+        "pair_view_rows": 52548,
+        "pair_view_self_pairs": 480,
+        "provider_advertised_pairs": 52569,
+        "provider_minus_pair_view_rows": 21,
+        "union_gene_pairs": 53236,
+        "unresolved_gene_projection_rows": 924
+      },
+      "Lit-BM": {
+        "detailed_only_pairs": 0,
+        "matched_pairs": 0,
+        "pair_view_only_pairs": 13441,
+        "pair_view_rows": 13441,
+        "pair_view_self_pairs": 683,
+        "provider_advertised_pairs": 13441,
+        "provider_minus_pair_view_rows": 0,
+        "union_gene_pairs": 13441
+      },
+      "Test_space_screens-19": {
+        "detailed_only_pairs": 0,
+        "matched_pairs": 0,
+        "pair_view_only_pairs": 1159,
+        "pair_view_rows": 1159,
+        "pair_view_self_pairs": 0,
+        "provider_advertised_pairs": 1159,
+        "provider_minus_pair_view_rows": 0,
+        "union_gene_pairs": 1159
+      }
+    },
+    "participant_mapping_states": {
+      "huri|ambiguous|D": 45,
+      "huri|canonical_isoform_alias_unique|C": 159053,
+      "huri|canonical_projection_only|C": 8685,
+      "huri|cross_reference_unique|C": 8547,
+      "huri|direct_identifier_unique|C": 264888,
+      "huri|sequence_equivalent_candidates|C": 69,
+      "huri|unmapped|unmapped": 581,
+      "intact_imex|ambiguous|D": 170,
+      "intact_imex|canonical_isoform_alias_unique|C": 9222,
+      "intact_imex|canonical_projection_only|C": 2355,
+      "intact_imex|cross_reference_unique|C": 2346,
+      "intact_imex|direct_identifier_unique|C": 1609261,
+      "intact_imex|not_applicable|not_applicable": 49652,
+      "intact_imex|out_of_scope|not_applicable": 57023,
+      "intact_imex|sequence_equivalent_candidates|C": 637,
+      "intact_imex|unmapped|unmapped": 40252,
+      "intact_imex|unresolved|D": 738
+    },
+    "participant_totals": {
+      "canonical_projection_usable": 2063972,
+      "construct_a_or_b": 0,
+      "label_authorized": 0,
+      "participants": 2213524,
+      "reference_sequence_usable": 2054023,
+      "strict_construct_eligible": 0
+    },
+    "sifts_release_alignment_audit": {
+      "chain_mapping_rows": 1007697,
+      "descending_interval_rows": 72,
+      "exact_sequence_identity_verified_rows": 0,
+      "frozen_out_of_bounds_rows": 0,
+      "human_absent_accessions": 781,
+      "human_additional_sequence_accessions": 84,
+      "human_chain_mapping_rows": 252678,
+      "human_distinct_accessions": 9812,
+      "human_primary_canonical_accessions": 8946,
+      "human_primary_field_without_canonical_accessions": 1,
+      "label_authorized_rows": 0,
+      "structural_mapping_authorized_rows": 0
+    }
+  },
+  "reconciliation_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json",
+  "reconciliation_manifest_sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932",
+  "reconciliation_root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/primary_reconciliation_v1",
+  "schema_version": 1,
+  "scope": "production_full",
+  "status": "pass",
+  "validated_at_utc": "2026-08-03T19:32:45.372972+00:00"
+}
