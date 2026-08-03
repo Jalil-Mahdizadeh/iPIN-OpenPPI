@@ -1,0 +1,446 @@
+schema_name: ipin_openppi_primary_reconciliation
+schema_version: 1
+status: frozen_for_primary_reconciliation
+frozen_date: "2026-08-03"
+blueprint: docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md
+input_schema: schemas/warehouse/evidence_warehouse_v1.yaml
+
+principles:
+  source_native_records_are_immutable: true
+  reference_sequence_mapping_is_construct_mapping: false
+  canonical_projection_is_exact_construct_mapping: false
+  identifier_conflicts_are_silently_resolved: false
+  structure_mapping_requires_release_alignment: true
+  provider_pair_views_are_labels: false
+  label_construction_authorized: false
+
+enums:
+  mapping_applicability:
+    - human_protein
+    - nonhuman_protein
+    - unresolved_taxon_protein
+    - nonprotein_entity
+    - unresolved_entity_type
+  mapping_state:
+    - direct_identifier_unique
+    - canonical_isoform_alias_unique
+    - cross_reference_unique
+    - sequence_equivalent_candidates
+    - canonical_projection_only
+    - ambiguous
+    - unmapped
+    - out_of_scope
+    - not_applicable
+    - unresolved
+  mapping_route:
+    - direct_uniprot_exact
+    - direct_uniprot_isoform1_alias
+    - ensembl_protein
+    - ensembl_transcript
+    - ensembl_gene
+    - none
+  construct_confidence:
+    - A
+    - B
+    - C
+    - D
+    - unmapped
+    - not_applicable
+  representation_state:
+    - matched_pair_view
+    - detailed_only
+    - pair_view_only
+    - unresolved_gene_projection
+  taxonomy_resolution:
+    - human_only
+    - human_and_other
+    - nonhuman_only
+    - no_taxonomy
+  accession_match_state:
+    - primary_canonical_sequence
+    - primary_field_without_canonical
+    - additional_sequence_identifier
+    - absent
+  interval_state:
+    - complete_ascending
+    - complete_descending
+    - incomplete
+  structural_mapping_state:
+    - blocked_release_mismatch
+    - blocked_descending_interval
+    - unmatched_frozen_sequence
+    - out_of_scope_nonhuman
+    - unresolved_taxonomy
+
+tables:
+  participant_sequence_mappings:
+    description: One deterministic reference-sequence and construct-confidence assessment per immutable source participant.
+    primary_key: [mapping_record_id]
+    required_non_null:
+      - mapping_record_id
+      - participant_id
+      - evidence_id
+      - source_key
+      - source_dataset
+      - source_release
+      - participant_ordinal
+      - mapping_applicability
+      - selected_route
+      - mapping_state
+      - candidate_sequence_ids
+      - candidate_sequence_sha256s
+      - candidate_parent_accessions
+      - candidate_sequence_count
+      - candidate_hash_count
+      - candidate_parent_count
+      - all_candidate_sequence_count
+      - all_candidate_hash_count
+      - all_candidate_parent_count
+      - reference_sequence_usable
+      - canonical_projection_usable
+      - raw_uniprot_accessions
+      - raw_ensembl_gene_ids
+      - raw_ensembl_transcript_ids
+      - raw_ensembl_protein_ids
+      - raw_orf_ids
+      - feature_count
+      - ranged_feature_count
+      - sequence_change_feature_count
+      - construct_confidence
+      - construct_confidence_basis
+      - strict_construct_eligible
+      - conflict_flags
+      - label_authorized
+      - staging_raw_file_path
+      - staging_raw_locator
+      - input_parse_manifest_sha256
+      - reconciliation_version
+      - reconciliation_git_commit
+      - container_sif_sha256
+      - schema_version
+      - schema_sha256
+      - missingness_json
+    enum_columns:
+      mapping_applicability: mapping_applicability
+      selected_route: mapping_route
+      mapping_state: mapping_state
+      construct_confidence: construct_confidence
+    columns:
+      - {name: mapping_record_id, type: string, nullable: false}
+      - {name: participant_id, type: string, nullable: false}
+      - {name: evidence_id, type: string, nullable: false}
+      - {name: source_key, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: participant_ordinal, type: int32, nullable: false}
+      - {name: taxid, type: int64, nullable: true}
+      - {name: molecule_type_ac, type: string, nullable: true}
+      - {name: molecule_type_name, type: string, nullable: true}
+      - {name: mapping_applicability, type: string, nullable: false}
+      - {name: selected_route, type: string, nullable: false}
+      - {name: mapping_state, type: string, nullable: false}
+      - {name: candidate_sequence_ids, type: "list<string>", nullable: false}
+      - {name: candidate_sequence_sha256s, type: "list<string>", nullable: false}
+      - {name: candidate_parent_accessions, type: "list<string>", nullable: false}
+      - {name: candidate_sequence_count, type: int32, nullable: false}
+      - {name: candidate_hash_count, type: int32, nullable: false}
+      - {name: candidate_parent_count, type: int32, nullable: false}
+      - {name: all_candidate_sequence_count, type: int32, nullable: false}
+      - {name: all_candidate_hash_count, type: int32, nullable: false}
+      - {name: all_candidate_parent_count, type: int32, nullable: false}
+      - {name: mapped_sequence_id, type: string, nullable: true}
+      - {name: mapped_uniprot_accession, type: string, nullable: true}
+      - {name: mapped_isoform_id, type: string, nullable: true}
+      - {name: mapped_sequence_sha256, type: string, nullable: true}
+      - {name: mapped_sequence_length, type: int64, nullable: true}
+      - {name: mapped_sequence_view, type: string, nullable: true}
+      - {name: reference_sequence_usable, type: bool, nullable: false}
+      - {name: canonical_projection_accession, type: string, nullable: true}
+      - {name: canonical_projection_sequence_sha256, type: string, nullable: true}
+      - {name: canonical_projection_usable, type: bool, nullable: false}
+      - {name: raw_uniprot_accessions, type: "list<string>", nullable: false}
+      - {name: raw_ensembl_gene_ids, type: "list<string>", nullable: false}
+      - {name: raw_ensembl_transcript_ids, type: "list<string>", nullable: false}
+      - {name: raw_ensembl_protein_ids, type: "list<string>", nullable: false}
+      - {name: raw_orf_ids, type: "list<string>", nullable: false}
+      - {name: feature_count, type: int64, nullable: false}
+      - {name: ranged_feature_count, type: int64, nullable: false}
+      - {name: sequence_change_feature_count, type: int64, nullable: false}
+      - {name: construct_confidence, type: string, nullable: false}
+      - {name: construct_confidence_basis, type: string, nullable: false}
+      - {name: construct_sequence_sha256, type: string, nullable: true}
+      - {name: construct_start, type: int64, nullable: true}
+      - {name: construct_end, type: int64, nullable: true}
+      - {name: strict_construct_eligible, type: bool, nullable: false}
+      - {name: conflict_flags, type: "list<string>", nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: staging_raw_file_path, type: string, nullable: false}
+      - {name: staging_raw_locator, type: string, nullable: false}
+      - {name: input_parse_manifest_sha256, type: string, nullable: false}
+      - {name: reconciliation_version, type: string, nullable: false}
+      - {name: reconciliation_git_commit, type: string, nullable: false}
+      - {name: container_sif_sha256, type: string, nullable: false}
+      - {name: schema_version, type: int32, nullable: false}
+      - {name: schema_sha256, type: string, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  evidence_mapping_summaries:
+    description: Mapping coverage and sequence-pair projections per evidence record; never a consensus interaction label.
+    primary_key: [mapping_summary_id]
+    required_non_null:
+      - mapping_summary_id
+      - evidence_id
+      - source_key
+      - source_dataset
+      - source_release
+      - record_kind
+      - interaction_semantics
+      - observation_state
+      - participant_count
+      - protein_participant_count
+      - human_protein_count
+      - reference_mapped_count
+      - canonical_projectable_count
+      - ambiguous_count
+      - unmapped_count
+      - out_of_scope_count
+      - not_applicable_count
+      - unresolved_count
+      - binary_two_human_proteins
+      - all_human_proteins_reference_resolved
+      - all_human_proteins_canonical_projectable
+      - reference_pair_usable
+      - canonical_pair_usable
+      - strict_construct_eligible
+      - original_nary
+      - label_authorized
+      - input_parse_manifest_sha256
+      - reconciliation_version
+      - reconciliation_git_commit
+      - container_sif_sha256
+      - schema_version
+      - schema_sha256
+    columns:
+      - {name: mapping_summary_id, type: string, nullable: false}
+      - {name: evidence_id, type: string, nullable: false}
+      - {name: source_key, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: record_kind, type: string, nullable: false}
+      - {name: interaction_semantics, type: string, nullable: false}
+      - {name: observation_state, type: string, nullable: false}
+      - {name: participant_count, type: int32, nullable: false}
+      - {name: protein_participant_count, type: int32, nullable: false}
+      - {name: human_protein_count, type: int32, nullable: false}
+      - {name: reference_mapped_count, type: int32, nullable: false}
+      - {name: canonical_projectable_count, type: int32, nullable: false}
+      - {name: ambiguous_count, type: int32, nullable: false}
+      - {name: unmapped_count, type: int32, nullable: false}
+      - {name: out_of_scope_count, type: int32, nullable: false}
+      - {name: not_applicable_count, type: int32, nullable: false}
+      - {name: unresolved_count, type: int32, nullable: false}
+      - {name: binary_two_human_proteins, type: bool, nullable: false}
+      - {name: all_human_proteins_reference_resolved, type: bool, nullable: false}
+      - {name: all_human_proteins_canonical_projectable, type: bool, nullable: false}
+      - {name: reference_pair_usable, type: bool, nullable: false}
+      - {name: canonical_pair_usable, type: bool, nullable: false}
+      - {name: mapped_unordered_sequence_pair_id, type: string, nullable: true}
+      - {name: mapped_ordered_sequence_pair_id, type: string, nullable: true}
+      - {name: canonical_unordered_sequence_pair_id, type: string, nullable: true}
+      - {name: canonical_ordered_sequence_pair_id, type: string, nullable: true}
+      - {name: strict_construct_eligible, type: bool, nullable: false}
+      - {name: original_nary, type: bool, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: input_parse_manifest_sha256, type: string, nullable: false}
+      - {name: reconciliation_version, type: string, nullable: false}
+      - {name: reconciliation_git_commit, type: string, nullable: false}
+      - {name: container_sif_sha256, type: string, nullable: false}
+      - {name: schema_version, type: int32, nullable: false}
+      - {name: schema_sha256, type: string, nullable: false}
+
+  huri_evidence_gene_pair_projections:
+    description: Evidence-level trace from ordered HuRI participants to versionless Ensembl-gene and ORF pair representations.
+    primary_key: [projection_id]
+    required_non_null:
+      - projection_id
+      - evidence_id
+      - source_dataset
+      - participant_a_gene_ids
+      - participant_b_gene_ids
+      - participant_a_orf_ids
+      - participant_b_orf_ids
+      - unique_gene_pair
+      - unique_orf_pair
+      - source_pair_view_membership_count
+      - representation_state
+      - label_authorized
+      - input_parse_manifest_sha256
+      - reconciliation_version
+      - reconciliation_git_commit
+      - container_sif_sha256
+      - schema_version
+      - schema_sha256
+    enum_columns:
+      representation_state: representation_state
+    columns:
+      - {name: projection_id, type: string, nullable: false}
+      - {name: evidence_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: participant_a_gene_ids, type: "list<string>", nullable: false}
+      - {name: participant_b_gene_ids, type: "list<string>", nullable: false}
+      - {name: participant_a_orf_ids, type: "list<string>", nullable: false}
+      - {name: participant_b_orf_ids, type: "list<string>", nullable: false}
+      - {name: ordered_gene_a, type: string, nullable: true}
+      - {name: ordered_gene_b, type: string, nullable: true}
+      - {name: gene_a, type: string, nullable: true}
+      - {name: gene_b, type: string, nullable: true}
+      - {name: unordered_gene_pair_id, type: string, nullable: true}
+      - {name: ordered_gene_pair_id, type: string, nullable: true}
+      - {name: ordered_orf_a, type: string, nullable: true}
+      - {name: ordered_orf_b, type: string, nullable: true}
+      - {name: orf_a, type: string, nullable: true}
+      - {name: orf_b, type: string, nullable: true}
+      - {name: unordered_orf_pair_id, type: string, nullable: true}
+      - {name: ordered_orf_pair_id, type: string, nullable: true}
+      - {name: self_pair, type: bool, nullable: true}
+      - {name: unique_gene_pair, type: bool, nullable: false}
+      - {name: unique_orf_pair, type: bool, nullable: false}
+      - {name: source_pair_view_membership_count, type: int32, nullable: false}
+      - {name: representation_state, type: string, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: input_parse_manifest_sha256, type: string, nullable: false}
+      - {name: reconciliation_version, type: string, nullable: false}
+      - {name: reconciliation_git_commit, type: string, nullable: false}
+      - {name: container_sif_sha256, type: string, nullable: false}
+      - {name: schema_version, type: int32, nullable: false}
+      - {name: schema_sha256, type: string, nullable: false}
+
+  huri_pair_reconciliation:
+    description: Union of detailed-evidence and provider pair-view gene pairs with explicit representation membership and multiplicity.
+    primary_key: [reconciliation_record_id]
+    required_non_null:
+      - reconciliation_record_id
+      - source_dataset
+      - gene_a
+      - gene_b
+      - unordered_gene_pair_id
+      - representation_state
+      - detailed_evidence_count
+      - unique_unordered_orf_pair_count
+      - unique_ordered_orf_pair_count
+      - unique_ordered_gene_orientation_count
+      - pair_view_row_count
+      - self_pair
+      - label_authorized
+      - input_parse_manifest_sha256
+      - reconciliation_version
+      - reconciliation_git_commit
+      - container_sif_sha256
+      - schema_version
+      - schema_sha256
+    enum_columns:
+      representation_state: representation_state
+    columns:
+      - {name: reconciliation_record_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: gene_a, type: string, nullable: false}
+      - {name: gene_b, type: string, nullable: false}
+      - {name: unordered_gene_pair_id, type: string, nullable: false}
+      - {name: representation_state, type: string, nullable: false}
+      - {name: detailed_evidence_count, type: int64, nullable: false}
+      - {name: unique_unordered_orf_pair_count, type: int64, nullable: false}
+      - {name: unique_ordered_orf_pair_count, type: int64, nullable: false}
+      - {name: unique_ordered_gene_orientation_count, type: int64, nullable: false}
+      - {name: pair_view_row_count, type: int64, nullable: false}
+      - {name: self_pair, type: bool, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: input_parse_manifest_sha256, type: string, nullable: false}
+      - {name: reconciliation_version, type: string, nullable: false}
+      - {name: reconciliation_git_commit, type: string, nullable: false}
+      - {name: container_sif_sha256, type: string, nullable: false}
+      - {name: schema_version, type: int32, nullable: false}
+      - {name: schema_sha256, type: string, nullable: false}
+
+  sifts_chain_mapping_audit:
+    description: One audit row per SIFTS chain-to-UniProt mapping, with taxonomy, frozen-sequence, interval, and release-alignment state; never a structural label.
+    primary_key: [audit_record_id]
+    required_non_null:
+      - audit_record_id
+      - mapping_id
+      - pdb_id
+      - chain_id
+      - uniprot_accession
+      - source_snapshot
+      - sifts_declared_uniprot_release
+      - frozen_uniprot_release
+      - chain_taxids
+      - taxonomy_resolution
+      - has_human_taxonomy
+      - mixed_taxonomy
+      - accession_match_state
+      - interval_state
+      - exact_sequence_identity_verified
+      - release_aligned
+      - structural_mapping_state
+      - structural_mapping_authorized
+      - label_authorized
+      - input_parse_manifest_sha256
+      - reconciliation_version
+      - reconciliation_git_commit
+      - container_sif_sha256
+      - schema_version
+      - schema_sha256
+    enum_columns:
+      taxonomy_resolution: taxonomy_resolution
+      accession_match_state: accession_match_state
+      interval_state: interval_state
+      structural_mapping_state: structural_mapping_state
+    columns:
+      - {name: audit_record_id, type: string, nullable: false}
+      - {name: mapping_id, type: string, nullable: false}
+      - {name: pdb_id, type: string, nullable: false}
+      - {name: chain_id, type: string, nullable: false}
+      - {name: uniprot_accession, type: string, nullable: false}
+      - {name: source_snapshot, type: string, nullable: false}
+      - {name: sifts_declared_uniprot_release, type: string, nullable: false}
+      - {name: frozen_uniprot_release, type: string, nullable: false}
+      - {name: chain_taxids, type: "list<string>", nullable: false}
+      - {name: taxonomy_resolution, type: string, nullable: false}
+      - {name: has_human_taxonomy, type: bool, nullable: false}
+      - {name: mixed_taxonomy, type: bool, nullable: false}
+      - {name: accession_match_state, type: string, nullable: false}
+      - {name: frozen_sequence_id, type: string, nullable: true}
+      - {name: frozen_uniprot_accession, type: string, nullable: true}
+      - {name: frozen_isoform_id, type: string, nullable: true}
+      - {name: frozen_sequence_sha256, type: string, nullable: true}
+      - {name: frozen_sequence_length, type: int64, nullable: true}
+      - {name: uniprot_begin, type: int64, nullable: true}
+      - {name: uniprot_end, type: int64, nullable: true}
+      - {name: interval_state, type: string, nullable: false}
+      - {name: frozen_interval_within_bounds, type: bool, nullable: true}
+      - {name: exact_sequence_identity_verified, type: bool, nullable: false}
+      - {name: release_aligned, type: bool, nullable: false}
+      - {name: structural_mapping_state, type: string, nullable: false}
+      - {name: structural_mapping_authorized, type: bool, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: input_parse_manifest_sha256, type: string, nullable: false}
+      - {name: reconciliation_version, type: string, nullable: false}
+      - {name: reconciliation_git_commit, type: string, nullable: false}
+      - {name: container_sif_sha256, type: string, nullable: false}
+      - {name: schema_version, type: int32, nullable: false}
+      - {name: schema_sha256, type: string, nullable: false}
+
+gate_metrics:
+  participant_mapping_completeness:
+    denominator: all immutable staging participant rows
+    required_value: 1.0
+  primary_huri_construct_a_or_b_fraction:
+    denominator: HuRI evidence records otherwise eligible for a strict construct-aware view
+    warning_threshold: 0.80
+    expected_current_interpretation: No source record may receive A or B without exact construct sequence or unambiguous isoform plus boundaries.
+  technical_or_missing_as_negative_count:
+    required_value: 0
+  label_authorized_count:
+    required_value: 0
+  sifts_structural_mapping_authorized_count:
+    required_value_while_release_mismatch_open: 0

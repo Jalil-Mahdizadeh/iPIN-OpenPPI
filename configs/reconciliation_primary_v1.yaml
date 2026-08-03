@@ -1,0 +1,74 @@
+schema_version: 1
+configuration_revision: 1
+run_family: primary_reconciliation_v1
+task: source_reconciliation_and_identifier_construct_mapping
+active_module: ipin_openppi.reconciliation.pipeline
+reconciliation_version: 0.1.0
+
+authorization:
+  runtime: apptainer
+  source_reconciliation: true
+  identifier_mapping: true
+  construct_confidence_assignment: true
+  label_construction: false
+  model_training: false
+
+inputs:
+  staging_root: data/staging/primary_sources_v1
+  parse_manifest: data/staging/primary_sources_v1/PARSE_MANIFEST.json
+  parse_manifest_sha256: ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa
+  staging_validation_report: artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json
+  staging_validation_report_sha256: 375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba
+  reconciliation_schema: schemas/canonical/primary_reconciliation_v1.yaml
+
+runtime:
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  require_clean_git_for_production: true
+  verify_staging_sha256_before_reconciliation: true
+  architecture: aarch64
+  duckdb_threads: 8
+  duckdb_memory_limit: 64GB
+  parquet_batch_rows: 100000
+  parquet_compression: zstd
+  parquet_compression_level: 8
+
+mapping_policy:
+  frozen_taxid: 9606
+  protein_molecule_type_ac: MI:0326
+  canonical_isoform_alias_suffix: "-1"
+  candidate_priority:
+    direct_uniprot_exact: 1
+    direct_uniprot_isoform1_alias: 2
+    ensembl_protein: 3
+    ensembl_transcript: 4
+    ensembl_gene: 5
+  ensembl_database_mapping:
+    ensembl_protein: Ensembl_PRO
+    ensembl_transcript: Ensembl_TRS
+    ensembl_gene: Ensembl
+  stop_after_first_resolving_candidate_route: true
+  exact_construct_sequences_available: false
+  explicit_construct_boundaries_available: false
+  highest_assignable_construct_confidence: C
+  canonical_projection_is_construct_exact: false
+  unreported_pairs_are_negative: false
+  provider_pair_views_are_labels: false
+
+sifts_policy:
+  source_snapshot: observed_2026-07-26
+  declared_uniprot_release: "2026.03"
+  frozen_uniprot_release: "2026_02"
+  releases_aligned: false
+  authorize_structural_mapping: false
+  authorize_structure_derived_labels: false
+
+provider_counts:
+  HuRI: 52569
+  HI-II-14: 13993
+  Lit-BM: 13441
+  Test_space_screens-19: 1159
+
+outputs:
+  canonical_root: data/canonical/primary_reconciliation_v1
+  validation_root: artifacts/validation/reconciliation/primary_reconciliation_v1
