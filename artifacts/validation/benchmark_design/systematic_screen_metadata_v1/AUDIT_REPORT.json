@@ -1,0 +1,1211 @@
+{
+  "audit_id": "systematic_screen_metadata_v1",
+  "audit_version": "0.1.0",
+  "authorizations": {
+    "benchmark_estimand_policy_proposal": true,
+    "label_construction": false,
+    "model_training": false,
+    "split_construction": false,
+    "structural_mapping": false
+  },
+  "completed_at_utc": "2026-08-03T20:48:23.424068+00:00",
+  "external_public_availability_review": {
+    "alternate_scientific_branch_or_tag_found": false,
+    "attempted_pair_log_found": false,
+    "authors_code_commit": "16c57919f4e0c3d1a78edf90c105ed42d3022f8f",
+    "authors_code_commit_date": "2020-09-14T13:07:06-04:00",
+    "authors_code_license_file_present": false,
+    "authors_code_repository": "https://github.com/CCSB-DFCI/HuRI_paper",
+    "nature_article": "https://www.nature.com/articles/s41586-020-2188-x",
+    "notes": [
+      "The authors repository republishes Tables 1-28 and selected derived validation tables.",
+      "Its README states that analysis code often reads internal databases and is not fully reproducible off-site.",
+      "Its processed Table 8 has the same 8,239 base rows as the publication table plus an author-derived binary result column.",
+      "No public file enumerates all selected, attempted, evaluable, failed, and observed HuRI screen opportunities."
+    ],
+    "portal_about": "https://www.interactome-atlas.org/about/",
+    "portal_faq": "https://www.interactome-atlas.org/faq/",
+    "public_downloads": "https://www.interactome-atlas.org/download",
+    "reviewed_date": "2026-08-03"
+  },
+  "git": {
+    "commit": "7af9473c876e53b777cf6ee829bbcbdf85c49fe4",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "inputs": {
+    "config": "configs/systematic_screen_metadata_audit_v1.yaml",
+    "config_sha256": "baedc6cdd96d89790497293650421db4c385fb5747c3a456b27712096e55af5b",
+    "documents": {
+      "acquisition_manifest": {
+        "bytes": 33989,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json",
+        "sha256": "5750fe08eac343e23c0f0c56cf749c7477cbfd92233f2679de5fedf9d8f22231"
+      },
+      "evidence_schema": {
+        "bytes": 22656,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/warehouse/evidence_warehouse_v1.yaml",
+        "sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd"
+      },
+      "parse_manifest": {
+        "bytes": 223738,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/PARSE_MANIFEST.json",
+        "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+      },
+      "reconciliation_manifest": {
+        "bytes": 26286,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json",
+        "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+      },
+      "reconciliation_validation_report": {
+        "bytes": 59114,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json",
+        "sha256": "9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2"
+      },
+      "source_policy": {
+        "bytes": 3362,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/source_policy_v1.yaml",
+        "sha256": "af43ae0f55fa78ddd5d5ae67ff4e0a9704903c1669ef5a7204749bddc381318a"
+      },
+      "staging_schema": {
+        "bytes": 8723,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/staging/source_native_v2.yaml",
+        "sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca"
+      },
+      "staging_validation_report": {
+        "bytes": 39661,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json",
+        "sha256": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba"
+      }
+    },
+    "raw_assets": {
+      "hi_ii_14_pairs": {
+        "asset_id": "hi_ii_14_pairs",
+        "bytes": 436256,
+        "path": "data/raw/huri/published_2020/HI-II-14.tsv",
+        "read_only": true,
+        "sha256": "a8ac784ee9ea1ddb767189a9de9345bf778990f7ef29cc7bccb1ce39688a6415"
+      },
+      "hi_ii_14_psi": {
+        "asset_id": "hi_ii_14_psi",
+        "bytes": 48078485,
+        "path": "data/raw/huri/published_2020/HI-II-14.psi",
+        "read_only": true,
+        "sha256": "0d5542fd63e5dd49151928aa5ee319969670a91753708e75d17edb4718173275"
+      },
+      "huri_pairs": {
+        "asset_id": "huri_pairs",
+        "bytes": 1681536,
+        "path": "data/raw/huri/published_2020/HuRI.tsv",
+        "read_only": true,
+        "sha256": "4cdf94366ff6e23e71ef9ec81922e85b2b3a1fb08e938f7b00d86c027cf1ecd6"
+      },
+      "huri_psi": {
+        "asset_id": "huri_psi",
+        "bytes": 169848924,
+        "path": "data/raw/huri/published_2020/HuRI.psi",
+        "read_only": true,
+        "sha256": "d6e8185519d18ce18cfa66f5eab66ecb1e711113f0b62810e0a145dd33a9ee12"
+      },
+      "huri_supplementary_methods": {
+        "asset_id": "huri_supplementary_methods",
+        "bytes": 772012,
+        "path": "data/raw/huri/publication_2020/41586_2020_2188_MOESM1_ESM.pdf",
+        "read_only": true,
+        "sha256": "413db194addfa9f877fd837fe6c4d4a8826896331b5ab52e17fb50ad1c7f45dd"
+      },
+      "huri_supplementary_table_guide": {
+        "asset_id": "huri_supplementary_table_guide",
+        "bytes": 116397,
+        "path": "data/raw/huri/publication_2020/41586_2020_2188_MOESM4_ESM.pdf",
+        "read_only": true,
+        "sha256": "1e01edae188696076bbf003e36aea92833415bf95a58830519b9ed6c504b8127"
+      },
+      "huri_supplementary_tables": {
+        "asset_id": "huri_supplementary_tables",
+        "bytes": 17506577,
+        "path": "data/raw/huri/publication_2020/41586_2020_2188_MOESM3_ESM.zip",
+        "read_only": true,
+        "sha256": "377f3dca340ab706721b8545afa00c9777dce6b3aeda1c79a3902d4ad5c43a06"
+      },
+      "test_space_screen_pairs": {
+        "asset_id": "test_space_screen_pairs",
+        "bytes": 37088,
+        "path": "data/raw/huri/published_2020/Test_space_screens-19.tsv",
+        "read_only": true,
+        "sha256": "d0bdb242a01553a6eea9488e5bbea86b9c73829813d68927249e2a855939dd4c"
+      }
+    },
+    "staged_datasets": {
+      "huri_evidence": {
+        "files": [
+          {
+            "bytes": 12806754,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00000.parquet",
+            "rows": 100000,
+            "sha256": "f0892a9a9db3227bbc6636098fed796a1ec584e6ced2a53be8966460028d81b8"
+          },
+          {
+            "bytes": 12074653,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00001.parquet",
+            "rows": 100000,
+            "sha256": "6ea19b7e00e618607843e6e751a6e8788b54243a78edb53f4e7f4cfa76ad8fa9"
+          },
+          {
+            "bytes": 2155619,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00002.parquet",
+            "rows": 20934,
+            "sha256": "4c1f971e70d8e722e2c45f0ae537a327bdfa933c396bc717ced8d143705b7710"
+          }
+        ],
+        "parts": 3,
+        "rows": 220934,
+        "table": "evidence_records"
+      },
+      "huri_fusion": {
+        "files": [
+          {
+            "bytes": 233985,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/huri_fusion_interference/part-00000.parquet",
+            "rows": 3738,
+            "sha256": "8441bb5b6b16b8972eb541fee8d19d275bdfefabf088c9c42e485e67653a829a"
+          }
+        ],
+        "parts": 1,
+        "rows": 3738,
+        "table": "huri_fusion_interference"
+      },
+      "huri_pair_views": {
+        "files": [
+          {
+            "bytes": 4045391,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/source_pair_views/part-00000.parquet",
+            "rows": 80781,
+            "sha256": "1ae6786b60f13ff68228533c63263c08abf6259d712fcecf03f216d19165b541"
+          }
+        ],
+        "parts": 1,
+        "rows": 80781,
+        "table": "source_pair_views"
+      },
+      "huri_space": {
+        "files": [
+          {
+            "bytes": 537515,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/huri_space_membership/part-00000.parquet",
+            "rows": 19818,
+            "sha256": "b344761b27ffcd5eaf48a4f50cc0cfcd0b394a20bd57a5d8724a0a3069f4b516"
+          }
+        ],
+        "parts": 1,
+        "rows": 19818,
+        "table": "huri_space_membership"
+      },
+      "huri_supplement": {
+        "files": [
+          {
+            "bytes": 15030734,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00000.parquet",
+            "rows": 100000,
+            "sha256": "79cf55a0cc30935a38e13bbf4a60dd74ddc687ea40d873c063be6ef906a0a41d"
+          },
+          {
+            "bytes": 3300845,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00001.parquet",
+            "rows": 100000,
+            "sha256": "8a9ce302e2f7a55265e8b8d0fec8bc26c627bfbee3da650a0e9792f2dc36552a"
+          },
+          {
+            "bytes": 3218901,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00002.parquet",
+            "rows": 100000,
+            "sha256": "e557f025cada407f31b67895f8f533af4a72c3608cecc9b3ee8b9c3704b17988"
+          },
+          {
+            "bytes": 3980356,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00003.parquet",
+            "rows": 100000,
+            "sha256": "7fd0cc7f71a840ca7a944d9aa42663335fdfdb269fa5604feb4432ad83117c2f"
+          },
+          {
+            "bytes": 3580707,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00004.parquet",
+            "rows": 100000,
+            "sha256": "0d2c3005c23696e2339dc4aca555687a4b71bb1f1abe546c6aa5c597ce758f8a"
+          },
+          {
+            "bytes": 1907867,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00005.parquet",
+            "rows": 64178,
+            "sha256": "bc7423bf53be4b220a77a4ea0c13b887269d45e469eccc15433e686d63ec977d"
+          }
+        ],
+        "parts": 6,
+        "rows": 564178,
+        "table": "raw_tabular_records"
+      },
+      "intact_evidence": {
+        "files": [
+          {
+            "bytes": 10272584,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00000.parquet",
+            "rows": 100000,
+            "sha256": "20a4764462beaa75bed0328dc2eb9883442b32be61ccb348123c3f0fe533da10"
+          },
+          {
+            "bytes": 9546093,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00001.parquet",
+            "rows": 100000,
+            "sha256": "e28f814ce90765b2cdeb4dfb196bad7b15644889c0c4f3965c899a59dffc53e2"
+          },
+          {
+            "bytes": 9749803,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00002.parquet",
+            "rows": 100000,
+            "sha256": "2a435b1a62b87ea2e3dcc83901ee22056f9348116c58ae6fc04f9fa9e92f502e"
+          },
+          {
+            "bytes": 8513461,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00003.parquet",
+            "rows": 100000,
+            "sha256": "1b25dc064a1f1f4710a80c2577a9baab748b467faf23c915294b2c3e2a61e7b2"
+          },
+          {
+            "bytes": 10349523,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00004.parquet",
+            "rows": 100000,
+            "sha256": "ead063175714f18df34f51e05c7fc5d9402c46bf4af8777065e47dd05ee6ff2c"
+          },
+          {
+            "bytes": 5817348,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00005.parquet",
+            "rows": 52442,
+            "sha256": "1934640eb2e9e9ca72566460ae109412316db2bc00ed07625bc3433cbae16382"
+          }
+        ],
+        "parts": 6,
+        "rows": 552442,
+        "table": "evidence_records"
+      }
+    }
+  },
+  "label_construction_performed": false,
+  "metrics": {
+    "huri_evidence": {
+      "negative": 0,
+      "positive": 220934,
+      "rows": 220934,
+      "state_combinations": [
+        {
+          "attempted_state": "attempted",
+          "evaluability_state": "evaluable",
+          "n": 49389,
+          "observation_state": "positive",
+          "search_space_state": "unknown",
+          "selection_state": "selected",
+          "source_dataset": "HI-II-14",
+          "state_basis": "logically_implied_by_source_positive",
+          "technical_state": "passed"
+        },
+        {
+          "attempted_state": "attempted",
+          "evaluability_state": "evaluable",
+          "n": 171545,
+          "observation_state": "positive",
+          "search_space_state": "unknown",
+          "selection_state": "selected",
+          "source_dataset": "HuRI",
+          "state_basis": "logically_implied_by_source_positive",
+          "technical_state": "passed"
+        }
+      ]
+    },
+    "huri_pair_views": [
+      {
+        "label_authorized_rows": 0,
+        "rows": 13633,
+        "self_pairs": 518,
+        "source_dataset": "HI-II-14",
+        "unique_unordered_pairs": 13633
+      },
+      {
+        "label_authorized_rows": 0,
+        "rows": 52548,
+        "self_pairs": 480,
+        "source_dataset": "HuRI",
+        "unique_unordered_pairs": 52548
+      },
+      {
+        "label_authorized_rows": 0,
+        "rows": 13441,
+        "self_pairs": 683,
+        "source_dataset": "Lit-BM",
+        "unique_unordered_pairs": 13441
+      },
+      {
+        "label_authorized_rows": 0,
+        "rows": 1159,
+        "self_pairs": 0,
+        "source_dataset": "Test_space_screens-19",
+        "unique_unordered_pairs": 1159
+      }
+    ],
+    "huri_space_membership": {
+      "in_space_iii_false": 2410,
+      "in_space_iii_true": 17408,
+      "in_space_iii_unknown": 0,
+      "rows": 19818,
+      "unique_genes": 19818,
+      "unit": "gene_membership_not_pair_opportunity"
+    },
+    "intact_explicit_negatives": {
+      "rows": 939,
+      "state_combinations": [
+        {
+          "attempted_state": "attempted",
+          "evaluability_state": "unknown",
+          "n": 939,
+          "observation_state": "negative",
+          "search_space_state": "not_applicable",
+          "selection_state": "unknown",
+          "state_basis": "source_asserted",
+          "technical_state": "unknown"
+        }
+      ],
+      "systematic_primary_universe": false
+    },
+    "outcome_panels": {
+      "table_12": {
+        "admissible_use": "literature_recovery_diagnostic_only",
+        "assay": "Y2H",
+        "dataset": "huri_supplement_table_12",
+        "label_authorized": false,
+        "outcome_counts": {
+          "0": 2017,
+          "1": 83,
+          "AA": 29,
+          "NA": 262
+        },
+        "outcome_semantics": {
+          "0": "conditional_assay_negative",
+          "1": "observed_positive",
+          "AA": "technical_autoactivator",
+          "NA": "technical_invalid"
+        },
+        "rows": 2391,
+        "scope": "randomly_sampled_literature_curated_pairs",
+        "stratum_counts": {
+          "source": {
+            "Lit-BM-13": 374,
+            "Lit-BM-HT-17": 407,
+            "Lit-BM-LT-17": 389,
+            "Lit-BS-HT-17": 401,
+            "Lit-BS-LT-17": 401,
+            "Lit-NB-17": 419
+          }
+        },
+        "unit": "ordered_orf_pair"
+      },
+      "table_13": {
+        "admissible_use": "literature_recovery_diagnostic_only",
+        "assay": "MAPPIT",
+        "dataset": "huri_supplement_table_13",
+        "label_authorized": false,
+        "outcome_counts": {
+          "0.0": 1272,
+          "1.0": 85,
+          "<blank>": 76
+        },
+        "outcome_semantics": {
+          "0.0": "conditional_assay_negative",
+          "1.0": "observed_positive",
+          "<blank>": "unresolved_missing_or_invalid"
+        },
+        "rows": 1433,
+        "scope": "randomly_sampled_literature_curated_pairs",
+        "stratum_counts": {
+          "source": {
+            "Lit-BM-13": 200,
+            "Lit-BM-HT-17": 247,
+            "Lit-BM-LT-17": 244,
+            "Lit-BS-HT-17": 249,
+            "Lit-BS-LT-17": 247,
+            "Lit-NB-17": 246
+          }
+        },
+        "unit": "selected_pair"
+      },
+      "table_15": {
+        "admissible_use": "technical_sensitivity_diagnostic_only",
+        "assay": "Y2H_detection_flags",
+        "dataset": "huri_supplement_table_15:20190418_fusion_interference",
+        "label_authorized": false,
+        "rows": 3738,
+        "scope": "structurally_selected_space_iii_pairs",
+        "unit": "selected_pair_with_assay_version_detection_flags"
+      },
+      "table_16": {
+        "admissible_use": "orthogonal_recovery_diagnostic_only",
+        "assay": "MAPPIT",
+        "dataset": "huri_supplement_table_16",
+        "label_authorized": false,
+        "outcome_counts": {
+          "0.0": 4344,
+          "1.0": 1138,
+          "<blank>": 965
+        },
+        "outcome_semantics": {
+          "0.0": "conditional_assay_negative",
+          "1.0": "observed_positive",
+          "<blank>": "unresolved_missing_or_invalid"
+        },
+        "rows": 6447,
+        "scope": "selected_huri_and_literature_overlap_pairs_stratified_by_y2h_detection_count",
+        "stratum_counts": {
+          "Y2H_assay_version": {
+            "1": 3041,
+            "2": 2038,
+            "3": 1368
+          },
+          "category": {
+            "HuRI": 4452,
+            "Lit_and_HuRI": 1995
+          },
+          "num_screens": {
+            "1": 3349,
+            "2": 1790,
+            "3": 1308
+          }
+        },
+        "unit": "selected_pair_by_y2h_assay_version"
+      },
+      "table_5": {
+        "admissible_use": "diagnostic_reference_panel_only",
+        "assay": "Y2H",
+        "dataset": "huri_supplement_table_5",
+        "label_authorized": false,
+        "outcome_counts": {
+          "0": 791,
+          "1": 70,
+          "AA": 142,
+          "NA": 41
+        },
+        "outcome_semantics": {
+          "0": "conditional_assay_negative",
+          "1": "observed_positive",
+          "AA": "technical_autoactivator",
+          "NA": "technical_invalid"
+        },
+        "rows": 1044,
+        "scope": "positive_and_random_reference_pairs_tested_by_orientation_and_assay_version",
+        "stratum_counts": {
+          "assay_version": {
+            "1": 348,
+            "2": 348,
+            "3": 348
+          },
+          "source": {
+            "PRS_V1": 504,
+            "RRS_V1": 540
+          }
+        },
+        "unit": "ordered_orf_pair_by_y2h_assay_version"
+      },
+      "table_6": {
+        "admissible_use": "orthogonal_recovery_diagnostic_only",
+        "assay": "MAPPIT",
+        "dataset": "huri_supplement_table_6",
+        "label_authorized": false,
+        "outcome_counts": {
+          "0.0": 2196,
+          "1.0": 150,
+          "<blank>": 493
+        },
+        "outcome_semantics": {
+          "0.0": "conditional_assay_negative",
+          "1.0": "observed_positive",
+          "<blank>": "unresolved_missing_or_invalid"
+        },
+        "rows": 2839,
+        "scope": "selected_test_space_positives_literature_controls_and_random_controls",
+        "stratum_counts": {
+          "experiment": {
+            "testing_y2h_v1": 1105,
+            "testing_y2h_v2": 638,
+            "testing_y2h_v3": 1096
+          },
+          "source": {
+            "Lit_BM_13": 734,
+            "RRS": 927,
+            "test_space_y2h_v1": 488,
+            "test_space_y2h_v2": 209,
+            "test_space_y2h_v3": 481
+          }
+        },
+        "unit": "selected_pair_by_experiment"
+      },
+      "table_8": {
+        "admissible_use": "quantitative_orthogonal_recovery_diagnostic_only",
+        "assay": "MAPPIT_and_GPCA",
+        "dataset": "huri_supplement_table_8",
+        "label_authorized": false,
+        "numeric_score_summary": {
+          "maximum": 24.39896853884328,
+          "minimum": -3.7876450127371752,
+          "missing_or_nonnumeric": 0,
+          "numeric": 8239,
+          "source_binary_result_field_present": false
+        },
+        "rows": 8239,
+        "scope": "selected_huri_positives_literature_controls_and_random_controls",
+        "stratum_counts": {
+          "assay": {
+            "GPCA": 3838,
+            "MAPPIT": 4401
+          },
+          "source": {
+            "Hs01": 536,
+            "Hs02": 531,
+            "Hs03": 467,
+            "Hs04": 542,
+            "Hs05": 507,
+            "Hs06": 504,
+            "Hs07": 245,
+            "Hs08": 244,
+            "Hs09": 250,
+            "Lit-BM": 1442,
+            "RRS": 2971
+          },
+          "standard_batch": {
+            "Hvs01": 1468,
+            "Hvs02": 1454,
+            "Hvs03": 1247,
+            "Hvs04": 2818,
+            "Hvs06": 1252
+          }
+        },
+        "unit": "selected_pair_by_assay_and_batch"
+      }
+    },
+    "positive_screen_metadata": {
+      "negative_or_failed_opportunities_enumerated": false,
+      "table_7_detection_mentions": 3099,
+      "table_7_test_space_positive_pairs": 1214,
+      "table_9_assay_version_detection_mentions": 55534,
+      "table_9_detection_multiplicity": [
+        {
+          "detected_assay_versions": 1,
+          "detected_screens": 1,
+          "positive_pairs": 35085
+        },
+        {
+          "detected_assay_versions": 1,
+          "detected_screens": 2,
+          "positive_pairs": 10709
+        },
+        {
+          "detected_assay_versions": 2,
+          "detected_screens": 2,
+          "positive_pairs": 874
+        },
+        {
+          "detected_assay_versions": 1,
+          "detected_screens": 3,
+          "positive_pairs": 4068
+        },
+        {
+          "detected_assay_versions": 2,
+          "detected_screens": 3,
+          "positive_pairs": 738
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 3,
+          "positive_pairs": 21
+        },
+        {
+          "detected_assay_versions": 2,
+          "detected_screens": 4,
+          "positive_pairs": 615
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 4,
+          "positive_pairs": 49
+        },
+        {
+          "detected_assay_versions": 2,
+          "detected_screens": 5,
+          "positive_pairs": 179
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 5,
+          "positive_pairs": 78
+        },
+        {
+          "detected_assay_versions": 2,
+          "detected_screens": 6,
+          "positive_pairs": 43
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 6,
+          "positive_pairs": 65
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 7,
+          "positive_pairs": 31
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 8,
+          "positive_pairs": 11
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 9,
+          "positive_pairs": 3
+        }
+      ],
+      "table_9_huri_positive_pairs": 52569,
+      "table_9_max_detected_screens": 9,
+      "table_9_min_detected_screens": 1,
+      "table_9_screen_detection_mentions": 77653
+    },
+    "supplement_table_rows": {
+      "huri_supplement_table_1": 19818,
+      "huri_supplement_table_10:HuRI": 108,
+      "huri_supplement_table_10:bioplex": 1155,
+      "huri_supplement_table_10:cofrac": 1209,
+      "huri_supplement_table_10:info": 3,
+      "huri_supplement_table_10:litBM": 387,
+      "huri_supplement_table_10:qubic": 572,
+      "huri_supplement_table_11": 64006,
+      "huri_supplement_table_12": 2391,
+      "huri_supplement_table_13": 1433,
+      "huri_supplement_table_14": 13441,
+      "huri_supplement_table_15:20190418_fusion_interference": 3738,
+      "huri_supplement_table_15:legend": 13,
+      "huri_supplement_table_16": 6447,
+      "huri_supplement_table_17": 1004,
+      "huri_supplement_table_18": 1817,
+      "huri_supplement_table_19": 161583,
+      "huri_supplement_table_2": 17436,
+      "huri_supplement_table_20": 10,
+      "huri_supplement_table_21:Age": 19906,
+      "huri_supplement_table_21:Expression (BioPlex)": 10121,
+      "huri_supplement_table_21:Expression (GTEx)": 17114,
+      "huri_supplement_table_21:Expression (QUBIC)": 8582,
+      "huri_supplement_table_21:Fitness Effect": 19727,
+      "huri_supplement_table_21:Lethality": 1879,
+      "huri_supplement_table_21:LoF intolerance": 17591,
+      "huri_supplement_table_21:Publication": 19508,
+      "huri_supplement_table_21:Sheet2": 10,
+      "huri_supplement_table_22": 16695,
+      "huri_supplement_table_23": 16695,
+      "huri_supplement_table_24": 52088,
+      "huri_supplement_table_25": 820,
+      "huri_supplement_table_26": 217,
+      "huri_supplement_table_27": 679,
+      "huri_supplement_table_28": 21,
+      "huri_supplement_table_29:Sheet1": 33,
+      "huri_supplement_table_3": 8,
+      "huri_supplement_table_4": 8,
+      "huri_supplement_table_5": 1044,
+      "huri_supplement_table_6": 2839,
+      "huri_supplement_table_7": 1214,
+      "huri_supplement_table_8": 8239,
+      "huri_supplement_table_9": 52569
+    },
+    "table_15_detection_flags": {
+      "label_authorized_rows": 0,
+      "never_detected_any_version": 3038,
+      "patterns": [
+        {
+          "found_v1": false,
+          "found_v2": false,
+          "found_v3": false,
+          "n": 3038
+        },
+        {
+          "found_v1": false,
+          "found_v2": false,
+          "found_v3": true,
+          "n": 78
+        },
+        {
+          "found_v1": false,
+          "found_v2": true,
+          "found_v3": false,
+          "n": 129
+        },
+        {
+          "found_v1": false,
+          "found_v2": true,
+          "found_v3": true,
+          "n": 53
+        },
+        {
+          "found_v1": true,
+          "found_v2": false,
+          "found_v3": false,
+          "n": 326
+        },
+        {
+          "found_v1": true,
+          "found_v2": false,
+          "found_v3": true,
+          "n": 23
+        },
+        {
+          "found_v1": true,
+          "found_v2": true,
+          "found_v3": false,
+          "n": 68
+        },
+        {
+          "found_v1": true,
+          "found_v2": true,
+          "found_v3": true,
+          "n": 23
+        }
+      ],
+      "rows": 3738
+    },
+    "table_5_orientation_coverage": {
+      "complete_two_orientation_pair_assays": 522,
+      "pair_assays": 522
+    }
+  },
+  "model_training_performed": false,
+  "runtime": {
+    "architecture": "aarch64",
+    "container": "containers/images/ipin-data-arm64_0.1.2.sif",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "duckdb_version": "1.5.5"
+  },
+  "schema_version": 1,
+  "scientific_conclusion": {
+    "calibrated_primary_assay_probability_feasible": false,
+    "complete_attempted_evaluable_universe_reconstructed": false,
+    "conditional_control_panel_analysis_feasible": true,
+    "explicit_panel_nondetections_are_universal_negatives": false,
+    "intact_negative_records_define_primary_systematic_universe": false,
+    "issue_0003_disposition": "unresolved_resolution_path_3_recommended",
+    "label_construction_authorized": false,
+    "main_huri_mitab_negative_records": 0,
+    "main_huri_pair_view_rows": 52548,
+    "model_training_authorized": false,
+    "primary_binary_negative_labels_feasible": false,
+    "provider_to_supplement_positive_row_difference": 21,
+    "pu_compatibility_policy_design_feasible": true,
+    "split_construction_authorized": false,
+    "strict_construct_benchmark_feasible": false,
+    "supplement_table_9_positive_rows": 52569,
+    "table_15_never_detected_pairs_are_negatives": false,
+    "unreported_space_iii_pairs_are_negatives": false
+  },
+  "scope": "metadata_and_semantics_only_no_label_or_split_construction",
+  "source_inventory": {
+    "supplementary_archive": {
+      "ignored_archive_metadata_members": 31,
+      "scientific_table_count": 29,
+      "tables": {
+        "1": {
+          "bytes": 475684,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 1.txt"
+        },
+        "10": {
+          "bytes": 229888,
+          "format": "xls",
+          "member": "Supplementary_Tables_new/Supplementary Table 10.xls"
+        },
+        "11": {
+          "bytes": 3008388,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 11.txt"
+        },
+        "12": {
+          "bytes": 61853,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 12.txt"
+        },
+        "13": {
+          "bytes": 39629,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 13.txt"
+        },
+        "14": {
+          "bytes": 512007,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 14.txt"
+        },
+        "15": {
+          "bytes": 566784,
+          "format": "xls",
+          "member": "Supplementary_Tables_new/Supplementary Table 15.xls"
+        },
+        "16": {
+          "bytes": 170916,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 16.txt"
+        },
+        "17": {
+          "bytes": 34145,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 17.txt"
+        },
+        "18": {
+          "bytes": 69124,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 18.txt"
+        },
+        "19": {
+          "bytes": 8198627,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 19.txt"
+        },
+        "2": {
+          "bytes": 1173345,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 2.txt"
+        },
+        "20": {
+          "bytes": 1528,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 20.txt"
+        },
+        "21": {
+          "bytes": 4092110,
+          "format": "xlsx",
+          "member": "Supplementary_Tables_new/Supplementary Table 21.xlsx"
+        },
+        "22": {
+          "bytes": 9308231,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 22.txt"
+        },
+        "23": {
+          "bytes": 8672236,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 23.txt"
+        },
+        "24": {
+          "bytes": 17446700,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 24.txt"
+        },
+        "25": {
+          "bytes": 137438,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 25.txt"
+        },
+        "26": {
+          "bytes": 4198,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 26.txt"
+        },
+        "27": {
+          "bytes": 106191,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 27.txt"
+        },
+        "28": {
+          "bytes": 2692,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 28.txt"
+        },
+        "29": {
+          "bytes": 62976,
+          "format": "xls",
+          "member": "Supplementary_Tables_new/Supplementary Table 29.xls"
+        },
+        "3": {
+          "bytes": 583,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 3.txt"
+        },
+        "4": {
+          "bytes": 527,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 4.txt"
+        },
+        "5": {
+          "bytes": 35477,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 5.txt"
+        },
+        "6": {
+          "bytes": 116961,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 6.txt"
+        },
+        "7": {
+          "bytes": 48091,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 7.txt"
+        },
+        "8": {
+          "bytes": 392415,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 8.txt"
+        },
+        "9": {
+          "bytes": 2944044,
+          "format": "txt",
+          "member": "Supplementary_Tables_new/Supplementary Table 9.txt"
+        }
+      }
+    },
+    "supplementary_methods_pdf": {
+      "keyword_pages": [
+        {
+          "hits": {
+            "attempt": 2,
+            "screen": 1
+          },
+          "page": 4
+        },
+        {
+          "hits": {
+            "assay version": 7,
+            "autoactiv": 1,
+            "negative": 1,
+            "pairwise": 1,
+            "screen": 5,
+            "test space": 2
+          },
+          "page": 5
+        },
+        {
+          "hits": {
+            "assay version": 3,
+            "retest": 1,
+            "screen": 6,
+            "selected": 1
+          },
+          "page": 6
+        },
+        {
+          "hits": {
+            "assay version": 2,
+            "screen": 3
+          },
+          "page": 7
+        },
+        {
+          "hits": {
+            "negative": 3,
+            "pairwise": 5,
+            "retest": 5,
+            "screen": 2,
+            "selected": 3
+          },
+          "page": 8
+        },
+        {
+          "hits": {
+            "assay version": 1,
+            "negative": 2,
+            "pairwise": 2,
+            "retest": 1,
+            "screen": 6,
+            "selected": 3,
+            "test space": 1
+          },
+          "page": 9
+        },
+        {
+          "hits": {
+            "assay version": 1,
+            "negative": 3,
+            "screen": 4,
+            "selected": 2
+          },
+          "page": 10
+        },
+        {
+          "hits": {
+            "assay version": 4,
+            "screen": 6
+          },
+          "page": 11
+        },
+        {
+          "hits": {
+            "screen": 2
+          },
+          "page": 12
+        },
+        {
+          "hits": {
+            "assay version": 1,
+            "pairwise": 1
+          },
+          "page": 13
+        },
+        {
+          "hits": {
+            "pairwise": 1,
+            "screen": 6
+          },
+          "page": 14
+        },
+        {
+          "hits": {
+            "screen": 1,
+            "selected": 3
+          },
+          "page": 16
+        },
+        {
+          "hits": {
+            "pairwise": 1,
+            "technical": 1
+          },
+          "page": 17
+        },
+        {
+          "hits": {
+            "selected": 1
+          },
+          "page": 20
+        },
+        {
+          "hits": {
+            "candidate": 4,
+            "selected": 1
+          },
+          "page": 21
+        },
+        {
+          "hits": {
+            "assay version": 3,
+            "negative": 1,
+            "pairwise": 3,
+            "selected": 2
+          },
+          "page": 23
+        },
+        {
+          "hits": {
+            "assay version": 1,
+            "negative": 4,
+            "pairwise": 7,
+            "screen": 2,
+            "selected": 1
+          },
+          "page": 24
+        },
+        {
+          "hits": {
+            "assay version": 3,
+            "pairwise": 1
+          },
+          "page": 25
+        },
+        {
+          "hits": {
+            "assay version": 1,
+            "screen": 7
+          },
+          "page": 26
+        },
+        {
+          "hits": {
+            "candidate": 1,
+            "negative": 1
+          },
+          "page": 27
+        },
+        {
+          "hits": {
+            "screen": 1
+          },
+          "page": 29
+        },
+        {
+          "hits": {
+            "screen": 1
+          },
+          "page": 30
+        },
+        {
+          "hits": {
+            "negative": 1
+          },
+          "page": 31
+        }
+      ],
+      "pages": 32
+    },
+    "supplementary_table_guide_pdf": {
+      "keyword_pages": [
+        {
+          "hits": {
+            "assay version": 5,
+            "negative": 3,
+            "orientation": 1,
+            "pairwise": 3,
+            "screen": 5,
+            "selected": 1,
+            "test space": 2
+          },
+          "page": 1
+        },
+        {
+          "hits": {
+            "assay version": 2,
+            "pairwise": 3,
+            "screen": 4,
+            "test space": 1
+          },
+          "page": 2
+        }
+      ],
+      "pages": 3
+    }
+  },
+  "split_construction_performed": false,
+  "status": "complete",
+  "structural_mapping_performed": false,
+  "systematic_universe_assessment": {
+    "complete_attempted_evaluable_universe_reconstructed": false,
+    "complete_pair_level_field_count": 0,
+    "incomplete_fields": {
+      "attempted_state_for_every_opportunity": "positive_only",
+      "complete_pairwise_retest_log": "unavailable",
+      "first_pass_candidate_log": "unavailable",
+      "observed_outcome_for_every_evaluable_attempt": "positive_only",
+      "ordered_bait_and_prey_constructs_for_every_opportunity": "positive_only",
+      "pair_level_search_space_membership": "positive_only_or_gene_level_only",
+      "prescreen_autoactivator_exclusion_log": "unavailable",
+      "sampling_probability_for_released_controls": "partial",
+      "screen_and_run_identifier_for_every_opportunity": "positive_only",
+      "selection_state_for_every_opportunity": "positive_only",
+      "technical_evaluability_for_every_attempt": "unavailable",
+      "technical_failure_or_exclusion_reason": "unavailable"
+    },
+    "required_field_count": 12
+  },
+  "task": "systematic_screen_and_negative_evidence_metadata_audit",
+  "warnings": [
+    {
+      "code": "HURI_ATTEMPTED_UNIVERSE_UNRESOLVED",
+      "effect": "calibrated_primary_binary_benchmark_is_not_identifiable",
+      "issue": "governance/issues/ISSUE-0003-huri-attempted-pair-universe.md"
+    },
+    {
+      "code": "STRICT_CONSTRUCT_COVERAGE_ZERO",
+      "effect": "strict_construct_benchmark_remains_infeasible",
+      "issue": "governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md"
+    },
+    {
+      "code": "AUTHOR_CODE_REPOSITORY_LICENSE_UNRESOLVED",
+      "effect": "reviewed_metadata_not_ingested_as_a_project_data_source"
+    }
+  ]
+}

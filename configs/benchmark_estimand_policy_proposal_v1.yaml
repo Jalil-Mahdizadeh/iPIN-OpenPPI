@@ -1,0 +1,492 @@
+schema_version: 1
+policy_id: benchmark_estimand_policy_proposal_v1
+version: 0.1.0
+date: "2026-08-03"
+status: proposed_for_expert_group_review
+effective: false
+supersedes: null
+decision_record: governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md
+blueprint_amendment: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md
+
+authority:
+  policy_design: true
+  proposal_validation: true
+  candidate_universe_construction: false
+  evidence_indicator_construction: false
+  label_construction: false
+  split_construction: false
+  structural_mapping: false
+  model_implementation: false
+  model_training: false
+  activation_condition: expert_group_acceptance_of_blueprint_amendment_and_new_gate_record
+
+execution:
+  platform: NAISS_Arrhenius
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  architecture: aarch64
+  native_scientific_execution_allowed: false
+
+evidence_basis:
+  audit_report: artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json
+  audit_report_sha256: db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e
+  audit_validation_report: artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json
+  audit_validation_report_sha256: 2ca92051172b7a7a512072f3ed6212ac8caed5891870abcea7c6e5929cd56a01
+  audit_implementation_commit: 7af9473c876e53b777cf6ee829bbcbdf85c49fe4
+  validation_result:
+    status: pass
+    passes: 71
+    failures: 0
+    warnings: 3
+  critical_observations:
+    huri_evidence_rows: 220934
+    huri_positive_evidence_rows: 220934
+    huri_negative_evidence_rows: 0
+    huri_pair_view_rows: 52548
+    huri_supplement_table_9_positive_pairs: 52569
+    huri_supplement_table_9_screen_detection_mentions: 77653
+    huri_supplement_table_9_assay_version_detection_mentions: 55534
+    space_iii_genes: 17408
+    space_iii_gene_pair_upper_universe_excluding_self: 151510528
+    intact_explicit_negative_rows: 939
+    table_15_selected_pairs: 3738
+    table_15_never_detected_any_assay_version: 3038
+    strict_construct_a_or_b_rows: 0
+  conclusion:
+    complete_selected_attempted_evaluable_huri_universe_reconstructed: false
+    original_calibrated_assay_probability_primary_endpoint_feasible: false
+    binary_negative_benchmark_feasible: false
+    reference_sequence_pu_ranking_design_feasible: true
+    conditional_control_diagnostics_feasible: true
+    strict_construct_benchmark_feasible: false
+    structure_derived_benchmark_feasible: false
+
+scientific_scope:
+  species: Homo_sapiens
+  interaction_semantics: direct_binary_physical_compatibility
+  primary_pair_type: heteromeric
+  biological_unit: unordered_reference_sequence_pair
+  evidence_unit: source_record_by_construct_orientation_assay_version_batch_and_repeat
+  primary_input: two_frozen_reference_amino_acid_sequences
+  candidate_membership:
+    source: frozen_HuRI_Space_III_gene_ORF_universe
+    exact_eligibility_count_status: to_be_audited_only_after_policy_approval
+    requirements:
+      - both_participants_map_to_usable_frozen_reference_sequences
+      - human_taxid_9606
+      - protein_molecule_type
+      - two_distinct_biological_participants
+      - two_distinct_frozen_sequence_hashes
+      - unordered_pair_canonicalization
+    exclusions:
+      - homomers
+      - unary_or_nary_records
+      - nonprotein_molecules
+      - ambiguous_or_unmapped_reference_sequences
+      - source_pairs_outside_the_frozen_candidate_universe
+  candidate_universe_semantics: candidate_and_unlabeled_not_attempted_not_evaluable_not_negative
+  laboratory_validation_available: false
+
+variables:
+  X_AB:
+    meaning: frozen_pair_sequence_features_and_permitted_pre_cutoff_metadata
+    observed: true
+  R_AB:
+    meaning: pair_has_a_released_qualifying_positive_record_by_the_frozen_information_cutoff
+    observed: true
+    values: [released_positive, unlabeled]
+    prohibited_interpretation: unlabeled_is_negative
+  Y_AB:
+    meaning: latent_direct_binary_compatibility_in_the_relevant_biochemical_context
+    observed: false
+    identifiability: not_identified_from_current_public_release
+  S_ABm:
+    meaning: selected_or_attempted_in_assay_m
+    observed_completeness: positive_only_or_unavailable
+  E_ABm:
+    meaning: technically_evaluable_in_assay_m
+    observed_completeness: positive_only_or_unavailable
+  O_ABm:
+    meaning: assay_outcome_given_selected_and_evaluable
+    observed_completeness: positive_only_for_primary_huri_release
+  selection_propensity:
+    assumption: feature_dependent_and_unknown
+    scar_or_constant_propensity_assumption_authorized: false
+
+estimands:
+  primary:
+    id: frozen_released_positive_recovery_ranking
+    target: ordering_of_frozen_candidate_pairs_by_recovery_of_held_out_released_positive_evidence
+    formal_definition: "theta(f)=P[f(X_R=1)>f(X_R=0_unlabeled)]+0.5*P[f(X_R=1)=f(X_R=0_unlabeled)] under the frozen positive and deterministic unlabeled sampling distributions"
+    model_output: symmetric_sequence_compatibility_prioritization_score
+    probability_interpretation: prohibited
+    biological_binding_probability_interpretation: prohibited
+    assay_probability_interpretation: prohibited
+    selection_causal_interpretation: prohibited
+    scope_statement_required: true
+  query_retrieval:
+    id: held_out_positive_partner_retrieval
+    target: rank_of_held_out_released_positive_partners_within_the_frozen_eligible_partner_universe
+    output: symmetric_retrieval_or_reranking_score
+    precision_interpretation: prohibited_because_unlabeled_candidates_can_be_positive
+  secondary_observation:
+    id: observed_release_propensity_diagnostic
+    target: discrimination_or_calibration_of_R_within_an_explicit_artificial_sampling_design
+    headline_authorized: false
+    biological_probability_interpretation: prohibited
+  future_tested_universe:
+    id: conditional_assay_positive_probability
+    target: "P(O_ABm=positive | S_ABm=selected, E_ABm=evaluable, frozen_assay_and_candidate_universe)"
+    active: false
+    activation_gate: future_tested_universe_gate
+  latent_compatibility_probability:
+    active: false
+    reason: class_prior_selection_sensitivity_and_specificity_not_identified
+
+evidence_state_policy:
+  primary_huri_released_positive:
+    training_role: eligible_positive_indicator_after_future_policy_activation
+    evaluation_role: eligible_held_out_positive_indicator
+    negative_role: prohibited
+  unreported_space_iii_pair:
+    state: unlabeled
+    negative_role: prohibited
+  source_explicit_negative:
+    state: conditional_assay_negative
+    retain_context:
+      - source
+      - assay
+      - construct
+      - orientation
+      - batch
+      - technical_state
+      - sampling_design
+    universal_negative_role: prohibited
+    primary_huri_universe_role: prohibited_unless_future_tested_universe_gate_passes
+  technical_failure:
+    state: technical_failure
+    negative_role: prohibited
+  invalid:
+    state: technical_invalid
+    negative_role: prohibited
+  autoactivator:
+    state: technical_autoactivator
+    negative_role: prohibited
+  outside_search_space:
+    state: outside_declared_space
+    negative_role: prohibited
+  ambiguous_or_missing:
+    state: unknown
+    negative_role: prohibited
+  conflict:
+    state: preserve_all_source_records_and_mark_conflict
+    forced_consensus_role: prohibited
+  random_reference_control:
+    state: sampled_control_with_conditional_outcome
+    population_negative_role: prohibited
+
+benchmark_tiers:
+  PU_R:
+    name: reference_sequence_positive_unlabeled_ranking
+    role: proposed_primary
+    feasible_now: true
+    construct_confidence: reference_sequence_mapping_not_construct_A_or_B
+    structural_labels: false
+    calibration_claims: false
+  CP_D:
+    name: conditional_panel_diagnostics
+    role: secondary_diagnostic
+    feasible_now: true
+    panels:
+      table_5: y2h_reference_orientation_and_assay_version
+      table_6: selected_mappit_recovery
+      table_8: selected_quantitative_mappit_gpca_recovery
+      table_12: selected_literature_y2h_recovery
+      table_13: selected_literature_mappit_recovery
+      table_15: selected_y2h_assay_version_sensitivity
+      table_16: selected_mappit_recovery_by_y2h_detection_history
+    training_use: prohibited_for_protected_diagnostic_records
+    universal_negative_role: prohibited
+  TU_C:
+    name: tested_universe_calibrated_assay_endpoint
+    role: future_optional
+    feasible_now: false
+    activation_gate: future_tested_universe_gate
+  SC_S:
+    name: strict_construct_and_structural_benchmark
+    role: future_optional
+    feasible_now: false
+    activation_gate: future_strict_construct_and_structure_gate
+
+positive_and_unlabeled_sampling:
+  construction_status: not_started
+  positive_indicator_cutoff: frozen_complete_information_cutoff
+  positive_deduplication_unit: unordered_reference_sequence_pair
+  unlabeled_pool: eligible_candidate_pairs_without_visible_qualifying_positive_evidence_at_the_axis_specific_cutoff
+  known_positive_exclusion:
+    rule: exclude_visible_pre_cutoff_qualifying_direct_positive_evidence_from_the_unlabeled_pool
+    held_out_source_or_temporal_labels_visible_to_construction: false
+  sampler:
+    method: deterministic_uniform_hash_sampling_without_replacement_within_split_and_stratum
+    hash: SHA256
+    public_salt: ipin-openppi-benchmark-v1
+    record_inclusion_probability: true
+    record_sampling_weight: true
+    preserve_full_candidate_evaluation_where_computationally_feasible: true
+  pseudo_negative_semantics:
+    random_negative_bce: diagnostic_baseline_only
+    matched_negative_bce: diagnostic_baseline_only
+    scientific_negative_label: false
+  class_prior:
+    identified: false
+    point_estimate_claim_authorized: false
+    sensitivity_analysis_required: true
+    grid_rule: freeze_a_log_spaced_grid_from_the_observed_positive_fraction_to_0.05_before_model_results
+    report_every_grid_value: true
+
+sequence_and_split_design:
+  construction_status: not_started
+  sequence_identity_graph:
+    sequence_unit: frozen_reference_sequence_hash
+    edge_rule: alignment_identity_at_least_threshold_and_alignment_covers_at_least_80_percent_of_each_sequence
+    component_rule: deterministic_connected_components
+    thresholds:
+      primary: 0.30
+      sensitivity: [0.40, 0.20]
+    tool_version_command_parameters_and_database_hashes_required: true
+  partitioning:
+    split_unit: entire_sequence_component
+    target_fractions:
+      train: 0.70
+      development: 0.15
+      protected_test: 0.15
+    deterministic_seed: 20260803
+    optimization_inputs_allowed:
+      - positive_record_counts
+      - sequence_component_sizes
+      - source
+      - assay
+      - publication_time
+    model_output_or_performance_inputs_allowed: false
+    reverse_pair_co_location_required: true
+    evidence_record_group_co_location_required: true
+  novelty_categories:
+    C1: both_sequence_components_present_in_training_but_test_pair_unseen
+    C2: exactly_one_sequence_component_absent_from_training
+    C3: both_sequence_components_absent_from_training
+    C2_exclusive: true
+  required_axes:
+    - C1
+    - C2
+    - C3
+    - sequence_cluster_30_percent_primary
+    - sequence_cluster_40_percent_sensitivity
+    - sequence_cluster_20_percent_sensitivity
+    - complete_information_cutoff_temporal
+    - held_out_assay_version
+    - held_out_source
+    - human_primary
+  inactive_axes:
+    structural_interface:
+      reason: ISSUE_0005_and_zero_construct_A_B_coverage
+    species_transfer:
+      reason: requires_separate_source_eligibility_and_policy_review
+  final_test:
+    protected_and_read_only: true
+    one_first_evaluation_rule: true
+    split_revision_after_result: requires_new_version_and_full_rerun
+
+metrics:
+  primary:
+    - positive_unlabeled_pairwise_concordance
+    - held_out_positive_recall_at_10
+    - held_out_positive_recall_at_100
+    - held_out_positive_recall_at_1000
+    - released_positive_enrichment_at_fixed_candidate_fraction
+    - positive_rank_percentile
+  always_report:
+    - C1_C2_C3_separately
+    - sequence_identity_threshold
+    - surviving_positive_pairs
+    - eligible_unlabeled_candidates
+    - unique_proteins
+    - independent_sequence_components
+    - source_and_assay_strata
+    - nearest_training_sequence_similarity
+    - candidate_sampling_fraction
+    - candidate_inclusion_weights
+  diagnostic_only:
+    - sampled_positive_vs_unlabeled_AUPRC
+    - sampled_positive_vs_unlabeled_AUROC
+    - observed_release_propensity_log_loss
+    - graph_metrics
+  prohibited_headline_interpretations:
+    - biological_precision
+    - biological_false_positive_rate
+    - calibrated_binding_probability
+    - calibrated_assay_probability
+    - proteome_wide_precision
+  deferred_until_TU_C:
+    - assay_endpoint_AUPRC_at_natural_prevalence
+    - Brier_skill
+    - calibration_slope
+    - calibration_intercept
+    - adaptive_calibration_error
+    - recall_at_fixed_biological_precision
+
+uncertainty:
+  dependence_unit_primary: sequence_component
+  clustered_bootstrap_replicates: 2000
+  clustered_bootstrap_seed: 20260803
+  interval: percentile_95
+  sensitivity_resampling:
+    - source_or_publication
+    - assay_or_batch_when_available
+    - query_protein
+  paired_model_comparisons: true
+  effect_sizes_and_intervals_required: true
+  independent_trials_claim_authorized: false
+
+minimum_size_rules:
+  headline_axis:
+    held_out_released_positive_pairs: 500
+    independent_sequence_components: 50
+  conditional_panel_quantitative_stratum:
+    evaluable_records: 100
+    independent_sequence_components: 10
+  below_threshold_action: demote_to_descriptive_and_do_not_pool_axes_to_hide_failure
+  combined_C3_30_percent:
+    held_out_released_positive_pairs: 500
+    independent_sequence_components: 50
+    meaningful_assay_or_source_diversity_required: true
+
+control_panel_policy:
+  table_5_and_12:
+    uses:
+      - orientation_and_assay_version_sensitivity
+      - technical_state_frequency
+      - conditional_recovery
+    universal_negative_role: prohibited
+  table_6_8_13_16:
+    uses:
+      - orthogonal_recovery
+      - score_stratification
+      - evidence_conditioned_transfer
+    universal_negative_role: prohibited
+  table_15:
+    uses:
+      - assay_version_detection_sensitivity
+      - structural_subset_diagnostic_without_structural_labels
+    never_detected_is_negative: false
+  intact_explicit_negatives:
+    quantitative_primary_negative_role: prohibited
+    possible_future_use: source_scoped_diagnostic_after_construct_evaluability_and_sampling_audit
+
+leakage_controls:
+  freeze_before_modeling:
+    - candidate_universe_manifest
+    - qualifying_positive_evidence_policy
+    - information_cutoff
+    - sequence_hashes
+    - sequence_components
+    - partition_assignment
+    - source_and_assay_holdouts
+    - pseudo_negative_sampling_salt_and_probabilities
+    - evaluation_candidate_sets
+    - primary_metrics
+  grouping:
+    - unordered_pair
+    - all_evidence_for_pair_within_axis
+    - sequence_component
+    - publication_or_study_when_required
+    - assay_batch_when_required
+    - interface_family_if_future_axis_activates
+  forbidden:
+    - reverse_pair_leakage
+    - close_homologue_leakage_across_cluster_holdouts
+    - held_out_source_label_used_for_candidate_exclusion
+    - post_cutoff_evidence_used_for_training_or_candidate_exclusion
+    - model_based_split_revision
+    - validation_panel_reuse_for_training
+    - graph_degree_computed_with_test_edges
+    - structure_or_teacher_information_crossing_partitions
+
+future_tested_universe_gate:
+  complete_pair_level_fields:
+    - search_space_membership
+    - screen_and_run
+    - ordered_bait_and_prey_constructs
+    - selection_state
+    - attempted_state
+    - evaluability_state
+    - technical_failure_or_exclusion_reason
+    - observed_outcome
+  minimum_auditable_coverage: 0.90
+  remaining_missingness_characterized: true
+  official_or_investigator_source_with_reproducible_terms: true
+  negative_labels_before_gate: prohibited
+  calibrated_assay_endpoint_before_gate: prohibited
+
+future_strict_construct_and_structure_gate:
+  minimum_construct_confidence_A_or_B_fraction: 0.80
+  sifts_uniprot_release_alignment_resolved: true
+  retained_sequence_and_residue_interval_identity_proven: true
+  unresolved_structure_derived_labels: 0
+  strict_construct_or_structural_labels_before_gate: prohibited
+
+claim_ceiling:
+  permitted_if_policy_is_approved_and_benchmark_is_validated:
+    - recovery_and_ranking_of_held_out_released_direct_PPI_evidence
+    - generalization_under_named_pair_protein_homology_source_assay_and_temporal_axes
+    - symmetric_sequence_compatibility_prioritization_score
+    - computational_hypothesis_prioritization_with_explicit_uncertainty_and_provenance
+  prohibited:
+    - experimentally_validated_novel_interactions
+    - universal_context_free_binding_probability
+    - calibrated_assay_probability_without_TU_C_gate
+    - undocumented_pair_is_negative
+    - unlabeled_pair_is_noninteracting
+    - structurally_predicted_complex_is_independent_experimental_confirmation
+    - complete_or_validated_human_interactome
+  required_hypothesis_warning: >-
+    These pairs are computationally prioritized hypotheses. They have not been
+    experimentally tested or validated by the iPIN-OpenPPI project. Scores are
+    conditional on the frozen evidence, candidate universe, sampling design,
+    and model assumptions.
+
+feasibility:
+  project_continuation: feasible_with_narrowed_primary_claim
+  original_blueprint_calibrated_primary_endpoint: infeasible_from_current_public_data
+  proposed_PU_R_primary: feasible_subject_to_post_approval_eligibility_and_size_audit
+  CP_D_diagnostics: feasible
+  TU_C_calibrated_endpoint: inactive
+  SC_S_strict_construct_structural_endpoint: inactive
+  latent_binding_probability: not_identified
+  principal_residual_risks:
+    - feature_dependent_positive_selection
+    - unknown_class_prior
+    - hidden_positives_in_unlabeled_pool
+    - reference_sequence_not_exact_construct
+    - source_and_publication_bias
+    - public_PLM_exposure
+    - no_laboratory_validation
+
+post_approval_first_action:
+  id: benchmark_eligibility_and_sequence_component_audit_v1
+  description: >-
+    Freeze the exact reference-sequence-eligible Space III population, quantify
+    aggregate positive-record mapping coverage and exclusions without emitting
+    a pair-level evidence indicator, construct only deterministic sequence
+    identity components, and issue an independent validation report before any
+    evidence indicator, pseudo-negative sample, split, or model is built.
+  construction_sequence:
+    - freeze_eligibility_schema_and_source_hashes
+    - enumerate_eligible_proteins_and_compute_candidate_count_without_pair_materialization
+    - quantify_mapping_exclusions_without_imputation
+    - construct_and_validate_40_30_20_percent_sequence_components
+    - report_aggregate_positive_mapping_and_component_size_feasibility_without_partitions
+    - return_for_gate_confirmation_before_evidence_indicators_or_splits
+
+outputs:
+  validation_report: artifacts/validation/benchmark_design/benchmark_estimand_policy_proposal_v1/VALIDATION_REPORT.json
+  review_gate: governance/gates/gate_status_v9.yaml

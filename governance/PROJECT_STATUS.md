@@ -2,10 +2,10 @@
 
 **Checkpoint date:** 2026-08-03
 **Execution environment:** NAISS Arrhenius; project computation must run through pinned ARM64 Apptainer images
-**Scientific programme state:** Primary-source reconciliation accepted; benchmark and estimand design authorized
+**Scientific programme state:** Systematic-screen audit validated; PU benchmark amendment proposed and awaiting expert-group approval
 
 This file is the durable restart checkpoint. The authoritative gate details remain in
-`governance/gates/gate_status_v8.yaml` and its cited decisions and evidence.
+`governance/gates/gate_status_v9.yaml` and its cited decisions and evidence.
 
 ## Completed and accepted
 
@@ -20,45 +20,60 @@ This file is the durable restart checkpoint. The authoritative gate details rema
 - The accepted reconciliation implementation commit is
   `d66d990a16592eb469f1b58643d982cb936c9083`; the acceptance/report commit is
   `ae0f72be7bbb19f623c131c1b03a93affe83e406`.
+- The systematic-screen audit completed from clean commit
+  `7af9473c876e53b777cf6ee829bbcbdf85c49fe4`.
+- Its immutable audit SHA-256 is
+  `db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e`.
+- Its independent validation passed 71 checks, failed 0, and recorded 3 expected
+  blockers; validation SHA-256 is
+  `2ca92051172b7a7a512072f3ed6212ac8caed5891870abcea7c6e5929cd56a01`.
+- The audit established that current public HuRI data do not reconstruct the
+  complete selected/attempted/evaluable universe. The original calibrated
+  primary assay endpoint is therefore infeasible from current public data.
 
 ## Exact pause point
 
-The next authorized unit is **benchmark and estimand design without label or split
-construction**. Work had just started on the governing-document audit; no new data
-transformation, labels, splits, benchmark manifests, model code, or training run was
-started for this unit.
+The metadata audit and independent validation are complete. A fully specified
+reference-sequence positive–unlabeled ranking policy and Blueprint Amendment 001
+have been prepared, but they are proposals rather than active policy.
 
-Resume in this order:
+The project is paused at a mandatory human-governance boundary:
 
-1. Audit the acquired and staged systematic-screen metadata, with special attention
-   to HuRI selection, attempted-pair membership, orientation, evaluability, technical
-   state, and explicit negative/control semantics.
-2. Resolve or formally disposition
-   `governance/issues/ISSUE-0003-huri-attempted-pair-universe.md`. Do not infer that a
-   pair absent from HuRI positive lists is negative. If no auditable pair-level screen
-   log exists, make the PU/latent-observation fallback the proposed primary design.
-3. Account explicitly for
-   `governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md` and the observed
-   zero strict construct-A/B coverage when defining admissible benchmark tiers.
-4. Draft a benchmark/estimand policy proposal defining the target population,
-   observation unit, estimands, admissible evidence states, unknown and technical-
-   failure handling, prevalence treatment, C1/C2/C3 and sequence-cluster axes,
-   temporal/assay/source/interface tests, leakage controls, metrics, uncertainty, and
-   minimum-size rules.
-5. Validate the proposal against the final blueprint, open issues, accepted source
-   artifacts, and gate thresholds. Then prepare a decision record and the next gate
-   update for approval before constructing labels or splits.
+- proposed policy:
+  `configs/benchmark_estimand_policy_proposal_v1.yaml`;
+- proposed amendment:
+  `docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md`;
+- expert report:
+  `docs/reports/m0/M0_Systematic_Screen_Metadata_Audit_and_Benchmark_Estimand_Proposal_v1.md`; and
+- proposed decision:
+  `governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md`.
+
+The next required event is expert-group acceptance, rejection, or requested
+revision of Blueprint Amendment 001. No absence of extra comments is treated as
+approval.
+
+If the expert group accepts the amendment, the next authorized technical unit
+will be only `benchmark_eligibility_and_sequence_component_audit_v1`: freeze
+eligible Space III reference sequences, quantify mapping exclusions, compute
+the candidate count without materializing pair rows, construct and validate
+40%/30%/20% sequence components, and report only aggregate positive-mapping
+and component-size feasibility. It must not emit pair-level evidence
+indicators or C1/C2/C3 assignments, and it must return to the gate before any
+candidate pairs, pseudo-negatives, splits, structures, or models are
+constructed.
 
 ## Active prohibitions
 
 Until the benchmark/estimand policy is approved and the governing blockers are
 resolved or formally amended:
 
-- do not construct binary labels;
+- do not construct the candidate universe before amendment approval;
+- do not construct positive/unlabeled indicators or binary labels;
 - do not convert unreported or technically failed opportunities into negatives;
+- do not construct pseudo-negative samples;
 - do not construct or freeze data splits;
 - do not perform structural mapping that assumes unresolved release alignment;
-- do not train or select models; and
+- do not implement, train, or select models; and
 - do not weaken the strict construct or leakage criteria silently.
 
 ## Required execution discipline

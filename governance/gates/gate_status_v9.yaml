@@ -1,0 +1,191 @@
+schema_version: 9
+supersedes: governance/gates/gate_status_v8.yaml
+updated_date: "2026-08-03"
+programme_state: active_m0_estimand_policy_proposed_awaiting_expert_approval
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    scope: qualification_sif_0.1.0
+    continuing_condition: every_later_image_requires_regression_qualification
+    evidence:
+      - docs/reports/m0/M0_Project_Initiation_and_Single_GPU_Qualification_v1.md
+      - docs/reports/m0/M0_Container_Gate_Final_Report_v1.md
+      - artifacts/runs/platform/platform-single-gpu-v2-826757-20260803T124251Z/comparison.json
+      - artifacts/runs/platform/platform-four-gpu-long-834510-20260803T125331Z/scaling_comparison.json
+    measured_four_gpu_scaling_efficiency: 0.8958019946853826
+    minimum_four_gpu_scaling_efficiency: 0.70
+  evidence:
+    status: in_progress
+    reason: >-
+      Source reconciliation and the systematic-screen metadata audit pass.
+      The complete tested universe remains unavailable, the PU amendment is
+      proposed but not approved, and strict construct/structural blockers remain
+      open.
+    source_license_subgate:
+      status: pass_with_conditions
+      active_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v3.yaml
+      policy: configs/source_policy_v1.yaml
+      decision: governance/decisions/DEC-0006-authorize-final-source-manifest-set.md
+    raw_acquisition_subgate:
+      status: pass_with_source_warnings
+      scientific_acquisition_complete: true
+      acquired_asset_count: 20
+      acquired_payload_bytes: 1531969387
+      required_assets_missing: 0
+      optional_assets_missing: 0
+      integrity_errors: 0
+      source_representation_warnings: 2
+      label_construction_authorized: false
+      model_training_authorized: false
+      decision: governance/decisions/DEC-0007-accept-primary-raw-acquisition.md
+      evidence:
+        - data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json
+        - artifacts/validation/source_acquisition/raw_verification_primary_v1.json
+    source_parsing_subgate:
+      status: pass_with_downstream_structural_blocker
+      production_run_family: primary_sources_v1
+      staging_root: data/staging/primary_sources_v1
+      selected_raw_scientific_inputs: 17
+      source_families: 4
+      datasets: 21
+      parquet_files: 152
+      parquet_rows_across_tables: 14021899
+      parquet_bytes: 1369917702
+      evidence_records: 773376
+      participant_rows: 2213524
+      participant_feature_rows: 1397319
+      explicit_negative_records: 939
+      original_nary_records: 41964
+      original_unary_records: 2198
+      expanded_records: 0
+      validation_passes: 150
+      validation_failures: 0
+      validation_warnings: 1
+      source_reconciliation_authorized: true
+      label_construction_authorized: false
+      model_training_authorized: false
+      parse_manifest: data/staging/primary_sources_v1/PARSE_MANIFEST.json
+      parse_manifest_sha256: ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa
+      validation_report: artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json
+      validation_report_sha256: 375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba
+      parser_git_commit: 403397cd52dec8d7e37f571b13c73f47173fd6f0
+      parser_version: 1.2.0
+      container_sif: containers/images/ipin-data-arm64_0.1.2.sif
+      container_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+      decision: governance/decisions/DEC-0008-accept-primary-evidence-staging.md
+      evidence:
+        - docs/reports/m0/M0_Primary_Source_Parsing_and_Evidence_QC_Final_v1.md
+        - data/staging/primary_sources_v1/PARSE_MANIFEST.json
+        - artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json
+    source_reconciliation_subgate:
+      status: pass_with_downstream_scientific_blockers
+      production_run_family: primary_reconciliation_v1
+      canonical_root: data/canonical/primary_reconciliation_v1
+      canonical_tables: 5
+      parquet_files: 46
+      parquet_rows_across_tables: 4297000
+      parquet_bytes: 366537644
+      participant_rows: 2213524
+      reference_sequence_usable_participants: 2054023
+      reference_sequence_usable_fraction: 0.9279425025434556
+      canonical_projection_usable_participants: 2063972
+      canonical_projection_usable_fraction: 0.9324371454748176
+      evidence_records: 773376
+      binary_two_human_protein_records: 663388
+      reference_pair_usable_records: 620290
+      canonical_pair_usable_records: 629959
+      construct_confidence_a_or_b_rows: 0
+      strict_construct_eligible_rows: 0
+      label_authorized_rows: 0
+      structural_mapping_authorized_rows: 0
+      validation_passes: 152
+      validation_failures: 0
+      validation_warnings: 4
+      canonical_reconciliation_accepted: true
+      benchmark_and_estimand_design_authorized: true
+      strict_construct_benchmark_authorized: false
+      label_construction_authorized: false
+      structural_mapping_authorized: false
+      model_training_authorized: false
+      reconciliation_manifest: data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json
+      reconciliation_manifest_sha256: 6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932
+      validation_report: artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json
+      validation_report_sha256: 9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2
+      reconciliation_git_commit: d66d990a16592eb469f1b58643d982cb936c9083
+      reconciliation_version: 0.1.0
+      canonical_schema_sha256: ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2
+      container_sif: containers/images/ipin-data-arm64_0.1.2.sif
+      container_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+      issue_0004_disposition: reconciled_and_retained_as_documented_source_limitation
+      decision: governance/decisions/DEC-0009-accept-primary-source-reconciliation.md
+      evidence:
+        - docs/reports/m0/M0_Primary_Source_Reconciliation_and_Construct_Mapping_Final_v1.md
+        - data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json
+        - artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json
+    systematic_screen_metadata_audit_subgate:
+      status: pass_with_scientific_narrowing_required
+      audit_id: systematic_screen_metadata_v1
+      implementation_commit: 7af9473c876e53b777cf6ee829bbcbdf85c49fe4
+      audit_report: artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json
+      audit_report_sha256: db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e
+      validation_report: artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json
+      validation_report_sha256: 2ca92051172b7a7a512072f3ed6212ac8caed5891870abcea7c6e5929cd56a01
+      validation_passes: 71
+      validation_failures: 0
+      validation_warnings: 3
+      huri_evidence_rows: 220934
+      huri_positive_evidence_rows: 220934
+      huri_negative_evidence_rows: 0
+      complete_attempted_evaluable_universe_reconstructed: false
+      calibrated_primary_assay_probability_feasible: false
+      primary_binary_negative_labels_feasible: false
+      pu_reference_ranking_design_feasible: true
+      conditional_control_panel_diagnostics_feasible: true
+      strict_construct_benchmark_feasible: false
+      benchmark_estimand_policy_proposal_authorized: true
+      candidate_universe_construction_authorized: false
+      label_construction_authorized: false
+      split_construction_authorized: false
+      structural_mapping_authorized: false
+      model_training_authorized: false
+      evidence:
+        - docs/reports/m0/M0_Systematic_Screen_Metadata_Audit_and_Benchmark_Estimand_Proposal_v1.md
+        - configs/systematic_screen_metadata_audit_v1.yaml
+        - artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json
+        - artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json
+    open_blockers_for_label_construction:
+      - governance/issues/ISSUE-0003-huri-attempted-pair-universe.md
+      - governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md
+    documented_source_limitations:
+      - governance/issues/ISSUE-0004-provider-count-versus-payload-representation.md
+    evidence_gate_thresholds_not_met:
+      strict_construct_a_or_b_fraction:
+        required: 0.80
+        observed: 0.0
+    next_authorized_unit: policy_proposal_consistency_validation_and_expert_review_only
+    label_construction_authorized: false
+    structural_mapping_authorized: false
+    model_training_authorized: false
+  benchmark:
+    status: policy_proposed_awaiting_expert_approval
+    proposed_policy: configs/benchmark_estimand_policy_proposal_v1.yaml
+    proposed_blueprint_amendment: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md
+    proposed_decision: governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md
+    proposal_effective: false
+    candidate_universe_construction_authorized: false
+    evidence_indicator_construction_authorized: false
+    label_construction_authorized: false
+    split_construction_authorized: false
+    structural_mapping_authorized: false
+    model_implementation_authorized: false
+    model_training_authorized: false
+    required_next_decision: expert_group_accept_or_reject_blueprint_amendment_001
+  statistical: {status: not_started}
+  routing: {status: not_started}
+  retrieval: {status: not_started}
+  uncertainty: {status: not_started}
+  computational_validation: {status: not_started}
+  release: {status: not_started}

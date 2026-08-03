@@ -1,0 +1,2338 @@
+{
+  "audit_report": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json",
+  "audit_report_sha256": "db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e",
+  "authorizations": {
+    "benchmark_estimand_policy_proposal": true,
+    "label_construction": false,
+    "model_training": false,
+    "split_construction": false,
+    "structural_mapping": false,
+    "systematic_screen_metadata_audit_accepted": true
+  },
+  "check_counts": {
+    "fail": 0,
+    "pass": 71,
+    "warning": 3
+  },
+  "checks": [
+    {
+      "check_id": "audit.schema_version",
+      "expected": 1,
+      "observed": 1,
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.audit_id",
+      "expected": "systematic_screen_metadata_v1",
+      "observed": "systematic_screen_metadata_v1",
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.audit_version",
+      "expected": "0.1.0",
+      "observed": "0.1.0",
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.task",
+      "expected": "systematic_screen_and_negative_evidence_metadata_audit",
+      "observed": "systematic_screen_and_negative_evidence_metadata_audit",
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.status",
+      "expected": "complete",
+      "observed": "complete",
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.scope",
+      "expected": "metadata_and_semantics_only_no_label_or_split_construction",
+      "observed": "metadata_and_semantics_only_no_label_or_split_construction",
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.label_construction_performed",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.split_construction_performed",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.structural_mapping_performed",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.model_training_performed",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.authorizations",
+      "expected": {
+        "benchmark_estimand_policy_proposal": true,
+        "label_construction": false,
+        "model_training": false,
+        "split_construction": false,
+        "structural_mapping": false
+      },
+      "observed": {
+        "benchmark_estimand_policy_proposal": true,
+        "label_construction": false,
+        "model_training": false,
+        "split_construction": false,
+        "structural_mapping": false
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "semantics.systematic_universe_assessment",
+      "expected": {
+        "complete_attempted_evaluable_universe_reconstructed": false,
+        "complete_pair_level_field_count": 0,
+        "incomplete_fields": {
+          "attempted_state_for_every_opportunity": "positive_only",
+          "complete_pairwise_retest_log": "unavailable",
+          "first_pass_candidate_log": "unavailable",
+          "observed_outcome_for_every_evaluable_attempt": "positive_only",
+          "ordered_bait_and_prey_constructs_for_every_opportunity": "positive_only",
+          "pair_level_search_space_membership": "positive_only_or_gene_level_only",
+          "prescreen_autoactivator_exclusion_log": "unavailable",
+          "sampling_probability_for_released_controls": "partial",
+          "screen_and_run_identifier_for_every_opportunity": "positive_only",
+          "selection_state_for_every_opportunity": "positive_only",
+          "technical_evaluability_for_every_attempt": "unavailable",
+          "technical_failure_or_exclusion_reason": "unavailable"
+        },
+        "required_field_count": 12
+      },
+      "observed": {
+        "complete_attempted_evaluable_universe_reconstructed": false,
+        "complete_pair_level_field_count": 0,
+        "incomplete_fields": {
+          "attempted_state_for_every_opportunity": "positive_only",
+          "complete_pairwise_retest_log": "unavailable",
+          "first_pass_candidate_log": "unavailable",
+          "observed_outcome_for_every_evaluable_attempt": "positive_only",
+          "ordered_bait_and_prey_constructs_for_every_opportunity": "positive_only",
+          "pair_level_search_space_membership": "positive_only_or_gene_level_only",
+          "prescreen_autoactivator_exclusion_log": "unavailable",
+          "sampling_probability_for_released_controls": "partial",
+          "screen_and_run_identifier_for_every_opportunity": "positive_only",
+          "selection_state_for_every_opportunity": "positive_only",
+          "technical_evaluability_for_every_attempt": "unavailable",
+          "technical_failure_or_exclusion_reason": "unavailable"
+        },
+        "required_field_count": 12
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "semantics.scientific_conclusion_guardrails",
+      "expected": {
+        "calibrated_primary_assay_probability_feasible": false,
+        "complete_attempted_evaluable_universe_reconstructed": false,
+        "conditional_control_panel_analysis_feasible": true,
+        "explicit_panel_nondetections_are_universal_negatives": false,
+        "intact_negative_records_define_primary_systematic_universe": false,
+        "issue_0003_disposition": "unresolved_resolution_path_3_recommended",
+        "label_construction_authorized": false,
+        "model_training_authorized": false,
+        "primary_binary_negative_labels_feasible": false,
+        "pu_compatibility_policy_design_feasible": true,
+        "split_construction_authorized": false,
+        "strict_construct_benchmark_feasible": false,
+        "table_15_never_detected_pairs_are_negatives": false,
+        "unreported_space_iii_pairs_are_negatives": false
+      },
+      "observed": {
+        "calibrated_primary_assay_probability_feasible": false,
+        "complete_attempted_evaluable_universe_reconstructed": false,
+        "conditional_control_panel_analysis_feasible": true,
+        "explicit_panel_nondetections_are_universal_negatives": false,
+        "intact_negative_records_define_primary_systematic_universe": false,
+        "issue_0003_disposition": "unresolved_resolution_path_3_recommended",
+        "label_construction_authorized": false,
+        "main_huri_mitab_negative_records": 0,
+        "main_huri_pair_view_rows": 52548,
+        "model_training_authorized": false,
+        "primary_binary_negative_labels_feasible": false,
+        "provider_to_supplement_positive_row_difference": 21,
+        "pu_compatibility_policy_design_feasible": true,
+        "split_construction_authorized": false,
+        "strict_construct_benchmark_feasible": false,
+        "supplement_table_9_positive_rows": 52569,
+        "table_15_never_detected_pairs_are_negatives": false,
+        "unreported_space_iii_pairs_are_negatives": false
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "semantics.required_warning_codes",
+      "expected": [
+        "AUTHOR_CODE_REPOSITORY_LICENSE_UNRESOLVED",
+        "HURI_ATTEMPTED_UNIVERSE_UNRESOLVED",
+        "STRICT_CONSTRUCT_COVERAGE_ZERO"
+      ],
+      "observed": [
+        "AUTHOR_CODE_REPOSITORY_LICENSE_UNRESOLVED",
+        "HURI_ATTEMPTED_UNIVERSE_UNRESOLVED",
+        "STRICT_CONSTRUCT_COVERAGE_ZERO"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "semantics.external_public_availability_review",
+      "expected": {
+        "alternate_scientific_branch_or_tag_found": false,
+        "attempted_pair_log_found": false,
+        "authors_code_commit": "16c57919f4e0c3d1a78edf90c105ed42d3022f8f",
+        "authors_code_commit_date": "2020-09-14T13:07:06-04:00",
+        "authors_code_license_file_present": false,
+        "authors_code_repository": "https://github.com/CCSB-DFCI/HuRI_paper",
+        "nature_article": "https://www.nature.com/articles/s41586-020-2188-x",
+        "notes": [
+          "The authors repository republishes Tables 1-28 and selected derived validation tables.",
+          "Its README states that analysis code often reads internal databases and is not fully reproducible off-site.",
+          "Its processed Table 8 has the same 8,239 base rows as the publication table plus an author-derived binary result column.",
+          "No public file enumerates all selected, attempted, evaluable, failed, and observed HuRI screen opportunities."
+        ],
+        "portal_about": "https://www.interactome-atlas.org/about/",
+        "portal_faq": "https://www.interactome-atlas.org/faq/",
+        "public_downloads": "https://www.interactome-atlas.org/download",
+        "reviewed_date": "2026-08-03"
+      },
+      "observed": {
+        "alternate_scientific_branch_or_tag_found": false,
+        "attempted_pair_log_found": false,
+        "authors_code_commit": "16c57919f4e0c3d1a78edf90c105ed42d3022f8f",
+        "authors_code_commit_date": "2020-09-14T13:07:06-04:00",
+        "authors_code_license_file_present": false,
+        "authors_code_repository": "https://github.com/CCSB-DFCI/HuRI_paper",
+        "nature_article": "https://www.nature.com/articles/s41586-020-2188-x",
+        "notes": [
+          "The authors repository republishes Tables 1-28 and selected derived validation tables.",
+          "Its README states that analysis code often reads internal databases and is not fully reproducible off-site.",
+          "Its processed Table 8 has the same 8,239 base rows as the publication table plus an author-derived binary result column.",
+          "No public file enumerates all selected, attempted, evaluable, failed, and observed HuRI screen opportunities."
+        ],
+        "portal_about": "https://www.interactome-atlas.org/about/",
+        "portal_faq": "https://www.interactome-atlas.org/faq/",
+        "public_downloads": "https://www.interactome-atlas.org/download",
+        "reviewed_date": "2026-08-03"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.sha256_sidecar",
+      "expected": {
+        "filename": "AUDIT_REPORT.json",
+        "sha256": "db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e"
+      },
+      "observed": {
+        "filename": "AUDIT_REPORT.json",
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json.sha256",
+        "sha256": "db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "audit.immutable_regular_files",
+      "expected": true,
+      "observed": true,
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.active_container",
+      "expected": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+        "sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+      },
+      "observed": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+        "sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.architecture",
+      "expected": "aarch64",
+      "observed": {
+        "audit": "aarch64",
+        "host": "aarch64"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.audit_container_sha256",
+      "expected": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "observed": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "status": "pass"
+    },
+    {
+      "check_id": "input.audit_config",
+      "expected": {
+        "path": "configs/systematic_screen_metadata_audit_v1.yaml",
+        "sha256": "baedc6cdd96d89790497293650421db4c385fb5747c3a456b27712096e55af5b"
+      },
+      "observed": {
+        "path": "configs/systematic_screen_metadata_audit_v1.yaml",
+        "sha256": "baedc6cdd96d89790497293650421db4c385fb5747c3a456b27712096e55af5b"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "git.audit_commit_and_production_cleanliness",
+      "expected": {
+        "production_audit_started_clean": true,
+        "same_commit": true
+      },
+      "observed": {
+        "audit": {
+          "commit": "7af9473c876e53b777cf6ee829bbcbdf85c49fe4",
+          "status": "",
+          "tracked_worktree_clean": true
+        },
+        "current_commit": "7af9473c876e53b777cf6ee829bbcbdf85c49fe4",
+        "scope": "production_full"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.document.acquisition_manifest",
+      "expected": {
+        "bytes": 33989,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json",
+        "sha256": "5750fe08eac343e23c0f0c56cf749c7477cbfd92233f2679de5fedf9d8f22231"
+      },
+      "observed": {
+        "actual": {
+          "bytes": 33989,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json",
+          "sha256": "5750fe08eac343e23c0f0c56cf749c7477cbfd92233f2679de5fedf9d8f22231"
+        },
+        "audit": {
+          "bytes": 33989,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json",
+          "sha256": "5750fe08eac343e23c0f0c56cf749c7477cbfd92233f2679de5fedf9d8f22231"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.document.parse_manifest",
+      "expected": {
+        "bytes": 223738,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/PARSE_MANIFEST.json",
+        "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+      },
+      "observed": {
+        "actual": {
+          "bytes": 223738,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/PARSE_MANIFEST.json",
+          "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+        },
+        "audit": {
+          "bytes": 223738,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/PARSE_MANIFEST.json",
+          "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.document.staging_validation_report",
+      "expected": {
+        "bytes": 39661,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json",
+        "sha256": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba"
+      },
+      "observed": {
+        "actual": {
+          "bytes": 39661,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json",
+          "sha256": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba"
+        },
+        "audit": {
+          "bytes": 39661,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json",
+          "sha256": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.document.reconciliation_manifest",
+      "expected": {
+        "bytes": 26286,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json",
+        "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+      },
+      "observed": {
+        "actual": {
+          "bytes": 26286,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json",
+          "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+        },
+        "audit": {
+          "bytes": 26286,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json",
+          "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.document.reconciliation_validation_report",
+      "expected": {
+        "bytes": 59114,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json",
+        "sha256": "9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2"
+      },
+      "observed": {
+        "actual": {
+          "bytes": 59114,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json",
+          "sha256": "9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2"
+        },
+        "audit": {
+          "bytes": 59114,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json",
+          "sha256": "9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.document.source_policy",
+      "expected": {
+        "bytes": 3362,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/source_policy_v1.yaml",
+        "sha256": "af43ae0f55fa78ddd5d5ae67ff4e0a9704903c1669ef5a7204749bddc381318a"
+      },
+      "observed": {
+        "actual": {
+          "bytes": 3362,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/source_policy_v1.yaml",
+          "sha256": "af43ae0f55fa78ddd5d5ae67ff4e0a9704903c1669ef5a7204749bddc381318a"
+        },
+        "audit": {
+          "bytes": 3362,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/source_policy_v1.yaml",
+          "sha256": "af43ae0f55fa78ddd5d5ae67ff4e0a9704903c1669ef5a7204749bddc381318a"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.document.evidence_schema",
+      "expected": {
+        "bytes": 22656,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/warehouse/evidence_warehouse_v1.yaml",
+        "sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd"
+      },
+      "observed": {
+        "actual": {
+          "bytes": 22656,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/warehouse/evidence_warehouse_v1.yaml",
+          "sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd"
+        },
+        "audit": {
+          "bytes": 22656,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/warehouse/evidence_warehouse_v1.yaml",
+          "sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.document.staging_schema",
+      "expected": {
+        "bytes": 8723,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/staging/source_native_v2.yaml",
+        "sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca"
+      },
+      "observed": {
+        "actual": {
+          "bytes": 8723,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/staging/source_native_v2.yaml",
+          "sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca"
+        },
+        "audit": {
+          "bytes": 8723,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/staging/source_native_v2.yaml",
+          "sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.raw_asset_inventory",
+      "expected": [
+        "hi_ii_14_pairs",
+        "hi_ii_14_psi",
+        "huri_pairs",
+        "huri_psi",
+        "huri_supplementary_methods",
+        "huri_supplementary_table_guide",
+        "huri_supplementary_tables",
+        "test_space_screen_pairs"
+      ],
+      "observed": [
+        "hi_ii_14_pairs",
+        "hi_ii_14_psi",
+        "huri_pairs",
+        "huri_psi",
+        "huri_supplementary_methods",
+        "huri_supplementary_table_guide",
+        "huri_supplementary_tables",
+        "test_space_screen_pairs"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "input.raw_asset.hi_ii_14_pairs",
+      "expected": {
+        "asset_id": "hi_ii_14_pairs",
+        "bytes": 436256,
+        "path": "data/raw/huri/published_2020/HI-II-14.tsv",
+        "read_only": true,
+        "sha256": "a8ac784ee9ea1ddb767189a9de9345bf778990f7ef29cc7bccb1ce39688a6415"
+      },
+      "observed": {
+        "asset_id": "hi_ii_14_pairs",
+        "bytes": 436256,
+        "path": "data/raw/huri/published_2020/HI-II-14.tsv",
+        "read_only": true,
+        "sha256": "a8ac784ee9ea1ddb767189a9de9345bf778990f7ef29cc7bccb1ce39688a6415"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.raw_asset.hi_ii_14_psi",
+      "expected": {
+        "asset_id": "hi_ii_14_psi",
+        "bytes": 48078485,
+        "path": "data/raw/huri/published_2020/HI-II-14.psi",
+        "read_only": true,
+        "sha256": "0d5542fd63e5dd49151928aa5ee319969670a91753708e75d17edb4718173275"
+      },
+      "observed": {
+        "asset_id": "hi_ii_14_psi",
+        "bytes": 48078485,
+        "path": "data/raw/huri/published_2020/HI-II-14.psi",
+        "read_only": true,
+        "sha256": "0d5542fd63e5dd49151928aa5ee319969670a91753708e75d17edb4718173275"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.raw_asset.huri_pairs",
+      "expected": {
+        "asset_id": "huri_pairs",
+        "bytes": 1681536,
+        "path": "data/raw/huri/published_2020/HuRI.tsv",
+        "read_only": true,
+        "sha256": "4cdf94366ff6e23e71ef9ec81922e85b2b3a1fb08e938f7b00d86c027cf1ecd6"
+      },
+      "observed": {
+        "asset_id": "huri_pairs",
+        "bytes": 1681536,
+        "path": "data/raw/huri/published_2020/HuRI.tsv",
+        "read_only": true,
+        "sha256": "4cdf94366ff6e23e71ef9ec81922e85b2b3a1fb08e938f7b00d86c027cf1ecd6"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.raw_asset.huri_psi",
+      "expected": {
+        "asset_id": "huri_psi",
+        "bytes": 169848924,
+        "path": "data/raw/huri/published_2020/HuRI.psi",
+        "read_only": true,
+        "sha256": "d6e8185519d18ce18cfa66f5eab66ecb1e711113f0b62810e0a145dd33a9ee12"
+      },
+      "observed": {
+        "asset_id": "huri_psi",
+        "bytes": 169848924,
+        "path": "data/raw/huri/published_2020/HuRI.psi",
+        "read_only": true,
+        "sha256": "d6e8185519d18ce18cfa66f5eab66ecb1e711113f0b62810e0a145dd33a9ee12"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.raw_asset.huri_supplementary_methods",
+      "expected": {
+        "asset_id": "huri_supplementary_methods",
+        "bytes": 772012,
+        "path": "data/raw/huri/publication_2020/41586_2020_2188_MOESM1_ESM.pdf",
+        "read_only": true,
+        "sha256": "413db194addfa9f877fd837fe6c4d4a8826896331b5ab52e17fb50ad1c7f45dd"
+      },
+      "observed": {
+        "asset_id": "huri_supplementary_methods",
+        "bytes": 772012,
+        "path": "data/raw/huri/publication_2020/41586_2020_2188_MOESM1_ESM.pdf",
+        "read_only": true,
+        "sha256": "413db194addfa9f877fd837fe6c4d4a8826896331b5ab52e17fb50ad1c7f45dd"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.raw_asset.huri_supplementary_table_guide",
+      "expected": {
+        "asset_id": "huri_supplementary_table_guide",
+        "bytes": 116397,
+        "path": "data/raw/huri/publication_2020/41586_2020_2188_MOESM4_ESM.pdf",
+        "read_only": true,
+        "sha256": "1e01edae188696076bbf003e36aea92833415bf95a58830519b9ed6c504b8127"
+      },
+      "observed": {
+        "asset_id": "huri_supplementary_table_guide",
+        "bytes": 116397,
+        "path": "data/raw/huri/publication_2020/41586_2020_2188_MOESM4_ESM.pdf",
+        "read_only": true,
+        "sha256": "1e01edae188696076bbf003e36aea92833415bf95a58830519b9ed6c504b8127"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.raw_asset.huri_supplementary_tables",
+      "expected": {
+        "asset_id": "huri_supplementary_tables",
+        "bytes": 17506577,
+        "path": "data/raw/huri/publication_2020/41586_2020_2188_MOESM3_ESM.zip",
+        "read_only": true,
+        "sha256": "377f3dca340ab706721b8545afa00c9777dce6b3aeda1c79a3902d4ad5c43a06"
+      },
+      "observed": {
+        "asset_id": "huri_supplementary_tables",
+        "bytes": 17506577,
+        "path": "data/raw/huri/publication_2020/41586_2020_2188_MOESM3_ESM.zip",
+        "read_only": true,
+        "sha256": "377f3dca340ab706721b8545afa00c9777dce6b3aeda1c79a3902d4ad5c43a06"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.raw_asset.test_space_screen_pairs",
+      "expected": {
+        "asset_id": "test_space_screen_pairs",
+        "bytes": 37088,
+        "path": "data/raw/huri/published_2020/Test_space_screens-19.tsv",
+        "read_only": true,
+        "sha256": "d0bdb242a01553a6eea9488e5bbea86b9c73829813d68927249e2a855939dd4c"
+      },
+      "observed": {
+        "asset_id": "test_space_screen_pairs",
+        "bytes": 37088,
+        "path": "data/raw/huri/published_2020/Test_space_screens-19.tsv",
+        "read_only": true,
+        "sha256": "d0bdb242a01553a6eea9488e5bbea86b9c73829813d68927249e2a855939dd4c"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_evidence.part-00000.parquet",
+      "expected": {
+        "bytes": 12806754,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00000.parquet",
+        "rows": 100000,
+        "sha256": "f0892a9a9db3227bbc6636098fed796a1ec584e6ced2a53be8966460028d81b8"
+      },
+      "observed": {
+        "bytes": 12806754,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00000.parquet",
+        "rows": 100000,
+        "sha256": "f0892a9a9db3227bbc6636098fed796a1ec584e6ced2a53be8966460028d81b8"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_evidence.part-00001.parquet",
+      "expected": {
+        "bytes": 12074653,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00001.parquet",
+        "rows": 100000,
+        "sha256": "6ea19b7e00e618607843e6e751a6e8788b54243a78edb53f4e7f4cfa76ad8fa9"
+      },
+      "observed": {
+        "bytes": 12074653,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00001.parquet",
+        "rows": 100000,
+        "sha256": "6ea19b7e00e618607843e6e751a6e8788b54243a78edb53f4e7f4cfa76ad8fa9"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_evidence.part-00002.parquet",
+      "expected": {
+        "bytes": 2155619,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00002.parquet",
+        "rows": 20934,
+        "sha256": "4c1f971e70d8e722e2c45f0ae537a327bdfa933c396bc717ced8d143705b7710"
+      },
+      "observed": {
+        "bytes": 2155619,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00002.parquet",
+        "rows": 20934,
+        "sha256": "4c1f971e70d8e722e2c45f0ae537a327bdfa933c396bc717ced8d143705b7710"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_summary.huri_evidence",
+      "expected": {
+        "files": [
+          {
+            "bytes": 12806754,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00000.parquet",
+            "rows": 100000,
+            "sha256": "f0892a9a9db3227bbc6636098fed796a1ec584e6ced2a53be8966460028d81b8"
+          },
+          {
+            "bytes": 12074653,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00001.parquet",
+            "rows": 100000,
+            "sha256": "6ea19b7e00e618607843e6e751a6e8788b54243a78edb53f4e7f4cfa76ad8fa9"
+          },
+          {
+            "bytes": 2155619,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00002.parquet",
+            "rows": 20934,
+            "sha256": "4c1f971e70d8e722e2c45f0ae537a327bdfa933c396bc717ced8d143705b7710"
+          }
+        ],
+        "parts": 3,
+        "rows": 220934,
+        "table": "evidence_records"
+      },
+      "observed": {
+        "files": [
+          {
+            "bytes": 12806754,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00000.parquet",
+            "rows": 100000,
+            "sha256": "f0892a9a9db3227bbc6636098fed796a1ec584e6ced2a53be8966460028d81b8"
+          },
+          {
+            "bytes": 12074653,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00001.parquet",
+            "rows": 100000,
+            "sha256": "6ea19b7e00e618607843e6e751a6e8788b54243a78edb53f4e7f4cfa76ad8fa9"
+          },
+          {
+            "bytes": 2155619,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/evidence_records/part-00002.parquet",
+            "rows": 20934,
+            "sha256": "4c1f971e70d8e722e2c45f0ae537a327bdfa933c396bc717ced8d143705b7710"
+          }
+        ],
+        "parts": 3,
+        "rows": 220934,
+        "table": "evidence_records"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_pair_views.part-00000.parquet",
+      "expected": {
+        "bytes": 4045391,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/source_pair_views/part-00000.parquet",
+        "rows": 80781,
+        "sha256": "1ae6786b60f13ff68228533c63263c08abf6259d712fcecf03f216d19165b541"
+      },
+      "observed": {
+        "bytes": 4045391,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/source_pair_views/part-00000.parquet",
+        "rows": 80781,
+        "sha256": "1ae6786b60f13ff68228533c63263c08abf6259d712fcecf03f216d19165b541"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_summary.huri_pair_views",
+      "expected": {
+        "files": [
+          {
+            "bytes": 4045391,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/source_pair_views/part-00000.parquet",
+            "rows": 80781,
+            "sha256": "1ae6786b60f13ff68228533c63263c08abf6259d712fcecf03f216d19165b541"
+          }
+        ],
+        "parts": 1,
+        "rows": 80781,
+        "table": "source_pair_views"
+      },
+      "observed": {
+        "files": [
+          {
+            "bytes": 4045391,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/source_pair_views/part-00000.parquet",
+            "rows": 80781,
+            "sha256": "1ae6786b60f13ff68228533c63263c08abf6259d712fcecf03f216d19165b541"
+          }
+        ],
+        "parts": 1,
+        "rows": 80781,
+        "table": "source_pair_views"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_supplement.part-00000.parquet",
+      "expected": {
+        "bytes": 15030734,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00000.parquet",
+        "rows": 100000,
+        "sha256": "79cf55a0cc30935a38e13bbf4a60dd74ddc687ea40d873c063be6ef906a0a41d"
+      },
+      "observed": {
+        "bytes": 15030734,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00000.parquet",
+        "rows": 100000,
+        "sha256": "79cf55a0cc30935a38e13bbf4a60dd74ddc687ea40d873c063be6ef906a0a41d"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_supplement.part-00001.parquet",
+      "expected": {
+        "bytes": 3300845,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00001.parquet",
+        "rows": 100000,
+        "sha256": "8a9ce302e2f7a55265e8b8d0fec8bc26c627bfbee3da650a0e9792f2dc36552a"
+      },
+      "observed": {
+        "bytes": 3300845,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00001.parquet",
+        "rows": 100000,
+        "sha256": "8a9ce302e2f7a55265e8b8d0fec8bc26c627bfbee3da650a0e9792f2dc36552a"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_supplement.part-00002.parquet",
+      "expected": {
+        "bytes": 3218901,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00002.parquet",
+        "rows": 100000,
+        "sha256": "e557f025cada407f31b67895f8f533af4a72c3608cecc9b3ee8b9c3704b17988"
+      },
+      "observed": {
+        "bytes": 3218901,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00002.parquet",
+        "rows": 100000,
+        "sha256": "e557f025cada407f31b67895f8f533af4a72c3608cecc9b3ee8b9c3704b17988"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_supplement.part-00003.parquet",
+      "expected": {
+        "bytes": 3980356,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00003.parquet",
+        "rows": 100000,
+        "sha256": "7fd0cc7f71a840ca7a944d9aa42663335fdfdb269fa5604feb4432ad83117c2f"
+      },
+      "observed": {
+        "bytes": 3980356,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00003.parquet",
+        "rows": 100000,
+        "sha256": "7fd0cc7f71a840ca7a944d9aa42663335fdfdb269fa5604feb4432ad83117c2f"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_supplement.part-00004.parquet",
+      "expected": {
+        "bytes": 3580707,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00004.parquet",
+        "rows": 100000,
+        "sha256": "0d2c3005c23696e2339dc4aca555687a4b71bb1f1abe546c6aa5c597ce758f8a"
+      },
+      "observed": {
+        "bytes": 3580707,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00004.parquet",
+        "rows": 100000,
+        "sha256": "0d2c3005c23696e2339dc4aca555687a4b71bb1f1abe546c6aa5c597ce758f8a"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_supplement.part-00005.parquet",
+      "expected": {
+        "bytes": 1907867,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00005.parquet",
+        "rows": 64178,
+        "sha256": "bc7423bf53be4b220a77a4ea0c13b887269d45e469eccc15433e686d63ec977d"
+      },
+      "observed": {
+        "bytes": 1907867,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00005.parquet",
+        "rows": 64178,
+        "sha256": "bc7423bf53be4b220a77a4ea0c13b887269d45e469eccc15433e686d63ec977d"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_summary.huri_supplement",
+      "expected": {
+        "files": [
+          {
+            "bytes": 15030734,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00000.parquet",
+            "rows": 100000,
+            "sha256": "79cf55a0cc30935a38e13bbf4a60dd74ddc687ea40d873c063be6ef906a0a41d"
+          },
+          {
+            "bytes": 3300845,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00001.parquet",
+            "rows": 100000,
+            "sha256": "8a9ce302e2f7a55265e8b8d0fec8bc26c627bfbee3da650a0e9792f2dc36552a"
+          },
+          {
+            "bytes": 3218901,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00002.parquet",
+            "rows": 100000,
+            "sha256": "e557f025cada407f31b67895f8f533af4a72c3608cecc9b3ee8b9c3704b17988"
+          },
+          {
+            "bytes": 3980356,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00003.parquet",
+            "rows": 100000,
+            "sha256": "7fd0cc7f71a840ca7a944d9aa42663335fdfdb269fa5604feb4432ad83117c2f"
+          },
+          {
+            "bytes": 3580707,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00004.parquet",
+            "rows": 100000,
+            "sha256": "0d2c3005c23696e2339dc4aca555687a4b71bb1f1abe546c6aa5c597ce758f8a"
+          },
+          {
+            "bytes": 1907867,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00005.parquet",
+            "rows": 64178,
+            "sha256": "bc7423bf53be4b220a77a4ea0c13b887269d45e469eccc15433e686d63ec977d"
+          }
+        ],
+        "parts": 6,
+        "rows": 564178,
+        "table": "raw_tabular_records"
+      },
+      "observed": {
+        "files": [
+          {
+            "bytes": 15030734,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00000.parquet",
+            "rows": 100000,
+            "sha256": "79cf55a0cc30935a38e13bbf4a60dd74ddc687ea40d873c063be6ef906a0a41d"
+          },
+          {
+            "bytes": 3300845,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00001.parquet",
+            "rows": 100000,
+            "sha256": "8a9ce302e2f7a55265e8b8d0fec8bc26c627bfbee3da650a0e9792f2dc36552a"
+          },
+          {
+            "bytes": 3218901,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00002.parquet",
+            "rows": 100000,
+            "sha256": "e557f025cada407f31b67895f8f533af4a72c3608cecc9b3ee8b9c3704b17988"
+          },
+          {
+            "bytes": 3980356,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00003.parquet",
+            "rows": 100000,
+            "sha256": "7fd0cc7f71a840ca7a944d9aa42663335fdfdb269fa5604feb4432ad83117c2f"
+          },
+          {
+            "bytes": 3580707,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00004.parquet",
+            "rows": 100000,
+            "sha256": "0d2c3005c23696e2339dc4aca555687a4b71bb1f1abe546c6aa5c597ce758f8a"
+          },
+          {
+            "bytes": 1907867,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/supplementary_raw_tabular_records/part-00005.parquet",
+            "rows": 64178,
+            "sha256": "bc7423bf53be4b220a77a4ea0c13b887269d45e469eccc15433e686d63ec977d"
+          }
+        ],
+        "parts": 6,
+        "rows": 564178,
+        "table": "raw_tabular_records"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_space.part-00000.parquet",
+      "expected": {
+        "bytes": 537515,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/huri_space_membership/part-00000.parquet",
+        "rows": 19818,
+        "sha256": "b344761b27ffcd5eaf48a4f50cc0cfcd0b394a20bd57a5d8724a0a3069f4b516"
+      },
+      "observed": {
+        "bytes": 537515,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/huri_space_membership/part-00000.parquet",
+        "rows": 19818,
+        "sha256": "b344761b27ffcd5eaf48a4f50cc0cfcd0b394a20bd57a5d8724a0a3069f4b516"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_summary.huri_space",
+      "expected": {
+        "files": [
+          {
+            "bytes": 537515,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/huri_space_membership/part-00000.parquet",
+            "rows": 19818,
+            "sha256": "b344761b27ffcd5eaf48a4f50cc0cfcd0b394a20bd57a5d8724a0a3069f4b516"
+          }
+        ],
+        "parts": 1,
+        "rows": 19818,
+        "table": "huri_space_membership"
+      },
+      "observed": {
+        "files": [
+          {
+            "bytes": 537515,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/huri_space_membership/part-00000.parquet",
+            "rows": 19818,
+            "sha256": "b344761b27ffcd5eaf48a4f50cc0cfcd0b394a20bd57a5d8724a0a3069f4b516"
+          }
+        ],
+        "parts": 1,
+        "rows": 19818,
+        "table": "huri_space_membership"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.huri_fusion.part-00000.parquet",
+      "expected": {
+        "bytes": 233985,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/huri_fusion_interference/part-00000.parquet",
+        "rows": 3738,
+        "sha256": "8441bb5b6b16b8972eb541fee8d19d275bdfefabf088c9c42e485e67653a829a"
+      },
+      "observed": {
+        "bytes": 233985,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/huri_fusion_interference/part-00000.parquet",
+        "rows": 3738,
+        "sha256": "8441bb5b6b16b8972eb541fee8d19d275bdfefabf088c9c42e485e67653a829a"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_summary.huri_fusion",
+      "expected": {
+        "files": [
+          {
+            "bytes": 233985,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/huri_fusion_interference/part-00000.parquet",
+            "rows": 3738,
+            "sha256": "8441bb5b6b16b8972eb541fee8d19d275bdfefabf088c9c42e485e67653a829a"
+          }
+        ],
+        "parts": 1,
+        "rows": 3738,
+        "table": "huri_fusion_interference"
+      },
+      "observed": {
+        "files": [
+          {
+            "bytes": 233985,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/huri/huri_fusion_interference/part-00000.parquet",
+            "rows": 3738,
+            "sha256": "8441bb5b6b16b8972eb541fee8d19d275bdfefabf088c9c42e485e67653a829a"
+          }
+        ],
+        "parts": 1,
+        "rows": 3738,
+        "table": "huri_fusion_interference"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.intact_evidence.part-00000.parquet",
+      "expected": {
+        "bytes": 10272584,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00000.parquet",
+        "rows": 100000,
+        "sha256": "20a4764462beaa75bed0328dc2eb9883442b32be61ccb348123c3f0fe533da10"
+      },
+      "observed": {
+        "bytes": 10272584,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00000.parquet",
+        "rows": 100000,
+        "sha256": "20a4764462beaa75bed0328dc2eb9883442b32be61ccb348123c3f0fe533da10"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.intact_evidence.part-00001.parquet",
+      "expected": {
+        "bytes": 9546093,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00001.parquet",
+        "rows": 100000,
+        "sha256": "e28f814ce90765b2cdeb4dfb196bad7b15644889c0c4f3965c899a59dffc53e2"
+      },
+      "observed": {
+        "bytes": 9546093,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00001.parquet",
+        "rows": 100000,
+        "sha256": "e28f814ce90765b2cdeb4dfb196bad7b15644889c0c4f3965c899a59dffc53e2"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.intact_evidence.part-00002.parquet",
+      "expected": {
+        "bytes": 9749803,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00002.parquet",
+        "rows": 100000,
+        "sha256": "2a435b1a62b87ea2e3dcc83901ee22056f9348116c58ae6fc04f9fa9e92f502e"
+      },
+      "observed": {
+        "bytes": 9749803,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00002.parquet",
+        "rows": 100000,
+        "sha256": "2a435b1a62b87ea2e3dcc83901ee22056f9348116c58ae6fc04f9fa9e92f502e"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.intact_evidence.part-00003.parquet",
+      "expected": {
+        "bytes": 8513461,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00003.parquet",
+        "rows": 100000,
+        "sha256": "1b25dc064a1f1f4710a80c2577a9baab748b467faf23c915294b2c3e2a61e7b2"
+      },
+      "observed": {
+        "bytes": 8513461,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00003.parquet",
+        "rows": 100000,
+        "sha256": "1b25dc064a1f1f4710a80c2577a9baab748b467faf23c915294b2c3e2a61e7b2"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.intact_evidence.part-00004.parquet",
+      "expected": {
+        "bytes": 10349523,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00004.parquet",
+        "rows": 100000,
+        "sha256": "ead063175714f18df34f51e05c7fc5d9402c46bf4af8777065e47dd05ee6ff2c"
+      },
+      "observed": {
+        "bytes": 10349523,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00004.parquet",
+        "rows": 100000,
+        "sha256": "ead063175714f18df34f51e05c7fc5d9402c46bf4af8777065e47dd05ee6ff2c"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_file.intact_evidence.part-00005.parquet",
+      "expected": {
+        "bytes": 5817348,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00005.parquet",
+        "rows": 52442,
+        "sha256": "1934640eb2e9e9ca72566460ae109412316db2bc00ed07625bc3433cbae16382"
+      },
+      "observed": {
+        "bytes": 5817348,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00005.parquet",
+        "rows": 52442,
+        "sha256": "1934640eb2e9e9ca72566460ae109412316db2bc00ed07625bc3433cbae16382"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "input.staged_summary.intact_evidence",
+      "expected": {
+        "files": [
+          {
+            "bytes": 10272584,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00000.parquet",
+            "rows": 100000,
+            "sha256": "20a4764462beaa75bed0328dc2eb9883442b32be61ccb348123c3f0fe533da10"
+          },
+          {
+            "bytes": 9546093,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00001.parquet",
+            "rows": 100000,
+            "sha256": "e28f814ce90765b2cdeb4dfb196bad7b15644889c0c4f3965c899a59dffc53e2"
+          },
+          {
+            "bytes": 9749803,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00002.parquet",
+            "rows": 100000,
+            "sha256": "2a435b1a62b87ea2e3dcc83901ee22056f9348116c58ae6fc04f9fa9e92f502e"
+          },
+          {
+            "bytes": 8513461,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00003.parquet",
+            "rows": 100000,
+            "sha256": "1b25dc064a1f1f4710a80c2577a9baab748b467faf23c915294b2c3e2a61e7b2"
+          },
+          {
+            "bytes": 10349523,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00004.parquet",
+            "rows": 100000,
+            "sha256": "ead063175714f18df34f51e05c7fc5d9402c46bf4af8777065e47dd05ee6ff2c"
+          },
+          {
+            "bytes": 5817348,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00005.parquet",
+            "rows": 52442,
+            "sha256": "1934640eb2e9e9ca72566460ae109412316db2bc00ed07625bc3433cbae16382"
+          }
+        ],
+        "parts": 6,
+        "rows": 552442,
+        "table": "evidence_records"
+      },
+      "observed": {
+        "files": [
+          {
+            "bytes": 10272584,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00000.parquet",
+            "rows": 100000,
+            "sha256": "20a4764462beaa75bed0328dc2eb9883442b32be61ccb348123c3f0fe533da10"
+          },
+          {
+            "bytes": 9546093,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00001.parquet",
+            "rows": 100000,
+            "sha256": "e28f814ce90765b2cdeb4dfb196bad7b15644889c0c4f3965c899a59dffc53e2"
+          },
+          {
+            "bytes": 9749803,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00002.parquet",
+            "rows": 100000,
+            "sha256": "2a435b1a62b87ea2e3dcc83901ee22056f9348116c58ae6fc04f9fa9e92f502e"
+          },
+          {
+            "bytes": 8513461,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00003.parquet",
+            "rows": 100000,
+            "sha256": "1b25dc064a1f1f4710a80c2577a9baab748b467faf23c915294b2c3e2a61e7b2"
+          },
+          {
+            "bytes": 10349523,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00004.parquet",
+            "rows": 100000,
+            "sha256": "ead063175714f18df34f51e05c7fc5d9402c46bf4af8777065e47dd05ee6ff2c"
+          },
+          {
+            "bytes": 5817348,
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/intact_imex/evidence_records/part-00005.parquet",
+            "rows": 52442,
+            "sha256": "1934640eb2e9e9ca72566460ae109412316db2bc00ed07625bc3433cbae16382"
+          }
+        ],
+        "parts": 6,
+        "rows": 552442,
+        "table": "evidence_records"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.parquet_recomputation_matches_frozen_expectations",
+      "expected": {
+        "pair_view_label_authorized_rows": 0,
+        "pair_views": {
+          "HI-II-14": 13633,
+          "HuRI": 52548,
+          "Lit-BM": 13441,
+          "Test_space_screens-19": 1159
+        },
+        "scalars": {
+          "huri_evidence_negative": 0,
+          "huri_evidence_positive": 220934,
+          "huri_evidence_rows": 220934,
+          "huri_space_iii_false": 2410,
+          "huri_space_iii_true": 17408,
+          "huri_space_rows": 19818,
+          "intact_explicit_negative_rows": 939,
+          "table_15_label_authorized": 0,
+          "table_15_never_detected_any_version": 3038,
+          "table_15_rows": 3738,
+          "table_5_complete_two_orientation_pair_assays": 522,
+          "table_7_detection_mentions": 3099,
+          "table_8_numeric_scores": 8239,
+          "table_9_assay_version_detection_mentions": 55534,
+          "table_9_screen_detection_mentions": 77653
+        }
+      },
+      "observed": {
+        "pair_view_label_authorized_rows": 0,
+        "pair_views": {
+          "HI-II-14": 13633,
+          "HuRI": 52548,
+          "Lit-BM": 13441,
+          "Test_space_screens-19": 1159
+        },
+        "scalars": {
+          "huri_evidence_negative": 0,
+          "huri_evidence_positive": 220934,
+          "huri_evidence_rows": 220934,
+          "huri_space_iii_false": 2410,
+          "huri_space_iii_true": 17408,
+          "huri_space_rows": 19818,
+          "intact_explicit_negative_rows": 939,
+          "table_15_label_authorized": 0,
+          "table_15_never_detected_any_version": 3038,
+          "table_15_rows": 3738,
+          "table_5_complete_two_orientation_pair_assays": 522,
+          "table_7_detection_mentions": 3099,
+          "table_8_numeric_scores": 8239,
+          "table_9_assay_version_detection_mentions": 55534,
+          "table_9_screen_detection_mentions": 77653
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.panel_outcomes_match_frozen_expectations",
+      "expected": {
+        "table_12": {
+          "0": 2017,
+          "1": 83,
+          "AA": 29,
+          "NA": 262
+        },
+        "table_13": {
+          "0.0": 1272,
+          "1.0": 85,
+          "<blank>": 76
+        },
+        "table_16": {
+          "0.0": 4344,
+          "1.0": 1138,
+          "<blank>": 965
+        },
+        "table_5": {
+          "0": 791,
+          "1": 70,
+          "AA": 142,
+          "NA": 41
+        },
+        "table_6": {
+          "0.0": 2196,
+          "1.0": 150,
+          "<blank>": 493
+        }
+      },
+      "observed": {
+        "table_12": {
+          "0": 2017,
+          "1": 83,
+          "AA": 29,
+          "NA": 262
+        },
+        "table_13": {
+          "0.0": 1272,
+          "1.0": 85,
+          "<blank>": 76
+        },
+        "table_16": {
+          "0.0": 4344,
+          "1.0": 1138,
+          "<blank>": 965
+        },
+        "table_5": {
+          "0": 791,
+          "1": 70,
+          "AA": 142,
+          "NA": 41
+        },
+        "table_6": {
+          "0.0": 2196,
+          "1.0": 150,
+          "<blank>": 493
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.supplement_rows_match_frozen_expectations",
+      "expected": {
+        "huri_supplement_table_12": 2391,
+        "huri_supplement_table_13": 1433,
+        "huri_supplement_table_16": 6447,
+        "huri_supplement_table_5": 1044,
+        "huri_supplement_table_6": 2839,
+        "huri_supplement_table_7": 1214,
+        "huri_supplement_table_8": 8239,
+        "huri_supplement_table_9": 52569
+      },
+      "observed": {
+        "huri_supplement_table_12": 2391,
+        "huri_supplement_table_13": 1433,
+        "huri_supplement_table_16": 6447,
+        "huri_supplement_table_5": 1044,
+        "huri_supplement_table_6": 2839,
+        "huri_supplement_table_7": 1214,
+        "huri_supplement_table_8": 8239,
+        "huri_supplement_table_9": 52569
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.audit_core_matches_independent_recomputation",
+      "expected": {
+        "pair_views": {
+          "HI-II-14": 13633,
+          "HuRI": 52548,
+          "Lit-BM": 13441,
+          "Test_space_screens-19": 1159
+        },
+        "panel_outcomes": {
+          "table_12": {
+            "0": 2017,
+            "1": 83,
+            "AA": 29,
+            "NA": 262
+          },
+          "table_13": {
+            "0.0": 1272,
+            "1.0": 85,
+            "<blank>": 76
+          },
+          "table_16": {
+            "0.0": 4344,
+            "1.0": 1138,
+            "<blank>": 965
+          },
+          "table_5": {
+            "0": 791,
+            "1": 70,
+            "AA": 142,
+            "NA": 41
+          },
+          "table_6": {
+            "0.0": 2196,
+            "1.0": 150,
+            "<blank>": 493
+          }
+        },
+        "panel_strata": {
+          "table_12": {
+            "source": {
+              "Lit-BM-13": 374,
+              "Lit-BM-HT-17": 407,
+              "Lit-BM-LT-17": 389,
+              "Lit-BS-HT-17": 401,
+              "Lit-BS-LT-17": 401,
+              "Lit-NB-17": 419
+            }
+          },
+          "table_13": {
+            "source": {
+              "Lit-BM-13": 200,
+              "Lit-BM-HT-17": 247,
+              "Lit-BM-LT-17": 244,
+              "Lit-BS-HT-17": 249,
+              "Lit-BS-LT-17": 247,
+              "Lit-NB-17": 246
+            }
+          },
+          "table_16": {
+            "Y2H_assay_version": {
+              "1": 3041,
+              "2": 2038,
+              "3": 1368
+            },
+            "category": {
+              "HuRI": 4452,
+              "Lit_and_HuRI": 1995
+            },
+            "num_screens": {
+              "1": 3349,
+              "2": 1790,
+              "3": 1308
+            }
+          },
+          "table_5": {
+            "assay_version": {
+              "1": 348,
+              "2": 348,
+              "3": 348
+            },
+            "source": {
+              "PRS_V1": 504,
+              "RRS_V1": 540
+            }
+          },
+          "table_6": {
+            "experiment": {
+              "testing_y2h_v1": 1105,
+              "testing_y2h_v2": 638,
+              "testing_y2h_v3": 1096
+            },
+            "source": {
+              "Lit_BM_13": 734,
+              "RRS": 927,
+              "test_space_y2h_v1": 488,
+              "test_space_y2h_v2": 209,
+              "test_space_y2h_v3": 481
+            }
+          },
+          "table_8": {
+            "assay": {
+              "GPCA": 3838,
+              "MAPPIT": 4401
+            },
+            "source": {
+              "Hs01": 536,
+              "Hs02": 531,
+              "Hs03": 467,
+              "Hs04": 542,
+              "Hs05": 507,
+              "Hs06": 504,
+              "Hs07": 245,
+              "Hs08": 244,
+              "Hs09": 250,
+              "Lit-BM": 1442,
+              "RRS": 2971
+            },
+            "standard_batch": {
+              "Hvs01": 1468,
+              "Hvs02": 1454,
+              "Hvs03": 1247,
+              "Hvs04": 2818,
+              "Hvs06": 1252
+            }
+          }
+        }
+      },
+      "observed": {
+        "pair_views": {
+          "HI-II-14": 13633,
+          "HuRI": 52548,
+          "Lit-BM": 13441,
+          "Test_space_screens-19": 1159
+        },
+        "panel_outcomes": {
+          "table_12": {
+            "0": 2017,
+            "1": 83,
+            "AA": 29,
+            "NA": 262
+          },
+          "table_13": {
+            "0.0": 1272,
+            "1.0": 85,
+            "<blank>": 76
+          },
+          "table_16": {
+            "0.0": 4344,
+            "1.0": 1138,
+            "<blank>": 965
+          },
+          "table_5": {
+            "0": 791,
+            "1": 70,
+            "AA": 142,
+            "NA": 41
+          },
+          "table_6": {
+            "0.0": 2196,
+            "1.0": 150,
+            "<blank>": 493
+          }
+        },
+        "panel_strata": {
+          "table_12": {
+            "source": {
+              "Lit-BM-13": 374,
+              "Lit-BM-HT-17": 407,
+              "Lit-BM-LT-17": 389,
+              "Lit-BS-HT-17": 401,
+              "Lit-BS-LT-17": 401,
+              "Lit-NB-17": 419
+            }
+          },
+          "table_13": {
+            "source": {
+              "Lit-BM-13": 200,
+              "Lit-BM-HT-17": 247,
+              "Lit-BM-LT-17": 244,
+              "Lit-BS-HT-17": 249,
+              "Lit-BS-LT-17": 247,
+              "Lit-NB-17": 246
+            }
+          },
+          "table_16": {
+            "Y2H_assay_version": {
+              "1": 3041,
+              "2": 2038,
+              "3": 1368
+            },
+            "category": {
+              "HuRI": 4452,
+              "Lit_and_HuRI": 1995
+            },
+            "num_screens": {
+              "1": 3349,
+              "2": 1790,
+              "3": 1308
+            }
+          },
+          "table_5": {
+            "assay_version": {
+              "1": 348,
+              "2": 348,
+              "3": 348
+            },
+            "source": {
+              "PRS_V1": 504,
+              "RRS_V1": 540
+            }
+          },
+          "table_6": {
+            "experiment": {
+              "testing_y2h_v1": 1105,
+              "testing_y2h_v2": 638,
+              "testing_y2h_v3": 1096
+            },
+            "source": {
+              "Lit_BM_13": 734,
+              "RRS": 927,
+              "test_space_y2h_v1": 488,
+              "test_space_y2h_v2": 209,
+              "test_space_y2h_v3": 481
+            }
+          },
+          "table_8": {
+            "assay": {
+              "GPCA": 3838,
+              "MAPPIT": 4401
+            },
+            "source": {
+              "Hs01": 536,
+              "Hs02": 531,
+              "Hs03": 467,
+              "Hs04": 542,
+              "Hs05": 507,
+              "Hs06": 504,
+              "Hs07": 245,
+              "Hs08": 244,
+              "Hs09": 250,
+              "Lit-BM": 1442,
+              "RRS": 2971
+            },
+            "standard_batch": {
+              "Hvs01": 1468,
+              "Hvs02": 1454,
+              "Hvs03": 1247,
+              "Hvs04": 2818,
+              "Hvs06": 1252
+            }
+          }
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.audit_positive_detection_metadata_matches_recomputation",
+      "expected": {
+        "negative_or_failed_opportunities_enumerated": false,
+        "table_7": {
+          "detection_mentions": 3099,
+          "positive_pairs": 1214
+        },
+        "table_9": {
+          "assay_version_detection_mentions": 55534,
+          "detection_multiplicity": [
+            {
+              "detected_assay_versions": 1,
+              "detected_screens": 1,
+              "positive_pairs": 35085
+            },
+            {
+              "detected_assay_versions": 1,
+              "detected_screens": 2,
+              "positive_pairs": 10709
+            },
+            {
+              "detected_assay_versions": 2,
+              "detected_screens": 2,
+              "positive_pairs": 874
+            },
+            {
+              "detected_assay_versions": 1,
+              "detected_screens": 3,
+              "positive_pairs": 4068
+            },
+            {
+              "detected_assay_versions": 2,
+              "detected_screens": 3,
+              "positive_pairs": 738
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 3,
+              "positive_pairs": 21
+            },
+            {
+              "detected_assay_versions": 2,
+              "detected_screens": 4,
+              "positive_pairs": 615
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 4,
+              "positive_pairs": 49
+            },
+            {
+              "detected_assay_versions": 2,
+              "detected_screens": 5,
+              "positive_pairs": 179
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 5,
+              "positive_pairs": 78
+            },
+            {
+              "detected_assay_versions": 2,
+              "detected_screens": 6,
+              "positive_pairs": 43
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 6,
+              "positive_pairs": 65
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 7,
+              "positive_pairs": 31
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 8,
+              "positive_pairs": 11
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 9,
+              "positive_pairs": 3
+            }
+          ],
+          "maximum_detected_screens": 9,
+          "minimum_detected_screens": 1,
+          "positive_pairs": 52569,
+          "screen_detection_mentions": 77653
+        }
+      },
+      "observed": {
+        "negative_or_failed_opportunities_enumerated": false,
+        "table_7": {
+          "detection_mentions": 3099,
+          "positive_pairs": 1214
+        },
+        "table_9": {
+          "assay_version_detection_mentions": 55534,
+          "detection_multiplicity": [
+            {
+              "detected_assay_versions": 1,
+              "detected_screens": 1,
+              "positive_pairs": 35085
+            },
+            {
+              "detected_assay_versions": 1,
+              "detected_screens": 2,
+              "positive_pairs": 10709
+            },
+            {
+              "detected_assay_versions": 2,
+              "detected_screens": 2,
+              "positive_pairs": 874
+            },
+            {
+              "detected_assay_versions": 1,
+              "detected_screens": 3,
+              "positive_pairs": 4068
+            },
+            {
+              "detected_assay_versions": 2,
+              "detected_screens": 3,
+              "positive_pairs": 738
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 3,
+              "positive_pairs": 21
+            },
+            {
+              "detected_assay_versions": 2,
+              "detected_screens": 4,
+              "positive_pairs": 615
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 4,
+              "positive_pairs": 49
+            },
+            {
+              "detected_assay_versions": 2,
+              "detected_screens": 5,
+              "positive_pairs": 179
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 5,
+              "positive_pairs": 78
+            },
+            {
+              "detected_assay_versions": 2,
+              "detected_screens": 6,
+              "positive_pairs": 43
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 6,
+              "positive_pairs": 65
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 7,
+              "positive_pairs": 31
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 8,
+              "positive_pairs": 11
+            },
+            {
+              "detected_assay_versions": 3,
+              "detected_screens": 9,
+              "positive_pairs": 3
+            }
+          ],
+          "maximum_detected_screens": 9,
+          "minimum_detected_screens": 1,
+          "positive_pairs": 52569,
+          "screen_detection_mentions": 77653
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.audit_control_and_negative_panels_match_recomputation",
+      "expected": {
+        "intact": {
+          "rows": 939,
+          "state_combinations": [
+            {
+              "attempted_state": "attempted",
+              "evaluability_state": "unknown",
+              "n": 939,
+              "observation_state": "negative",
+              "search_space_state": "not_applicable",
+              "selection_state": "unknown",
+              "state_basis": "source_asserted",
+              "technical_state": "unknown"
+            }
+          ]
+        },
+        "table_15": {
+          "label_authorized_rows": 0,
+          "never_detected_any_version": 3038,
+          "rows": 3738
+        },
+        "table_5": {
+          "complete_two_orientation_pair_assays": 522,
+          "pair_assays": 522
+        },
+        "table_8_numeric": 8239
+      },
+      "observed": {
+        "intact": {
+          "rows": 939,
+          "state_combinations": [
+            {
+              "attempted_state": "attempted",
+              "evaluability_state": "unknown",
+              "n": 939,
+              "observation_state": "negative",
+              "search_space_state": "not_applicable",
+              "selection_state": "unknown",
+              "state_basis": "source_asserted",
+              "technical_state": "unknown"
+            }
+          ],
+          "systematic_primary_universe": false
+        },
+        "table_15": {
+          "label_authorized_rows": 0,
+          "never_detected_any_version": 3038,
+          "patterns": [
+            {
+              "found_v1": false,
+              "found_v2": false,
+              "found_v3": false,
+              "n": 3038
+            },
+            {
+              "found_v1": false,
+              "found_v2": false,
+              "found_v3": true,
+              "n": 78
+            },
+            {
+              "found_v1": false,
+              "found_v2": true,
+              "found_v3": false,
+              "n": 129
+            },
+            {
+              "found_v1": false,
+              "found_v2": true,
+              "found_v3": true,
+              "n": 53
+            },
+            {
+              "found_v1": true,
+              "found_v2": false,
+              "found_v3": false,
+              "n": 326
+            },
+            {
+              "found_v1": true,
+              "found_v2": false,
+              "found_v3": true,
+              "n": 23
+            },
+            {
+              "found_v1": true,
+              "found_v2": true,
+              "found_v3": false,
+              "n": 68
+            },
+            {
+              "found_v1": true,
+              "found_v2": true,
+              "found_v3": true,
+              "n": 23
+            }
+          ],
+          "rows": 3738
+        },
+        "table_5": {
+          "complete_two_orientation_pair_assays": 522,
+          "pair_assays": 522
+        },
+        "table_8_numeric": 8239
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.scientific_conclusion_counts",
+      "expected": {
+        "main_huri_mitab_negative_records": 0,
+        "main_huri_pair_view_rows": 52548,
+        "provider_to_supplement_positive_row_difference": 21,
+        "supplement_table_9_positive_rows": 52569
+      },
+      "observed": {
+        "main_huri_mitab_negative_records": 0,
+        "main_huri_pair_view_rows": 52548,
+        "provider_to_supplement_positive_row_difference": 21,
+        "supplement_table_9_positive_rows": 52569
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "source_inventory.frozen_document_structure",
+      "expected": {
+        "archive_scientific_tables": 29,
+        "methods_pdf_pages": 32,
+        "table_guide_pdf_pages": 3
+      },
+      "observed": {
+        "archive_scientific_tables": 29,
+        "methods_pdf_pages": 32,
+        "table_guide_pdf_pages": 3
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "blocker.ISSUE-0003",
+      "detail": "Integrity validation passed for the public metadata audit, but the complete HuRI selected/attempted/evaluable opportunity log remains absent.",
+      "observed": "attempted_evaluable_pair_universe_unresolved",
+      "status": "warning"
+    },
+    {
+      "check_id": "blocker.ISSUE-0005",
+      "detail": "The strict construct benchmark remains unavailable; reference-sequence mappings may not be promoted to construct confidence A or B.",
+      "observed": "strict_construct_a_or_b_coverage_zero",
+      "status": "warning"
+    },
+    {
+      "check_id": "blocker.external_author_repository_license",
+      "detail": "The reviewed author repository is metadata evidence only and was not ingested as a project data source.",
+      "observed": "no_license_file",
+      "status": "warning"
+    }
+  ],
+  "config": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/systematic_screen_metadata_audit_v1.yaml",
+  "config_sha256": "baedc6cdd96d89790497293650421db4c385fb5747c3a456b27712096e55af5b",
+  "gate_id": "systematic_screen_metadata_audit_integrity_v1",
+  "git": {
+    "commit": "7af9473c876e53b777cf6ee829bbcbdf85c49fe4",
+    "status": "?? artifacts/validation/benchmark_design/",
+    "tracked_worktree_clean": false
+  },
+  "independently_recomputed_metrics": {
+    "huri_evidence": {
+      "negative": 0,
+      "positive": 220934,
+      "rows": 220934,
+      "state_combinations": [
+        {
+          "attempted_state": "attempted",
+          "evaluability_state": "evaluable",
+          "n": 49389,
+          "observation_state": "positive",
+          "search_space_state": "unknown",
+          "selection_state": "selected",
+          "source_dataset": "HI-II-14",
+          "state_basis": "logically_implied_by_source_positive",
+          "technical_state": "passed"
+        },
+        {
+          "attempted_state": "attempted",
+          "evaluability_state": "evaluable",
+          "n": 171545,
+          "observation_state": "positive",
+          "search_space_state": "unknown",
+          "selection_state": "selected",
+          "source_dataset": "HuRI",
+          "state_basis": "logically_implied_by_source_positive",
+          "technical_state": "passed"
+        }
+      ]
+    },
+    "huri_pair_view_label_authorized_rows": 0,
+    "huri_pair_view_rows": {
+      "HI-II-14": 13633,
+      "HuRI": 52548,
+      "Lit-BM": 13441,
+      "Test_space_screens-19": 1159
+    },
+    "huri_space": {
+      "in_space_iii_false": 2410,
+      "in_space_iii_true": 17408,
+      "in_space_iii_unknown": 0,
+      "rows": 19818,
+      "unique_genes": 19818
+    },
+    "intact_explicit_negatives": {
+      "rows": 939,
+      "state_combinations": [
+        {
+          "attempted_state": "attempted",
+          "evaluability_state": "unknown",
+          "n": 939,
+          "observation_state": "negative",
+          "search_space_state": "not_applicable",
+          "selection_state": "unknown",
+          "state_basis": "source_asserted",
+          "technical_state": "unknown"
+        }
+      ]
+    },
+    "panel_outcome_counts": {
+      "table_12": {
+        "0": 2017,
+        "1": 83,
+        "AA": 29,
+        "NA": 262
+      },
+      "table_13": {
+        "0.0": 1272,
+        "1.0": 85,
+        "<blank>": 76
+      },
+      "table_16": {
+        "0.0": 4344,
+        "1.0": 1138,
+        "<blank>": 965
+      },
+      "table_5": {
+        "0": 791,
+        "1": 70,
+        "AA": 142,
+        "NA": 41
+      },
+      "table_6": {
+        "0.0": 2196,
+        "1.0": 150,
+        "<blank>": 493
+      }
+    },
+    "panel_stratum_counts": {
+      "table_12": {
+        "source": {
+          "Lit-BM-13": 374,
+          "Lit-BM-HT-17": 407,
+          "Lit-BM-LT-17": 389,
+          "Lit-BS-HT-17": 401,
+          "Lit-BS-LT-17": 401,
+          "Lit-NB-17": 419
+        }
+      },
+      "table_13": {
+        "source": {
+          "Lit-BM-13": 200,
+          "Lit-BM-HT-17": 247,
+          "Lit-BM-LT-17": 244,
+          "Lit-BS-HT-17": 249,
+          "Lit-BS-LT-17": 247,
+          "Lit-NB-17": 246
+        }
+      },
+      "table_16": {
+        "Y2H_assay_version": {
+          "1": 3041,
+          "2": 2038,
+          "3": 1368
+        },
+        "category": {
+          "HuRI": 4452,
+          "Lit_and_HuRI": 1995
+        },
+        "num_screens": {
+          "1": 3349,
+          "2": 1790,
+          "3": 1308
+        }
+      },
+      "table_5": {
+        "assay_version": {
+          "1": 348,
+          "2": 348,
+          "3": 348
+        },
+        "source": {
+          "PRS_V1": 504,
+          "RRS_V1": 540
+        }
+      },
+      "table_6": {
+        "experiment": {
+          "testing_y2h_v1": 1105,
+          "testing_y2h_v2": 638,
+          "testing_y2h_v3": 1096
+        },
+        "source": {
+          "Lit_BM_13": 734,
+          "RRS": 927,
+          "test_space_y2h_v1": 488,
+          "test_space_y2h_v2": 209,
+          "test_space_y2h_v3": 481
+        }
+      },
+      "table_8": {
+        "assay": {
+          "GPCA": 3838,
+          "MAPPIT": 4401
+        },
+        "source": {
+          "Hs01": 536,
+          "Hs02": 531,
+          "Hs03": 467,
+          "Hs04": 542,
+          "Hs05": 507,
+          "Hs06": 504,
+          "Hs07": 245,
+          "Hs08": 244,
+          "Hs09": 250,
+          "Lit-BM": 1442,
+          "RRS": 2971
+        },
+        "standard_batch": {
+          "Hvs01": 1468,
+          "Hvs02": 1454,
+          "Hvs03": 1247,
+          "Hvs04": 2818,
+          "Hvs06": 1252
+        }
+      }
+    },
+    "supplement_table_rows": {
+      "huri_supplement_table_1": 19818,
+      "huri_supplement_table_10:HuRI": 108,
+      "huri_supplement_table_10:bioplex": 1155,
+      "huri_supplement_table_10:cofrac": 1209,
+      "huri_supplement_table_10:info": 3,
+      "huri_supplement_table_10:litBM": 387,
+      "huri_supplement_table_10:qubic": 572,
+      "huri_supplement_table_11": 64006,
+      "huri_supplement_table_12": 2391,
+      "huri_supplement_table_13": 1433,
+      "huri_supplement_table_14": 13441,
+      "huri_supplement_table_15:20190418_fusion_interference": 3738,
+      "huri_supplement_table_15:legend": 13,
+      "huri_supplement_table_16": 6447,
+      "huri_supplement_table_17": 1004,
+      "huri_supplement_table_18": 1817,
+      "huri_supplement_table_19": 161583,
+      "huri_supplement_table_2": 17436,
+      "huri_supplement_table_20": 10,
+      "huri_supplement_table_21:Age": 19906,
+      "huri_supplement_table_21:Expression (BioPlex)": 10121,
+      "huri_supplement_table_21:Expression (GTEx)": 17114,
+      "huri_supplement_table_21:Expression (QUBIC)": 8582,
+      "huri_supplement_table_21:Fitness Effect": 19727,
+      "huri_supplement_table_21:Lethality": 1879,
+      "huri_supplement_table_21:LoF intolerance": 17591,
+      "huri_supplement_table_21:Publication": 19508,
+      "huri_supplement_table_21:Sheet2": 10,
+      "huri_supplement_table_22": 16695,
+      "huri_supplement_table_23": 16695,
+      "huri_supplement_table_24": 52088,
+      "huri_supplement_table_25": 820,
+      "huri_supplement_table_26": 217,
+      "huri_supplement_table_27": 679,
+      "huri_supplement_table_28": 21,
+      "huri_supplement_table_29:Sheet1": 33,
+      "huri_supplement_table_3": 8,
+      "huri_supplement_table_4": 8,
+      "huri_supplement_table_5": 1044,
+      "huri_supplement_table_6": 2839,
+      "huri_supplement_table_7": 1214,
+      "huri_supplement_table_8": 8239,
+      "huri_supplement_table_9": 52569
+    },
+    "table_15": {
+      "label_authorized_rows": 0,
+      "never_detected_any_version": 3038,
+      "rows": 3738
+    },
+    "table_5_orientation": {
+      "complete_two_orientation_pair_assays": 522,
+      "pair_assays": 522
+    },
+    "table_7": {
+      "detection_mentions": 3099,
+      "positive_pairs": 1214
+    },
+    "table_8_numeric_scores": 8239,
+    "table_9": {
+      "assay_version_detection_mentions": 55534,
+      "detection_multiplicity": [
+        {
+          "detected_assay_versions": 1,
+          "detected_screens": 1,
+          "positive_pairs": 35085
+        },
+        {
+          "detected_assay_versions": 1,
+          "detected_screens": 2,
+          "positive_pairs": 10709
+        },
+        {
+          "detected_assay_versions": 2,
+          "detected_screens": 2,
+          "positive_pairs": 874
+        },
+        {
+          "detected_assay_versions": 1,
+          "detected_screens": 3,
+          "positive_pairs": 4068
+        },
+        {
+          "detected_assay_versions": 2,
+          "detected_screens": 3,
+          "positive_pairs": 738
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 3,
+          "positive_pairs": 21
+        },
+        {
+          "detected_assay_versions": 2,
+          "detected_screens": 4,
+          "positive_pairs": 615
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 4,
+          "positive_pairs": 49
+        },
+        {
+          "detected_assay_versions": 2,
+          "detected_screens": 5,
+          "positive_pairs": 179
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 5,
+          "positive_pairs": 78
+        },
+        {
+          "detected_assay_versions": 2,
+          "detected_screens": 6,
+          "positive_pairs": 43
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 6,
+          "positive_pairs": 65
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 7,
+          "positive_pairs": 31
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 8,
+          "positive_pairs": 11
+        },
+        {
+          "detected_assay_versions": 3,
+          "detected_screens": 9,
+          "positive_pairs": 3
+        }
+      ],
+      "maximum_detected_screens": 9,
+      "minimum_detected_screens": 1,
+      "positive_pairs": 52569,
+      "screen_detection_mentions": 77653
+    }
+  },
+  "interpretation": "Pass certifies integrity, reproducibility, and conservative semantics of the metadata audit. It does not establish a complete tested universe, authorize binary negatives, satisfy strict construct coverage, or authorize label, split, structure, or model construction.",
+  "runtime": {
+    "architecture": "aarch64",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "duckdb_version": "1.5.5"
+  },
+  "schema_version": 1,
+  "scope": "production_full",
+  "status": "pass",
+  "validated_at_utc": "2026-08-03T20:48:41.416782+00:00"
+}

@@ -1,8 +1,8 @@
 # ISSUE-0003: Public HuRI files do not reconstruct the full attempted/evaluable pair universe
 
-**Status:** Open; mitigated for acquisition, blocking for primary negative labels  
-**Opened:** 2026-08-03  
-**Severity:** High scientific-validity risk  
+**Status:** Open; public-data recovery exhausted, PU amendment proposed and awaiting expert-group approval
+**Opened:** 2026-08-03
+**Severity:** High scientific-validity risk
 **Owner:** Codex
 
 ## Observation
@@ -39,3 +39,34 @@ The issue closes only when either:
 - the expert group approves a blueprint amendment making PU/latent-label inference the definitive primary estimand and removes any claim requiring a complete tested-negative universe.
 
 Acquisition and provenance-aware positive-evidence parsing may proceed while this issue remains open. Binary label construction and model training may not.
+
+## Validated public-data disposition (2026-08-03)
+
+The production metadata audit and its independent validator are complete:
+
+- audit SHA-256: `db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e`;
+- validation SHA-256: `2ca92051172b7a7a512072f3ed6212ac8caed5891870abcea7c6e5929cd56a01`;
+- validation result: 71 pass, 0 fail, 3 expected blocker warnings;
+- HuRI/HI-II-14 evidence: 220,934 rows, all positive;
+- primary HuRI negative evidence: zero rows; and
+- complete pair-level selected/attempted/evaluable universe: not reconstructed.
+
+The audit covered all 29 scientific supplementary tables, the supplementary
+methods and table guide, the portal representations, and the public authors'
+repository at its reviewed commit. No public attempted-pair log, complete
+retest-failure log, prescreen exclusion log, or alternate scientific tag or
+branch was found. The authors' repository has no license file and was not
+ingested.
+
+Resolution Paths 1 and 2 remain conceptually available if new official data
+appear, but neither is executable from the current public release. Resolution
+Path 3 is proposed in:
+
+- `configs/benchmark_estimand_policy_proposal_v1.yaml`;
+- `docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md`; and
+- `governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md`.
+
+The issue remains open because the exit criterion requires expert-group
+approval of the amendment. Audit completion, silence, or absence of additional
+comments is not approval. Label, split, structural, and model construction
+remain prohibited.

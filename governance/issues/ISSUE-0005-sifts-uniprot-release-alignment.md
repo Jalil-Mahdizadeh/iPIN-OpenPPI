@@ -1,6 +1,6 @@
 # ISSUE-0005: Frozen SIFTS mappings and UniProt sequences are from different releases
 
-**Status:** Open; non-blocking for source parsing, blocking for exact structural mapping and structure-derived labels
+**Status:** Open; non-blocking for reference-sequence PU design, blocking for strict construct, structural, and interface-derived tiers
 **Opened:** 2026-08-03
 **Severity:** High structural-validity risk
 **Owner:** Codex
@@ -96,3 +96,21 @@ cross-release subset after a report demonstrates:
 Source parsing and non-structural evidence reconciliation may proceed while
 this issue remains open. Structural label construction and model training may
 not.
+
+## Benchmark-design disposition (2026-08-03)
+
+The systematic-screen audit confirms that the accepted reconciliation contains
+zero construct-confidence A/B rows. Blueprint Amendment 001 therefore proposes:
+
+- an active reference-sequence PU ranking tier with no construct or structural
+  label claim;
+- an inactive strict construct/structural tier;
+- no structural-interface split or supervision while this issue is open; and
+- reactivation only after the existing release-alignment, sequence-identity,
+  residue-interval, anomalous-coordinate, and zero-unresolved-label criteria
+  pass.
+
+This disposition does not resolve or weaken this issue. It prevents the
+structural blocker from being silently bypassed while allowing expert review of
+a non-structural reference-sequence design. Structural mapping and model
+training remain unauthorized.
