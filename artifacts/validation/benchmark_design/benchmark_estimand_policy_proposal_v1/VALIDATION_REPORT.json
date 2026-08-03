@@ -1,0 +1,862 @@
+{
+  "authorizations": {
+    "amendment_effective": false,
+    "candidate_universe_construction": false,
+    "evidence_indicator_construction": false,
+    "label_construction": false,
+    "model_implementation": false,
+    "model_training": false,
+    "proposal_ready_for_expert_review": true,
+    "split_construction": false,
+    "structural_mapping": false
+  },
+  "check_counts": {
+    "fail": 0,
+    "pass": 42,
+    "warning": 3
+  },
+  "checks": [
+    {
+      "check_id": "policy.schema_version",
+      "expected": 1,
+      "observed": 1,
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.policy_id",
+      "expected": "benchmark_estimand_policy_proposal_v1",
+      "observed": "benchmark_estimand_policy_proposal_v1",
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.version",
+      "expected": "0.1.0",
+      "observed": "0.1.0",
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.status",
+      "expected": "proposed_for_expert_group_review",
+      "observed": "proposed_for_expert_group_review",
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.effective",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "policy.supersedes",
+      "expected": null,
+      "observed": null,
+      "status": "pass"
+    },
+    {
+      "check_id": "authority.design_and_validation_only",
+      "expected": {
+        "policy_design": true,
+        "proposal_validation": true
+      },
+      "observed": {
+        "activation_condition": "expert_group_acceptance_of_blueprint_amendment_and_new_gate_record",
+        "candidate_universe_construction": false,
+        "evidence_indicator_construction": false,
+        "label_construction": false,
+        "model_implementation": false,
+        "model_training": false,
+        "policy_design": true,
+        "proposal_validation": true,
+        "split_construction": false,
+        "structural_mapping": false
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "authority.construction_and_training_prohibited",
+      "expected": {
+        "candidate_universe_construction": false,
+        "evidence_indicator_construction": false,
+        "label_construction": false,
+        "model_implementation": false,
+        "model_training": false,
+        "split_construction": false,
+        "structural_mapping": false
+      },
+      "observed": {
+        "candidate_universe_construction": false,
+        "evidence_indicator_construction": false,
+        "label_construction": false,
+        "model_implementation": false,
+        "model_training": false,
+        "split_construction": false,
+        "structural_mapping": false
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "authority.activation_requires_expert_acceptance",
+      "expected": "expert_group_acceptance_of_blueprint_amendment_and_new_gate_record",
+      "observed": "expert_group_acceptance_of_blueprint_amendment_and_new_gate_record",
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.conclusion",
+      "expected": {
+        "binary_negative_benchmark_feasible": false,
+        "complete_selected_attempted_evaluable_huri_universe_reconstructed": false,
+        "conditional_control_diagnostics_feasible": true,
+        "original_calibrated_assay_probability_primary_endpoint_feasible": false,
+        "reference_sequence_pu_ranking_design_feasible": true,
+        "strict_construct_benchmark_feasible": false,
+        "structure_derived_benchmark_feasible": false
+      },
+      "observed": {
+        "binary_negative_benchmark_feasible": false,
+        "complete_selected_attempted_evaluable_huri_universe_reconstructed": false,
+        "conditional_control_diagnostics_feasible": true,
+        "original_calibrated_assay_probability_primary_endpoint_feasible": false,
+        "reference_sequence_pu_ranking_design_feasible": true,
+        "strict_construct_benchmark_feasible": false,
+        "structure_derived_benchmark_feasible": false
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.frozen_counts",
+      "expected": {
+        "huri_evidence_rows": 220934,
+        "huri_negative_evidence_rows": 0,
+        "huri_positive_evidence_rows": 220934,
+        "space_iii_gene_pair_upper_universe_excluding_self": 151510528,
+        "space_iii_genes": 17408,
+        "strict_construct_a_or_b_rows": 0
+      },
+      "observed": {
+        "huri_evidence_rows": 220934,
+        "huri_negative_evidence_rows": 0,
+        "huri_pair_view_rows": 52548,
+        "huri_positive_evidence_rows": 220934,
+        "huri_supplement_table_9_assay_version_detection_mentions": 55534,
+        "huri_supplement_table_9_positive_pairs": 52569,
+        "huri_supplement_table_9_screen_detection_mentions": 77653,
+        "intact_explicit_negative_rows": 939,
+        "space_iii_gene_pair_upper_universe_excluding_self": 151510528,
+        "space_iii_genes": 17408,
+        "strict_construct_a_or_b_rows": 0,
+        "table_15_never_detected_any_assay_version": 3038,
+        "table_15_selected_pairs": 3738
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "scope.reference_sequence_heteromeric_candidate_universe",
+      "expected": {
+        "biological_unit": "unordered_reference_sequence_pair",
+        "candidate_universe_semantics": "candidate_and_unlabeled_not_attempted_not_evaluable_not_negative",
+        "laboratory_validation_available": false,
+        "primary_pair_type": "heteromeric"
+      },
+      "observed": {
+        "biological_unit": "unordered_reference_sequence_pair",
+        "candidate_membership": {
+          "exact_eligibility_count_status": "to_be_audited_only_after_policy_approval",
+          "exclusions": [
+            "homomers",
+            "unary_or_nary_records",
+            "nonprotein_molecules",
+            "ambiguous_or_unmapped_reference_sequences",
+            "source_pairs_outside_the_frozen_candidate_universe"
+          ],
+          "requirements": [
+            "both_participants_map_to_usable_frozen_reference_sequences",
+            "human_taxid_9606",
+            "protein_molecule_type",
+            "two_distinct_biological_participants",
+            "two_distinct_frozen_sequence_hashes",
+            "unordered_pair_canonicalization"
+          ],
+          "source": "frozen_HuRI_Space_III_gene_ORF_universe"
+        },
+        "candidate_universe_semantics": "candidate_and_unlabeled_not_attempted_not_evaluable_not_negative",
+        "evidence_unit": "source_record_by_construct_orientation_assay_version_batch_and_repeat",
+        "interaction_semantics": "direct_binary_physical_compatibility",
+        "laboratory_validation_available": false,
+        "primary_input": "two_frozen_reference_amino_acid_sequences",
+        "primary_pair_type": "heteromeric",
+        "species": "Homo_sapiens"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "variables.unlabeled_and_selection_semantics",
+      "expected": "unlabeled_not_negative_and_no_SCAR_or_probability_identification",
+      "observed": {
+        "E_ABm": {
+          "meaning": "technically_evaluable_in_assay_m",
+          "observed_completeness": "positive_only_or_unavailable"
+        },
+        "O_ABm": {
+          "meaning": "assay_outcome_given_selected_and_evaluable",
+          "observed_completeness": "positive_only_for_primary_huri_release"
+        },
+        "R_AB": {
+          "meaning": "pair_has_a_released_qualifying_positive_record_by_the_frozen_information_cutoff",
+          "observed": true,
+          "prohibited_interpretation": "unlabeled_is_negative",
+          "values": [
+            "released_positive",
+            "unlabeled"
+          ]
+        },
+        "S_ABm": {
+          "meaning": "selected_or_attempted_in_assay_m",
+          "observed_completeness": "positive_only_or_unavailable"
+        },
+        "X_AB": {
+          "meaning": "frozen_pair_sequence_features_and_permitted_pre_cutoff_metadata",
+          "observed": true
+        },
+        "Y_AB": {
+          "identifiability": "not_identified_from_current_public_release",
+          "meaning": "latent_direct_binary_compatibility_in_the_relevant_biochemical_context",
+          "observed": false
+        },
+        "selection_propensity": {
+          "assumption": "feature_dependent_and_unknown",
+          "scar_or_constant_propensity_assumption_authorized": false
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "estimand.primary_is_ranking_not_probability",
+      "expected": "released_positive_recovery_ranking_with_no_probability_claim",
+      "observed": {
+        "assay_probability_interpretation": "prohibited",
+        "biological_binding_probability_interpretation": "prohibited",
+        "formal_definition": "theta(f)=P[f(X_R=1)>f(X_R=0_unlabeled)]+0.5*P[f(X_R=1)=f(X_R=0_unlabeled)] under the frozen positive and deterministic unlabeled sampling distributions",
+        "id": "frozen_released_positive_recovery_ranking",
+        "model_output": "symmetric_sequence_compatibility_prioritization_score",
+        "probability_interpretation": "prohibited",
+        "scope_statement_required": true,
+        "selection_causal_interpretation": "prohibited",
+        "target": "ordering_of_frozen_candidate_pairs_by_recovery_of_held_out_released_positive_evidence"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "estimand.future_probability_tiers_inactive",
+      "expected": false,
+      "observed": {
+        "future_tested_universe": false,
+        "latent_compatibility_probability": false
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence_states.no_absent_or_technical_negative",
+      "expected": "all_prohibited",
+      "observed": {
+        "negative_roles": {
+          "ambiguous_or_missing": "prohibited",
+          "autoactivator": "prohibited",
+          "invalid": "prohibited",
+          "outside_search_space": "prohibited",
+          "primary_huri_released_positive": "prohibited",
+          "technical_failure": "prohibited",
+          "unreported_space_iii_pair": "prohibited"
+        },
+        "random_control_population": "prohibited",
+        "source_explicit_universal": "prohibited"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "tiers.only_reference_PU_and_controls_feasible",
+      "expected": "PU_R_and_CP_D_only_with_no_calibration_or_universal_negatives",
+      "observed": {
+        "CP_D": {
+          "feasible_now": true,
+          "name": "conditional_panel_diagnostics",
+          "panels": {
+            "table_12": "selected_literature_y2h_recovery",
+            "table_13": "selected_literature_mappit_recovery",
+            "table_15": "selected_y2h_assay_version_sensitivity",
+            "table_16": "selected_mappit_recovery_by_y2h_detection_history",
+            "table_5": "y2h_reference_orientation_and_assay_version",
+            "table_6": "selected_mappit_recovery",
+            "table_8": "selected_quantitative_mappit_gpca_recovery"
+          },
+          "role": "secondary_diagnostic",
+          "training_use": "prohibited_for_protected_diagnostic_records",
+          "universal_negative_role": "prohibited"
+        },
+        "PU_R": {
+          "calibration_claims": false,
+          "construct_confidence": "reference_sequence_mapping_not_construct_A_or_B",
+          "feasible_now": true,
+          "name": "reference_sequence_positive_unlabeled_ranking",
+          "role": "proposed_primary",
+          "structural_labels": false
+        },
+        "SC_S": {
+          "activation_gate": "future_strict_construct_and_structure_gate",
+          "feasible_now": false,
+          "name": "strict_construct_and_structural_benchmark",
+          "role": "future_optional"
+        },
+        "TU_C": {
+          "activation_gate": "future_tested_universe_gate",
+          "feasible_now": false,
+          "name": "tested_universe_calibrated_assay_endpoint",
+          "role": "future_optional"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "sampling.not_started_and_not_negative",
+      "expected": "not_started_deterministic_weighted_PU_sampling",
+      "observed": {
+        "class_prior": {
+          "grid_rule": "freeze_a_log_spaced_grid_from_the_observed_positive_fraction_to_0.05_before_model_results",
+          "identified": false,
+          "point_estimate_claim_authorized": false,
+          "report_every_grid_value": true,
+          "sensitivity_analysis_required": true
+        },
+        "construction_status": "not_started",
+        "known_positive_exclusion": {
+          "held_out_source_or_temporal_labels_visible_to_construction": false,
+          "rule": "exclude_visible_pre_cutoff_qualifying_direct_positive_evidence_from_the_unlabeled_pool"
+        },
+        "positive_deduplication_unit": "unordered_reference_sequence_pair",
+        "positive_indicator_cutoff": "frozen_complete_information_cutoff",
+        "pseudo_negative_semantics": {
+          "matched_negative_bce": "diagnostic_baseline_only",
+          "random_negative_bce": "diagnostic_baseline_only",
+          "scientific_negative_label": false
+        },
+        "sampler": {
+          "hash": "SHA256",
+          "method": "deterministic_uniform_hash_sampling_without_replacement_within_split_and_stratum",
+          "preserve_full_candidate_evaluation_where_computationally_feasible": true,
+          "public_salt": "ipin-openppi-benchmark-v1",
+          "record_inclusion_probability": true,
+          "record_sampling_weight": true
+        },
+        "unlabeled_pool": "eligible_candidate_pairs_without_visible_qualifying_positive_evidence_at_the_axis_specific_cutoff"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "splits.not_started_and_cluster_first",
+      "expected": "not_started_30_percent_component_first_exclusive_C2",
+      "observed": {
+        "construction_status": "not_started",
+        "final_test": {
+          "one_first_evaluation_rule": true,
+          "protected_and_read_only": true,
+          "split_revision_after_result": "requires_new_version_and_full_rerun"
+        },
+        "inactive_axes": {
+          "species_transfer": {
+            "reason": "requires_separate_source_eligibility_and_policy_review"
+          },
+          "structural_interface": {
+            "reason": "ISSUE_0005_and_zero_construct_A_B_coverage"
+          }
+        },
+        "novelty_categories": {
+          "C1": "both_sequence_components_present_in_training_but_test_pair_unseen",
+          "C2": "exactly_one_sequence_component_absent_from_training",
+          "C2_exclusive": true,
+          "C3": "both_sequence_components_absent_from_training"
+        },
+        "partitioning": {
+          "deterministic_seed": 20260803,
+          "evidence_record_group_co_location_required": true,
+          "model_output_or_performance_inputs_allowed": false,
+          "optimization_inputs_allowed": [
+            "positive_record_counts",
+            "sequence_component_sizes",
+            "source",
+            "assay",
+            "publication_time"
+          ],
+          "reverse_pair_co_location_required": true,
+          "split_unit": "entire_sequence_component",
+          "target_fractions": {
+            "development": 0.15,
+            "protected_test": 0.15,
+            "train": 0.7
+          }
+        },
+        "required_axes": [
+          "C1",
+          "C2",
+          "C3",
+          "sequence_cluster_30_percent_primary",
+          "sequence_cluster_40_percent_sensitivity",
+          "sequence_cluster_20_percent_sensitivity",
+          "complete_information_cutoff_temporal",
+          "held_out_assay_version",
+          "held_out_source",
+          "human_primary"
+        ],
+        "sequence_identity_graph": {
+          "component_rule": "deterministic_connected_components",
+          "edge_rule": "alignment_identity_at_least_threshold_and_alignment_covers_at_least_80_percent_of_each_sequence",
+          "sequence_unit": "frozen_reference_sequence_hash",
+          "thresholds": {
+            "primary": 0.3,
+            "sensitivity": [
+              0.4,
+              0.2
+            ]
+          },
+          "tool_version_command_parameters_and_database_hashes_required": true
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.primary_are_ranking_and_retrieval",
+      "expected": [
+        "held_out_positive_recall_at_10",
+        "held_out_positive_recall_at_100",
+        "held_out_positive_recall_at_1000",
+        "positive_rank_percentile",
+        "positive_unlabeled_pairwise_concordance",
+        "released_positive_enrichment_at_fixed_candidate_fraction"
+      ],
+      "observed": [
+        "positive_unlabeled_pairwise_concordance",
+        "held_out_positive_recall_at_10",
+        "held_out_positive_recall_at_100",
+        "held_out_positive_recall_at_1000",
+        "released_positive_enrichment_at_fixed_candidate_fraction",
+        "positive_rank_percentile"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.calibration_deferred_and_claims_prohibited",
+      "expected": {
+        "deferred": [
+          "Brier_skill",
+          "adaptive_calibration_error",
+          "assay_endpoint_AUPRC_at_natural_prevalence",
+          "calibration_intercept",
+          "calibration_slope",
+          "recall_at_fixed_biological_precision"
+        ],
+        "prohibited_contains": [
+          "biological_precision",
+          "calibrated_binding_probability",
+          "calibrated_assay_probability",
+          "proteome_wide_precision"
+        ]
+      },
+      "observed": {
+        "deferred": [
+          "assay_endpoint_AUPRC_at_natural_prevalence",
+          "Brier_skill",
+          "calibration_slope",
+          "calibration_intercept",
+          "adaptive_calibration_error",
+          "recall_at_fixed_biological_precision"
+        ],
+        "prohibited": [
+          "biological_precision",
+          "biological_false_positive_rate",
+          "calibrated_binding_probability",
+          "calibrated_assay_probability",
+          "proteome_wide_precision"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "uncertainty.clustered_and_seeded",
+      "expected": "2000_component_clustered_replicates_seed_20260803",
+      "observed": {
+        "clustered_bootstrap_replicates": 2000,
+        "clustered_bootstrap_seed": 20260803,
+        "dependence_unit_primary": "sequence_component",
+        "effect_sizes_and_intervals_required": true,
+        "independent_trials_claim_authorized": false,
+        "interval": "percentile_95",
+        "paired_model_comparisons": true,
+        "sensitivity_resampling": [
+          "source_or_publication",
+          "assay_or_batch_when_available",
+          "query_protein"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "minimum_sizes.preserve_blueprint_thresholds",
+      "expected": {
+        "components": 50,
+        "positive_pairs": 500
+      },
+      "observed": {
+        "below_threshold_action": "demote_to_descriptive_and_do_not_pool_axes_to_hide_failure",
+        "combined_C3_30_percent": {
+          "held_out_released_positive_pairs": 500,
+          "independent_sequence_components": 50,
+          "meaningful_assay_or_source_diversity_required": true
+        },
+        "conditional_panel_quantitative_stratum": {
+          "evaluable_records": 100,
+          "independent_sequence_components": 10
+        },
+        "headline_axis": {
+          "held_out_released_positive_pairs": 500,
+          "independent_sequence_components": 50
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "future_gates.not_weakened",
+      "expected": {
+        "construct_fraction": 0.8,
+        "tested_coverage": 0.9
+      },
+      "observed": {
+        "strict": {
+          "minimum_construct_confidence_A_or_B_fraction": 0.8,
+          "retained_sequence_and_residue_interval_identity_proven": true,
+          "sifts_uniprot_release_alignment_resolved": true,
+          "strict_construct_or_structural_labels_before_gate": "prohibited",
+          "unresolved_structure_derived_labels": 0
+        },
+        "tested": {
+          "calibrated_assay_endpoint_before_gate": "prohibited",
+          "complete_pair_level_fields": [
+            "search_space_membership",
+            "screen_and_run",
+            "ordered_bait_and_prey_constructs",
+            "selection_state",
+            "attempted_state",
+            "evaluability_state",
+            "technical_failure_or_exclusion_reason",
+            "observed_outcome"
+          ],
+          "minimum_auditable_coverage": 0.9,
+          "negative_labels_before_gate": "prohibited",
+          "official_or_investigator_source_with_reproducible_terms": true,
+          "remaining_missingness_characterized": true
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "claims.computational_only",
+      "expected": "computational_hypotheses_only_with_probability_and_negative_claims_prohibited",
+      "observed": {
+        "permitted_if_policy_is_approved_and_benchmark_is_validated": [
+          "recovery_and_ranking_of_held_out_released_direct_PPI_evidence",
+          "generalization_under_named_pair_protein_homology_source_assay_and_temporal_axes",
+          "symmetric_sequence_compatibility_prioritization_score",
+          "computational_hypothesis_prioritization_with_explicit_uncertainty_and_provenance"
+        ],
+        "prohibited": [
+          "experimentally_validated_novel_interactions",
+          "universal_context_free_binding_probability",
+          "calibrated_assay_probability_without_TU_C_gate",
+          "undocumented_pair_is_negative",
+          "unlabeled_pair_is_noninteracting",
+          "structurally_predicted_complex_is_independent_experimental_confirmation",
+          "complete_or_validated_human_interactome"
+        ],
+        "required_hypothesis_warning": "These pairs are computationally prioritized hypotheses. They have not been experimentally tested or validated by the iPIN-OpenPPI project. Scores are conditional on the frozen evidence, candidate universe, sampling design, and model assumptions."
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "next_action.label_free_and_returns_to_gate",
+      "expected": "eligibility_and_components_only_then_gate",
+      "observed": {
+        "construction_sequence": [
+          "freeze_eligibility_schema_and_source_hashes",
+          "enumerate_eligible_proteins_and_compute_candidate_count_without_pair_materialization",
+          "quantify_mapping_exclusions_without_imputation",
+          "construct_and_validate_40_30_20_percent_sequence_components",
+          "report_aggregate_positive_mapping_and_component_size_feasibility_without_partitions",
+          "return_for_gate_confirmation_before_evidence_indicators_or_splits"
+        ],
+        "description": "Freeze the exact reference-sequence-eligible Space III population, quantify aggregate positive-record mapping coverage and exclusions without emitting a pair-level evidence indicator, construct only deterministic sequence identity components, and issue an independent validation report before any evidence indicator, pseudo-negative sample, split, or model is built.",
+        "id": "benchmark_eligibility_and_sequence_component_audit_v1"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.audit.immutable_hash",
+      "expected": {
+        "read_only": true,
+        "sha256": "db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e"
+      },
+      "observed": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json",
+        "read_only": true,
+        "sha256": "db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.audit_validation.immutable_hash",
+      "expected": {
+        "read_only": true,
+        "sha256": "2ca92051172b7a7a512072f3ed6212ac8caed5891870abcea7c6e5929cd56a01"
+      },
+      "observed": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json",
+        "read_only": true,
+        "sha256": "2ca92051172b7a7a512072f3ed6212ac8caed5891870abcea7c6e5929cd56a01"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.audit_semantics_and_authorizations",
+      "expected": "complete_clean_audit_with_incomplete_universe_and_no_construction_authority",
+      "observed": {
+        "authorizations": {
+          "benchmark_estimand_policy_proposal": true,
+          "label_construction": false,
+          "model_training": false,
+          "split_construction": false,
+          "structural_mapping": false
+        },
+        "git": {
+          "commit": "7af9473c876e53b777cf6ee829bbcbdf85c49fe4",
+          "status": "",
+          "tracked_worktree_clean": true
+        },
+        "scientific_conclusion": {
+          "calibrated_primary_assay_probability_feasible": false,
+          "complete_attempted_evaluable_universe_reconstructed": false,
+          "conditional_control_panel_analysis_feasible": true,
+          "explicit_panel_nondetections_are_universal_negatives": false,
+          "intact_negative_records_define_primary_systematic_universe": false,
+          "issue_0003_disposition": "unresolved_resolution_path_3_recommended",
+          "label_construction_authorized": false,
+          "main_huri_mitab_negative_records": 0,
+          "main_huri_pair_view_rows": 52548,
+          "model_training_authorized": false,
+          "primary_binary_negative_labels_feasible": false,
+          "provider_to_supplement_positive_row_difference": 21,
+          "pu_compatibility_policy_design_feasible": true,
+          "split_construction_authorized": false,
+          "strict_construct_benchmark_feasible": false,
+          "supplement_table_9_positive_rows": 52569,
+          "table_15_never_detected_pairs_are_negatives": false,
+          "unreported_space_iii_pairs_are_negatives": false
+        },
+        "status": "complete"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.independent_validation_pass",
+      "expected": {
+        "check_counts": {
+          "fail": 0,
+          "pass": 71,
+          "warning": 3
+        },
+        "construction_authorized": false,
+        "status": "pass"
+      },
+      "observed": {
+        "authorizations": {
+          "benchmark_estimand_policy_proposal": true,
+          "label_construction": false,
+          "model_training": false,
+          "split_construction": false,
+          "structural_mapping": false,
+          "systematic_screen_metadata_audit_accepted": true
+        },
+        "check_counts": {
+          "fail": 0,
+          "pass": 71,
+          "warning": 3
+        },
+        "status": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.reference.parent_blueprint",
+      "expected": "regular_nonlink_file",
+      "observed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md",
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.reference.blueprint_amendment",
+      "expected": "regular_nonlink_file",
+      "observed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md",
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.reference.human_report",
+      "expected": "regular_nonlink_file",
+      "observed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/docs/reports/m0/M0_Systematic_Screen_Metadata_Audit_and_Benchmark_Estimand_Proposal_v1.md",
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.reference.decision",
+      "expected": "regular_nonlink_file",
+      "observed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md",
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.reference.review_gate",
+      "expected": "regular_nonlink_file",
+      "observed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/gates/gate_status_v9.yaml",
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.reference.issue_0003",
+      "expected": "regular_nonlink_file",
+      "observed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/issues/ISSUE-0003-huri-attempted-pair-universe.md",
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.reference.issue_0005",
+      "expected": "regular_nonlink_file",
+      "observed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md",
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.documents_state_proposal_not_approval",
+      "expected": true,
+      "observed": {
+        "amendment_proposed": true,
+        "decision_proposed": true,
+        "report_proposed": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.documents_preserve_core_claim_limits",
+      "expected": "unlabeled_not_negative_no_probability_no_split_no_training",
+      "observed": "reviewed_document_phrases",
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.review_gate_v9",
+      "expected": "proposal_awaiting_approval_with_all_construction_false",
+      "observed": {
+        "candidate_universe_construction_authorized": false,
+        "evidence_indicator_construction_authorized": false,
+        "label_construction_authorized": false,
+        "model_implementation_authorized": false,
+        "model_training_authorized": false,
+        "proposal_effective": false,
+        "proposed_blueprint_amendment": "docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md",
+        "proposed_decision": "governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md",
+        "proposed_policy": "configs/benchmark_estimand_policy_proposal_v1.yaml",
+        "required_next_decision": "expert_group_accept_or_reject_blueprint_amendment_001",
+        "split_construction_authorized": false,
+        "status": "policy_proposed_awaiting_expert_approval",
+        "structural_mapping_authorized": false
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.issue_0003_remains_open",
+      "expected": "Status Open",
+      "observed": "**Status:** Open; public-data recovery exhausted, PU amendment proposed and awaiting expert-group approval",
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.issue_0005_remains_open",
+      "expected": "Status Open",
+      "observed": "**Status:** Open; non-blocking for reference-sequence PU design, blocking for strict construct, structural, and interface-derived tiers",
+      "status": "pass"
+    },
+    {
+      "check_id": "blocker.expert_group_approval",
+      "detail": "Consistency validation can certify the proposal package, but only the expert group can activate the target amendment.",
+      "observed": "not_yet_approved",
+      "status": "warning"
+    },
+    {
+      "check_id": "blocker.ISSUE-0003",
+      "detail": "The complete HuRI tested universe remains unavailable.",
+      "observed": "open_until_expert_approved_estimand_narrowing",
+      "status": "warning"
+    },
+    {
+      "check_id": "blocker.ISSUE-0005",
+      "detail": "Strict construct A/B coverage is zero and release alignment is unresolved.",
+      "observed": "open_strict_construct_and_structural_tiers_inactive",
+      "status": "warning"
+    }
+  ],
+  "gate_id": "benchmark_estimand_policy_proposal_consistency_v1",
+  "git": {
+    "commit": "b030c5a593de9f9bbba3a1ece3f122ab47a624dd",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "interpretation": "Pass means the proposal is internally consistent with the validated audit, open blockers, frozen thresholds, and construction prohibitions. It does not approve the amendment or authorize candidate, indicator, label, split, structure, model, or training construction.",
+  "inventory": {
+    "evidence": {
+      "audit": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json",
+        "sha256": "db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e"
+      },
+      "audit_validation": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json",
+        "sha256": "2ca92051172b7a7a512072f3ed6212ac8caed5891870abcea7c6e5929cd56a01"
+      }
+    },
+    "references": {
+      "blueprint_amendment": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md",
+        "sha256": "0979e4ed953f1d85e6d11f4fd1469238c9eaee082e1a5d060717647d2bff7c13"
+      },
+      "decision": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md",
+        "sha256": "971560e807656bf9c54898f3b1d83ca756d31e44d7e3b415b81309f41e4b906d"
+      },
+      "human_report": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/docs/reports/m0/M0_Systematic_Screen_Metadata_Audit_and_Benchmark_Estimand_Proposal_v1.md",
+        "sha256": "9773e6de8b30dff6f26e5d1ef772baa4cab292c1f4e1cc7773eeb395855cfd19"
+      },
+      "issue_0003": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/issues/ISSUE-0003-huri-attempted-pair-universe.md",
+        "sha256": "a938ad23be5f2bc00f1a1f85f20bb4e540f0923d51d529afeb2a912bb7a601e1"
+      },
+      "issue_0005": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md",
+        "sha256": "f74aaf71f50fcdc9d5c4905a698701c9bcdfe5fa38a0ce849df86592a9f93bab"
+      },
+      "parent_blueprint": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md",
+        "sha256": "185b55ddd7592ac253f4ecad6ef7fdf5c863cda3c03e5d1975f8b694e8357b4a"
+      },
+      "review_gate": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/gates/gate_status_v9.yaml",
+        "sha256": "0e33b807532155c9e82428edf0b58a64bde48159588a3d767a2f11f35727b3cb"
+      }
+    }
+  },
+  "policy": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/benchmark_estimand_policy_proposal_v1.yaml",
+  "policy_sha256": "b5a7aff3615fa15a612d916e6ea9c46eba65756dfd239c8236a94c450d948a78",
+  "runtime": {
+    "architecture": "aarch64",
+    "container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+  },
+  "schema_version": 1,
+  "scope": "proposal_consistency_only_no_benchmark_construction",
+  "status": "pass",
+  "validated_at_utc": "2026-08-03T21:17:08.173632+00:00"
+}

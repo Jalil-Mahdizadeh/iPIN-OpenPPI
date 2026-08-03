@@ -30,6 +30,15 @@ This file is the durable restart checkpoint. The authoritative gate details rema
 - The audit established that current public HuRI data do not reconstruct the
   complete selected/attempted/evaluable universe. The original calibrated
   primary assay endpoint is therefore infeasible from current public data.
+- The non-effective PU proposal package was frozen at clean commit
+  `b030c5a593de9f9bbba3a1ece3f122ab47a624dd`.
+- Its production consistency report passed 42 checks, failed 0, and recorded 3
+  expected warnings. The report is
+  `artifacts/validation/benchmark_design/benchmark_estimand_policy_proposal_v1/VALIDATION_REPORT.json`
+  with SHA-256
+  `9abbf55e8050e700ae885c6c1143633bae3d9b66e942c690ae59931ba79a3e87`.
+- That pass certifies proposal consistency only; the amendment remains
+  unapproved and ineffective.
 
 ## Exact pause point
 
