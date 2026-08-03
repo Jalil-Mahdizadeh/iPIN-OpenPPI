@@ -1,0 +1,76 @@
+schema_version: 4
+configuration_revision: 4
+run_family: primary_sources_v1
+task: source_specific_parsing_and_evidence_schema_quality_control
+active_parser_module: ipin_openppi.ingestion.pipeline_v4
+source_parser_revisions:
+  huri: huri_v2_complete_workbook_coverage
+  uniprot: uniprot_v2_explicit_additional_sequence_semantics
+  intact_imex: intact_v3_exact_unary_binary_nary_semantics
+  pdb_sifts: sifts_v1
+authorization:
+  runtime: apptainer
+  raw_source_parsing: true
+  source_reconciliation: true
+  label_construction: false
+  model_training: false
+
+inputs:
+  acquisition_manifest: data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json
+  acquisition_manifest_sha256: 5750fe08eac343e23c0f0c56cf749c7477cbfd92233f2679de5fedf9d8f22231
+  evidence_schema: schemas/warehouse/evidence_warehouse_v1.yaml
+  staging_schema: schemas/staging/source_native_v2.yaml
+  source_policy: configs/source_policy_v1.yaml
+
+runtime:
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  container_qualification_manifest: containers/manifests/ipin-data-arm64_0.1.2.qualification.json
+  parser_version: 1.2.0
+  parquet_compression: zstd
+  parquet_compression_level: 8
+  batch_rows: 100000
+  require_clean_git_for_production: true
+  verify_raw_sha256_before_parse: true
+
+outputs:
+  staging_root: data/staging/primary_sources_v1
+  validation_root: artifacts/validation/evidence_parsing/primary_sources_v1
+
+sources:
+  huri:
+    source_release: published_2020
+    public_license_id: CC-BY-4.0
+    public_attribution: Interactome Atlas and Luck et al. (2020)
+    public_redistribution_tier: public_with_attribution
+    supplement_license_id: publisher-author-copyright
+    supplement_attribution: Luck et al. (2020), Nature supplementary information
+    supplement_redistribution_tier: internal_only
+    pair_asset_ids: [huri_pairs, test_space_screen_pairs, literature_benchmark_pairs, hi_ii_14_pairs]
+    psi_asset_ids: [huri_psi, hi_ii_14_psi]
+    supplementary_asset_id: huri_supplementary_tables
+  uniprot:
+    source_release: "2026_02"
+    license_id: CC-BY-4.0
+    attribution: UniProt Consortium
+    redistribution_tier: public_with_attribution
+    canonical_fasta_asset_id: canonical_fasta
+    additional_fasta_asset_id: additional_isoform_fasta
+    dat_asset_id: canonical_dat
+    idmapping_asset_id: identifier_mapping
+  intact_imex:
+    source_release: release_252_archive_2026-01-09
+    license_id: CC-BY-4.0
+    attribution: IntAct/IMEx, EMBL-EBI
+    redistribution_tier: public_with_attribution
+    psi_xml_asset_id: human_psi_mi_xml_3
+    cv_asset_id: intact_controlled_vocabulary
+    mutations_asset_id: mutation_annotations
+  pdb_sifts:
+    source_release: observed_2026-07-26
+    license_id: CC0-1.0
+    attribution: PDBe/SIFTS
+    redistribution_tier: public_cc0
+    chain_uniprot_asset_id: sifts_chain_uniprot
+    chain_taxonomy_asset_id: sifts_chain_taxonomy
+    observed_segments_asset_id: sifts_observed_segments

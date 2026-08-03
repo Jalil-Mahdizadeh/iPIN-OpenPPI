@@ -1,0 +1,35 @@
+Bootstrap: localimage
+From: containers/images/ipin-qual-arm64_0.1.0.sif
+
+%files
+    containers/cache/data-wheels/duckdb-1.5.5-cp312-cp312-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl /opt/ipin/wheels/
+    containers/cache/data-wheels/et_xmlfile-2.0.0-py3-none-any.whl /opt/ipin/wheels/
+    containers/cache/data-wheels/openpyxl-3.1.5-py2.py3-none-any.whl /opt/ipin/wheels/
+    containers/cache/data-wheels/pypdf-6.14.2-py3-none-any.whl /opt/ipin/wheels/
+    containers/cache/data-wheels/xlrd-2.0.2-py2.py3-none-any.whl /opt/ipin/wheels/
+    containers/locks/ipin-data-arm64_0.1.2.requirements.lock /opt/ipin/requirements.lock
+
+%labels
+    ipin.data.image.title "iPIN-OpenPPI Arrhenius data processing"
+    ipin.data.image.version "0.1.2"
+    ipin.data.image.created "2026-08-03"
+    ipin.data.image.role "evidence-ingestion-and-quality-control"
+    ipin.data.image.purpose "Arrow Parquet DuckDB XML PDF and spreadsheet evidence processing"
+    ipin.data.image.parent.sif.sha256 "9259e1953dadc502af8949fe56db1fba56f4e3711ccb7542e7feda94c4718ce5"
+    ipin.data.image.requirements.sha256 "de32863418c2c81c73b5764fc892ecfa8ee62545e570460a7fe4ffc102936c3a"
+
+%post
+    python -m pip install --no-index --find-links=/opt/ipin/wheels --require-hashes --no-deps -r /opt/ipin/requirements.lock
+    rm -rf /opt/ipin/wheels
+    python -c 'import json; from pathlib import Path; p = Path("/.singularity.d/labels.json"); labels = json.loads(p.read_text(encoding="utf-8")); labels.update({"org.opencontainers.image.title": "iPIN-OpenPPI Arrhenius data processing", "org.opencontainers.image.version": "0.1.2", "org.opencontainers.image.created": "2026-08-03", "ipin.purpose": "evidence ingestion, source reconciliation, and quality control"}); p.write_text(json.dumps(labels, indent=2, sort_keys=True) + "\n", encoding="utf-8")'
+
+%environment
+    export PYTHONNOUSERSITE=1
+    export PYTHONHASHSEED=0
+    export TOKENIZERS_PARALLELISM=false
+
+%test
+    python -c "import platform, duckdb, openpyxl, pypdf, xlrd; assert platform.machine() == 'aarch64'; print(platform.machine(), duckdb.__version__, openpyxl.__version__, pypdf.__version__, xlrd.__version__)"
+
+%runscript
+    exec python "$@"

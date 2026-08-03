@@ -1,0 +1,84 @@
+schema_version: 1
+gate_id: primary_evidence_staging_v1
+description: >-
+  Frozen expectations and non-label integrity checks for the primary-source
+  staging snapshot. Passing this gate authorizes reconciliation work only;
+  it does not authorize label construction or model training.
+
+expected_parser_version: "1.2.0"
+expected_container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+expected_sources: [uniprot, huri, pdb_sifts, intact_imex]
+expected_source_releases:
+  uniprot: "2026_02"
+  huri: published_2020
+  pdb_sifts: observed_2026-07-26
+  intact_imex: release_252_archive_2026-01-09
+
+expected_table_rows:
+  uniprot/protein_sequences: 169637
+  uniprot/identifier_mappings: 4377974
+  huri/evidence_records: 220934
+  huri/participants: 441868
+  huri/participant_features: 441868
+  huri/source_pair_views: 80781
+  huri/huri_orf_mappings: 17436
+  huri/huri_space_membership: 19818
+  huri/supplementary_raw_tabular_records: 564178
+  huri/huri_structural_contact_annotations: 3431
+  huri/huri_fusion_interference: 3738
+  pdb_sifts/sifts_chain_uniprot: 1007697
+  pdb_sifts/sifts_chain_taxonomy: 1076304
+  pdb_sifts/sifts_observed_segments: 1519870
+  intact_imex/evidence_records: 552442
+  intact_imex/participants: 1771656
+  intact_imex/participant_features: 955451
+  intact_imex/interactors: 653933
+  intact_imex/experiments: 48876
+  intact_imex/controlled_vocabulary_terms: 4082
+  intact_imex/mutations: 89925
+
+expected_report_values:
+  source_reports.uniprot.parser_revision: v2_explicit_additional_sequence_semantics
+  source_reports.uniprot.sequence_counts.canonical: 20652
+  source_reports.uniprot.sequence_counts.additional_isoform: 148288
+  source_reports.uniprot.sequence_counts.additional_non_isoform: 697
+  source_reports.uniprot.canonical_fasta_dat_mismatch_count: 0
+  source_reports.uniprot.additional_isoform_parent_missing_count: 0
+  source_reports.huri.parser_revision: huri_v2_complete_workbook_coverage
+  source_reports.huri.supplement.parsed_table_count: 29
+  source_reports.pdb_sifts.declared_uniprot_release_in_sifts: "2026.03"
+  source_reports.intact_imex.parser_revision: v3_exact_unary_binary_nary_semantics
+  source_reports.intact_imex.psi_xml.archive_member_count: 329
+  source_reports.intact_imex.psi_xml.counts.source_interactions: 552442
+  source_reports.intact_imex.psi_xml.counts.evidence_records: 552442
+  source_reports.intact_imex.psi_xml.counts.negative_records: 939
+  source_reports.intact_imex.psi_xml.counts.binary_two_protein_records: 482044
+  source_reports.intact_imex.psi_xml.counts.original_nary_records: 41964
+  source_reports.intact_imex.psi_xml.counts.expanded_records: 0
+  source_reports.intact_imex.psi_xml.participant_count_distribution.1: 2198
+  source_reports.intact_imex.psi_xml.participant_count_distribution.2: 508280
+  source_reports.intact_imex.psi_xml.cardinality_semantics.original_unary_records: 2198
+  source_reports.intact_imex.psi_xml.cardinality_semantics.original_nary_definition: participant_count_greater_than_2
+  source_reports.intact_imex.mutations.logical_records: 89925
+  source_reports.intact_imex.mutations.reconstructed_multiline_records: 5
+  source_reports.intact_imex.controlled_vocabulary.term_count: 4082
+
+expected_diagnostics:
+  huri_workbook_source_error_cells: 1416
+  sifts_chain_uniprot_descending_intervals: 72
+  sifts_observed_segment_descending_intervals: 0
+  sifts_human_chain_distinct_accessions: 9812
+  sifts_human_chain_accessions_matching_primary_accessions: 8947
+  sifts_human_chain_accessions_matching_additional_sequence_ids: 84
+  sifts_human_chain_accessions_in_frozen_uniprot: 9031
+
+known_blockers:
+  - issue_id: ISSUE-0005
+    scope: structure_mapping_and_structure_derived_labels
+    reason: >-
+      SIFTS declares UniProt 2026.03 while the frozen sequence corpus is
+      UniProt 2026_02; descending source-native chain intervals also require
+      explicit construct-aware adjudication.
+    blocks_parsing_gate: false
+    blocks_label_construction: true
+    blocks_model_training: true

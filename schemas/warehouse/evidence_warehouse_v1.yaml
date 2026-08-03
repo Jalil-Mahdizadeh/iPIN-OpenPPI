@@ -1,0 +1,485 @@
+schema_name: ipin_openppi_evidence_warehouse
+schema_version: 1
+status: frozen_for_primary_source_parsing
+frozen_date: "2026-08-03"
+blueprint: docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md
+source_policy: configs/source_policy_v1.yaml
+
+principles:
+  primary_object: source_evidence_record
+  consensus_pair_is_primary_object: false
+  raw_records_immutable: true
+  provider_pair_views_are_labels: false
+  unreported_pairs_are_negative: false
+  technical_failures_are_negative: false
+  expanded_nary_projections_are_direct_binary: false
+  source_assertions_and_parser_inferences_are_distinct: true
+
+missing_codes:
+  - not_reported
+  - not_applicable
+  - not_parsed
+  - unresolved
+  - conflicting
+  - suppressed_by_license
+
+enums:
+  observation_state:
+    - positive
+    - negative
+    - ambiguous
+    - technical_failure
+    - untested
+    - unknown
+  search_space_state:
+    - inside_declared_space
+    - outside_declared_space
+    - unknown
+    - not_applicable
+  selection_state:
+    - selected
+    - not_selected
+    - unknown
+    - not_applicable
+  attempted_state:
+    - attempted
+    - not_attempted
+    - unknown
+    - not_applicable
+  evaluability_state:
+    - evaluable
+    - not_evaluable
+    - partially_evaluable
+    - unknown
+    - not_applicable
+  technical_state:
+    - passed
+    - failed
+    - partial
+    - unknown
+    - not_applicable
+  state_basis:
+    - source_asserted
+    - logically_implied_by_source_positive
+    - parser_classified
+    - unresolved
+    - not_applicable
+  interaction_semantics:
+    - direct_binary
+    - direct_within_complex
+    - physical_association
+    - association
+    - co_complex
+    - functional_association
+    - unknown
+  construct_confidence:
+    - A
+    - B
+    - C
+    - D
+    - unmapped
+    - not_applicable
+  mapping_state:
+    - exact
+    - unique
+    - one_to_many
+    - many_to_one
+    - ambiguous
+    - unmapped
+    - not_attempted
+  redistribution_tier:
+    - public_with_attribution
+    - public_cc0
+    - internal_only
+
+tables:
+  evidence_records:
+    description: One source interaction/assay observation; never a collapsed consensus pair.
+    primary_key: [evidence_id]
+    required_non_null:
+      - evidence_id
+      - source_key
+      - source_dataset
+      - source_release
+      - source_record_id
+      - record_kind
+      - observation_state
+      - interaction_semantics
+      - raw_file_path
+      - raw_file_sha256
+      - raw_locator
+      - parser_name
+      - parser_version
+      - parser_git_commit
+      - container_sif_sha256
+      - schema_version
+      - schema_sha256
+      - license_id
+      - redistribution_tier
+      - missingness_json
+    enum_columns:
+      observation_state: observation_state
+      search_space_state: search_space_state
+      selection_state: selection_state
+      attempted_state: attempted_state
+      evaluability_state: evaluability_state
+      technical_state: technical_state
+      state_basis: state_basis
+      interaction_semantics: interaction_semantics
+      redistribution_tier: redistribution_tier
+    columns:
+      - {name: evidence_id, type: string, nullable: false}
+      - {name: source_key, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: source_record_id, type: string, nullable: false}
+      - {name: source_record_ordinal, type: int64, nullable: true}
+      - {name: source_member, type: string, nullable: true}
+      - {name: record_kind, type: string, nullable: false}
+      - {name: unordered_pair_id, type: string, nullable: true}
+      - {name: ordered_pair_id, type: string, nullable: true}
+      - {name: experiment_ids, type: "list<string>", nullable: false}
+      - {name: publication_ids, type: "list<string>", nullable: false}
+      - {name: imex_ids, type: "list<string>", nullable: false}
+      - {name: source_database_ids, type: "list<string>", nullable: false}
+      - {name: participant_count, type: int32, nullable: false}
+      - {name: original_nary, type: bool, nullable: false}
+      - {name: is_expanded_projection, type: bool, nullable: false}
+      - {name: expansion_method_ac, type: string, nullable: true}
+      - {name: expansion_method_name, type: string, nullable: true}
+      - {name: negative_flag, type: bool, nullable: true}
+      - {name: interaction_type_ac, type: string, nullable: true}
+      - {name: interaction_type_name, type: string, nullable: true}
+      - {name: interaction_semantics, type: string, nullable: false}
+      - {name: detection_method_ac, type: string, nullable: true}
+      - {name: detection_method_name, type: string, nullable: true}
+      - {name: participant_identification_method_ac, type: string, nullable: true}
+      - {name: participant_identification_method_name, type: string, nullable: true}
+      - {name: assay_family, type: string, nullable: true}
+      - {name: assay_version, type: string, nullable: true}
+      - {name: assay_batch, type: string, nullable: true}
+      - {name: host_taxid, type: int64, nullable: true}
+      - {name: host_name, type: string, nullable: true}
+      - {name: orientation_semantics, type: string, nullable: true}
+      - {name: search_space_state, type: string, nullable: false}
+      - {name: selection_state, type: string, nullable: false}
+      - {name: attempted_state, type: string, nullable: false}
+      - {name: evaluability_state, type: string, nullable: false}
+      - {name: technical_state, type: string, nullable: false}
+      - {name: observation_state, type: string, nullable: false}
+      - {name: state_basis, type: string, nullable: false}
+      - {name: failure_reasons, type: "list<string>", nullable: false}
+      - {name: context_json, type: string, nullable: false}
+      - {name: assay_parameters_json, type: string, nullable: false}
+      - {name: confidence_values, type: "list<string>", nullable: false}
+      - {name: repeat_group_id, type: string, nullable: true}
+      - {name: quality_flags, type: "list<string>", nullable: false}
+      - {name: source_created_date, type: string, nullable: true}
+      - {name: source_updated_date, type: string, nullable: true}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: source_acquired_at_utc, type: string, nullable: false}
+      - {name: parser_name, type: string, nullable: false}
+      - {name: parser_version, type: string, nullable: false}
+      - {name: parser_git_commit, type: string, nullable: false}
+      - {name: container_sif_sha256, type: string, nullable: false}
+      - {name: schema_version, type: int32, nullable: false}
+      - {name: schema_sha256, type: string, nullable: false}
+      - {name: license_id, type: string, nullable: false}
+      - {name: attribution, type: string, nullable: false}
+      - {name: redistribution_tier, type: string, nullable: false}
+      - {name: source_fields_json, type: string, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  participants:
+    description: One participant as represented in a source evidence record.
+    primary_key: [participant_id]
+    foreign_keys:
+      - {columns: [evidence_id], references: evidence_records.evidence_id}
+    required_non_null:
+      - participant_id
+      - evidence_id
+      - participant_ordinal
+      - raw_file_path
+      - raw_locator
+      - construct_confidence
+      - mapping_state
+      - missingness_json
+    enum_columns:
+      construct_confidence: construct_confidence
+      mapping_state: mapping_state
+    columns:
+      - {name: participant_id, type: string, nullable: false}
+      - {name: evidence_id, type: string, nullable: false}
+      - {name: participant_ordinal, type: int32, nullable: false}
+      - {name: source_participant_id, type: string, nullable: true}
+      - {name: source_interactor_id, type: string, nullable: true}
+      - {name: primary_identifier_db, type: string, nullable: true}
+      - {name: primary_identifier, type: string, nullable: true}
+      - {name: alternate_identifiers, type: "list<string>", nullable: false}
+      - {name: aliases, type: "list<string>", nullable: false}
+      - {name: taxid, type: int64, nullable: true}
+      - {name: organism_name, type: string, nullable: true}
+      - {name: molecule_type_ac, type: string, nullable: true}
+      - {name: molecule_type_name, type: string, nullable: true}
+      - {name: biological_role_ac, type: string, nullable: true}
+      - {name: biological_role_name, type: string, nullable: true}
+      - {name: experimental_role_ac, type: string, nullable: true}
+      - {name: experimental_role_name, type: string, nullable: true}
+      - {name: orientation_role, type: string, nullable: true}
+      - {name: expressed_in_taxid, type: int64, nullable: true}
+      - {name: expressed_in_name, type: string, nullable: true}
+      - {name: raw_uniprot_accessions, type: "list<string>", nullable: false}
+      - {name: raw_ensembl_gene_ids, type: "list<string>", nullable: false}
+      - {name: raw_ensembl_transcript_ids, type: "list<string>", nullable: false}
+      - {name: raw_ensembl_protein_ids, type: "list<string>", nullable: false}
+      - {name: raw_orf_ids, type: "list<string>", nullable: false}
+      - {name: mapped_uniprot_accession, type: string, nullable: true}
+      - {name: mapped_isoform_id, type: string, nullable: true}
+      - {name: mapped_sequence_sha256, type: string, nullable: true}
+      - {name: mapping_state, type: string, nullable: false}
+      - {name: mapping_basis, type: string, nullable: false}
+      - {name: construct_sequence_sha256, type: string, nullable: true}
+      - {name: construct_start, type: int64, nullable: true}
+      - {name: construct_end, type: int64, nullable: true}
+      - {name: construct_mutations, type: "list<string>", nullable: false}
+      - {name: construct_tags, type: "list<string>", nullable: false}
+      - {name: construct_fusion_partners, type: "list<string>", nullable: false}
+      - {name: signal_propeptide_handling, type: string, nullable: true}
+      - {name: construct_confidence, type: string, nullable: false}
+      - {name: construct_confidence_basis, type: string, nullable: false}
+      - {name: participant_identification_method_ac, type: string, nullable: true}
+      - {name: participant_identification_method_name, type: string, nullable: true}
+      - {name: stoichiometry, type: float64, nullable: true}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: source_fields_json, type: string, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  participant_features:
+    description: Source feature, mutation, tag, binding region, or construct boundary.
+    primary_key: [feature_id]
+    foreign_keys:
+      - {columns: [participant_id], references: participants.participant_id}
+    required_non_null: [feature_id, participant_id, evidence_id, raw_file_path, raw_locator, missingness_json]
+    columns:
+      - {name: feature_id, type: string, nullable: false}
+      - {name: participant_id, type: string, nullable: false}
+      - {name: evidence_id, type: string, nullable: false}
+      - {name: source_feature_id, type: string, nullable: true}
+      - {name: feature_short_label, type: string, nullable: true}
+      - {name: feature_type_ac, type: string, nullable: true}
+      - {name: feature_type_name, type: string, nullable: true}
+      - {name: feature_role_ac, type: string, nullable: true}
+      - {name: feature_role_name, type: string, nullable: true}
+      - {name: range_ordinal, type: int32, nullable: true}
+      - {name: start_position, type: int64, nullable: true}
+      - {name: end_position, type: int64, nullable: true}
+      - {name: start_status_ac, type: string, nullable: true}
+      - {name: start_status_name, type: string, nullable: true}
+      - {name: end_status_ac, type: string, nullable: true}
+      - {name: end_status_name, type: string, nullable: true}
+      - {name: original_sequence, type: string, nullable: true}
+      - {name: resulting_sequence, type: string, nullable: true}
+      - {name: linked_feature_id, type: string, nullable: true}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: source_fields_json, type: string, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  source_pair_views:
+    description: Provider-derived pair membership view; explicitly not a label table.
+    primary_key: [pair_view_id]
+    required_non_null:
+      - pair_view_id
+      - source_key
+      - source_dataset
+      - source_release
+      - member_a
+      - member_b
+      - unordered_pair_id
+      - view_membership
+      - label_authorized
+      - raw_file_path
+      - raw_file_sha256
+      - raw_locator
+    columns:
+      - {name: pair_view_id, type: string, nullable: false}
+      - {name: source_key, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: source_record_ordinal, type: int64, nullable: false}
+      - {name: member_a, type: string, nullable: false}
+      - {name: member_b, type: string, nullable: false}
+      - {name: unordered_pair_id, type: string, nullable: false}
+      - {name: view_membership, type: bool, nullable: false}
+      - {name: provider_claim, type: string, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: self_pair, type: bool, nullable: false}
+      - {name: duplicate_ordinal, type: int32, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: source_fields_json, type: string, nullable: false}
+
+  protein_sequences:
+    description: Frozen UniProt canonical and additional isoform sequence records.
+    primary_key: [protein_sequence_id]
+    required_non_null:
+      - protein_sequence_id
+      - uniprot_accession
+      - sequence
+      - sequence_sha256
+      - sequence_length
+      - sequence_view
+      - source_release
+      - raw_file_path
+      - raw_file_sha256
+      - raw_locator
+      - missingness_json
+    columns:
+      - {name: protein_sequence_id, type: string, nullable: false}
+      - {name: uniprot_accession, type: string, nullable: false}
+      - {name: isoform_id, type: string, nullable: true}
+      - {name: entry_name, type: string, nullable: true}
+      - {name: reviewed, type: bool, nullable: true}
+      - {name: canonical, type: bool, nullable: false}
+      - {name: sequence_view, type: string, nullable: false}
+      - {name: taxid, type: int64, nullable: true}
+      - {name: gene_names, type: "list<string>", nullable: false}
+      - {name: protein_names, type: "list<string>", nullable: false}
+      - {name: sequence_version, type: int32, nullable: true}
+      - {name: entry_version, type: int32, nullable: true}
+      - {name: sequence_length, type: int64, nullable: false}
+      - {name: sequence, type: string, nullable: false}
+      - {name: sequence_sha256, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: source_fields_json, type: string, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  identifier_mappings:
+    description: One UniProt accession-to-external-identifier assertion per source row.
+    primary_key: [mapping_id]
+    required_non_null: [mapping_id, uniprot_accession, database, identifier, source_release, raw_file_path, raw_file_sha256, raw_locator]
+    columns:
+      - {name: mapping_id, type: string, nullable: false}
+      - {name: uniprot_accession, type: string, nullable: false}
+      - {name: database, type: string, nullable: false}
+      - {name: identifier, type: string, nullable: false}
+      - {name: identifier_versionless, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+
+  huri_orf_mappings:
+    description: Publication-supplement ORF-to-Ensembl mapping assertions; internal redistribution tier.
+    primary_key: [orf_mapping_id]
+    required_non_null: [orf_mapping_id, orf_id, raw_file_path, raw_locator, redistribution_tier, missingness_json]
+    enum_columns:
+      redistribution_tier: redistribution_tier
+    columns:
+      - {name: orf_mapping_id, type: string, nullable: false}
+      - {name: orf_id, type: string, nullable: false}
+      - {name: ensembl_transcript_id, type: string, nullable: true}
+      - {name: ensembl_protein_id, type: string, nullable: true}
+      - {name: ensembl_gene_id, type: string, nullable: true}
+      - {name: gene_symbol, type: string, nullable: true}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: redistribution_tier, type: string, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  huri_space_membership:
+    description: Gene-level Space III and expression-resource membership; not a pair-attempt table.
+    primary_key: [space_record_id]
+    required_non_null: [space_record_id, ensembl_gene_id, raw_file_path, raw_locator, redistribution_tier]
+    enum_columns:
+      redistribution_tier: redistribution_tier
+    columns:
+      - {name: space_record_id, type: string, nullable: false}
+      - {name: ensembl_gene_id, type: string, nullable: false}
+      - {name: in_space_3, type: bool, nullable: true}
+      - {name: in_gtex, type: bool, nullable: true}
+      - {name: in_hpa, type: bool, nullable: true}
+      - {name: in_fantom, type: bool, nullable: true}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: redistribution_tier, type: string, nullable: false}
+
+  sifts_chain_uniprot:
+    description: SIFTS chain-to-UniProt residue mapping segments.
+    primary_key: [mapping_id]
+    required_non_null: [mapping_id, pdb_id, chain_id, uniprot_accession, source_snapshot, raw_file_path, raw_file_sha256, raw_locator]
+    columns:
+      - {name: mapping_id, type: string, nullable: false}
+      - {name: pdb_id, type: string, nullable: false}
+      - {name: chain_id, type: string, nullable: false}
+      - {name: uniprot_accession, type: string, nullable: false}
+      - {name: residue_begin, type: int64, nullable: true}
+      - {name: residue_end, type: int64, nullable: true}
+      - {name: pdb_begin, type: string, nullable: true}
+      - {name: pdb_end, type: string, nullable: true}
+      - {name: uniprot_begin, type: int64, nullable: true}
+      - {name: uniprot_end, type: int64, nullable: true}
+      - {name: source_snapshot, type: string, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+
+  sifts_chain_taxonomy:
+    description: SIFTS chain-to-taxonomy assertions.
+    primary_key: [taxonomy_mapping_id]
+    required_non_null: [taxonomy_mapping_id, pdb_id, chain_id, taxid, source_snapshot, raw_file_path, raw_file_sha256, raw_locator]
+    columns:
+      - {name: taxonomy_mapping_id, type: string, nullable: false}
+      - {name: pdb_id, type: string, nullable: false}
+      - {name: chain_id, type: string, nullable: false}
+      - {name: taxid, type: int64, nullable: false}
+      - {name: scientific_name, type: string, nullable: true}
+      - {name: source_snapshot, type: string, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+
+  sifts_observed_segments:
+    description: Experimentally observed SIFTS chain/UniProt mapping segments.
+    primary_key: [observed_segment_id]
+    required_non_null: [observed_segment_id, pdb_id, chain_id, uniprot_accession, source_snapshot, raw_file_path, raw_file_sha256, raw_locator]
+    columns:
+      - {name: observed_segment_id, type: string, nullable: false}
+      - {name: pdb_id, type: string, nullable: false}
+      - {name: chain_id, type: string, nullable: false}
+      - {name: uniprot_accession, type: string, nullable: false}
+      - {name: residue_begin, type: int64, nullable: true}
+      - {name: residue_end, type: int64, nullable: true}
+      - {name: pdb_begin, type: string, nullable: true}
+      - {name: pdb_end, type: string, nullable: true}
+      - {name: uniprot_begin, type: int64, nullable: true}
+      - {name: uniprot_end, type: int64, nullable: true}
+      - {name: source_snapshot, type: string, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+
+gate_metrics:
+  provenance_fraction:
+    denominator: all evidence_records
+    numerator: records with non-null source_key, source_release, raw_file_sha256, parser_name, parser_version, parser_git_commit, container_sif_sha256, license_id, and redistribution_tier
+    threshold: 0.95
+  systematic_state_resolution_fraction:
+    denominator: usable primary-systematic evidence records only; never the unobserved Cartesian product
+    numerator: denominator records with search_space_state, selection_state, attempted_state, evaluability_state, technical_state, and observation_state resolved beyond unknown
+    threshold: 0.90
+    caveat: This metric cannot establish completeness of the attempted pair universe and cannot close ISSUE-0003 by itself.
+  strict_construct_a_or_b_fraction:
+    denominator: primary-systematic evidence records otherwise eligible for a strict construct-aware view
+    numerator: denominator records for which every protein participant has construct_confidence A or B
+    threshold: 0.80
+  technical_failure_negative_count:
+    required_value: 0
+    definition: evidence_records where observation_state is negative and technical_state is failed

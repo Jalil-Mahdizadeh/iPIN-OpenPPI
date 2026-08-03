@@ -1,0 +1,148 @@
+schema_name: ipin_openppi_source_native_staging
+schema_version: 2
+status: frozen_for_primary_source_parsing
+frozen_date: "2026-08-03"
+
+tables:
+  raw_tabular_records:
+    description: Lossless row envelope for heterogeneous supplementary tables and workbook rows.
+    primary_key: [staging_record_id]
+    required_non_null:
+      - staging_record_id
+      - source_key
+      - source_dataset
+      - source_release
+      - source_record_ordinal
+      - raw_file_path
+      - raw_file_sha256
+      - raw_locator
+      - fields_json
+      - redistribution_tier
+    columns:
+      - {name: staging_record_id, type: string, nullable: false}
+      - {name: source_key, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: source_member, type: string, nullable: true}
+      - {name: source_record_ordinal, type: int64, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: fields_json, type: string, nullable: false}
+      - {name: redistribution_tier, type: string, nullable: false}
+
+  controlled_vocabulary_terms:
+    description: OBO terms retained without assuming a complete PSI-MI ontology closure.
+    primary_key: [term_record_id]
+    required_non_null: [term_record_id, source_key, source_release, term_id, raw_file_path, raw_file_sha256, raw_locator]
+    columns:
+      - {name: term_record_id, type: string, nullable: false}
+      - {name: source_key, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: term_id, type: string, nullable: false}
+      - {name: term_name, type: string, nullable: true}
+      - {name: namespace, type: string, nullable: true}
+      - {name: definition, type: string, nullable: true}
+      - {name: synonyms, type: "list<string>", nullable: false}
+      - {name: parent_terms, type: "list<string>", nullable: false}
+      - {name: relationships, type: "list<string>", nullable: false}
+      - {name: obsolete, type: bool, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: fields_json, type: string, nullable: false}
+
+  intact_mutations:
+    description: IntAct mutation export retained as assertions linked by interaction accession where possible.
+    primary_key: [mutation_record_id]
+    required_non_null: [mutation_record_id, source_release, feature_ac, interaction_ac, raw_file_path, raw_file_sha256, raw_locator, fields_json]
+    columns:
+      - {name: mutation_record_id, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: feature_ac, type: string, nullable: false}
+      - {name: feature_short_label, type: string, nullable: true}
+      - {name: feature_ranges, type: string, nullable: true}
+      - {name: original_sequence, type: string, nullable: true}
+      - {name: resulting_sequence, type: string, nullable: true}
+      - {name: feature_type, type: string, nullable: true}
+      - {name: feature_annotation, type: string, nullable: true}
+      - {name: affected_protein_ac, type: string, nullable: true}
+      - {name: affected_protein_symbol, type: string, nullable: true}
+      - {name: affected_protein_name, type: string, nullable: true}
+      - {name: affected_protein_organism, type: string, nullable: true}
+      - {name: interaction_participants, type: "list<string>", nullable: false}
+      - {name: publication_id, type: string, nullable: true}
+      - {name: figure_legend, type: string, nullable: true}
+      - {name: interaction_ac, type: string, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: fields_json, type: string, nullable: false}
+
+  intact_experiments:
+    description: IntAct experiment descriptions scoped to archive member and entry.
+    primary_key: [experiment_record_id]
+    required_non_null: [experiment_record_id, source_release, source_experiment_id, raw_file_path, raw_file_sha256, raw_locator, fields_json, missingness_json]
+    columns:
+      - {name: experiment_record_id, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: source_member, type: string, nullable: false}
+      - {name: source_entry_ordinal, type: int64, nullable: false}
+      - {name: source_experiment_id, type: string, nullable: false}
+      - {name: publication_ids, type: "list<string>", nullable: false}
+      - {name: interaction_detection_method_ac, type: string, nullable: true}
+      - {name: interaction_detection_method_name, type: string, nullable: true}
+      - {name: participant_identification_method_ac, type: string, nullable: true}
+      - {name: participant_identification_method_name, type: string, nullable: true}
+      - {name: host_taxids, type: "list<string>", nullable: false}
+      - {name: host_names, type: "list<string>", nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: fields_json, type: string, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  huri_structural_contact_annotations:
+    description: Publication-supplement annotations of whether proteins in a reported PPI directly contact within a complex structure; diagnostic context, never a direct-binding label.
+    primary_key: [contact_record_id]
+    required_non_null: [contact_record_id, source_release, source_dataset, protein_a_uniprot, protein_b_uniprot, unordered_pair_id, in_contact, label_authorized, raw_file_path, raw_file_sha256, raw_locator, fields_json, redistribution_tier]
+    columns:
+      - {name: contact_record_id, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: protein_a_uniprot, type: string, nullable: false}
+      - {name: protein_b_uniprot, type: string, nullable: false}
+      - {name: unordered_pair_id, type: string, nullable: false}
+      - {name: in_contact, type: bool, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: fields_json, type: string, nullable: false}
+      - {name: redistribution_tier, type: string, nullable: false}
+
+  huri_fusion_interference:
+    description: Orientation-specific fusion-interface distances and source-reported detection flags from HuRI Supplementary Table 15; technical-bias context, never a biological negative label.
+    primary_key: [fusion_record_id]
+    required_non_null: [fusion_record_id, source_release, dbd_fused_uniprot, ad_fused_uniprot, unordered_pair_id, self_pair, found_v1, found_v2, found_v3, label_authorized, raw_file_path, raw_file_sha256, raw_locator, fields_json, missingness_json, redistribution_tier]
+    columns:
+      - {name: fusion_record_id, type: string, nullable: false}
+      - {name: source_release, type: string, nullable: false}
+      - {name: dbd_fused_uniprot, type: string, nullable: false}
+      - {name: ad_fused_uniprot, type: string, nullable: false}
+      - {name: unordered_pair_id, type: string, nullable: false}
+      - {name: self_pair, type: bool, nullable: false}
+      - {name: distance_n1_interface, type: float64, nullable: true}
+      - {name: distance_c1_interface, type: float64, nullable: true}
+      - {name: distance_n2_interface, type: float64, nullable: true}
+      - {name: distance_c2_interface, type: float64, nullable: true}
+      - {name: found_v1, type: bool, nullable: false}
+      - {name: found_v2, type: bool, nullable: false}
+      - {name: found_v3, type: bool, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: fields_json, type: string, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+      - {name: redistribution_tier, type: string, nullable: false}

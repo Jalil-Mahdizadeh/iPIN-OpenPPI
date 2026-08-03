@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "image": {
+    "path": "containers/images/ipin-data-arm64_0.1.2.sif",
+    "size_bytes": 10645204992,
+    "sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "architecture": "aarch64",
+    "version": "0.1.2",
+    "role": "evidence-ingestion-and-quality-control"
+  },
+  "provenance": {
+    "qualified_parent_path": "containers/images/ipin-qual-arm64_0.1.0.sif",
+    "qualified_parent_sha256": "9259e1953dadc502af8949fe56db1fba56f4e3711ccb7542e7feda94c4718ce5",
+    "definition_path": "containers/definitions/ipin-data-arm64_0.1.2.def",
+    "definition_sha256": "0bec24774feedd4b04464cb3a7769407fdc506f54b92d42e4a4087a823a9e126",
+    "requirements_input_sha256": "7266a9c34adc18409a3a7d3bc8944fae3dfd402470763d2cbe6dc52368921c45",
+    "requirements_lock_sha256": "de32863418c2c81c73b5764fc892ecfa8ee62545e570460a7fe4ffc102936c3a",
+    "build_script_sha256": "ccb0bc1cf79baf9f61dad97780ae42382067fc06ea55b4b686352c7a75abd5d2",
+    "wheel_download_script_sha256": "8a3f25a1ba202a41862c4bd30b6bb13474fc7888ab1163065fc12020d01f9186"
+  },
+  "qualification": {
+    "qualified_at": "2026-08-03T18:01:38+02:00",
+    "status": "accepted",
+    "embedded_test_passed": true,
+    "metadata_assertions_passed": true,
+    "requirements_lock_inside_image_verified": true,
+    "independent_import_test_passed": true,
+    "observed_versions": {
+      "duckdb": "1.5.5",
+      "openpyxl": "3.1.5",
+      "pandas": "2.2.3",
+      "pyarrow": "19.0.1",
+      "pypdf": "6.14.2",
+      "xlrd": "2.0.2"
+    }
+  },
+  "authorization_boundary": {
+    "allowed": [
+      "source-specific parsing",
+      "evidence-schema quality control",
+      "source reconciliation"
+    ],
+    "prohibited": [
+      "label construction",
+      "model training"
+    ]
+  },
+  "notes": [
+    "This image extends the immutable qualified Arrhenius parent with hash-locked data-processing packages.",
+    "Generic title, version, creation date, and purpose labels were explicitly corrected after localimage bootstrap to avoid inherited-label ambiguity.",
+    "The original qualified parent SIF was not modified."
+  ]
+}
