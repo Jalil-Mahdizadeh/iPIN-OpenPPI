@@ -1,0 +1,798 @@
+{
+  "acquisition_manifest": "data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json",
+  "asset_count": 20,
+  "code": {
+    "git": {
+      "commit": "af5e122ca59a2a26bbf93cfe308dcee2132c36b7",
+      "status": "",
+      "tracked_worktree_clean": true
+    },
+    "qualification_lock": "containers/locks/ipin-qual-arm64_0.1.0.qualification.lock",
+    "qualification_lock_sha256": "3e1f43eb11a5f77bd06dc0c4f4c5f6f21349b788017cad01825eb542099c0d89",
+    "script": "scripts/data/acquire_manifest_assets.py",
+    "script_sha256": "3292171b9f2fdf21efab451d4a71facfd3c777ef78fb9875ffe59d58383b30b4"
+  },
+  "completed_at_utc": "2026-08-03T14:00:25.234404+00:00",
+  "downloaded_new_count": 20,
+  "dry_run": false,
+  "errors": [],
+  "free_bytes_at_start": 9689109839872,
+  "index": {
+    "manifest_set_id": "PREACQ-PRIMARY-003",
+    "path": "data/source_manifests/PREACQUISITION_INDEX_v3.yaml",
+    "sha256": "c84658709a4db74f3b95d8fa8efac244cf02f8201a3f63529c13fa1b0967c45e"
+  },
+  "known_expected_bytes": 1512866622,
+  "label_construction_performed": false,
+  "model_training_performed": false,
+  "records": [
+    {
+      "acquired_at_utc": "2026-08-03T13:54:51.360158+00:00",
+      "asset_id": "huri_pairs",
+      "bytes": 1681536,
+      "destination": "data/raw/huri/published_2020/HuRI.tsv",
+      "format_inspection": {
+        "declared_format": "tsv_positive_pairs",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "1681536",
+        "content_type": "text/tab-separated-values",
+        "etag": "\"19a880-5a06e8948318d\"",
+        "final_url": "https://interactome-atlas.org/data/HuRI.tsv",
+        "http_status": 200,
+        "last_modified": "Mon, 09 Mar 2020 16:31:33 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "4cdf94366ff6e23e71ef9ec81922e85b2b3a1fb08e938f7b00d86c027cf1ecd6",
+      "sidecar": "data/raw/huri/published_2020/HuRI.tsv.acquisition.json",
+      "source_key": "huri",
+      "source_manifest": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "source_manifest_sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "url": "https://interactome-atlas.org/data/HuRI.tsv"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:54:52.870468+00:00",
+      "asset_id": "huri_psi",
+      "bytes": 169848924,
+      "destination": "data/raw/huri/published_2020/HuRI.psi",
+      "format_inspection": {
+        "declared_format": "provider_psi_mi_export",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "169848924",
+        "content_type": null,
+        "etag": "\"a1fb05c-5a06e8a169c4e\"",
+        "final_url": "https://interactome-atlas.org/data/HuRI.psi",
+        "http_status": 200,
+        "last_modified": "Mon, 09 Mar 2020 16:31:47 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "d6e8185519d18ce18cfa66f5eab66ecb1e711113f0b62810e0a145dd33a9ee12",
+      "sidecar": "data/raw/huri/published_2020/HuRI.psi.acquisition.json",
+      "source_key": "huri",
+      "source_manifest": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "source_manifest_sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "url": "https://interactome-atlas.org/data/HuRI.psi"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:00.487029+00:00",
+      "asset_id": "test_space_screen_pairs",
+      "bytes": 37088,
+      "destination": "data/raw/huri/published_2020/Test_space_screens-19.tsv",
+      "format_inspection": {
+        "declared_format": "tsv_positive_pairs",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "37088",
+        "content_type": "text/tab-separated-values",
+        "etag": "\"90e0-5a06e8809e230\"",
+        "final_url": "https://interactome-atlas.org/data/Test_space_screens-19.tsv",
+        "http_status": 200,
+        "last_modified": "Mon, 09 Mar 2020 16:31:12 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "d0bdb242a01553a6eea9488e5bbea86b9c73829813d68927249e2a855939dd4c",
+      "sidecar": "data/raw/huri/published_2020/Test_space_screens-19.tsv.acquisition.json",
+      "source_key": "huri",
+      "source_manifest": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "source_manifest_sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "url": "https://interactome-atlas.org/data/Test_space_screens-19.tsv"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:01.069708+00:00",
+      "asset_id": "literature_benchmark_pairs",
+      "bytes": 430112,
+      "destination": "data/raw/huri/published_2020/Lit-BM.tsv",
+      "format_inspection": {
+        "declared_format": "tsv_positive_pairs",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "430112",
+        "content_type": "text/tab-separated-values",
+        "etag": "\"69020-5a06e85ff9b94\"",
+        "final_url": "https://interactome-atlas.org/data/Lit-BM.tsv",
+        "http_status": 200,
+        "last_modified": "Mon, 09 Mar 2020 16:30:38 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "f39c9c4b8a372286c3eca77d0ff651d837a643d32235eae866daae082663391d",
+      "sidecar": "data/raw/huri/published_2020/Lit-BM.tsv.acquisition.json",
+      "source_key": "huri",
+      "source_manifest": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "source_manifest_sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "url": "https://interactome-atlas.org/data/Lit-BM.tsv"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:01.999375+00:00",
+      "asset_id": "hi_ii_14_pairs",
+      "bytes": 436256,
+      "destination": "data/raw/huri/published_2020/HI-II-14.tsv",
+      "format_inspection": {
+        "declared_format": "tsv_positive_pairs",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "436256",
+        "content_type": "text/tab-separated-values",
+        "etag": "\"6a820-5a06e85fde854\"",
+        "final_url": "https://interactome-atlas.org/data/HI-II-14.tsv",
+        "http_status": 200,
+        "last_modified": "Mon, 09 Mar 2020 16:30:38 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "a8ac784ee9ea1ddb767189a9de9345bf778990f7ef29cc7bccb1ce39688a6415",
+      "sidecar": "data/raw/huri/published_2020/HI-II-14.tsv.acquisition.json",
+      "source_key": "huri",
+      "source_manifest": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "source_manifest_sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "url": "https://interactome-atlas.org/data/HI-II-14.tsv"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:02.908093+00:00",
+      "asset_id": "hi_ii_14_psi",
+      "bytes": 48078485,
+      "destination": "data/raw/huri/published_2020/HI-II-14.psi",
+      "format_inspection": {
+        "declared_format": "provider_psi_mi_export",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "48078485",
+        "content_type": null,
+        "etag": "\"2dd9e95-5a06e8a74ec7e\"",
+        "final_url": "https://interactome-atlas.org/data/HI-II-14.psi",
+        "http_status": 200,
+        "last_modified": "Mon, 09 Mar 2020 16:31:53 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "0d5542fd63e5dd49151928aa5ee319969670a91753708e75d17edb4718173275",
+      "sidecar": "data/raw/huri/published_2020/HI-II-14.psi.acquisition.json",
+      "source_key": "huri",
+      "source_manifest": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "source_manifest_sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "url": "https://interactome-atlas.org/data/HI-II-14.psi"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:05.894744+00:00",
+      "asset_id": "huri_supplementary_tables",
+      "bytes": 17506577,
+      "destination": "data/raw/huri/publication_2020/41586_2020_2188_MOESM3_ESM.zip",
+      "format_inspection": {
+        "archive": {
+          "encrypted_member_count": 0,
+          "extracted": false,
+          "maximum_member_compression_ratio": 9.512765385649018,
+          "member_count": 60,
+          "symlink_member_count": 0,
+          "total_compressed_bytes": 17490569,
+          "total_uncompressed_bytes": 57919248,
+          "unsafe_path_count": 0
+        },
+        "declared_format": "zip_xlsx_tables",
+        "detected_container_format": "zip"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "17506577",
+        "content_type": "application/octet-stream",
+        "etag": "\"1668e7a8e6889dd84d377300f3a71fc6\"",
+        "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2188-x/MediaObjects/41586_2020_2188_MOESM3_ESM.zip",
+        "http_status": 200,
+        "last_modified": "Fri, 17 Nov 2023 18:33:23 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "377f3dca340ab706721b8545afa00c9777dce6b3aeda1c79a3902d4ad5c43a06",
+      "sidecar": "data/raw/huri/publication_2020/41586_2020_2188_MOESM3_ESM.zip.acquisition.json",
+      "source_key": "huri",
+      "source_manifest": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "source_manifest_sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2188-x/MediaObjects/41586_2020_2188_MOESM3_ESM.zip"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:06.116759+00:00",
+      "asset_id": "huri_supplementary_methods",
+      "bytes": 772012,
+      "destination": "data/raw/huri/publication_2020/41586_2020_2188_MOESM1_ESM.pdf",
+      "format_inspection": {
+        "declared_format": "pdf",
+        "detected_container_format": "pdf"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "772012",
+        "content_type": "application/pdf",
+        "etag": "\"78b92edf7fe8af303d418e23312dd4d6\"",
+        "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2188-x/MediaObjects/41586_2020_2188_MOESM1_ESM.pdf",
+        "http_status": 200,
+        "last_modified": "Fri, 17 Nov 2023 18:33:22 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "413db194addfa9f877fd837fe6c4d4a8826896331b5ab52e17fb50ad1c7f45dd",
+      "sidecar": "data/raw/huri/publication_2020/41586_2020_2188_MOESM1_ESM.pdf.acquisition.json",
+      "source_key": "huri",
+      "source_manifest": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "source_manifest_sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2188-x/MediaObjects/41586_2020_2188_MOESM1_ESM.pdf"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:06.227006+00:00",
+      "asset_id": "huri_supplementary_table_guide",
+      "bytes": 116397,
+      "destination": "data/raw/huri/publication_2020/41586_2020_2188_MOESM4_ESM.pdf",
+      "format_inspection": {
+        "declared_format": "pdf",
+        "detected_container_format": "pdf"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "116397",
+        "content_type": "application/pdf",
+        "etag": "\"e7688dfa78dfe0b1efb66d0d6572bfd2\"",
+        "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2188-x/MediaObjects/41586_2020_2188_MOESM4_ESM.pdf",
+        "http_status": 200,
+        "last_modified": "Fri, 17 Nov 2023 18:33:23 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "1e01edae188696076bbf003e36aea92833415bf95a58830519b9ed6c504b8127",
+      "sidecar": "data/raw/huri/publication_2020/41586_2020_2188_MOESM4_ESM.pdf.acquisition.json",
+      "source_key": "huri",
+      "source_manifest": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "source_manifest_sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2188-x/MediaObjects/41586_2020_2188_MOESM4_ESM.pdf"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:06.334692+00:00",
+      "asset_id": "release_metalink",
+      "bytes": 8867,
+      "destination": "data/raw/uniprot/2026_02/UP000005640/RELEASE.metalink",
+      "format_inspection": {
+        "declared_format": "metalink_xml",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "8867",
+        "content_type": null,
+        "etag": "\"22a3-653ebb0451000\"",
+        "final_url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/RELEASE.metalink",
+        "http_status": 200,
+        "last_modified": "Wed, 10 Jun 2026 20:00:00 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "a5ce1342a0792eb1692925d6d4543278923a8f6edc7a1baac700ad1a878797b0",
+      "sidecar": "data/raw/uniprot/2026_02/UP000005640/RELEASE.metalink.acquisition.json",
+      "source_key": "uniprot",
+      "source_manifest": "data/source_manifests/PREACQUISITION_uniprot_human_v1.yaml",
+      "source_manifest_sha256": "a3bc2c2b2d27df4a1d554dbe3ebc1e7479e1c31d54ac8436ffebc1587fae0bf5",
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/RELEASE.metalink"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:06.868802+00:00",
+      "asset_id": "canonical_fasta",
+      "bytes": 7752225,
+      "destination": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.fasta.gz",
+      "format_inspection": {
+        "declared_format": "fasta_gzip",
+        "detected_container_format": "gzip",
+        "gzip_prefix_decompressed_bytes": 65536
+      },
+      "provider_checksum": {
+        "algorithm": "md5",
+        "expected": "942808a9d4b0d62bd658bea0e5d8d7b8",
+        "observed": "942808a9d4b0d62bd658bea0e5d8d7b8",
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "7752225",
+        "content_type": "application/x-gzip",
+        "etag": "\"764a21-653ebb0451000\"",
+        "final_url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606.fasta.gz",
+        "http_status": 200,
+        "last_modified": "Wed, 10 Jun 2026 20:00:00 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "cf49a88c4812dabbd934cb3e2e00b449e70375816e4d47cda7cc5b77b0754024",
+      "sidecar": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.fasta.gz.acquisition.json",
+      "source_key": "uniprot",
+      "source_manifest": "data/source_manifests/PREACQUISITION_uniprot_human_v1.yaml",
+      "source_manifest_sha256": "a3bc2c2b2d27df4a1d554dbe3ebc1e7479e1c31d54ac8436ffebc1587fae0bf5",
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606.fasta.gz"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:08.374832+00:00",
+      "asset_id": "additional_isoform_fasta",
+      "bytes": 41901496,
+      "destination": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606_additional.fasta.gz",
+      "format_inspection": {
+        "declared_format": "fasta_gzip",
+        "detected_container_format": "gzip",
+        "gzip_prefix_decompressed_bytes": 65536
+      },
+      "provider_checksum": {
+        "algorithm": "md5",
+        "expected": "7554aa19abf842d6b390df9d927c64bf",
+        "observed": "7554aa19abf842d6b390df9d927c64bf",
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "41901496",
+        "content_type": "application/x-gzip",
+        "etag": "\"27f5db8-653ebb0451000\"",
+        "final_url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606_additional.fasta.gz",
+        "http_status": 200,
+        "last_modified": "Wed, 10 Jun 2026 20:00:00 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "c6e9c7d2e243ea0e5fb9b0243099712a3cc95ed0208889f84ceab43064f95cee",
+      "sidecar": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606_additional.fasta.gz.acquisition.json",
+      "source_key": "uniprot",
+      "source_manifest": "data/source_manifests/PREACQUISITION_uniprot_human_v1.yaml",
+      "source_manifest_sha256": "a3bc2c2b2d27df4a1d554dbe3ebc1e7479e1c31d54ac8436ffebc1587fae0bf5",
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606_additional.fasta.gz"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:10.958845+00:00",
+      "asset_id": "canonical_dat",
+      "bytes": 134512433,
+      "destination": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.dat.gz",
+      "format_inspection": {
+        "declared_format": "uniprot_flatfile_gzip",
+        "detected_container_format": "gzip",
+        "gzip_prefix_decompressed_bytes": 65536
+      },
+      "provider_checksum": {
+        "algorithm": "md5",
+        "expected": "a46ff6e3fcb5cca7f5178b6c8437e950",
+        "observed": "a46ff6e3fcb5cca7f5178b6c8437e950",
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "134512433",
+        "content_type": "application/x-gzip",
+        "etag": "\"8047f31-653ebb0451000\"",
+        "final_url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606.dat.gz",
+        "http_status": 200,
+        "last_modified": "Wed, 10 Jun 2026 20:00:00 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "8157caae64bf8382b7afccee30863f060e858dab6862dad3e15af0d20047a7b0",
+      "sidecar": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.dat.gz.acquisition.json",
+      "source_key": "uniprot",
+      "source_manifest": "data/source_manifests/PREACQUISITION_uniprot_human_v1.yaml",
+      "source_manifest_sha256": "a3bc2c2b2d27df4a1d554dbe3ebc1e7479e1c31d54ac8436ffebc1587fae0bf5",
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606.dat.gz"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:16.704733+00:00",
+      "asset_id": "identifier_mapping",
+      "bytes": 27213265,
+      "destination": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.idmapping.gz",
+      "format_inspection": {
+        "declared_format": "idmapping_tsv_gzip",
+        "detected_container_format": "gzip",
+        "gzip_prefix_decompressed_bytes": 65536
+      },
+      "provider_checksum": {
+        "algorithm": "md5",
+        "expected": "f514c48c8d426246a8f9aa125f2e22db",
+        "observed": "f514c48c8d426246a8f9aa125f2e22db",
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "27213265",
+        "content_type": "application/x-gzip",
+        "etag": "\"19f3dd1-653ebb0451000\"",
+        "final_url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606.idmapping.gz",
+        "http_status": 200,
+        "last_modified": "Wed, 10 Jun 2026 20:00:00 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "720b4f01358ec6f124283889113a99fb20ccba9ff0750b7ba41301c1915d20f0",
+      "sidecar": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.idmapping.gz.acquisition.json",
+      "source_key": "uniprot",
+      "source_manifest": "data/source_manifests/PREACQUISITION_uniprot_human_v1.yaml",
+      "source_manifest_sha256": "a3bc2c2b2d27df4a1d554dbe3ebc1e7479e1c31d54ac8436ffebc1587fae0bf5",
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606.idmapping.gz"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T13:55:18.772129+00:00",
+      "asset_id": "human_psi_mi_xml_3",
+      "bytes": 1025219998,
+      "destination": "data/raw/intact/2026-01-09/psi30/species/human.zip",
+      "format_inspection": {
+        "archive": {
+          "encrypted_member_count": 0,
+          "extracted": false,
+          "maximum_member_compression_ratio": 47.1130232311497,
+          "member_count": 329,
+          "symlink_member_count": 0,
+          "total_compressed_bytes": 1025177114,
+          "total_uncompressed_bytes": 17520515023,
+          "unsafe_path_count": 0
+        },
+        "declared_format": "psi_mi_xml_3_zip",
+        "detected_container_format": "zip"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "1025219998",
+        "content_type": "application/zip",
+        "etag": "\"3d1b9d9e-64857a6c7cad8\"",
+        "final_url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/psi30/species/human.zip",
+        "http_status": 200,
+        "last_modified": "Wed, 14 Jan 2026 11:45:57 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "5ce1b8fefafa8e008f806ccbcc77acf7be28d3953afd9a7d5d56587eeb5da898",
+      "sidecar": "data/raw/intact/2026-01-09/psi30/species/human.zip.acquisition.json",
+      "source_key": "intact_imex",
+      "source_manifest": "data/source_manifests/PREACQUISITION_intact_imex_v1.yaml",
+      "source_manifest_sha256": "9014e2d70e68d3f9dfb814640e8c0382750eff746587da6cee1d51b27061aa9d",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/psi30/species/human.zip"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T14:00:03.704379+00:00",
+      "asset_id": "intact_controlled_vocabulary",
+      "bytes": 1587321,
+      "destination": "data/raw/intact/2026-01-09/cv/intact.obo",
+      "format_inspection": {
+        "declared_format": "obo",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "1587321",
+        "content_type": null,
+        "etag": "\"183879-648573c4a9eb5\"",
+        "final_url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/cv/intact.obo",
+        "http_status": 200,
+        "last_modified": "Wed, 14 Jan 2026 11:16:11 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "10cb758d5886f80b231243ca8d6a1588585044bec36422797e12a12c8bdd9522",
+      "sidecar": "data/raw/intact/2026-01-09/cv/intact.obo.acquisition.json",
+      "source_key": "intact_imex",
+      "source_manifest": "data/source_manifests/PREACQUISITION_intact_imex_v1.yaml",
+      "source_manifest_sha256": "9014e2d70e68d3f9dfb814640e8c0382750eff746587da6cee1d51b27061aa9d",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/cv/intact.obo"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T14:00:04.462597+00:00",
+      "asset_id": "mutation_annotations",
+      "bytes": 33615072,
+      "destination": "data/raw/intact/2026-01-09/various/mutations.tsv",
+      "format_inspection": {
+        "declared_format": "tsv",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": false,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "33615072",
+        "content_type": "text/tab-separated-values",
+        "etag": "\"200ece0-64857dc8f5064\"",
+        "final_url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/various/mutations.tsv",
+        "http_status": 200,
+        "last_modified": "Wed, 14 Jan 2026 12:00:59 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "4fb9438fe5686c2099afde0349b4e167c5ff5a6a8c1e861c5b95f4c041b963bd",
+      "sidecar": "data/raw/intact/2026-01-09/various/mutations.tsv.acquisition.json",
+      "source_key": "intact_imex",
+      "source_manifest": "data/source_manifests/PREACQUISITION_intact_imex_v1.yaml",
+      "source_manifest_sha256": "9014e2d70e68d3f9dfb814640e8c0382750eff746587da6cee1d51b27061aa9d",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/various/mutations.tsv"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T14:00:17.143476+00:00",
+      "asset_id": "sifts_chain_uniprot",
+      "bytes": 6065626,
+      "destination": "data/raw/sifts/observed_2026-07-26/flatfiles/tsv/pdb_chain_uniprot.tsv.gz",
+      "format_inspection": {
+        "declared_format": "tsv_gzip",
+        "detected_container_format": "gzip",
+        "gzip_prefix_decompressed_bytes": 65536
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "6065626",
+        "content_type": "application/x-gzip",
+        "etag": "\"5c8dda-65778bdec5929\"",
+        "final_url": "https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_uniprot.tsv.gz",
+        "http_status": 200,
+        "last_modified": "Sun, 26 Jul 2026 00:32:34 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "c5ef67ca239ee877c29672f8845cd33a4cc8412261ab7083733ea37143db9867",
+      "sidecar": "data/raw/sifts/observed_2026-07-26/flatfiles/tsv/pdb_chain_uniprot.tsv.gz.acquisition.json",
+      "source_key": "pdb_sifts",
+      "source_manifest": "data/source_manifests/PREACQUISITION_pdb_sifts_v2.yaml",
+      "source_manifest_sha256": "ec57aa1b829c3f65ce3e9743d2eb19e3dc72f821dc12535372c09f812f3042ff",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_uniprot.tsv.gz"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T14:00:19.533816+00:00",
+      "asset_id": "sifts_chain_taxonomy",
+      "bytes": 4561221,
+      "destination": "data/raw/sifts/observed_2026-07-26/flatfiles/tsv/pdb_chain_taxonomy.tsv.gz",
+      "format_inspection": {
+        "declared_format": "tsv_gzip",
+        "detected_container_format": "gzip",
+        "gzip_prefix_decompressed_bytes": 65536
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "4561221",
+        "content_type": "application/x-gzip",
+        "etag": "\"459945-65778d51112b8\"",
+        "final_url": "https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_taxonomy.tsv.gz",
+        "http_status": 200,
+        "last_modified": "Sun, 26 Jul 2026 00:39:02 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "ffc452453f6e7867175a86f8c111dd9443ba1b97e90166bc5c0e50d8c34bba8b",
+      "sidecar": "data/raw/sifts/observed_2026-07-26/flatfiles/tsv/pdb_chain_taxonomy.tsv.gz.acquisition.json",
+      "source_key": "pdb_sifts",
+      "source_manifest": "data/source_manifests/PREACQUISITION_pdb_sifts_v2.yaml",
+      "source_manifest_sha256": "ec57aa1b829c3f65ce3e9743d2eb19e3dc72f821dc12535372c09f812f3042ff",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_taxonomy.tsv.gz"
+    },
+    {
+      "acquired_at_utc": "2026-08-03T14:00:21.246067+00:00",
+      "asset_id": "sifts_observed_segments",
+      "bytes": 10624476,
+      "destination": "data/raw/sifts/observed_2026-07-26/flatfiles/tsv/uniprot_segments_observed.tsv.gz",
+      "format_inspection": {
+        "declared_format": "tsv_gzip",
+        "detected_container_format": "gzip",
+        "gzip_prefix_decompressed_bytes": 65536
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "10624476",
+        "content_type": "application/x-gzip",
+        "etag": "\"a21ddc-657790036a228\"",
+        "final_url": "https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/uniprot_segments_observed.tsv.gz",
+        "http_status": 200,
+        "last_modified": "Sun, 26 Jul 2026 00:51:06 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "bda9656b9b3eecceacd43a94a4f86c2af3fea3fe889e2e36aeafa6868a6d6331",
+      "sidecar": "data/raw/sifts/observed_2026-07-26/flatfiles/tsv/uniprot_segments_observed.tsv.gz.acquisition.json",
+      "source_key": "pdb_sifts",
+      "source_manifest": "data/source_manifests/PREACQUISITION_pdb_sifts_v2.yaml",
+      "source_manifest_sha256": "ec57aa1b829c3f65ce3e9743d2eb19e3dc72f821dc12535372c09f812f3042ff",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/uniprot_segments_observed.tsv.gz"
+    }
+  ],
+  "required_asset_count": 19,
+  "reused_existing_count": 0,
+  "run_id": "primary-raw-v1-20260803T135432Z",
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-qual-arm64_0.1.0.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scientific_payloads_downloaded": true,
+  "selected_sources": [
+    "huri",
+    "uniprot",
+    "intact_imex",
+    "pdb_sifts"
+  ],
+  "started_at_utc": "2026-08-03T13:54:51.354325+00:00",
+  "status": "pass",
+  "total_payload_bytes": 1531969387,
+  "warnings": []
+}

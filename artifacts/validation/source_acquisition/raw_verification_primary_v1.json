@@ -1,0 +1,529 @@
+{
+  "acquisition_manifest": {
+    "path": "data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json",
+    "run_id": "primary-raw-v1-20260803T135432Z",
+    "sha256": "5750fe08eac343e23c0f0c56cf749c7477cbfd92233f2679de5fedf9d8f22231"
+  },
+  "active_verifier": {
+    "entrypoint": "scripts/data/verify_raw_acquisition_v3.py",
+    "entrypoint_sha256": "962c5c50a03a262f2a9490500065957f453c53f686b157d0bf3892ebf282eff6",
+    "git_commit": "3c3ebf13beca859fb41bda0b5818c19ebc249ab2",
+    "semantics": "provider-advertised counts are audited metadata, not assumed row-count invariants"
+  },
+  "asset_count": 20,
+  "code_provenance": {
+    "acquisition_commit": "af5e122ca59a2a26bbf93cfe308dcee2132c36b7",
+    "committed_script_sha256": "3292171b9f2fdf21efab451d4a71facfd3c777ef78fb9875ffe59d58383b30b4",
+    "qualification_lock_sha256": "3e1f43eb11a5f77bd06dc0c4f4c5f6f21349b788017cad01825eb542099c0d89",
+    "script": "scripts/data/acquire_manifest_assets.py",
+    "status": "pass"
+  },
+  "errors": [],
+  "label_construction_performed": false,
+  "model_training_performed": false,
+  "raw_tree": {
+    "expected_payload_and_sidecar_count": 40,
+    "file_count": 41,
+    "missing_files": [],
+    "partial_files": [],
+    "status": "pass",
+    "symbolic_links": [],
+    "unexpected_files": []
+  },
+  "records": [
+    {
+      "asset_id": "huri_pairs",
+      "bytes": 1681536,
+      "destination": "data/raw/huri/published_2020/HuRI.tsv",
+      "inventory": {
+        "advertised_count_matches_tsv_rows": false,
+        "blank_line_count": 0,
+        "downloaded_tsv_row_count": 52548,
+        "interpretation": "advertised interaction count and gene-pair TSV rows are distinct source representations; the discrepancy is retained and is not a raw-integrity failure",
+        "inventory_method": "streamed_text_lines",
+        "line_count": 52548,
+        "maximum_tabular_field_count": 2,
+        "minimum_tabular_field_count": 2,
+        "portal_advertised_interaction_count": 52569,
+        "row_count_minus_advertised_count": -21
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "4cdf94366ff6e23e71ef9ec81922e85b2b3a1fb08e938f7b00d86c027cf1ecd6",
+      "sidecar_passed": true,
+      "source_key": "huri",
+      "status": "pass"
+    },
+    {
+      "asset_id": "huri_psi",
+      "bytes": 169848924,
+      "destination": "data/raw/huri/published_2020/HuRI.psi",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 171545,
+        "maximum_tabular_field_count": 42,
+        "minimum_tabular_field_count": 42
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "d6e8185519d18ce18cfa66f5eab66ecb1e711113f0b62810e0a145dd33a9ee12",
+      "sidecar_passed": true,
+      "source_key": "huri",
+      "status": "pass"
+    },
+    {
+      "asset_id": "test_space_screen_pairs",
+      "bytes": 37088,
+      "destination": "data/raw/huri/published_2020/Test_space_screens-19.tsv",
+      "inventory": {
+        "advertised_count_matches_tsv_rows": true,
+        "blank_line_count": 0,
+        "downloaded_tsv_row_count": 1159,
+        "interpretation": "advertised interaction count and gene-pair TSV rows are distinct source representations; the discrepancy is retained and is not a raw-integrity failure",
+        "inventory_method": "streamed_text_lines",
+        "line_count": 1159,
+        "maximum_tabular_field_count": 2,
+        "minimum_tabular_field_count": 2,
+        "portal_advertised_interaction_count": 1159,
+        "row_count_minus_advertised_count": 0
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "d0bdb242a01553a6eea9488e5bbea86b9c73829813d68927249e2a855939dd4c",
+      "sidecar_passed": true,
+      "source_key": "huri",
+      "status": "pass"
+    },
+    {
+      "asset_id": "literature_benchmark_pairs",
+      "bytes": 430112,
+      "destination": "data/raw/huri/published_2020/Lit-BM.tsv",
+      "inventory": {
+        "advertised_count_matches_tsv_rows": true,
+        "blank_line_count": 0,
+        "downloaded_tsv_row_count": 13441,
+        "interpretation": "advertised interaction count and gene-pair TSV rows are distinct source representations; the discrepancy is retained and is not a raw-integrity failure",
+        "inventory_method": "streamed_text_lines",
+        "line_count": 13441,
+        "maximum_tabular_field_count": 2,
+        "minimum_tabular_field_count": 2,
+        "portal_advertised_interaction_count": 13441,
+        "row_count_minus_advertised_count": 0
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "f39c9c4b8a372286c3eca77d0ff651d837a643d32235eae866daae082663391d",
+      "sidecar_passed": true,
+      "source_key": "huri",
+      "status": "pass"
+    },
+    {
+      "asset_id": "hi_ii_14_pairs",
+      "bytes": 436256,
+      "destination": "data/raw/huri/published_2020/HI-II-14.tsv",
+      "inventory": {
+        "advertised_count_matches_tsv_rows": false,
+        "blank_line_count": 0,
+        "downloaded_tsv_row_count": 13633,
+        "interpretation": "advertised interaction count and gene-pair TSV rows are distinct source representations; the discrepancy is retained and is not a raw-integrity failure",
+        "inventory_method": "streamed_text_lines",
+        "line_count": 13633,
+        "maximum_tabular_field_count": 2,
+        "minimum_tabular_field_count": 2,
+        "portal_advertised_interaction_count": 13993,
+        "row_count_minus_advertised_count": -360
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "a8ac784ee9ea1ddb767189a9de9345bf778990f7ef29cc7bccb1ce39688a6415",
+      "sidecar_passed": true,
+      "source_key": "huri",
+      "status": "pass"
+    },
+    {
+      "asset_id": "hi_ii_14_psi",
+      "bytes": 48078485,
+      "destination": "data/raw/huri/published_2020/HI-II-14.psi",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 49389,
+        "maximum_tabular_field_count": 42,
+        "minimum_tabular_field_count": 42
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "0d5542fd63e5dd49151928aa5ee319969670a91753708e75d17edb4718173275",
+      "sidecar_passed": true,
+      "source_key": "huri",
+      "status": "pass"
+    },
+    {
+      "asset_id": "huri_supplementary_tables",
+      "bytes": 17506577,
+      "destination": "data/raw/huri/publication_2020/41586_2020_2188_MOESM3_ESM.zip",
+      "inventory": {
+        "encrypted_member_count": 0,
+        "extracted": false,
+        "inventory_method": "zip_central_directory_no_extraction",
+        "maximum_member_compression_ratio": 9.512765385649018,
+        "member_count": 60,
+        "member_suffix_counts": {
+          ".txt": 50,
+          ".xls": 6,
+          ".xlsx": 2,
+          "<none>": 2
+        },
+        "symlink_member_count": 0,
+        "total_compressed_bytes": 17490569,
+        "total_uncompressed_bytes": 57919248,
+        "unsafe_path_count": 0
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "377f3dca340ab706721b8545afa00c9777dce6b3aeda1c79a3902d4ad5c43a06",
+      "sidecar_passed": true,
+      "source_key": "huri",
+      "status": "pass"
+    },
+    {
+      "asset_id": "huri_supplementary_methods",
+      "bytes": 772012,
+      "destination": "data/raw/huri/publication_2020/41586_2020_2188_MOESM1_ESM.pdf",
+      "inventory": {
+        "inventory_method": "pdf_signature",
+        "signature_passed": true
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "413db194addfa9f877fd837fe6c4d4a8826896331b5ab52e17fb50ad1c7f45dd",
+      "sidecar_passed": true,
+      "source_key": "huri",
+      "status": "pass"
+    },
+    {
+      "asset_id": "huri_supplementary_table_guide",
+      "bytes": 116397,
+      "destination": "data/raw/huri/publication_2020/41586_2020_2188_MOESM4_ESM.pdf",
+      "inventory": {
+        "inventory_method": "pdf_signature",
+        "signature_passed": true
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "1e01edae188696076bbf003e36aea92833415bf95a58830519b9ed6c504b8127",
+      "sidecar_passed": true,
+      "source_key": "huri",
+      "status": "pass"
+    },
+    {
+      "asset_id": "release_metalink",
+      "bytes": 8867,
+      "destination": "data/raw/uniprot/2026_02/UP000005640/RELEASE.metalink",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 124,
+        "maximum_tabular_field_count": 1,
+        "minimum_tabular_field_count": 1
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "a5ce1342a0792eb1692925d6d4543278923a8f6edc7a1baac700ad1a878797b0",
+      "sidecar_passed": true,
+      "source_key": "uniprot",
+      "status": "pass"
+    },
+    {
+      "asset_id": "canonical_fasta",
+      "bytes": 7752225,
+      "destination": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.fasta.gz",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_gzip_lines",
+        "line_count": 221661,
+        "maximum_tabular_field_count": 1,
+        "minimum_tabular_field_count": 1,
+        "prefix": ">",
+        "prefix_count": 20652
+      },
+      "provider_checksum_recheck": {
+        "algorithm": "md5",
+        "observed": "942808a9d4b0d62bd658bea0e5d8d7b8",
+        "passed": true
+      },
+      "read_only": true,
+      "sha256": "cf49a88c4812dabbd934cb3e2e00b449e70375816e4d47cda7cc5b77b0754024",
+      "sidecar_passed": true,
+      "source_key": "uniprot",
+      "status": "pass"
+    },
+    {
+      "asset_id": "additional_isoform_fasta",
+      "bytes": 41901496,
+      "destination": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606_additional.fasta.gz",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_gzip_lines",
+        "line_count": 1409109,
+        "maximum_tabular_field_count": 1,
+        "minimum_tabular_field_count": 1,
+        "prefix": ">",
+        "prefix_count": 148985
+      },
+      "provider_checksum_recheck": {
+        "algorithm": "md5",
+        "observed": "7554aa19abf842d6b390df9d927c64bf",
+        "passed": true
+      },
+      "read_only": true,
+      "sha256": "c6e9c7d2e243ea0e5fb9b0243099712a3cc95ed0208889f84ceab43064f95cee",
+      "sidecar_passed": true,
+      "source_key": "uniprot",
+      "status": "pass"
+    },
+    {
+      "asset_id": "canonical_dat",
+      "bytes": 134512433,
+      "destination": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.dat.gz",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_gzip_lines",
+        "line_count": 9672265,
+        "maximum_tabular_field_count": 1,
+        "minimum_tabular_field_count": 1,
+        "uniprot_entry_count": 20652
+      },
+      "provider_checksum_recheck": {
+        "algorithm": "md5",
+        "observed": "a46ff6e3fcb5cca7f5178b6c8437e950",
+        "passed": true
+      },
+      "read_only": true,
+      "sha256": "8157caae64bf8382b7afccee30863f060e858dab6862dad3e15af0d20047a7b0",
+      "sidecar_passed": true,
+      "source_key": "uniprot",
+      "status": "pass"
+    },
+    {
+      "asset_id": "identifier_mapping",
+      "bytes": 27213265,
+      "destination": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.idmapping.gz",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_gzip_lines",
+        "line_count": 4377974,
+        "maximum_tabular_field_count": 3,
+        "minimum_tabular_field_count": 3
+      },
+      "provider_checksum_recheck": {
+        "algorithm": "md5",
+        "observed": "f514c48c8d426246a8f9aa125f2e22db",
+        "passed": true
+      },
+      "read_only": true,
+      "sha256": "720b4f01358ec6f124283889113a99fb20ccba9ff0750b7ba41301c1915d20f0",
+      "sidecar_passed": true,
+      "source_key": "uniprot",
+      "status": "pass"
+    },
+    {
+      "asset_id": "human_psi_mi_xml_3",
+      "bytes": 1025219998,
+      "destination": "data/raw/intact/2026-01-09/psi30/species/human.zip",
+      "inventory": {
+        "encrypted_member_count": 0,
+        "extracted": false,
+        "inventory_method": "zip_central_directory_no_extraction",
+        "maximum_member_compression_ratio": 47.1130232311497,
+        "member_count": 329,
+        "member_suffix_counts": {
+          ".xml": 329
+        },
+        "symlink_member_count": 0,
+        "total_compressed_bytes": 1025177114,
+        "total_uncompressed_bytes": 17520515023,
+        "unsafe_path_count": 0
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "5ce1b8fefafa8e008f806ccbcc77acf7be28d3953afd9a7d5d56587eeb5da898",
+      "sidecar_passed": true,
+      "source_key": "intact_imex",
+      "status": "pass"
+    },
+    {
+      "asset_id": "intact_controlled_vocabulary",
+      "bytes": 1587321,
+      "destination": "data/raw/intact/2026-01-09/cv/intact.obo",
+      "inventory": {
+        "blank_line_count": 4084,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 35987,
+        "maximum_tabular_field_count": 2,
+        "minimum_tabular_field_count": 0,
+        "prefix": "[Term]",
+        "prefix_count": 4082
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "10cb758d5886f80b231243ca8d6a1588585044bec36422797e12a12c8bdd9522",
+      "sidecar_passed": true,
+      "source_key": "intact_imex",
+      "status": "pass"
+    },
+    {
+      "asset_id": "mutation_annotations",
+      "bytes": 33615072,
+      "destination": "data/raw/intact/2026-01-09/various/mutations.tsv",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 89926,
+        "maximum_tabular_field_count": 15,
+        "minimum_tabular_field_count": 15
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "4fb9438fe5686c2099afde0349b4e167c5ff5a6a8c1e861c5b95f4c041b963bd",
+      "sidecar_passed": true,
+      "source_key": "intact_imex",
+      "status": "pass"
+    },
+    {
+      "asset_id": "sifts_chain_uniprot",
+      "bytes": 6065626,
+      "destination": "data/raw/sifts/observed_2026-07-26/flatfiles/tsv/pdb_chain_uniprot.tsv.gz",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_gzip_lines",
+        "line_count": 1007699,
+        "maximum_tabular_field_count": 9,
+        "minimum_tabular_field_count": 1
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "c5ef67ca239ee877c29672f8845cd33a4cc8412261ab7083733ea37143db9867",
+      "sidecar_passed": true,
+      "source_key": "pdb_sifts",
+      "status": "pass"
+    },
+    {
+      "asset_id": "sifts_chain_taxonomy",
+      "bytes": 4561221,
+      "destination": "data/raw/sifts/observed_2026-07-26/flatfiles/tsv/pdb_chain_taxonomy.tsv.gz",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_gzip_lines",
+        "line_count": 1076306,
+        "maximum_tabular_field_count": 4,
+        "minimum_tabular_field_count": 1
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "ffc452453f6e7867175a86f8c111dd9443ba1b97e90166bc5c0e50d8c34bba8b",
+      "sidecar_passed": true,
+      "source_key": "pdb_sifts",
+      "status": "pass"
+    },
+    {
+      "asset_id": "sifts_observed_segments",
+      "bytes": 10624476,
+      "destination": "data/raw/sifts/observed_2026-07-26/flatfiles/tsv/uniprot_segments_observed.tsv.gz",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_gzip_lines",
+        "line_count": 1519872,
+        "maximum_tabular_field_count": 9,
+        "minimum_tabular_field_count": 1
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "bda9656b9b3eecceacd43a94a4f86c2af3fea3fe889e2e36aeafa6868a6d6331",
+      "sidecar_passed": true,
+      "source_key": "pdb_sifts",
+      "status": "pass"
+    }
+  ],
+  "required_asset_count": 19,
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-qual-arm64_0.1.0.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "source_count_discrepancies": [
+    {
+      "asset_id": "huri_pairs",
+      "classification": "source_representation_discrepancy_not_integrity_failure",
+      "difference": -21,
+      "downloaded_tsv_row_count": 52548,
+      "portal_advertised_interaction_count": 52569,
+      "source_key": "huri"
+    },
+    {
+      "asset_id": "hi_ii_14_pairs",
+      "classification": "source_representation_discrepancy_not_integrity_failure",
+      "difference": -360,
+      "downloaded_tsv_row_count": 13633,
+      "portal_advertised_interaction_count": 13993,
+      "source_key": "huri"
+    }
+  ],
+  "status": "pass",
+  "total_payload_bytes": 1531969387,
+  "uniprot_metalink": {
+    "acquired_payloads_crosschecked": [
+      {
+        "asset_id": "canonical_fasta",
+        "bytes": 7752225,
+        "filename": "UP000005640_9606.fasta.gz",
+        "md5": "942808a9d4b0d62bd658bea0e5d8d7b8",
+        "passed": true
+      },
+      {
+        "asset_id": "additional_isoform_fasta",
+        "bytes": 41901496,
+        "filename": "UP000005640_9606_additional.fasta.gz",
+        "md5": "7554aa19abf842d6b390df9d927c64bf",
+        "passed": true
+      },
+      {
+        "asset_id": "canonical_dat",
+        "bytes": 134512433,
+        "filename": "UP000005640_9606.dat.gz",
+        "md5": "a46ff6e3fcb5cca7f5178b6c8437e950",
+        "passed": true
+      },
+      {
+        "asset_id": "identifier_mapping",
+        "bytes": 27213265,
+        "filename": "UP000005640_9606.idmapping.gz",
+        "md5": "f514c48c8d426246a8f9aa125f2e22db",
+        "passed": true
+      }
+    ],
+    "license_name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "metalink_file_count": 10,
+    "release": "2026_02",
+    "status": "pass"
+  },
+  "verification_id": "RAW-VERIFY-PRIMARY-001",
+  "verified_at_utc": "2026-08-03T14:09:26.425233+00:00",
+  "verifier_code": {
+    "entrypoint": "scripts/data/verify_raw_acquisition_v2.py",
+    "entrypoint_sha256": "e5a0734e1d91d5f92eef6dae155ea600cceab5657881e442c0f8c448b30fb6a1",
+    "git": {
+      "commit": "3c3ebf13beca859fb41bda0b5818c19ebc249ab2",
+      "tracked_worktree_clean": true
+    },
+    "implementation": "scripts/data/verify_raw_acquisition.py",
+    "implementation_sha256": "52a032c5da04c4a5e45710e6e6bc1f3ecc52fbe0c365ed0225f34c1ce9f32fa0"
+  },
+  "warnings": [
+    "huri_pairs: portal advertises 52569 interactions but the immutable TSV has 52548 rows; preserve both counts",
+    "hi_ii_14_pairs: portal advertises 13993 interactions but the immutable TSV has 13633 rows; preserve both counts"
+  ]
+}
