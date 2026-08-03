@@ -1,0 +1,1332 @@
+{
+  "authorizations": {
+    "label_construction": false,
+    "model_training": false,
+    "source_reconciliation": true
+  },
+  "check_counts": {
+    "fail": 0,
+    "pass": 150,
+    "warning": 1
+  },
+  "checks": [
+    {
+      "check_id": "manifest.sha256_sidecar",
+      "expected": {
+        "filename": "PARSE_MANIFEST.json",
+        "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+      },
+      "observed": {
+        "filename": "PARSE_MANIFEST.json",
+        "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.status_complete",
+      "expected": "complete",
+      "observed": "complete",
+      "status": "pass"
+    },
+    {
+      "check_id": "authorization.no_label_construction",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "authorization.no_model_training",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.source_scope",
+      "expected": [
+        "uniprot",
+        "huri",
+        "pdb_sifts",
+        "intact_imex"
+      ],
+      "observed": [
+        "uniprot",
+        "huri",
+        "pdb_sifts",
+        "intact_imex"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.parser_version",
+      "expected": "1.2.0",
+      "observed": "1.2.0",
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.architecture",
+      "expected": "aarch64",
+      "observed": "aarch64",
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.manifest_container_sha256",
+      "expected": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "observed": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime.active_container_sha256",
+      "expected": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "observed": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.parse_config_sha256",
+      "expected": "92ee7c5fccec29881a4edea3736b8d6d9490301612ce0f70ba09d22419460d57",
+      "observed": "92ee7c5fccec29881a4edea3736b8d6d9490301612ce0f70ba09d22419460d57",
+      "status": "pass"
+    },
+    {
+      "check_id": "authorization.parse_config_labels_false",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "authorization.parse_config_training_false",
+      "expected": false,
+      "observed": false,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.production_parse_was_clean",
+      "expected": true,
+      "observed": true,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.validator_checkout_matches_parse_commit",
+      "expected": "403397cd52dec8d7e37f571b13c73f47173fd6f0",
+      "observed": "403397cd52dec8d7e37f571b13c73f47173fd6f0",
+      "status": "pass"
+    },
+    {
+      "check_id": "source.uniprot.release",
+      "expected": "2026_02",
+      "observed": "2026_02",
+      "status": "pass"
+    },
+    {
+      "check_id": "source.huri.release",
+      "expected": "published_2020",
+      "observed": "published_2020",
+      "status": "pass"
+    },
+    {
+      "check_id": "source.pdb_sifts.release",
+      "expected": "observed_2026-07-26",
+      "observed": "observed_2026-07-26",
+      "status": "pass"
+    },
+    {
+      "check_id": "source.intact_imex.release",
+      "expected": "release_252_archive_2026-01-09",
+      "observed": "release_252_archive_2026-01-09",
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.uniprot.parser_revision",
+      "expected": "v2_explicit_additional_sequence_semantics",
+      "observed": "v2_explicit_additional_sequence_semantics",
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.uniprot.sequence_counts.canonical",
+      "expected": 20652,
+      "observed": 20652,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.uniprot.sequence_counts.additional_isoform",
+      "expected": 148288,
+      "observed": 148288,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.uniprot.sequence_counts.additional_non_isoform",
+      "expected": 697,
+      "observed": 697,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.uniprot.canonical_fasta_dat_mismatch_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.uniprot.additional_isoform_parent_missing_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.huri.parser_revision",
+      "expected": "huri_v2_complete_workbook_coverage",
+      "observed": "huri_v2_complete_workbook_coverage",
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.huri.supplement.parsed_table_count",
+      "expected": 29,
+      "observed": 29,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.pdb_sifts.declared_uniprot_release_in_sifts",
+      "expected": "2026.03",
+      "observed": "2026.03",
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.parser_revision",
+      "expected": "v3_exact_unary_binary_nary_semantics",
+      "observed": "v3_exact_unary_binary_nary_semantics",
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.archive_member_count",
+      "expected": 329,
+      "observed": 329,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.counts.source_interactions",
+      "expected": 552442,
+      "observed": 552442,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.counts.evidence_records",
+      "expected": 552442,
+      "observed": 552442,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.counts.negative_records",
+      "expected": 939,
+      "observed": 939,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.counts.binary_two_protein_records",
+      "expected": 482044,
+      "observed": 482044,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.counts.original_nary_records",
+      "expected": 41964,
+      "observed": 41964,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.counts.expanded_records",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.participant_count_distribution.1",
+      "expected": 2198,
+      "observed": 2198,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.participant_count_distribution.2",
+      "expected": 508280,
+      "observed": 508280,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.cardinality_semantics.original_unary_records",
+      "expected": 2198,
+      "observed": 2198,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.psi_xml.cardinality_semantics.original_nary_definition",
+      "expected": "participant_count_greater_than_2",
+      "observed": "participant_count_greater_than_2",
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.mutations.logical_records",
+      "expected": 89925,
+      "observed": 89925,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.mutations.reconstructed_multiline_records",
+      "expected": 5,
+      "observed": 5,
+      "status": "pass"
+    },
+    {
+      "check_id": "report.source_reports.intact_imex.controlled_vocabulary.term_count",
+      "expected": 4082,
+      "observed": 4082,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.evidence_manifest_sha256",
+      "expected": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+      "observed": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.staging_manifest_sha256",
+      "expected": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+      "observed": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.table_summaries_present",
+      "expected": ">0",
+      "observed": 21,
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.huri/evidence_records",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 220934,
+        "files": 3,
+        "parts": 3,
+        "rows": 220934,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.huri/huri_fusion_interference",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "observed": {
+        "file_rows": 3738,
+        "files": 1,
+        "parts": 1,
+        "rows": 3738,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.huri/huri_orf_mappings",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 17436,
+        "files": 1,
+        "parts": 1,
+        "rows": 17436,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.huri/huri_space_membership",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 19818,
+        "files": 1,
+        "parts": 1,
+        "rows": 19818,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.huri/huri_structural_contact_annotations",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "observed": {
+        "file_rows": 3431,
+        "files": 1,
+        "parts": 1,
+        "rows": 3431,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.huri/participant_features",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 441868,
+        "files": 5,
+        "parts": 5,
+        "rows": 441868,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.huri/participants",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 441868,
+        "files": 5,
+        "parts": 5,
+        "rows": 441868,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.huri/source_pair_views",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 80781,
+        "files": 1,
+        "parts": 1,
+        "rows": 80781,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.huri/supplementary_raw_tabular_records",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "observed": {
+        "file_rows": 564178,
+        "files": 6,
+        "parts": 6,
+        "rows": 564178,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.intact_imex/controlled_vocabulary_terms",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "observed": {
+        "file_rows": 4082,
+        "files": 1,
+        "parts": 1,
+        "rows": 4082,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.intact_imex/mutations",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "observed": {
+        "file_rows": 89925,
+        "files": 1,
+        "parts": 1,
+        "rows": 89925,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.intact_imex/evidence_records",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 552442,
+        "files": 6,
+        "parts": 6,
+        "rows": 552442,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.intact_imex/experiments",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "observed": {
+        "file_rows": 48876,
+        "files": 1,
+        "parts": 1,
+        "rows": 48876,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.intact_imex/interactors",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "observed": {
+        "file_rows": 653933,
+        "files": 7,
+        "parts": 7,
+        "rows": 653933,
+        "schema_name": "ipin_openppi_source_native_staging",
+        "schema_sha256": "ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca",
+        "schema_version": 2
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.intact_imex/participant_features",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 955451,
+        "files": 10,
+        "parts": 10,
+        "rows": 955451,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.intact_imex/participants",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 1771656,
+        "files": 18,
+        "parts": 18,
+        "rows": 1771656,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.pdb_sifts/sifts_chain_taxonomy",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 1076304,
+        "files": 11,
+        "parts": 11,
+        "rows": 1076304,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.pdb_sifts/sifts_chain_uniprot",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 1007697,
+        "files": 11,
+        "parts": 11,
+        "rows": 1007697,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.pdb_sifts/sifts_observed_segments",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 1519870,
+        "files": 16,
+        "parts": 16,
+        "rows": 1519870,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.uniprot/identifier_mappings",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 4377974,
+        "files": 44,
+        "parts": 44,
+        "rows": 4377974,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.dataset_summary.uniprot/protein_sequences",
+      "expected": {
+        "parts_equal_files": true,
+        "rows_equal_file_rows": true,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "observed": {
+        "file_rows": 169637,
+        "files": 2,
+        "parts": 2,
+        "rows": 169637,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.expected_dataset_rows",
+      "expected": {
+        "huri/evidence_records": 220934,
+        "huri/huri_fusion_interference": 3738,
+        "huri/huri_orf_mappings": 17436,
+        "huri/huri_space_membership": 19818,
+        "huri/huri_structural_contact_annotations": 3431,
+        "huri/participant_features": 441868,
+        "huri/participants": 441868,
+        "huri/source_pair_views": 80781,
+        "huri/supplementary_raw_tabular_records": 564178,
+        "intact_imex/controlled_vocabulary_terms": 4082,
+        "intact_imex/evidence_records": 552442,
+        "intact_imex/experiments": 48876,
+        "intact_imex/interactors": 653933,
+        "intact_imex/mutations": 89925,
+        "intact_imex/participant_features": 955451,
+        "intact_imex/participants": 1771656,
+        "pdb_sifts/sifts_chain_taxonomy": 1076304,
+        "pdb_sifts/sifts_chain_uniprot": 1007697,
+        "pdb_sifts/sifts_observed_segments": 1519870,
+        "uniprot/identifier_mappings": 4377974,
+        "uniprot/protein_sequences": 169637
+      },
+      "observed": {
+        "huri/evidence_records": 220934,
+        "huri/huri_fusion_interference": 3738,
+        "huri/huri_orf_mappings": 17436,
+        "huri/huri_space_membership": 19818,
+        "huri/huri_structural_contact_annotations": 3431,
+        "huri/participant_features": 441868,
+        "huri/participants": 441868,
+        "huri/source_pair_views": 80781,
+        "huri/supplementary_raw_tabular_records": 564178,
+        "intact_imex/controlled_vocabulary_terms": 4082,
+        "intact_imex/evidence_records": 552442,
+        "intact_imex/experiments": 48876,
+        "intact_imex/interactors": 653933,
+        "intact_imex/mutations": 89925,
+        "intact_imex/participant_features": 955451,
+        "intact_imex/participants": 1771656,
+        "pdb_sifts/sifts_chain_taxonomy": 1076304,
+        "pdb_sifts/sifts_chain_uniprot": 1007697,
+        "pdb_sifts/sifts_observed_segments": 1519870,
+        "uniprot/identifier_mappings": 4377974,
+        "uniprot/protein_sequences": 169637
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.exact_parquet_file_inventory",
+      "expected": {
+        "count": 152,
+        "missing": [],
+        "unexpected": []
+      },
+      "observed": {
+        "count": 152,
+        "missing": [],
+        "unexpected": []
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.parquet_file_hash_size_row_integrity",
+      "expected": {
+        "mismatch_count": 0
+      },
+      "observed": {
+        "examples": [],
+        "mismatch_count": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.parquet_contract_and_provenance_metadata",
+      "expected": {
+        "mismatch_count": 0
+      },
+      "observed": {
+        "examples": [],
+        "mismatch_count": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "filesystem.immutable_link_free_exact_inventory",
+      "expected": {
+        "error_count": 0
+      },
+      "observed": {
+        "error_count": 0,
+        "examples": []
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.controlled_vocabulary_terms.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.controlled_vocabulary_terms.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.controlled_vocabulary_terms.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.evidence_records.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.evidence_records.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.evidence_records.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_fusion_interference.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_fusion_interference.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_fusion_interference.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_orf_mappings.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_orf_mappings.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_orf_mappings.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_space_membership.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_space_membership.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_space_membership.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_structural_contact_annotations.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_structural_contact_annotations.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.huri_structural_contact_annotations.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.identifier_mappings.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.identifier_mappings.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.identifier_mappings.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.intact_experiments.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.intact_experiments.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.intact_experiments.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.intact_mutations.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.intact_mutations.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.intact_mutations.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participant_features.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participant_features.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participant_features.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participants.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participants.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participants.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.protein_sequences.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.protein_sequences.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.protein_sequences.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.raw_tabular_records.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.raw_tabular_records.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.raw_tabular_records.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_chain_taxonomy.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_chain_taxonomy.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_chain_taxonomy.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_chain_uniprot.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_chain_uniprot.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_chain_uniprot.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_observed_segments.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_observed_segments.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.sifts_observed_segments.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.source_pair_views.required_non_null",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.source_pair_views.enum_values",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.source_pair_views.primary_key_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participant_features.foreign_key.participants",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "contract.participants.foreign_key.evidence_records",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.row_raw_assets_in_manifest",
+      "expected": {},
+      "observed": {},
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.positive_participant_count",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.exact_original_nary",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.pair_ids_only_for_binary",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.direct_binary_cardinality",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.expanded_not_direct_binary",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.technical_failure_not_negative",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.negative_flag_state_consistency",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.participant_count_matches_rows",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.unary_quality_flag",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.unary_not_nary_flagged",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.nary_quality_flag",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.feature_evidence_links",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "authorization.source_pair_views.labels_prohibited",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "authorization.huri_structural_contact_annotations.labels_prohibited",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "authorization.huri_fusion_interference.labels_prohibited",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "uniprot.sequence_lengths",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "uniprot.sequence_sha256",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "uniprot.sequence_view_semantics",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "huri.workbook_source_error_cells_preserved",
+      "expected": 1416,
+      "observed": 1416,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.chain_uniprot_descending_intervals_preserved",
+      "expected": 72,
+      "observed": 72,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.observed_segment_descending_intervals",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.human_chain_distinct_accessions",
+      "expected": 9812,
+      "observed": 9812,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.human_chain_accessions_matching_primary_accessions",
+      "expected": 8947,
+      "observed": 8947,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.human_chain_accessions_matching_additional_sequence_ids",
+      "expected": 84,
+      "observed": 84,
+      "status": "pass"
+    },
+    {
+      "check_id": "sifts.human_chain_accessions_in_frozen_uniprot",
+      "expected": 9031,
+      "observed": 9031,
+      "status": "pass"
+    },
+    {
+      "check_id": "blocker.ISSUE-0005.sifts_uniprot_release_alignment",
+      "detail": "Parsing may proceed, but exact structure reconciliation and all structure-derived labels remain blocked.",
+      "observed": {
+        "frozen_uniprot_release": "2026_02",
+        "sifts_declared_uniprot_release": "2026.03"
+      },
+      "status": "warning"
+    }
+  ],
+  "counts": {
+    "datasets": 21,
+    "parquet_bytes": 1369917702,
+    "parquet_files": 152,
+    "parquet_rows_across_tables": 14021899
+  },
+  "expectation_config": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/primary_staging_validation_v1.yaml",
+  "expectation_config_sha256": "a85d47e0c5ade2ffe2c3ad9f913aa7402b1235cb780b9bc18bdc00db5a9e48e2",
+  "gate_id": "primary_evidence_staging_v1",
+  "known_blockers": [
+    {
+      "blocks_label_construction": true,
+      "blocks_model_training": true,
+      "blocks_parsing_gate": false,
+      "issue_id": "ISSUE-0005",
+      "reason": "SIFTS declares UniProt 2026.03 while the frozen sequence corpus is UniProt 2026_02; descending source-native chain intervals also require explicit construct-aware adjudication.",
+      "scope": "structure_mapping_and_structure_derived_labels"
+    }
+  ],
+  "parse_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/PARSE_MANIFEST.json",
+  "parse_manifest_sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa",
+  "schema_version": 1,
+  "scope": "production_full",
+  "sources": [
+    "uniprot",
+    "huri",
+    "pdb_sifts",
+    "intact_imex"
+  ],
+  "staging_root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1",
+  "status": "pass",
+  "validated_at_utc": "2026-08-03T17:59:05.933274+00:00"
+}

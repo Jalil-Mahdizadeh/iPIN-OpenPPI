@@ -1,0 +1,92 @@
+schema_version: 7
+supersedes: governance/gates/gate_status_v6.yaml
+updated_date: "2026-08-03"
+programme_state: active_m0_primary_evidence_staging_validated
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    scope: qualification_sif_0.1.0
+    continuing_condition: every_later_image_requires_regression_qualification
+    evidence:
+      - docs/reports/m0/M0_Project_Initiation_and_Single_GPU_Qualification_v1.md
+      - docs/reports/m0/M0_Container_Gate_Final_Report_v1.md
+      - artifacts/runs/platform/platform-single-gpu-v2-826757-20260803T124251Z/comparison.json
+      - artifacts/runs/platform/platform-four-gpu-long-834510-20260803T125331Z/scaling_comparison.json
+    measured_four_gpu_scaling_efficiency: 0.8958019946853826
+    minimum_four_gpu_scaling_efficiency: 0.70
+  evidence:
+    status: in_progress
+    source_license_subgate:
+      status: pass_with_conditions
+      active_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v3.yaml
+      policy: configs/source_policy_v1.yaml
+      decision: governance/decisions/DEC-0006-authorize-final-source-manifest-set.md
+    raw_acquisition_subgate:
+      status: pass_with_source_warnings
+      scientific_acquisition_complete: true
+      acquired_asset_count: 20
+      acquired_payload_bytes: 1531969387
+      required_assets_missing: 0
+      optional_assets_missing: 0
+      integrity_errors: 0
+      source_representation_warnings: 2
+      label_construction_authorized: false
+      model_training_authorized: false
+      decision: governance/decisions/DEC-0007-accept-primary-raw-acquisition.md
+      evidence:
+        - data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json
+        - artifacts/validation/source_acquisition/raw_verification_primary_v1.json
+    source_parsing_subgate:
+      status: pass_with_downstream_structural_blocker
+      production_run_family: primary_sources_v1
+      staging_root: data/staging/primary_sources_v1
+      selected_raw_scientific_inputs: 17
+      source_families: 4
+      datasets: 21
+      parquet_files: 152
+      parquet_rows_across_tables: 14021899
+      parquet_bytes: 1369917702
+      evidence_records: 773376
+      participant_rows: 2213524
+      participant_feature_rows: 1397319
+      explicit_negative_records: 939
+      original_nary_records: 41964
+      original_unary_records: 2198
+      expanded_records: 0
+      validation_passes: 150
+      validation_failures: 0
+      validation_warnings: 1
+      source_reconciliation_authorized: true
+      label_construction_authorized: false
+      model_training_authorized: false
+      parse_manifest: data/staging/primary_sources_v1/PARSE_MANIFEST.json
+      parse_manifest_sha256: ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa
+      validation_report: artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json
+      validation_report_sha256: 375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba
+      parser_git_commit: 403397cd52dec8d7e37f571b13c73f47173fd6f0
+      parser_version: 1.2.0
+      container_sif: containers/images/ipin-data-arm64_0.1.2.sif
+      container_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+      decision: governance/decisions/DEC-0008-accept-primary-evidence-staging.md
+      evidence:
+        - docs/reports/m0/M0_Primary_Source_Parsing_and_Evidence_QC_Final_v1.md
+        - data/staging/primary_sources_v1/PARSE_MANIFEST.json
+        - artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json
+    open_blockers_for_label_construction:
+      - governance/issues/ISSUE-0003-huri-attempted-pair-universe.md
+      - governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md
+    open_source_semantics:
+      - governance/issues/ISSUE-0004-provider-count-versus-payload-representation.md
+    next_authorized_unit: source_reconciliation_and_identifier_construct_mapping
+    label_construction_authorized: false
+    model_training_authorized: false
+  benchmark: { status: not_started }
+  statistical: { status: not_started }
+  routing: { status: not_started }
+  retrieval: { status: not_started }
+  uncertainty: { status: not_started }
+  computational_validation: { status: not_started }
+  release: { status: not_started }
