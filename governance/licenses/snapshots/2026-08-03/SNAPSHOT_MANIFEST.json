@@ -1,0 +1,92 @@
+{
+  "purpose": "internal provenance snapshot before scientific-source acquisition",
+  "records": [
+    {
+      "bytes": 28776,
+      "content_type": "text/html; charset=UTF-8",
+      "etag": null,
+      "filename": "huri_download_and_terms.html",
+      "final_url": "https://interactome-atlas.org/download",
+      "http_status": 200,
+      "last_modified": null,
+      "policy_id": "huri_download_and_terms",
+      "requested_url": "https://interactome-atlas.org/download",
+      "retrieved_at_utc": "2026-08-03T13:22:37.098271+00:00",
+      "sha256": "ab14d68bfe99dd9f59cdd9e96b7cedfd0b9efb25e0aa6eafdfe6d88a01e1b387"
+    },
+    {
+      "bytes": 6473,
+      "content_type": "text/html",
+      "etag": "\"6a708d96-1949\"",
+      "filename": "uniprot_license.html",
+      "final_url": "https://www.uniprot.org/help/license",
+      "http_status": 200,
+      "last_modified": "Mon, 03 Aug 2026 12:46:14 GMT",
+      "policy_id": "uniprot_license",
+      "requested_url": "https://www.uniprot.org/help/license",
+      "retrieved_at_utc": "2026-08-03T13:22:37.098271+00:00",
+      "sha256": "2f0f2b6f7f3f9ea2d195d53d32118e869aae24f21d4fbfa261b1d424a222f7e6"
+    },
+    {
+      "bytes": 15089,
+      "content_type": "text/html",
+      "etag": "\"69f49c78-3af1\"",
+      "filename": "intact_about_and_license.html",
+      "final_url": "https://www.ebi.ac.uk/intact/about",
+      "http_status": 200,
+      "last_modified": "Fri, 01 May 2026 12:28:40 GMT",
+      "policy_id": "intact_about_and_license",
+      "requested_url": "https://www.ebi.ac.uk/intact/about",
+      "retrieved_at_utc": "2026-08-03T13:22:37.098271+00:00",
+      "sha256": "8dc2520bb5eb33950745dfd03dc9c4c8c03b3c4e08c0f02e3d2139d5bfdcef79"
+    },
+    {
+      "bytes": 41713,
+      "content_type": "text/html; charset=utf-8",
+      "etag": "W/\"a2f1-W5hbBLV5zFOhOgLBbX8mWNw1iz0\"",
+      "filename": "rcsb_pdb_usage_policy.html",
+      "final_url": "https://www1.rcsb.org/pages/usage-policy",
+      "http_status": 200,
+      "last_modified": null,
+      "policy_id": "rcsb_pdb_usage_policy",
+      "requested_url": "https://www1.rcsb.org/pages/usage-policy",
+      "retrieved_at_utc": "2026-08-03T13:22:37.098271+00:00",
+      "sha256": "b85b301e8569abca35c640ecc28ee8a58170115ef1877f3de4814f854d46bab5"
+    },
+    {
+      "bytes": 207556,
+      "content_type": "text/html; charset=UTF-8",
+      "etag": null,
+      "filename": "pdbe_public_data_access_statement.html",
+      "final_url": "https://www.ebi.ac.uk/pdbe/about/public-data-access-statement",
+      "http_status": 200,
+      "last_modified": null,
+      "policy_id": "pdbe_public_data_access_statement",
+      "requested_url": "https://www.ebi.ac.uk/pdbe/about/public-data-access-statement",
+      "retrieved_at_utc": "2026-08-03T13:22:37.098271+00:00",
+      "sha256": "adea37133765347364cbe2d2fa13c771566dcb18d89944b230d0321c62abc7e2"
+    },
+    {
+      "bytes": 21379,
+      "content_type": "text/html; charset=UTF-8",
+      "etag": "\"5383-65822c70e4f00\"",
+      "filename": "embl_ebi_terms_of_use.html",
+      "final_url": "https://www.ebi.ac.uk/about/terms-of-use/",
+      "http_status": 200,
+      "last_modified": "Mon, 03 Aug 2026 11:24:12 GMT",
+      "policy_id": "embl_ebi_terms_of_use",
+      "requested_url": "https://www.ebi.ac.uk/about/terms-of-use",
+      "retrieved_at_utc": "2026-08-03T13:22:37.098271+00:00",
+      "sha256": "29b7d5a384dd7e9520003fbf6b7a9a3c255da618a6c509bb76da84b0e9fe0529"
+    }
+  ],
+  "retrieved_at_utc": "2026-08-03T13:22:37.098271+00:00",
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-qual-arm64_0.1.0.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "snapshot_id": "SOURCE-POLICY-SNAPSHOT-2026-08-03"
+}

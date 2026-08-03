@@ -1,0 +1,100 @@
+schema_version: 1
+manifest_id: PREACQ-UNIPROT-HUMAN-001
+source_key: uniprot
+created_date: "2026-08-03"
+stage: preacquisition
+approved_for_download: true
+
+source:
+  name: UniProt human reference proteome
+  provider: UniProt Consortium
+  release: "2026_02"
+  release_date: "2026-06-10"
+  proteome_id: UP000005640
+  taxonomy_id: 9606
+  observed_on: "2026-08-03"
+
+license:
+  identifier: CC-BY-4.0
+  terms_url: https://www.uniprot.org/help/license
+  attribution_required: true
+  redistribution: permitted_with_attribution
+  third_party_and_patent_caveat: true
+  audit_record: governance/licenses/SOURCE_LICENSE_REGISTER_v2.md
+
+base_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640
+assets:
+  - asset_id: release_metalink
+    url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/RELEASE.metalink
+    destination: data/raw/uniprot/2026_02/UP000005640/RELEASE.metalink
+    format: metalink_xml
+    required: true
+    expected:
+      content_length_bytes: null
+      provider_checksum: null
+  - asset_id: canonical_fasta
+    url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606.fasta.gz
+    destination: data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.fasta.gz
+    format: fasta_gzip
+    required: true
+    expected:
+      content_length_bytes: 7752225
+      provider_checksum:
+        algorithm: md5
+        value: 942808a9d4b0d62bd658bea0e5d8d7b8
+  - asset_id: additional_isoform_fasta
+    url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606_additional.fasta.gz
+    destination: data/raw/uniprot/2026_02/UP000005640/UP000005640_9606_additional.fasta.gz
+    format: fasta_gzip
+    required: true
+    expected:
+      content_length_bytes: 41901496
+      provider_checksum:
+        algorithm: md5
+        value: 7554aa19abf842d6b390df9d927c64bf
+  - asset_id: canonical_dat
+    url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606.dat.gz
+    destination: data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.dat.gz
+    format: uniprot_flatfile_gzip
+    required: true
+    expected:
+      content_length_bytes: 134512433
+      provider_checksum:
+        algorithm: md5
+        value: a46ff6e3fcb5cca7f5178b6c8437e950
+  - asset_id: identifier_mapping
+    url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606.idmapping.gz
+    destination: data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.idmapping.gz
+    format: idmapping_tsv_gzip
+    required: true
+    expected:
+      content_length_bytes: 27213265
+      provider_checksum:
+        algorithm: md5
+        value: f514c48c8d426246a8f9aa125f2e22db
+
+verification:
+  calculate_sha256: true
+  verify_provider_checksum: required_for_payload_assets
+  checksum_authority: RELEASE.metalink
+  assert_release_in_metalink: "2026_02"
+  capture_http_headers: true
+  record_count_and_schema_report: required
+
+guards:
+  canonical_and_additional_sequences_kept_separate: true
+  isoforms_silently_collapsed_to_gene: false
+  accession_and_sequence_version_preserved: true
+  current_release_url_accepted_only_with_metalink_verification: true
+
+deferred_scope:
+  - UniRef cluster archives are licensed but deferred until the benchmark clustering implementation decision.
+  - UniParc history payloads are licensed but deferred until identifier reconciliation shows a concrete need.
+
+approved_actions:
+  - download_to_immutable_raw_zone
+  - verify_metalink_md5_and_calculate_sha256
+  - parse_sequences_annotations_and_identifier_mappings
+prohibited_actions:
+  - merge_isoforms_without_an_explicit_mapping_record
+  - train_model_before_evidence_gate

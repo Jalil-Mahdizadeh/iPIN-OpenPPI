@@ -1,0 +1,87 @@
+schema_version: 1
+policy_id: SOURCE-POLICY-001
+effective_date: "2026-08-03"
+project: ipin-openppi
+scope: primary_human_evidence_sources
+
+global_acquisition_rules:
+  https_only: true
+  raw_payloads_are_immutable: true
+  release_or_snapshot_directory_required: true
+  retrieval_timestamp_utc_required: true
+  response_headers_required: true
+  local_sha256_required: true
+  provider_checksum_verification_required_when_available: true
+  atomic_download_required: true
+  parser_image_digest_required: true
+  parser_commit_required: true
+  schema_and_record_count_report_required: true
+  scientific_downloads_must_run_inside_apptainer: true
+
+evidence_semantics:
+  primary_object: source_evidence_record
+  consensus_pair_is_primary_object: false
+  preserve_source_record_identifier: true
+  preserve_assay_and_detection_method: true
+  preserve_construct_and_orientation: true
+  preserve_selection_state: true
+  preserve_evaluability_state: true
+  preserve_observed_outcome: true
+
+label_rules:
+  unreported_pair_state: unknown
+  unreported_pair_may_be_negative: false
+  technical_failure_may_be_negative: false
+  autoactivator_may_be_negative: false
+  invalid_assay_may_be_negative: false
+  positive_unlabeled_default_when_test_universe_is_incomplete: true
+  explicit_negative_requires_source_record_and_evaluable_assay: true
+  source_disagreement_must_be_retained: true
+
+source_rules:
+  huri:
+    allowed:
+      - published_positive_interaction_records
+      - published_construct_and_identifier_mappings
+      - explicit_control_or_retest_outcomes_with_their_original_scope
+    prohibited:
+      - treating_the_space_iii_cross_product_as_fully_attempted
+      - treating_absence_from_huri_as_a_negative
+      - converting_invalid_or_autoactivating_tests_to_negatives
+    primary_negative_universe_status: unresolved
+  uniprot:
+    allowed:
+      - release_bound_sequences_annotations_and_identifier_mappings
+    required:
+      - keep_canonical_and_additional_isoform_sequences_distinct
+      - preserve_accession_and_sequence_version_fields
+      - do_not_silently_collapse_isoforms_to_genes
+  intact_imex:
+    allowed:
+      - molecular_interaction_evidence_with_stable_intact_identifiers
+    prohibited:
+      - treating_spoke_or_matrix_expansion_as_direct_binary_evidence
+      - treating_absence_from_intact_as_a_negative
+    required:
+      - preserve_original_nary_interaction
+      - preserve_negative_flag
+      - distinguish_direct_interaction_physical_association_and_association
+      - require_both_participants_to_be_proteins_for_primary_binary_use
+  pdb_sifts:
+    allowed:
+      - experimentally_determined_pdb_entries_and_derived_sifts_mappings
+    prohibited:
+      - computed_structure_models_as_experimental_evidence
+      - author_assembly_assumed_to_equal_biological_assembly
+      - interface_label_without_chain_and_residue_mapping_audit
+    required:
+      - request_experimental_results_explicitly
+      - preserve_entry_revision_method_resolution_and_assembly_identifier
+      - audit_engineered_mutations_tags_chimeras_and_unobserved_residues
+      - calculate_interface_from_frozen_coordinate_payload
+
+authorization_boundary:
+  acquisition_of_listed_assets: authorized
+  parsing_for_quality_control: authorized_after_checksum
+  construction_of_training_labels: not_authorized_by_this_policy
+  model_training: not_authorized_by_this_policy

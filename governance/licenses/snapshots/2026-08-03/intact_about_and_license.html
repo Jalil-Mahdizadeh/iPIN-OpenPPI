@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" data-beasties-container>
+<head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/intact/">
+    <title>IntAct Portal</title>
+    <meta name="description" content="EMBL-EBI"><!-- Describe what this page is about -->
+    <meta name="keywords" content="bioinformatics, europe, institute">
+    <!-- A few keywords that relate to the content of THIS PAGE (not the whol project) -->
+    <meta name="author" content="EMBL-EBI"><!-- Your [project-name] here -->
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#70BDBD"> <!-- Android Chrome mobile browser tab color -->
+
+    <!-- Add information on the life cycle of this page -->
+    <meta name="ebi:owner" content="Molecular Interactions-Team (intact-help@ebi.ac.uk)">
+    <!-- Who should be contacted about changes -->
+    <meta name="ebi:review-cycle" content="30"> <!-- In days, how often should the content be reviewed -->
+    <meta name="ebi:last-review" content="2015-12-20"> <!-- The last time the content was reviewed -->
+    <meta name="ebi:expiry" content="2016-01-20"> <!-- When this content is no longer relevant -->
+
+    <!-- If you link to any other sites frequently, consider optimising performance with a DNS prefetch -->
+    <link rel="dns-prefetch" href="//www.ebi.ac.uk">
+
+    <!-- If you have custom icon, replace these as appropriate.
+         You can generate them at realfavicongenerator.net -->
+    <link rel="icon" type="image/svg+xml" href="/assets/images/logo/favicon.svg">
+    <!-- CSS concatenated and minified via ant build script-->
+
+    <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.3/fonts.css" type="text/css" media="all">
+    <!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
+    <!-- also inform ES so we can host your colour palette file -->
+    <link rel="stylesheet" href="https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/theme-embl-petrol.css" type="text/css" media="all">
+
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <style>@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
+
+    <!-- Markdown & Markdown KaTeX -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <!-- end CSS-->
+
+    <!--  Doc Bot  -->
+    <link rel="stylesheet" href="https://docbot-64c680.gitdocs.ebi.ac.uk/dist/Chatbot-Modal.css">
+    <script src="https://docbot-64c680.gitdocs.ebi.ac.uk/Chatbot-Modal.web.js" type="module"></script>
+
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        // ga('create', 'G-HNXFRFDCM6', 'none');
+    </script>
+    <!-- End Google Analytics -->
+<style>html{--mat-sys-on-surface:initial}html{color-scheme:light}html{--mat-sys-background:#fff7fb;--mat-sys-error:#b90c57;--mat-sys-error-container:#ffd9e0;--mat-sys-inverse-on-surface:#f9eef6;--mat-sys-inverse-primary:#f0b0ff;--mat-sys-inverse-surface:#342f35;--mat-sys-on-background:#1f1a20;--mat-sys-on-error:#ffffff;--mat-sys-on-error-container:#8f0041;--mat-sys-on-primary:#ffffff;--mat-sys-on-primary-container:#6a2b7e;--mat-sys-on-primary-fixed:#330044;--mat-sys-on-primary-fixed-variant:#6a2b7e;--mat-sys-on-secondary:#ffffff;--mat-sys-on-secondary-container:#692b7f;--mat-sys-on-secondary-fixed:#330045;--mat-sys-on-secondary-fixed-variant:#692b7f;--mat-sys-on-surface:#1f1a20;--mat-sys-on-surface-variant:#4e434f;--mat-sys-on-tertiary:#ffffff;--mat-sys-on-tertiary-container:#5f3477;--mat-sys-on-tertiary-fixed:#300149;--mat-sys-on-tertiary-fixed-variant:#5f3477;--mat-sys-outline:#807380;--mat-sys-outline-variant:#d1c2d0;--mat-sys-primary:#844497;--mat-sys-primary-container:#fbd7ff;--mat-sys-primary-fixed:#fbd7ff;--mat-sys-primary-fixed-dim:#f0b0ff;--mat-sys-scrim:#000000;--mat-sys-secondary:#834499;--mat-sys-secondary-container:#f9d8ff;--mat-sys-secondary-fixed:#f9d8ff;--mat-sys-secondary-fixed-dim:#eeb1ff;--mat-sys-shadow:#000000;--mat-sys-surface:#fff7fb;--mat-sys-surface-bright:#fff7fb;--mat-sys-surface-container:#f6ebf3;--mat-sys-surface-container-high:#f0e5ed;--mat-sys-surface-container-highest:#eadfe7;--mat-sys-surface-container-low:#fcf0f9;--mat-sys-surface-container-lowest:#ffffff;--mat-sys-surface-dim:#e2d7df;--mat-sys-surface-tint:#844497;--mat-sys-surface-variant:#eedeec;--mat-sys-tertiary:#794c91;--mat-sys-tertiary-container:#f5d9ff;--mat-sys-tertiary-fixed:#f5d9ff;--mat-sys-tertiary-fixed-dim:#e7b4ff;--mat-sys-neutral-variant20:#372d38;--mat-sys-neutral10:#1f1a20}html{--mat-sys-level0:0px 0px 0px 0px rgba(0, 0, 0, .2), 0px 0px 0px 0px rgba(0, 0, 0, .14), 0px 0px 0px 0px rgba(0, 0, 0, .12)}html{--mat-sys-level1:0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12)}html{--mat-sys-level2:0px 3px 3px -2px rgba(0, 0, 0, .2), 0px 3px 4px 0px rgba(0, 0, 0, .14), 0px 1px 8px 0px rgba(0, 0, 0, .12)}html{--mat-sys-level3:0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12)}html{--mat-sys-level4:0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12)}html{--mat-sys-level5:0px 7px 8px -4px rgba(0, 0, 0, .2), 0px 12px 17px 2px rgba(0, 0, 0, .14), 0px 5px 22px 4px rgba(0, 0, 0, .12)}html{--mat-sys-body-large:400 1rem / 1.5rem Helvetica;--mat-sys-body-large-font:Helvetica;--mat-sys-body-large-line-height:1.5rem;--mat-sys-body-large-size:1rem;--mat-sys-body-large-tracking:.031rem;--mat-sys-body-large-weight:400;--mat-sys-body-medium:400 .875rem / 1.25rem Helvetica;--mat-sys-body-medium-font:Helvetica;--mat-sys-body-medium-line-height:1.25rem;--mat-sys-body-medium-size:.875rem;--mat-sys-body-medium-tracking:.016rem;--mat-sys-body-medium-weight:400;--mat-sys-body-small:400 .75rem / 1rem Helvetica;--mat-sys-body-small-font:Helvetica;--mat-sys-body-small-line-height:1rem;--mat-sys-body-small-size:.75rem;--mat-sys-body-small-tracking:.025rem;--mat-sys-body-small-weight:400;--mat-sys-display-large:400 3.562rem / 4rem Helvetica;--mat-sys-display-large-font:Helvetica;--mat-sys-display-large-line-height:4rem;--mat-sys-display-large-size:3.562rem;--mat-sys-display-large-tracking:-.016rem;--mat-sys-display-large-weight:400;--mat-sys-display-medium:400 2.812rem / 3.25rem Helvetica;--mat-sys-display-medium-font:Helvetica;--mat-sys-display-medium-line-height:3.25rem;--mat-sys-display-medium-size:2.812rem;--mat-sys-display-medium-tracking:0;--mat-sys-display-medium-weight:400;--mat-sys-display-small:400 2.25rem / 2.75rem Helvetica;--mat-sys-display-small-font:Helvetica;--mat-sys-display-small-line-height:2.75rem;--mat-sys-display-small-size:2.25rem;--mat-sys-display-small-tracking:0;--mat-sys-display-small-weight:400;--mat-sys-headline-large:400 2rem / 2.5rem Helvetica;--mat-sys-headline-large-font:Helvetica;--mat-sys-headline-large-line-height:2.5rem;--mat-sys-headline-large-size:2rem;--mat-sys-headline-large-tracking:0;--mat-sys-headline-large-weight:400;--mat-sys-headline-medium:400 1.75rem / 2.25rem Helvetica;--mat-sys-headline-medium-font:Helvetica;--mat-sys-headline-medium-line-height:2.25rem;--mat-sys-headline-medium-size:1.75rem;--mat-sys-headline-medium-tracking:0;--mat-sys-headline-medium-weight:400;--mat-sys-headline-small:400 1.5rem / 2rem Helvetica;--mat-sys-headline-small-font:Helvetica;--mat-sys-headline-small-line-height:2rem;--mat-sys-headline-small-size:1.5rem;--mat-sys-headline-small-tracking:0;--mat-sys-headline-small-weight:400;--mat-sys-label-large:500 .875rem / 1.25rem Helvetica;--mat-sys-label-large-font:Helvetica;--mat-sys-label-large-line-height:1.25rem;--mat-sys-label-large-size:.875rem;--mat-sys-label-large-tracking:.006rem;--mat-sys-label-large-weight:500;--mat-sys-label-large-weight-prominent:700;--mat-sys-label-medium:500 .75rem / 1rem Helvetica;--mat-sys-label-medium-font:Helvetica;--mat-sys-label-medium-line-height:1rem;--mat-sys-label-medium-size:.75rem;--mat-sys-label-medium-tracking:.031rem;--mat-sys-label-medium-weight:500;--mat-sys-label-medium-weight-prominent:700;--mat-sys-label-small:500 .688rem / 1rem Helvetica;--mat-sys-label-small-font:Helvetica;--mat-sys-label-small-line-height:1rem;--mat-sys-label-small-size:.688rem;--mat-sys-label-small-tracking:.031rem;--mat-sys-label-small-weight:500;--mat-sys-title-large:400 1.375rem / 1.75rem Helvetica;--mat-sys-title-large-font:Helvetica;--mat-sys-title-large-line-height:1.75rem;--mat-sys-title-large-size:1.375rem;--mat-sys-title-large-tracking:0;--mat-sys-title-large-weight:400;--mat-sys-title-medium:500 1rem / 1.5rem Helvetica;--mat-sys-title-medium-font:Helvetica;--mat-sys-title-medium-line-height:1.5rem;--mat-sys-title-medium-size:1rem;--mat-sys-title-medium-tracking:.009rem;--mat-sys-title-medium-weight:500;--mat-sys-title-small:500 .875rem / 1.25rem Helvetica;--mat-sys-title-small-font:Helvetica;--mat-sys-title-small-line-height:1.25rem;--mat-sys-title-small-size:.875rem;--mat-sys-title-small-tracking:.006rem;--mat-sys-title-small-weight:500}html{--mat-sys-corner-extra-large:28px;--mat-sys-corner-extra-large-top:28px 28px 0 0;--mat-sys-corner-extra-small:4px;--mat-sys-corner-extra-small-top:4px 4px 0 0;--mat-sys-corner-full:9999px;--mat-sys-corner-large:16px;--mat-sys-corner-large-end:0 16px 16px 0;--mat-sys-corner-large-start:16px 0 0 16px;--mat-sys-corner-large-top:16px 16px 0 0;--mat-sys-corner-medium:12px;--mat-sys-corner-none:0;--mat-sys-corner-small:8px}html{--mat-sys-dragged-state-layer-opacity:.16;--mat-sys-focus-state-layer-opacity:.12;--mat-sys-hover-state-layer-opacity:.08;--mat-sys-pressed-state-layer-opacity:.12}a{color:#222}a:hover,a:focus,a:active{color:#68297c}a:visited{color:#312146}</style><link rel="stylesheet" href="styles-HXNV7UJX.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-HXNV7UJX.css"></noscript></head>
+
+<body class="level2"><!-- add any of your classes or IDs -->
+<div id="skip-to">
+    <ul>
+        <li><a href="#content">Skip to main content</a></li>
+        <li><a href="#local-nav">Skip to local navigation</a></li>
+        <li><a href="#global-nav">Skip to EBI global navigation menu</a></li>
+        <li><a href="#global-nav-expanded">Skip to expanded EBI global navigation menu (includes all sub-sections)</a>
+        </li>
+    </ul>
+</div>
+
+<!-- EBI GLOBAL MASTHEAD SECTION -->
+<!-- This layout will be purged but we use this markup as a preaload placeholder -->
+<header id="masthead-black-bar" class="clearfix masthead-black-bar">
+</header>
+
+<div id="content">
+    <ip-root>Loading...</ip-root>
+</div>
+<!-- End suggested layout containers / #content -->
+<div id="data-protection-message-configuration" data-message="This website requires cookies, and the limited processing of your personal data in order to function.
+      By using the site you are agreeing to this as outlined in our
+      <a class='white-color' href='https://raw.githubusercontent.com/intact-portal/intact-portal-documentation/master/assets/IntAct-and-Complex-Portal-websites-privacy-notice.pdf'>Privacy Notice</a>
+      and <a class='white-color' href='https://www.ebi.ac.uk/about/terms-of-use'>Terms of Use</a>." data-service-id="intact-and-complex-portal-websites" data-data-protection-version="0.1">
+</div>
+
+<!-- EBI data protection banner -->
+<div id="data-protection-message-configuration" data-message="This website requires cookies, and the limited processing of your personal data in order to function.
+      By using the site you are agreeing to this as outlined in our
+      <a class='white-color' href='https://raw.githubusercontent.com/intact-portal/intact-portal-documentation/master/assets/IntAct-and-Complex-Portal-websites-privacy-notice.pdf'>Privacy Notice</a>
+      and <a class='white-color' href='https://www.ebi.ac.uk/about/terms-of-use'>Terms of Use</a>." data-service-id="intact-and-complex-portal-websites" data-data-protection-version="0.1">
+</div>
+
+<footer>
+    <!--<script src="assets/html/global-footer.html"></script>-->
+    <div id="global-footer" class="global-footer">
+        <nav id="global-nav-expanded" class="global-nav-expanded row">
+            <!-- Footer will be automatically inserted by footer.js -->
+        </nav>
+
+        <section id="ebi-footer-meta" class="ebi-footer-meta row">
+            <!-- Footer meta will be automatically inserted by footer.js -->
+            <p class="address">EMBL-EBI, Wellcome Genome Campus, Hinxton, Cambridgeshire, CB10 1SD, UK &nbsp; &nbsp; +44
+                (0)1223 49 44 44</p>
+            <p>Copyright © EMBL-EBI 2020 | EBI is an outstation of the <a href="http://www.embl.org/">European Molecular
+                Biology Laboratory</a> | <a href="https://ebiwd.github.io/about/terms-of-use">Terms of use</a></p>
+        </section>
+    </div>
+
+</footer>
+
+
+<!-- Google Analytics details... -->
+<!-- Change UA-XXXXX-X to be your site's ID -->
+<!--
+<script>
+  window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+  Modernizr.load({
+    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+  });
+</script>
+-->
+<link rel="modulepreload" href="chunk-HKJESHZ7.js"><link rel="modulepreload" href="chunk-WOQIUMIU.js"><link rel="modulepreload" href="chunk-4OWS7KTX.js"><link rel="modulepreload" href="chunk-PIDNW65L.js"><link rel="modulepreload" href="chunk-EDSAIOQD.js"><script src="polyfills-MFP3QALG.js" type="module"></script><script src="scripts-HMZOBKOE.js" defer></script><script src="main-MFK23WYR.js" type="module"></script></body>
+</html>

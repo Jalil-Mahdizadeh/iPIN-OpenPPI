@@ -1,0 +1,458 @@
+{
+  "errors": [],
+  "index": {
+    "checks": [
+      {
+        "detail": "validation must run inside Apptainer",
+        "name": "inside_apptainer",
+        "passed": true
+      },
+      {
+        "detail": "schema_version must equal 1",
+        "name": "schema_version",
+        "passed": true
+      },
+      {
+        "detail": "stage must be preacquisition",
+        "name": "stage",
+        "passed": true
+      },
+      {
+        "detail": "label construction must remain prohibited",
+        "name": "label_construction_boundary",
+        "passed": true
+      },
+      {
+        "detail": "manifest list must be non-empty",
+        "name": "manifest_entries",
+        "passed": true
+      },
+      {
+        "detail": "source keys must equal ['huri', 'intact_imex', 'pdb_sifts', 'uniprot']",
+        "name": "complete_source_set",
+        "passed": true
+      },
+      {
+        "detail": "referenced source policy must exist",
+        "name": "policy_exists",
+        "passed": true
+      }
+    ],
+    "path": "data/source_manifests/PREACQUISITION_INDEX_v3.yaml",
+    "sha256": "c84658709a4db74f3b95d8fa8efac244cf02f8201a3f63529c13fa1b0967c45e"
+  },
+  "policy": {
+    "path": "configs/source_policy_v1.yaml",
+    "sha256": "af43ae0f55fa78ddd5d5ae67ff4e0a9704903c1669ef5a7204749bddc381318a"
+  },
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-qual-arm64_0.1.0.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "sources": [
+    {
+      "asset_count": 9,
+      "check_count": 17,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.unreported_pairs_are_negative must be False",
+          "name": "guard_guards_unreported_pairs_are_negative",
+          "passed": true
+        },
+        {
+          "detail": "guards.space_iii_cross_product_is_complete_attempted_universe must be False",
+          "name": "guard_guards_space_iii_cross_product_is_complete_attempted_universe",
+          "passed": true
+        },
+        {
+          "detail": "guards.technical_failures_are_negative must be False",
+          "name": "guard_guards_technical_failures_are_negative",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 17,
+      "path": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "provider_checksum_asset_count": 0,
+      "required_asset_count": 9,
+      "sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "source_key": "huri"
+    },
+    {
+      "asset_count": 3,
+      "check_count": 17,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.nary_expansions_are_direct must be False",
+          "name": "guard_guards_nary_expansions_are_direct",
+          "passed": true
+        },
+        {
+          "detail": "guards.preserve_original_nary_records must be True",
+          "name": "guard_guards_preserve_original_nary_records",
+          "passed": true
+        },
+        {
+          "detail": "guards.unreported_pairs_are_negative must be False",
+          "name": "guard_guards_unreported_pairs_are_negative",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 17,
+      "path": "data/source_manifests/PREACQUISITION_intact_imex_v1.yaml",
+      "provider_checksum_asset_count": 0,
+      "required_asset_count": 2,
+      "sha256": "9014e2d70e68d3f9dfb814640e8c0382750eff746587da6cee1d51b27061aa9d",
+      "source_key": "intact_imex"
+    },
+    {
+      "asset_count": 3,
+      "check_count": 17,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.computed_models_allowed must be False",
+          "name": "guard_guards_computed_models_allowed",
+          "passed": true
+        },
+        {
+          "detail": "guards.experimental_entries_only must be True",
+          "name": "guard_guards_experimental_entries_only",
+          "passed": true
+        },
+        {
+          "detail": "guards.interface_must_be_recalculated_from_frozen_coordinates must be True",
+          "name": "guard_guards_interface_must_be_recalculated_from_frozen_coordinates",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 17,
+      "path": "data/source_manifests/PREACQUISITION_pdb_sifts_v2.yaml",
+      "provider_checksum_asset_count": 0,
+      "required_asset_count": 3,
+      "sha256": "ec57aa1b829c3f65ce3e9743d2eb19e3dc72f821dc12535372c09f812f3042ff",
+      "source_key": "pdb_sifts"
+    },
+    {
+      "asset_count": 5,
+      "check_count": 18,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.canonical_and_additional_sequences_kept_separate must be True",
+          "name": "guard_guards_canonical_and_additional_sequences_kept_separate",
+          "passed": true
+        },
+        {
+          "detail": "guards.isoforms_silently_collapsed_to_gene must be False",
+          "name": "guard_guards_isoforms_silently_collapsed_to_gene",
+          "passed": true
+        },
+        {
+          "detail": "guards.current_release_url_accepted_only_with_metalink_verification must be True",
+          "name": "guard_guards_current_release_url_accepted_only_with_metalink_verification",
+          "passed": true
+        },
+        {
+          "detail": "the UniProt release assets must include provider checksums",
+          "name": "provider_checksums",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 18,
+      "path": "data/source_manifests/PREACQUISITION_uniprot_human_v1.yaml",
+      "provider_checksum_asset_count": 4,
+      "required_asset_count": 5,
+      "sha256": "a3bc2c2b2d27df4a1d554dbe3ebc1e7479e1c31d54ac8436ffebc1587fae0bf5",
+      "source_key": "uniprot"
+    }
+  ],
+  "status": "pass",
+  "validated_at_utc": "2026-08-03T13:34:28.877620+00:00",
+  "validation_id": "PREACQ-VALIDATION-001",
+  "warnings": [
+    "huri: provider checksum catalogue unavailable; local SHA-256 is authoritative",
+    "intact_imex: provider checksum catalogue unavailable; local SHA-256 is authoritative",
+    "pdb_sifts: provider checksum catalogue unavailable; local SHA-256 is authoritative"
+  ]
+}

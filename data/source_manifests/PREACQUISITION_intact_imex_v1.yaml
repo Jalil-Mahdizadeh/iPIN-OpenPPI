@@ -1,0 +1,92 @@
+schema_version: 1
+manifest_id: PREACQ-INTACT-IMEX-001
+source_key: intact_imex
+created_date: "2026-08-03"
+stage: preacquisition
+approved_for_download: true
+
+source:
+  name: IntAct molecular interaction database
+  provider: EMBL-EBI IntAct team
+  release_number: "252"
+  archive_snapshot: "2026-01-09"
+  archive_url: https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09
+  huri_imex_dataset: IM-25472
+  observed_on: "2026-08-03"
+
+license:
+  identifier: CC-BY-4.0
+  terms_url: https://www.ebi.ac.uk/intact/about
+  attribution_required: true
+  redistribution: permitted_with_attribution
+  audit_record: governance/licenses/SOURCE_LICENSE_REGISTER_v2.md
+  documentation_discrepancy: The download page contains legacy Apache wording; the explicit IntAct data-license statement on the About page controls this manifest.
+
+assets:
+  - asset_id: human_psi_mi_xml_3
+    url: https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/psi30/species/human.zip
+    destination: data/raw/intact/2026-01-09/psi30/species/human.zip
+    format: psi_mi_xml_3_zip
+    required: true
+    expected:
+      content_length_bytes: 1025219998
+      etag: '"3d1b9d9e-64857a6c7cad8"'
+      last_modified: "Wed, 14 Jan 2026"
+      provider_checksum: null
+  - asset_id: intact_controlled_vocabulary
+    url: https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/cv/intact.obo
+    destination: data/raw/intact/2026-01-09/cv/intact.obo
+    format: obo
+    required: true
+    expected:
+      content_length_bytes: null
+      provider_checksum: null
+  - asset_id: mutation_annotations
+    url: https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/various/mutations.tsv
+    destination: data/raw/intact/2026-01-09/various/mutations.tsv
+    format: tsv
+    required: false
+    expected:
+      content_length_bytes: 33615072
+      etag: '"200ece0-64857dc8f5064"'
+      last_modified: "Wed, 14 Jan 2026"
+      provider_checksum: null
+
+targeted_crosscheck:
+  dataset: IM-25472
+  service_base: https://www.ebi.ac.uk/intact/ws
+  export_endpoint: https://www.ebi.ac.uk/intact/ws/graph/export/interaction/list
+  preferred_formats: [miXML30, miTab27]
+  role: crosscheck_only_not_primary_raw_source
+
+verification:
+  calculate_sha256: true
+  verify_provider_checksum: when_available
+  capture_http_headers: true
+  validate_zip_members_before_extraction: true
+  record_count_and_schema_report: required
+
+guards:
+  primary_parser_input: psi_mi_xml_3
+  nary_expansions_are_direct: false
+  preserve_original_nary_records: true
+  preserve_stable_intact_evidence_ids: true
+  preserve_negative_flag: true
+  preserve_detection_method_and_interaction_type: true
+  distinguish_mi_0407_mi_0915_mi_0914: true
+  require_protein_participants_for_primary_binary_use: true
+  unreported_pairs_are_negative: false
+
+known_gaps:
+  - The binary search and MITAB presentation can contain spoke-expanded projections of n-ary records.
+  - IM-25472 returns multiple evidence-stage records and must not be collapsed to a positive pair list before provenance-aware parsing.
+  - The immutable archive exposes no provider checksum catalogue observed during this audit; local SHA-256 is mandatory.
+
+approved_actions:
+  - download_to_immutable_raw_zone
+  - checksum_archive_and_validate_members
+  - parse_evidence_records_without_label_collapse
+prohibited_actions:
+  - use_spoke_expansion_as_direct_binary_ground_truth
+  - infer_negative_from_absence
+  - train_model_before_evidence_gate

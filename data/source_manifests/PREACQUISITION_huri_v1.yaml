@@ -1,0 +1,153 @@
+schema_version: 1
+manifest_id: PREACQ-HURI-001
+source_key: huri
+created_date: "2026-08-03"
+stage: preacquisition
+approved_for_download: true
+
+source:
+  name: Human Reference Interactome and CCSB human binary maps
+  provider: Center for Cancer Systems Biology
+  portal: https://interactome-atlas.org
+  publication_doi: 10.1038/s41586-020-2188-x
+  publication_pmids: ["32296183"]
+  imex_dataset: IM-25472
+  formal_release_available: false
+  snapshot_basis: published portal payloads carrying 2020-03-09 modification metadata
+  observed_on: "2026-08-03"
+
+license:
+  identifier: CC-BY-4.0
+  terms_url: https://interactome-atlas.org/download
+  attribution_required: true
+  redistribution: permitted_with_attribution
+  authenticated_or_unpublished_data_allowed: false
+  audit_record: governance/licenses/SOURCE_LICENSE_REGISTER_v2.md
+
+assets:
+  - asset_id: huri_pairs
+    url: https://interactome-atlas.org/data/HuRI.tsv
+    destination: data/raw/huri/published_2020/HuRI.tsv
+    format: tsv_positive_pairs
+    required: true
+    expected:
+      content_length_bytes: 1681536
+      etag: '"19a880-5a06e8948318d"'
+      last_modified: "Mon, 09 Mar 2020 16:31:33 GMT"
+      provider_checksum: null
+  - asset_id: huri_psi
+    url: https://interactome-atlas.org/data/HuRI.psi
+    destination: data/raw/huri/published_2020/HuRI.psi
+    format: provider_psi_mi_export
+    required: true
+    expected:
+      content_length_bytes: 169848924
+      etag: '"a1fb05c-5a06e8a169c4e"'
+      last_modified: "Mon, 09 Mar 2020 16:31:47 GMT"
+      provider_checksum: null
+  - asset_id: test_space_screen_pairs
+    url: https://interactome-atlas.org/data/Test_space_screens-19.tsv
+    destination: data/raw/huri/published_2020/Test_space_screens-19.tsv
+    format: tsv_positive_pairs
+    required: true
+    expected:
+      content_length_bytes: 37088
+      etag: '"90e0-5a06e8809e230"'
+      last_modified: "Mon, 09 Mar 2020 16:31:12 GMT"
+      provider_checksum: null
+  - asset_id: literature_benchmark_pairs
+    url: https://interactome-atlas.org/data/Lit-BM.tsv
+    destination: data/raw/huri/published_2020/Lit-BM.tsv
+    format: tsv_positive_pairs
+    required: true
+    expected:
+      content_length_bytes: 430112
+      etag: '"69020-5a06e85ff9b94"'
+      last_modified: "Mon, 09 Mar 2020 16:30:38 GMT"
+      provider_checksum: null
+  - asset_id: hi_ii_14_pairs
+    url: https://interactome-atlas.org/data/HI-II-14.tsv
+    destination: data/raw/huri/published_2020/HI-II-14.tsv
+    format: tsv_positive_pairs
+    required: true
+    expected:
+      content_length_bytes: 436256
+      etag: '"6a820-5a06e85fde854"'
+      last_modified: "Mon, 09 Mar 2020 16:30:38 GMT"
+      provider_checksum: null
+  - asset_id: hi_ii_14_psi
+    url: https://interactome-atlas.org/data/HI-II-14.psi
+    destination: data/raw/huri/published_2020/HI-II-14.psi
+    format: provider_psi_mi_export
+    required: true
+    expected:
+      content_length_bytes: 48078485
+      etag: '"2dd9e95-5a06e8a74ec7e"'
+      last_modified: "Mon, 09 Mar 2020 16:31:53 GMT"
+      provider_checksum: null
+  - asset_id: huri_supplementary_tables
+    url: "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2188-x/MediaObjects/41586_2020_2188_MOESM3_ESM.zip"
+    destination: data/raw/huri/publication_2020/41586_2020_2188_MOESM3_ESM.zip
+    format: zip_xlsx_tables
+    required: true
+    expected:
+      content_length_bytes: null
+      etag: '"1668e7a8e6889dd84d377300f3a71fc6"'
+      last_modified: null
+      provider_checksum: null
+  - asset_id: huri_supplementary_methods
+    url: "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2188-x/MediaObjects/41586_2020_2188_MOESM1_ESM.pdf"
+    destination: data/raw/huri/publication_2020/41586_2020_2188_MOESM1_ESM.pdf
+    format: pdf
+    required: true
+    expected:
+      content_length_bytes: 772012
+      etag: '"78b92edf7fe8af303d418e23312dd4d6"'
+      last_modified: null
+      provider_checksum: null
+  - asset_id: huri_supplementary_table_guide
+    url: "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2188-x/MediaObjects/41586_2020_2188_MOESM4_ESM.pdf"
+    destination: data/raw/huri/publication_2020/41586_2020_2188_MOESM4_ESM.pdf
+    format: pdf
+    required: true
+    expected:
+      content_length_bytes: 116397
+      etag: '"e7688dfa78dfe0b1efb66d0d6572bfd2"'
+      last_modified: null
+      provider_checksum: null
+
+unavailable_assets:
+  - asset_id: test_space_screen_psi
+    advertised_url: https://interactome-atlas.org/data/Test_space_screens-19.psi
+    observed_status: http_404
+    observed_on: "2026-08-03"
+    acquisition_allowed: false
+
+verification:
+  calculate_sha256: true
+  verify_provider_checksum: when_available
+  capture_http_headers: true
+  detect_actual_format_before_parsing: true
+  record_count_and_schema_report: required
+
+guards:
+  published_payloads_only: true
+  unreported_pairs_are_negative: false
+  space_iii_cross_product_is_complete_attempted_universe: false
+  technical_failures_are_negative: false
+  invalid_or_autoactivating_tests_are_negative: false
+  explicit_supplementary_test_outcomes_keep_original_control_scope: true
+
+known_gaps:
+  - The public portal and supplementary guide do not expose a complete pair-level attempted and evaluable matrix for all nine HuRI Space III screens.
+  - The public Test-space PSI-MI link returned HTTP 404 at audit time.
+  - Portal pair files are positive interaction lists and cannot define negatives by complement.
+
+approved_actions:
+  - download_to_immutable_raw_zone
+  - checksum_and_format_inspection
+  - parse_positive_records_and_explicit_published_controls
+prohibited_actions:
+  - construct_primary_negative_labels
+  - infer_attempted_pairs_from_cartesian_product
+  - train_model_before_evidence_gate

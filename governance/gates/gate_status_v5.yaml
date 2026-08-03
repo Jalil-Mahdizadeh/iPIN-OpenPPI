@@ -1,0 +1,43 @@
+schema_version: 5
+supersedes: governance/gates/gate_status_v4.yaml
+updated_date: "2026-08-03"
+programme_state: active_m0_evidence_acquisition_authorized
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    scope: qualification_sif_0.1.0
+    continuing_condition: every_later_image_requires_regression_qualification
+    evidence:
+      - docs/reports/m0/M0_Project_Initiation_and_Single_GPU_Qualification_v1.md
+      - docs/reports/m0/M0_Container_Gate_Final_Report_v1.md
+      - artifacts/runs/platform/platform-single-gpu-v2-826757-20260803T124251Z/comparison.json
+      - artifacts/runs/platform/platform-four-gpu-long-834510-20260803T125331Z/scaling_comparison.json
+    measured_four_gpu_scaling_efficiency: 0.8958019946853826
+    minimum_four_gpu_scaling_efficiency: 0.70
+  evidence:
+    status: in_progress
+    source_license_subgate:
+      status: pass_with_conditions
+      scientific_acquisition_authorized: true
+      label_construction_authorized: false
+      model_training_authorized: false
+      active_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v3.yaml
+      policy: configs/source_policy_v1.yaml
+      decision: governance/decisions/DEC-0006-authorize-final-source-manifest-set.md
+      evidence:
+        - governance/licenses/SOURCE_LICENSE_REGISTER_v3.md
+        - governance/licenses/snapshots/2026-08-03/SNAPSHOT_MANIFEST.json
+        - artifacts/validation/source_manifests/preacquisition_validation_v3.json
+        - artifacts/validation/source_manifests/preacquisition_url_probe_v3.json
+    open_blockers_for_label_construction:
+      - governance/issues/ISSUE-0003-huri-attempted-pair-universe.md
+  benchmark: { status: not_started }
+  statistical: { status: not_started }
+  routing: { status: not_started }
+  retrieval: { status: not_started }
+  uncertainty: { status: not_started }
+  computational_validation: { status: not_started }
+  release: { status: not_started }

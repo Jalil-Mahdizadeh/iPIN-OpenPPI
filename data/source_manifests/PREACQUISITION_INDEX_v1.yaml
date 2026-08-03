@@ -1,0 +1,30 @@
+schema_version: 1
+manifest_set_id: PREACQ-PRIMARY-001
+project: ipin-openppi
+created_date: "2026-08-03"
+stage: preacquisition
+scope: primary_human_evidence_sources
+policy: configs/source_policy_v1.yaml
+license_register: governance/licenses/SOURCE_LICENSE_REGISTER_v2.md
+
+authorization:
+  scientific_downloads_permitted: true
+  required_runtime: apptainer
+  raw_download_only: true
+  label_construction_permitted: false
+  model_training_permitted: false
+
+manifests:
+  - source_key: huri
+    path: data/source_manifests/PREACQUISITION_huri_v1.yaml
+  - source_key: uniprot
+    path: data/source_manifests/PREACQUISITION_uniprot_human_v1.yaml
+  - source_key: intact_imex
+    path: data/source_manifests/PREACQUISITION_intact_imex_v1.yaml
+  - source_key: pdb_sifts
+    path: data/source_manifests/PREACQUISITION_pdb_sifts_v1.yaml
+
+validation:
+  script: scripts/data/validate_preacquisition_manifests.py
+  container: containers/images/ipin-qual-arm64_0.1.0.sif
+  expected_source_keys: [huri, uniprot, intact_imex, pdb_sifts]

@@ -1,0 +1,93 @@
+schema_version: 1
+manifest_id: PREACQ-PDB-SIFTS-001
+source_key: pdb_sifts
+created_date: "2026-08-03"
+stage: preacquisition
+approved_for_download: true
+
+source:
+  name: Protein Data Bank with SIFTS residue mappings
+  providers: [wwPDB, RCSB_PDB, PDBe_SIFTS]
+  pdb_snapshot_policy: query_and_entry_revision_frozen_at_retrieval
+  sifts_snapshot_basis: files observed with 2026-07-12 modification dates
+  observed_on: "2026-08-03"
+
+license:
+  identifier: CC0-1.0
+  pdb_terms_url: https://www1.rcsb.org/pages/usage-policy
+  pdbe_terms_url: https://www.ebi.ac.uk/pdbe/about/public-data-access-statement
+  attribution_requested: true
+  redistribution: permitted
+  audit_record: governance/licenses/SOURCE_LICENSE_REGISTER_v2.md
+
+assets:
+  - asset_id: sifts_chain_uniprot
+    url: https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_uniprot.tsv.gz
+    destination: data/raw/sifts/observed_2026-07-12/flatfiles/tsv/pdb_chain_uniprot.tsv.gz
+    format: tsv_gzip
+    required: true
+    expected:
+      content_length_bytes: null
+      last_modified_date: "2026-07-12"
+      provider_checksum: null
+  - asset_id: sifts_chain_taxonomy
+    url: https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/pdb_chain_taxonomy.tsv.gz
+    destination: data/raw/sifts/observed_2026-07-12/flatfiles/tsv/pdb_chain_taxonomy.tsv.gz
+    format: tsv_gzip
+    required: true
+    expected:
+      content_length_bytes: null
+      last_modified_date: "2026-07-12"
+      provider_checksum: null
+  - asset_id: sifts_observed_segments
+    url: https://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/uniprot_segments_observed.tsv.gz
+    destination: data/raw/sifts/observed_2026-07-12/flatfiles/tsv/uniprot_segments_observed.tsv.gz
+    format: tsv_gzip
+    required: true
+    expected:
+      content_length_bytes: null
+      last_modified_date: "2026-07-12"
+      provider_checksum: null
+
+dynamic_acquisition:
+  search_api_endpoint: https://search.rcsb.org/rcsbsearch/v2/query
+  data_api_base: https://data.rcsb.org/rest/v1/core
+  coordinate_template: https://files.wwpdb.org/pub/pdb/data/structures/divided/mmCIF/{middle_two_id_characters}/{pdb_id}.cif.gz
+  sifts_residue_xml_template: https://ftp.ebi.ac.uk/pub/databases/msd/sifts/split_xml/{middle_two_id_characters}/{pdb_id}.xml.gz
+  required_search_results_content_type: experimental
+  query_request_must_be_saved: true
+  query_response_must_be_checksummed: true
+  child_manifest_required_for_each_coordinate_payload: true
+
+verification:
+  calculate_sha256: true
+  verify_provider_checksum: when_available
+  capture_http_headers: true
+  capture_pdb_entry_revision_date: true
+  record_count_and_schema_report: required
+
+guards:
+  computed_models_allowed: false
+  experimental_entries_only: true
+  biological_assembly_identifier_required: true
+  author_assembly_not_assumed_biological: true
+  method_and_resolution_required: true
+  chain_level_uniprot_mapping_required: true
+  engineered_mutations_tags_chimeras_and_unobserved_residues_audited: true
+  interface_must_be_recalculated_from_frozen_coordinates: true
+  structure_derived_absence_is_negative: false
+
+known_gaps:
+  - PDB entries are revised continuously; entry revision metadata and raw coordinate checksums define the project snapshot.
+  - SIFTS flat files are rolling weekly products; local immutable copies and checksums define the project snapshot.
+  - Coordinate acquisition is intentionally deferred until an exact experimental-entry query and child manifest are reviewed.
+
+approved_actions:
+  - download_and_freeze_sifts_mapping_assets
+  - submit_and_freeze_experimental_rcsb_query
+  - generate_coordinate_child_manifest
+prohibited_actions:
+  - download_coordinates_before_child_manifest
+  - accept_computed_models_as_experimental_evidence
+  - construct_interface_labels_before_mapping_qc
+  - train_model_before_evidence_gate
