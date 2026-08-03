@@ -1,0 +1,30 @@
+schema_version: 2
+supersedes: governance/gates/gate_status.yaml
+updated_date: "2026-08-03"
+programme_state: active_m0
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: in_progress
+    passed:
+      - arm64_sif_build
+      - definition_source_lock_inspection_and_sha256
+      - embedded_cpu_architecture_test
+      - one_gpu_cuda_and_bf16
+      - two_repeat_fixture_comparison
+      - exact_checkpoint_restart
+    pending:
+      - qualify_four_gpu_execution
+      - measure_four_gpu_scaling_efficiency
+    report: docs/reports/m0/M0_Project_Initiation_and_Single_GPU_Qualification_v1.md
+  evidence: { status: not_started }
+  benchmark: { status: not_started }
+  statistical: { status: not_started }
+  routing: { status: not_started }
+  retrieval: { status: not_started }
+  uncertainty: { status: not_started }
+  computational_validation: { status: not_started }
+  release: { status: not_started }
+

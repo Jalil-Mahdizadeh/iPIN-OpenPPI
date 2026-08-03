@@ -1,0 +1,16 @@
+schema_version=1
+image_name=ipin-qual-arm64
+image_version=0.1.0
+bootstrap=docker
+source=nvcr.io/nvidia/pytorch:25.08-py3
+architecture=aarch64
+base_oci_digest=sha256:ace9a848c0ae543317e3c4763b6b4248961c47902625abfe3c77a0fb931c50fb
+sif_sha256=9259e1953dadc502af8949fe56db1fba56f4e3711ccb7542e7feda94c4718ce5
+sif_size_human=9.9G
+python=3.12.3
+pytorch=2.8.0a0+34c6371d24.nv25.08
+pytorch_cuda=13.0
+cudnn=9.12.0
+apptainer=1.5.2-1.el9
+qualification_status=single_gpu_pass_four_gpu_pending
+qualification_report=docs/reports/m0/M0_Project_Initiation_and_Single_GPU_Qualification_v1.md

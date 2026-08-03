@@ -1,0 +1,55 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors and operating-system files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Apptainer images, caches, and temporary build state
+containers/images/*.sif
+containers/images/*.sif.*
+containers/cache/**
+containers/tmp/**
+!containers/cache/.gitkeep
+!containers/tmp/.gitkeep
+
+# Source data and generated datasets
+data/raw/**
+data/staging/**
+data/canonical/**
+data/derived/**
+data/splits/**
+!data/raw/README.md
+!data/staging/README.md
+!data/canonical/README.md
+!data/derived/README.md
+!data/splits/README.md
+
+# Generated run products and project-local caches
+artifacts/runs/**
+artifacts/checkpoints/**
+artifacts/embeddings/**
+artifacts/metrics/**
+artifacts/figures/**
+artifacts/tables/**
+artifacts/cache/**
+artifacts/tmp/**
+!artifacts/**/.gitkeep
+!artifacts/reports/**
+
+# Scheduler output and release packages
+slurm/logs/**
+!slurm/logs/.gitkeep
+releases/candidates/**
+releases/final/**
+!releases/candidates/.gitkeep
+!releases/final/.gitkeep
+

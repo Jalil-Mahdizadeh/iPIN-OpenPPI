@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ipin-openppi"
+version = "0.1.0"
+description = "Evidence-aware direct protein-protein interaction prioritization"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "License to be selected before public release" }
+authors = [{ name = "iPIN-OpenPPI expert group" }]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+

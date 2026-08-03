@@ -1,0 +1,24 @@
+schema_version: 1
+updated_date: "2026-08-03"
+programme_state: active_m0
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: in_progress
+    pending:
+      - build_and_checksum_arm64_sif
+      - repeat_single_gpu_fixture_twice
+      - verify_checkpoint_restart
+      - qualify_four_gpu_execution
+      - measure_four_gpu_scaling_efficiency
+  evidence: { status: not_started }
+  benchmark: { status: not_started }
+  statistical: { status: not_started }
+  routing: { status: not_started }
+  retrieval: { status: not_started }
+  uncertainty: { status: not_started }
+  computational_validation: { status: not_started }
+  release: { status: not_started }
+

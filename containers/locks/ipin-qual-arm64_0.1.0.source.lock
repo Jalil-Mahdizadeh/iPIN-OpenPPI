@@ -1,0 +1,11 @@
+schema_version=1
+image_name=ipin-qual-arm64
+image_version=0.1.0
+bootstrap=docker
+source=nvcr.io/nvidia/pytorch:25.08-py3
+expected_architecture=aarch64
+expected_cuda_series=13.0
+selection_reason=NGC_PyTorch_25.08_matches_the_Arrhenius_driver_reported_CUDA_13.0_and_NVIDIA_lists_multi_arch_ARM_SBSA_support
+sif_sha256=pending_build
+oci_digest=pending_build_inspection
+

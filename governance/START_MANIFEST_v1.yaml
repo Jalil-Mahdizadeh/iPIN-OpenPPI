@@ -1,0 +1,81 @@
+schema_version: 1
+manifest_id: M0-START-001
+project: ipin-openppi
+blueprint_version: "3.0"
+created_date: "2026-08-03"
+
+authorization:
+  status: authorized_and_started
+  date: "2026-08-03"
+  authority: project_sponsor
+  instruction: "Start it."
+  execution_owner: Codex
+  scientific_governance: expert_group
+
+locked_scope:
+  primary_target: direct_human_heteromeric_binary_protein_interactions
+  primary_input: paired_amino_acid_sequences
+  primary_calibrated_output: assay_positive_probability_in_defined_tested_universe
+  general_output: symmetric_sequence_compatibility_score
+  no_laboratory_work: true
+  hypothesis_catalogue_is_not_validation: true
+
+evidence_semantics:
+  selection: s_ABm
+  technical_evaluability: e_ABm
+  contextual_direct_binding: b_ABc
+  observed_assay_outcome: y_ABm
+  technical_failure_is_negative: false
+
+platform:
+  required_system: NAISS_Arrhenius
+  runtime: Apptainer
+  required_architecture: aarch64
+  image_format: immutable_SIF
+  all_project_files_beneath_repository_root: true
+  host_native_scientific_environment_allowed: false
+  observed_start_node: n34
+  observed_gpu: NVIDIA_GH200_120GB
+  observed_gpu_count: 1
+  observed_apptainer_version: 1.5.2-1.el9
+  observed_slurm_job_id: "826757"
+  observed_slurm_account: naiss2025-3-10-gpu
+  observed_slurm_partition: gpu
+
+frozen_primary_design:
+  systematic_source: HuRI_HI-III_pending_reconstruction_audit
+  primary_sequence_identity_threshold: 0.30
+  protein_novelty_categories: [C1, exclusive_C2, C3]
+  primary_metric: AUPRC_with_candidate_universe_reported
+  complete_temporal_freeze_required: true
+  month_six_gate_required: true
+
+first_execution_unit:
+  id: M0-PLATFORM-QUALIFICATION
+  action: build_checksum_and_test_minimal_arm64_gpu_sif
+  allowed_resources: current_single_GH200_allocation
+  scientific_data_download: false
+  model_training: qualification_fixture_only
+
+claim_ceiling:
+  may_claim:
+    - named_assay_outcome_prediction
+    - evidence_integrated_compatibility_ranking
+    - specified_strict_generalization
+    - calibrated_selective_prediction_in_declared_universe
+    - computational_hypothesis_prioritization
+  may_not_claim:
+    - universal_context_free_binding_probability
+    - experimentally_validated_novel_pairs
+    - in_vivo_interaction_from_sequence_alone
+    - undocumented_pair_as_verified_negative
+    - completed_or_validated_human_interactome
+
+next_review:
+  trigger: completion_of_single_gpu_qualification
+  required_artifacts:
+    - qualification_SIF_SHA256
+    - two_repeat_fixture_comparison
+    - checkpoint_restart_result
+    - platform_qualification_report
+

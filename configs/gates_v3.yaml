@@ -1,0 +1,47 @@
+schema_version: 1
+source: docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md
+freeze_date: "2026-08-03"
+amendment_required: true
+
+container_gate:
+  arm64_sif_only: true
+  require_definition_lock_inspection_and_sha256: true
+  repeated_smoke_runs: 2
+  repeated_fixture_tolerance: 1.0e-6
+  require_one_gpu: true
+  require_four_gpu: true
+  minimum_four_gpu_scaling_efficiency: 0.70
+  require_checkpoint_restart: true
+
+evidence_gate:
+  minimum_record_provenance_fraction: 0.95
+  minimum_systematic_state_resolution_fraction: 0.90
+  minimum_construct_confidence_a_or_b_fraction: 0.80
+  technical_failures_may_be_negatives: false
+
+benchmark_gate:
+  primary_sequence_cluster_identity: 0.30
+  sensitivity_sequence_cluster_identities: [0.40, 0.20]
+  minimum_strict_positive_observations: 500
+  minimum_independent_sequence_clusters: 50
+  required_categories: [C1, exclusive_C2, C3]
+
+statistical_gate:
+  maximum_simulated_assay_parameter_mae: 0.10
+  minimum_coverage_for_nominal_90_intervals: 0.85
+  minimum_prior_sensitivity_spearman: 0.90
+  minimum_relative_strict_aupr_improvement: 0.10
+  require_clustered_ci_excluding_zero: true
+  require_positive_brier_skill: true
+  calibration_slope_range: [0.8, 1.2]
+
+routing_gate:
+  minimum_relative_oracle_aupr_improvement: 0.05
+  minimum_fraction_of_oracle_gain_recovered: 0.50
+  minimum_peak_hbm_reduction: 0.30
+  minimum_wall_time_reduction: 0.20
+  maximum_relative_strict_performance_loss: 0.01
+
+retrieval_gate:
+  minimum_recall_at_1000: 0.95
+  minimum_recall_at_100: 0.80

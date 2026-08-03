@@ -1,0 +1,33 @@
+schema_version: 1
+policy: all_paths_are_relative_to_project_root
+paths:
+  blueprints: docs/blueprints
+  reports: docs/reports
+  governance: governance
+  container_definitions: containers/definitions
+  container_locks: containers/locks
+  container_manifests: containers/manifests
+  container_images: containers/images
+  container_cache: containers/cache
+  container_tmp: containers/tmp
+  source_manifests: data/source_manifests
+  raw_data: data/raw
+  staging_data: data/staging
+  canonical_data: data/canonical
+  derived_data: data/derived
+  frozen_splits: data/splits
+  source_code: src
+  scripts: scripts
+  slurm: slurm
+  tests: tests
+  runs: artifacts/runs
+  checkpoints: artifacts/checkpoints
+  embeddings: artifacts/embeddings
+  metrics: artifacts/metrics
+  figures: artifacts/figures
+  tables: artifacts/tables
+  artifact_reports: artifacts/reports
+  runtime_cache: artifacts/cache
+  runtime_tmp: artifacts/tmp
+  releases: releases
+

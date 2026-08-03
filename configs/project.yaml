@@ -1,0 +1,47 @@
+schema_version: 1
+project:
+  id: ipin-openppi
+  title: iPIN-OpenPPI
+  version: 3.0
+  execution_status: started
+  execution_start_date: "2026-08-03"
+  programme_month: 0
+  current_phase: m0_initiation_and_platform_qualification
+
+scope:
+  organism: Homo sapiens
+  interaction_class: direct_heteromeric_binary_ppi
+  primary_input: two_amino_acid_sequences
+  retrieval_sequence_view: canonical_human
+  evidence_sequence_view: construct_aware_when_available
+  exclude_primary: [homomers, co_complex_associations, functional_associations]
+  wet_lab_work: prohibited_unavailable
+
+estimands:
+  primary: assay_positive_probability_given_selected_and_evaluable
+  general: symmetric_sequence_compatibility_score
+  uncertainty: empirical_selective_prediction_score
+  optional: [partner_conditioned_interface_region_score, proteome_retrieval_score]
+
+primary_systematic_setting:
+  source: HuRI_HI-III
+  status: provisional_pending_reconstruction_and_license_audit
+  assay_family: systematic_binary_Y2H
+
+execution:
+  owner: Codex
+  governance: expert_group
+  platform: NAISS_Arrhenius
+  scheduler: Slurm
+  container_runtime: Apptainer
+  architecture: aarch64
+  production_outside_apptainer: false
+  external_training_platforms_allowed: false
+
+claim_ceiling:
+  universal_binding_probability: false
+  experimental_validation: false
+  in_vivo_interaction_from_sequence: false
+  completed_human_interactome: false
+  hypothesis_catalogue_only: true
+
