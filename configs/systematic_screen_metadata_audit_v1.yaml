@@ -1,0 +1,221 @@
+schema_version: 1
+audit_id: systematic_screen_metadata_v1
+audit_version: 0.1.0
+task: systematic_screen_and_negative_evidence_metadata_audit
+
+authorization:
+  source_metadata_audit: true
+  benchmark_estimand_policy_design: true
+  label_construction: false
+  split_construction: false
+  structural_mapping: false
+  model_training: false
+
+runtime:
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  architecture: aarch64
+  duckdb_memory_limit: 8GB
+  require_clean_git_for_production: true
+
+inputs:
+  acquisition_manifest: data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json
+  acquisition_manifest_sha256: 5750fe08eac343e23c0f0c56cf749c7477cbfd92233f2679de5fedf9d8f22231
+  parse_manifest: data/staging/primary_sources_v1/PARSE_MANIFEST.json
+  parse_manifest_sha256: ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa
+  staging_validation_report: artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json
+  staging_validation_report_sha256: 375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba
+  reconciliation_manifest: data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json
+  reconciliation_manifest_sha256: 6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932
+  reconciliation_validation_report: artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json
+  reconciliation_validation_report_sha256: 9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2
+  source_policy: configs/source_policy_v1.yaml
+  source_policy_sha256: af43ae0f55fa78ddd5d5ae67ff4e0a9704903c1669ef5a7204749bddc381318a
+  evidence_schema: schemas/warehouse/evidence_warehouse_v1.yaml
+  evidence_schema_sha256: 122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd
+  staging_schema: schemas/staging/source_native_v2.yaml
+  staging_schema_sha256: ab285a3d215c7758f56fb280e3a3db98af792e38c4d6ee025d69084b2d91adca
+  raw_asset_ids:
+    - huri_supplementary_tables
+    - huri_supplementary_methods
+    - huri_supplementary_table_guide
+    - huri_pairs
+    - huri_psi
+    - test_space_screen_pairs
+    - hi_ii_14_pairs
+    - hi_ii_14_psi
+  dataset_summaries:
+    huri_evidence: source_reports.huri.tables.evidence_records
+    huri_pair_views: source_reports.huri.tables.source_pair_views
+    huri_supplement: source_reports.huri.tables.supplementary_raw_tabular_records
+    huri_space: source_reports.huri.tables.huri_space_membership
+    huri_fusion: source_reports.huri.tables.huri_fusion_interference
+    intact_evidence: source_reports.intact_imex.psi_xml.tables.evidence_records
+
+supplementary_panels:
+  table_5:
+    dataset: huri_supplement_table_5
+    assay: Y2H
+    scope: positive_and_random_reference_pairs_tested_by_orientation_and_assay_version
+    unit: ordered_orf_pair_by_y2h_assay_version
+    outcome_field: score
+    outcome_semantics:
+      "1": observed_positive
+      "0": conditional_assay_negative
+      NA: technical_invalid
+      AA: technical_autoactivator
+    strata_fields: [source, assay_version]
+    admissible_use: diagnostic_reference_panel_only
+  table_6:
+    dataset: huri_supplement_table_6
+    assay: MAPPIT
+    scope: selected_test_space_positives_literature_controls_and_random_controls
+    unit: selected_pair_by_experiment
+    outcome_field: result
+    outcome_semantics:
+      "1.0": observed_positive
+      "0.0": conditional_assay_negative
+      "<blank>": unresolved_missing_or_invalid
+    strata_fields: [source, experiment]
+    admissible_use: orthogonal_recovery_diagnostic_only
+  table_8:
+    dataset: huri_supplement_table_8
+    assay: MAPPIT_and_GPCA
+    scope: selected_huri_positives_literature_controls_and_random_controls
+    unit: selected_pair_by_assay_and_batch
+    outcome_field: null
+    score_field: final_score
+    strata_fields: [source, assay, standard_batch]
+    admissible_use: quantitative_orthogonal_recovery_diagnostic_only
+  table_12:
+    dataset: huri_supplement_table_12
+    assay: Y2H
+    scope: randomly_sampled_literature_curated_pairs
+    unit: ordered_orf_pair
+    outcome_field: final_score
+    outcome_semantics:
+      "1": observed_positive
+      "0": conditional_assay_negative
+      NA: technical_invalid
+      AA: technical_autoactivator
+    strata_fields: [source]
+    admissible_use: literature_recovery_diagnostic_only
+  table_13:
+    dataset: huri_supplement_table_13
+    assay: MAPPIT
+    scope: randomly_sampled_literature_curated_pairs
+    unit: selected_pair
+    outcome_field: result
+    outcome_semantics:
+      "1.0": observed_positive
+      "0.0": conditional_assay_negative
+      "<blank>": unresolved_missing_or_invalid
+    strata_fields: [source]
+    admissible_use: literature_recovery_diagnostic_only
+  table_15:
+    dataset: "huri_supplement_table_15:20190418_fusion_interference"
+    assay: Y2H_detection_flags
+    scope: structurally_selected_space_iii_pairs
+    unit: selected_pair_with_assay_version_detection_flags
+    outcome_field: null
+    admissible_use: technical_sensitivity_diagnostic_only
+  table_16:
+    dataset: huri_supplement_table_16
+    assay: MAPPIT
+    scope: selected_huri_and_literature_overlap_pairs_stratified_by_y2h_detection_count
+    unit: selected_pair_by_y2h_assay_version
+    outcome_field: result
+    outcome_semantics:
+      "1.0": observed_positive
+      "0.0": conditional_assay_negative
+      "<blank>": unresolved_missing_or_invalid
+    strata_fields: [Y2H_assay_version, category, num_screens]
+    admissible_use: orthogonal_recovery_diagnostic_only
+
+systematic_universe_requirements:
+  pair_level_search_space_membership: positive_only_or_gene_level_only
+  screen_and_run_identifier_for_every_opportunity: positive_only
+  ordered_bait_and_prey_constructs_for_every_opportunity: positive_only
+  selection_state_for_every_opportunity: positive_only
+  attempted_state_for_every_opportunity: positive_only
+  technical_evaluability_for_every_attempt: unavailable
+  technical_failure_or_exclusion_reason: unavailable
+  observed_outcome_for_every_evaluable_attempt: positive_only
+  first_pass_candidate_log: unavailable
+  complete_pairwise_retest_log: unavailable
+  prescreen_autoactivator_exclusion_log: unavailable
+  sampling_probability_for_released_controls: partial
+
+external_availability_review:
+  reviewed_date: "2026-08-03"
+  nature_article: https://www.nature.com/articles/s41586-020-2188-x
+  public_downloads: https://www.interactome-atlas.org/download
+  portal_faq: https://www.interactome-atlas.org/faq/
+  portal_about: https://www.interactome-atlas.org/about/
+  authors_code_repository: https://github.com/CCSB-DFCI/HuRI_paper
+  authors_code_commit: 16c57919f4e0c3d1a78edf90c105ed42d3022f8f
+  authors_code_commit_date: "2020-09-14T13:07:06-04:00"
+  authors_code_license_file_present: false
+  attempted_pair_log_found: false
+  alternate_scientific_branch_or_tag_found: false
+  notes:
+    - The authors repository republishes Tables 1-28 and selected derived validation tables.
+    - Its README states that analysis code often reads internal databases and is not fully reproducible off-site.
+    - Its processed Table 8 has the same 8,239 base rows as the publication table plus an author-derived binary result column.
+    - No public file enumerates all selected, attempted, evaluable, failed, and observed HuRI screen opportunities.
+
+expected:
+  archive_scientific_tables: 29
+  methods_pdf_pages: 32
+  table_guide_pdf_pages: 3
+  huri_space_rows: 19818
+  huri_space_iii_true: 17408
+  huri_space_iii_false: 2410
+  huri_evidence_rows: 220934
+  huri_evidence_positive: 220934
+  huri_evidence_negative: 0
+  huri_pair_view_rows:
+    HI-II-14: 13633
+    HuRI: 52548
+    Lit-BM: 13441
+    Test_space_screens-19: 1159
+  supplement_table_rows:
+    huri_supplement_table_5: 1044
+    huri_supplement_table_6: 2839
+    huri_supplement_table_7: 1214
+    huri_supplement_table_8: 8239
+    huri_supplement_table_9: 52569
+    huri_supplement_table_12: 2391
+    huri_supplement_table_13: 1433
+    huri_supplement_table_16: 6447
+  panel_outcome_counts:
+    table_5: {"0": 791, "1": 70, AA: 142, NA: 41}
+    table_6: {"0.0": 2196, "1.0": 150, "<blank>": 493}
+    table_12: {"0": 2017, "1": 83, AA: 29, NA: 262}
+    table_13: {"0.0": 1272, "1.0": 85, "<blank>": 76}
+    table_16: {"0.0": 4344, "1.0": 1138, "<blank>": 965}
+  table_5_complete_two_orientation_pair_assays: 522
+  table_7_detection_mentions: 3099
+  table_8_numeric_scores: 8239
+  table_9_screen_detection_mentions: 77653
+  table_9_assay_version_detection_mentions: 55534
+  table_15_rows: 3738
+  table_15_never_detected_any_version: 3038
+  table_15_label_authorized: 0
+  intact_explicit_negative_rows: 939
+
+decision_policy:
+  complete_attempted_evaluable_universe_reconstructed: false
+  issue_0003_disposition: unresolved_resolution_path_3_recommended
+  calibrated_primary_assay_probability_feasible: false
+  primary_binary_negative_labels_feasible: false
+  pu_compatibility_policy_design_feasible: true
+  conditional_control_panel_analysis_feasible: true
+  strict_construct_benchmark_feasible: false
+  label_construction_authorized: false
+  split_construction_authorized: false
+  model_training_authorized: false
+
+outputs:
+  audit_report: artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json
+  validation_report: artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json
