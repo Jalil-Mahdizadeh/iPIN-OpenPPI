@@ -1,0 +1,28 @@
+schema_version: 3
+supersedes: governance/gates/gate_status_v2.yaml
+updated_date: "2026-08-03"
+programme_state: active_m0
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    scope: qualification_sif_0.1.0
+    continuing_condition: every_later_image_requires_regression_qualification
+    evidence:
+      - docs/reports/m0/M0_Project_Initiation_and_Single_GPU_Qualification_v1.md
+      - docs/reports/m0/M0_Container_Gate_Final_Report_v1.md
+      - artifacts/runs/platform/platform-single-gpu-v2-826757-20260803T124251Z/comparison.json
+      - artifacts/runs/platform/platform-four-gpu-long-834510-20260803T125331Z/scaling_comparison.json
+    measured_four_gpu_scaling_efficiency: 0.8958019946853826
+    minimum_four_gpu_scaling_efficiency: 0.70
+  evidence: { status: not_started }
+  benchmark: { status: not_started }
+  statistical: { status: not_started }
+  routing: { status: not_started }
+  retrieval: { status: not_started }
+  uncertainty: { status: not_started }
+  computational_validation: { status: not_started }
+  release: { status: not_started }
+
