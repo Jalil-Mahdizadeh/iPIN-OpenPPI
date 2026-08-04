@@ -1,0 +1,106 @@
+schema_version: 13
+supersedes: governance/gates/gate_status_v12.yaml
+updated_date: "2026-08-04"
+programme_state: awaiting_expert_disposition_lambourne_audit_complete
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    production_sif: containers/images/ipin-data-arm64_0.1.2.sif
+    production_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+    architecture: aarch64
+    continuing_condition: every_scientific_operation_runs_through_pinned_apptainer
+  evidence:
+    status: lambourne_audit_complete_independently_validated_governance_pending
+    accepted_prior_subgates:
+      raw_acquisition: governance/decisions/DEC-0007-accept-primary-raw-acquisition.md
+      source_parsing: governance/decisions/DEC-0008-accept-primary-evidence-staging.md
+      source_reconciliation: governance/decisions/DEC-0009-accept-primary-source-reconciliation.md
+      negative_evidence_discovery: governance/decisions/DEC-0012-accept-negative-evidence-discovery-audit.md
+    source_license_subgate:
+      status: pass_for_bounded_internal_audit
+      active_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v5.yaml
+      active_policy: configs/source_policy_v3.yaml
+      license_register: governance/licenses/SOURCE_LICENSE_REGISTER_v6.md
+      nature_assets: CC-BY-4.0_subject_to_credit_line_review
+      zenodo_record_19118078_v2_1: MIT
+      intact_imex_preview: CC-BY-4.0
+      record_level_derived_release: governance_review_required
+    lambourne_human_y2h_subgate:
+      status: complete_independently_validated_awaiting_expert_disposition
+      authorization_decision: governance/decisions/DEC-0013-authorize-lambourne-y2h-semantics-audit.md
+      decision_proposal: governance/decisions/DEC-0014-propose-lambourne-panel-disposition.md
+      scientific_report: docs/reports/m0/M0_Lambourne_2026_Human_Y2H_Pair_Semantics_Audit_Final_v1.md
+      validation_status: pass
+      validation_checks: {pass: 15, fail: 0, warning: 0}
+      audit_report_sha256: 361fe5bcc98e782b1cc36f3111f00865a5db9f025b01f0c1719b6a11eb60a836
+      validation_report_sha256: bd7812eede90f8cf0fac62a1690c8164115501476e7fa67b40470cf1673874d5
+      public_original_claimed_pairs: 4100
+      public_reconstructed_unique_pairs: 4130
+      exact_original_universe_reconstructed: false
+      exact_final_analysis_pairs: 3222
+      final_positive: 376
+      final_negative_assay_observation: 2300
+      final_technically_unevaluable: 546
+      final_both_unique_frozen_reference_pairs: 3221
+      exact_training_evidence_pair_overlap: 780
+      exact_pair_disjoint_evaluable: {positive: 43, negative: 1967}
+      uniref90_endpoint_disjoint: {positive: 0, negative: 131, technical: 26}
+      protected_assay_specific_diagnostic: conditionally_feasible_governance_not_authorized
+      sequence_family_generalization_supported: false
+      issues:
+        - governance/issues/ISSUE-0006-im30553-preview-not-integrated.md
+        - governance/issues/ISSUE-0007-public-4100-pair-universe-not-reconstructable.md
+        - governance/issues/ISSUE-0008-im30553-data22-outcome-discrepancies.md
+      outcome_training_label_role_authorized: false
+      merge_with_negatome_authorized: false
+      benchmark_split_construction_authorized: false
+      benchmark_integration_authorized: false
+      model_training_authorized: false
+      universal_nonbinding_interpretation_authorized: false
+      required_return: satisfied_awaiting_expert_decision
+    benchmark_eligibility_and_sequence_component_audit:
+      status: paused_not_started
+      prior_authorization: governance/gates/gate_status_v11.yaml
+      resume_only_after_explicit_lambourne_governance_disposition: true
+    strict_construct_branch:
+      status: blocked
+      reason: construct_confidence_a_or_b_coverage_zero_and_issue_0005_open
+      issue: governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md
+    label_construction_authorized: false
+    candidate_pair_materialization_authorized: false
+    structural_mapping_authorized: false
+    model_training_authorized: false
+  benchmark:
+    status: primary_policy_accepted_preconstruction_lambourne_quarantined
+    accepted_policy: configs/benchmark_estimand_policy_v1.yaml
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    active_output: symmetric_sequence_compatibility_prioritization_score
+    output_is_probability: false
+    lambourne_external_benchmark_status: candidate_only_governance_pending
+    candidate_universe_construction_authorized: false
+    evidence_indicator_construction_authorized: false
+    negative_label_construction_authorized: false
+    split_construction_authorized: false
+    model_implementation_authorized: false
+    model_training_authorized: false
+  statistical: {status: not_started}
+  routing: {status: not_started}
+  retrieval: {status: not_started}
+  uncertainty: {status: not_started}
+  computational_validation: {status: not_started}
+  release: {status: not_started}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_unreported_or_technical_state_as_negative: true
+  merge_lambourne_with_negatome: true
+  lambourne_outcomes_as_training_labels: true
+  benchmark_split_construction: true
+  model_training_or_selection: true
+  imex_preview_as_release_252: true
+  benchmark_integration_before_expert_decision: true
+  experimental_validation_claim: true

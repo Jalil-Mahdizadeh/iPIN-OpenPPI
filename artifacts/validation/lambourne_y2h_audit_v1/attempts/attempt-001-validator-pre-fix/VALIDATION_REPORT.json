@@ -1,0 +1,273 @@
+{
+  "check_counts": {
+    "fail": 2,
+    "pass": 13,
+    "warning": 0
+  },
+  "checks": [
+    {
+      "check_id": "inputs.schema_hash",
+      "expected": {
+        "sha256": "5faa8853f7bf973702f654fd53225d48fe5835d40d367217c6c9606f38731b98"
+      },
+      "observed": {
+        "sha256": "5faa8853f7bf973702f654fd53225d48fe5835d40d367217c6c9606f38731b98"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.lambourne_y2h_audit_v1.manifest_sidecar",
+      "expected": {
+        "sidecar_matches": true
+      },
+      "observed": {
+        "sha256": "4cb5608b5799a6baf4e2e05047d69a31f8a355827a58e88c3b42dd6d3b1b9911"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.lambourne_y2h_audit_v1.table_set",
+      "expected": [
+        "archive_members",
+        "imex_preview_records",
+        "paper_records",
+        "raw_assay_records",
+        "selection_records"
+      ],
+      "observed": [
+        "archive_members",
+        "imex_preview_records",
+        "paper_records",
+        "raw_assay_records",
+        "selection_records"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.lambourne_y2h_audit_v1.hash_schema_immutability",
+      "expected": {
+        "errors": 0
+      },
+      "observed": {
+        "errors": 0,
+        "parquet_files": 8
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.lambourne_y2h_audit_v1.manifest_sidecar",
+      "expected": {
+        "sidecar_matches": true
+      },
+      "observed": {
+        "sha256": "3240c362fe05a7a68d579deccabdf8a608b43cbbf25ea0c7f703595698986d98"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.lambourne_y2h_audit_v1.table_set",
+      "expected": [
+        "assay_metadata",
+        "imex_pair_reconciliation",
+        "panel_pair_audit",
+        "participant_mappings",
+        "selected_universe_reconciliation"
+      ],
+      "observed": [
+        "assay_metadata",
+        "imex_pair_reconciliation",
+        "panel_pair_audit",
+        "participant_mappings",
+        "selected_universe_reconciliation"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.lambourne_y2h_audit_v1.hash_schema_immutability",
+      "expected": {
+        "errors": 0
+      },
+      "observed": {
+        "errors": 0,
+        "parquet_files": 5
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "audit_report.aggregate_only_and_checksummed",
+      "expected": {
+        "contains_record_level_keys": false,
+        "sidecar_matches": true
+      },
+      "observed": {
+        "contains_record_level_keys": false,
+        "sidecar_matches": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "source.independent_counts_and_crosswalk",
+      "expected": {
+        "final_outcomes": {
+          "Autoactivator": 41,
+          "Failed sequence confirmation": 478,
+          "Negative": 2300,
+          "Positive": 376,
+          "Test failed": 27
+        },
+        "final_pairs": 3222,
+        "paper_rows": 4775,
+        "paper_zhang_rows": 4046,
+        "raw_assay_rows": 4499,
+        "raw_paper_crosswalk_disagreements": 0,
+        "selection_rows": 4600,
+        "zhang_selection_physical_rows": 4133,
+        "zhang_selection_unique_pairs": 4130
+      },
+      "observed": {
+        "final_outcomes": {
+          "Autoactivator": 41,
+          "Failed sequence confirmation": 478,
+          "Negative": 2300,
+          "Positive": 376,
+          "Test failed": 27
+        },
+        "final_pairs": 3222,
+        "paper_rows": 4775,
+        "paper_zhang_rows": 4046,
+        "raw_assay_rows": 4499,
+        "raw_paper_crosswalk_disagreements": 0,
+        "selection_rows": 4600,
+        "zhang_selection_physical_rows": 4133,
+        "zhang_selection_unique_pairs": 4130
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "canonical.row_counts",
+      "expected": {
+        "assay_metadata": 1,
+        "imex_pair_reconciliation": 9595,
+        "panel_pair_audit": 4046,
+        "participant_mappings": 8092,
+        "selected_universe_reconciliation": 4130
+      },
+      "observed": {
+        "assay_metadata": 1,
+        "imex_pair_reconciliation": 9595,
+        "panel_pair_audit": 4046,
+        "participant_mappings": 8092,
+        "selected_universe_reconciliation": 4130
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.row_level_guards",
+      "expected": {
+        "technical_rows_marked_negative": 0,
+        "true_guard_values": 0
+      },
+      "observed": {
+        "technical_rows_marked_negative": 0,
+        "true_guard_values": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "canonical.final_outcomes",
+      "expected": {
+        "Autoactivator": 41,
+        "Failed sequence confirmation": 478,
+        "Negative": 2300,
+        "Positive": 376,
+        "Test failed": 27
+      },
+      "observed": {
+        "Autoactivator": 41,
+        "Failed sequence confirmation": 478,
+        "Negative": 2300,
+        "Positive": 376,
+        "Test failed": 27
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "evidence.record_and_pair_view_recomputation",
+      "expected": {
+        "mismatched_panel_rows": 0
+      },
+      "observed": {
+        "mismatched_panel_rows": 1
+      },
+      "status": "fail"
+    },
+    {
+      "check_id": "evidence.negative_pair_recomputation",
+      "expected": {
+        "mismatched_panel_rows": 0
+      },
+      "observed": {
+        "mismatched_panel_rows": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "contamination.family_pair_and_endpoint_recomputation",
+      "expected": {
+        "endpoint_mismatches": 0,
+        "family_pair_mismatches": 0
+      },
+      "observed": {
+        "endpoint_mismatches": 4,
+        "family_pair_mismatches": 0
+      },
+      "status": "fail"
+    }
+  ],
+  "governance": {
+    "benchmark_split_construction": false,
+    "merge_with_negatome": false,
+    "model_training": false,
+    "outcomes_as_training_labels": false,
+    "return_to_governance_required": true,
+    "universal_nonbinding_interpretation": false
+  },
+  "independent_evidence_metrics": {
+    "endpoint_mismatches": 4,
+    "family_pair_mismatches": 0,
+    "negative_mismatches": 0,
+    "permitted_pair_view_pairs": 71044,
+    "positive_mismatches": 1,
+    "positive_record_rows": 619837
+  },
+  "independent_source_metrics": {
+    "final_outcomes": {
+      "Autoactivator": 41,
+      "Failed sequence confirmation": 478,
+      "Negative": 2300,
+      "Positive": 376,
+      "Test failed": 27
+    },
+    "final_pairs": 3222,
+    "paper_rows": 4775,
+    "paper_zhang_rows": 4046,
+    "raw_assay_rows": 4499,
+    "raw_paper_crosswalk_disagreements": 0,
+    "selection_rows": 4600,
+    "zhang_selection_physical_rows": 4133,
+    "zhang_selection_unique_pairs": 4130
+  },
+  "inventory": {
+    "canonical": {
+      "rows": 25864,
+      "tables": 5
+    },
+    "staging": {
+      "rows": 183965,
+      "tables": 5
+    }
+  },
+  "schema_version": 1,
+  "status": "fail",
+  "validator": "independent_lambourne_y2h_v1"
+}

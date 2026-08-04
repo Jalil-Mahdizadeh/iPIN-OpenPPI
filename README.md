@@ -6,15 +6,18 @@ Evidence-aware, sequence-based prioritization of direct human heteromeric protei
 
 Arrhenius/Apptainer qualification, primary-source acquisition, evidence staging,
 source reconciliation, systematic-screen analysis, and the negative-evidence
-discovery audit are complete and accepted. The eligibility/sequence-component
-audit is paused and unstarted while the governance-bounded Lambourne et al. 2026
-human Y2H-v1 pair-semantics audit is executed.
+discovery audit are complete and accepted. The governance-bounded Lambourne et
+al. 2026 human Y2H-v1 pair-semantics audit is complete and independently
+validated; its expert-group disposition is pending. The eligibility/sequence-
+component audit remains paused and unstarted.
 
 Lambourne outcomes may not become training labels, be merged with Negatome, or
 be integrated into a benchmark before a new governance decision. Label, split,
-candidate, and model construction remain prohibited. The exact restart point is
-[project status version 12](governance/PROJECT_STATUS_v12.md), and the authoritative
-ledger is [gate status version 12](governance/gates/gate_status_v12.yaml).
+candidate, and model construction remain prohibited. The expert-facing result
+is the [final pair-semantics audit](docs/reports/m0/M0_Lambourne_2026_Human_Y2H_Pair_Semantics_Audit_Final_v1.md),
+and the pending disposition is [DEC-0014](governance/decisions/DEC-0014-propose-lambourne-panel-disposition.md).
+The exact restart point is [project status version 13](governance/PROJECT_STATUS_v13.md),
+and the authoritative ledger is [gate status version 13](governance/gates/gate_status_v13.yaml).
 
 The binding scientific specification is [the Version 3 final blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md). All production computation must run on NAISS Arrhenius through immutable ARM64 Apptainer SIF images.
 
@@ -49,14 +52,11 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
 
 ## Next execution sequence
 
-1. Acquire and freeze the manifested Nature, Zenodo, and IMEx IM-30553 sources.
-2. Reconstruct the exact 4,100 selected pairs and 3,222 final-analysis pairs,
-   preserving outcome, technical, construct, orientation, and confirmation states.
-3. Map to frozen UniProt 2026_02 and audit permitted evidence, pair overlap, and
-   sequence-family contamination without constructing splits.
-4. Independently validate the audit and assess protected assay-specific external-
-   benchmark feasibility and identifiable claims.
-5. Return a scientific report and decision proposal to governance before any
-   benchmark integration or resumption of the sequence-component audit.
+1. Obtain an explicit expert-group disposition of the proposed Lambourne
+   technical-acceptance-and-quarantine decision.
+2. Do not integrate the panel or resume the paused sequence-component audit
+   while that proposal is pending.
+3. If explicitly authorized, resume the sequence-component audit at its prior
+   unstarted checkpoint under the original prohibitions.
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.

@@ -1,0 +1,1015 @@
+{
+  "artifacts": {
+    "canonical_manifest_sha256": "3240c362fe05a7a68d579deccabdf8a608b43cbbf25ea0c7f703595698986d98",
+    "staging_manifest_sha256": "4cb5608b5799a6baf4e2e05047d69a31f8a355827a58e88c3b42dd6d3b1b9911"
+  },
+  "audit_id": "LAMBOURNE-Y2H-SEMANTICS-AUDIT-001",
+  "audit_version": "1.0.0",
+  "benchmark_feasibility": {
+    "benchmark_constructed": false,
+    "decision": "conditionally_feasible_only_as_protected_exact_pair_disjoint_assay_specific_assay_transfer_diagnostic_pending_governance",
+    "exact_pair_disjoint_assay_specific_diagnostic": {
+      "evaluable": 2010,
+      "minimum_negative_required": 100,
+      "minimum_positive_required": 40,
+      "negative": 1967,
+      "pairs": 2441,
+      "positive": 43,
+      "remaining_participant_overlap_is_expected": true,
+      "reported_outcomes": {
+        "Autoactivator": 30,
+        "Failed sequence confirmation": 382,
+        "Negative": 1967,
+        "Positive": 43,
+        "Test failed": 19
+      },
+      "size_threshold_met": true,
+      "technically_unevaluable_or_na": 431
+    },
+    "integration_authorized": false,
+    "limitations": [
+      "single Y2H-v1 orientation and condition per selected pair",
+      "model-selected rather than proteome-wide probability sample",
+      "technical missingness is not equivalent to a negative observation",
+      "substantial participant-level overlap with current permitted evidence",
+      "exact 4,100-pair original universe is not reconstructed by public files"
+    ],
+    "sequence_family_generalization_supported": false,
+    "split_constructed": false,
+    "uniref90_endpoint_disjoint_generalization": {
+      "evaluable": 131,
+      "minimum_negative_required": 100,
+      "minimum_positive_required": 40,
+      "negative": 131,
+      "pairs": 157,
+      "positive": 0,
+      "reported_outcomes": {
+        "Autoactivator": 3,
+        "Failed sequence confirmation": 23,
+        "Negative": 131
+      },
+      "size_threshold_met": false,
+      "technically_unevaluable_or_na": 26
+    }
+  },
+  "claim_identifiability": {
+    "identifiable": {
+      "assay_observation_rate": "conditional on the attempted, technically evaluable Y2H-v1 pairs",
+      "assay_specific_discrimination": "potentially identifiable only for a protected, provenance-matched panel",
+      "pair_and_family_contamination": "identifiable relative to the frozen local evidence/reference releases",
+      "workflow_recovery_rate": "conditional on all final-analysis attempts with technical states retained"
+    },
+    "not_identifiable": {
+      "biological_interaction_probability": "assay sensitivity, selection and technical missingness are not separated",
+      "calibrated_unconditional_probability": "selection probabilities and a universal gold standard are unavailable",
+      "orientation_invariant_binding": "the panel reports one bait/prey orientation per selected pair",
+      "proteome_wide_prevalence": "the panel is model-selected and not a probability sample of all human pairs",
+      "universal_nonbinding": "a single Y2H orientation and condition cannot establish universal nonbinding"
+    }
+  },
+  "completed_at_utc": "2026-08-04T13:59:59.838849+00:00",
+  "final_analysis": {
+    "evaluable": 2676,
+    "negative_assay_observations": 2300,
+    "positive_assay_observations": 376,
+    "reported_outcomes": {
+      "Autoactivator": 41,
+      "Failed sequence confirmation": 478,
+      "Negative": 2300,
+      "Positive": 376,
+      "Test failed": 27
+    },
+    "selected_pairs": 3222,
+    "technically_unevaluable_or_na": 546
+  },
+  "git": {
+    "commit": "77cc6bd4d8a5876d7ed31618a9daa6936644ac88",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "governance": {
+    "benchmark_integration_authorized": false,
+    "benchmark_splits_constructed": false,
+    "merged_with_negatome": false,
+    "models_trained": false,
+    "outcomes_used_as_training_labels": false,
+    "return_to_governance_required": true,
+    "universal_nonbinding_claimed": false
+  },
+  "imex_preview": {
+    "attempted_negative_or_na_semantics_available": false,
+    "detection_methods": {
+      "psi-mi:\"MI:0231\"(mammalian protein protein interaction trap)": 389,
+      "psi-mi:\"MI:0397\"(two hybrid array)": 4909,
+      "psi-mi:\"MI:1112\"(two hybrid prey pooling approach)": 1970,
+      "psi-mi:\"MI:1203\"(split luciferase complementation)": 150,
+      "psi-mi:\"MI:1356\"(validated two hybrid)": 1970,
+      "psi-mi:\"MI:2170\"(bimolecular luminiscence complementation)": 207
+    },
+    "interpretation": "IMEx preview contains interaction records from multiple assays/species and does not encode the attempted negative or technical states of Data 22",
+    "match_states": {
+      "exact_unique_panel_pair_match": 407,
+      "reported_uniprot_pair_not_in_zhang_tested_panel": 9188
+    },
+    "matched_distinct_final_analysis_pairs": 378,
+    "matched_distinct_panel_pairs": 404,
+    "matched_distinct_panel_pairs_by_outcome": {
+      "Failed sequence confirmation": 1,
+      "Negative": 1,
+      "Positive": 402
+    },
+    "matched_panel_outcomes_by_preview_record": {
+      "Failed sequence confirmation": 2,
+      "Negative": 1,
+      "Positive": 404
+    },
+    "negative_flags": {
+      "missing": 9595
+    },
+    "preview_rows": 9595,
+    "provider_state": "curated_not_integrated_preview_snapshot_2026-08-04",
+    "taxon_context_count": 6,
+    "treated_as_intact_release_252": false
+  },
+  "panel_audit": {
+    "contamination": {
+      "exact_endpoint_disjoint": {
+        "evaluable": 133,
+        "negative": 133,
+        "pairs": 159,
+        "positive": 0,
+        "reported_outcomes": {
+          "Autoactivator": 3,
+          "Failed sequence confirmation": 23,
+          "Negative": 133
+        },
+        "technically_unevaluable_or_na": 26
+      },
+      "exact_pair_disjoint": {
+        "evaluable": 2010,
+        "negative": 1967,
+        "pairs": 2441,
+        "positive": 43,
+        "reported_outcomes": {
+          "Autoactivator": 30,
+          "Failed sequence confirmation": 382,
+          "Negative": 1967,
+          "Positive": 43,
+          "Test failed": 19
+        },
+        "technically_unevaluable_or_na": 431
+      },
+      "exact_pair_overlap": {
+        "evaluable": 665,
+        "negative": 332,
+        "pairs": 780,
+        "positive": 333,
+        "reported_outcomes": {
+          "Autoactivator": 11,
+          "Failed sequence confirmation": 96,
+          "Negative": 332,
+          "Positive": 333,
+          "Test failed": 8
+        },
+        "technically_unevaluable_or_na": 115
+      },
+      "uniref50_endpoint_disjoint": {
+        "evaluable": 129,
+        "negative": 129,
+        "pairs": 154,
+        "positive": 0,
+        "reported_outcomes": {
+          "Autoactivator": 3,
+          "Failed sequence confirmation": 22,
+          "Negative": 129
+        },
+        "technically_unevaluable_or_na": 25
+      },
+      "uniref50_pair_disjoint": {
+        "evaluable": 2000,
+        "negative": 1957,
+        "pairs": 2426,
+        "positive": 43,
+        "reported_outcomes": {
+          "Autoactivator": 30,
+          "Failed sequence confirmation": 377,
+          "Negative": 1957,
+          "Positive": 43,
+          "Test failed": 19
+        },
+        "technically_unevaluable_or_na": 426
+      },
+      "uniref50_pair_overlap": {
+        "evaluable": 675,
+        "negative": 342,
+        "pairs": 795,
+        "positive": 333,
+        "reported_outcomes": {
+          "Autoactivator": 11,
+          "Failed sequence confirmation": 101,
+          "Negative": 342,
+          "Positive": 333,
+          "Test failed": 8
+        },
+        "technically_unevaluable_or_na": 120
+      },
+      "uniref90_endpoint_disjoint": {
+        "evaluable": 131,
+        "negative": 131,
+        "pairs": 157,
+        "positive": 0,
+        "reported_outcomes": {
+          "Autoactivator": 3,
+          "Failed sequence confirmation": 23,
+          "Negative": 131
+        },
+        "technically_unevaluable_or_na": 26
+      },
+      "uniref90_pair_disjoint": {
+        "evaluable": 2005,
+        "negative": 1962,
+        "pairs": 2435,
+        "positive": 43,
+        "reported_outcomes": {
+          "Autoactivator": 30,
+          "Failed sequence confirmation": 381,
+          "Negative": 1962,
+          "Positive": 43,
+          "Test failed": 19
+        },
+        "technically_unevaluable_or_na": 430
+      },
+      "uniref90_pair_overlap": {
+        "evaluable": 670,
+        "negative": 337,
+        "pairs": 786,
+        "positive": 333,
+        "reported_outcomes": {
+          "Autoactivator": 11,
+          "Failed sequence confirmation": 97,
+          "Negative": 337,
+          "Positive": 333,
+          "Test failed": 8
+        },
+        "technically_unevaluable_or_na": 116
+      }
+    },
+    "current_evidence_overlap": {
+      "huri_permitted_pair_view": {
+        "evaluable": 598,
+        "negative": 265,
+        "pairs": 689,
+        "positive": 333,
+        "reported_outcomes": {
+          "Autoactivator": 11,
+          "Failed sequence confirmation": 72,
+          "Negative": 265,
+          "Positive": 333,
+          "Test failed": 8
+        },
+        "technically_unevaluable_or_na": 91
+      },
+      "huri_record_positive": {
+        "evaluable": 419,
+        "negative": 122,
+        "pairs": 464,
+        "positive": 297,
+        "reported_outcomes": {
+          "Autoactivator": 6,
+          "Failed sequence confirmation": 32,
+          "Negative": 122,
+          "Positive": 297,
+          "Test failed": 7
+        },
+        "technically_unevaluable_or_na": 45
+      },
+      "intact_negative_939": {
+        "evaluable": 0,
+        "negative": 0,
+        "pairs": 0,
+        "positive": 0,
+        "reported_outcomes": {},
+        "technically_unevaluable_or_na": 0
+      },
+      "intact_positive": {
+        "evaluable": 841,
+        "negative": 501,
+        "pairs": 991,
+        "positive": 340,
+        "reported_outcomes": {
+          "Autoactivator": 12,
+          "Failed sequence confirmation": 128,
+          "Negative": 501,
+          "Positive": 340,
+          "Test failed": 10
+        },
+        "technically_unevaluable_or_na": 150
+      },
+      "negatome": {
+        "evaluable": 16,
+        "negative": 15,
+        "pairs": 18,
+        "positive": 1,
+        "reported_outcomes": {
+          "Failed sequence confirmation": 2,
+          "Negative": 15,
+          "Positive": 1
+        },
+        "technically_unevaluable_or_na": 2
+      },
+      "positive_index_metrics": {
+        "combined_positive_index_unique_pairs": 212732,
+        "mapped_permitted_pair_view_rows": 79386,
+        "mapped_permitted_pair_view_unique_pairs": 71044,
+        "mapped_positive_evidence_rows": 619837,
+        "mapped_positive_evidence_unique_pairs": 194277,
+        "permitted_pair_views": [
+          "HI-II-14",
+          "HuRI",
+          "Lit-BM",
+          "Test_space_screens-19"
+        ]
+      },
+      "qualifying_direct_or_permitted_pair_view": {
+        "evaluable": 665,
+        "negative": 332,
+        "pairs": 780,
+        "positive": 333,
+        "reported_outcomes": {
+          "Autoactivator": 11,
+          "Failed sequence confirmation": 96,
+          "Negative": 332,
+          "Positive": 333,
+          "Test failed": 8
+        },
+        "technically_unevaluable_or_na": 115
+      }
+    },
+    "final_analysis": {
+      "evaluable": 2676,
+      "negative": 2300,
+      "pairs": 3222,
+      "positive": 376,
+      "reported_outcomes": {
+        "Autoactivator": 41,
+        "Failed sequence confirmation": 478,
+        "Negative": 2300,
+        "Positive": 376,
+        "Test failed": 27
+      },
+      "technically_unevaluable_or_na": 546
+    },
+    "mapping": {
+      "final_pair_states": {
+        "both_unique_human": 3221,
+        "one_unique_human": 1
+      },
+      "mapping_confidence": {
+        "A_exact_frozen_identifier": 8088,
+        "D_unmapped_or_ambiguous": 4
+      },
+      "mapping_states": {
+        "ambiguous_frozen_accession": 3,
+        "exact_isoform": 4,
+        "exact_primary_canonical": 8084,
+        "not_in_frozen_human_reference": 1
+      },
+      "participant_rows": 8092
+    },
+    "tested_zhang_pairs": 4046
+  },
+  "runtime": {
+    "architecture": "aarch64",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "selected_universe": {
+    "discrepancy_unique_pairs_minus_paper_claim": 30,
+    "duplicate_physical_rows": 3,
+    "final_analysis_pairs": 3222,
+    "paper_claimed_selected_pairs": 4100,
+    "public_selection_physical_rows": 4133,
+    "public_selection_unique_unordered_orf_pairs": 4130,
+    "reconstruction_conclusion": "public_archived_selection_file_does_not_reconstruct_an_exact_4100_pair_universe",
+    "tested_pairs_in_paper_table": 4046
+  },
+  "source_inventory": {
+    "archive_crosschecks": {
+      "final_filter_disagreements": 0,
+      "input_copy_Y2H_v1_pairwise_test_AlphaFoldRoseTTAFold_human.tsv": {
+        "byte_identical_to_code_archive": true,
+        "copies_found": 1
+      },
+      "input_copy_predicting_human_interactome_pairs_to_test_2024-12-13.tsv": {
+        "byte_identical_to_code_archive": true,
+        "copies_found": 1
+      },
+      "input_copy_uniprot_ac_to_orf_id_used_for_Zhang_et_al_experiment.tsv": {
+        "byte_identical_to_code_archive": true,
+        "copies_found": 1
+      },
+      "science_data_s3_member": "data/external/science.adt1630_data_s1_to_s8.xlsx",
+      "science_data_s3_member_sha256": "813004a3fa8e3f4a0047ec38c2ed47de3fe6e5d8b741a02b27643a7941a5a312"
+    },
+    "article_source_data_workbook": {
+      "sheet_count": 57,
+      "sheets": {
+        "Figure 1c": {
+          "columns": [
+            "dataset",
+            "count"
+          ],
+          "rows": 6
+        },
+        "Figure 1d": {
+          "columns": [
+            "assay",
+            "source",
+            "positives",
+            "tested"
+          ],
+          "rows": 8
+        },
+        "Figure 1e": {
+          "columns": [
+            "assay_1",
+            "assay_2",
+            "n_scPRSv2_pairs_positive_in_both",
+            "n_scPRSv2_pairs_positive_in_either"
+          ],
+          "rows": 6
+        },
+        "Figure 1f": {
+          "columns": [
+            "source_dataset",
+            "positives",
+            "tested"
+          ],
+          "rows": 11
+        },
+        "Figure 1g": {
+          "columns": [
+            "source_dataset",
+            "positives",
+            "tested"
+          ],
+          "rows": 6
+        },
+        "Figure 1h": {
+          "columns": [
+            "source_dataset",
+            "positives",
+            "tested"
+          ],
+          "rows": 5
+        },
+        "Figure 1i": {
+          "columns": [
+            "orf_name_a",
+            "orf_name_b",
+            "dataset",
+            "publication_count_a",
+            "publication_count_b"
+          ],
+          "rows": 11498
+        },
+        "Figure 1j": {
+          "columns": [
+            "combined_estimate",
+            "combined_95pct_ci_width",
+            "fraction_coverage",
+            "fraction_coverage_95pct_ci_width"
+          ],
+          "rows": 1
+        },
+        "Figure 2a": {
+          "columns": [
+            "source_dataset",
+            "GPCA_positives",
+            "GPCA_tested",
+            "MAPPIT_positives",
+            "MAPPIT_tested",
+            "GPCA_or_MAPPIT_positives",
+            "GPCA_or_MAPPIT_tested"
+          ],
+          "rows": 10
+        },
+        "Figure 2c": {
+          "columns": [
+            "category",
+            "observed_fraction_connected_in_YeRI",
+            "random_fraction_mean",
+            "random_fraction_lower_ci",
+            "random_fraction_upper_ci",
+            "fold_enrichment",
+            "fold_enrichment_lower_error",
+            "fold_enrichment_upper_error"
+          ],
+          "rows": 3
+        },
+        "Figure 3a": {
+          "columns": [
+            "dataset",
+            "positives",
+            "tested"
+          ],
+          "rows": 8
+        },
+        "Figure 3b": {
+          "columns": [
+            "contact_probability_threshold",
+            "n_predicted_PPIs",
+            "n_without_previous_structure"
+          ],
+          "rows": 100
+        },
+        "Figure 3d": {
+          "columns": [
+            "dataset",
+            "PPIs_in_random_subnetworks",
+            "average_degree_of_random_subnetworks",
+            "pct_proteins_in_LCC_5th_percentile",
+            "pct_proteins_in_LCC_95th_percentile"
+          ],
+          "rows": 80
+        },
+        "Figure 3e": {
+          "columns": [
+            "dataset",
+            "gene_name",
+            "degree"
+          ],
+          "rows": 4
+        },
+        "Figure 3f": {
+          "columns": [
+            "orf_name_a",
+            "orf_name_b",
+            "predicted",
+            "interface_area"
+          ],
+          "rows": 1761
+        },
+        "Figure 3g": {
+          "columns": [
+            "orf_name_a",
+            "orf_name_b",
+            "dataset",
+            "publication_count_a",
+            "publication_count_b"
+          ],
+          "rows": 969
+        },
+        "Figure 3h": {
+          "columns": [
+            "dataset",
+            "orf_name_a",
+            "orf_name_b",
+            "has_experimental_structure",
+            "has_homologous_structure",
+            "has_high_quality_binary_PPI",
+            "has_cocomplex"
+          ],
+          "rows": 2849
+        },
+        "Figure 3i": {
+          "columns": [
+            "orf_name_a",
+            "orf_name_b",
+            "date",
+            "cumulative_count"
+          ],
+          "rows": 11602
+        },
+        "Figure 4a": {
+          "columns": [
+            "category",
+            "window_lower_bound",
+            "window_upper_bound",
+            "window_score_mean",
+            "positive",
+            "tested"
+          ],
+          "rows": 3721
+        },
+        "Figure 4b": {
+          "columns": [
+            "dataset",
+            "uniprot_ac_a",
+            "uniprot_ac_b",
+            "has_experimental_structure",
+            "has_homologous_structure",
+            "has_high_quality_binary_PPI",
+            "has_cocomplex"
+          ],
+          "rows": 66784
+        },
+        "Figure 4c": {
+          "columns": [
+            "Unnamed: 0",
+            "all_pairs",
+            "strictly_novel_pairs"
+          ],
+          "rows": 2
+        },
+        "Figure 4d": {
+          "columns": [
+            "ensembl_gene_id_a",
+            "ensembl_gene_id_b",
+            "date",
+            "cumulative_count"
+          ],
+          "rows": 115637
+        },
+        "Figure 4e": {
+          "columns": [
+            "Unnamed: 0",
+            "n_total",
+            "n_in_AFRF_core"
+          ],
+          "rows": 2
+        },
+        "Figure 5a": {
+          "columns": [
+            "orf_name_a",
+            "orf_name_b",
+            "source",
+            "AF2_iPTM+PTM",
+            "AF3_iPTM+PTM"
+          ],
+          "rows": 233
+        },
+        "Figure 5b": {
+          "columns": [
+            "orf_name_a",
+            "orf_name_b",
+            "source",
+            "contact_probability",
+            "pDockQ",
+            "iPAE",
+            "iPTM+PTM",
+            "# residue contacts PAE \u2264 4 \u00c5"
+          ],
+          "rows": 233
+        },
+        "Figure 5c": {
+          "columns": [
+            "assay",
+            "source",
+            "positives",
+            "tested"
+          ],
+          "rows": 10
+        },
+        "Figure 5d": {
+          "columns": [
+            "pair",
+            "positive_in_assays",
+            "positive_in_AF2"
+          ],
+          "rows": 28
+        },
+        "Figure 5e": {
+          "columns": [
+            "CCC_gte_5",
+            "n_YeRI_pairs_no_previous_structure_model"
+          ],
+          "rows": 2
+        },
+        "Figure 5f": {
+          "columns": [
+            "Unnamed: 0",
+            "count"
+          ],
+          "rows": 4
+        },
+        "Figure 5g": {
+          "columns": [
+            "orf_name_a",
+            "gene_name_a",
+            "orf_name_b",
+            "gene_name_b",
+            "dataset",
+            "involves_unnamed_gene"
+          ],
+          "rows": 562
+        },
+        "Supplementary Figure 1a": {
+          "columns": [
+            "orf_name_a",
+            "orf_name_b",
+            "date",
+            "experimental_method",
+            "cumulative_count"
+          ],
+          "rows": 2576
+        },
+        "Supplementary Figure 1b": {
+          "columns": [
+            "detection_method",
+            "count_per_PPI_evidence"
+          ],
+          "rows": 3
+        },
+        "Supplementary Figure 1c": {
+          "columns": [
+            "n_pairs_per_experiment",
+            "count_per_PPI_evidence"
+          ],
+          "rows": 312
+        },
+        "Supplementary Figure 1d": {
+          "columns": [
+            "n_evidence_per_pair",
+            "count_per_pair"
+          ],
+          "rows": 46
+        },
+        "Supplementary Figure 1f": {
+          "columns": [
+            "gene_name_X",
+            "gene_name_Y",
+            "source_dataset",
+            "Y2H v1",
+            "Y2H v4",
+            "MAPPIT",
+            "GPCA"
+          ],
+          "rows": 306
+        },
+        "Supplementary Figure 1g": {
+          "columns": [
+            "source_dataset",
+            "positives",
+            "tested"
+          ],
+          "rows": 20
+        },
+        "Supplementary Figure 1h": {
+          "columns": [
+            "source_dataset",
+            "positives",
+            "tested"
+          ],
+          "rows": 11
+        },
+        "Supplementary Figure 1i": {
+          "columns": [
+            "source_dataset",
+            "positives",
+            "tested"
+          ],
+          "rows": 7
+        },
+        "Supplementary Figure 1j": {
+          "columns": [
+            "assay",
+            "GI_PCC_threshold",
+            "estimated_fraction_PPIs",
+            "std_err"
+          ],
+          "rows": 6
+        },
+        "Supplementary Figure 1k": {
+          "columns": [
+            "PCC_threshold",
+            "n_GI-PSN_edges"
+          ],
+          "rows": 9000
+        },
+        "Supplementary Figure 2a": {
+          "columns": [
+            "complex_id",
+            "n_distinct_protein_subunits",
+            "n_direct_pairs",
+            "n_indirect_pairs",
+            "dataset",
+            "direct_pairs_detected",
+            "indirect_pairs_detected"
+          ],
+          "rows": 504
+        },
+        "Supplementary Figure 2b": {
+          "columns": [
+            "dataset",
+            "pairs_in_direct_contact",
+            "pairs_not_in_direct_contact"
+          ],
+          "rows": 14
+        },
+        "Supplementary Figure 2c": {
+          "columns": [
+            "network",
+            "complex",
+            "number_of_different_protein_subunits",
+            "number_of_pairs_observed"
+          ],
+          "rows": 1117
+        },
+        "Supplementary Figure 4a": {
+          "columns": [
+            "estimate_reference",
+            "n_total_PPIs_depends_if_homodimers_in_estimate",
+            "estimate_central_value",
+            "estimate_lower_ci",
+            "estimate_upper_ci",
+            "fraction_of_predicted_total_interactome_size",
+            "fraction_lower_ci",
+            "fraction_upper_ci"
+          ],
+          "rows": 4
+        },
+        "Supplementary Figure 4b": {
+          "columns": [
+            "experiment_ID",
+            "assay",
+            "source_dataset",
+            "positives",
+            "tested",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "rows": 5882
+        },
+        "Supplementary Figure 4c": {
+          "columns": [
+            "category",
+            "observed_fraction_connected_in_YeRI",
+            "random_fraction_mean",
+            "random_fraction_lower_error",
+            "random_fraction_upper_error",
+            "fold_enrichment",
+            "fold_enrichment_lower_error",
+            "fold_enrichment_upper_error"
+          ],
+          "rows": 3
+        },
+        "Supplementary Figure 4d": {
+          "columns": [
+            "category",
+            "observed_fraction_connected_in_YeRI",
+            "random_fraction_mean",
+            "random_fraction_lower_ci",
+            "random_fraction_upper_ci",
+            "fold_enrichment",
+            "fold_enrichment_lower_error",
+            "fold_enrichment_upper_error"
+          ],
+          "rows": 9
+        },
+        "Supplementary Figure 4f": {
+          "columns": [
+            "orf_name_a",
+            "orf_name_b",
+            "dataset",
+            "publication_count_a",
+            "publication_count_b"
+          ],
+          "rows": 1880
+        },
+        "Supplementary Figure 4g": {
+          "columns": [
+            "dataset",
+            "n_genes_of_unknown_function_with_PPI"
+          ],
+          "rows": 5
+        },
+        "Supplementary Figure 4h": {
+          "columns": [
+            "dataset",
+            "n_PPIs_with_genes_of_unknown_function"
+          ],
+          "rows": 5
+        },
+        "Supplementary Figure 5a": {
+          "columns": [
+            "orf_name",
+            "degree",
+            "dataset"
+          ],
+          "rows": 8101
+        },
+        "Supplementary Figure 5b": {
+          "columns": [
+            "category",
+            "window_lower_bound",
+            "window_upper_bound",
+            "window_score_mean",
+            "positive",
+            "tested"
+          ],
+          "rows": 1486
+        },
+        "Supplementary Figure 5c": {
+          "columns": [
+            "Unnamed: 0",
+            "n_total",
+            "n_in_AFRF_core"
+          ],
+          "rows": 2
+        },
+        "Supplementary Figure 6a": {
+          "columns": [
+            "orf_name_a",
+            "orf_name_b",
+            "source",
+            "AF2_iPTM+PTM",
+            "AF3_iPTM+PTM"
+          ],
+          "rows": 233
+        },
+        "Supplementary Figure 6b": {
+          "columns": [
+            "gene_name_X",
+            "gene_name_Y",
+            "source_dataset",
+            "Y2H v1",
+            "Y2H v4",
+            "MAPPIT",
+            "GPCA",
+            "AlphaFold > 40 confident contacts"
+          ],
+          "rows": 306
+        },
+        "Supplementary Figure 6c": {
+          "columns": [
+            "orf_name_a",
+            "orf_name_b",
+            "n_contacts_PAE_lt_4A"
+          ],
+          "rows": 237
+        },
+        "Supplementary Figure 6d": {
+          "columns": [
+            "orf_name_a",
+            "gene_name_a",
+            "orf_name_b",
+            "gene_name_b",
+            "dataset",
+            "publication_count_a",
+            "publication_count_b"
+          ],
+          "rows": 562
+        }
+      }
+    },
+    "code_archive_members": 126,
+    "imex_xml_preview": {
+      "duplicate_interaction_ids": 0,
+      "element_counts": {
+        "alias": 157008,
+        "attribute": 224204,
+        "attributeList": 48508,
+        "begin": 1,
+        "bibref": 9596,
+        "biologicalRole": 19190,
+        "cellType": 746,
+        "end": 1,
+        "endStatus": 4520,
+        "entry": 1,
+        "entrySet": 1,
+        "experimentDescription": 9595,
+        "experimentList": 9595,
+        "experimentalPreparation": 38380,
+        "experimentalPreparationList": 19190,
+        "experimentalRole": 19190,
+        "experimentalRoleList": 19190,
+        "feature": 4520,
+        "featureList": 4520,
+        "featureRange": 4520,
+        "featureRangeList": 4520,
+        "featureRole": 3940,
+        "featureType": 4520,
+        "fullName": 196612,
+        "hostOrganism": 9595,
+        "hostOrganismList": 9595,
+        "interaction": 9595,
+        "interactionDetectionMethod": 9595,
+        "interactionList": 1,
+        "interactionType": 9595,
+        "interactor": 19190,
+        "interactorType": 19190,
+        "names": 214667,
+        "organism": 19190,
+        "participant": 19190,
+        "participantIdentificationMethod": 9595,
+        "participantList": 9595,
+        "primaryRef": 195478,
+        "secondaryRef": 1001340,
+        "sequence": 19190,
+        "shortLabel": 205072,
+        "source": 1,
+        "startStatus": 4520,
+        "xref": 195478
+      },
+      "interaction_elements": 9595,
+      "unique_interaction_ids": 9595
+    },
+    "input_archive_members": 160370,
+    "selected_archive_members": 16,
+    "verified_assets": 11
+  },
+  "started_at_utc": "2026-08-04T13:56:35.836390+00:00",
+  "status": "complete_pending_independent_validation_and_governance"
+}

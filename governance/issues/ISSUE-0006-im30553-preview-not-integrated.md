@@ -21,3 +21,11 @@ Controls:
 
 This issue does not block the semantics audit. It blocks any claim that the
 preview is a released or stable IntAct snapshot.
+
+## Audit outcome
+
+The completed bounded audit froze HTML, PSI-MI XML 3 expanded, MITAB 2.7, and
+MI-JSON representations. XML and MITAB independently enumerate 9,595 unique
+interaction records. All MITAB negative flags are missing, confirming that the
+preview is not an attempted-negative ledger. The issue remains open for any
+future integration-state refresh.

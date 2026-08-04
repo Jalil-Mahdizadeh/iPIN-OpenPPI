@@ -11,3 +11,6 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
+The current authoritative ledger is `gates/gate_status_v13.yaml`. The current
+restart checkpoint is `PROJECT_STATUS_v13.md`, and the pending expert-group
+proposal is `decisions/DEC-0014-propose-lambourne-panel-disposition.md`.
