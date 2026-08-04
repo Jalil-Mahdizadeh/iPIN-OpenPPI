@@ -1,0 +1,323 @@
+{
+  "artifacts": {
+    "canonical_manifest": "data/canonical/tf_isoform_y2h_audit_v1/AUDIT_MANIFEST.json",
+    "canonical_manifest_sha256": "c71de2354bacfdef43b35d7f0ecbe07851568ab4abeb6a23df7065f1d8c39b68",
+    "staging_manifest": "data/staging/tf_isoform_y2h_audit_v1/STAGING_MANIFEST.json",
+    "staging_manifest_sha256": "49221d602c1f2d966c451985604538c045fa9ffa8744363c35824aade7a9bffc"
+  },
+  "audit_id": "TF-ISOFORM-Y2H-SEMANTICS-CONTAMINATION-AUDIT-001",
+  "audit_version": "1.0.0",
+  "completed_at_utc": "2026-08-04T20:43:49.913211+00:00",
+  "findings": {
+    "contamination": {
+      "all_evaluable_rows": {
+        "exact_endpoint_overlap": 4694,
+        "exact_future_training_pair_overlap": 549,
+        "huri_positive_overlap": 387,
+        "permitted_positive_overlap": 549,
+        "reference_pair_usable": 4694,
+        "rows": 8302,
+        "uniref90_endpoint_overlap": 4694,
+        "uniref90_pair_overlap": 1513
+      },
+      "all_public_rows": {
+        "exact_endpoint_overlap": 5338,
+        "exact_future_training_pair_overlap": 677,
+        "huri_positive_overlap": 489,
+        "permitted_positive_overlap": 677,
+        "reference_pair_usable": 5338,
+        "rows": 9562,
+        "uniref90_endpoint_overlap": 5338,
+        "uniref90_pair_overlap": 1718
+      },
+      "evidence_index": {
+        "combined_positive_index_unique_pairs": 212732,
+        "mapped_permitted_pair_view_rows": 79386,
+        "mapped_permitted_pair_view_unique_pairs": 71044,
+        "mapped_positive_evidence_rows": 619837,
+        "mapped_positive_evidence_unique_pairs": 194277,
+        "permitted_pair_views": [
+          "HI-II-14",
+          "HuRI",
+          "Lit-BM",
+          "Test_space_screens-19"
+        ]
+      },
+      "future_training_exposure_definition": "current validated permitted positive-evidence snapshot only; no model or training dataset was built",
+      "matched_isoform_contrasts": {
+        "contrast_groups_all_pairs_reference_usable": 149,
+        "contrast_groups_exact_endpoint_protected": 0,
+        "contrast_groups_exact_pair_protected": 90,
+        "contrast_groups_uniref90_endpoint_protected": 0,
+        "contrast_groups_uniref90_pair_protected": 83,
+        "groups_with_two_or_more_evaluable_isoforms": 2342,
+        "matched_groups_with_two_or_more_public_isoforms": 2750,
+        "positive_negative_evaluable_contrast_groups": 848,
+        "protection_states": {
+          "contrast_exact_pair_exposed": 59,
+          "contrast_mapping_incomplete": 699,
+          "contrast_uniref90_pair_exposed": 7,
+          "pair_protected_but_endpoint_family_exposed": 83
+        },
+        "reported_analysis_contrast_groups_all_pairs_reference_usable": 74,
+        "reported_analysis_contrast_groups_exact_endpoint_protected": 0,
+        "reported_analysis_contrast_groups_exact_pair_protected": 45,
+        "reported_analysis_contrast_groups_uniref90_endpoint_protected": 0,
+        "reported_analysis_contrast_groups_uniref90_pair_protected": 45,
+        "reported_analysis_positive_negative_contrast_groups": 708
+      },
+      "reported_3509_analysis_rows": {
+        "exact_endpoint_overlap": 1978,
+        "exact_future_training_pair_overlap": 458,
+        "huri_positive_overlap": 311,
+        "permitted_positive_overlap": 458,
+        "reference_pair_usable": 1978,
+        "rows": 3509,
+        "uniref90_endpoint_overlap": 1978,
+        "uniref90_pair_overlap": 1112
+      }
+    },
+    "disposition": {
+      "benchmark_protocol_suitable_now": false,
+      "decision": "external-only diagnostic candidate",
+      "rationale": [
+        "raw technical states and clone sequences are sufficiently reconstructable for assay-specific diagnostics",
+        "the panel is deliberately positive-enriched and cannot estimate prevalence",
+        "selection explicitly incorporates HuRI and Lit-BM positives, creating structural evidence exposure",
+        "DB construct sequences are unavailable for most partners and are mapped indirectly through frozen hORFeome identifiers",
+        "strict family/endpoint protection must be evaluated separately before any future benchmark protocol",
+        "N2H remains continuous and weakly concordant without an authorized threshold"
+      ],
+      "required_governance_action_before_any_later_benchmark": "new protocol and expert-group approval; current audit authorizes no split, threshold, integration, or model use"
+    },
+    "identifiability": {
+      "identifiable": [
+        "conditional Y2H outcome frequencies within the selected and technically evaluable panel",
+        "within-panel matched isoform contrasts for a fixed DB partner and fixed AD-to-DB orientation",
+        "continuous N2H score distributions for the published selected validation strata",
+        "overlap with the frozen permitted evidence snapshot where both construct references map uniquely"
+      ],
+      "not_identifiable": [
+        "population PPI prevalence or a calibrated probability over arbitrary human protein pairs",
+        "orientation-invariant interaction probability",
+        "universal nonbinding from a negative Y2H observation",
+        "endogenous cell-type-specific binding or physiological interaction",
+        "a binary N2H interaction call without a separately governed threshold",
+        "exact DB construct-sequence effects where the DB plasmid sequence is absent",
+        "family-generalizing performance where UniRef90 endpoints overlap future training evidence"
+      ]
+    },
+    "licensing": {
+      "code_and_input_archives": "CC-BY-4.0 with attribution",
+      "generated_artifact_tier": "internal_governance_bounded_audit_only",
+      "license_indeterminate": false,
+      "machine_verified_zenodo_license_ids": {
+        "code_metadata": "cc-by-4.0",
+        "input_metadata": "cc-by-4.0"
+      },
+      "paper_pdf": "Elsevier copyright; internal methods audit only; no redistribution",
+      "public_release_action": "retain source attribution and exclude the article PDF; project-wide release still requires governance review"
+    },
+    "mapping": {
+      "clone_constructs": 693,
+      "clone_constructs_absent_from_frozen_sequence": 249,
+      "clone_constructs_exactly_matching_frozen_sequence": 444,
+      "db_exact_construct_sequence_limit": "most DB plasmid sequences are not in the study archive; unique hORFeome mapping is an indirect frozen-reference mapping, not an exact construct claim",
+      "evaluable_pairs_reference_usable": 4694,
+      "partner_construct_identifiers": 753,
+      "partner_mapping_states": {
+        "ambiguous_huri_orfeome_reference_mapping": 1,
+        "orf_id_not_mapped_to_frozen_reference": 46,
+        "unique_huri_orfeome_reference_mapping": 706
+      },
+      "partner_reference_sequence_usable": 706,
+      "partner_source_sequences_available": 0,
+      "public_pairs_reference_usable": 5338,
+      "reported_analysis_pairs_reference_usable": 1978
+    },
+    "n2h": {
+      "continuous_log2_nlr_by_y2h_observation": {
+        "negative": {
+          "count": 131,
+          "maximum": 5.657823467114796,
+          "mean": 0.6423322810403272,
+          "median": 0.7710283850343882,
+          "minimum": -2.914358275244964,
+          "q1": -0.664767471919101,
+          "q3": 1.7831746970928366,
+          "standard_deviation": 1.7517080284298927
+        },
+        "positive": {
+          "count": 131,
+          "maximum": 7.652731291476982,
+          "mean": 1.3773867595230098,
+          "median": 0.47106529084871684,
+          "minimum": -2.7404923517409783,
+          "q1": -0.305744532092581,
+          "q3": 2.9934263951632856,
+          "standard_deviation": 2.466137764922346
+        }
+      },
+      "interpretation": "continuous cross-assay observations overlap substantially; N2H was not thresholded and does not relabel Y2H",
+      "isoform_validation_strata_rows": 262,
+      "n2h_binary_labels_assigned": 0,
+      "public_continuous_observations": 765,
+      "source_strata": {
+        "Lit-BM - TF space specific": 62,
+        "Lit-BM-13": 75,
+        "PRS - hPRS-v2": 60,
+        "RRS - TF space specific": 71,
+        "RRS - from HuRI": 157,
+        "RRS - hRRS-v2": 78,
+        "isoform negatives": 131,
+        "isoform positives": 131
+      },
+      "source_stratum_y2h_state_counts": {
+        "isoform negatives__negative": 131,
+        "isoform positives__positive": 131
+      },
+      "spearman_y2h_positive_indicator_vs_continuous_log2_nlr": 0.10012279022876512,
+      "threshold_applied": false,
+      "y2h_ordered_pair_crosswalk_rows": 276
+    },
+    "selection_and_filtering": {
+      "analytical_attempt_rows": 3593,
+      "analytical_evaluable_rows": 3509,
+      "analytical_negative_rows": 1179,
+      "analytical_positive_gene_partner_groups": 936,
+      "analytical_positive_rows": 2330,
+      "analytical_technical_rows": 84,
+      "filter_steps": [
+        {
+          "archived_code_member_path": "CCSB-DFCI-TF_isoforms_paper-92a466e/src/data_loading/clones_and_assays_data.py",
+          "archived_code_member_sha256": "8a99a755ffd510533ad913b6c985798149cd6bcfb4187983ed76fc765a58027c",
+          "excluded_rows": 0,
+          "filter_description": "Archived loader includes the four non-reference-control categories.",
+          "filter_name": "eligible_source_categories",
+          "filter_step": 1,
+          "input_rows": 9562,
+          "output_rows": 9562
+        },
+        {
+          "archived_code_member_path": "CCSB-DFCI-TF_isoforms_paper-92a466e/src/data_loading/clones_and_assays_data.py",
+          "archived_code_member_sha256": "8a99a755ffd510533ad913b6c985798149cd6bcfb4187983ed76fc765a58027c",
+          "excluded_rows": 4947,
+          "filter_description": "Retain only TF-gene/partner groups positive for at least one isoform.",
+          "filter_name": "gene_partner_has_positive",
+          "filter_step": 2,
+          "input_rows": 9562,
+          "output_rows": 4615
+        },
+        {
+          "archived_code_member_path": "CCSB-DFCI-TF_isoforms_paper-92a466e/src/data_loading/clones_and_assays_data.py",
+          "archived_code_member_sha256": "8a99a755ffd510533ad913b6c985798149cd6bcfb4187983ed76fc765a58027c",
+          "excluded_rows": 159,
+          "filter_description": "Remove isoform clones with no technically successful Y2H test.",
+          "filter_name": "clone_has_evaluable_test",
+          "filter_step": 3,
+          "input_rows": 4615,
+          "output_rows": 4456
+        },
+        {
+          "archived_code_member_path": "CCSB-DFCI-TF_isoforms_paper-92a466e/src/data_loading/clones_and_assays_data.py",
+          "archived_code_member_sha256": "8a99a755ffd510533ad913b6c985798149cd6bcfb4187983ed76fc765a58027c",
+          "excluded_rows": 613,
+          "filter_description": "Archived default requires every retained isoform clone to have a positive.",
+          "filter_name": "clone_has_positive",
+          "filter_step": 4,
+          "input_rows": 4456,
+          "output_rows": 3843
+        },
+        {
+          "archived_code_member_path": "CCSB-DFCI-TF_isoforms_paper-92a466e/src/data_loading/clones_and_assays_data.py",
+          "archived_code_member_sha256": "8a99a755ffd510533ad913b6c985798149cd6bcfb4187983ed76fc765a58027c",
+          "excluded_rows": 221,
+          "filter_description": "Retain TF genes represented by at least two distinct isoform clones.",
+          "filter_name": "gene_has_two_isoforms",
+          "filter_step": 5,
+          "input_rows": 3843,
+          "output_rows": 3622
+        },
+        {
+          "archived_code_member_path": "CCSB-DFCI-TF_isoforms_paper-92a466e/src/data_loading/clones_and_assays_data.py",
+          "archived_code_member_sha256": "8a99a755ffd510533ad913b6c985798149cd6bcfb4187983ed76fc765a58027c",
+          "excluded_rows": 29,
+          "filter_description": "Retain TF-gene/partner groups with at least two evaluable isoform tests.",
+          "filter_name": "gene_partner_has_two_evaluable_isoforms",
+          "filter_step": 6,
+          "input_rows": 3622,
+          "output_rows": 3593
+        }
+      ],
+      "prevalence_representative": false,
+      "public_rows_exactly_present_in_screen_hits": 1872,
+      "public_rows_with_gene_partner_selected_by_any_isoform_screen": 3447,
+      "reason_not_prevalence_representative": [
+        "candidates originate from positive first-pass screens plus HuRI and Lit-BM positives",
+        "all isoforms are expanded against the union of partners found for the TF gene",
+        "TF-gene/partner groups without any positive are removed",
+        "retained clones are required by the archived default to have at least one positive",
+        "multiple evaluable isoforms are required per retained TF-gene/partner group"
+      ],
+      "screen_flag_combinations": {
+        "orfeome_false__focussed_true": 2596,
+        "orfeome_true__focussed_false": 2242,
+        "orfeome_true__focussed_true": 375
+      },
+      "screen_selection_rows": 5213
+    },
+    "source_universes": {
+      "clone_cds_translation_concordant": 615,
+      "clone_cds_translation_discordant_or_non_codon_length": 78,
+      "clone_rows": 693,
+      "public_n2h_exact_raw_crosswalk_rows": 765,
+      "public_n2h_rows": 765,
+      "public_y2h_exact_raw_crosswalk_rows": 9562,
+      "public_y2h_rows": 9562,
+      "raw_n2h_complete_non_vignette_rule_reconstructs_public": true,
+      "raw_n2h_rows": 901,
+      "raw_y2h_rows": 10332,
+      "raw_y2h_rows_excluded_from_public_table": 770,
+      "screen_selection_rows": 5213
+    },
+    "y2h_semantics": {
+      "blank_rows": 1260,
+      "blank_rows_not_converted_to_negative": 1260,
+      "blank_rows_resolved_from_archived_raw_fields": 1260,
+      "outcome_counts": {
+        "assay_measurement_failure": 31,
+        "autoactivation": 7,
+        "explicit_negative_y2h_observation": 5739,
+        "mating_or_spotting_failure": 157,
+        "positive_y2h_observation": 2563,
+        "sequence_confirmation_failure": 1065,
+        "unknown_unresolved": 0
+      },
+      "technical_blank_breakdown": {
+        "assay_measurement_failure": 31,
+        "autoactivation": 7,
+        "expression_failure": 0,
+        "expression_failure_identifiability": "not_identifiable_no_expression_measurement_reported",
+        "mating_or_spotting_failure": 157,
+        "sequence_confirmation_failure": 1065,
+        "unknown_unresolved": 0
+      },
+      "universal_nonbinding_claims": 0
+    }
+  },
+  "governance": {
+    "benchmark_constructed": false,
+    "model_training_or_tuning_performed": false,
+    "negatome_merged": false,
+    "primary_pur_design_changed": false,
+    "return_to_governance_required": true,
+    "threshold_applied": false,
+    "training_data_integrated": false,
+    "training_labels_created": false,
+    "universal_nonbinding_asserted": false
+  },
+  "schema_version": 1,
+  "scope": "bounded_2025_human_tf_isoform_y2h_n2h_audit",
+  "started_at_utc": "2026-08-04T20:42:49.137581+00:00",
+  "status": "pass"
+}

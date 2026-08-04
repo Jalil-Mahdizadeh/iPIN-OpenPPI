@@ -1,0 +1,126 @@
+{
+  "audit_id": "TF-ISOFORM-Y2H-SEMANTICS-CONTAMINATION-AUDIT-001",
+  "audit_version": "1.0.0",
+  "benchmark_construction_performed": false,
+  "completed_at_utc": "2026-08-04T20:43:49.899946+00:00",
+  "disposition": "external-only diagnostic candidate",
+  "git": {
+    "commit": "9de608ddc301d0af548d043c9fbd57b5c7e1b7f2",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "input_staging_manifest": "data/staging/tf_isoform_y2h_audit_v1/STAGING_MANIFEST.json",
+  "input_staging_manifest_sha256": "49221d602c1f2d966c451985604538c045fa9ffa8744363c35824aade7a9bffc",
+  "label_construction_performed": false,
+  "merge_with_negatome_performed": false,
+  "model_training_performed": false,
+  "runtime": {
+    "architecture": "aarch64",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scope": "assay_semantics_mapping_contamination_audit_only",
+  "status": "complete",
+  "tables": {
+    "analytical_filter_steps": {
+      "files": [
+        {
+          "bytes": 6414,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/tf_isoform_y2h_audit_v1/analytical_filter_steps/part-00000.parquet",
+          "rows": 6,
+          "sha256": "d07f3a70315ac8d93650c9eb972be7ab7c63a3ed3dd068647a44b6b6c4b41e8b"
+        }
+      ],
+      "parts": 1,
+      "rows": 6,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "analytical_filter_steps"
+    },
+    "clone_sequence_mappings": {
+      "files": [
+        {
+          "bytes": 94623,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/tf_isoform_y2h_audit_v1/clone_sequence_mappings/part-00000.parquet",
+          "rows": 693,
+          "sha256": "91d45e560886932d422ed70665a604e89d984e9830671fda020851b7dce7845b"
+        }
+      ],
+      "parts": 1,
+      "rows": 693,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "clone_sequence_mappings"
+    },
+    "matched_contrast_groups": {
+      "files": [
+        {
+          "bytes": 85378,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/tf_isoform_y2h_audit_v1/matched_contrast_groups/part-00000.parquet",
+          "rows": 2750,
+          "sha256": "64178c6bf5714a638dff26a394f02e0a09e00d0eab412960341524bc0ec1ac01"
+        }
+      ],
+      "parts": 1,
+      "rows": 2750,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "matched_contrast_groups"
+    },
+    "n2h_observation_audit": {
+      "files": [
+        {
+          "bytes": 58965,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/tf_isoform_y2h_audit_v1/n2h_observation_audit/part-00000.parquet",
+          "rows": 765,
+          "sha256": "872ac6ec6d64f51e8c9a8ac09d8de242f50a5efec1bd111b06b42da9820a97ab"
+        }
+      ],
+      "parts": 1,
+      "rows": 765,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "n2h_observation_audit"
+    },
+    "partner_construct_mappings": {
+      "files": [
+        {
+          "bytes": 140073,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/tf_isoform_y2h_audit_v1/partner_construct_mappings/part-00000.parquet",
+          "rows": 753,
+          "sha256": "c07655bf0b9c7fe230692c236af253e3394ce22e6f4bdabdf0f3b5e782050bdf"
+        }
+      ],
+      "parts": 1,
+      "rows": 753,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "partner_construct_mappings"
+    },
+    "y2h_pair_audit": {
+      "files": [
+        {
+          "bytes": 554570,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/tf_isoform_y2h_audit_v1/y2h_pair_audit/part-00000.parquet",
+          "rows": 9562,
+          "sha256": "533497a70a7a88c510842f882546b9358b2a5c875715c3535334c9507aa90cc0"
+        }
+      ],
+      "parts": 1,
+      "rows": 9562,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "y2h_pair_audit"
+    }
+  },
+  "training_data_integration_performed": false,
+  "universal_nonbinding_interpretation_performed": false
+}

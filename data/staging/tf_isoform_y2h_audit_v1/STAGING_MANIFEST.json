@@ -1,0 +1,202 @@
+{
+  "audit_id": "TF-ISOFORM-Y2H-SEMANTICS-CONTAMINATION-AUDIT-001",
+  "audit_version": "1.0.0",
+  "benchmark_construction_performed": false,
+  "completed_at_utc": "2026-08-04T20:43:49.720584+00:00",
+  "git": {
+    "commit": "9de608ddc301d0af548d043c9fbd57b5c7e1b7f2",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "label_construction_performed": false,
+  "merge_with_negatome_performed": false,
+  "model_training_performed": false,
+  "runtime": {
+    "architecture": "aarch64",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scope": "bounded_source_semantics_no_training_labels",
+  "started_at_utc": "2026-08-04T20:42:49.137581+00:00",
+  "status": "complete",
+  "tables": {
+    "archive_members": {
+      "files": [
+        {
+          "bytes": 27929,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/tf_isoform_y2h_audit_v1/archive_members/part-00000.parquet",
+          "rows": 1337,
+          "sha256": "57b2761414183caa5117d36b12fee37e39f60354f93ca81da241baa951599717"
+        }
+      ],
+      "parts": 1,
+      "rows": 1337,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "archive_members"
+    },
+    "clone_records": {
+      "files": [
+        {
+          "bytes": 297548,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/tf_isoform_y2h_audit_v1/clone_records/part-00000.parquet",
+          "rows": 693,
+          "sha256": "630c7cb7089015889f07252446fe9a7b5f102835c32679bfdb0e69b3528799b9"
+        }
+      ],
+      "parts": 1,
+      "rows": 693,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "clone_records"
+    },
+    "raw_n2h_records": {
+      "files": [
+        {
+          "bytes": 60365,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/tf_isoform_y2h_audit_v1/raw_n2h_records/part-00000.parquet",
+          "rows": 901,
+          "sha256": "33b8095344bcb7605a026abb30961f4f78cb8cb3138905d2dd768c0fadc508d5"
+        }
+      ],
+      "parts": 1,
+      "rows": 901,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "raw_n2h_records"
+    },
+    "raw_y2h_records": {
+      "files": [
+        {
+          "bytes": 345014,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/tf_isoform_y2h_audit_v1/raw_y2h_records/part-00000.parquet",
+          "rows": 10332,
+          "sha256": "2a97a81fec492329abbaa8d50d395a0500ee1c2707243ba0161cd02ca1226a64"
+        }
+      ],
+      "parts": 1,
+      "rows": 10332,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "raw_y2h_records"
+    },
+    "screen_selection_records": {
+      "files": [
+        {
+          "bytes": 254176,
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/tf_isoform_y2h_audit_v1/screen_selection_records/part-00000.parquet",
+          "rows": 5213,
+          "sha256": "2f6e9a64474a8651623eb4a17261601169b34955523c3434e94553868a39a225"
+        }
+      ],
+      "parts": 1,
+      "rows": 5213,
+      "schema_name": "ipin_openppi_tf_isoform_y2h_audit",
+      "schema_sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658",
+      "schema_version": 1,
+      "table": "screen_selection_records"
+    }
+  },
+  "training_data_integration_performed": false,
+  "universal_nonbinding_interpretation_performed": false,
+  "verified_documents": {
+    "acquisition_manifest": {
+      "bytes": 11149,
+      "path": "data/source_manifests/acquisitions/tf-isoform-y2h-v1-20260804T191300Z/ACQUISITION_MANIFEST.json",
+      "sha256": "1c163f8cafaad152a49cc002af66a26a0779e9387a7cc9c3fca6bfaa56f60e96"
+    },
+    "audit_schema": {
+      "bytes": 24996,
+      "path": "schemas/canonical/tf_isoform_y2h_audit_v1.yaml",
+      "sha256": "9d546edb640c46ee13930a642d47d8c1ce871925a9e1890003c84a474049d658"
+    },
+    "frozen_uniprot_dat": {
+      "bytes": 134512433,
+      "path": "data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.dat.gz",
+      "sha256": "8157caae64bf8382b7afccee30863f060e858dab6862dad3e15af0d20047a7b0"
+    },
+    "license_register": {
+      "bytes": 2580,
+      "path": "governance/licenses/SOURCE_LICENSE_REGISTER_v7.md",
+      "sha256": "51d5550b000d46bbdad6bf3a076e0803fbc778b70e8f5d6b9bb5a591ee2825b9"
+    },
+    "preacquisition_manifest": {
+      "bytes": 5255,
+      "path": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "sha256": "4fd45c6e398fe5fb9dd7543e03767aa892f38cdfdf8cf1a9f34fef990f2804fe"
+    },
+    "primary_parse_manifest": {
+      "bytes": 223738,
+      "path": "data/staging/primary_sources_v1/PARSE_MANIFEST.json",
+      "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+    },
+    "primary_reconciliation_manifest": {
+      "bytes": 26286,
+      "path": "data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json",
+      "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+    },
+    "primary_reconciliation_validation": {
+      "bytes": 59114,
+      "path": "artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json",
+      "sha256": "9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2"
+    },
+    "primary_staging_validation": {
+      "bytes": 39661,
+      "path": "artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json",
+      "sha256": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba"
+    },
+    "raw_verification_report": {
+      "bytes": 7607,
+      "path": "artifacts/validation/source_acquisition/raw_verification_tf_isoform_y2h_2025_v1.json",
+      "sha256": "59c4536b3ed07f2c78349a7adbd52dce48c9ddd4e2b609d0a8440b6656ba9bf2"
+    },
+    "source_policy": {
+      "bytes": 4133,
+      "path": "configs/source_policy_v4.yaml",
+      "sha256": "8fffa4a4a02f7c067b62d15b4f947b9e083defa61ee9c95b24e8e5498eec9e2f"
+    }
+  },
+  "verified_raw_assets": {
+    "archived_code": {
+      "asset_id": "zenodo_code_and_supplement_v2_1_0",
+      "bytes": 9939666,
+      "path": "data/raw/tf_isoform_y2h_2025/zenodo/record-14969075-v2.1.0/TF_isoforms_paper-v2.1.0.zip",
+      "read_only": true,
+      "sha256": "7159f5fda99e3700c3c6e35a2a6ad2e91af554f481859f937f55571adbbff54a"
+    },
+    "archived_input": {
+      "asset_id": "zenodo_input_data_v2",
+      "bytes": 3768481116,
+      "path": "data/raw/tf_isoform_y2h_2025/zenodo/record-14968584-v2/TF_isoforms_paper_data_dir_v2.tar.gz",
+      "read_only": true,
+      "sha256": "652f6f5a4368610f46fe50e362ca489930ba652eeb052af612c05170018be157"
+    },
+    "article_methods": {
+      "asset_id": "article_methods_pdf",
+      "bytes": 6697076,
+      "path": "data/raw/tf_isoform_y2h_2025/article-2025-03-26/lambourne_et_al_2025_author_hosted.pdf",
+      "read_only": true,
+      "sha256": "a2cb4e325d025a7df9365bb41ea4c73dc62f37fcf7f387e1a0032cb8900c90d8"
+    },
+    "code_metadata": {
+      "asset_id": "zenodo_code_metadata",
+      "bytes": 4774,
+      "path": "data/raw/tf_isoform_y2h_2025/zenodo/record-14969075-v2.1.0/record_metadata.json",
+      "read_only": true,
+      "sha256": "f2112cb84c4dd0b35a54fdd1844acd2583dff4ba8a290381bf63ffff286e6397"
+    },
+    "input_metadata": {
+      "asset_id": "zenodo_input_metadata",
+      "bytes": 4415,
+      "path": "data/raw/tf_isoform_y2h_2025/zenodo/record-14968584-v2/record_metadata.json",
+      "read_only": true,
+      "sha256": "c52a501fcfd05578a465295490676a26de909dfc5661e0efc2c3d6c539ac41af"
+    }
+  }
+}

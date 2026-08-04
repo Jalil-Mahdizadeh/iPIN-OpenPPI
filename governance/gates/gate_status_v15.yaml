@@ -1,0 +1,92 @@
+schema_version: 15
+supersedes: governance/gates/gate_status_v14.yaml
+updated_date: "2026-08-04"
+programme_state: paused_post_tf_isoform_audit_at_project_owner_checkpoint
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    production_sif: containers/images/ipin-data-arm64_0.1.2.sif
+    production_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+    architecture: aarch64
+    continuing_condition: every_scientific_operation_runs_through_pinned_apptainer
+  evidence:
+    status: current_bounded_audits_complete_returned_to_governance
+    accepted_prior_subgates:
+      raw_acquisition: governance/decisions/DEC-0007-accept-primary-raw-acquisition.md
+      source_parsing: governance/decisions/DEC-0008-accept-primary-evidence-staging.md
+      source_reconciliation: governance/decisions/DEC-0009-accept-primary-source-reconciliation.md
+      negative_evidence_discovery: governance/decisions/DEC-0012-accept-negative-evidence-discovery-audit.md
+    lambourne_2026_panel:
+      status: complete_validated_quarantined_no_integration
+      proposal: governance/decisions/DEC-0014-propose-lambourne-panel-disposition.md
+    tf_isoform_y2h_2025_subgate:
+      status: complete_validated_external_only_diagnostic_candidate_no_integration
+      authorization_decision: governance/decisions/DEC-0015-authorize-tf-isoform-y2h-audit.md
+      proposed_disposition: governance/decisions/DEC-0016-propose-tf-isoform-y2h-disposition.md
+      scientific_report: docs/reports/m0/M0_TF_Isoform_2025_Y2H_Semantics_and_Contamination_Audit_Final_v1.md
+      production_commit: 9de608ddc301d0af548d043c9fbd57b5c7e1b7f2
+      production_audit_sha256: 9235569bd40adc4114c0b1f4387e57fb4fcabc823a28a3509676607ef809a281
+      independent_validation_sha256: af9297e54203b7486a883eaa555d006dfac57da232f475f165395cf888f42327
+      independent_validation: {pass: 26, warning: 0, fail: 0}
+      public_y2h_rows: 9562
+      public_y2h_positive: 2563
+      public_y2h_explicit_negative: 5739
+      technical_blank_rows: 1260
+      unresolved_blank_rows: 0
+      reported_evaluable_analysis_rows: 3509
+      positive_negative_matched_isoform_contrast_groups: 848
+      uniref90_endpoint_protected_contrast_groups: 0
+      outcome_training_label_role_authorized: false
+      merge_with_negatome_authorized: false
+      benchmark_construction_authorized: false
+      model_work_authorized: false
+      universal_nonbinding_interpretation_authorized: false
+    source_license_subgate:
+      status: pass_for_completed_bounded_audit
+      active_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v6.yaml
+      active_policy: configs/source_policy_v4.yaml
+      license_register: governance/licenses/SOURCE_LICENSE_REGISTER_v7.md
+      zenodo_tf_isoform_assets: CC-BY-4.0
+      article_pdf: internal_audit_only_no_redistribution
+    benchmark_eligibility_and_sequence_component_audit:
+      status: paused_not_started_by_project_owner_after_tf_isoform_audit
+      prior_authorization: governance/gates/gate_status_v11.yaml
+      authorization_scope_unchanged: true
+      resume_only_after_explicit_project_owner_request: true
+    strict_construct_branch:
+      status: blocked
+      issue: governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md
+    label_construction_authorized: false
+    candidate_pair_materialization_authorized: false
+    structural_mapping_authorized: false
+    model_training_authorized: false
+  benchmark:
+    status: primary_policy_accepted_preconstruction_external_panels_quarantined
+    accepted_policy: configs/benchmark_estimand_policy_v1.yaml
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    output_is_probability: false
+    external_panel_integration_authorized: false
+    split_construction_authorized: false
+    model_implementation_authorized: false
+    model_training_authorized: false
+  statistical: {status: not_started}
+  routing: {status: not_started}
+  retrieval: {status: not_started}
+  uncertainty: {status: not_started}
+  computational_validation: {status: not_started}
+  release: {status: not_started}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_blank_unreported_or_technical_state_as_negative: true
+  merge_external_panels_with_negatome: true
+  external_panel_outcomes_as_training_labels: true
+  y2h_n2h_relabelling: true
+  benchmark_construction: true
+  model_training_tuning_calibration_or_thresholding: true
+  primary_pu_r_design_change: true
+  experimental_validation_claim: true
