@@ -1,0 +1,185 @@
+{
+  "acquisition_manifest": {
+    "path": "data/source_manifests/acquisitions/negative-evidence-v1-20260804T074800Z/ACQUISITION_MANIFEST.json",
+    "run_id": "negative-evidence-v1-20260804T074800Z",
+    "sha256": "c628c960590b046293f286038574138fda2d4ecfd5b351e15d8dc21b65151dc5"
+  },
+  "active_verifier": {
+    "entrypoint": "scripts/data/verify_raw_acquisition_v3.py",
+    "entrypoint_sha256": "962c5c50a03a262f2a9490500065957f453c53f686b157d0bf3892ebf282eff6",
+    "git_commit": "5ed55807f56189be5aca3f41f7ddbeabd698b71f",
+    "semantics": "provider-advertised counts are audited metadata, not assumed row-count invariants"
+  },
+  "asset_count": 6,
+  "code_provenance": {
+    "acquisition_commit": "e92e1dfc04fa4ffbb6750e9ad3a0ad4b147923f6",
+    "committed_script_sha256": "03af033385075b8cfbf9a948ceefcc662aaacc592f56142cb8ad8bfed0f34e53",
+    "qualification_lock_sha256": "3e1f43eb11a5f77bd06dc0c4f4c5f6f21349b788017cad01825eb542099c0d89",
+    "script": "scripts/data/acquire_manifest_assets.py",
+    "status": "pass"
+  },
+  "errors": [],
+  "label_construction_performed": false,
+  "model_training_performed": false,
+  "raw_tree": {
+    "acquisition_manifests_consulted": [
+      "data/source_manifests/acquisitions/negative-evidence-v1-20260804T074800Z/ACQUISITION_MANIFEST.json",
+      "data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json"
+    ],
+    "file_count": 53,
+    "missing_selected_files": [],
+    "other_manifest_backed_file_count": 40,
+    "partial_files": [],
+    "scope": "selected_acquisition_with_manifest_backed_preexisting_files",
+    "selected_payload_and_sidecar_count": 12,
+    "status": "pass",
+    "symbolic_links": [],
+    "unmanifested_files": []
+  },
+  "records": [
+    {
+      "asset_id": "negatome_manual",
+      "bytes": 123362,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/manual.txt",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 2171,
+        "maximum_tabular_field_count": 4,
+        "minimum_tabular_field_count": 4
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "f05410c9ba1748e0d36a13e9b873a67e61bdcef2446904735fc3e172ca78aa16",
+      "sidecar_passed": true,
+      "source_key": "negatome",
+      "status": "pass"
+    },
+    {
+      "asset_id": "negatome_manual_stringent",
+      "bytes": 113757,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/manual_stringent.txt",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 1991,
+        "maximum_tabular_field_count": 4,
+        "minimum_tabular_field_count": 4
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "6391316c19abaf8a677ef65878891e9ae6fd9346dff53e2c0617cb34516f578c",
+      "sidecar_passed": true,
+      "source_key": "negatome",
+      "status": "pass"
+    },
+    {
+      "asset_id": "negatome_pdb",
+      "bytes": 305645,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/pdb.txt",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 4398,
+        "maximum_tabular_field_count": 4,
+        "minimum_tabular_field_count": 4
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "85232908f1b993b9bb54abc0547a2566cc99930538d134faec8db56f303df182",
+      "sidecar_passed": true,
+      "source_key": "negatome",
+      "status": "pass"
+    },
+    {
+      "asset_id": "negatome_pdb_stringent",
+      "bytes": 279096,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/pdb_stringent.txt",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 4162,
+        "maximum_tabular_field_count": 4,
+        "minimum_tabular_field_count": 4
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "61026a6147d5729980efc80f84e85d92bbd9424b11a586332c8ebf193011cc3c",
+      "sidecar_passed": true,
+      "source_key": "negatome",
+      "status": "pass"
+    },
+    {
+      "asset_id": "negatome_homepage",
+      "bytes": 7351,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/source_documentation/index.html",
+      "inventory": {
+        "blank_line_count": 34,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 189,
+        "maximum_tabular_field_count": 2,
+        "minimum_tabular_field_count": 0
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "2b715143eb6e236a92069f572baaed622fc0a77b498f1db67f8ea4fecb5a16ea",
+      "sidecar_passed": true,
+      "source_key": "negatome",
+      "status": "pass"
+    },
+    {
+      "asset_id": "negatome_supplementary_material",
+      "bytes": 117596,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/source_documentation/SupplementaryMaterial.pdf",
+      "inventory": {
+        "inventory_method": "pdf_signature",
+        "signature_passed": true
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "718b31537bdd013ccef9e52433e093a5a36ef2b4b68ce012540cd6af370b4ca8",
+      "sidecar_passed": true,
+      "source_key": "negatome",
+      "status": "pass"
+    }
+  ],
+  "required_asset_count": 6,
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scoped_verifier": {
+    "delegated_active_verifier": "scripts/data/verify_raw_acquisition_v3.py",
+    "entrypoint": "scripts/data/verify_raw_acquisition_scoped_v1.py",
+    "entrypoint_sha256": "559c99ac9583c2dad0c452509fb5f3b83b33a34055a0566b5cb6f2e3244415e2",
+    "git_commit": "5ed55807f56189be5aca3f41f7ddbeabd698b71f",
+    "semantics": "verify the selected acquisition exactly; permit other raw files only when declared by a passed acquisition manifest"
+  },
+  "source_count_discrepancies": [],
+  "status": "pass",
+  "total_payload_bytes": 946807,
+  "uniprot_metalink": {
+    "acquired_payloads_crosschecked": [],
+    "reason": "this acquisition contains no UniProt release payload",
+    "selected_sources": [
+      "negatome"
+    ],
+    "status": "not_applicable_source_not_selected"
+  },
+  "verification_id": "RAW-VERIFY-NEGATIVE-EVIDENCE-001",
+  "verified_at_utc": "2026-08-04T09:18:24.116442+00:00",
+  "verifier_code": {
+    "entrypoint": "scripts/data/verify_raw_acquisition_v2.py",
+    "entrypoint_sha256": "e5a0734e1d91d5f92eef6dae155ea600cceab5657881e442c0f8c448b30fb6a1",
+    "git": {
+      "commit": "5ed55807f56189be5aca3f41f7ddbeabd698b71f",
+      "tracked_worktree_clean": true
+    },
+    "implementation": "scripts/data/verify_raw_acquisition.py",
+    "implementation_sha256": "52a032c5da04c4a5e45710e6e6bc1f3ecc52fbe0c365ed0225f34c1ce9f32fa0"
+  },
+  "warnings": []
+}

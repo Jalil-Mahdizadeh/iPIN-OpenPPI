@@ -1,0 +1,318 @@
+{
+  "acquisition_manifest": "data/source_manifests/acquisitions/negative-evidence-v1-20260804T074800Z/ACQUISITION_MANIFEST.json",
+  "asset_count": 6,
+  "code": {
+    "git": {
+      "commit": "e92e1dfc04fa4ffbb6750e9ad3a0ad4b147923f6",
+      "status": "",
+      "tracked_worktree_clean": true
+    },
+    "qualification_lock": "containers/locks/ipin-qual-arm64_0.1.0.qualification.lock",
+    "qualification_lock_sha256": "3e1f43eb11a5f77bd06dc0c4f4c5f6f21349b788017cad01825eb542099c0d89",
+    "script": "scripts/data/acquire_manifest_assets.py",
+    "script_sha256": "03af033385075b8cfbf9a948ceefcc662aaacc592f56142cb8ad8bfed0f34e53"
+  },
+  "completed_at_utc": "2026-08-04T07:47:51.235880+00:00",
+  "downloaded_new_count": 6,
+  "dry_run": false,
+  "errors": [],
+  "free_bytes_at_start": 9675191783424,
+  "index": {
+    "manifest_set_id": "PREACQ-PRIMARY-NEGATIVE-EVIDENCE-004",
+    "path": "data/source_manifests/PREACQUISITION_INDEX_v4.yaml",
+    "sha256": "a531e623af928e3dec7e4e28a54cebeaafd5f28a5af43a002246b36bdf9f1046"
+  },
+  "known_expected_bytes": 939456,
+  "label_construction_performed": false,
+  "model_training_performed": false,
+  "records": [
+    {
+      "acquired_at_utc": "2026-08-04T07:47:48.899766+00:00",
+      "asset_id": "negatome_manual",
+      "bytes": 123362,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/manual.txt",
+      "format_inspection": {
+        "declared_format": "tsv",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "123362",
+        "content_type": "text/plain; charset=UTF-8",
+        "etag": "\"1e1e2-5cc03d69af140\"",
+        "final_url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual.txt",
+        "http_status": 200,
+        "last_modified": "Wed, 15 Sep 2021 07:42:21 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "f05410c9ba1748e0d36a13e9b873a67e61bdcef2446904735fc3e172ca78aa16",
+      "sidecar": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/manual.txt.acquisition.json",
+      "source_key": "negatome",
+      "source_manifest": "data/source_manifests/PREACQUISITION_negatome_v1.yaml",
+      "source_manifest_sha256": "98d19bb41a2395f01c08dec7db5fb91c7b2fd09b2572a4dc51f87defc57528b0",
+      "tls": {
+        "additional_ca_certificate": "governance/provenance/tls/HARICA-GEANT-TLS-R1.pem",
+        "additional_ca_der_fingerprint_sha256": "5b678dc44095a52895b63b31f27227f4b36c3e347491bf2bfa691837a5fb8c79",
+        "additional_ca_pem_sha256": "cdc78c3185ce918c8e87f9b2559197d641288e564c5a8b789cd796abdea298d4",
+        "additional_ca_source_url": "https://repo.harica.gr/certs/HARICA-GEANT-TLS-R1.der",
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual.txt"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T07:47:49.289630+00:00",
+      "asset_id": "negatome_manual_stringent",
+      "bytes": 113757,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/manual_stringent.txt",
+      "format_inspection": {
+        "declared_format": "tsv",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "113757",
+        "content_type": "text/plain; charset=UTF-8",
+        "etag": "\"1bc5d-5cc03d69af140\"",
+        "final_url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual_stringent.txt",
+        "http_status": 200,
+        "last_modified": "Wed, 15 Sep 2021 07:42:21 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "6391316c19abaf8a677ef65878891e9ae6fd9346dff53e2c0617cb34516f578c",
+      "sidecar": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/manual_stringent.txt.acquisition.json",
+      "source_key": "negatome",
+      "source_manifest": "data/source_manifests/PREACQUISITION_negatome_v1.yaml",
+      "source_manifest_sha256": "98d19bb41a2395f01c08dec7db5fb91c7b2fd09b2572a4dc51f87defc57528b0",
+      "tls": {
+        "additional_ca_certificate": "governance/provenance/tls/HARICA-GEANT-TLS-R1.pem",
+        "additional_ca_der_fingerprint_sha256": "5b678dc44095a52895b63b31f27227f4b36c3e347491bf2bfa691837a5fb8c79",
+        "additional_ca_pem_sha256": "cdc78c3185ce918c8e87f9b2559197d641288e564c5a8b789cd796abdea298d4",
+        "additional_ca_source_url": "https://repo.harica.gr/certs/HARICA-GEANT-TLS-R1.der",
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual_stringent.txt"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T07:47:49.702114+00:00",
+      "asset_id": "negatome_pdb",
+      "bytes": 305645,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/pdb.txt",
+      "format_inspection": {
+        "declared_format": "tsv",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "305645",
+        "content_type": "text/plain; charset=UTF-8",
+        "etag": "\"4a9ed-5cc03d69af140\"",
+        "final_url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/pdb.txt",
+        "http_status": 200,
+        "last_modified": "Wed, 15 Sep 2021 07:42:21 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "85232908f1b993b9bb54abc0547a2566cc99930538d134faec8db56f303df182",
+      "sidecar": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/pdb.txt.acquisition.json",
+      "source_key": "negatome",
+      "source_manifest": "data/source_manifests/PREACQUISITION_negatome_v1.yaml",
+      "source_manifest_sha256": "98d19bb41a2395f01c08dec7db5fb91c7b2fd09b2572a4dc51f87defc57528b0",
+      "tls": {
+        "additional_ca_certificate": "governance/provenance/tls/HARICA-GEANT-TLS-R1.pem",
+        "additional_ca_der_fingerprint_sha256": "5b678dc44095a52895b63b31f27227f4b36c3e347491bf2bfa691837a5fb8c79",
+        "additional_ca_pem_sha256": "cdc78c3185ce918c8e87f9b2559197d641288e564c5a8b789cd796abdea298d4",
+        "additional_ca_source_url": "https://repo.harica.gr/certs/HARICA-GEANT-TLS-R1.der",
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/pdb.txt"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T07:47:50.125559+00:00",
+      "asset_id": "negatome_pdb_stringent",
+      "bytes": 279096,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/pdb_stringent.txt",
+      "format_inspection": {
+        "declared_format": "tsv",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "279096",
+        "content_type": "text/plain; charset=UTF-8",
+        "etag": "\"44238-5cc03d69af140\"",
+        "final_url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/pdb_stringent.txt",
+        "http_status": 200,
+        "last_modified": "Wed, 15 Sep 2021 07:42:21 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "61026a6147d5729980efc80f84e85d92bbd9424b11a586332c8ebf193011cc3c",
+      "sidecar": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/pdb_stringent.txt.acquisition.json",
+      "source_key": "negatome",
+      "source_manifest": "data/source_manifests/PREACQUISITION_negatome_v1.yaml",
+      "source_manifest_sha256": "98d19bb41a2395f01c08dec7db5fb91c7b2fd09b2572a4dc51f87defc57528b0",
+      "tls": {
+        "additional_ca_certificate": "governance/provenance/tls/HARICA-GEANT-TLS-R1.pem",
+        "additional_ca_der_fingerprint_sha256": "5b678dc44095a52895b63b31f27227f4b36c3e347491bf2bfa691837a5fb8c79",
+        "additional_ca_pem_sha256": "cdc78c3185ce918c8e87f9b2559197d641288e564c5a8b789cd796abdea298d4",
+        "additional_ca_source_url": "https://repo.harica.gr/certs/HARICA-GEANT-TLS-R1.der",
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/pdb_stringent.txt"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T07:47:50.562634+00:00",
+      "asset_id": "negatome_homepage",
+      "bytes": 7351,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/source_documentation/index.html",
+      "format_inspection": {
+        "declared_format": "html",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "7351",
+        "content_type": "text/html; charset=UTF-8",
+        "etag": "\"1cb7-5cc03d69af140\"",
+        "final_url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/",
+        "http_status": 200,
+        "last_modified": "Wed, 15 Sep 2021 07:42:21 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "2b715143eb6e236a92069f572baaed622fc0a77b498f1db67f8ea4fecb5a16ea",
+      "sidecar": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/source_documentation/index.html.acquisition.json",
+      "source_key": "negatome",
+      "source_manifest": "data/source_manifests/PREACQUISITION_negatome_v1.yaml",
+      "source_manifest_sha256": "98d19bb41a2395f01c08dec7db5fb91c7b2fd09b2572a4dc51f87defc57528b0",
+      "tls": {
+        "additional_ca_certificate": "governance/provenance/tls/HARICA-GEANT-TLS-R1.pem",
+        "additional_ca_der_fingerprint_sha256": "5b678dc44095a52895b63b31f27227f4b36c3e347491bf2bfa691837a5fb8c79",
+        "additional_ca_pem_sha256": "cdc78c3185ce918c8e87f9b2559197d641288e564c5a8b789cd796abdea298d4",
+        "additional_ca_source_url": "https://repo.harica.gr/certs/HARICA-GEANT-TLS-R1.der",
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T07:47:50.849731+00:00",
+      "asset_id": "negatome_supplementary_material",
+      "bytes": 117596,
+      "destination": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/source_documentation/SupplementaryMaterial.pdf",
+      "format_inspection": {
+        "declared_format": "pdf",
+        "detected_container_format": "pdf"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "117596",
+        "content_type": "application/pdf",
+        "etag": "\"1cb5c-5cc03d69af140\"",
+        "final_url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/SupplementaryMaterial.pdf",
+        "http_status": 200,
+        "last_modified": "Wed, 15 Sep 2021 07:42:21 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "718b31537bdd013ccef9e52433e093a5a36ef2b4b68ce012540cd6af370b4ca8",
+      "sidecar": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/source_documentation/SupplementaryMaterial.pdf.acquisition.json",
+      "source_key": "negatome",
+      "source_manifest": "data/source_manifests/PREACQUISITION_negatome_v1.yaml",
+      "source_manifest_sha256": "98d19bb41a2395f01c08dec7db5fb91c7b2fd09b2572a4dc51f87defc57528b0",
+      "tls": {
+        "additional_ca_certificate": "governance/provenance/tls/HARICA-GEANT-TLS-R1.pem",
+        "additional_ca_der_fingerprint_sha256": "5b678dc44095a52895b63b31f27227f4b36c3e347491bf2bfa691837a5fb8c79",
+        "additional_ca_pem_sha256": "cdc78c3185ce918c8e87f9b2559197d641288e564c5a8b789cd796abdea298d4",
+        "additional_ca_source_url": "https://repo.harica.gr/certs/HARICA-GEANT-TLS-R1.der",
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/SupplementaryMaterial.pdf"
+    }
+  ],
+  "required_asset_count": 6,
+  "reused_existing_count": 0,
+  "run_id": "negative-evidence-v1-20260804T074800Z",
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scientific_payloads_downloaded": true,
+  "selected_sources": [
+    "negatome"
+  ],
+  "started_at_utc": "2026-08-04T07:47:48.871513+00:00",
+  "status": "pass",
+  "total_payload_bytes": 946807,
+  "warnings": []
+}
