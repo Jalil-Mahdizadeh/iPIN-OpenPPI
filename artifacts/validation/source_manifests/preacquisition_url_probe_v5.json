@@ -1,0 +1,212 @@
+{
+  "asset_count": 5,
+  "errors": [],
+  "index": {
+    "path": "data/source_manifests/PREACQUISITION_INDEX_v6.yaml",
+    "sha256": "4a71b3cad0311a295878b1da0d8fd8c6503e07932819b23012cd7ab8fc23bf85"
+  },
+  "probe_id": "PREACQ-URL-PROBE-002",
+  "probed_at_utc": "2026-08-04T19:10:19.074608+00:00",
+  "records": [
+    {
+      "asset_id": "article_methods_pdf",
+      "checks": [
+        {
+          "name": "reachable",
+          "observed": 200,
+          "passed": true
+        },
+        {
+          "expected": 6697076,
+          "name": "content_length",
+          "observed": 6697076,
+          "passed": true
+        },
+        {
+          "expected": "\"7246fb3771ad1709cdf2cbbac75396c8\"",
+          "name": "etag",
+          "observed": "\"7246fb3771ad1709cdf2cbbac75396c8\"",
+          "passed": true
+        },
+        {
+          "expected_contains": "Wed, 26 Mar 2025 16:58:47 GMT",
+          "name": "last_modified",
+          "observed": "Wed, 26 Mar 2025 16:58:47 GMT",
+          "passed": true
+        }
+      ],
+      "manifest": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "observed": {
+        "accept_ranges": "bytes",
+        "content_length": "6697076",
+        "content_type": "application/pdf",
+        "etag": "\"7246fb3771ad1709cdf2cbbac75396c8\"",
+        "final_url": "https://ccsb.dana-farber.org/uploads/7/6/8/6/76866695/widespread_variation_in_molecular_interactions_and_regulatory_properties_among_transcription_factor_isoforms.pdf",
+        "http_status": 200,
+        "last_modified": "Wed, 26 Mar 2025 16:58:47 GMT",
+        "tls": {
+          "additional_ca_certificate": null,
+          "certificate_verification": true,
+          "hostname_verification": true,
+          "insecure_mode": false
+        }
+      },
+      "required": true,
+      "source_key": "tf_isoform_y2h_2025",
+      "url": "https://ccsb.dana-farber.org/uploads/7/6/8/6/76866695/widespread_variation_in_molecular_interactions_and_regulatory_properties_among_transcription_factor_isoforms.pdf"
+    },
+    {
+      "asset_id": "zenodo_code_metadata",
+      "checks": [
+        {
+          "name": "reachable",
+          "observed": 200,
+          "passed": true
+        }
+      ],
+      "manifest": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "observed": {
+        "accept_ranges": null,
+        "content_length": "4774",
+        "content_type": "application/json",
+        "etag": "\"4\"",
+        "final_url": "https://zenodo.org/api/records/14969075",
+        "http_status": 200,
+        "last_modified": null,
+        "tls": {
+          "additional_ca_certificate": null,
+          "certificate_verification": true,
+          "hostname_verification": true,
+          "insecure_mode": false
+        }
+      },
+      "required": true,
+      "source_key": "tf_isoform_y2h_2025",
+      "url": "https://zenodo.org/api/records/14969075"
+    },
+    {
+      "asset_id": "zenodo_code_and_supplement_v2_1_0",
+      "checks": [
+        {
+          "name": "reachable",
+          "observed": 200,
+          "passed": true
+        },
+        {
+          "expected": 9939666,
+          "name": "content_length",
+          "observed": 9939666,
+          "passed": true
+        },
+        {
+          "expected_contains": "Tue, 28 Jul 2026 09:22:46 GMT",
+          "name": "last_modified",
+          "observed": "Tue, 28 Jul 2026 09:22:46 GMT",
+          "passed": true
+        }
+      ],
+      "manifest": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "observed": {
+        "accept_ranges": null,
+        "content_length": "9939666",
+        "content_type": "application/octet-stream",
+        "etag": null,
+        "final_url": "https://zenodo.org/api/records/14969075/files/CCSB-DFCI/TF_isoforms_paper-v2.1.0.zip/content",
+        "http_status": 200,
+        "last_modified": "Tue, 28 Jul 2026 09:22:46 GMT",
+        "tls": {
+          "additional_ca_certificate": null,
+          "certificate_verification": true,
+          "hostname_verification": true,
+          "insecure_mode": false
+        }
+      },
+      "required": true,
+      "source_key": "tf_isoform_y2h_2025",
+      "url": "https://zenodo.org/api/records/14969075/files/CCSB-DFCI/TF_isoforms_paper-v2.1.0.zip/content"
+    },
+    {
+      "asset_id": "zenodo_input_metadata",
+      "checks": [
+        {
+          "name": "reachable",
+          "observed": 200,
+          "passed": true
+        }
+      ],
+      "manifest": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "observed": {
+        "accept_ranges": null,
+        "content_length": "4415",
+        "content_type": "application/json",
+        "etag": "\"4\"",
+        "final_url": "https://zenodo.org/api/records/14968584",
+        "http_status": 200,
+        "last_modified": null,
+        "tls": {
+          "additional_ca_certificate": null,
+          "certificate_verification": true,
+          "hostname_verification": true,
+          "insecure_mode": false
+        }
+      },
+      "required": true,
+      "source_key": "tf_isoform_y2h_2025",
+      "url": "https://zenodo.org/api/records/14968584"
+    },
+    {
+      "asset_id": "zenodo_input_data_v2",
+      "checks": [
+        {
+          "name": "reachable",
+          "observed": 200,
+          "passed": true
+        },
+        {
+          "expected": 3768481116,
+          "name": "content_length",
+          "observed": 3768481116,
+          "passed": true
+        },
+        {
+          "expected_contains": "Tue, 28 Jul 2026 07:22:55 GMT",
+          "name": "last_modified",
+          "observed": "Tue, 28 Jul 2026 07:22:55 GMT",
+          "passed": true
+        }
+      ],
+      "manifest": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "observed": {
+        "accept_ranges": null,
+        "content_length": "3768481116",
+        "content_type": "application/octet-stream",
+        "etag": null,
+        "final_url": "https://zenodo.org/api/records/14968584/files/TF_isoforms_paper_data_dir_v2.tar.gz/content",
+        "http_status": 200,
+        "last_modified": "Tue, 28 Jul 2026 07:22:55 GMT",
+        "tls": {
+          "additional_ca_certificate": null,
+          "certificate_verification": true,
+          "hostname_verification": true,
+          "insecure_mode": false
+        }
+      },
+      "required": true,
+      "source_key": "tf_isoform_y2h_2025",
+      "url": "https://zenodo.org/api/records/14968584/files/TF_isoforms_paper_data_dir_v2.tar.gz/content"
+    }
+  ],
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scientific_payloads_downloaded": false,
+  "selected_sources": [
+    "tf_isoform_y2h_2025"
+  ],
+  "status": "pass",
+  "warnings": []
+}

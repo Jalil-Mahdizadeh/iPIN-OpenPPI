@@ -1,0 +1,42 @@
+schema_version: 1
+manifest_set_id: PREACQ-PRIMARY-NEGATIVE-TWO-Y2H-AUDITS-006
+supersedes: data/source_manifests/PREACQUISITION_INDEX_v5.yaml
+project: ipin-openppi
+created_date: "2026-08-04"
+stage: preacquisition
+scope: primary_human_evidence_negative_evidence_and_two_bounded_external_y2h_audits
+policy: configs/source_policy_v4.yaml
+license_register: governance/licenses/SOURCE_LICENSE_REGISTER_v7.md
+
+authorization:
+  scientific_downloads_permitted: true
+  required_runtime: apptainer
+  raw_download_only: true
+  label_construction_permitted: false
+  benchmark_integration_permitted: false
+  benchmark_split_construction_permitted: false
+  model_training_permitted: false
+  model_tuning_calibration_thresholding_permitted: false
+  primary_pu_r_design_change_permitted: false
+
+manifests:
+  - source_key: huri
+    path: data/source_manifests/PREACQUISITION_huri_v2.yaml
+  - source_key: uniprot
+    path: data/source_manifests/PREACQUISITION_uniprot_human_v1.yaml
+  - source_key: intact_imex
+    path: data/source_manifests/PREACQUISITION_intact_imex_v1.yaml
+  - source_key: pdb_sifts
+    path: data/source_manifests/PREACQUISITION_pdb_sifts_v2.yaml
+  - source_key: negatome
+    path: data/source_manifests/PREACQUISITION_negatome_v1.yaml
+  - source_key: lambourne_human_y2h
+    path: data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml
+  - source_key: tf_isoform_y2h_2025
+    path: data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml
+
+validation:
+  script: scripts/data/validate_preacquisition_manifests.py
+  url_probe_script: scripts/data/probe_preacquisition_urls_v2.py
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  expected_source_keys: [huri, uniprot, intact_imex, pdb_sifts, negatome, lambourne_human_y2h, tf_isoform_y2h_2025]

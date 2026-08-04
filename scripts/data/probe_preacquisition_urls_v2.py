@@ -108,6 +108,12 @@ def main() -> int:
     parser.add_argument("--index", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--timeout-seconds", default=45.0, type=float)
+    parser.add_argument(
+        "--source",
+        action="append",
+        default=[],
+        help="probe only the named source key; may be repeated",
+    )
     args = parser.parse_args()
 
     repo_root = Path.cwd().resolve()
@@ -123,11 +129,22 @@ def main() -> int:
         raise SystemExit("URL probing must run inside Apptainer")
 
     index = load_yaml(index_path)
+    selected_sources = set(args.source)
+    configured_sources = {
+        str(entry.get("source_key"))
+        for entry in index.get("manifests", [])
+        if isinstance(entry, dict)
+    }
+    unknown_sources = sorted(selected_sources - configured_sources)
+    if unknown_sources:
+        raise SystemExit(f"unknown source key(s): {unknown_sources}")
     records: list[dict[str, Any]] = []
     errors: list[str] = []
     warnings: list[str] = []
     for entry in index.get("manifests", []):
         source_key = entry["source_key"]
+        if selected_sources and source_key not in selected_sources:
+            continue
         manifest_path = (repo_root / entry["path"]).resolve()
         manifest = load_yaml(manifest_path)
         for asset in manifest.get("assets", []):
@@ -171,6 +188,7 @@ def main() -> int:
             "path": str(index_path.relative_to(repo_root)),
             "sha256": sha256_file(index_path),
         },
+        "selected_sources": sorted(selected_sources or configured_sources),
         "asset_count": len(records),
         "records": records,
         "errors": errors,

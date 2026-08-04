@@ -1,0 +1,800 @@
+{
+  "errors": [],
+  "index": {
+    "checks": [
+      {
+        "detail": "validation must run inside Apptainer",
+        "name": "inside_apptainer",
+        "passed": true
+      },
+      {
+        "detail": "schema_version must equal 1",
+        "name": "schema_version",
+        "passed": true
+      },
+      {
+        "detail": "stage must be preacquisition",
+        "name": "stage",
+        "passed": true
+      },
+      {
+        "detail": "label construction must remain prohibited",
+        "name": "label_construction_boundary",
+        "passed": true
+      },
+      {
+        "detail": "manifest list must be non-empty",
+        "name": "manifest_entries",
+        "passed": true
+      },
+      {
+        "detail": "source keys must equal supported configured set ['huri', 'intact_imex', 'lambourne_human_y2h', 'negatome', 'pdb_sifts', 'tf_isoform_y2h_2025', 'uniprot']",
+        "name": "complete_source_set",
+        "passed": true
+      },
+      {
+        "detail": "referenced source policy must exist",
+        "name": "policy_exists",
+        "passed": true
+      }
+    ],
+    "path": "data/source_manifests/PREACQUISITION_INDEX_v6.yaml",
+    "sha256": "4a71b3cad0311a295878b1da0d8fd8c6503e07932819b23012cd7ab8fc23bf85"
+  },
+  "policy": {
+    "path": "configs/source_policy_v4.yaml",
+    "sha256": "8fffa4a4a02f7c067b62d15b4f947b9e083defa61ee9c95b24e8e5498eec9e2f"
+  },
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "sources": [
+    {
+      "asset_count": 9,
+      "check_count": 17,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0', 'MIXED-CC-BY-4.0-ALL-RIGHTS-RESERVED', 'MIXED-CC-BY-4.0-MIT', 'UNSPECIFIED-NO-REDISTRIBUTION']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.unreported_pairs_are_negative must be False",
+          "name": "guard_guards_unreported_pairs_are_negative",
+          "passed": true
+        },
+        {
+          "detail": "guards.space_iii_cross_product_is_complete_attempted_universe must be False",
+          "name": "guard_guards_space_iii_cross_product_is_complete_attempted_universe",
+          "passed": true
+        },
+        {
+          "detail": "guards.technical_failures_are_negative must be False",
+          "name": "guard_guards_technical_failures_are_negative",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 17,
+      "path": "data/source_manifests/PREACQUISITION_huri_v2.yaml",
+      "provider_checksum_asset_count": 0,
+      "required_asset_count": 9,
+      "sha256": "c6149095017ba53e5312da16feb6cebcc48f66b09b86ae923de2662cba606b66",
+      "source_key": "huri"
+    },
+    {
+      "asset_count": 3,
+      "check_count": 17,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0', 'MIXED-CC-BY-4.0-ALL-RIGHTS-RESERVED', 'MIXED-CC-BY-4.0-MIT', 'UNSPECIFIED-NO-REDISTRIBUTION']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.nary_expansions_are_direct must be False",
+          "name": "guard_guards_nary_expansions_are_direct",
+          "passed": true
+        },
+        {
+          "detail": "guards.preserve_original_nary_records must be True",
+          "name": "guard_guards_preserve_original_nary_records",
+          "passed": true
+        },
+        {
+          "detail": "guards.unreported_pairs_are_negative must be False",
+          "name": "guard_guards_unreported_pairs_are_negative",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 17,
+      "path": "data/source_manifests/PREACQUISITION_intact_imex_v1.yaml",
+      "provider_checksum_asset_count": 0,
+      "required_asset_count": 2,
+      "sha256": "9014e2d70e68d3f9dfb814640e8c0382750eff746587da6cee1d51b27061aa9d",
+      "source_key": "intact_imex"
+    },
+    {
+      "asset_count": 11,
+      "check_count": 21,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0', 'MIXED-CC-BY-4.0-ALL-RIGHTS-RESERVED', 'MIXED-CC-BY-4.0-MIT', 'UNSPECIFIED-NO-REDISTRIBUTION']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.original_4100_selected_pair_universe_required must be True",
+          "name": "guard_guards_original_4100_selected_pair_universe_required",
+          "passed": true
+        },
+        {
+          "detail": "guards.final_3222_analysis_subset_required must be True",
+          "name": "guard_guards_final_3222_analysis_subset_required",
+          "passed": true
+        },
+        {
+          "detail": "guards.technical_or_na_outcome_is_negative must be False",
+          "name": "guard_guards_technical_or_na_outcome_is_negative",
+          "passed": true
+        },
+        {
+          "detail": "guards.outcomes_as_training_labels must be False",
+          "name": "guard_guards_outcomes_as_training_labels",
+          "passed": true
+        },
+        {
+          "detail": "guards.merge_with_negatome must be False",
+          "name": "guard_guards_merge_with_negatome",
+          "passed": true
+        },
+        {
+          "detail": "guards.benchmark_split_construction must be False",
+          "name": "guard_guards_benchmark_split_construction",
+          "passed": true
+        },
+        {
+          "detail": "guards.universal_nonbinding_interpretation must be False",
+          "name": "guard_guards_universal_nonbinding_interpretation",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 21,
+      "path": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "provider_checksum_asset_count": 2,
+      "required_asset_count": 11,
+      "sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "source_key": "lambourne_human_y2h"
+    },
+    {
+      "asset_count": 6,
+      "check_count": 18,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0', 'MIXED-CC-BY-4.0-ALL-RIGHTS-RESERVED', 'MIXED-CC-BY-4.0-MIT', 'UNSPECIFIED-NO-REDISTRIBUTION']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.unreported_pairs_are_negative must be False",
+          "name": "guard_guards_unreported_pairs_are_negative",
+          "passed": true
+        },
+        {
+          "detail": "guards.universal_nonbinding_interpretation must be False",
+          "name": "guard_guards_universal_nonbinding_interpretation",
+          "passed": true
+        },
+        {
+          "detail": "guards.preserve_manual_and_pdb_families_separately must be True",
+          "name": "guard_guards_preserve_manual_and_pdb_families_separately",
+          "passed": true
+        },
+        {
+          "detail": "guards.raw_redistribution_allowed must be False",
+          "name": "guard_guards_raw_redistribution_allowed",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 18,
+      "path": "data/source_manifests/PREACQUISITION_negatome_v1.yaml",
+      "provider_checksum_asset_count": 0,
+      "required_asset_count": 6,
+      "sha256": "98d19bb41a2395f01c08dec7db5fb91c7b2fd09b2572a4dc51f87defc57528b0",
+      "source_key": "negatome"
+    },
+    {
+      "asset_count": 3,
+      "check_count": 17,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0', 'MIXED-CC-BY-4.0-ALL-RIGHTS-RESERVED', 'MIXED-CC-BY-4.0-MIT', 'UNSPECIFIED-NO-REDISTRIBUTION']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.computed_models_allowed must be False",
+          "name": "guard_guards_computed_models_allowed",
+          "passed": true
+        },
+        {
+          "detail": "guards.experimental_entries_only must be True",
+          "name": "guard_guards_experimental_entries_only",
+          "passed": true
+        },
+        {
+          "detail": "guards.interface_must_be_recalculated_from_frozen_coordinates must be True",
+          "name": "guard_guards_interface_must_be_recalculated_from_frozen_coordinates",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 17,
+      "path": "data/source_manifests/PREACQUISITION_pdb_sifts_v2.yaml",
+      "provider_checksum_asset_count": 0,
+      "required_asset_count": 3,
+      "sha256": "ec57aa1b829c3f65ce3e9743d2eb19e3dc72f821dc12535372c09f812f3042ff",
+      "source_key": "pdb_sifts"
+    },
+    {
+      "asset_count": 5,
+      "check_count": 22,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0', 'MIXED-CC-BY-4.0-ALL-RIGHTS-RESERVED', 'MIXED-CC-BY-4.0-MIT', 'UNSPECIFIED-NO-REDISTRIBUTION']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.blank_or_unresolved_outcome_is_negative must be False",
+          "name": "guard_guards_blank_or_unresolved_outcome_is_negative",
+          "passed": true
+        },
+        {
+          "detail": "guards.technical_failure_is_negative must be False",
+          "name": "guard_guards_technical_failure_is_negative",
+          "passed": true
+        },
+        {
+          "detail": "guards.outcomes_as_training_labels must be False",
+          "name": "guard_guards_outcomes_as_training_labels",
+          "passed": true
+        },
+        {
+          "detail": "guards.merge_with_negatome must be False",
+          "name": "guard_guards_merge_with_negatome",
+          "passed": true
+        },
+        {
+          "detail": "guards.benchmark_construction must be False",
+          "name": "guard_guards_benchmark_construction",
+          "passed": true
+        },
+        {
+          "detail": "guards.universal_nonbinding_interpretation must be False",
+          "name": "guard_guards_universal_nonbinding_interpretation",
+          "passed": true
+        },
+        {
+          "detail": "guards.preserve_ad_to_db_orientation must be True",
+          "name": "guard_guards_preserve_ad_to_db_orientation",
+          "passed": true
+        },
+        {
+          "detail": "guards.keep_y2h_and_n2h_separate must be True",
+          "name": "guard_guards_keep_y2h_and_n2h_separate",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 22,
+      "path": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "provider_checksum_asset_count": 2,
+      "required_asset_count": 5,
+      "sha256": "4fd45c6e398fe5fb9dd7543e03767aa892f38cdfdf8cf1a9f34fef990f2804fe",
+      "source_key": "tf_isoform_y2h_2025"
+    },
+    {
+      "asset_count": 5,
+      "check_count": 18,
+      "checks": [
+        {
+          "detail": "schema_version must equal 1",
+          "name": "schema_version",
+          "passed": true
+        },
+        {
+          "detail": "source_key must match index",
+          "name": "source_key",
+          "passed": true
+        },
+        {
+          "detail": "stage must be preacquisition",
+          "name": "stage",
+          "passed": true
+        },
+        {
+          "detail": "approved_for_download must be true",
+          "name": "approved_for_download",
+          "passed": true
+        },
+        {
+          "detail": "source metadata is required",
+          "name": "source_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license metadata is required",
+          "name": "license_mapping",
+          "passed": true
+        },
+        {
+          "detail": "license identifier must be one of ['CC-BY-4.0', 'CC0-1.0', 'MIXED-CC-BY-4.0-ALL-RIGHTS-RESERVED', 'MIXED-CC-BY-4.0-MIT', 'UNSPECIFIED-NO-REDISTRIBUTION']",
+          "name": "license_identifier",
+          "passed": true
+        },
+        {
+          "detail": "an HTTPS license/terms URL is required",
+          "name": "license_terms_https",
+          "passed": true
+        },
+        {
+          "detail": "at least one asset is required",
+          "name": "asset_list",
+          "passed": true
+        },
+        {
+          "detail": "verification metadata is required",
+          "name": "verification_mapping",
+          "passed": true
+        },
+        {
+          "detail": "local SHA-256 calculation must be required",
+          "name": "local_sha256",
+          "passed": true
+        },
+        {
+          "detail": "record-count and schema validation must be required",
+          "name": "record_validation",
+          "passed": true
+        },
+        {
+          "detail": "approved_actions must be non-empty",
+          "name": "approved_actions",
+          "passed": true
+        },
+        {
+          "detail": "prohibited_actions must be non-empty",
+          "name": "prohibited_actions",
+          "passed": true
+        },
+        {
+          "detail": "guards.canonical_and_additional_sequences_kept_separate must be True",
+          "name": "guard_guards_canonical_and_additional_sequences_kept_separate",
+          "passed": true
+        },
+        {
+          "detail": "guards.isoforms_silently_collapsed_to_gene must be False",
+          "name": "guard_guards_isoforms_silently_collapsed_to_gene",
+          "passed": true
+        },
+        {
+          "detail": "guards.current_release_url_accepted_only_with_metalink_verification must be True",
+          "name": "guard_guards_current_release_url_accepted_only_with_metalink_verification",
+          "passed": true
+        },
+        {
+          "detail": "the UniProt release assets must include provider checksums",
+          "name": "provider_checksums",
+          "passed": true
+        }
+      ],
+      "passed_check_count": 18,
+      "path": "data/source_manifests/PREACQUISITION_uniprot_human_v1.yaml",
+      "provider_checksum_asset_count": 4,
+      "required_asset_count": 5,
+      "sha256": "a3bc2c2b2d27df4a1d554dbe3ebc1e7479e1c31d54ac8436ffebc1587fae0bf5",
+      "source_key": "uniprot"
+    }
+  ],
+  "status": "pass",
+  "validated_at_utc": "2026-08-04T19:04:24.421439+00:00",
+  "validation_id": "PREACQ-VALIDATION-002",
+  "warnings": [
+    "huri: provider checksum catalogue unavailable; local SHA-256 is authoritative",
+    "intact_imex: provider checksum catalogue unavailable; local SHA-256 is authoritative",
+    "pdb_sifts: provider checksum catalogue unavailable; local SHA-256 is authoritative",
+    "negatome: provider checksum catalogue unavailable; local SHA-256 is authoritative"
+  ]
+}

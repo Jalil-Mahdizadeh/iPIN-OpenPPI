@@ -1,0 +1,90 @@
+schema_version: 1
+policy_id: SOURCE-POLICY-004
+effective_date: "2026-08-04"
+project: ipin-openppi
+scope: primary_human_evidence_negative_evidence_and_two_bounded_external_y2h_audits
+supersedes: configs/source_policy_v3.yaml
+inherits_unchanged_source_rules_from: configs/source_policy_v3.yaml
+
+global_acquisition_rules:
+  https_only: true
+  raw_payloads_are_immutable: true
+  release_or_snapshot_directory_required: true
+  retrieval_timestamp_utc_required: true
+  response_headers_required: true
+  local_sha256_required: true
+  provider_checksum_verification_required_when_available: true
+  atomic_download_required: true
+  parser_image_digest_required: true
+  parser_commit_required: true
+  schema_and_record_count_report_required: true
+  scientific_downloads_must_run_inside_apptainer: true
+  source_license_review_precedes_download: true
+
+evidence_semantics:
+  primary_object: source_assay_observation
+  preserve_selected_attempted_evaluable_and_outcome_states: true
+  preserve_construct_and_ad_to_db_orientation: true
+  preserve_exact_clone_sequences_and_identifiers: true
+  preserve_assay_species_publication_and_conditions: true
+  blank_unknown_or_technical_state_is_negative: false
+  negative_outcome_is_universal_nonbinding: false
+  y2h_and_n2h_are_distinct_assays: true
+  source_disagreement_must_be_retained: true
+
+source_rules:
+  inherited_sources:
+    policy: configs/source_policy_v3.yaml
+    source_keys: [huri, uniprot, intact_imex, pdb_sifts, negatome, lambourne_human_y2h]
+    semantics_unchanged: true
+  tf_isoform_y2h_2025:
+    source_scope: selected_human_tf_isoform_partner_pairs_assayed_by_pairwise_y2h_with_subset_n2h_validation
+    paper: Lambourne_et_al_Molecular_Cell_2025
+    frozen_reference_release: "UniProt 2026_02"
+    allowed:
+      - immutable_internal_acquisition_of_manifested_assets
+      - provenance_preserving_pair_and_technical_state_audit
+      - exact_construct_and_frozen_reference_mapping
+      - permitted_evidence_and_future_exposure_overlap_audit
+      - matched_isoform_contrast_group_feasibility_counting
+      - protected_external_diagnostic_disposition_assessment
+      - aggregate_scientific_reporting
+    prohibited:
+      - use_outcomes_as_training_labels
+      - merge_outcomes_with_negatome
+      - construct_benchmark_rows_or_splits
+      - train_tune_calibrate_threshold_or_select_models
+      - change_primary_pu_r_design
+      - infer_universal_nonbinding
+      - interpret_blank_unknown_or_technical_failure_as_negative
+      - collapse_y2h_and_n2h_observations
+      - silently_collapse_ad_to_db_orientation_or_construct_identity
+    required:
+      - account_for_all_public_pairwise_y2h_rows
+      - independently_classify_positive_explicit_negative_unknown_autoactivation_mating_expression_and_other_technical_states
+      - test_whether_1260_public_blanks_are_resolvable_from_archived_raw_files
+      - reconstruct_selection_and_analytical_filtering
+      - explain_non_prevalence_representativeness
+      - preserve_exact_clone_sequences_and_source_fields
+      - map_constructs_and_canonical_proteins_to_uniprot_2026_02
+      - audit_exact_pair_endpoint_uniref90_huri_permitted_evidence_and_future_training_exposure
+      - quantify_protected_fixed_partner_isoform_contrast_groups
+      - report_cross_assay_concordance_without_relabelling
+      - fail_closed_on_missing_raw_state_or_indeterminate_redistribution
+      - independent_validation_of_consequential_counts_and_mappings
+
+release_rules:
+  author_hosted_article_pdf: internal_audit_only_no_redistribution
+  zenodo_records_14969075_and_14968584: CC-BY-4.0_with_attribution
+  record_level_derived_release: governance_review_required
+  raw_git_commit: false
+
+authorization_boundary:
+  acquisition_of_manifested_tf_isoform_assets: authorized
+  pair_level_semantics_and_contamination_audit: authorized_after_checksum
+  aggregate_external_diagnostic_disposition: authorized
+  benchmark_integration: not_authorized
+  outcome_label_construction: not_authorized
+  benchmark_construction: not_authorized
+  model_training_tuning_calibration_or_thresholding: not_authorized
+  primary_pu_r_design_change: not_authorized

@@ -1,0 +1,130 @@
+schema_version: 1
+manifest_id: PREACQ-TF-ISOFORM-Y2H-2025-001
+source_key: tf_isoform_y2h_2025
+created_date: "2026-08-04"
+stage: preacquisition
+approved_for_download: true
+
+source:
+  name: Lambourne et al. 2025 human TF-isoform pairwise Y2H panel and N2H validation
+  article_title: Widespread variation in molecular interactions and regulatory properties among transcription factor isoforms
+  article_doi: 10.1016/j.molcel.2025.03.004
+  article_date: "2025-03-26"
+  pmid: "40147441"
+  pmcid: PMC12121496
+  code_version_doi: 10.5281/zenodo.14969075
+  code_version: v2.1.0
+  input_version_doi: 10.5281/zenodo.14968584
+  input_archive_version: v2
+  observed_on: "2026-08-04"
+
+license:
+  identifier: MIXED-CC-BY-4.0-ALL-RIGHTS-RESERVED
+  terms_url: https://zenodo.org/records/14969075
+  zenodo_code_license: CC-BY-4.0
+  zenodo_input_license: CC-BY-4.0
+  article_rights: Copyright_2025_Elsevier_Inc_All_rights_reserved
+  article_internal_audit_only: true
+  attribution_required_for_zenodo_material: true
+  raw_repository_commit: prohibited_by_project_data_policy
+  record_level_derived_release: requires_post_audit_governance_review
+  audit_record: governance/licenses/SOURCE_LICENSE_REGISTER_v7.md
+
+assets:
+  - asset_id: article_methods_pdf
+    url: https://ccsb.dana-farber.org/uploads/7/6/8/6/76866695/widespread_variation_in_molecular_interactions_and_regulatory_properties_among_transcription_factor_isoforms.pdf
+    destination: data/raw/tf_isoform_y2h_2025/article-2025-03-26/lambourne_et_al_2025_author_hosted.pdf
+    format: pdf
+    required: true
+    expected:
+      content_length_bytes: 6697076
+      etag: '"7246fb3771ad1709cdf2cbbac75396c8"'
+      last_modified: "Wed, 26 Mar 2025 16:58:47 GMT"
+      provider_checksum: null
+  - asset_id: zenodo_code_metadata
+    url: https://zenodo.org/api/records/14969075
+    destination: data/raw/tf_isoform_y2h_2025/zenodo/record-14969075-v2.1.0/record_metadata.json
+    format: json
+    required: true
+    expected:
+      content_length_bytes: null
+      etag: null
+      last_modified: null
+      provider_checksum: null
+  - asset_id: zenodo_code_and_supplement_v2_1_0
+    url: https://zenodo.org/api/records/14969075/files/CCSB-DFCI/TF_isoforms_paper-v2.1.0.zip/content
+    destination: data/raw/tf_isoform_y2h_2025/zenodo/record-14969075-v2.1.0/TF_isoforms_paper-v2.1.0.zip
+    format: zip_archive
+    required: true
+    expected:
+      content_length_bytes: 9939666
+      etag: null
+      last_modified: "Tue, 28 Jul 2026 09:22:46 GMT"
+      provider_checksum:
+        algorithm: md5
+        value: b37ea7aa87602527ec6e963e3d2c2c00
+  - asset_id: zenodo_input_metadata
+    url: https://zenodo.org/api/records/14968584
+    destination: data/raw/tf_isoform_y2h_2025/zenodo/record-14968584-v2/record_metadata.json
+    format: json
+    required: true
+    expected:
+      content_length_bytes: null
+      etag: null
+      last_modified: null
+      provider_checksum: null
+  - asset_id: zenodo_input_data_v2
+    url: https://zenodo.org/api/records/14968584/files/TF_isoforms_paper_data_dir_v2.tar.gz/content
+    destination: data/raw/tf_isoform_y2h_2025/zenodo/record-14968584-v2/TF_isoforms_paper_data_dir_v2.tar.gz
+    format: tar_gzip
+    required: true
+    expected:
+      content_length_bytes: 3768481116
+      etag: null
+      last_modified: "Tue, 28 Jul 2026 07:22:55 GMT"
+      provider_checksum:
+        algorithm: md5
+        value: 4a2144e5bc86a840e630518f10ae17b9
+
+verification:
+  calculate_sha256: true
+  verify_provider_checksum: when_available
+  capture_http_headers: true
+  record_count_and_schema_report: required
+  reconcile_clean_pair_table_with_raw_y2h_files: required
+  reconcile_all_1260_blank_rows: required_fail_closed
+  verify_clone_sequences_and_orientation: required
+  keep_y2h_and_n2h_separate: required
+
+guards:
+  blank_or_unresolved_outcome_is_negative: false
+  technical_failure_is_negative: false
+  outcomes_as_training_labels: false
+  merge_with_negatome: false
+  benchmark_construction: false
+  universal_nonbinding_interpretation: false
+  preserve_ad_to_db_orientation: true
+  preserve_construct_and_clone_identity: true
+  keep_y2h_and_n2h_separate: true
+  change_primary_pu_r_design: false
+  return_to_governance_before_any_later_benchmark_protocol: true
+
+known_gaps:
+  - The public clean pairwise table contains 1,260 blank Y2H result cells; resolution depends on archived raw technical-state fields and must fail closed if absent or ambiguous.
+  - The tested panel was conditioned on first-pass discovery by at least one isoform and expanded to cognate isoforms, so it is not prevalence-representative.
+  - The article PDF is public but copyright-restricted; only hashes and original audit prose may enter Git.
+
+approved_actions:
+  - immutable_internal_acquisition
+  - source_representation_and_technical_state_validation
+  - exact_construct_and_frozen_uniprot_mapping
+  - aggregate_contamination_and_matched_contrast_feasibility_audit
+  - governance_disposition_reporting
+prohibited_actions:
+  - use_outcomes_as_training_labels
+  - merge_with_negatome
+  - construct_benchmark_rows_or_splits
+  - train_tune_calibrate_threshold_or_select_models
+  - infer_universal_nonbinding
+  - convert_unresolved_blanks_or_technical_failures_to_negatives
+  - change_primary_pu_r_design

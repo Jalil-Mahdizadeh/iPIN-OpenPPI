@@ -37,6 +37,7 @@ ALLOWED_HOSTS = frozenset(
         "ftp.ebi.ac.uk",
         "www.ebi.ac.uk",
         "mips.helmholtz-muenchen.de",
+        "ccsb.dana-farber.org",
     }
 )
 BLOCK_BYTES = 8 * 1024 * 1024

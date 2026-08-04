@@ -20,11 +20,13 @@ DEFAULT_EXPECTED_SOURCE_KEYS = {"huri", "uniprot", "intact_imex", "pdb_sifts"}
 SUPPORTED_SOURCE_KEYS = DEFAULT_EXPECTED_SOURCE_KEYS | {
     "negatome",
     "lambourne_human_y2h",
+    "tf_isoform_y2h_2025",
 }
 ALLOWED_LICENSES = {
     "CC-BY-4.0",
     "CC0-1.0",
     "MIXED-CC-BY-4.0-MIT",
+    "MIXED-CC-BY-4.0-ALL-RIGHTS-RESERVED",
     "UNSPECIFIED-NO-REDISTRIBUTION",
 }
 
@@ -197,6 +199,16 @@ def validate_manifest(
             (("guards", "merge_with_negatome"), False),
             (("guards", "benchmark_split_construction"), False),
             (("guards", "universal_nonbinding_interpretation"), False),
+        ],
+        "tf_isoform_y2h_2025": [
+            (("guards", "blank_or_unresolved_outcome_is_negative"), False),
+            (("guards", "technical_failure_is_negative"), False),
+            (("guards", "outcomes_as_training_labels"), False),
+            (("guards", "merge_with_negatome"), False),
+            (("guards", "benchmark_construction"), False),
+            (("guards", "universal_nonbinding_interpretation"), False),
+            (("guards", "preserve_ad_to_db_orientation"), True),
+            (("guards", "keep_y2h_and_n2h_separate"), True),
         ],
     }
     for key_path, expected_value in special_expectations[source_key]:

@@ -1,0 +1,84 @@
+schema_version: 14
+supersedes: governance/gates/gate_status_v13.yaml
+updated_date: "2026-08-04"
+programme_state: active_m0_bounded_tf_isoform_y2h_audit
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    production_sif: containers/images/ipin-data-arm64_0.1.2.sif
+    production_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+    architecture: aarch64
+    continuing_condition: every_scientific_operation_runs_through_pinned_apptainer
+  evidence:
+    status: in_progress_bounded_tf_isoform_y2h_semantics_and_contamination_audit
+    accepted_prior_subgates:
+      raw_acquisition: governance/decisions/DEC-0007-accept-primary-raw-acquisition.md
+      source_parsing: governance/decisions/DEC-0008-accept-primary-evidence-staging.md
+      source_reconciliation: governance/decisions/DEC-0009-accept-primary-source-reconciliation.md
+      negative_evidence_discovery: governance/decisions/DEC-0012-accept-negative-evidence-discovery-audit.md
+    lambourne_2026_panel:
+      status: complete_validated_quarantined_no_integration
+      proposal: governance/decisions/DEC-0014-propose-lambourne-panel-disposition.md
+    source_license_subgate:
+      status: pass_for_bounded_acquisition
+      active_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v6.yaml
+      active_policy: configs/source_policy_v4.yaml
+      license_register: governance/licenses/SOURCE_LICENSE_REGISTER_v7.md
+      zenodo_tf_isoform_assets: CC-BY-4.0
+      article_pdf: internal_audit_only_no_redistribution
+    tf_isoform_y2h_2025_subgate:
+      status: authorized_in_progress
+      authorization_decision: governance/decisions/DEC-0015-authorize-tf-isoform-y2h-audit.md
+      source_key: tf_isoform_y2h_2025
+      frozen_uniprot_release: "2026_02"
+      blank_records_reported: 1260
+      raw_technical_state_resolution_required: true
+      exact_construct_and_orientation_required: true
+      y2h_n2h_separation_required: true
+      matched_isoform_contrast_feasibility_only: true
+      outcome_training_label_role_authorized: false
+      merge_with_negatome_authorized: false
+      benchmark_construction_authorized: false
+      model_work_authorized: false
+      universal_nonbinding_interpretation_authorized: false
+    benchmark_eligibility_and_sequence_component_audit:
+      status: paused_not_started
+      prior_authorization: governance/gates/gate_status_v11.yaml
+      resume_after_tf_isoform_audit_commit_and_push: true
+    strict_construct_branch:
+      status: blocked
+      issue: governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md
+    label_construction_authorized: false
+    candidate_pair_materialization_authorized: false
+    structural_mapping_authorized: false
+    model_training_authorized: false
+  benchmark:
+    status: primary_policy_accepted_preconstruction_external_panels_quarantined
+    accepted_policy: configs/benchmark_estimand_policy_v1.yaml
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    output_is_probability: false
+    external_panel_integration_authorized: false
+    split_construction_authorized: false
+    model_implementation_authorized: false
+    model_training_authorized: false
+  statistical: {status: not_started}
+  routing: {status: not_started}
+  retrieval: {status: not_started}
+  uncertainty: {status: not_started}
+  computational_validation: {status: not_started}
+  release: {status: not_started}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_blank_unreported_or_technical_state_as_negative: true
+  merge_external_panels_with_negatome: true
+  external_panel_outcomes_as_training_labels: true
+  y2h_n2h_relabelling: true
+  benchmark_construction: true
+  model_training_tuning_calibration_or_thresholding: true
+  primary_pu_r_design_change: true
+  experimental_validation_claim: true
