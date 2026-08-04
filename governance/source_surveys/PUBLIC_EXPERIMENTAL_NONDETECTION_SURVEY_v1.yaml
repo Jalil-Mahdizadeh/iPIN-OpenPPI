@@ -1,0 +1,161 @@
+schema_version: 1
+survey_id: PUBLIC-EXPERIMENTAL-NONDETECTION-SURVEY-001
+survey_date: "2026-08-04"
+scope: public_protein_pair_attempted_or_evaluable_nondetection_sources
+binding_rule: >-
+  A non-detection is conditional on the reported assay, constructs, orientation,
+  organism, technical-evaluability rules, conditions, and selected population. No
+  surveyed source is evidence of universal nonbinding.
+
+sources:
+  - source_id: negatome_2_0
+    species_scope: multi_species_with_manual_described_as_mammalian
+    evidence_type: manual_experimental_negative_and_structure_noncontact
+    pair_level_outcomes_public: true
+    attempted_state_complete: false
+    evaluability_state_complete: false
+    construct_orientation_conditions_complete: false
+    selection_population_complete: false
+    license_state: database_payload_license_not_stated_internal_only
+    primary_urls:
+      - https://mips.helmholtz-muenchen.de/proj/ppi/negatome/
+      - https://academic.oup.com/nar/article/42/D1/D396/1048129
+    audit_disposition: acquired_and_audited_in_current_work_package
+
+  - source_id: intact_explicit_negative_records_release_252
+    species_scope: human_export_with_some_nonhuman_participants
+    evidence_type: curated_source_asserted_negative_interaction_records
+    pair_level_outcomes_public: true
+    attempted_state_complete: logically_attempted_for_source_asserted_negative
+    evaluability_state_complete: false
+    construct_orientation_conditions_complete: partial
+    selection_population_complete: false
+    license_state: CC-BY-4.0
+    primary_urls:
+      - https://www.ebi.ac.uk/intact/about
+      - https://www.ebi.ac.uk/intact/documentation/user-guide
+    audit_disposition: all_939_frozen_records_audited_in_current_work_package
+
+  - source_id: huri_and_hi_ii_systematic_screens
+    species_scope: human
+    evidence_type: systematic_y2h_positive_maps_and_selected_control_panels
+    pair_level_outcomes_public: selected_panels_only
+    attempted_state_complete: false_for_full_search_space
+    evaluability_state_complete: false_for_full_search_space
+    construct_orientation_conditions_complete: selected_panels_partial
+    selection_population_complete: false_for_full_search_space
+    license_state: mixed_portal_CC-BY-4.0_and_publisher_material_internal_only
+    primary_urls:
+      - https://www.interactome-atlas.org/download
+      - https://www.nature.com/articles/s41586-020-2188-x
+    audit_disposition: >-
+      Full negatives remain unavailable; source-reported 0 outcomes in selected
+      supplementary panels are eligible only for protected conditional diagnostics.
+
+  - source_id: lambourne_2026_human_ai_prediction_y2h_panel
+    species_scope: human
+    evidence_type: selected_AI_predicted_pairs_pairwise_tested_in_Y2H_v1
+    pair_level_outcomes_public: true
+    attempted_state_complete: likely_for_selected_panel_subject_to_file_audit
+    evaluability_state_complete: >-
+      Methods distinguish NA from scored pairs and report sequence confirmation;
+      exact row-level completeness requires acquisition validation.
+    construct_orientation_conditions_complete: partial_with_fixed_bait_prey_protocol
+    selection_population_complete: random_sample_from_prediction_strata_not_proteome_population
+    reported_scale: 4100_sampled_then_3222_retained_against_2025_prediction_release
+    license_state: >-
+      Article and included supplementary material are CC-BY-4.0 unless separately
+      credited; analysis code is MIT. Confirm payload scope in a new preacquisition review.
+    primary_urls:
+      - https://www.nature.com/articles/s41467-026-70942-x
+      - https://github.com/CCSB-DFCI/ai-interactome-experimental-assessment
+      - https://doi.org/10.5281/zenodo.18499797
+      - https://www.ebi.ac.uk/intact/search?query=IM-30553
+    audit_disposition: >-
+      Highest-priority follow-up acquisition candidate for a bounded, selected-panel
+      human PNU assay endpoint; unsuitable for population-negative or universal claims.
+
+  - source_id: lambourne_2026_yeast_validation_and_yeri
+    species_scope: saccharomyces_cerevisiae
+    evidence_type: systematic_Y2H_v4_validation_panels_and_three_full_YeRI_screens
+    pair_level_outcomes_public: validation_panels_true_full_screen_logs_unconfirmed
+    attempted_state_complete: validation_panels_only
+    evaluability_state_complete: validation_panels_partial
+    construct_orientation_conditions_complete: partial
+    selection_population_complete: panels_defined_but_nonhuman
+    reported_scale: 8999_Y2H_v4_validation_pairs_and_1505_AF_RF_pairs
+    license_state: article_CC-BY-4.0_code_MIT_payload_scope_to_verify
+    primary_urls:
+      - https://www.nature.com/articles/s41467-026-70942-x
+      - https://yeast.interactome-atlas.org/
+    audit_disposition: methodological_transfer_candidate_not_primary_human_evidence
+
+  - source_id: trabuco_2012_likely_tested_y2h_negatives
+    species_scope: multiple_species
+    evidence_type: computationally_inferred_likely_tested_but_unobserved_pairs
+    pair_level_outcomes_public: historical_download_claimed
+    attempted_state_complete: inferred_not_directly_logged
+    evaluability_state_complete: false
+    construct_orientation_conditions_complete: partial_bait_prey_only
+    selection_population_complete: inferred_from_viability_and_positive_network
+    license_state: dataset_terms_and_current_download_availability_unresolved
+    primary_urls:
+      - https://doi.org/10.1016/j.ymeth.2012.07.028
+      - http://negatives.russelllab.org/
+    audit_disposition: exclude_from_observed_negative_class_retain_as_inference_only
+
+  - source_id: hsPRS_hsRRS_multi_assay_reference_panels
+    species_scope: human
+    evidence_type: small_selected_positive_and_random_reference_pairs_tested_across_assays
+    pair_level_outcomes_public: true_for_multiple_published_panels
+    attempted_state_complete: true_within_specific_reported_panels
+    evaluability_state_complete: assay_dependent_partial
+    construct_orientation_conditions_complete: comparatively_high_but_study_specific
+    selection_population_complete: selected_reference_sets_not_population_sample
+    license_state: article_CC-BY-4.0_for_2019_multi_assay_study
+    primary_urls:
+      - https://www.nature.com/articles/s41467-019-11809-2
+    audit_disposition: conditional_assay_calibration_and_sensitivity_only
+
+  - source_id: dulip_luthy_and_related_reference_set_benchmarks
+    species_scope: human
+    evidence_type: selected_PRS_and_random_or_negative_reference_panels
+    pair_level_outcomes_public: study_dependent
+    attempted_state_complete: within_selected_panels_when_reported
+    evaluability_state_complete: study_dependent_partial
+    construct_orientation_conditions_complete: study_dependent_partial
+    selection_population_complete: false
+    license_state: requires_study_specific_payload_review
+    primary_urls:
+      - https://doi.org/10.1016/j.jmb.2015.08.003
+      - https://www.embopress.org/doi/full/10.15252/msb.20177576
+    audit_disposition: conditional_control_panels_not_general_negative_sources
+
+  - source_id: positive_only_apms_proximity_and_curated_ppi_maps
+    species_scope: human_and_other
+    evidence_type: detected_edge_or_curated_positive_exports
+    pair_level_outcomes_public: generally_positive_only
+    attempted_state_complete: false_at_specific_pair_level
+    evaluability_state_complete: false_at_specific_pair_level
+    construct_orientation_conditions_complete: not_applicable_or_incomplete
+    selection_population_complete: bait_level_or_study_level_only
+    license_state: source_specific
+    primary_urls:
+      - https://thebiogrid.org/
+      - https://bioplex.hms.harvard.edu/
+      - https://opencell.czbiohub.org/
+    audit_disposition: absence_from_detected_edge_list_is_unlabeled_not_negative
+
+survey_conclusion:
+  complete_public_human_population_attempted_evaluable_universe_found: false
+  current_primary_PNU_calibration_feasible: false
+  source_scoped_conditional_PNU_diagnostics_potentially_feasible: true
+  highest_priority_follow_up: lambourne_2026_human_ai_prediction_y2h_panel
+  required_before_follow_up_use:
+    - new_source_policy_and_preacquisition_manifest
+    - license_and_payload_scope_confirmation
+    - immutable_pair_level_acquisition
+    - attempted_evaluable_NA_and_sequence_confirmation_audit
+    - frozen_human_reference_mapping
+    - current_positive_conflict_and_sampling_selection_audit
+  universal_nonbinding_source_found: false

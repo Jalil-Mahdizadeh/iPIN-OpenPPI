@@ -1,0 +1,382 @@
+schema_name: ipin_openppi_negative_evidence_audit
+schema_version: 1
+description: >-
+  Internal-only, provenance-preserving Negatome and frozen IntAct negative-evidence
+  audit. No row in this contract is a universal nonbinding label.
+
+enums:
+  negatome_dataset: [manual, manual_stringent, pdb, pdb_stringent]
+  evidence_family: [manual_experimental_negative, structure_derived_noncontact]
+  mapping_state:
+    - exact_primary_canonical
+    - exact_isoform
+    - exact_additional_non_isoform
+    - secondary_accession_unique
+    - canonical_isoform1_alias
+    - ambiguous_frozen_accession
+    - not_in_frozen_human_reference
+  mapping_confidence:
+    - A_exact_frozen_identifier
+    - B_unique_frozen_secondary_accession
+    - C_canonical_isoform1_alias
+    - D_unmapped_or_ambiguous
+  pair_mapping_state: [both_unique_human, one_unique_human, neither_unique_human]
+  reliability_tier: [ME-1, ME-2, SN-1, SN-2, MX]
+
+tables:
+  negatome_source_records:
+    description: One row per physical data row in each of the four Negatome files.
+    required_non_null:
+      - source_record_id
+      - parent_record_id
+      - source_dataset
+      - evidence_family
+      - parent_dataset
+      - source_record_ordinal
+      - source_accession_a
+      - source_accession_b
+      - source_base_accession_a
+      - source_base_accession_b
+      - publication_ids
+      - pdb_ids
+      - assay_text
+      - orientation_state
+      - attempted_state
+      - evaluability_state
+      - technical_state
+      - observation_state
+      - stringent_file
+      - raw_file_path
+      - raw_file_sha256
+      - raw_locator
+      - license_id
+      - redistribution_tier
+      - universal_nonbinding_asserted
+      - label_authorized
+      - source_fields_json
+      - missingness_json
+    enum_columns:
+      source_dataset: negatome_dataset
+      evidence_family: evidence_family
+    columns:
+      - {name: source_record_id, type: string, nullable: false}
+      - {name: parent_record_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: evidence_family, type: string, nullable: false}
+      - {name: parent_dataset, type: string, nullable: false}
+      - {name: source_record_ordinal, type: int64, nullable: false}
+      - {name: source_accession_a, type: string, nullable: false}
+      - {name: source_accession_b, type: string, nullable: false}
+      - {name: source_base_accession_a, type: string, nullable: false}
+      - {name: source_base_accession_b, type: string, nullable: false}
+      - {name: source_isoform_id_a, type: string, nullable: true}
+      - {name: source_isoform_id_b, type: string, nullable: true}
+      - {name: publication_ids, type: "list<string>", nullable: false}
+      - {name: pdb_ids, type: "list<string>", nullable: false}
+      - {name: assay_mi_ac, type: string, nullable: true}
+      - {name: assay_text, type: string, nullable: false}
+      - {name: construct_a_json, type: string, nullable: true}
+      - {name: construct_b_json, type: string, nullable: true}
+      - {name: orientation_a, type: string, nullable: true}
+      - {name: orientation_b, type: string, nullable: true}
+      - {name: orientation_state, type: string, nullable: false}
+      - {name: source_taxid_a, type: int64, nullable: true}
+      - {name: source_taxid_b, type: int64, nullable: true}
+      - {name: source_species_name_a, type: string, nullable: true}
+      - {name: source_species_name_b, type: string, nullable: true}
+      - {name: experimental_conditions_json, type: string, nullable: true}
+      - {name: attempted_state, type: string, nullable: false}
+      - {name: evaluability_state, type: string, nullable: false}
+      - {name: technical_state, type: string, nullable: false}
+      - {name: observation_state, type: string, nullable: false}
+      - {name: stringent_file, type: bool, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: license_id, type: string, nullable: false}
+      - {name: redistribution_tier, type: string, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: source_fields_json, type: string, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  negatome_participant_mappings:
+    description: One frozen-reference mapping result per participant of each parent record.
+    required_non_null:
+      - mapping_record_id
+      - parent_record_id
+      - evidence_family
+      - participant_ordinal
+      - source_accession
+      - source_base_accession
+      - mapping_state
+      - mapping_confidence
+      - mapping_basis
+      - mapping_candidate_count
+      - candidate_sequence_ids
+      - candidate_sequence_sha256s
+      - candidate_uniprot_accessions
+      - organism_state
+      - reference_sequence_usable
+      - exact_unique_mapping
+      - construct_confidence
+      - frozen_uniprot_release
+      - reference_raw_file_paths
+      - reference_raw_file_sha256s
+      - universal_nonbinding_asserted
+      - label_authorized
+      - missingness_json
+    enum_columns:
+      evidence_family: evidence_family
+      mapping_state: mapping_state
+      mapping_confidence: mapping_confidence
+    columns:
+      - {name: mapping_record_id, type: string, nullable: false}
+      - {name: parent_record_id, type: string, nullable: false}
+      - {name: evidence_family, type: string, nullable: false}
+      - {name: participant_ordinal, type: int32, nullable: false}
+      - {name: source_accession, type: string, nullable: false}
+      - {name: source_base_accession, type: string, nullable: false}
+      - {name: source_isoform_id, type: string, nullable: true}
+      - {name: mapping_state, type: string, nullable: false}
+      - {name: mapping_confidence, type: string, nullable: false}
+      - {name: mapping_basis, type: string, nullable: false}
+      - {name: mapping_candidate_count, type: int32, nullable: false}
+      - {name: candidate_sequence_ids, type: "list<string>", nullable: false}
+      - {name: candidate_sequence_sha256s, type: "list<string>", nullable: false}
+      - {name: candidate_uniprot_accessions, type: "list<string>", nullable: false}
+      - {name: mapped_sequence_id, type: string, nullable: true}
+      - {name: mapped_uniprot_accession, type: string, nullable: true}
+      - {name: mapped_isoform_id, type: string, nullable: true}
+      - {name: mapped_sequence_sha256, type: string, nullable: true}
+      - {name: mapped_sequence_length, type: int64, nullable: true}
+      - {name: mapped_sequence_view, type: string, nullable: true}
+      - {name: mapped_sequence_version, type: int32, nullable: true}
+      - {name: mapped_entry_version, type: int32, nullable: true}
+      - {name: mapped_taxid, type: int64, nullable: true}
+      - {name: mapped_species_name, type: string, nullable: true}
+      - {name: organism_state, type: string, nullable: false}
+      - {name: isoform_mapping_state, type: string, nullable: true}
+      - {name: reference_sequence_usable, type: bool, nullable: false}
+      - {name: exact_unique_mapping, type: bool, nullable: false}
+      - {name: construct_confidence, type: string, nullable: false}
+      - {name: construct_sequence_sha256, type: string, nullable: true}
+      - {name: construct_start, type: int64, nullable: true}
+      - {name: construct_end, type: int64, nullable: true}
+      - {name: frozen_uniprot_release, type: string, nullable: false}
+      - {name: reference_raw_file_paths, type: "list<string>", nullable: false}
+      - {name: reference_raw_file_sha256s, type: "list<string>", nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  negatome_record_audit:
+    description: One canonical audit row per complete Manual or PDB parent record.
+    required_non_null:
+      - audit_record_id
+      - parent_record_id
+      - evidence_family
+      - parent_dataset
+      - parent_record_ordinal
+      - source_accession_a
+      - source_accession_b
+      - publication_ids
+      - pdb_ids
+      - assay_text
+      - stringent_member
+      - pair_mapping_state
+      - mapping_confidence_a
+      - mapping_confidence_b
+      - reference_pair_usable
+      - positive_check_performed
+      - qualifying_direct_positive_evidence_count
+      - broader_intact_positive_evidence_count
+      - permitted_positive_pair_view_count
+      - current_positive_conflict
+      - positive_conflict_overlays
+      - positive_source_keys
+      - positive_source_datasets
+      - positive_interaction_semantics
+      - positive_detection_methods
+      - intact_negative_check_performed
+      - intact_exact_ordered_source_pair_count
+      - intact_exact_unordered_source_pair_count
+      - intact_frozen_sequence_pair_count
+      - intact_negative_overlap_count
+      - intact_negative_evidence_ids
+      - reliability_tier
+      - effective_tier
+      - permitted_role
+      - attempted_state
+      - evaluability_state
+      - technical_state
+      - observation_state
+      - missing_provenance_fields
+      - universal_nonbinding_asserted
+      - label_authorized
+    enum_columns:
+      evidence_family: evidence_family
+      pair_mapping_state: pair_mapping_state
+      mapping_confidence_a: mapping_confidence
+      mapping_confidence_b: mapping_confidence
+      reliability_tier: reliability_tier
+    columns:
+      - {name: audit_record_id, type: string, nullable: false}
+      - {name: parent_record_id, type: string, nullable: false}
+      - {name: evidence_family, type: string, nullable: false}
+      - {name: parent_dataset, type: string, nullable: false}
+      - {name: parent_record_ordinal, type: int64, nullable: false}
+      - {name: source_accession_a, type: string, nullable: false}
+      - {name: source_accession_b, type: string, nullable: false}
+      - {name: source_isoform_id_a, type: string, nullable: true}
+      - {name: source_isoform_id_b, type: string, nullable: true}
+      - {name: publication_ids, type: "list<string>", nullable: false}
+      - {name: pdb_ids, type: "list<string>", nullable: false}
+      - {name: assay_mi_ac, type: string, nullable: true}
+      - {name: assay_text, type: string, nullable: false}
+      - {name: stringent_member, type: bool, nullable: false}
+      - {name: stringent_source_record_id, type: string, nullable: true}
+      - {name: pair_mapping_state, type: string, nullable: false}
+      - {name: mapping_state_a, type: string, nullable: false}
+      - {name: mapping_state_b, type: string, nullable: false}
+      - {name: mapping_confidence_a, type: string, nullable: false}
+      - {name: mapping_confidence_b, type: string, nullable: false}
+      - {name: mapped_uniprot_accession_a, type: string, nullable: true}
+      - {name: mapped_uniprot_accession_b, type: string, nullable: true}
+      - {name: mapped_isoform_id_a, type: string, nullable: true}
+      - {name: mapped_isoform_id_b, type: string, nullable: true}
+      - {name: mapped_sequence_sha256_a, type: string, nullable: true}
+      - {name: mapped_sequence_sha256_b, type: string, nullable: true}
+      - {name: mapped_unordered_sequence_pair_id, type: string, nullable: true}
+      - {name: source_unordered_accession_pair_id, type: string, nullable: false}
+      - {name: reference_pair_usable, type: bool, nullable: false}
+      - {name: positive_check_performed, type: bool, nullable: false}
+      - {name: qualifying_direct_positive_evidence_count, type: int64, nullable: false}
+      - {name: broader_intact_positive_evidence_count, type: int64, nullable: false}
+      - {name: permitted_positive_pair_view_count, type: int64, nullable: false}
+      - {name: current_positive_conflict, type: bool, nullable: false}
+      - {name: positive_conflict_overlays, type: "list<string>", nullable: false}
+      - {name: positive_source_keys, type: "list<string>", nullable: false}
+      - {name: positive_source_datasets, type: "list<string>", nullable: false}
+      - {name: positive_interaction_semantics, type: "list<string>", nullable: false}
+      - {name: positive_detection_methods, type: "list<string>", nullable: false}
+      - {name: intact_negative_check_performed, type: bool, nullable: false}
+      - {name: intact_exact_ordered_source_pair_count, type: int64, nullable: false}
+      - {name: intact_exact_unordered_source_pair_count, type: int64, nullable: false}
+      - {name: intact_frozen_sequence_pair_count, type: int64, nullable: false}
+      - {name: intact_negative_overlap_count, type: int64, nullable: false}
+      - {name: intact_negative_evidence_ids, type: "list<string>", nullable: false}
+      - {name: reliability_tier, type: string, nullable: false}
+      - {name: effective_tier, type: string, nullable: false}
+      - {name: permitted_role, type: string, nullable: false}
+      - {name: construct_a_json, type: string, nullable: true}
+      - {name: construct_b_json, type: string, nullable: true}
+      - {name: orientation_a, type: string, nullable: true}
+      - {name: orientation_b, type: string, nullable: true}
+      - {name: source_taxid_a, type: int64, nullable: true}
+      - {name: source_taxid_b, type: int64, nullable: true}
+      - {name: source_species_name_a, type: string, nullable: true}
+      - {name: source_species_name_b, type: string, nullable: true}
+      - {name: experimental_conditions_json, type: string, nullable: true}
+      - {name: attempted_state, type: string, nullable: false}
+      - {name: evaluability_state, type: string, nullable: false}
+      - {name: technical_state, type: string, nullable: false}
+      - {name: observation_state, type: string, nullable: false}
+      - {name: missing_provenance_fields, type: "list<string>", nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+
+  intact_negative_record_audit:
+    description: One audit row for each of the 939 frozen IntAct negative records.
+    required_non_null:
+      - audit_record_id
+      - evidence_id
+      - source_record_id
+      - publication_ids
+      - participant_count
+      - original_nary
+      - interaction_semantics
+      - attempted_state
+      - evaluability_state
+      - technical_state
+      - observation_state
+      - orientation_semantics
+      - reference_pair_usable
+      - negatome_exact_ordered_source_pair_count
+      - negatome_exact_unordered_source_pair_count
+      - negatome_frozen_sequence_pair_count
+      - negatome_overlap_count
+      - negatome_parent_record_ids
+      - negatome_evidence_families
+      - universal_nonbinding_asserted
+      - label_authorized
+      - context_json
+      - missingness_json
+    columns:
+      - {name: audit_record_id, type: string, nullable: false}
+      - {name: evidence_id, type: string, nullable: false}
+      - {name: source_record_id, type: string, nullable: false}
+      - {name: publication_ids, type: "list<string>", nullable: false}
+      - {name: participant_count, type: int32, nullable: false}
+      - {name: original_nary, type: bool, nullable: false}
+      - {name: interaction_semantics, type: string, nullable: false}
+      - {name: detection_method_ac, type: string, nullable: true}
+      - {name: detection_method_name, type: string, nullable: true}
+      - {name: host_taxid, type: int64, nullable: true}
+      - {name: host_name, type: string, nullable: true}
+      - {name: attempted_state, type: string, nullable: false}
+      - {name: evaluability_state, type: string, nullable: false}
+      - {name: technical_state, type: string, nullable: false}
+      - {name: observation_state, type: string, nullable: false}
+      - {name: orientation_semantics, type: string, nullable: false}
+      - {name: source_accession_a, type: string, nullable: true}
+      - {name: source_accession_b, type: string, nullable: true}
+      - {name: participant_taxid_a, type: int64, nullable: true}
+      - {name: participant_taxid_b, type: int64, nullable: true}
+      - {name: orientation_a, type: string, nullable: true}
+      - {name: orientation_b, type: string, nullable: true}
+      - {name: mapped_uniprot_accession_a, type: string, nullable: true}
+      - {name: mapped_uniprot_accession_b, type: string, nullable: true}
+      - {name: mapped_isoform_id_a, type: string, nullable: true}
+      - {name: mapped_isoform_id_b, type: string, nullable: true}
+      - {name: mapped_sequence_sha256_a, type: string, nullable: true}
+      - {name: mapped_sequence_sha256_b, type: string, nullable: true}
+      - {name: mapped_unordered_sequence_pair_id, type: string, nullable: true}
+      - {name: reference_pair_usable, type: bool, nullable: false}
+      - {name: negatome_exact_ordered_source_pair_count, type: int64, nullable: false}
+      - {name: negatome_exact_unordered_source_pair_count, type: int64, nullable: false}
+      - {name: negatome_frozen_sequence_pair_count, type: int64, nullable: false}
+      - {name: negatome_overlap_count, type: int64, nullable: false}
+      - {name: negatome_parent_record_ids, type: "list<string>", nullable: false}
+      - {name: negatome_evidence_families, type: "list<string>", nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}
+      - {name: context_json, type: string, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  negatome_intact_negative_overlaps:
+    description: Exact auditable links between a Negatome parent record and IntAct negative record.
+    required_non_null:
+      - overlap_id
+      - parent_record_id
+      - evidence_family
+      - intact_evidence_id
+      - match_bases
+      - exact_ordered_source_pair
+      - exact_unordered_source_pair
+      - frozen_sequence_pair
+      - universal_nonbinding_asserted
+      - label_authorized
+    enum_columns:
+      evidence_family: evidence_family
+    columns:
+      - {name: overlap_id, type: string, nullable: false}
+      - {name: parent_record_id, type: string, nullable: false}
+      - {name: evidence_family, type: string, nullable: false}
+      - {name: intact_evidence_id, type: string, nullable: false}
+      - {name: match_bases, type: "list<string>", nullable: false}
+      - {name: exact_ordered_source_pair, type: bool, nullable: false}
+      - {name: exact_unordered_source_pair, type: bool, nullable: false}
+      - {name: frozen_sequence_pair, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: label_authorized, type: bool, nullable: false}

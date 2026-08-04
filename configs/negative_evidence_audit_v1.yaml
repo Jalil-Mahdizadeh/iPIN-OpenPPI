@@ -1,0 +1,157 @@
+schema_version: 1
+audit_id: NEGATIVE-EVIDENCE-AUDIT-001
+audit_version: 1.0.0
+task: negative_evidence_discovery_audit_v1
+status: authorized_by_blueprint_amendment_001
+
+runtime:
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  architecture: aarch64
+  duckdb_memory_limit: 12GB
+  duckdb_threads: 4
+  parquet_batch_rows: 50000
+  parquet_compression: zstd
+  parquet_compression_level: 6
+
+inputs:
+  negative_acquisition_manifest: data/source_manifests/acquisitions/negative-evidence-v1-20260804T074800Z/ACQUISITION_MANIFEST.json
+  negative_acquisition_manifest_sha256: c628c960590b046293f286038574138fda2d4ecfd5b351e15d8dc21b65151dc5
+  negative_raw_verification_report: artifacts/validation/source_acquisition/raw_verification_negative_evidence_v1.json
+  negative_raw_verification_report_sha256: 2a18393601997da4e662adb0a2c6739dbe734d4214df7551861fdc822ed31d0e
+  primary_parse_manifest: data/staging/primary_sources_v1/PARSE_MANIFEST.json
+  primary_parse_manifest_sha256: ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa
+  primary_staging_validation_report: artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json
+  primary_staging_validation_report_sha256: 375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba
+  primary_reconciliation_manifest: data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json
+  primary_reconciliation_manifest_sha256: 6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932
+  primary_reconciliation_validation_report: artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json
+  primary_reconciliation_validation_report_sha256: 9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2
+  source_policy: configs/source_policy_v2.yaml
+  source_policy_sha256: ecb92f21880584de506410a0820652cc22832184851810a1d1518353090f16e7
+  benchmark_estimand_policy: configs/benchmark_estimand_policy_v1.yaml
+  benchmark_estimand_policy_sha256: 3340b6b9e4130d8011b43ccf92556d59f9278a89a05b08b4c6581ec8b311164d
+  audit_schema: schemas/canonical/negative_evidence_audit_v1.yaml
+  audit_schema_sha256: 7775e7c40146a14e6393180339d8c8f84669de3bb909338e7c03b849ff3900a3
+  source_survey: governance/source_surveys/PUBLIC_EXPERIMENTAL_NONDETECTION_SURVEY_v1.yaml
+  source_survey_sha256: 1cc610c6d7c3550751c2d086b248db46ba8137fc114c39afa3aabc77c2bfca2a
+  frozen_uniprot_dat: data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.dat.gz
+  frozen_uniprot_dat_sha256: 8157caae64bf8382b7afccee30863f060e858dab6862dad3e15af0d20047a7b0
+  frozen_uniprot_release: "2026_02"
+  frozen_taxid: 9606
+  paths:
+    protein_sequences: data/staging/primary_sources_v1/uniprot/protein_sequences
+    identifier_mappings: data/staging/primary_sources_v1/uniprot/identifier_mappings
+    huri_evidence: data/staging/primary_sources_v1/huri/evidence_records
+    huri_pair_views: data/staging/primary_sources_v1/huri/source_pair_views
+    intact_evidence: data/staging/primary_sources_v1/intact_imex/evidence_records
+    intact_participants: data/staging/primary_sources_v1/intact_imex/participants
+    participant_sequence_mappings: data/canonical/primary_reconciliation_v1/participant_sequence_mappings
+    evidence_mapping_summaries: data/canonical/primary_reconciliation_v1/evidence_mapping_summaries
+
+raw_assets:
+  manual: negatome_manual
+  manual_stringent: negatome_manual_stringent
+  pdb: negatome_pdb
+  pdb_stringent: negatome_pdb_stringent
+
+expected:
+  source_rows:
+    manual: 2171
+    manual_stringent: 1991
+    pdb: 4397
+    pdb_stringent: 4161
+  parent_records:
+    manual: 2171
+    pdb: 4397
+    total: 6568
+  participant_mapping_rows: 13136
+  intact_negative_records: 939
+  frozen_uniprot_release: "2026_02"
+  frozen_taxid: 9606
+
+mapping_policy:
+  ordered_routes:
+    - exact_primary_canonical
+    - exact_isoform
+    - exact_additional_non_isoform
+    - secondary_accession_unique
+    - canonical_isoform1_alias
+  source_isoform_suffix_preserved: true
+  secondary_accessions_from_frozen_dat: true
+  unresolved_accession_taxon_state: unknown_not_in_frozen_human_reference
+  source_sequence_available: false
+  exact_construct_mapping_possible: false
+  exact_unique_mapping_states:
+    - exact_primary_canonical
+    - exact_isoform
+    - exact_additional_non_isoform
+    - secondary_accession_unique
+    - canonical_isoform1_alias
+
+positive_conflict_policy:
+  evidence_sources: [huri, intact_imex]
+  require_binary_two_human_reference_pair: true
+  require_original_nary_false: true
+  require_expanded_projection_false: true
+  qualifying_direct_interaction_semantics: [direct_binary]
+  broader_intact_positive_semantics:
+    - physical_association
+    - association
+    - functional_association
+    - direct_within_complex
+    - unknown
+  permitted_pair_views: [HuRI, HI-II-14, Lit-BM, Test_space_screens-19]
+  pair_view_mapping: unique_Ensembl_gene_to_one_frozen_canonical_sequence_hash
+  direct_conflict_overlay: CF-D
+  broader_conflict_overlay: CF-B
+  any_current_positive_conflict_overlay: CF
+
+negative_overlap_policy:
+  intact_observation_state: negative
+  exact_source_match: ordered_and_unordered_primary_accession_text
+  frozen_pair_match: unordered_frozen_sequence_sha256_pair
+  enumerate_all_939_records: true
+  nary_and_unmapped_records_retained: true
+
+reliability_policy:
+  ME-1: manual_stringent_both_unique_human_without_current_direct_positive
+  ME-2: other_both_unique_human_manual_or_direct_conflicted_manual
+  SN-1: pdb_stringent_both_unique_human
+  SN-2: other_both_unique_human_pdb
+  MX: missing_ambiguous_or_nonhuman_frozen_mapping
+  conflict_is_overlay_not_row_deletion: true
+  historical_stringency_is_not_current_conflict_clearance: true
+  universal_nonbinding_class: prohibited
+
+pnu_feasibility_policy:
+  minimum_conditional_records_per_stratum: 100
+  minimum_independent_publications_per_manual_stratum: 10
+  require_known_selected_population_for_calibration: true
+  require_pair_level_attempted_state_for_calibration: true
+  require_pair_level_evaluability_state_for_calibration: true
+  require_source_assay_and_selection_stratification: true
+  structure_noncontacts_may_join_manual_negative_class: false
+  primary_population_PNU_allowed: false
+  conditional_diagnostic_PNU_may_be_assessed: true
+
+outputs:
+  staging_root: data/staging/negative_evidence_v1
+  canonical_root: data/canonical/negative_evidence_audit_v1
+  audit_report: artifacts/validation/negative_evidence/negative_evidence_audit_v1/AUDIT_REPORT.json
+  validation_report: artifacts/validation/negative_evidence/negative_evidence_audit_v1/VALIDATION_REPORT.json
+
+authorization:
+  provenance_preserving_parsing: true
+  frozen_reference_mapping: true
+  positive_and_negative_reconciliation: true
+  reliability_tier_assignment: true
+  aggregate_feasibility_reporting: true
+  record_level_redistribution: false
+  universal_negative_label: false
+  candidate_pair_materialization: false
+  evidence_indicator_construction: false
+  label_construction: false
+  split_construction: false
+  model_implementation: false
+  model_training: false
