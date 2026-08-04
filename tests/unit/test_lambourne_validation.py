@@ -6,6 +6,7 @@ import pytest
 from ipin_openppi.validation.lambourne import (
     _read_unique_zip_member,
     contains_record_level_report_keys,
+    independent_orf_id,
     independent_raw_outcome,
 )
 
@@ -14,6 +15,11 @@ def test_independent_validator_preserves_technical_states() -> None:
     assert independent_raw_outcome(0, None, 0) == "Failed sequence confirmation"
     assert independent_raw_outcome(0, None, 1) == "Negative"
     assert independent_raw_outcome(None, None, None) == "Test failed"
+
+
+@pytest.mark.parametrize(("value", "expected"), [(123, "123"), (123.0, "123"), ("123.0", "123")])
+def test_independent_orf_identifier_normalization(value, expected: str) -> None:
+    assert independent_orf_id(value) == expected
 
 
 def test_aggregate_report_record_key_guard_is_recursive() -> None:

@@ -86,6 +86,19 @@ def _read_unique_zip_member(archive: zipfile.ZipFile, suffix: str) -> bytes:
     return archive.read(names[0])
 
 
+def independent_orf_id(value: Any) -> str:
+    if value is None or pd.isna(value):
+        raise ValueError("Missing ORF identifier in independent validator")
+    if isinstance(value, float) and value.is_integer():
+        return str(int(value))
+    token = str(value).strip()
+    if token.endswith(".0") and token[:-2].isdigit():
+        token = token[:-2]
+    if not token:
+        raise ValueError("Empty ORF identifier in independent validator")
+    return token
+
+
 def _load_json(path: Path) -> dict[str, Any]:
     value = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(value, dict):
@@ -230,6 +243,14 @@ def _independent_source_metrics(
         )
     paper_asset = assets[str(raw_assets["supplementary_data_22"])]
     paper = pd.read_excel(paper_asset.path, sheet_name="Supplementary_Data_22")
+    for column in ("AD_CCSB_ORF_ID", "DB_CCSB_ORF_ID"):
+        paper[column] = paper[column].map(independent_orf_id)
+    for column in ("ad_orf_id", "db_orf_id"):
+        raw[column] = raw[column].map(independent_orf_id)
+    paper["source_dataset"] = paper["source_dataset"].map(
+        lambda value: str(value).strip()
+    )
+    raw["category"] = raw["category"].map(lambda value: str(value).strip())
     raw["independent_outcome"] = [
         independent_raw_outcome(row.final_score, row.seq_confirmation_final_3at, row.seq_confirmation_final_lw)
         for row in raw.itertuples(index=False)
