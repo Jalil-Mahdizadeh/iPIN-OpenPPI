@@ -11,6 +11,7 @@ import json
 import os
 import platform
 import shutil
+import ssl
 import stat
 import subprocess
 import sys
@@ -33,11 +34,22 @@ ALLOWED_HOSTS = frozenset(
         "media.springernature.com",
         "ftp.uniprot.org",
         "ftp.ebi.ac.uk",
+        "mips.helmholtz-muenchen.de",
     }
 )
 BLOCK_BYTES = 8 * 1024 * 1024
 PROGRESS_BYTES = 256 * 1024 * 1024
 MINIMUM_FREE_BYTES = 5 * 1024 * 1024 * 1024
+ADDITIONAL_CA_CERTIFICATES = {
+    "mips.helmholtz-muenchen.de": {
+        "path": "governance/provenance/tls/HARICA-GEANT-TLS-R1.pem",
+        "pem_sha256": "cdc78c3185ce918c8e87f9b2559197d641288e564c5a8b789cd796abdea298d4",
+        "der_fingerprint_sha256": (
+            "5b678dc44095a52895b63b31f27227f4b36c3e347491bf2bfa691837a5fb8c79"
+        ),
+        "source_url": "https://repo.harica.gr/certs/HARICA-GEANT-TLS-R1.der",
+    }
+}
 
 
 class AcquisitionError(RuntimeError):
@@ -134,6 +146,40 @@ def validate_url(url: str) -> None:
         raise AcquisitionError(f"source host is not whitelisted: {parsed.hostname}")
     if parsed.username or parsed.password:
         raise AcquisitionError("credentials in source URLs are prohibited")
+
+
+def build_https_opener(
+    repo_root: Path, url: str
+) -> tuple[urllib.request.OpenerDirector, dict[str, Any]]:
+    hostname = (urllib.parse.urlparse(url).hostname or "").lower()
+    context = ssl.create_default_context()
+    tls_record: dict[str, Any] = {
+        "hostname_verification": True,
+        "certificate_verification": True,
+        "insecure_mode": False,
+        "additional_ca_certificate": None,
+    }
+    certificate = ADDITIONAL_CA_CERTIFICATES.get(hostname)
+    if certificate is not None:
+        certificate_path = relative_file(repo_root, str(certificate["path"]))
+        observed_sha256 = sha256_file(certificate_path)
+        if observed_sha256 != certificate["pem_sha256"]:
+            raise AcquisitionError(
+                f"additional CA certificate hash mismatch for {hostname}: {observed_sha256}"
+            )
+        context.load_verify_locations(cafile=str(certificate_path))
+        tls_record.update(
+            {
+                "additional_ca_certificate": str(certificate_path.relative_to(repo_root)),
+                "additional_ca_pem_sha256": observed_sha256,
+                "additional_ca_der_fingerprint_sha256": certificate[
+                    "der_fingerprint_sha256"
+                ],
+                "additional_ca_source_url": certificate["source_url"],
+            }
+        )
+    opener = urllib.request.build_opener(urllib.request.HTTPSHandler(context=context))
+    return opener, tls_record
 
 
 def git_identity(repo_root: Path) -> dict[str, Any]:
@@ -392,6 +438,7 @@ def acquire_asset(
         print(json.dumps({"event": "reuse", "asset": asset["asset_id"]}), flush=True)
         return reused
 
+    opener, tls_record = build_https_opener(repo_root, url)
     provider_checksum = asset.get("expected", {}).get("provider_checksum")
     provider_algorithm = provider_checksum.get("algorithm") if isinstance(provider_checksum, dict) else None
     provider_expected = provider_checksum.get("value") if isinstance(provider_checksum, dict) else None
@@ -412,7 +459,7 @@ def acquire_asset(
                 method="GET",
             )
             acquired_at = utc_now()
-            with urllib.request.urlopen(request, timeout=timeout_seconds) as response:
+            with opener.open(request, timeout=timeout_seconds) as response:
                 observed = response_metadata(response)
                 verify_response_metadata(asset.get("expected", {}), observed)
                 with os.fdopen(descriptor, "wb") as handle:
@@ -456,6 +503,7 @@ def acquire_asset(
                     "observed": provider_observed,
                     "passed": provider_expected is None or provider_observed == str(provider_expected).lower(),
                 },
+                "tls": tls_record,
                 "response": observed,
                 "format_inspection": inspection,
                 "run_disposition": "downloaded_new",

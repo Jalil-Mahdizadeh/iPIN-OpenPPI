@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from acquire_manifest_assets import build_https_opener
 
 
 def load_yaml(path: Path) -> dict[str, Any]:
@@ -33,7 +34,8 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
-def head(url: str, timeout_seconds: float) -> dict[str, Any]:
+def head(repo_root: Path, url: str, timeout_seconds: float) -> dict[str, Any]:
+    opener, tls_record = build_https_opener(repo_root, url)
     request = urllib.request.Request(
         url,
         headers={
@@ -42,7 +44,7 @@ def head(url: str, timeout_seconds: float) -> dict[str, Any]:
         },
         method="HEAD",
     )
-    with urllib.request.urlopen(request, timeout=timeout_seconds) as response:
+    with opener.open(request, timeout=timeout_seconds) as response:
         headers = response.headers
         return {
             "http_status": getattr(response, "status", None),
@@ -52,6 +54,7 @@ def head(url: str, timeout_seconds: float) -> dict[str, Any]:
             "etag": headers.get("ETag"),
             "last_modified": headers.get("Last-Modified"),
             "accept_ranges": headers.get("Accept-Ranges"),
+            "tls": tls_record,
         }
 
 
@@ -137,7 +140,7 @@ def main() -> int:
                 "required": required,
             }
             try:
-                observed = head(asset["url"], args.timeout_seconds)
+                observed = head(repo_root, asset["url"], args.timeout_seconds)
                 checks = comparison_checks(asset.get("expected", {}), observed)
                 record["observed"] = observed
                 record["checks"] = checks

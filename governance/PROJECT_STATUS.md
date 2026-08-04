@@ -1,8 +1,13 @@
-# iPIN-OpenPPI project status and restart checkpoint
+# iPIN-OpenPPI historical restart checkpoint
 
 **Checkpoint date:** 2026-08-03
 **Execution environment:** NAISS Arrhenius; project computation must run through pinned ARM64 Apptainer images
 **Scientific programme state:** Systematic-screen audit validated; PU benchmark amendment proposed and awaiting expert-group approval
+
+> **Superseded on 2026-08-04.** The current restart checkpoint is
+> `governance/PROJECT_STATUS_v10.md`; the current authoritative gate is
+> `governance/gates/gate_status_v10.yaml`. The text below is retained only as
+> immutable evidence of the pre-acceptance pause.
 
 This file is the durable restart checkpoint. The authoritative gate details remain in
 `governance/gates/gate_status_v9.yaml` and its cited decisions and evidence.

@@ -1,0 +1,81 @@
+schema_version: 10
+supersedes: governance/gates/gate_status_v9.yaml
+updated_date: "2026-08-04"
+programme_state: active_m0_negative_evidence_discovery_audit_authorized
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    production_sif: containers/images/ipin-data-arm64_0.1.2.sif
+    production_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+    architecture: aarch64
+    continuing_condition: every_later_image_requires_regression_qualification
+  evidence:
+    status: in_progress
+    accepted_prior_subgates:
+      raw_acquisition: governance/decisions/DEC-0007-accept-primary-raw-acquisition.md
+      source_parsing: governance/decisions/DEC-0008-accept-primary-evidence-staging.md
+      source_reconciliation: governance/decisions/DEC-0009-accept-primary-source-reconciliation.md
+      systematic_screen_audit: artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json
+      proposal_consistency: artifacts/validation/benchmark_design/benchmark_estimand_policy_proposal_v1/VALIDATION_REPORT.json
+    source_license_subgate:
+      status: authorized_pending_v4_validation
+      active_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v4.yaml
+      active_policy: configs/source_policy_v2.yaml
+      license_register: governance/licenses/SOURCE_LICENSE_REGISTER_v4.md
+      negatome_raw_redistribution_authorized: false
+    negative_evidence_discovery_subgate:
+      status: authorized_not_started
+      work_package_id: negative_evidence_discovery_audit_v1
+      accepted_amendment: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_v1.md
+      decision: governance/decisions/DEC-0011-accept-blueprint-amendment-001-and-authorize-negative-evidence-audit.md
+      required_negatome_datasets: [manual, manual_stringent, pdb, pdb_stringent]
+      frozen_uniprot_release: "2026_02"
+      frozen_intact_negative_record_count: 939
+      manual_and_structure_noncontact_separate: true
+      reliability_tiers_required: true
+      universal_nonbinding_interpretation_authorized: false
+      pnu_feasibility_assessment_required: true
+    strict_construct_branch:
+      status: blocked
+      reason: construct_confidence_a_or_b_coverage_zero_and_issue_0005_open
+      issue: governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md
+    next_authorized_unit: negative_evidence_discovery_audit_v1
+    label_construction_authorized: false
+    structural_mapping_authorized: false
+    model_training_authorized: false
+  benchmark:
+    status: primary_policy_accepted_preconstruction
+    accepted_policy: configs/benchmark_estimand_policy_v1.yaml
+    accepted_blueprint_amendment: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_v1.md
+    accepted_decision: governance/decisions/DEC-0011-accept-blueprint-amendment-001-and-authorize-negative-evidence-audit.md
+    proposal_effective: true
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    active_output: symmetric_sequence_compatibility_prioritization_score
+    output_is_probability: false
+    issue_0003_disposition: resolved_by_approved_estimand_narrowing_without_tested_universe_recovery
+    queued_after_negative_evidence_governance_return: benchmark_eligibility_and_sequence_component_audit_v1
+    candidate_universe_construction_authorized: false
+    evidence_indicator_construction_authorized: false
+    negative_label_construction_authorized: false
+    split_construction_authorized: false
+    structural_mapping_authorized: false
+    model_implementation_authorized: false
+    model_training_authorized: false
+  statistical: {status: not_started}
+  routing: {status: not_started}
+  retrieval: {status: not_started}
+  uncertainty: {status: not_started}
+  computational_validation: {status: not_started}
+  release: {status: not_started}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_or_unreported_pair_as_negative: true
+  technical_failure_as_negative: true
+  merge_manual_negative_with_structure_noncontact: true
+  raw_negatome_redistribution_without_permission: true
+  label_split_or_model_construction_before_later_gate: true

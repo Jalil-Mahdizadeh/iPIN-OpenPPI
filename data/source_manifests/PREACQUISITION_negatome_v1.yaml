@@ -1,0 +1,140 @@
+schema_version: 1
+manifest_id: PREACQ-NEGATOME-001
+source_key: negatome
+created_date: "2026-08-04"
+stage: preacquisition
+approved_for_download: true
+
+source:
+  name: Negatome 2.0
+  provider: MIPS / Helmholtz Zentrum Muenchen
+  database_version: "2.0"
+  publication_doi: 10.1093/nar/gkt1079
+  publication_date: "2014-01-01"
+  payload_snapshot_basis: provider_bytes_last_modified_2021-09-15
+  observed_on: "2026-08-04"
+  homepage: https://mips.helmholtz-muenchen.de/proj/ppi/negatome/
+
+license:
+  identifier: UNSPECIFIED-NO-REDISTRIBUTION
+  terms_url: https://mips.helmholtz-muenchen.de/proj/ppi/negatome/
+  article_license: CC-BY-NC-3.0
+  article_license_scope: article_only_not_assumed_to_cover_database_payloads
+  attribution_required: true
+  internal_research_acquisition: permitted_by_public_download_and_stated_research_use
+  redistribution: not_permitted_without_explicit_provider_permission
+  derivatives: aggregate_non_extractive_statistics_only_until_permission
+  audit_record: governance/licenses/SOURCE_LICENSE_REGISTER_v4.md
+  finding: No explicit database or payload license was present on the official download page or in the data files at audit time.
+
+tls:
+  server_chain_observation: provider_server_omitted_issuing_intermediate
+  insecure_mode_permitted: false
+  additional_ca_certificate: governance/provenance/tls/HARICA-GEANT-TLS-R1.pem
+  additional_ca_pem_sha256: cdc78c3185ce918c8e87f9b2559197d641288e564c5a8b789cd796abdea298d4
+  additional_ca_der_fingerprint_sha256: 5b678dc44095a52895b63b31f27227f4b36c3e347491bf2bfa691837a5fb8c79
+  additional_ca_source: https://repo.harica.gr/certs/HARICA-GEANT-TLS-R1.der
+
+assets:
+  - asset_id: negatome_manual
+    url: https://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual.txt
+    destination: data/raw/negatome/2.0/provider-snapshot-2021-09-15/manual.txt
+    format: tsv
+    required: true
+    expected:
+      content_length_bytes: 123362
+      etag: '"1e1e2-5cc03d69af140"'
+      last_modified: "Wed, 15 Sep 2021 07:42:21 GMT"
+      expected_record_count: 2171
+      provider_checksum: null
+  - asset_id: negatome_manual_stringent
+    url: https://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual_stringent.txt
+    destination: data/raw/negatome/2.0/provider-snapshot-2021-09-15/manual_stringent.txt
+    format: tsv
+    required: true
+    expected:
+      content_length_bytes: 113757
+      etag: '"1bc5d-5cc03d69af140"'
+      last_modified: "Wed, 15 Sep 2021 07:42:21 GMT"
+      expected_record_count: 1991
+      provider_checksum: null
+  - asset_id: negatome_pdb
+    url: https://mips.helmholtz-muenchen.de/proj/ppi/negatome/pdb.txt
+    destination: data/raw/negatome/2.0/provider-snapshot-2021-09-15/pdb.txt
+    format: tsv
+    required: true
+    expected:
+      content_length_bytes: 305645
+      etag: '"4a9ed-5cc03d69af140"'
+      last_modified: "Wed, 15 Sep 2021 07:42:21 GMT"
+      expected_record_count: 4397
+      provider_checksum: null
+  - asset_id: negatome_pdb_stringent
+    url: https://mips.helmholtz-muenchen.de/proj/ppi/negatome/pdb_stringent.txt
+    destination: data/raw/negatome/2.0/provider-snapshot-2021-09-15/pdb_stringent.txt
+    format: tsv
+    required: true
+    expected:
+      content_length_bytes: 279096
+      etag: '"44238-5cc03d69af140"'
+      last_modified: "Wed, 15 Sep 2021 07:42:21 GMT"
+      expected_record_count: 4161
+      provider_checksum: null
+  - asset_id: negatome_homepage
+    url: https://mips.helmholtz-muenchen.de/proj/ppi/negatome/
+    destination: data/raw/negatome/2.0/provider-snapshot-2021-09-15/source_documentation/index.html
+    format: html
+    required: true
+    expected:
+      content_length_bytes: null
+      etag: null
+      last_modified: null
+      provider_checksum: null
+  - asset_id: negatome_supplementary_material
+    url: https://mips.helmholtz-muenchen.de/proj/ppi/negatome/SupplementaryMaterial.pdf
+    destination: data/raw/negatome/2.0/provider-snapshot-2021-09-15/source_documentation/SupplementaryMaterial.pdf
+    format: pdf
+    required: true
+    expected:
+      content_length_bytes: 117596
+      etag: '"1cb5c-5cc03d69af140"'
+      last_modified: "Wed, 15 Sep 2021 07:42:21 GMT"
+      provider_checksum: null
+
+verification:
+  calculate_sha256: true
+  verify_provider_checksum: when_available
+  capture_http_headers: true
+  record_count_and_schema_report: required
+  confirm_stringent_is_exact_subset_of_parent: required
+  confirm_official_counts: required
+
+guards:
+  unreported_pairs_are_negative: false
+  universal_nonbinding_interpretation: false
+  preserve_manual_and_pdb_families_separately: true
+  preserve_stringent_membership_as_historical_filter_only: true
+  preserve_accession_isoform_suffixes: true
+  preserve_publication_assay_pdb_and_orientation_fields: true
+  current_positive_crosscheck_required_before_any_diagnostic_use: true
+  raw_redistribution_allowed: false
+
+known_gaps:
+  - The manual files expose accession pairs, PubMed identifiers, and PSI-MI method text but no construct boundaries, orientation, batch, repeat, technical-evaluability, or detailed experimental-condition fields.
+  - The PDB files expose accession pairs, PDB codes, and X-ray method text but no chain identifiers or explicit distance/contact threshold in the row payload.
+  - Stringent membership reflects filtering against a historical IntAct snapshot, not the current frozen IntAct release.
+  - No explicit database-payload redistribution license was located.
+
+approved_actions:
+  - internal_download_to_immutable_raw_zone
+  - checksum_and_record_count_validation
+  - provenance_preserving_parsing
+  - frozen_human_uniprot_mapping
+  - current_positive_and_intact_negative_reconciliation
+  - aggregate_non_extractive_reporting
+prohibited_actions:
+  - raw_or_record_level_redistribution_without_permission
+  - infer_universal_nonbinding
+  - combine_manual_and_structure_noncontact_as_one_negative_class
+  - treat_historical_stringent_filter_as_current_conflict_free_status
+  - construct_training_labels_or_start_model_training

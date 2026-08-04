@@ -1,0 +1,82 @@
+schema_version: 1
+policy_id: SOURCE-POLICY-002
+effective_date: "2026-08-04"
+project: ipin-openppi
+scope: primary_human_evidence_and_negative_evidence_discovery
+supersedes: configs/source_policy_v1.yaml
+inherits_unchanged_source_rules_from: configs/source_policy_v1.yaml
+
+global_acquisition_rules:
+  https_only: true
+  raw_payloads_are_immutable: true
+  release_or_snapshot_directory_required: true
+  retrieval_timestamp_utc_required: true
+  response_headers_required: true
+  local_sha256_required: true
+  provider_checksum_verification_required_when_available: true
+  atomic_download_required: true
+  parser_image_digest_required: true
+  parser_commit_required: true
+  schema_and_record_count_report_required: true
+  scientific_downloads_must_run_inside_apptainer: true
+  unresolved_redistribution_terms_require_internal_only_raw_data: true
+
+evidence_semantics:
+  primary_object: source_evidence_record
+  consensus_pair_is_primary_object: false
+  preserve_source_record_identifier: true
+  preserve_assay_and_detection_method: true
+  preserve_construct_and_orientation: true
+  preserve_species_publication_and_conditions: true
+  preserve_selection_state: true
+  preserve_evaluability_state: true
+  preserve_observed_outcome: true
+  manual_experimental_negative_and_structure_noncontact_are_distinct: true
+
+label_rules:
+  unreported_pair_state: unknown
+  unreported_pair_may_be_negative: false
+  technical_failure_may_be_negative: false
+  autoactivator_may_be_negative: false
+  invalid_assay_may_be_negative: false
+  positive_unlabeled_default_when_test_universe_is_incomplete: true
+  explicit_negative_requires_source_record_and_evaluable_assay: true
+  source_disagreement_must_be_retained: true
+  universal_nonbinding_label_permitted: false
+  reliability_tiers_required: true
+
+source_rules:
+  inherited_primary_sources:
+    policy: configs/source_policy_v1.yaml
+    source_keys: [huri, uniprot, intact_imex, pdb_sifts]
+    semantics_unchanged: true
+  negatome:
+    allowed:
+      - internal_research_acquisition
+      - provenance_preserving_parsing
+      - frozen_reference_mapping
+      - current_evidence_reconciliation
+      - reliability_tier_assignment
+      - aggregate_non_extractive_reporting
+    prohibited:
+      - raw_or_record_level_redistribution_without_permission
+      - universal_nonbinding_interpretation
+      - merge_manual_experimental_and_structure_noncontact_into_one_class
+      - assume_historical_stringent_membership_is_currently_conflict_free
+      - infer_missing_construct_orientation_condition_or_evaluability_fields
+    required:
+      - preserve_accession_and_isoform_text
+      - preserve_manual_publication_and_assay_text
+      - preserve_pdb_codes_and_structure_origin
+      - retain_missing_provenance_as_explicit_missing
+      - crosscheck_current_positive_evidence
+      - report_current_intact_negative_overlap_exactly
+      - keep_every_record_conditional_on_observed_source_context
+
+authorization_boundary:
+  acquisition_of_listed_assets: authorized
+  parsing_for_quality_control: authorized_after_checksum
+  evidence_reconciliation_and_feasibility_audit: authorized
+  construction_of_training_labels: not_authorized_by_this_policy
+  candidate_universe_or_split_construction: not_authorized_by_this_policy
+  model_training: not_authorized_by_this_policy

@@ -16,8 +16,11 @@ from typing import Any
 import yaml
 
 
-EXPECTED_SOURCE_KEYS = {"huri", "uniprot", "intact_imex", "pdb_sifts"}
-ALLOWED_LICENSES = {"CC-BY-4.0", "CC0-1.0"}
+DEFAULT_EXPECTED_SOURCE_KEYS = {"huri", "uniprot", "intact_imex", "pdb_sifts"}
+SUPPORTED_SOURCE_KEYS = DEFAULT_EXPECTED_SOURCE_KEYS | {"negatome"}
+ALLOWED_LICENSES = {
+    "CC-BY-4.0", "CC0-1.0", "UNSPECIFIED-NO-REDISTRIBUTION"
+}
 
 
 def sha256_file(path: Path) -> str:
@@ -174,6 +177,12 @@ def validate_manifest(
             (("guards", "experimental_entries_only"), True),
             (("guards", "interface_must_be_recalculated_from_frozen_coordinates"), True),
         ],
+        "negatome": [
+            (("guards", "unreported_pairs_are_negative"), False),
+            (("guards", "universal_nonbinding_interpretation"), False),
+            (("guards", "preserve_manual_and_pdb_families_separately"), True),
+            (("guards", "raw_redistribution_allowed"), False),
+        ],
     }
     for key_path, expected_value in special_expectations[source_key]:
         observed = nested_get(data, *key_path)
@@ -225,6 +234,10 @@ def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
     index_checks: list[dict[str, Any]] = []
+    configured_keys = nested_get(index, "validation", "expected_source_keys")
+    expected_source_keys = (
+        set(configured_keys) if isinstance(configured_keys, list) else DEFAULT_EXPECTED_SOURCE_KEYS
+    )
 
     def index_check(name: str, passed: bool, detail: str) -> None:
         add_check(index_checks, name, passed, detail)
@@ -255,7 +268,7 @@ def main() -> int:
                 continue
             source_key = entry.get("source_key")
             rel_path = entry.get("path")
-            if not isinstance(source_key, str) or source_key not in EXPECTED_SOURCE_KEYS:
+            if not isinstance(source_key, str) or source_key not in expected_source_keys:
                 errors.append(f"index: invalid source_key {source_key!r}")
                 continue
             if source_key in seen_keys:
@@ -284,8 +297,8 @@ def main() -> int:
 
     index_check(
         "complete_source_set",
-        seen_keys == EXPECTED_SOURCE_KEYS,
-        f"source keys must equal {sorted(EXPECTED_SOURCE_KEYS)}",
+        seen_keys == expected_source_keys and expected_source_keys <= SUPPORTED_SOURCE_KEYS,
+        f"source keys must equal supported configured set {sorted(expected_source_keys)}",
     )
 
     policy_path = (repo_root / str(index.get("policy", ""))).resolve()

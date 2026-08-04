@@ -1,0 +1,45 @@
+schema_version: 1
+policy_id: BENCHMARK-ESTIMAND-POLICY-001
+status: accepted_effective
+effective_date: "2026-08-04"
+accepted_blueprint_amendment: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_v1.md
+accepted_decision: governance/decisions/DEC-0011-accept-blueprint-amendment-001-and-authorize-negative-evidence-audit.md
+
+incorporated_proposal:
+  path: configs/benchmark_estimand_policy_proposal_v1.yaml
+  sha256: b5a7aff3615fa15a612d916e6ea9c46eba65756dfd239c8236a94c450d948a78
+  all_scientific_fields_effective: true
+  proposal_only_approval_fields_effective: false
+
+primary_design:
+  task: reference_sequence_positive_unlabeled_ranking
+  output: symmetric_sequence_compatibility_prioritization_score
+  output_is_probability: false
+  unreported_eligible_pair_state: unlabeled
+  universal_nonbinding_class_authorized: false
+
+additional_work_package:
+  work_package_id: negative_evidence_discovery_audit_v1
+  status: authorized
+  source_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v4.yaml
+  required_sources_first: [negatome_2_0, frozen_intact_negative_records]
+  required_negatome_datasets: [manual, manual_stringent, pdb, pdb_stringent]
+  frozen_human_uniprot_release: "2026_02"
+  positive_crosschecks: [huri, intact, other_permitted_reproducible_direct_ppi_views]
+  preserve_conditional_provenance: true
+  manual_and_structure_noncontact_separate: true
+  reliability_tiers_required: true
+  pnu_feasibility_assessment_required: true
+
+authorization:
+  negative_evidence_discovery_audit: true
+  benchmark_eligibility_and_sequence_component_audit_after_governance_return: true
+  candidate_pair_materialization: false
+  evidence_indicator_construction: false
+  negative_label_construction: false
+  pseudo_negative_sampling: false
+  split_construction: false
+  structural_label_construction: false
+  model_implementation: false
+  model_training: false
+  model_selection: false

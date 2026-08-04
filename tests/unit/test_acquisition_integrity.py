@@ -61,6 +61,21 @@ class AcquisitionIntegrityTests(unittest.TestCase):
             with self.assertRaises(MODULE.AcquisitionError):
                 MODULE.inspect_payload(text, "fasta_gzip")
 
+    def test_negatome_https_opener_uses_pinned_verified_certificate(self) -> None:
+        opener, record = MODULE.build_https_opener(
+            PROJECT_ROOT,
+            "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual.txt",
+        )
+        self.assertIsNotNone(opener)
+        self.assertTrue(record["hostname_verification"])
+        self.assertTrue(record["certificate_verification"])
+        self.assertFalse(record["insecure_mode"])
+        self.assertEqual(
+            record["additional_ca_pem_sha256"],
+            "cdc78c3185ce918c8e87f9b2559197d641288e564c5a8b789cd796abdea298d4",
+        )
+
+
 
 if __name__ == "__main__":
     unittest.main()

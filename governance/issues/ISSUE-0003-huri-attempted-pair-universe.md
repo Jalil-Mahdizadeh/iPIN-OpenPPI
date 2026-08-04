@@ -1,6 +1,6 @@
 # ISSUE-0003: Public HuRI files do not reconstruct the full attempted/evaluable pair universe
 
-**Status:** Open; public-data recovery exhausted, PU amendment proposed and awaiting expert-group approval
+**Status:** Resolved by approved estimand narrowing; the tested universe was not recovered
 **Opened:** 2026-08-03
 **Severity:** High scientific-validity risk
 **Owner:** Codex
@@ -66,7 +66,21 @@ Path 3 is proposed in:
 - `docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md`; and
 - `governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md`.
 
-The issue remains open because the exit criterion requires expert-group
-approval of the amendment. Audit completion, silence, or absence of additional
-comments is not approval. Label, split, structural, and model construction
-remain prohibited.
+## Resolution record (2026-08-04)
+
+The expert group explicitly accepted Blueprint Amendment 001 in `DEC-0011`.
+The second exit criterion is therefore satisfied: the definitive primary
+estimand is reference-sequence positive–unlabeled ranking and every claim that
+requires a complete tested-negative universe has been removed from the active
+programme.
+
+This governance resolution does **not** mean that the HuRI attempted/evaluable
+pair universe was recovered. The underlying source limitation is permanent for
+the frozen public release and remains binding: unreported HuRI pairs are
+unlabeled, not negative. A future complete opportunity log could activate TU-C
+only through a separate gate.
+
+The accepted decision also authorizes a separate negative-evidence discovery
+audit. Its records remain source- and context-conditional and cannot reopen a
+universal negative class. Label, split, structural, and model construction
+remain prohibited pending later gates.
