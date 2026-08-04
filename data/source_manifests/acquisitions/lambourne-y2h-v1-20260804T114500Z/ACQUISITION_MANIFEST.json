@@ -1,0 +1,545 @@
+{
+  "acquisition_manifest": "data/source_manifests/acquisitions/lambourne-y2h-v1-20260804T114500Z/ACQUISITION_MANIFEST.json",
+  "asset_count": 11,
+  "code": {
+    "git": {
+      "commit": "992a642ea74032e5e1b9e25def0c4c8d89a79fa1",
+      "status": "",
+      "tracked_worktree_clean": true
+    },
+    "qualification_lock": "containers/locks/ipin-qual-arm64_0.1.0.qualification.lock",
+    "qualification_lock_sha256": "3e1f43eb11a5f77bd06dc0c4f4c5f6f21349b788017cad01825eb542099c0d89",
+    "script": "scripts/data/acquire_manifest_assets.py",
+    "script_sha256": "100c3ae6b374d7a30f08720d84624b0e88e96e5fa25fb32598dce31010149e80"
+  },
+  "completed_at_utc": "2026-08-04T13:33:56.865224+00:00",
+  "downloaded_new_count": 7,
+  "dry_run": false,
+  "errors": [],
+  "free_bytes_at_start": 9675178217472,
+  "index": {
+    "manifest_set_id": "PREACQ-PRIMARY-NEGATIVE-LAMBOURNE-005",
+    "path": "data/source_manifests/PREACQUISITION_INDEX_v5.yaml",
+    "sha256": "4760311c1052f4ec672302abb757315b40c5562e5e5327075e2e126cd94fe5c0"
+  },
+  "known_expected_bytes": 30027570234,
+  "label_construction_performed": false,
+  "model_training_performed": false,
+  "records": [
+    {
+      "acquired_at_utc": "2026-08-04T11:38:32.623353+00:00",
+      "asset_id": "article_methods_supplement",
+      "bytes": 2556881,
+      "destination": "data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM1_ESM.pdf",
+      "format_inspection": {
+        "declared_format": "pdf",
+        "detected_container_format": "pdf"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "2556881",
+        "content_type": "application/pdf",
+        "etag": "\"f76f5f60f2d5096331151dda9d4d1fef\"",
+        "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-70942-x/MediaObjects/41467_2026_70942_MOESM1_ESM.pdf",
+        "http_status": 200,
+        "last_modified": "Sat, 04 Apr 2026 15:36:24 GMT"
+      },
+      "run_disposition": "reused_existing_verified",
+      "schema_version": 1,
+      "sha256": "2fd7839258de28afeedcc4e2a02ebc5162c471ba3c021e993ef69b38a87cbc78",
+      "sidecar": "data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM1_ESM.pdf.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-70942-x/MediaObjects/41467_2026_70942_MOESM1_ESM.pdf",
+      "verified_at_utc": "2026-08-04T11:40:51.033057+00:00"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T11:38:32.951504+00:00",
+      "asset_id": "supplementary_data_22",
+      "bytes": 264313,
+      "destination": "data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM22_ESM.xlsx",
+      "format_inspection": {
+        "archive": {
+          "encrypted_member_count": 0,
+          "extracted": false,
+          "maximum_member_compression_ratio": 7.811802973977695,
+          "member_count": 10,
+          "symlink_member_count": 0,
+          "total_compressed_bytes": 261339,
+          "total_uncompressed_bytes": 1741304,
+          "unsafe_path_count": 0
+        },
+        "declared_format": "xlsx",
+        "detected_container_format": "zip"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "264313",
+        "content_type": "application/octet-stream",
+        "etag": "\"79e759f682e261831692f573253980ab\"",
+        "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-70942-x/MediaObjects/41467_2026_70942_MOESM22_ESM.xlsx",
+        "http_status": 200,
+        "last_modified": "Sat, 04 Apr 2026 15:36:22 GMT"
+      },
+      "run_disposition": "reused_existing_verified",
+      "schema_version": 1,
+      "sha256": "d02ad6b31e6c80e758211cf6cb303982e6f29ad6d8fc86f671ce6a183493d43d",
+      "sidecar": "data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM22_ESM.xlsx.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-70942-x/MediaObjects/41467_2026_70942_MOESM22_ESM.xlsx",
+      "verified_at_utc": "2026-08-04T11:40:51.052504+00:00"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T11:38:33.090137+00:00",
+      "asset_id": "article_source_data",
+      "bytes": 5988321,
+      "destination": "data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM27_ESM.xlsx",
+      "format_inspection": {
+        "archive": {
+          "encrypted_member_count": 0,
+          "extracted": false,
+          "maximum_member_compression_ratio": 16.72537878787879,
+          "member_count": 66,
+          "symlink_member_count": 0,
+          "total_compressed_bytes": 5980139,
+          "total_uncompressed_bytes": 49927203,
+          "unsafe_path_count": 0
+        },
+        "declared_format": "xlsx",
+        "detected_container_format": "zip"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "5988321",
+        "content_type": "application/octet-stream",
+        "etag": "\"f37c4d7c710f3e5a671399ab18ba68a3\"",
+        "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-70942-x/MediaObjects/41467_2026_70942_MOESM27_ESM.xlsx",
+        "http_status": 200,
+        "last_modified": "Sat, 04 Apr 2026 15:36:21 GMT"
+      },
+      "run_disposition": "reused_existing_verified",
+      "schema_version": 1,
+      "sha256": "dfc2053f69f9ccf3bac5951d54b3e57b7a721542a39f407c6511b6ea2e6caa8b",
+      "sidecar": "data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM27_ESM.xlsx.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-70942-x/MediaObjects/41467_2026_70942_MOESM27_ESM.xlsx",
+      "verified_at_utc": "2026-08-04T11:40:51.083330+00:00"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T11:38:33.657923+00:00",
+      "asset_id": "zenodo_record_metadata",
+      "bytes": 4545,
+      "destination": "data/raw/lambourne_2026/zenodo/record-19118078-v2.1/record_metadata.json",
+      "format_inspection": {
+        "declared_format": "json",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": null,
+        "content_disposition": null,
+        "content_length": "4545",
+        "content_type": "application/json",
+        "etag": "\"4\"",
+        "final_url": "https://zenodo.org/api/records/19118078",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "reused_existing_verified",
+      "schema_version": 1,
+      "sha256": "d986d650b12b7c6ed8d761c3e4391e9023f556f49b70cafa5f923381ec4b4afa",
+      "sidecar": "data/raw/lambourne_2026/zenodo/record-19118078-v2.1/record_metadata.json.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://zenodo.org/api/records/19118078",
+      "verified_at_utc": "2026-08-04T11:40:51.106573+00:00"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T11:40:51.129372+00:00",
+      "asset_id": "archived_code_v1_1",
+      "bytes": 37940047,
+      "destination": "data/raw/lambourne_2026/zenodo/record-19118078-v2.1/ai-interactome-experimental-assessment-v1.1.zip",
+      "format_inspection": {
+        "archive": {
+          "encrypted_member_count": 0,
+          "extracted": false,
+          "maximum_member_compression_ratio": 18.41320554304922,
+          "member_count": 126,
+          "symlink_member_count": 0,
+          "total_compressed_bytes": 37904233,
+          "total_uncompressed_bytes": 326447502,
+          "unsafe_path_count": 0
+        },
+        "declared_format": "zip_archive",
+        "detected_container_format": "zip"
+      },
+      "provider_checksum": {
+        "algorithm": "md5",
+        "expected": "d10626b8c369113995f9aa1db3d63a62",
+        "observed": "d10626b8c369113995f9aa1db3d63a62",
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": "attachment; filename=ai-interactome-experimental-assessment-v1.1.zip",
+        "content_length": "37940047",
+        "content_type": "application/octet-stream",
+        "etag": null,
+        "final_url": "https://zenodo.org/api/records/19118078/files/CCSB-DFCI/ai-interactome-experimental-assessment-v1.1.zip/content",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "bd8608e18f384b93c633d6a5b17fc6832b2e202dc217c01b736d0fd3b9c00591",
+      "sidecar": "data/raw/lambourne_2026/zenodo/record-19118078-v2.1/ai-interactome-experimental-assessment-v1.1.zip.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://zenodo.org/api/records/19118078/files/CCSB-DFCI/ai-interactome-experimental-assessment-v1.1.zip/content"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T11:40:57.561113+00:00",
+      "asset_id": "archived_input_data_v2_1",
+      "bytes": 29980820672,
+      "destination": "data/raw/lambourne_2026/zenodo/record-19118078-v2.1/lambourne_et_al_2026_input_data.tar.gz",
+      "format_inspection": {
+        "declared_format": "tar_gzip",
+        "detected_container_format": "gzip",
+        "gzip_prefix_decompressed_bytes": 65536
+      },
+      "provider_checksum": {
+        "algorithm": "md5",
+        "expected": "db2a81cb84dca6f4e4d2227ea67bbf17",
+        "observed": "db2a81cb84dca6f4e4d2227ea67bbf17",
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": "attachment; filename=lambourne_et_al_2026_input_data.tar.gz",
+        "content_length": "29980820672",
+        "content_type": "application/octet-stream",
+        "etag": null,
+        "final_url": "https://zenodo.org/api/records/19118078/files/lambourne_et_al_2026_input_data.tar.gz/content",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "69a9d32219ebaa45170df0e986f0b2a87cb095d790d115b55651d5c14ffede8c",
+      "sidecar": "data/raw/lambourne_2026/zenodo/record-19118078-v2.1/lambourne_et_al_2026_input_data.tar.gz.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://zenodo.org/api/records/19118078/files/lambourne_et_al_2026_input_data.tar.gz/content"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T12:50:54.841850+00:00",
+      "asset_id": "imex_study_status",
+      "bytes": 19264,
+      "destination": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/study_status.html",
+      "format_inspection": {
+        "declared_format": "html",
+        "detected_container_format": "xml"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": null,
+        "content_disposition": null,
+        "content_length": null,
+        "content_type": "text/html;charset=UTF-8",
+        "etag": null,
+        "final_url": "https://www.ebi.ac.uk/intact/imex/main.xhtml?query=IM-30553&Search=1",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "30cab014cde9e5abdca7eef7bda342dc300518b63d9092de5a164b6a4394dede",
+      "sidecar": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/study_status.html.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://www.ebi.ac.uk/intact/imex/main.xhtml?query=IM-30553&Search=1"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T12:51:10.703520+00:00",
+      "asset_id": "imex_preview_html",
+      "bytes": 372970181,
+      "destination": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.html",
+      "format_inspection": {
+        "declared_format": "html",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": null,
+        "content_disposition": null,
+        "content_length": null,
+        "content_type": "text/html",
+        "etag": null,
+        "final_url": "https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=html",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "c1168fc6aa0bb138d5fb290e53e11e06ebafc1f15514fc63c09f7dc1029b915c",
+      "sidecar": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.html.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=html"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T13:01:56.014881+00:00",
+      "asset_id": "imex_preview_xml300_expanded",
+      "bytes": 242545085,
+      "destination": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553-expanded.xml",
+      "format_inspection": {
+        "declared_format": "psi_mi_xml_3_expanded",
+        "detected_container_format": "xml"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": null,
+        "content_disposition": null,
+        "content_length": null,
+        "content_type": "application/xml",
+        "etag": null,
+        "final_url": "https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=xml300_expanded",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "c157a5855f4697f32d35c2f152d13da8a1fd75a2f996d489abf16cf22e47d3e1",
+      "sidecar": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553-expanded.xml.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=xml300_expanded"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T13:15:16.302711+00:00",
+      "asset_id": "imex_preview_mitab27",
+      "bytes": 25178098,
+      "destination": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.mitab27.txt",
+      "format_inspection": {
+        "declared_format": "mitab27",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": null,
+        "content_disposition": null,
+        "content_length": null,
+        "content_type": "text/plain",
+        "etag": null,
+        "final_url": "https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=tab27",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "f46ef395382df436f7473191fbee2a5d05a1e9aa4f2a8fbedb98e0a513ae4674",
+      "sidecar": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.mitab27.txt.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=tab27"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T13:22:57.988544+00:00",
+      "asset_id": "imex_preview_mijson",
+      "bytes": 13819166,
+      "destination": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.json",
+      "format_inspection": {
+        "declared_format": "mijson",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": null,
+        "content_disposition": null,
+        "content_length": null,
+        "content_type": "application/json",
+        "etag": null,
+        "final_url": "https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=json",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "a0b6554fae5722041d5a62c1f66568193695c4ad7e665132d664efbeb2b70e72",
+      "sidecar": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.json.acquisition.json",
+      "source_key": "lambourne_human_y2h",
+      "source_manifest": "data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml",
+      "source_manifest_sha256": "2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=json"
+    }
+  ],
+  "required_asset_count": 11,
+  "reused_existing_count": 4,
+  "run_id": "lambourne-y2h-v1-20260804T114500Z",
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scientific_payloads_downloaded": true,
+  "selected_sources": [
+    "lambourne_human_y2h"
+  ],
+  "started_at_utc": "2026-08-04T11:40:50.965159+00:00",
+  "status": "pass",
+  "total_payload_bytes": 30682106573,
+  "warnings": []
+}

@@ -1,0 +1,336 @@
+schema_name: ipin_openppi_lambourne_y2h_semantics_audit
+schema_version: 1
+description: >-
+  Internal, governance-bounded representation of the Lambourne et al. 2026
+  human Y2H-v1 selected-pair panel. Outcomes are assay observations, never
+  reusable training labels or universal nonbinding assertions.
+
+enums:
+  outcome_semantics:
+    - positive_assay_observation
+    - negative_assay_observation
+    - technically_unevaluable_sequence_confirmation
+    - technically_unevaluable_autoactivator
+    - technically_unevaluable_assay_failure
+  attempted_state: [attempted]
+  evaluability_state: [evaluable, not_evaluable]
+  observation_state: [positive, negative, not_applicable_technically_unevaluable]
+  mapping_state:
+    - exact_primary_canonical
+    - exact_isoform
+    - exact_additional_non_isoform
+    - secondary_accession_unique
+    - canonical_isoform1_alias
+    - ambiguous_frozen_accession
+    - not_in_frozen_human_reference
+  mapping_confidence:
+    - A_exact_frozen_identifier
+    - B_unique_frozen_secondary_accession
+    - C_canonical_isoform1_alias
+    - D_unmapped_or_ambiguous
+
+tables:
+  archive_members:
+    required_non_null: [archive_asset_id, archive_format, member_ordinal, member_path, member_type, uncompressed_bytes, selected_for_semantics, archive_sha256, safety_state, source_archive_path, license_id, redistribution_tier]
+    columns:
+      - {name: archive_asset_id, type: string, nullable: false}
+      - {name: archive_format, type: string, nullable: false}
+      - {name: member_ordinal, type: int64, nullable: false}
+      - {name: member_path, type: string, nullable: false}
+      - {name: member_type, type: string, nullable: false}
+      - {name: uncompressed_bytes, type: int64, nullable: false}
+      - {name: compressed_bytes, type: int64, nullable: true}
+      - {name: selected_for_semantics, type: bool, nullable: false}
+      - {name: member_sha256, type: string, nullable: true}
+      - {name: archive_sha256, type: string, nullable: false}
+      - {name: safety_state, type: string, nullable: false}
+      - {name: source_archive_path, type: string, nullable: false}
+      - {name: license_id, type: string, nullable: false}
+      - {name: redistribution_tier, type: string, nullable: false}
+
+  selection_records:
+    required_non_null: [selection_record_id, source_row_ordinal, ad_orf_id, db_orf_id, source_dataset, ordered_orf_pair_id, unordered_orf_pair_id, source_member_path, source_member_sha256, raw_locator, original_selection_candidate, outcome_training_label_authorized, universal_nonbinding_asserted, benchmark_integration_authorized]
+    columns:
+      - {name: selection_record_id, type: string, nullable: false}
+      - {name: source_row_ordinal, type: int64, nullable: false}
+      - {name: ad_orf_id, type: string, nullable: false}
+      - {name: db_orf_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: ordered_orf_pair_id, type: string, nullable: false}
+      - {name: unordered_orf_pair_id, type: string, nullable: false}
+      - {name: source_member_path, type: string, nullable: false}
+      - {name: source_member_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: original_selection_candidate, type: bool, nullable: false}
+      - {name: outcome_training_label_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+
+  raw_assay_records:
+    required_non_null: [raw_assay_record_id, source_row_ordinal, ad_orf_id, db_orf_id, source_dataset, ordered_orf_pair_id, unordered_orf_pair_id, derived_reported_outcome, source_member_path, source_member_sha256, raw_locator, outcome_training_label_authorized, universal_nonbinding_asserted, benchmark_integration_authorized]
+    columns:
+      - {name: raw_assay_record_id, type: string, nullable: false}
+      - {name: source_row_ordinal, type: int64, nullable: false}
+      - {name: ad_orf_id, type: string, nullable: false}
+      - {name: db_orf_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: ordered_orf_pair_id, type: string, nullable: false}
+      - {name: unordered_orf_pair_id, type: string, nullable: false}
+      - {name: final_score_raw, type: string, nullable: true}
+      - {name: sequence_confirmation_3at, type: bool, nullable: true}
+      - {name: sequence_confirmation_lw, type: bool, nullable: true}
+      - {name: derived_reported_outcome, type: string, nullable: false}
+      - {name: source_member_path, type: string, nullable: false}
+      - {name: source_member_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: outcome_training_label_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+
+  paper_records:
+    required_non_null: [paper_record_id, source_row_ordinal, uniprot_accession_ad, uniprot_accession_db, ad_orf_id, db_orf_id, source_dataset, source_dataset_duplicate, reported_outcome, outcome_semantics, attempted_state, evaluability_state, technical_state, observation_state, ad_orientation_role, db_orientation_role, assay_id, construct_ad_json, construct_db_json, experimental_conditions_json, raw_file_path, raw_file_sha256, raw_locator, outcome_training_label_authorized, universal_nonbinding_asserted, benchmark_integration_authorized]
+    enum_columns:
+      outcome_semantics: outcome_semantics
+      attempted_state: attempted_state
+      evaluability_state: evaluability_state
+      observation_state: observation_state
+    columns:
+      - {name: paper_record_id, type: string, nullable: false}
+      - {name: source_row_ordinal, type: int64, nullable: false}
+      - {name: uniprot_accession_ad, type: string, nullable: false}
+      - {name: uniprot_accession_db, type: string, nullable: false}
+      - {name: ad_orf_id, type: string, nullable: false}
+      - {name: db_orf_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: source_dataset_duplicate, type: string, nullable: false}
+      - {name: reported_outcome, type: string, nullable: false}
+      - {name: outcome_semantics, type: string, nullable: false}
+      - {name: attempted_state, type: string, nullable: false}
+      - {name: evaluability_state, type: string, nullable: false}
+      - {name: technical_state, type: string, nullable: false}
+      - {name: observation_state, type: string, nullable: false}
+      - {name: in_biorxiv_version, type: bool, nullable: true}
+      - {name: in_published_version, type: bool, nullable: true}
+      - {name: sequence_confirmation_3at, type: bool, nullable: true}
+      - {name: sequence_confirmation_lw, type: bool, nullable: true}
+      - {name: raw_crosswalk_concordant, type: bool, nullable: true}
+      - {name: ad_orientation_role, type: string, nullable: false}
+      - {name: db_orientation_role, type: string, nullable: false}
+      - {name: assay_id, type: string, nullable: false}
+      - {name: construct_ad_json, type: string, nullable: false}
+      - {name: construct_db_json, type: string, nullable: false}
+      - {name: experimental_conditions_json, type: string, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: outcome_training_label_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+
+  imex_preview_records:
+    required_non_null: [preview_record_id, preview_row_ordinal, physical_line, id_a, id_b, alias_a, alias_b, publication_ids, detection_method, interaction_type, source_database, interaction_ids, taxid_a, taxid_b, host_taxid, biological_role_a, biological_role_b, experimental_role_a, experimental_role_b, feature_a, feature_b, participant_detection_method_a, participant_detection_method_b, raw_line_sha256, raw_file_path, raw_file_sha256, raw_fields_json, imex_study_id, provider_snapshot_state, outcome_training_label_authorized, universal_nonbinding_asserted, benchmark_integration_authorized]
+    columns:
+      - {name: preview_record_id, type: string, nullable: false}
+      - {name: preview_row_ordinal, type: int64, nullable: false}
+      - {name: physical_line, type: int64, nullable: false}
+      - {name: source_accession_a, type: string, nullable: true}
+      - {name: source_accession_b, type: string, nullable: true}
+      - {name: id_a, type: string, nullable: false}
+      - {name: id_b, type: string, nullable: false}
+      - {name: alias_a, type: string, nullable: false}
+      - {name: alias_b, type: string, nullable: false}
+      - {name: publication_ids, type: string, nullable: false}
+      - {name: detection_method, type: string, nullable: false}
+      - {name: interaction_type, type: string, nullable: false}
+      - {name: source_database, type: string, nullable: false}
+      - {name: interaction_ids, type: string, nullable: false}
+      - {name: taxid_a, type: string, nullable: false}
+      - {name: taxid_b, type: string, nullable: false}
+      - {name: host_taxid, type: string, nullable: false}
+      - {name: biological_role_a, type: string, nullable: false}
+      - {name: biological_role_b, type: string, nullable: false}
+      - {name: experimental_role_a, type: string, nullable: false}
+      - {name: experimental_role_b, type: string, nullable: false}
+      - {name: feature_a, type: string, nullable: false}
+      - {name: feature_b, type: string, nullable: false}
+      - {name: participant_detection_method_a, type: string, nullable: false}
+      - {name: participant_detection_method_b, type: string, nullable: false}
+      - {name: negative_flag, type: bool, nullable: true}
+      - {name: raw_line_sha256, type: string, nullable: false}
+      - {name: raw_file_path, type: string, nullable: false}
+      - {name: raw_file_sha256, type: string, nullable: false}
+      - {name: raw_fields_json, type: string, nullable: false}
+      - {name: imex_study_id, type: string, nullable: false}
+      - {name: provider_snapshot_state, type: string, nullable: false}
+      - {name: outcome_training_label_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+
+  selected_universe_reconciliation:
+    required_non_null: [selection_pair_record_id, unordered_orf_pair_id, source_dataset, selection_physical_row_count, raw_assay_record_count, paper_record_count, final_analysis_record_count, accession_candidates_a, accession_candidates_b, reconstruction_state, paper_original_selected_pair_claim, public_selection_unique_pair_count, discrepancy_to_paper_claim, outcome_training_label_authorized, universal_nonbinding_asserted, benchmark_integration_authorized]
+    columns:
+      - {name: selection_pair_record_id, type: string, nullable: false}
+      - {name: unordered_orf_pair_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: selected_ad_orf_ids, type: "list<string>", nullable: false}
+      - {name: selected_db_orf_ids, type: "list<string>", nullable: false}
+      - {name: selection_physical_row_count, type: int64, nullable: false}
+      - {name: raw_assay_record_count, type: int64, nullable: false}
+      - {name: paper_record_count, type: int64, nullable: false}
+      - {name: final_analysis_record_count, type: int64, nullable: false}
+      - {name: accession_candidates_a, type: "list<string>", nullable: false}
+      - {name: accession_candidates_b, type: "list<string>", nullable: false}
+      - {name: reconstruction_state, type: string, nullable: false}
+      - {name: paper_original_selected_pair_claim, type: int64, nullable: false}
+      - {name: public_selection_unique_pair_count, type: int64, nullable: false}
+      - {name: discrepancy_to_paper_claim, type: int64, nullable: false}
+      - {name: outcome_training_label_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+
+  participant_mappings:
+    required_non_null: [mapping_record_id, panel_pair_id, participant_ordinal, orientation_role, source_accession, source_orf_id, mapping_state, mapping_confidence, mapping_basis, mapping_candidate_count, candidate_sequence_ids, candidate_sequence_sha256s, candidate_uniprot_accessions, reference_sequence_usable, exact_unique_mapping, uniref100_ids, uniref90_ids, uniref50_ids, construct_json, frozen_uniprot_release, outcome_training_label_authorized, universal_nonbinding_asserted, benchmark_integration_authorized]
+    enum_columns:
+      mapping_state: mapping_state
+      mapping_confidence: mapping_confidence
+    columns:
+      - {name: mapping_record_id, type: string, nullable: false}
+      - {name: panel_pair_id, type: string, nullable: false}
+      - {name: participant_ordinal, type: int32, nullable: false}
+      - {name: orientation_role, type: string, nullable: false}
+      - {name: source_accession, type: string, nullable: false}
+      - {name: source_orf_id, type: string, nullable: false}
+      - {name: mapping_state, type: string, nullable: false}
+      - {name: mapping_confidence, type: string, nullable: false}
+      - {name: mapping_basis, type: string, nullable: false}
+      - {name: mapping_candidate_count, type: int32, nullable: false}
+      - {name: candidate_sequence_ids, type: "list<string>", nullable: false}
+      - {name: candidate_sequence_sha256s, type: "list<string>", nullable: false}
+      - {name: candidate_uniprot_accessions, type: "list<string>", nullable: false}
+      - {name: mapped_sequence_id, type: string, nullable: true}
+      - {name: mapped_uniprot_accession, type: string, nullable: true}
+      - {name: mapped_isoform_id, type: string, nullable: true}
+      - {name: mapped_sequence_sha256, type: string, nullable: true}
+      - {name: mapped_sequence_length, type: int64, nullable: true}
+      - {name: mapped_sequence_view, type: string, nullable: true}
+      - {name: reference_sequence_usable, type: bool, nullable: false}
+      - {name: exact_unique_mapping, type: bool, nullable: false}
+      - {name: uniref100_ids, type: "list<string>", nullable: false}
+      - {name: uniref90_ids, type: "list<string>", nullable: false}
+      - {name: uniref50_ids, type: "list<string>", nullable: false}
+      - {name: construct_json, type: string, nullable: false}
+      - {name: frozen_uniprot_release, type: string, nullable: false}
+      - {name: outcome_training_label_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+
+  panel_pair_audit:
+    required_non_null: [panel_pair_id, paper_record_id, source_dataset, source_row_ordinal, ad_orf_id, db_orf_id, uniprot_accession_ad, uniprot_accession_db, in_final_analysis, reported_outcome, outcome_semantics, attempted_state, evaluability_state, technical_state, observation_state, pair_mapping_state, reference_pair_usable, current_positive_check_performed, huri_record_positive_count, huri_pair_view_count, intact_positive_count, qualifying_direct_positive_count, broader_intact_positive_count, current_permitted_positive_overlap, intact_negative_overlap_count, negatome_overlap_count, exact_future_training_pair_overlap, uniref90_pair_overlap, uniref50_pair_overlap, exact_endpoint_overlap, uniref90_endpoint_overlap, uniref50_endpoint_overlap, protected_benchmark_eligibility_state, assay_id, construct_ad_json, construct_db_json, experimental_conditions_json, frozen_uniprot_release, outcome_training_label_authorized, universal_nonbinding_asserted, benchmark_integration_authorized]
+    enum_columns:
+      outcome_semantics: outcome_semantics
+      attempted_state: attempted_state
+      evaluability_state: evaluability_state
+      observation_state: observation_state
+    columns:
+      - {name: panel_pair_id, type: string, nullable: false}
+      - {name: paper_record_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: source_row_ordinal, type: int64, nullable: false}
+      - {name: ad_orf_id, type: string, nullable: false}
+      - {name: db_orf_id, type: string, nullable: false}
+      - {name: uniprot_accession_ad, type: string, nullable: false}
+      - {name: uniprot_accession_db, type: string, nullable: false}
+      - {name: in_biorxiv_version, type: bool, nullable: true}
+      - {name: in_final_analysis, type: bool, nullable: false}
+      - {name: reported_outcome, type: string, nullable: false}
+      - {name: outcome_semantics, type: string, nullable: false}
+      - {name: attempted_state, type: string, nullable: false}
+      - {name: evaluability_state, type: string, nullable: false}
+      - {name: technical_state, type: string, nullable: false}
+      - {name: observation_state, type: string, nullable: false}
+      - {name: sequence_confirmation_3at, type: bool, nullable: true}
+      - {name: sequence_confirmation_lw, type: bool, nullable: true}
+      - {name: pair_mapping_state, type: string, nullable: false}
+      - {name: mapped_uniprot_accession_ad, type: string, nullable: true}
+      - {name: mapped_uniprot_accession_db, type: string, nullable: true}
+      - {name: mapped_isoform_id_ad, type: string, nullable: true}
+      - {name: mapped_isoform_id_db, type: string, nullable: true}
+      - {name: mapped_sequence_sha256_ad, type: string, nullable: true}
+      - {name: mapped_sequence_sha256_db, type: string, nullable: true}
+      - {name: mapped_unordered_sequence_pair_id, type: string, nullable: true}
+      - {name: reference_pair_usable, type: bool, nullable: false}
+      - {name: current_positive_check_performed, type: bool, nullable: false}
+      - {name: huri_record_positive_count, type: int64, nullable: false}
+      - {name: huri_pair_view_count, type: int64, nullable: false}
+      - {name: intact_positive_count, type: int64, nullable: false}
+      - {name: qualifying_direct_positive_count, type: int64, nullable: false}
+      - {name: broader_intact_positive_count, type: int64, nullable: false}
+      - {name: current_permitted_positive_overlap, type: bool, nullable: false}
+      - {name: positive_source_datasets, type: "list<string>", nullable: false}
+      - {name: positive_detection_methods, type: "list<string>", nullable: false}
+      - {name: intact_negative_overlap_count, type: int64, nullable: false}
+      - {name: intact_negative_evidence_ids, type: "list<string>", nullable: false}
+      - {name: negatome_overlap_count, type: int64, nullable: false}
+      - {name: negatome_parent_record_ids, type: "list<string>", nullable: false}
+      - {name: negatome_evidence_families, type: "list<string>", nullable: false}
+      - {name: exact_future_training_pair_overlap, type: bool, nullable: false}
+      - {name: uniref90_pair_overlap, type: bool, nullable: false}
+      - {name: uniref50_pair_overlap, type: bool, nullable: false}
+      - {name: exact_endpoint_overlap, type: bool, nullable: false}
+      - {name: uniref90_endpoint_overlap, type: bool, nullable: false}
+      - {name: uniref50_endpoint_overlap, type: bool, nullable: false}
+      - {name: protected_benchmark_eligibility_state, type: string, nullable: false}
+      - {name: assay_id, type: string, nullable: false}
+      - {name: construct_ad_json, type: string, nullable: false}
+      - {name: construct_db_json, type: string, nullable: false}
+      - {name: experimental_conditions_json, type: string, nullable: false}
+      - {name: frozen_uniprot_release, type: string, nullable: false}
+      - {name: outcome_training_label_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+
+  imex_pair_reconciliation:
+    required_non_null: [reconciliation_record_id, preview_record_id, match_state, match_bases, candidate_panel_pair_ids, matched_panel_reported_outcomes, matched_panel_final_analysis_count, imex_outcome_semantics, supports_attempted_negative_or_na_semantics, imex_study_id, provider_snapshot_state, preview_negative_flag_is_assay_bounded, outcome_training_label_authorized, universal_nonbinding_asserted, benchmark_integration_authorized]
+    columns:
+      - {name: reconciliation_record_id, type: string, nullable: false}
+      - {name: preview_record_id, type: string, nullable: false}
+      - {name: match_state, type: string, nullable: false}
+      - {name: match_bases, type: "list<string>", nullable: false}
+      - {name: candidate_panel_pair_ids, type: "list<string>", nullable: false}
+      - {name: matched_panel_reported_outcomes, type: "list<string>", nullable: false}
+      - {name: matched_panel_final_analysis_count, type: int64, nullable: false}
+      - {name: imex_outcome_semantics, type: string, nullable: false}
+      - {name: supports_attempted_negative_or_na_semantics, type: bool, nullable: false}
+      - {name: imex_study_id, type: string, nullable: false}
+      - {name: provider_snapshot_state, type: string, nullable: false}
+      - {name: preview_negative_flag_is_assay_bounded, type: bool, nullable: false}
+      - {name: outcome_training_label_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+
+  assay_metadata:
+    required_non_null: [assay_metadata_id, assay_id, assay_name, detection_method_mi_ac, detection_method_name, organism_taxid, organism_name, db_vector, ad_vector, db_strain, ad_strain, db_orientation_role, ad_orientation_role, construct_scope_json, autoactivation_control_json, selection_readout_json, experimental_conditions_json, pair_selection_json, provenance_json, construct_sequence_identifiability, outcome_training_label_authorized, universal_nonbinding_asserted, benchmark_integration_authorized]
+    columns:
+      - {name: assay_metadata_id, type: string, nullable: false}
+      - {name: assay_id, type: string, nullable: false}
+      - {name: assay_name, type: string, nullable: false}
+      - {name: detection_method_mi_ac, type: string, nullable: false}
+      - {name: detection_method_name, type: string, nullable: false}
+      - {name: organism_taxid, type: int64, nullable: false}
+      - {name: organism_name, type: string, nullable: false}
+      - {name: db_vector, type: string, nullable: false}
+      - {name: ad_vector, type: string, nullable: false}
+      - {name: db_strain, type: string, nullable: false}
+      - {name: ad_strain, type: string, nullable: false}
+      - {name: db_orientation_role, type: string, nullable: false}
+      - {name: ad_orientation_role, type: string, nullable: false}
+      - {name: construct_scope_json, type: string, nullable: false}
+      - {name: autoactivation_control_json, type: string, nullable: false}
+      - {name: selection_readout_json, type: string, nullable: false}
+      - {name: experimental_conditions_json, type: string, nullable: false}
+      - {name: pair_selection_json, type: string, nullable: false}
+      - {name: provenance_json, type: string, nullable: false}
+      - {name: construct_sequence_identifiability, type: string, nullable: false}
+      - {name: outcome_training_label_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}

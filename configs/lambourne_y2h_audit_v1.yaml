@@ -1,0 +1,143 @@
+schema_version: 1
+audit_id: LAMBOURNE-Y2H-SEMANTICS-AUDIT-001
+audit_version: 1.0.0
+task: governance_bounded_lambourne_human_y2h_v1_pair_semantics_audit
+status: authorized_by_dec_0013
+
+runtime:
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  architecture: aarch64
+  duckdb_memory_limit: 12GB
+  duckdb_threads: 4
+  parquet_batch_rows: 50000
+  parquet_compression: zstd
+  parquet_compression_level: 6
+
+inputs:
+  frozen_uniprot_release: "2026_02"
+  frozen_taxid: 9606
+  documents:
+    acquisition_manifest:
+      path: data/source_manifests/acquisitions/lambourne-y2h-v1-20260804T114500Z/ACQUISITION_MANIFEST.json
+      sha256: 7dc05ebe9a4173636b7cbdf02eaa631603be33688a75c972a4bbce97bb9444d2
+      boundary: data/source_manifests
+    raw_verification_report:
+      path: artifacts/validation/source_acquisition/raw_verification_lambourne_y2h_v1.json
+      sha256: 6c1024a6ad6879cbbff80dd02c8789a070b7ca99c98c232b4b3ad284eddf6cd7
+      boundary: artifacts/validation
+    primary_parse_manifest:
+      path: data/staging/primary_sources_v1/PARSE_MANIFEST.json
+      sha256: ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa
+      boundary: data/staging
+    primary_staging_validation:
+      path: artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json
+      sha256: 375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba
+      boundary: artifacts/validation
+    primary_reconciliation_manifest:
+      path: data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json
+      sha256: 6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932
+      boundary: data/canonical
+    primary_reconciliation_validation:
+      path: artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json
+      sha256: 9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2
+      boundary: artifacts/validation
+    negative_audit_manifest:
+      path: data/canonical/negative_evidence_audit_v1/AUDIT_MANIFEST.json
+      sha256: 593b1b45ef579f4f4f403f8567510c28b0ac84b8818ac82d3b27a6d2dce9be24
+      boundary: data/canonical
+    negative_audit_validation:
+      path: artifacts/validation/negative_evidence/negative_evidence_audit_v1/VALIDATION_REPORT.json
+      sha256: e3b7b8da6fbb9d6361278e9d89ab1cdd070c087279a8a821dc852cfd5f4fc155
+      boundary: artifacts/validation
+    source_policy:
+      path: configs/source_policy_v3.yaml
+      sha256: 6e51a92ceb51408167b276fee2ecc3e95746ae2ac007acbae1cc92b4f83ef6bf
+      boundary: configs
+    preacquisition_manifest:
+      path: data/source_manifests/PREACQUISITION_lambourne_human_y2h_v1.yaml
+      sha256: 2126a606f7d66c4c5ffcf44b37e9e6ea19f81f2342a3af799247bddc69d4cd45
+      boundary: data/source_manifests
+    audit_schema:
+      path: schemas/canonical/lambourne_y2h_audit_v1.yaml
+      sha256: 5faa8853f7bf973702f654fd53225d48fe5835d40d367217c6c9606f38731b98
+      boundary: schemas
+    frozen_uniprot_dat:
+      path: data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.dat.gz
+      sha256: 8157caae64bf8382b7afccee30863f060e858dab6862dad3e15af0d20047a7b0
+      boundary: data/raw
+  dataset_paths:
+    protein_sequences: data/staging/primary_sources_v1/uniprot/protein_sequences
+    identifier_mappings: data/staging/primary_sources_v1/uniprot/identifier_mappings
+    huri_evidence: data/staging/primary_sources_v1/huri/evidence_records
+    huri_pair_views: data/staging/primary_sources_v1/huri/source_pair_views
+    intact_evidence: data/staging/primary_sources_v1/intact_imex/evidence_records
+    intact_participants: data/staging/primary_sources_v1/intact_imex/participants
+    participant_sequence_mappings: data/canonical/primary_reconciliation_v1/participant_sequence_mappings
+    evidence_mapping_summaries: data/canonical/primary_reconciliation_v1/evidence_mapping_summaries
+    negatome_record_audit: data/canonical/negative_evidence_audit_v1/negatome_record_audit
+    intact_negative_record_audit: data/canonical/negative_evidence_audit_v1/intact_negative_record_audit
+
+raw_assets:
+  article_methods: article_methods_supplement
+  supplementary_data_22: supplementary_data_22
+  article_source_data: article_source_data
+  zenodo_metadata: zenodo_record_metadata
+  archived_code: archived_code_v1_1
+  archived_input: archived_input_data_v2_1
+  imex_status: imex_study_status
+  imex_html: imex_preview_html
+  imex_xml300: imex_preview_xml300_expanded
+  imex_mitab27: imex_preview_mitab27
+  imex_json: imex_preview_mijson
+
+expected:
+  selection_rows: 4600
+  raw_assay_rows: 4499
+  paper_rows: 4775
+  paper_zhang_rows: 4046
+  paper_original_selected_pair_claim: 4100
+  public_selection_unique_zhang_pairs: 4130
+  intact_negative_records: 939
+  final_analysis:
+    selected_pairs: 3222
+    positive_assay_observations: 376
+    negative_assay_observations: 2300
+    technically_unevaluable_or_na: 546
+    evaluable: 2676
+
+evidence_policy:
+  evidence_snapshot: validated_primary_sources_and_negative_evidence_audit_v1
+  permitted_pair_views: [HuRI, HI-II-14, Lit-BM, Test_space_screens-19]
+  current_positive_is_an_overlap_overlay_not_a_relabeling: true
+  intact_negative_and_negatome_are_overlap_overlays_not_merged_labels: true
+
+benchmark_feasibility:
+  minimum_positive_assay_observations: 40
+  minimum_negative_assay_observations: 100
+  exact_pair_disjoint_assay_specific_diagnostic_may_be_assessed: true
+  sequence_family_generalization_requires_family_disjoint_support: true
+  split_construction_authorized: false
+
+governance:
+  decision_authority: expert_group
+  return_before_benchmark_integration: true
+  current_gate: audit_only_no_benchmark_integration
+
+outputs:
+  staging_root: data/staging/lambourne_y2h_audit_v1
+  canonical_root: data/canonical/lambourne_y2h_audit_v1
+  audit_report: artifacts/validation/lambourne_y2h_audit_v1/AUDIT_REPORT.json
+  validation_report: artifacts/validation/lambourne_y2h_audit_v1/VALIDATION_REPORT.json
+
+authorization:
+  provenance_preserving_parsing: true
+  frozen_reference_mapping: true
+  evidence_overlap_audit: true
+  aggregate_benchmark_feasibility_assessment: true
+  outcomes_as_training_labels: false
+  merge_with_negatome: false
+  benchmark_split_construction: false
+  benchmark_integration: false
+  model_training: false
+  universal_nonbinding_interpretation: false

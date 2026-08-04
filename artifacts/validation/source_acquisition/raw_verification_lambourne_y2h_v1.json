@@ -1,0 +1,318 @@
+{
+  "acquisition_manifest": {
+    "path": "data/source_manifests/acquisitions/lambourne-y2h-v1-20260804T114500Z/ACQUISITION_MANIFEST.json",
+    "run_id": "lambourne-y2h-v1-20260804T114500Z",
+    "sha256": "7dc05ebe9a4173636b7cbdf02eaa631603be33688a75c972a4bbce97bb9444d2"
+  },
+  "active_verifier": {
+    "entrypoint": "scripts/data/verify_raw_acquisition_v3.py",
+    "entrypoint_sha256": "962c5c50a03a262f2a9490500065957f453c53f686b157d0bf3892ebf282eff6",
+    "git_commit": "992a642ea74032e5e1b9e25def0c4c8d89a79fa1",
+    "semantics": "provider-advertised counts are audited metadata, not assumed row-count invariants"
+  },
+  "asset_count": 11,
+  "code_provenance": {
+    "acquisition_commit": "992a642ea74032e5e1b9e25def0c4c8d89a79fa1",
+    "committed_script_sha256": "100c3ae6b374d7a30f08720d84624b0e88e96e5fa25fb32598dce31010149e80",
+    "qualification_lock_sha256": "3e1f43eb11a5f77bd06dc0c4f4c5f6f21349b788017cad01825eb542099c0d89",
+    "script": "scripts/data/acquire_manifest_assets.py",
+    "status": "pass"
+  },
+  "errors": [],
+  "label_construction_performed": false,
+  "model_training_performed": false,
+  "raw_tree": {
+    "acquisition_manifests_consulted": [
+      "data/source_manifests/acquisitions/lambourne-y2h-v1-20260804T114500Z/ACQUISITION_MANIFEST.json",
+      "data/source_manifests/acquisitions/negative-evidence-v1-20260804T074800Z/ACQUISITION_MANIFEST.json",
+      "data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json"
+    ],
+    "file_count": 75,
+    "missing_selected_files": [],
+    "other_manifest_backed_file_count": 52,
+    "partial_files": [],
+    "scope": "selected_acquisition_with_manifest_backed_preexisting_files",
+    "selected_payload_and_sidecar_count": 22,
+    "status": "pass",
+    "symbolic_links": [],
+    "unmanifested_files": []
+  },
+  "records": [
+    {
+      "asset_id": "article_methods_supplement",
+      "bytes": 2556881,
+      "destination": "data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM1_ESM.pdf",
+      "inventory": {
+        "inventory_method": "pdf_signature",
+        "signature_passed": true
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "2fd7839258de28afeedcc4e2a02ebc5162c471ba3c021e993ef69b38a87cbc78",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    },
+    {
+      "asset_id": "supplementary_data_22",
+      "bytes": 264313,
+      "destination": "data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM22_ESM.xlsx",
+      "inventory": {
+        "encrypted_member_count": 0,
+        "extracted": false,
+        "inventory_method": "zip_central_directory_no_extraction",
+        "maximum_member_compression_ratio": 7.811802973977695,
+        "member_count": 10,
+        "member_suffix_counts": {
+          ".rels": 1,
+          ".xml": 8,
+          "<none>": 1
+        },
+        "symlink_member_count": 0,
+        "total_compressed_bytes": 261339,
+        "total_uncompressed_bytes": 1741304,
+        "unsafe_path_count": 0
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "d02ad6b31e6c80e758211cf6cb303982e6f29ad6d8fc86f671ce6a183493d43d",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    },
+    {
+      "asset_id": "article_source_data",
+      "bytes": 5988321,
+      "destination": "data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM27_ESM.xlsx",
+      "inventory": {
+        "encrypted_member_count": 0,
+        "extracted": false,
+        "inventory_method": "zip_central_directory_no_extraction",
+        "maximum_member_compression_ratio": 16.72537878787879,
+        "member_count": 66,
+        "member_suffix_counts": {
+          ".rels": 1,
+          ".xml": 64,
+          "<none>": 1
+        },
+        "symlink_member_count": 0,
+        "total_compressed_bytes": 5980139,
+        "total_uncompressed_bytes": 49927203,
+        "unsafe_path_count": 0
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "dfc2053f69f9ccf3bac5951d54b3e57b7a721542a39f407c6511b6ea2e6caa8b",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    },
+    {
+      "asset_id": "zenodo_record_metadata",
+      "bytes": 4545,
+      "destination": "data/raw/lambourne_2026/zenodo/record-19118078-v2.1/record_metadata.json",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 1,
+        "maximum_tabular_field_count": 1,
+        "minimum_tabular_field_count": 1
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "d986d650b12b7c6ed8d761c3e4391e9023f556f49b70cafa5f923381ec4b4afa",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    },
+    {
+      "asset_id": "archived_code_v1_1",
+      "bytes": 37940047,
+      "destination": "data/raw/lambourne_2026/zenodo/record-19118078-v2.1/ai-interactome-experimental-assessment-v1.1.zip",
+      "inventory": {
+        "encrypted_member_count": 0,
+        "extracted": false,
+        "inventory_method": "zip_central_directory_no_extraction",
+        "maximum_member_compression_ratio": 18.41320554304922,
+        "member_count": 126,
+        "member_suffix_counts": {
+          ".csv": 1,
+          ".dat": 1,
+          ".ipynb": 28,
+          ".md": 1,
+          ".py": 8,
+          ".sh": 3,
+          ".tsv": 59,
+          ".txt": 6,
+          ".xlsx": 5,
+          "<none>": 14
+        },
+        "symlink_member_count": 0,
+        "total_compressed_bytes": 37904233,
+        "total_uncompressed_bytes": 326447502,
+        "unsafe_path_count": 0
+      },
+      "provider_checksum_recheck": {
+        "algorithm": "md5",
+        "observed": "d10626b8c369113995f9aa1db3d63a62",
+        "passed": true
+      },
+      "read_only": true,
+      "sha256": "bd8608e18f384b93c633d6a5b17fc6832b2e202dc217c01b736d0fd3b9c00591",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    },
+    {
+      "asset_id": "archived_input_data_v2_1",
+      "bytes": 29980820672,
+      "destination": "data/raw/lambourne_2026/zenodo/record-19118078-v2.1/lambourne_et_al_2026_input_data.tar.gz",
+      "inventory": {
+        "blank_line_count": 488073,
+        "inventory_method": "streamed_gzip_lines",
+        "line_count": 576012686,
+        "maximum_tabular_field_count": 6232,
+        "minimum_tabular_field_count": 0
+      },
+      "provider_checksum_recheck": {
+        "algorithm": "md5",
+        "observed": "db2a81cb84dca6f4e4d2227ea67bbf17",
+        "passed": true
+      },
+      "read_only": true,
+      "sha256": "69a9d32219ebaa45170df0e986f0b2a87cb095d790d115b55651d5c14ffede8c",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    },
+    {
+      "asset_id": "imex_study_status",
+      "bytes": 19264,
+      "destination": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/study_status.html",
+      "inventory": {
+        "blank_line_count": 130,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 408,
+        "maximum_tabular_field_count": 1,
+        "minimum_tabular_field_count": 0
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "30cab014cde9e5abdca7eef7bda342dc300518b63d9092de5a164b6a4394dede",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    },
+    {
+      "asset_id": "imex_preview_html",
+      "bytes": 372970181,
+      "destination": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.html",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 9121344,
+        "maximum_tabular_field_count": 1,
+        "minimum_tabular_field_count": 1
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "c1168fc6aa0bb138d5fb290e53e11e06ebafc1f15514fc63c09f7dc1029b915c",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    },
+    {
+      "asset_id": "imex_preview_xml300_expanded",
+      "bytes": 242545085,
+      "destination": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553-expanded.xml",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 3564575,
+        "maximum_tabular_field_count": 1,
+        "minimum_tabular_field_count": 1
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "c157a5855f4697f32d35c2f152d13da8a1fd75a2f996d489abf16cf22e47d3e1",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    },
+    {
+      "asset_id": "imex_preview_mitab27",
+      "bytes": 25178098,
+      "destination": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.mitab27.txt",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 9596,
+        "maximum_tabular_field_count": 42,
+        "minimum_tabular_field_count": 42
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "f46ef395382df436f7473191fbee2a5d05a1e9aa4f2a8fbedb98e0a513ae4674",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    },
+    {
+      "asset_id": "imex_preview_mijson",
+      "bytes": 13819166,
+      "destination": "data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.json",
+      "inventory": {
+        "blank_line_count": 0,
+        "inventory_method": "streamed_text_lines",
+        "line_count": 1,
+        "maximum_tabular_field_count": 1,
+        "minimum_tabular_field_count": 1
+      },
+      "provider_checksum_recheck": null,
+      "read_only": true,
+      "sha256": "a0b6554fae5722041d5a62c1f66568193695c4ad7e665132d664efbeb2b70e72",
+      "sidecar_passed": true,
+      "source_key": "lambourne_human_y2h",
+      "status": "pass"
+    }
+  ],
+  "required_asset_count": 11,
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scoped_verifier": {
+    "delegated_active_verifier": "scripts/data/verify_raw_acquisition_v3.py",
+    "entrypoint": "scripts/data/verify_raw_acquisition_scoped_v1.py",
+    "entrypoint_sha256": "559c99ac9583c2dad0c452509fb5f3b83b33a34055a0566b5cb6f2e3244415e2",
+    "git_commit": "992a642ea74032e5e1b9e25def0c4c8d89a79fa1",
+    "semantics": "verify the selected acquisition exactly; permit other raw files only when declared by a passed acquisition manifest"
+  },
+  "source_count_discrepancies": [],
+  "status": "pass",
+  "total_payload_bytes": 30682106573,
+  "uniprot_metalink": {
+    "acquired_payloads_crosschecked": [],
+    "reason": "this acquisition contains no UniProt release payload",
+    "selected_sources": [
+      "lambourne_human_y2h"
+    ],
+    "status": "not_applicable_source_not_selected"
+  },
+  "verification_id": "lambourne-y2h-v1-raw-verification-20260804",
+  "verified_at_utc": "2026-08-04T13:44:02.066458+00:00",
+  "verifier_code": {
+    "entrypoint": "scripts/data/verify_raw_acquisition_v2.py",
+    "entrypoint_sha256": "e5a0734e1d91d5f92eef6dae155ea600cceab5657881e442c0f8c448b30fb6a1",
+    "git": {
+      "commit": "992a642ea74032e5e1b9e25def0c4c8d89a79fa1",
+      "tracked_worktree_clean": true
+    },
+    "implementation": "scripts/data/verify_raw_acquisition.py",
+    "implementation_sha256": "52a032c5da04c4a5e45710e6e6bc1f3ecc52fbe0c365ed0225f34c1ce9f32fa0"
+  },
+  "warnings": []
+}
