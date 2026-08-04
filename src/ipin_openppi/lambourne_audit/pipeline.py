@@ -953,7 +953,10 @@ def run_audit(
         project_root / "containers/images",
         strict=True,
     )
-    if active_container != expected_container:
+    # Apptainer exposes the launch path through APPTAINER_CONTAINER while the
+    # project is also bind-mounted at /work.  Require both aliases to resolve to
+    # the same inode, then independently enforce the configured content hash.
+    if not os.path.samefile(active_container, expected_container):
         raise RuntimeError("Active Apptainer image differs from configuration")
     container_sha = sha256_file(active_container)
     if container_sha != str(config["runtime"]["container_sha256"]):
