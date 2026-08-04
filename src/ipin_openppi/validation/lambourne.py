@@ -77,6 +77,15 @@ def _load_yaml(path: Path) -> dict[str, Any]:
     return value
 
 
+def _read_unique_zip_member(archive: zipfile.ZipFile, suffix: str) -> bytes:
+    names = [name for name in archive.namelist() if name.endswith(suffix)]
+    if len(names) != 1:
+        raise RuntimeError(
+            f"Independent ZIP lookup failed for {suffix!r}: found {len(names)}"
+        )
+    return archive.read(names[0])
+
+
 def _load_json(path: Path) -> dict[str, Any]:
     value = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(value, dict):
@@ -199,19 +208,23 @@ def _independent_source_metrics(
     raw_assets = config["raw_assets"]
     code = assets[str(raw_assets["archived_code"])]
     with zipfile.ZipFile(code.path) as archive:
-        def one(suffix: str) -> bytes:
-            names = [name for name in archive.namelist() if name.endswith(suffix)]
-            if len(names) != 1:
-                raise RuntimeError(f"Independent ZIP lookup failed: {suffix}")
-            return archive.read(names[0])
-
         selection = pd.read_csv(
-            BytesIO(one("predicting_human_interactome_pairs_to_test_2024-12-13.tsv")),
+            BytesIO(
+                _read_unique_zip_member(
+                    archive,
+                    "data/internal/predicting_human_interactome_pairs_to_test_2024-12-13.tsv",
+                )
+            ),
             sep="\t",
             dtype=str,
         )
         raw = pd.read_csv(
-            BytesIO(one("Y2H_v1_pairwise_test_AlphaFoldRoseTTAFold_human.tsv")),
+            BytesIO(
+                _read_unique_zip_member(
+                    archive,
+                    "data/internal/Y2H_v1_pairwise_test_AlphaFoldRoseTTAFold_human.tsv",
+                )
+            ),
             sep="\t",
             dtype=object,
         )
