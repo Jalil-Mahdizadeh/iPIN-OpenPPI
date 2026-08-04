@@ -1,0 +1,835 @@
+{
+  "audit_id": "NEGATIVE-EVIDENCE-AUDIT-001",
+  "audit_report": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/negative_evidence/negative_evidence_audit_v1/AUDIT_REPORT.json",
+  "audit_report_sha256": "ccefebc920ec5c3d1a04d271babbdee044608662ef88d87615a274d82f6e6315",
+  "audit_version": "1.0.0",
+  "authorizations": {
+    "candidate_pair_materialization": false,
+    "model_implementation": false,
+    "model_training": false,
+    "negative_evidence_audit_accepted": true,
+    "negative_label_construction": false,
+    "record_level_redistribution": false,
+    "split_construction": false
+  },
+  "canonical_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/negative_evidence_audit_v1/AUDIT_MANIFEST.json",
+  "canonical_manifest_sha256": "593b1b45ef579f4f4f403f8567510c28b0ac84b8818ac82d3b27a6d2dce9be24",
+  "canonical_root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/negative_evidence_audit_v1",
+  "check_counts": {
+    "fail": 0,
+    "pass": 43,
+    "warning": 0
+  },
+  "checks": [
+    {
+      "check_id": "runtime.pinned_apptainer_and_architecture",
+      "expected": {
+        "architecture": "aarch64",
+        "container_matches": true,
+        "container_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+      },
+      "observed": {
+        "architecture": "aarch64",
+        "container_matches": true,
+        "container_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.negative_evidence_v1.manifest_sidecar",
+      "expected": {
+        "sha256_matches": true,
+        "tokens": 2
+      },
+      "observed": {
+        "sha256_matches": true,
+        "tokens": 2
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.negative_evidence_v1.table_set",
+      "expected": [
+        "negatome_source_records"
+      ],
+      "observed": [
+        "negatome_source_records"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.negative_evidence_v1.hash_schema_immutability",
+      "expected": {
+        "error_count": 0,
+        "parquet_files": 1
+      },
+      "observed": {
+        "error_count": 0,
+        "parquet_files": 1
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.negative_evidence_audit_v1.manifest_sidecar",
+      "expected": {
+        "sha256_matches": true,
+        "tokens": 2
+      },
+      "observed": {
+        "sha256_matches": true,
+        "tokens": 2
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.negative_evidence_audit_v1.table_set",
+      "expected": [
+        "intact_negative_record_audit",
+        "negatome_intact_negative_overlaps",
+        "negatome_participant_mappings",
+        "negatome_record_audit"
+      ],
+      "observed": [
+        "intact_negative_record_audit",
+        "negatome_intact_negative_overlaps",
+        "negatome_participant_mappings",
+        "negatome_record_audit"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.negative_evidence_audit_v1.hash_schema_immutability",
+      "expected": {
+        "error_count": 0,
+        "parquet_files": 4
+      },
+      "observed": {
+        "error_count": 0,
+        "parquet_files": 4
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.scope_and_authorization_fail_closed",
+      "expected": {
+        "all_required_values": true
+      },
+      "observed": {
+        "all_required_values": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "manifest.producer_git_commit_and_cleanliness",
+      "expected": {
+        "commits_equal": true,
+        "production_clean": true
+      },
+      "observed": {
+        "canonical_commit": "30220bd5e0fec5f6c259ba369f14b62a71530f3f",
+        "current_commit": "30220bd5e0fec5f6c259ba369f14b62a71530f3f",
+        "production_clean": true,
+        "staging_commit": "30220bd5e0fec5f6c259ba369f14b62a71530f3f"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "report.output_manifest_hashes",
+      "expected": {
+        "canonical_matches": true,
+        "staging_matches": true
+      },
+      "observed": {
+        "canonical_matches": true,
+        "staging_matches": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "raw.subset_recomputation_matches_manifest",
+      "expected": {
+        "canonical_parent_records": 6568,
+        "datasets": {
+          "manual": {
+            "normalization": "strip_boundary_whitespace_per_field_only",
+            "parent_duplicate_rows": 10,
+            "parent_rows": 2171,
+            "parent_unique_normalized_rows": 2161,
+            "stringent_duplicate_rows": 9,
+            "stringent_normalized_multiset_subset": true,
+            "stringent_raw_exact_excess_rows": 24,
+            "stringent_raw_exact_multiset_subset": false,
+            "stringent_rows": 1991,
+            "stringent_unique_normalized_rows": 1982
+          },
+          "pdb": {
+            "normalization": "strip_boundary_whitespace_per_field_only",
+            "parent_duplicate_rows": 0,
+            "parent_rows": 4397,
+            "parent_unique_normalized_rows": 4397,
+            "stringent_duplicate_rows": 0,
+            "stringent_normalized_multiset_subset": true,
+            "stringent_raw_exact_excess_rows": 0,
+            "stringent_raw_exact_multiset_subset": true,
+            "stringent_rows": 4161,
+            "stringent_unique_normalized_rows": 4161
+          }
+        },
+        "physical_source_rows": 12720
+      },
+      "observed": {
+        "canonical_parent_records": 6568,
+        "datasets": {
+          "manual": {
+            "normalization": "strip_boundary_whitespace_per_field_only",
+            "parent_duplicate_rows": 10,
+            "parent_rows": 2171,
+            "parent_unique_normalized_rows": 2161,
+            "stringent_duplicate_rows": 9,
+            "stringent_normalized_multiset_subset": true,
+            "stringent_raw_exact_excess_rows": 24,
+            "stringent_raw_exact_multiset_subset": false,
+            "stringent_rows": 1991,
+            "stringent_unique_normalized_rows": 1982
+          },
+          "pdb": {
+            "normalization": "strip_boundary_whitespace_per_field_only",
+            "parent_duplicate_rows": 0,
+            "parent_rows": 4397,
+            "parent_unique_normalized_rows": 4397,
+            "stringent_duplicate_rows": 0,
+            "stringent_normalized_multiset_subset": true,
+            "stringent_raw_exact_excess_rows": 0,
+            "stringent_raw_exact_multiset_subset": true,
+            "stringent_rows": 4161,
+            "stringent_unique_normalized_rows": 4161
+          }
+        },
+        "physical_source_rows": 12720
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "raw.every_physical_row_preserved_exactly",
+      "expected": {
+        "mismatch_count": 0,
+        "rows": 12720
+      },
+      "observed": {
+        "mismatch_count": 0,
+        "rows": 12720
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "raw.subset_matches_frozen_expectations",
+      "expected": {
+        "canonical_parent_records": 6568,
+        "datasets": {
+          "manual": {
+            "normalization": "strip_boundary_whitespace_per_field_only",
+            "parent_duplicate_rows": 10,
+            "parent_rows": 2171,
+            "parent_unique_normalized_rows": 2161,
+            "stringent_duplicate_rows": 9,
+            "stringent_normalized_multiset_subset": true,
+            "stringent_raw_exact_excess_rows": 24,
+            "stringent_raw_exact_multiset_subset": false,
+            "stringent_rows": 1991,
+            "stringent_unique_normalized_rows": 1982
+          },
+          "pdb": {
+            "normalization": "strip_boundary_whitespace_per_field_only",
+            "parent_duplicate_rows": 0,
+            "parent_rows": 4397,
+            "parent_unique_normalized_rows": 4397,
+            "stringent_duplicate_rows": 0,
+            "stringent_normalized_multiset_subset": true,
+            "stringent_raw_exact_excess_rows": 0,
+            "stringent_raw_exact_multiset_subset": true,
+            "stringent_rows": 4161,
+            "stringent_unique_normalized_rows": 4161
+          }
+        },
+        "physical_source_rows": 12720
+      },
+      "observed": {
+        "canonical_parent_records": 6568,
+        "datasets": {
+          "manual": {
+            "normalization": "strip_boundary_whitespace_per_field_only",
+            "parent_duplicate_rows": 10,
+            "parent_rows": 2171,
+            "parent_unique_normalized_rows": 2161,
+            "stringent_duplicate_rows": 9,
+            "stringent_normalized_multiset_subset": true,
+            "stringent_raw_exact_excess_rows": 24,
+            "stringent_raw_exact_multiset_subset": false,
+            "stringent_rows": 1991,
+            "stringent_unique_normalized_rows": 1982
+          },
+          "pdb": {
+            "normalization": "strip_boundary_whitespace_per_field_only",
+            "parent_duplicate_rows": 0,
+            "parent_rows": 4397,
+            "parent_unique_normalized_rows": 4397,
+            "stringent_duplicate_rows": 0,
+            "stringent_normalized_multiset_subset": true,
+            "stringent_raw_exact_excess_rows": 0,
+            "stringent_raw_exact_multiset_subset": true,
+            "stringent_rows": 4161,
+            "stringent_unique_normalized_rows": 4161
+          }
+        },
+        "physical_source_rows": 12720
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_source_records.required_non_null",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_source_records.source_dataset.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_source_records.evidence_family.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_participant_mappings.required_non_null",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_participant_mappings.evidence_family.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_participant_mappings.mapping_state.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_participant_mappings.mapping_confidence.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_record_audit.required_non_null",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_record_audit.evidence_family.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_record_audit.pair_mapping_state.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_record_audit.mapping_confidence_a.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_record_audit.mapping_confidence_b.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_record_audit.reliability_tier.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.intact_negative_record_audit.required_non_null",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_intact_negative_overlaps.required_non_null",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "schema.negatome_intact_negative_overlaps.evidence_family.enum",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "semantics.no_universal_nonbinding_or_label_rows",
+      "expected": {
+        "labels": 0,
+        "universal": 0
+      },
+      "observed": {
+        "labels": 0,
+        "universal": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "semantics.primary_ids_unique",
+      "expected": {
+        "intact_audit": 0,
+        "mapping": 0,
+        "negatome_audit": 0,
+        "overlap": 0,
+        "source": 0
+      },
+      "observed": {
+        "intact_audit": 0,
+        "mapping": 0,
+        "negatome_audit": 0,
+        "overlap": 0,
+        "source": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "semantics.exactly_two_mappings_per_parent",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "mapping.parent_audit_matches_participant_mappings",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "mapping.frozen_reference_and_uncertainty_consistency",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.families_separate_and_missing_fields_not_imputed",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "positive.current_evidence_recomputation_matches_every_mapped_pair",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "intact.all_939_negative_records_and_provenance_exact",
+      "expected": {
+        "metadata_mismatch": 0,
+        "set_mismatch": 0
+      },
+      "observed": {
+        "metadata_mismatch": 0,
+        "set_mismatch": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "overlap.exact_source_and_frozen_pair_recomputation",
+      "expected": {
+        "expected_links": 0,
+        "output_links": 0,
+        "set_mismatch": 0,
+        "stored_bidirectional_link_sum": 0
+      },
+      "observed": {
+        "expected_links": 0,
+        "output_links": 0,
+        "set_mismatch": 0,
+        "stored_bidirectional_link_sum": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "classification.tiers_and_permitted_roles_recomputed",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.independent_recomputation_matches_frozen_expectations",
+      "expected": {
+        "intact_negative_records": 939,
+        "intact_negative_reference_pair_usable_records": 453,
+        "label_authorized_rows": 0,
+        "mapped_parent_records_by_family": {
+          "manual_experimental_negative": 1408,
+          "structure_derived_noncontact": 222
+        },
+        "overlap": {
+          "cross_source_link_count": 0,
+          "exact_ordered_source_links": 0,
+          "exact_unordered_source_links": 0,
+          "frozen_sequence_pair_links": 0,
+          "intact_negative_records_with_overlap": 0,
+          "negatome_parent_records_with_overlap": 0
+        },
+        "parent_pair_mapping_states": {
+          "both_unique_human": 1630,
+          "neither_unique_human": 4453,
+          "one_unique_human": 485
+        },
+        "parent_record_total": 6568,
+        "parent_records_by_family": {
+          "manual_experimental_negative": 2171,
+          "structure_derived_noncontact": 4397
+        },
+        "participant_mapping_confidences": {
+          "A_exact_frozen_identifier": 3704,
+          "B_unique_frozen_secondary_accession": 32,
+          "C_canonical_isoform1_alias": 9,
+          "D_unmapped_or_ambiguous": 9391
+        },
+        "participant_mapping_rows": 13136,
+        "participant_mapping_states": {
+          "ambiguous_frozen_accession": 38,
+          "canonical_isoform1_alias": 9,
+          "exact_isoform": 38,
+          "exact_primary_canonical": 3666,
+          "not_in_frozen_human_reference": 9353,
+          "secondary_accession_unique": 32
+        },
+        "positive_conflicts": {
+          "any_current_positive": 237,
+          "broader_CF_B": 183,
+          "direct_CF_D": 153
+        },
+        "positive_index": {
+          "combined_positive_index_unique_pairs": 212732,
+          "mapped_permitted_pair_view_rows": 79386,
+          "mapped_permitted_pair_view_unique_pairs": 71044,
+          "mapped_positive_evidence_rows": 619837,
+          "mapped_positive_evidence_unique_pairs": 194277,
+          "permitted_pair_views": [
+            "HI-II-14",
+            "HuRI",
+            "Lit-BM",
+            "Test_space_screens-19"
+          ]
+        },
+        "reliability_tiers": {
+          "ME-1": 1216,
+          "ME-2": 192,
+          "MX": 4938,
+          "SN-1": 154,
+          "SN-2": 68
+        },
+        "source_row_total": 12720,
+        "source_rows": {
+          "manual": 2171,
+          "manual_stringent": 1991,
+          "pdb": 4397,
+          "pdb_stringent": 4161
+        },
+        "universal_nonbinding_rows": 0
+      },
+      "observed": {
+        "intact_negative_records": 939,
+        "intact_negative_reference_pair_usable_records": 453,
+        "label_authorized_rows": 0,
+        "mapped_parent_records_by_family": {
+          "manual_experimental_negative": 1408,
+          "structure_derived_noncontact": 222
+        },
+        "overlap": {
+          "cross_source_link_count": 0,
+          "exact_ordered_source_links": 0,
+          "exact_unordered_source_links": 0,
+          "frozen_sequence_pair_links": 0,
+          "intact_negative_records_with_overlap": 0,
+          "negatome_parent_records_with_overlap": 0
+        },
+        "parent_pair_mapping_states": {
+          "both_unique_human": 1630,
+          "neither_unique_human": 4453,
+          "one_unique_human": 485
+        },
+        "parent_record_total": 6568,
+        "parent_records_by_family": {
+          "manual_experimental_negative": 2171,
+          "structure_derived_noncontact": 4397
+        },
+        "participant_mapping_confidences": {
+          "A_exact_frozen_identifier": 3704,
+          "B_unique_frozen_secondary_accession": 32,
+          "C_canonical_isoform1_alias": 9,
+          "D_unmapped_or_ambiguous": 9391
+        },
+        "participant_mapping_rows": 13136,
+        "participant_mapping_states": {
+          "ambiguous_frozen_accession": 38,
+          "canonical_isoform1_alias": 9,
+          "exact_isoform": 38,
+          "exact_primary_canonical": 3666,
+          "not_in_frozen_human_reference": 9353,
+          "secondary_accession_unique": 32
+        },
+        "positive_conflicts": {
+          "any_current_positive": 237,
+          "broader_CF_B": 183,
+          "direct_CF_D": 153
+        },
+        "positive_index": {
+          "combined_positive_index_unique_pairs": 212732,
+          "mapped_permitted_pair_view_rows": 79386,
+          "mapped_permitted_pair_view_unique_pairs": 71044,
+          "mapped_positive_evidence_rows": 619837,
+          "mapped_positive_evidence_unique_pairs": 194277,
+          "permitted_pair_views": [
+            "HI-II-14",
+            "HuRI",
+            "Lit-BM",
+            "Test_space_screens-19"
+          ]
+        },
+        "reliability_tiers": {
+          "ME-1": 1216,
+          "ME-2": 192,
+          "MX": 4938,
+          "SN-1": 154,
+          "SN-2": 68
+        },
+        "source_row_total": 12720,
+        "source_rows": {
+          "manual": 2171,
+          "manual_stringent": 1991,
+          "pdb": 4397,
+          "pdb_stringent": 4161
+        },
+        "universal_nonbinding_rows": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.manifest_and_audit_report_match_recomputation",
+      "expected": {
+        "manifest_matches": true,
+        "report_matches": true
+      },
+      "observed": {
+        "manifest_matches": true,
+        "report_matches": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "pnu.feasibility_recomputed_and_policy_preserved",
+      "expected": {
+        "blocking_identifiability_conditions": [
+          "no_complete_human_pair_level_selected_attempted_evaluable_population",
+          "Negatome_manual_construct_orientation_conditions_and_technical_evaluability_missing",
+          "IntAct_negatives_are_heterogeneous_curated_records_without_sampling_denominator",
+          "negative_source_selection_and_assay_sensitivity_are_unknown",
+          "biological_class_prior_is_not_identified"
+        ],
+        "bounded_manual_conditional_publications": 315,
+        "bounded_manual_conditional_records": 1188,
+        "bounded_manual_conditional_stratum_numerically_adequate": true,
+        "bounded_manual_conditional_unique_sequence_pairs": 1163,
+        "conditional_P_plus_N_plus_U_diagnostic_feasible": true,
+        "conditional_P_plus_N_plus_U_training_role_authorized": false,
+        "intact_negative_records_total": 939,
+        "intact_negative_reference_pair_usable_records": 453,
+        "positive_negative_unlabeled_design_evaluated": true,
+        "primary_population_calibrated_PNU_scientifically_identified": false,
+        "primary_population_calibrated_PNU_statistically_feasible": false,
+        "recommended_optional_role": "protected_source_assay_stratified_conditional_diagnostic_only",
+        "recommended_primary_design": "retain_reference_sequence_positive_unlabeled_ranking_PU_R",
+        "structure_noncontacts_join_manual_negative_class": false,
+        "universal_nonbinding_interpretation": false
+      },
+      "observed": {
+        "computed": {
+          "blocking_identifiability_conditions": [
+            "no_complete_human_pair_level_selected_attempted_evaluable_population",
+            "Negatome_manual_construct_orientation_conditions_and_technical_evaluability_missing",
+            "IntAct_negatives_are_heterogeneous_curated_records_without_sampling_denominator",
+            "negative_source_selection_and_assay_sensitivity_are_unknown",
+            "biological_class_prior_is_not_identified"
+          ],
+          "bounded_manual_conditional_publications": 315,
+          "bounded_manual_conditional_records": 1188,
+          "bounded_manual_conditional_stratum_numerically_adequate": true,
+          "bounded_manual_conditional_unique_sequence_pairs": 1163,
+          "conditional_P_plus_N_plus_U_diagnostic_feasible": true,
+          "conditional_P_plus_N_plus_U_training_role_authorized": false,
+          "intact_negative_records_total": 939,
+          "intact_negative_reference_pair_usable_records": 453,
+          "positive_negative_unlabeled_design_evaluated": true,
+          "primary_population_calibrated_PNU_scientifically_identified": false,
+          "primary_population_calibrated_PNU_statistically_feasible": false,
+          "recommended_optional_role": "protected_source_assay_stratified_conditional_diagnostic_only",
+          "recommended_primary_design": "retain_reference_sequence_positive_unlabeled_ranking_PU_R",
+          "structure_noncontacts_join_manual_negative_class": false,
+          "universal_nonbinding_interpretation": false
+        },
+        "manifest_matches": true,
+        "report_matches": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "report.non_extractive_license_and_scientific_scope",
+      "expected": {
+        "policy_ok": true
+      },
+      "observed": {
+        "policy_ok": true
+      },
+      "status": "pass"
+    }
+  ],
+  "expectation_config": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/negative_evidence_validation_v1.yaml",
+  "expectation_config_sha256": "039b9bf5878b611be59b92ecaa6c8848fad59341f80a04645b6ae0b34f312946",
+  "gate_id": "NEGATIVE-EVIDENCE-AUDIT-VALIDATION-001",
+  "interpretation": "Pass validates immutable row fidelity, frozen-reference mapping invariants, current positive conflicts, all frozen IntAct negatives, exact overlap, and conditional PNU arithmetic. It does not create universal negative labels or authorize training.",
+  "inventory": {
+    "canonical": {
+      "bytes": 1520246,
+      "parquet_files": 4,
+      "rows": 20643,
+      "tables": 4
+    },
+    "staging": {
+      "bytes": 610070,
+      "parquet_files": 1,
+      "rows": 12720,
+      "tables": 1
+    }
+  },
+  "metrics": {
+    "intact_negative_records": 939,
+    "intact_negative_reference_pair_usable_records": 453,
+    "label_authorized_rows": 0,
+    "mapped_parent_records_by_family": {
+      "manual_experimental_negative": 1408,
+      "structure_derived_noncontact": 222
+    },
+    "overlap": {
+      "cross_source_link_count": 0,
+      "exact_ordered_source_links": 0,
+      "exact_unordered_source_links": 0,
+      "frozen_sequence_pair_links": 0,
+      "intact_negative_records_with_overlap": 0,
+      "negatome_parent_records_with_overlap": 0
+    },
+    "parent_pair_mapping_states": {
+      "both_unique_human": 1630,
+      "neither_unique_human": 4453,
+      "one_unique_human": 485
+    },
+    "parent_record_total": 6568,
+    "parent_records_by_family": {
+      "manual_experimental_negative": 2171,
+      "structure_derived_noncontact": 4397
+    },
+    "participant_mapping_confidences": {
+      "A_exact_frozen_identifier": 3704,
+      "B_unique_frozen_secondary_accession": 32,
+      "C_canonical_isoform1_alias": 9,
+      "D_unmapped_or_ambiguous": 9391
+    },
+    "participant_mapping_rows": 13136,
+    "participant_mapping_states": {
+      "ambiguous_frozen_accession": 38,
+      "canonical_isoform1_alias": 9,
+      "exact_isoform": 38,
+      "exact_primary_canonical": 3666,
+      "not_in_frozen_human_reference": 9353,
+      "secondary_accession_unique": 32
+    },
+    "positive_conflicts": {
+      "any_current_positive": 237,
+      "broader_CF_B": 183,
+      "direct_CF_D": 153
+    },
+    "positive_index": {
+      "combined_positive_index_unique_pairs": 212732,
+      "mapped_permitted_pair_view_rows": 79386,
+      "mapped_permitted_pair_view_unique_pairs": 71044,
+      "mapped_positive_evidence_rows": 619837,
+      "mapped_positive_evidence_unique_pairs": 194277,
+      "permitted_pair_views": [
+        "HI-II-14",
+        "HuRI",
+        "Lit-BM",
+        "Test_space_screens-19"
+      ]
+    },
+    "reliability_tiers": {
+      "ME-1": 1216,
+      "ME-2": 192,
+      "MX": 4938,
+      "SN-1": 154,
+      "SN-2": 68
+    },
+    "source_row_total": 12720,
+    "source_rows": {
+      "manual": 2171,
+      "manual_stringent": 1991,
+      "pdb": 4397,
+      "pdb_stringent": 4161
+    },
+    "universal_nonbinding_rows": 0
+  },
+  "pnu_feasibility": {
+    "blocking_identifiability_conditions": [
+      "no_complete_human_pair_level_selected_attempted_evaluable_population",
+      "Negatome_manual_construct_orientation_conditions_and_technical_evaluability_missing",
+      "IntAct_negatives_are_heterogeneous_curated_records_without_sampling_denominator",
+      "negative_source_selection_and_assay_sensitivity_are_unknown",
+      "biological_class_prior_is_not_identified"
+    ],
+    "bounded_manual_conditional_publications": 315,
+    "bounded_manual_conditional_records": 1188,
+    "bounded_manual_conditional_stratum_numerically_adequate": true,
+    "bounded_manual_conditional_unique_sequence_pairs": 1163,
+    "conditional_P_plus_N_plus_U_diagnostic_feasible": true,
+    "conditional_P_plus_N_plus_U_training_role_authorized": false,
+    "intact_negative_records_total": 939,
+    "intact_negative_reference_pair_usable_records": 453,
+    "positive_negative_unlabeled_design_evaluated": true,
+    "primary_population_calibrated_PNU_scientifically_identified": false,
+    "primary_population_calibrated_PNU_statistically_feasible": false,
+    "recommended_optional_role": "protected_source_assay_stratified_conditional_diagnostic_only",
+    "recommended_primary_design": "retain_reference_sequence_positive_unlabeled_ranking_PU_R",
+    "structure_noncontacts_join_manual_negative_class": false,
+    "universal_nonbinding_interpretation": false
+  },
+  "schema_version": 1,
+  "scope": "production_full",
+  "staging_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/negative_evidence_v1/STAGING_MANIFEST.json",
+  "staging_manifest_sha256": "4b4c4cd9679f8bd6e6f207bbe067df75da30b38d900bc0214dcc1303095f3ec9",
+  "staging_root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/negative_evidence_v1",
+  "status": "pass",
+  "validated_at_utc": "2026-08-04T10:33:39.063926+00:00"
+}

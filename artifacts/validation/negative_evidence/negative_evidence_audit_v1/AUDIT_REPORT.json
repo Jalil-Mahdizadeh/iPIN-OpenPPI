@@ -1,0 +1,377 @@
+{
+  "additional_public_source_survey": {
+    "conclusion": {
+      "complete_public_human_population_attempted_evaluable_universe_found": false,
+      "current_primary_PNU_calibration_feasible": false,
+      "highest_priority_follow_up": "lambourne_2026_human_ai_prediction_y2h_panel",
+      "required_before_follow_up_use": [
+        "new_source_policy_and_preacquisition_manifest",
+        "license_and_payload_scope_confirmation",
+        "immutable_pair_level_acquisition",
+        "attempted_evaluable_NA_and_sequence_confirmation_audit",
+        "frozen_human_reference_mapping",
+        "current_positive_conflict_and_sampling_selection_audit"
+      ],
+      "source_scoped_conditional_PNU_diagnostics_potentially_feasible": true,
+      "universal_nonbinding_source_found": false
+    },
+    "source_count": 9,
+    "survey_id": "PUBLIC-EXPERIMENTAL-NONDETECTION-SURVEY-001"
+  },
+  "audit_id": "NEGATIVE-EVIDENCE-AUDIT-001",
+  "audit_version": "1.0.0",
+  "authorizations": {
+    "candidate_pair_materialization": false,
+    "evidence_indicator_construction": false,
+    "model_implementation": false,
+    "model_training": false,
+    "negative_evidence_audit_complete": true,
+    "negative_label_construction": false,
+    "record_level_redistribution": false,
+    "split_construction": false
+  },
+  "completed_at_utc": "2026-08-04T10:33:04.141467+00:00",
+  "git": {
+    "commit": "30220bd5e0fec5f6c259ba369f14b62a71530f3f",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "inputs": {
+    "acquisition_run_id": "negative-evidence-v1-20260804T074800Z",
+    "config": "configs/negative_evidence_audit_v1.yaml",
+    "config_sha256": "318f6847f1fb40be88fcf112f28fe1bdd7c7526012a398c00e6e9f8d2f025e0f",
+    "datasets": {
+      "evidence_mapping_summaries": {
+        "bytes": 76123667,
+        "combined_file_sha256": "dataset-files:6debb2a5f68f8f54a52c685573f59abe",
+        "file_hashes_reverified": true,
+        "parts": 8,
+        "rows": 773376,
+        "table": "evidence_mapping_summaries"
+      },
+      "huri_evidence": {
+        "bytes": 27037026,
+        "combined_file_sha256": "dataset-files:84d2d10e770a2671a5ff218d27ef5c95",
+        "file_hashes_reverified": true,
+        "parts": 3,
+        "rows": 220934,
+        "table": "evidence_records"
+      },
+      "huri_pair_views": {
+        "bytes": 4045391,
+        "combined_file_sha256": "dataset-files:7d3a459e68e833764107d62f302977b6",
+        "file_hashes_reverified": true,
+        "parts": 1,
+        "rows": 80781,
+        "table": "source_pair_views"
+      },
+      "identifier_mappings": {
+        "bytes": 136751276,
+        "combined_file_sha256": "dataset-files:f380a7bf9e96305d15c62ee94b09f5ff",
+        "file_hashes_reverified": true,
+        "parts": 44,
+        "rows": 4377974,
+        "table": "identifier_mappings"
+      },
+      "intact_evidence": {
+        "bytes": 54248812,
+        "combined_file_sha256": "dataset-files:3568e83743e36b64bfac7e94cbd78155",
+        "file_hashes_reverified": true,
+        "parts": 6,
+        "rows": 552442,
+        "table": "evidence_records"
+      },
+      "intact_participants": {
+        "bytes": 157917685,
+        "combined_file_sha256": "dataset-files:5ce1a8ce335e04cca0962ab83dbdd820",
+        "file_hashes_reverified": true,
+        "parts": 18,
+        "rows": 1771656,
+        "table": "participants"
+      },
+      "participant_sequence_mappings": {
+        "bytes": 213785529,
+        "combined_file_sha256": "dataset-files:fd030756f0290092b662838f2846120e",
+        "file_hashes_reverified": true,
+        "parts": 23,
+        "rows": 2213524,
+        "table": "participant_sequence_mappings"
+      },
+      "protein_sequences": {
+        "bytes": 47528561,
+        "combined_file_sha256": "dataset-files:774803ac74efa85c01fa060cfcd1f5c8",
+        "file_hashes_reverified": true,
+        "parts": 2,
+        "rows": 169637,
+        "table": "protein_sequences"
+      }
+    },
+    "documents": {
+      "audit_schema": {
+        "bytes": 18856,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/canonical/negative_evidence_audit_v1.yaml",
+        "sha256": "7775e7c40146a14e6393180339d8c8f84669de3bb909338e7c03b849ff3900a3"
+      },
+      "benchmark_estimand_policy": {
+        "bytes": 1923,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/benchmark_estimand_policy_v1.yaml",
+        "sha256": "3340b6b9e4130d8011b43ccf92556d59f9278a89a05b08b4c6581ec8b311164d"
+      },
+      "frozen_uniprot_dat": {
+        "bytes": 134512433,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/raw/uniprot/2026_02/UP000005640/UP000005640_9606.dat.gz",
+        "sha256": "8157caae64bf8382b7afccee30863f060e858dab6862dad3e15af0d20047a7b0"
+      },
+      "negative_acquisition_manifest": {
+        "bytes": 14102,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/source_manifests/acquisitions/negative-evidence-v1-20260804T074800Z/ACQUISITION_MANIFEST.json",
+        "sha256": "c628c960590b046293f286038574138fda2d4ecfd5b351e15d8dc21b65151dc5"
+      },
+      "negative_raw_verification_report": {
+        "bytes": 7162,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/source_acquisition/raw_verification_negative_evidence_v1.json",
+        "sha256": "2a18393601997da4e662adb0a2c6739dbe734d4214df7551861fdc822ed31d0e"
+      },
+      "primary_parse_manifest": {
+        "bytes": 223738,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/PARSE_MANIFEST.json",
+        "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+      },
+      "primary_reconciliation_manifest": {
+        "bytes": 26286,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json",
+        "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+      },
+      "primary_reconciliation_validation_report": {
+        "bytes": 59114,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json",
+        "sha256": "9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2"
+      },
+      "primary_staging_validation_report": {
+        "bytes": 39661,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json",
+        "sha256": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba"
+      },
+      "source_policy": {
+        "bytes": 3297,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/source_policy_v2.yaml",
+        "sha256": "ecb92f21880584de506410a0820652cc22832184851810a1d1518353090f16e7"
+      },
+      "source_survey": {
+        "bytes": 8431,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/source_surveys/PUBLIC_EXPERIMENTAL_NONDETECTION_SURVEY_v1.yaml",
+        "sha256": "1cc610c6d7c3550751c2d086b248db46ba8137fc114c39afa3aabc77c2bfca2a"
+      }
+    },
+    "raw_assets": {
+      "manual": {
+        "asset_id": "negatome_manual",
+        "bytes": 123362,
+        "path": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/manual.txt",
+        "read_only": true,
+        "sha256": "f05410c9ba1748e0d36a13e9b873a67e61bdcef2446904735fc3e172ca78aa16"
+      },
+      "manual_stringent": {
+        "asset_id": "negatome_manual_stringent",
+        "bytes": 113757,
+        "path": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/manual_stringent.txt",
+        "read_only": true,
+        "sha256": "6391316c19abaf8a677ef65878891e9ae6fd9346dff53e2c0617cb34516f578c"
+      },
+      "pdb": {
+        "asset_id": "negatome_pdb",
+        "bytes": 305645,
+        "path": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/pdb.txt",
+        "read_only": true,
+        "sha256": "85232908f1b993b9bb54abc0547a2566cc99930538d134faec8db56f303df182"
+      },
+      "pdb_stringent": {
+        "asset_id": "negatome_pdb_stringent",
+        "bytes": 279096,
+        "path": "data/raw/negatome/2.0/provider-snapshot-2021-09-15/pdb_stringent.txt",
+        "read_only": true,
+        "sha256": "61026a6147d5729980efc80f84e85d92bbd9424b11a586332c8ebf193011cc3c"
+      }
+    }
+  },
+  "license_and_redistribution": {
+    "aggregate_non_extractive_reporting": "approved",
+    "determination_is_legal_advice": false,
+    "intact_data_license": "CC-BY-4.0",
+    "internal_research_audit": "approved",
+    "negatome_payload_license": "not_explicitly_stated",
+    "raw_and_record_level_redistribution": "not_authorized"
+  },
+  "metrics": {
+    "intact_negative_records": 939,
+    "intact_negative_reference_pair_usable_records": 453,
+    "label_authorized_rows": 0,
+    "mapped_parent_records_by_family": {
+      "manual_experimental_negative": 1408,
+      "structure_derived_noncontact": 222
+    },
+    "overlap": {
+      "cross_source_link_count": 0,
+      "exact_ordered_source_links": 0,
+      "exact_unordered_source_links": 0,
+      "frozen_sequence_pair_links": 0,
+      "intact_negative_records_with_overlap": 0,
+      "negatome_parent_records_with_overlap": 0
+    },
+    "parent_pair_mapping_states": {
+      "both_unique_human": 1630,
+      "neither_unique_human": 4453,
+      "one_unique_human": 485
+    },
+    "parent_record_total": 6568,
+    "parent_records_by_family": {
+      "manual_experimental_negative": 2171,
+      "structure_derived_noncontact": 4397
+    },
+    "participant_mapping_confidences": {
+      "A_exact_frozen_identifier": 3704,
+      "B_unique_frozen_secondary_accession": 32,
+      "C_canonical_isoform1_alias": 9,
+      "D_unmapped_or_ambiguous": 9391
+    },
+    "participant_mapping_rows": 13136,
+    "participant_mapping_states": {
+      "ambiguous_frozen_accession": 38,
+      "canonical_isoform1_alias": 9,
+      "exact_isoform": 38,
+      "exact_primary_canonical": 3666,
+      "not_in_frozen_human_reference": 9353,
+      "secondary_accession_unique": 32
+    },
+    "positive_conflicts": {
+      "any_current_positive": 237,
+      "broader_CF_B": 183,
+      "direct_CF_D": 153
+    },
+    "positive_index": {
+      "combined_positive_index_unique_pairs": 212732,
+      "mapped_permitted_pair_view_rows": 79386,
+      "mapped_permitted_pair_view_unique_pairs": 71044,
+      "mapped_positive_evidence_rows": 619837,
+      "mapped_positive_evidence_unique_pairs": 194277,
+      "permitted_pair_views": [
+        "HI-II-14",
+        "HuRI",
+        "Lit-BM",
+        "Test_space_screens-19"
+      ]
+    },
+    "reliability_tiers": {
+      "ME-1": 1216,
+      "ME-2": 192,
+      "MX": 4938,
+      "SN-1": 154,
+      "SN-2": 68
+    },
+    "source_row_total": 12720,
+    "source_rows": {
+      "manual": 2171,
+      "manual_stringent": 1991,
+      "pdb": 4397,
+      "pdb_stringent": 4161
+    },
+    "universal_nonbinding_rows": 0
+  },
+  "outputs": {
+    "canonical_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/negative_evidence_audit_v1/AUDIT_MANIFEST.json",
+    "canonical_manifest_sha256": "593b1b45ef579f4f4f403f8567510c28b0ac84b8818ac82d3b27a6d2dce9be24",
+    "record_level_outputs_internal_only": true,
+    "staging_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/negative_evidence_v1/STAGING_MANIFEST.json",
+    "staging_manifest_sha256": "4b4c4cd9679f8bd6e6f207bbe067df75da30b38d900bc0214dcc1303095f3ec9"
+  },
+  "pnu_feasibility": {
+    "blocking_identifiability_conditions": [
+      "no_complete_human_pair_level_selected_attempted_evaluable_population",
+      "Negatome_manual_construct_orientation_conditions_and_technical_evaluability_missing",
+      "IntAct_negatives_are_heterogeneous_curated_records_without_sampling_denominator",
+      "negative_source_selection_and_assay_sensitivity_are_unknown",
+      "biological_class_prior_is_not_identified"
+    ],
+    "bounded_manual_conditional_publications": 315,
+    "bounded_manual_conditional_records": 1188,
+    "bounded_manual_conditional_stratum_numerically_adequate": true,
+    "bounded_manual_conditional_unique_sequence_pairs": 1163,
+    "conditional_P_plus_N_plus_U_diagnostic_feasible": true,
+    "conditional_P_plus_N_plus_U_training_role_authorized": false,
+    "intact_negative_records_total": 939,
+    "intact_negative_reference_pair_usable_records": 453,
+    "positive_negative_unlabeled_design_evaluated": true,
+    "primary_population_calibrated_PNU_scientifically_identified": false,
+    "primary_population_calibrated_PNU_statistically_feasible": false,
+    "recommended_optional_role": "protected_source_assay_stratified_conditional_diagnostic_only",
+    "recommended_primary_design": "retain_reference_sequence_positive_unlabeled_ranking_PU_R",
+    "structure_noncontacts_join_manual_negative_class": false,
+    "universal_nonbinding_interpretation": false
+  },
+  "runtime": {
+    "architecture": "aarch64",
+    "container": "containers/images/ipin-data-arm64_0.1.2.sif",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "duckdb": "1.5.5",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scientific_conclusion": {
+    "all_939_intact_negative_records_enumerated": true,
+    "every_usable_negatome_pair_checked_against_current_positive_index": true,
+    "historical_stringency_treated_as_current_conflict_clearance": false,
+    "manual_and_structure_noncontact_kept_separate": true,
+    "primary_design_should_change_from_PU_R": false,
+    "universal_nonbinding_interpretation": false,
+    "universal_nonbinding_source_found": false
+  },
+  "scope": "aggregate_non_extractive_negative_evidence_discovery_audit",
+  "started_at_utc": "2026-08-04T10:32:36.356309+00:00",
+  "status": "complete",
+  "subset_validation": {
+    "canonical_parent_records": 6568,
+    "datasets": {
+      "manual": {
+        "normalization": "strip_boundary_whitespace_per_field_only",
+        "parent_duplicate_rows": 10,
+        "parent_rows": 2171,
+        "parent_unique_normalized_rows": 2161,
+        "stringent_duplicate_rows": 9,
+        "stringent_normalized_multiset_subset": true,
+        "stringent_raw_exact_excess_rows": 24,
+        "stringent_raw_exact_multiset_subset": false,
+        "stringent_rows": 1991,
+        "stringent_unique_normalized_rows": 1982
+      },
+      "pdb": {
+        "normalization": "strip_boundary_whitespace_per_field_only",
+        "parent_duplicate_rows": 0,
+        "parent_rows": 4397,
+        "parent_unique_normalized_rows": 4397,
+        "stringent_duplicate_rows": 0,
+        "stringent_normalized_multiset_subset": true,
+        "stringent_raw_exact_excess_rows": 0,
+        "stringent_raw_exact_multiset_subset": true,
+        "stringent_rows": 4161,
+        "stringent_unique_normalized_rows": 4161
+      }
+    },
+    "physical_source_rows": 12720
+  },
+  "task": "negative_evidence_discovery_audit_v1",
+  "warnings": [
+    {
+      "code": "NEGATOME_LICENSE_UNRESOLVED",
+      "effect": "raw_and_record_level_outputs_remain_internal_only"
+    },
+    {
+      "code": "NEGATOME_PROVENANCE_INCOMPLETE",
+      "effect": "construct_orientation_species_conditions_and_evaluability_are_not_imputed"
+    },
+    {
+      "code": "NO_COMPLETE_HUMAN_TESTED_UNIVERSE",
+      "effect": "population_calibrated_PNU_is_not_identified"
+    }
+  ]
+}

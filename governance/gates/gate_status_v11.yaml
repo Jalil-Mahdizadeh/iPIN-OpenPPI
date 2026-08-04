@@ -1,0 +1,111 @@
+schema_version: 11
+supersedes: governance/gates/gate_status_v10.yaml
+updated_date: "2026-08-04"
+programme_state: active_m0_negative_evidence_audit_accepted_next_eligibility_audit_authorized
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    production_sif: containers/images/ipin-data-arm64_0.1.2.sif
+    production_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+    architecture: aarch64
+    continuing_condition: every_later_image_requires_regression_qualification
+  evidence:
+    status: in_progress
+    accepted_prior_subgates:
+      raw_acquisition: governance/decisions/DEC-0007-accept-primary-raw-acquisition.md
+      source_parsing: governance/decisions/DEC-0008-accept-primary-evidence-staging.md
+      source_reconciliation: governance/decisions/DEC-0009-accept-primary-source-reconciliation.md
+      systematic_screen_audit: artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json
+      proposal_consistency: artifacts/validation/benchmark_design/benchmark_estimand_policy_proposal_v1/VALIDATION_REPORT.json
+    source_license_subgate:
+      status: pass_with_redistribution_constraints
+      active_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v4.yaml
+      active_policy: configs/source_policy_v2.yaml
+      license_register: governance/licenses/SOURCE_LICENSE_REGISTER_v5.md
+      negatome_internal_audit_authorized: true
+      negatome_aggregate_non_extractive_reporting_authorized: true
+      negatome_raw_or_record_level_redistribution_authorized: false
+    negative_evidence_discovery_subgate:
+      status: pass
+      work_package_id: negative_evidence_discovery_audit_v1
+      accepted_amendment: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_v1.md
+      acceptance_decision: governance/decisions/DEC-0012-accept-negative-evidence-discovery-audit.md
+      expert_report: docs/reports/m0/M0_Negative_Evidence_Discovery_Audit_Final_v1.md
+      audit_report: artifacts/validation/negative_evidence/negative_evidence_audit_v1/AUDIT_REPORT.json
+      audit_report_sha256: ccefebc920ec5c3d1a04d271babbdee044608662ef88d87615a274d82f6e6315
+      validation_report: artifacts/validation/negative_evidence/negative_evidence_audit_v1/VALIDATION_REPORT.json
+      validation_report_sha256: e3b7b8da6fbb9d6361278e9d89ab1cdd070c087279a8a821dc852cfd5f4fc155
+      validation_counts: {pass: 43, fail: 0, warning: 0}
+      frozen_uniprot_release: "2026_02"
+      negatome_physical_source_rows: 12720
+      negatome_parent_records: 6568
+      both_unique_human_parent_records: 1630
+      frozen_intact_negative_record_count: 939
+      usable_intact_negative_reference_pairs: 453
+      exact_negatome_intact_negative_overlap_links: 0
+      current_positive_conflicted_negatome_records: 237
+      conditional_manual_diagnostic_records: 1188
+      conditional_manual_diagnostic_unique_pairs: 1163
+      conditional_manual_diagnostic_publications: 315
+      manual_and_structure_noncontact_separate: true
+      reliability_tiers_required: true
+      universal_nonbinding_interpretation_authorized: false
+      population_calibrated_pnu_identified: false
+      conditional_pnu_diagnostic_potentially_feasible: true
+      conditional_pnu_training_role_authorized: false
+      primary_design_change_required: false
+    additional_negative_source_follow_up:
+      status: candidate_not_authorized
+      highest_priority_candidate: lambourne_2026_human_ai_prediction_y2h_panel
+      survey: governance/source_surveys/PUBLIC_EXPERIMENTAL_NONDETECTION_SURVEY_v1.yaml
+      required_gate: new_source_policy_preacquisition_license_and_pair_level_semantics_audit
+    strict_construct_branch:
+      status: blocked
+      reason: construct_confidence_a_or_b_coverage_zero_and_issue_0005_open
+      issue: governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md
+    next_authorized_unit: benchmark_eligibility_and_sequence_component_audit_v1
+    next_authorized_unit_status: authorized_not_started
+    next_unit_pair_materialization_authorized: false
+    label_construction_authorized: false
+    structural_mapping_authorized: false
+    model_training_authorized: false
+  benchmark:
+    status: primary_policy_accepted_preconstruction
+    accepted_policy: configs/benchmark_estimand_policy_v1.yaml
+    accepted_blueprint_amendment: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_v1.md
+    accepted_decision: governance/decisions/DEC-0011-accept-blueprint-amendment-001-and-authorize-negative-evidence-audit.md
+    negative_evidence_decision: governance/decisions/DEC-0012-accept-negative-evidence-discovery-audit.md
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    active_output: symmetric_sequence_compatibility_prioritization_score
+    output_is_probability: false
+    conditional_negative_diagnostic_candidate_registered: true
+    conditional_negative_diagnostic_training_role_authorized: false
+    issue_0003_disposition: resolved_by_approved_estimand_narrowing_without_tested_universe_recovery
+    candidate_universe_construction_authorized: false
+    evidence_indicator_construction_authorized: false
+    negative_label_construction_authorized: false
+    split_construction_authorized: false
+    structural_mapping_authorized: false
+    model_implementation_authorized: false
+    model_training_authorized: false
+  statistical: {status: not_started}
+  routing: {status: not_started}
+  retrieval: {status: not_started}
+  uncertainty: {status: not_started}
+  computational_validation: {status: not_started}
+  release: {status: not_started}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_or_unreported_pair_as_negative: true
+  technical_failure_as_negative: true
+  merge_manual_negative_with_structure_noncontact: true
+  historical_stringency_as_current_conflict_clearance: true
+  raw_negatome_redistribution_without_permission: true
+  conditional_negative_diagnostic_as_training_labels: true
+  label_split_or_model_construction_before_later_gate: true
+  experimental_validation_claim: true
