@@ -17,9 +17,15 @@ import yaml
 
 
 DEFAULT_EXPECTED_SOURCE_KEYS = {"huri", "uniprot", "intact_imex", "pdb_sifts"}
-SUPPORTED_SOURCE_KEYS = DEFAULT_EXPECTED_SOURCE_KEYS | {"negatome"}
+SUPPORTED_SOURCE_KEYS = DEFAULT_EXPECTED_SOURCE_KEYS | {
+    "negatome",
+    "lambourne_human_y2h",
+}
 ALLOWED_LICENSES = {
-    "CC-BY-4.0", "CC0-1.0", "UNSPECIFIED-NO-REDISTRIBUTION"
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIXED-CC-BY-4.0-MIT",
+    "UNSPECIFIED-NO-REDISTRIBUTION",
 }
 
 
@@ -183,6 +189,15 @@ def validate_manifest(
             (("guards", "preserve_manual_and_pdb_families_separately"), True),
             (("guards", "raw_redistribution_allowed"), False),
         ],
+        "lambourne_human_y2h": [
+            (("guards", "original_4100_selected_pair_universe_required"), True),
+            (("guards", "final_3222_analysis_subset_required"), True),
+            (("guards", "technical_or_na_outcome_is_negative"), False),
+            (("guards", "outcomes_as_training_labels"), False),
+            (("guards", "merge_with_negatome"), False),
+            (("guards", "benchmark_split_construction"), False),
+            (("guards", "universal_nonbinding_interpretation"), False),
+        ],
     }
     for key_path, expected_value in special_expectations[source_key]:
         observed = nested_get(data, *key_path)
@@ -308,7 +323,7 @@ def main() -> int:
 
     report = {
         "schema_version": 1,
-        "validation_id": "PREACQ-VALIDATION-001",
+        "validation_id": "PREACQ-VALIDATION-002",
         "validated_at_utc": datetime.now(timezone.utc).isoformat(),
         "status": "pass" if not errors else "fail",
         "runtime": {

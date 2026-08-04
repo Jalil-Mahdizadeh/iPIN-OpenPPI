@@ -1,0 +1,191 @@
+schema_version: 1
+manifest_id: PREACQ-LAMBOURNE-HUMAN-Y2H-001
+source_key: lambourne_human_y2h
+created_date: "2026-08-04"
+stage: preacquisition
+approved_for_download: true
+
+source:
+  name: Lambourne et al. 2026 human Y2H-v1 selected-pair panel
+  article_doi: 10.1038/s41467-026-70942-x
+  article_version_of_record_date: "2026-06-03"
+  imex_study: IM-30553
+  zenodo_concept_doi: 10.5281/zenodo.18499797
+  zenodo_version_doi: 10.5281/zenodo.19118078
+  zenodo_record_id: "19118078"
+  zenodo_version: v2.1
+  zenodo_created_date: "2026-03-21"
+  observed_on: "2026-08-04"
+  imex_service_state: curated_not_integrated_preview_available
+
+license:
+  identifier: MIXED-CC-BY-4.0-MIT
+  terms_url: https://www.nature.com/articles/s41467-026-70942-x
+  nature_scope: article_and_included_supplementary_material_unless_separate_credit_line
+  nature_license: CC-BY-4.0
+  zenodo_record_license: MIT
+  intact_data_license: CC-BY-4.0
+  intact_terms_url: https://www.ebi.ac.uk/intact/about
+  attribution_required: true
+  mit_notice_required_for_archive_redistribution: true
+  third_party_credit_line_review_required: true
+  raw_repository_commit: prohibited_by_project_data_policy
+  record_level_derived_release: requires_post_audit_governance_review
+  audit_record: governance/licenses/SOURCE_LICENSE_REGISTER_v6.md
+
+assets:
+  - asset_id: article_methods_supplement
+    url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-70942-x/MediaObjects/41467_2026_70942_MOESM1_ESM.pdf
+    destination: data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM1_ESM.pdf
+    format: pdf
+    required: true
+    expected:
+      content_length_bytes: 2556881
+      etag: '"f76f5f60f2d5096331151dda9d4d1fef"'
+      last_modified: "Sat, 04 Apr 2026 15:36:24 GMT"
+      provider_checksum: null
+  - asset_id: supplementary_data_22
+    url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-70942-x/MediaObjects/41467_2026_70942_MOESM22_ESM.xlsx
+    destination: data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM22_ESM.xlsx
+    format: xlsx
+    required: true
+    expected:
+      content_length_bytes: 264313
+      etag: '"79e759f682e261831692f573253980ab"'
+      last_modified: "Sat, 04 Apr 2026 15:36:22 GMT"
+      provider_checksum: null
+  - asset_id: article_source_data
+    url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-70942-x/MediaObjects/41467_2026_70942_MOESM27_ESM.xlsx
+    destination: data/raw/lambourne_2026/version-of-record-2026-06-03/nature/41467_2026_70942_MOESM27_ESM.xlsx
+    format: xlsx
+    required: true
+    expected:
+      content_length_bytes: 5988321
+      etag: '"f37c4d7c710f3e5a671399ab18ba68a3"'
+      last_modified: "Sat, 04 Apr 2026 15:36:21 GMT"
+      provider_checksum: null
+  - asset_id: zenodo_record_metadata
+    url: https://zenodo.org/api/records/19118078
+    destination: data/raw/lambourne_2026/zenodo/record-19118078-v2.1/record_metadata.json
+    format: json
+    required: true
+    expected:
+      content_length_bytes: null
+      etag: '"4"'
+      last_modified: null
+      provider_checksum: null
+  - asset_id: archived_code_v1_1
+    url: https://zenodo.org/api/records/19118078/files/CCSB-DFCI/ai-interactome-experimental-assessment-v1.1.zip/content
+    destination: data/raw/lambourne_2026/zenodo/record-19118078-v2.1/ai-interactome-experimental-assessment-v1.1.zip
+    format: zip_archive
+    required: true
+    expected:
+      content_length_bytes: 37940047
+      etag: null
+      last_modified: "Fri, 20 Mar 2026 01:01:00 GMT"
+      provider_checksum:
+        algorithm: md5
+        value: d10626b8c369113995f9aa1db3d63a62
+  - asset_id: archived_input_data_v2_1
+    url: https://zenodo.org/api/records/19118078/files/lambourne_et_al_2026_input_data.tar.gz/content
+    destination: data/raw/lambourne_2026/zenodo/record-19118078-v2.1/lambourne_et_al_2026_input_data.tar.gz
+    format: tar_gzip
+    required: true
+    expected:
+      content_length_bytes: 29980820672
+      etag: null
+      last_modified: "Sat, 21 Mar 2026 15:01:04 GMT"
+      provider_checksum:
+        algorithm: md5
+        value: db2a81cb84dca6f4e4d2227ea67bbf17
+  - asset_id: imex_study_status
+    url: https://www.ebi.ac.uk/intact/imex/main.xhtml?query=IM-30553&Search=1
+    destination: data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/study_status.html
+    format: html
+    required: true
+    expected:
+      content_length_bytes: null
+      etag: null
+      last_modified: null
+      provider_checksum: null
+  - asset_id: imex_preview_html
+    url: https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=html
+    destination: data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.html
+    format: html
+    required: true
+    expected:
+      content_length_bytes: null
+      etag: null
+      last_modified: null
+      provider_checksum: null
+  - asset_id: imex_preview_xml300_expanded
+    url: https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=xml300_expanded
+    destination: data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553-expanded.xml
+    format: psi_mi_xml_3_expanded
+    required: true
+    expected:
+      content_length_bytes: null
+      etag: null
+      last_modified: null
+      provider_checksum: null
+  - asset_id: imex_preview_mitab27
+    url: https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=tab27
+    destination: data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.mitab27.txt
+    format: mitab27
+    required: true
+    expected:
+      content_length_bytes: null
+      etag: null
+      last_modified: null
+      provider_checksum: null
+  - asset_id: imex_preview_mijson
+    url: https://www.ebi.ac.uk/intact/editor/service/export/mi/publication-imex?imex=IM-30553&format=json
+    destination: data/raw/lambourne_2026/imex/IM-30553/preview-snapshot-2026-08-04/IM-30553.json
+    format: mijson
+    required: true
+    expected:
+      content_length_bytes: null
+      etag: null
+      last_modified: null
+      provider_checksum: null
+
+verification:
+  calculate_sha256: true
+  verify_provider_checksum: when_available
+  capture_http_headers: true
+  record_count_and_schema_report: required
+  reconcile_original_selected_universe_across_sources: required
+  reconcile_final_analysis_subset_across_sources: required
+  reconcile_imex_preview_with_paper_and_archive: required
+
+guards:
+  original_4100_selected_pair_universe_required: true
+  final_3222_analysis_subset_required: true
+  technical_or_na_outcome_is_negative: false
+  outcomes_as_training_labels: false
+  merge_with_negatome: false
+  benchmark_split_construction: false
+  universal_nonbinding_interpretation: false
+  preserve_bait_prey_orientation: true
+  preserve_construct_and_sequence_confirmation: true
+  imex_preview_is_intact_release_252: false
+  return_to_governance_before_integration: true
+
+known_gaps:
+  - IM-30553 is curated but not integrated into IntAct services at the acquisition date; preview exports are a dated provider snapshot, not IntAct Release 252.
+  - Export endpoints do not expose stable payload checksums or HTTP version identifiers; local SHA-256 and retrieval metadata define the frozen preview snapshot.
+  - The 3,222-pair subset was selected by a later prediction-list filter and must not be treated as the original random sample without explicit inclusion analysis.
+
+approved_actions:
+  - immutable_internal_acquisition
+  - source_representation_and_pair_semantics_validation
+  - frozen_uniprot_mapping
+  - evidence_overlap_and_contamination_audit
+  - aggregate_protected_benchmark_feasibility_reporting
+prohibited_actions:
+  - use_lambourne_outcomes_as_training_labels
+  - merge_lambourne_outcomes_with_negatome
+  - construct_benchmark_splits
+  - train_or_select_models
+  - infer_universal_nonbinding
+  - treat_na_or_technical_failure_as_negative

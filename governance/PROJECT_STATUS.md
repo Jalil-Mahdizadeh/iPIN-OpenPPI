@@ -5,8 +5,8 @@
 **Scientific programme state:** Systematic-screen audit validated; PU benchmark amendment proposed and awaiting expert-group approval
 
 > **Superseded on 2026-08-04.** The current restart checkpoint is
-> `governance/PROJECT_STATUS_v11.md`; the current authoritative gate is
-> `governance/gates/gate_status_v11.yaml`. The text below is retained only as
+> `governance/PROJECT_STATUS_v12.md`; the current authoritative gate is
+> `governance/gates/gate_status_v12.yaml`. The text below is retained only as
 > immutable evidence of the pre-acceptance pause.
 
 This file is the durable restart checkpoint. The authoritative gate details remain in

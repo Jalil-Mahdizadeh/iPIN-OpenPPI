@@ -32,8 +32,10 @@ ALLOWED_HOSTS = frozenset(
     {
         "interactome-atlas.org",
         "media.springernature.com",
+        "zenodo.org",
         "ftp.uniprot.org",
         "ftp.ebi.ac.uk",
+        "www.ebi.ac.uk",
         "mips.helmholtz-muenchen.de",
     }
 )

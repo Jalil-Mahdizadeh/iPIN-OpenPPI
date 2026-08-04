@@ -1,7 +1,7 @@
 # Source and license register
 
 > **Historical initialization record.** The current register is
-> `governance/licenses/SOURCE_LICENSE_REGISTER_v5.md`. This file is retained as
+> `governance/licenses/SOURCE_LICENSE_REGISTER_v6.md`. This file is retained as
 > immutable evidence of the pre-acquisition state.
 
 **Status:** Initialized; no scientific source has yet been downloaded.

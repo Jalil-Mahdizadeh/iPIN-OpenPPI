@@ -4,16 +4,17 @@ Evidence-aware, sequence-based prioritization of direct human heteromeric protei
 
 ## Current status
 
-Project execution was authorized on 2026-08-03. Arrhenius/Apptainer qualification,
-primary-source acquisition, evidence staging, and source reconciliation have been
-completed and accepted. The evidence gate remains in progress because the systematic
-tested-universe and structural-release blockers are unresolved.
+Arrhenius/Apptainer qualification, primary-source acquisition, evidence staging,
+source reconciliation, systematic-screen analysis, and the negative-evidence
+discovery audit are complete and accepted. The eligibility/sequence-component
+audit is paused and unstarted while the governance-bounded Lambourne et al. 2026
+human Y2H-v1 pair-semantics audit is executed.
 
-The next authorized unit is **benchmark and estimand design only**. Label construction,
-split construction, structural mapping under unresolved release alignment, and model
-training remain prohibited. The exact restart point is recorded in
-[the project status checkpoint](governance/PROJECT_STATUS.md), and the authoritative
-gate ledger is [gate status version 8](governance/gates/gate_status_v8.yaml).
+Lambourne outcomes may not become training labels, be merged with Negatome, or
+be integrated into a benchmark before a new governance decision. Label, split,
+candidate, and model construction remain prohibited. The exact restart point is
+[project status version 12](governance/PROJECT_STATUS_v12.md), and the authoritative
+ledger is [gate status version 12](governance/gates/gate_status_v12.yaml).
 
 The binding scientific specification is [the Version 3 final blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md). All production computation must run on NAISS Arrhenius through immutable ARM64 Apptainer SIF images.
 
@@ -48,16 +49,14 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
 
 ## Next execution sequence
 
-1. Audit systematic-screen selection, attempted-pair, evaluability, technical-state,
-   orientation, and explicit negative/control metadata.
-2. Resolve or formally disposition the missing HuRI attempted/evaluable pair universe;
-   use a PU/latent-observation proposal if it cannot be reconstructed.
-3. Define admissible benchmark tiers under the unresolved SIFTS/UniProt alignment and
-   zero strict construct-A/B coverage.
-4. Draft and validate the benchmark/estimand policy, including leakage controls,
-   evaluation axes, prevalence, metrics, uncertainty, and minimum-size rules.
-5. Prepare a decision record and gate update for approval before constructing labels
-   or splits.
+1. Acquire and freeze the manifested Nature, Zenodo, and IMEx IM-30553 sources.
+2. Reconstruct the exact 4,100 selected pairs and 3,222 final-analysis pairs,
+   preserving outcome, technical, construct, orientation, and confirmation states.
+3. Map to frozen UniProt 2026_02 and audit permitted evidence, pair overlap, and
+   sequence-family contamination without constructing splits.
+4. Independently validate the audit and assess protected assay-specific external-
+   benchmark feasibility and identifiable claims.
+5. Return a scientific report and decision proposal to governance before any
+   benchmark integration or resumption of the sequence-component audit.
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.
-

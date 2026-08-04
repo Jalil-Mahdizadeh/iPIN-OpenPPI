@@ -1,0 +1,91 @@
+schema_version: 12
+supersedes: governance/gates/gate_status_v11.yaml
+updated_date: "2026-08-04"
+programme_state: active_m0_lambourne_y2h_governance_bounded_audit
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    production_sif: containers/images/ipin-data-arm64_0.1.2.sif
+    production_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+    architecture: aarch64
+    continuing_condition: every_scientific_operation_runs_through_pinned_apptainer
+  evidence:
+    status: in_progress_bounded_lambourne_pair_semantics_audit
+    accepted_prior_subgates:
+      raw_acquisition: governance/decisions/DEC-0007-accept-primary-raw-acquisition.md
+      source_parsing: governance/decisions/DEC-0008-accept-primary-evidence-staging.md
+      source_reconciliation: governance/decisions/DEC-0009-accept-primary-source-reconciliation.md
+      negative_evidence_discovery: governance/decisions/DEC-0012-accept-negative-evidence-discovery-audit.md
+    source_license_subgate:
+      status: pass_for_bounded_acquisition
+      active_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v5.yaml
+      active_policy: configs/source_policy_v3.yaml
+      license_register: governance/licenses/SOURCE_LICENSE_REGISTER_v6.md
+      nature_assets: CC-BY-4.0_subject_to_credit_line_review
+      zenodo_record_19118078_v2_1: MIT
+      intact_imex_preview: CC-BY-4.0
+      negatome_record_level_redistribution_authorized: false
+    lambourne_human_y2h_subgate:
+      status: authorized_in_progress
+      authorization_decision: governance/decisions/DEC-0013-authorize-lambourne-y2h-semantics-audit.md
+      source_key: lambourne_human_y2h
+      study: IM-30553
+      imex_state: curated_not_integrated_preview_only
+      original_selected_pair_count_required: 4100
+      final_analysis_pair_count_required: 3222
+      frozen_uniprot_release: "2026_02"
+      exact_positive_negative_na_accounting_required: true
+      pair_and_sequence_family_contamination_audit_required: true
+      protected_external_benchmark_feasibility_only: true
+      outcome_training_label_role_authorized: false
+      merge_with_negatome_authorized: false
+      benchmark_split_construction_authorized: false
+      model_training_authorized: false
+      universal_nonbinding_interpretation_authorized: false
+      required_return: governance_decision_proposal_before_any_integration
+    benchmark_eligibility_and_sequence_component_audit:
+      status: paused_not_started
+      prior_authorization: governance/gates/gate_status_v11.yaml
+      resume_only_after_lambourne_governance_disposition: true
+    strict_construct_branch:
+      status: blocked
+      reason: construct_confidence_a_or_b_coverage_zero_and_issue_0005_open
+      issue: governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md
+    label_construction_authorized: false
+    candidate_pair_materialization_authorized: false
+    structural_mapping_authorized: false
+    model_training_authorized: false
+  benchmark:
+    status: primary_policy_accepted_preconstruction_lambourne_integration_not_authorized
+    accepted_policy: configs/benchmark_estimand_policy_v1.yaml
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    active_output: symmetric_sequence_compatibility_prioritization_score
+    output_is_probability: false
+    lambourne_external_benchmark_status: audit_only
+    candidate_universe_construction_authorized: false
+    evidence_indicator_construction_authorized: false
+    negative_label_construction_authorized: false
+    split_construction_authorized: false
+    model_implementation_authorized: false
+    model_training_authorized: false
+  statistical: {status: not_started}
+  routing: {status: not_started}
+  retrieval: {status: not_started}
+  uncertainty: {status: not_started}
+  computational_validation: {status: not_started}
+  release: {status: not_started}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_unreported_or_technical_state_as_negative: true
+  merge_lambourne_with_negatome: true
+  lambourne_outcomes_as_training_labels: true
+  benchmark_split_construction: true
+  model_training_or_selection: true
+  imex_preview_as_release_252: true
+  benchmark_integration_before_governance_return: true
+  experimental_validation_claim: true

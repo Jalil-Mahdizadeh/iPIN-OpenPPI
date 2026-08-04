@@ -1,0 +1,88 @@
+schema_version: 1
+policy_id: SOURCE-POLICY-003
+effective_date: "2026-08-04"
+project: ipin-openppi
+scope: primary_human_evidence_negative_evidence_and_bounded_lambourne_y2h_audit
+supersedes: configs/source_policy_v2.yaml
+inherits_unchanged_source_rules_from: configs/source_policy_v2.yaml
+
+global_acquisition_rules:
+  https_only: true
+  raw_payloads_are_immutable: true
+  release_or_snapshot_directory_required: true
+  retrieval_timestamp_utc_required: true
+  response_headers_required: true
+  local_sha256_required: true
+  provider_checksum_verification_required_when_available: true
+  atomic_download_required: true
+  parser_image_digest_required: true
+  parser_commit_required: true
+  schema_and_record_count_report_required: true
+  scientific_downloads_must_run_inside_apptainer: true
+  source_license_review_precedes_download: true
+
+evidence_semantics:
+  primary_object: source_assay_record
+  preserve_selected_attempted_evaluable_and_outcome_states: true
+  preserve_construct_and_orientation: true
+  preserve_sequence_confirmation: true
+  preserve_assay_species_publication_and_conditions: true
+  technical_or_na_state_is_negative: false
+  negative_outcome_is_universal_nonbinding: false
+  source_disagreement_must_be_retained: true
+
+source_rules:
+  inherited_sources:
+    policy: configs/source_policy_v2.yaml
+    source_keys: [huri, uniprot, intact_imex, pdb_sifts, negatome]
+    semantics_unchanged: true
+  lambourne_human_y2h:
+    source_scope: selected_human_ai_prediction_pairs_assayed_in_y2h_v1
+    frozen_reference_release: "UniProt 2026_02"
+    allowed:
+      - immutable_internal_acquisition
+      - provenance_preserving_pair_level_semantics_audit
+      - frozen_reference_mapping
+      - current_permitted_evidence_reconciliation
+      - pair_and_sequence_family_contamination_diagnostics
+      - protected_external_benchmark_feasibility_assessment
+      - aggregate_scientific_reporting
+    prohibited:
+      - use_outcomes_as_training_labels
+      - merge_outcomes_with_negatome
+      - construct_benchmark_splits
+      - train_or_select_models
+      - infer_universal_nonbinding
+      - interpret_na_or_technical_failure_as_negative
+      - silently_collapse_bait_prey_orientation
+      - silently_collapse_construct_or_isoform_identity
+      - treat_imex_preview_as_frozen_intact_release_252
+    required:
+      - reconstruct_exact_original_4100_selected_pair_universe
+      - reconstruct_exact_final_3222_analysis_subset
+      - account_for_every_selected_pair
+      - preserve_positive_negative_na_and_technical_states
+      - retain_source_field_and_row_provenance
+      - reconcile_paper_archive_and_imex_representations
+      - map_deterministically_to_frozen_uniprot_2026_02
+      - audit_current_positive_negative_and_negatome_overlap
+      - audit_pair_and_sequence_family_leakage
+      - state_identifiable_and_nonidentifiable_claims
+      - return_to_governance_before_benchmark_integration
+
+release_rules:
+  nature_assets: CC-BY-4.0_with_attribution_and_third_party_credit_line_review
+  zenodo_record_19118078_v2_1: MIT_notice_required
+  intact_imex_preview: CC-BY-4.0_with_attribution
+  record_level_derived_release: governance_review_required
+  raw_git_commit: false
+
+authorization_boundary:
+  acquisition_of_manifested_lambourne_assets: authorized
+  pair_level_semantics_audit: authorized_after_checksum
+  mapping_and_overlap_audit: authorized
+  diagnostic_sequence_family_search_without_split_construction: authorized
+  benchmark_integration: not_authorized
+  outcome_label_construction: not_authorized
+  benchmark_split_construction: not_authorized
+  model_training_or_selection: not_authorized
