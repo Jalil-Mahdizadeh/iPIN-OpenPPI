@@ -236,8 +236,14 @@ def verify_response_metadata(expected: dict[str, Any], observed: dict[str, Any])
         )
     expected_modified = expected.get("last_modified") or expected.get("last_modified_date")
     observed_modified = observed.get("last_modified")
-    if expected_modified is not None and (
-        not isinstance(observed_modified, str) or expected_modified not in observed_modified
+    # Last-Modified is optional HTTP metadata. Some providers expose it on the
+    # pre-acquisition HEAD response but omit it from the content GET. Absence is
+    # recorded in provenance and is not a contradiction; an explicit different
+    # value remains a hard failure. Byte counts and checksums are still enforced.
+    if (
+        expected_modified is not None
+        and observed_modified is not None
+        and (not isinstance(observed_modified, str) or expected_modified not in observed_modified)
     ):
         raise AcquisitionError(
             f"Last-Modified mismatch: expected {expected_modified!r}, observed {observed_modified!r}"

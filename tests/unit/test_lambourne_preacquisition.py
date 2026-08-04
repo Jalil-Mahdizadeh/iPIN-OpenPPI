@@ -98,6 +98,20 @@ class LambournePreacquisitionTests(unittest.TestCase):
             {"algorithm": "md5", "value": "db2a81cb84dca6f4e4d2227ea67bbf17"},
         )
 
+    def test_optional_last_modified_omission_is_not_a_false_mismatch(self) -> None:
+        expected = {"last_modified": "Fri, 20 Mar 2026 01:01:00 GMT"}
+        observed = {
+            "http_status": 200,
+            "final_url": "https://zenodo.org/api/records/19118078/files/file/content",
+            "content_length": None,
+            "etag": None,
+            "last_modified": None,
+        }
+        ACQUIRER.verify_response_metadata(expected, observed)
+        observed["last_modified"] = "Fri, 20 Mar 2025 01:01:00 GMT"
+        with self.assertRaises(ACQUIRER.AcquisitionError):
+            ACQUIRER.verify_response_metadata(expected, observed)
+
 
 if __name__ == "__main__":
     unittest.main()
