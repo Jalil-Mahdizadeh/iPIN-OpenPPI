@@ -1,0 +1,269 @@
+{
+  "acquisition_manifest": "data/source_manifests/acquisitions/tf-isoform-y2h-v1-20260804T191300Z/ACQUISITION_MANIFEST.json",
+  "asset_count": 5,
+  "code": {
+    "git": {
+      "commit": "4a36e93c332281bfed9c69d4206fc090cebd044b",
+      "status": "",
+      "tracked_worktree_clean": true
+    },
+    "qualification_lock": "containers/locks/ipin-qual-arm64_0.1.0.qualification.lock",
+    "qualification_lock_sha256": "3e1f43eb11a5f77bd06dc0c4f4c5f6f21349b788017cad01825eb542099c0d89",
+    "script": "scripts/data/acquire_manifest_assets.py",
+    "script_sha256": "dd71056378013d35f858b25d9fa6b7b77dce221a1a459a1ead5d3f488b6d271e"
+  },
+  "completed_at_utc": "2026-08-04T19:15:43.719447+00:00",
+  "downloaded_new_count": 5,
+  "dry_run": false,
+  "errors": [],
+  "free_bytes_at_start": 9644495687680,
+  "index": {
+    "manifest_set_id": "PREACQ-PRIMARY-NEGATIVE-TWO-Y2H-AUDITS-006",
+    "path": "data/source_manifests/PREACQUISITION_INDEX_v6.yaml",
+    "sha256": "4a71b3cad0311a295878b1da0d8fd8c6503e07932819b23012cd7ab8fc23bf85"
+  },
+  "known_expected_bytes": 3785117858,
+  "label_construction_performed": false,
+  "model_training_performed": false,
+  "records": [
+    {
+      "acquired_at_utc": "2026-08-04T19:12:35.850887+00:00",
+      "asset_id": "article_methods_pdf",
+      "bytes": 6697076,
+      "destination": "data/raw/tf_isoform_y2h_2025/article-2025-03-26/lambourne_et_al_2025_author_hosted.pdf",
+      "format_inspection": {
+        "declared_format": "pdf",
+        "detected_container_format": "pdf"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": null,
+        "content_length": "6697076",
+        "content_type": "application/pdf",
+        "etag": "\"7246fb3771ad1709cdf2cbbac75396c8\"",
+        "final_url": "https://ccsb.dana-farber.org/uploads/7/6/8/6/76866695/widespread_variation_in_molecular_interactions_and_regulatory_properties_among_transcription_factor_isoforms.pdf",
+        "http_status": 200,
+        "last_modified": "Wed, 26 Mar 2025 16:58:47 GMT"
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "a2cb4e325d025a7df9365bb41ea4c73dc62f37fcf7f387e1a0032cb8900c90d8",
+      "sidecar": "data/raw/tf_isoform_y2h_2025/article-2025-03-26/lambourne_et_al_2025_author_hosted.pdf.acquisition.json",
+      "source_key": "tf_isoform_y2h_2025",
+      "source_manifest": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "source_manifest_sha256": "4fd45c6e398fe5fb9dd7543e03767aa892f38cdfdf8cf1a9f34fef990f2804fe",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://ccsb.dana-farber.org/uploads/7/6/8/6/76866695/widespread_variation_in_molecular_interactions_and_regulatory_properties_among_transcription_factor_isoforms.pdf"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T19:12:36.953037+00:00",
+      "asset_id": "zenodo_code_metadata",
+      "bytes": 4774,
+      "destination": "data/raw/tf_isoform_y2h_2025/zenodo/record-14969075-v2.1.0/record_metadata.json",
+      "format_inspection": {
+        "declared_format": "json",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": null,
+        "content_disposition": null,
+        "content_length": "4774",
+        "content_type": "application/json",
+        "etag": "\"4\"",
+        "final_url": "https://zenodo.org/api/records/14969075",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "f2112cb84c4dd0b35a54fdd1844acd2583dff4ba8a290381bf63ffff286e6397",
+      "sidecar": "data/raw/tf_isoform_y2h_2025/zenodo/record-14969075-v2.1.0/record_metadata.json.acquisition.json",
+      "source_key": "tf_isoform_y2h_2025",
+      "source_manifest": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "source_manifest_sha256": "4fd45c6e398fe5fb9dd7543e03767aa892f38cdfdf8cf1a9f34fef990f2804fe",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://zenodo.org/api/records/14969075"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T19:12:37.317731+00:00",
+      "asset_id": "zenodo_code_and_supplement_v2_1_0",
+      "bytes": 9939666,
+      "destination": "data/raw/tf_isoform_y2h_2025/zenodo/record-14969075-v2.1.0/TF_isoforms_paper-v2.1.0.zip",
+      "format_inspection": {
+        "archive": {
+          "encrypted_member_count": 0,
+          "extracted": false,
+          "maximum_member_compression_ratio": 42.77599775154581,
+          "member_count": 116,
+          "symlink_member_count": 0,
+          "total_compressed_bytes": 9913982,
+          "total_uncompressed_bytes": 27541826,
+          "unsafe_path_count": 0
+        },
+        "declared_format": "zip_archive",
+        "detected_container_format": "zip"
+      },
+      "provider_checksum": {
+        "algorithm": "md5",
+        "expected": "b37ea7aa87602527ec6e963e3d2c2c00",
+        "observed": "b37ea7aa87602527ec6e963e3d2c2c00",
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": "attachment; filename=TF_isoforms_paper-v2.1.0.zip",
+        "content_length": "9939666",
+        "content_type": "application/octet-stream",
+        "etag": null,
+        "final_url": "https://zenodo.org/api/records/14969075/files/CCSB-DFCI/TF_isoforms_paper-v2.1.0.zip/content",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "7159f5fda99e3700c3c6e35a2a6ad2e91af554f481859f937f55571adbbff54a",
+      "sidecar": "data/raw/tf_isoform_y2h_2025/zenodo/record-14969075-v2.1.0/TF_isoforms_paper-v2.1.0.zip.acquisition.json",
+      "source_key": "tf_isoform_y2h_2025",
+      "source_manifest": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "source_manifest_sha256": "4fd45c6e398fe5fb9dd7543e03767aa892f38cdfdf8cf1a9f34fef990f2804fe",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://zenodo.org/api/records/14969075/files/CCSB-DFCI/TF_isoforms_paper-v2.1.0.zip/content"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T19:12:40.841227+00:00",
+      "asset_id": "zenodo_input_metadata",
+      "bytes": 4415,
+      "destination": "data/raw/tf_isoform_y2h_2025/zenodo/record-14968584-v2/record_metadata.json",
+      "format_inspection": {
+        "declared_format": "json",
+        "detected_container_format": "text"
+      },
+      "provider_checksum": {
+        "algorithm": null,
+        "expected": null,
+        "observed": null,
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": null,
+        "content_disposition": null,
+        "content_length": "4415",
+        "content_type": "application/json",
+        "etag": "\"4\"",
+        "final_url": "https://zenodo.org/api/records/14968584",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "c52a501fcfd05578a465295490676a26de909dfc5661e0efc2c3d6c539ac41af",
+      "sidecar": "data/raw/tf_isoform_y2h_2025/zenodo/record-14968584-v2/record_metadata.json.acquisition.json",
+      "source_key": "tf_isoform_y2h_2025",
+      "source_manifest": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "source_manifest_sha256": "4fd45c6e398fe5fb9dd7543e03767aa892f38cdfdf8cf1a9f34fef990f2804fe",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://zenodo.org/api/records/14968584"
+    },
+    {
+      "acquired_at_utc": "2026-08-04T19:12:41.796655+00:00",
+      "asset_id": "zenodo_input_data_v2",
+      "bytes": 3768481116,
+      "destination": "data/raw/tf_isoform_y2h_2025/zenodo/record-14968584-v2/TF_isoforms_paper_data_dir_v2.tar.gz",
+      "format_inspection": {
+        "declared_format": "tar_gzip",
+        "detected_container_format": "gzip",
+        "gzip_prefix_decompressed_bytes": 65536
+      },
+      "provider_checksum": {
+        "algorithm": "md5",
+        "expected": "4a2144e5bc86a840e630518f10ae17b9",
+        "observed": "4a2144e5bc86a840e630518f10ae17b9",
+        "passed": true
+      },
+      "raw_immutable": true,
+      "required": true,
+      "response": {
+        "accept_ranges": "bytes",
+        "content_disposition": "attachment; filename=TF_isoforms_paper_data_dir_v2.tar.gz",
+        "content_length": "3768481116",
+        "content_type": "application/octet-stream",
+        "etag": null,
+        "final_url": "https://zenodo.org/api/records/14968584/files/TF_isoforms_paper_data_dir_v2.tar.gz/content",
+        "http_status": 200,
+        "last_modified": null
+      },
+      "run_disposition": "downloaded_new",
+      "schema_version": 1,
+      "sha256": "652f6f5a4368610f46fe50e362ca489930ba652eeb052af612c05170018be157",
+      "sidecar": "data/raw/tf_isoform_y2h_2025/zenodo/record-14968584-v2/TF_isoforms_paper_data_dir_v2.tar.gz.acquisition.json",
+      "source_key": "tf_isoform_y2h_2025",
+      "source_manifest": "data/source_manifests/PREACQUISITION_tf_isoform_y2h_2025_v1.yaml",
+      "source_manifest_sha256": "4fd45c6e398fe5fb9dd7543e03767aa892f38cdfdf8cf1a9f34fef990f2804fe",
+      "tls": {
+        "additional_ca_certificate": null,
+        "certificate_verification": true,
+        "hostname_verification": true,
+        "insecure_mode": false
+      },
+      "url": "https://zenodo.org/api/records/14968584/files/TF_isoforms_paper_data_dir_v2.tar.gz/content"
+    }
+  ],
+  "required_asset_count": 5,
+  "reused_existing_count": 0,
+  "run_id": "tf-isoform-y2h-v1-20260804T191300Z",
+  "runtime": {
+    "apptainer_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+    "inside_apptainer": true,
+    "platform": "Linux-5.14.0-687.26.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scientific_payloads_downloaded": true,
+  "selected_sources": [
+    "tf_isoform_y2h_2025"
+  ],
+  "started_at_utc": "2026-08-04T19:12:35.824136+00:00",
+  "status": "pass",
+  "total_payload_bytes": 3785127047,
+  "warnings": []
+}

@@ -1,0 +1,336 @@
+schema_name: ipin_openppi_tf_isoform_y2h_audit
+schema_version: 1
+description: >-
+  Governance-bounded reconstruction of the Lambourne et al. 2025 human
+  TF-isoform pairwise Y2H panel and continuous N2H observations. Assay
+  negatives are contextual observations, never universal nonbinding labels.
+
+enums:
+  outcome_class:
+    - positive_y2h_observation
+    - explicit_negative_y2h_observation
+    - sequence_confirmation_failure
+    - mating_or_spotting_failure
+    - assay_measurement_failure
+    - autoactivation
+    - unknown_unresolved
+  evaluability_state: [evaluable, technically_unevaluable]
+  observation_state: [positive, negative, not_applicable]
+
+tables:
+  archive_members:
+    required_non_null: [archive_asset_id, archive_format, member_ordinal, member_path, member_type, uncompressed_bytes, selected_for_audit, archive_sha256, safety_state, source_archive_path, license_id, redistribution_tier]
+    columns:
+      - {name: archive_asset_id, type: string, nullable: false}
+      - {name: archive_format, type: string, nullable: false}
+      - {name: member_ordinal, type: int64, nullable: false}
+      - {name: member_path, type: string, nullable: false}
+      - {name: member_type, type: string, nullable: false}
+      - {name: uncompressed_bytes, type: int64, nullable: false}
+      - {name: compressed_bytes, type: int64, nullable: true}
+      - {name: selected_for_audit, type: bool, nullable: false}
+      - {name: member_sha256, type: string, nullable: true}
+      - {name: archive_sha256, type: string, nullable: false}
+      - {name: safety_state, type: string, nullable: false}
+      - {name: source_archive_path, type: string, nullable: false}
+      - {name: license_id, type: string, nullable: false}
+      - {name: redistribution_tier, type: string, nullable: false}
+
+  clone_records:
+    required_non_null: [clone_record_id, source_row_ordinal, clone_id, clone_accession, gene_symbol, isoform_status, gencode_transcript_ids, ensembl_transcript_ids, cds_sequence, aa_sequence, cds_sha256, aa_sha256, cds_length, aa_length, cds_translates_to_reported_aa, raw_fasta_cds_concordant, tf_family, source_member_path, source_member_sha256, raw_locator, license_id, redistribution_tier, training_label_authorized, benchmark_integration_authorized, universal_nonbinding_asserted]
+    columns:
+      - {name: clone_record_id, type: string, nullable: false}
+      - {name: source_row_ordinal, type: int64, nullable: false}
+      - {name: clone_id, type: string, nullable: false}
+      - {name: clone_accession, type: string, nullable: false}
+      - {name: gene_symbol, type: string, nullable: false}
+      - {name: isoform_status, type: string, nullable: false}
+      - {name: gencode_transcript_ids, type: "list<string>", nullable: false}
+      - {name: ensembl_transcript_ids, type: "list<string>", nullable: false}
+      - {name: cds_sequence, type: string, nullable: false}
+      - {name: aa_sequence, type: string, nullable: false}
+      - {name: cds_sha256, type: string, nullable: false}
+      - {name: aa_sha256, type: string, nullable: false}
+      - {name: cds_length, type: int64, nullable: false}
+      - {name: aa_length, type: int64, nullable: false}
+      - {name: cds_translates_to_reported_aa, type: bool, nullable: false}
+      - {name: raw_fasta_cds_concordant, type: bool, nullable: false}
+      - {name: tf_family, type: string, nullable: false}
+      - {name: source_member_path, type: string, nullable: false}
+      - {name: source_member_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: license_id, type: string, nullable: false}
+      - {name: redistribution_tier, type: string, nullable: false}
+      - {name: training_label_authorized, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+
+  screen_selection_records:
+    required_non_null: [selection_record_id, source_row_ordinal, ad_orf_id, db_orf_id, ordered_orf_pair_id, in_orfeome_screen, in_focussed_screen, source_member_path, source_member_sha256, raw_locator, training_label_authorized, benchmark_integration_authorized, universal_nonbinding_asserted]
+    columns:
+      - {name: selection_record_id, type: string, nullable: false}
+      - {name: source_row_ordinal, type: int64, nullable: false}
+      - {name: ad_orf_id, type: string, nullable: false}
+      - {name: db_orf_id, type: string, nullable: false}
+      - {name: ordered_orf_pair_id, type: string, nullable: false}
+      - {name: in_orfeome_screen, type: bool, nullable: false}
+      - {name: in_focussed_screen, type: bool, nullable: false}
+      - {name: source_member_path, type: string, nullable: false}
+      - {name: source_member_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: training_label_authorized, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+
+  raw_y2h_records:
+    required_non_null: [raw_y2h_record_id, source_row_ordinal, large_plate_name, retest_plate, retest_position, ad_gene_symbol, ad_clone_id, ad_orf_id, db_gene_symbol, db_orf_id, source_category, score_3at_raw, score_lw_raw, empty_ad_3at_raw, empty_ad_lw_raw, reported_result_raw, sequence_confirmation_3at_raw, sequence_confirmation_lw_raw, in_public_pairwise_table, source_member_path, source_member_sha256, raw_locator, training_label_authorized, benchmark_integration_authorized, universal_nonbinding_asserted]
+    columns:
+      - {name: raw_y2h_record_id, type: string, nullable: false}
+      - {name: source_row_ordinal, type: int64, nullable: false}
+      - {name: large_plate_name, type: string, nullable: false}
+      - {name: retest_plate, type: string, nullable: false}
+      - {name: retest_position, type: string, nullable: false}
+      - {name: ad_gene_symbol, type: string, nullable: false}
+      - {name: ad_clone_id, type: string, nullable: false}
+      - {name: ad_orf_id, type: string, nullable: false}
+      - {name: db_gene_symbol, type: string, nullable: false}
+      - {name: db_orf_id, type: string, nullable: false}
+      - {name: source_category, type: string, nullable: false}
+      - {name: score_3at_raw, type: string, nullable: false}
+      - {name: score_lw_raw, type: string, nullable: false}
+      - {name: empty_ad_3at_raw, type: string, nullable: false}
+      - {name: empty_ad_lw_raw, type: string, nullable: false}
+      - {name: reported_result_raw, type: string, nullable: false}
+      - {name: sequence_confirmation_3at_raw, type: string, nullable: false}
+      - {name: sequence_confirmation_lw_raw, type: string, nullable: false}
+      - {name: in_public_pairwise_table, type: bool, nullable: false}
+      - {name: public_source_row_ordinal, type: int64, nullable: true}
+      - {name: source_member_path, type: string, nullable: false}
+      - {name: source_member_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: training_label_authorized, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+
+  raw_n2h_records:
+    required_non_null: [raw_n2h_record_id, source_row_ordinal, test_orf_ida, test_orf_idb, test_plate, test_position_pair, score_pair_raw, pair_token, source_stratum, test_position_empty_n1, score_empty_n1_raw, test_position_empty_n2, score_empty_n2_raw, clone_accession, gene_symbol_tf, gene_symbol_partner, in_public_n2h_table, source_member_path, source_member_sha256, raw_locator, training_label_authorized, benchmark_integration_authorized, universal_nonbinding_asserted]
+    columns:
+      - {name: raw_n2h_record_id, type: string, nullable: false}
+      - {name: source_row_ordinal, type: int64, nullable: false}
+      - {name: test_orf_ida, type: string, nullable: false}
+      - {name: test_orf_idb, type: string, nullable: false}
+      - {name: test_plate, type: string, nullable: false}
+      - {name: test_position_pair, type: string, nullable: false}
+      - {name: score_pair_raw, type: string, nullable: false}
+      - {name: pair_token, type: string, nullable: false}
+      - {name: source_stratum, type: string, nullable: false}
+      - {name: test_position_empty_n1, type: string, nullable: false}
+      - {name: score_empty_n1_raw, type: string, nullable: false}
+      - {name: test_position_empty_n2, type: string, nullable: false}
+      - {name: score_empty_n2_raw, type: string, nullable: false}
+      - {name: clone_accession, type: string, nullable: false}
+      - {name: gene_symbol_tf, type: string, nullable: false}
+      - {name: gene_symbol_partner, type: string, nullable: false}
+      - {name: in_public_n2h_table, type: bool, nullable: false}
+      - {name: public_source_row_ordinal, type: int64, nullable: true}
+      - {name: source_member_path, type: string, nullable: false}
+      - {name: source_member_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: training_label_authorized, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+
+  clone_sequence_mappings:
+    required_non_null: [clone_mapping_id, clone_id, gene_symbol, ad_orf_ids, construct_aa_sha256, construct_aa_length, construct_exact_frozen_match, construct_mapping_state, frozen_candidate_sequence_ids, frozen_candidate_accessions, frozen_candidate_isoform_ids, frozen_candidate_sequence_hashes, canonical_mapping_state, canonical_candidate_accessions, canonical_candidate_sequence_hashes, uniref90_ids, frozen_uniprot_release, mapping_provenance_json, training_label_authorized, benchmark_integration_authorized, universal_nonbinding_asserted]
+    columns:
+      - {name: clone_mapping_id, type: string, nullable: false}
+      - {name: clone_id, type: string, nullable: false}
+      - {name: gene_symbol, type: string, nullable: false}
+      - {name: ad_orf_ids, type: "list<string>", nullable: false}
+      - {name: construct_aa_sha256, type: string, nullable: false}
+      - {name: construct_aa_length, type: int64, nullable: false}
+      - {name: construct_exact_frozen_match, type: bool, nullable: false}
+      - {name: construct_mapping_state, type: string, nullable: false}
+      - {name: frozen_candidate_sequence_ids, type: "list<string>", nullable: false}
+      - {name: frozen_candidate_accessions, type: "list<string>", nullable: false}
+      - {name: frozen_candidate_isoform_ids, type: "list<string>", nullable: false}
+      - {name: frozen_candidate_sequence_hashes, type: "list<string>", nullable: false}
+      - {name: canonical_mapping_state, type: string, nullable: false}
+      - {name: canonical_candidate_accessions, type: "list<string>", nullable: false}
+      - {name: canonical_candidate_sequence_hashes, type: "list<string>", nullable: false}
+      - {name: uniref90_ids, type: "list<string>", nullable: false}
+      - {name: frozen_uniprot_release, type: string, nullable: false}
+      - {name: mapping_provenance_json, type: string, nullable: false}
+      - {name: training_label_authorized, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+
+  partner_construct_mappings:
+    required_non_null: [partner_mapping_id, db_orf_id, db_gene_symbol, source_categories, source_construct_sequence_available, mapping_state, mapping_confidence, mapping_basis, candidate_sequence_ids, candidate_accessions, candidate_isoform_ids, candidate_sequence_hashes, reference_sequence_usable, canonical_mapping_state, canonical_candidate_accessions, canonical_candidate_sequence_hashes, uniref90_ids, frozen_uniprot_release, mapping_provenance_json, training_label_authorized, benchmark_integration_authorized, universal_nonbinding_asserted]
+    columns:
+      - {name: partner_mapping_id, type: string, nullable: false}
+      - {name: db_orf_id, type: string, nullable: false}
+      - {name: db_gene_symbol, type: string, nullable: false}
+      - {name: source_categories, type: "list<string>", nullable: false}
+      - {name: source_construct_sequence_available, type: bool, nullable: false}
+      - {name: source_clone_ids, type: "list<string>", nullable: false}
+      - {name: mapping_state, type: string, nullable: false}
+      - {name: mapping_confidence, type: string, nullable: false}
+      - {name: mapping_basis, type: string, nullable: false}
+      - {name: candidate_sequence_ids, type: "list<string>", nullable: false}
+      - {name: candidate_accessions, type: "list<string>", nullable: false}
+      - {name: candidate_isoform_ids, type: "list<string>", nullable: false}
+      - {name: candidate_sequence_hashes, type: "list<string>", nullable: false}
+      - {name: mapped_sequence_sha256, type: string, nullable: true}
+      - {name: reference_sequence_usable, type: bool, nullable: false}
+      - {name: canonical_mapping_state, type: string, nullable: false}
+      - {name: canonical_candidate_accessions, type: "list<string>", nullable: false}
+      - {name: canonical_candidate_sequence_hashes, type: "list<string>", nullable: false}
+      - {name: uniref90_ids, type: "list<string>", nullable: false}
+      - {name: frozen_uniprot_release, type: string, nullable: false}
+      - {name: mapping_provenance_json, type: string, nullable: false}
+      - {name: training_label_authorized, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+
+  y2h_pair_audit:
+    required_non_null: [pair_record_id, source_row_ordinal, ad_clone_id, ad_gene_symbol, ad_orf_id, db_gene_symbol, db_orf_id, source_category, ad_orientation_role, db_orientation_role, public_reported_result, outcome_class, evaluability_state, observation_state, technical_state, state_basis, score_3at_raw, score_lw_raw, empty_ad_3at_raw, empty_ad_lw_raw, sequence_confirmation_3at_raw, sequence_confirmation_lw_raw, public_raw_crosswalk_concordant, exact_screen_pair_selected, gene_partner_screen_selected, in_post_selection_attempt_universe, in_reported_3509_evaluable_analysis, analysis_exclusion_reason, ad_construct_sequence_sha256, ad_mapping_state, db_mapping_state, pair_mapping_state, reference_pair_usable, huri_positive_record_count, permitted_positive_record_count, permitted_pair_view_count, current_permitted_positive_overlap, exact_future_training_pair_overlap, uniref90_pair_overlap, exact_endpoint_overlap, uniref90_endpoint_overlap, matched_group_id, assay_metadata_json, source_member_path, source_member_sha256, raw_member_path, raw_member_sha256, raw_locator, frozen_uniprot_release, training_label_authorized, benchmark_integration_authorized, universal_nonbinding_asserted]
+    enum_columns:
+      outcome_class: outcome_class
+      evaluability_state: evaluability_state
+      observation_state: observation_state
+    columns:
+      - {name: pair_record_id, type: string, nullable: false}
+      - {name: source_row_ordinal, type: int64, nullable: false}
+      - {name: ad_clone_id, type: string, nullable: false}
+      - {name: ad_gene_symbol, type: string, nullable: false}
+      - {name: ad_orf_id, type: string, nullable: false}
+      - {name: db_gene_symbol, type: string, nullable: false}
+      - {name: db_orf_id, type: string, nullable: false}
+      - {name: db_gene_category, type: string, nullable: false}
+      - {name: db_gene_cofactor_type, type: string, nullable: false}
+      - {name: source_category, type: string, nullable: false}
+      - {name: ad_orientation_role, type: string, nullable: false}
+      - {name: db_orientation_role, type: string, nullable: false}
+      - {name: public_reported_result, type: string, nullable: false}
+      - {name: outcome_class, type: string, nullable: false}
+      - {name: evaluability_state, type: string, nullable: false}
+      - {name: observation_state, type: string, nullable: false}
+      - {name: technical_state, type: string, nullable: false}
+      - {name: state_basis, type: string, nullable: false}
+      - {name: score_3at_raw, type: string, nullable: false}
+      - {name: score_lw_raw, type: string, nullable: false}
+      - {name: empty_ad_3at_raw, type: string, nullable: false}
+      - {name: empty_ad_lw_raw, type: string, nullable: false}
+      - {name: sequence_confirmation_3at_raw, type: string, nullable: false}
+      - {name: sequence_confirmation_lw_raw, type: string, nullable: false}
+      - {name: public_raw_crosswalk_concordant, type: bool, nullable: false}
+      - {name: in_orfeome_screen, type: bool, nullable: true}
+      - {name: in_focussed_screen, type: bool, nullable: true}
+      - {name: exact_screen_pair_selected, type: bool, nullable: false}
+      - {name: gene_partner_screen_selected, type: bool, nullable: false}
+      - {name: in_post_selection_attempt_universe, type: bool, nullable: false}
+      - {name: in_reported_3509_evaluable_analysis, type: bool, nullable: false}
+      - {name: analysis_exclusion_reason, type: string, nullable: false}
+      - {name: ad_construct_sequence_sha256, type: string, nullable: false}
+      - {name: ad_mapping_state, type: string, nullable: false}
+      - {name: ad_mapped_sequence_sha256, type: string, nullable: true}
+      - {name: db_mapping_state, type: string, nullable: false}
+      - {name: db_mapped_sequence_sha256, type: string, nullable: true}
+      - {name: pair_mapping_state, type: string, nullable: false}
+      - {name: mapped_unordered_sequence_pair_id, type: string, nullable: true}
+      - {name: reference_pair_usable, type: bool, nullable: false}
+      - {name: ad_uniref90_ids, type: "list<string>", nullable: false}
+      - {name: db_uniref90_ids, type: "list<string>", nullable: false}
+      - {name: huri_positive_record_count, type: int64, nullable: false}
+      - {name: permitted_positive_record_count, type: int64, nullable: false}
+      - {name: permitted_pair_view_count, type: int64, nullable: false}
+      - {name: current_permitted_positive_overlap, type: bool, nullable: false}
+      - {name: exact_future_training_pair_overlap, type: bool, nullable: false}
+      - {name: uniref90_pair_overlap, type: bool, nullable: false}
+      - {name: exact_endpoint_overlap, type: bool, nullable: false}
+      - {name: uniref90_endpoint_overlap, type: bool, nullable: false}
+      - {name: matched_group_id, type: string, nullable: false}
+      - {name: assay_metadata_json, type: string, nullable: false}
+      - {name: source_member_path, type: string, nullable: false}
+      - {name: source_member_sha256, type: string, nullable: false}
+      - {name: raw_member_path, type: string, nullable: false}
+      - {name: raw_member_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: frozen_uniprot_release, type: string, nullable: false}
+      - {name: training_label_authorized, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+
+  n2h_observation_audit:
+    required_non_null: [n2h_record_id, source_row_ordinal, clone_id, gene_symbol_tf, gene_symbol_partner, test_orf_ida, test_orf_idb, n2h_orientation_a, n2h_orientation_b, source_stratum, score_pair, score_empty_n1, score_empty_n2, log2_nlr, raw_public_crosswalk_concordant, y2h_pair_crosswalk_state, y2h_observation_state, n2h_binary_label_assigned, source_member_path, source_member_sha256, raw_member_path, raw_member_sha256, raw_locator, training_label_authorized, benchmark_integration_authorized, universal_nonbinding_asserted]
+    columns:
+      - {name: n2h_record_id, type: string, nullable: false}
+      - {name: source_row_ordinal, type: int64, nullable: false}
+      - {name: clone_id, type: string, nullable: false}
+      - {name: gene_symbol_tf, type: string, nullable: false}
+      - {name: gene_symbol_partner, type: string, nullable: false}
+      - {name: test_orf_ida, type: string, nullable: false}
+      - {name: test_orf_idb, type: string, nullable: false}
+      - {name: n2h_orientation_a, type: string, nullable: false}
+      - {name: n2h_orientation_b, type: string, nullable: false}
+      - {name: source_stratum, type: string, nullable: false}
+      - {name: score_pair, type: float64, nullable: false}
+      - {name: score_empty_n1, type: float64, nullable: false}
+      - {name: score_empty_n2, type: float64, nullable: false}
+      - {name: log2_nlr, type: float64, nullable: false}
+      - {name: raw_public_crosswalk_concordant, type: bool, nullable: false}
+      - {name: y2h_pair_record_id, type: string, nullable: true}
+      - {name: y2h_pair_crosswalk_state, type: string, nullable: false}
+      - {name: y2h_observation_state, type: string, nullable: false}
+      - {name: n2h_binary_label_assigned, type: bool, nullable: false}
+      - {name: source_member_path, type: string, nullable: false}
+      - {name: source_member_sha256, type: string, nullable: false}
+      - {name: raw_member_path, type: string, nullable: false}
+      - {name: raw_member_sha256, type: string, nullable: false}
+      - {name: raw_locator, type: string, nullable: false}
+      - {name: training_label_authorized, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+
+  matched_contrast_groups:
+    required_non_null: [matched_group_id, ad_gene_symbol, db_gene_symbol, db_orf_id, public_row_count, distinct_clone_count, evaluable_row_count, positive_count, explicit_negative_count, technical_count, has_two_evaluable_isoforms, has_positive_negative_contrast, in_post_selection_attempt_universe, in_reported_analysis, all_evaluable_pairs_reference_usable, exact_pair_protected, uniref90_pair_protected, exact_endpoint_protected, uniref90_endpoint_protected, protection_state, training_label_authorized, benchmark_integration_authorized, universal_nonbinding_asserted]
+    columns:
+      - {name: matched_group_id, type: string, nullable: false}
+      - {name: ad_gene_symbol, type: string, nullable: false}
+      - {name: db_gene_symbol, type: string, nullable: false}
+      - {name: db_orf_id, type: string, nullable: false}
+      - {name: public_row_count, type: int64, nullable: false}
+      - {name: distinct_clone_count, type: int64, nullable: false}
+      - {name: evaluable_row_count, type: int64, nullable: false}
+      - {name: positive_count, type: int64, nullable: false}
+      - {name: explicit_negative_count, type: int64, nullable: false}
+      - {name: technical_count, type: int64, nullable: false}
+      - {name: has_two_evaluable_isoforms, type: bool, nullable: false}
+      - {name: has_positive_negative_contrast, type: bool, nullable: false}
+      - {name: in_post_selection_attempt_universe, type: bool, nullable: false}
+      - {name: in_reported_analysis, type: bool, nullable: false}
+      - {name: all_evaluable_pairs_reference_usable, type: bool, nullable: false}
+      - {name: exact_pair_protected, type: bool, nullable: false}
+      - {name: uniref90_pair_protected, type: bool, nullable: false}
+      - {name: exact_endpoint_protected, type: bool, nullable: false}
+      - {name: uniref90_endpoint_protected, type: bool, nullable: false}
+      - {name: protection_state, type: string, nullable: false}
+      - {name: training_label_authorized, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
+
+  analytical_filter_steps:
+    required_non_null: [filter_step, filter_name, filter_description, input_rows, output_rows, excluded_rows, archived_code_member_path, archived_code_member_sha256, training_label_authorized, benchmark_integration_authorized, universal_nonbinding_asserted]
+    columns:
+      - {name: filter_step, type: int32, nullable: false}
+      - {name: filter_name, type: string, nullable: false}
+      - {name: filter_description, type: string, nullable: false}
+      - {name: input_rows, type: int64, nullable: false}
+      - {name: output_rows, type: int64, nullable: false}
+      - {name: excluded_rows, type: int64, nullable: false}
+      - {name: archived_code_member_path, type: string, nullable: false}
+      - {name: archived_code_member_sha256, type: string, nullable: false}
+      - {name: training_label_authorized, type: bool, nullable: false}
+      - {name: benchmark_integration_authorized, type: bool, nullable: false}
+      - {name: universal_nonbinding_asserted, type: bool, nullable: false}
