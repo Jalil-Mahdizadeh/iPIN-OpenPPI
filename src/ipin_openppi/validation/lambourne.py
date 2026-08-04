@@ -407,8 +407,12 @@ def _independent_evidence_checks(
                 FROM independent_positive_records GROUP BY sequence_a, sequence_b
             ), panel AS (
                 SELECT *,
-                    least(mapped_sequence_sha256_ad, mapped_sequence_sha256_db) AS sequence_a,
-                    greatest(mapped_sequence_sha256_ad, mapped_sequence_sha256_db) AS sequence_b
+                    CASE WHEN reference_pair_usable THEN
+                        least(mapped_sequence_sha256_ad, mapped_sequence_sha256_db)
+                    END AS sequence_a,
+                    CASE WHEN reference_pair_usable THEN
+                        greatest(mapped_sequence_sha256_ad, mapped_sequence_sha256_db)
+                    END AS sequence_b
                 FROM panel_pair_audit
             )
             SELECT count(*)
@@ -587,25 +591,52 @@ def _independent_evidence_checks(
             SELECT count(*)
             FROM panel_pair_audit panel
             JOIN family_expected expected USING (panel_pair_id)
-            WHERE panel.exact_endpoint_overlap <>
-                (coalesce(panel.mapped_sequence_sha256_ad IN (
-                    SELECT sequence_sha256 FROM training_endpoints
-                 ), false) OR coalesce(panel.mapped_sequence_sha256_db IN (
-                    SELECT sequence_sha256 FROM training_endpoints
-                 ), false))
-               OR panel.uniref90_endpoint_overlap <> expected.overlap90
-               OR panel.uniref50_endpoint_overlap <> expected.overlap50
+            WHERE panel.reference_pair_usable
+              AND (
+                panel.exact_endpoint_overlap <>
+                    (coalesce(panel.mapped_sequence_sha256_ad IN (
+                        SELECT sequence_sha256 FROM training_endpoints
+                     ), false) OR coalesce(panel.mapped_sequence_sha256_db IN (
+                        SELECT sequence_sha256 FROM training_endpoints
+                     ), false))
+                OR panel.uniref90_endpoint_overlap <> expected.overlap90
+                OR panel.uniref50_endpoint_overlap <> expected.overlap50
+              )
+            """
+        ).fetchone()[0]
+    )
+    unusable_flag_mismatches = int(
+        connection.execute(
+            """
+            SELECT count(*)
+            FROM panel_pair_audit
+            WHERE NOT reference_pair_usable
+              AND (
+                exact_future_training_pair_overlap
+                OR uniref90_pair_overlap
+                OR uniref50_pair_overlap
+                OR exact_endpoint_overlap
+                OR uniref90_endpoint_overlap
+                OR uniref50_endpoint_overlap
+              )
             """
         ).fetchone()[0]
     )
     checks.require(
         "contamination.family_pair_and_endpoint_recomputation",
-        family_pair_mismatches == 0 and endpoint_mismatches == 0,
+        family_pair_mismatches == 0
+        and endpoint_mismatches == 0
+        and unusable_flag_mismatches == 0,
         observed={
             "family_pair_mismatches": family_pair_mismatches,
             "endpoint_mismatches": endpoint_mismatches,
+            "unusable_flag_mismatches": unusable_flag_mismatches,
         },
-        expected={"family_pair_mismatches": 0, "endpoint_mismatches": 0},
+        expected={
+            "family_pair_mismatches": 0,
+            "endpoint_mismatches": 0,
+            "unusable_flag_mismatches": 0,
+        },
     )
     return {
         "positive_record_rows": int(
@@ -618,6 +649,7 @@ def _independent_evidence_checks(
         "negative_mismatches": negative_mismatches,
         "family_pair_mismatches": family_pair_mismatches,
         "endpoint_mismatches": endpoint_mismatches,
+        "unusable_flag_mismatches": unusable_flag_mismatches,
     }
 
 
