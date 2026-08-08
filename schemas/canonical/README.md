@@ -16,3 +16,10 @@ contain positive-network distributions, source composition, similarity-search
 sensitivity, leakage-graph effects, ephemeral allocation-opportunity
 distributions, and claim boundaries. Endpoint, component, pair, trial,
 C1/C2/C3-label, and split-assignment rows are prohibited.
+
+`final_benchmark_component_split_v1.yaml` governs the model-free partition
+skeleton authorized by `DEC-0021`. It permits exactly one row per selected hard-
+rule component and frozen reference-sequence endpoint, plus aggregate
+partition, source, degree/hub, C1/C2/C3-opportunity, leakage, selection, and
+claim summaries. It prohibits candidate-pair, positive-pair, negative,
+pseudo-negative, evidence-indicator, and pair-level C1/C2/C3 rows.

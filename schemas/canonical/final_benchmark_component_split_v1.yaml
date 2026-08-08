@@ -1,0 +1,325 @@
+schema_name: ipin_openppi_final_benchmark_component_split
+schema_version: 1
+description: >-
+  Frozen endpoint/component partition skeleton for the reference-sequence PU-R
+  benchmark. Released-positive pairs are used transiently for aggregate
+  opportunity checks only; no candidate-pair, positive-pair, negative,
+  pseudo-negative, evidence-indicator, or pair-level C1/C2/C3 rows are stored.
+
+enums:
+  partition: [train, development, test]
+  source_dataset: [ALL, HI-II-14, HuRI]
+  leakage_definition: [sensitive_fl80_union, local_domain_union]
+  opportunity_axis: [C1, C2, C3]
+  evaluation_partition: [training_pool, development, test]
+  claim_status: [permitted_with_exact_operational_qualifier, prohibited]
+  selection_status: [primary_selected, fallback_selected, no_valid_split]
+
+tables:
+  component_partition_assignments:
+    description: One immutable assignment per connected component under the selected hard rule.
+    primary_key: [component_id]
+    required_non_null: &component_required
+      - split_id
+      - leakage_definition
+      - identity_threshold_percent
+      - component_id
+      - component_representative_sha256
+      - component_size
+      - partition
+      - selected_candidate_index
+      - pair_rows_emitted
+      - model_output_used
+    enum_columns:
+      leakage_definition: leakage_definition
+      partition: partition
+    columns:
+      - {name: split_id, type: string, nullable: false}
+      - {name: leakage_definition, type: string, nullable: false}
+      - {name: identity_threshold_percent, type: int32, nullable: false}
+      - {name: component_id, type: string, nullable: false}
+      - {name: component_representative_sha256, type: string, nullable: false}
+      - {name: component_size, type: int64, nullable: false}
+      - {name: partition, type: string, nullable: false}
+      - {name: selected_candidate_index, type: int64, nullable: false}
+      - {name: pair_rows_emitted, type: bool, nullable: false}
+      - {name: model_output_used, type: bool, nullable: false}
+
+  endpoint_partition_assignments:
+    description: One immutable partition assignment for every frozen reference-sequence endpoint.
+    primary_key: [reference_sequence_sha256]
+    foreign_keys:
+      - columns: [component_id]
+        references: component_partition_assignments.component_id
+    required_non_null:
+      - split_id
+      - reference_sequence_sha256
+      - sequence_length
+      - component_id
+      - component_size
+      - partition
+      - interaction_supervision_eligible
+      - exact_endpoint_absent_from_interaction_supervised_training
+      - pair_level_c1_c2_c3_label_assigned
+    enum_columns:
+      partition: partition
+    columns:
+      - {name: split_id, type: string, nullable: false}
+      - {name: reference_sequence_sha256, type: string, nullable: false}
+      - {name: sequence_length, type: int64, nullable: false}
+      - {name: component_id, type: string, nullable: false}
+      - {name: component_size, type: int64, nullable: false}
+      - {name: partition, type: string, nullable: false}
+      - {name: interaction_supervision_eligible, type: bool, nullable: false}
+      - {name: exact_endpoint_absent_from_interaction_supervised_training, type: bool, nullable: false}
+      - {name: pair_level_c1_c2_c3_label_assigned, type: bool, nullable: false}
+
+  partition_summaries:
+    description: Endpoint, component, internal-positive, and degree-mass totals by partition.
+    primary_key: [partition]
+    required_non_null:
+      - split_id
+      - partition
+      - target_endpoint_fraction
+      - endpoint_count
+      - endpoint_fraction
+      - absolute_target_fraction_deviation
+      - component_count
+      - singleton_component_count
+      - largest_component_size
+      - positive_exposed_endpoint_count
+      - internal_positive_pairs_all
+      - internal_positive_pairs_hi_ii_14
+      - internal_positive_pairs_huri
+      - positive_degree_sum_all
+      - positive_degree_mass_fraction_all
+    enum_columns:
+      partition: partition
+    columns:
+      - {name: split_id, type: string, nullable: false}
+      - {name: partition, type: string, nullable: false}
+      - {name: target_endpoint_fraction, type: float64, nullable: false}
+      - {name: endpoint_count, type: int64, nullable: false}
+      - {name: endpoint_fraction, type: float64, nullable: false}
+      - {name: absolute_target_fraction_deviation, type: float64, nullable: false}
+      - {name: component_count, type: int64, nullable: false}
+      - {name: singleton_component_count, type: int64, nullable: false}
+      - {name: largest_component_size, type: int64, nullable: false}
+      - {name: positive_exposed_endpoint_count, type: int64, nullable: false}
+      - {name: internal_positive_pairs_all, type: int64, nullable: false}
+      - {name: internal_positive_pairs_hi_ii_14, type: int64, nullable: false}
+      - {name: internal_positive_pairs_huri, type: int64, nullable: false}
+      - {name: positive_degree_sum_all, type: int64, nullable: false}
+      - {name: positive_degree_mass_fraction_all, type: float64, nullable: false}
+
+  partition_degree_summaries:
+    description: Released-positive endpoint-degree distributions and fixed global-hub placement by source and partition.
+    primary_key: [partition, source_dataset]
+    required_non_null:
+      - split_id
+      - partition
+      - source_dataset
+      - endpoint_count
+      - positive_exposed_endpoint_count
+      - positive_pair_count_global
+      - degree_sum
+      - degree_mass_fraction
+      - degree_q50
+      - degree_q90
+      - degree_q95
+      - degree_q99
+      - maximum_degree
+      - top_1_percent_global_hub_endpoint_count
+      - top_1_percent_global_hub_endpoint_fraction
+      - top_5_percent_global_hub_endpoint_count
+      - top_5_percent_global_hub_endpoint_fraction
+      - top_10_percent_global_hub_endpoint_count
+      - top_10_percent_global_hub_endpoint_fraction
+      - degree_histogram_json
+      - endpoint_metric_rows_emitted
+    enum_columns:
+      partition: partition
+      source_dataset: source_dataset
+    columns:
+      - {name: split_id, type: string, nullable: false}
+      - {name: partition, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: endpoint_count, type: int64, nullable: false}
+      - {name: positive_exposed_endpoint_count, type: int64, nullable: false}
+      - {name: positive_pair_count_global, type: int64, nullable: false}
+      - {name: degree_sum, type: int64, nullable: false}
+      - {name: degree_mass_fraction, type: float64, nullable: false}
+      - {name: degree_q50, type: int64, nullable: false}
+      - {name: degree_q90, type: int64, nullable: false}
+      - {name: degree_q95, type: int64, nullable: false}
+      - {name: degree_q99, type: int64, nullable: false}
+      - {name: maximum_degree, type: int64, nullable: false}
+      - {name: top_1_percent_global_hub_endpoint_count, type: int64, nullable: false}
+      - {name: top_1_percent_global_hub_endpoint_fraction, type: float64, nullable: false}
+      - {name: top_5_percent_global_hub_endpoint_count, type: int64, nullable: false}
+      - {name: top_5_percent_global_hub_endpoint_fraction, type: float64, nullable: false}
+      - {name: top_10_percent_global_hub_endpoint_count, type: int64, nullable: false}
+      - {name: top_10_percent_global_hub_endpoint_fraction, type: float64, nullable: false}
+      - {name: degree_histogram_json, type: string, nullable: false}
+      - {name: endpoint_metric_rows_emitted, type: bool, nullable: false}
+
+  opportunity_summaries:
+    description: Aggregate released-positive C1/C2/C3 opportunity counts; pair identities and labels are not emitted.
+    primary_key: [opportunity_axis, evaluation_partition, source_dataset]
+    required_non_null:
+      - split_id
+      - opportunity_axis
+      - evaluation_partition
+      - source_dataset
+      - released_positive_pair_count
+      - participating_endpoint_count
+      - participating_component_count
+      - exact_heldout_endpoints_absent_from_interaction_supervised_training
+      - component_disjoint_from_training_under_selected_rule
+      - pair_rows_emitted
+      - pair_level_label_assigned
+    enum_columns:
+      opportunity_axis: opportunity_axis
+      evaluation_partition: evaluation_partition
+      source_dataset: source_dataset
+    columns:
+      - {name: split_id, type: string, nullable: false}
+      - {name: opportunity_axis, type: string, nullable: false}
+      - {name: evaluation_partition, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: released_positive_pair_count, type: int64, nullable: false}
+      - {name: participating_endpoint_count, type: int64, nullable: false}
+      - {name: participating_component_count, type: int64, nullable: false}
+      - {name: exact_heldout_endpoints_absent_from_interaction_supervised_training, type: bool, nullable: false}
+      - {name: component_disjoint_from_training_under_selected_rule, type: bool, nullable: false}
+      - {name: pair_rows_emitted, type: bool, nullable: false}
+      - {name: pair_level_label_assigned, type: bool, nullable: false}
+
+  leakage_validation_summaries:
+    description: Exact selected-allocation checks against both prespecified 30% leakage graphs.
+    primary_key: [leakage_definition]
+    required_non_null:
+      - split_id
+      - leakage_definition
+      - identity_threshold_percent
+      - selected_as_hard_partition_rule
+      - fallback_definition
+      - graph_edge_count
+      - graph_component_count
+      - largest_graph_component_size
+      - cross_partition_edge_count
+      - cross_partition_component_count
+      - partition_disjoint
+      - exhaustive_homology_claim_supported
+    enum_columns:
+      leakage_definition: leakage_definition
+    columns:
+      - {name: split_id, type: string, nullable: false}
+      - {name: leakage_definition, type: string, nullable: false}
+      - {name: identity_threshold_percent, type: int32, nullable: false}
+      - {name: selected_as_hard_partition_rule, type: bool, nullable: false}
+      - {name: fallback_definition, type: bool, nullable: false}
+      - {name: graph_edge_count, type: int64, nullable: false}
+      - {name: graph_component_count, type: int64, nullable: false}
+      - {name: largest_graph_component_size, type: int64, nullable: false}
+      - {name: cross_partition_edge_count, type: int64, nullable: false}
+      - {name: cross_partition_component_count, type: int64, nullable: false}
+      - {name: partition_disjoint, type: bool, nullable: false}
+      - {name: exhaustive_homology_claim_supported, type: bool, nullable: false}
+
+  selection_summaries:
+    description: Frozen search execution, failure accounting, selected objective score, and fallback disposition.
+    primary_key: [split_id]
+    required_non_null:
+      - split_id
+      - selection_status
+      - primary_leakage_definition
+      - fallback_leakage_definition
+      - candidate_count_per_definition
+      - primary_candidates_evaluated
+      - primary_valid_candidate_count
+      - primary_failure_counts_json
+      - fallback_evaluated
+      - fallback_trigger_reason
+      - fallback_candidates_evaluated
+      - fallback_valid_candidate_count
+      - fallback_failure_counts_json
+      - selected_leakage_definition
+      - selected_candidate_index
+      - selected_score_json
+      - frozen_objective_json
+      - deterministic_seed
+      - tie_breaking_json
+      - target_endpoint_fractions_json
+      - maximum_absolute_endpoint_fraction_deviation
+      - selected_maximum_endpoint_fraction_deviation
+      - selected_minimum_normalized_evidence_ratio
+      - selected_maximum_source_presence_fraction_deviation
+      - selected_maximum_heldout_axis_relative_imbalance
+      - selected_maximum_degree_mass_fraction_deviation
+      - selected_maximum_hub_endpoint_fraction_deviation
+      - future_model_results_inspected
+      - split_frozen
+    enum_columns:
+      selection_status: selection_status
+      primary_leakage_definition: leakage_definition
+      fallback_leakage_definition: leakage_definition
+      selected_leakage_definition: leakage_definition
+    columns:
+      - {name: split_id, type: string, nullable: false}
+      - {name: selection_status, type: string, nullable: false}
+      - {name: primary_leakage_definition, type: string, nullable: false}
+      - {name: fallback_leakage_definition, type: string, nullable: false}
+      - {name: candidate_count_per_definition, type: int64, nullable: false}
+      - {name: primary_candidates_evaluated, type: int64, nullable: false}
+      - {name: primary_valid_candidate_count, type: int64, nullable: false}
+      - {name: primary_failure_counts_json, type: string, nullable: false}
+      - {name: fallback_evaluated, type: bool, nullable: false}
+      - {name: fallback_trigger_reason, type: string, nullable: false}
+      - {name: fallback_candidates_evaluated, type: int64, nullable: false}
+      - {name: fallback_valid_candidate_count, type: int64, nullable: false}
+      - {name: fallback_failure_counts_json, type: string, nullable: false}
+      - {name: selected_leakage_definition, type: string, nullable: false}
+      - {name: selected_candidate_index, type: int64, nullable: false}
+      - {name: selected_score_json, type: string, nullable: false}
+      - {name: frozen_objective_json, type: string, nullable: false}
+      - {name: deterministic_seed, type: string, nullable: false}
+      - {name: tie_breaking_json, type: string, nullable: false}
+      - {name: target_endpoint_fractions_json, type: string, nullable: false}
+      - {name: maximum_absolute_endpoint_fraction_deviation, type: float64, nullable: false}
+      - {name: selected_maximum_endpoint_fraction_deviation, type: float64, nullable: false}
+      - {name: selected_minimum_normalized_evidence_ratio, type: float64, nullable: false}
+      - {name: selected_maximum_source_presence_fraction_deviation, type: float64, nullable: false}
+      - {name: selected_maximum_heldout_axis_relative_imbalance, type: float64, nullable: false}
+      - {name: selected_maximum_degree_mass_fraction_deviation, type: float64, nullable: false}
+      - {name: selected_maximum_hub_endpoint_fraction_deviation, type: float64, nullable: false}
+      - {name: future_model_results_inspected, type: bool, nullable: false}
+      - {name: split_frozen, type: bool, nullable: false}
+
+  claim_assessments:
+    description: Binding operational claim boundaries for the frozen component split.
+    primary_key: [claim_name]
+    required_non_null:
+      - split_id
+      - claim_name
+      - claim_status
+      - supported_by_split
+      - permitted_wording
+      - prohibited_wording
+      - rationale
+      - model_performance_claimed
+      - prevalence_claimed
+      - calibration_claimed
+    enum_columns:
+      claim_status: claim_status
+    columns:
+      - {name: split_id, type: string, nullable: false}
+      - {name: claim_name, type: string, nullable: false}
+      - {name: claim_status, type: string, nullable: false}
+      - {name: supported_by_split, type: bool, nullable: false}
+      - {name: permitted_wording, type: string, nullable: false}
+      - {name: prohibited_wording, type: string, nullable: false}
+      - {name: rationale, type: string, nullable: false}
+      - {name: model_performance_claimed, type: bool, nullable: false}
+      - {name: prevalence_claimed, type: bool, nullable: false}
+      - {name: calibration_claimed, type: bool, nullable: false}

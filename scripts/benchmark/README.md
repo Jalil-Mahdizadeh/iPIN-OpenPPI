@@ -25,6 +25,13 @@ lives under `src/ipin_openppi/benchmark/` and
   raw searches, rebuilds all nine 40%/30%/20% leakage graphs, repeats the
   ephemeral allocation trials, and enforces the no-pair/no-label/no-split
   boundary.
+- `construct_final_benchmark_component_split_v1.py` executes the model-free,
+  preregistered `DEC-0021` allocator and freezes endpoint/component partitions
+  under 30% `local_domain_union`, using 30% `sensitive_fl80_union` only after
+  an explicitly recorded zero-valid-primary result.
+- `validate_final_benchmark_component_split_v1.py` independently rebuilds both
+  graphs, repeats all 4,096 deterministic candidates and the frozen objective,
+  and verifies every assignment and aggregate opportunity/source/hub count.
 
 All scientific execution must use the pinned project Apptainer image on
 Arrhenius. Smoke outputs must be written only to explicitly named
@@ -55,4 +62,16 @@ apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
 apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
   containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
   python scripts/benchmark/validate_pre_split_feasibility_and_leakage_v1.py
+```
+
+After `DEC-0021`, construct from a clean implementation commit, commit the
+production artifacts, and then validate from that clean production commit:
+
+```bash
+apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
+  containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
+  python scripts/benchmark/construct_final_benchmark_component_split_v1.py
+apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
+  containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
+  python scripts/benchmark/validate_final_benchmark_component_split_v1.py
 ```

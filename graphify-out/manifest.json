@@ -1450,8 +1450,8 @@
     "semantic_hash": "a40aad663338166e3c536302b51ff71a"
   },
   "schemas/canonical/README.md": {
-    "mtime": 1786203898.0,
-    "ast_hash": "e58e40df56eef462f8b4f2b6d91a904a",
+    "mtime": 1786210204.0,
+    "ast_hash": "81ea2483fdda71e800b65a8b33dc3ae0",
     "semantic_hash": ""
   },
   "schemas/canonical/lambourne_y2h_audit_v1.yaml": {
@@ -1500,8 +1500,8 @@
     "semantic_hash": "42aac734a976e48054be198357256366"
   },
   "scripts/benchmark/README.md": {
-    "mtime": 1786203898.0,
-    "ast_hash": "e98dee8721eb659bc2db172e5b3ffa25",
+    "mtime": 1786210204.0,
+    "ast_hash": "6eaaacc0099b5135f2b07b2f89f7c229",
     "semantic_hash": ""
   },
   "scripts/data/RAW_VERIFICATION.md": {
@@ -1852,6 +1852,81 @@
   "graphify-out/memory/query_20260808_162858_below_is_the_group_comment__deeply_review_and_act.md": {
     "mtime": 1786206538.0,
     "ast_hash": "2a160cd34c0821ec5ff6802d4b89f8df",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/construct_final_benchmark_component_split_v1.py": {
+    "mtime": 1786209521.0,
+    "ast_hash": "1461061524f204f378bf7bcf36dc248d",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/validate_final_benchmark_component_split_v1.py": {
+    "mtime": 1786209923.0,
+    "ast_hash": "325a79a8cbc53ead407358ec355d3c40",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/component_split/__init__.py": {
+    "mtime": 1786209265.0,
+    "ast_hash": "cf675dc76914aa9040a389d4eda60ccc",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/component_split/pipeline.py": {
+    "mtime": 1786210112.0,
+    "ast_hash": "6d874fb2d3b913dd46c458b7172bc86b",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/component_split/semantics.py": {
+    "mtime": 1786209265.0,
+    "ast_hash": "05b9591d6c083ee294169421f6ed4064",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/component_split/support.py": {
+    "mtime": 1786209265.0,
+    "ast_hash": "3339e9f4ab9980312f07e8acdf3f38c8",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/validation/component_split.py": {
+    "mtime": 1786210112.0,
+    "ast_hash": "c44a13ea3bf280ec42b867cee6234702",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_component_split_safety.py": {
+    "mtime": 1786209994.0,
+    "ast_hash": "fb12128c3362b8ad90a350972e82a191",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_component_split_semantics.py": {
+    "mtime": 1786209994.0,
+    "ast_hash": "f5f5604b5362bcad478921c283d46433",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_component_split_validation.py": {
+    "mtime": 1786209994.0,
+    "ast_hash": "07f73eee20b8b37533a370a333a1671a",
+    "semantic_hash": ""
+  },
+  "configs/final_benchmark_component_split_v1.yaml": {
+    "mtime": 1786209019.0,
+    "ast_hash": "06495de733d71133aadc005a13d0b0f3",
+    "semantic_hash": ""
+  },
+  "governance/PROJECT_STATUS_v20.md": {
+    "mtime": 1786208779.0,
+    "ast_hash": "be214823c3d1f547719e60b116a54dbd",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0021-authorize-final-benchmark-component-split.md": {
+    "mtime": 1786208779.0,
+    "ast_hash": "fa5ef6692b873a731bb7da42495f11d5",
+    "semantic_hash": ""
+  },
+  "governance/gates/gate_status_v20.yaml": {
+    "mtime": 1786208779.0,
+    "ast_hash": "cea1db8985ff22ff52df56ade34e346e",
+    "semantic_hash": ""
+  },
+  "schemas/canonical/final_benchmark_component_split_v1.yaml": {
+    "mtime": 1786208931.0,
+    "ast_hash": "bf69ae1cb50dd4d042e10105f8bb3f09",
     "semantic_hash": ""
   }
 }
