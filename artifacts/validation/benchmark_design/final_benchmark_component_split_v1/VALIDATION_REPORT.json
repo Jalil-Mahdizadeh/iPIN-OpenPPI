@@ -1,0 +1,318 @@
+{
+  "audit_report": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/final_benchmark_component_split_v1/AUDIT_REPORT.json",
+  "audit_report_sha256": "bbb8e65efd661342b22f54a6fa72ffe4115dfc1e18b4f97d066e4124fe9124c8",
+  "authorizations": {
+    "candidate_pair_materialization": false,
+    "endpoint_component_split_skeleton": true,
+    "external_panel_integration": false,
+    "model_work": false,
+    "negative_label_construction": false,
+    "pair_level_c1_c2_c3_assignment": false,
+    "pseudo_negative_sampling": false,
+    "return_to_governance_required": true,
+    "split_technical_validation_passed": true,
+    "structural_mapping": false
+  },
+  "check_counts": {
+    "fail": 0,
+    "pass": 20,
+    "warning": 0
+  },
+  "checks": [
+    {
+      "check_id": "runtime.pinned_container_and_architecture",
+      "expected": {
+        "architecture": "aarch64",
+        "sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+      },
+      "observed": {
+        "architecture": "aarch64",
+        "sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.run_manifest_sidecar",
+      "expected": [
+        "615051b335c25351a46a6de0eba8b87c9a82391cf7c63216c21280846b06d52e",
+        "RUN_MANIFEST.json"
+      ],
+      "observed": [
+        "615051b335c25351a46a6de0eba8b87c9a82391cf7c63216c21280846b06d52e",
+        "RUN_MANIFEST.json"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.split_manifest_sidecar",
+      "expected": [
+        "81800ec810d83a53d83e36dca277a425e4a8fd1f7f50009916da73e14021351a",
+        "SPLIT_MANIFEST.json"
+      ],
+      "observed": [
+        "81800ec810d83a53d83e36dca277a425e4a8fd1f7f50009916da73e14021351a",
+        "SPLIT_MANIFEST.json"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.audit_report_sidecar",
+      "expected": [
+        "bbb8e65efd661342b22f54a6fa72ffe4115dfc1e18b4f97d066e4124fe9124c8",
+        "AUDIT_REPORT.json"
+      ],
+      "observed": [
+        "bbb8e65efd661342b22f54a6fa72ffe4115dfc1e18b4f97d066e4124fe9124c8",
+        "AUDIT_REPORT.json"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.run_files_exact_hashed_read_only",
+      "expected": {
+        "errors": 0,
+        "files": [
+          "SELECTION_EXECUTION.json"
+        ]
+      },
+      "observed": {
+        "actual": [
+          "SELECTION_EXECUTION.json"
+        ],
+        "errors": 0,
+        "recorded": [
+          "SELECTION_EXECUTION.json"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.canonical_tables_exact_contract_hashes_and_keys",
+      "expected": {
+        "errors": 0,
+        "tables": [
+          "claim_assessments",
+          "component_partition_assignments",
+          "endpoint_partition_assignments",
+          "leakage_validation_summaries",
+          "opportunity_summaries",
+          "partition_degree_summaries",
+          "partition_summaries",
+          "selection_summaries"
+        ]
+      },
+      "observed": {
+        "errors": 0,
+        "tables": [
+          "claim_assessments",
+          "component_partition_assignments",
+          "endpoint_partition_assignments",
+          "leakage_validation_summaries",
+          "opportunity_summaries",
+          "partition_degree_summaries",
+          "partition_summaries",
+          "selection_summaries"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.production_clean_single_commit",
+      "expected": {
+        "clean": true,
+        "same_commit": true
+      },
+      "observed": {
+        "clean": true,
+        "same_commit": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.config_parents_and_manifests_exact",
+      "expected": true,
+      "observed": true,
+      "status": "pass"
+    },
+    {
+      "check_id": "parent.frozen_17000_endpoints_58049_positives_and_components",
+      "expected": {
+        "endpoints": 17000,
+        "positive_pairs": 58049
+      },
+      "observed": {
+        "endpoints": 17000,
+        "positive_pairs": 58049
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "leakage.independent_graph_reconstruction_matches_dec0020",
+      "expected": {
+        "local_domain_union": [
+          176264,
+          7782,
+          1624
+        ],
+        "sensitive_fl80_union": [
+          63180,
+          11292,
+          362
+        ]
+      },
+      "observed": {
+        "local_domain_union": [
+          176264,
+          7782,
+          1624
+        ],
+        "sensitive_fl80_union": [
+          63180,
+          11292,
+          362
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "selection.independent_search_has_valid_selected_allocation",
+      "expected": "at least one valid allocation under the authorized primary/fallback rule",
+      "observed": {
+        "fallback_valid": null,
+        "primary_valid": 2653
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "assignments.all_endpoints_components_exact_selected_candidate",
+      "expected": {
+        "components_ok": true,
+        "endpoints_ok": true
+      },
+      "observed": {
+        "components_ok": true,
+        "endpoints_ok": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "opportunities.c1_c2_c3_counts_sources_and_components_exact",
+      "expected": true,
+      "observed": true,
+      "status": "pass"
+    },
+    {
+      "check_id": "partitions.endpoint_component_source_and_degree_totals_exact",
+      "expected": true,
+      "observed": true,
+      "status": "pass"
+    },
+    {
+      "check_id": "degrees.source_partition_distributions_and_global_hubs_exact",
+      "expected": true,
+      "observed": true,
+      "status": "pass"
+    },
+    {
+      "check_id": "leakage.both_graphs_exact_and_selected_hard_rule_disjoint",
+      "expected": {
+        "hard_zero": true,
+        "rows_exact": true,
+        "sensitive_zero_if_primary": true
+      },
+      "observed": {
+        "hard_zero": true,
+        "rows_exact": true,
+        "sensitive_zero_if_primary": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "selection.full_search_objective_seed_ties_and_fallback_exact",
+      "expected": {
+        "fallback_rule": true,
+        "selection_exact": true
+      },
+      "observed": {
+        "fallback_rule": true,
+        "selection_exact": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.manifest_report_and_canonical_tables_match",
+      "expected": true,
+      "observed": true,
+      "status": "pass"
+    },
+    {
+      "check_id": "scope.no_pairs_negatives_external_structure_model_or_overclaim",
+      "expected": {
+        "claims": true,
+        "columns": true,
+        "manifest_guards": true
+      },
+      "observed": {
+        "claims": true,
+        "columns": true,
+        "manifest_guards": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.validator_started_from_clean_commit",
+      "expected": {
+        "clean": true,
+        "status": ""
+      },
+      "observed": {
+        "clean": true,
+        "status": ""
+      },
+      "status": "pass"
+    }
+  ],
+  "config": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/final_benchmark_component_split_v1.yaml",
+  "config_sha256": "b8dac7c7de5fc3935a5bf642afe12b2b5e7e5b40fa9883d1dc04962bfed25ecf",
+  "gate_id": "final_benchmark_component_split_v1_validation",
+  "interpretation": "Pass independently reconstructs both accepted 30% leakage graphs, repeats the complete deterministic candidate search and frozen objective, verifies every endpoint/component assignment and all aggregate C1/C2/C3, source, degree, hub, and leakage counts, and confirms that no pair rows, negatives, external panels, structures, or model outputs were used.",
+  "production_git": {
+    "commit": "d348a027243e3409fefd62bb1027e774dbb7cde6",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "run_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/runs/final_benchmark_component_split_v1/RUN_MANIFEST.json",
+  "run_manifest_sha256": "615051b335c25351a46a6de0eba8b87c9a82391cf7c63216c21280846b06d52e",
+  "runtime": {
+    "architecture": "aarch64",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "duckdb": "1.5.5",
+    "numpy": "1.26.4",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scope": "production_full_independent_validation",
+  "selected_leakage_definition": "local_domain_union",
+  "split_id": "final_benchmark_component_split_v1",
+  "split_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/final_benchmark_component_split_v1/SPLIT_MANIFEST.json",
+  "split_manifest_sha256": "81800ec810d83a53d83e36dca277a425e4a8fd1f7f50009916da73e14021351a",
+  "split_version": "final_benchmark_component_split_v1",
+  "status": "pass",
+  "validated_at_utc": "2026-08-08T17:37:27.995847+00:00",
+  "validated_table_row_counts": {
+    "claim_assessments": 7,
+    "component_partition_assignments": 7782,
+    "endpoint_partition_assignments": 17000,
+    "leakage_validation_summaries": 2,
+    "opportunity_summaries": 15,
+    "partition_degree_summaries": 9,
+    "partition_summaries": 3,
+    "selection_summaries": 1
+  },
+  "validator_git": {
+    "commit": "410b0d0d19c53008e35c4bdac3c286da0b249d26",
+    "status": "",
+    "tracked_worktree_clean": true
+  }
+}
