@@ -89,6 +89,8 @@ sequence_components:
   minimum_endpoint_coverage: 0.80
   coverage_mode: both_query_and_target
   identity_definition: identical_aligned_residues_divided_by_alignment_columns_including_gaps
+  exact_integer_identity_and_endpoint_coverage_postfilter: true
+  below_exact_criteria_behavior: exclude_and_count_fail_closed
   algorithm: deterministic_connected_components_single_linkage
   component_representative: lexicographically_smallest_sequence_sha256
   component_id: stable_sha256_of_threshold_and_sorted_member_hashes

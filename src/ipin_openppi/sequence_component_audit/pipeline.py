@@ -707,7 +707,7 @@ def _normalize_alignments(
     minimum_identity = float(config["sequence_components"]["search_minimum_identity"])
     minimum_coverage = float(config["sequence_components"]["minimum_endpoint_coverage"])
     raw_records = int(connection.execute("SELECT count(*) FROM raw_sequence_alignments").fetchone()[0])
-    invalid = int(
+    structural_invalid = int(
         connection.execute(
             """
             SELECT count(*)
@@ -720,17 +720,45 @@ def _normalize_alignments(
                OR a.qstart < 1 OR a.qend < 1 OR a.tstart < 1 OR a.tend < 1
                OR a.qstart > a.qlen OR a.qend > a.qlen
                OR a.tstart > a.tlen OR a.tend > a.tlen
-               OR ((abs(a.qend - a.qstart) + 1) + (abs(a.tend - a.tstart) + 1) - a.alnlen - a.mismatch) < 0
-               OR ((abs(a.qend - a.qstart) + 1) + (abs(a.tend - a.tstart) + 1) - a.alnlen - a.mismatch)::DOUBLE / a.alnlen + 1e-12 < ?
-               OR (abs(a.qend - a.qstart) + 1)::DOUBLE / a.qlen + 1e-12 < ?
-               OR (abs(a.tend - a.tstart) + 1)::DOUBLE / a.tlen + 1e-12 < ?
+               OR ((abs(a.qend - a.qstart) + 1) + (abs(a.tend - a.tstart) + 1) - a.alnlen - a.mismatch)
+                    NOT BETWEEN 0 AND a.alnlen
                OR NOT isfinite(a.evalue) OR NOT isfinite(a.bits)
             """,
-            [minimum_identity, minimum_coverage, minimum_coverage],
         ).fetchone()[0]
     )
-    if invalid:
-        raise RuntimeError(f"MMseqs2 alignment table has {invalid} invalid records")
+    if structural_invalid:
+        raise RuntimeError(
+            f"MMseqs2 alignment table has {structural_invalid} structurally invalid records"
+        )
+    rejected = connection.execute(
+        """
+        WITH exact_scores AS (
+          SELECT ((abs(qend - qstart) + 1) + (abs(tend - tstart) + 1)
+                    - alnlen - mismatch)::DOUBLE / alnlen AS identity,
+                 (abs(qend - qstart) + 1)::DOUBLE / qlen AS query_coverage,
+                 (abs(tend - tstart) + 1)::DOUBLE / tlen AS target_coverage
+          FROM raw_sequence_alignments
+        )
+        SELECT count(*) FILTER (WHERE identity + 1e-12 < ?)::BIGINT,
+               count(*) FILTER (WHERE query_coverage + 1e-12 < ?
+                                  OR target_coverage + 1e-12 < ?)::BIGINT,
+               count(*) FILTER (WHERE identity + 1e-12 < ?
+                                  OR query_coverage + 1e-12 < ?
+                                  OR target_coverage + 1e-12 < ?)::BIGINT
+        FROM exact_scores
+        """,
+        [
+            minimum_identity,
+            minimum_coverage,
+            minimum_coverage,
+            minimum_identity,
+            minimum_coverage,
+            minimum_coverage,
+        ],
+    ).fetchone()
+    below_identity, below_endpoint_coverage, exact_criteria_rejected = map(
+        int, rejected
+    )
     self_queries = int(
         connection.execute(
             "SELECT count(DISTINCT query) FROM raw_sequence_alignments WHERE query = target"
@@ -751,6 +779,9 @@ def _normalize_alignments(
                  count(*)::BIGINT AS supporting_alignment_records
           FROM raw_sequence_alignments
           WHERE query != target
+            AND ((abs(qend - qstart) + 1) + (abs(tend - tstart) + 1) - alnlen - mismatch)::DOUBLE / alnlen + 1e-12 >= {minimum_identity:.17g}
+            AND (abs(qend - qstart) + 1)::DOUBLE / qlen + 1e-12 >= {minimum_coverage:.17g}
+            AND (abs(tend - tstart) + 1)::DOUBLE / tlen + 1e-12 >= {minimum_coverage:.17g}
           GROUP BY sequence_a_sha256, sequence_b_sha256
           ORDER BY sequence_a_sha256, sequence_b_sha256
         ) TO {_sql_string(normalized_path.as_posix())}
@@ -760,6 +791,10 @@ def _normalize_alignments(
     edge_rows = int(pq.ParquetFile(normalized_path).metadata.num_rows)
     return {
         "raw_alignment_records": raw_records,
+        "structurally_invalid_records": structural_invalid,
+        "below_exact_identity_records": below_identity,
+        "below_exact_endpoint_coverage_records": below_endpoint_coverage,
+        "exact_criteria_rejected_records": exact_criteria_rejected,
         "self_match_query_sequences": self_queries,
         "normalized_nonself_edges": edge_rows,
         "raw_alignment_sha256": sha256_file(alignment_path),

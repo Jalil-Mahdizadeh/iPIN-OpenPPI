@@ -412,6 +412,7 @@ def _parse_alignments_independently(
     self_queries: set[str] = set()
     records = 0
     errors = 0
+    below_identity = below_endpoint_coverage = exact_criteria_rejected = 0
     with alignment_path.open("rt", encoding="utf-8", newline="") as handle:
         for fields in csv.reader(handle, delimiter="\t"):
             records += 1
@@ -440,17 +441,23 @@ def _parse_alignments_independently(
                 query_span = abs(qend - qstart) + 1
                 target_span = abs(tend - tstart) + 1
                 derived_identical = query_span + target_span - alnlen - mismatch
-                if derived_identical < 0:
-                    raise ValueError("negative derived identical-residue count")
+                if not 0 <= derived_identical <= alnlen:
+                    raise ValueError("invalid derived identical-residue count")
                 identity = derived_identical / alnlen
                 min_coverage = min(
                     query_span / qlen,
                     target_span / tlen,
                 )
-                if identity + 1e-12 < minimum_identity or min_coverage + 1e-12 < minimum_coverage:
-                    raise ValueError("alignment below frozen search criteria")
+                identity_rejected = identity + 1e-12 < minimum_identity
+                coverage_rejected = min_coverage + 1e-12 < minimum_coverage
+                below_identity += int(identity_rejected)
+                below_endpoint_coverage += int(coverage_rejected)
                 if query == target:
                     self_queries.add(query)
+                if identity_rejected or coverage_rejected:
+                    exact_criteria_rejected += 1
+                    continue
+                if query == target:
                     continue
                 key = tuple(sorted((query, target)))
                 old_identity, old_coverage, old_count = edges.get(key, (0.0, 0.0, 0))
@@ -484,6 +491,9 @@ def _parse_alignments_independently(
         observed={
             "raw_records": records,
             "raw_errors": errors,
+            "below_exact_identity_records": below_identity,
+            "below_exact_endpoint_coverage_records": below_endpoint_coverage,
+            "exact_criteria_rejected_records": exact_criteria_rejected,
             "self_queries": len(self_queries),
             "normalized_rows": normalized_rows,
             "independent_edges": len(edges),
@@ -498,6 +508,10 @@ def _parse_alignments_independently(
     )
     metrics = {
         "raw_alignment_records": records,
+        "structurally_invalid_records": errors,
+        "below_exact_identity_records": below_identity,
+        "below_exact_endpoint_coverage_records": below_endpoint_coverage,
+        "exact_criteria_rejected_records": exact_criteria_rejected,
         "self_match_query_sequences": len(self_queries),
         "normalized_nonself_edges": len(edges),
         "raw_alignment_sha256": sha256_file(alignment_path),

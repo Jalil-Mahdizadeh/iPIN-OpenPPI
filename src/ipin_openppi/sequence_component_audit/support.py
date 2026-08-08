@@ -235,6 +235,10 @@ def validate_config(config: Mapping[str, Any]) -> None:
     components = config["sequence_components"]
     if (
         components.get("primary_identity_threshold_percent") != 30
+        or components.get("exact_integer_identity_and_endpoint_coverage_postfilter")
+        is not True
+        or components.get("below_exact_criteria_behavior")
+        != "exclude_and_count_fail_closed"
         or components.get("emitted_thresholds_percent") != [40, 30, 20]
         or float(components.get("minimum_endpoint_coverage")) != 0.8
         or float(components.get("search_minimum_identity")) != 0.2
