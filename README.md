@@ -50,9 +50,11 @@ public protected-identity leakage. Unlabeled pairs remain unlabeled, not
 negatives. Development release, protected evaluation, and all model work remain
 unauthorized.
 
-The current restart record is
+The fresh-thread phase-boundary checkpoint is
+[RESUME-002](governance/checkpoints/RESUME-002-post-pu-r-benchmark-freeze.md).
+The authoritative scientific status remains
 [project status version 25](governance/PROJECT_STATUS_v25.md), and the
-authoritative ledger is
+authoritative ledger remains
 [gate status version 25](governance/gates/gate_status_v25.yaml).
 
 The binding scientific specification is [the Version 3 final blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md). All production computation must run on NAISS Arrhenius through immutable ARM64 Apptainer SIF images.

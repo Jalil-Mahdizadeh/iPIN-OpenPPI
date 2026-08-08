@@ -12,8 +12,10 @@ This directory is the durable source of project authority and scientific change 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
 The current authoritative ledger is `gates/gate_status_v25.yaml`; the current
-restart record is `PROJECT_STATUS_v25.md`. `DEC-0017` technically accepts the
-TF-isoform audit and its external-only quarantine. `DEC-0018` technically
+scientific status is `PROJECT_STATUS_v25.md`; and the fresh-thread phase
+checkpoint is
+`checkpoints/RESUME-002-post-pu-r-benchmark-freeze.md`. `DEC-0017` technically
+accepts the TF-isoform audit and its external-only quarantine. `DEC-0018` technically
 accepts the independently validated benchmark-eligibility and
 sequence-component audit. `DEC-0020` technically accepts the independently
 validated pre-split feasibility and leakage stress-test and records its
