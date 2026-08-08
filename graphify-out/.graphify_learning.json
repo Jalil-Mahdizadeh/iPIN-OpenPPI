@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-08-08T14:57:30.150370+00:00",
+  "nodes": {
+    "docs_reports_m0_m0_benchmark_eligibility_and_sequence_component_audit_final_v1_m0_final_report_benchmark_eligibility_and_sequence_component_audit": {
+      "code_fingerprint": "b493ec74366f70a601c5bfcb957bb1018d164c4e3e73c9c33ffb6b3eedb69075",
+      "label": "M0 final report: benchmark eligibility and sequence-component audit",
+      "last": "2026-08-08T10:16:00.868055+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-08T10:16:00.868055+00:00",
+          "outcome": "useful",
+          "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
+        }
+      ],
+      "score": 0.995493688,
+      "source_file": "docs/reports/m0/M0_Benchmark_Eligibility_and_Sequence_Component_Audit_Final_v1.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "governance_decisions_dec_0010_propose_pu_compatibility_primary_design_reference_sequence_pu_ranking": {
+      "code_fingerprint": "971560e807656bf9c54898f3b1d83ca756d31e44d7e3b415b81309f41e4b906d",
+      "label": "Reference-sequence Positive-Unlabeled Ranking",
+      "last": "2026-08-08T11:49:22.429699+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-08T11:49:22.429699+00:00",
+          "outcome": "useful",
+          "q": "what is the exact next step?"
+        },
+        {
+          "date": "2026-08-08T10:16:00.868055+00:00",
+          "outcome": "useful",
+          "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
+        }
+      ],
+      "score": 1.9924797,
+      "source_file": "governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md",
+      "status": "preferred",
+      "uses": 2
+    },
+    "governance_decisions_dec_0018_accept_benchmark_eligibility_and_sequence_component_audit_continuing_prohibitions_and_next_authority": {
+      "code_fingerprint": "c8c0ac28c46518ce32e1590403549a1fc9bd40b9c92c3dac50f7aaca67b6e170",
+      "label": "Continuing prohibitions and next authority",
+      "last": "2026-08-08T11:49:22.429699+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-08T11:49:22.429699+00:00",
+          "outcome": "useful",
+          "q": "what is the exact next step?"
+        }
+      ],
+      "score": 0.996986013,
+      "source_file": "governance/decisions/DEC-0018-accept-benchmark-eligibility-and-sequence-component-audit.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_ipin_openppi_sequence_component_audit_init_rationale_1": {
+      "code_fingerprint": "8dccd9371b27a5f42b4c558e1d5fb209879a83a8a8107ba0f82e3c79bddba559",
+      "label": "Governance-bounded benchmark eligibility and sequence-component audit.",
+      "last": "2026-08-08T10:16:00.868055+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-08T10:16:00.868055+00:00",
+          "outcome": "useful",
+          "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
+        }
+      ],
+      "score": 0.995493688,
+      "source_file": "src/ipin_openppi/sequence_component_audit/__init__.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_ipin_openppi_validation_sequence_components": {
+      "code_fingerprint": "07778a7766fe5cce3abc8e493b55be557a39295c93a7690566fbae2ca8666ec7",
+      "label": "sequence_components.py",
+      "last": "2026-08-08T10:16:00.868055+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-08T10:16:00.868055+00:00",
+          "outcome": "useful",
+          "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
+        }
+      ],
+      "score": 0.995493688,
+      "source_file": "src/ipin_openppi/validation/sequence_components.py",
+      "status": "tentative",
+      "uses": 1
+    }
+  },
+  "version": 1
+}

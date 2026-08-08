@@ -9,3 +9,10 @@ preconstruction Space III eligibility and sequence-component audit. Its tables
 contain endpoint eligibility, distinct reference sequences, component
 memberships, and aggregate feasibility only; candidate-pair rows, interaction
 labels, and split assignments are outside the contract.
+
+`pre_split_feasibility_and_leakage_stress_test_v1.yaml` governs the
+aggregate-only child audit authorized by `DEC-0019`. Its six summary tables
+contain positive-network distributions, source composition, similarity-search
+sensitivity, leakage-graph effects, ephemeral allocation-opportunity
+distributions, and claim boundaries. Endpoint, component, pair, trial,
+C1/C2/C3-label, and split-assignment rows are prohibited.

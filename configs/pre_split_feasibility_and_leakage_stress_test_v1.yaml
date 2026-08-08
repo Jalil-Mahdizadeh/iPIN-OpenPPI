@@ -1,0 +1,266 @@
+schema_version: 1
+configuration_revision: 1
+audit_id: pre_split_feasibility_and_leakage_stress_test_v1
+task: aggregate_pre_split_feasibility_and_sequence_leakage_stress_test
+status: authorized_not_executed
+
+authorization:
+  primary_design: reference_sequence_positive_unlabeled_ranking
+  immutable_parent_artifact_use: true
+  aggregate_positive_network_analysis: true
+  ephemeral_component_allocation_trials: true
+  full_length_similarity_sensitivity_challenge: true
+  local_domain_similarity_stress_test: true
+  aggregate_output_only: true
+  candidate_pair_materialization: false
+  candidate_sampling: false
+  evidence_indicator_construction: false
+  interaction_label_construction: false
+  negative_label_construction: false
+  pseudo_negative_sampling: false
+  c1_c2_c3_assignment: false
+  split_construction: false
+  structural_mapping: false
+  model_implementation: false
+  model_training: false
+  model_selection: false
+  model_evaluation: false
+  prevalence_estimation: false
+  calibration: false
+  external_panel_input_use: false
+  parent_audit_reopening_or_modification: false
+  return_to_governance_required: true
+
+inputs:
+  parent_config: configs/benchmark_eligibility_and_sequence_component_audit_v1.yaml
+  parent_config_sha256: b3bc6d802799d2fb47f351b6311c951945a8517d27e573be7fc4209e452a22e5
+  parent_canonical_root: data/canonical/benchmark_eligibility_and_sequence_component_audit_v1
+  parent_canonical_manifest: data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/AUDIT_MANIFEST.json
+  parent_canonical_manifest_sha256: 1a7769fa550ac7eef9acd40da72c8f5247c0c81cb1bb77a913e185d090d83f96
+  parent_run_root: artifacts/runs/benchmark_eligibility_and_sequence_component_audit_v1
+  parent_run_manifest: artifacts/runs/benchmark_eligibility_and_sequence_component_audit_v1/RUN_MANIFEST.json
+  parent_run_manifest_sha256: 81af038c3468e5b15f0e9dc287fd8f191181a059cfed239a9e36485c82cc47b4
+  parent_fasta: artifacts/runs/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences.fasta
+  parent_fasta_sha256: 488dd181f812948e13e0345212617aa9783b09f9e707164c77ba1a17bdf659f7
+  parent_normalized_edges: artifacts/runs/benchmark_eligibility_and_sequence_component_audit_v1/normalized_alignment_edges.parquet
+  parent_normalized_edges_sha256: dd27b4968f5b646ada54c5fc335152456b661cb618997841ceae7b3ad5eda3bd
+  parent_audit_report: artifacts/validation/benchmark_design/benchmark_eligibility_and_sequence_component_audit_v1/AUDIT_REPORT.json
+  parent_audit_report_sha256: 6f77fe0fb65205e0a45dd9c61631a3982c4b999efc0c5575f1799b7a726df41c
+  parent_validation_report: artifacts/validation/benchmark_design/benchmark_eligibility_and_sequence_component_audit_v1/VALIDATION_REPORT.json
+  parent_validation_report_sha256: 6fd3b822c9c02e138d94f6ea78386fcdea2f43acff9156f5fc0e0a4e632f58a8
+  primary_reconciliation_root: data/canonical/primary_reconciliation_v1
+  primary_reconciliation_manifest: data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json
+  primary_reconciliation_manifest_sha256: 6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932
+  benchmark_estimand_policy: configs/benchmark_estimand_policy_v1.yaml
+  benchmark_estimand_policy_sha256: 3340b6b9e4130d8011b43ccf92556d59f9278a89a05b08b4c6581ec8b311164d
+  accepted_blueprint_amendment: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_v1.md
+  accepted_blueprint_amendment_sha256: 0fb1cc3a02f6a526c195e12e0623f3c69c7513080c5a486be9ea41f71972c40a
+  parent_acceptance_decision: governance/decisions/DEC-0018-accept-benchmark-eligibility-and-sequence-component-audit.md
+  parent_acceptance_decision_sha256: c8c0ac28c46518ce32e1590403549a1fc9bd40b9c92c3dac50f7aaca67b6e170
+  authorization_decision: governance/decisions/DEC-0019-authorize-pre-split-feasibility-and-leakage-stress-test.md
+  authorization_decision_sha256: d193cdcba066e792f7219e7ba1be0a83302d63703551d79b5854cb4fb4438668
+  active_gate: governance/gates/gate_status_v18.yaml
+  active_gate_sha256: ac39557c38722dea4b422f5ba978b5efbd785f615a89f792b71d95d30f51e622
+  audit_schema: schemas/canonical/pre_split_feasibility_and_leakage_stress_test_v1.yaml
+
+parent_tables:
+  eligible_reference_sequences: eligible_reference_sequences
+  space_iii_gene_eligibility: space_iii_gene_eligibility
+  sequence_component_assignments: sequence_component_assignments
+  huri_evidence_gene_pair_projections: huri_evidence_gene_pair_projections
+
+frozen_parent_expectations:
+  eligible_reference_sequences: 17000
+  eligible_space_iii_genes: 17172
+  distinct_positive_pairs_all: 58049
+  distinct_positive_pairs_hi_ii_14: 12353
+  distinct_positive_pairs_huri: 50545
+  positive_endpoint_sequences_all: 8596
+  component_counts:
+    40: 12467
+    30: 11311
+    20: 10497
+  normalized_edge_counts:
+    40: 31474
+    30: 63074
+    20: 75662
+
+positive_network:
+  source_datasets: [HI-II-14, HuRI]
+  aggregate_union_name: ALL
+  source_membership_strata: [HI-II-14_only, HuRI_only, both]
+  endpoint_degree_population: all_eligible_endpoints
+  component_edge_load_within_edge_contribution: 1
+  component_edge_load_cross_edge_contribution_per_endpoint_component: 1
+  quantiles: [0.50, 0.90, 0.95, 0.99]
+  hub_fractions: [0.01, 0.05, 0.10]
+  pair_level_output_authorized: false
+  endpoint_level_output_authorized: false
+  component_level_output_authorized: false
+
+leakage_graphs:
+  identity_thresholds_percent: [40, 30, 20]
+  primary_identity_threshold_percent: 30
+  accepted_full_length_definition:
+    id: frozen_fl80
+    minimum_endpoint_coverage: 0.80
+    source: immutable_parent_mmseqs2_graph
+  sensitivity_union_definition:
+    id: sensitive_fl80_union
+    minimum_endpoint_coverage: 0.80
+    source: immutable_parent_edges_union_separate_full_length_sensitivity_search
+  local_domain_union_definition:
+    id: local_domain_union
+    minimum_endpoint_coverage: 0.20
+    minimum_aligned_endpoint_span: 80
+    maximum_evalue: 0.001
+    source: sensitivity_union_edges_union_statistically_filtered_local_domain_edges
+  edge_policy: stricter_controls_may_add_but_never_remove_accepted_edges
+  component_algorithm: deterministic_connected_components_single_linkage
+  exhaustive_homology_claim_authorized: false
+  universal_family_definition_authorized: false
+
+allocation_feasibility:
+  trial_count: 1000
+  deterministic_seed: ipin-openppi-pre-split-v1-20260803
+  target_fractions: {train: 0.70, development: 0.15, test: 0.15}
+  maximum_absolute_sequence_fraction_deviation: 0.03
+  allocation_algorithm: deterministic_hash_order_then_largest_relative_deficit
+  allocation_uses_model_results: false
+  selected_trial_output_authorized: false
+  component_assignment_output_authorized: false
+  pair_assignment_output_authorized: false
+  c1_definition: both_endpoints_training_exposed_and_pair_individually_holdout_eligible
+  c2_definition: exactly_one_endpoint_training_exposed_other_endpoint_in_test_component
+  c3_definition: both_endpoints_in_test_components_and_absent_from_training
+  c1_individual_holdout_guard: each_endpoint_has_at_least_one_other_within_train_positive_edge
+  minimum_released_positive_pairs: 500
+  minimum_independent_components: 50
+  minimum_pairs_per_source_for_meaningful_diversity: 50
+  required_source_datasets_for_meaningful_diversity: [HI-II-14, HuRI]
+  robust_feasibility_trial_fraction: 0.95
+  interpretation: aggregate_opportunity_counts_are_necessary_not_final_split_guarantees
+
+mmseqs2:
+  release: 18-8cc5c
+  upstream_commit: 8cc5ce367b5638c4306c2d7cfc652dd099a4643f
+  binary_path: artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/bin/mmseqs
+  binary_sha256: d5f6d96578e3dbcd1d8772bb575b112e9dd1dbf077d150914962a2356ae0d75d
+  version_stdout: 8cc5ce367b5638c4306c2d7cfc652dd099a4643f
+  createdb_parameters: [--shuffle, "0", --createdb-mode, "0"]
+  full_length_sensitivity_search_parameters:
+    - --threads
+    - "8"
+    - -s
+    - "7.5"
+    - --prefilter-mode
+    - "1"
+    - --min-seq-id
+    - "0.20"
+    - -c
+    - "0.80"
+    - --cov-mode
+    - "0"
+    - --alignment-mode
+    - "3"
+    - --add-self-matches
+    - "1"
+    - --max-seqs
+    - "20000"
+    - --max-accept
+    - "20000"
+    - --max-rejected
+    - "20000"
+    - --min-ungapped-score
+    - "0"
+    - -e
+    - "1e100"
+    - --comp-bias-corr
+    - "1"
+    - --mask
+    - "1"
+    - --mask-lower-case
+    - "0"
+    - --db-load-mode
+    - "0"
+    - --compressed
+    - "0"
+    - --remove-tmp-files
+    - "1"
+  local_domain_search_parameters:
+    - --threads
+    - "8"
+    - -s
+    - "7.5"
+    - --start-sens
+    - "4.0"
+    - --sens-steps
+    - "3"
+    - --target-search-mode
+    - "1"
+    - --min-seq-id
+    - "0.20"
+    - --min-aln-len
+    - "80"
+    - -c
+    - "0.20"
+    - --cov-mode
+    - "0"
+    - --alignment-mode
+    - "3"
+    - --add-self-matches
+    - "1"
+    - --max-seqs
+    - "20000"
+    - --max-accept
+    - "20000"
+    - --max-rejected
+    - "20000"
+    - --min-ungapped-score
+    - "0"
+    - -e
+    - "1e-3"
+    - --comp-bias-corr
+    - "1"
+    - --mask
+    - "1"
+    - --mask-lower-case
+    - "0"
+    - --spaced-kmer-mode
+    - "1"
+    - --db-load-mode
+    - "0"
+    - --compressed
+    - "0"
+    - --remove-tmp-files
+    - "1"
+  alignment_output_fields:
+    - query
+    - target
+    - mismatch
+    - alnlen
+    - qstart
+    - qend
+    - qlen
+    - tstart
+    - tend
+    - tlen
+    - evalue
+    - bits
+
+runtime:
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  architecture: aarch64
+  require_clean_git_for_production: true
+  verify_input_sha256: true
+  duckdb_threads: 8
+  duckdb_memory_limit: 64GB
+  parquet_compression: zstd
+  parquet_compression_level: 8
+
+outputs:
+  run_root: artifacts/runs/pre_split_feasibility_and_leakage_stress_test_v1
+  canonical_root: data/canonical/pre_split_feasibility_and_leakage_stress_test_v1
+  audit_report: artifacts/validation/benchmark_design/pre_split_feasibility_and_leakage_stress_test_v1/AUDIT_REPORT.json
+  validation_report: artifacts/validation/benchmark_design/pre_split_feasibility_and_leakage_stress_test_v1/VALIDATION_REPORT.json

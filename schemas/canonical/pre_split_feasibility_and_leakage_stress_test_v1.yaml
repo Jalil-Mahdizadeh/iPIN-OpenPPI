@@ -1,0 +1,274 @@
+schema_name: ipin_openppi_pre_split_feasibility_and_leakage_stress_test
+schema_version: 1
+description: >-
+  Aggregate-only child audit of the immutable sequence-component artifact.
+  It contains no candidate-pair universe, endpoint/component result rows,
+  interaction labels, C1/C2/C3 assignments, selected allocation, or split.
+
+enums:
+  source_dataset: [ALL, HI-II-14, HuRI]
+  source_membership_stratum: [HI-II-14_only, HuRI_only, both]
+  summary_unit: [endpoint, component]
+  leakage_definition: [positive_network, frozen_fl80, sensitive_fl80_union, local_domain_union]
+  identity_threshold_percent: [0, 20, 30, 40]
+  feasibility_status: [robustly_feasible, conditionally_feasible, not_demonstrated]
+  claim_status: [permitted_with_exact_operational_qualifier, prohibited, not_yet_authorized]
+
+tables:
+  network_degree_summaries:
+    description: Aggregate endpoint or component positive-degree distribution; no entity rows are emitted.
+    primary_key: [summary_id]
+    required_non_null:
+      - summary_id
+      - source_dataset
+      - summary_unit
+      - leakage_definition
+      - identity_threshold_percent
+      - population_entity_count
+      - positive_exposed_entity_count
+      - positive_pair_count
+      - degree_sum
+      - degree_q50
+      - degree_q90
+      - degree_q95
+      - degree_q99
+      - maximum_degree
+      - top_1_percent_degree_share
+      - top_5_percent_degree_share
+      - top_10_percent_degree_share
+      - degree_gini
+      - degree_histogram_json
+      - entity_rows_emitted
+      - pair_rows_emitted
+      - split_assignment_constructed
+    enum_columns:
+      source_dataset: source_dataset
+      summary_unit: summary_unit
+      leakage_definition: leakage_definition
+      identity_threshold_percent: identity_threshold_percent
+    columns:
+      - {name: summary_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: summary_unit, type: string, nullable: false}
+      - {name: leakage_definition, type: string, nullable: false}
+      - {name: identity_threshold_percent, type: int32, nullable: false}
+      - {name: population_entity_count, type: int64, nullable: false}
+      - {name: positive_exposed_entity_count, type: int64, nullable: false}
+      - {name: positive_pair_count, type: int64, nullable: false}
+      - {name: degree_sum, type: int64, nullable: false}
+      - {name: degree_q50, type: int64, nullable: false}
+      - {name: degree_q90, type: int64, nullable: false}
+      - {name: degree_q95, type: int64, nullable: false}
+      - {name: degree_q99, type: int64, nullable: false}
+      - {name: maximum_degree, type: int64, nullable: false}
+      - {name: top_1_percent_degree_share, type: float64, nullable: false}
+      - {name: top_5_percent_degree_share, type: float64, nullable: false}
+      - {name: top_10_percent_degree_share, type: float64, nullable: false}
+      - {name: degree_gini, type: float64, nullable: false}
+      - {name: degree_histogram_json, type: string, nullable: false}
+      - {name: entity_rows_emitted, type: bool, nullable: false}
+      - {name: pair_rows_emitted, type: bool, nullable: false}
+      - {name: split_assignment_constructed, type: bool, nullable: false}
+
+  source_composition_summaries:
+    description: Aggregate source-membership composition of released-positive sequence pairs.
+    primary_key: [summary_id]
+    required_non_null:
+      - summary_id
+      - source_membership_stratum
+      - leakage_definition
+      - identity_threshold_percent
+      - positive_pair_count
+      - positive_pair_fraction
+      - within_component_pair_count
+      - cross_component_pair_count
+      - pair_rows_emitted
+      - evidence_indicator_constructed
+      - split_assignment_constructed
+    enum_columns:
+      source_membership_stratum: source_membership_stratum
+      leakage_definition: leakage_definition
+      identity_threshold_percent: identity_threshold_percent
+    columns:
+      - {name: summary_id, type: string, nullable: false}
+      - {name: source_membership_stratum, type: string, nullable: false}
+      - {name: leakage_definition, type: string, nullable: false}
+      - {name: identity_threshold_percent, type: int32, nullable: false}
+      - {name: positive_pair_count, type: int64, nullable: false}
+      - {name: positive_pair_fraction, type: float64, nullable: false}
+      - {name: within_component_pair_count, type: int64, nullable: false}
+      - {name: cross_component_pair_count, type: int64, nullable: false}
+      - {name: pair_rows_emitted, type: bool, nullable: false}
+      - {name: evidence_indicator_constructed, type: bool, nullable: false}
+      - {name: split_assignment_constructed, type: bool, nullable: false}
+
+  similarity_sensitivity_summaries:
+    description: Edge-set comparison for the separately parameterized full-length sensitivity challenge.
+    primary_key: [summary_id]
+    required_non_null:
+      - summary_id
+      - identity_threshold_percent
+      - accepted_edge_count
+      - sensitivity_edge_count
+      - rediscovered_accepted_edge_count
+      - accepted_edges_not_rediscovered
+      - newly_recovered_qualifying_edges
+      - union_edge_count
+      - accepted_edge_rediscovery_fraction
+      - exhaustive_completeness_proven
+      - accepted_graph_modified
+    enum_columns:
+      identity_threshold_percent: identity_threshold_percent
+    columns:
+      - {name: summary_id, type: string, nullable: false}
+      - {name: identity_threshold_percent, type: int32, nullable: false}
+      - {name: accepted_edge_count, type: int64, nullable: false}
+      - {name: sensitivity_edge_count, type: int64, nullable: false}
+      - {name: rediscovered_accepted_edge_count, type: int64, nullable: false}
+      - {name: accepted_edges_not_rediscovered, type: int64, nullable: false}
+      - {name: newly_recovered_qualifying_edges, type: int64, nullable: false}
+      - {name: union_edge_count, type: int64, nullable: false}
+      - {name: accepted_edge_rediscovery_fraction, type: float64, nullable: false}
+      - {name: exhaustive_completeness_proven, type: bool, nullable: false}
+      - {name: accepted_graph_modified, type: bool, nullable: false}
+
+  leakage_graph_summaries:
+    description: Aggregate component and positive-evidence effects of progressively stricter leakage controls.
+    primary_key: [summary_id]
+    required_non_null:
+      - summary_id
+      - leakage_definition
+      - identity_threshold_percent
+      - sequence_count
+      - edge_count
+      - added_edge_count_vs_accepted
+      - added_edges_crossing_accepted_components
+      - component_count
+      - singleton_component_count
+      - largest_component_size
+      - component_size_q50
+      - component_size_q90
+      - component_size_q95
+      - component_size_q99
+      - positive_pair_count
+      - within_component_positive_pairs
+      - cross_component_positive_pairs
+      - positive_exposed_components
+      - component_membership_rows_emitted
+      - split_assignment_constructed
+    enum_columns:
+      leakage_definition: leakage_definition
+      identity_threshold_percent: identity_threshold_percent
+    columns:
+      - {name: summary_id, type: string, nullable: false}
+      - {name: leakage_definition, type: string, nullable: false}
+      - {name: identity_threshold_percent, type: int32, nullable: false}
+      - {name: sequence_count, type: int64, nullable: false}
+      - {name: edge_count, type: int64, nullable: false}
+      - {name: added_edge_count_vs_accepted, type: int64, nullable: false}
+      - {name: added_edges_crossing_accepted_components, type: int64, nullable: false}
+      - {name: component_count, type: int64, nullable: false}
+      - {name: singleton_component_count, type: int64, nullable: false}
+      - {name: largest_component_size, type: int64, nullable: false}
+      - {name: component_size_q50, type: int64, nullable: false}
+      - {name: component_size_q90, type: int64, nullable: false}
+      - {name: component_size_q95, type: int64, nullable: false}
+      - {name: component_size_q99, type: int64, nullable: false}
+      - {name: positive_pair_count, type: int64, nullable: false}
+      - {name: within_component_positive_pairs, type: int64, nullable: false}
+      - {name: cross_component_positive_pairs, type: int64, nullable: false}
+      - {name: positive_exposed_components, type: int64, nullable: false}
+      - {name: component_membership_rows_emitted, type: bool, nullable: false}
+      - {name: split_assignment_constructed, type: bool, nullable: false}
+
+  allocation_feasibility_summaries:
+    description: Distribution of opportunity counts from ephemeral allocations; no trial identity or assignment is retained.
+    primary_key: [summary_id]
+    required_non_null:
+      - summary_id
+      - leakage_definition
+      - identity_threshold_percent
+      - trial_count
+      - target_fraction_valid_trial_count
+      - target_fraction_valid_trial_fraction
+      - c1_pair_distribution_json
+      - c2_pair_distribution_json
+      - c3_pair_distribution_json
+      - c1_component_distribution_json
+      - c2_component_distribution_json
+      - c3_component_distribution_json
+      - c3_hi_ii_14_pair_distribution_json
+      - c3_huri_pair_distribution_json
+      - c1_floor_pass_trial_fraction
+      - c2_floor_pass_trial_fraction
+      - c3_floor_pass_trial_fraction
+      - c3_source_diversity_pass_trial_fraction
+      - joint_floor_pass_trial_fraction
+      - feasibility_status
+      - selected_trial_emitted
+      - component_assignment_rows_emitted
+      - pair_assignment_rows_emitted
+      - c1_c2_c3_labels_constructed
+      - split_constructed
+    enum_columns:
+      leakage_definition: leakage_definition
+      identity_threshold_percent: identity_threshold_percent
+      feasibility_status: feasibility_status
+    columns:
+      - {name: summary_id, type: string, nullable: false}
+      - {name: leakage_definition, type: string, nullable: false}
+      - {name: identity_threshold_percent, type: int32, nullable: false}
+      - {name: trial_count, type: int64, nullable: false}
+      - {name: target_fraction_valid_trial_count, type: int64, nullable: false}
+      - {name: target_fraction_valid_trial_fraction, type: float64, nullable: false}
+      - {name: c1_pair_distribution_json, type: string, nullable: false}
+      - {name: c2_pair_distribution_json, type: string, nullable: false}
+      - {name: c3_pair_distribution_json, type: string, nullable: false}
+      - {name: c1_component_distribution_json, type: string, nullable: false}
+      - {name: c2_component_distribution_json, type: string, nullable: false}
+      - {name: c3_component_distribution_json, type: string, nullable: false}
+      - {name: c3_hi_ii_14_pair_distribution_json, type: string, nullable: false}
+      - {name: c3_huri_pair_distribution_json, type: string, nullable: false}
+      - {name: c1_floor_pass_trial_fraction, type: float64, nullable: false}
+      - {name: c2_floor_pass_trial_fraction, type: float64, nullable: false}
+      - {name: c3_floor_pass_trial_fraction, type: float64, nullable: false}
+      - {name: c3_source_diversity_pass_trial_fraction, type: float64, nullable: false}
+      - {name: joint_floor_pass_trial_fraction, type: float64, nullable: false}
+      - {name: feasibility_status, type: string, nullable: false}
+      - {name: selected_trial_emitted, type: bool, nullable: false}
+      - {name: component_assignment_rows_emitted, type: bool, nullable: false}
+      - {name: pair_assignment_rows_emitted, type: bool, nullable: false}
+      - {name: c1_c2_c3_labels_constructed, type: bool, nullable: false}
+      - {name: split_constructed, type: bool, nullable: false}
+
+  claim_assessments:
+    description: Fail-closed claim disposition derived from aggregate feasibility and leakage evidence.
+    primary_key: [claim_id]
+    required_non_null:
+      - claim_id
+      - claim_name
+      - leakage_definition
+      - identity_threshold_percent
+      - supported_by_audit
+      - claim_status
+      - permitted_wording
+      - prohibited_wording
+      - rationale
+      - model_performance_claimed
+      - experimental_validation_claimed
+    enum_columns:
+      leakage_definition: leakage_definition
+      identity_threshold_percent: identity_threshold_percent
+      claim_status: claim_status
+    columns:
+      - {name: claim_id, type: string, nullable: false}
+      - {name: claim_name, type: string, nullable: false}
+      - {name: leakage_definition, type: string, nullable: false}
+      - {name: identity_threshold_percent, type: int32, nullable: false}
+      - {name: supported_by_audit, type: bool, nullable: false}
+      - {name: claim_status, type: string, nullable: false}
+      - {name: permitted_wording, type: string, nullable: false}
+      - {name: prohibited_wording, type: string, nullable: false}
+      - {name: rationale, type: string, nullable: false}
+      - {name: model_performance_claimed, type: bool, nullable: false}
+      - {name: experimental_validation_claimed, type: bool, nullable: false}

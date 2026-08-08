@@ -21,10 +21,14 @@ validated, and technically accepted by [DEC-0018](governance/decisions/DEC-0018-
 Its [final report](docs/reports/m0/M0_Benchmark_Eligibility_and_Sequence_Component_Audit_Final_v1.md)
 freezes 17,000 eligible sequence endpoints and deterministic 40%/30%/20%
 component inventories without materializing candidate pairs or constructing
-labels or splits. The project has returned to governance; all downstream
-benchmark and model work remains prohibited. The current restart record is
-[project status version 17](governance/PROJECT_STATUS_v17.md), and the
-authoritative ledger is [gate status version 17](governance/gates/gate_status_v17.yaml).
+labels or splits.
+
+[DEC-0019](governance/decisions/DEC-0019-authorize-pre-split-feasibility-and-leakage-stress-test.md)
+authorizes only an aggregate pre-split feasibility and leakage stress-test
+against those immutable artifacts. Candidate-pair, label, C1/C2/C3, split,
+structure, and model construction remain prohibited. The current execution
+record is [project status version 18](governance/PROJECT_STATUS_v18.md), and the
+authoritative ledger is [gate status version 18](governance/gates/gate_status_v18.yaml).
 
 The binding scientific specification is [the Version 3 final blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md). All production computation must run on NAISS Arrhenius through immutable ARM64 Apptainer SIF images.
 
@@ -57,14 +61,16 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
 7. Preserve assay, construct, orientation, selection, evaluability, and outcome semantics.
 8. Describe untested predictions as computational hypotheses, never validated interactions.
 
-## Current governance hold
+## Current bounded authorization
 
 1. Preserve the completed external-panel audits and their immutable evidence;
    do not reopen, recompute, or extend them.
 2. Preserve the completed benchmark-eligibility and sequence-component audit,
    its immutable manifests, and the primary PU-R design.
-3. Do not construct candidate pairs, labels, C1/C2/C3 assignments, splits,
-   structures, or models unless a new governance decision explicitly authorizes
-   a bounded next work package.
+3. `DEC-0019` authorizes only an aggregate pre-split feasibility and leakage
+   stress-test against those immutable artifacts.
+4. Do not construct candidate pairs, labels, C1/C2/C3 assignments, splits,
+   structures, or models. Ephemeral allocation trials may emit aggregate
+   opportunity counts only and must return to governance.
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.

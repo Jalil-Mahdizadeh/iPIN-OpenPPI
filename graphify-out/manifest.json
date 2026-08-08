@@ -805,8 +805,8 @@
     "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
   },
   "README.md": {
-    "mtime": 1786183717.0,
-    "ast_hash": "a50b11d84c4787b410de17847fe8e342",
+    "mtime": 1786202099.0,
+    "ast_hash": "7c34081acfe52ef49d994a418f1c8384",
     "semantic_hash": ""
   },
   "artifacts/validation/lambourne_y2h_audit_v1/attempts/attempt-001-validator-pre-fix/README.md": {
@@ -1140,8 +1140,8 @@
     "semantic_hash": "6e8f50f4dc4b1715e7c430ff98076f28"
   },
   "governance/README.md": {
-    "mtime": 1786183731.0,
-    "ast_hash": "843ce3df4c2b52036fcd9438f0c2b35d",
+    "mtime": 1786202099.0,
+    "ast_hash": "c3b37ec263e39fe61071b83d1b77145b",
     "semantic_hash": ""
   },
   "governance/START_MANIFEST_v1.yaml": {
@@ -1450,8 +1450,8 @@
     "semantic_hash": "a40aad663338166e3c536302b51ff71a"
   },
   "schemas/canonical/README.md": {
-    "mtime": 1786180580.0,
-    "ast_hash": "86000293ee4aad38012244dbe19e671e",
+    "mtime": 1786203898.0,
+    "ast_hash": "e58e40df56eef462f8b4f2b6d91a904a",
     "semantic_hash": ""
   },
   "schemas/canonical/lambourne_y2h_audit_v1.yaml": {
@@ -1500,8 +1500,8 @@
     "semantic_hash": "42aac734a976e48054be198357256366"
   },
   "scripts/benchmark/README.md": {
-    "mtime": 1786180580.0,
-    "ast_hash": "1f5578e116a2a84b1c2ad9da5866ebeb",
+    "mtime": 1786203898.0,
+    "ast_hash": "e98dee8721eb659bc2db172e5b3ffa25",
     "semantic_hash": ""
   },
   "scripts/data/RAW_VERIFICATION.md": {
@@ -1727,6 +1727,96 @@
   "schemas/canonical/benchmark_eligibility_and_sequence_component_audit_v1.yaml": {
     "mtime": 1786178239.0,
     "ast_hash": "08692928e9f8b8e4a667ce15771545e7",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/audit_pre_split_feasibility_and_leakage_v1.py": {
+    "mtime": 1786202991.0,
+    "ast_hash": "9b5dea86caa285dd0a5d723b03a16b19",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/validate_pre_split_feasibility_and_leakage_v1.py": {
+    "mtime": 1786203648.0,
+    "ast_hash": "22d688502595ff12bbe5029190fa2358",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/pre_split_audit/__init__.py": {
+    "mtime": 1786202481.0,
+    "ast_hash": "aa0736b76fe56850f61a580ded925116",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/pre_split_audit/pipeline.py": {
+    "mtime": 1786202970.0,
+    "ast_hash": "044a375b6cc6d8fb519adee1b9a729ee",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/pre_split_audit/semantics.py": {
+    "mtime": 1786202481.0,
+    "ast_hash": "ef747c776d46100d5510045e578d55df",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/pre_split_audit/support.py": {
+    "mtime": 1786202481.0,
+    "ast_hash": "48ccadaec57d417207f46bb84f10c0c4",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/validation/pre_split_feasibility.py": {
+    "mtime": 1786203621.0,
+    "ast_hash": "94b6329fe79f0c449ac3a512c4146acf",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_pre_split_mmseqs.py": {
+    "mtime": 1786203032.0,
+    "ast_hash": "3dd7b777ec25b88a50ae38709aac1fd6",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_pre_split_safety.py": {
+    "mtime": 1786202528.0,
+    "ast_hash": "831eeed3003636bf611315eea15ac0da",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_pre_split_semantics.py": {
+    "mtime": 1786202528.0,
+    "ast_hash": "c5e54df6f91c7e7603b7b62d1ee5ab00",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_pre_split_validation.py": {
+    "mtime": 1786203814.0,
+    "ast_hash": "b9998f8036a78db58c786c8c862a97b5",
+    "semantic_hash": ""
+  },
+  "configs/pre_split_feasibility_and_leakage_stress_test_v1.yaml": {
+    "mtime": 1786202238.0,
+    "ast_hash": "1e634c4f08706561cabe3bf83d29c713",
+    "semantic_hash": ""
+  },
+  "governance/PROJECT_STATUS_v18.md": {
+    "mtime": 1786202049.0,
+    "ast_hash": "4354d834d97e66056f94ba2364827c5f",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0019-authorize-pre-split-feasibility-and-leakage-stress-test.md": {
+    "mtime": 1786201991.0,
+    "ast_hash": "112d4d1df9e39cde98d1bb6dd8162a56",
+    "semantic_hash": ""
+  },
+  "governance/gates/gate_status_v18.yaml": {
+    "mtime": 1786202028.0,
+    "ast_hash": "2e629390d3492544643c1b9cd6204e9b",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260808_101600_explore_this_repo_deeply_and_fully_understand_it_f.md": {
+    "mtime": 1786184160.0,
+    "ast_hash": "dbc96dfb56c0c84c80bd333a827c6ce2",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260808_114922_what_is_the_exact_next_step.md": {
+    "mtime": 1786189762.0,
+    "ast_hash": "5ac6ced59077da72118313151350fe38",
+    "semantic_hash": ""
+  },
+  "schemas/canonical/pre_split_feasibility_and_leakage_stress_test_v1.yaml": {
+    "mtime": 1786202337.0,
+    "ast_hash": "fb02280f1d390a258fefdfc2125760a3",
     "semantic_hash": ""
   }
 }

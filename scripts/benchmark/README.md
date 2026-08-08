@@ -18,6 +18,13 @@ lives under `src/ipin_openppi/benchmark/` and
   recomputes eligibility, parses the raw MMseqs2 output, reconstructs every
   component, and validates aggregate positive-evidence coverage. It emits no
   biological pair rows, labels, C1/C2/C3 assignments, or splits.
+- `audit_pre_split_feasibility_and_leakage_v1.py` performs the bounded,
+  aggregate-only positive-network, allocation-opportunity, full-length
+  sensitivity, and local/domain leakage stress-test authorized by `DEC-0019`.
+- `validate_pre_split_feasibility_and_leakage_v1.py` independently reparses both
+  raw searches, rebuilds all nine 40%/30%/20% leakage graphs, repeats the
+  ephemeral allocation trials, and enforces the no-pair/no-label/no-split
+  boundary.
 
 All scientific execution must use the pinned project Apptainer image on
 Arrhenius. Smoke outputs must be written only to explicitly named
@@ -37,4 +44,15 @@ apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
 apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
   containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
   python scripts/benchmark/validate_benchmark_eligibility_and_sequence_components_v1.py
+```
+
+After `DEC-0019`, execute its child audit and validator from clean commits:
+
+```bash
+apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
+  containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
+  python scripts/benchmark/audit_pre_split_feasibility_and_leakage_v1.py
+apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
+  containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
+  python scripts/benchmark/validate_pre_split_feasibility_and_leakage_v1.py
 ```
