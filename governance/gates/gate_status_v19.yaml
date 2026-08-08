@@ -1,0 +1,142 @@
+schema_version: 19
+supersedes: governance/gates/gate_status_v18.yaml
+updated_date: "2026-08-08"
+programme_state: pre_split_feasibility_audit_accepted_returned_to_governance
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    production_sif: containers/images/ipin-data-arm64_0.1.2.sif
+    production_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+    architecture: aarch64
+    continuing_condition: every_scientific_operation_runs_through_pinned_apptainer
+  evidence:
+    status: pre_split_feasibility_and_leakage_stress_test_accepted_no_construction_authorized
+    accepted_prior_subgates:
+      raw_acquisition: governance/decisions/DEC-0007-accept-primary-raw-acquisition.md
+      source_parsing: governance/decisions/DEC-0008-accept-primary-evidence-staging.md
+      source_reconciliation: governance/decisions/DEC-0009-accept-primary-source-reconciliation.md
+      negative_evidence_discovery: governance/decisions/DEC-0012-accept-negative-evidence-discovery-audit.md
+    lambourne_2026_panel:
+      status: complete_validated_quarantined_no_integration
+      proposal: governance/decisions/DEC-0014-propose-lambourne-panel-disposition.md
+    tf_isoform_y2h_2025_subgate:
+      status: accepted_technically_complete_external_only_quarantined
+      authorization_decision: governance/decisions/DEC-0015-authorize-tf-isoform-y2h-audit.md
+      disposition_proposal: governance/decisions/DEC-0016-propose-tf-isoform-y2h-disposition.md
+      acceptance_decision: governance/decisions/DEC-0017-accept-tf-isoform-y2h-disposition.md
+      scientific_report: docs/reports/m0/M0_TF_Isoform_2025_Y2H_Semantics_and_Contamination_Audit_Final_v1.md
+      external_only: true
+      training_negative_role_authorized: false
+      universal_nonbinding_interpretation_authorized: false
+      prevalence_role_authorized: false
+      calibration_role_authorized: false
+      unseen_endpoint_or_family_benchmark_authorized: false
+      audit_reopening_or_extension_authorized: false
+      benchmark_construction_authorized: false
+      model_work_authorized: false
+    benchmark_eligibility_and_sequence_component_audit:
+      status: complete_independently_validated_technically_accepted_immutable
+      acceptance_decision: governance/decisions/DEC-0018-accept-benchmark-eligibility-and-sequence-component-audit.md
+      scientific_report: docs/reports/m0/M0_Benchmark_Eligibility_and_Sequence_Component_Audit_Final_v1.md
+      eligible_reference_sequences: 17000
+      sequence_components:
+        identity_40_percent: 12467
+        identity_30_percent: 11311
+        identity_20_percent: 10497
+      accepted_artifacts_may_be_modified: false
+      audit_reopening_or_extension_authorized: false
+    pre_split_feasibility_and_leakage_stress_test:
+      status: complete_independently_validated_technically_accepted
+      authorization_decision: governance/decisions/DEC-0019-authorize-pre-split-feasibility-and-leakage-stress-test.md
+      acceptance_decision: governance/decisions/DEC-0020-accept-pre-split-feasibility-and-leakage-stress-test.md
+      scientific_report: docs/reports/m0/M0_Pre_Split_Feasibility_and_Leakage_Stress_Test_Final_v1.md
+      production_git_commit: 2dcd8b3585159a5d747176d36e08a57a11cb0950
+      validation_git_commit: f1001cc8c9bc9c16a596139f1231bfae24f74c74
+      validation_checks: {pass: 13, warning: 0, fail: 0}
+      primary_design: reference_sequence_positive_unlabeled_ranking
+      immutable_parent_preserved: true
+      aggregate_outputs_only: true
+      final_split_scientifically_feasible_in_principle: true
+      leakage_disposition:
+        frozen_fl80_30:
+          feasibility: robust
+          sole_final_leakage_guard_permitted: false
+        sensitive_fl80_union_30:
+          feasibility: robust
+          minimum_hard_full_length_constraint_for_future_package: true
+        local_domain_union_30:
+          feasibility: conditional
+          joint_floor_pass_fraction: 0.893
+          future_exact_verification_required: true
+          preferred_stricter_operational_stress_definition: true
+        local_domain_union_20:
+          feasibility: conditional
+          joint_floor_pass_fraction: 0.614
+          default_split_definition_approved: false
+      exact_endpoint_c3_claim_may_be_proposed_later: true
+      unseen_biological_family_claim_authorized: false
+      exhaustive_homology_claim_authorized: false
+      accepted_artifacts_may_be_modified: false
+      parent_audit_reopened_or_modified: false
+      candidate_pair_materialization_performed: false
+      evidence_indicator_construction_performed: false
+      negative_label_construction_performed: false
+      pseudo_negative_sampling_performed: false
+      selected_allocation_emitted: false
+      c1_c2_c3_assignment_performed: false
+      split_construction_performed: false
+      structural_mapping_performed: false
+      external_panel_inputs_used: false
+      model_work_performed: false
+      return_to_governance_complete: true
+    strict_construct_branch:
+      status: blocked
+      issue: governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md
+    label_construction_authorized: false
+    candidate_pair_materialization_authorized: false
+    structural_mapping_authorized: false
+    model_training_authorized: false
+  benchmark:
+    status: pre_split_feasibility_accepted_final_split_construction_on_hold
+    accepted_policy: configs/benchmark_estimand_policy_v1.yaml
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    output_is_probability: false
+    active_bounded_work_package: null
+    final_split_scientifically_feasible_in_principle: true
+    minimum_future_full_length_leakage_definition: sensitive_fl80_union_30
+    preferred_future_stricter_stress_definition: local_domain_union_30
+    external_panel_integration_authorized: false
+    evidence_indicator_construction_authorized: false
+    negative_label_construction_authorized: false
+    c1_c2_c3_assignment_authorized: false
+    split_construction_authorized: false
+    model_implementation_authorized: false
+    model_training_authorized: false
+    next_work_package_authorized: false
+  statistical: {status: not_started}
+  routing: {status: not_started}
+  retrieval: {status: not_started}
+  uncertainty: {status: not_started}
+  computational_validation: {status: not_started}
+  release: {status: not_started}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_blank_unreported_or_technical_state_as_negative: true
+  candidate_pair_materialization: true
+  evidence_indicator_or_label_construction: true
+  pseudo_negative_sampling: true
+  c1_c2_c3_or_split_construction: true
+  merge_external_panels_with_negatome: true
+  external_panel_outcomes_as_training_labels: true
+  external_panel_outcomes_as_training_negatives: true
+  external_panel_prevalence_or_calibration_use: true
+  external_panel_unseen_endpoint_or_family_benchmarking: true
+  structural_label_work: true
+  model_training_tuning_calibration_or_evaluation: true
+  primary_pu_r_design_change: true
+  unseen_family_or_exhaustive_homology_claim: true

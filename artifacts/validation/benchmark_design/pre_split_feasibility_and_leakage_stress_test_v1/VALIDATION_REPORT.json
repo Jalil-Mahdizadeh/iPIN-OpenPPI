@@ -1,0 +1,326 @@
+{
+  "audit_id": "pre_split_feasibility_and_leakage_stress_test_v1",
+  "audit_report": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/pre_split_feasibility_and_leakage_stress_test_v1/AUDIT_REPORT.json",
+  "audit_report_sha256": "5f4e655a81b70a4dd2143a81027188b692ca120b0fab7f919d18b53fd4eabb6f",
+  "audit_version": "1.0.0",
+  "authorizations": {
+    "audit_technical_validation_passed": true,
+    "c1_c2_c3_assignment": false,
+    "candidate_pair_materialization": false,
+    "evidence_indicator_construction": false,
+    "model_work": false,
+    "negative_label_construction": false,
+    "pseudo_negative_sampling": false,
+    "return_to_governance_required": true,
+    "split_construction": false,
+    "structural_mapping": false
+  },
+  "canonical_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/pre_split_feasibility_and_leakage_stress_test_v1/AUDIT_MANIFEST.json",
+  "canonical_manifest_sha256": "8b2200b34149c1a4ecf92274cac886acbafc2d53b2cac3e8167c91610ec860f2",
+  "check_counts": {
+    "fail": 0,
+    "pass": 13,
+    "warning": 0
+  },
+  "checks": [
+    {
+      "check_id": "runtime.pinned_container_and_architecture",
+      "expected": {
+        "architecture": "aarch64",
+        "sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+      },
+      "observed": {
+        "architecture": "aarch64",
+        "sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.run_manifest_sidecar",
+      "expected": {
+        "digest": "a76731632f5d137d0fa2b2eab244c2e86a7a10cd4b67013d8164bb684b902755",
+        "filename": "RUN_MANIFEST.json"
+      },
+      "observed": {
+        "digest": "a76731632f5d137d0fa2b2eab244c2e86a7a10cd4b67013d8164bb684b902755",
+        "sidecar": [
+          "a76731632f5d137d0fa2b2eab244c2e86a7a10cd4b67013d8164bb684b902755",
+          "RUN_MANIFEST.json"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.canonical_manifest_sidecar",
+      "expected": {
+        "digest": "8b2200b34149c1a4ecf92274cac886acbafc2d53b2cac3e8167c91610ec860f2",
+        "filename": "AUDIT_MANIFEST.json"
+      },
+      "observed": {
+        "digest": "8b2200b34149c1a4ecf92274cac886acbafc2d53b2cac3e8167c91610ec860f2",
+        "sidecar": [
+          "8b2200b34149c1a4ecf92274cac886acbafc2d53b2cac3e8167c91610ec860f2",
+          "AUDIT_MANIFEST.json"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.audit_report_sidecar",
+      "expected": {
+        "digest": "5f4e655a81b70a4dd2143a81027188b692ca120b0fab7f919d18b53fd4eabb6f",
+        "filename": "AUDIT_REPORT.json"
+      },
+      "observed": {
+        "digest": "5f4e655a81b70a4dd2143a81027188b692ca120b0fab7f919d18b53fd4eabb6f",
+        "sidecar": [
+          "5f4e655a81b70a4dd2143a81027188b692ca120b0fab7f919d18b53fd4eabb6f",
+          "AUDIT_REPORT.json"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.run_files_exact_hashed_read_only",
+      "expected": {
+        "errors": 0,
+        "files": [
+          "MMSEQS_COMMANDS.json",
+          "full_length_sensitivity_alignments.tsv",
+          "full_length_sensitivity_edges.parquet",
+          "local_domain_sensitivity_alignments.tsv",
+          "local_domain_sensitivity_edges.parquet"
+        ]
+      },
+      "observed": {
+        "actual": [
+          "MMSEQS_COMMANDS.json",
+          "full_length_sensitivity_alignments.tsv",
+          "full_length_sensitivity_edges.parquet",
+          "local_domain_sensitivity_alignments.tsv",
+          "local_domain_sensitivity_edges.parquet"
+        ],
+        "errors": 0,
+        "recorded": [
+          "MMSEQS_COMMANDS.json",
+          "full_length_sensitivity_alignments.tsv",
+          "full_length_sensitivity_edges.parquet",
+          "local_domain_sensitivity_alignments.tsv",
+          "local_domain_sensitivity_edges.parquet"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.canonical_tables_exact_schema_and_hashes",
+      "expected": {
+        "errors": 0,
+        "tables": [
+          "allocation_feasibility_summaries",
+          "claim_assessments",
+          "leakage_graph_summaries",
+          "network_degree_summaries",
+          "similarity_sensitivity_summaries",
+          "source_composition_summaries"
+        ]
+      },
+      "observed": {
+        "errors": 0,
+        "tables": [
+          "allocation_feasibility_summaries",
+          "claim_assessments",
+          "leakage_graph_summaries",
+          "network_degree_summaries",
+          "similarity_sensitivity_summaries",
+          "source_composition_summaries"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.production_clean_single_commit",
+      "expected": {
+        "clean": true,
+        "same_commit": true
+      },
+      "observed": {
+        "clean": true,
+        "same_commit": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.parent_inputs_config_and_manifests_match",
+      "expected": {
+        "all_match": true
+      },
+      "observed": {
+        "all_match": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "parent.frozen_endpoint_component_and_positive_counts",
+      "expected": {
+        "components": {
+          "20": 10497,
+          "30": 11311,
+          "40": 12467
+        },
+        "endpoints": 17000,
+        "positive_pairs": 58049
+      },
+      "observed": {
+        "components": {
+          "20": 10497,
+          "30": 11311,
+          "40": 12467
+        },
+        "endpoints": 17000,
+        "positive_pairs": 58049
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "similarity.raw_alignment_exact_independent_reparse",
+      "expected": {
+        "report_matches": true,
+        "run_matches": true
+      },
+      "observed": {
+        "report_matches": true,
+        "run_matches": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.all_consequential_aggregate_counts_independently_recomputed",
+      "expected": {
+        "errors": {},
+        "row_counts": {
+          "allocation": 9,
+          "degree": 30,
+          "leakage": 9,
+          "similarity": 3,
+          "source": 30
+        }
+      },
+      "observed": {
+        "errors": {
+          "allocation": 0,
+          "degree": 0,
+          "leakage": 0,
+          "similarity": 0,
+          "source": 0
+        },
+        "row_counts": {
+          "allocation": 9,
+          "degree": 30,
+          "leakage": 9,
+          "similarity": 3,
+          "source": 30
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.canonical_manifest_and_audit_report_match_tables",
+      "expected": {
+        "manifest_matches": true,
+        "report_matches": true
+      },
+      "observed": {
+        "manifest_matches": true,
+        "report_matches": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "scope.no_pair_label_split_model_external_or_family_claim_output",
+      "expected": {
+        "all_guards_false": true,
+        "claim_guard": true,
+        "forbidden_columns": []
+      },
+      "observed": {
+        "claim_guard": true,
+        "forbidden_columns": [],
+        "manifest_guards_false": true,
+        "row_guards_false": true
+      },
+      "status": "pass"
+    }
+  ],
+  "config": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/pre_split_feasibility_and_leakage_stress_test_v1.yaml",
+  "config_sha256": "0648107f96f079b502dfce4c0c470c1199514463615c107f152a06603f75281f",
+  "gate_id": "pre_split_feasibility_and_leakage_stress_test_v1_validation",
+  "interpretation": "Pass independently reparses both raw MMseqs2 searches, reconstructs every 40/30/20 leakage graph and released-positive aggregate, repeats all ephemeral allocation trials, and confirms that no endpoint/pair/component assignment, C1/C2/C3 label, split, external panel, structure, or model output exists.",
+  "production_git": {
+    "commit": "2dcd8b3585159a5d747176d36e08a57a11cb0950",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "run_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/runs/pre_split_feasibility_and_leakage_stress_test_v1/RUN_MANIFEST.json",
+  "run_manifest_sha256": "a76731632f5d137d0fa2b2eab244c2e86a7a10cd4b67013d8164bb684b902755",
+  "runtime": {
+    "architecture": "aarch64",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "duckdb": "1.5.5",
+    "numpy": "1.26.4",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scope": "production_full_independent_validation",
+  "search_metrics": {
+    "full_length_sensitivity": {
+      "above_maximum_evalue_records": 0,
+      "below_exact_identity_records": 701,
+      "below_minimum_aligned_span_records": 0,
+      "below_minimum_endpoint_coverage_records": 0,
+      "identity_uses_integer_derived_identical_over_alnlen": true,
+      "maximum_evalue": 1e+100,
+      "minimum_aligned_endpoint_span": 0,
+      "minimum_endpoint_coverage": 0.8,
+      "minimum_identity": 0.2,
+      "normalized_edges_sha256": "295891390cd4a929bd7636554a19f75b2d3833472edce44d848e7d2f5250017c",
+      "normalized_nonself_edges": 76851,
+      "raw_alignment_records": 165547,
+      "raw_alignment_sha256": "15451fe8aaed45b176041580102b6eefd486b4aef3b725a3ffb3076b5df3a7dd",
+      "self_match_query_sequences": 17000,
+      "structurally_invalid_records": 0
+    },
+    "local_domain_sensitivity": {
+      "above_maximum_evalue_records": 0,
+      "below_exact_identity_records": 9327,
+      "below_minimum_aligned_span_records": 1129,
+      "below_minimum_endpoint_coverage_records": 0,
+      "identity_uses_integer_derived_identical_over_alnlen": true,
+      "maximum_evalue": 0.001,
+      "minimum_aligned_endpoint_span": 80,
+      "minimum_endpoint_coverage": 0.2,
+      "minimum_identity": 0.2,
+      "normalized_edges_sha256": "d2cbd66e1b93bd93858055c8c055dac7fa1e70715d364f1b30500f6fcdc013ba",
+      "normalized_nonself_edges": 236718,
+      "raw_alignment_records": 479922,
+      "raw_alignment_sha256": "3d1af973a10c3f63b093ccde93aaa5caf1b45b847e7d93c9178b9a2fa8eb5549",
+      "self_match_query_sequences": 17000,
+      "structurally_invalid_records": 0
+    }
+  },
+  "status": "pass",
+  "validated_at_utc": "2026-08-08T16:19:04.569945+00:00",
+  "validated_table_row_counts": {
+    "allocation_feasibility_summaries": 9,
+    "claim_assessments": 11,
+    "leakage_graph_summaries": 9,
+    "network_degree_summaries": 30,
+    "similarity_sensitivity_summaries": 3,
+    "source_composition_summaries": 30
+  },
+  "validator_git": {
+    "commit": "f1001cc8c9bc9c16a596139f1231bfae24f74c74",
+    "status": "",
+    "tracked_worktree_clean": true
+  }
+}
