@@ -32,6 +32,16 @@ lives under `src/ipin_openppi/benchmark/` and
 - `validate_final_benchmark_component_split_v1.py` independently rebuilds both
   graphs, repeats all 4,096 deterministic candidates and the frozen objective,
   and verifies every assignment and aggregate opportunity/source/hub count.
+- `audit_pair_level_pu_r_benchmark_protocol_v1.py` freezes and aggregate-checks
+  the model-free pair-level PU-R protocol authorized by `DEC-0023`, including
+  information visibility, deterministic C1/C2/C3 withholding, candidate-count
+  algebra, unlabeled-sampling probabilities, metrics, uncertainty, metadata
+  holdout support, degree/hub strata, and claim boundaries. It emits no pair or
+  candidate rows and realizes no sample.
+- `validate_pair_level_pu_r_benchmark_protocol_v1.py` independently reconstructs
+  the released-positive union and reimplements the pair hash, exposure guards,
+  cell assignments, source-exclusive diagnostics, candidate algebra, sampling
+  allocation, and degree/hub summaries.
 
 All scientific execution must use the pinned project Apptainer image on
 Arrhenius. Smoke outputs must be written only to explicitly named
@@ -74,4 +84,17 @@ apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
 apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
   containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
   python scripts/benchmark/validate_final_benchmark_component_split_v1.py
+```
+
+After `DEC-0023`, produce the protocol audit from a clean implementation commit,
+commit that report, and validate it independently from the resulting clean
+production-evidence commit:
+
+```bash
+apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
+  containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
+  python scripts/benchmark/audit_pair_level_pu_r_benchmark_protocol_v1.py
+apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
+  containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
+  python scripts/benchmark/validate_pair_level_pu_r_benchmark_protocol_v1.py
 ```

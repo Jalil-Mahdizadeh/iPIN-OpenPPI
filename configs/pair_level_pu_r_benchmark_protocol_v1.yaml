@@ -1,0 +1,512 @@
+schema_version: 1
+configuration_revision: 1
+protocol_id: pair_level_pu_r_benchmark_protocol_v1
+task: model_free_pair_level_positive_unlabeled_ranking_protocol_freeze
+status: authorized_not_executed
+
+authorization:
+  primary_design: reference_sequence_positive_unlabeled_ranking
+  immutable_parent_artifact_use: true
+  protocol_definition_and_freeze: true
+  transient_released_positive_pair_reconstruction: true
+  aggregate_pair_rule_feasibility_analysis: true
+  aggregate_candidate_count_algebra: true
+  evidence_field_completeness_analysis: true
+  independent_rule_and_count_validation: true
+  return_to_governance_required: true
+  persisted_positive_pair_rows: false
+  persisted_unlabeled_pair_rows: false
+  pair_level_c1_c2_c3_output: false
+  candidate_pair_materialization: false
+  full_candidate_pair_universe_materialization: false
+  unlabeled_sample_realization: false
+  evidence_indicator_construction: false
+  interaction_label_construction: false
+  negative_label_construction: false
+  pseudo_negative_sampling: false
+  frozen_endpoint_component_split_modification: false
+  external_panel_input_use: false
+  structural_mapping: false
+  model_implementation: false
+  model_embedding: false
+  model_training: false
+  model_tuning: false
+  model_selection: false
+  model_calibration: false
+  model_evaluation: false
+  prevalence_estimation: false
+  parent_audit_reopening_recomputation_or_extension: false
+
+inputs:
+  accepted_estimand_policy: configs/benchmark_estimand_policy_v1.yaml
+  accepted_estimand_policy_sha256: 3340b6b9e4130d8011b43ccf92556d59f9278a89a05b08b4c6581ec8b311164d
+  incorporated_estimand_proposal: configs/benchmark_estimand_policy_proposal_v1.yaml
+  incorporated_estimand_proposal_sha256: b5a7aff3615fa15a612d916e6ea9c46eba65756dfd239c8236a94c450d948a78
+  systematic_screen_audit_report: artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json
+  systematic_screen_audit_report_sha256: db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e
+  systematic_screen_validation_report: artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json
+  systematic_screen_validation_report_sha256: 2ca92051172b7a7a512072f3ed6212ac8caed5891870abcea7c6e5929cd56a01
+  acquisition_manifest: data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json
+  acquisition_manifest_sha256: 5750fe08eac343e23c0f0c56cf749c7477cbfd92233f2679de5fedf9d8f22231
+  parse_manifest: data/staging/primary_sources_v1/PARSE_MANIFEST.json
+  parse_manifest_sha256: ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa
+  staging_root: data/staging/primary_sources_v1
+  evidence_schema: schemas/warehouse/evidence_warehouse_v1.yaml
+  evidence_schema_sha256: 122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd
+  reconciliation_manifest: data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json
+  reconciliation_manifest_sha256: 6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932
+  reconciliation_root: data/canonical/primary_reconciliation_v1
+  eligibility_manifest: data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/AUDIT_MANIFEST.json
+  eligibility_manifest_sha256: 1a7769fa550ac7eef9acd40da72c8f5247c0c81cb1bb77a913e185d090d83f96
+  eligibility_root: data/canonical/benchmark_eligibility_and_sequence_component_audit_v1
+  frozen_split_config: configs/final_benchmark_component_split_v1.yaml
+  frozen_split_config_sha256: b8dac7c7de5fc3935a5bf642afe12b2b5e7e5b40fa9883d1dc04962bfed25ecf
+  frozen_split_manifest: data/canonical/final_benchmark_component_split_v1/SPLIT_MANIFEST.json
+  frozen_split_manifest_sha256: 81800ec810d83a53d83e36dca277a425e4a8fd1f7f50009916da73e14021351a
+  frozen_split_root: data/canonical/final_benchmark_component_split_v1
+  parent_acceptance_decision: governance/decisions/DEC-0022-accept-final-benchmark-component-split.md
+  parent_acceptance_decision_sha256: 29aedd8bc0e3c47f2cab457a13d1d33a2cdca6f0c0e50a24884cff2ab7e67d33
+  authorization_decision: governance/decisions/DEC-0023-authorize-pair-level-pu-r-benchmark-protocol-freeze.md
+  authorization_decision_sha256: 49800af09d13c430cfb5420bc9da7954ad3e39437b23042872e2537ae81c2177
+  active_gate: governance/gates/gate_status_v22.yaml
+  active_gate_sha256: 8b01986fbb973122137bbfea251b3092265f6a223785e8919f77b91b9ace8a5b
+  active_status: governance/PROJECT_STATUS_v22.md
+  active_status_sha256: 96ab07c03e7aa05d1bdac1dec5daf40312109ea6ca53d649895309b21487015b
+
+parent_tables:
+  eligible_reference_sequences: eligible_reference_sequences
+  space_iii_gene_eligibility: space_iii_gene_eligibility
+  huri_evidence_gene_pair_projections: huri_evidence_gene_pair_projections
+  endpoint_partition_assignments: endpoint_partition_assignments
+  component_partition_assignments: component_partition_assignments
+  evidence_records: evidence_records
+
+frozen_parent_expectations:
+  eligible_reference_sequences: 17000
+  eligible_space_iii_genes: 17172
+  distinct_released_positive_pairs: 58049
+  distinct_released_positive_pairs_hi_ii_14: 12353
+  distinct_released_positive_pairs_huri: 50545
+  source_membership: {hi_ii_14_only: 7504, huri_only: 45696, both: 4849}
+  endpoint_counts: {train: 11900, development: 2550, test: 2550}
+  component_counts: {train: 5427, development: 1071, test: 1284}
+  hard_partition_rule: local_domain_union_30
+  hard_partition_components: 7782
+  sensitive_fl80_cross_partition_edges: 0
+  local_domain_cross_partition_edges: 0
+
+information_cutoffs:
+  cutoff_id: primary_pair_protocol_information_cutoff_20260803
+  evidence:
+    source_release: published_2020
+    qualifying_sources: [HI-II-14, HuRI]
+    acquisition_run_id: primary-raw-v1-20260803T135432Z
+    acquisition_completed_at_utc: "2026-08-03T14:00:25.234404+00:00"
+    parse_completed_at_utc: "2026-08-03T17:58:34.440329+00:00"
+    reconciliation_completed_at_utc: "2026-08-03T19:31:00.699286+00:00"
+    qualifying_positive_unit: unordered_distinct_frozen_reference_sequence_pair
+    qualifying_positive_rule: unique_gene_pair_projected_to_two_distinct_eligible_frozen_reference_sequences_in_the_accepted_HI_II_14_or_HuRI_union
+    post_cutoff_evidence_visible_to_training: false
+    post_cutoff_evidence_visible_to_development_selection: false
+    post_cutoff_evidence_used_for_candidate_exclusion: false
+  sequence:
+    frozen_uniprot_release: "2026_02"
+    endpoint_unit: frozen_reference_sequence_sha256
+    later_sequence_replacement_or_remapping: prohibited
+  partition:
+    split_id: final_benchmark_component_split_v1
+    frozen_at_utc: "2026-08-08T17:34:32.796158+00:00"
+    hard_rule: local_domain_union_30
+    split_modification: prohibited
+  external_features:
+    structures: unavailable_to_this_protocol_and_not_authorized
+    external_diagnostic_panels: unavailable_to_this_protocol_and_not_authorized
+    teacher_predictions: unavailable_to_this_protocol_and_not_authorized
+    text_mined_or_post_cutoff_ppi_evidence: unavailable_to_training_development_and_candidate_exclusion
+    future_model_or_plm_provenance: must_be_frozen_separately_before_model_authorization
+    plm_unseen_claim_authorized: false
+
+evidence_visibility:
+  common_public_before_modeling:
+    - frozen_endpoint_and_component_partition_skeleton
+    - protocol_configuration_and_hashes
+    - aggregate_feasibility_counts
+    - schemas_and_nonidentifying_acceptance_results
+  benchmark_curator_only:
+    - complete_frozen_released_positive_pair_union
+    - positive_pair_roles_and_quarantine_state
+    - development_and_protected_test_positive_identities
+    - protected_test_candidate_sample_identity_if_later_realized
+  training:
+    positive_evidence: only_training_role_positive_pairs_with_both_endpoints_in_train
+    unlabeled_evidence: only_later_realized_training_sample_with_state_unlabeled
+    withheld_c1_pair_identity_visible: false
+    development_or_test_endpoint_visible_to_interaction_supervision: false
+    development_or_test_positive_evidence_visible: false
+    source_assay_publication_or_test_degree_as_model_feature: false
+  development:
+    available_only_after_training_artifact_hash_is_frozen: true
+    positive_evidence: development_assigned_C1_and_development_partition_C2_C3_only
+    may_influence: [model_selection, hyperparameter_selection, stopping]
+    protected_test_positive_identity_visible: false
+    protected_test_metric_visible: false
+  protected_test:
+    read_only_evaluator_only: true
+    model_or_tuner_positive_identity_visible: false
+    prediction_artifact_must_be_hashed_before_unsealing: true
+    one_first_evaluation_rule: true
+    rerun_after_result_requires_new_protocol_and_split_version: true
+
+pair_identity_and_grouping:
+  endpoint_order: reference_sequence_sha256_ascending
+  pair_id_payload: "{endpoint_a_sha256}|{endpoint_b_sha256}"
+  pair_id: "pair:{sha256_hex(pair_id_payload)}"
+  biological_pair_unit: unordered_exact_frozen_reference_sequence_pair
+  group_co_location:
+    - reverse_orientations
+    - every_detailed_evidence_record_for_the_pair
+    - every_source_membership_for_the_pair
+    - construct_and_orientation_variants_projecting_to_the_pair
+    - repeated_detection_method_records
+  conflicting_or_multiple_source_evidence: retain_all_provenance_and_assign_once_at_pair_level
+  pair_identity_persistence_in_this_work_package: false
+
+pair_assignment:
+  public_salt: ipin-openppi-pair-level-pu-r-protocol-v1
+  deterministic_seed: "20260803"
+  hash: SHA256
+  c1_positive_role:
+    hash_payload: "{public_salt}:{deterministic_seed}:primary:C1:{pair_id}"
+    integer: unsigned_big_endian_first_8_digest_bytes
+    bucket: integer_modulo_10000
+    bucket_intervals:
+      train: [0, 7000]
+      development: [7000, 8500]
+      test: [8500, 10000]
+    assignment_is_label_blind: true
+    role_hash_uses_source_study_assay_degree_or_model_result: false
+  interaction_supervised_training_positives:
+    rule: released_positive_train_train_pairs_with_c1_hash_role_train
+  training_exposed_endpoint:
+    rule: train_endpoint_with_degree_at_least_one_in_interaction_supervised_training_positives
+    degree_uses_withheld_or_heldout_edges: false
+  C1:
+    development: train_train_positive_with_hash_role_development_and_both_endpoints_training_exposed
+    test: train_train_positive_with_hash_role_test_and_both_endpoints_training_exposed
+    pair_absent_from_interaction_supervised_training: true
+  C2:
+    development: exactly_one_training_exposed_train_endpoint_and_one_development_endpoint
+    test: exactly_one_training_exposed_train_endpoint_and_one_test_endpoint
+    exclusive_of_C3: true
+  C3:
+    development: both_exact_endpoints_in_development
+    test: both_exact_endpoints_in_test
+    exact_endpoints_absent_from_interaction_supervised_training: true
+    component_disjoint_under: local_domain_union_30
+  quarantine:
+    - development_test_cross_partition_pair
+    - train_train_positive_with_development_or_test_hash_role_failing_training_exposure_guard
+    - train_heldout_positive_whose_train_endpoint_is_not_training_exposed
+    - self_pair_or_same_frozen_sequence_hash
+    - ambiguous_or_unmapped_positive_projection
+    - any_pair_failing_source_or_cutoff_eligibility
+  reassignment_after_quarantine: prohibited
+
+positive_withholding_and_leakage:
+  primary_axis:
+    all_evidence_for_heldout_pair_removed_from_training: true
+    same_pair_as_training_unlabeled: prohibited
+    same_pair_in_multiple_positive_roles: prohibited
+    development_positive_visible_to_test_selection: false
+    test_positive_visible_to_development_or_training: false
+    primary_axis_claims_source_or_study_independence: false
+  conditional_axis_rule:
+    heldout_source_study_assay_or_temporal_labels_visible_to_training: false
+    heldout_labels_used_for_candidate_exclusion: false
+    pair_supported_by_visible_and_heldout_evidence:
+      evaluation_positive_role: excluded_from_strict_holdout_positive_set
+      candidate_exclusion_basis: visible_evidence_only
+
+candidate_universes:
+  construction_status: protocol_frozen_not_materialized
+  state_semantics: candidate_without_visible_qualifying_positive_evidence_is_unlabeled_not_negative
+  self_pairs: excluded
+  duplicate_or_reverse_pairs: excluded_by_unordered_pair_identity
+  full_materialization: prohibited
+  streaming_or_algebraic_enumeration_required: true
+  cells:
+    training:
+      endpoints: two_training_exposed_train_endpoints
+      positives: c1_hash_role_train
+      visible_positive_exclusion: all_frozen_primary_positive_pairs_between_eligible_cell_endpoints
+    C1_development:
+      endpoints: two_training_exposed_train_endpoints
+      positives: C1_development
+      visible_positive_exclusion: all_non_target_frozen_primary_positive_pairs_between_eligible_cell_endpoints
+    C1_test:
+      endpoints: two_training_exposed_train_endpoints
+      positives: C1_test
+      visible_positive_exclusion: all_non_target_frozen_primary_positive_pairs_between_eligible_cell_endpoints
+    C2_development:
+      endpoints: one_training_exposed_train_endpoint_and_one_development_endpoint
+      positives: C2_development
+      visible_positive_exclusion: all_non_target_frozen_primary_positive_pairs_between_eligible_cell_endpoints
+    C2_test:
+      endpoints: one_training_exposed_train_endpoint_and_one_test_endpoint
+      positives: C2_test
+      visible_positive_exclusion: all_non_target_frozen_primary_positive_pairs_between_eligible_cell_endpoints
+    C3_development:
+      endpoints: two_distinct_development_endpoints
+      positives: C3_development
+      visible_positive_exclusion: all_non_target_frozen_primary_positive_pairs_between_eligible_cell_endpoints
+    C3_test:
+      endpoints: two_distinct_test_endpoints
+      positives: C3_test
+      visible_positive_exclusion: all_non_target_frozen_primary_positive_pairs_between_eligible_cell_endpoints
+
+unlabeled_sampling:
+  realization_status: prohibited_in_this_work_package
+  method: deterministic_stratified_bottom_hash_without_replacement
+  hash: SHA256
+  public_salt: ipin-openppi-benchmark-v1
+  deterministic_seed: "20260803"
+  hash_payload: "{public_salt}:{deterministic_seed}:unlabeled:{cell_id}:{stratum_id}:{pair_id}"
+  hash_order: full_256_bit_unsigned_integer_ascending_then_pair_id_ascending
+  degree_bins: ["0", "1", "2", "3-4", "5-9", "10-19", "20-49", "50-99", "100+"]
+  degree_basis: interaction_supervised_training_positive_degree_only
+  pair_stratum: lexicographically_ordered_endpoint_degree_bin_pair
+  sample_caps:
+    training: 2000000
+    C1_development: 1000000
+    C1_test: 1000000
+    C2_development: 1000000
+    C2_test: 1000000
+    C3_development: 1000000
+    C3_test: 1000000
+  total_cell_sample_size: min_unlabeled_candidate_count_and_cell_cap
+  stratum_allocation:
+    method: one_per_nonempty_stratum_then_Hamilton_proportional_apportionment
+    remainder_tie_break: fractional_remainder_descending_then_stratum_id_ascending
+    allocation_never_exceeds_stratum_population: true
+  selected_pairs: lowest_hashes_within_cell_and_stratum
+  positive_inclusion_probability: 1.0
+  positive_sampling_weight: 1.0
+  unlabeled_inclusion_probability: "m_h / N_h"
+  unlabeled_sampling_weight: "N_h / m_h"
+  zero_probability_nonempty_stratum: prohibited
+  record_fields_when_later_realized: [cell_id, stratum_id, pair_id, hash_key, N_h, m_h, inclusion_probability, sampling_weight, state]
+  state_field_value: unlabeled
+  scientific_negative_interpretation: prohibited
+  sampled_precision_or_prevalence_interpretation: prohibited
+  full_candidate_scoring:
+    preferred: true
+    materialization_required: false
+    exact_streaming_allowed: true
+    inability_to_full_score_action: demote_exact_recall_and_exact_rank_metrics_not_redefine_sample_as_full_universe
+
+metrics:
+  score_requirement: symmetric_nonprobabilistic_sequence_compatibility_prioritization_score
+  score_tie_break: pair_id_ascending
+  primary:
+    positive_unlabeled_pairwise_concordance:
+      definition: weighted_probability_heldout_positive_score_exceeds_unlabeled_score_plus_half_ties_within_cell
+      sampled_unlabeled_estimator: Horvitz_Thompson_weighted
+    heldout_positive_recall_at_k:
+      k: [10, 100, 1000]
+      query_orientation:
+        C1: both_endpoints_as_queries
+        C2: heldout_endpoint_as_query_only
+        C3: both_endpoints_as_queries
+      aggregation: macro_over_queries_primary_micro_over_positive_pairs_secondary
+      requires_full_candidate_ranking: true
+    released_positive_enrichment_at_candidate_fraction:
+      fractions: [0.0001, 0.001, 0.01]
+      cutoff_count: ceiling_fraction_times_query_candidate_count_minimum_one
+      definition: observed_heldout_positive_recall_in_top_fraction_divided_by_fraction
+      precision_interpretation: prohibited
+    positive_rank_percentile:
+      definition: fraction_of_eligible_candidates_scored_below_positive_plus_half_ties
+      range: [0.0, 1.0]
+      higher_is_better: true
+      report: [mean, median, q10, q90]
+  always_report:
+    - C1_C2_C3_and_development_test_cells_separately
+    - surviving_positive_pairs_and_queries
+    - eligible_and_sampled_unlabeled_candidates
+    - endpoint_and_component_counts
+    - source_membership_and_supported_holdout_strata
+    - training_degree_and_hub_strata
+    - nearest_training_similarity_rule_name
+    - inclusion_probabilities_and_weights
+  diagnostic_only:
+    - sampled_positive_vs_unlabeled_AUPRC
+    - sampled_positive_vs_unlabeled_AUROC
+    - release_propensity_log_loss
+    - graph_metrics
+  prohibited:
+    - biological_precision
+    - biological_false_positive_rate
+    - prevalence
+    - calibrated_binding_probability
+    - calibrated_assay_probability
+    - proteome_wide_precision
+
+uncertainty:
+  primary_dependence_unit: frozen_local_domain_union_30_sequence_component
+  method: two_endpoint_component_pigeonhole_bootstrap
+  replicates: 2000
+  deterministic_seed: "20260803"
+  rng: numpy_random_PCG64DXSM_in_pinned_container
+  cell_seed_payload: "sha256:{deterministic_seed}:bootstrap:{cell_id}:first_8_bytes_unsigned_big_endian"
+  component_draw: draw_number_of_participating_components_with_replacement_from_participating_components
+  pair_weight_distinct_components: product_of_endpoint_component_multiplicities
+  pair_weight_same_component: component_multiplicity
+  query_metric_weight: query_component_multiplicity
+  interval: percentile_95
+  paired_comparison: identical_candidate_samples_and_bootstrap_draws_required
+  sensitivity:
+    - query_endpoint_cluster_bootstrap
+    - leave_one_visible_source_out_where_supported
+  assay_or_batch_bootstrap: inactive_missing_primary_pair_level_fields
+  independent_pair_trials_claim: prohibited
+
+degree_hub_stratification:
+  degree_graph: interaction_supervised_training_positive_pairs_only
+  protected_or_development_edges_in_degree: prohibited
+  bins: ["0", "1", "2", "3-4", "5-9", "10-19", "20-49", "50-99", "100+"]
+  pair_reporting: ordered_low_high_degree_bin_pair
+  hubs:
+    fractions: [0.01, 0.05, 0.10]
+    population: training_partition_endpoints
+    rank: training_positive_degree_descending_then_reference_sequence_sha256_ascending
+  protected_full_evidence_degree:
+    permitted_use: sealed_post_prediction_description_only
+    model_feature_or_selection_use: prohibited
+
+later_simple_baselines:
+  implementation_status: not_authorized
+  shared_inputs: training_positive_graph_only
+  baselines:
+    deterministic_hash_random:
+      score: normalized_SHA256_of_pair_id_and_frozen_baseline_salt
+    endpoint_degree_sum:
+      score: "log1p(d_train_a) + log1p(d_train_b)"
+    preferential_attachment:
+      score: "log1p(d_train_a * d_train_b)"
+    component_degree_mass_product:
+      score: "log1p(D_component_a * D_component_b)"
+  heldout_endpoint_degree: 0
+  heldout_labels_or_full_graph_degree_used: false
+  baseline_tuning_on_test: prohibited
+
+auxiliary_holdouts:
+  source_exclusive:
+    status: supported_with_cellwise_minimum_size_demotion
+    sources: [HI-II-14, HuRI]
+    target_positive: pair_supported_only_by_target_source
+    training_positive_visibility: non_target_source_evidence_only
+    both_source_pair: excluded_from_target_positive_and_excluded_from_unlabeled_by_visible_non_target_evidence
+    target_only_pair_removed_from_candidate_by_target_label: false
+    model_selection_use: development_cells_only_if_all_primary_floors_pass
+    claim: transfer_of_released_positive_recovery_between_named_sources_only
+  study:
+    status: inactive_not_independently_identified
+    reason: HuRI_publication_identifier_unresolved_and_each_source_has_only_one_shared_publication_group
+    source_proxy_claim: prohibited_as_independent_study_generalization
+  assay_version_or_batch:
+    status: inactive_missing
+    reason: primary_positive_records_have_zero_nonnull_assay_version_and_assay_batch_fields
+    detection_method_terms_are_assay_pipeline_evidence_types_not_version_labels: true
+  temporal:
+    status: inactive_not_supported_as_independent_pair_time_holdout
+    reason: source_creation_date_is_shared_release_metadata_and_HuRI_publication_identifier_is_unresolved
+    source_release_chronology_may_be_reported: source_confounding_diagnostic_only
+    future_activation_requires:
+      - pair_level_observation_or_release_dates_with_complete_coverage
+      - predeclared_earlier_training_cutoff_and_later_protected_evidence_snapshot
+      - later_labels_invisible_to_training_and_candidate_exclusion
+      - source_and_assay_confounding_quantified
+
+acceptance_criteria:
+  primary_cells: [C1_development, C1_test, C2_development, C2_test, C3_development, C3_test]
+  minimum_released_positive_pairs_each_primary_cell: 500
+  minimum_participating_components_each_primary_cell: 50
+  minimum_source_presence_pairs_each_primary_cell: 50
+  required_source_presence: [HI-II-14, HuRI]
+  minimum_interaction_supervision_training_positive_pairs: 500
+  minimum_interaction_supervision_exposed_training_endpoints: 500
+  exact_parent_endpoint_and_component_counts_required: true
+  pair_assignment_is_deterministic_and_source_label_model_blind: true
+  no_pair_role_overlap: true
+  no_development_or_test_endpoint_in_interaction_supervised_training: true
+  nonempty_unlabeled_strata_have_positive_inclusion_probability: true
+  unsupported_holdout_activation: fail
+  auxiliary_cell_below_primary_floor: descriptive_only_and_not_pooled
+  all_primary_criteria_are_hard_and_conjunctive: true
+
+frozen_feasibility_expectations:
+  train_train_released_positive_pairs_before_hash: 23823
+  interaction_supervision_training_positive_pairs: 16799
+  interaction_supervision_exposed_training_endpoints: 4675
+  c1_candidate_endpoint_pair_count: 10925475
+  c1_visible_released_positive_pairs: 23245
+  c1_unlabeled_candidate_count: 10902230
+  primary_cells:
+    C1_development: {pairs: 3259, components: 1378, HI-II-14: 619, HuRI: 2892}
+    C1_test: {pairs: 3187, components: 1348, HI-II-14: 570, HuRI: 2854}
+    C2_development: {pairs: 11327, components: 2125, HI-II-14: 2702, HuRI: 9583, candidate_pairs: 11921250, unlabeled_candidates: 11909923}
+    C2_test: {pairs: 13446, components: 2436, HI-II-14: 2739, HuRI: 11822, candidate_pairs: 11921250, unlabeled_candidates: 11907804}
+    C3_development: {pairs: 2265, components: 353, HI-II-14: 588, HuRI: 1953, candidate_pairs: 3249975, unlabeled_candidates: 3247710}
+    C3_test: {pairs: 2379, components: 505, HI-II-14: 510, HuRI: 2110, candidate_pairs: 3249975, unlabeled_candidates: 3247596}
+  strict_source_exclusive_cells:
+    HI-II-14:
+      visible_training_pairs: 14829
+      visible_training_endpoints: 4320
+      C1_development: {pairs: 305, components: 292}
+      C1_test: {pairs: 280, components: 281}
+      C2_development: {pairs: 1601, components: 683}
+      C2_test: {pairs: 1488, components: 751}
+      C3_development: {pairs: 312, components: 118}
+      C3_test: {pairs: 269, components: 147}
+    HuRI:
+      visible_training_pairs: 3252
+      visible_training_endpoints: 1868
+      C1_development: {pairs: 611, components: 446}
+      C1_test: {pairs: 633, components: 414}
+      C2_development: {pairs: 4751, components: 1084}
+      C2_test: {pairs: 5270, components: 1297}
+      C3_development: {pairs: 1677, components: 304}
+      C3_test: {pairs: 1869, components: 463}
+  evidence_field_completeness:
+    HI-II-14: {rows: 49389, publication_nonnull: 49389, distinct_publication_groups: 1, experiment_nonempty: 0, assay_version_nonnull: 0, assay_batch_nonnull: 0, source_created_nonnull: 49389, source_updated_nonnull: 0}
+    HuRI: {rows: 171545, publication_nonnull: 171545, distinct_publication_groups: 1, experiment_nonempty: 0, assay_version_nonnull: 0, assay_batch_nonnull: 0, source_created_nonnull: 171545, source_updated_nonnull: 0}
+
+claim_policy:
+  primary_claim: recovery_and_ranking_of_heldout_released_positive_evidence_within_the_frozen_candidate_and_sampling_design
+  C3_permitted_wording: both_exact_frozen_reference_sequence_endpoints_absent_from_interaction_supervised_training_and_component_disjoint_under_local_domain_union_30
+  unseen_protein_term_requires_immediate_exact_operational_definition: true
+  source_holdout_claim: named_source_release_transfer_only
+  unsupported_study_assay_or_temporal_claim: prohibited
+  unseen_biological_family_claim: prohibited
+  family_generalization_claim: prohibited
+  plm_unseen_protein_claim: prohibited
+  exhaustive_nonhomology_claim: prohibited
+  universal_nonbinding_claim: prohibited
+  unlabeled_is_negative_claim: prohibited
+  prevalence_claim: prohibited
+  calibrated_probability_claim: prohibited
+  biological_precision_claim: prohibited
+
+runtime:
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  architecture: aarch64
+  require_clean_git_for_production: true
+  verify_input_sha256: true
+  duckdb_threads: 8
+  duckdb_memory_limit: 64GB
+
+outputs:
+  audit_report: artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_protocol_v1/AUDIT_REPORT.json
+  validation_report: artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_protocol_v1/VALIDATION_REPORT.json
+  pair_or_candidate_rows: prohibited
