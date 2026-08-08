@@ -1,0 +1,164 @@
+schema_version: 25
+supersedes: governance/gates/gate_status_v24.yaml
+updated_date: "2026-08-08"
+programme_state: pair_level_pu_r_benchmark_artifacts_accepted_frozen_models_on_hold
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    production_sif: containers/images/ipin-data-arm64_0.1.2.sif
+    production_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+    architecture: aarch64
+    continuing_condition: every_scientific_operation_runs_through_pinned_apptainer
+  evidence:
+    status: pair_level_artifacts_accepted_frozen_parent_evidence_immutable
+    tf_isoform_y2h_2025_subgate:
+      status: accepted_technically_complete_external_only_quarantined
+      acceptance_decision: governance/decisions/DEC-0017-accept-tf-isoform-y2h-disposition.md
+      external_only: true
+      training_negative_role_authorized: false
+      universal_nonbinding_interpretation_authorized: false
+      prevalence_role_authorized: false
+      calibration_role_authorized: false
+      unseen_endpoint_or_family_benchmark_authorized: false
+      audit_reopening_or_extension_authorized: false
+      model_work_authorized: false
+    benchmark_eligibility_and_sequence_component_audit:
+      status: complete_independently_validated_technically_accepted_immutable
+      acceptance_decision: governance/decisions/DEC-0018-accept-benchmark-eligibility-and-sequence-component-audit.md
+      eligible_reference_sequences: 17000
+      accepted_artifacts_may_be_modified: false
+      audit_reopening_or_extension_authorized: false
+    pre_split_feasibility_and_leakage_stress_test:
+      status: complete_independently_validated_technically_accepted_immutable
+      acceptance_decision: governance/decisions/DEC-0020-accept-pre-split-feasibility-and-leakage-stress-test.md
+      accepted_artifacts_may_be_modified: false
+      audit_reopening_or_extension_authorized: false
+    final_benchmark_component_split:
+      status: complete_independently_validated_accepted_immutable
+      acceptance_decision: governance/decisions/DEC-0022-accept-final-benchmark-component-split.md
+      selected_hard_partition_rule: local_domain_union_30
+      endpoint_counts: {train: 11900, development: 2550, test: 2550}
+      component_counts: {train: 5427, development: 1071, test: 1284}
+      accepted_artifacts_may_be_modified: false
+    pair_level_pu_r_benchmark_protocol:
+      status: complete_independently_validated_technically_accepted_immutable
+      acceptance_decision: governance/decisions/DEC-0024-accept-pair-level-pu-r-benchmark-protocol.md
+      scientific_report: docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md
+      configuration: configs/pair_level_pu_r_benchmark_protocol_v1.yaml
+      configuration_sha256: 7b0cefa1b461f0e58d3e6f4ff72da2d6ad4ac39522a897ce4057e756fa84f2a6
+      primary_design: reference_sequence_positive_unlabeled_ranking
+      pair_unit: unordered_exact_frozen_reference_sequence_pair
+      c3_exact_endpoint_named_rule_claim_authorized: true
+      unseen_biological_family_claim_authorized: false
+      plm_unseen_protein_claim_authorized: false
+      unlabeled_is_negative_claim_authorized: false
+      prevalence_or_calibration_claim_authorized: false
+      accepted_artifacts_may_be_modified: false
+    pair_level_pu_r_benchmark_artifacts:
+      status: complete_independently_validated_technically_accepted_immutable
+      authorization_decision: governance/decisions/DEC-0025-authorize-pair-level-pu-r-benchmark-artifact-construction.md
+      acceptance_decision: governance/decisions/DEC-0026-accept-pair-level-pu-r-benchmark-artifacts.md
+      scientific_report: docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Artifacts_Final_v1.md
+      protected_evaluation_procedure: docs/reports/m0/PROTECTED_TEST_EVALUATION_PROCEDURE_v1.md
+      configuration: configs/pair_level_pu_r_benchmark_artifacts_v1.yaml
+      configuration_sha256: cdafad900887e74a6148cdb6d6832e56392649703c261909d5f581e39fd9e795
+      package_manifest: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/PACKAGE_MANIFEST.json
+      package_manifest_sha256: f0f850daf795481c8a1ae0ba64f6d050ae757f2738497ac0517003c6822015f5
+      construction_report: artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_artifacts_v1/CONSTRUCTION_REPORT.json
+      construction_report_sha256: 878beb38af78157b8b4b3ff50cb7658266900add86a96d7d9e5baca8745c3f65
+      validation_report: artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_artifacts_v1/VALIDATION_REPORT.json
+      validation_report_sha256: 7eede006ba18dbc4dcc71128743722718bc73f0f6891834ad4ebc0a6ed614e86
+      production_git_commit: 043bd73f4b0e6d102b339b5ac66213a88674bb94
+      validation_git_commit: 7dc5e0ea1bfb87526178d569350bdb4d86c15559
+      validation_checks: {pass: 13, warning: 0, fail: 0}
+      public_training_positive_pairs: 16799
+      public_training_unlabeled_rows: 2000000
+      encrypted_development_positive_rows: 26108
+      encrypted_development_unlabeled_rows: 9000000
+      encrypted_protected_candidate_rows: 9028821
+      encrypted_protected_truth_positive_rows: 28821
+      encrypted_protected_truth_unlabeled_rows: 9000000
+      positive_role_ledger_rows: 58049
+      all_sample_rows: 20000000
+      all_cellwise_unlabeled_population: 129614029
+      distinct_sampled_unlabeled_pair_ids: 15536850
+      pair_ids_reused_across_cells: 3778512
+      repeated_sample_rows_beyond_first: 4463150
+      maximum_cells_for_one_unlabeled_pair: 7
+      positive_as_unlabeled_rows: 0
+      protected_candidate_missing_extra_duplicates: 0
+      protected_public_identity_rows: 0
+      three_distinct_sealing_keypairs: true
+      private_keys_versioned: false
+      development_released: false
+      protected_candidate_or_truth_accessed_for_model_work: false
+      scorer_projection: [candidate_token, endpoint_a_sha256, endpoint_b_sha256, cell_id]
+      prediction_hash_before_truth_access_required: true
+      one_first_pre_truth_reservation_required: true
+      accepted_artifacts_may_be_modified: false
+      additional_pair_or_sample_construction_authorized: false
+      full_candidate_pair_universe_materialized: false
+      negative_or_pseudo_negative_constructed: false
+      frozen_split_modified: false
+      external_panel_inputs_used: false
+      structural_mapping_performed: false
+      model_work_performed: false
+      return_to_governance_complete: true
+    label_construction_authorized: false
+    additional_bounded_candidate_sample_materialization_authorized: false
+    full_candidate_pair_universe_materialization_authorized: false
+    structural_mapping_authorized: false
+    model_training_authorized: false
+  benchmark:
+    status: pair_level_artifacts_frozen_all_development_and_models_on_hold
+    accepted_policy: configs/benchmark_estimand_policy_v1.yaml
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    output_is_probability: false
+    active_bounded_work_package: null
+    endpoint_component_split_frozen: true
+    pair_level_protocol_frozen: true
+    pair_level_benchmark_artifacts_frozen: true
+    pair_level_benchmark_rows_authorized: false
+    unlabeled_sampling_realization_authorized: false
+    development_release_authorized: false
+    protected_candidate_access_authorized: false
+    protected_truth_access_authorized: false
+    model_prediction_or_evaluation_authorized: false
+    full_candidate_pair_universe_materialization_authorized: false
+    external_panel_integration_authorized: false
+    negative_label_construction_authorized: false
+    model_implementation_authorized: false
+    model_training_authorized: false
+    next_work_package_authorized: false
+  statistical: {status: protocol_and_artifacts_frozen_model_work_not_started}
+  routing: {status: not_started}
+  retrieval: {status: protocol_and_artifacts_frozen_model_work_not_started}
+  uncertainty: {status: protocol_frozen_no_model_metric_computed}
+  computational_validation: {status: pair_artifacts_independently_validated_models_not_started}
+  release: {status: not_started}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_blank_unreported_or_technical_state_as_negative: true
+  accepted_pair_artifact_modification_extension_or_resampling: true
+  additional_pair_level_rows_or_unlabeled_sample_realization: true
+  development_release_without_new_authority: true
+  public_protected_test_candidate_prediction_or_truth_identity: true
+  protected_candidate_or_truth_access_without_new_authority: true
+  full_candidate_pair_universe_materialization: true
+  negative_label_construction: true
+  pseudo_negative_sampling: true
+  frozen_endpoint_component_split_modification: true
+  merge_external_panels_with_negatome: true
+  external_panel_outcomes_as_training_labels: true
+  external_panel_outcomes_as_training_negatives: true
+  external_panel_prevalence_or_calibration_use: true
+  external_panel_unseen_endpoint_or_family_benchmarking: true
+  structural_label_work: true
+  model_implementation_embedding_training_tuning_calibration_or_evaluation: true
+  primary_pu_r_design_change: true
+  unseen_family_plm_unseen_or_exhaustive_homology_claim: true

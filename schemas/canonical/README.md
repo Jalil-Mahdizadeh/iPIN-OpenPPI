@@ -25,7 +25,8 @@ claim summaries. It prohibits candidate-pair, positive-pair, negative,
 pseudo-negative, evidence-indicator, and pair-level C1/C2/C3 rows.
 
 `pair_level_pu_r_benchmark_artifacts_v1.yaml` governs the bounded `DEC-0025`
-construction. It permits only released-positive censuses, deterministic
+construction accepted and frozen by `DEC-0026`. It permits only
+released-positive censuses, deterministic
 sampled-unlabeled rows with rational design weights, supported source-visible
 training subsets, label-free protected scorer inputs, protected truth, sampling
 strata, and the curator-only role ledger. Its state vocabulary contains only

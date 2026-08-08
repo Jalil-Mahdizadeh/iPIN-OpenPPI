@@ -3,7 +3,11 @@
 Human-readable M0 platform, evidence, benchmark, modelling, gate, and release reports are stored here. Machine-readable run records remain under `artifacts/runs/`.
 
 The current governance-return report is
-`docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md`.
+`docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Artifacts_Final_v1.md`.
+The accepted frozen protocol report remains
+`docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md`, and the
+sealed custody procedure is
+`docs/reports/m0/PROTECTED_TEST_EVALUATION_PROCEDURE_v1.md`.
 The accepted frozen component-split report remains
 `docs/reports/m0/M0_Final_Benchmark_Component_Split_Final_v1.md`.
 The external-panel audit reports remain quarantined from the primary design.

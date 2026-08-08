@@ -11,20 +11,21 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
-The current authoritative ledger is `gates/gate_status_v24.yaml`; the current
-restart record is `PROJECT_STATUS_v24.md`. `DEC-0017` technically accepts the
+The current authoritative ledger is `gates/gate_status_v25.yaml`; the current
+restart record is `PROJECT_STATUS_v25.md`. `DEC-0017` technically accepts the
 TF-isoform audit and its external-only quarantine. `DEC-0018` technically
 accepts the independently validated benchmark-eligibility and
 sequence-component audit. `DEC-0020` technically accepts the independently
 validated pre-split feasibility and leakage stress-test and records its
 conditional claim boundaries. `DEC-0022` freezes the final endpoint/component
 partition skeleton. `DEC-0024` accepts and freezes the independently validated
-pair-level PU-R protocol. `DEC-0025` authorizes only deterministic construction
-and separate sealing of the frozen training, development, protected-candidate,
-and protected-truth artifacts, followed by independent validation and a
-governance return.
+pair-level PU-R protocol. `DEC-0025` authorized bounded construction, and
+`DEC-0026` accepts and freezes the independently validated public-training,
+encrypted-development, encrypted-protected-candidate, and
+encrypted-protected-truth package.
 
 The primary PU-R design remains binding and unreported eligible pairs remain
-unlabeled. Development release, public protected-test identity, the full
-candidate universe, negatives or pseudo-negatives, panel or structural
-integration, and all model work remain prohibited.
+unlabeled. Artifact modification or resampling, development release, protected
+candidate/truth access, public protected-test identity, the full candidate
+universe, negatives or pseudo-negatives, panel or structural integration, and
+all model work remain prohibited.

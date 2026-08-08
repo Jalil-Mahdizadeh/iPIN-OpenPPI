@@ -34,14 +34,26 @@ local_domain_union.
 
 [DEC-0024](governance/decisions/DEC-0024-accept-pair-level-pu-r-benchmark-protocol.md)
 accepts and freezes the independently validated pair-level PU-R protocol before
-model work. Its [final report](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md)
+model work. Its [protocol report](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md)
 defines evidence visibility, exact C1/C2/C3 withholding, deterministic
 unlabeled sampling, PU-retrieval metrics, clustered uncertainty, supported
-named-source diagnostics, and inactive unsupported holdouts. No pair rows or
-sample were created, and all model work remains unauthorized. The current
-restart record is [project status version 23](governance/PROJECT_STATUS_v23.md),
-and the authoritative ledger is
-[gate status version 23](governance/gates/gate_status_v23.yaml).
+named-source diagnostics, and inactive unsupported holdouts.
+
+[DEC-0026](governance/decisions/DEC-0026-accept-pair-level-pu-r-benchmark-artifacts.md)
+accepts and freezes the independently validated pair-level benchmark artifacts
+constructed exactly under that protocol. The
+[artifact report](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Artifacts_Final_v1.md)
+records 16,799 training positives, 20,000,000 deterministic sampled-unlabeled
+cell rows, separately sealed development/protected-candidate/protected-truth
+packages, exact probabilities and weights, and zero positive-as-unlabeled or
+public protected-identity leakage. Unlabeled pairs remain unlabeled, not
+negatives. Development release, protected evaluation, and all model work remain
+unauthorized.
+
+The current restart record is
+[project status version 25](governance/PROJECT_STATUS_v25.md), and the
+authoritative ledger is
+[gate status version 25](governance/gates/gate_status_v25.yaml).
 
 The binding scientific specification is [the Version 3 final blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md). All production computation must run on NAISS Arrhenius through immutable ARM64 Apptainer SIF images.
 
@@ -83,8 +95,11 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
 3. Preserve the immutable `DEC-0022` endpoint/component split.
 4. Preserve the `DEC-0024` information, pair-assignment, sampling, metric,
    uncertainty, holdout, and claim rules.
-5. Do not persist benchmark pair rows, realize an unlabeled sample, construct
-   negatives or pseudo-negatives, integrate panels or structures, or perform
-   model work unless a new numbered decision authorizes that bounded package.
+5. Preserve the immutable `DEC-0026` pair artifacts; do not modify, extend,
+   resample, relabel, release development, or open protected candidates/truth.
+6. Do not construct additional pair rows, negatives or pseudo-negatives,
+   materialize the full candidate universe, integrate panels or structures, or
+   perform model work unless a new numbered decision authorizes that bounded
+   package.
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.
