@@ -13,6 +13,7 @@ from ipin_openppi.sequence_component_audit.support import (
     validate_config,
 )
 from ipin_openppi.sequence_component_audit.tooling import validate_tar_members
+from ipin_openppi.validation.sequence_components import _independent_eligibility
 
 
 CONFIG = Path("configs/benchmark_eligibility_and_sequence_component_audit_v1.yaml")
@@ -117,3 +118,31 @@ def test_tool_archive_validation_rejects_duplicate_members() -> None:
     second = tarfile.TarInfo("mmseqs/LICENSE.md")
     with pytest.raises(RuntimeError, match="Unsafe"):
         validate_tar_members([first, second])
+
+
+def test_validator_embeds_escaped_literals_for_duckdb_ddl() -> None:
+    class StopAfterFirstExecute(Exception):
+        pass
+
+    class CapturingConnection:
+        def execute(self, sql: str, *parameters: object) -> None:
+            assert not parameters
+            assert "?" not in sql
+            assert "identifiers.database = 'Gene''ID'" in sql
+            assert "identifiers.source_release = 'release''v1'" in sql
+            assert "seq.taxid = 9606" in sql
+            assert "seq.source_release = 'release''v1'" in sql
+            raise StopAfterFirstExecute
+
+    with pytest.raises(StopAfterFirstExecute):
+        _independent_eligibility(
+            None,  # type: ignore[arg-type]
+            CapturingConnection(),  # type: ignore[arg-type]
+            {
+                "eligibility_policy": {
+                    "identifier_database": "Gene'ID",
+                    "frozen_uniprot_release": "release'v1",
+                    "frozen_human_taxid": 9606,
+                }
+            },
+        )

@@ -1,0 +1,475 @@
+{
+  "audit_id": "benchmark_eligibility_and_sequence_component_audit_v1",
+  "audit_version": "1.0.0",
+  "authorizations": {
+    "c1_c2_c3_assignment": false,
+    "candidate_pair_materialization": false,
+    "evidence_indicator_construction": false,
+    "interaction_label_construction": false,
+    "model_work": false,
+    "negative_label_construction": false,
+    "pseudo_negative_sampling": false,
+    "return_to_governance_required": true,
+    "split_construction": false,
+    "structural_mapping": false
+  },
+  "completed_at_utc": "2026-08-08T09:42:17.519791+00:00",
+  "git": {
+    "commit": "3ea96166eab2c3600a290ee8109410a7d040b153",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "inputs": {
+    "config": "configs/benchmark_eligibility_and_sequence_component_audit_v1.yaml",
+    "config_sha256": "b3bc6d802799d2fb47f351b6311c951945a8517d27e573be7fc4209e452a22e5",
+    "documents": {
+      "accepted_blueprint_amendment": {
+        "bytes": 6243,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_v1.md",
+        "sha256": "0fb1cc3a02f6a526c195e12e0623f3c69c7513080c5a486be9ea41f71972c40a"
+      },
+      "active_gate": {
+        "bytes": 4633,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/gates/gate_status_v16.yaml",
+        "sha256": "f766834f4190f7deddc059b62f42f618d9e7518bc77a3c1d8eeb8a7cfa5128e9"
+      },
+      "audit_schema": {
+        "bytes": 11640,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/canonical/benchmark_eligibility_and_sequence_component_audit_v1.yaml",
+        "sha256": "60698389ee17e5c9d2cf8a586fbe92af9ef331120d01785f13b071759749a481"
+      },
+      "authorization_decision": {
+        "bytes": 4636,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/decisions/DEC-0012-accept-negative-evidence-discovery-audit.md",
+        "sha256": "7c7212c572c293e809caf4132470e683cd35e45f86b37441a62a8f7d258ba304"
+      },
+      "benchmark_estimand_policy": {
+        "bytes": 1923,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/benchmark_estimand_policy_v1.yaml",
+        "sha256": "3340b6b9e4130d8011b43ccf92556d59f9278a89a05b08b4c6581ec8b311164d"
+      },
+      "disposition_acceptance": {
+        "bytes": 2379,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/decisions/DEC-0017-accept-tf-isoform-y2h-disposition.md",
+        "sha256": "178488341ed3eeeaef4ab68904f4f46e9654c20dcae14bddd5fdd3986966760c"
+      },
+      "incorporated_work_unit": {
+        "bytes": 20092,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md",
+        "sha256": "0979e4ed953f1d85e6d11f4fd1469238c9eaee082e1a5d060717647d2bff7c13"
+      },
+      "primary_parse_manifest": {
+        "bytes": 223738,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/PARSE_MANIFEST.json",
+        "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+      },
+      "primary_reconciliation_manifest": {
+        "bytes": 26286,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json",
+        "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+      },
+      "primary_reconciliation_validation_report": {
+        "bytes": 59114,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json",
+        "sha256": "9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2"
+      },
+      "primary_staging_validation_report": {
+        "bytes": 39661,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json",
+        "sha256": "375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba"
+      },
+      "resume_checkpoint": {
+        "bytes": 7559,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/checkpoints/RESUME-001-post-tf-isoform-audit.md",
+        "sha256": "35542f8c30d84f1bcd5b9542e689b35c01c751c888e486f07799cab9f5ddf250"
+      }
+    },
+    "tables": {
+      "huri_evidence_gene_pair_projections": {
+        "bytes": 27025698,
+        "parts": 3,
+        "rows": 220934,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "huri_evidence_gene_pair_projections"
+      },
+      "huri_space_membership": {
+        "bytes": 537515,
+        "parts": 1,
+        "rows": 19818,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "huri_space_membership"
+      },
+      "identifier_mappings": {
+        "bytes": 136751276,
+        "parts": 44,
+        "rows": 4377974,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "identifier_mappings"
+      },
+      "protein_sequences": {
+        "bytes": 47528561,
+        "parts": 2,
+        "rows": 169637,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "protein_sequences"
+      }
+    }
+  },
+  "metrics": {
+    "alignment": {
+      "below_exact_endpoint_coverage_records": 0,
+      "below_exact_identity_records": 531,
+      "exact_criteria_rejected_records": 531,
+      "identity_uses_integer_derived_identical_over_alnlen": true,
+      "minimum_endpoint_coverage_reverified": 0.8,
+      "normalized_edges_sha256": "dd27b4968f5b646ada54c5fc335152456b661cb618997841ceae7b3ad5eda3bd",
+      "normalized_nonself_edges": 75662,
+      "raw_alignment_records": 163441,
+      "raw_alignment_sha256": "d62cfa15e5991ee68bd2f58ac170394dc74df5cf23e5578631231c524a521f56",
+      "self_match_query_sequences": 17000,
+      "structurally_invalid_records": 0
+    },
+    "components": {
+      "20": {
+        "component_count": 10497,
+        "component_size_q50": 1,
+        "component_size_q90": 2,
+        "component_size_q95": 3,
+        "component_size_q99": 9,
+        "edge_count": 75662,
+        "identity_threshold_percent": 20,
+        "largest_component_size": 485,
+        "sequence_count": 17000,
+        "singleton_components": 8268
+      },
+      "30": {
+        "component_count": 11311,
+        "component_size_q50": 1,
+        "component_size_q90": 2,
+        "component_size_q95": 3,
+        "component_size_q99": 7,
+        "edge_count": 63074,
+        "identity_threshold_percent": 30,
+        "largest_component_size": 362,
+        "sequence_count": 17000,
+        "singleton_components": 9059
+      },
+      "40": {
+        "component_count": 12467,
+        "component_size_q50": 1,
+        "component_size_q90": 2,
+        "component_size_q95": 3,
+        "component_size_q99": 5,
+        "edge_count": 31474,
+        "identity_threshold_percent": 40,
+        "largest_component_size": 312,
+        "sequence_count": 17000,
+        "singleton_components": 10366
+      }
+    },
+    "eligibility": {
+      "candidate_pair_rows_materialized": false,
+      "candidate_universe_tested": false,
+      "eligible_reference_sequences": 17000,
+      "eligible_selenocysteine_residues": 19,
+      "eligible_sequences_with_selenocysteine": 18,
+      "eligible_space_iii_genes": 17172,
+      "eligible_uniprot_accessions": 17033,
+      "exact_unordered_candidate_count": 144491500,
+      "mapping_states": {
+        "ambiguous_multiple_sequences": 16,
+        "sequence_equivalent_accessions": 51,
+        "unique_reference_sequence": 17121,
+        "unmapped": 220
+      },
+      "space_iii_genes": 17408
+    },
+    "positive_component_feasibility": {
+      "ALL:20": {
+        "aggregate_id": "positive-component-feasibility:86b2cb07742cd21dfc5cf1a7f45076d7",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 57002,
+        "distinct_eligible_reference_sequence_pairs": 58049,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 20,
+        "largest_component_size": 485,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8596,
+        "positive_exposed_components": 6117,
+        "singleton_components": 8268,
+        "source_dataset": "ALL",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 10497,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 1047
+      },
+      "ALL:30": {
+        "aggregate_id": "positive-component-feasibility:88fb8f3288e8eafc308b0f55b543ffea",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 57153,
+        "distinct_eligible_reference_sequence_pairs": 58049,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 30,
+        "largest_component_size": 362,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8596,
+        "positive_exposed_components": 6468,
+        "singleton_components": 9059,
+        "source_dataset": "ALL",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 11311,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 896
+      },
+      "ALL:40": {
+        "aggregate_id": "positive-component-feasibility:e10f952e7f73c4855509e6ecbbba850e",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 57663,
+        "distinct_eligible_reference_sequence_pairs": 58049,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 40,
+        "largest_component_size": 312,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8596,
+        "positive_exposed_components": 6940,
+        "singleton_components": 10366,
+        "source_dataset": "ALL",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 12467,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 386
+      },
+      "HI-II-14:20": {
+        "aggregate_id": "positive-component-feasibility:9bef6fa9d40f2f97de5f07a330717f78",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 12112,
+        "distinct_eligible_reference_sequence_pairs": 12353,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 20,
+        "largest_component_size": 485,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 3969,
+        "positive_exposed_components": 3080,
+        "singleton_components": 8268,
+        "source_dataset": "HI-II-14",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 10497,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 241
+      },
+      "HI-II-14:30": {
+        "aggregate_id": "positive-component-feasibility:db843352ff6953839a33594e532bae62",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 12159,
+        "distinct_eligible_reference_sequence_pairs": 12353,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 30,
+        "largest_component_size": 362,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 3969,
+        "positive_exposed_components": 3219,
+        "singleton_components": 9059,
+        "source_dataset": "HI-II-14",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 11311,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 194
+      },
+      "HI-II-14:40": {
+        "aggregate_id": "positive-component-feasibility:ada42967708c772b44b2df4ea1ebf409",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 12259,
+        "distinct_eligible_reference_sequence_pairs": 12353,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 40,
+        "largest_component_size": 312,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 3969,
+        "positive_exposed_components": 3373,
+        "singleton_components": 10366,
+        "source_dataset": "HI-II-14",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 12467,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 94
+      },
+      "HuRI:20": {
+        "aggregate_id": "positive-component-feasibility:9811c0dea9a355f3a7b44e3bf413e510",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 49560,
+        "distinct_eligible_reference_sequence_pairs": 50545,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 20,
+        "largest_component_size": 485,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8058,
+        "positive_exposed_components": 5762,
+        "singleton_components": 8268,
+        "source_dataset": "HuRI",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 10497,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 985
+      },
+      "HuRI:30": {
+        "aggregate_id": "positive-component-feasibility:c0a87f34b018fc457bedbe18ba8817b3",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 49694,
+        "distinct_eligible_reference_sequence_pairs": 50545,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 30,
+        "largest_component_size": 362,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8058,
+        "positive_exposed_components": 6087,
+        "singleton_components": 9059,
+        "source_dataset": "HuRI",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 11311,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 851
+      },
+      "HuRI:40": {
+        "aggregate_id": "positive-component-feasibility:66fb23e6112350bf9098a20748e649cc",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 50186,
+        "distinct_eligible_reference_sequence_pairs": 50545,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 40,
+        "largest_component_size": 312,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8058,
+        "positive_exposed_components": 6525,
+        "singleton_components": 10366,
+        "source_dataset": "HuRI",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 12467,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 359
+      }
+    },
+    "positive_mapping_aggregates": {
+      "ALL": {
+        "aggregate_id": "positive-mapping-aggregate:11d93b5f163e70cd8d934442d32e2fb0",
+        "ambiguous_endpoint_rows": 1407,
+        "calibration_performed": false,
+        "distinct_eligible_reference_sequence_pairs": 58049,
+        "eligible_evidence_fraction": 0.9602686775236043,
+        "eligible_reference_sequence_pair_evidence_rows": 212156,
+        "evidence_indicator_constructed": false,
+        "interaction_label_constructed": false,
+        "negative_label_constructed": false,
+        "outside_space_iii_rows": 130,
+        "pair_rows_emitted": false,
+        "prevalence_estimated": false,
+        "resolved_unique_gene_pair_rows": 219728,
+        "same_reference_sequence_rows": 3438,
+        "source_dataset": "ALL",
+        "source_evidence_rows": 220934,
+        "unmapped_endpoint_rows": 2597,
+        "unresolved_gene_projection_rows": 1206
+      },
+      "HI-II-14": {
+        "aggregate_id": "positive-mapping-aggregate:95713de42823824a25e1d26fbb76cf76",
+        "ambiguous_endpoint_rows": 681,
+        "calibration_performed": false,
+        "distinct_eligible_reference_sequence_pairs": 12353,
+        "eligible_evidence_fraction": 0.9305310899188078,
+        "eligible_reference_sequence_pair_evidence_rows": 45958,
+        "evidence_indicator_constructed": false,
+        "interaction_label_constructed": false,
+        "negative_label_constructed": false,
+        "outside_space_iii_rows": 130,
+        "pair_rows_emitted": false,
+        "prevalence_estimated": false,
+        "resolved_unique_gene_pair_rows": 49107,
+        "same_reference_sequence_rows": 1774,
+        "source_dataset": "HI-II-14",
+        "source_evidence_rows": 49389,
+        "unmapped_endpoint_rows": 564,
+        "unresolved_gene_projection_rows": 282
+      },
+      "HuRI": {
+        "aggregate_id": "positive-mapping-aggregate:d5df977f8367b05bb3c1b4f8caed63e2",
+        "ambiguous_endpoint_rows": 726,
+        "calibration_performed": false,
+        "distinct_eligible_reference_sequence_pairs": 50545,
+        "eligible_evidence_fraction": 0.9688303360634236,
+        "eligible_reference_sequence_pair_evidence_rows": 166198,
+        "evidence_indicator_constructed": false,
+        "interaction_label_constructed": false,
+        "negative_label_constructed": false,
+        "outside_space_iii_rows": 0,
+        "pair_rows_emitted": false,
+        "prevalence_estimated": false,
+        "resolved_unique_gene_pair_rows": 170621,
+        "same_reference_sequence_rows": 1664,
+        "source_dataset": "HuRI",
+        "source_evidence_rows": 171545,
+        "unmapped_endpoint_rows": 2033,
+        "unresolved_gene_projection_rows": 924
+      }
+    }
+  },
+  "outputs": {
+    "candidate_pair_rows": "not_materialized",
+    "canonical_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/AUDIT_MANIFEST.json",
+    "canonical_manifest_sha256": "1a7769fa550ac7eef9acd40da72c8f5247c0c81cb1bb77a913e185d090d83f96",
+    "positive_pair_rows": "not_emitted",
+    "run_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/runs/benchmark_eligibility_and_sequence_component_audit_v1/RUN_MANIFEST.json",
+    "run_manifest_sha256": "81af038c3468e5b15f0e9dc287fd8f191181a059cfed239a9e36485c82cc47b4"
+  },
+  "runtime": {
+    "architecture": "aarch64",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "duckdb": "1.5.5",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scientific_interpretation": {
+    "calibration_performed": false,
+    "candidate_count_is_algebraic_not_tested": true,
+    "component_feasibility_is_pre_split_and_not_a_held_out_guarantee": true,
+    "experimental_validation_claimed": false,
+    "external_panel_outcomes_used": false,
+    "prevalence_identified": false,
+    "primary_design_preserved": "reference_sequence_positive_unlabeled_ranking",
+    "universal_nonbinding_interpretation": false,
+    "unreported_eligible_pairs_remain_unlabeled": true
+  },
+  "scope": "production_full",
+  "started_at_utc": "2026-08-08T09:39:53.129612+00:00",
+  "status": "complete",
+  "task": "frozen_space_iii_reference_sequence_eligibility_and_component_audit"
+}

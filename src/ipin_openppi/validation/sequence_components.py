@@ -186,8 +186,11 @@ def _independent_eligibility(
     checks: Checks, connection: duckdb.DuckDBPyConnection, config: Mapping[str, Any]
 ) -> tuple[dict[str, Any], dict[str, tuple[str, str | None]]]:
     policy = config["eligibility_policy"]
+    identifier_database = _sql_string(str(policy["identifier_database"]))
+    frozen_release = _sql_string(str(policy["frozen_uniprot_release"]))
+    frozen_taxid = int(policy["frozen_human_taxid"])
     connection.execute(
-        """
+        f"""
         CREATE OR REPLACE TEMP VIEW independent_candidates AS
         SELECT DISTINCT sp.ensembl_gene_id, seq.uniprot_accession,
                seq.protein_sequence_id, seq.sequence_sha256, seq.sequence_length,
@@ -195,20 +198,15 @@ def _independent_eligibility(
                seq.raw_file_sha256
         FROM huri_space_membership sp
         JOIN identifier_mappings identifiers
-          ON identifiers.database = ?
+          ON identifiers.database = {identifier_database}
          AND identifiers.identifier_versionless = sp.ensembl_gene_id
-         AND identifiers.source_release = ?
+         AND identifiers.source_release = {frozen_release}
         JOIN protein_sequences seq
           ON seq.uniprot_accession = identifiers.uniprot_accession
-         AND seq.canonical AND seq.taxid = ? AND seq.source_release = ?
+         AND seq.canonical AND seq.taxid = {frozen_taxid}
+         AND seq.source_release = {frozen_release}
         WHERE sp.in_space_3
-        """,
-        [
-            str(policy["identifier_database"]),
-            str(policy["frozen_uniprot_release"]),
-            int(policy["frozen_human_taxid"]),
-            str(policy["frozen_uniprot_release"]),
-        ],
+        """
     )
     connection.execute(
         """
@@ -971,22 +969,29 @@ def validate_audit(
         project_root=project_root, config=config, verify_hashes=True
     )
     current_git = git_provenance(project_root)
-    production_git_ok = (
-        run_manifest.get("git", {}).get("commit") == current_git["commit"]
-        and canonical_manifest.get("git", {}).get("commit") == current_git["commit"]
-        and run_manifest.get("git", {}).get("tracked_worktree_clean") is True
-        and canonical_manifest.get("git", {}).get("tracked_worktree_clean") is True
+    run_git = run_manifest.get("git", {})
+    canonical_git = canonical_manifest.get("git", {})
+    production_commits_equal = (
+        bool(run_git.get("commit"))
+        and run_git.get("commit") == canonical_git.get("commit")
+    )
+    production_clean = (
+        run_git.get("tracked_worktree_clean") is True
+        and canonical_git.get("tracked_worktree_clean") is True
+        and run_git.get("status") == ""
+        and canonical_git.get("status") == ""
     )
     checks.require(
         "provenance.production_commit_and_clean_worktree",
-        production_git_ok,
+        production_commits_equal and production_clean,
         observed={
-            "current_commit": current_git["commit"],
-            "run_commit": run_manifest.get("git", {}).get("commit"),
-            "canonical_commit": canonical_manifest.get("git", {}).get("commit"),
-            "production_clean": production_git_ok,
+            "validator_commit": current_git["commit"],
+            "run_commit": run_git.get("commit"),
+            "canonical_commit": canonical_git.get("commit"),
+            "production_commits_equal": production_commits_equal,
+            "production_clean": production_clean,
         },
-        expected={"commits_equal": True, "production_clean": True},
+        expected={"production_commits_equal": True, "production_clean": True},
     )
     config_sha = sha256_file(config_path)
     provenance_matches = (
@@ -1085,6 +1090,7 @@ def validate_audit(
             "python": platform.python_version(),
             "duckdb": duckdb.__version__,
         },
+        "validator_git": current_git,
         "run_manifest": run_manifest_path.as_posix(),
         "run_manifest_sha256": run_manifest_sha,
         "canonical_manifest": canonical_manifest_path.as_posix(),

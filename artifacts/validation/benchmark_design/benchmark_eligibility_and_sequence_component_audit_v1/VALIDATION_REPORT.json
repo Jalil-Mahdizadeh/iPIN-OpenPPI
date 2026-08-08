@@ -1,0 +1,660 @@
+{
+  "audit_id": "benchmark_eligibility_and_sequence_component_audit_v1",
+  "audit_report": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/benchmark_eligibility_and_sequence_component_audit_v1/AUDIT_REPORT.json",
+  "audit_report_sha256": "6f77fe0fb65205e0a45dd9c61631a3982c4b999efc0c5575f1799b7a726df41c",
+  "audit_version": "1.0.0",
+  "authorizations": {
+    "audit_technical_validation_passed": true,
+    "c1_c2_c3_assignment": false,
+    "candidate_pair_materialization": false,
+    "evidence_indicator_construction": false,
+    "interaction_label_construction": false,
+    "model_work": false,
+    "negative_label_construction": false,
+    "pseudo_negative_sampling": false,
+    "return_to_governance_required": true,
+    "split_construction": false,
+    "structural_mapping": false
+  },
+  "canonical_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/AUDIT_MANIFEST.json",
+  "canonical_manifest_sha256": "1a7769fa550ac7eef9acd40da72c8f5247c0c81cb1bb77a913e185d090d83f96",
+  "check_counts": {
+    "fail": 0,
+    "pass": 21,
+    "warning": 0
+  },
+  "checks": [
+    {
+      "check_id": "runtime.pinned_container_and_architecture",
+      "expected": {
+        "architecture": "aarch64",
+        "sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+      },
+      "observed": {
+        "architecture": "aarch64",
+        "sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.run_manifest_sidecar",
+      "expected": {
+        "digest": "81af038c3468e5b15f0e9dc287fd8f191181a059cfed239a9e36485c82cc47b4",
+        "tokens": [
+          "81af038c3468e5b15f0e9dc287fd8f191181a059cfed239a9e36485c82cc47b4",
+          "RUN_MANIFEST.json"
+        ]
+      },
+      "observed": {
+        "digest": "81af038c3468e5b15f0e9dc287fd8f191181a059cfed239a9e36485c82cc47b4",
+        "tokens": [
+          "81af038c3468e5b15f0e9dc287fd8f191181a059cfed239a9e36485c82cc47b4",
+          "RUN_MANIFEST.json"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.canonical_manifest_sidecar",
+      "expected": {
+        "digest": "1a7769fa550ac7eef9acd40da72c8f5247c0c81cb1bb77a913e185d090d83f96",
+        "tokens": [
+          "1a7769fa550ac7eef9acd40da72c8f5247c0c81cb1bb77a913e185d090d83f96",
+          "AUDIT_MANIFEST.json"
+        ]
+      },
+      "observed": {
+        "digest": "1a7769fa550ac7eef9acd40da72c8f5247c0c81cb1bb77a913e185d090d83f96",
+        "tokens": [
+          "1a7769fa550ac7eef9acd40da72c8f5247c0c81cb1bb77a913e185d090d83f96",
+          "AUDIT_MANIFEST.json"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.run_files_complete_hashed_read_only",
+      "expected": {
+        "declared_equals_actual": true,
+        "errors": 0
+      },
+      "observed": {
+        "actual": 4,
+        "declared": 4,
+        "errors": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.canonical_table_set",
+      "expected": [
+        "eligible_reference_sequences",
+        "positive_component_feasibility",
+        "positive_mapping_aggregates",
+        "sequence_component_assignments",
+        "space_iii_gene_eligibility"
+      ],
+      "observed": [
+        "eligible_reference_sequences",
+        "positive_component_feasibility",
+        "positive_mapping_aggregates",
+        "sequence_component_assignments",
+        "space_iii_gene_eligibility"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.space_iii_gene_eligibility.parts_hash_schema_read_only",
+      "expected": {
+        "errors": 0,
+        "parts": 1,
+        "rows": 17408
+      },
+      "observed": {
+        "errors": 0,
+        "parts": 1,
+        "rows": 17408
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.eligible_reference_sequences.parts_hash_schema_read_only",
+      "expected": {
+        "errors": 0,
+        "parts": 1,
+        "rows": 17000
+      },
+      "observed": {
+        "errors": 0,
+        "parts": 1,
+        "rows": 17000
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.sequence_component_assignments.parts_hash_schema_read_only",
+      "expected": {
+        "errors": 0,
+        "parts": 1,
+        "rows": 51000
+      },
+      "observed": {
+        "errors": 0,
+        "parts": 1,
+        "rows": 51000
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.positive_mapping_aggregates.parts_hash_schema_read_only",
+      "expected": {
+        "errors": 0,
+        "parts": 1,
+        "rows": 3
+      },
+      "observed": {
+        "errors": 0,
+        "parts": 1,
+        "rows": 3
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "inventory.positive_component_feasibility.parts_hash_schema_read_only",
+      "expected": {
+        "errors": 0,
+        "parts": 1,
+        "rows": 9
+      },
+      "observed": {
+        "errors": 0,
+        "parts": 1,
+        "rows": 9
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.production_commit_and_clean_worktree",
+      "expected": {
+        "commits_equal": true,
+        "production_clean": true
+      },
+      "observed": {
+        "canonical_commit": "3ea96166eab2c3600a290ee8109410a7d040b153",
+        "current_commit": "3ea96166eab2c3600a290ee8109410a7d040b153",
+        "production_clean": true,
+        "run_commit": "3ea96166eab2c3600a290ee8109410a7d040b153"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "provenance.report_manifest_and_tool_hashes",
+      "expected": {
+        "all_match": true
+      },
+      "observed": {
+        "all_match": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "eligibility.every_gene_independently_recomputed",
+      "expected": {
+        "identifier_errors": 0,
+        "row_mismatches": 0
+      },
+      "observed": {
+        "identifier_errors": 0,
+        "row_mismatches": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "eligibility.distinct_sequences_independently_recomputed",
+      "expected": {
+        "residue_errors": 0,
+        "row_mismatches": 0
+      },
+      "observed": {
+        "residue_errors": 0,
+        "row_mismatches": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "alignment.raw_and_normalized_edges_independently_recomputed",
+      "expected": {
+        "normalized_errors": 0,
+        "normalized_rows_equals_independent_edges": true,
+        "raw_errors": 0,
+        "self_queries": 17000
+      },
+      "observed": {
+        "below_exact_endpoint_coverage_records": 0,
+        "below_exact_identity_records": 531,
+        "exact_criteria_rejected_records": 531,
+        "independent_edges": 75662,
+        "normalized_errors": 0,
+        "normalized_rows": 75662,
+        "raw_errors": 0,
+        "raw_records": 163441,
+        "self_queries": 17000
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "components.every_assignment_independently_recomputed",
+      "expected": {
+        "errors": 0,
+        "rows_equal": true
+      },
+      "observed": {
+        "errors": 0,
+        "expected_rows": 51000,
+        "rows": 51000
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "components.lower_thresholds_only_merge_components",
+      "expected": 0,
+      "observed": 0,
+      "status": "pass"
+    },
+    {
+      "check_id": "positive_mapping.aggregate_only_recomputation",
+      "expected": {
+        "errors": 0,
+        "rows": 3
+      },
+      "observed": {
+        "errors": 0,
+        "rows": 3
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "positive_mapping.component_feasibility_aggregate_only",
+      "expected": {
+        "errors": 0,
+        "rows": 9
+      },
+      "observed": {
+        "errors": 0,
+        "rows": 9
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "governance.primary_pu_r_and_all_downstream_guards",
+      "expected": {
+        "manifest_false": true,
+        "report_false": true,
+        "true_row_guards": 0
+      },
+      "observed": {
+        "manifest_false": true,
+        "report_false": true,
+        "true_row_guards": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "metrics.manifest_and_report_match_independent_recomputation",
+      "expected": {
+        "canonical_matches": true,
+        "report_matches": true,
+        "run_alignment_matches": true
+      },
+      "observed": {
+        "canonical_matches": true,
+        "report_matches": true,
+        "run_alignment_matches": true
+      },
+      "status": "pass"
+    }
+  ],
+  "config": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/benchmark_eligibility_and_sequence_component_audit_v1.yaml",
+  "config_sha256": "b3bc6d802799d2fb47f351b6311c951945a8517d27e573be7fc4209e452a22e5",
+  "gate_id": "benchmark_eligibility_and_sequence_component_audit_v1_validation",
+  "interpretation": "Pass independently validates frozen Space III eligibility, the exact algebraic endpoint-pair count, MMseqs2 alignment criteria, every 40/30/20% component assignment, and aggregate HuRI positive coverage. It creates no candidate-pair rows, labels, C1/C2/C3 assignments, splits, prevalence, calibration, structures, or models.",
+  "metrics": {
+    "alignment": {
+      "below_exact_endpoint_coverage_records": 0,
+      "below_exact_identity_records": 531,
+      "exact_criteria_rejected_records": 531,
+      "identity_uses_integer_derived_identical_over_alnlen": true,
+      "minimum_endpoint_coverage_reverified": 0.8,
+      "normalized_edges_sha256": "dd27b4968f5b646ada54c5fc335152456b661cb618997841ceae7b3ad5eda3bd",
+      "normalized_nonself_edges": 75662,
+      "raw_alignment_records": 163441,
+      "raw_alignment_sha256": "d62cfa15e5991ee68bd2f58ac170394dc74df5cf23e5578631231c524a521f56",
+      "self_match_query_sequences": 17000,
+      "structurally_invalid_records": 0
+    },
+    "components": {
+      "20": {
+        "component_count": 10497,
+        "component_size_q50": 1,
+        "component_size_q90": 2,
+        "component_size_q95": 3,
+        "component_size_q99": 9,
+        "edge_count": 75662,
+        "identity_threshold_percent": 20,
+        "largest_component_size": 485,
+        "sequence_count": 17000,
+        "singleton_components": 8268
+      },
+      "30": {
+        "component_count": 11311,
+        "component_size_q50": 1,
+        "component_size_q90": 2,
+        "component_size_q95": 3,
+        "component_size_q99": 7,
+        "edge_count": 63074,
+        "identity_threshold_percent": 30,
+        "largest_component_size": 362,
+        "sequence_count": 17000,
+        "singleton_components": 9059
+      },
+      "40": {
+        "component_count": 12467,
+        "component_size_q50": 1,
+        "component_size_q90": 2,
+        "component_size_q95": 3,
+        "component_size_q99": 5,
+        "edge_count": 31474,
+        "identity_threshold_percent": 40,
+        "largest_component_size": 312,
+        "sequence_count": 17000,
+        "singleton_components": 10366
+      }
+    },
+    "eligibility": {
+      "candidate_pair_rows_materialized": false,
+      "candidate_universe_tested": false,
+      "eligible_reference_sequences": 17000,
+      "eligible_selenocysteine_residues": 19,
+      "eligible_sequences_with_selenocysteine": 18,
+      "eligible_space_iii_genes": 17172,
+      "eligible_uniprot_accessions": 17033,
+      "exact_unordered_candidate_count": 144491500,
+      "mapping_states": {
+        "ambiguous_multiple_sequences": 16,
+        "sequence_equivalent_accessions": 51,
+        "unique_reference_sequence": 17121,
+        "unmapped": 220
+      },
+      "space_iii_genes": 17408
+    },
+    "positive_component_feasibility": {
+      "ALL:20": {
+        "aggregate_id": "positive-component-feasibility:86b2cb07742cd21dfc5cf1a7f45076d7",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 57002,
+        "distinct_eligible_reference_sequence_pairs": 58049,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 20,
+        "largest_component_size": 485,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8596,
+        "positive_exposed_components": 6117,
+        "singleton_components": 8268,
+        "source_dataset": "ALL",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 10497,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 1047
+      },
+      "ALL:30": {
+        "aggregate_id": "positive-component-feasibility:88fb8f3288e8eafc308b0f55b543ffea",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 57153,
+        "distinct_eligible_reference_sequence_pairs": 58049,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 30,
+        "largest_component_size": 362,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8596,
+        "positive_exposed_components": 6468,
+        "singleton_components": 9059,
+        "source_dataset": "ALL",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 11311,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 896
+      },
+      "ALL:40": {
+        "aggregate_id": "positive-component-feasibility:e10f952e7f73c4855509e6ecbbba850e",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 57663,
+        "distinct_eligible_reference_sequence_pairs": 58049,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 40,
+        "largest_component_size": 312,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8596,
+        "positive_exposed_components": 6940,
+        "singleton_components": 10366,
+        "source_dataset": "ALL",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 12467,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 386
+      },
+      "HI-II-14:20": {
+        "aggregate_id": "positive-component-feasibility:9bef6fa9d40f2f97de5f07a330717f78",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 12112,
+        "distinct_eligible_reference_sequence_pairs": 12353,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 20,
+        "largest_component_size": 485,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 3969,
+        "positive_exposed_components": 3080,
+        "singleton_components": 8268,
+        "source_dataset": "HI-II-14",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 10497,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 241
+      },
+      "HI-II-14:30": {
+        "aggregate_id": "positive-component-feasibility:db843352ff6953839a33594e532bae62",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 12159,
+        "distinct_eligible_reference_sequence_pairs": 12353,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 30,
+        "largest_component_size": 362,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 3969,
+        "positive_exposed_components": 3219,
+        "singleton_components": 9059,
+        "source_dataset": "HI-II-14",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 11311,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 194
+      },
+      "HI-II-14:40": {
+        "aggregate_id": "positive-component-feasibility:ada42967708c772b44b2df4ea1ebf409",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 12259,
+        "distinct_eligible_reference_sequence_pairs": 12353,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 40,
+        "largest_component_size": 312,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 3969,
+        "positive_exposed_components": 3373,
+        "singleton_components": 10366,
+        "source_dataset": "HI-II-14",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 12467,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 94
+      },
+      "HuRI:20": {
+        "aggregate_id": "positive-component-feasibility:9811c0dea9a355f3a7b44e3bf413e510",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 49560,
+        "distinct_eligible_reference_sequence_pairs": 50545,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 20,
+        "largest_component_size": 485,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8058,
+        "positive_exposed_components": 5762,
+        "singleton_components": 8268,
+        "source_dataset": "HuRI",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 10497,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 985
+      },
+      "HuRI:30": {
+        "aggregate_id": "positive-component-feasibility:c0a87f34b018fc457bedbe18ba8817b3",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 49694,
+        "distinct_eligible_reference_sequence_pairs": 50545,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 30,
+        "largest_component_size": 362,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8058,
+        "positive_exposed_components": 6087,
+        "singleton_components": 9059,
+        "source_dataset": "HuRI",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 11311,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 851
+      },
+      "HuRI:40": {
+        "aggregate_id": "positive-component-feasibility:66fb23e6112350bf9098a20748e649cc",
+        "c1_c2_c3_assignment_constructed": false,
+        "cross_component_pair_count": 50186,
+        "distinct_eligible_reference_sequence_pairs": 50545,
+        "held_out_floor_assessed": false,
+        "identity_threshold_percent": 40,
+        "largest_component_size": 312,
+        "later_split_feasibility_determined": false,
+        "pair_rows_emitted": false,
+        "positive_endpoint_sequences": 8058,
+        "positive_exposed_components": 6525,
+        "singleton_components": 10366,
+        "source_dataset": "HuRI",
+        "split_assignment_constructed": false,
+        "total_component_floor_50_met": true,
+        "total_components": 12467,
+        "total_positive_pair_floor_500_met": true,
+        "within_component_pair_count": 359
+      }
+    },
+    "positive_mapping_aggregates": {
+      "ALL": {
+        "aggregate_id": "positive-mapping-aggregate:11d93b5f163e70cd8d934442d32e2fb0",
+        "ambiguous_endpoint_rows": 1407,
+        "calibration_performed": false,
+        "distinct_eligible_reference_sequence_pairs": 58049,
+        "eligible_evidence_fraction": 0.9602686775236043,
+        "eligible_reference_sequence_pair_evidence_rows": 212156,
+        "evidence_indicator_constructed": false,
+        "interaction_label_constructed": false,
+        "negative_label_constructed": false,
+        "outside_space_iii_rows": 130,
+        "pair_rows_emitted": false,
+        "prevalence_estimated": false,
+        "resolved_unique_gene_pair_rows": 219728,
+        "same_reference_sequence_rows": 3438,
+        "source_dataset": "ALL",
+        "source_evidence_rows": 220934,
+        "unmapped_endpoint_rows": 2597,
+        "unresolved_gene_projection_rows": 1206
+      },
+      "HI-II-14": {
+        "aggregate_id": "positive-mapping-aggregate:95713de42823824a25e1d26fbb76cf76",
+        "ambiguous_endpoint_rows": 681,
+        "calibration_performed": false,
+        "distinct_eligible_reference_sequence_pairs": 12353,
+        "eligible_evidence_fraction": 0.9305310899188078,
+        "eligible_reference_sequence_pair_evidence_rows": 45958,
+        "evidence_indicator_constructed": false,
+        "interaction_label_constructed": false,
+        "negative_label_constructed": false,
+        "outside_space_iii_rows": 130,
+        "pair_rows_emitted": false,
+        "prevalence_estimated": false,
+        "resolved_unique_gene_pair_rows": 49107,
+        "same_reference_sequence_rows": 1774,
+        "source_dataset": "HI-II-14",
+        "source_evidence_rows": 49389,
+        "unmapped_endpoint_rows": 564,
+        "unresolved_gene_projection_rows": 282
+      },
+      "HuRI": {
+        "aggregate_id": "positive-mapping-aggregate:d5df977f8367b05bb3c1b4f8caed63e2",
+        "ambiguous_endpoint_rows": 726,
+        "calibration_performed": false,
+        "distinct_eligible_reference_sequence_pairs": 50545,
+        "eligible_evidence_fraction": 0.9688303360634236,
+        "eligible_reference_sequence_pair_evidence_rows": 166198,
+        "evidence_indicator_constructed": false,
+        "interaction_label_constructed": false,
+        "negative_label_constructed": false,
+        "outside_space_iii_rows": 0,
+        "pair_rows_emitted": false,
+        "prevalence_estimated": false,
+        "resolved_unique_gene_pair_rows": 170621,
+        "same_reference_sequence_rows": 1664,
+        "source_dataset": "HuRI",
+        "source_evidence_rows": 171545,
+        "unmapped_endpoint_rows": 2033,
+        "unresolved_gene_projection_rows": 924
+      }
+    }
+  },
+  "run_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/runs/benchmark_eligibility_and_sequence_component_audit_v1/RUN_MANIFEST.json",
+  "run_manifest_sha256": "81af038c3468e5b15f0e9dc287fd8f191181a059cfed239a9e36485c82cc47b4",
+  "runtime": {
+    "architecture": "aarch64",
+    "container_sif_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "duckdb": "1.5.5",
+    "python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scope": "production_full_independent_validation",
+  "status": "pass",
+  "tool": {
+    "archive": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs-linux-arm64.tar.gz",
+    "archive_bytes": 16935783,
+    "archive_sha256": "06c9a031331562e37eed3da79ef859d30a1a3ac5c5e334411dfaee5da5e9c0d0",
+    "binary": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/bin/mmseqs",
+    "binary_bytes": 16025624,
+    "binary_sha256": "d5f6d96578e3dbcd1d8772bb575b112e9dd1dbf077d150914962a2356ae0d75d",
+    "license": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/LICENSE.md",
+    "license_sha256": "adc3ea1f2f5096d2464460495e12a65a94f466edb9ccca50d1f25844ca83792a",
+    "release": "18-8cc5c",
+    "upstream_commit": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f",
+    "version_stdout": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f"
+  },
+  "validated_at_utc": "2026-08-08T09:47:11.140789+00:00"
+}
