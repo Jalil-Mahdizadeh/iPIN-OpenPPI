@@ -1,0 +1,2073 @@
+{
+  "analysis": {
+    "auxiliary_holdouts": {
+      "assay_version_or_batch": {
+        "independent_claim_authorized": false,
+        "status": "inactive_missing"
+      },
+      "source_exclusive": {
+        "HI-II-14": {
+          "cells": {
+            "C1_development": {
+              "HI-II-14": 305,
+              "HuRI": 0,
+              "components": 292,
+              "disposition": "descriptive_only_below_primary_floor",
+              "endpoints": 375,
+              "pairs": 305,
+              "source_membership": {
+                "HI-II-14_only": 305
+              }
+            },
+            "C1_test": {
+              "HI-II-14": 280,
+              "HuRI": 0,
+              "components": 281,
+              "disposition": "descriptive_only_below_primary_floor",
+              "endpoints": 358,
+              "pairs": 280,
+              "source_membership": {
+                "HI-II-14_only": 280
+              }
+            },
+            "C2_development": {
+              "HI-II-14": 1601,
+              "HuRI": 0,
+              "components": 683,
+              "disposition": "headline_eligible",
+              "endpoints": 1052,
+              "pairs": 1601,
+              "source_membership": {
+                "HI-II-14_only": 1601
+              }
+            },
+            "C2_test": {
+              "HI-II-14": 1488,
+              "HuRI": 0,
+              "components": 751,
+              "disposition": "headline_eligible",
+              "endpoints": 1003,
+              "pairs": 1488,
+              "source_membership": {
+                "HI-II-14_only": 1488
+              }
+            },
+            "C3_development": {
+              "HI-II-14": 312,
+              "HuRI": 0,
+              "components": 118,
+              "disposition": "descriptive_only_below_primary_floor",
+              "endpoints": 237,
+              "pairs": 312,
+              "source_membership": {
+                "HI-II-14_only": 312
+              }
+            },
+            "C3_test": {
+              "HI-II-14": 269,
+              "HuRI": 0,
+              "components": 147,
+              "disposition": "descriptive_only_below_primary_floor",
+              "endpoints": 216,
+              "pairs": 269,
+              "source_membership": {
+                "HI-II-14_only": 269
+              }
+            }
+          },
+          "independent_study_claim_authorized": false,
+          "target_only_pairs_global": 7504,
+          "visible_non_target_source": "HuRI",
+          "visible_training_endpoints": 4320,
+          "visible_training_pairs": 14829
+        },
+        "HuRI": {
+          "cells": {
+            "C1_development": {
+              "HI-II-14": 0,
+              "HuRI": 611,
+              "components": 446,
+              "disposition": "headline_eligible",
+              "endpoints": 609,
+              "pairs": 611,
+              "source_membership": {
+                "HuRI_only": 611
+              }
+            },
+            "C1_test": {
+              "HI-II-14": 0,
+              "HuRI": 633,
+              "components": 414,
+              "disposition": "headline_eligible",
+              "endpoints": 572,
+              "pairs": 633,
+              "source_membership": {
+                "HuRI_only": 633
+              }
+            },
+            "C2_development": {
+              "HI-II-14": 0,
+              "HuRI": 4751,
+              "components": 1084,
+              "disposition": "headline_eligible",
+              "endpoints": 1824,
+              "pairs": 4751,
+              "source_membership": {
+                "HuRI_only": 4751
+              }
+            },
+            "C2_test": {
+              "HI-II-14": 0,
+              "HuRI": 5270,
+              "components": 1297,
+              "disposition": "headline_eligible",
+              "endpoints": 1948,
+              "pairs": 5270,
+              "source_membership": {
+                "HuRI_only": 5270
+              }
+            },
+            "C3_development": {
+              "HI-II-14": 0,
+              "HuRI": 1677,
+              "components": 304,
+              "disposition": "headline_eligible",
+              "endpoints": 703,
+              "pairs": 1677,
+              "source_membership": {
+                "HuRI_only": 1677
+              }
+            },
+            "C3_test": {
+              "HI-II-14": 0,
+              "HuRI": 1869,
+              "components": 463,
+              "disposition": "headline_eligible",
+              "endpoints": 756,
+              "pairs": 1869,
+              "source_membership": {
+                "HuRI_only": 1869
+              }
+            }
+          },
+          "independent_study_claim_authorized": false,
+          "target_only_pairs_global": 45696,
+          "visible_non_target_source": "HI-II-14",
+          "visible_training_endpoints": 1868,
+          "visible_training_pairs": 3252
+        }
+      },
+      "study": {
+        "independent_claim_authorized": false,
+        "status": "inactive_not_independently_identified"
+      },
+      "temporal": {
+        "independent_claim_authorized": false,
+        "status": "inactive_not_supported_as_independent_pair_time_holdout"
+      }
+    },
+    "candidate_universes_and_sampling_design": {
+      "C1_development": {
+        "nonempty_strata": 36,
+        "pair_rows_materialized": false,
+        "positive_inclusion_probability": 1.0,
+        "positive_sampling_weight": 1.0,
+        "sample_cap": 1000000,
+        "sample_realized": false,
+        "sample_size": 1000000,
+        "strata": [
+          {
+            "inclusion_probability_denominator": 29838,
+            "inclusion_probability_numerator": 2737,
+            "sample_size": 10948,
+            "sampling_weight_denominator": 2737,
+            "sampling_weight_numerator": 29838,
+            "stratum_id": "10-19|10-19",
+            "unlabeled_population": 119352
+          },
+          {
+            "inclusion_probability_denominator": 6734,
+            "inclusion_probability_numerator": 619,
+            "sample_size": 619,
+            "sampling_weight_denominator": 619,
+            "sampling_weight_numerator": 6734,
+            "stratum_id": "10-19|100+",
+            "unlabeled_population": 6734
+          },
+          {
+            "inclusion_probability_denominator": 163540,
+            "inclusion_probability_numerator": 15001,
+            "sample_size": 15001,
+            "sampling_weight_denominator": 15001,
+            "sampling_weight_numerator": 163540,
+            "stratum_id": "10-19|20-49",
+            "unlabeled_population": 163540
+          },
+          {
+            "inclusion_probability_denominator": 30555,
+            "inclusion_probability_numerator": 2804,
+            "sample_size": 2804,
+            "sampling_weight_denominator": 2804,
+            "sampling_weight_numerator": 30555,
+            "stratum_id": "10-19|50-99",
+            "unlabeled_population": 30555
+          },
+          {
+            "inclusion_probability_denominator": 29,
+            "inclusion_probability_numerator": 3,
+            "sample_size": 9,
+            "sampling_weight_denominator": 3,
+            "sampling_weight_numerator": 29,
+            "stratum_id": "100+|100+",
+            "unlabeled_population": 87
+          },
+          {
+            "inclusion_probability_denominator": 1177283,
+            "inclusion_probability_numerator": 107983,
+            "sample_size": 107983,
+            "sampling_weight_denominator": 107983,
+            "sampling_weight_numerator": 1177283,
+            "stratum_id": "1|1",
+            "unlabeled_population": 1177283
+          },
+          {
+            "inclusion_probability_denominator": 753343,
+            "inclusion_probability_numerator": 69099,
+            "sample_size": 69099,
+            "sampling_weight_denominator": 69099,
+            "sampling_weight_numerator": 753343,
+            "stratum_id": "1|10-19",
+            "unlabeled_population": 753343
+          },
+          {
+            "inclusion_probability_denominator": 3793,
+            "inclusion_probability_numerator": 348,
+            "sample_size": 2088,
+            "sampling_weight_denominator": 348,
+            "sampling_weight_numerator": 3793,
+            "stratum_id": "1|100+",
+            "unlabeled_population": 22758
+          },
+          {
+            "inclusion_probability_denominator": 1089751,
+            "inclusion_probability_numerator": 99954,
+            "sample_size": 99954,
+            "sampling_weight_denominator": 99954,
+            "sampling_weight_numerator": 1089751,
+            "stratum_id": "1|2",
+            "unlabeled_population": 1089751
+          },
+          {
+            "inclusion_probability_denominator": 173273,
+            "inclusion_probability_numerator": 15893,
+            "sample_size": 47679,
+            "sampling_weight_denominator": 15893,
+            "sampling_weight_numerator": 173273,
+            "stratum_id": "1|20-49",
+            "unlabeled_population": 519819
+          },
+          {
+            "inclusion_probability_denominator": 1174105,
+            "inclusion_probability_numerator": 107691,
+            "sample_size": 107691,
+            "sampling_weight_denominator": 107691,
+            "sampling_weight_numerator": 1174105,
+            "stratum_id": "1|3-4",
+            "unlabeled_population": 1174105
+          },
+          {
+            "inclusion_probability_denominator": 1158645,
+            "inclusion_probability_numerator": 106273,
+            "sample_size": 106273,
+            "sampling_weight_denominator": 106273,
+            "sampling_weight_numerator": 1158645,
+            "stratum_id": "1|5-9",
+            "unlabeled_population": 1158645
+          },
+          {
+            "inclusion_probability_denominator": 99473,
+            "inclusion_probability_numerator": 9125,
+            "sample_size": 9125,
+            "sampling_weight_denominator": 9125,
+            "sampling_weight_numerator": 99473,
+            "stratum_id": "1|50-99",
+            "unlabeled_population": 99473
+          },
+          {
+            "inclusion_probability_denominator": 2221,
+            "inclusion_probability_numerator": 204,
+            "sample_size": 408,
+            "sampling_weight_denominator": 204,
+            "sampling_weight_numerator": 2221,
+            "stratum_id": "20-49|100+",
+            "unlabeled_population": 4442
+          },
+          {
+            "inclusion_probability_denominator": 18357,
+            "inclusion_probability_numerator": 1684,
+            "sample_size": 5052,
+            "sampling_weight_denominator": 1684,
+            "sampling_weight_numerator": 18357,
+            "stratum_id": "20-49|20-49",
+            "unlabeled_population": 55071
+          },
+          {
+            "inclusion_probability_denominator": 20280,
+            "inclusion_probability_numerator": 1861,
+            "sample_size": 1861,
+            "sampling_weight_denominator": 1861,
+            "sampling_weight_numerator": 20280,
+            "stratum_id": "20-49|50-99",
+            "unlabeled_population": 20280
+          },
+          {
+            "inclusion_probability_denominator": 11611,
+            "inclusion_probability_numerator": 1065,
+            "sample_size": 31950,
+            "sampling_weight_denominator": 1065,
+            "sampling_weight_numerator": 11611,
+            "stratum_id": "2|10-19",
+            "unlabeled_population": 348330
+          },
+          {
+            "inclusion_probability_denominator": 10435,
+            "inclusion_probability_numerator": 958,
+            "sample_size": 958,
+            "sampling_weight_denominator": 958,
+            "sampling_weight_numerator": 10435,
+            "stratum_id": "2|100+",
+            "unlabeled_population": 10435
+          },
+          {
+            "inclusion_probability_denominator": 251650,
+            "inclusion_probability_numerator": 23083,
+            "sample_size": 23083,
+            "sampling_weight_denominator": 23083,
+            "sampling_weight_numerator": 251650,
+            "stratum_id": "2|2",
+            "unlabeled_population": 251650
+          },
+          {
+            "inclusion_probability_denominator": 120097,
+            "inclusion_probability_numerator": 11016,
+            "sample_size": 22032,
+            "sampling_weight_denominator": 11016,
+            "sampling_weight_numerator": 120097,
+            "stratum_id": "2|20-49",
+            "unlabeled_population": 240194
+          },
+          {
+            "inclusion_probability_denominator": 271493,
+            "inclusion_probability_numerator": 24902,
+            "sample_size": 49804,
+            "sampling_weight_denominator": 24902,
+            "sampling_weight_numerator": 271493,
+            "stratum_id": "2|3-4",
+            "unlabeled_population": 542986
+          },
+          {
+            "inclusion_probability_denominator": 535792,
+            "inclusion_probability_numerator": 49145,
+            "sample_size": 49145,
+            "sampling_weight_denominator": 49145,
+            "sampling_weight_numerator": 535792,
+            "stratum_id": "2|5-9",
+            "unlabeled_population": 535792
+          },
+          {
+            "inclusion_probability_denominator": 45851,
+            "inclusion_probability_numerator": 4206,
+            "sample_size": 4206,
+            "sampling_weight_denominator": 4206,
+            "sampling_weight_numerator": 45851,
+            "stratum_id": "2|50-99",
+            "unlabeled_population": 45851
+          },
+          {
+            "inclusion_probability_denominator": 374997,
+            "inclusion_probability_numerator": 34396,
+            "sample_size": 34396,
+            "sampling_weight_denominator": 34396,
+            "sampling_weight_numerator": 374997,
+            "stratum_id": "3-4|10-19",
+            "unlabeled_population": 374997
+          },
+          {
+            "inclusion_probability_denominator": 3715,
+            "inclusion_probability_numerator": 341,
+            "sample_size": 1023,
+            "sampling_weight_denominator": 341,
+            "sampling_weight_numerator": 3715,
+            "stratum_id": "3-4|100+",
+            "unlabeled_population": 11145
+          },
+          {
+            "inclusion_probability_denominator": 258369,
+            "inclusion_probability_numerator": 23699,
+            "sample_size": 23699,
+            "sampling_weight_denominator": 23699,
+            "sampling_weight_numerator": 258369,
+            "stratum_id": "3-4|20-49",
+            "unlabeled_population": 258369
+          },
+          {
+            "inclusion_probability_denominator": 292089,
+            "inclusion_probability_numerator": 26792,
+            "sample_size": 26792,
+            "sampling_weight_denominator": 26792,
+            "sampling_weight_numerator": 292089,
+            "stratum_id": "3-4|3-4",
+            "unlabeled_population": 292089
+          },
+          {
+            "inclusion_probability_denominator": 577125,
+            "inclusion_probability_numerator": 52936,
+            "sample_size": 52936,
+            "sampling_weight_denominator": 52936,
+            "sampling_weight_numerator": 577125,
+            "stratum_id": "3-4|5-9",
+            "unlabeled_population": 577125
+          },
+          {
+            "inclusion_probability_denominator": 49172,
+            "inclusion_probability_numerator": 4511,
+            "sample_size": 4511,
+            "sampling_weight_denominator": 4511,
+            "sampling_weight_numerator": 49172,
+            "stratum_id": "3-4|50-99",
+            "unlabeled_population": 49172
+          },
+          {
+            "inclusion_probability_denominator": 184709,
+            "inclusion_probability_numerator": 16942,
+            "sample_size": 33884,
+            "sampling_weight_denominator": 16942,
+            "sampling_weight_numerator": 184709,
+            "stratum_id": "5-9|10-19",
+            "unlabeled_population": 369418
+          },
+          {
+            "inclusion_probability_denominator": 719,
+            "inclusion_probability_numerator": 66,
+            "sample_size": 990,
+            "sampling_weight_denominator": 66,
+            "sampling_weight_numerator": 719,
+            "stratum_id": "5-9|100+",
+            "unlabeled_population": 10785
+          },
+          {
+            "inclusion_probability_denominator": 253790,
+            "inclusion_probability_numerator": 23279,
+            "sample_size": 23279,
+            "sampling_weight_denominator": 23279,
+            "sampling_weight_numerator": 253790,
+            "stratum_id": "5-9|20-49",
+            "unlabeled_population": 253790
+          },
+          {
+            "inclusion_probability_denominator": 284175,
+            "inclusion_probability_numerator": 26066,
+            "sample_size": 26066,
+            "sampling_weight_denominator": 26066,
+            "sampling_weight_numerator": 284175,
+            "stratum_id": "5-9|5-9",
+            "unlabeled_population": 284175
+          },
+          {
+            "inclusion_probability_denominator": 16013,
+            "inclusion_probability_numerator": 1469,
+            "sample_size": 4407,
+            "sampling_weight_denominator": 1469,
+            "sampling_weight_numerator": 16013,
+            "stratum_id": "5-9|50-99",
+            "unlabeled_population": 48039
+          },
+          {
+            "inclusion_probability_denominator": 281,
+            "inclusion_probability_numerator": 26,
+            "sample_size": 78,
+            "sampling_weight_denominator": 26,
+            "sampling_weight_numerator": 281,
+            "stratum_id": "50-99|100+",
+            "unlabeled_population": 843
+          },
+          {
+            "inclusion_probability_denominator": 1807,
+            "inclusion_probability_numerator": 167,
+            "sample_size": 167,
+            "sampling_weight_denominator": 167,
+            "sampling_weight_numerator": 1807,
+            "stratum_id": "50-99|50-99",
+            "unlabeled_population": 1807
+          }
+        ],
+        "target_positive_count": 3259,
+        "unlabeled_candidate_count": 10902230
+      },
+      "C1_test": {
+        "nonempty_strata": 36,
+        "pair_rows_materialized": false,
+        "positive_inclusion_probability": 1.0,
+        "positive_sampling_weight": 1.0,
+        "sample_cap": 1000000,
+        "sample_realized": false,
+        "sample_size": 1000000,
+        "strata": [
+          {
+            "inclusion_probability_denominator": 29838,
+            "inclusion_probability_numerator": 2737,
+            "sample_size": 10948,
+            "sampling_weight_denominator": 2737,
+            "sampling_weight_numerator": 29838,
+            "stratum_id": "10-19|10-19",
+            "unlabeled_population": 119352
+          },
+          {
+            "inclusion_probability_denominator": 6734,
+            "inclusion_probability_numerator": 619,
+            "sample_size": 619,
+            "sampling_weight_denominator": 619,
+            "sampling_weight_numerator": 6734,
+            "stratum_id": "10-19|100+",
+            "unlabeled_population": 6734
+          },
+          {
+            "inclusion_probability_denominator": 163540,
+            "inclusion_probability_numerator": 15001,
+            "sample_size": 15001,
+            "sampling_weight_denominator": 15001,
+            "sampling_weight_numerator": 163540,
+            "stratum_id": "10-19|20-49",
+            "unlabeled_population": 163540
+          },
+          {
+            "inclusion_probability_denominator": 30555,
+            "inclusion_probability_numerator": 2804,
+            "sample_size": 2804,
+            "sampling_weight_denominator": 2804,
+            "sampling_weight_numerator": 30555,
+            "stratum_id": "10-19|50-99",
+            "unlabeled_population": 30555
+          },
+          {
+            "inclusion_probability_denominator": 29,
+            "inclusion_probability_numerator": 3,
+            "sample_size": 9,
+            "sampling_weight_denominator": 3,
+            "sampling_weight_numerator": 29,
+            "stratum_id": "100+|100+",
+            "unlabeled_population": 87
+          },
+          {
+            "inclusion_probability_denominator": 1177283,
+            "inclusion_probability_numerator": 107983,
+            "sample_size": 107983,
+            "sampling_weight_denominator": 107983,
+            "sampling_weight_numerator": 1177283,
+            "stratum_id": "1|1",
+            "unlabeled_population": 1177283
+          },
+          {
+            "inclusion_probability_denominator": 753343,
+            "inclusion_probability_numerator": 69099,
+            "sample_size": 69099,
+            "sampling_weight_denominator": 69099,
+            "sampling_weight_numerator": 753343,
+            "stratum_id": "1|10-19",
+            "unlabeled_population": 753343
+          },
+          {
+            "inclusion_probability_denominator": 3793,
+            "inclusion_probability_numerator": 348,
+            "sample_size": 2088,
+            "sampling_weight_denominator": 348,
+            "sampling_weight_numerator": 3793,
+            "stratum_id": "1|100+",
+            "unlabeled_population": 22758
+          },
+          {
+            "inclusion_probability_denominator": 1089751,
+            "inclusion_probability_numerator": 99954,
+            "sample_size": 99954,
+            "sampling_weight_denominator": 99954,
+            "sampling_weight_numerator": 1089751,
+            "stratum_id": "1|2",
+            "unlabeled_population": 1089751
+          },
+          {
+            "inclusion_probability_denominator": 173273,
+            "inclusion_probability_numerator": 15893,
+            "sample_size": 47679,
+            "sampling_weight_denominator": 15893,
+            "sampling_weight_numerator": 173273,
+            "stratum_id": "1|20-49",
+            "unlabeled_population": 519819
+          },
+          {
+            "inclusion_probability_denominator": 1174105,
+            "inclusion_probability_numerator": 107691,
+            "sample_size": 107691,
+            "sampling_weight_denominator": 107691,
+            "sampling_weight_numerator": 1174105,
+            "stratum_id": "1|3-4",
+            "unlabeled_population": 1174105
+          },
+          {
+            "inclusion_probability_denominator": 1158645,
+            "inclusion_probability_numerator": 106273,
+            "sample_size": 106273,
+            "sampling_weight_denominator": 106273,
+            "sampling_weight_numerator": 1158645,
+            "stratum_id": "1|5-9",
+            "unlabeled_population": 1158645
+          },
+          {
+            "inclusion_probability_denominator": 99473,
+            "inclusion_probability_numerator": 9125,
+            "sample_size": 9125,
+            "sampling_weight_denominator": 9125,
+            "sampling_weight_numerator": 99473,
+            "stratum_id": "1|50-99",
+            "unlabeled_population": 99473
+          },
+          {
+            "inclusion_probability_denominator": 2221,
+            "inclusion_probability_numerator": 204,
+            "sample_size": 408,
+            "sampling_weight_denominator": 204,
+            "sampling_weight_numerator": 2221,
+            "stratum_id": "20-49|100+",
+            "unlabeled_population": 4442
+          },
+          {
+            "inclusion_probability_denominator": 18357,
+            "inclusion_probability_numerator": 1684,
+            "sample_size": 5052,
+            "sampling_weight_denominator": 1684,
+            "sampling_weight_numerator": 18357,
+            "stratum_id": "20-49|20-49",
+            "unlabeled_population": 55071
+          },
+          {
+            "inclusion_probability_denominator": 20280,
+            "inclusion_probability_numerator": 1861,
+            "sample_size": 1861,
+            "sampling_weight_denominator": 1861,
+            "sampling_weight_numerator": 20280,
+            "stratum_id": "20-49|50-99",
+            "unlabeled_population": 20280
+          },
+          {
+            "inclusion_probability_denominator": 11611,
+            "inclusion_probability_numerator": 1065,
+            "sample_size": 31950,
+            "sampling_weight_denominator": 1065,
+            "sampling_weight_numerator": 11611,
+            "stratum_id": "2|10-19",
+            "unlabeled_population": 348330
+          },
+          {
+            "inclusion_probability_denominator": 10435,
+            "inclusion_probability_numerator": 958,
+            "sample_size": 958,
+            "sampling_weight_denominator": 958,
+            "sampling_weight_numerator": 10435,
+            "stratum_id": "2|100+",
+            "unlabeled_population": 10435
+          },
+          {
+            "inclusion_probability_denominator": 251650,
+            "inclusion_probability_numerator": 23083,
+            "sample_size": 23083,
+            "sampling_weight_denominator": 23083,
+            "sampling_weight_numerator": 251650,
+            "stratum_id": "2|2",
+            "unlabeled_population": 251650
+          },
+          {
+            "inclusion_probability_denominator": 120097,
+            "inclusion_probability_numerator": 11016,
+            "sample_size": 22032,
+            "sampling_weight_denominator": 11016,
+            "sampling_weight_numerator": 120097,
+            "stratum_id": "2|20-49",
+            "unlabeled_population": 240194
+          },
+          {
+            "inclusion_probability_denominator": 271493,
+            "inclusion_probability_numerator": 24902,
+            "sample_size": 49804,
+            "sampling_weight_denominator": 24902,
+            "sampling_weight_numerator": 271493,
+            "stratum_id": "2|3-4",
+            "unlabeled_population": 542986
+          },
+          {
+            "inclusion_probability_denominator": 535792,
+            "inclusion_probability_numerator": 49145,
+            "sample_size": 49145,
+            "sampling_weight_denominator": 49145,
+            "sampling_weight_numerator": 535792,
+            "stratum_id": "2|5-9",
+            "unlabeled_population": 535792
+          },
+          {
+            "inclusion_probability_denominator": 45851,
+            "inclusion_probability_numerator": 4206,
+            "sample_size": 4206,
+            "sampling_weight_denominator": 4206,
+            "sampling_weight_numerator": 45851,
+            "stratum_id": "2|50-99",
+            "unlabeled_population": 45851
+          },
+          {
+            "inclusion_probability_denominator": 374997,
+            "inclusion_probability_numerator": 34396,
+            "sample_size": 34396,
+            "sampling_weight_denominator": 34396,
+            "sampling_weight_numerator": 374997,
+            "stratum_id": "3-4|10-19",
+            "unlabeled_population": 374997
+          },
+          {
+            "inclusion_probability_denominator": 3715,
+            "inclusion_probability_numerator": 341,
+            "sample_size": 1023,
+            "sampling_weight_denominator": 341,
+            "sampling_weight_numerator": 3715,
+            "stratum_id": "3-4|100+",
+            "unlabeled_population": 11145
+          },
+          {
+            "inclusion_probability_denominator": 258369,
+            "inclusion_probability_numerator": 23699,
+            "sample_size": 23699,
+            "sampling_weight_denominator": 23699,
+            "sampling_weight_numerator": 258369,
+            "stratum_id": "3-4|20-49",
+            "unlabeled_population": 258369
+          },
+          {
+            "inclusion_probability_denominator": 292089,
+            "inclusion_probability_numerator": 26792,
+            "sample_size": 26792,
+            "sampling_weight_denominator": 26792,
+            "sampling_weight_numerator": 292089,
+            "stratum_id": "3-4|3-4",
+            "unlabeled_population": 292089
+          },
+          {
+            "inclusion_probability_denominator": 577125,
+            "inclusion_probability_numerator": 52936,
+            "sample_size": 52936,
+            "sampling_weight_denominator": 52936,
+            "sampling_weight_numerator": 577125,
+            "stratum_id": "3-4|5-9",
+            "unlabeled_population": 577125
+          },
+          {
+            "inclusion_probability_denominator": 49172,
+            "inclusion_probability_numerator": 4511,
+            "sample_size": 4511,
+            "sampling_weight_denominator": 4511,
+            "sampling_weight_numerator": 49172,
+            "stratum_id": "3-4|50-99",
+            "unlabeled_population": 49172
+          },
+          {
+            "inclusion_probability_denominator": 184709,
+            "inclusion_probability_numerator": 16942,
+            "sample_size": 33884,
+            "sampling_weight_denominator": 16942,
+            "sampling_weight_numerator": 184709,
+            "stratum_id": "5-9|10-19",
+            "unlabeled_population": 369418
+          },
+          {
+            "inclusion_probability_denominator": 719,
+            "inclusion_probability_numerator": 66,
+            "sample_size": 990,
+            "sampling_weight_denominator": 66,
+            "sampling_weight_numerator": 719,
+            "stratum_id": "5-9|100+",
+            "unlabeled_population": 10785
+          },
+          {
+            "inclusion_probability_denominator": 253790,
+            "inclusion_probability_numerator": 23279,
+            "sample_size": 23279,
+            "sampling_weight_denominator": 23279,
+            "sampling_weight_numerator": 253790,
+            "stratum_id": "5-9|20-49",
+            "unlabeled_population": 253790
+          },
+          {
+            "inclusion_probability_denominator": 284175,
+            "inclusion_probability_numerator": 26066,
+            "sample_size": 26066,
+            "sampling_weight_denominator": 26066,
+            "sampling_weight_numerator": 284175,
+            "stratum_id": "5-9|5-9",
+            "unlabeled_population": 284175
+          },
+          {
+            "inclusion_probability_denominator": 16013,
+            "inclusion_probability_numerator": 1469,
+            "sample_size": 4407,
+            "sampling_weight_denominator": 1469,
+            "sampling_weight_numerator": 16013,
+            "stratum_id": "5-9|50-99",
+            "unlabeled_population": 48039
+          },
+          {
+            "inclusion_probability_denominator": 281,
+            "inclusion_probability_numerator": 26,
+            "sample_size": 78,
+            "sampling_weight_denominator": 26,
+            "sampling_weight_numerator": 281,
+            "stratum_id": "50-99|100+",
+            "unlabeled_population": 843
+          },
+          {
+            "inclusion_probability_denominator": 1807,
+            "inclusion_probability_numerator": 167,
+            "sample_size": 167,
+            "sampling_weight_denominator": 167,
+            "sampling_weight_numerator": 1807,
+            "stratum_id": "50-99|50-99",
+            "unlabeled_population": 1807
+          }
+        ],
+        "target_positive_count": 3187,
+        "unlabeled_candidate_count": 10902230
+      },
+      "C2_development": {
+        "nonempty_strata": 8,
+        "pair_rows_materialized": false,
+        "positive_inclusion_probability": 1.0,
+        "positive_sampling_weight": 1.0,
+        "sample_cap": 1000000,
+        "sample_realized": false,
+        "sample_size": 1000000,
+        "strata": [
+          {
+            "inclusion_probability_denominator": 3913816,
+            "inclusion_probability_numerator": 328617,
+            "sample_size": 328617,
+            "sampling_weight_denominator": 328617,
+            "sampling_weight_numerator": 3913816,
+            "stratum_id": "0|1",
+            "unlabeled_population": 3913816
+          },
+          {
+            "inclusion_probability_denominator": 1249711,
+            "inclusion_probability_numerator": 104930,
+            "sample_size": 104930,
+            "sampling_weight_denominator": 104930,
+            "sampling_weight_numerator": 1249711,
+            "stratum_id": "0|10-19",
+            "unlabeled_population": 1249711
+          },
+          {
+            "inclusion_probability_denominator": 7514,
+            "inclusion_probability_numerator": 631,
+            "sample_size": 3155,
+            "sampling_weight_denominator": 631,
+            "sampling_weight_numerator": 7514,
+            "stratum_id": "0|100+",
+            "unlabeled_population": 37570
+          },
+          {
+            "inclusion_probability_denominator": 1810133,
+            "inclusion_probability_numerator": 151985,
+            "sample_size": 151985,
+            "sampling_weight_denominator": 151985,
+            "sampling_weight_numerator": 1810133,
+            "stratum_id": "0|2",
+            "unlabeled_population": 1810133
+          },
+          {
+            "inclusion_probability_denominator": 286969,
+            "inclusion_probability_numerator": 24095,
+            "sample_size": 72285,
+            "sampling_weight_denominator": 24095,
+            "sampling_weight_numerator": 286969,
+            "stratum_id": "0|20-49",
+            "unlabeled_population": 860907
+          },
+          {
+            "inclusion_probability_denominator": 974971,
+            "inclusion_probability_numerator": 81862,
+            "sample_size": 163724,
+            "sampling_weight_denominator": 81862,
+            "sampling_weight_numerator": 974971,
+            "stratum_id": "0|3-4",
+            "unlabeled_population": 1949942
+          },
+          {
+            "inclusion_probability_denominator": 1923775,
+            "inclusion_probability_numerator": 161527,
+            "sample_size": 161527,
+            "sampling_weight_denominator": 161527,
+            "sampling_weight_numerator": 1923775,
+            "stratum_id": "0|5-9",
+            "unlabeled_population": 1923775
+          },
+          {
+            "inclusion_probability_denominator": 164069,
+            "inclusion_probability_numerator": 13777,
+            "sample_size": 13777,
+            "sampling_weight_denominator": 13777,
+            "sampling_weight_numerator": 164069,
+            "stratum_id": "0|50-99",
+            "unlabeled_population": 164069
+          }
+        ],
+        "target_positive_count": 11327,
+        "unlabeled_candidate_count": 11909923
+      },
+      "C2_test": {
+        "nonempty_strata": 8,
+        "pair_rows_materialized": false,
+        "positive_inclusion_probability": 1.0,
+        "positive_sampling_weight": 1.0,
+        "sample_cap": 1000000,
+        "sample_realized": false,
+        "sample_size": 1000000,
+        "strata": [
+          {
+            "inclusion_probability_denominator": 3913529,
+            "inclusion_probability_numerator": 328651,
+            "sample_size": 328651,
+            "sampling_weight_denominator": 328651,
+            "sampling_weight_numerator": 3913529,
+            "stratum_id": "0|1",
+            "unlabeled_population": 3913529
+          },
+          {
+            "inclusion_probability_denominator": 416381,
+            "inclusion_probability_numerator": 34967,
+            "sample_size": 104901,
+            "sampling_weight_denominator": 34967,
+            "sampling_weight_numerator": 416381,
+            "stratum_id": "0|10-19",
+            "unlabeled_population": 1249143
+          },
+          {
+            "inclusion_probability_denominator": 37491,
+            "inclusion_probability_numerator": 3149,
+            "sample_size": 3149,
+            "sampling_weight_denominator": 3149,
+            "sampling_weight_numerator": 37491,
+            "stratum_id": "0|100+",
+            "unlabeled_population": 37491
+          },
+          {
+            "inclusion_probability_denominator": 904957,
+            "inclusion_probability_numerator": 75997,
+            "sample_size": 151994,
+            "sampling_weight_denominator": 75997,
+            "sampling_weight_numerator": 904957,
+            "stratum_id": "0|2",
+            "unlabeled_population": 1809914
+          },
+          {
+            "inclusion_probability_denominator": 286859,
+            "inclusion_probability_numerator": 24090,
+            "sample_size": 72270,
+            "sampling_weight_denominator": 24090,
+            "sampling_weight_numerator": 286859,
+            "stratum_id": "0|20-49",
+            "unlabeled_population": 860577
+          },
+          {
+            "inclusion_probability_denominator": 1949639,
+            "inclusion_probability_numerator": 163728,
+            "sample_size": 163728,
+            "sampling_weight_denominator": 163728,
+            "sampling_weight_numerator": 1949639,
+            "stratum_id": "0|3-4",
+            "unlabeled_population": 1949639
+          },
+          {
+            "inclusion_probability_denominator": 384659,
+            "inclusion_probability_numerator": 32303,
+            "sample_size": 161515,
+            "sampling_weight_denominator": 32303,
+            "sampling_weight_numerator": 384659,
+            "stratum_id": "0|5-9",
+            "unlabeled_population": 1923295
+          },
+          {
+            "inclusion_probability_denominator": 20527,
+            "inclusion_probability_numerator": 1724,
+            "sample_size": 13792,
+            "sampling_weight_denominator": 1724,
+            "sampling_weight_numerator": 20527,
+            "stratum_id": "0|50-99",
+            "unlabeled_population": 164216
+          }
+        ],
+        "target_positive_count": 13446,
+        "unlabeled_candidate_count": 11907804
+      },
+      "C3_development": {
+        "nonempty_strata": 1,
+        "pair_rows_materialized": false,
+        "positive_inclusion_probability": 1.0,
+        "positive_sampling_weight": 1.0,
+        "sample_cap": 1000000,
+        "sample_realized": false,
+        "sample_size": 1000000,
+        "strata": [
+          {
+            "inclusion_probability_denominator": 324771,
+            "inclusion_probability_numerator": 100000,
+            "sample_size": 1000000,
+            "sampling_weight_denominator": 100000,
+            "sampling_weight_numerator": 324771,
+            "stratum_id": "0|0",
+            "unlabeled_population": 3247710
+          }
+        ],
+        "target_positive_count": 2265,
+        "unlabeled_candidate_count": 3247710
+      },
+      "C3_test": {
+        "nonempty_strata": 1,
+        "pair_rows_materialized": false,
+        "positive_inclusion_probability": 1.0,
+        "positive_sampling_weight": 1.0,
+        "sample_cap": 1000000,
+        "sample_realized": false,
+        "sample_size": 1000000,
+        "strata": [
+          {
+            "inclusion_probability_denominator": 811899,
+            "inclusion_probability_numerator": 250000,
+            "sample_size": 1000000,
+            "sampling_weight_denominator": 250000,
+            "sampling_weight_numerator": 811899,
+            "stratum_id": "0|0",
+            "unlabeled_population": 3247596
+          }
+        ],
+        "target_positive_count": 2379,
+        "unlabeled_candidate_count": 3247596
+      },
+      "training": {
+        "nonempty_strata": 36,
+        "pair_rows_materialized": false,
+        "positive_inclusion_probability": 1.0,
+        "positive_sampling_weight": 1.0,
+        "sample_cap": 2000000,
+        "sample_realized": false,
+        "sample_size": 2000000,
+        "strata": [
+          {
+            "inclusion_probability_denominator": 119352,
+            "inclusion_probability_numerator": 21895,
+            "sample_size": 21895,
+            "sampling_weight_denominator": 21895,
+            "sampling_weight_numerator": 119352,
+            "stratum_id": "10-19|10-19",
+            "unlabeled_population": 119352
+          },
+          {
+            "inclusion_probability_denominator": 3367,
+            "inclusion_probability_numerator": 618,
+            "sample_size": 1236,
+            "sampling_weight_denominator": 618,
+            "sampling_weight_numerator": 3367,
+            "stratum_id": "10-19|100+",
+            "unlabeled_population": 6734
+          },
+          {
+            "inclusion_probability_denominator": 81770,
+            "inclusion_probability_numerator": 15001,
+            "sample_size": 30002,
+            "sampling_weight_denominator": 15001,
+            "sampling_weight_numerator": 81770,
+            "stratum_id": "10-19|20-49",
+            "unlabeled_population": 163540
+          },
+          {
+            "inclusion_probability_denominator": 30555,
+            "inclusion_probability_numerator": 5606,
+            "sample_size": 5606,
+            "sampling_weight_denominator": 5606,
+            "sampling_weight_numerator": 30555,
+            "stratum_id": "10-19|50-99",
+            "unlabeled_population": 30555
+          },
+          {
+            "inclusion_probability_denominator": 87,
+            "inclusion_probability_numerator": 17,
+            "sample_size": 17,
+            "sampling_weight_denominator": 17,
+            "sampling_weight_numerator": 87,
+            "stratum_id": "100+|100+",
+            "unlabeled_population": 87
+          },
+          {
+            "inclusion_probability_denominator": 1177283,
+            "inclusion_probability_numerator": 215969,
+            "sample_size": 215969,
+            "sampling_weight_denominator": 215969,
+            "sampling_weight_numerator": 1177283,
+            "stratum_id": "1|1",
+            "unlabeled_population": 1177283
+          },
+          {
+            "inclusion_probability_denominator": 753343,
+            "inclusion_probability_numerator": 138199,
+            "sample_size": 138199,
+            "sampling_weight_denominator": 138199,
+            "sampling_weight_numerator": 753343,
+            "stratum_id": "1|10-19",
+            "unlabeled_population": 753343
+          },
+          {
+            "inclusion_probability_denominator": 3793,
+            "inclusion_probability_numerator": 696,
+            "sample_size": 4176,
+            "sampling_weight_denominator": 696,
+            "sampling_weight_numerator": 3793,
+            "stratum_id": "1|100+",
+            "unlabeled_population": 22758
+          },
+          {
+            "inclusion_probability_denominator": 1089751,
+            "inclusion_probability_numerator": 199911,
+            "sample_size": 199911,
+            "sampling_weight_denominator": 199911,
+            "sampling_weight_numerator": 1089751,
+            "stratum_id": "1|2",
+            "unlabeled_population": 1089751
+          },
+          {
+            "inclusion_probability_denominator": 519819,
+            "inclusion_probability_numerator": 95360,
+            "sample_size": 95360,
+            "sampling_weight_denominator": 95360,
+            "sampling_weight_numerator": 519819,
+            "stratum_id": "1|20-49",
+            "unlabeled_population": 519819
+          },
+          {
+            "inclusion_probability_denominator": 1174105,
+            "inclusion_probability_numerator": 215386,
+            "sample_size": 215386,
+            "sampling_weight_denominator": 215386,
+            "sampling_weight_numerator": 1174105,
+            "stratum_id": "1|3-4",
+            "unlabeled_population": 1174105
+          },
+          {
+            "inclusion_probability_denominator": 77243,
+            "inclusion_probability_numerator": 14170,
+            "sample_size": 212550,
+            "sampling_weight_denominator": 14170,
+            "sampling_weight_numerator": 77243,
+            "stratum_id": "1|5-9",
+            "unlabeled_population": 1158645
+          },
+          {
+            "inclusion_probability_denominator": 9043,
+            "inclusion_probability_numerator": 1659,
+            "sample_size": 18249,
+            "sampling_weight_denominator": 1659,
+            "sampling_weight_numerator": 9043,
+            "stratum_id": "1|50-99",
+            "unlabeled_population": 99473
+          },
+          {
+            "inclusion_probability_denominator": 2221,
+            "inclusion_probability_numerator": 408,
+            "sample_size": 816,
+            "sampling_weight_denominator": 408,
+            "sampling_weight_numerator": 2221,
+            "stratum_id": "20-49|100+",
+            "unlabeled_population": 4442
+          },
+          {
+            "inclusion_probability_denominator": 55071,
+            "inclusion_probability_numerator": 10103,
+            "sample_size": 10103,
+            "sampling_weight_denominator": 10103,
+            "sampling_weight_numerator": 55071,
+            "stratum_id": "20-49|20-49",
+            "unlabeled_population": 55071
+          },
+          {
+            "inclusion_probability_denominator": 20280,
+            "inclusion_probability_numerator": 3721,
+            "sample_size": 3721,
+            "sampling_weight_denominator": 3721,
+            "sampling_weight_numerator": 20280,
+            "stratum_id": "20-49|50-99",
+            "unlabeled_population": 20280
+          },
+          {
+            "inclusion_probability_denominator": 348330,
+            "inclusion_probability_numerator": 63901,
+            "sample_size": 63901,
+            "sampling_weight_denominator": 63901,
+            "sampling_weight_numerator": 348330,
+            "stratum_id": "2|10-19",
+            "unlabeled_population": 348330
+          },
+          {
+            "inclusion_probability_denominator": 2087,
+            "inclusion_probability_numerator": 383,
+            "sample_size": 1915,
+            "sampling_weight_denominator": 383,
+            "sampling_weight_numerator": 2087,
+            "stratum_id": "2|100+",
+            "unlabeled_population": 10435
+          },
+          {
+            "inclusion_probability_denominator": 7190,
+            "inclusion_probability_numerator": 1319,
+            "sample_size": 46165,
+            "sampling_weight_denominator": 1319,
+            "sampling_weight_numerator": 7190,
+            "stratum_id": "2|2",
+            "unlabeled_population": 251650
+          },
+          {
+            "inclusion_probability_denominator": 240194,
+            "inclusion_probability_numerator": 44063,
+            "sample_size": 44063,
+            "sampling_weight_denominator": 44063,
+            "sampling_weight_numerator": 240194,
+            "stratum_id": "2|20-49",
+            "unlabeled_population": 240194
+          },
+          {
+            "inclusion_probability_denominator": 542986,
+            "inclusion_probability_numerator": 99609,
+            "sample_size": 99609,
+            "sampling_weight_denominator": 99609,
+            "sampling_weight_numerator": 542986,
+            "stratum_id": "2|3-4",
+            "unlabeled_population": 542986
+          },
+          {
+            "inclusion_probability_denominator": 267896,
+            "inclusion_probability_numerator": 49145,
+            "sample_size": 98290,
+            "sampling_weight_denominator": 49145,
+            "sampling_weight_numerator": 267896,
+            "stratum_id": "2|5-9",
+            "unlabeled_population": 535792
+          },
+          {
+            "inclusion_probability_denominator": 45851,
+            "inclusion_probability_numerator": 8412,
+            "sample_size": 8412,
+            "sampling_weight_denominator": 8412,
+            "sampling_weight_numerator": 45851,
+            "stratum_id": "2|50-99",
+            "unlabeled_population": 45851
+          },
+          {
+            "inclusion_probability_denominator": 374997,
+            "inclusion_probability_numerator": 68792,
+            "sample_size": 68792,
+            "sampling_weight_denominator": 68792,
+            "sampling_weight_numerator": 374997,
+            "stratum_id": "3-4|10-19",
+            "unlabeled_population": 374997
+          },
+          {
+            "inclusion_probability_denominator": 2229,
+            "inclusion_probability_numerator": 409,
+            "sample_size": 2045,
+            "sampling_weight_denominator": 409,
+            "sampling_weight_numerator": 2229,
+            "stratum_id": "3-4|100+",
+            "unlabeled_population": 11145
+          },
+          {
+            "inclusion_probability_denominator": 258369,
+            "inclusion_probability_numerator": 47398,
+            "sample_size": 47398,
+            "sampling_weight_denominator": 47398,
+            "sampling_weight_numerator": 258369,
+            "stratum_id": "3-4|20-49",
+            "unlabeled_population": 258369
+          },
+          {
+            "inclusion_probability_denominator": 97363,
+            "inclusion_probability_numerator": 17861,
+            "sample_size": 53583,
+            "sampling_weight_denominator": 17861,
+            "sampling_weight_numerator": 97363,
+            "stratum_id": "3-4|3-4",
+            "unlabeled_population": 292089
+          },
+          {
+            "inclusion_probability_denominator": 577125,
+            "inclusion_probability_numerator": 105872,
+            "sample_size": 105872,
+            "sampling_weight_denominator": 105872,
+            "sampling_weight_numerator": 577125,
+            "stratum_id": "3-4|5-9",
+            "unlabeled_population": 577125
+          },
+          {
+            "inclusion_probability_denominator": 49172,
+            "inclusion_probability_numerator": 9021,
+            "sample_size": 9021,
+            "sampling_weight_denominator": 9021,
+            "sampling_weight_numerator": 49172,
+            "stratum_id": "3-4|50-99",
+            "unlabeled_population": 49172
+          },
+          {
+            "inclusion_probability_denominator": 369418,
+            "inclusion_probability_numerator": 67769,
+            "sample_size": 67769,
+            "sampling_weight_denominator": 67769,
+            "sampling_weight_numerator": 369418,
+            "stratum_id": "5-9|10-19",
+            "unlabeled_population": 369418
+          },
+          {
+            "inclusion_probability_denominator": 10785,
+            "inclusion_probability_numerator": 1979,
+            "sample_size": 1979,
+            "sampling_weight_denominator": 1979,
+            "sampling_weight_numerator": 10785,
+            "stratum_id": "5-9|100+",
+            "unlabeled_population": 10785
+          },
+          {
+            "inclusion_probability_denominator": 126895,
+            "inclusion_probability_numerator": 23279,
+            "sample_size": 46558,
+            "sampling_weight_denominator": 23279,
+            "sampling_weight_numerator": 126895,
+            "stratum_id": "5-9|20-49",
+            "unlabeled_population": 253790
+          },
+          {
+            "inclusion_probability_denominator": 284175,
+            "inclusion_probability_numerator": 52132,
+            "sample_size": 52132,
+            "sampling_weight_denominator": 52132,
+            "sampling_weight_numerator": 284175,
+            "stratum_id": "5-9|5-9",
+            "unlabeled_population": 284175
+          },
+          {
+            "inclusion_probability_denominator": 48039,
+            "inclusion_probability_numerator": 8813,
+            "sample_size": 8813,
+            "sampling_weight_denominator": 8813,
+            "sampling_weight_numerator": 48039,
+            "stratum_id": "5-9|50-99",
+            "unlabeled_population": 48039
+          },
+          {
+            "inclusion_probability_denominator": 843,
+            "inclusion_probability_numerator": 155,
+            "sample_size": 155,
+            "sampling_weight_denominator": 155,
+            "sampling_weight_numerator": 843,
+            "stratum_id": "50-99|100+",
+            "unlabeled_population": 843
+          },
+          {
+            "inclusion_probability_denominator": 1807,
+            "inclusion_probability_numerator": 332,
+            "sample_size": 332,
+            "sampling_weight_denominator": 332,
+            "sampling_weight_numerator": 1807,
+            "stratum_id": "50-99|50-99",
+            "unlabeled_population": 1807
+          }
+        ],
+        "target_positive_count": 16799,
+        "unlabeled_candidate_count": 10902230
+      }
+    },
+    "check_counts": {
+      "fail": 0,
+      "pass": 16,
+      "warning": 0
+    },
+    "checks": [
+      {
+        "check": "parent_endpoint_and_component_counts",
+        "detail": {
+          "components": 7782,
+          "endpoints": 17000
+        },
+        "status": "pass"
+      },
+      {
+        "check": "training_positive_and_exposure_floors",
+        "detail": {
+          "training_exposed_endpoints": 4675,
+          "training_positive_pairs": 16799
+        },
+        "status": "pass"
+      },
+      {
+        "check": "frozen_training_and_c1_candidate_expectations",
+        "detail": {
+          "c1_unlabeled_candidates": 10902230,
+          "train_train_pairs": 23823,
+          "training_exposed_endpoints": 4675,
+          "training_positive_pairs": 16799
+        },
+        "status": "pass"
+      },
+      {
+        "check": "C1_development_primary_floors",
+        "detail": {
+          "HI-II-14": 619,
+          "HuRI": 2892,
+          "components": 1378,
+          "pairs": 3259
+        },
+        "status": "pass"
+      },
+      {
+        "check": "C1_test_primary_floors",
+        "detail": {
+          "HI-II-14": 570,
+          "HuRI": 2854,
+          "components": 1348,
+          "pairs": 3187
+        },
+        "status": "pass"
+      },
+      {
+        "check": "C2_development_primary_floors",
+        "detail": {
+          "HI-II-14": 2702,
+          "HuRI": 9583,
+          "components": 2125,
+          "pairs": 11327
+        },
+        "status": "pass"
+      },
+      {
+        "check": "C2_test_primary_floors",
+        "detail": {
+          "HI-II-14": 2739,
+          "HuRI": 11822,
+          "components": 2436,
+          "pairs": 13446
+        },
+        "status": "pass"
+      },
+      {
+        "check": "C3_development_primary_floors",
+        "detail": {
+          "HI-II-14": 588,
+          "HuRI": 1953,
+          "components": 353,
+          "pairs": 2265
+        },
+        "status": "pass"
+      },
+      {
+        "check": "C3_test_primary_floors",
+        "detail": {
+          "HI-II-14": 510,
+          "HuRI": 2110,
+          "components": 505,
+          "pairs": 2379
+        },
+        "status": "pass"
+      },
+      {
+        "check": "pair_role_disjointness",
+        "detail": {
+          "distinct_evaluation_pairs": 35863,
+          "training_evaluation_overlap": 0
+        },
+        "status": "pass"
+      },
+      {
+        "check": "sampling_probabilities_positive",
+        "detail": {
+          "cells": 7,
+          "sample_realization_performed": false
+        },
+        "status": "pass"
+      },
+      {
+        "check": "evidence_field_completeness_matches_freeze",
+        "detail": {
+          "observed": {
+            "HI-II-14": {
+              "assay_batch_nonnull": 0,
+              "assay_version_nonnull": 0,
+              "distinct_publication_groups": 1,
+              "experiment_nonempty": 0,
+              "publication_nonnull": 49389,
+              "rows": 49389,
+              "source_created_nonnull": 49389,
+              "source_updated_nonnull": 0
+            },
+            "HuRI": {
+              "assay_batch_nonnull": 0,
+              "assay_version_nonnull": 0,
+              "distinct_publication_groups": 1,
+              "experiment_nonempty": 0,
+              "publication_nonnull": 171545,
+              "rows": 171545,
+              "source_created_nonnull": 171545,
+              "source_updated_nonnull": 0
+            }
+          }
+        },
+        "status": "pass"
+      },
+      {
+        "check": "unsupported_holdouts_remain_inactive",
+        "detail": {
+          "assay": "inactive_missing",
+          "study": "inactive_not_independently_identified",
+          "temporal": "inactive_not_supported_as_independent_pair_time_holdout"
+        },
+        "status": "pass"
+      },
+      {
+        "check": "frozen_primary_feasibility_expectations",
+        "detail": {
+          "observed": {
+            "C1_development": {
+              "HI-II-14": 619,
+              "HuRI": 2892,
+              "components": 1378,
+              "pairs": 3259
+            },
+            "C1_test": {
+              "HI-II-14": 570,
+              "HuRI": 2854,
+              "components": 1348,
+              "pairs": 3187
+            },
+            "C2_development": {
+              "HI-II-14": 2702,
+              "HuRI": 9583,
+              "candidate_pairs": 11921250,
+              "components": 2125,
+              "pairs": 11327,
+              "unlabeled_candidates": 11909923
+            },
+            "C2_test": {
+              "HI-II-14": 2739,
+              "HuRI": 11822,
+              "candidate_pairs": 11921250,
+              "components": 2436,
+              "pairs": 13446,
+              "unlabeled_candidates": 11907804
+            },
+            "C3_development": {
+              "HI-II-14": 588,
+              "HuRI": 1953,
+              "candidate_pairs": 3249975,
+              "components": 353,
+              "pairs": 2265,
+              "unlabeled_candidates": 3247710
+            },
+            "C3_test": {
+              "HI-II-14": 510,
+              "HuRI": 2110,
+              "candidate_pairs": 3249975,
+              "components": 505,
+              "pairs": 2379,
+              "unlabeled_candidates": 3247596
+            }
+          }
+        },
+        "status": "pass"
+      },
+      {
+        "check": "frozen_source_exclusive_expectations",
+        "detail": {
+          "observed": {
+            "HI-II-14": {
+              "C1_development": {
+                "components": 292,
+                "pairs": 305
+              },
+              "C1_test": {
+                "components": 281,
+                "pairs": 280
+              },
+              "C2_development": {
+                "components": 683,
+                "pairs": 1601
+              },
+              "C2_test": {
+                "components": 751,
+                "pairs": 1488
+              },
+              "C3_development": {
+                "components": 118,
+                "pairs": 312
+              },
+              "C3_test": {
+                "components": 147,
+                "pairs": 269
+              },
+              "visible_training_endpoints": 4320,
+              "visible_training_pairs": 14829
+            },
+            "HuRI": {
+              "C1_development": {
+                "components": 446,
+                "pairs": 611
+              },
+              "C1_test": {
+                "components": 414,
+                "pairs": 633
+              },
+              "C2_development": {
+                "components": 1084,
+                "pairs": 4751
+              },
+              "C2_test": {
+                "components": 1297,
+                "pairs": 5270
+              },
+              "C3_development": {
+                "components": 304,
+                "pairs": 1677
+              },
+              "C3_test": {
+                "components": 463,
+                "pairs": 1869
+              },
+              "visible_training_endpoints": 1868,
+              "visible_training_pairs": 3252
+            }
+          }
+        },
+        "status": "pass"
+      },
+      {
+        "check": "scope_prohibitions",
+        "detail": {
+          "candidate_rows_emitted": false,
+          "model_work_performed": false,
+          "pair_rows_emitted": false,
+          "sample_realized": false
+        },
+        "status": "pass"
+      }
+    ],
+    "degree_and_hub_stratification": {
+      "degree_q50": 0,
+      "degree_q90": 7,
+      "degree_q95": 14,
+      "degree_q99": 41,
+      "degree_sum": 33598,
+      "endpoint_count": 11900,
+      "heldout_or_withheld_positive_edges_used": false,
+      "histogram": {
+        "0": 7225,
+        "1": 1535,
+        "10-19": 491,
+        "100+": 15,
+        "2": 710,
+        "20-49": 339,
+        "3-4": 765,
+        "5-9": 755,
+        "50-99": 65
+      },
+      "hubs": {
+        "0.01": {
+          "endpoint_count": 119,
+          "minimum_degree": 41,
+          "positive_exposed_endpoint_count": 119
+        },
+        "0.05": {
+          "endpoint_count": 595,
+          "minimum_degree": 14,
+          "positive_exposed_endpoint_count": 595
+        },
+        "0.1": {
+          "endpoint_count": 1190,
+          "minimum_degree": 7,
+          "positive_exposed_endpoint_count": 1190
+        }
+      },
+      "maximum_degree": 279,
+      "population": "training_partition_endpoints",
+      "positive_exposed_endpoint_count": 4675
+    },
+    "evidence_field_completeness": {
+      "HI-II-14": {
+        "assay_batch_nonnull": 0,
+        "assay_families": [
+          "Y2H"
+        ],
+        "assay_version_nonnull": 0,
+        "detection_methods": [
+          {
+            "ac": "MI:0397",
+            "name": "two hybrid array",
+            "rows": 16511
+          },
+          {
+            "ac": "MI:1112",
+            "name": "two hybrid prey pooling approach",
+            "rows": 16511
+          },
+          {
+            "ac": "MI:1356",
+            "name": "validated two hybrid",
+            "rows": 16367
+          }
+        ],
+        "distinct_publication_groups": 1,
+        "experiment_nonempty": 0,
+        "publication_groups": [
+          "[\"pubmed:25416956\"]"
+        ],
+        "publication_nonnull": 49389,
+        "rows": 49389,
+        "source_created_nonnull": 49389,
+        "source_created_values": [
+          "2019/10/16"
+        ],
+        "source_updated_nonnull": 0
+      },
+      "HuRI": {
+        "assay_batch_nonnull": 0,
+        "assay_families": [
+          "Y2H"
+        ],
+        "assay_version_nonnull": 0,
+        "detection_methods": [
+          {
+            "ac": "MI:0397",
+            "name": "two hybrid array",
+            "rows": 57252
+          },
+          {
+            "ac": "MI:1112",
+            "name": "two hybrid prey pooling approach",
+            "rows": 57252
+          },
+          {
+            "ac": "MI:1356",
+            "name": "validated two hybrid",
+            "rows": 57041
+          }
+        ],
+        "distinct_publication_groups": 1,
+        "experiment_nonempty": 0,
+        "publication_groups": [
+          "[\"unassigned1304\"]"
+        ],
+        "publication_nonnull": 171545,
+        "rows": 171545,
+        "source_created_nonnull": 171545,
+        "source_created_values": [
+          "2019/10/16"
+        ],
+        "source_updated_nonnull": 0
+      }
+    },
+    "feasible": true,
+    "parent": {
+      "components": 7782,
+      "endpoints": 17000,
+      "partition_component_counts": {
+        "development": 1071,
+        "test": 1284,
+        "train": 5427
+      },
+      "partition_endpoint_counts": {
+        "development": 2550,
+        "test": 2550,
+        "train": 11900
+      },
+      "released_positive_pairs": 58049,
+      "source_membership": {
+        "both": 4849,
+        "hi_ii_14_only": 7504,
+        "huri_only": 45696
+      }
+    },
+    "positive_quarantine": {
+      "C1_development_failed_exposure": 282,
+      "C1_test_failed_exposure": 296,
+      "C2_development_failed_train_exposure": 472,
+      "C2_test_failed_train_exposure": 688,
+      "development_test_cross_partition": 3649
+    },
+    "primary_cells": {
+      "C1_development": {
+        "HI-II-14": 619,
+        "HuRI": 2892,
+        "components": 1378,
+        "endpoints": 2191,
+        "pairs": 3259,
+        "source_membership": {
+          "HI-II-14_only": 367,
+          "HuRI_only": 2640,
+          "both": 252
+        }
+      },
+      "C1_test": {
+        "HI-II-14": 570,
+        "HuRI": 2854,
+        "components": 1348,
+        "endpoints": 2083,
+        "pairs": 3187,
+        "source_membership": {
+          "HI-II-14_only": 333,
+          "HuRI_only": 2617,
+          "both": 237
+        }
+      },
+      "C2_development": {
+        "HI-II-14": 2702,
+        "HuRI": 9583,
+        "components": 2125,
+        "endpoints": 3647,
+        "pairs": 11327,
+        "source_membership": {
+          "HI-II-14_only": 1744,
+          "HuRI_only": 8625,
+          "both": 958
+        }
+      },
+      "C2_test": {
+        "HI-II-14": 2739,
+        "HuRI": 11822,
+        "components": 2436,
+        "endpoints": 3930,
+        "pairs": 13446,
+        "source_membership": {
+          "HI-II-14_only": 1624,
+          "HuRI_only": 10707,
+          "both": 1115
+        }
+      },
+      "C3_development": {
+        "HI-II-14": 588,
+        "HuRI": 1953,
+        "components": 353,
+        "endpoints": 814,
+        "pairs": 2265,
+        "source_membership": {
+          "HI-II-14_only": 312,
+          "HuRI_only": 1677,
+          "both": 276
+        }
+      },
+      "C3_test": {
+        "HI-II-14": 510,
+        "HuRI": 2110,
+        "components": 505,
+        "endpoints": 842,
+        "pairs": 2379,
+        "source_membership": {
+          "HI-II-14_only": 269,
+          "HuRI_only": 1869,
+          "both": 241
+        }
+      }
+    },
+    "training": {
+      "interaction_supervision_exposed_training_endpoints": 4675,
+      "interaction_supervision_training_positive_pairs": 16799,
+      "train_train_released_positive_pairs_before_hash": 23823,
+      "withheld_or_heldout_edges_in_training_degree": false
+    }
+  },
+  "completed_at_utc": "2026-08-08T18:58:42.258064+00:00",
+  "disposition": {
+    "assay_version_or_batch": "inactive_missing",
+    "c3_claim": "exact_endpoints_interaction_supervision_unseen_and_component_disjoint_under_local_domain_union_30_only",
+    "independent_study": "inactive_not_identified",
+    "independent_temporal": "inactive_not_supported",
+    "primary_c1_c2_c3_protocol": "freeze_permitted",
+    "protocol_internally_consistent_and_feasible": true,
+    "source_exclusive": "supported_with_cellwise_descriptive_demotion"
+  },
+  "git": {
+    "commit": "8ee0ae58b365c68ffb5732c9995803d24e5fe6fa",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "inputs": {
+    "config": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/pair_level_pu_r_benchmark_protocol_v1.yaml",
+    "config_sha256": "7b0cefa1b461f0e58d3e6f4ff72da2d6ad4ac39522a897ce4057e756fa84f2a6",
+    "documents": {
+      "accepted_estimand_policy": {
+        "bytes": 1923,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/benchmark_estimand_policy_v1.yaml",
+        "sha256": "3340b6b9e4130d8011b43ccf92556d59f9278a89a05b08b4c6581ec8b311164d"
+      },
+      "acquisition_manifest": {
+        "bytes": 33989,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json",
+        "sha256": "5750fe08eac343e23c0f0c56cf749c7477cbfd92233f2679de5fedf9d8f22231"
+      },
+      "active_gate": {
+        "bytes": 5411,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/gates/gate_status_v22.yaml",
+        "sha256": "8b01986fbb973122137bbfea251b3092265f6a223785e8919f77b91b9ace8a5b"
+      },
+      "active_status": {
+        "bytes": 2745,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/PROJECT_STATUS_v22.md",
+        "sha256": "96ab07c03e7aa05d1bdac1dec5daf40312109ea6ca53d649895309b21487015b"
+      },
+      "authorization_decision": {
+        "bytes": 5441,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/decisions/DEC-0023-authorize-pair-level-pu-r-benchmark-protocol-freeze.md",
+        "sha256": "49800af09d13c430cfb5420bc9da7954ad3e39437b23042872e2537ae81c2177"
+      },
+      "eligibility_manifest": {
+        "bytes": 23664,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/AUDIT_MANIFEST.json",
+        "sha256": "1a7769fa550ac7eef9acd40da72c8f5247c0c81cb1bb77a913e185d090d83f96"
+      },
+      "evidence_schema": {
+        "bytes": 22656,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/warehouse/evidence_warehouse_v1.yaml",
+        "sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd"
+      },
+      "frozen_split_config": {
+        "bytes": 12634,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/final_benchmark_component_split_v1.yaml",
+        "sha256": "b8dac7c7de5fc3935a5bf642afe12b2b5e7e5b40fa9883d1dc04962bfed25ecf"
+      },
+      "frozen_split_manifest": {
+        "bytes": 45221,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/final_benchmark_component_split_v1/SPLIT_MANIFEST.json",
+        "sha256": "81800ec810d83a53d83e36dca277a425e4a8fd1f7f50009916da73e14021351a"
+      },
+      "incorporated_estimand_proposal": {
+        "bytes": 19232,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/benchmark_estimand_policy_proposal_v1.yaml",
+        "sha256": "b5a7aff3615fa15a612d916e6ea9c46eba65756dfd239c8236a94c450d948a78"
+      },
+      "parent_acceptance_decision": {
+        "bytes": 4712,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/decisions/DEC-0022-accept-final-benchmark-component-split.md",
+        "sha256": "29aedd8bc0e3c47f2cab457a13d1d33a2cdca6f0c0e50a24884cff2ab7e67d33"
+      },
+      "parse_manifest": {
+        "bytes": 223738,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/PARSE_MANIFEST.json",
+        "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+      },
+      "reconciliation_manifest": {
+        "bytes": 26286,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json",
+        "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+      },
+      "systematic_screen_audit_report": {
+        "bytes": 39807,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json",
+        "sha256": "db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e"
+      },
+      "systematic_screen_validation_report": {
+        "bytes": 84626,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json",
+        "sha256": "2ca92051172b7a7a512072f3ed6212ac8caed5891870abcea7c6e5929cd56a01"
+      }
+    },
+    "tables": {
+      "component_partition_assignments": {
+        "bytes": 449396,
+        "parts": 1,
+        "rows": 7782,
+        "schema_name": "ipin_openppi_final_benchmark_component_split",
+        "schema_sha256": "e18c999753640c7d3b15bdaee60636d329b94ae3876cfaffc2290b7f1536ed30",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "component_partition_assignments"
+      },
+      "eligible_reference_sequences": {
+        "bytes": 6178533,
+        "parts": 1,
+        "rows": 17000,
+        "schema_name": "ipin_openppi_benchmark_eligibility_and_sequence_component_audit",
+        "schema_sha256": "60698389ee17e5c9d2cf8a586fbe92af9ef331120d01785f13b071759749a481",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "eligible_reference_sequences"
+      },
+      "endpoint_partition_assignments": {
+        "bytes": 851035,
+        "parts": 1,
+        "rows": 17000,
+        "schema_name": "ipin_openppi_final_benchmark_component_split",
+        "schema_sha256": "e18c999753640c7d3b15bdaee60636d329b94ae3876cfaffc2290b7f1536ed30",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "endpoint_partition_assignments"
+      },
+      "evidence_records": {
+        "bytes": 27037026,
+        "parts": 3,
+        "rows": 220934,
+        "schema_name": "ipin_openppi_evidence_warehouse",
+        "schema_sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "evidence_records"
+      },
+      "huri_evidence_gene_pair_projections": {
+        "bytes": 27025698,
+        "parts": 3,
+        "rows": 220934,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "huri_evidence_gene_pair_projections"
+      },
+      "space_iii_gene_eligibility": {
+        "bytes": 2261157,
+        "parts": 1,
+        "rows": 17408,
+        "schema_name": "ipin_openppi_benchmark_eligibility_and_sequence_component_audit",
+        "schema_sha256": "60698389ee17e5c9d2cf8a586fbe92af9ef331120d01785f13b071759749a481",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "space_iii_gene_eligibility"
+      }
+    }
+  },
+  "protocol_id": "pair_level_pu_r_benchmark_protocol_v1",
+  "protocol_version": "1.0.0",
+  "runtime": {
+    "architecture": "aarch64",
+    "container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+    "container_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+    "duckdb": "1.5.5"
+  },
+  "schema_version": 1,
+  "scope": {
+    "candidate_rows_emitted": false,
+    "external_panel_input_used": false,
+    "frozen_split_modified": false,
+    "model_work_performed": false,
+    "negative_label_constructed": false,
+    "pair_rows_emitted": false,
+    "prevalence_or_calibration_computed": false,
+    "pseudo_negative_constructed": false,
+    "return_to_governance_required": true,
+    "structural_mapping_performed": false,
+    "unlabeled_sample_realized": false
+  },
+  "started_at_utc": "2026-08-08T18:58:41.108886+00:00",
+  "status": "complete"
+}
