@@ -1,0 +1,316 @@
+schema_name: ipin_openppi_pair_level_pu_r_benchmark_artifacts
+schema_version: 1
+description: >-
+  Pair-level positive and deterministically sampled-unlabeled artifacts for the
+  frozen reference-sequence PU-R protocol. The schema contains no negative or
+  pseudo-negative state. Protected-test candidates and truth are held in
+  separately encrypted packages.
+
+enums:
+  partition: [train, development, test]
+  axis: [primary, source_exclusive]
+  pair_state: [released_positive, unlabeled]
+  source_dataset: [HI-II-14, HuRI]
+  source_membership: [HI-II-14_only, HuRI_only, both]
+  primary_cell:
+    - training
+    - C1_development
+    - C1_test
+    - C2_development
+    - C2_test
+    - C3_development
+    - C3_test
+  positive_role:
+    - training
+    - C1_development
+    - C1_test
+    - C2_development
+    - C2_test
+    - C3_development
+    - C3_test
+    - quarantine
+
+tables:
+  positive_pairs:
+    description: Released-positive census rows visible in the named package boundary.
+    primary_key: [cell_id, pair_id]
+    required_non_null:
+      - package_id
+      - axis
+      - cell_id
+      - primary_cell
+      - pair_id
+      - endpoint_a_sha256
+      - endpoint_b_sha256
+      - endpoint_a_component_id
+      - endpoint_b_component_id
+      - endpoint_a_partition
+      - endpoint_b_partition
+      - endpoint_a_training_degree
+      - endpoint_b_training_degree
+      - stratum_id
+      - state
+      - inclusion_probability_numerator
+      - inclusion_probability_denominator
+      - sampling_weight_numerator
+      - sampling_weight_denominator
+    enum_columns:
+      axis: axis
+      target_source: source_dataset
+      primary_cell: primary_cell
+      endpoint_a_partition: partition
+      endpoint_b_partition: partition
+      state: pair_state
+    columns:
+      - {name: package_id, type: string, nullable: false}
+      - {name: axis, type: string, nullable: false}
+      - {name: target_source, type: string, nullable: true}
+      - {name: cell_id, type: string, nullable: false}
+      - {name: primary_cell, type: string, nullable: false}
+      - {name: pair_id, type: string, nullable: false}
+      - {name: endpoint_a_sha256, type: string, nullable: false}
+      - {name: endpoint_b_sha256, type: string, nullable: false}
+      - {name: endpoint_a_component_id, type: string, nullable: false}
+      - {name: endpoint_b_component_id, type: string, nullable: false}
+      - {name: endpoint_a_partition, type: string, nullable: false}
+      - {name: endpoint_b_partition, type: string, nullable: false}
+      - {name: endpoint_a_training_degree, type: int64, nullable: false}
+      - {name: endpoint_b_training_degree, type: int64, nullable: false}
+      - {name: stratum_id, type: string, nullable: false}
+      - {name: state, type: string, nullable: false}
+      - {name: inclusion_probability_numerator, type: int64, nullable: false}
+      - {name: inclusion_probability_denominator, type: int64, nullable: false}
+      - {name: sampling_weight_numerator, type: int64, nullable: false}
+      - {name: sampling_weight_denominator, type: int64, nullable: false}
+
+  unlabeled_pairs:
+    description: >-
+      Deterministic bottom-hash sample rows. State means no visible qualifying
+      released-positive evidence under the named axis, never a negative label.
+    primary_key: [cell_id, pair_id]
+    required_non_null:
+      - package_id
+      - axis
+      - cell_id
+      - primary_cell
+      - pair_id
+      - endpoint_a_sha256
+      - endpoint_b_sha256
+      - endpoint_a_component_id
+      - endpoint_b_component_id
+      - endpoint_a_partition
+      - endpoint_b_partition
+      - endpoint_a_training_degree
+      - endpoint_b_training_degree
+      - stratum_id
+      - sampling_hash_key
+      - unlabeled_population
+      - sample_size
+      - inclusion_probability_numerator
+      - inclusion_probability_denominator
+      - sampling_weight_numerator
+      - sampling_weight_denominator
+      - state
+    enum_columns:
+      axis: axis
+      target_source: source_dataset
+      primary_cell: primary_cell
+      endpoint_a_partition: partition
+      endpoint_b_partition: partition
+      state: pair_state
+    columns:
+      - {name: package_id, type: string, nullable: false}
+      - {name: axis, type: string, nullable: false}
+      - {name: target_source, type: string, nullable: true}
+      - {name: cell_id, type: string, nullable: false}
+      - {name: primary_cell, type: string, nullable: false}
+      - {name: pair_id, type: string, nullable: false}
+      - {name: endpoint_a_sha256, type: string, nullable: false}
+      - {name: endpoint_b_sha256, type: string, nullable: false}
+      - {name: endpoint_a_component_id, type: string, nullable: false}
+      - {name: endpoint_b_component_id, type: string, nullable: false}
+      - {name: endpoint_a_partition, type: string, nullable: false}
+      - {name: endpoint_b_partition, type: string, nullable: false}
+      - {name: endpoint_a_training_degree, type: int64, nullable: false}
+      - {name: endpoint_b_training_degree, type: int64, nullable: false}
+      - {name: stratum_id, type: string, nullable: false}
+      - {name: sampling_hash_key, type: string, nullable: false}
+      - {name: unlabeled_population, type: int64, nullable: false}
+      - {name: sample_size, type: int64, nullable: false}
+      - {name: inclusion_probability_numerator, type: int64, nullable: false}
+      - {name: inclusion_probability_denominator, type: int64, nullable: false}
+      - {name: sampling_weight_numerator, type: int64, nullable: false}
+      - {name: sampling_weight_denominator, type: int64, nullable: false}
+      - {name: state, type: string, nullable: false}
+
+  source_visible_training_positive_pairs:
+    description: Training-role positives visible from the non-target source for a strict source diagnostic.
+    primary_key: [target_source, pair_id]
+    required_non_null:
+      - package_id
+      - target_source
+      - visible_source
+      - pair_id
+      - endpoint_a_sha256
+      - endpoint_b_sha256
+      - endpoint_a_component_id
+      - endpoint_b_component_id
+      - endpoint_a_training_degree
+      - endpoint_b_training_degree
+      - state
+    enum_columns:
+      target_source: source_dataset
+      visible_source: source_dataset
+      state: pair_state
+    columns:
+      - {name: package_id, type: string, nullable: false}
+      - {name: target_source, type: string, nullable: false}
+      - {name: visible_source, type: string, nullable: false}
+      - {name: pair_id, type: string, nullable: false}
+      - {name: endpoint_a_sha256, type: string, nullable: false}
+      - {name: endpoint_b_sha256, type: string, nullable: false}
+      - {name: endpoint_a_component_id, type: string, nullable: false}
+      - {name: endpoint_b_component_id, type: string, nullable: false}
+      - {name: endpoint_a_training_degree, type: int64, nullable: false}
+      - {name: endpoint_b_training_degree, type: int64, nullable: false}
+      - {name: state, type: string, nullable: false}
+
+  protected_candidates:
+    description: >-
+      Label-free protected-test scorer input. This table is encrypted separately
+      from truth; only a controlled evaluator may project its rows to a scorer.
+    primary_key: [cell_id, candidate_token]
+    required_non_null:
+      - package_id
+      - axis
+      - cell_id
+      - primary_cell
+      - candidate_token
+      - endpoint_a_sha256
+      - endpoint_b_sha256
+      - endpoint_a_component_id
+      - endpoint_b_component_id
+      - endpoint_a_partition
+      - endpoint_b_partition
+      - endpoint_a_training_degree
+      - endpoint_b_training_degree
+      - stratum_id
+    enum_columns:
+      axis: axis
+      target_source: source_dataset
+      primary_cell: primary_cell
+      endpoint_a_partition: partition
+      endpoint_b_partition: partition
+    columns:
+      - {name: package_id, type: string, nullable: false}
+      - {name: axis, type: string, nullable: false}
+      - {name: target_source, type: string, nullable: true}
+      - {name: cell_id, type: string, nullable: false}
+      - {name: primary_cell, type: string, nullable: false}
+      - {name: candidate_token, type: string, nullable: false}
+      - {name: endpoint_a_sha256, type: string, nullable: false}
+      - {name: endpoint_b_sha256, type: string, nullable: false}
+      - {name: endpoint_a_component_id, type: string, nullable: false}
+      - {name: endpoint_b_component_id, type: string, nullable: false}
+      - {name: endpoint_a_partition, type: string, nullable: false}
+      - {name: endpoint_b_partition, type: string, nullable: false}
+      - {name: endpoint_a_training_degree, type: int64, nullable: false}
+      - {name: endpoint_b_training_degree, type: int64, nullable: false}
+      - {name: stratum_id, type: string, nullable: false}
+
+  protected_positive_truth:
+    description: Evaluator-only released-positive identities and source provenance.
+    primary_key: [cell_id, candidate_token]
+    required_non_null:
+      - package_id
+      - axis
+      - cell_id
+      - primary_cell
+      - candidate_token
+      - pair_id
+      - source_membership
+      - hi_ii_14_supported
+      - huri_supported
+      - state
+    enum_columns:
+      axis: axis
+      target_source: source_dataset
+      primary_cell: primary_cell
+      source_membership: source_membership
+      state: pair_state
+    columns:
+      - {name: package_id, type: string, nullable: false}
+      - {name: axis, type: string, nullable: false}
+      - {name: target_source, type: string, nullable: true}
+      - {name: cell_id, type: string, nullable: false}
+      - {name: primary_cell, type: string, nullable: false}
+      - {name: candidate_token, type: string, nullable: false}
+      - {name: pair_id, type: string, nullable: false}
+      - {name: source_membership, type: string, nullable: false}
+      - {name: hi_ii_14_supported, type: bool, nullable: false}
+      - {name: huri_supported, type: bool, nullable: false}
+      - {name: state, type: string, nullable: false}
+
+  sampling_strata:
+    description: Exact frozen sample allocation and rational design weights for each nonempty cell stratum.
+    primary_key: [cell_id, stratum_id]
+    required_non_null:
+      - package_id
+      - axis
+      - cell_id
+      - primary_cell
+      - stratum_id
+      - unlabeled_population
+      - sample_size
+      - inclusion_probability_numerator
+      - inclusion_probability_denominator
+      - sampling_weight_numerator
+      - sampling_weight_denominator
+    enum_columns:
+      axis: axis
+      target_source: source_dataset
+      primary_cell: primary_cell
+    columns:
+      - {name: package_id, type: string, nullable: false}
+      - {name: axis, type: string, nullable: false}
+      - {name: target_source, type: string, nullable: true}
+      - {name: cell_id, type: string, nullable: false}
+      - {name: primary_cell, type: string, nullable: false}
+      - {name: stratum_id, type: string, nullable: false}
+      - {name: unlabeled_population, type: int64, nullable: false}
+      - {name: sample_size, type: int64, nullable: false}
+      - {name: inclusion_probability_numerator, type: int64, nullable: false}
+      - {name: inclusion_probability_denominator, type: int64, nullable: false}
+      - {name: sampling_weight_numerator, type: int64, nullable: false}
+      - {name: sampling_weight_denominator, type: int64, nullable: false}
+
+  positive_role_ledger:
+    description: Curator/evaluator-only one-row ledger for every frozen released-positive pair.
+    primary_key: [pair_id]
+    required_non_null:
+      - package_id
+      - pair_id
+      - endpoint_a_sha256
+      - endpoint_b_sha256
+      - source_membership
+      - hi_ii_14_supported
+      - huri_supported
+      - primary_positive_role
+      - source_exclusive_hi_ii_14_role
+      - source_exclusive_huri_role
+    enum_columns:
+      source_membership: source_membership
+      primary_positive_role: positive_role
+    columns:
+      - {name: package_id, type: string, nullable: false}
+      - {name: pair_id, type: string, nullable: false}
+      - {name: endpoint_a_sha256, type: string, nullable: false}
+      - {name: endpoint_b_sha256, type: string, nullable: false}
+      - {name: source_membership, type: string, nullable: false}
+      - {name: hi_ii_14_supported, type: bool, nullable: false}
+      - {name: huri_supported, type: bool, nullable: false}
+      - {name: c1_hash_role, type: string, nullable: true}
+      - {name: primary_positive_role, type: string, nullable: false}
+      - {name: primary_quarantine_reason, type: string, nullable: true}
+      - {name: source_exclusive_hi_ii_14_role, type: string, nullable: false}
+      - {name: source_exclusive_huri_role, type: string, nullable: false}

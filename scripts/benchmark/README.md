@@ -43,6 +43,18 @@ lives under `src/ipin_openppi/benchmark/` and
   cell assignments, source-exclusive diagnostics, candidate algebra, sampling
   allocation, and degree/hub summaries.
 
+- `construct_pair_level_pu_r_benchmark_artifacts_v1.py` realizes the exact
+  `DEC-0024` positive and sampled-unlabeled rows authorized by `DEC-0025`, writes
+  only the public training layer, and encrypts development, protected
+  candidates, and protected truth under distinct keys.
+- `validate_pair_level_pu_r_benchmark_artifacts_v1.py` independently decrypts
+  and reconstructs the packages, positive/source roles, candidate populations,
+  bottom-hash thresholds, probabilities, weights, protected union, hashes, and
+  evidence-leakage checks.
+- `evaluate_pair_level_pu_r_benchmark_v1.py` implements the gated development
+  release and scorer-hash-before-candidate, prediction-hash-before-truth,
+  one-first protected evaluator procedure. Construction does not invoke it.
+
 All scientific execution must use the pinned project Apptainer image on
 Arrhenius. Smoke outputs must be written only to explicitly named
 `_smoke_*` directories and removed after qualification. Production reports are
@@ -98,3 +110,22 @@ apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
   containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
   python scripts/benchmark/validate_pair_level_pu_r_benchmark_protocol_v1.py
 ```
+
+
+After `DEC-0025`, qualify only in explicitly named `_smoke_*` roots. Then commit
+the implementation, construct production from that clean commit, commit the
+construction report, and independently validate from the resulting clean
+production-evidence commit:
+
+```bash
+apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
+  containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
+  python scripts/benchmark/construct_pair_level_pu_r_benchmark_artifacts_v1.py
+# Commit CONSTRUCTION_REPORT.json before validation.
+apptainer exec --cleanenv --containall --bind "$PWD":"$PWD" --pwd "$PWD" \
+  containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src \
+  python scripts/benchmark/validate_pair_level_pu_r_benchmark_artifacts_v1.py
+```
+
+Development release and protected scoring/evaluation remain separately gated;
+construction must not invoke `evaluate_pair_level_pu_r_benchmark_v1.py`.

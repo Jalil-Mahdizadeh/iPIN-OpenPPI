@@ -805,8 +805,8 @@
     "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
   },
   "README.md": {
-    "mtime": 1786206310.0,
-    "ast_hash": "f3ea7f9594b140e2c47cd40c09bcca0e",
+    "mtime": 1786215909.0,
+    "ast_hash": "dd027c9189c37e640471cdd75c9ae148",
     "semantic_hash": ""
   },
   "artifacts/validation/lambourne_y2h_audit_v1/attempts/attempt-001-validator-pre-fix/README.md": {
@@ -1045,9 +1045,9 @@
     "semantic_hash": "543dec3e0dce4d28a34d2750fc03fe4a"
   },
   "docs/reports/README.md": {
-    "mtime": 1785853104.0,
-    "ast_hash": "b5385b19e1c3f812c16d115d738ad269",
-    "semantic_hash": "b5385b19e1c3f812c16d115d738ad269"
+    "mtime": 1786215928.0,
+    "ast_hash": "f5f13695d8f495bf10529e1cd8f9fabc",
+    "semantic_hash": ""
   },
   "docs/reports/m0/M0_Container_Gate_Final_Report_v1.md": {
     "mtime": 1785761765.0,
@@ -1140,8 +1140,8 @@
     "semantic_hash": "6e8f50f4dc4b1715e7c430ff98076f28"
   },
   "governance/README.md": {
-    "mtime": 1786206310.0,
-    "ast_hash": "718112f3ca8c29e8e30bab4a377b26fe",
+    "mtime": 1786224601.0,
+    "ast_hash": "7f291dbf1d52920b6b4fe1af581e8a16",
     "semantic_hash": ""
   },
   "governance/START_MANIFEST_v1.yaml": {
@@ -1450,8 +1450,8 @@
     "semantic_hash": "a40aad663338166e3c536302b51ff71a"
   },
   "schemas/canonical/README.md": {
-    "mtime": 1786210204.0,
-    "ast_hash": "81ea2483fdda71e800b65a8b33dc3ae0",
+    "mtime": 1786222730.0,
+    "ast_hash": "bc10ca83dbfeff86fa624b43030fb285",
     "semantic_hash": ""
   },
   "schemas/canonical/lambourne_y2h_audit_v1.yaml": {
@@ -1500,8 +1500,8 @@
     "semantic_hash": "42aac734a976e48054be198357256366"
   },
   "scripts/benchmark/README.md": {
-    "mtime": 1786214520.0,
-    "ast_hash": "4d44670a4d2be3881b83778ec4e3a864",
+    "mtime": 1786224585.0,
+    "ast_hash": "5a357fa4bc71bcff3555404abc0992f3",
     "semantic_hash": ""
   },
   "scripts/data/RAW_VERIFICATION.md": {
@@ -2042,6 +2042,116 @@
   "artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_protocol_v1/AUDIT_REPORT.json": {
     "mtime": 1786214758.0,
     "ast_hash": "be61f0b3baaec16ea5ad9f0fcda1e027",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_protocol_v1_revision_2/AUDIT_REPORT.json": {
+    "mtime": 1786215522.0,
+    "ast_hash": "192540fafc2012e152d88d9db27b86be",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_protocol_v1_revision_2/VALIDATION_REPORT.json": {
+    "mtime": 1786215572.0,
+    "ast_hash": "04a74adb694d352ed0828054064ba234",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/construct_pair_level_pu_r_benchmark_artifacts_v1.py": {
+    "mtime": 1786220797.0,
+    "ast_hash": "60dbf84b9baa7eea3c2780548ffa53df",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/evaluate_pair_level_pu_r_benchmark_v1.py": {
+    "mtime": 1786221117.0,
+    "ast_hash": "2ce9ca2a501687575aeacf89d6269184",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/validate_pair_level_pu_r_benchmark_artifacts_v1.py": {
+    "mtime": 1786221539.0,
+    "ast_hash": "66e30e12a0f6b794a63692d0e67dcf8c",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/pair_artifacts/__init__.py": {
+    "mtime": 1786220325.0,
+    "ast_hash": "20aa2d88dfd9e2aebc436b32f187c79d",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/pair_artifacts/construction.py": {
+    "mtime": 1786222401.0,
+    "ast_hash": "2c2baa7998956a995d5d6f46952b6065",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/pair_artifacts/evaluator.py": {
+    "mtime": 1786223863.0,
+    "ast_hash": "fd62855f567281f24914d78ba699c0ce",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/pair_artifacts/support.py": {
+    "mtime": 1786223863.0,
+    "ast_hash": "a5bfa3f6943ab3c416678cb41d284e33",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/validation/pair_artifacts.py": {
+    "mtime": 1786222458.0,
+    "ast_hash": "d60f65b2c2cca0d30392c85c4cafff9e",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_pair_artifacts_safety.py": {
+    "mtime": 1786223834.0,
+    "ast_hash": "f3b61c2e1c6e102fac3b8f4b71039eca",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_pair_artifacts_semantics.py": {
+    "mtime": 1786223731.0,
+    "ast_hash": "611c15fdc8a954dde4fc082225a5b3ed",
+    "semantic_hash": ""
+  },
+  "configs/pair_level_pu_r_benchmark_artifacts_v1.yaml": {
+    "mtime": 1786223623.0,
+    "ast_hash": "fa3ddcb9e272b070242591d213a12333",
+    "semantic_hash": ""
+  },
+  "docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md": {
+    "mtime": 1786215785.0,
+    "ast_hash": "ad9217f9a61771151dc0132f8d6039da",
+    "semantic_hash": ""
+  },
+  "docs/reports/m0/PROTECTED_TEST_EVALUATION_PROCEDURE_v1.md": {
+    "mtime": 1786224543.0,
+    "ast_hash": "7933227bf9d3d17b406cf21553bf2688",
+    "semantic_hash": ""
+  },
+  "governance/PROJECT_STATUS_v23.md": {
+    "mtime": 1786215785.0,
+    "ast_hash": "d5d1c7f2c57f45034aeb4e738f536519",
+    "semantic_hash": ""
+  },
+  "governance/PROJECT_STATUS_v24.md": {
+    "mtime": 1786220065.0,
+    "ast_hash": "9400e1cf30f06c10d341135ab7f82f9a",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0024-accept-pair-level-pu-r-benchmark-protocol.md": {
+    "mtime": 1786215785.0,
+    "ast_hash": "e9e3d8b60ccef7058c598fe5ce312f69",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0025-authorize-pair-level-pu-r-benchmark-artifact-construction.md": {
+    "mtime": 1786219736.0,
+    "ast_hash": "1e368d60e52683cdfc8edbc5453048a2",
+    "semantic_hash": ""
+  },
+  "governance/gates/gate_status_v23.yaml": {
+    "mtime": 1786215785.0,
+    "ast_hash": "bdec2540bad3f0638c897eb9052be47b",
+    "semantic_hash": ""
+  },
+  "governance/gates/gate_status_v24.yaml": {
+    "mtime": 1786219927.0,
+    "ast_hash": "050b4e084cb7110944cf75492ae8667f",
+    "semantic_hash": ""
+  },
+  "schemas/canonical/pair_level_pu_r_benchmark_artifacts_v1.yaml": {
+    "mtime": 1786221230.0,
+    "ast_hash": "115d24fdf78acc81ad163e190b1837b6",
     "semantic_hash": ""
   }
 }

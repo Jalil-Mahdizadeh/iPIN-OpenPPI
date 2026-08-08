@@ -7,6 +7,9 @@ __pycache__/
 .coverage
 htmlcov/
 
+# Evaluator-only key escrow and other local secrets
+.private/
+
 # Editors and operating-system files
 .DS_Store
 *.swp
