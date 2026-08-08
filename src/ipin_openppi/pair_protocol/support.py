@@ -178,12 +178,30 @@ def validate_config(config: Mapping[str, Any]) -> None:
     if (
         holdouts["source_exclusive"].get("status")
         != "supported_with_cellwise_minimum_size_demotion"
+        or holdouts["source_exclusive"].get("canonical_cell_id")
+        != "source_exclusive:{target_source}:{primary_cell}"
+        or holdouts["source_exclusive"].get("sampling_cap")
+        != "inherit_underlying_primary_cell_cap"
         or holdouts["study"].get("status") != "inactive_not_independently_identified"
         or holdouts["assay_version_or_batch"].get("status") != "inactive_missing"
         or holdouts["temporal"].get("status")
         != "inactive_not_supported_as_independent_pair_time_holdout"
     ):
         raise RuntimeError("Unsupported metadata holdout was activated")
+
+    baselines = config["later_simple_baselines"]
+    random_baseline = baselines["baselines"]["deterministic_hash_random"]
+    component_baseline = baselines["baselines"]["component_degree_mass_product"]
+    if (
+        baselines.get("implementation_status") != "not_authorized"
+        or random_baseline.get("public_salt") != "ipin-openppi-pu-r-baseline-v1"
+        or str(random_baseline.get("deterministic_seed")) != "20260803"
+        or random_baseline.get("hash_payload")
+        != "{public_salt}:{deterministic_seed}:baseline:{pair_id}"
+        or component_baseline.get("component_degree_mass")
+        != "sum_of_training_positive_degree_over_all_endpoints_in_frozen_component"
+    ):
+        raise RuntimeError("Future simple baseline definitions are incomplete or changed")
 
     criteria = config["acceptance_criteria"]
     if (

@@ -7344,7 +7344,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "lambourne_audit/semantics.py"
     },
     {
@@ -7357,7 +7357,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_outcomesemantics",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "outcomesemantics"
     },
     {
@@ -7369,7 +7369,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_outcomesemantics_observation_state",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": ".observation_state()"
     },
     {
@@ -7381,7 +7381,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_outcomesemantics_governance_fields",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": ".governance_fields()"
     },
     {
@@ -7393,7 +7393,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_classify_paper_outcome",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "classify_paper_outcome()"
     },
     {
@@ -7404,7 +7404,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_py_any",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "any"
     },
     {
@@ -7416,7 +7416,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_raw_readout_to_reported_outcome",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "raw_readout_to_reported_outcome()"
     },
     {
@@ -7427,7 +7427,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_unordered_text_pair",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "unordered_text_pair()"
     },
@@ -7440,7 +7440,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_summarize_final_analysis",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "summarize_final_analysis()"
     },
     {
@@ -7452,7 +7452,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_benchmark_claim_identifiability",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "benchmark_claim_identifiability()"
     },
     {
@@ -7463,7 +7463,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_rationale_1",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "pure semantic rules for the lambourne y2h-v1 audit. these functions..."
     },
     {
@@ -7474,7 +7474,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_rationale_73",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "map the five reported states to assay-bounded semantics, fail closed."
     },
     {
@@ -7485,7 +7485,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_rationale_86",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "reproduce the archived raw-readout crosswalk without collapsing na states."
     },
     {
@@ -7496,7 +7496,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_rationale_137",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "independently count the final zhang subset and preserve all five outcomes."
     },
     {
@@ -7507,7 +7507,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_semantics_rationale_166",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "frozen claim boundary used by both the pipeline and independent validator."
     },
     {
@@ -7517,7 +7517,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "lambourne_audit/source.py"
     },
@@ -7529,7 +7529,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_boolish",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "_boolish()"
     },
@@ -7540,7 +7540,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_py_any",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "any"
     },
@@ -7552,7 +7552,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_orf",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "_orf()"
     },
@@ -7564,7 +7564,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_raw_text",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "_raw_text()"
     },
@@ -7576,7 +7576,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_parse_selection_records",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "parse_selection_records()"
     },
@@ -7588,7 +7588,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_parse_raw_assay_records",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "parse_raw_assay_records()"
     },
@@ -7600,7 +7600,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_parse_paper_records",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "parse_paper_records()"
     },
@@ -7611,7 +7611,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_py_path",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "path"
     },
@@ -7623,7 +7623,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_parse_orf_accession_map",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "parse_orf_accession_map()"
     },
@@ -7635,7 +7635,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_assay_metadata_row",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "assay_metadata_row()"
     },
@@ -7646,7 +7646,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_source_rationale_1",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "strict parsing and cross-source reconciliation for lambourne source tables."
     },
@@ -9134,7 +9134,7 @@
       "label": "resolve_and_verify_documents()",
       "file_type": "code",
       "source_file": "src/ipin_openppi/pair_protocol/support.py",
-      "source_location": "L216",
+      "source_location": "L234",
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_support_resolve_and_verify_documents",
@@ -13846,7 +13846,7 @@
       "label": "build_argument_parser()",
       "file_type": "code",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L964",
+      "source_location": "L971",
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_pair_protocol_build_argument_parser",
@@ -13869,7 +13869,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L977",
+      "source_location": "L984",
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_pair_protocol_main",
@@ -17039,7 +17039,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_semantics",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "test_lambourne_semantics.py"
     },
     {
@@ -17050,7 +17050,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_semantics_py_parametrize",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "parametrize"
     },
     {
@@ -17062,7 +17062,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_semantics_test_raw_readout_crosswalk_preserves_technical_states",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "test_raw_readout_crosswalk_preserves_technical_states()"
     },
     {
@@ -17074,7 +17074,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_semantics_test_negative_is_assay_bounded_and_never_authorized_as_label",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "test_negative_is_assay_bounded_and_never_authorized_as_label()"
     },
     {
@@ -17086,7 +17086,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_semantics_test_technical_state_is_not_negative",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "test_technical_state_is_not_negative()"
     },
     {
@@ -17098,7 +17098,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_semantics_test_final_summary_keeps_positive_negative_and_na_separate",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "test_final_summary_keeps_positive_negative_and_na_separate()"
     },
     {
@@ -17110,7 +17110,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_semantics_test_claim_boundary_rejects_universal_and_biological_probability_claims",
       "community": 135,
-      "community_name": "lambourne_audit/source.py",
+      "community_name": "lambourne_audit/semantics.py",
       "norm_label": "test_claim_boundary_rejects_universal_and_biological_probability_claims()"
     },
     {
@@ -17120,7 +17120,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_source",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "test_lambourne_source.py"
     },
@@ -17132,7 +17132,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_source_test_selection_parser_preserves_orientation_and_forbidden_flags",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "test_selection_parser_preserves_orientation_and_forbidden_flags()"
     },
@@ -17144,7 +17144,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_source_test_raw_parser_does_not_collapse_failed_sequence_confirmation",
-      "community": 135,
+      "community": 159,
       "community_name": "lambourne_audit/source.py",
       "norm_label": "test_raw_parser_does_not_collapse_failed_sequence_confirmation()"
     },
@@ -17408,7 +17408,7 @@
       "label": "test_protocol_does_not_authorize_pair_or_sample_outputs()",
       "file_type": "code",
       "source_file": "tests/unit/test_pair_protocol_safety.py",
-      "source_location": "L46",
+      "source_location": "L52",
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_safety_test_protocol_does_not_authorize_pair_or_sample_outputs",
@@ -37029,7 +37029,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L979",
+      "source_location": "L986",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol_main",
@@ -46048,7 +46048,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L938",
+      "source_location": "L945",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol_validate_protocol",
@@ -55382,7 +55382,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/pair_protocol/support.py",
-      "source_location": "L216",
+      "source_location": "L234",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_pair_protocol_support",
@@ -55560,7 +55560,7 @@
       "context": "generic_arg",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/pair_protocol/support.py",
-      "source_location": "L216",
+      "source_location": "L234",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_pair_protocol_support_resolve_and_verify_documents",
@@ -55572,7 +55572,7 @@
       "context": "generic_arg",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/pair_protocol/support.py",
-      "source_location": "L216",
+      "source_location": "L234",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_pair_protocol_support_resolve_and_verify_documents",
@@ -55584,7 +55584,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/pair_protocol/support.py",
-      "source_location": "L243",
+      "source_location": "L261",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_pair_protocol_support_resolve_and_verify_documents",
@@ -55596,7 +55596,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/pair_protocol/support.py",
-      "source_location": "L240",
+      "source_location": "L258",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_pair_protocol_support_resolve_and_verify_documents",
@@ -61937,7 +61937,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L987",
+      "source_location": "L994",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol_main",
@@ -68448,7 +68448,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L964",
+      "source_location": "L971",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol",
@@ -68569,7 +68569,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L977",
+      "source_location": "L984",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol",
@@ -68846,7 +68846,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L942",
+      "source_location": "L949",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol_validate_protocol",
@@ -68858,7 +68858,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L934",
+      "source_location": "L941",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol_validate_protocol",
@@ -69086,7 +69086,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L969",
+      "source_location": "L976",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol_build_argument_parser",
@@ -69218,7 +69218,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L994",
+      "source_location": "L1001",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol_main",
@@ -69230,7 +69230,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L964",
+      "source_location": "L971",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol_build_argument_parser",
@@ -69242,7 +69242,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L978",
+      "source_location": "L985",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol_main",
@@ -69254,7 +69254,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/validation/pair_protocol.py",
-      "source_location": "L1000",
+      "source_location": "L1007",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_validation_pair_protocol_main",
@@ -77530,7 +77530,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/unit/test_pair_protocol_safety.py",
-      "source_location": "L46",
+      "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_unit_test_pair_protocol_safety",
@@ -83701,5 +83701,5 @@
       "source_file": "docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.pdf"
     }
   ],
-  "built_at_commit": "8c5014f838162b418e55a26803cbc89aca377ecf"
+  "built_at_commit": "c472f97085de021c05549bbfc9ba75e9aa05def6"
 }

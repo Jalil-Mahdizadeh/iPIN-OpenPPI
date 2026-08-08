@@ -388,12 +388,16 @@ later_simple_baselines:
   shared_inputs: training_positive_graph_only
   baselines:
     deterministic_hash_random:
-      score: normalized_SHA256_of_pair_id_and_frozen_baseline_salt
+      public_salt: ipin-openppi-pu-r-baseline-v1
+      deterministic_seed: "20260803"
+      hash_payload: "{public_salt}:{deterministic_seed}:baseline:{pair_id}"
+      score: unsigned_full_SHA256_digest_integer_divided_by_2_pow_256_minus_1
     endpoint_degree_sum:
       score: "log1p(d_train_a) + log1p(d_train_b)"
     preferential_attachment:
       score: "log1p(d_train_a * d_train_b)"
     component_degree_mass_product:
+      component_degree_mass: sum_of_training_positive_degree_over_all_endpoints_in_frozen_component
       score: "log1p(D_component_a * D_component_b)"
   heldout_endpoint_degree: 0
   heldout_labels_or_full_graph_degree_used: false
@@ -404,9 +408,13 @@ auxiliary_holdouts:
     status: supported_with_cellwise_minimum_size_demotion
     sources: [HI-II-14, HuRI]
     target_positive: pair_supported_only_by_target_source
+    canonical_cell_id: "source_exclusive:{target_source}:{primary_cell}"
     training_positive_visibility: non_target_source_evidence_only
+    training_exposure: recomputed_from_non_target_source_training_role_positive_pairs_only
     both_source_pair: excluded_from_target_positive_and_excluded_from_unlabeled_by_visible_non_target_evidence
     target_only_pair_removed_from_candidate_by_target_label: false
+    candidate_universe: underlying_cell_geometry_with_visible_non_target_source_positive_pairs_excluded_and_target_only_pairs_retained_as_evaluation_positives
+    sampling_cap: inherit_underlying_primary_cell_cap
     model_selection_use: development_cells_only_if_all_primary_floors_pass
     claim: transfer_of_released_positive_recovery_between_named_sources_only
   study:

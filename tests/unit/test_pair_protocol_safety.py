@@ -23,6 +23,12 @@ def test_protocol_config_freezes_scope_cutoffs_assignment_and_claims() -> None:
         "inactive_missing"
     )
     assert config["claim_policy"]["prevalence_claim"] == "prohibited"
+    assert config["later_simple_baselines"]["baselines"][
+        "deterministic_hash_random"
+    ]["public_salt"] == "ipin-openppi-pu-r-baseline-v1"
+    assert config["auxiliary_holdouts"]["source_exclusive"]["canonical_cell_id"] == (
+        "source_exclusive:{target_source}:{primary_cell}"
+    )
 
     unsafe = deepcopy(config)
     unsafe["authorization"]["model_evaluation"] = True

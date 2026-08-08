@@ -1,16 +1,16 @@
 # Graph Report - iPIN-OpenPPI  (2026-08-08)
 
 ## Corpus Check
-- 327 files · ~298,726 words
+- 328 files · ~302,516 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2028 nodes · 5058 edges · 159 communities (103 shown, 56 thin omitted)
+- 2028 nodes · 5058 edges · 160 communities (104 shown, 56 thin omitted)
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 208 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8c5014f8`
+- Built from commit: `c472f970`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -149,7 +149,7 @@
 - iPIN-OpenPPI project status and execution checkpoint
 - Q: explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work.
 - Q: what is the exact next step?
-- lambourne_audit/source.py
+- lambourne_audit/semantics.py
 - huri.py
 - scan_tar_gzip_archive
 - pipeline_v4.py
@@ -173,6 +173,7 @@
 - Q: Starting from accepted DEC-0022, freeze the pair-level PU-R benchmark protocol before any model work.
 - test_pipeline_v4_safety.py
 - lambourne_audit/__init__.py
+- lambourne_audit/source.py
 
 ## God Nodes (most connected - your core abstractions)
 1. `sha256_file()` - 97 edges
@@ -206,7 +207,7 @@
 - **Conditional Non-detection Governance** — governance_source_surveys_public_experimental_nondetection_survey_v1_nondetection_survey, governance_risks_risk_register_risk_register, schemas_canonical_negative_evidence_audit_v1_negative_evidence_audit_schema, schemas_warehouse_evidence_warehouse_v1_evidence_warehouse_schema [INFERRED 0.85]
 - **Version 3 Blueprint Provenance** — docs_blueprints_ipin_openppi_final_computational_blueprint_and_workflow_v3_final_computational_blueprint_v3, docs_blueprints_ipin_openppi_expert_project_blueprint_v2_professional_expert_project_blueprint_v2, docs_blueprints_ipin_openppi_independent_technical_review_independent_technical_review, docs_blueprints_ipin_openppi_response_to_independent_review_technical_response_to_independent_review, docs_blueprints_ipin_openppi_expert_comments_on_review_response_expert_group_comments [EXTRACTED 1.00]
 
-## Communities (159 total, 56 thin omitted)
+## Communities (160 total, 56 thin omitted)
 
 ### Community 0 - "component_split/pipeline.py"
 Cohesion: 0.09
@@ -528,9 +529,9 @@ Nodes (4): Answer, Outcome, Q: explore this repo deeply and fully understand it 
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: what is the exact next step?, Source Nodes
 
-### Community 135 - "lambourne_audit/source.py"
-Cohesion: 0.10
-Nodes (31): benchmark_claim_identifiability(), classify_paper_outcome(), OutcomeSemantics, Any, Pure semantic rules for the Lambourne Y2H-v1 audit. These functions…, Independently count the final Zhang subset and preserve all five outcomes., Frozen claim boundary used by both the pipeline and independent validator., Map the five reported states to assay-bounded semantics, fail closed. (+23 more)
+### Community 135 - "lambourne_audit/semantics.py"
+Cohesion: 0.13
+Nodes (17): benchmark_claim_identifiability(), classify_paper_outcome(), OutcomeSemantics, Any, Pure semantic rules for the Lambourne Y2H-v1 audit. These functions…, Independently count the final Zhang subset and preserve all five outcomes., Frozen claim boundary used by both the pipeline and independent validator., Map the five reported states to assay-bounded semantics, fail closed. (+9 more)
 
 ### Community 136 - "huri.py"
 Cohesion: 0.23
@@ -616,6 +617,10 @@ Nodes (4): Answer, Outcome, Q: Starting from accepted DEC-0020, construct and fr
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: Starting from accepted DEC-0022, freeze the pair-level PU-R benchmark protocol before any model work., Source Nodes
 
+### Community 159 - "lambourne_audit/source.py"
+Cohesion: 0.27
+Nodes (14): unordered_text_pair(), assay_metadata_row(), _boolish(), _orf(), parse_orf_accession_map(), parse_paper_records(), parse_raw_assay_records(), parse_selection_records() (+6 more)
+
 ## Knowledge Gaps
 - **313 isolated node(s):** `ipin-openppi`, `project_paths.sh script`, `IPIN_APPTAINER_CACHE`, `IPIN_APPTAINER_TMP`, `IPIN_RUNTIME_CACHE` (+308 more)
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -631,7 +636,7 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `sha256_file()` connect `sha256_file` to `component_split/pipeline.py`, `tf_isoform_audit/pipeline.py`, `negative_evidence/pipeline.py`, `reconciliation/pipeline.py`, `negative_evidence.py`, `benchmark/systematic_screen_audit.py`, `validation/systematic_screen_audit.py`, `_write_report`, `tf_isoform.py`, `lambourne.py`, `lambourne_audit/pipeline.py`, `git_provenance`, `pair_protocol/pipeline.py`, `ParquetBatchWriter`, `component_split.py`, `pre_split_feasibility.py`, `ArrowQueryDatasetWriter`, `evidence.py`, `reconciliation.py`, `staging.py`, `pair_protocol.py`, `sequence_component_audit/pipeline.py`, `pre_split_audit/pipeline.py`, `common.py`, `ingestion/pipeline.py`, `sequence_components.py`, `run_audit`?**
   _High betweenness centrality (0.046) - this node is a cross-community bridge._
-- **Why does `stable_id()` connect `stable_id` to `intact.py`, `negative_evidence/pipeline.py`, `tf_isoform_audit/pipeline.py`, `sequence_component_audit/semantics.py`, `lambourne_audit/source.py`, `huri.py`, `sequence_component_audit/pipeline.py`, `ValueError`, `common.py`, `lambourne_audit/pipeline.py`, `pre_split_audit/pipeline.py`, `ParquetBatchWriter`, `evidence.py`, `sequence_components.py`, `sifts.py`?**
+- **Why does `stable_id()` connect `stable_id` to `lambourne_audit/source.py`, `intact.py`, `negative_evidence/pipeline.py`, `tf_isoform_audit/pipeline.py`, `sequence_component_audit/semantics.py`, `huri.py`, `sequence_component_audit/pipeline.py`, `ValueError`, `common.py`, `lambourne_audit/pipeline.py`, `pre_split_audit/pipeline.py`, `ParquetBatchWriter`, `evidence.py`, `sequence_components.py`, `sifts.py`?**
   _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **Why does `require_apptainer()` connect `sha256_file` to `component_split/pipeline.py`, `tf_isoform_audit/pipeline.py`, `negative_evidence/pipeline.py`, `reconciliation/pipeline.py`, `negative_evidence.py`, `benchmark/systematic_screen_audit.py`, `validation/systematic_screen_audit.py`, `tf_isoform.py`, `lambourne.py`, `lambourne_audit/pipeline.py`, `git_provenance`, `pair_protocol/pipeline.py`, `component_split.py`, `pre_split_feasibility.py`, `reconciliation.py`, `staging.py`, `pair_protocol.py`, `sequence_component_audit/pipeline.py`, `pre_split_audit/pipeline.py`, `common.py`, `ingestion/pipeline.py`, `sequence_components.py`, `run_audit`?**
   _High betweenness centrality (0.023) - this node is a cross-community bridge._

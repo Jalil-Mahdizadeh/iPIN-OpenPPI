@@ -898,15 +898,22 @@ def validate_protocol(
         {"protected_test": "sealed_one_shot"},
     )
     checks.add(
-        "metric_and_uncertainty_freeze",
+        "metric_uncertainty_baseline_and_source_cell_freeze",
         config["metrics"]["primary"]["heldout_positive_recall_at_k"]["k"]
         == [10, 100, 1000]
         and config["uncertainty"]["replicates"] == 2000
         and config["uncertainty"]["method"]
-        == "two_endpoint_component_pigeonhole_bootstrap",
+        == "two_endpoint_component_pigeonhole_bootstrap"
+        and config["later_simple_baselines"]["baselines"][
+            "deterministic_hash_random"
+        ]["public_salt"]
+        == "ipin-openppi-pu-r-baseline-v1"
+        and config["auxiliary_holdouts"]["source_exclusive"]["canonical_cell_id"]
+        == "source_exclusive:{target_source}:{primary_cell}",
         {
             "recall_k": [10, 100, 1000],
             "bootstrap_replicates": 2000,
+            "baseline_salt": "ipin-openppi-pu-r-baseline-v1",
         },
     )
     checks.add(
