@@ -176,14 +176,15 @@
     {
       "check_id": "provenance.production_commit_and_clean_worktree",
       "expected": {
-        "commits_equal": true,
-        "production_clean": true
+        "production_clean": true,
+        "production_commits_equal": true
       },
       "observed": {
         "canonical_commit": "3ea96166eab2c3600a290ee8109410a7d040b153",
-        "current_commit": "3ea96166eab2c3600a290ee8109410a7d040b153",
         "production_clean": true,
-        "run_commit": "3ea96166eab2c3600a290ee8109410a7d040b153"
+        "production_commits_equal": true,
+        "run_commit": "3ea96166eab2c3600a290ee8109410a7d040b153",
+        "validator_commit": "d0ed03735ce6adb0566c39c4396ad08b669f20c4"
       },
       "status": "pass"
     },
@@ -656,5 +657,10 @@
     "upstream_commit": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f",
     "version_stdout": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f"
   },
-  "validated_at_utc": "2026-08-08T09:47:11.140789+00:00"
+  "validated_at_utc": "2026-08-08T09:58:01.969768+00:00",
+  "validator_git": {
+    "commit": "d0ed03735ce6adb0566c39c4396ad08b669f20c4",
+    "status": "",
+    "tracked_worktree_clean": true
+  }
 }

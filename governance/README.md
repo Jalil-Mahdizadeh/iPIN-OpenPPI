@@ -11,7 +11,10 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
-The current authoritative ledger is `gates/gate_status_v16.yaml`. The current
-restart record is `PROJECT_STATUS_v16.md`. `DEC-0017` technically accepts the
-TF-isoform audit and the quarantine disposition proposed in `DEC-0016`; the
-panel remains external-only with no benchmark or model role.
+The current authoritative ledger is `gates/gate_status_v17.yaml`. The current
+restart record is `PROJECT_STATUS_v17.md`. `DEC-0017` technically accepts the
+TF-isoform audit and its external-only quarantine. `DEC-0018` technically
+accepts the independently validated benchmark-eligibility and
+sequence-component audit. The primary PU-R design remains binding, no
+candidate-pair or label construction occurred, and no downstream work package
+is authorized.

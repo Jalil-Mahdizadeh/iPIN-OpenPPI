@@ -14,11 +14,17 @@ are technically accepted by [DEC-0017](governance/decisions/DEC-0017-accept-tf-i
 Both external panels remain quarantined from the primary design. In particular,
 the TF-isoform panel is external-only and is unsuitable for training negatives,
 universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family
-benchmarking. Label, split, candidate-pair, and model construction remain
-prohibited. The previously authorized eligibility and sequence-component audit
-is resumed only within its bounded preconstruction scope. The current restart
-record is [project status version 16](governance/PROJECT_STATUS_v16.md), and the
-authoritative ledger is [gate status version 16](governance/gates/gate_status_v16.yaml).
+benchmarking.
+
+The bounded eligibility and sequence-component audit is complete, independently
+validated, and technically accepted by [DEC-0018](governance/decisions/DEC-0018-accept-benchmark-eligibility-and-sequence-component-audit.md).
+Its [final report](docs/reports/m0/M0_Benchmark_Eligibility_and_Sequence_Component_Audit_Final_v1.md)
+freezes 17,000 eligible sequence endpoints and deterministic 40%/30%/20%
+component inventories without materializing candidate pairs or constructing
+labels or splits. The project has returned to governance; all downstream
+benchmark and model work remains prohibited. The current restart record is
+[project status version 17](governance/PROJECT_STATUS_v17.md), and the
+authoritative ledger is [gate status version 17](governance/gates/gate_status_v17.yaml).
 
 The binding scientific specification is [the Version 3 final blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md). All production computation must run on NAISS Arrhenius through immutable ARM64 Apptainer SIF images.
 
@@ -51,13 +57,14 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
 7. Preserve assay, construct, orientation, selection, evaluability, and outcome semantics.
 8. Describe untested predictions as computational hypotheses, never validated interactions.
 
-## Next execution sequence
+## Current governance hold
 
 1. Preserve the completed external-panel audits and their immutable evidence;
    do not reopen, recompute, or extend them.
-2. Execute only the authorized benchmark-eligibility and sequence-component
-   audit from its unstarted checkpoint, preserving the primary PU-R design.
-3. Validate the bounded audit independently and return to governance before
-   constructing candidates, labels, splits, structures, or models.
+2. Preserve the completed benchmark-eligibility and sequence-component audit,
+   its immutable manifests, and the primary PU-R design.
+3. Do not construct candidate pairs, labels, C1/C2/C3 assignments, splits,
+   structures, or models unless a new governance decision explicitly authorizes
+   a bounded next work package.
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.
