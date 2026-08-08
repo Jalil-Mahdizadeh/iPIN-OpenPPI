@@ -14,6 +14,7 @@ CONFIG = Path("configs/pair_level_pu_r_benchmark_protocol_v1.yaml")
 def test_protocol_config_freezes_scope_cutoffs_assignment_and_claims() -> None:
     config = load_yaml(CONFIG)
     validate_config(config)
+    assert config["configuration_revision"] == 2
     assert config["information_cutoffs"]["partition"]["hard_rule"] == "local_domain_union_30"
     assert config["pair_assignment"]["C2"]["exclusive_of_C3"] is True
     assert config["unlabeled_sampling"]["realization_status"] == (

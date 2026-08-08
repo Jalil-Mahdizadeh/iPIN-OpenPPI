@@ -1,5 +1,5 @@
 schema_version: 1
-configuration_revision: 1
+configuration_revision: 2
 protocol_id: pair_level_pu_r_benchmark_protocol_v1
 task: model_free_pair_level_positive_unlabeled_ranking_protocol_freeze
 status: authorized_not_executed
@@ -515,6 +515,6 @@ runtime:
   duckdb_memory_limit: 64GB
 
 outputs:
-  audit_report: artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_protocol_v1/AUDIT_REPORT.json
-  validation_report: artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_protocol_v1/VALIDATION_REPORT.json
+  audit_report: artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_protocol_v1_revision_2/AUDIT_REPORT.json
+  validation_report: artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_protocol_v1_revision_2/VALIDATION_REPORT.json
   pair_or_candidate_rows: prohibited

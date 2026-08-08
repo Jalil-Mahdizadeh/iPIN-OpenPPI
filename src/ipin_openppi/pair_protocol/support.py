@@ -19,6 +19,7 @@ from .semantics import DEGREE_BINS, PRIMARY_CELLS
 def validate_config(config: Mapping[str, Any]) -> None:
     if (
         config.get("protocol_id") != "pair_level_pu_r_benchmark_protocol_v1"
+        or int(config.get("configuration_revision", 0)) != 2
         or config.get("task")
         != "model_free_pair_level_positive_unlabeled_ranking_protocol_freeze"
         or config.get("status") != "authorized_not_executed"
