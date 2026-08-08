@@ -25,12 +25,23 @@ labels or splits.
 
 [DEC-0020](governance/decisions/DEC-0020-accept-pre-split-feasibility-and-leakage-stress-test.md)
 accepts the independently validated aggregate pre-split feasibility and
-leakage stress-test. Final split construction is scientifically feasible in
-principle under the recorded leakage boundaries but remains unauthorized.
-Candidate-pair, label, C1/C2/C3, split, structure, and model construction
-remain prohibited. The current restart record is
-[project status version 19](governance/PROJECT_STATUS_v19.md), and the
-authoritative ledger is [gate status version 19](governance/gates/gate_status_v19.yaml).
+leakage stress-test and its fail-closed homology and claim boundaries.
+
+[DEC-0022](governance/decisions/DEC-0022-accept-final-benchmark-component-split.md)
+accepts and freezes the 17,000-endpoint, 7,782-component
+11,900/2,550/2,550 training/development/test skeleton under 30%
+local_domain_union.
+
+[DEC-0024](governance/decisions/DEC-0024-accept-pair-level-pu-r-benchmark-protocol.md)
+accepts and freezes the independently validated pair-level PU-R protocol before
+model work. Its [final report](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md)
+defines evidence visibility, exact C1/C2/C3 withholding, deterministic
+unlabeled sampling, PU-retrieval metrics, clustered uncertainty, supported
+named-source diagnostics, and inactive unsupported holdouts. No pair rows or
+sample were created, and all model work remains unauthorized. The current
+restart record is [project status version 23](governance/PROJECT_STATUS_v23.md),
+and the authoritative ledger is
+[gate status version 23](governance/gates/gate_status_v23.yaml).
 
 The binding scientific specification is [the Version 3 final blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md). All production computation must run on NAISS Arrhenius through immutable ARM64 Apptainer SIF images.
 
@@ -67,13 +78,13 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
 
 1. Preserve the completed external-panel audits and their immutable evidence;
    do not reopen, recompute, or extend them.
-2. Preserve the completed benchmark-eligibility and sequence-component audit,
-   its immutable manifests, and the primary PU-R design.
-3. Preserve the accepted pre-split feasibility and leakage audit and its
-   finding that the frozen 30% graph is not sufficient as the sole future
-   leakage guard.
-4. Do not construct candidate pairs, labels, C1/C2/C3 assignments, splits,
-   structures, or models unless a new numbered decision authorizes a bounded
-   package incorporating the `DEC-0020` leakage and claim limits.
+2. Preserve the accepted eligibility/component and pre-split leakage audits,
+   their immutable manifests, and the primary PU-R design.
+3. Preserve the immutable `DEC-0022` endpoint/component split.
+4. Preserve the `DEC-0024` information, pair-assignment, sampling, metric,
+   uncertainty, holdout, and claim rules.
+5. Do not persist benchmark pair rows, realize an unlabeled sample, construct
+   negatives or pseudo-negatives, integrate panels or structures, or perform
+   model work unless a new numbered decision authorizes that bounded package.
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.

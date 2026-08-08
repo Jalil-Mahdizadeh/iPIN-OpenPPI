@@ -1,0 +1,429 @@
+{
+  "audit_report": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/pair_level_pu_r_benchmark_protocol_v1_revision_2/AUDIT_REPORT.json",
+  "audit_report_sha256": "b226a83fa31a78aa97cc6172adb65b386f0181b86ab2c7cb0939cf6dd4ea9d66",
+  "authorizations": {
+    "external_panel_used": false,
+    "frozen_split_modified": false,
+    "model_work": false,
+    "negative_or_pseudo_negative_constructed": false,
+    "pair_or_candidate_rows": false,
+    "protocol_technical_validation_passed": true,
+    "return_to_governance_required": true,
+    "structural_mapping": false,
+    "unlabeled_sample_realized": false
+  },
+  "check_counts": {
+    "fail": 0,
+    "pass": 18,
+    "warning": 0
+  },
+  "checks": [
+    {
+      "check": "audit_identity_status_and_hash",
+      "detail": {
+        "audit_sha256": "b226a83fa31a78aa97cc6172adb65b386f0181b86ab2c7cb0939cf6dd4ea9d66",
+        "audit_status": "complete"
+      },
+      "status": "pass"
+    },
+    {
+      "check": "independent_endpoint_component_integrity",
+      "detail": {
+        "components": 7782,
+        "endpoints": 17000
+      },
+      "status": "pass"
+    },
+    {
+      "check": "independent_partition_counts",
+      "detail": {
+        "components": {
+          "development": 1071,
+          "test": 1284,
+          "train": 5427
+        },
+        "endpoints": {
+          "development": 2550,
+          "test": 2550,
+          "train": 11900
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check": "independent_positive_union_and_sources",
+      "detail": {
+        "pairs": 58049
+      },
+      "status": "pass"
+    },
+    {
+      "check": "independent_c1_hash_and_training_exposure",
+      "detail": {
+        "exposed_endpoints": 4675,
+        "train_train_pairs": 23823,
+        "training_positive_pairs": 16799
+      },
+      "status": "pass"
+    },
+    {
+      "check": "independent_pair_role_disjointness",
+      "detail": {
+        "evaluation_pairs": 35863,
+        "training_evaluation_overlap": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check": "independent_primary_cell_counts",
+      "detail": {
+        "C1_development": {
+          "HI-II-14": 619,
+          "HuRI": 2892,
+          "components": 1378,
+          "pairs": 3259
+        },
+        "C1_test": {
+          "HI-II-14": 570,
+          "HuRI": 2854,
+          "components": 1348,
+          "pairs": 3187
+        },
+        "C2_development": {
+          "HI-II-14": 2702,
+          "HuRI": 9583,
+          "components": 2125,
+          "pairs": 11327
+        },
+        "C2_test": {
+          "HI-II-14": 2739,
+          "HuRI": 11822,
+          "components": 2436,
+          "pairs": 13446
+        },
+        "C3_development": {
+          "HI-II-14": 588,
+          "HuRI": 1953,
+          "components": 353,
+          "pairs": 2265
+        },
+        "C3_test": {
+          "HI-II-14": 510,
+          "HuRI": 2110,
+          "components": 505,
+          "pairs": 2379
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check": "audit_primary_cells_match_independent",
+      "detail": {
+        "cells": 6
+      },
+      "status": "pass"
+    },
+    {
+      "check": "audit_quarantine_matches_independent",
+      "detail": {
+        "C1_development_failed_exposure": 282,
+        "C1_test_failed_exposure": 296,
+        "C2_development_failed_train_exposure": 472,
+        "C2_test_failed_train_exposure": 688,
+        "development_test_cross_partition": 3649
+      },
+      "status": "pass"
+    },
+    {
+      "check": "independent_candidate_algebra_and_sampling",
+      "detail": {
+        "C1_development": {
+          "sample": 1000000,
+          "unlabeled": 10902230
+        },
+        "C1_test": {
+          "sample": 1000000,
+          "unlabeled": 10902230
+        },
+        "C2_development": {
+          "sample": 1000000,
+          "unlabeled": 11909923
+        },
+        "C2_test": {
+          "sample": 1000000,
+          "unlabeled": 11907804
+        },
+        "C3_development": {
+          "sample": 1000000,
+          "unlabeled": 3247710
+        },
+        "C3_test": {
+          "sample": 1000000,
+          "unlabeled": 3247596
+        },
+        "training": {
+          "sample": 2000000,
+          "unlabeled": 10902230
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check": "independent_evidence_field_completeness",
+      "detail": {
+        "HI-II-14": {
+          "assay_batch_nonnull": 0,
+          "assay_version_nonnull": 0,
+          "distinct_publication_groups": 1,
+          "rows": 49389
+        },
+        "HuRI": {
+          "assay_batch_nonnull": 0,
+          "assay_version_nonnull": 0,
+          "distinct_publication_groups": 1,
+          "rows": 171545
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check": "unsupported_study_assay_temporal_axes_inactive",
+      "detail": {
+        "assay": "inactive_missing",
+        "study": "inactive_not_independently_identified",
+        "temporal": "inactive_not_supported_as_independent_pair_time_holdout"
+      },
+      "status": "pass"
+    },
+    {
+      "check": "independent_strict_source_holdouts",
+      "detail": {
+        "HI-II-14": {
+          "C1_development": 305,
+          "C1_test": 280,
+          "C2_development": 1601,
+          "C2_test": 1488,
+          "C3_development": 312,
+          "C3_test": 269
+        },
+        "HuRI": {
+          "C1_development": 611,
+          "C1_test": 633,
+          "C2_development": 4751,
+          "C2_test": 5270,
+          "C3_development": 1677,
+          "C3_test": 1869
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check": "independent_degree_hub_stratification",
+      "detail": {
+        "degree_sum": 33598,
+        "maximum_degree": 279
+      },
+      "status": "pass"
+    },
+    {
+      "check": "protected_test_visibility_and_one_shot_rule",
+      "detail": {
+        "protected_test": "sealed_one_shot"
+      },
+      "status": "pass"
+    },
+    {
+      "check": "metric_uncertainty_baseline_and_source_cell_freeze",
+      "detail": {
+        "baseline_salt": "ipin-openppi-pu-r-baseline-v1",
+        "bootstrap_replicates": 2000,
+        "recall_k": [
+          10,
+          100,
+          1000
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check": "scope_and_claim_prohibitions",
+      "detail": {
+        "candidate_rows_emitted": false,
+        "external_panel_input_used": false,
+        "frozen_split_modified": false,
+        "model_work_performed": false,
+        "negative_label_constructed": false,
+        "pair_rows_emitted": false,
+        "prevalence_or_calibration_computed": false,
+        "pseudo_negative_constructed": false,
+        "return_to_governance_required": true,
+        "structural_mapping_performed": false,
+        "unlabeled_sample_realized": false
+      },
+      "status": "pass"
+    },
+    {
+      "check": "production_audit_internal_checks",
+      "detail": {
+        "fail": 0,
+        "pass": 16,
+        "warning": 0
+      },
+      "status": "pass"
+    }
+  ],
+  "completed_at_utc": "2026-08-08T18:59:32.864467+00:00",
+  "config": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/pair_level_pu_r_benchmark_protocol_v1.yaml",
+  "config_sha256": "7b0cefa1b461f0e58d3e6f4ff72da2d6ad4ac39522a897ce4057e756fa84f2a6",
+  "interpretation": "The validator independently reconstructs the frozen positive union with SQL, reimplements the pair hash, C1/C2/C3 exposure rules, source-exclusive holdouts, candidate algebra, Hamilton sampling probabilities, degree/hub summaries, and metadata completeness. It emits no pair rows or sample.",
+  "production_git": {
+    "commit": "8ee0ae58b365c68ffb5732c9995803d24e5fe6fa",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "protocol_id": "pair_level_pu_r_benchmark_protocol_v1",
+  "schema_version": 1,
+  "status": "pass",
+  "validator_git": {
+    "commit": "d32a26508eb9438cb693ae1ae3cf48f5324a37f7",
+    "status": "",
+    "tracked_worktree_clean": true
+  },
+  "verified_inputs": {
+    "documents": {
+      "accepted_estimand_policy": {
+        "bytes": 1923,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/benchmark_estimand_policy_v1.yaml",
+        "sha256": "3340b6b9e4130d8011b43ccf92556d59f9278a89a05b08b4c6581ec8b311164d"
+      },
+      "acquisition_manifest": {
+        "bytes": 33989,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/source_manifests/acquisitions/primary-raw-v1-20260803T135432Z/ACQUISITION_MANIFEST.json",
+        "sha256": "5750fe08eac343e23c0f0c56cf749c7477cbfd92233f2679de5fedf9d8f22231"
+      },
+      "active_gate": {
+        "bytes": 5411,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/gates/gate_status_v22.yaml",
+        "sha256": "8b01986fbb973122137bbfea251b3092265f6a223785e8919f77b91b9ace8a5b"
+      },
+      "active_status": {
+        "bytes": 2745,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/PROJECT_STATUS_v22.md",
+        "sha256": "96ab07c03e7aa05d1bdac1dec5daf40312109ea6ca53d649895309b21487015b"
+      },
+      "authorization_decision": {
+        "bytes": 5441,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/decisions/DEC-0023-authorize-pair-level-pu-r-benchmark-protocol-freeze.md",
+        "sha256": "49800af09d13c430cfb5420bc9da7954ad3e39437b23042872e2537ae81c2177"
+      },
+      "eligibility_manifest": {
+        "bytes": 23664,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/AUDIT_MANIFEST.json",
+        "sha256": "1a7769fa550ac7eef9acd40da72c8f5247c0c81cb1bb77a913e185d090d83f96"
+      },
+      "evidence_schema": {
+        "bytes": 22656,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/schemas/warehouse/evidence_warehouse_v1.yaml",
+        "sha256": "122bf34af6d7e47528f5d6ab40e1c6e17a1dc4aa917d360789a4dee1d0910bbd"
+      },
+      "frozen_split_config": {
+        "bytes": 12634,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/final_benchmark_component_split_v1.yaml",
+        "sha256": "b8dac7c7de5fc3935a5bf642afe12b2b5e7e5b40fa9883d1dc04962bfed25ecf"
+      },
+      "frozen_split_manifest": {
+        "bytes": 45221,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/final_benchmark_component_split_v1/SPLIT_MANIFEST.json",
+        "sha256": "81800ec810d83a53d83e36dca277a425e4a8fd1f7f50009916da73e14021351a"
+      },
+      "incorporated_estimand_proposal": {
+        "bytes": 19232,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/configs/benchmark_estimand_policy_proposal_v1.yaml",
+        "sha256": "b5a7aff3615fa15a612d916e6ea9c46eba65756dfd239c8236a94c450d948a78"
+      },
+      "parent_acceptance_decision": {
+        "bytes": 4712,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/governance/decisions/DEC-0022-accept-final-benchmark-component-split.md",
+        "sha256": "29aedd8bc0e3c47f2cab457a13d1d33a2cdca6f0c0e50a24884cff2ab7e67d33"
+      },
+      "parse_manifest": {
+        "bytes": 223738,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/staging/primary_sources_v1/PARSE_MANIFEST.json",
+        "sha256": "ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa"
+      },
+      "reconciliation_manifest": {
+        "bytes": 26286,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json",
+        "sha256": "6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932"
+      },
+      "systematic_screen_audit_report": {
+        "bytes": 39807,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/systematic_screen_metadata_v1/AUDIT_REPORT.json",
+        "sha256": "db75b0cb2863cc1b44e45759e924bfc4b00d379fa291873e7e3e10e99748fc5e"
+      },
+      "systematic_screen_validation_report": {
+        "bytes": 84626,
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/benchmark_design/systematic_screen_metadata_v1/VALIDATION_REPORT.json",
+        "sha256": "2ca92051172b7a7a512072f3ed6212ac8caed5891870abcea7c6e5929cd56a01"
+      }
+    },
+    "tables": {
+      "component_partition_assignments": {
+        "bytes": 449396,
+        "parts": 1,
+        "rows": 7782,
+        "schema_name": "ipin_openppi_final_benchmark_component_split",
+        "schema_sha256": "e18c999753640c7d3b15bdaee60636d329b94ae3876cfaffc2290b7f1536ed30",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "component_partition_assignments"
+      },
+      "eligible_reference_sequences": {
+        "bytes": 6178533,
+        "parts": 1,
+        "rows": 17000,
+        "schema_name": "ipin_openppi_benchmark_eligibility_and_sequence_component_audit",
+        "schema_sha256": "60698389ee17e5c9d2cf8a586fbe92af9ef331120d01785f13b071759749a481",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "eligible_reference_sequences"
+      },
+      "endpoint_partition_assignments": {
+        "bytes": 851035,
+        "parts": 1,
+        "rows": 17000,
+        "schema_name": "ipin_openppi_final_benchmark_component_split",
+        "schema_sha256": "e18c999753640c7d3b15bdaee60636d329b94ae3876cfaffc2290b7f1536ed30",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "endpoint_partition_assignments"
+      },
+      "evidence_records": {
+        "bytes": 27037026,
+        "parts": 3,
+        "rows": 220934,
+        "table": "evidence_records"
+      },
+      "huri_evidence_gene_pair_projections": {
+        "bytes": 27025698,
+        "parts": 3,
+        "rows": 220934,
+        "schema_name": "ipin_openppi_primary_reconciliation",
+        "schema_sha256": "ae381c4e9dc94ebeb64f1ccb19f9ba2f3d86dfed5bff4fe8024625e38850fcf2",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "huri_evidence_gene_pair_projections"
+      },
+      "space_iii_gene_eligibility": {
+        "bytes": 2261157,
+        "parts": 1,
+        "rows": 17408,
+        "schema_name": "ipin_openppi_benchmark_eligibility_and_sequence_component_audit",
+        "schema_sha256": "60698389ee17e5c9d2cf8a586fbe92af9ef331120d01785f13b071759749a481",
+        "schema_version": 1,
+        "sha256_verification": "complete",
+        "table": "space_iii_gene_eligibility"
+      }
+    }
+  }
+}
