@@ -1,0 +1,243 @@
+schema_version: 1
+configuration_revision: 1
+audit_id: benchmark_eligibility_and_sequence_component_audit_v1
+task: frozen_space_iii_reference_sequence_eligibility_and_component_audit
+status: authorized_resumed_preconstruction_audit
+
+authorization:
+  primary_design: reference_sequence_positive_unlabeled_ranking
+  eligibility_audit: true
+  aggregate_positive_mapping_audit: true
+  sequence_component_construction: true
+  candidate_pair_materialization: false
+  evidence_indicator_construction: false
+  interaction_label_construction: false
+  negative_label_construction: false
+  pseudo_negative_sampling: false
+  c1_c2_c3_assignment: false
+  split_construction: false
+  structural_mapping: false
+  model_implementation: false
+  model_training: false
+  model_selection: false
+  prevalence_estimation: false
+  calibration: false
+  external_panel_input_use: false
+  return_to_governance_required: true
+
+inputs:
+  primary_staging_root: data/staging/primary_sources_v1
+  primary_parse_manifest: data/staging/primary_sources_v1/PARSE_MANIFEST.json
+  primary_parse_manifest_sha256: ca8380eec0cc1899823b43b109aa2ff9466aa44ba62a6856af76858c352960aa
+  primary_staging_validation_report: artifacts/validation/evidence_parsing/primary_sources_v1/VALIDATION_REPORT.json
+  primary_staging_validation_report_sha256: 375aadc78db8783bd338a1703e84395023f26b9517999ff8985168206df271ba
+  primary_reconciliation_root: data/canonical/primary_reconciliation_v1
+  primary_reconciliation_manifest: data/canonical/primary_reconciliation_v1/RECONCILIATION_MANIFEST.json
+  primary_reconciliation_manifest_sha256: 6408c6be771ac6a957e443d8c848b66789ca47230ae372b7ec3f3390ab7a6932
+  primary_reconciliation_validation_report: artifacts/validation/reconciliation/primary_reconciliation_v1/VALIDATION_REPORT.json
+  primary_reconciliation_validation_report_sha256: 9d00b08bccb3620672ea6621cf3cb90c67de6bb1328d62b560712d65e4fa14d2
+  benchmark_estimand_policy: configs/benchmark_estimand_policy_v1.yaml
+  benchmark_estimand_policy_sha256: 3340b6b9e4130d8011b43ccf92556d59f9278a89a05b08b4c6581ec8b311164d
+  accepted_blueprint_amendment: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_v1.md
+  accepted_blueprint_amendment_sha256: 0fb1cc3a02f6a526c195e12e0623f3c69c7513080c5a486be9ea41f71972c40a
+  incorporated_work_unit: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md
+  incorporated_work_unit_sha256: 0979e4ed953f1d85e6d11f4fd1469238c9eaee082e1a5d060717647d2bff7c13
+  authorization_decision: governance/decisions/DEC-0012-accept-negative-evidence-discovery-audit.md
+  authorization_decision_sha256: 7c7212c572c293e809caf4132470e683cd35e45f86b37441a62a8f7d258ba304
+  disposition_acceptance: governance/decisions/DEC-0017-accept-tf-isoform-y2h-disposition.md
+  disposition_acceptance_sha256: 178488341ed3eeeaef4ab68904f4f46e9654c20dcae14bddd5fdd3986966760c
+  resume_checkpoint: governance/checkpoints/RESUME-001-post-tf-isoform-audit.md
+  resume_checkpoint_sha256: 35542f8c30d84f1bcd5b9542e689b35c01c751c888e486f07799cab9f5ddf250
+  active_gate: governance/gates/gate_status_v16.yaml
+  active_gate_sha256: f766834f4190f7deddc059b62f42f618d9e7518bc77a3c1d8eeb8a7cfa5128e9
+  audit_schema: schemas/canonical/benchmark_eligibility_and_sequence_component_audit_v1.yaml
+  audit_schema_sha256: 60698389ee17e5c9d2cf8a586fbe92af9ef331120d01785f13b071759749a481
+
+source_tables:
+  huri_space_membership: huri/huri_space_membership
+  protein_sequences: uniprot/protein_sequences
+  identifier_mappings: uniprot/identifier_mappings
+  huri_evidence_gene_pair_projections: huri_evidence_gene_pair_projections
+
+eligibility_policy:
+  candidate_population: frozen_huri_space_iii
+  candidate_endpoint_unit: distinct_frozen_reference_sequence_sha256
+  frozen_human_taxid: 9606
+  frozen_uniprot_release: "2026_02"
+  space_membership_field: in_space_3
+  space_membership_required_value: true
+  identifier_database: Ensembl
+  identifier_version_policy: use_versionless_field
+  sequence_view: canonical
+  admit_exactly_one_distinct_sequence_hash: true
+  admit_sequence_equivalent_accessions: true
+  exclude_multiple_distinct_sequence_hashes: true
+  exclude_unmapped_genes: true
+  imputation_authorized: false
+  self_pairs_authorized: false
+  unordered_candidate_count_method: n_times_n_minus_one_divided_by_two
+  candidate_pair_rows_authorized: false
+  standard_amino_acids: ACDEFGHIKLMNPQRSTVWY
+  source_preserved_amino_acids: ACDEFGHIKLMNPQRSTUVWY
+  source_preserved_nonstandard_symbol: U
+
+sequence_components:
+  primary_identity_threshold_percent: 30
+  sensitivity_identity_thresholds_percent: [40, 20]
+  emitted_thresholds_percent: [40, 30, 20]
+  search_minimum_identity: 0.20
+  minimum_endpoint_coverage: 0.80
+  coverage_mode: both_query_and_target
+  identity_definition: identical_aligned_residues_divided_by_alignment_columns_including_gaps
+  algorithm: deterministic_connected_components_single_linkage
+  component_representative: lexicographically_smallest_sequence_sha256
+  component_id: stable_sha256_of_threshold_and_sorted_member_hashes
+  split_assignment_authorized: false
+  c1_c2_c3_assignment_authorized: false
+
+positive_mapping_policy:
+  source_datasets: [HI-II-14, HuRI]
+  aggregate_union_name: ALL
+  source_semantics: accepted_primary_direct_positive_evidence_observations
+  exclusion_precedence:
+    - unresolved_gene_projection
+    - outside_space_iii
+    - unmapped_endpoint
+    - ambiguous_endpoint
+    - same_reference_sequence
+    - eligible_distinct_reference_sequence_pair
+  pair_level_output_authorized: false
+  evidence_indicator_construction_authorized: false
+  minimum_later_held_out_positive_pairs: 500
+  minimum_later_independent_sequence_components: 50
+  current_assessment: aggregate_pre_split_necessary_conditions_only
+
+mmseqs2:
+  release: 18-8cc5c
+  upstream_commit: 8cc5ce367b5638c4306c2d7cfc652dd099a4643f
+  archive_url: https://github.com/soedinglab/MMseqs2/releases/download/18-8cc5c/mmseqs-linux-arm64.tar.gz
+  archive_path: artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs-linux-arm64.tar.gz
+  archive_bytes: 16935783
+  archive_sha256: 06c9a031331562e37eed3da79ef859d30a1a3ac5c5e334411dfaee5da5e9c0d0
+  binary_path: artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/bin/mmseqs
+  binary_bytes: 16025624
+  binary_sha256: d5f6d96578e3dbcd1d8772bb575b112e9dd1dbf077d150914962a2356ae0d75d
+  version_stdout: 8cc5ce367b5638c4306c2d7cfc652dd099a4643f
+  license_path: artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/LICENSE.md
+  license_sha256: adc3ea1f2f5096d2464460495e12a65a94f466edb9ccca50d1f25844ca83792a
+  createdb_parameters: [--shuffle, "0", --createdb-mode, "0"]
+  search_parameters:
+    - --threads
+    - "8"
+    - -s
+    - "7.5"
+    - --min-seq-id
+    - "0.20"
+    - -c
+    - "0.80"
+    - --cov-mode
+    - "0"
+    - --alignment-mode
+    - "3"
+    - --add-self-matches
+    - "1"
+    - --max-seqs
+    - "20000"
+    - --max-accept
+    - "20000"
+    - --max-rejected
+    - "20000"
+    - --min-ungapped-score
+    - "0"
+    - -e
+    - "1e100"
+    - --comp-bias-corr
+    - "1"
+    - --mask
+    - "1"
+    - --mask-lower-case
+    - "0"
+    - --spaced-kmer-mode
+    - "1"
+    - --db-load-mode
+    - "0"
+    - --compressed
+    - "0"
+    - --remove-tmp-files
+    - "1"
+  alignment_output_fields:
+    - query
+    - target
+    - mismatch
+    - alnlen
+    - qstart
+    - qend
+    - qlen
+    - tstart
+    - tend
+    - tlen
+    - evalue
+    - bits
+
+runtime:
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  architecture: aarch64
+  require_clean_git_for_production: true
+  verify_relevant_parquet_sha256: true
+  duckdb_threads: 8
+  duckdb_memory_limit: 64GB
+  parquet_batch_rows: 100000
+  parquet_compression: zstd
+  parquet_compression_level: 8
+
+expected_preflight:
+  huri_space_source_rows: 19818
+  space_iii_genes: 17408
+  frozen_human_canonical_sequence_rows: 20652
+  frozen_human_canonical_distinct_hashes: 20578
+  mapping_states:
+    unique_reference_sequence: 17121
+    sequence_equivalent_accessions: 51
+    ambiguous_multiple_sequences: 16
+    unmapped: 220
+  eligible_space_iii_genes: 17172
+  eligible_reference_sequences: 17000
+  eligible_uniprot_accessions: 17033
+  exact_unordered_candidate_count: 144491500
+  eligible_sequences_with_selenocysteine: 18
+  eligible_selenocysteine_residues: 19
+  positive_mapping:
+    ALL:
+      source_evidence_rows: 220934
+      eligible_reference_sequence_pair_evidence_rows: 212156
+      distinct_eligible_reference_sequence_pairs: 58049
+      unresolved_gene_projection_rows: 1206
+      outside_space_iii_rows: 130
+      unmapped_endpoint_rows: 2597
+      ambiguous_endpoint_rows: 1407
+      same_reference_sequence_rows: 3438
+    HI-II-14:
+      source_evidence_rows: 49389
+      eligible_reference_sequence_pair_evidence_rows: 45958
+      distinct_eligible_reference_sequence_pairs: 12353
+      unresolved_gene_projection_rows: 282
+      outside_space_iii_rows: 130
+      unmapped_endpoint_rows: 564
+      ambiguous_endpoint_rows: 681
+      same_reference_sequence_rows: 1774
+    HuRI:
+      source_evidence_rows: 171545
+      eligible_reference_sequence_pair_evidence_rows: 166198
+      distinct_eligible_reference_sequence_pairs: 50545
+      unresolved_gene_projection_rows: 924
+      outside_space_iii_rows: 0
+      unmapped_endpoint_rows: 2033
+      ambiguous_endpoint_rows: 726
+      same_reference_sequence_rows: 1664
+
+outputs:
+  run_root: artifacts/runs/benchmark_eligibility_and_sequence_component_audit_v1
+  canonical_root: data/canonical/benchmark_eligibility_and_sequence_component_audit_v1
+  audit_report: artifacts/validation/benchmark_design/benchmark_eligibility_and_sequence_component_audit_v1/AUDIT_REPORT.json
+  validation_report: artifacts/validation/benchmark_design/benchmark_eligibility_and_sequence_component_audit_v1/VALIDATION_REPORT.json

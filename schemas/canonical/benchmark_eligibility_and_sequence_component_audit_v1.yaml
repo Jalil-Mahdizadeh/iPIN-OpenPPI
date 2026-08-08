@@ -1,0 +1,241 @@
+schema_name: ipin_openppi_benchmark_eligibility_and_sequence_component_audit
+schema_version: 1
+description: >-
+  Preconstruction audit of Space III reference-sequence eligibility and
+  deterministic sequence components. It contains no candidate-pair universe,
+  interaction labels, pseudo-negatives, C1/C2/C3 assignments, or splits.
+
+enums:
+  mapping_state:
+    - unique_reference_sequence
+    - sequence_equivalent_accessions
+    - ambiguous_multiple_sequences
+    - unmapped
+  exclusion_reason: [none, ambiguous_multiple_sequences, unmapped]
+  source_dataset: [ALL, HI-II-14, HuRI]
+  identity_threshold_percent: [20, 30, 40]
+
+tables:
+  space_iii_gene_eligibility:
+    description: One row per frozen Space III gene with all canonical-sequence candidates and a fail-closed eligibility state.
+    primary_key: [eligibility_record_id]
+    required_non_null:
+      - eligibility_record_id
+      - ensembl_gene_id
+      - space_record_id
+      - in_space_iii
+      - mapping_state
+      - candidate_uniprot_accessions
+      - candidate_sequence_sha256s
+      - candidate_accession_count
+      - candidate_sequence_hash_count
+      - eligibility_usable
+      - exclusion_reason
+      - frozen_uniprot_release
+      - source_raw_file_path
+      - source_raw_locator
+      - candidate_pair_materialized
+      - evidence_indicator_constructed
+      - negative_label_constructed
+      - split_assignment_constructed
+      - model_use_authorized
+      - missingness_json
+    enum_columns:
+      mapping_state: mapping_state
+      exclusion_reason: exclusion_reason
+    columns:
+      - {name: eligibility_record_id, type: string, nullable: false}
+      - {name: ensembl_gene_id, type: string, nullable: false}
+      - {name: space_record_id, type: string, nullable: false}
+      - {name: in_space_iii, type: bool, nullable: false}
+      - {name: mapping_state, type: string, nullable: false}
+      - {name: candidate_uniprot_accessions, type: "list<string>", nullable: false}
+      - {name: candidate_sequence_sha256s, type: "list<string>", nullable: false}
+      - {name: candidate_accession_count, type: int32, nullable: false}
+      - {name: candidate_sequence_hash_count, type: int32, nullable: false}
+      - {name: selected_sequence_sha256, type: string, nullable: true}
+      - {name: selected_sequence_length, type: int64, nullable: true}
+      - {name: eligibility_usable, type: bool, nullable: false}
+      - {name: exclusion_reason, type: string, nullable: false}
+      - {name: frozen_uniprot_release, type: string, nullable: false}
+      - {name: source_raw_file_path, type: string, nullable: false}
+      - {name: source_raw_locator, type: string, nullable: false}
+      - {name: candidate_pair_materialized, type: bool, nullable: false}
+      - {name: evidence_indicator_constructed, type: bool, nullable: false}
+      - {name: negative_label_constructed, type: bool, nullable: false}
+      - {name: split_assignment_constructed, type: bool, nullable: false}
+      - {name: model_use_authorized, type: bool, nullable: false}
+      - {name: missingness_json, type: string, nullable: false}
+
+  eligible_reference_sequences:
+    description: One row per distinct eligible frozen reference-sequence hash; the biological candidate endpoint unit.
+    primary_key: [reference_sequence_sha256]
+    required_non_null:
+      - reference_sequence_sha256
+      - sequence_length
+      - sequence
+      - representative_uniprot_accession
+      - uniprot_accessions
+      - protein_sequence_ids
+      - space_iii_gene_ids
+      - accession_count
+      - gene_count
+      - contains_selenocysteine
+      - nonstandard_residue_symbols
+      - frozen_uniprot_release
+      - source_raw_file_paths
+      - source_raw_file_sha256s
+      - candidate_pair_materialized
+      - evidence_indicator_constructed
+      - negative_label_constructed
+      - split_assignment_constructed
+      - model_use_authorized
+    columns:
+      - {name: reference_sequence_sha256, type: string, nullable: false}
+      - {name: sequence_length, type: int64, nullable: false}
+      - {name: sequence, type: string, nullable: false}
+      - {name: representative_uniprot_accession, type: string, nullable: false}
+      - {name: uniprot_accessions, type: "list<string>", nullable: false}
+      - {name: protein_sequence_ids, type: "list<string>", nullable: false}
+      - {name: space_iii_gene_ids, type: "list<string>", nullable: false}
+      - {name: accession_count, type: int32, nullable: false}
+      - {name: gene_count, type: int32, nullable: false}
+      - {name: contains_selenocysteine, type: bool, nullable: false}
+      - {name: nonstandard_residue_symbols, type: "list<string>", nullable: false}
+      - {name: frozen_uniprot_release, type: string, nullable: false}
+      - {name: source_raw_file_paths, type: "list<string>", nullable: false}
+      - {name: source_raw_file_sha256s, type: "list<string>", nullable: false}
+      - {name: candidate_pair_materialized, type: bool, nullable: false}
+      - {name: evidence_indicator_constructed, type: bool, nullable: false}
+      - {name: negative_label_constructed, type: bool, nullable: false}
+      - {name: split_assignment_constructed, type: bool, nullable: false}
+      - {name: model_use_authorized, type: bool, nullable: false}
+
+  sequence_component_assignments:
+    description: Per-sequence deterministic connected-component membership at each governed identity threshold; not a split assignment.
+    primary_key: [assignment_id]
+    required_non_null:
+      - assignment_id
+      - identity_threshold_percent
+      - reference_sequence_sha256
+      - component_id
+      - component_representative_sha256
+      - component_size
+      - component_member_rank
+      - minimum_endpoint_coverage
+      - component_algorithm
+      - mmseqs_release
+      - mmseqs_binary_sha256
+      - candidate_pair_materialized
+      - evidence_indicator_constructed
+      - negative_label_constructed
+      - split_assignment_constructed
+      - model_use_authorized
+    enum_columns:
+      identity_threshold_percent: identity_threshold_percent
+    columns:
+      - {name: assignment_id, type: string, nullable: false}
+      - {name: identity_threshold_percent, type: int32, nullable: false}
+      - {name: reference_sequence_sha256, type: string, nullable: false}
+      - {name: component_id, type: string, nullable: false}
+      - {name: component_representative_sha256, type: string, nullable: false}
+      - {name: component_size, type: int32, nullable: false}
+      - {name: component_member_rank, type: int32, nullable: false}
+      - {name: minimum_endpoint_coverage, type: float64, nullable: false}
+      - {name: component_algorithm, type: string, nullable: false}
+      - {name: mmseqs_release, type: string, nullable: false}
+      - {name: mmseqs_binary_sha256, type: string, nullable: false}
+      - {name: candidate_pair_materialized, type: bool, nullable: false}
+      - {name: evidence_indicator_constructed, type: bool, nullable: false}
+      - {name: negative_label_constructed, type: bool, nullable: false}
+      - {name: split_assignment_constructed, type: bool, nullable: false}
+      - {name: model_use_authorized, type: bool, nullable: false}
+
+  positive_mapping_aggregates:
+    description: Aggregate mapping coverage of accepted HuRI-family positive evidence; no pair row or evidence indicator is emitted.
+    primary_key: [aggregate_id]
+    required_non_null:
+      - aggregate_id
+      - source_dataset
+      - source_evidence_rows
+      - resolved_unique_gene_pair_rows
+      - eligible_reference_sequence_pair_evidence_rows
+      - distinct_eligible_reference_sequence_pairs
+      - unresolved_gene_projection_rows
+      - outside_space_iii_rows
+      - unmapped_endpoint_rows
+      - ambiguous_endpoint_rows
+      - same_reference_sequence_rows
+      - eligible_evidence_fraction
+      - pair_rows_emitted
+      - evidence_indicator_constructed
+      - interaction_label_constructed
+      - negative_label_constructed
+      - prevalence_estimated
+      - calibration_performed
+    enum_columns:
+      source_dataset: source_dataset
+    columns:
+      - {name: aggregate_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: source_evidence_rows, type: int64, nullable: false}
+      - {name: resolved_unique_gene_pair_rows, type: int64, nullable: false}
+      - {name: eligible_reference_sequence_pair_evidence_rows, type: int64, nullable: false}
+      - {name: distinct_eligible_reference_sequence_pairs, type: int64, nullable: false}
+      - {name: unresolved_gene_projection_rows, type: int64, nullable: false}
+      - {name: outside_space_iii_rows, type: int64, nullable: false}
+      - {name: unmapped_endpoint_rows, type: int64, nullable: false}
+      - {name: ambiguous_endpoint_rows, type: int64, nullable: false}
+      - {name: same_reference_sequence_rows, type: int64, nullable: false}
+      - {name: eligible_evidence_fraction, type: float64, nullable: false}
+      - {name: pair_rows_emitted, type: bool, nullable: false}
+      - {name: evidence_indicator_constructed, type: bool, nullable: false}
+      - {name: interaction_label_constructed, type: bool, nullable: false}
+      - {name: negative_label_constructed, type: bool, nullable: false}
+      - {name: prevalence_estimated, type: bool, nullable: false}
+      - {name: calibration_performed, type: bool, nullable: false}
+
+  positive_component_feasibility:
+    description: Aggregate pre-split feasibility bounds only; no held-out assignment or C1/C2/C3 class is constructed.
+    primary_key: [aggregate_id]
+    required_non_null:
+      - aggregate_id
+      - source_dataset
+      - identity_threshold_percent
+      - distinct_eligible_reference_sequence_pairs
+      - positive_endpoint_sequences
+      - positive_exposed_components
+      - within_component_pair_count
+      - cross_component_pair_count
+      - total_components
+      - singleton_components
+      - largest_component_size
+      - total_positive_pair_floor_500_met
+      - total_component_floor_50_met
+      - held_out_floor_assessed
+      - later_split_feasibility_determined
+      - pair_rows_emitted
+      - split_assignment_constructed
+      - c1_c2_c3_assignment_constructed
+    enum_columns:
+      source_dataset: source_dataset
+      identity_threshold_percent: identity_threshold_percent
+    columns:
+      - {name: aggregate_id, type: string, nullable: false}
+      - {name: source_dataset, type: string, nullable: false}
+      - {name: identity_threshold_percent, type: int32, nullable: false}
+      - {name: distinct_eligible_reference_sequence_pairs, type: int64, nullable: false}
+      - {name: positive_endpoint_sequences, type: int64, nullable: false}
+      - {name: positive_exposed_components, type: int64, nullable: false}
+      - {name: within_component_pair_count, type: int64, nullable: false}
+      - {name: cross_component_pair_count, type: int64, nullable: false}
+      - {name: total_components, type: int64, nullable: false}
+      - {name: singleton_components, type: int64, nullable: false}
+      - {name: largest_component_size, type: int64, nullable: false}
+      - {name: total_positive_pair_floor_500_met, type: bool, nullable: false}
+      - {name: total_component_floor_50_met, type: bool, nullable: false}
+      - {name: held_out_floor_assessed, type: bool, nullable: false}
+      - {name: later_split_feasibility_determined, type: bool, nullable: false}
+      - {name: pair_rows_emitted, type: bool, nullable: false}
+      - {name: split_assignment_constructed, type: bool, nullable: false}
+      - {name: c1_c2_c3_assignment_constructed, type: bool, nullable: false}
