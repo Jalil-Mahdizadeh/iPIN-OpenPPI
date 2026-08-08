@@ -1,0 +1,91 @@
+schema_version: 16
+supersedes: governance/gates/gate_status_v15.yaml
+updated_date: "2026-08-08"
+programme_state: tf_isoform_disposition_accepted_sequence_component_audit_resumed
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass
+    production_sif: containers/images/ipin-data-arm64_0.1.2.sif
+    production_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+    architecture: aarch64
+    continuing_condition: every_scientific_operation_runs_through_pinned_apptainer
+  evidence:
+    status: current_bounded_audits_complete_tf_disposition_accepted
+    accepted_prior_subgates:
+      raw_acquisition: governance/decisions/DEC-0007-accept-primary-raw-acquisition.md
+      source_parsing: governance/decisions/DEC-0008-accept-primary-evidence-staging.md
+      source_reconciliation: governance/decisions/DEC-0009-accept-primary-source-reconciliation.md
+      negative_evidence_discovery: governance/decisions/DEC-0012-accept-negative-evidence-discovery-audit.md
+    lambourne_2026_panel:
+      status: complete_validated_quarantined_no_integration
+      proposal: governance/decisions/DEC-0014-propose-lambourne-panel-disposition.md
+    tf_isoform_y2h_2025_subgate:
+      status: accepted_technically_complete_external_only_quarantined
+      authorization_decision: governance/decisions/DEC-0015-authorize-tf-isoform-y2h-audit.md
+      disposition_proposal: governance/decisions/DEC-0016-propose-tf-isoform-y2h-disposition.md
+      acceptance_decision: governance/decisions/DEC-0017-accept-tf-isoform-y2h-disposition.md
+      scientific_report: docs/reports/m0/M0_TF_Isoform_2025_Y2H_Semantics_and_Contamination_Audit_Final_v1.md
+      production_commit: 9de608ddc301d0af548d043c9fbd57b5c7e1b7f2
+      production_audit_sha256: 9235569bd40adc4114c0b1f4387e57fb4fcabc823a28a3509676607ef809a281
+      independent_validation_sha256: af9297e54203b7486a883eaa555d006dfac57da232f475f165395cf888f42327
+      independent_validation: {pass: 26, warning: 0, fail: 0}
+      external_only: true
+      training_negative_role_authorized: false
+      universal_nonbinding_interpretation_authorized: false
+      prevalence_role_authorized: false
+      calibration_role_authorized: false
+      unseen_endpoint_or_family_benchmark_authorized: false
+      audit_reopening_or_extension_authorized: false
+      merge_with_negatome_authorized: false
+      benchmark_construction_authorized: false
+      model_work_authorized: false
+    source_license_subgate:
+      status: pass_for_completed_bounded_audit
+      active_manifest_set: data/source_manifests/PREACQUISITION_INDEX_v6.yaml
+      active_policy: configs/source_policy_v4.yaml
+      license_register: governance/licenses/SOURCE_LICENSE_REGISTER_v7.md
+      zenodo_tf_isoform_assets: CC-BY-4.0
+      article_pdf: internal_audit_only_no_redistribution
+    benchmark_eligibility_and_sequence_component_audit:
+      status: authorized_resumed_not_yet_executed
+      prior_authorization: governance/gates/gate_status_v11.yaml
+      resume_checkpoint: governance/checkpoints/RESUME-001-post-tf-isoform-audit.md
+      authorization_scope_unchanged: true
+      primary_design: reference_sequence_positive_unlabeled_ranking
+      fail_closed: true
+    strict_construct_branch:
+      status: blocked
+      issue: governance/issues/ISSUE-0005-sifts-uniprot-release-alignment.md
+    label_construction_authorized: false
+    candidate_pair_materialization_authorized: false
+    structural_mapping_authorized: false
+    model_training_authorized: false
+  benchmark:
+    status: primary_policy_accepted_preconstruction_external_panels_quarantined
+    accepted_policy: configs/benchmark_estimand_policy_v1.yaml
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    output_is_probability: false
+    external_panel_integration_authorized: false
+    split_construction_authorized: false
+    model_implementation_authorized: false
+    model_training_authorized: false
+  statistical: {status: not_started}
+  routing: {status: not_started}
+  retrieval: {status: not_started}
+  uncertainty: {status: not_started}
+  computational_validation: {status: not_started}
+  release: {status: not_started}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_blank_unreported_or_technical_state_as_negative: true
+  merge_external_panels_with_negatome: true
+  external_panel_outcomes_as_training_labels: true
+  external_panel_outcomes_as_training_negatives: true
+  external_panel_prevalence_or_calibration_use: true
+  external_panel_unseen_endpoint_or_family_benchmarking: true
+  y2h_n2h_relabelling: true

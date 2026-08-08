@@ -11,6 +11,7 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
-The current authoritative ledger is `gates/gate_status_v13.yaml`. The current
-restart checkpoint is `PROJECT_STATUS_v13.md`, and the pending expert-group
-proposal is `decisions/DEC-0014-propose-lambourne-panel-disposition.md`.
+The current authoritative ledger is `gates/gate_status_v16.yaml`. The current
+restart record is `PROJECT_STATUS_v16.md`. `DEC-0017` technically accepts the
+TF-isoform audit and the quarantine disposition proposed in `DEC-0016`; the
+panel remains external-only with no benchmark or model role.
