@@ -1,0 +1,97 @@
+schema_version: 27
+supersedes: governance/gates/gate_status_v26.yaml
+updated_date: "2026-08-18"
+programme_state: model_governance_protocol_accepted_and_frozen_model_execution_not_authorized
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  container:
+    status: pass_for_governance_validation_only
+    validation_sif: containers/images/ipin-data-arm64_0.1.2.sif
+    validation_sif_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+    architecture: aarch64
+    model_runtime_sif_status: not_built_not_authorized
+  evidence:
+    status: immutable_pair_package_preserved
+    frozen_parent_acceptance: governance/decisions/DEC-0026-accept-pair-level-pu-r-benchmark-artifacts.md
+    frozen_endpoint_count: 17000
+    frozen_partition_endpoint_counts: {train: 11900, development: 2550, test: 2550}
+    frozen_hard_rule_components: 7782
+    public_training_positive_pairs: 16799
+    public_training_unlabeled_rows: 2000000
+    accepted_artifacts_may_be_modified: false
+  model_governance:
+    status: accepted_frozen
+    acceptance_decision: governance/decisions/DEC-0028-accept-model-governance-and-baseline-training-protocol.md
+    protocol: docs/protocols/MODEL_GOVERNANCE_AND_BASELINE_TRAINING_PROTOCOL_v1.md
+    configuration: configs/model_governance_and_baseline_training_protocol_v1.yaml
+    configuration_sha256: 3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5
+    production_audit_sha256: 62ca0deea443951925351edaf2b2f397b0490308193e9b2fdfd0759d9cda89b4
+    production_audit_checks: {pass: 24, warning: 0, fail: 0}
+    independent_validation_sha256: e5af1b7a30af7ed971a099f71c01518ba54ad9419fa63e5a0bc4ba4fa77a61ea
+    independent_validation_checks: {pass: 20, warning: 0, fail: 0}
+    frozen_plm_candidates: [esm2_150m, esm2_650m]
+    primary_objective: design_weighted_positive_vs_unlabeled_pairwise_logistic_ranking
+    primary_architecture: esm2_650m_partner_gated_primary
+    primary_metric: horvitz_thompson_positive_vs_U_pairwise_concordance
+  model_execution:
+    status: not_started_not_authorized
+    model_weight_or_tokenizer_acquisition_authorized: false
+    model_cache_population_authorized: false
+    model_runtime_container_build_authorized: false
+    baseline_or_model_implementation_authorized: false
+    embedding_or_feature_extraction_authorized: false
+    training_tuning_or_checkpointing_authorized: false
+    next_requirement: new_numbered_implementation_and_training_authorization
+  development:
+    status: encrypted_unreleased
+    release_or_access_authorized: false
+    prerequisite: independently_validated_complete_training_artifact_registry_hash_and_new_numbered_decision
+  protected_test:
+    status: encrypted_evaluator_only
+    candidate_or_truth_access_authorized: false
+    scoring_or_metric_authorized: false
+  benchmark:
+    status: pair_artifacts_frozen_unchanged
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    endpoint_component_split_frozen: true
+    pair_level_protocol_frozen: true
+    pair_level_benchmark_artifacts_frozen: true
+    additional_pair_or_sample_rows_authorized: false
+    negative_or_pseudo_negative_creation_authorized: false
+    full_candidate_pair_universe_materialization_authorized: false
+  statistical:
+    status: model_protocol_frozen_no_model_metric_computed
+  routing: {status: not_started_not_authorized}
+  retrieval: {status: not_started_not_authorized}
+  uncertainty: {status: frozen_protocol_not_executed}
+  computational_validation:
+    status: pass_for_static_model_protocol_only
+  release: {status: not_started_not_authorized}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_blank_unreported_or_technical_state_as_negative: true
+  accepted_pair_artifact_modification_extension_or_resampling: true
+  additional_pair_level_rows_or_unlabeled_sample_realization: true
+  development_release_or_access: true
+  public_protected_test_candidate_prediction_or_truth_identity: true
+  protected_candidate_or_truth_access: true
+  full_candidate_pair_universe_materialization: true
+  negative_label_construction: true
+  pseudo_negative_sampling: true
+  frozen_endpoint_component_split_or_leakage_graph_modification: true
+  external_panel_or_post_cutoff_evidence_integration: true
+  structural_residue_or_interface_label_work: true
+  model_weight_acquisition_or_cache_population: true
+  model_runtime_container_build: true
+  model_or_baseline_implementation: true
+  embedding_feature_training_tuning_checkpointing_scoring_or_evaluation: true
+  primary_pu_r_design_change: true
+  probability_prevalence_calibration_or_biological_precision_claim: true
+  unseen_family_plm_unseen_or_exhaustive_homology_claim: true
+
+next_authorized_work_package: null
+return_to_governance_required: true
