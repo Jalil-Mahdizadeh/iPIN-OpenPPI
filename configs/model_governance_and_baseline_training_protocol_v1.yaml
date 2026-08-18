@@ -1,0 +1,702 @@
+protocol_id: model_governance_and_baseline_training_protocol_v1
+configuration_revision: 1
+task: model_governance_and_baseline_training_protocol_design_only
+status: authorized_not_executed
+date_frozen: "2026-08-18"
+
+authority:
+  authorization_decision: governance/decisions/DEC-0027-authorize-model-governance-and-baseline-training-protocol-design.md
+  authorization_decision_sha256: f19229409315dcc243c76314e50d9e101b71b4ba478ddda6a8b4ddf1c635ad40
+  active_gate: governance/gates/gate_status_v26.yaml
+  active_gate_sha256: c901a3e35daf8d36a13e972fb9a5a8f3e5cf18129de0cda8f76350c443151696
+  active_status: governance/PROJECT_STATUS_v26.md
+  active_status_sha256: 927ecb7a8208cde3df01e4d71d36e1d57010f107c640ccdf4e0b84b69f4c3189
+  design_only: true
+  public_metadata_review: true
+  static_protocol_validation: true
+  model_weight_or_tokenizer_download: false
+  model_cache_population: false
+  model_runtime_container_build: false
+  embedding_extraction: false
+  baseline_or_model_implementation: false
+  model_training_or_checkpointing: false
+  development_release_or_access: false
+  protected_candidate_or_truth_access: false
+  external_panel_integration: false
+  structural_residue_or_interface_work: false
+  return_to_governance_required: true
+
+immutable_inputs:
+  resume_checkpoint:
+    path: governance/checkpoints/RESUME-002-post-pu-r-benchmark-freeze.md
+    sha256: fac4688090950ca643ebb1a905c19287d69a2fe799c30f440245395d9e7d9f57
+  parent_acceptance_decision:
+    path: governance/decisions/DEC-0026-accept-pair-level-pu-r-benchmark-artifacts.md
+    sha256: 1ebe76faeb2059fee648b217b355aa04186453cec192a4f6711838ddad535925
+  parent_gate:
+    path: governance/gates/gate_status_v25.yaml
+    sha256: 8371af1172ab10ae10b0cff28aa081fe7677166a58d90eb8554b00cc55861457
+  parent_status:
+    path: governance/PROJECT_STATUS_v25.md
+    sha256: 907e584ccb1221046c395878be1c1d56e08d962097d345ca2027d6c2cba0b892
+  accepted_pu_amendment:
+    path: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_v1.md
+    sha256: 0fb1cc3a02f6a526c195e12e0623f3c69c7513080c5a486be9ea41f71972c40a
+  incorporated_pu_proposal:
+    path: docs/blueprints/iPIN_OpenPPI_Blueprint_Amendment_001_PU_Compatibility_Primary_Design_PROPOSAL_v1.md
+    sha256: 0979e4ed953f1d85e6d11f4fd1469238c9eaee082e1a5d060717647d2bff7c13
+  accepted_estimand_policy:
+    path: configs/benchmark_estimand_policy_v1.yaml
+    sha256: 3340b6b9e4130d8011b43ccf92556d59f9278a89a05b08b4c6581ec8b311164d
+  pair_protocol:
+    path: configs/pair_level_pu_r_benchmark_protocol_v1.yaml
+    sha256: 7b0cefa1b461f0e58d3e6f4ff72da2d6ad4ac39522a897ce4057e756fa84f2a6
+  pair_artifact_config:
+    path: configs/pair_level_pu_r_benchmark_artifacts_v1.yaml
+    sha256: cdafad900887e74a6148cdb6d6832e56392649703c261909d5f581e39fd9e795
+  pair_package_manifest:
+    path: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/PACKAGE_MANIFEST.json
+    sha256: f0f850daf795481c8a1ae0ba64f6d050ae757f2738497ac0517003c6822015f5
+
+frozen_benchmark:
+  primary_design: reference_sequence_positive_unlabeled_ranking
+  output_semantics: symmetric_nonprobabilistic_compatibility_prioritization_score
+  pair_unit: unordered_pair_of_distinct_exact_frozen_reference_sequence_sha256
+  sequence_release: UniProt_2026_02
+  eligible_reference_sequences: 17000
+  candidate_space_status: algebraic_only_never_materialized
+  hard_partition_rule: local_domain_union_30
+  hard_rule_components: 7782
+  endpoint_counts: {training: 11900, development: 2550, protected_test: 2550}
+  public_training_positive_pairs: 16799
+  public_training_unlabeled_rows: 2000000
+  training_exposed_endpoints: 4675
+  training_degree_zero_endpoints: 7225
+  pair_state_vocabulary: [released_positive, unlabeled]
+  unlabeled_is_negative: false
+  negative_or_pseudo_negative_creation: prohibited
+  parent_semantics_modification: prohibited
+
+protected_boundary:
+  development_package: encrypted_unreleased
+  protected_candidates: encrypted_invisible_to_model_development
+  protected_truth: encrypted_invisible_to_model_development
+  private_key_access: prohibited
+  package_decryption_in_this_work_package: prohibited
+  candidate_identity_reconstruction_or_probing: prohibited
+  public_pair_keyed_predictions: prohibited
+  development_release_prerequisite: separately_numbered_decision_after_training_artifact_registry_sha256_freeze
+  protected_test_prerequisite: frozen_selected_scorer_and_predictions_plus_one_first_reservation
+  protected_test_use: evaluator_only_once_after_model_selection
+
+plm_provenance:
+  candidate_count: 2
+  family: ESM-2
+  provider: Meta_AI_at_Meta
+  architecture_source: https://github.com/facebookresearch/esm
+  architecture_source_status: archived_read_only_since_2024-08-01
+  architecture_license: MIT
+  architecture_license_url: https://github.com/facebookresearch/esm/blob/main/LICENSE
+  paper: https://www.science.org/doi/10.1126/science.ade2574
+  documented_pretraining_objective: masked_language_modeling
+  documented_corpus: UR50_D_dynamic_member_sampling_derived_from_UniRef50
+  documented_uniref_release: "2021_04"
+  corpus_evidence_url: https://github.com/facebookresearch/esm/discussions/667
+  exact_per_step_sequence_draw_log_available: false
+  exact_endpoint_membership_audit_completed: false
+  ppi_pair_supervision_documented_in_pretraining: false
+  exposure_disposition: exact_or_homologous_exposure_of_any_benchmark_endpoint_is_unknown_and_possible
+  shared_claim_limits:
+    sequence_only_pretraining_may_be_stated: true
+    exact_benchmark_endpoint_unseen: prohibited
+    homolog_or_family_unseen: prohibited
+    plm_unseen_protein: prohibited
+    c3_implies_plm_unseen: prohibited
+    temporal_cleanliness_from_plm_corpus: prohibited
+    no_pair_label_pretraining: not_established_beyond_provider_documentation
+    150m_vs_650m_difference_is_exposure_effect: prohibited
+    pretraining_exposure_caused_observed_gain_or_loss: prohibited
+  candidates:
+    esm2_150m:
+      role: mandatory_lightweight_frozen_plm_pair_baseline
+      repository: facebook/esm2_t30_150M_UR50D
+      repository_url: https://huggingface.co/facebook/esm2_t30_150M_UR50D
+      repository_revision: a695f6045e2e32885fa60af20c13cb35398ce30c
+      checkpoint_file: model.safetensors
+      checkpoint_sha256: c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566
+      checkpoint_bytes: 595257706
+      pickle_weights_permitted: false
+      trust_remote_code: false
+      license: MIT
+      layers: 30
+      parameters: 150000000
+      hidden_size: 640
+      attention_heads: 20
+      maximum_residues_per_window: 1022
+      final_representation_layer: 30
+    esm2_650m:
+      role: primary_frozen_sequence_encoder_candidate
+      repository: facebook/esm2_t33_650M_UR50D
+      repository_url: https://huggingface.co/facebook/esm2_t33_650M_UR50D
+      repository_revision: 08e4846e537177426273712802403f7ba8261b6c
+      checkpoint_file: model.safetensors
+      checkpoint_sha256: a08adabb949fa67ad3c14b509d04fd60368b35007b0095e3358f81200c4f4db0
+      checkpoint_bytes: 2609506392
+      pickle_weights_permitted: false
+      trust_remote_code: false
+      license: MIT
+      layers: 33
+      parameters: 650000000
+      hidden_size: 1280
+      attention_heads: 20
+      maximum_residues_per_window: 1022
+      final_representation_layer: 33
+
+future_model_runtime:
+  status: recipe_frozen_image_not_built_or_authorized
+  required_image_name: ipin-model-arm64_0.1.0.sif
+  qualified_parent_image: containers/images/ipin-qual-arm64_0.1.0.sif
+  qualified_parent_image_sha256: 9259e1953dadc502af8949fe56db1fba56f4e3711ccb7542e7feda94c4718ce5
+  base_oci_digest: sha256:ace9a848c0ae543317e3c4763b6b4248961c47902625abfe3c77a0fb931c50fb
+  architecture: aarch64
+  python: "3.12.3"
+  pytorch: "2.8.0a0+34c6371d24.nv25.08"
+  pytorch_cuda: "13.0"
+  cudnn: "9.12.0"
+  nccl: "2.27.7"
+  transformers: "4.55.2"
+  huggingface_hub: "0.34.4"
+  tokenizers: "0.21.4"
+  safetensors: "0.6.2"
+  numpy: "1.26.4"
+  pyarrow: "19.0.1"
+  scikit_learn: "1.6.1"
+  future_image_requirements:
+    - definition_and_resolved_dependency_lock
+    - sif_sha256_and_inspection_metadata
+    - cpu_import_and_aarch64_check
+    - one_gpu_fp32_and_bfloat16_embedding_fixture
+    - deterministic_embedding_repeat
+    - exact_checkpoint_restart_fixture
+    - no_network_training_mode
+    - separately_numbered_acceptance_before_scientific_use
+
+validation_runtime:
+  container: containers/images/ipin-data-arm64_0.1.2.sif
+  container_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  architecture: aarch64
+  purpose: static_protocol_audit_and_independent_validation_only
+  model_import_embedding_or_training: prohibited
+
+model_file_custody:
+  acquisition_status: not_authorized_not_present_by_this_protocol
+  future_cache_root: artifacts/cache/models/model_governance_and_baseline_training_protocol_v1
+  cache_must_resolve_inside_project: true
+  required_files:
+    - README.md
+    - config.json
+    - model.safetensors
+    - special_tokens_map.json
+    - tokenizer_config.json
+    - vocab.txt
+  future_acquisition_rules:
+    exact_repository_revision_required: true
+    symlinks_or_external_cache_links: prohibited
+    safetensors_only: true
+    per_file_bytes_and_sha256_manifest_required: true
+    model_weight_hash_must_match_config: true
+    tokenizer_and_config_hashes_frozen_before_embedding: true
+    local_files_only_after_acquisition: true
+    hf_hub_offline_after_acquisition: true
+    transformers_offline_after_acquisition: true
+    network_during_embedding_or_training: prohibited
+
+embedding_strategy:
+  status: frozen_not_executed
+  endpoint_population: all_17000_frozen_reference_sequences_label_blind
+  backbone_parameters_trainable: false
+  model_mode: eval
+  autograd: disabled
+  representation: final_hidden_state_residue_mean
+  special_tokens_in_pool: false
+  input_sequence: exact_uppercase_frozen_reference_sequence_no_truncation_or_replacement
+  tokenization: tokenizer_from_same_frozen_repository_revision
+  forward_dtype: float32
+  accumulation_dtype: float32
+  output_dtype: float32
+  windowing:
+    maximum_residues: 1022
+    overlap_residues: 128
+    stride_residues: 894
+    start_rule: ascending_0_plus_stride_then_append_length_minus_1022_if_not_already_present
+    short_sequence_rule: single_full_length_window
+    residue_overlap_rule: arithmetic_mean_of_all_window_representations_covering_each_residue
+    sequence_pool_rule: arithmetic_mean_of_the_overlap_averaged_representations_of_all_residues
+    empty_sequence: fail
+  deterministic_batching:
+    order: sequence_length_ascending_then_reference_sequence_sha256_ascending
+    maximum_residue_tokens_per_batch: 4096
+    oversize_window_rule: one_window_batch
+  normalization_for_trainable_heads:
+    population: 11900_training_partition_endpoint_embeddings_only
+    formula: per_dimension_z_score
+    standard_deviation_floor: 0.000001
+    heldout_endpoint_statistics_used: false
+  cache_root: artifacts/embeddings/model_governance_and_baseline_training_protocol_v1
+  cache_key: sha256_of_candidate_revision_checkpoint_hash_embedding_strategy_and_sequence_sha256
+  required_manifest_fields:
+    - sequence_sha256
+    - sequence_length
+    - candidate_id
+    - repository_revision
+    - checkpoint_sha256
+    - tokenizer_file_hashes
+    - strategy_id
+    - vector_dimension
+    - vector_dtype
+    - vector_sha256
+    - container_sha256
+    - code_commit
+  all_17000_embeddings_complete_unique_finite_before_training: true
+  duplicate_extraction_check_fraction: 0.01
+  duplicate_selection: bottom_sha256_by_candidate_id_and_sequence_sha256
+  duplicate_max_absolute_difference: 0.000001
+
+mandatory_baselines:
+  implementation_status: frozen_not_implemented
+  common_feature_boundary:
+    training_positive_graph_only: true
+    heldout_endpoint_training_degree: 0
+    heldout_or_full_graph_degree: prohibited
+    source_assay_publication_or_protected_metadata: prohibited
+    tuning_on_protected_test: prohibited
+  zero_parameter:
+    deterministic_hash_random:
+      public_salt: ipin-openppi-pu-r-baseline-v1
+      deterministic_seed: "20260803"
+      hash_payload: "{public_salt}:{deterministic_seed}:baseline:{pair_id}"
+      score: unsigned_full_SHA256_digest_integer_divided_by_2_pow_256_minus_1
+    endpoint_degree_sum:
+      score: "log1p(d_train_a) + log1p(d_train_b)"
+    preferential_attachment:
+      score: "log1p(d_train_a * d_train_b)"
+    component_degree_mass_product:
+      component_degree_mass: sum_of_training_positive_degree_over_all_endpoints_in_frozen_component
+      score: "log1p(D_component_a * D_component_b)"
+    training_graph_common_neighbors:
+      neighbor_graph: 16799_training_positive_pairs_only
+      score: "log1p(cardinality(N_train(a) intersect N_train(b)))"
+    sequence_length_sum:
+      score: "log1p(length_a) + log1p(length_b)"
+    sequence_length_ratio:
+      score: "-abs(log1p(length_a) - log1p(length_b))"
+    within_pair_3mer_cosine:
+      feature_alphabet: ACDEFGHIKLMNPQRSTVWYX
+      noncanonical_feature_mapping: X
+      k: 3
+      vector: l2_normalized_contiguous_3mer_raw_count
+      score: cosine(kmer3_a,kmer3_b)
+    training_interolog_3mer:
+      endpoint_similarity: cosine_of_l2_normalized_contiguous_3mer_raw_counts
+      training_reference_pairs: 16799_training_positive_pairs_only
+      score: "max_over_(u,v)_in_P_train max(min(sim(a,u),sim(b,v)),min(sim(a,v),sim(b,u)))"
+      approximate_nearest_neighbor_search: prohibited
+  trainable_frozen_plm:
+    lightweight_esm2_150m_linear:
+      candidate_id: esm2_150m
+      encoder_frozen: true
+      standardized_embedding_population: training_partition_only
+      symmetric_features:
+        - e_a_plus_e_b
+        - abs_e_a_minus_e_b
+        - e_a_hadamard_e_b
+        - cosine_e_a_e_b
+      head: one_affine_scalar_no_hidden_layer
+      objective: primary_design_weighted_pairwise_logistic
+      recipes: linear_recipes
+  strongest_simple_sequence_baseline_set:
+    - within_pair_3mer_cosine
+    - training_interolog_3mer
+    - lightweight_esm2_150m_linear
+    - esm2_650m_linear_ablation
+
+model_architectures:
+  implementation_status: frozen_not_implemented
+  exact_swap_symmetry_required: true
+  backbone_frozen_for_every_candidate: true
+  residue_level_features_or_outputs: prohibited
+  interface_or_structure_features: prohibited
+  full_finetuning_lora_or_adapters: prohibited
+  parameter_ceiling_excluding_frozen_encoder: 2000000
+  esm2_650m_linear_ablation:
+    purpose: isolate_backbone_scale_without_nonlinear_or_partner_conditioning
+    candidate_id: esm2_650m
+    symmetric_features:
+      - e_a_plus_e_b
+      - abs_e_a_minus_e_b
+      - e_a_hadamard_e_b
+      - cosine_e_a_e_b
+    head: one_affine_scalar_no_hidden_layer
+    recipes: linear_recipes
+  esm2_650m_nonlinear_no_gate_ablation:
+    purpose: isolate_nonlinear_pair_head_from_partner_gate
+    candidate_id: esm2_650m
+    shared_projection:
+      input_dimension: 1280
+      output_dimension: 256
+      activation: gelu_exact
+    partner_gate: absent
+    commutative_pair_features:
+      - projected_a_plus_projected_b
+      - abs_projected_a_minus_projected_b
+      - projected_a_hadamard_projected_b
+      - cosine_projected_a_projected_b
+    head:
+      hidden_dimension: 128
+      activation: gelu_exact
+      dropout_from_recipe: true
+      output: one_unbounded_scalar
+    recipes: nonlinear_recipes
+  esm2_650m_partner_gated_primary:
+    purpose: primary_simple_partner_conditioned_pooled_pair_model
+    candidate_id: esm2_650m
+    shared_projection:
+      input_dimension: 1280
+      output_dimension: 256
+      activation: gelu_exact
+    partner_gate:
+      formula_a: "c_a = projected_a * sigmoid(W_gate projected_b + b_gate)"
+      formula_b: "c_b = projected_b * sigmoid(W_gate projected_a + b_gate)"
+      shared_gate_parameters: true
+    commutative_pair_features:
+      - c_a_plus_c_b
+      - abs_c_a_minus_c_b
+      - c_a_hadamard_c_b
+      - cosine_c_a_c_b
+    head:
+      hidden_dimension: 128
+      activation: gelu_exact
+      dropout_from_recipe: true
+      output: one_unbounded_scalar
+    recipes: nonlinear_recipes
+  initialization:
+    weights: xavier_uniform_with_run_seed_generator
+    biases: zero
+
+primary_training_objective:
+  name: design_weighted_positive_vs_unlabeled_pairwise_logistic_ranking
+  semantics: ranking_surrogate_over_positive_census_and_frozen_unlabeled_comparison_distribution
+  unlabeled_target_class_created: false
+  class_prior_required: false
+  probability_or_calibration_target: false
+  positive_observations:
+    path: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet
+    sha256: 4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499
+    rows: 16799
+    use: complete_census_every_training_pass
+    inclusion_probability: "1/1"
+    design_weight: "1/1"
+  unlabeled_observations:
+    path: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet
+    sha256: d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7
+    rows: 2000000
+    use: every_row_exactly_once_per_training_pass_as_a_comparison_observation
+    replacement: false
+    scientific_negative_interpretation: prohibited
+    weight: exact_frozen_rational_design_weight_N_h_over_m_h
+    weight_clipping_or_reestimation: prohibited
+  sampling_strata:
+    path: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/sampling_strata/part-00000.parquet
+    sha256: b8e4247ce934d837477513b322af008413ac8d61fa95ccedd16fe2712c1d6427
+    rows: 36
+    role: immutable_source_of_rational_inclusion_probabilities_and_design_weights
+  order:
+    salt: ipin-openppi-model-training-v1
+    positive_key: "sha256:{salt}:{seed}:{pass_index}:P:{pair_id}"
+    unlabeled_key: "sha256:{salt}:{seed}:{pass_index}:U:{pair_id}"
+    sort: full_unsigned_digest_ascending_then_pair_id_ascending
+    positive_for_unlabeled_position_i: "positive_order[(i + pass_index - 1) mod 16799]"
+    balance: every_positive_repeats_floor_or_ceiling_2000000_over_16799_times_per_pass
+  per_comparison_loss: "softplus(-(score_positive - score_unlabeled))"
+  normalized_training_loss: "mean((w_u / mean_weight_over_all_2000000_U_rows) * per_comparison_loss)"
+  complete_pass_monitor: "sum_float64(w_u * per_comparison_loss) / sum_float64(w_u)"
+  score_ties_in_training: loss_formula_only_no_discrete_tie_rule
+  prohibited_alternatives_in_first_stage:
+    - binary_cross_entropy_with_U_as_zero
+    - random_or_matched_pseudo_negative_creation
+    - nnPU_or_other_class_prior_dependent_risk
+    - source_assay_or_publication_prediction_head
+    - calibration_loss
+    - protected_or_development_supervision
+
+optimization_and_search:
+  status: frozen_not_executed
+  seeds: [20260803, 20260817, 20260831]
+  seed_controls:
+    pythonhashseed: run_seed
+    python_random: run_seed
+    numpy_generator: PCG64DXSM_run_seed
+    torch_cpu: run_seed
+    torch_cuda_all: run_seed
+    torch_deterministic_algorithms: true
+    cudnn_benchmark: false
+    cudnn_deterministic: true
+    allow_tf32: false
+    cublas_workspace_config: ":4096:8"
+  batch:
+    pairwise_comparisons: 4096
+    drop_last: false
+    gradient_accumulation_steps: 1
+  optimizer:
+    name: AdamW
+    beta1: 0.9
+    beta2: 0.999
+    epsilon: 0.00000001
+    gradient_global_norm_clip: 1.0
+  scheduler:
+    name: linear_warmup_then_cosine_decay
+    total_training_passes: 5
+    steps_per_pass: 489
+    total_steps: 2445
+    warmup_steps: 123
+    final_learning_rate_fraction: 0.1
+  linear_recipes:
+    - {recipe_id: linear_lr3e-4, learning_rate: 0.0003, weight_decay: 0.0001, dropout: 0.0}
+    - {recipe_id: linear_lr1e-3, learning_rate: 0.001, weight_decay: 0.0001, dropout: 0.0}
+  nonlinear_recipes:
+    - {recipe_id: nonlinear_conservative, learning_rate: 0.0003, weight_decay: 0.0001, dropout: 0.1}
+    - {recipe_id: nonlinear_default, learning_rate: 0.001, weight_decay: 0.0001, dropout: 0.1}
+    - {recipe_id: nonlinear_no_dropout, learning_rate: 0.001, weight_decay: 0.00001, dropout: 0.0}
+  search_method: complete_enumeration_of_prespecified_recipes_no_adaptive_search
+  trainable_model_families: 4
+  seed_runs:
+    lightweight_esm2_150m_linear: 6
+    esm2_650m_linear_ablation: 6
+    esm2_650m_nonlinear_no_gate_ablation: 9
+    esm2_650m_partner_gated_primary: 9
+    total: 30
+  total_pairwise_comparisons_ceiling: 300000000
+  adaptive_search_bayesian_optimization_or_optuna: prohibited
+  recipe_or_seed_addition_after_development_release: prohibited
+
+checkpointing_and_stopping:
+  checkpoint_after_each_complete_U_pass: true
+  checkpoint_fields:
+    - model_state
+    - optimizer_state
+    - scheduler_state
+    - pass_index_and_global_step
+    - python_numpy_torch_cpu_and_cuda_rng_states
+    - positive_and_unlabeled_order_digests
+    - data_cursor
+    - config_protocol_code_container_embedding_and_input_hashes
+  atomic_write_then_sha256: true
+  exact_resume_required: true
+  selected_training_checkpoint: minimum_complete_pass_design_weighted_monitor_loss_earliest_pass_on_exact_tie
+  performance_early_stopping: prohibited
+  fixed_complete_U_passes: 5
+  numerical_failure_conditions:
+    - nonfinite_loss_score_gradient_parameter_or_optimizer_state
+    - missing_or_duplicate_U_row_in_a_pass
+    - incomplete_positive_census_coverage_in_a_pass
+    - input_embedding_or_artifact_hash_drift
+    - exact_swap_symmetry_tolerance_failure
+  exact_swap_symmetry_absolute_tolerance: 0.000001
+  infrastructure_failure_rule: resume_once_from_last_verified_checkpoint_without_any_parameter_or_order_change
+  repeated_infrastructure_failure: mark_run_failed_no_replacement_recipe_or_seed
+  numerical_failure_rule: mark_run_failed_no_retry_with_changed_settings
+
+compute_budget:
+  hardware: one_NVIDIA_GH200_120GB
+  four_gpu_or_multi_node_training: prohibited_in_first_stage
+  embedding_extractions: exactly_one_complete_pass_per_frozen_candidate_plus_prespecified_one_percent_repeat
+  maximum_total_gpu_hours: 100
+  maximum_project_storage_gib: 100
+  walltime_or_resource_increase: requires_numbered_amendment_before_development_release
+
+development_release_and_model_selection:
+  development_status_now: encrypted_unreleased
+  training_stage_requires_separate_numbered_authorization: true
+  before_release_requirements:
+    - all_prespecified_candidate_runs_complete_or_fail_closed
+    - selected_training_checkpoint_frozen_for_each_successful_run
+    - three_seed_ensemble_definition_frozen_per_model_family_and_recipe
+    - model_code_container_config_embedding_input_and_checkpoint_hashes_registered
+    - complete_training_artifact_registry_sha256_frozen
+    - independent_training_artifact_validation_passed
+    - new_numbered_development_release_decision
+  ensemble_score: arithmetic_mean_of_the_three_run_seed_scores
+  individual_seed_selection_on_development: prohibited
+  development_actions:
+    score_only_preexisting_frozen_candidates: true
+    new_training_or_retraining: prohibited
+    new_recipe_architecture_seed_or_checkpoint: prohibited
+    post_release_feature_or_embedding_change: prohibited
+    protected_information_visible: false
+  eligibility:
+    all_three_seed_runs_required: true
+    complete_unique_finite_scores_required: true
+    symmetry_and_hash_guards_required: true
+    maximum_seed_metric_range_each_primary_cell: 0.02
+  selection_metric_order:
+    metric: horvitz_thompson_positive_vs_U_pairwise_concordance
+    cells: [C3_development, C2_development, C1_development]
+    quantization: decimal_0.001_ROUND_HALF_UP_for_selection_only
+    tie_breaks:
+      - higher_quantized_C3_development
+      - higher_quantized_C2_development
+      - higher_quantized_C1_development
+      - lower_complexity_order
+      - lexicographically_ascending_candidate_id
+    lower_complexity_order:
+      - lightweight_esm2_150m_linear
+      - esm2_650m_linear_ablation
+      - esm2_650m_nonlinear_no_gate_ablation
+      - esm2_650m_partner_gated_primary
+  metric_pooling_across_C1_C2_C3: prohibited
+  novel_U_sensitivity_used_for_selection: false
+  source_exclusive_diagnostics_used_for_selection: false
+  post_selection_retraining: prohibited
+  selected_scorer_freeze_required_before_any_protected_candidate_access: true
+
+evaluation_and_reporting:
+  primary_metric:
+    name: horvitz_thompson_positive_vs_U_pairwise_concordance
+    formula: "sum_over_p_and_u(w_u * (I(s_p>s_u)+0.5*I(s_p=s_u))) / (n_P * sum_over_u(w_u))"
+    exact_score_ties: half_credit
+  cell_reporting_order: [C3, C2, C1]
+  partition_reporting_order: [development, protected_test]
+  cells_must_remain_separate: true
+  no_pooled_headline_metric: true
+  primary_comparisons:
+    strongest_mandatory_baseline: max_within_cell_using_same_frozen_rows_weights_and_ties
+    model_delta: absolute_concordance_difference
+    paired_bootstrap: identical_frozen_candidate_rows_and_component_draws
+  uncertainty:
+    method: two_endpoint_component_pigeonhole_bootstrap
+    dependence_unit: frozen_local_domain_union_30_component
+    replicates: 2000
+    seed: "20260803"
+    numpy_generator: PCG64DXSM
+    interval: percentile_95
+    sampling_and_bootstrap_weights_both_retained: true
+  conditional_full_ranking_metrics:
+    status: demoted_until_exact_streaming_full_candidate_scoring_is_separately_authorized
+    metrics:
+      - heldout_released_positive_recall_at_10_100_1000
+      - released_positive_enrichment_at_0.0001_0.001_0.01
+      - positive_rank_percentile_mean_median_q10_q90
+    sampled_package_must_not_be_called_full_universe: true
+  diagnostic_only:
+    - sampled_positive_vs_U_AUROC
+    - sampled_positive_vs_U_AUPRC
+    - score_correlation_with_degree_length_and_similarity_controls
+  prohibited_metric_interpretations:
+    - biological_classification_performance
+    - biological_precision_or_false_positive_rate
+    - assay_or_binding_probability
+    - prevalence_or_calibration
+
+degree_and_hub_stratification:
+  degree_source: 16799_interaction_supervision_training_positives_only
+  degree_bins: ["0", "1", "2", "3-4", "5-9", "10-19", "20-49", "50-99", "100+"]
+  pair_stratum: sorted_pair_of_endpoint_training_degree_bins
+  hubs:
+    ranking: training_positive_degree_descending_then_sequence_sha256_ascending
+    nested_top_fractions: [0.01, 0.05, 0.10]
+    frozen_endpoint_counts: [119, 595, 1190]
+    frozen_minimum_degrees: [41, 14, 7]
+  heldout_endpoint_degree: 0
+  reporting:
+    - each_supported_degree_pair_stratum
+    - pair_contains_top_1_percent_training_hub_vs_not
+    - pair_contains_top_5_percent_training_hub_vs_not
+    - pair_contains_top_10_percent_training_hub_vs_not
+  quantitative_stratum_floor:
+    positive_pairs: 100
+    participating_components: 10
+  below_floor: descriptive_only_no_pooling_to_hide_failure
+  protected_or_development_positive_degree_feature: prohibited
+
+c1_novel_U_sensitivity:
+  status: prespecified_view_only_not_executed
+  cells: [C1_development, C1_test]
+  positive_rows: unchanged_complete_frozen_cell_positive_rows
+  U_inclusion_rule: frozen_C1_U_row_pair_id_absent_from_frozen_public_training_U_pair_ids
+  new_rows_or_resampling: prohibited
+  primary_cell_or_weight_modification: prohibited
+  original_rational_design_weight: retained_unchanged_per_retained_U_row
+  conditional_metric: "sum_over_p_and_retained_u(w_u * (I(s_p>s_u)+0.5*I(s_p=s_u))) / (n_P * sum_over_retained_u(w_u))"
+  interpretation: design_weighted_Hajek_ratio_over_the_realized_novel_U_view_not_a_new_population_sample
+  required_counts:
+    - retained_and_removed_U_rows
+    - retained_weight_sum
+    - retained_nonempty_strata
+    - retained_pair_id_uniqueness
+  development_use: only_after_separately_authorized_development_release
+  protected_test_use: evaluator_only_after_prediction_freeze_and_one_first_reservation
+  model_selection_or_stopping_use: prohibited
+
+complexity_justification:
+  simple_partner_gate_retained_only_if:
+    - "C3 development concordance gain versus strongest simple sequence baseline is at least 0.02"
+    - "paired component-bootstrap 95 percent interval for that gain excludes zero"
+    - "C3 gain versus esm2_650m_linear_ablation is at least 0.01 and its paired interval excludes zero"
+    - "gain versus esm2_650m_nonlinear_no_gate_ablation is at least 0.005 and its paired interval excludes zero"
+    - positive_direction_on_at_least_one_supported_named_source_development_cell
+    - gain_not_restricted_to_training_hub_strata
+    - all_three_seed_runs_stable_and_eligible
+  fallback_order:
+    - remove_partner_gate_if_gate_specific_threshold_fails
+    - remove_nonlinear_head_if_no_gate_model_does_not_beat_linear_650m
+    - retain_lightweight_150m_linear_only_if_650m_scale_is_not_justified
+    - terminate_learned_model_line_if_no_learned_candidate_beats_deterministic_controls
+  proposal_of_residue_joint_encoder_sparse_routing_or_other_complex_model_requires:
+    - accepted_results_from_this_simple_stage
+    - primary_PU_statistical_gate_pass_on_qualifying_C3
+    - unresolved_error_pattern_not_explained_by_degree_length_3mer_interolog_or_frozen_PLM_linear_controls
+    - separately_authorized_oracle_or_interface_evidence_study_under_existing_blueprint_gate
+    - prespecified_compute_and_efficiency_case
+    - new_numbered_governance_decision
+
+model_level_kill_criteria:
+  any_integrity_custody_or_protected_boundary_violation: invalidate_stage_and_stop
+  any_use_of_U_as_scientific_negative_or_probability_target: invalidate_stage_and_stop
+  no_learned_candidate_C3_gain_at_least_0.02_over_strongest_mandatory_baseline_with_interval_excluding_zero: stop_before_protected_test
+  best_learned_candidate_C3_lower_confidence_bound_not_above_0.5: stop_before_protected_test
+  degree_graph_or_length_control_matches_or_exceeds_learned_C1_and_no_qualifying_C2_or_C3_gain: shortcut_explains_result_stop
+  training_interolog_or_frozen_PLM_linear_baseline_explains_C3_with_complex_delta_below_0.01_or_interval_including_zero: reject_complex_model
+  gain_absent_outside_top_10_percent_hub_pairs: hub_shortcut_stop_complex_model
+  C1_gain_disappears_or_reverses_in_novel_U_view: withdraw_C1_gain_claim_and_require_C2_or_C3_gate
+  any_candidate_seed_metric_range_above_0.02: candidate_ineligible
+  all_candidates_ineligible_or_numerically_failed: stop_model_line
+  unsupported_source_assay_temporal_family_or_PLM_exposure_claim_needed_to_describe_gain: stop_claim_and_return_to_governance
+  development_release_precedes_complete_training_artifact_registry_hash: invalidate_release_and_stop
+  new_candidate_training_or_retraining_after_development_release: invalidate_selection_and_stop
+
+claim_policy:
+  permitted:
+    - recovery_and_ranking_of_withheld_released_positive_evidence
+    - symmetric_sequence_compatibility_or_prioritization_score
+    - exact_endpoint_C3_under_frozen_local_domain_union_30_rule
+    - named_source_release_transfer_only_in_supported_cells
+  prohibited:
+    - unlabeled_is_negative_nonbinding_or_failed_assay
+    - universal_nonbinding_or_positive_negative_benchmark
+    - biological_or_natural_prevalence
+    - biological_precision_specificity_or_false_positive_rate
+    - calibrated_assay_or_binding_probability
+    - score_is_probability_or_experimentally_validated_interaction
+    - C3_is_unseen_gene_isoform_homolog_domain_family_or_nonhomology
+    - PLM_unseen_endpoint_or_family
+    - pretraining_exposure_cleanliness_or_causal_exposure_effect
+    - sampled_U_is_full_candidate_universe
+    - source_is_independent_study_assay_batch_or_temporal_generalization
+    - external_panel_structure_residue_or_interface_claim
+
+outputs:
+  binding_protocol: docs/protocols/MODEL_GOVERNANCE_AND_BASELINE_TRAINING_PROTOCOL_v1.md
+  scientific_report: docs/reports/m1/M1_Model_Governance_and_Baseline_Training_Protocol_Final_v1.md
+  production_audit: artifacts/validation/model_governance/model_governance_and_baseline_training_protocol_v1/AUDIT_REPORT.json
+  independent_validation: artifacts/validation/model_governance/model_governance_and_baseline_training_protocol_v1/VALIDATION_REPORT.json
+  pair_model_embedding_checkpoint_or_prediction_artifacts: prohibited
