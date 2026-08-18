@@ -47,15 +47,25 @@ records 16,799 training positives, 20,000,000 deterministic sampled-unlabeled
 cell rows, separately sealed development/protected-candidate/protected-truth
 packages, exact probabilities and weights, and zero positive-as-unlabeled or
 public protected-identity leakage. Unlabeled pairs remain unlabeled, not
-negatives. Development release, protected evaluation, and all model work remain
-unauthorized.
+negatives. Development release, protected evaluation, and executable model
+work remain unauthorized.
+
+[DEC-0028](governance/decisions/DEC-0028-accept-model-governance-and-baseline-training-protocol.md)
+accepts and freezes the independently validated, deliberately simple first-
+stage [model protocol](docs/protocols/MODEL_GOVERNANCE_AND_BASELINE_TRAINING_PROTOCOL_v1.md).
+It fixes exact frozen ESM-2 candidates and exposure limits, mandatory shortcut
+and sequence baselines, a design-weighted P-versus-U objective, one symmetric
+partner-gated pooled head with minimal ablations, a finite 30-run budget,
+development/model-selection rules, C3/C2/C1 reporting, degree/hub and novel-U
+diagnostics, and complexity/kill gates. No model files, embeddings, training,
+development release, or protected evaluation are authorized or have begun.
 
 The fresh-thread phase-boundary checkpoint is
-[RESUME-002](governance/checkpoints/RESUME-002-post-pu-r-benchmark-freeze.md).
-The authoritative scientific status remains
-[project status version 25](governance/PROJECT_STATUS_v25.md), and the
+[RESUME-003](governance/checkpoints/RESUME-003-post-model-governance-protocol-freeze.md).
+The authoritative scientific status is
+[project status version 27](governance/PROJECT_STATUS_v27.md), and the
 authoritative ledger remains
-[gate status version 25](governance/gates/gate_status_v25.yaml).
+[gate status version 27](governance/gates/gate_status_v27.yaml).
 
 The binding scientific specification is [the Version 3 final blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md). All production computation must run on NAISS Arrhenius through immutable ARM64 Apptainer SIF images.
 
@@ -99,9 +109,10 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
    uncertainty, holdout, and claim rules.
 5. Preserve the immutable `DEC-0026` pair artifacts; do not modify, extend,
    resample, relabel, release development, or open protected candidates/truth.
-6. Do not construct additional pair rows, negatives or pseudo-negatives,
-   materialize the full candidate universe, integrate panels or structures, or
-   perform model work unless a new numbered decision authorizes that bounded
-   package.
+6. Preserve the `DEC-0028` frozen model-governance and baseline/training
+   protocol. Do not construct additional pair rows, negatives or pseudo-
+   negatives, materialize the full candidate universe, integrate panels or
+   structures, acquire model files, implement models, extract embeddings, or
+   train unless a new numbered decision authorizes that bounded package.
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.

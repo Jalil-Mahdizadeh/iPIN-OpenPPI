@@ -11,11 +11,12 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
-The current authoritative ledger is `gates/gate_status_v25.yaml`; the current
-scientific status is `PROJECT_STATUS_v25.md`; and the fresh-thread phase
+The current authoritative ledger is `gates/gate_status_v27.yaml`; the current
+scientific status is `PROJECT_STATUS_v27.md`; and the fresh-thread phase
 checkpoint is
-`checkpoints/RESUME-002-post-pu-r-benchmark-freeze.md`. `DEC-0017` technically
-accepts the TF-isoform audit and its external-only quarantine. `DEC-0018` technically
+`checkpoints/RESUME-003-post-model-governance-protocol-freeze.md`. `DEC-0017`
+technically accepts the TF-isoform audit and its external-only quarantine.
+`DEC-0018` technically
 accepts the independently validated benchmark-eligibility and
 sequence-component audit. `DEC-0020` technically accepts the independently
 validated pre-split feasibility and leakage stress-test and records its
@@ -26,8 +27,14 @@ pair-level PU-R protocol. `DEC-0025` authorized bounded construction, and
 encrypted-development, encrypted-protected-candidate, and
 encrypted-protected-truth package.
 
+`DEC-0027` authorized the design-only model protocol work package. `DEC-0028`
+accepts and freezes its independently validated protocol, simple diagnostic
+baseline/training design, exposure claim ceiling, development freeze, and
+shortcut/complexity kill rules. It authorizes no model acquisition,
+implementation, embedding, training, development release, or protected use.
+
 The primary PU-R design remains binding and unreported eligible pairs remain
 unlabeled. Artifact modification or resampling, development release, protected
 candidate/truth access, public protected-test identity, the full candidate
 universe, negatives or pseudo-negatives, panel or structural integration, and
-all model work remain prohibited.
+all executable model work remain prohibited pending a new numbered decision.

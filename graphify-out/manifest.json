@@ -805,8 +805,8 @@
     "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
   },
   "README.md": {
-    "mtime": 1786228660.0,
-    "ast_hash": "44f5eaa6345b55b6110ff4298b85d6c5",
+    "mtime": 1787090337.0,
+    "ast_hash": "33bf313a68c6935a4ab604ce6156050e",
     "semantic_hash": ""
   },
   "artifacts/validation/lambourne_y2h_audit_v1/attempts/attempt-001-validator-pre-fix/README.md": {
@@ -1045,8 +1045,8 @@
     "semantic_hash": "543dec3e0dce4d28a34d2750fc03fe4a"
   },
   "docs/reports/README.md": {
-    "mtime": 1786225910.0,
-    "ast_hash": "1a178f1630a8696a81b03f3287519025",
+    "mtime": 1787090337.0,
+    "ast_hash": "3a18b3382f761a47d63c1eb34ca9a5a7",
     "semantic_hash": ""
   },
   "docs/reports/m0/M0_Container_Gate_Final_Report_v1.md": {
@@ -1140,8 +1140,8 @@
     "semantic_hash": "6e8f50f4dc4b1715e7c430ff98076f28"
   },
   "governance/README.md": {
-    "mtime": 1786229208.0,
-    "ast_hash": "1ce9bc365f3f53643b357c5a3209b7c6",
+    "mtime": 1787090337.0,
+    "ast_hash": "d75fc1eaace0f186e098305e43ef04cf",
     "semantic_hash": ""
   },
   "governance/START_MANIFEST_v1.yaml": {
@@ -2192,6 +2192,106 @@
   "governance/checkpoints/RESUME-002-post-pu-r-benchmark-freeze.md": {
     "mtime": 1786228938.0,
     "ast_hash": "a6bb0d36cff476e6b1297f3736661ce5",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_governance/model_governance_and_baseline_training_protocol_v1/AUDIT_REPORT.json": {
+    "mtime": 1787089827.0,
+    "ast_hash": "889c897cb89110998ee481b416c0e074",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_governance/model_governance_and_baseline_training_protocol_v1/VALIDATION_REPORT.json": {
+    "mtime": 1787089896.0,
+    "ast_hash": "78038ec0953dc098c022397324409fad",
+    "semantic_hash": ""
+  },
+  "scripts/model/audit_model_governance_and_baseline_training_protocol_v1.py": {
+    "mtime": 1787088871.0,
+    "ast_hash": "1ad185e948117cdded195039f849b803",
+    "semantic_hash": ""
+  },
+  "scripts/model/validate_model_governance_and_baseline_training_protocol_v1.py": {
+    "mtime": 1787089157.0,
+    "ast_hash": "c3ec5076332c653c18ad7498edf76f75",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/model_governance/__init__.py": {
+    "mtime": 1787088871.0,
+    "ast_hash": "0704b63fc568836c22e0694c665c71d5",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/model_governance/protocol.py": {
+    "mtime": 1787089487.0,
+    "ast_hash": "8989080dc009e275980179907e0bae74",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/validation/model_governance.py": {
+    "mtime": 1787089487.0,
+    "ast_hash": "d90bcdb5e90ea645d5a121e9f99cb656",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_model_governance_protocol_safety.py": {
+    "mtime": 1787089768.0,
+    "ast_hash": "b853773012ac0b5cafedb51b4b45293a",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_model_governance_validation.py": {
+    "mtime": 1787089768.0,
+    "ast_hash": "feef849d3d210094bf733143000c982d",
+    "semantic_hash": ""
+  },
+  "configs/model_governance_and_baseline_training_protocol_v1.yaml": {
+    "mtime": 1787088666.0,
+    "ast_hash": "01848e8e25a9c9ae3c5c7344245da147",
+    "semantic_hash": ""
+  },
+  "docs/protocols/MODEL_GOVERNANCE_AND_BASELINE_TRAINING_PROTOCOL_v1.md": {
+    "mtime": 1787089768.0,
+    "ast_hash": "17c374e79ed0743c554cbd35c43a8323",
+    "semantic_hash": ""
+  },
+  "docs/reports/m1/M1_Model_Governance_and_Baseline_Training_Protocol_Final_v1.md": {
+    "mtime": 1787089768.0,
+    "ast_hash": "3025feb769e682fedeeb06b1b290a82e",
+    "semantic_hash": ""
+  },
+  "governance/PROJECT_STATUS_v26.md": {
+    "mtime": 1787088252.0,
+    "ast_hash": "b417b24e7beb277e5b7f48eafb245a09",
+    "semantic_hash": ""
+  },
+  "governance/PROJECT_STATUS_v27.md": {
+    "mtime": 1787090120.0,
+    "ast_hash": "092d43974621f6befbefd64aff7e738e",
+    "semantic_hash": ""
+  },
+  "governance/checkpoints/RESUME-003-post-model-governance-protocol-freeze.md": {
+    "mtime": 1787090337.0,
+    "ast_hash": "fcac03cf4310bd4a74802c7907193505",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0027-authorize-model-governance-and-baseline-training-protocol-design.md": {
+    "mtime": 1787088252.0,
+    "ast_hash": "1a556e78b2b0e45c2af377bba6a2e922",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0028-accept-model-governance-and-baseline-training-protocol.md": {
+    "mtime": 1787090120.0,
+    "ast_hash": "0a40a16544a177653d8de55318c11818",
+    "semantic_hash": ""
+  },
+  "governance/gates/gate_status_v26.yaml": {
+    "mtime": 1787088252.0,
+    "ast_hash": "28e9cefe56f4df4d875c64c54d56b33d",
+    "semantic_hash": ""
+  },
+  "governance/gates/gate_status_v27.yaml": {
+    "mtime": 1787090120.0,
+    "ast_hash": "c8128499966d50479a8d31c4beff8adb",
+    "semantic_hash": ""
+  },
+  "scripts/model/README.md": {
+    "mtime": 1787089667.0,
+    "ast_hash": "30e6793b2d9a182f0ae44ea05106788b",
     "semantic_hash": ""
   }
 }
