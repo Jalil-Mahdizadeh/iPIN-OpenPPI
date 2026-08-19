@@ -1,0 +1,55 @@
+{
+  "architecture": "aarch64",
+  "bfloat16_embedding_fixture": {
+    "finite": true,
+    "shape": [
+      640
+    ]
+  },
+  "checkpoint_restart_fixture": {
+    "exact": true,
+    "reference_loss": 1.7897956371307373,
+    "resumed_loss": 1.7897956371307373
+  },
+  "code_commit": "93ef7b7f328293b9b5d656f377f4dde008545f50",
+  "container_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+  "cuda": "13.0",
+  "cudnn": "91200",
+  "fp32_embedding_fixture": {
+    "deterministic_repeat_max_absolute_difference": 0.0,
+    "finite": true,
+    "shape": [
+      640
+    ]
+  },
+  "gpu_count": 1,
+  "gpu_name": "NVIDIA GH200 120GB",
+  "model_checkpoint_sha256": "c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566",
+  "model_loading_info": {
+    "mismatched_keys": [],
+    "missing_keys": [],
+    "pooler_instantiated": false,
+    "unexpected_keys": [],
+    "wrapper": "EsmForMaskedLM"
+  },
+  "network_mode": {
+    "hf_hub_offline": "1",
+    "local_files_only": true,
+    "transformers_offline": "1"
+  },
+  "numpy_generator_required_for_scientific_runs": "PCG64DXSM",
+  "protocol_configuration_sha256": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+  "schema_version": 1,
+  "status": "pass",
+  "synthetic_fixture_only": true,
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "versions": {
+    "huggingface-hub": "0.34.4",
+    "numpy": "1.26.4",
+    "pyarrow": "19.0.1",
+    "safetensors": "0.6.2",
+    "scikit-learn": "1.6.1",
+    "tokenizers": "0.21.4",
+    "transformers": "4.55.2"
+  }
+}
