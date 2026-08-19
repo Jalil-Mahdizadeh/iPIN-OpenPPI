@@ -1,0 +1,97 @@
+{
+  "checks": [
+    {
+      "check_id": "sif_identity",
+      "detail": "10656620544 bytes; SHA-256 c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+      "status": "pass"
+    },
+    {
+      "check_id": "sif_labels",
+      "detail": "architecture, parent, protocol, offline model role exact",
+      "status": "pass"
+    },
+    {
+      "check_id": "model_custody",
+      "detail": "two exact revisions; six files each; link-free; all bytes and SHA-256 recomputed",
+      "status": "pass"
+    },
+    {
+      "check_id": "checkpoint_shapes",
+      "detail": "150M 30x640 and 650M 33x1280 configs independently parsed",
+      "status": "pass"
+    },
+    {
+      "check_id": "production_qualification",
+      "detail": "production report passes with exact keys and exact restart",
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_gpu_fixture",
+      "detail": "both checkpoints exact-load and repeat on one GPU; 650M bfloat16 finite",
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_offline_fixture",
+      "detail": "all model loads/forwards succeeded with Python network sockets blocked",
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_restart_fixture",
+      "detail": "separately implemented optimizer checkpoint restart is bit-exact",
+      "status": "pass"
+    },
+    {
+      "check_id": "sensitive_path_exclusion",
+      "detail": "no sealed, private-key, development, or protected path in runtime evidence",
+      "status": "pass"
+    },
+    {
+      "check_id": "clean_evidence_anchor",
+      "detail": "production evidence commit b73df403958e0847bb799d4f90a548c99a4b3060",
+      "status": "pass"
+    }
+  ],
+  "evidence_commit": "b73df403958e0847bb799d4f90a548c99a4b3060",
+  "fixture": {
+    "architecture": "aarch64",
+    "candidates": {
+      "esm2_150m": {
+        "deterministic_repeat_max_absolute_difference": 0.0,
+        "finite": true,
+        "hidden_size": 640,
+        "loading_keys_exact": true,
+        "pooler_instantiated": false
+      },
+      "esm2_650m": {
+        "bfloat16_finite": true,
+        "deterministic_repeat_max_absolute_difference": 0.0,
+        "finite": true,
+        "hidden_size": 1280,
+        "loading_keys_exact": true,
+        "pooler_instantiated": false
+      }
+    },
+    "checkpoint_restart_exact": true,
+    "gpu_count": 1,
+    "gpu_name": "NVIDIA GH200 120GB",
+    "network_socket_blocked_during_load_and_forward": true,
+    "versions": {
+      "huggingface-hub": "0.34.4",
+      "numpy": "1.26.4",
+      "pyarrow": "19.0.1",
+      "safetensors": "0.6.2",
+      "scikit-learn": "1.6.1",
+      "tokenizers": "0.21.4",
+      "transformers": "4.55.2"
+    }
+  },
+  "protocol_configuration_sha256": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+  "schema_version": 1,
+  "status": "pass",
+  "summary": {
+    "fail": 0,
+    "pass": 10,
+    "warning": 0
+  },
+  "validator_independence": "does_not_import_production_acquisition_or_qualification_modules"
+}
