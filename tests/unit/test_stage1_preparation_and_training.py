@@ -11,6 +11,7 @@ from ipin_openppi.stage1.constants import FAMILIES, SEEDS
 from ipin_openppi.stage1.objective import learning_rate_multiplier
 from ipin_openppi.stage1.preparation_audit import expected_run_ids
 from ipin_openppi.stage1.training import atomic_torch_checkpoint, set_step_learning_rate
+from ipin_openppi.stage1.training_audit import EXPECTED_PARAMETERS, expected_candidate_count
 
 
 def test_matrix_algebra_is_exactly_thirty_runs() -> None:
@@ -22,6 +23,13 @@ def test_matrix_algebra_is_exactly_thirty_runs() -> None:
     assert len(FAMILIES["esm2_650m_partner_gated_primary"]["recipes"]) == 3
     run_ids = expected_run_ids()
     assert len(run_ids) == len(set(run_ids)) == 30
+    assert expected_candidate_count() == 10
+    assert EXPECTED_PARAMETERS == {
+        "lightweight_esm2_150m_linear": 1922,
+        "esm2_650m_linear_ablation": 3842,
+        "esm2_650m_nonlinear_no_gate_ablation": 426625,
+        "esm2_650m_partner_gated_primary": 492417,
+    }
 
 
 def test_step_learning_rate_uses_one_based_exact_schedule() -> None:
