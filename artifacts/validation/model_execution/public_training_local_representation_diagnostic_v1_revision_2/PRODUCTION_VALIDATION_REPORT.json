@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "check_id": "frozen_public_inputs_runtime_and_revision_hashes",
+      "passed": true
+    },
+    {
+      "check_id": "label_independent_whole_component_split_and_exact_row_census",
+      "passed": true
+    },
+    {
+      "check_id": "same_forward_segment_weighted_global_reconstruction",
+      "passed": true
+    },
+    {
+      "check_id": "all_seven_scores_finite_and_local_GPU_matches_CPU",
+      "passed": true
+    },
+    {
+      "check_id": "original_U_design_weights_retained",
+      "passed": true
+    },
+    {
+      "check_id": "phase_A_trigger_applied_exactly_without_interval_gate",
+      "passed": true
+    },
+    {
+      "check_id": "no_development_protected_key_external_or_negative_input",
+      "passed": true
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 7,
+  "phase_a_results": {
+    "bytes": 4736,
+    "path": "artifacts/metrics/public_training_local_representation_diagnostic_v1_revision_2/nested_C3/PHASE_A_RESULTS.json",
+    "sha256": "becf069b9bae635af2554ba89849e659967baa6b073acb1346d0ebdac2a79544"
+  },
+  "protocol_id": "public_training_local_representation_diagnostic_v1_revision_2",
+  "status": "pass"
+}

@@ -1,0 +1,46 @@
+{
+  "embedding_manifest": {
+    "bytes": 3769,
+    "path": "artifacts/embeddings/public_training_local_representation_diagnostic_v1_revision_2/esm2_150m/LOCAL_EMBEDDING_MANIFEST.json",
+    "sha256": "3f8d644eb42e3a740e62d1de440ec627d25ef47b3970fd358578970430810146"
+  },
+  "metric_artifacts": {
+    "bootstrap_components": {
+      "bytes": 33675,
+      "path": "artifacts/metrics/public_training_local_representation_diagnostic_v1_revision_2/nested_C3/BOOTSTRAP_COMPONENTS.json",
+      "sha256": "4abdc3178bb77622dc98808de7a979d041ed92c2a463a19ea552513383db977e"
+    },
+    "bootstrap_metrics": {
+      "bytes": 11328,
+      "path": "artifacts/metrics/public_training_local_representation_diagnostic_v1_revision_2/nested_C3/bootstrap_metrics.f64.npy",
+      "sha256": "a7ef8ea0beef40d1a7c278c4efb1c0cbc1aa68a8aae77b18dec702b5b7140016"
+    },
+    "component_multiplicities": {
+      "bytes": 538528,
+      "path": "artifacts/metrics/public_training_local_representation_diagnostic_v1_revision_2/nested_C3/component_multiplicities.i32.npy",
+      "sha256": "e9c0d70c390dfc5822aebb0b9f33e243412461c29d8da938982f611a98b7778d"
+    },
+    "phase_a_scores": {
+      "bytes": 4877728,
+      "path": "artifacts/metrics/public_training_local_representation_diagnostic_v1_revision_2/nested_C3/phase_a_scores.f64.npy",
+      "sha256": "462d3c45296298e84bf1747bcce3050a8fd20e8837c48bf78dd425a513caf7ca"
+    },
+    "scorers": {
+      "bytes": 257,
+      "path": "artifacts/metrics/public_training_local_representation_diagnostic_v1_revision_2/nested_C3/SCORERS.json",
+      "sha256": "4797fb8e92429b02b0af1dc9908ae100162f0aff09aacce44a53b11bbefadeaf"
+    }
+  },
+  "phase_a_results": {
+    "bytes": 4736,
+    "path": "artifacts/metrics/public_training_local_representation_diagnostic_v1_revision_2/nested_C3/PHASE_A_RESULTS.json",
+    "sha256": "becf069b9bae635af2554ba89849e659967baa6b073acb1346d0ebdac2a79544"
+  },
+  "production_validation": {
+    "bytes": 1163,
+    "path": "artifacts/validation/model_execution/public_training_local_representation_diagnostic_v1_revision_2/PRODUCTION_VALIDATION_REPORT.json",
+    "sha256": "6956289ce1a4aef4d5d342b2d04bac043cf0af417a4b008916b46e898babfb39"
+  },
+  "protocol_id": "public_training_local_representation_diagnostic_v1_revision_2",
+  "status": "phase_a_complete"
+}
