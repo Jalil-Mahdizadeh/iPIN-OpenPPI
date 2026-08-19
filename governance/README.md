@@ -11,8 +11,8 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
-The current authoritative ledger is `gates/gate_status_v31.yaml`; the current
-scientific status is `PROJECT_STATUS_v31.md`; and the fresh-thread phase
+The current authoritative ledger is `gates/gate_status_v32.yaml`; the current
+scientific status is `PROJECT_STATUS_v32.md`; and the fresh-thread phase
 checkpoint is
 `checkpoints/RESUME-004-post-stage-1-public-training-freeze.md`. `DEC-0017`
 technically accepts the TF-isoform audit and its external-only quarantine.
@@ -40,6 +40,9 @@ development release are satisfied. It does not release development.
 `DEC-0032` authorizes a bounded development-only release and evaluation after
 an independently passing pre-release implementation gate. Protected candidates,
 truth, and private keys remain sealed and prohibited.
+`DEC-0033` accepts the passing production and clean-room pre-release
+qualification and activates exactly one development decryption plus the frozen
+49-scorer evaluation. It does not authorize any protected access.
 
 The primary PU-R design remains binding and unreported eligible pairs remain
 unlabeled. Artifact modification or resampling, development release, protected
@@ -47,4 +50,5 @@ candidate/truth access, public protected-test identity, the full candidate
 universe, negatives or pseudo-negatives, panel or structural integration, and
 all model work outside the frozen Stage 1 scorer set remain prohibited.
 Protected use remains prohibited. Executable work is limited to the exact
-development-only package in `DEC-0032`; no training or scorer change is allowed.
+development-only package in `DEC-0032` and activation in `DEC-0033`; no
+training or scorer change is allowed.
