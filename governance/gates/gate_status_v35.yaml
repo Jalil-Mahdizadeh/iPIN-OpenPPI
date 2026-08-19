@@ -1,0 +1,64 @@
+schema_version: 35
+supersedes: governance/gates/gate_status_v34.yaml
+updated_date: "2026-08-19"
+programme_state: development_scoring_partially_complete_paused_for_source_degree_guard_requalification
+
+gates:
+  model_governance:
+    status: accepted_frozen_unchanged
+    acceptance_decision: governance/decisions/DEC-0028-accept-model-governance-and-baseline-training-protocol.md
+  stage_1_training:
+    status: pass_complete_frozen_unchanged
+    training_registry_sha256: 11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318
+    additional_training_authorized: false
+  development_release:
+    status: pass_complete_exactly_once
+    archive_sha256: c8d1520d5dbc5b435a1ed5149cbd2f9a731fb3cee10cd651dd0a19b475741122
+    manifest_sha256: 3f58403138b878d912789f529dc1f8ec7d1db7356d6ccc4c3b88cfcb2f6554fa
+    additional_decryption_authorized: false
+  scoring_incident:
+    status: confirmed_implementation_guard_failure
+    issue: governance/issues/ISSUE-0010-source-cell-degree-semantics-guard.md
+    incident_report: artifacts/validation/development_evaluation/development_release_and_evaluation_v1/revision_3/SCORING_INCIDENT_REPORT.json
+    incident_report_sha256: 547288eeece915366505277ed5a5bf427b8a758f2ddf0d38892857a1a529b35b
+    completed_manifested_cells: 4
+    failed_cell_files_produced: 0
+    failed_cell_score_rows_produced: 0
+    scoring_run_manifest_produced: false
+    metrics_bootstrap_selection_or_disposition_produced: false
+  technical_correction:
+    status: authorized_not_yet_qualified
+    authorization_decision: governance/decisions/DEC-0036-authorize-source-cell-degree-guard-correction.md
+    primary_metadata_semantics: exact_pooled_training_degree_equality
+    source_metadata_semantics: nonnegative_source_visible_design_degree_and_exact_stratum
+    scorer_feature_degree_semantics: pooled_16799_training_positive_graph_unchanged
+    row_weight_stratum_or_artifact_change_authorized: false
+    production_revalidation_required: true
+    independent_revalidation_required: true
+  development_scoring:
+    status: paused
+    exact_resume_authorized_now: false
+    completed_cell_reuse_after_requalification: true
+    second_decryption_authorized: false
+  protected_test:
+    status: encrypted_evaluator_only_fully_sealed
+    candidate_or_truth_access_authorized: false
+    private_key_access_authorized: false
+    scoring_or_metric_authorized: false
+  compute:
+    hardware: at_most_one_NVIDIA_GH200_120GB
+    maximum_gpu_hours: 30
+    maximum_new_governed_storage_gib: 100
+    multi_gpu_or_multi_node_authorized: false
+
+global_prohibitions:
+  second_development_decryption: true
+  protected_candidate_truth_or_private_key_access: true
+  training_retraining_tuning_or_checkpoint_change: true
+  pair_artifact_sampling_stratum_weight_or_protocol_change: true
+  scorer_feature_metric_threshold_or_kill_rule_change: true
+  negative_or_pseudo_negative_construction: true
+  external_panel_structure_residue_or_interface_work: true
+
+next_authorized_work_package: implement_and_independently_requalify_issue_0010_exact_degree_guard_fix
+return_to_governance_before_scoring_resume_required: true

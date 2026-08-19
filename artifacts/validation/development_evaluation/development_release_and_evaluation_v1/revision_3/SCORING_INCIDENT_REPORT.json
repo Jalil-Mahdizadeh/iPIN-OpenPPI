@@ -1,0 +1,120 @@
+{
+  "completed_cell_count": 4,
+  "completed_cells": [
+    {
+      "cell_id": "C3_development",
+      "cell_manifest_sha256": "94eb6489a87fd3b656dd2f1c730c8bde2c28fd9440cc90e8932c91f33c8205bd",
+      "positive_rows": 2265,
+      "rows_sha256": "d8e3dcd7dc30f59179d45c15e6b2e9fe4c3b079157f3d993c8708e937a85c1b3",
+      "scorer_count": 49,
+      "scores_sha256": "9c173fb549c46b09113b32e1cdd757f93d074fe21b01980580fd7528d0f987a8",
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "source_exclusive:HI-II-14:C3_development",
+      "cell_manifest_sha256": "7d6ad17b15c4e7dcf2ab1d24f0b5533332db171bc1125e6fba82ce77e3428bc6",
+      "positive_rows": 312,
+      "rows_sha256": "2a000a50807f2e9c1311d4ee53a86933cd82b8588fdc6f1273ff65e309c5f0da",
+      "scorer_count": 49,
+      "scores_sha256": "6d98a8564e4ec21bb1d1403e8bbf365e6df2dfb3eed4fafda2089cd0382c55eb",
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "source_exclusive:HuRI:C3_development",
+      "cell_manifest_sha256": "f786ab46fcdfb99eaa51ba22765837c626b7d6f8c6a53edab5deb39d0041a9a4",
+      "positive_rows": 1677,
+      "rows_sha256": "6812740d436602f8c205f6d3345052e99878d65125513cc3b8e3a58588385f04",
+      "scorer_count": 49,
+      "scores_sha256": "befa83e1615ac32f094a1348cc4af77a375495e08f20215a5fbc7111cf0c74b6",
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "C2_development",
+      "cell_manifest_sha256": "1f6e3d03c650fa22fd3b16536ae7e91f99d420f29b4183a9f9a2931cbfcaa2e1",
+      "positive_rows": 11327,
+      "rows_sha256": "bad0897296376f9bae434646b2167181933ee85094e39e6f3805e14065fb1bd5",
+      "scorer_count": 49,
+      "scores_sha256": "1c8850b852df91174d676d41b038dd3789650c86a200b80d5ced3d5b233c4c47",
+      "unlabeled_rows": 1000000
+    }
+  ],
+  "development_archive_sha256": "c8d1520d5dbc5b435a1ed5149cbd2f9a731fb3cee10cd651dd0a19b475741122",
+  "development_decryption_repeated": false,
+  "development_plaintext_accessed_for_authorized_aggregate_diagnosis": true,
+  "execution_id": "development_release_and_evaluation_execution_v1",
+  "failed_cell": "source_exclusive:HI-II-14:C2_development",
+  "failed_cell_files_produced": 0,
+  "failed_cell_score_rows_produced": 0,
+  "failure": "source_design_degree_metadata_compared_to_pooled_training_graph",
+  "global_degree_mismatch_census": {
+    "C1_development": {
+      "mismatch_endpoint_fields": 0,
+      "mismatch_rows": 0,
+      "positive_mismatch_rows": 0,
+      "unlabeled_mismatch_rows": 0
+    },
+    "C2_development": {
+      "mismatch_endpoint_fields": 0,
+      "mismatch_rows": 0,
+      "positive_mismatch_rows": 0,
+      "unlabeled_mismatch_rows": 0
+    },
+    "C3_development": {
+      "mismatch_endpoint_fields": 0,
+      "mismatch_rows": 0,
+      "positive_mismatch_rows": 0,
+      "unlabeled_mismatch_rows": 0
+    },
+    "source_exclusive:HI-II-14:C1_development": {
+      "mismatch_endpoint_fields": 475065,
+      "mismatch_rows": 418770,
+      "positive_mismatch_rows": 303,
+      "unlabeled_mismatch_rows": 418467
+    },
+    "source_exclusive:HI-II-14:C2_development": {
+      "mismatch_endpoint_fields": 238910,
+      "mismatch_rows": 238910,
+      "positive_mismatch_rows": 1410,
+      "unlabeled_mismatch_rows": 237500
+    },
+    "source_exclusive:HI-II-14:C3_development": {
+      "mismatch_endpoint_fields": 0,
+      "mismatch_rows": 0,
+      "positive_mismatch_rows": 0,
+      "unlabeled_mismatch_rows": 0
+    },
+    "source_exclusive:HuRI:C1_development": {
+      "mismatch_endpoint_fields": 1417410,
+      "mismatch_rows": 915863,
+      "positive_mismatch_rows": 609,
+      "unlabeled_mismatch_rows": 915254
+    },
+    "source_exclusive:HuRI:C2_development": {
+      "mismatch_endpoint_fields": 713536,
+      "mismatch_rows": 713536,
+      "positive_mismatch_rows": 4679,
+      "unlabeled_mismatch_rows": 708857
+    },
+    "source_exclusive:HuRI:C3_development": {
+      "mismatch_endpoint_fields": 0,
+      "mismatch_rows": 0,
+      "positive_mismatch_rows": 0,
+      "unlabeled_mismatch_rows": 0
+    }
+  },
+  "incident_id": "ISSUE-0010",
+  "metric_or_selection_output_produced": false,
+  "pair_artifact_or_protocol_inconsistency": false,
+  "private_console_log_sha256": "b48a045e8f93152034e690169ad1c6d0087cbb26acbd35d8507e593adecd61c8",
+  "protected_candidates_or_truth_accessed": false,
+  "protected_private_key_resolved_or_accessed": false,
+  "root_cause": {
+    "DEC_0024_source_row_degree_semantics": "non_target_source_visible_training_role_positive_graph_used_for_sampling_strata",
+    "DEC_0028_feature_degree_semantics": "pooled_16799_public_training_positive_graph_used_for_all_degree_and_graph_controls",
+    "implementation_defect": "one_equality_guard_incorrectly_required_both_semantics_to_be_identical"
+  },
+  "schema_version": 1,
+  "scoring_run_manifest_produced": false,
+  "status": "confirmed_fail_closed_before_failed_cell_scoring",
+  "training_or_checkpoint_change": false
+}
