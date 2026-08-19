@@ -14463,8 +14463,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_stage1_objective_learning_rate_multiplier",
-      "community": 187,
-      "community_name": "training.py",
+      "community": 191,
+      "community_name": "objective.py",
       "norm_label": "learning_rate_multiplier()"
     },
     {
@@ -78504,7 +78504,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/stage1/audit.py",
-      "source_location": "L225",
+      "source_location": "L234",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_stage1_audit_audit_stage1_implementation",
@@ -78516,7 +78516,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ipin_openppi/stage1/audit.py",
-      "source_location": "L219",
+      "source_location": "L228",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_ipin_openppi_stage1_audit_audit_stage1_implementation",
@@ -107722,5 +107722,5 @@
       "source_file": "docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.pdf"
     }
   ],
-  "built_at_commit": "f2e301405811b31fe7ee33319e86887b81848f26"
+  "built_at_commit": "cf66b26c96a3fe1d06f8e5d2516f9a62ddb9ef54"
 }

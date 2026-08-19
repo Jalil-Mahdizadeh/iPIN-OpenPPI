@@ -1,7 +1,7 @@
 # Graph Report - iPIN-OpenPPI  (2026-08-19)
 
 ## Corpus Check
-- 405 files · ~366,458 words
+- 405 files · ~366,466 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f2e30140`
+- Built from commit: `cf66b26c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -761,7 +761,7 @@ Nodes (24): build_argument_parser(), Checks, DatasetSummary, _iter_summaries(), 
 
 ### Community 187 - "training.py"
 Cohesion: 0.14
-Nodes (22): main(), learning_rate_multiplier(), Tensor, rational_weights(), weighted_pairwise_logistic_loss(), _all_finite(), atomic_torch_checkpoint(), configure_reproducibility() (+14 more)
+Nodes (21): main(), Tensor, rational_weights(), weighted_pairwise_logistic_loss(), _all_finite(), atomic_torch_checkpoint(), configure_reproducibility(), _order_record() (+13 more)
 
 ### Community 188 - "audit.py"
 Cohesion: 0.16
@@ -776,8 +776,8 @@ Cohesion: 0.33
 Nodes (14): build_argument_parser(), _load_json(), _load_yaml(), main(), _nested(), Any, ArgumentParser, Checks (+6 more)
 
 ### Community 191 - "objective.py"
-Cohesion: 0.21
-Nodes (13): deterministic_order(), order_key(), ordered_pair_id_digest(), positive_positions_for_batch(), positive_repetition_counts(), ndarray, Exact public P-versus-U ordering and rational-weight objective helpers., parametrize (+5 more)
+Cohesion: 0.20
+Nodes (14): deterministic_order(), learning_rate_multiplier(), order_key(), ordered_pair_id_digest(), positive_positions_for_batch(), positive_repetition_counts(), ndarray, Exact public P-versus-U ordering and rational-weight objective helpers. (+6 more)
 
 ### Community 192 - "validate_reconciliation"
 Cohesion: 0.35

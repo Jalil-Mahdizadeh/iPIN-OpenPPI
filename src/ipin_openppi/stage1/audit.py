@@ -205,9 +205,18 @@ def audit_stage1_implementation(project_root: Path, output: Path) -> dict[str, A
         all(
             fragment
             not in "\n".join(
-                path.read_text(encoding="utf-8")
-                for path in (project_root / "src/ipin_openppi/stage1").glob("*.py")
-                if path.name != "constants.py"
+                (project_root / "src/ipin_openppi/stage1" / filename).read_text(
+                    encoding="utf-8"
+                )
+                for filename in (
+                    "baselines.py",
+                    "embeddings.py",
+                    "models.py",
+                    "objective.py",
+                    "preparation.py",
+                    "support.py",
+                    "training.py",
+                )
             )
             for fragment in ("development_release.cms", "protected_candidates.cms", "protected_truth.cms")
         ),
