@@ -23,7 +23,7 @@ from torch.nn import functional as F
 from ipin_openppi.stage1.baselines import kmer3_csr
 
 from .release import sha256_file
-from .semantics import DETERMINISTIC_SCORERS, validate_scorer_census
+from .semantics import DETERMINISTIC_SCORERS, degree_pair_stratum, validate_scorer_census
 
 
 SCORE_BATCH = 32_768
@@ -206,9 +206,48 @@ def load_cell_rows(package_root: Path, cell_id: str) -> pa.Table:
     return output
 
 
+def validate_degree_metadata(
+    *,
+    cell_id: str,
+    rows: pa.Table,
+    pooled_degree_a: np.ndarray,
+    pooled_degree_b: np.ndarray,
+) -> None:
+    """Keep source-design strata distinct from pooled scorer features."""
+
+    if cell_id not in DEVELOPMENT_CELLS:
+        raise RuntimeError(f"cell not frozen for development execution: {cell_id}")
+    recorded_a = np.asarray(rows["endpoint_a_training_degree"].to_numpy(), dtype=np.int64)
+    recorded_b = np.asarray(rows["endpoint_b_training_degree"].to_numpy(), dtype=np.int64)
+    pooled_a = np.asarray(pooled_degree_a, dtype=np.int64)
+    pooled_b = np.asarray(pooled_degree_b, dtype=np.int64)
+    if not (
+        recorded_a.shape
+        == recorded_b.shape
+        == pooled_a.shape
+        == pooled_b.shape
+        == (rows.num_rows,)
+    ):
+        raise RuntimeError("development degree metadata shape drift")
+    if np.any(recorded_a < 0) or np.any(recorded_b < 0):
+        raise RuntimeError("development degree metadata cannot be negative")
+    expected_strata = [
+        degree_pair_stratum(int(left), int(right))
+        for left, right in zip(recorded_a, recorded_b, strict=True)
+    ]
+    if rows["stratum_id"].to_pylist() != expected_strata:
+        raise RuntimeError("development degree metadata differs from frozen stratum")
+    if not cell_id.startswith("source_exclusive:") and (
+        not np.array_equal(pooled_a, recorded_a)
+        or not np.array_equal(pooled_b, recorded_b)
+    ):
+        raise RuntimeError("primary development degree metadata differs from training graph")
+
+
 def deterministic_scores(
     rows: pa.Table,
     *,
+    cell_id: str,
     universe: EndpointUniverse,
     graph: TrainingGraph,
     kmer: sparse.csr_matrix,
@@ -217,10 +256,12 @@ def deterministic_scores(
     a = _map(rows["endpoint_a_sha256"].to_pylist(), universe.index_by_sha256)
     b = _map(rows["endpoint_b_sha256"].to_pylist(), universe.index_by_sha256)
     degree_a, degree_b = graph.degree[a], graph.degree[b]
-    recorded_a = np.asarray(rows["endpoint_a_training_degree"].to_numpy(), dtype=np.int64)
-    recorded_b = np.asarray(rows["endpoint_b_training_degree"].to_numpy(), dtype=np.int64)
-    if not np.array_equal(degree_a, recorded_a) or not np.array_equal(degree_b, recorded_b):
-        raise RuntimeError("development degree metadata differs from training graph")
+    validate_degree_metadata(
+        cell_id=cell_id,
+        rows=rows,
+        pooled_degree_a=degree_a,
+        pooled_degree_b=degree_b,
+    )
     output = np.empty((rows.num_rows, len(DETERMINISTIC_SCORERS)), dtype=np.float64)
     for index, pair_id in enumerate(pair_ids):
         payload = f"ipin-openppi-pu-r-baseline-v1:20260803:baseline:{pair_id}".encode("utf-8")
@@ -395,7 +436,7 @@ def score_cell(
     if positive_rows <= 0 or rows.num_rows - positive_rows != 1_000_000:
         raise RuntimeError("development cell P/U row census drift")
     deterministic, pair_a, pair_b = deterministic_scores(
-        rows, universe=universe, graph=graph, kmer=kmer
+        rows, cell_id=cell_id, universe=universe, graph=graph, kmer=kmer
     )
     deterministic[:, 8] = score_interolog_gpu(similarities, neighbor_max, pair_a, pair_b)
     runs, ensembles, scorer_ids = scorer_records(training_registry)

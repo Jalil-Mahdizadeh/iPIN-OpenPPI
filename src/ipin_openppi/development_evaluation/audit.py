@@ -18,7 +18,7 @@ from ipin_openppi.stage1.models import build_model
 
 from .evaluation import _load_bootstrap, gpu_bootstrap_distributions
 from .release import resolve_development_key_only, sha256_file
-from .scoring import optimized_checkpoint_scores, scorer_records
+from .scoring import optimized_checkpoint_scores, scorer_records, validate_degree_metadata
 from .semantics import (
     DETERMINISTIC_SCORERS,
     bootstrap_concordance_reference,
@@ -200,6 +200,62 @@ def run_audit(project_root: Path, config_path: Path) -> dict[str, Any]:
             "input_nullability": [False, True],
             "output_values": promoted["value"].to_pylist(),
             "output_type": str(promoted.schema.field("value").type),
+        },
+    )
+
+    degree_rows = pa.table(
+        {
+            "endpoint_a_training_degree": np.asarray([1, 0], dtype=np.int64),
+            "endpoint_b_training_degree": np.asarray([0, 2], dtype=np.int64),
+            "stratum_id": ["0|1", "0|2"],
+        }
+    )
+    source_semantics_ok = True
+    try:
+        validate_degree_metadata(
+            cell_id="source_exclusive:HI-II-14:C2_development",
+            rows=degree_rows,
+            pooled_degree_a=np.asarray([12, 0], dtype=np.int64),
+            pooled_degree_b=np.asarray([0, 25], dtype=np.int64),
+        )
+    except RuntimeError:
+        source_semantics_ok = False
+    primary_mismatch_rejected = False
+    try:
+        validate_degree_metadata(
+            cell_id="C2_development",
+            rows=degree_rows,
+            pooled_degree_a=np.asarray([12, 0], dtype=np.int64),
+            pooled_degree_b=np.asarray([0, 25], dtype=np.int64),
+        )
+    except RuntimeError:
+        primary_mismatch_rejected = True
+    bad_stratum = degree_rows.set_column(
+        2, "stratum_id", pa.array(["0|2", "0|2"], type=pa.string())
+    )
+    source_stratum_mismatch_rejected = False
+    try:
+        validate_degree_metadata(
+            cell_id="source_exclusive:HI-II-14:C2_development",
+            rows=bad_stratum,
+            pooled_degree_a=np.asarray([12, 0], dtype=np.int64),
+            pooled_degree_b=np.asarray([0, 25], dtype=np.int64),
+        )
+    except RuntimeError:
+        source_stratum_mismatch_rejected = True
+    _check(
+        checks,
+        "issue_0010_source_design_degree_guard_and_pooled_scorer_features",
+        source_semantics_ok
+        and primary_mismatch_rejected
+        and source_stratum_mismatch_rejected
+        and "degree_a, degree_b = graph.degree[a], graph.degree[b]" in scoring_source
+        and "output[:, 1] = np.log1p(degree_a) + np.log1p(degree_b)" in scoring_source,
+        {
+            "source_visible_design_metadata_accepted": source_semantics_ok,
+            "primary_pooled_degree_mismatch_rejected": primary_mismatch_rejected,
+            "source_stratum_mismatch_rejected": source_stratum_mismatch_rejected,
+            "scorer_degree_source": "pooled_16799_training_positive_graph",
         },
     )
 

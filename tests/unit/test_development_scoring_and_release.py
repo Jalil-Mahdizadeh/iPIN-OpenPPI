@@ -14,7 +14,11 @@ from ipin_openppi.development_evaluation.release import (
     resolve_development_key_only,
     sha256_file,
 )
-from ipin_openppi.development_evaluation.scoring import load_cell_rows, optimized_checkpoint_scores
+from ipin_openppi.development_evaluation.scoring import (
+    load_cell_rows,
+    optimized_checkpoint_scores,
+    validate_degree_metadata,
+)
 from ipin_openppi.stage1.models import build_model
 
 
@@ -96,3 +100,45 @@ def test_issue_0009_permissive_concat_changes_only_nullability_metadata() -> Non
     assert 'pa.concat_tables(tables, promote_options="permissive")' in inspect.getsource(
         load_cell_rows
     )
+
+
+def _degree_rows(strata: list[str] | None = None) -> pa.Table:
+    return pa.table(
+        {
+            "endpoint_a_training_degree": np.asarray([1, 0], dtype=np.int64),
+            "endpoint_b_training_degree": np.asarray([0, 2], dtype=np.int64),
+            "stratum_id": strata or ["0|1", "0|2"],
+        }
+    )
+
+
+def test_issue_0010_primary_degree_metadata_requires_pooled_graph_identity() -> None:
+    validate_degree_metadata(
+        cell_id="C2_development",
+        rows=_degree_rows(),
+        pooled_degree_a=np.asarray([1, 0], dtype=np.int64),
+        pooled_degree_b=np.asarray([0, 2], dtype=np.int64),
+    )
+    with pytest.raises(RuntimeError, match="primary development degree metadata"):
+        validate_degree_metadata(
+            cell_id="C2_development",
+            rows=_degree_rows(),
+            pooled_degree_a=np.asarray([12, 0], dtype=np.int64),
+            pooled_degree_b=np.asarray([0, 25], dtype=np.int64),
+        )
+
+
+def test_issue_0010_source_design_degree_is_validated_by_frozen_stratum() -> None:
+    validate_degree_metadata(
+        cell_id="source_exclusive:HI-II-14:C2_development",
+        rows=_degree_rows(),
+        pooled_degree_a=np.asarray([12, 0], dtype=np.int64),
+        pooled_degree_b=np.asarray([0, 25], dtype=np.int64),
+    )
+    with pytest.raises(RuntimeError, match="differs from frozen stratum"):
+        validate_degree_metadata(
+            cell_id="source_exclusive:HI-II-14:C2_development",
+            rows=_degree_rows(["0|2", "0|2"]),
+            pooled_degree_a=np.asarray([12, 0], dtype=np.int64),
+            pooled_degree_b=np.asarray([0, 25], dtype=np.int64),
+        )
