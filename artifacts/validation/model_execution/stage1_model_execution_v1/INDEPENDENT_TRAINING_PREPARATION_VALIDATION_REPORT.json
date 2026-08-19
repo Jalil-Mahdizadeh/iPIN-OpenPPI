@@ -1,0 +1,119 @@
+{
+  "checks": [
+    {
+      "check_id": "binding_config_and_public_input_rehash",
+      "detail": {
+        "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet": "4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet": "4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/sampling_strata/part-00000.parquet": "b8e4247ce934d837477513b322af008413ac8d61fa95ccedd16fe2712c1d6427",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet": "d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "production_preparation_evidence_boundary",
+      "detail": {
+        "evidence_commit": "8d026f6b18c4770bd820654ca95f5dfaf7465f33",
+        "registry_sha256": "8d15f244f390d7069a4ecd7453622a425a465dcf1ec9d32087e4d557fbb84f4e"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_63_preparation_artifacts_rehashed",
+      "detail": {
+        "artifact_count": 63,
+        "bytes": 290404616
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_exact_30_run_matrix",
+      "detail": {
+        "family_counts": {
+          "esm2_650m_linear_ablation": 6,
+          "esm2_650m_nonlinear_no_gate_ablation": 9,
+          "esm2_650m_partner_gated_primary": 9,
+          "lightweight_esm2_150m_linear": 6
+        },
+        "run_count": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_public_P_U_endpoint_boundary",
+      "detail": {
+        "P": 16799,
+        "U": 2000000,
+        "endpoints": 17000
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_training_array_reconstruction",
+      "detail": {
+        "positive_endpoint_a": [
+          16799
+        ],
+        "positive_endpoint_b": [
+          16799
+        ],
+        "unlabeled_endpoint_a": [
+          2000000
+        ],
+        "unlabeled_endpoint_b": [
+          2000000
+        ],
+        "unlabeled_weight_denominator": [
+          2000000
+        ],
+        "unlabeled_weight_numerator": [
+          2000000
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_all_30_order_reconstruction",
+      "detail": {
+        "order_count": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_all_30_config_contracts",
+      "detail": {
+        "config_count": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_single_GPU_offline_launch_and_budget_contract",
+      "detail": {
+        "orchestrator_sha256": "94166e30ff22a2f219eeff62563d1e2cf930e48db5d5313634a12183508490d7"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_no_training_and_no_sensitive_input",
+      "detail": {
+        "registered_artifacts": 63,
+        "training_started": false
+      },
+      "status": "pass"
+    }
+  ],
+  "independence": {
+    "imports_production_stage1_modules": false,
+    "imports_torch_or_model_framework": false,
+    "method": "clean_room_order_array_config_and_launch_reconstruction",
+    "production_evidence_commit": "8d026f6b18c4770bd820654ca95f5dfaf7465f33"
+  },
+  "protocol_configuration_sha256": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+  "schema_version": 1,
+  "status": "pass",
+  "summary": {
+    "fail": 0,
+    "pass": 10,
+    "warning": 0
+  }
+}
