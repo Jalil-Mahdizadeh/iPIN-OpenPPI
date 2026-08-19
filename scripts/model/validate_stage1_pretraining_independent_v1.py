@@ -352,7 +352,7 @@ def validate(project_root: Path, output: Path) -> dict[str, Any]:
     _check(
         checks,
         "partition_census_and_training_only_index",
-        partition_counts == Counter({"train": 11_900, "development": 2_550, "protected_test": 2_550}) and training_indices.size == 11_900,
+        partition_counts == Counter({"train": 11_900, "development": 2_550, "test": 2_550}) and training_indices.size == 11_900,
         dict(sorted(partition_counts.items())),
     )
 

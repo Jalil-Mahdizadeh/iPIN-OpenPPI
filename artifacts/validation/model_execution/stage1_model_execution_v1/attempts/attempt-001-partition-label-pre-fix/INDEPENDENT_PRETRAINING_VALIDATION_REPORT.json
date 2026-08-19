@@ -1,0 +1,264 @@
+{
+  "checks": [
+    {
+      "check_id": "binding_configuration_and_public_inputs",
+      "detail": {
+        "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet": "4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e",
+        "data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet": "66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet": "4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/sampling_strata/part-00000.parquet": "b8e4247ce934d837477513b322af008413ac8d61fa95ccedd16fe2712c1d6427",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet": "d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "production_evidence_clean_commit_boundary",
+      "detail": {
+        "producer_commit": "0ab3740b1ce3ddb9f78fdb4ddd07981dff5a9c9c",
+        "registry_sha256": "429e9b3c40827ea5a7513b3599a95d201cdc5eea1e0f99f8c384050cbfcbaed1"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "runtime_checkpoint_and_tokenizer_rehash",
+      "detail": {
+        "container_bytes": 10656620544,
+        "container_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "embedding_registry_artifacts_rehashed",
+      "detail": {
+        "artifacts": 16
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "endpoint_identity_order_and_window_coverage",
+      "detail": {
+        "endpoint_order_sha256": "c0374aee11a6aad6f25974c36cf789411ddd6e71186e8ff4c04223ab0c168d48",
+        "layout": {
+          "batches": 2690,
+          "residue_window_tokens": 10542687,
+          "windows": 19143
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "partition_census_and_training_only_index",
+      "detail": {
+        "development": 2550,
+        "test": 2550,
+        "train": 11900
+      },
+      "status": "fail"
+    },
+    {
+      "check_id": "esm2_150m_independent_binding_and_file_set",
+      "detail": {
+        "files": [
+          "EMBEDDING_MANIFEST.json",
+          "deterministic_repeat_report.json",
+          "pooled_embeddings.f32.npy",
+          "repeat_embeddings.f32.npy",
+          "standardized_embeddings.f32.npy",
+          "training_normalization.npz"
+        ],
+        "revision": "a695f6045e2e32885fa60af20c13cb35398ce30c"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_independent_matrix_shape_dtype_finiteness",
+      "detail": {
+        "dtype": "float32",
+        "shape": [
+          17000,
+          640
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_independent_all_vector_hashes",
+      "detail": {
+        "cache_keys": 17000,
+        "vectors": 17000
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_independent_training_only_normalization",
+      "detail": {
+        "maximum_standardized_difference": 0.0,
+        "training_endpoints": 11900
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_independent_bottom_hash_repeat",
+      "detail": {
+        "layout": {
+          "batches": 28,
+          "residue_window_tokens": 109487,
+          "windows": 194
+        },
+        "maximum_absolute_difference": 0.0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_independent_binding_and_file_set",
+      "detail": {
+        "files": [
+          "EMBEDDING_MANIFEST.json",
+          "deterministic_repeat_report.json",
+          "pooled_embeddings.f32.npy",
+          "repeat_embeddings.f32.npy",
+          "standardized_embeddings.f32.npy",
+          "training_normalization.npz"
+        ],
+        "revision": "08e4846e537177426273712802403f7ba8261b6c"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_independent_matrix_shape_dtype_finiteness",
+      "detail": {
+        "dtype": "float32",
+        "shape": [
+          17000,
+          1280
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_independent_all_vector_hashes",
+      "detail": {
+        "cache_keys": 17000,
+        "vectors": 17000
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_independent_training_only_normalization",
+      "detail": {
+        "maximum_standardized_difference": 0.0,
+        "training_endpoints": 11900
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_independent_bottom_hash_repeat",
+      "detail": {
+        "layout": {
+          "batches": 29,
+          "residue_window_tokens": 114421,
+          "windows": 199
+        },
+        "maximum_absolute_difference": 0.0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "public_P_U_census_state_and_exact_rational_weights",
+      "detail": {
+        "P": 16799,
+        "U": 2000000,
+        "mean_U_weight_float64": 5.451115000000004,
+        "strata": 36
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_objective_order_and_positive_coverage",
+      "detail": {
+        "ceiling_count": 919,
+        "fixture_order": [
+          "pair-c",
+          "pair-b",
+          "pair-a"
+        ],
+        "maximum_repetitions": 120,
+        "minimum_repetitions": 119
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_model_baseline_objective_source_contract",
+      "detail": {
+        "parameter_counts": {
+          "esm2_650m_linear_ablation": 3842,
+          "esm2_650m_nonlinear_no_gate_ablation": 426625,
+          "esm2_650m_partner_gated_primary": 492417,
+          "lightweight_esm2_150m_linear": 1922
+        },
+        "source_sha256": {
+          "baselines.py": "26786946de618b82ea4f7e4ad821f5ee6cbd8123bce978365f794cb0912552b7",
+          "models.py": "653340c6aa7caa21672f855fec6b0562857984560b49b20a2e37a4c9579ede28",
+          "objective.py": "34258f553dd6406d9a5ef0fd0320cd703f7ecb4ca0d3f2bb4e9cbc598942eaab",
+          "preparation.py": "3f2c3d0a5076518dc576bb86678a165e73079f68af17cd1d483ad9e3150cb6ac",
+          "training.py": "4000f8e5fab939e90f84d28a5343076d0d6b5b0e1e4f084669a259ac9bc6b0ee"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "public_only_visibility_and_absence_of_sensitive_inputs",
+      "detail": {
+        "registered_paths": [
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/EMBEDDING_MANIFEST.json",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/deterministic_repeat_report.json",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/pooled_embeddings.f32.npy",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/repeat_embeddings.f32.npy",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/standardized_embeddings.f32.npy",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/training_normalization.npz",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/EMBEDDING_MANIFEST.json",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/deterministic_repeat_report.json",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/pooled_embeddings.f32.npy",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/repeat_embeddings.f32.npy",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/standardized_embeddings.f32.npy",
+          "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/training_normalization.npz",
+          "artifacts/validation/model_execution/stage1_model_execution_v1/MODEL_CUSTODY_MANIFEST.json",
+          "artifacts/validation/model_execution/stage1_model_execution_v1/MODEL_RUNTIME_QUALIFICATION_REPORT.json",
+          "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet",
+          "data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet"
+        ],
+        "source_modules_scanned": [
+          "baselines.py",
+          "models.py",
+          "objective.py",
+          "preparation.py",
+          "training.py"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "pretraining_compute_storage_and_candidate_budget",
+      "detail": {
+        "candidate_count": 2,
+        "embedding_bytes": 306529805,
+        "gpu_hours": 0.21204846865057736
+      },
+      "status": "pass"
+    }
+  ],
+  "independence": {
+    "imports_production_stage1_modules": false,
+    "imports_torch_or_model_framework": false,
+    "method": "clean_room_reimplementation_and_artifact_rehash",
+    "production_evidence_commit": "f2277346ee77d2fd22753a7fc1b846e09575420b"
+  },
+  "protocol_configuration_sha256": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+  "schema_version": 1,
+  "status": "fail",
+  "summary": {
+    "fail": 1,
+    "pass": 20,
+    "warning": 0
+  }
+}
