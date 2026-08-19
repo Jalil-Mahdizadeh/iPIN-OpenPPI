@@ -190,7 +190,7 @@ def load_cell_rows(package_root: Path, cell_id: str) -> pa.Table:
         if table.num_rows == 0 or set(table["state"].to_pylist()) != {state}:
             raise RuntimeError(f"missing or invalid {state} rows for {cell_id}")
         tables.append(table)
-    output = pa.concat_tables(tables)
+    output = pa.concat_tables(tables, promote_options="permissive")
     pair_ids = output["pair_id"].to_pylist()
     positive_rows = tables[0].num_rows
     if len(set(map(str, pair_ids[:positive_rows]))) != positive_rows:

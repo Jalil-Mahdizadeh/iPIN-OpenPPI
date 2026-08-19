@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 
 import numpy as np
+import pyarrow as pa
 import pytest
 import torch
 
@@ -13,7 +14,7 @@ from ipin_openppi.development_evaluation.release import (
     resolve_development_key_only,
     sha256_file,
 )
-from ipin_openppi.development_evaluation.scoring import optimized_checkpoint_scores
+from ipin_openppi.development_evaluation.scoring import load_cell_rows, optimized_checkpoint_scores
 from ipin_openppi.stage1.models import build_model
 
 
@@ -76,3 +77,22 @@ def test_development_key_resolver_rejects_any_other_path(tmp_path: Path) -> None
     (tmp_path / ".private").mkdir(mode=0o700)
     with pytest.raises(RuntimeError, match="differs from DEC-0032"):
         resolve_development_key_only(tmp_path, ".private/something_else.pem")
+
+
+def test_issue_0009_permissive_concat_changes_only_nullability_metadata() -> None:
+    strict = pa.Table.from_arrays(
+        [pa.array([1, 2], type=pa.int64())],
+        schema=pa.schema([pa.field("value", pa.int64(), nullable=False)]),
+    )
+    nullable = pa.Table.from_arrays(
+        [pa.array([3, 4], type=pa.int64())],
+        schema=pa.schema([pa.field("value", pa.int64(), nullable=True)]),
+    )
+    observed = pa.concat_tables([strict, nullable], promote_options="permissive")
+    assert observed.schema.names == ["value"]
+    assert observed.schema.field("value").type == pa.int64()
+    assert observed["value"].to_pylist() == [1, 2, 3, 4]
+    assert observed.num_rows == strict.num_rows + nullable.num_rows
+    assert 'pa.concat_tables(tables, promote_options="permissive")' in inspect.getsource(
+        load_cell_rows
+    )

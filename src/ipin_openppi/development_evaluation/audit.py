@@ -180,6 +180,29 @@ def run_audit(project_root: Path, config_path: Path) -> dict[str, Any]:
         {"score_only_selected_checkpoint_state": True, "encoder_inference": False},
     )
 
+    strict_schema = pa.schema([pa.field("value", pa.int64(), nullable=False)])
+    nullable_schema = pa.schema([pa.field("value", pa.int64(), nullable=True)])
+    strict_table = pa.Table.from_arrays([pa.array([1, 2], type=pa.int64())], schema=strict_schema)
+    nullable_table = pa.Table.from_arrays([pa.array([3, 4], type=pa.int64())], schema=nullable_schema)
+    promoted = pa.concat_tables(
+        [strict_table, nullable_table], promote_options="permissive"
+    )
+    _check(
+        checks,
+        "issue_0009_nullability_only_concat_preserves_rows_values_and_type",
+        'pa.concat_tables(tables, promote_options="permissive")' in scoring_source
+        and promoted.schema.names == ["value"]
+        and promoted.schema.field("value").type == pa.int64()
+        and promoted["value"].to_pylist() == [1, 2, 3, 4]
+        and promoted.num_rows == 4,
+        {
+            "authorized_change": "promote_options=permissive",
+            "input_nullability": [False, True],
+            "output_values": promoted["value"].to_pylist(),
+            "output_type": str(promoted.schema.field("value").type),
+        },
+    )
+
     # Exact HT and half-tie fixture, independently expanded over P x U.
     p = np.asarray([0.5, 1.0])
     u = np.asarray([0.0, 0.5, 2.0])
