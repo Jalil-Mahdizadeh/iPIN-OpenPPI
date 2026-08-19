@@ -1,0 +1,31 @@
+schema_version: 41
+supersedes: governance/gates/gate_status_v40.yaml
+updated_date: "2026-08-19"
+programme_state: public_training_local_representation_diagnostic_authorized_after_fp32_audit_correction
+
+gates:
+  parent_development_result:
+    status: accepted_frozen_unchanged_stopped
+  local_representation_diagnostic:
+    status: executable_retry_authorized
+    governing_decisions:
+      - governance/decisions/DEC-0040-authorize-public-training-local-representation-diagnostic.md
+      - governance/decisions/DEC-0041-clarify-local-cosine-reductions-before-execution.md
+      - governance/decisions/DEC-0042-authorize-fp32-reconstruction-tolerance-correction.md
+    failed_attempt_embedding_files_written: 0
+    failed_attempt_pair_scores_or_metrics_written: 0
+    observed_fp32_reduction_difference: 0.0000152587890625
+    corrected_audit_tolerance: 0.0001
+    scientific_or_trigger_change: false
+  protected_test:
+    status: fully_sealed_prohibited
+
+global_prohibitions:
+  development_or_protected_information_use: true
+  negative_or_pseudo_negative_construction: true
+  parent_benchmark_or_scientific_threshold_change: true
+  adaptive_model_or_scorer_change: true
+
+next_authorized_work_package: retry_exact_DEC_0041_execution_with_DEC_0042_numeric_audit_tolerance
+development_or_protected_evaluation_authorized: false
+

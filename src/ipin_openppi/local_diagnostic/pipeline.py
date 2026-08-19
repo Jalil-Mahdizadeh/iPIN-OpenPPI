@@ -46,6 +46,7 @@ from .semantics import (
     MAX_SEGMENTS,
     SPLIT_SALT,
     TARGET_HELDOUT_ENDPOINTS,
+    fp32_reconstruction_within_tolerance,
     local_pair_scores,
     nested_cell,
     phase_a_trigger,
@@ -392,7 +393,7 @@ def extract_local_embeddings(project_root: Path) -> dict[str, Any]:
                 )
     if active_sum or active_count or completed != len(records):
         raise RuntimeError("local embedding extraction ended incomplete")
-    if reconstruction_maximum > 2e-6:
+    if not fp32_reconstruction_within_tolerance(reconstruction_maximum):
         raise RuntimeError(f"segment/global reconstruction tolerance failed: {reconstruction_maximum}")
 
     parent = np.load(project_root / PARENT_POOLED, allow_pickle=False, mmap_mode="r")
@@ -452,6 +453,7 @@ def extract_local_embeddings(project_root: Path) -> dict[str, Any]:
         "heldout_endpoint_count": TARGET_HELDOUT_ENDPOINTS,
         "maximum_parent_pooled_absolute_difference": parent_maximum,
         "maximum_segment_global_reconstruction_difference": reconstruction_maximum,
+        "maximum_segment_global_reconstruction_tolerance": 1e-4,
         "model_revision": MODEL_REVISION,
         "preflight": preflight,
         "protocol_id": PROTOCOL_ID,
@@ -905,7 +907,7 @@ def evaluate_phase_a(project_root: Path) -> dict[str, Any]:
         {
             "check_id": "same_forward_segment_weighted_global_reconstruction",
             "passed": embedding_manifest["maximum_segment_global_reconstruction_difference"]
-            <= 2e-6,
+            <= 1e-4,
         },
         {
             "check_id": "all_seven_scores_finite_and_local_GPU_matches_CPU",

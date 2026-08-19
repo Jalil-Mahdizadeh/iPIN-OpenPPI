@@ -2,6 +2,7 @@
 
 from .semantics import (
     LocalPairScores,
+    fp32_reconstruction_within_tolerance,
     local_pair_scores,
     nested_cell,
     phase_a_trigger,
@@ -11,6 +12,7 @@ from .semantics import (
 
 __all__ = [
     "LocalPairScores",
+    "fp32_reconstruction_within_tolerance",
     "local_pair_scores",
     "nested_cell",
     "phase_a_trigger",

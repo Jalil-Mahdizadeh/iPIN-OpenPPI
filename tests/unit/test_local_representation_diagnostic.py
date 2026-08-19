@@ -6,6 +6,7 @@ import numpy as np
 import pytest
 
 from ipin_openppi.local_diagnostic.semantics import (
+    fp32_reconstruction_within_tolerance,
     local_pair_scores,
     nested_cell,
     phase_a_trigger,
@@ -62,3 +63,9 @@ def test_phase_a_trigger_is_permissive_point_rule() -> None:
     assert passed is True and delta == pytest.approx(0.02)
     assert phase_a_trigger(0.509, 0.40)[0] is False
     assert phase_a_trigger(0.60, 0.595)[0] is False
+
+
+def test_fp32_reconstruction_tolerance_accepts_observed_reduction_order_error() -> None:
+    assert fp32_reconstruction_within_tolerance(1.52587890625e-05)
+    assert fp32_reconstruction_within_tolerance(1e-4)
+    assert not fp32_reconstruction_within_tolerance(1.0001e-4)

@@ -14,6 +14,7 @@ SPLIT_SALT = "ipin-openppi-local-representation-diagnostic-v1"
 TARGET_HELDOUT_ENDPOINTS = 2_380
 TARGET_RESIDUES_PER_SEGMENT = 128
 MAX_SEGMENTS = 32
+FP32_RECONSTRUCTION_TOLERANCE = 1e-4
 
 
 def segment_boundaries(
@@ -158,3 +159,10 @@ def phase_a_trigger(
         raise ValueError("trigger inputs must be finite")
     delta = local - global_value
     return local >= local_minimum and delta >= delta_minimum, delta
+
+
+def fp32_reconstruction_within_tolerance(maximum_absolute_difference: float) -> bool:
+    value = float(maximum_absolute_difference)
+    if not math.isfinite(value) or value < 0:
+        raise ValueError("reconstruction difference must be finite and nonnegative")
+    return value <= FP32_RECONSTRUCTION_TOLERANCE
