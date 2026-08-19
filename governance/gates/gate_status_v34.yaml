@@ -1,0 +1,90 @@
+schema_version: 34
+supersedes: governance/gates/gate_status_v33.yaml
+updated_date: "2026-08-19"
+programme_state: development_released_once_nullability_correction_requalified_scoring_active
+
+gates:
+  model_governance:
+    status: accepted_frozen_unchanged
+    acceptance_decision: governance/decisions/DEC-0028-accept-model-governance-and-baseline-training-protocol.md
+  stage_1_training:
+    status: pass_complete_frozen_unchanged
+    training_registry_sha256: 11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318
+    selected_checkpoint_count: 30
+    ensemble_count: 10
+    additional_training_authorized: false
+  development_release:
+    status: pass_complete_exactly_once
+    ciphertext_sha256: bbbd07472da621a34f45e95ab4b51c799fa0fc967d94de2aa3578e0cda0c1d41
+    archive_sha256: c8d1520d5dbc5b435a1ed5149cbd2f9a731fb3cee10cd651dd0a19b475741122
+    manifest_sha256: 3f58403138b878d912789f529dc1f8ec7d1db7356d6ccc4c3b88cfcb2f6554fa
+    table_count: 13
+    table_rows: 9044323
+    additional_decryption_authorized: false
+  scoring_incident:
+    status: resolved_before_first_score_row
+    issue: governance/issues/ISSUE-0009-development-row-nullability-concat.md
+    correction_decision: governance/decisions/DEC-0034-authorize-nullability-only-development-loader-correction.md
+    first_attempt_files_produced: 0
+    first_attempt_score_rows_produced: 0
+    metrics_or_selection_produced: false
+  technical_correction:
+    status: pass_exact_change_independently_requalified
+    acceptance_decision: governance/decisions/DEC-0035-accept-nullability-correction-requalification-and-resume-development-scoring.md
+    exact_change: pyarrow_concat_tables_promote_options_permissive
+    nullability_metadata_only: true
+    corrected_scoring_sha256: 5ccd061814a3d20bb39b54048ef11cf86bc350f832bd373b2d7aca1892feef30
+    production_audit:
+      status: pass
+      checks: 13
+      report: artifacts/validation/development_evaluation/development_release_and_evaluation_v1/revision_2/PRE_RELEASE_PRODUCTION_AUDIT_REPORT.json
+      sha256: 963b3a9d0e567bc0dd4d1850bd9d8a9382579f46ce9f4643297923f5ccb4962e
+    independent_validation:
+      status: pass
+      checks: 13
+      report: artifacts/validation/development_evaluation/development_release_and_evaluation_v1/revision_2/PRE_RELEASE_INDEPENDENT_VALIDATION_REPORT.json
+      sha256: aaeab6728463f188eb8d81c355a333071f695b5d7278e38c1440aed6a810e5d8
+    development_plaintext_or_key_access_during_requalification: false
+    protected_candidate_truth_or_key_access_during_requalification: false
+  development_scoring:
+    status: active_existing_release_only
+    resume_authorized_now: true
+    second_decryption_authorized: false
+    deterministic_baseline_count: 9
+    selected_checkpoint_count: 30
+    ensemble_count: 10
+    development_cell_count: 9
+    training_tuning_or_checkpoint_change_authorized: false
+  protected_test:
+    status: encrypted_evaluator_only_fully_sealed
+    candidate_or_truth_access_authorized: false
+    private_key_access_authorized: false
+    scoring_or_metric_authorized: false
+  compute:
+    hardware: at_most_one_NVIDIA_GH200_120GB
+    maximum_gpu_hours: 30
+    maximum_new_governed_storage_gib: 100
+    multi_gpu_or_multi_node_authorized: false
+
+development_evaluation:
+  authorization_decision: DEC-0032
+  initial_activation_decision: DEC-0033
+  correction_authorization_decision: DEC-0034
+  scoring_reactivation_decision: DEC-0035
+  development_decryption_authorized_now: false
+  use_existing_release_only: true
+  scoring_authorized_now: true
+  protected_candidate_truth_or_key_access_authorized: false
+
+global_prohibitions:
+  second_development_decryption: true
+  protected_candidate_truth_or_private_key_access: true
+  training_retraining_tuning_or_checkpoint_change: true
+  scorer_protocol_threshold_or_benchmark_change: true
+  negative_or_pseudo_negative_construction: true
+  external_panel_structure_residue_or_interface_work: true
+  adaptive_post_release_analysis: true
+  multi_gpu_or_multi_node_model_execution: true
+
+next_authorized_work_package: score_existing_development_release_with_49_frozen_scorers_then_evaluate_and_independently_validate
+return_to_governance_before_protected_test_required: true
