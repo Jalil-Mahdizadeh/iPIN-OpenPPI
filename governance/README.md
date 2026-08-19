@@ -11,8 +11,8 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
-The current authoritative ledger is `gates/gate_status_v27.yaml`; the current
-scientific status is `PROJECT_STATUS_v27.md`; and the fresh-thread phase
+The current authoritative ledger is `gates/gate_status_v28.yaml`; the current
+scientific status is `PROJECT_STATUS_v28.md`; and the fresh-thread phase
 checkpoint is
 `checkpoints/RESUME-003-post-model-governance-protocol-freeze.md`. `DEC-0017`
 technically accepts the TF-isoform audit and its external-only quarantine.
@@ -30,11 +30,15 @@ encrypted-protected-truth package.
 `DEC-0027` authorized the design-only model protocol work package. `DEC-0028`
 accepts and freezes its independently validated protocol, simple diagnostic
 baseline/training design, exposure claim ceiling, development freeze, and
-shortcut/complexity kill rules. It authorizes no model acquisition,
-implementation, embedding, training, development release, or protected use.
+shortcut/complexity kill rules. `DEC-0029` authorizes its bounded Stage 1
+executable work package. A separately numbered acceptance of the constructed
+and independently qualified model SIF is required before scientific embedding
+or training.
 
 The primary PU-R design remains binding and unreported eligible pairs remain
 unlabeled. Artifact modification or resampling, development release, protected
 candidate/truth access, public protected-test identity, the full candidate
 universe, negatives or pseudo-negatives, panel or structural integration, and
-all executable model work remain prohibited pending a new numbered decision.
+all model work outside the explicitly bounded Stage 1 package remain
+prohibited. Development and protected use remain prohibited; executable Stage
+1 work is limited exactly to `DEC-0029` and the frozen `DEC-0028` protocol.

@@ -1,0 +1,100 @@
+schema_version: 28
+supersedes: governance/gates/gate_status_v27.yaml
+updated_date: "2026-08-19"
+programme_state: stage_1_executable_model_work_authorized_runtime_acceptance_required_before_scientific_use
+
+gates:
+  initiation:
+    status: pass
+    evidence: governance/START_MANIFEST_v1.yaml
+  evidence:
+    status: immutable_pair_package_preserved
+    frozen_parent_acceptance: governance/decisions/DEC-0026-accept-pair-level-pu-r-benchmark-artifacts.md
+    frozen_endpoint_count: 17000
+    frozen_partition_endpoint_counts: {train: 11900, development: 2550, test: 2550}
+    frozen_hard_rule_components: 7782
+    public_training_positive_pairs: 16799
+    public_training_unlabeled_rows: 2000000
+    accepted_artifacts_may_be_modified: false
+  model_governance:
+    status: accepted_frozen
+    acceptance_decision: governance/decisions/DEC-0028-accept-model-governance-and-baseline-training-protocol.md
+    configuration: configs/model_governance_and_baseline_training_protocol_v1.yaml
+    configuration_sha256: 3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5
+    binding_protocol_sha256: 5daf5809b864de75f236ca3552369f943300bdbc86557a3a99277665faeda851
+    frozen_plm_candidates: [esm2_150m, esm2_650m]
+    frozen_run_count: 30
+    frozen_comparison_ceiling: 300000000
+  stage_1_authorization:
+    status: pass
+    decision: governance/decisions/DEC-0029-authorize-stage-1-executable-model-work.md
+    authority_checkpoint: governance/checkpoints/RESUME-003-post-model-governance-protocol-freeze.md
+    public_training_only: true
+    exact_protocol_execution_required: true
+    return_to_governance_required: true
+  container:
+    status: model_runtime_construction_and_independent_qualification_authorized
+    qualified_parent_sif: containers/images/ipin-qual-arm64_0.1.0.sif
+    qualified_parent_sif_sha256: 9259e1953dadc502af8949fe56db1fba56f4e3711ccb7542e7feda94c4718ce5
+    required_model_sif: containers/images/ipin-model-arm64_0.1.0.sif
+    scientific_use_status: blocked_pending_separately_numbered_runtime_acceptance
+  model_execution:
+    status: authorized_not_started
+    model_weight_or_tokenizer_acquisition_authorized: true
+    model_cache_population_authorized: true
+    model_runtime_container_build_authorized: true
+    baseline_or_model_implementation_authorized: true
+    runtime_qualification_fixture_authorized: true
+    scientific_embedding_or_training_authorized_after_runtime_acceptance: true
+    scientific_embedding_or_training_authorized_now: false
+    development_or_protected_scoring_authorized: false
+    hardware: one_NVIDIA_GH200_120GB
+    multi_gpu_or_multi_node_authorized: false
+    maximum_gpu_hours: 100
+    maximum_project_storage_gib: 100
+  development:
+    status: encrypted_unreleased
+    release_or_access_authorized: false
+    prerequisite: complete_frozen_training_registry_independent_validation_and_new_numbered_governance_decision
+  protected_test:
+    status: encrypted_evaluator_only
+    candidate_or_truth_access_authorized: false
+    scoring_or_metric_authorized: false
+  benchmark:
+    status: pair_artifacts_frozen_unchanged
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    endpoint_component_split_frozen: true
+    pair_level_protocol_frozen: true
+    pair_level_benchmark_artifacts_frozen: true
+    additional_pair_or_sample_rows_authorized: false
+    negative_or_pseudo_negative_creation_authorized: false
+    full_candidate_pair_universe_materialization_authorized: false
+  statistical:
+    status: frozen_model_protocol_authorized_for_public_training_execution_only
+  computational_validation:
+    status: pending_model_runtime_and_stage_1_validation
+  release:
+    status: not_started_not_authorized
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  absent_blank_unreported_or_technical_state_as_negative: true
+  accepted_pair_artifact_modification_extension_or_resampling: true
+  additional_pair_level_rows_or_unlabeled_sample_realization: true
+  development_release_or_access: true
+  public_protected_test_candidate_prediction_or_truth_identity: true
+  protected_candidate_or_truth_access: true
+  full_candidate_pair_universe_materialization: true
+  negative_label_construction: true
+  pseudo_negative_sampling: true
+  frozen_endpoint_component_split_or_leakage_graph_modification: true
+  external_panel_or_post_cutoff_evidence_integration: true
+  structural_residue_or_interface_label_work: true
+  adaptive_model_search_or_extra_run: true
+  multi_gpu_or_multi_node_model_execution: true
+  primary_pu_r_design_change: true
+  probability_prevalence_calibration_or_biological_precision_claim: true
+  unseen_family_plm_unseen_or_exhaustive_homology_claim: true
+
+next_authorized_work_package: stage_1_executable_model_work_under_dec_0029
+return_to_governance_required: true
