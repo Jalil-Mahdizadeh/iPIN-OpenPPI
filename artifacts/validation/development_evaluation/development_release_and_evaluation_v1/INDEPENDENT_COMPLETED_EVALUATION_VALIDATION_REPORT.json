@@ -1,0 +1,183 @@
+{
+  "U_interpreted_as_unlabeled_not_negative": true,
+  "check_counts": {
+    "fail": 0,
+    "pass": 16,
+    "total": 16
+  },
+  "checks": [
+    {
+      "check_id": "production_then_independent_commit_order",
+      "detail": {
+        "independent_source_commit": "3a88c737af1bd66a1684c7f66144d89d20035eb1",
+        "production_evidence_commit": "c7ef1736bce641f21297b66d1ac086f825c6a108"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "frozen_production_evidence_and_manifest_gate",
+      "detail": {
+        "production_audit_sha256": "1724a645e39ec232827aa8d1a8b6142fd257ec9404f133e985f2330e15e073ba",
+        "production_registry_sha256": "42aa8b19c4c5cfaf36bfbe1bd19bdf74e7de81df27cccb793809a5ec80d0e189",
+        "results_manifest_sha256": "e6b5455e3c1e0346b5b9c9a358db7abc628732b57bab2ec778992d2fbe9c8299",
+        "scoring_manifest_sha256": "c82be153593ad46101f1ce49e1c79d341da535c71b34ded748c63e478b10dc99"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_source_hash_and_inference_only_binding",
+      "detail": {
+        "scripts/model/audit_development_completed_v1.py": "18cb40412176bdc412d224f6b5f91ca1a25281aabea3672cf2dccfbee399afd1",
+        "scripts/model/evaluate_development_v1.py": "f9dfe6a5baa2096794fb9fefcc2ed16229246f1385c601836e76c8896eee9a2e",
+        "scripts/model/run_development_scoring_v1.py": "3adc6b763a1b5862bfc63f68c2f89b3ad734316b0651d550cbd45ac66391c782",
+        "src/ipin_openppi/development_evaluation/completed_audit.py": "9ba24d9d1ce7cc1eab9a8c62c1407306a77020c3c579aa119a71b62e9fb8c035",
+        "src/ipin_openppi/development_evaluation/evaluation.py": "df8b4949c3e94120a816ea981ad99dd4138826cd896e33153980ea4763fec38f",
+        "src/ipin_openppi/development_evaluation/scoring.py": "874b84270be2fe47211a3936907762ebb6442052eb6928adbdcda50ace60ca5f",
+        "src/ipin_openppi/development_evaluation/semantics.py": "5e63276dbb769659dcb3ca636f0022c485a05bd82f5fc6855ee6aa5b2ee7bd00"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_all_registered_private_public_hashes_and_bytes",
+      "detail": {
+        "registered_bytes": 3959706937,
+        "registered_records": 57,
+        "unique_registered_files": 57
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "public_aggregate_identity_exclusion_and_closed_flags",
+      "detail": {
+        "pair_identity_public": false,
+        "public_files_scanned": 8
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_public_input_embedding_and_checkpoint_dependencies",
+      "detail": {
+        "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet": "4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e",
+        "data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet": "66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet": "4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet": "d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_endpoint_training_graph_degree_and_hub_reconstruction",
+      "detail": {
+        "endpoints": 17000,
+        "exposed_endpoints": 4675,
+        "training_edges": 16799
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_nine_score_matrices_states_finiteness_and_exact_ensembles",
+      "detail": {
+        "cells": 9,
+        "ensembles_checked_all_rows": 10,
+        "rows": 9026108,
+        "scorers": 49
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_all_nine_by_nine_deterministic_score_recomputation",
+      "detail": {
+        "maximum_absolute_difference": 0.0,
+        "score_values_recomputed": 81234972
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_all_thirty_checkpoint_scores_and_swap_symmetry",
+      "detail": {
+        "checkpoint_score_values_recomputed": 270783240,
+        "maximum_absolute_difference": 0.0,
+        "swap_maximum_absolute_difference": 0.0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_all_nine_by_49_point_metrics",
+      "detail": {
+        "cells": 9,
+        "metrics_each": 3,
+        "scorers": 49
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_degree_hub_and_correlation_diagnostics",
+      "detail": {
+        "hub_definitions": [
+          "top_1_percent",
+          "top_5_percent",
+          "top_10_percent"
+        ],
+        "primary_cells": 3
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_all_primary_component_bootstraps",
+      "detail": {
+        "primary_cells": 3,
+        "replicates": 2000,
+        "scorers": 19
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_C1_novel_U_census_weights_and_metrics",
+      "detail": {
+        "positive_rows": 3259,
+        "removed_U_rows": 182817,
+        "retained_U_rows": 817183
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_seed_selection_complexity_and_kill_disposition",
+      "detail": {
+        "best_complex": "esm2_650m_partner_gated_primary__nonlinear_no_dropout",
+        "disposition": "stop_complex_model_claim_and_stop_before_protected_evaluation",
+        "selected_candidate": "lightweight_esm2_150m_linear__linear_lr3e-4"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "development_only_information_flow_and_protected_seal",
+      "detail": {
+        "development_decryption_repeated": false,
+        "protected_key_candidate_or_truth_accessed": false,
+        "training_or_checkpoint_change": false
+      },
+      "status": "pass"
+    }
+  ],
+  "development_decryption_repeated": false,
+  "development_release_plaintext_or_key_accessed": false,
+  "development_stage_disposition": "stop_complex_model_claim_and_stop_before_protected_evaluation",
+  "execution_id": "development_release_and_evaluation_execution_v1",
+  "imports_production_development_evaluation_modules": false,
+  "independent_validator_source_commit": "3a88c737af1bd66a1684c7f66144d89d20035eb1",
+  "pair_identity_public": false,
+  "production_audit_sha256": "1724a645e39ec232827aa8d1a8b6142fd257ec9404f133e985f2330e15e073ba",
+  "production_evidence_commit": "c7ef1736bce641f21297b66d1ac086f825c6a108",
+  "production_registry_sha256": "42aa8b19c4c5cfaf36bfbe1bd19bdf74e7de81df27cccb793809a5ec80d0e189",
+  "protected_private_key_candidates_or_truth_accessed": false,
+  "schema_version": 1,
+  "score_validation_scope": {
+    "cells": 9,
+    "deterministic_scorers_recomputed_all_rows": 9,
+    "ensembles_checked_all_rows": 10,
+    "rows": 9026108,
+    "selected_checkpoints_recomputed_all_rows": 30
+  },
+  "status": "pass",
+  "stop_before_protected_evaluation": true,
+  "training_or_checkpoint_change": false
+}
