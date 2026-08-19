@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import math
 
 import numpy as np
 import pytest
@@ -12,6 +13,10 @@ from ipin_openppi.stage1.embeddings import (
     greedy_window_batches,
     repeat_selection_key,
     window_starts,
+)
+from ipin_openppi.stage1.embedding_audit import (
+    _all_finite,
+    _max_standardization_difference,
 )
 from ipin_openppi.stage1.objective import (
     deterministic_order,
@@ -51,6 +56,18 @@ def test_greedy_batches_never_exceed_residue_budget() -> None:
 def test_repeat_selection_payload_is_frozen() -> None:
     expected = hashlib.sha256(b"esm2_150m:abc").digest()
     assert repeat_selection_key("esm2_150m", "abc") == expected
+
+
+def test_retained_repeat_comparison_helpers() -> None:
+    matrix = np.arange(24, dtype=np.float32).reshape(6, 4)
+    mean = matrix[[0, 2, 4]].astype(np.float64).mean(axis=0)
+    std = np.maximum(matrix[[0, 2, 4]].astype(np.float64).std(axis=0), 1e-6)
+    standardized = ((matrix.astype(np.float64) - mean) / std).astype(np.float32)
+    assert _all_finite(matrix)
+    assert _max_standardization_difference(matrix, standardized, mean, std) == 0.0
+    standardized[1, 1] += np.float32(0.5)
+    assert _max_standardization_difference(matrix, standardized, mean, std) == 0.5
+    assert math.ceil(17_000 * 0.01) == 170
 
 
 def test_exact_order_payload_and_tie_break() -> None:

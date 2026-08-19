@@ -362,6 +362,8 @@ def extract_candidate(*, project_root: Path, candidate_id: str) -> dict[str, Any
     maximum_difference = float(differences.max(initial=0.0))
     if maximum_difference > REPEAT_TOLERANCE:
         raise RuntimeError(f"embedding repeat tolerance exceeded: {maximum_difference}")
+    repeat_matrix_path = output_root / "repeat_embeddings.f32.npy"
+    atomic_numpy(repeat_matrix_path, repeated)
 
     normalization = write_normalization(
         project_root=project_root,
@@ -399,11 +401,25 @@ def extract_candidate(*, project_root: Path, candidate_id: str) -> dict[str, Any
         "records": [
             {
                 "maximum_absolute_difference": float(differences[position]),
+                "original_vector_sha256": sha256_bytes(
+                    np.ascontiguousarray(matrix[selected_indices[position]], dtype=np.float32).tobytes(
+                        order="C"
+                    )
+                ),
+                "repeat_row_index": position,
+                "repeat_vector_sha256": sha256_bytes(
+                    np.ascontiguousarray(repeated[position], dtype=np.float32).tobytes(order="C")
+                ),
+                "row_index": selected_indices[position],
                 "sequence_sha256": repeat_records[position].sequence_sha256,
             }
             for position in range(len(repeat_records))
         ],
         "repeat_count": repeat_count,
+        "repeat_matrix_bytes": repeat_matrix_path.stat().st_size,
+        "repeat_matrix_dtype": str(repeated.dtype),
+        "repeat_matrix_path": repeat_matrix_path.relative_to(project_root).as_posix(),
+        "repeat_matrix_sha256": sha256_file(repeat_matrix_path),
         "selection": "bottom_SHA256(candidate_id:sequence_sha256)",
         "status": "pass",
         "tolerance": REPEAT_TOLERANCE,
@@ -425,6 +441,8 @@ def extract_candidate(*, project_root: Path, candidate_id: str) -> dict[str, Any
         "protocol_configuration_sha256": PROTOCOL_CONFIGURATION_SHA256,
         "protocol_id": PROTOCOL_ID,
         "repeat_extraction": repeat_metadata,
+        "repeat_matrix_path": repeat_matrix_path.relative_to(project_root).as_posix(),
+        "repeat_matrix_sha256": sha256_file(repeat_matrix_path),
         "repeat_report_path": repeat_path.relative_to(project_root).as_posix(),
         "repeat_report_sha256": sha256_file(repeat_path),
         "repository_revision": CANDIDATES[candidate_id]["revision"],
