@@ -1,0 +1,186 @@
+{
+  "check_counts": {
+    "fail": 0,
+    "pass": 14,
+    "total": 14
+  },
+  "checks": [
+    {
+      "check_id": "execution_projection_identity",
+      "detail": {
+        "execution_config_sha256": "d74c683bbeb57e8b455efc789f487ca20df7a128ab0ec27b317dc602eda3e57d"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_authority_public_and_sealed_hashes",
+      "detail": {
+        "authority.active_gate": true,
+        "authority.decision": true,
+        "authority.model_protocol_config": true,
+        "authority.parent_acceptance": true,
+        "authority.protocol_acceptance": true,
+        "development_release.certificate": true,
+        "development_release.ciphertext": true,
+        "frozen_inputs.embedding_registry": true,
+        "frozen_inputs.endpoints": true,
+        "frozen_inputs.independent_training_validation": true,
+        "frozen_inputs.package_manifest": true,
+        "frozen_inputs.partitions": true,
+        "frozen_inputs.training_positive": true,
+        "frozen_inputs.training_registry": true,
+        "frozen_inputs.training_unlabeled": true,
+        "protected_boundary.protected_candidates_ciphertext": true,
+        "protected_boundary.protected_truth_ciphertext": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "exact_9_30_10_scorer_census_and_checkpoint_hashes",
+      "detail": {
+        "deterministic": 9,
+        "ensembles": 10,
+        "selected_checkpoints": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "development_only_non_enumerating_key_resolver",
+      "detail": {
+        "private_key_hash_recorded": false,
+        "protected_private_key_path_tokens": 0,
+        "resolver": "resolve_development_key_only"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "no_training_optimizer_or_new_architecture_path",
+      "detail": {
+        "encoder_inference": false,
+        "score_only_selected_checkpoint_state": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "issue_0009_nullability_only_concat_preserves_rows_values_and_type",
+      "detail": {
+        "authorized_change": "promote_options=permissive",
+        "input_nullability": [
+          false,
+          true
+        ],
+        "output_type": "int64",
+        "output_values": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "issue_0010_source_design_degree_guard_and_pooled_scorer_features",
+      "detail": {
+        "primary_pooled_degree_mismatch_rejected": true,
+        "scorer_degree_source": "pooled_16799_training_positive_graph",
+        "source_stratum_mismatch_rejected": true,
+        "source_visible_design_metadata_accepted": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "exact_HT_concordance_and_half_ties",
+      "detail": {
+        "fixture_metric": 0.625
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "PCG64DXSM_component_draw_and_pigeonhole_reference",
+      "detail": {
+        "first_pair_multipliers": [
+          1,
+          1,
+          1
+        ],
+        "replicates": 17
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "exact_orientation_invariant_interolog_identity",
+      "detail": {
+        "scores": [
+          1.0,
+          1.0
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_four_model_families_exact_and_swap_symmetric",
+      "detail": {
+        "esm2_650m_linear_ablation": {
+          "optimized_max_abs": 0.0,
+          "swap_max_abs": 0.0
+        },
+        "esm2_650m_nonlinear_no_gate_ablation": {
+          "optimized_max_abs": 0.0,
+          "swap_max_abs": 0.0
+        },
+        "esm2_650m_partner_gated_primary": {
+          "optimized_max_abs": 0.0,
+          "swap_max_abs": 0.0
+        },
+        "lightweight_esm2_150m_linear": {
+          "optimized_max_abs": 0.0,
+          "swap_max_abs": 0.0
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "GPU_bootstrap_equals_CPU_reference_with_identical_draws",
+      "detail": {
+        "finite_replicates": 1321,
+        "maximum_absolute_difference": 0.0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "ensemble_arithmetic_and_selection_quantization",
+      "detail": {
+        "ensemble_fixture": [
+          0.20000000000000004,
+          0.5
+        ],
+        "selection_a_precedes_b": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "complexity_kill_source_contains_every_consequential_gate",
+      "detail": {
+        "tokens": [
+          "C3_vs_strongest_simple_at_least_0_02",
+          "C3_vs_650m_linear_at_least_0_01",
+          "C3_vs_matched_no_gate_at_least_0_005",
+          "positive_named_source_direction",
+          "positive_outside_top_10_percent_hubs",
+          "withdraw_C1_gain_claim",
+          "stop_before_protected_evaluation"
+        ]
+      },
+      "status": "pass"
+    }
+  ],
+  "development_plaintext_accessed": false,
+  "development_private_key_resolved_or_accessed": false,
+  "execution_config_sha256": "d74c683bbeb57e8b455efc789f487ca20df7a128ab0ec27b317dc602eda3e57d",
+  "execution_id": "development_release_and_evaluation_execution_v1",
+  "protected_candidates_or_truth_accessed": false,
+  "protected_private_key_resolved_or_accessed": false,
+  "schema_version": 1,
+  "status": "pass"
+}
