@@ -11,8 +11,8 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
-The current authoritative ledger is `gates/gate_status_v35.yaml`; the current
-scientific status is `PROJECT_STATUS_v35.md`; and the fresh-thread phase
+The current authoritative ledger is `gates/gate_status_v36.yaml`; the current
+scientific status is `PROJECT_STATUS_v36.md`; and the fresh-thread phase
 checkpoint is
 `checkpoints/RESUME-004-post-stage-1-public-training-freeze.md`. `DEC-0017`
 technically accepts the TF-isoform audit and its external-only quarantine.
@@ -50,7 +50,8 @@ qualification. `DEC-0035` accepts the passing revision-2 qualifications and
 resumes scoring from the existing release; a second decryption is prohibited.
 `DEC-0036` records `ISSUE-0010` and authorizes only a cell-aware validation
 guard that distinguishes frozen source-design degrees from pooled scorer
-feature degrees. Scoring is paused pending repeated qualification.
+feature degrees. `DEC-0037` accepts the passing revision-3 qualifications and
+authorizes exact resume from four hash-verified completed cells.
 
 The primary PU-R design remains binding and unreported eligible pairs remain
 unlabeled. Artifact modification or resampling, development release, protected
@@ -58,6 +59,6 @@ candidate/truth access, public protected-test identity, the full candidate
 universe, negatives or pseudo-negatives, panel or structural integration, and
 all model work outside the frozen Stage 1 scorer set remain prohibited.
 Protected use remains prohibited. Executable work is limited to the exact
-development-only package in `DEC-0032`, initial activation in `DEC-0033`, and
-the exact technical correction in `DEC-0036`; no training or scorer change is
-allowed.
+development-only package in `DEC-0032`, initial activation in `DEC-0033`, the
+exact correction in `DEC-0036`, and resume acceptance in `DEC-0037`; no
+training or scorer change is allowed.

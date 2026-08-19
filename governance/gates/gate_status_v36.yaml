@@ -1,0 +1,69 @@
+schema_version: 36
+supersedes: governance/gates/gate_status_v35.yaml
+updated_date: "2026-08-19"
+programme_state: development_scoring_exact_resume_requalified_and_active
+
+gates:
+  model_governance:
+    status: accepted_frozen_unchanged
+    acceptance_decision: governance/decisions/DEC-0028-accept-model-governance-and-baseline-training-protocol.md
+  stage_1_training:
+    status: pass_complete_frozen_unchanged
+    training_registry_sha256: 11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318
+    additional_training_authorized: false
+  development_release:
+    status: pass_complete_exactly_once
+    archive_sha256: c8d1520d5dbc5b435a1ed5149cbd2f9a731fb3cee10cd651dd0a19b475741122
+    manifest_sha256: 3f58403138b878d912789f529dc1f8ec7d1db7356d6ccc4c3b88cfcb2f6554fa
+    additional_decryption_authorized: false
+  issue_0010_correction:
+    status: pass_exact_change_independently_requalified
+    acceptance_decision: governance/decisions/DEC-0037-accept-source-degree-guard-requalification-and-resume-scoring.md
+    corrected_scoring_sha256: 874b84270be2fe47211a3936907762ebb6442052eb6928adbdcda50ace60ca5f
+    production_audit:
+      checks: 14
+      report: artifacts/validation/development_evaluation/development_release_and_evaluation_v1/revision_3/PRE_RELEASE_PRODUCTION_AUDIT_REPORT.json
+      sha256: 778b8d68ff102aad005286bc5ab85691e949742c69f116c9027492523d823fd7
+      status: pass
+    independent_validation:
+      checks: 14
+      report: artifacts/validation/development_evaluation/development_release_and_evaluation_v1/revision_3/PRE_RELEASE_INDEPENDENT_VALIDATION_REPORT.json
+      sha256: 77ed919c4812453fab85de94a7ce0c52838bb3b7e921db6ca99a045e305ae686
+      status: pass
+    private_or_protected_access_during_qualification: false
+  partial_cell_custody:
+    status: pass
+    report: artifacts/validation/development_evaluation/development_release_and_evaluation_v1/revision_3/PARTIAL_CELL_CUSTODY_RECHECK.json
+    sha256: 7f36b15e90a01cfba7896ab11ba389aa706a9a7ceda5c4a416501a4c747b49d5
+    completed_manifested_cells: 4
+    constituent_hashes_and_bytes_verified: true
+    failed_cell_files: 0
+  development_scoring:
+    status: active_exact_resume_existing_release
+    exact_resume_authorized_now: true
+    completed_cell_count: 4
+    remaining_cell_count: 5
+    second_decryption_authorized: false
+    training_tuning_or_checkpoint_change_authorized: false
+  protected_test:
+    status: encrypted_evaluator_only_fully_sealed
+    candidate_or_truth_access_authorized: false
+    private_key_access_authorized: false
+    scoring_or_metric_authorized: false
+  compute:
+    hardware: at_most_one_NVIDIA_GH200_120GB
+    maximum_gpu_hours: 30
+    maximum_new_governed_storage_gib: 100
+    multi_gpu_or_multi_node_authorized: false
+
+global_prohibitions:
+  second_development_decryption: true
+  protected_candidate_truth_or_private_key_access: true
+  training_retraining_tuning_or_checkpoint_change: true
+  pair_artifact_sampling_stratum_weight_or_protocol_change: true
+  scorer_feature_metric_threshold_or_kill_rule_change: true
+  negative_or_pseudo_negative_construction: true
+  external_panel_structure_residue_or_interface_work: true
+
+next_authorized_work_package: exact_resume_remaining_five_cells_then_frozen_evaluation_and_independent_completed_validation
+return_to_governance_before_protected_test_required: true
