@@ -1,0 +1,188 @@
+{
+  "checks": [
+    {
+      "check_id": "frozen_production_commit_config_and_audit",
+      "detail": {
+        "config_sha256": "d74c683bbeb57e8b455efc789f487ca20df7a128ab0ec27b317dc602eda3e57d",
+        "production_audit_sha256": "963b3a9d0e567bc0dd4d1850bd9d8a9382579f46ce9f4643297923f5ccb4962e",
+        "production_code_commit": "90ed5007d1deed7f50bab0f2901bf5780a1ab034",
+        "production_evidence_commit": "818cadb9e0981a9b13ac6cb70ed8a4e8e24053ca"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_authority_input_embedding_and_sealed_hashes",
+      "detail": {
+        "authority.active_gate": "d330ca66e6758eaf25f9e646833d05c187c9592ac607b746fda873d87f92372f",
+        "authority.decision": "58076de374cb4f15856cff75dc9737e2d8e032415f6c0bb0aaf64079a5161ab3",
+        "authority.model_protocol_config": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+        "authority.parent_acceptance": "8bd585d5944072e37f21cc17386e84209ce8e27c24b3c690536405fe1c3cde0f",
+        "authority.protocol_acceptance": "cab395f3be486a19fca4f5444627fe7bdce2b35e2da89e2b87f646639912d894",
+        "development_release.certificate": "99e224e028db6629514f8b6b1d9784ca4ed7599f71ad88d4e276048c8f8341d9",
+        "development_release.ciphertext": "bbbd07472da621a34f45e95ab4b51c799fa0fc967d94de2aa3578e0cda0c1d41",
+        "frozen_inputs.embedding_registry": "429e9b3c40827ea5a7513b3599a95d201cdc5eea1e0f99f8c384050cbfcbaed1",
+        "frozen_inputs.endpoints": "4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e",
+        "frozen_inputs.independent_training_validation": "b7178f659bd03b0b779d0de015cdb8b33af41e4ee7729fb2cb8d461a0e727a88",
+        "frozen_inputs.package_manifest": "f0f850daf795481c8a1ae0ba64f6d050ae757f2738497ac0517003c6822015f5",
+        "frozen_inputs.partitions": "66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67",
+        "frozen_inputs.training_positive": "4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499",
+        "frozen_inputs.training_registry": "11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318",
+        "frozen_inputs.training_unlabeled": "d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7",
+        "protected_boundary.protected_candidates_ciphertext": "5ac1c30dbda85f6274f60febb2f4b01feda34c43bf87f4bbb690abe6c639ff63",
+        "protected_boundary.protected_truth_ciphertext": "69824547667861694aff88a0f6e43526d4f3aa27f930d4a4ff44c924d29aa1e9"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_exact_production_source_freeze",
+      "detail": {
+        "src/ipin_openppi/development_evaluation/evaluation.py": "df8b4949c3e94120a816ea981ad99dd4138826cd896e33153980ea4763fec38f",
+        "src/ipin_openppi/development_evaluation/release.py": "24a21cd7c983bdf8f4195cb4136171bbb5f68cc6deca5bdc44a31d8df38882e9",
+        "src/ipin_openppi/development_evaluation/scoring.py": "5ccd061814a3d20bb39b54048ef11cf86bc350f832bd373b2d7aca1892feef30",
+        "src/ipin_openppi/development_evaluation/semantics.py": "5e63276dbb769659dcb3ca636f0022c485a05bd82f5fc6855ee6aa5b2ee7bd00"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_non_enumerating_development_only_key_call_graph",
+      "detail": {
+        "private_pem_paths": [
+          ".private/pair_level_pu_r_benchmark_artifacts_v1/development_release_private.pem"
+        ],
+        "resolver_calls_in_source": 2
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_score_only_model_and_ensemble_source",
+      "detail": {
+        "optimizer_or_training_path": false,
+        "required_model_tokens": [
+          "projected_a * gate_value.index_select(0, b)",
+          "projected_b * gate_value.index_select(0, a)",
+          "torch.cat((a + b, torch.abs(a - b), a * b, cosine), dim=-1)",
+          "np.mean(score_matrix[:, member_columns], axis=1, dtype=np.float64)"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_all_30_checkpoint_hash_state_and_functional_symmetry",
+      "detail": {
+        "family_counts": {
+          "esm2_650m_linear_ablation": 6,
+          "esm2_650m_nonlinear_no_gate_ablation": 9,
+          "esm2_650m_partner_gated_primary": 9,
+          "lightweight_esm2_150m_linear": 6
+        },
+        "swap_max_absolute_difference": 0.0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_exact_9_30_10_scorer_census",
+      "detail": {
+        "deterministic": 9,
+        "ensembles": 10,
+        "selected_checkpoints": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_HT_formula_half_ties_and_production_fixture",
+      "detail": {
+        "independent_fixture": 0.625,
+        "production_fixture": 0.625
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_PCG64DXSM_pigeonhole_bootstrap_reconstruction",
+      "detail": {
+        "cell_seed": 13143264070082539956,
+        "finite_replicates": 1321,
+        "production_GPU_CPU_maximum_absolute_difference": 0.0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_exact_interolog_max_min_identity",
+      "detail": {
+        "edge_enumeration": 1.0,
+        "neighbor_max_identity": 1.0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_metric_selection_stratification_complexity_and_kill_projection",
+      "detail": {
+        "required_policy_tokens": [
+          "C3_vs_strongest_simple_at_least_0_02",
+          "C3_vs_650m_linear_at_least_0_01",
+          "C3_vs_matched_no_gate_at_least_0_005",
+          "positive_named_source_direction",
+          "positive_outside_top_10_percent_hubs",
+          "withdraw_C1_gain_claim",
+          "stop_before_protected_evaluation"
+        ],
+        "thresholds": {
+          "all_three_seeds_stable_required": true,
+          "outside_top_10_percent_hub_gain_required": true,
+          "paired_interval_must_exclude_zero": true,
+          "partner_vs_650m_linear_C3": 0.01,
+          "partner_vs_matched_no_gate_C3": 0.005,
+          "partner_vs_strongest_simple_sequence_C3": 0.02,
+          "supported_source_positive_direction_required": true
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_pre_release_information_flow_and_closed_protected_boundary",
+      "detail": {
+        "development_key_accessed": false,
+        "development_plaintext_accessed": false,
+        "protected_candidates_or_truth_accessed": false,
+        "protected_private_key_accessed": false
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_issue_0009_exact_nullability_only_correction",
+      "detail": {
+        "concat_call_count": 1,
+        "corrected_scoring_sha256": "5ccd061814a3d20bb39b54048ef11cf86bc350f832bd373b2d7aca1892feef30",
+        "exact_authorized_AST": true,
+        "fixture_rows": 4,
+        "fixture_values_and_order_preserved": true,
+        "logical_types": [
+          "string",
+          "int64"
+        ],
+        "production_preservation_check_status": "pass"
+      },
+      "status": "pass"
+    }
+  ],
+  "development_plaintext_accessed": false,
+  "development_private_key_resolved_or_accessed": false,
+  "execution_id": "development_release_and_evaluation_execution_v1",
+  "independence": {
+    "base_validator": "scripts/model/validate_development_prerelease_independent_v1.py",
+    "base_validator_sha256": "f9c5e7e9ba3ee6cd5fd9aecb1265317a559fbfc8a5e62922cef74a8c380aeea1",
+    "imports_production_development_modules": false,
+    "imports_production_metric_or_selection": false,
+    "method": "hash_pinned_clean_room_v1_reexecution_plus_independent_issue_0009_AST_and_Arrow_fixture",
+    "production_code_commit": "90ed5007d1deed7f50bab0f2901bf5780a1ab034",
+    "production_evidence_commit": "818cadb9e0981a9b13ac6cb70ed8a4e8e24053ca"
+  },
+  "protected_candidates_or_truth_accessed": false,
+  "protected_private_key_resolved_or_accessed": false,
+  "schema_version": 2,
+  "status": "pass",
+  "summary": {
+    "fail": 0,
+    "pass": 13,
+    "warning": 0
+  }
+}
