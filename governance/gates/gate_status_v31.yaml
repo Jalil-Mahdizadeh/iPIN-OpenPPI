@@ -1,0 +1,84 @@
+schema_version: 31
+supersedes: governance/gates/gate_status_v30.yaml
+updated_date: "2026-08-19"
+programme_state: development_release_and_frozen_scorer_evaluation_authorized_pre_release_implementation_validation_pending
+
+gates:
+  initiation: {status: pass, evidence: governance/START_MANIFEST_v1.yaml}
+  evidence:
+    status: immutable_pair_package_preserved
+    frozen_endpoint_count: 17000
+    frozen_partition_endpoint_counts: {train: 11900, development: 2550, test: 2550}
+    public_training_positive_pairs: 16799
+    public_training_unlabeled_rows: 2000000
+    accepted_artifacts_may_be_modified: false
+  model_governance:
+    status: accepted_frozen_unchanged
+    acceptance_decision: governance/decisions/DEC-0028-accept-model-governance-and-baseline-training-protocol.md
+    configuration_sha256: 3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5
+  stage_1_training:
+    status: pass_complete_frozen_independently_validated
+    acceptance_decision: governance/decisions/DEC-0031-accept-stage-1-public-training-and-development-release-readiness.md
+    training_registry_sha256: 11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318
+    run_count: 30
+    selected_checkpoint_count: 30
+    ensemble_count: 10
+    additional_training_authorized: false
+  development_authorization:
+    status: pass
+    decision: governance/decisions/DEC-0032-authorize-development-release-and-evaluation.md
+    development_only: true
+    exact_frozen_protocol_required: true
+    pre_release_implementation_and_independent_validation_required: true
+  development:
+    status: encrypted_authorized_but_pre_release_gate_pending
+    release_authorized_after_pre_release_gate: true
+    decrypt_authorized_now: false
+    development_ciphertext_sha256: bbbd07472da621a34f45e95ab4b51c799fa0fc967d94de2aa3578e0cda0c1d41
+    expected_plaintext_archive_sha256: c8d1520d5dbc5b435a1ed5149cbd2f9a731fb3cee10cd651dd0a19b475741122
+    allowed_private_key_role: development_only
+    deterministic_baseline_count: 9
+    selected_checkpoint_count: 30
+    ensemble_count: 10
+    primary_cell_order: [C3, C2, C1]
+    bootstrap_replicates: 2000
+    bootstrap_seed: 20260803
+    new_or_changed_scorer_authorized: false
+    retraining_or_tuning_authorized: false
+  protected_test:
+    status: encrypted_evaluator_only_fully_sealed
+    candidate_or_truth_access_authorized: false
+    private_key_access_authorized: false
+    scoring_or_metric_authorized: false
+  benchmark:
+    status: pair_artifacts_frozen_unchanged
+    active_primary_design: reference_sequence_positive_unlabeled_ranking
+    additional_pair_or_sample_rows_authorized: false
+    negative_or_pseudo_negative_creation_authorized: false
+    full_candidate_pair_universe_materialization_authorized: false
+  compute:
+    status: development_evaluation_authorized
+    hardware: at_most_one_NVIDIA_GH200_120GB
+    maximum_gpu_hours: 30
+    maximum_new_governed_storage_gib: 100
+    multi_gpu_or_multi_node_authorized: false
+  release: {status: not_started_not_authorized}
+
+global_prohibitions:
+  universal_nonbinding_class: true
+  protected_candidate_truth_or_private_key_access: true
+  full_candidate_pair_universe_materialization: true
+  negative_label_construction: true
+  pseudo_negative_sampling: true
+  frozen_benchmark_protocol_or_artifact_modification: true
+  frozen_scorer_checkpoint_or_ensemble_modification: true
+  external_panel_or_post_cutoff_evidence_integration: true
+  structural_residue_or_interface_label_work: true
+  additional_adaptive_or_post_release_training: true
+  multi_gpu_or_multi_node_model_execution: true
+  primary_pu_r_design_change: true
+  probability_prevalence_calibration_or_biological_precision_claim: true
+  unseen_family_plm_unseen_or_exhaustive_homology_claim: true
+
+next_authorized_work_package: implement_validate_release_and_execute_development_only_frozen_scorer_evaluation_under_DEC_0032
+return_to_governance_before_protected_test_required: true
