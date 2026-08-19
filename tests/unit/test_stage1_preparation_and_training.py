@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-import os
+import importlib.util
 from pathlib import Path
+import subprocess
 
-import numpy as np
 import pytest
 import torch
 
@@ -44,3 +44,54 @@ def test_all_run_code_dependencies_are_hash_bound() -> None:
 
     names = {path.name for path in CODE_PATHS}
     assert {"constants.py", "models.py", "objective.py", "support.py", "training.py"} <= names
+
+
+def test_orchestrator_launches_exact_offline_deterministic_environment() -> None:
+    path = Path("scripts/model/run_stage1_training_matrix_v1.py")
+    specification = importlib.util.spec_from_file_location("stage1_orchestrator", path)
+    assert specification is not None and specification.loader is not None
+    module = importlib.util.module_from_spec(specification)
+    specification.loader.exec_module(module)
+    command = module.invocation_command(
+        Path("/project"),
+        {"run_id": "fixture", "seed": 20260803},
+        resume=False,
+    )
+    assert "--nv" in command
+    assert "--cleanenv" in command
+    assert "PYTHONHASHSEED=20260803" in command
+    assert "CUBLAS_WORKSPACE_CONFIG=:4096:8" in command
+    assert "HF_HUB_OFFLINE=1" in command
+    assert "TRANSFORMERS_OFFLINE=1" in command
+    assert "TOKENIZERS_PARALLELISM=false" in command
+    assert "--resume-infrastructure" not in command
+    resumed = module.invocation_command(
+        Path("/project"),
+        {"run_id": "fixture", "seed": 20260803},
+        resume=True,
+    )
+    assert resumed[-1] == "--resume-infrastructure"
+
+
+def test_orchestrator_records_non_overwriting_attempt_log(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    path = Path("scripts/model/run_stage1_training_matrix_v1.py")
+    specification = importlib.util.spec_from_file_location("stage1_orchestrator_log", path)
+    assert specification is not None and specification.loader is not None
+    module = importlib.util.module_from_spec(specification)
+    specification.loader.exec_module(module)
+    monkeypatch.setattr(
+        module.subprocess,
+        "run",
+        lambda *args, **kwargs: subprocess.CompletedProcess(args[0], 0, "ok", ""),
+    )
+    run = {"run_id": "fixture", "seed": 20260803}
+    completed, elapsed = module.invoke(tmp_path, run, resume=False)
+    assert completed.returncode == 0
+    assert elapsed >= 0
+    log = tmp_path / module.RUN_ROOT / "orchestrator_logs/fixture.initial.json"
+    assert log.is_file()
+    assert module.logged_training_gpu_seconds(tmp_path) >= 0
+    with pytest.raises(RuntimeError, match="refusing to overwrite"):
+        module.invoke(tmp_path, run, resume=False)

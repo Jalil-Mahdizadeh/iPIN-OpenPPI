@@ -3,11 +3,10 @@
 
 from __future__ import annotations
 
+from collections import Counter
 import json
-import os
 from pathlib import Path
 import subprocess
-import sys
 import time
 
 from ipin_openppi.stage1.constants import (
@@ -35,7 +34,9 @@ def governed_storage_bytes(project_root: Path) -> int:
     return total
 
 
-def invoke(project_root: Path, run: dict[str, object], *, resume: bool) -> subprocess.CompletedProcess[str]:
+def invocation_command(
+    project_root: Path, run: dict[str, object], *, resume: bool
+) -> list[str]:
     seed = int(run["seed"])
     run_id = str(run["run_id"])
     command = [
@@ -48,11 +49,14 @@ def invoke(project_root: Path, run: dict[str, object], *, resume: bool) -> subpr
         f"{project_root}:{project_root}",
         "--pwd",
         str(project_root),
-        "--env",
-        f"PYTHONHASHSEED={seed}",
         str(project_root / "containers/images/ipin-model-arm64_0.1.0.sif"),
         "env",
         "PYTHONPATH=src",
+        f"PYTHONHASHSEED={seed}",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "HF_HUB_OFFLINE=1",
+        "TRANSFORMERS_OFFLINE=1",
+        "TOKENIZERS_PARALLELISM=false",
         "python",
         "scripts/model/train_stage1_models_v1.py",
         "--run-id",
@@ -60,20 +64,59 @@ def invoke(project_root: Path, run: dict[str, object], *, resume: bool) -> subpr
     ]
     if resume:
         command.append("--resume-infrastructure")
+    return command
+
+
+def invoke(
+    project_root: Path, run: dict[str, object], *, resume: bool
+) -> tuple[subprocess.CompletedProcess[str], float]:
+    run_id = str(run["run_id"])
+    command = invocation_command(project_root, run, resume=resume)
+    started = time.monotonic()
     completed = subprocess.run(command, capture_output=True, text=True)
+    elapsed_seconds = time.monotonic() - started
     log_root = project_root / RUN_ROOT / "orchestrator_logs"
     log_root.mkdir(parents=True, exist_ok=True)
     attempt = "resume1" if resume else "initial"
+    log_path = log_root / f"{run_id}.{attempt}.json"
+    if log_path.exists():
+        raise RuntimeError(f"refusing to overwrite orchestrator attempt log: {log_path}")
     atomic_json(
-        log_root / f"{run_id}.{attempt}.json",
+        log_path,
         {
             "command": command,
+            "elapsed_seconds_with_gpu_exposed": elapsed_seconds,
             "returncode": completed.returncode,
             "stderr": completed.stderr,
             "stdout": completed.stdout,
         },
     )
-    return completed
+    return completed, elapsed_seconds
+
+
+def embedding_gpu_hours(project_root: Path) -> float:
+    total = 0.0
+    embedding_root = (
+        project_root
+        / "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1"
+    )
+    for candidate_id in ("esm2_150m", "esm2_650m"):
+        manifest = json.loads(
+            (embedding_root / candidate_id / "EMBEDDING_MANIFEST.json").read_text()
+        )
+        total += float(manifest["full_extraction"]["gpu_hours"])
+        total += float(manifest["repeat_extraction"]["gpu_hours"])
+    return total
+
+
+def logged_training_gpu_seconds(project_root: Path) -> float:
+    log_root = project_root / RUN_ROOT / "orchestrator_logs"
+    if not log_root.exists():
+        return 0.0
+    return sum(
+        float(json.loads(path.read_text())["elapsed_seconds_with_gpu_exposed"])
+        for path in sorted(log_root.glob("*.json"))
+    )
 
 
 def main() -> int:
@@ -85,6 +128,10 @@ def main() -> int:
     if matrix["run_count"] != 30 or len(matrix["runs"]) != 30:
         raise RuntimeError("matrix is not exactly 30 runs")
     started = time.monotonic()
+    embedding_hours = embedding_gpu_hours(project_root)
+    training_gpu_seconds = logged_training_gpu_seconds(project_root)
+    if embedding_hours >= 100:
+        raise RuntimeError("embedding execution exhausted the 100 GPU-hour ceiling")
     for position, run in enumerate(matrix["runs"], start=1):
         run_id = str(run["run_id"])
         result_path = project_root / RUN_ROOT / "runs" / run_id / "RUN_RESULT.json"
@@ -97,7 +144,10 @@ def main() -> int:
         if storage > 100 * 2**30:
             raise RuntimeError("100 GiB governed storage ceiling exceeded")
         print(f"[{position}/30] starting {run_id}", flush=True)
-        completed = invoke(project_root, run, resume=False)
+        completed, elapsed_seconds = invoke(project_root, run, resume=False)
+        training_gpu_seconds += elapsed_seconds
+        if embedding_hours + training_gpu_seconds / 3600.0 > 100:
+            raise RuntimeError("100 GPU-hour ceiling exceeded")
         if completed.returncode != 0:
             if result_path.exists():
                 result = json.loads(result_path.read_text())
@@ -107,7 +157,10 @@ def main() -> int:
             checkpoints = sorted((project_root / CHECKPOINT_ROOT / run_id).glob("pass_*.pt"))
             if checkpoints:
                 print(f"[{position}/30] exact infrastructure resume {run_id}", flush=True)
-                resumed = invoke(project_root, run, resume=True)
+                resumed, resume_seconds = invoke(project_root, run, resume=True)
+                training_gpu_seconds += resume_seconds
+                if embedding_hours + training_gpu_seconds / 3600.0 > 100:
+                    raise RuntimeError("100 GPU-hour ceiling exceeded")
                 if resumed.returncode == 0:
                     continue
             atomic_json(
@@ -126,9 +179,28 @@ def main() -> int:
             f"{result['gpu_hours_this_attempt']:.4f} GPU h",
             flush=True,
         )
-        elapsed_hours = (time.monotonic() - started) / 3600.0
-        if elapsed_hours > 100:
-            raise RuntimeError("100 GPU-hour ceiling exceeded")
+    final_storage = governed_storage_bytes(project_root)
+    statuses = Counter(
+        json.loads(
+            (project_root / RUN_ROOT / "runs" / str(run["run_id"]) / "RUN_RESULT.json").read_text()
+        )["status"]
+        for run in matrix["runs"]
+    )
+    atomic_json(
+        project_root / RUN_ROOT / "MATRIX_EXECUTION_ACCOUNTING.json",
+        {
+            "embedding_gpu_hours": embedding_hours,
+            "final_governed_storage_bytes": final_storage,
+            "matrix_run_count": 30,
+            "status_counts": dict(sorted(statuses.items())),
+            "total_gpu_hours_conservative": embedding_hours
+            + training_gpu_seconds / 3600.0,
+            "training_gpu_exposed_seconds_conservative": training_gpu_seconds,
+            "wall_seconds": time.monotonic() - started,
+        },
+    )
+    if final_storage > 100 * 2**30:
+        raise RuntimeError("100 GiB governed storage ceiling exceeded at matrix close")
     print("matrix execution closed all 30 run IDs", flush=True)
     return 0
 
