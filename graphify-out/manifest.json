@@ -1140,8 +1140,8 @@
     "semantic_hash": "6e8f50f4dc4b1715e7c430ff98076f28"
   },
   "governance/README.md": {
-    "mtime": 1787119826.0,
-    "ast_hash": "0769c0c3fe7ac5e5f4df5ad11edff496",
+    "mtime": 1787121736.0,
+    "ast_hash": "1819b1c62a1db41fc396b3dbb1dccfcc",
     "semantic_hash": ""
   },
   "governance/START_MANIFEST_v1.yaml": {
@@ -2362,6 +2362,121 @@
   "tests/unit/test_stage1_model_runtime_validation.py": {
     "mtime": 1787121473.0,
     "ast_hash": "7132d86c22181d96ef2504eada4f62ac",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_execution/stage1_model_execution_v1/INDEPENDENT_MODEL_RUNTIME_VALIDATION_REPORT.json": {
+    "mtime": 1787121561.0,
+    "ast_hash": "5ce97c238fef81333d3a2d9de6edd44a",
+    "semantic_hash": ""
+  },
+  "scripts/model/audit_stage1_implementation_v1.py": {
+    "mtime": 1787122782.0,
+    "ast_hash": "ebcd534768e4b0bdeb63e5a2b187e810",
+    "semantic_hash": ""
+  },
+  "scripts/model/extract_stage1_embeddings_v1.py": {
+    "mtime": 1787122288.0,
+    "ast_hash": "dbead74424028212fd88082f8071b1ef",
+    "semantic_hash": ""
+  },
+  "scripts/model/prepare_stage1_training_v1.py": {
+    "mtime": 1787122590.0,
+    "ast_hash": "80ffffbdcb11cd2e79f25ab3aa86e50e",
+    "semantic_hash": ""
+  },
+  "scripts/model/run_stage1_training_matrix_v1.py": {
+    "mtime": 1787122590.0,
+    "ast_hash": "00235ea122e7d208b96a3af1f7ad2495",
+    "semantic_hash": ""
+  },
+  "scripts/model/train_stage1_models_v1.py": {
+    "mtime": 1787122590.0,
+    "ast_hash": "d55cfa20ac12ce182508e720078b6303",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/stage1/__init__.py": {
+    "mtime": 1787122288.0,
+    "ast_hash": "61ea44270d3b57f2e378f97c263c32dc",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/stage1/audit.py": {
+    "mtime": 1787122798.0,
+    "ast_hash": "29458709b6232075eab43a42dcb3ba82",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/stage1/baselines.py": {
+    "mtime": 1787122288.0,
+    "ast_hash": "24550375b8441bd1bf3e55ceccfe5f6d",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/stage1/constants.py": {
+    "mtime": 1787122288.0,
+    "ast_hash": "d12481d348d46a34ed69585f2296fc57",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/stage1/embeddings.py": {
+    "mtime": 1787122307.0,
+    "ast_hash": "49a814c204e7406a3311fdc0ca903f1d",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/stage1/models.py": {
+    "mtime": 1787122288.0,
+    "ast_hash": "d2be4b086044a35debcdd9da6f88c6c6",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/stage1/objective.py": {
+    "mtime": 1787122288.0,
+    "ast_hash": "abcaa5759769d64a87733bcf09b67561",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/stage1/preparation.py": {
+    "mtime": 1787122670.0,
+    "ast_hash": "dc1cc887e420b44c254231cf90aa2796",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/stage1/support.py": {
+    "mtime": 1787122288.0,
+    "ast_hash": "838c099d83792398430155ed228c741d",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/stage1/training.py": {
+    "mtime": 1787122670.0,
+    "ast_hash": "f11aedd854fd7408778c7fd0da7a6064",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_stage1_embeddings_and_objective.py": {
+    "mtime": 1787122288.0,
+    "ast_hash": "099cafe81ac56afdd3738796f4d4a811",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_stage1_models_and_baselines.py": {
+    "mtime": 1787122288.0,
+    "ast_hash": "450e9cf84981f924161c11be4bc4848f",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_stage1_preparation_and_training.py": {
+    "mtime": 1787122782.0,
+    "ast_hash": "6a8aac6f96855b6f5827ee6ecf28d4e6",
+    "semantic_hash": ""
+  },
+  "docs/reports/m1/M1_Model_Runtime_and_Custody_Qualification_Final_v1.md": {
+    "mtime": 1787121736.0,
+    "ast_hash": "5482a691d6cfb6375589961914ef975b",
+    "semantic_hash": ""
+  },
+  "governance/PROJECT_STATUS_v29.md": {
+    "mtime": 1787121736.0,
+    "ast_hash": "8e6563f85c59beea9f33e9b35d9864f1",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0030-accept-model-runtime-and-custody-for-stage-1.md": {
+    "mtime": 1787121736.0,
+    "ast_hash": "13e8c4f18f9d2b4fc297a6d5df159d30",
+    "semantic_hash": ""
+  },
+  "governance/gates/gate_status_v29.yaml": {
+    "mtime": 1787121736.0,
+    "ast_hash": "a0bb8102769583f6d9f339b30f62091a",
     "semantic_hash": ""
   }
 }
