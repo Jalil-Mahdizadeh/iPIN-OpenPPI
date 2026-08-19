@@ -85,6 +85,17 @@ def ensemble_columns_exact(
     return True
 
 
+def scoring_manifest_census(cells: Sequence[Mapping[str, Any]]) -> dict[str, int]:
+    census = {
+        "positive_rows": sum(int(cell["positive_rows"]) for cell in cells),
+        "unlabeled_rows": sum(int(cell["unlabeled_rows"]) for cell in cells),
+        "total_rows": sum(int(cell["total_rows"]) for cell in cells),
+    }
+    if census["total_rows"] != census["positive_rows"] + census["unlabeled_rows"]:
+        raise RuntimeError("scoring manifest P/U census does not equal total rows")
+    return census
+
+
 def _artifact_record(path: Path, root: Path) -> dict[str, Any]:
     return {
         "path": str(path.relative_to(root)),
@@ -159,6 +170,9 @@ def run_completed_audit(
     all_ensembles_exact = True
     all_point_metrics_exact = True
     total_rows = 0
+    total_positive_rows = 0
+    total_unlabeled_rows = 0
+    expected_scoring_census = scoring_manifest_census(scoring_manifest["cells"])
 
     degree_by_training_endpoint: dict[str, int] = {}
     endpoint_partition_path = project_root / str(config["frozen_inputs"]["partitions"])
@@ -198,6 +212,8 @@ def run_completed_audit(
         all_ensembles_exact &= ensemble_columns_exact(scores, scorer_index, ensembles)
         state_counts = Counter(map(str, rows["state"].to_pylist()))
         total_rows += rows.num_rows
+        total_positive_rows += state_counts["released_positive"]
+        total_unlabeled_rows += state_counts["unlabeled"]
         all_cell_files_ok &= (
             state_counts
             == Counter(
@@ -253,10 +269,28 @@ def run_completed_audit(
     _check(
         checks,
         "all_cell_manifests_rows_states_hashes_shapes_and_finite_scores",
-        all_cell_files_ok and all_scores_finite and total_rows == 9_044_323,
+        all_cell_files_ok
+        and all_scores_finite
+        and expected_scoring_census
+        == {
+            "positive_rows": 26_108,
+            "unlabeled_rows": 9_000_000,
+            "total_rows": 9_026_108,
+        }
+        and {
+            "positive_rows": total_positive_rows,
+            "unlabeled_rows": total_unlabeled_rows,
+            "total_rows": total_rows,
+        }
+        == expected_scoring_census,
         {
             "cell_count": len(cell_registry),
-            "total_rows": total_rows,
+            "observed_scoring_census": {
+                "positive_rows": total_positive_rows,
+                "unlabeled_rows": total_unlabeled_rows,
+                "total_rows": total_rows,
+            },
+            "manifest_scoring_census": expected_scoring_census,
             "all_scores_finite": all_scores_finite,
         },
     )

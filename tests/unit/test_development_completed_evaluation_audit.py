@@ -7,6 +7,7 @@ import numpy as np
 from ipin_openppi.development_evaluation.completed_audit import (
     contains_public_pair_identity,
     ensemble_columns_exact,
+    scoring_manifest_census,
 )
 
 
@@ -40,3 +41,22 @@ def test_completed_audit_checks_every_ensemble_column_exactly() -> None:
     changed = scores.copy()
     changed[1, 3] += 1e-12
     assert ensemble_columns_exact(changed, scorer_index, ensembles) is False
+
+
+def test_scoring_census_excludes_release_support_tables() -> None:
+    positive_rows = [2265, 312, 1677, 11327, 1601, 4751, 3259, 305, 611]
+    cells = [
+        {
+            "positive_rows": count,
+            "unlabeled_rows": 1_000_000,
+            "total_rows": 1_000_000 + count,
+        }
+        for count in positive_rows
+    ]
+    assert scoring_manifest_census(cells) == {
+        "positive_rows": 26_108,
+        "unlabeled_rows": 9_000_000,
+        "total_rows": 9_026_108,
+    }
+    release_support_rows = 18_081 + 134
+    assert 9_026_108 + release_support_rows == 9_044_323
