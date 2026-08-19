@@ -1,0 +1,45 @@
+schema_version: 40
+supersedes: governance/gates/gate_status_v39.yaml
+updated_date: "2026-08-19"
+programme_state: public_training_local_representation_diagnostic_revision_2_authorized_before_execution
+
+gates:
+  parent_development_result:
+    status: accepted_frozen_unchanged
+    decision: governance/decisions/DEC-0039-accept-development-evaluation-and-stop-complex-model-claim.md
+    disposition: stop_complex_model_claim_and_stop_before_protected_evaluation
+  local_representation_diagnostic:
+    status: revision_2_authorized_not_yet_executed
+    initial_decision: governance/decisions/DEC-0040-authorize-public-training-local-representation-diagnostic.md
+    clarification_decision: governance/decisions/DEC-0041-clarify-local-cosine-reductions-before-execution.md
+    inherited_config: configs/public_training_local_representation_diagnostic_v1.yaml
+    executable_delta: configs/public_training_local_representation_diagnostic_v1_revision_2.yaml
+    phase_a_authorized: true
+    conditional_phase_b_authorized_only_on_frozen_trigger: true
+    local_embedding_or_score_existed_at_revision_freeze: false
+  protected_test:
+    status: fully_sealed_prohibited
+    candidate_ciphertext_sha256: 5ac1c30dbda85f6274f60febb2f4b01feda34c43bf87f4bbb690abe6c639ff63
+    truth_ciphertext_sha256: 69824547667861694aff88a0f6e43526d4f3aa27f930d4a4ff44c924d29aa1e9
+
+primary_question_and_trigger_unchanged:
+  cell: nested_C3
+  local_scorer: local_top4_segment_cosine
+  comparator: matched_global_pooled_esm_cosine
+  local_point_concordance_minimum: 0.51
+  local_minus_global_point_delta_minimum: 0.01
+
+global_prohibitions:
+  modify_parent_benchmark_protocol_or_evidence: true
+  development_release_retraining_rescoring_or_information_use: true
+  protected_candidate_truth_key_scoring_or_metric_access: true
+  negative_or_pseudo_negative_construction: true
+  external_panel_or_structure_input: true
+  residue_or_interface_target_or_claim: true
+  encoder_tuning_or_additional_PLM: true
+  adaptive_scorer_threshold_recipe_or_seed_search: true
+
+next_authorized_work_package: execute_public_training_local_representation_diagnostic_v1_revision_2
+new_numbered_decision_required_after_validated_result: true
+development_or_protected_evaluation_authorized: false
+

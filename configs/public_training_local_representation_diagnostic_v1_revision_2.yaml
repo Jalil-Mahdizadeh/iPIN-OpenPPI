@@ -1,0 +1,50 @@
+schema_version: 1
+protocol_id: public_training_local_representation_diagnostic_v1_revision_2
+authority:
+  decision: governance/decisions/DEC-0041-clarify-local-cosine-reductions-before-execution.md
+  inherited_config: configs/public_training_local_representation_diagnostic_v1.yaml
+  inherited_config_sha256: 63e0d4e194b5db88a51e245b2ddf767e4ce11142659ac8c24deb3afbb6be749d
+  correction_scope: pre_execution_removal_of_one_underspecified_optional_diagnostic
+
+exact_cosine_semantics:
+  segment_vector: raw_FP32_arithmetic_mean_of_contextual_residue_vectors_in_frozen_segment
+  segment_cosine: ordinary_cosine_with_each_segment_independently_L2_normalized
+  zero_norm: fail_execution
+  matched_global_vector: segment_length_weighted_arithmetic_mean_of_raw_segment_vectors
+  matched_global_score: ordinary_cosine_between_partner_matched_global_vectors
+  local_max_score: maximum_of_all_valid_partner_segment_pair_cosines
+  local_top4_score: arithmetic_mean_of_largest_min_4_or_number_of_valid_segment_pairs_cosines
+
+scorer_delta:
+  remove:
+    - local_bidirectional_best_match_cosine
+  retained_phase_a_scorers:
+    - deterministic_hash
+    - sequence_length_ratio
+    - within_pair_3mer_cosine
+    - exact_nested_training_interolog_3mer
+    - matched_global_pooled_esm_cosine
+    - local_max_segment_cosine
+    - local_top4_segment_cosine
+  retained_primary_local_scorer: local_top4_segment_cosine
+  retained_primary_comparator: matched_global_pooled_esm_cosine
+  retained_phase_b_global_features:
+    - matched_global_pooled_esm_cosine
+  retained_phase_b_local_features:
+    - matched_global_pooled_esm_cosine
+    - local_max_segment_cosine
+    - local_top4_segment_cosine
+
+unchanged_from_inherited_config:
+  - all_scientific_and_information_boundaries
+  - all_input_model_runtime_and_embedding_rules
+  - nested_component_split_and_all_row_censuses
+  - primary_metric_U_weights_tie_rule_and_bootstrap
+  - phase_A_point_trigger_thresholds
+  - conditional_phase_B_objective_seed_optimizer_passes_and_no_search_rule
+  - all_dispositions_and_prohibitions
+
+execution_source_of_truth:
+  merge_rule: inherited_config_with_only_the_explicit_scorer_delta_and_exact_cosine_semantics_above
+  no_score_or_embedding_existed_when_frozen: true
+
