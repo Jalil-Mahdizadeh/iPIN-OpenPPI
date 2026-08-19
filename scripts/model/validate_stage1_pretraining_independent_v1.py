@@ -474,7 +474,7 @@ def validate(project_root: Path, output: Path) -> dict[str, Any]:
             "imports_production_stage1_modules": False,
             "imports_torch_or_model_framework": False,
             "method": "clean_room_reimplementation_and_artifact_rehash",
-            "production_evidence_commit": "f22773488a791b69044ad11d44722535505e5bcf",
+            "production_evidence_commit": "f2277346ee77d2fd22753a7fc1b846e09575420b",
         },
         "protocol_configuration_sha256": CONFIG_SHA256,
         "schema_version": 1,
