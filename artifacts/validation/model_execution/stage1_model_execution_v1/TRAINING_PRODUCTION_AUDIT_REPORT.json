@@ -1,0 +1,137 @@
+{
+  "checks": [
+    {
+      "check_id": "accepted_preparation_and_independent_gate",
+      "detail": {
+        "independent_preparation_sha256": "a08a62513ef60feff5f3737dbab308c553f24a3f98b562edc8514ba5bd9d70f8",
+        "preparation_registry_sha256": "8d15f244f390d7069a4ecd7453622a425a465dcf1ec9d32087e4d557fbb84f4e"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "exact_frozen_matrix_identity",
+      "detail": {
+        "run_count": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "frozen_public_input_and_embedding_rehash",
+      "detail": {
+        "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet": "4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e",
+        "data/canonical/final_benchmark_component_split_v1/component_partition_assignments/part-00000.parquet": "2742c339783b26826ed08e03198b9fce13e540c9e22b8bae90310f7c0e4ede0d",
+        "data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet": "66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet": "4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/sampling_strata/part-00000.parquet": "b8e4247ce934d837477513b322af008413ac8d61fa95ccedd16fe2712c1d6427",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet": "d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "container_and_executable_code_bound",
+      "detail": {
+        "container_bytes": 10656620544,
+        "container_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_30_runs_complete_exact_budget",
+      "detail": {
+        "comparisons": 300000000,
+        "run_count": 30,
+        "status_counts": {
+          "complete": 30
+        },
+        "steps": 73350
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_150_checkpoints_metrics_RNG_and_symmetry",
+      "detail": {
+        "checkpoint_count": 150,
+        "expected_weight_sum": 10902230.000000007
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "training_only_checkpoint_selection",
+      "detail": {
+        "selected_pass_counts": {
+          "5": 30
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "offline_single_GPU_logs_and_zero_resumes",
+      "detail": {
+        "initial_logs": 30,
+        "resume_logs": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "ten_three_seed_ensemble_definitions_frozen",
+      "detail": {
+        "ensemble_count": 10,
+        "members_each": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "GPU_comparison_and_storage_budget",
+      "detail": {
+        "embedding_gpu_hours": 0.2120484686505774,
+        "final_governed_storage_bytes": 14959953220,
+        "matrix_run_count": 30,
+        "reported_training_gpu_hours": 0.19797994515779366,
+        "status_counts": {
+          "complete": 30
+        },
+        "total_gpu_hours_conservative": 0.45626144182586964,
+        "training_gpu_exposed_seconds_conservative": 879.1667034310522,
+        "wall_seconds": 880.7952692830004
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "exact_training_artifact_census_and_no_temporaries",
+      "detail": {
+        "registered_unique_artifacts": 647,
+        "temporary_files": []
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "absence_of_development_protected_or_sensitive_inputs",
+      "detail": {
+        "paths_scanned": 647
+      },
+      "status": "pass"
+    }
+  ],
+  "code_commit": "90787bb6aae17dc5bf9eab89ca38e929bbd38558",
+  "protocol_configuration_sha256": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+  "schema_version": 1,
+  "status": "pass",
+  "summary": {
+    "fail": 0,
+    "pass": 12,
+    "warning": 0
+  },
+  "training_artifact_registry_path": "artifacts/validation/model_execution/stage1_model_execution_v1/TRAINING_ARTIFACT_REGISTRY.json",
+  "training_artifact_registry_sha256": "11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318"
+}
