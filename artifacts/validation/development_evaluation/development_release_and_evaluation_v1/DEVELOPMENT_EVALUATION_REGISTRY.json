@@ -1,0 +1,377 @@
+{
+  "bootstrap": [
+    {
+      "bootstrap_metrics": {
+        "bytes": 304128,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/bootstrap/C3_development/bootstrap_metrics.f64.npy",
+        "sha256": "279d5d95cff4ffc08d29f51fe4bbe396edd7959a439747a0b2eba9a02c1072d2"
+      },
+      "bootstrap_scorers": {
+        "bytes": 911,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/bootstrap/C3_development/BOOTSTRAP_SCORERS.json",
+        "sha256": "a44cecbb30816f01917438b83c399d85c7ed0d7f1ba8d89f663ff84051bb030a"
+      },
+      "cell_id": "C3_development",
+      "component_multiplicities": {
+        "bytes": 8568128,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/bootstrap/C3_development/component_multiplicities.i32.npy",
+        "sha256": "d92e04d068ef8a787b7c87c1b9a266ad5061667ae38c8aa311b7cd22324e0341"
+      },
+      "participating_components": 1071
+    },
+    {
+      "bootstrap_metrics": {
+        "bytes": 304128,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/bootstrap/C2_development/bootstrap_metrics.f64.npy",
+        "sha256": "c61cd9118b84ec2ed52024ae47b91bb79a5fe8c0bcbee626e585d41f40ca2769"
+      },
+      "bootstrap_scorers": {
+        "bytes": 911,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/bootstrap/C2_development/BOOTSTRAP_SCORERS.json",
+        "sha256": "62ed422465627bdeda22d0e243f6bdbe5d21077da75ffdff83e284927b6cb09a"
+      },
+      "cell_id": "C2_development",
+      "component_multiplicities": {
+        "bytes": 30264128,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/bootstrap/C2_development/component_multiplicities.i32.npy",
+        "sha256": "8d42df70092832c09a84aa0b363a686e2862fd2e36e09e7b03e06661ce6809b3"
+      },
+      "participating_components": 3783
+    },
+    {
+      "bootstrap_metrics": {
+        "bytes": 304128,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/bootstrap/C1_development/bootstrap_metrics.f64.npy",
+        "sha256": "0449a44c0b31c13a6568c2a53009ddf257ef660e9895ec2e94e791647dfab25d"
+      },
+      "bootstrap_scorers": {
+        "bytes": 911,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/bootstrap/C1_development/BOOTSTRAP_SCORERS.json",
+        "sha256": "bc30598fb4019f1067906b7f873ede17272c10bca49b9496abb13c909ffc85e7"
+      },
+      "cell_id": "C1_development",
+      "component_multiplicities": {
+        "bytes": 21696128,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/bootstrap/C1_development/component_multiplicities.i32.npy",
+        "sha256": "18d2c3801af6f633ca24627a70493e6e1ea20ead8d8afe416d1ee0db60dcf3d7"
+      },
+      "participating_components": 2712
+    }
+  ],
+  "cell_count": 9,
+  "cells": [
+    {
+      "cell_id": "C3_development",
+      "manifest": {
+        "bytes": 802,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C3_development/CELL_SCORE_MANIFEST.json",
+        "sha256": "94eb6489a87fd3b656dd2f1c730c8bde2c28fd9440cc90e8932c91f33c8205bd"
+      },
+      "positive_rows": 2265,
+      "rows": {
+        "bytes": 38876993,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C3_development/rows.parquet",
+        "sha256": "d8e3dcd7dc30f59179d45c15e6b2e9fe4c3b079157f3d993c8708e937a85c1b3"
+      },
+      "scorers": {
+        "bytes": 5375,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C3_development/SCORERS.json",
+        "sha256": "ca89e39c553aefcd82744fbf47ebcac405571ee74855b457b15e8b295ec1f122"
+      },
+      "scores": {
+        "bytes": 392888008,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C3_development/scores.f64.npy",
+        "sha256": "9c173fb549c46b09113b32e1cdd757f93d074fe21b01980580fd7528d0f987a8"
+      },
+      "total_rows": 1002265,
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "source_exclusive:HI-II-14:C3_development",
+      "manifest": {
+        "bytes": 827,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C3_development/CELL_SCORE_MANIFEST.json",
+        "sha256": "7d6ad17b15c4e7dcf2ab1d24f0b5533332db171bc1125e6fba82ce77e3428bc6"
+      },
+      "positive_rows": 312,
+      "rows": {
+        "bytes": 38809139,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C3_development/rows.parquet",
+        "sha256": "2a000a50807f2e9c1311d4ee53a86933cd82b8588fdc6f1273ff65e309c5f0da"
+      },
+      "scorers": {
+        "bytes": 5401,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C3_development/SCORERS.json",
+        "sha256": "7dc50ae55ed2b1c0db580d8f8c2959da3d3664bb2958a2171f3429b1db0a2356"
+      },
+      "scores": {
+        "bytes": 392122432,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C3_development/scores.f64.npy",
+        "sha256": "6d98a8564e4ec21bb1d1403e8bbf365e6df2dfb3eed4fafda2089cd0382c55eb"
+      },
+      "total_rows": 1000312,
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "source_exclusive:HuRI:C3_development",
+      "manifest": {
+        "bytes": 824,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C3_development/CELL_SCORE_MANIFEST.json",
+        "sha256": "f786ab46fcdfb99eaa51ba22765837c626b7d6f8c6a53edab5deb39d0041a9a4"
+      },
+      "positive_rows": 1677,
+      "rows": {
+        "bytes": 38844764,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C3_development/rows.parquet",
+        "sha256": "6812740d436602f8c205f6d3345052e99878d65125513cc3b8e3a58588385f04"
+      },
+      "scorers": {
+        "bytes": 5397,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C3_development/SCORERS.json",
+        "sha256": "a4e70aeddc38c8c2bae36b7d22a44b68a5fef6df3184477444d38a02981ee576"
+      },
+      "scores": {
+        "bytes": 392657512,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C3_development/scores.f64.npy",
+        "sha256": "befa83e1615ac32f094a1348cc4af77a375495e08f20215a5fbc7111cf0c74b6"
+      },
+      "total_rows": 1001677,
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "C2_development",
+      "manifest": {
+        "bytes": 803,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C2_development/CELL_SCORE_MANIFEST.json",
+        "sha256": "1f6e3d03c650fa22fd3b16536ae7e91f99d420f29b4183a9f9a2931cbfcaa2e1"
+      },
+      "positive_rows": 11327,
+      "rows": {
+        "bytes": 40984538,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C2_development/rows.parquet",
+        "sha256": "bad0897296376f9bae434646b2167181933ee85094e39e6f3805e14065fb1bd5"
+      },
+      "scorers": {
+        "bytes": 5375,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C2_development/SCORERS.json",
+        "sha256": "69b7b8c3c8b39f13e19fea675f6e95cf8d41210f0e730656a5d1eb286c92bd98"
+      },
+      "scores": {
+        "bytes": 396440312,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C2_development/scores.f64.npy",
+        "sha256": "1c8850b852df91174d676d41b038dd3789650c86a200b80d5ced3d5b233c4c47"
+      },
+      "total_rows": 1011327,
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "source_exclusive:HI-II-14:C2_development",
+      "manifest": {
+        "bytes": 828,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C2_development/CELL_SCORE_MANIFEST.json",
+        "sha256": "bf3e13d00bb63218ec314c2a5766d7441f2867f2a0ce6a02a1053681e056909e"
+      },
+      "positive_rows": 1601,
+      "rows": {
+        "bytes": 40559508,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C2_development/rows.parquet",
+        "sha256": "5ef481d22c4606eb994c96d7cb275927df8f4b8149ab53091cdd6eef8213802d"
+      },
+      "scorers": {
+        "bytes": 5401,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C2_development/SCORERS.json",
+        "sha256": "6ce1158a4b8460e43971e2f2cbf534578cd296403aea1bf0f9ac851402473640"
+      },
+      "scores": {
+        "bytes": 392627720,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C2_development/scores.f64.npy",
+        "sha256": "5dbbed40aa151f6cbebe3af87d3e65a1d85f34057b747404fe17782901b9c1fe"
+      },
+      "total_rows": 1001601,
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "source_exclusive:HuRI:C2_development",
+      "manifest": {
+        "bytes": 824,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C2_development/CELL_SCORE_MANIFEST.json",
+        "sha256": "9d56272fff88f79b1cc7bd555b80304a85b81f8e6a399049e1764561132ee6db"
+      },
+      "positive_rows": 4751,
+      "rows": {
+        "bytes": 40208589,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C2_development/rows.parquet",
+        "sha256": "330a6c012a6128fe5d7888b697a77a78bbf2551e3387eeec7d03da375bdf3a01"
+      },
+      "scorers": {
+        "bytes": 5397,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C2_development/SCORERS.json",
+        "sha256": "aaffe0198ee3b7083294db994515dec278f8edcaeda7dd7f12fdfc4b945fe24a"
+      },
+      "scores": {
+        "bytes": 393862520,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C2_development/scores.f64.npy",
+        "sha256": "c996689ea0cd6897edbc2f65e0264c0d2f37aae7c62064eafe3045779c1bc595"
+      },
+      "total_rows": 1004751,
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "C1_development",
+      "manifest": {
+        "bytes": 802,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C1_development/CELL_SCORE_MANIFEST.json",
+        "sha256": "c94a1215dcbb38107fb9a92601f58e62cbac041f67d392495a8dda560784a910"
+      },
+      "positive_rows": 3259,
+      "rows": {
+        "bytes": 40740101,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C1_development/rows.parquet",
+        "sha256": "65e31238751bdf18762bb7621c119d0f23e7fc82600e94cce82b9cfa86025dc9"
+      },
+      "scorers": {
+        "bytes": 5375,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C1_development/SCORERS.json",
+        "sha256": "35ba862d1beb2649c346922fdbb19f77648e5da0d75da4ff285fa87b41ce8fb0"
+      },
+      "scores": {
+        "bytes": 393277656,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/C1_development/scores.f64.npy",
+        "sha256": "a12dc6e801934c1921f4a285be9cbdcbbcca2be838b6a2c6c94a8b6c658f2e90"
+      },
+      "total_rows": 1003259,
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "source_exclusive:HI-II-14:C1_development",
+      "manifest": {
+        "bytes": 827,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C1_development/CELL_SCORE_MANIFEST.json",
+        "sha256": "5450aba61c361d4a9ba7d4aab679fef0723753104d6b8d8fbb9bc28b32e48d73"
+      },
+      "positive_rows": 305,
+      "rows": {
+        "bytes": 40552971,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C1_development/rows.parquet",
+        "sha256": "c67cfae811ca9a16133c11e4f218aa201e60165568ff87f5de9ca52416a79f8f"
+      },
+      "scorers": {
+        "bytes": 5401,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C1_development/SCORERS.json",
+        "sha256": "4683aae62eaab0731ddd83e8a2d89304c830ba97aa9f4f7b3f670ac41a0036ae"
+      },
+      "scores": {
+        "bytes": 392119688,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HI-II-14__C1_development/scores.f64.npy",
+        "sha256": "e68357d1900f63870db9ae21176161a8feec62e67d069591d3dd9ca26c953b2f"
+      },
+      "total_rows": 1000305,
+      "unlabeled_rows": 1000000
+    },
+    {
+      "cell_id": "source_exclusive:HuRI:C1_development",
+      "manifest": {
+        "bytes": 823,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C1_development/CELL_SCORE_MANIFEST.json",
+        "sha256": "5c48cbccb67a494f799e07dd5ffa33e5c95f49af0c0af02959d0f9a405fd5e57"
+      },
+      "positive_rows": 611,
+      "rows": {
+        "bytes": 39266993,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C1_development/rows.parquet",
+        "sha256": "da9b77aae27ad50a1ae343d191222813be48cd0f337017368677241b90056bd3"
+      },
+      "scorers": {
+        "bytes": 5397,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C1_development/SCORERS.json",
+        "sha256": "dd8a9af1090bedc3ad36b1c6352ddd4d593fda22ca5be66fc6128b835b52fa86"
+      },
+      "scores": {
+        "bytes": 392239640,
+        "path": ".private/development_release_and_evaluation_v1/evaluation/scores/source_exclusive__HuRI__C1_development/scores.f64.npy",
+        "sha256": "4218d88f3d8d326e710fd2689eb1b204ddd0e4787aa2d1747b47c65b0f574ce3"
+      },
+      "total_rows": 1000611,
+      "unlabeled_rows": 1000000
+    }
+  ],
+  "development_decryption_repeated": false,
+  "development_results_manifest": {
+    "bytes": 1858,
+    "path": "artifacts/results/development_evaluation/development_release_and_evaluation_v1/DEVELOPMENT_RESULTS_MANIFEST.json",
+    "sha256": "e6b5455e3c1e0346b5b9c9a358db7abc628732b57bab2ec778992d2fbe9c8299"
+  },
+  "development_stage_disposition": "stop_complex_model_claim_and_stop_before_protected_evaluation",
+  "ensemble_count": 10,
+  "execution_config_sha256": "d74c683bbeb57e8b455efc789f487ca20df7a128ab0ec27b317dc602eda3e57d",
+  "execution_id": "development_release_and_evaluation_execution_v1",
+  "pair_identity_public": false,
+  "private_logs": [
+    {
+      "bytes": 1113,
+      "path": ".private/development_release_and_evaluation_v1/SCORING_CONSOLE.log",
+      "sha256": "b48a045e8f93152034e690169ad1c6d0087cbb26acbd35d8507e593adecd61c8"
+    },
+    {
+      "bytes": 481,
+      "path": ".private/development_release_and_evaluation_v1/SCORING_RESUME_CONSOLE.log",
+      "sha256": "d7fd5f4bc971236f134809c980c7e79be0a053f4eb8bab8132ed8db452140d16"
+    },
+    {
+      "bytes": 310,
+      "path": ".private/development_release_and_evaluation_v1/EVALUATION_CONSOLE.log",
+      "sha256": "5e483cf0223346a4f32eb1c28f85511ad04fda75fdb75bc615ca1761b855c7ff"
+    }
+  ],
+  "production_audit_source_commit": "d6243e18cd62716305b1b392f8620eba554a8ba8",
+  "protected_candidates_truth_or_private_key_accessed": false,
+  "public_results": [
+    {
+      "bytes": 48080,
+      "path": "artifacts/results/development_evaluation/development_release_and_evaluation_v1/PRIMARY_METRICS.json",
+      "sha256": "feb81ccd88cd58e0c4cbe81abce1d9006bf787df5ed927f3a5ba1beee5442e8f"
+    },
+    {
+      "bytes": 78015,
+      "path": "artifacts/results/development_evaluation/development_release_and_evaluation_v1/SOURCE_EXCLUSIVE_METRICS.json",
+      "sha256": "6e5246861f843358afac2f60eb8f73a51d41b586dff272f556734da9a7ddfd4f"
+    },
+    {
+      "bytes": 880804,
+      "path": "artifacts/results/development_evaluation/development_release_and_evaluation_v1/DEGREE_HUB_DIAGNOSTICS.json",
+      "sha256": "25ea592ae495e69bf688101444e6c671574553af26c5e1e35edbfb802cc81455"
+    },
+    {
+      "bytes": 13647,
+      "path": "artifacts/results/development_evaluation/development_release_and_evaluation_v1/C1_NOVEL_U_SENSITIVITY.json",
+      "sha256": "a557d53e1a25d5bb21550a687131250fb7a4ed201985a935d05c2a03528dad90"
+    },
+    {
+      "bytes": 76347,
+      "path": "artifacts/results/development_evaluation/development_release_and_evaluation_v1/DIAGNOSTIC_CORRELATIONS.json",
+      "sha256": "c1a44d2719163034c7254f30cf1eb1ae2fbdc7953d188eb75ebcb5036c3d9f07"
+    },
+    {
+      "bytes": 5175,
+      "path": "artifacts/results/development_evaluation/development_release_and_evaluation_v1/BOOTSTRAP_REGISTRY.json",
+      "sha256": "c38ddd0d673c246511dabb1137d14be8936a89c95a4e97006f57e0f81e311be9"
+    },
+    {
+      "bytes": 13229,
+      "path": "artifacts/results/development_evaluation/development_release_and_evaluation_v1/SELECTION_AND_KILL_TRACE.json",
+      "sha256": "ac583545f2dd3c8305dc477cb2d414e75a31800afcb29ddaedc6276cab165c45"
+    }
+  ],
+  "schema_version": 1,
+  "scorer_count": 49,
+  "scoring_run_manifest": {
+    "bytes": 9414,
+    "path": ".private/development_release_and_evaluation_v1/evaluation/SCORING_RUN_MANIFEST.json",
+    "sha256": "c82be153593ad46101f1ce49e1c79d341da535c71b34ded748c63e478b10dc99"
+  },
+  "selected_checkpoint_count": 30,
+  "status": "pass",
+  "stop_before_protected_evaluation": true,
+  "training_or_checkpoint_change": false,
+  "training_registry_sha256": "11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318"
+}

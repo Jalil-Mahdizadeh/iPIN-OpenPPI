@@ -1,0 +1,55 @@
+{
+  "development_stage_disposition": "stop_complex_model_claim_and_stop_before_protected_evaluation",
+  "execution_config_sha256": "d74c683bbeb57e8b455efc789f487ca20df7a128ab0ec27b317dc602eda3e57d",
+  "execution_id": "development_release_and_evaluation_execution_v1",
+  "files": [
+    {
+      "bytes": 48080,
+      "path": "PRIMARY_METRICS.json",
+      "sha256": "feb81ccd88cd58e0c4cbe81abce1d9006bf787df5ed927f3a5ba1beee5442e8f"
+    },
+    {
+      "bytes": 78015,
+      "path": "SOURCE_EXCLUSIVE_METRICS.json",
+      "sha256": "6e5246861f843358afac2f60eb8f73a51d41b586dff272f556734da9a7ddfd4f"
+    },
+    {
+      "bytes": 880804,
+      "path": "DEGREE_HUB_DIAGNOSTICS.json",
+      "sha256": "25ea592ae495e69bf688101444e6c671574553af26c5e1e35edbfb802cc81455"
+    },
+    {
+      "bytes": 13647,
+      "path": "C1_NOVEL_U_SENSITIVITY.json",
+      "sha256": "a557d53e1a25d5bb21550a687131250fb7a4ed201985a935d05c2a03528dad90"
+    },
+    {
+      "bytes": 76347,
+      "path": "DIAGNOSTIC_CORRELATIONS.json",
+      "sha256": "c1a44d2719163034c7254f30cf1eb1ae2fbdc7953d188eb75ebcb5036c3d9f07"
+    },
+    {
+      "bytes": 5175,
+      "path": "BOOTSTRAP_REGISTRY.json",
+      "sha256": "c38ddd0d673c246511dabb1137d14be8936a89c95a4e97006f57e0f81e311be9"
+    },
+    {
+      "bytes": 13229,
+      "path": "SELECTION_AND_KILL_TRACE.json",
+      "sha256": "ac583545f2dd3c8305dc477cb2d414e75a31800afcb29ddaedc6276cab165c45"
+    }
+  ],
+  "generated_at_utc": "2026-08-19T11:00:55.454366+00:00",
+  "pair_identity_public": false,
+  "protected_candidates_accessed": false,
+  "protected_truth_accessed": false,
+  "reporting_order": [
+    "C3",
+    "C2",
+    "C1"
+  ],
+  "schema_version": 1,
+  "scoring_run_manifest_sha256": "c82be153593ad46101f1ce49e1c79d341da535c71b34ded748c63e478b10dc99",
+  "stop_before_protected_evaluation": true,
+  "training_or_checkpoint_change": false
+}

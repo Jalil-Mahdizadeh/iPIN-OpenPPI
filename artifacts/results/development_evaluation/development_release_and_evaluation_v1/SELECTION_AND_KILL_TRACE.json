@@ -1,0 +1,331 @@
+{
+  "candidate_eligible": {
+    "esm2_650m_linear_ablation__linear_lr1e-3": true,
+    "esm2_650m_linear_ablation__linear_lr3e-4": true,
+    "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": false,
+    "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": true,
+    "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": true,
+    "esm2_650m_partner_gated_primary__nonlinear_conservative": true,
+    "esm2_650m_partner_gated_primary__nonlinear_default": true,
+    "esm2_650m_partner_gated_primary__nonlinear_no_dropout": true,
+    "lightweight_esm2_150m_linear__linear_lr1e-3": true,
+    "lightweight_esm2_150m_linear__linear_lr3e-4": true
+  },
+  "candidate_metrics": {
+    "esm2_650m_linear_ablation__linear_lr1e-3": {
+      "C1_development": 0.4941949229338325,
+      "C2_development": 0.49280086048168587,
+      "C3_development": 0.48502889646691416
+    },
+    "esm2_650m_linear_ablation__linear_lr3e-4": {
+      "C1_development": 0.48996364861192043,
+      "C2_development": 0.49176875962722855,
+      "C3_development": 0.4851396894028194
+    },
+    "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": {
+      "C1_development": 0.4987699018496596,
+      "C2_development": 0.4872166899253446,
+      "C3_development": 0.4691016236193376
+    },
+    "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": {
+      "C1_development": 0.4929186359795035,
+      "C2_development": 0.488790627776212,
+      "C3_development": 0.4767607602639564
+    },
+    "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": {
+      "C1_development": 0.4957024201672031,
+      "C2_development": 0.48691848404746485,
+      "C3_development": 0.4764291746126709
+    },
+    "esm2_650m_partner_gated_primary__nonlinear_conservative": {
+      "C1_development": 0.4914052417729026,
+      "C2_development": 0.4881196425737187,
+      "C3_development": 0.4877795207494928
+    },
+    "esm2_650m_partner_gated_primary__nonlinear_default": {
+      "C1_development": 0.4921736437540651,
+      "C2_development": 0.4924505950487738,
+      "C3_development": 0.4871809408377321
+    },
+    "esm2_650m_partner_gated_primary__nonlinear_no_dropout": {
+      "C1_development": 0.49101376569134214,
+      "C2_development": 0.4938754154112627,
+      "C3_development": 0.49134652604741336
+    },
+    "lightweight_esm2_150m_linear__linear_lr1e-3": {
+      "C1_development": 0.4919112302891104,
+      "C2_development": 0.49553647864471473,
+      "C3_development": 0.4859962591601394
+    },
+    "lightweight_esm2_150m_linear__linear_lr3e-4": {
+      "C1_development": 0.4928097327485993,
+      "C2_development": 0.4977559017089412,
+      "C3_development": 0.49160758476715566
+    }
+  },
+  "development_stage_disposition": "stop_complex_model_claim_and_stop_before_protected_evaluation",
+  "execution_id": "development_release_and_evaluation_execution_v1",
+  "generated_at_utc": "2026-08-19T11:00:55.454366+00:00",
+  "kill_trace": {
+    "C1_novel_U_gain": -0.12203007817426298,
+    "C1_primary_gain": -0.12215151286601061,
+    "best_complex_C3_percentile_95": [
+      0.4622492977197828,
+      0.5372847754287488
+    ],
+    "best_complex_candidate": "esm2_650m_partner_gated_primary__nonlinear_no_dropout",
+    "best_shortcut_C1": "preferential_attachment",
+    "criteria": {
+      "U_used_as_negative_or_probability_target": false,
+      "all_candidates_ineligible_or_failed": false,
+      "best_complex_C3_lower_bound_not_above_0_5": true,
+      "development_released_before_registry_freeze": false,
+      "gain_absent_outside_top_10_percent_hubs": true,
+      "integrity_custody_or_protected_boundary_violation": false,
+      "interolog_or_linear_explains_complex_C3": true,
+      "no_complex_candidate_C3_gain_0_02_with_positive_interval": true,
+      "post_release_training_or_retraining": false,
+      "shortcut_explains_C1_and_no_qualifying_C2_or_C3": true,
+      "unsupported_claim_required": false
+    },
+    "outside_top_10_percent_hub_gain": -0.15333611147533133,
+    "stop_before_protected_evaluation": true,
+    "withdraw_C1_gain_claim": false
+  },
+  "pair_identity_public": false,
+  "partner_gate_trace": {
+    "esm2_650m_partner_gated_primary__nonlinear_conservative": {
+      "baseline_delta": {
+        "candidate": "esm2_650m_partner_gated_primary__nonlinear_conservative",
+        "cell": "C3_development",
+        "comparator": "within_pair_3mer_cosine",
+        "delta": -0.15690311677325186,
+        "interval_excludes_zero_positive": false,
+        "paired_percentile_95": [
+          -0.25990088268928213,
+          0.013395984649452845
+        ]
+      },
+      "checks": {
+        "C3_vs_650m_linear_at_least_0_01": false,
+        "C3_vs_650m_linear_interval_positive": false,
+        "C3_vs_matched_no_gate_at_least_0_005": true,
+        "C3_vs_matched_no_gate_interval_positive": false,
+        "C3_vs_strongest_simple_at_least_0_02": false,
+        "C3_vs_strongest_simple_interval_positive": false,
+        "all_seed_ranges_at_most_0_02": true,
+        "positive_named_source_direction": false,
+        "positive_outside_top_10_percent_hubs": false
+      },
+      "linear_650m_delta": {
+        "candidate": "esm2_650m_partner_gated_primary__nonlinear_conservative",
+        "cell": "C3_development",
+        "comparator": "esm2_650m_linear_ablation__linear_lr3e-4",
+        "delta": 0.002639831346673449,
+        "interval_excludes_zero_positive": false,
+        "paired_percentile_95": [
+          -0.04556205428979537,
+          0.03887213245240486
+        ]
+      },
+      "matched_no_gate_delta": {
+        "candidate": "esm2_650m_partner_gated_primary__nonlinear_conservative",
+        "cell": "C3_development",
+        "comparator": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative",
+        "delta": 0.01867789713015522,
+        "interval_excludes_zero_positive": false,
+        "paired_percentile_95": [
+          -0.015666589379887998,
+          0.031901877385423764
+        ]
+      },
+      "named_source_deltas": {
+        "source_exclusive:HI-II-14:C3_development": -0.2563105240350812,
+        "source_exclusive:HuRI:C3_development": -0.14120975730055618
+      },
+      "outside_top_10_percent_hub_delta": -0.15690311677325186,
+      "partner_gate_retained": false
+    },
+    "esm2_650m_partner_gated_primary__nonlinear_default": {
+      "baseline_delta": {
+        "candidate": "esm2_650m_partner_gated_primary__nonlinear_default",
+        "cell": "C3_development",
+        "comparator": "within_pair_3mer_cosine",
+        "delta": -0.15750169668501257,
+        "interval_excludes_zero_positive": false,
+        "paired_percentile_95": [
+          -0.2538800054548342,
+          0.017545765517301557
+        ]
+      },
+      "checks": {
+        "C3_vs_650m_linear_at_least_0_01": false,
+        "C3_vs_650m_linear_interval_positive": false,
+        "C3_vs_matched_no_gate_at_least_0_005": true,
+        "C3_vs_matched_no_gate_interval_positive": false,
+        "C3_vs_strongest_simple_at_least_0_02": false,
+        "C3_vs_strongest_simple_interval_positive": false,
+        "all_seed_ranges_at_most_0_02": true,
+        "positive_named_source_direction": false,
+        "positive_outside_top_10_percent_hubs": false
+      },
+      "linear_650m_delta": {
+        "candidate": "esm2_650m_partner_gated_primary__nonlinear_default",
+        "cell": "C3_development",
+        "comparator": "esm2_650m_linear_ablation__linear_lr3e-4",
+        "delta": 0.0020412514349127386,
+        "interval_excludes_zero_positive": false,
+        "paired_percentile_95": [
+          -0.046302337429385186,
+          0.04449393323886712
+        ]
+      },
+      "matched_no_gate_delta": {
+        "candidate": "esm2_650m_partner_gated_primary__nonlinear_default",
+        "cell": "C3_development",
+        "comparator": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default",
+        "delta": 0.010420180573775695,
+        "interval_excludes_zero_positive": false,
+        "paired_percentile_95": [
+          -0.012688221868408591,
+          0.02437694791405177
+        ]
+      },
+      "named_source_deltas": {
+        "source_exclusive:HI-II-14:C3_development": -0.23640928525322125,
+        "source_exclusive:HuRI:C3_development": -0.14650518604238238
+      },
+      "outside_top_10_percent_hub_delta": -0.15750169668501257,
+      "partner_gate_retained": false
+    },
+    "esm2_650m_partner_gated_primary__nonlinear_no_dropout": {
+      "baseline_delta": {
+        "candidate": "esm2_650m_partner_gated_primary__nonlinear_no_dropout",
+        "cell": "C3_development",
+        "comparator": "within_pair_3mer_cosine",
+        "delta": -0.15333611147533133,
+        "interval_excludes_zero_positive": false,
+        "paired_percentile_95": [
+          -0.2459824782324954,
+          0.019318960348454824
+        ]
+      },
+      "checks": {
+        "C3_vs_650m_linear_at_least_0_01": false,
+        "C3_vs_650m_linear_interval_positive": false,
+        "C3_vs_matched_no_gate_at_least_0_005": true,
+        "C3_vs_matched_no_gate_interval_positive": false,
+        "C3_vs_strongest_simple_at_least_0_02": false,
+        "C3_vs_strongest_simple_interval_positive": false,
+        "all_seed_ranges_at_most_0_02": true,
+        "positive_named_source_direction": false,
+        "positive_outside_top_10_percent_hubs": false
+      },
+      "linear_650m_delta": {
+        "candidate": "esm2_650m_partner_gated_primary__nonlinear_no_dropout",
+        "cell": "C3_development",
+        "comparator": "esm2_650m_linear_ablation__linear_lr3e-4",
+        "delta": 0.006206836644593983,
+        "interval_excludes_zero_positive": false,
+        "paired_percentile_95": [
+          -0.043158071185191056,
+          0.050104062093720605
+        ]
+      },
+      "matched_no_gate_delta": {
+        "candidate": "esm2_650m_partner_gated_primary__nonlinear_no_dropout",
+        "cell": "C3_development",
+        "comparator": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout",
+        "delta": 0.014917351434742432,
+        "interval_excludes_zero_positive": false,
+        "paired_percentile_95": [
+          -0.0017786841786421868,
+          0.03245385852354833
+        ]
+      },
+      "named_source_deltas": {
+        "source_exclusive:HI-II-14:C3_development": -0.23262459775331246,
+        "source_exclusive:HuRI:C3_development": -0.1406427868176625
+      },
+      "outside_top_10_percent_hub_delta": -0.15333611147533133,
+      "partner_gate_retained": false
+    }
+  },
+  "protected_candidates_accessed": false,
+  "protected_truth_accessed": false,
+  "reporting_order": [
+    "C3",
+    "C2",
+    "C1"
+  ],
+  "schema_version": 1,
+  "seed_metric_ranges": {
+    "esm2_650m_linear_ablation__linear_lr1e-3": {
+      "C1_development": 0.0007318233713680677,
+      "C2_development": 0.0008601456413517283,
+      "C3_development": 0.0008754626931312126
+    },
+    "esm2_650m_linear_ablation__linear_lr3e-4": {
+      "C1_development": 0.0009410833376073957,
+      "C2_development": 0.002047101838171861,
+      "C3_development": 0.001755575938188425
+    },
+    "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": {
+      "C1_development": 0.006291735385635544,
+      "C2_development": 0.019672096186207688,
+      "C3_development": 0.030779809712848716
+    },
+    "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": {
+      "C1_development": 0.007765331105347384,
+      "C2_development": 0.013533791306434728,
+      "C3_development": 0.018517038631266913
+    },
+    "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": {
+      "C1_development": 0.009418790156081214,
+      "C2_development": 0.009947733646945678,
+      "C3_development": 0.00958932163341114
+    },
+    "esm2_650m_partner_gated_primary__nonlinear_conservative": {
+      "C1_development": 0.00376095220061734,
+      "C2_development": 0.0033527162736521343,
+      "C3_development": 0.011412700882798443
+    },
+    "esm2_650m_partner_gated_primary__nonlinear_default": {
+      "C1_development": 0.007861325112868578,
+      "C2_development": 0.005149834228837302,
+      "C3_development": 0.007731213686531846
+    },
+    "esm2_650m_partner_gated_primary__nonlinear_no_dropout": {
+      "C1_development": 0.009329672671982536,
+      "C2_development": 0.01066247326470271,
+      "C3_development": 0.005808897130177959
+    },
+    "lightweight_esm2_150m_linear__linear_lr1e-3": {
+      "C1_development": 0.0005394440360723118,
+      "C2_development": 0.0018632414303091371,
+      "C3_development": 0.0017679154525375163
+    },
+    "lightweight_esm2_150m_linear__linear_lr3e-4": {
+      "C1_development": 0.0016362640206603052,
+      "C2_development": 0.0027326654409327578,
+      "C3_development": 0.0025449059602229984
+    }
+  },
+  "selection_trace": {
+    "order": [
+      "C3_development",
+      "C2_development",
+      "C1_development",
+      "lower_complexity",
+      "candidate_id"
+    ],
+    "quantization": "decimal_0.001_ROUND_HALF_UP_selection_only",
+    "selected_candidate_id": "lightweight_esm2_150m_linear__linear_lr3e-4",
+    "strongest_simple_sequence_baseline_by_primary_cell": {
+      "C1_development": "exact_training_interolog_3mer",
+      "C2_development": "exact_training_interolog_3mer",
+      "C3_development": "within_pair_3mer_cosine"
+    }
+  },
+  "training_or_checkpoint_change": false
+}
