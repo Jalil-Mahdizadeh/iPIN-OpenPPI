@@ -1,0 +1,156 @@
+{
+  "checks": [
+    {
+      "check_id": "frozen_public_inputs_runtime_model_and_protocol_hashes",
+      "detail": 10,
+      "passed": true
+    },
+    {
+      "check_id": "protected_ciphertexts_unchanged_hash_only",
+      "detail": 2,
+      "passed": true
+    },
+    {
+      "check_id": "production_registry_rehashes_all_registered_artifacts",
+      "detail": 8,
+      "passed": true
+    },
+    {
+      "check_id": "production_validation_preexisted_and_passed",
+      "detail": {
+        "checks": [
+          {
+            "check_id": "frozen_public_inputs_runtime_and_revision_hashes",
+            "passed": true
+          },
+          {
+            "check_id": "label_independent_whole_component_split_and_exact_row_census",
+            "passed": true
+          },
+          {
+            "check_id": "same_forward_segment_weighted_global_reconstruction",
+            "passed": true
+          },
+          {
+            "check_id": "all_seven_scores_finite_and_local_GPU_matches_CPU",
+            "passed": true
+          },
+          {
+            "check_id": "original_U_design_weights_retained",
+            "passed": true
+          },
+          {
+            "check_id": "phase_A_trigger_applied_exactly_without_interval_gate",
+            "passed": true
+          },
+          {
+            "check_id": "no_development_protected_key_external_or_negative_input",
+            "passed": true
+          }
+        ],
+        "checks_failed": 0,
+        "checks_passed": 7,
+        "phase_a_results": {
+          "bytes": 4736,
+          "path": "artifacts/metrics/public_training_local_representation_diagnostic_v1_revision_2/nested_C3/PHASE_A_RESULTS.json",
+          "sha256": "becf069b9bae635af2554ba89849e659967baa6b073acb1346d0ebdac2a79544"
+        },
+        "protocol_id": "public_training_local_representation_diagnostic_v1_revision_2",
+        "status": "pass"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "embedding_manifest_rehashes_all_arrays",
+      "detail": 5,
+      "passed": true
+    },
+    {
+      "check_id": "independent_nested_split_and_endpoint_order",
+      "detail": {
+        "heldout_components": 1366,
+        "training_endpoints": 11900
+      },
+      "passed": true
+    },
+    {
+      "check_id": "independent_embedding_shapes_segments_lengths_and_global_reconstruction",
+      "detail": {
+        "parent_maximum_absolute_difference": 1.52587890625e-05,
+        "reconstruction_maximum_absolute_difference": 0.0,
+        "segments": 56304
+      },
+      "passed": true
+    },
+    {
+      "check_id": "independent_nested_cell_row_census",
+      "detail": {
+        "P": {
+          "C1": 11051,
+          "C2": 5098,
+          "C3": 650
+        },
+        "U": {
+          "C1": 1254297,
+          "C2": 659253,
+          "C3": 86450
+        }
+      },
+      "passed": true
+    },
+    {
+      "check_id": "independently_recomputed_all_609700_scores",
+      "detail": 0.0,
+      "passed": true
+    },
+    {
+      "check_id": "independent_HT_points_and_original_U_weights",
+      "detail": 0.0,
+      "passed": true
+    },
+    {
+      "check_id": "independent_200_draw_paired_component_bootstrap_and_intervals",
+      "detail": {
+        "bootstrap_maximum_absolute_difference": 0.0,
+        "interval_maximum_absolute_difference": 0.0,
+        "multiplicities_exact": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "independent_trigger_and_conditional_phase_B_stop",
+      "detail": {
+        "delta": -0.015587991105247556,
+        "delta_interval": [
+          -0.042924265306829947,
+          0.0067081094539078205
+        ],
+        "trigger": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "public_only_registry_and_no_sensitive_information_flow",
+      "detail": {
+        "forbidden_fragments_found": []
+      },
+      "passed": true
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 13,
+  "details": {
+    "bootstrap_values_recomputed": 1400,
+    "embedding_values_rehashed": 43650560,
+    "phase_a_scores_recomputed": 609700,
+    "score_maximum_absolute_difference": 0.0,
+    "trigger": false
+  },
+  "implementation_independence": {
+    "implemented_after_production_evidence_commit": true,
+    "imports_ipin_openppi_production_module": false,
+    "production_evidence_commit": "220d0c4"
+  },
+  "protocol_id": "public_training_local_representation_diagnostic_v1_revision_2",
+  "status": "pass"
+}
