@@ -165,13 +165,18 @@ def main() -> int:
     tokenizer = EsmTokenizer.from_pretrained(
         args.model_dir, local_files_only=True, trust_remote_code=False
     )
-    model = EsmModel.from_pretrained(
+    model, loading_info = EsmModel.from_pretrained(
         args.model_dir,
+        add_pooling_layer=False,
         local_files_only=True,
+        output_loading_info=True,
         trust_remote_code=False,
         use_safetensors=True,
         torch_dtype=torch.float32,
     )
+    assert loading_info["missing_keys"] == []
+    assert loading_info["unexpected_keys"] == []
+    assert loading_info["mismatched_keys"] == []
     first = pooled_synthetic_embedding(model, tokenizer, torch.float32)
     second = pooled_synthetic_embedding(model, tokenizer, torch.float32)
     repeat_max_abs = float(torch.max(torch.abs(first - second)))
@@ -200,6 +205,12 @@ def main() -> int:
         "gpu_count": torch.cuda.device_count(),
         "gpu_name": torch.cuda.get_device_name(0),
         "model_checkpoint_sha256": EXPECTED_CHECKPOINT_SHA256,
+        "model_loading_info": {
+            "mismatched_keys": loading_info["mismatched_keys"],
+            "missing_keys": loading_info["missing_keys"],
+            "pooler_instantiated": False,
+            "unexpected_keys": loading_info["unexpected_keys"],
+        },
         "network_mode": {
             "hf_hub_offline": os.environ["HF_HUB_OFFLINE"],
             "local_files_only": True,
