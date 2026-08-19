@@ -1,0 +1,95 @@
+{
+  "checks": [
+    {
+      "check_id": "exact_nonadaptive_30_run_matrix",
+      "detail": {
+        "code_commit": "8555d7217df40fe0f4629fb77797bc190f250521",
+        "run_count": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "public_training_only_P_U_strata_boundary",
+      "detail": {
+        "P": 16799,
+        "U": 2000000,
+        "strata": 36
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "prepared_endpoint_and_rational_weight_arrays_exact",
+      "detail": {
+        "positive_endpoint_a": [
+          16799
+        ],
+        "positive_endpoint_b": [
+          16799
+        ],
+        "unlabeled_endpoint_a": [
+          2000000
+        ],
+        "unlabeled_endpoint_b": [
+          2000000
+        ],
+        "unlabeled_weight_denominator": [
+          2000000
+        ],
+        "unlabeled_weight_numerator": [
+          2000000
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_30_full_SHA_orders_independently_reconstructed",
+      "detail": {
+        "order_records": 30,
+        "unique_keys": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_30_run_configs_exact_and_hash_bound",
+      "detail": {
+        "code_hashes": {
+          "scripts/model/train_stage1_models_v1.py": "4e6ba7e7c4e58e470fd1966a244df429d9a8147c2a18b6a193c08e2b0ea2d21e",
+          "src/ipin_openppi/stage1/constants.py": "b148173f9bbbd1280c4f644d122211ba671d3dd5ec6852e3cba2118bb3dedefb",
+          "src/ipin_openppi/stage1/models.py": "653340c6aa7caa21672f855fec6b0562857984560b49b20a2e37a4c9579ede28",
+          "src/ipin_openppi/stage1/objective.py": "34258f553dd6406d9a5ef0fd0320cd703f7ecb4ca0d3f2bb4e9cbc598942eaab",
+          "src/ipin_openppi/stage1/support.py": "02a7fc6f1b8cd831db058d18866f701a01e47723eaf36d9856e4f0877ce3ec24",
+          "src/ipin_openppi/stage1/training.py": "4000f8e5fab939e90f84d28a5343076d0d6b5b0e1e4f084669a259ac9bc6b0ee"
+        },
+        "configs": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "pretraining_file_census_and_no_execution",
+      "detail": {
+        "configs": 30,
+        "orders": 30,
+        "training_started": false
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "public_only_preparation_registry_boundary",
+      "detail": {
+        "registered_preparation_artifacts": 63
+      },
+      "status": "pass"
+    }
+  ],
+  "code_commit": "d92a1fbe01daa7bd1cf14d25e86e3714ad7122cf",
+  "preparation_registry_path": "artifacts/validation/model_execution/stage1_model_execution_v1/TRAINING_PREPARATION_REGISTRY.json",
+  "preparation_registry_sha256": "8d15f244f390d7069a4ecd7453622a425a465dcf1ec9d32087e4d557fbb84f4e",
+  "protocol_configuration_sha256": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+  "schema_version": 1,
+  "status": "pass",
+  "summary": {
+    "fail": 0,
+    "pass": 7,
+    "warning": 0
+  }
+}
