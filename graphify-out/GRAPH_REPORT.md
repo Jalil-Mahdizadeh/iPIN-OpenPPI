@@ -1,7 +1,7 @@
 # Graph Report - iPIN-OpenPPI  (2026-08-19)
 
 ## Corpus Check
-- 379 files · ~356,364 words
+- 379 files · ~356,373 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ee149325`
+- Built from commit: `2b5e83cf`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

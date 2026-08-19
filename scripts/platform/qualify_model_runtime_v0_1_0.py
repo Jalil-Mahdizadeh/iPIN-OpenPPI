@@ -17,7 +17,7 @@ from typing import Any
 
 import numpy as np
 import torch
-from transformers import EsmModel, EsmTokenizer
+from transformers import EsmForMaskedLM, EsmModel, EsmTokenizer
 
 
 EXPECTED_VERSIONS = {
@@ -165,9 +165,8 @@ def main() -> int:
     tokenizer = EsmTokenizer.from_pretrained(
         args.model_dir, local_files_only=True, trust_remote_code=False
     )
-    model, loading_info = EsmModel.from_pretrained(
+    checkpoint_model, loading_info = EsmForMaskedLM.from_pretrained(
         args.model_dir,
-        add_pooling_layer=False,
         local_files_only=True,
         output_loading_info=True,
         trust_remote_code=False,
@@ -177,6 +176,8 @@ def main() -> int:
     assert loading_info["missing_keys"] == []
     assert loading_info["unexpected_keys"] == []
     assert loading_info["mismatched_keys"] == []
+    assert checkpoint_model.esm.pooler is None
+    model = checkpoint_model.esm
     first = pooled_synthetic_embedding(model, tokenizer, torch.float32)
     second = pooled_synthetic_embedding(model, tokenizer, torch.float32)
     repeat_max_abs = float(torch.max(torch.abs(first - second)))
@@ -209,6 +210,7 @@ def main() -> int:
             "mismatched_keys": loading_info["mismatched_keys"],
             "missing_keys": loading_info["missing_keys"],
             "pooler_instantiated": False,
+            "wrapper": "EsmForMaskedLM",
             "unexpected_keys": loading_info["unexpected_keys"],
         },
         "network_mode": {
