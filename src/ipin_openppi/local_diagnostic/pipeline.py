@@ -522,8 +522,8 @@ def _local_scores_gpu(
     norms = np.linalg.norm(segments.astype(np.float64), axis=1)
     if np.any(norms == 0) or not np.isfinite(norms).all():
         raise RuntimeError("zero/nonfinite segment norm")
-    unit = segments / norms[:, None].astype(np.float32)
-    padded = np.zeros((counts.size, MAX_SEGMENTS, segments.shape[1]), dtype=np.float32)
+    unit = segments.astype(np.float64) / norms[:, None]
+    padded = np.zeros((counts.size, MAX_SEGMENTS, segments.shape[1]), dtype=np.float64)
     mask = np.zeros((counts.size, MAX_SEGMENTS), dtype=bool)
     for endpoint_index, count in enumerate(counts):
         start, stop = int(offsets[endpoint_index]), int(offsets[endpoint_index + 1])
@@ -532,11 +532,11 @@ def _local_scores_gpu(
     global_norm = np.linalg.norm(global_vectors.astype(np.float64), axis=1)
     if np.any(global_norm == 0) or not np.isfinite(global_norm).all():
         raise RuntimeError("zero/nonfinite matched-global norm")
-    global_unit = global_vectors / global_norm[:, None].astype(np.float32)
+    global_unit = global_vectors.astype(np.float64) / global_norm[:, None]
 
-    segment_tensor = torch.from_numpy(padded).to(device="cuda", dtype=torch.float32)
+    segment_tensor = torch.from_numpy(padded).to(device="cuda", dtype=torch.float64)
     mask_tensor = torch.from_numpy(mask).to(device="cuda")
-    global_tensor = torch.from_numpy(global_unit).to(device="cuda", dtype=torch.float32)
+    global_tensor = torch.from_numpy(global_unit).to(device="cuda", dtype=torch.float64)
     global_output = np.empty(pair_a.size, dtype=np.float64)
     maximum_output = np.empty(pair_a.size, dtype=np.float64)
     top4_output = np.empty(pair_a.size, dtype=np.float64)
@@ -558,7 +558,7 @@ def _local_scores_gpu(
             finite_top = torch.where(torch.isfinite(top), top, torch.zeros_like(top))
             valid_count = valid.sum(dim=(1, 2)).clamp(max=4)
             top4_output[start:stop] = (
-                finite_top.sum(dim=1) / valid_count.to(dtype=torch.float32)
+                finite_top.sum(dim=1) / valid_count.to(dtype=torch.float64)
             ).cpu().numpy()
             global_output[start:stop] = (
                 global_tensor.index_select(0, left_index)

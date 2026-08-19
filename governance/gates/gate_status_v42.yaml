@@ -1,0 +1,34 @@
+schema_version: 42
+supersedes: governance/gates/gate_status_v41.yaml
+updated_date: "2026-08-19"
+programme_state: public_training_local_representation_scoring_retry_authorized_with_FP64_reductions
+
+gates:
+  parent_development_result:
+    status: accepted_frozen_unchanged_stopped
+  local_embedding:
+    status: pass_frozen
+    endpoints: 11900
+    segments: 56304
+    retained_dtype: float32
+    elapsed_seconds: 149.65228069300065
+  local_phase_a_scoring:
+    status: retry_authorized_before_any_score_artifact
+    decision: governance/decisions/DEC-0043-authorize-fp64-local-cosine-reductions.md
+    failed_attempt_score_or_metric_files_written: 0
+    failed_attempt_CPU_GPU_maximum_difference: 0.0004219086689020157
+    corrected_reduction_dtype: float64
+    required_CPU_GPU_tolerance: 0.000002
+    scientific_formula_or_threshold_change: false
+  protected_test:
+    status: fully_sealed_prohibited
+
+global_prohibitions:
+  development_or_protected_information_use: true
+  negative_or_pseudo_negative_construction: true
+  parent_benchmark_or_scientific_threshold_change: true
+  adaptive_model_or_scorer_change: true
+
+next_authorized_work_package: retry_exact_phase_A_scoring_with_FP64_cosine_arithmetic
+development_or_protected_evaluation_authorized: false
+
