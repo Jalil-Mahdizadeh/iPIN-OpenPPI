@@ -1,0 +1,55 @@
+schema_version: 39
+supersedes: governance/gates/gate_status_v38.yaml
+updated_date: "2026-08-19"
+programme_state: public_training_local_representation_diagnostic_authorized_parent_claim_remains_stopped
+
+gates:
+  parent_development_result:
+    status: accepted_frozen_unchanged
+    decision: governance/decisions/DEC-0039-accept-development-evaluation-and-stop-complex-model-claim.md
+    disposition: stop_complex_model_claim_and_stop_before_protected_evaluation
+    protected_advance_authorized: false
+  local_representation_diagnostic:
+    status: authorized_not_yet_executed
+    decision: governance/decisions/DEC-0040-authorize-public-training-local-representation-diagnostic.md
+    protocol: docs/protocols/PUBLIC_TRAINING_LOCAL_REPRESENTATION_DIAGNOSTIC_v1.md
+    protocol_sha256: 4d3f2ee8a4ecc46bb6bd878a0eaf8beb18aa89ce3b96aa18d239a0e9d001df33
+    config: configs/public_training_local_representation_diagnostic_v1.yaml
+    config_sha256: 63e0d4e194b5db88a51e245b2ddf767e4ce11142659ac8c24deb3afbb6be749d
+    scope: public_training_only_nested_component_holdout
+    phase_a_authorized: true
+    conditional_phase_b_authorized_only_on_frozen_trigger: true
+    development_information_authorized: false
+    protected_information_authorized: false
+  runtime:
+    status: accepted_reused_offline
+    container_sha256: c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91
+    encoder_candidate: esm2_150m
+    checkpoint_sha256: c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566
+    hardware: one_NVIDIA_GH200_120GB_node_n180
+  protected_test:
+    status: fully_sealed_prohibited
+    candidate_ciphertext_sha256: 5ac1c30dbda85f6274f60febb2f4b01feda34c43bf87f4bbb690abe6c639ff63
+    truth_ciphertext_sha256: 69824547667861694aff88a0f6e43526d4f3aa27f930d4a4ff44c924d29aa1e9
+
+nested_split_frozen_census:
+  heldout_endpoints: 2380
+  heldout_components: 1366
+  C1: {positive: 11051, unlabeled: 1254297}
+  C2: {positive: 5098, unlabeled: 659253}
+  C3: {positive: 650, unlabeled: 86450}
+
+global_prohibitions:
+  modify_parent_benchmark_protocol_or_evidence: true
+  development_release_retraining_rescoring_or_information_use: true
+  protected_candidate_truth_key_scoring_or_metric_access: true
+  negative_or_pseudo_negative_construction: true
+  external_panel_or_structure_input: true
+  residue_or_interface_target_or_claim: true
+  encoder_tuning_or_additional_PLM: true
+  adaptive_scorer_threshold_recipe_or_seed_search: true
+
+next_authorized_work_package: execute_public_training_local_representation_diagnostic_v1
+new_numbered_decision_required_after_validated_result: true
+development_or_protected_evaluation_authorized: false
+

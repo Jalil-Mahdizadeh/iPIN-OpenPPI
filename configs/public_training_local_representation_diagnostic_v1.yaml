@@ -1,0 +1,156 @@
+schema_version: 1
+protocol_id: public_training_local_representation_diagnostic_v1
+authority:
+  decision: governance/decisions/DEC-0040-authorize-public-training-local-representation-diagnostic.md
+  parent_stop_decision: governance/decisions/DEC-0039-accept-development-evaluation-and-stop-complex-model-claim.md
+  purpose: prospective_public_training_only_test_of_the_global_pooling_bottleneck
+
+scientific_boundary:
+  parent_benchmark_frozen_unchanged: true
+  parent_DEC_0028_results_frozen_unchanged: true
+  development_information_used: false
+  development_retraining_or_rescoring: false
+  protected_candidate_truth_or_key_access: false
+  external_panel_used: false
+  negative_or_pseudo_negative_constructed: false
+  interface_or_residue_target_constructed: false
+  encoder_tuning: false
+  probability_calibration_or_prevalence_claim: false
+  interpretation: exploratory_positive_vs_unlabeled_ranking_only
+
+inputs:
+  endpoints:
+    path: data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet
+    sha256: 4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e
+    rows: 17000
+  endpoint_partitions:
+    path: data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet
+    sha256: 66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67
+    rows: 17000
+  public_training_positive:
+    path: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet
+    sha256: 4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499
+    rows: 16799
+  public_training_unlabeled:
+    path: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet
+    sha256: d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7
+    rows: 2000000
+
+runtime:
+  container: containers/images/ipin-model-arm64_0.1.0.sif
+  container_sha256: c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91
+  visible_gpu_count: 1
+  device: NVIDIA_GH200_120GB
+  deterministic_algorithms: true
+  tf32: false
+  offline_model_use: true
+
+encoder:
+  candidate_id: esm2_150m
+  repository: facebook/esm2_t30_150M_UR50D
+  revision: a695f6045e2e32885fa60af20c13cb35398ce30c
+  checkpoint_path: artifacts/cache/models/model_governance_and_baseline_training_protocol_v1/esm2_150m/model.safetensors
+  checkpoint_sha256: c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566
+  hidden_size: 640
+  layer: final_hidden_state
+  dtype: float32
+  frozen: true
+  special_tokens_excluded: true
+  maximum_residues_per_context_window: 1022
+  overlap_residues: 128
+  stride_residues: 894
+  overlap_rule: arithmetic_mean_of_contextual_vectors_covering_each_residue
+
+nested_component_split:
+  source_partition: train
+  eligible_endpoints: 11900
+  eligible_components: 5427
+  salt: ipin-openppi-local-representation-diagnostic-v1
+  ordering: ascending_SHA256_of_salt_colon_component_id_then_component_id
+  heldout_target_endpoints: 2380
+  selection: add_whole_components_in_order_until_target_is_reached
+  frozen_observed_heldout_endpoints: 2380
+  frozen_observed_heldout_components: 1366
+  nested_cells:
+    C1: neither_endpoint_component_held_out
+    C2: exactly_one_endpoint_component_held_out
+    C3: both_endpoint_components_held_out
+  frozen_row_census:
+    C1: {positive: 11051, unlabeled: 1254297}
+    C2: {positive: 5098, unlabeled: 659253}
+    C3: {positive: 650, unlabeled: 86450}
+  primary_evaluation_cell: C3
+
+local_representation:
+  target_residues_per_segment: 128
+  maximum_segments_per_protein: 32
+  segment_count: min_32_max_1_ceiling_sequence_length_divided_by_128
+  boundaries: floor_i_times_length_divided_by_segment_count
+  segment_pool: arithmetic_mean_of_overlap_averaged_residue_vectors_within_each_contiguous_segment
+  matched_global_pool: segment_length_weighted_mean_exactly_reconstructing_whole_protein_pool
+  retained_outputs: segment_vectors_segment_lengths_endpoint_offsets_and_hash_manifest
+  no_interface_label_or_target: true
+
+phase_a_oracle:
+  training: false
+  scorers:
+    - deterministic_hash
+    - sequence_length_ratio
+    - within_pair_3mer_cosine
+    - exact_nested_training_interolog_3mer
+    - matched_global_pooled_esm_cosine
+    - local_max_segment_cosine
+    - local_top4_segment_cosine
+    - local_bidirectional_best_match_cosine
+  primary_local_scorer: local_top4_segment_cosine
+  primary_comparator: matched_global_pooled_esm_cosine
+  metric: horvitz_thompson_positive_vs_unlabeled_pairwise_concordance
+  unlabeled_design_weights_retained: true
+  score_ties: half_credit
+  uncertainty:
+    method: paired_two_endpoint_component_pigeonhole_bootstrap
+    replicates: 200
+    seed_salt: 20260819-local-representation-diagnostic-v1
+    role: descriptive_not_a_trigger
+  phase_b_trigger:
+    local_point_concordance_minimum: 0.51
+    local_minus_matched_global_point_delta_minimum: 0.01
+    interval_exclusion_required: false
+    both_conditions_required: true
+
+conditional_phase_b:
+  enabled_only_if_phase_a_trigger_passes: true
+  fit_cell: C1
+  evaluation_cell: C3
+  global_features: [matched_global_pooled_esm_cosine]
+  local_features:
+    - matched_global_pooled_esm_cosine
+    - local_max_segment_cosine
+    - local_top4_segment_cosine
+    - local_bidirectional_best_match_cosine
+  model: linear_score_on_frozen_pair_features
+  objective: design_weighted_positive_vs_unlabeled_pairwise_logistic_ranking
+  positive_repetition_order: ascending_pair_id_then_stable_seeded_rotation
+  unlabeled_order: ascending_pair_id
+  seed: 20260819
+  optimizer: AdamW
+  learning_rate: 0.01
+  weight_decay: 0.0001
+  comparisons_per_batch: 16384
+  complete_passes: 3
+  checkpoint_selection: final_complete_pass
+  hyperparameter_search: none
+  useful_incremental_signal_rule: local_model_C3_minus_global_model_C3_at_least_0.01
+
+disposition:
+  phase_a_trigger_fails: no_evidence_that_local_coarse_context_rescues_the_pooling_bottleneck
+  phase_a_passes_phase_b_fails: local_oracle_signal_not_learnably_incremental_under_low_capacity_model
+  phase_b_passes: justify_a_separate_confirmatory_token_or_domain_aware_protocol
+  never_authorizes_development_or_protected_evaluation: true
+
+outputs:
+  generated_root: artifacts/metrics/public_training_local_representation_diagnostic_v1
+  embedding_root: artifacts/embeddings/public_training_local_representation_diagnostic_v1
+  validation_root: artifacts/validation/model_execution/public_training_local_representation_diagnostic_v1
+  public_report: docs/reports/m1/M1_Public_Training_Local_Representation_Diagnostic_Final_v1.md
+
