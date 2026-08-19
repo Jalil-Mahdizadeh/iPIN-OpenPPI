@@ -2,7 +2,7 @@
 
 **Opened:** 2026-08-19
 
-**Status:** Correction authorized before score production
+**Status:** Closed by DEC-0044; corrected before score production and independently validated
 
 The first nested-C3 scoring attempt failed its prespecified CPU/GPU formula
 check before writing any score or metric artifact. The retained segment vectors

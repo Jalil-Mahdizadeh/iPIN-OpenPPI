@@ -2,7 +2,7 @@
 
 **Opened:** 2026-08-19
 
-**Status:** Corrected before artifact production; regression-tested
+**Status:** Closed by DEC-0044; corrected before artifact production and regression-tested
 
 The first DEC-0041 extraction forward pass completed all 11,900 public-training
 endpoints but failed before writing any embedding file. Regrouping FP32 residue

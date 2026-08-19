@@ -1,0 +1,62 @@
+schema_version: 43
+supersedes: governance/gates/gate_status_v42.yaml
+updated_date: "2026-08-19"
+programme_state: local_representation_diagnostic_accepted_no_incremental_signal_branch_stopped
+
+gates:
+  parent_development_result:
+    status: accepted_frozen_unchanged_stopped
+    decision: governance/decisions/DEC-0039-accept-development-evaluation-and-stop-complex-model-claim.md
+  local_embedding:
+    status: pass_frozen
+    endpoints: 11900
+    segments: 56304
+    retained_dtype: float32
+    manifest_sha256: 3f8d644eb42e3a740e62d1de440ec627d25ef47b3970fd358578970430810146
+  local_phase_a:
+    status: pass_accepted
+    cell: nested_C3
+    positive_rows: 650
+    unlabeled_rows: 86450
+    primary_local_concordance: 0.5531708398478847
+    matched_global_concordance: 0.5687588309531323
+    primary_delta: -0.015587991105247556
+    required_primary_local_minimum: 0.51
+    required_delta_minimum: 0.01
+    trigger_passed: false
+    results_sha256: becf069b9bae635af2554ba89849e659967baa6b073acb1346d0ebdac2a79544
+  conditional_phase_b:
+    status: prohibited_not_run_trigger_failed
+  production_validation:
+    status: pass
+    checks_passed: 7
+    checks_failed: 0
+    report_sha256: 6956289ce1a4aef4d5d342b2d04bac043cf0af417a4b008916b46e898babfb39
+  independent_validation:
+    status: pass
+    checks_passed: 13
+    checks_failed: 0
+    independently_recomputed_scores: 609700
+    maximum_score_difference: 0.0
+    report_sha256: 7ac2e2bf4b54c8001c238d233121c88ba40f9c5e0240282ca7c81b53da7a68fe
+  protected_test:
+    status: fully_sealed_prohibited
+
+scientific_disposition:
+  incremental_coarse_local_representation_signal: false
+  conditional_learned_model_justified: false
+  parent_complex_model_claim_revived: false
+  all_token_or_domain_aware_models_ruled_out_in_principle: false
+  fresh_prospective_rationale_required_for_new_architecture: true
+
+global_prohibitions:
+  development_or_protected_information_use: true
+  negative_or_pseudo_negative_construction: true
+  parent_benchmark_or_scientific_threshold_change: true
+  conditional_phase_b_execution: true
+  adaptive_model_or_scorer_change: true
+
+decision: governance/decisions/DEC-0044-accept-local-representation-diagnostic-and-stop-branch.md
+report: docs/reports/m1/M1_Public_Training_Local_Representation_Diagnostic_Final_v1.md
+next_authorized_work_package: none
+development_or_protected_evaluation_authorized: false
