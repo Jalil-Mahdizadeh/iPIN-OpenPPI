@@ -11,8 +11,8 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
-The current authoritative ledger is `gates/gate_status_v28.yaml`; the current
-scientific status is `PROJECT_STATUS_v28.md`; and the fresh-thread phase
+The current authoritative ledger is `gates/gate_status_v29.yaml`; the current
+scientific status is `PROJECT_STATUS_v29.md`; and the fresh-thread phase
 checkpoint is
 `checkpoints/RESUME-003-post-model-governance-protocol-freeze.md`. `DEC-0017`
 technically accepts the TF-isoform audit and its external-only quarantine.
@@ -33,7 +33,8 @@ baseline/training design, exposure claim ceiling, development freeze, and
 shortcut/complexity kill rules. `DEC-0029` authorizes its bounded Stage 1
 executable work package. A separately numbered acceptance of the constructed
 and independently qualified model SIF is required before scientific embedding
-or training.
+or training. `DEC-0030` accepts that exact runtime and custody snapshot, so the
+frozen scientific Stage 1 execution may proceed.
 
 The primary PU-R design remains binding and unreported eligible pairs remain
 unlabeled. Artifact modification or resampling, development release, protected
