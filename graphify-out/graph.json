@@ -81,7 +81,7 @@
       "_origin": "ast",
       "id": "scripts_benchmark_audit_pair_level_pu_r_benchmark_protocol_v1",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "audit_pair_level_pu_r_benchmark_protocol_v1.py"
     },
     {
@@ -114,7 +114,7 @@
       "_origin": "ast",
       "id": "scripts_benchmark_construct_final_benchmark_component_split_v1",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "construct_final_benchmark_component_split_v1.py"
     },
     {
@@ -124,7 +124,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_benchmark_construct_pair_level_pu_r_benchmark_artifacts_v1",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "construct_pair_level_pu_r_benchmark_artifacts_v1.py"
     },
@@ -158,7 +158,7 @@
       "_origin": "ast",
       "id": "scripts_benchmark_validate_estimand_policy_proposal",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "validate_estimand_policy_proposal.py"
     },
     {
@@ -168,7 +168,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_benchmark_validate_final_benchmark_component_split_v1",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "validate_final_benchmark_component_split_v1.py"
     },
@@ -648,7 +648,7 @@
       "_origin": "ast",
       "id": "scripts_data_audit_negative_evidence_v1",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "audit_negative_evidence_v1.py"
     },
     {
@@ -1838,7 +1838,7 @@
       "_origin": "ast",
       "id": "scripts_model_audit_model_governance_and_baseline_training_protocol_v1",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "audit_model_governance_and_baseline_training_protocol_v1.py"
     },
     {
@@ -2240,8 +2240,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "validate_stage1_pretraining_independent_v1.py"
     },
     {
@@ -2252,8 +2252,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_sha256",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_sha256()"
     },
     {
@@ -2263,8 +2263,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_py_path",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "path"
     },
     {
@@ -2275,8 +2275,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_bytes_sha256",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_bytes_sha256()"
     },
     {
@@ -2287,8 +2287,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_safe_regular",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_safe_regular()"
     },
     {
@@ -2299,8 +2299,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_check",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_check()"
     },
     {
@@ -2310,8 +2310,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_py_any",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "any"
     },
     {
@@ -2322,8 +2322,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_write_json",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_write_json()"
     },
     {
@@ -2334,8 +2334,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_window_starts",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_window_starts()"
     },
     {
@@ -2346,8 +2346,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_layout",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_layout()"
     },
     {
@@ -2358,8 +2358,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_all_finite",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_all_finite()"
     },
     {
@@ -2369,8 +2369,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_py_ndarray",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "ndarray"
     },
     {
@@ -2381,8 +2381,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_cache_key",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_cache_key()"
     },
     {
@@ -2393,8 +2393,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_order_key",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_order_key()"
     },
     {
@@ -2405,8 +2405,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_parameter_counts",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_parameter_counts()"
     },
     {
@@ -2417,8 +2417,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_source_contract",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_source_contract()"
     },
     {
@@ -2429,8 +2429,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_pretraining_independent_v1_validate",
-      "community": 190,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "validate()"
     },
     {
@@ -2440,8 +2440,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "validate_stage1_training_preparation_independent_v1.py"
     },
     {
@@ -2452,8 +2452,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_sha256",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_sha256()"
     },
     {
@@ -2463,8 +2463,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_py_path",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "path"
     },
     {
@@ -2475,8 +2475,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_safe_regular",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_safe_regular()"
     },
     {
@@ -2487,8 +2487,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_check",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_check()"
     },
     {
@@ -2498,8 +2498,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_py_any",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "any"
     },
     {
@@ -2510,8 +2510,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_write_json",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_write_json()"
     },
     {
@@ -2522,8 +2522,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_expected_runs",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_expected_runs()"
     },
     {
@@ -2534,8 +2534,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_order",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_order()"
     },
     {
@@ -2545,8 +2545,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_py_ndarray",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "ndarray"
     },
     {
@@ -2557,8 +2557,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_ordered_digest",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "_ordered_digest()"
     },
     {
@@ -2569,8 +2569,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_model_validate_stage1_training_preparation_independent_v1_validate",
-      "community": 151,
-      "community_name": "validate",
+      "community": 17,
+      "community_name": "Counter",
       "norm_label": "validate()"
     },
     {
@@ -3115,7 +3115,7 @@
       "_origin": "ast",
       "id": "scripts_platform_prepare_mmseqs2_v1",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "prepare_mmseqs2_v1.py"
     },
     {
@@ -3127,7 +3127,7 @@
       "_origin": "ast",
       "id": "scripts_platform_prepare_mmseqs2_v1_main",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "main()"
     },
     {
@@ -4451,7 +4451,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "estimand_policy_validation.py"
     },
     {
@@ -4463,7 +4463,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_load_yaml",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "_load_yaml()"
     },
     {
@@ -4474,7 +4474,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_py_path",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "path"
     },
     {
@@ -4485,7 +4485,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_py_any",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "any"
     },
     {
@@ -4497,7 +4497,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_load_json",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "_load_json()"
     },
     {
@@ -4509,7 +4509,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_resolve_inside",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "_resolve_inside()"
     },
     {
@@ -4521,7 +4521,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_nested",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "_nested()"
     },
     {
@@ -4533,7 +4533,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_validate_policy_semantics",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "_validate_policy_semantics()"
     },
     {
@@ -4544,7 +4544,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_py_checks",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "checks"
     },
     {
@@ -4556,7 +4556,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_validate_evidence_and_governance",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "_validate_evidence_and_governance()"
     },
     {
@@ -4568,7 +4568,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_validate_estimand_policy_proposal",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "validate_estimand_policy_proposal()"
     },
     {
@@ -4580,7 +4580,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_build_argument_parser",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "build_argument_parser()"
     },
     {
@@ -4591,7 +4591,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_py_argumentparser",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "argumentparser"
     },
     {
@@ -4603,7 +4603,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_main",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "main()"
     },
     {
@@ -4614,7 +4614,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_benchmark_estimand_policy_validation_rationale_1",
       "community": 160,
-      "community_name": "estimand_policy_validation.py",
+      "community_name": "git_provenance",
       "norm_label": "fail-closed consistency gate for the proposed benchmark/estimand policy."
     },
     {
@@ -4999,7 +4999,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_init",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "component_split/__init__.py"
     },
@@ -5010,7 +5010,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_init_rationale_1",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "governance-bounded final benchmark component-partition skeleton."
     },
@@ -5022,7 +5022,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "component_split/pipeline.py"
     },
     {
@@ -5034,7 +5034,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_timestamp",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "_timestamp()"
     },
     {
@@ -5046,7 +5046,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_write_table",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "_write_table()"
     },
     {
@@ -5057,7 +5057,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_py_path",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "path"
     },
     {
@@ -5068,7 +5068,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_py_any",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "any"
     },
     {
@@ -5079,8 +5079,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_verify_inputs",
-      "community": 0,
-      "community_name": "component_split.py",
+      "community": 146,
+      "community_name": "resolve_inside",
       "norm_label": "_verify_inputs()"
     },
     {
@@ -5092,7 +5092,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_register_views",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "_register_views()"
     },
     {
@@ -5103,7 +5103,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_py_duckdbpyconnection",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "duckdbpyconnection"
     },
     {
@@ -5115,7 +5115,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_load_parent_state",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "_load_parent_state()"
     },
     {
@@ -5127,7 +5127,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_load_positive_pairs",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "_load_positive_pairs()"
     },
     {
@@ -5139,7 +5139,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_edge_set",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "_edge_set()"
     },
     {
@@ -5151,7 +5151,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_load_graphs",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "_load_graphs()"
     },
     {
@@ -5163,7 +5163,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_source_pair_masks",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "_source_pair_masks()"
     },
     {
@@ -5174,7 +5174,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_py_ndarray",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "ndarray"
     },
     {
@@ -5186,7 +5186,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_selected_tables",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "_selected_tables()"
     },
     {
@@ -5197,8 +5197,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_run_split",
-      "community": 0,
-      "community_name": "component_split.py",
+      "community": 146,
+      "community_name": "resolve_inside",
       "norm_label": "run_split()"
     },
     {
@@ -5210,7 +5210,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_build_argument_parser",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "build_argument_parser()"
     },
     {
@@ -5221,7 +5221,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_py_argumentparser",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "argumentparser"
     },
     {
@@ -5233,7 +5233,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_main",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "main()"
     },
     {
@@ -5244,7 +5244,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_pipeline_rationale_1",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "construct the frozen model-free benchmark component-partition skeleton."
     },
     {
@@ -5255,7 +5255,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "component_split/semantics.py"
     },
     {
@@ -5268,7 +5268,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_disjointset",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "disjointset"
     },
     {
@@ -5280,7 +5280,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_disjointset_init",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": ".__init__()"
     },
     {
@@ -5292,7 +5292,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_disjointset_find",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": ".find()"
     },
     {
@@ -5304,7 +5304,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_disjointset_union",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": ".union()"
     },
     {
@@ -5316,7 +5316,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_deterministic_components",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "deterministic_components()"
     },
     {
@@ -5327,7 +5327,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_py_pair",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "pair"
     },
     {
@@ -5339,7 +5339,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_component_id",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "component_id()"
     },
     {
@@ -5351,7 +5351,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_nearest_rank",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "nearest_rank()"
     },
     {
@@ -5363,7 +5363,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_degree_histogram",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "degree_histogram()"
     },
     {
@@ -5375,7 +5375,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_quantized_ratio",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "quantized_ratio()"
     },
     {
@@ -5387,7 +5387,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_base_component_order",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "base_component_order()"
     },
     {
@@ -5399,7 +5399,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_candidate_order_indices",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "candidate_order_indices()"
     },
     {
@@ -5411,7 +5411,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_allocate_candidate",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "allocate_candidate()"
     },
     {
@@ -5422,7 +5422,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_py_ndarray",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "ndarray"
     },
     {
@@ -5435,7 +5435,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_preparedallocation",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "preparedallocation"
     },
     {
@@ -5447,7 +5447,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_prepare_allocation",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "prepare_allocation()"
     },
     {
@@ -5459,7 +5459,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_opportunity_masks",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "opportunity_masks()"
     },
     {
@@ -5471,7 +5471,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_pool_counts",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "_pool_counts()"
     },
     {
@@ -5483,7 +5483,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_evaluate_candidate",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "evaluate_candidate()"
     },
     {
@@ -5494,7 +5494,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_py_any",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "any"
     },
     {
@@ -5506,7 +5506,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_search_allocations",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "search_allocations()"
     },
     {
@@ -5517,7 +5517,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_rationale_1",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "pure deterministic semantics for the frozen component split."
     },
     {
@@ -5528,7 +5528,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_rationale_111",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "nearest integer, half up, for a nonnegative rational."
     },
     {
@@ -5539,7 +5539,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_semantics_rationale_163",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "allocate a candidate with exact rational largest-relative-deficit ties."
     },
     {
@@ -5561,7 +5561,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_support_validate_config",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "validate_config()"
     },
@@ -5572,7 +5572,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_support_py_any",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "any"
     },
@@ -5617,7 +5617,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "src_ipin_openppi_component_split_support_rationale_36",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "reject any configuration that broadens or mutates the frozen package."
     },
@@ -5662,8 +5662,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_common_canonical_json",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "canonical_json()"
     },
     {
@@ -5685,7 +5685,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_common_stable_id",
-      "community": 110,
+      "community": 195,
       "community_name": "stable_id",
       "norm_label": "stable_id()"
     },
@@ -5721,8 +5721,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_common_require_apptainer",
-      "community": 16,
-      "community_name": "common.py",
+      "community": 143,
+      "community_name": "require_apptainer",
       "norm_label": "require_apptainer()"
     },
     {
@@ -5756,8 +5756,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_common_git_provenance",
-      "community": 16,
-      "community_name": "common.py",
+      "community": 160,
+      "community_name": "git_provenance",
       "norm_label": "git_provenance()"
     },
     {
@@ -5769,8 +5769,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_common_rawasset",
-      "community": 137,
-      "community_name": "ParsingContext",
+      "community": 16,
+      "community_name": "common.py",
       "norm_label": "rawasset"
     },
     {
@@ -5995,8 +5995,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_context",
-      "community": 137,
-      "community_name": "ParsingContext",
+      "community": 16,
+      "community_name": "common.py",
       "norm_label": "context.py"
     },
     {
@@ -6008,8 +6008,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_context_parsingcontext",
-      "community": 137,
-      "community_name": "ParsingContext",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "parsingcontext"
     },
     {
@@ -6020,8 +6020,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_context_parsingcontext_batch_rows",
-      "community": 137,
-      "community_name": "ParsingContext",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": ".batch_rows()"
     },
     {
@@ -6032,8 +6032,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_context_parsingcontext_compression",
-      "community": 137,
-      "community_name": "ParsingContext",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": ".compression()"
     },
     {
@@ -6044,8 +6044,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_context_parsingcontext_compression_level",
-      "community": 137,
-      "community_name": "ParsingContext",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": ".compression_level()"
     },
     {
@@ -6056,8 +6056,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_context_parsingcontext_asset",
-      "community": 137,
-      "community_name": "ParsingContext",
+      "community": 16,
+      "community_name": "common.py",
       "norm_label": ".asset()"
     },
     {
@@ -6068,8 +6068,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_context_parsingcontext_writer_kwargs",
-      "community": 137,
-      "community_name": "ParsingContext",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": ".writer_kwargs()"
     },
     {
@@ -6079,8 +6079,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_context_py_any",
-      "community": 137,
-      "community_name": "ParsingContext",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "any"
     },
     {
@@ -6090,8 +6090,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_context_rationale_1",
-      "community": 137,
-      "community_name": "ParsingContext",
+      "community": 16,
+      "community_name": "common.py",
       "norm_label": "typed context shared by source parsers."
     },
     {
@@ -6642,7 +6642,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "intact.py"
     },
     {
@@ -6654,7 +6654,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_local",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_local()"
     },
     {
@@ -6666,7 +6666,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_children",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_children()"
     },
     {
@@ -6677,7 +6677,7 @@
       "_origin": "ast",
       "id": "element",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "element"
     },
     {
@@ -6689,7 +6689,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_child",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_child()"
     },
     {
@@ -6701,7 +6701,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_descendant_text",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_descendant_text()"
     },
     {
@@ -6713,7 +6713,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_names",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_names()"
     },
     {
@@ -6723,8 +6723,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_py_any",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "any"
     },
     {
@@ -6736,7 +6736,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_xref_records",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_xref_records()"
     },
     {
@@ -6748,7 +6748,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_attributes",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_attributes()"
     },
     {
@@ -6760,7 +6760,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_cv_term",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_cv_term()"
     },
     {
@@ -6772,7 +6772,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_organism",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_organism()"
     },
     {
@@ -6784,7 +6784,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_parse_interactor",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_parse_interactor()"
     },
     {
@@ -6796,7 +6796,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_publication_xrefs",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_publication_xrefs()"
     },
     {
@@ -6808,7 +6808,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_parse_experiment",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_parse_experiment()"
     },
     {
@@ -6820,7 +6820,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_position",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_position()"
     },
     {
@@ -6832,7 +6832,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_range_boundary",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_range_boundary()"
     },
     {
@@ -6844,7 +6844,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_parse_feature",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_parse_feature()"
     },
     {
@@ -6856,7 +6856,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_parse_participant",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_parse_participant()"
     },
     {
@@ -6868,7 +6868,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_interaction_semantics",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_interaction_semantics()"
     },
     {
@@ -6879,8 +6879,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_assay_family",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "_assay_family()"
     },
     {
@@ -6892,7 +6892,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_interaction_xrefs",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_interaction_xrefs()"
     },
     {
@@ -6904,7 +6904,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_confidence_values",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_confidence_values()"
     },
     {
@@ -6916,7 +6916,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_parse_interaction",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "_parse_interaction()"
     },
     {
@@ -6927,8 +6927,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_emit_participant",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "_emit_participant()"
     },
     {
@@ -6939,8 +6939,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_emit_interaction",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "_emit_interaction()"
     },
     {
@@ -6951,8 +6951,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_write_interactor_record",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "_write_interactor_record()"
     },
     {
@@ -6963,8 +6963,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_write_experiment_record",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "_write_experiment_record()"
     },
     {
@@ -6975,8 +6975,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_parse_psi_xml_archive",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "_parse_psi_xml_archive()"
     },
     {
@@ -6986,8 +6986,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_py_path",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "path"
     },
     {
@@ -6998,8 +6998,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_parse_obo",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "_parse_obo()"
     },
     {
@@ -7010,8 +7010,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_parse_mutations",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "_parse_mutations()"
     },
     {
@@ -7022,8 +7022,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_parse_intact",
-      "community": 129,
-      "community_name": "canonical_json",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "parse_intact()"
     },
     {
@@ -7034,7 +7034,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_rationale_1",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "streaming psi-mi xml 3.0 and tabular intact ingestion."
     },
     {
@@ -7044,8 +7044,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_v2",
-      "community": 192,
-      "community_name": "intact_v2.py",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "intact_v2.py"
     },
     {
@@ -7057,7 +7057,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_v2_iter_reconstructed_mutation_rows",
       "community": 192,
-      "community_name": "intact_v2.py",
+      "community_name": "iter_reconstructed_mutation_rows",
       "norm_label": "iter_reconstructed_mutation_rows()"
     },
     {
@@ -7067,8 +7067,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_v2_py_path",
-      "community": 192,
-      "community_name": "intact_v2.py",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "path"
     },
     {
@@ -7079,8 +7079,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_v2_parse_mutations_v2",
-      "community": 192,
-      "community_name": "intact_v2.py",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "_parse_mutations_v2()"
     },
     {
@@ -7090,8 +7090,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_v2_py_any",
-      "community": 192,
-      "community_name": "intact_v2.py",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "any"
     },
     {
@@ -7102,8 +7102,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_v2_parse_intact",
-      "community": 192,
-      "community_name": "intact_v2.py",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "parse_intact()"
     },
     {
@@ -7113,8 +7113,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_v2_rationale_1",
-      "community": 192,
-      "community_name": "intact_v2.py",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "active intact parser with deterministic repair of malformed tsv line wraps. the..."
     },
     {
@@ -7125,7 +7125,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_v2_rationale_47",
       "community": 192,
-      "community_name": "intact_v2.py",
+      "community_name": "iter_reconstructed_mutation_rows",
       "norm_label": "yield logical tsv rows with their inclusive physical-line span."
     },
     {
@@ -7219,8 +7219,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_v3_parse_intact",
-      "community": 201,
-      "community_name": "pipeline_v4.py",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "parse_intact()"
     },
     {
@@ -7230,8 +7230,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_intact_v3_py_path",
-      "community": 201,
-      "community_name": "pipeline_v4.py",
+      "community": 195,
+      "community_name": "stable_id",
       "norm_label": "path"
     },
     {
@@ -7460,8 +7460,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema",
-      "community": 167,
-      "community_name": "sha256_file",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "schema.py"
     },
     {
@@ -7474,7 +7474,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_contracterror",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "contracterror"
     },
     {
@@ -7496,7 +7496,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_sha256_file",
-      "community": 167,
+      "community": 128,
       "community_name": "sha256_file",
       "norm_label": "sha256_file()"
     },
@@ -7507,8 +7507,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_py_path",
-      "community": 167,
-      "community_name": "sha256_file",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "path"
     },
     {
@@ -7520,7 +7520,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_arrow_type",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "_arrow_type()"
     },
     {
@@ -7531,7 +7531,7 @@
       "_origin": "ast",
       "id": "datatype",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "datatype"
     },
     {
@@ -7544,7 +7544,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_schemacontract",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "schemacontract"
     },
     {
@@ -7556,7 +7556,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_schemacontract_name",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": ".name()"
     },
     {
@@ -7568,7 +7568,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_schemacontract_version",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": ".version()"
     },
     {
@@ -7580,7 +7580,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_schemacontract_table_spec",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": ".table_spec()"
     },
     {
@@ -7591,7 +7591,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_py_any",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "any"
     },
     {
@@ -7603,7 +7603,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_schemacontract_arrow_schema",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": ".arrow_schema()"
     },
     {
@@ -7614,7 +7614,7 @@
       "_origin": "ast",
       "id": "schema",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "schema"
     },
     {
@@ -7626,7 +7626,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_schemacontract_normalize_and_validate_rows",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": ".normalize_and_validate_rows()"
     },
     {
@@ -7637,8 +7637,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_load_contract",
-      "community": 167,
-      "community_name": "sha256_file",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "load_contract()"
     },
     {
@@ -7648,8 +7648,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_rationale_1",
-      "community": 167,
-      "community_name": "sha256_file",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "load and enforce versioned arrow table contracts."
     },
     {
@@ -7660,7 +7660,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_schema_rationale_24",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "raised when a schema contract or row violates the frozen contract."
     },
     {
@@ -7671,7 +7671,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_sifts",
       "community": 137,
-      "community_name": "ParsingContext",
+      "community_name": "sifts.py",
       "norm_label": "sifts.py"
     },
     {
@@ -7683,7 +7683,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_sifts_optional_int",
       "community": 137,
-      "community_name": "ParsingContext",
+      "community_name": "sifts.py",
       "norm_label": "_optional_int()"
     },
     {
@@ -7695,7 +7695,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_sifts_mapping_row",
       "community": 137,
-      "community_name": "ParsingContext",
+      "community_name": "sifts.py",
       "norm_label": "_mapping_row()"
     },
     {
@@ -7706,7 +7706,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_sifts_py_any",
       "community": 137,
-      "community_name": "ParsingContext",
+      "community_name": "sifts.py",
       "norm_label": "any"
     },
     {
@@ -7718,7 +7718,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_sifts_parse_gzip_tsv",
       "community": 137,
-      "community_name": "ParsingContext",
+      "community_name": "sifts.py",
       "norm_label": "_parse_gzip_tsv()"
     },
     {
@@ -7729,7 +7729,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_sifts_py_path",
       "community": 137,
-      "community_name": "ParsingContext",
+      "community_name": "sifts.py",
       "norm_label": "path"
     },
     {
@@ -7741,7 +7741,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_sifts_parse_sifts",
       "community": 137,
-      "community_name": "ParsingContext",
+      "community_name": "sifts.py",
       "norm_label": "parse_sifts()"
     },
     {
@@ -7753,7 +7753,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_sifts_extract_release",
       "community": 137,
-      "community_name": "ParsingContext",
+      "community_name": "sifts.py",
       "norm_label": "_extract_release()"
     },
     {
@@ -7764,7 +7764,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_ingestion_sifts_rationale_1",
       "community": 137,
-      "community_name": "ParsingContext",
+      "community_name": "sifts.py",
       "norm_label": "streaming parsers for frozen pdbe/sifts mapping snapshots."
     },
     {
@@ -8152,7 +8152,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "overlap.py"
     },
     {
@@ -8164,7 +8164,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_family_pair_signatures",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "_family_pair_signatures()"
     },
     {
@@ -8175,8 +8175,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_load_sequence_family_maps",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": "load_sequence_family_maps()"
     },
     {
@@ -8186,8 +8186,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_py_path",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": "path"
     },
     {
@@ -8200,7 +8200,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_contaminationindex",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "contaminationindex"
     },
     {
@@ -8212,7 +8212,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_build_contamination_index",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "build_contamination_index()"
     },
     {
@@ -8223,7 +8223,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_py_any",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "any"
     },
     {
@@ -8234,7 +8234,7 @@
       "_origin": "ast",
       "id": "familymap",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "familymap"
     },
     {
@@ -8246,7 +8246,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_contamination_flags",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "contamination_flags()"
     },
     {
@@ -8257,8 +8257,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_source_specific_positive_index",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 1,
+      "community_name": "tf_isoform_audit/pipeline.py",
       "norm_label": "source_specific_positive_index()"
     },
     {
@@ -8268,8 +8268,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_py_duckdbpyconnection",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 1,
+      "community_name": "tf_isoform_audit/pipeline.py",
       "norm_label": "duckdbpyconnection"
     },
     {
@@ -8280,8 +8280,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_load_negatome_pair_index",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": "load_negatome_pair_index()"
     },
     {
@@ -8292,7 +8292,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_rationale_1",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "frozen evidence overlap and bounded uniref contamination utilities."
     },
     {
@@ -8302,8 +8302,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_rationale_31",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": "return accession and exact-sequence mappings for frozen uniref100/90/50."
     },
     {
@@ -8313,8 +8313,8 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_overlap_rationale_163",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 1,
+      "community_name": "tf_isoform_audit/pipeline.py",
       "norm_label": "aggregate the record-level positive view left by build_positive_pair_index."
     },
     {
@@ -8526,8 +8526,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_pipeline_family_ids_for_candidates",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": "_family_ids_for_candidates()"
     },
     {
@@ -8550,8 +8550,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_pipeline_participant_mapping_row",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": "_participant_mapping_row()"
     },
     {
@@ -8562,8 +8562,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_pipeline_build_panel_rows",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": "_build_panel_rows()"
     },
     {
@@ -8574,8 +8574,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_lambourne_audit_pipeline_prepare_imex_rows",
-      "community": 15,
-      "community_name": "lambourne_audit/pipeline.py",
+      "community": 26,
+      "community_name": "scan_tar_gzip_archive",
       "norm_label": "_prepare_imex_rows()"
     },
     {
@@ -8994,7 +8994,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_init",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "model_governance/__init__.py"
     },
     {
@@ -9005,7 +9005,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_init_rationale_1",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "static governance for the first bounded model protocol."
     },
     {
@@ -9016,7 +9016,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "protocol.py"
     },
     {
@@ -9028,7 +9028,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_timestamp",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "_timestamp()"
     },
     {
@@ -9040,7 +9040,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_load_yaml",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "load_yaml()"
     },
     {
@@ -9051,7 +9051,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_py_path",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "path"
     },
     {
@@ -9062,7 +9062,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_py_any",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "any"
     },
     {
@@ -9074,7 +9074,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_check",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "_check()"
     },
     {
@@ -9086,7 +9086,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_all_false",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "_all_false()"
     },
     {
@@ -9098,7 +9098,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_all_prohibited",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "_all_prohibited()"
     },
     {
@@ -9110,7 +9110,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_protocol_checks",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "protocol_checks()"
     },
     {
@@ -9122,7 +9122,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_validate_config",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "validate_config()"
     },
     {
@@ -9133,8 +9133,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_verify_record",
-      "community": 143,
-      "community_name": "protocol.py",
+      "community": 128,
+      "community_name": "sha256_file",
       "norm_label": "_verify_record()"
     },
     {
@@ -9145,8 +9145,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_verify_inputs",
-      "community": 143,
-      "community_name": "protocol.py",
+      "community": 128,
+      "community_name": "sha256_file",
       "norm_label": "_verify_inputs()"
     },
     {
@@ -9158,7 +9158,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_audit_protocol",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "audit_protocol()"
     },
     {
@@ -9170,7 +9170,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_build_argument_parser",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "build_argument_parser()"
     },
     {
@@ -9181,7 +9181,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_py_argumentparser",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "argumentparser"
     },
     {
@@ -9193,7 +9193,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_main",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "main()"
     },
     {
@@ -9204,7 +9204,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_model_governance_protocol_rationale_1",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "fail-closed static audit for model-governance protocol v1. this module..."
     },
     {
@@ -9215,7 +9215,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_init",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "negative_evidence/__init__.py"
     },
     {
@@ -9226,7 +9226,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_init_rationale_1",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "conditional negative-evidence discovery and reconciliation."
     },
     {
@@ -9237,7 +9237,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_classification",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "classification.py"
     },
     {
@@ -9249,7 +9249,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_classification_conflict_overlays",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "conflict_overlays()"
     },
     {
@@ -9261,7 +9261,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_classification_reliability_tier",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "reliability_tier()"
     },
     {
@@ -9273,7 +9273,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_classification_permitted_role",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "permitted_role()"
     },
     {
@@ -9285,7 +9285,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_classification_effective_tier",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "effective_tier()"
     },
     {
@@ -9296,7 +9296,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_classification_rationale_1",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "reliability tiers and conflict overlays for conditional negative evidence."
     },
     {
@@ -9306,8 +9306,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence",
-      "community": 110,
-      "community_name": "stable_id",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "evidence.py"
     },
     {
@@ -9319,7 +9319,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_unordered_pair",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "unordered_pair()"
     },
     {
@@ -9330,8 +9330,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_unordered_sequence_pair_id",
-      "community": 110,
-      "community_name": "stable_id",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "unordered_sequence_pair_id()"
     },
     {
@@ -9342,8 +9342,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_unordered_accession_pair_id",
-      "community": 110,
-      "community_name": "stable_id",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "unordered_accession_pair_id()"
     },
     {
@@ -9354,8 +9354,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_glob",
-      "community": 195,
-      "community_name": "build_positive_pair_index",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "_glob()"
     },
     {
@@ -9365,8 +9365,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_py_path",
-      "community": 195,
-      "community_name": "build_positive_pair_index",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "path"
     },
     {
@@ -9377,8 +9377,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_register_evidence_views",
-      "community": 195,
-      "community_name": "build_positive_pair_index",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "register_evidence_views()"
     },
     {
@@ -9388,8 +9388,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_py_duckdbpyconnection",
-      "community": 195,
-      "community_name": "build_positive_pair_index",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "duckdbpyconnection"
     },
     {
@@ -9400,8 +9400,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_build_positive_pair_index",
-      "community": 195,
-      "community_name": "build_positive_pair_index",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "build_positive_pair_index()"
     },
     {
@@ -9411,8 +9411,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_py_any",
-      "community": 195,
-      "community_name": "build_positive_pair_index",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "any"
     },
     {
@@ -9425,7 +9425,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_intactnegativerecord",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "intactnegativerecord"
     },
     {
@@ -9437,7 +9437,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_intactnegativerecord_evidence_id",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": ".evidence_id()"
     },
     {
@@ -9448,8 +9448,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_load_intact_negative_records",
-      "community": 110,
-      "community_name": "stable_id",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "load_intact_negative_records()"
     },
     {
@@ -9461,7 +9461,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_index_intact_negatives",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "index_intact_negatives()"
     },
     {
@@ -9471,8 +9471,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_rationale_1",
-      "community": 110,
-      "community_name": "stable_id",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "build reproducible local positive and explicit-negative pair indexes."
     },
     {
@@ -9482,8 +9482,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_rationale_37",
-      "community": 195,
-      "community_name": "build_positive_pair_index",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "register only the frozen local tables admitted by the audit policy."
     },
     {
@@ -9493,8 +9493,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_evidence_rationale_68",
-      "community": 195,
-      "community_name": "build_positive_pair_index",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "index current binary mapped positives and reproducible huri-family views."
     },
     {
@@ -9517,8 +9517,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_negatome_negatomerow",
-      "community": 2,
-      "community_name": "negatome.py",
+      "community": 110,
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "negatomerow"
     },
     {
@@ -9529,8 +9529,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_negatome_negatomerow_raw_row_key",
-      "community": 2,
-      "community_name": "negatome.py",
+      "community": 110,
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": ".raw_row_key()"
     },
     {
@@ -9541,8 +9541,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_negatome_negatomerow_row_key",
-      "community": 2,
-      "community_name": "negatome.py",
+      "community": 110,
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": ".row_key()"
     },
     {
@@ -9553,8 +9553,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_negatome_negatomerow_stringent_file",
-      "community": 2,
-      "community_name": "negatome.py",
+      "community": 110,
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": ".stringent_file()"
     },
     {
@@ -9624,8 +9624,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_negatome_reconcile_parent_and_stringent_rows",
-      "community": 2,
-      "community_name": "negatome.py",
+      "community": 110,
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "reconcile_parent_and_stringent_rows()"
     },
     {
@@ -9635,8 +9635,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_negatome_py_any",
-      "community": 2,
-      "community_name": "negatome.py",
+      "community": 110,
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "any"
     },
     {
@@ -9647,8 +9647,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_negatome_stringent_links",
-      "community": 2,
-      "community_name": "negatome.py",
+      "community": 110,
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "stringent_links()"
     },
     {
@@ -9659,8 +9659,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_negatome_source_row_to_record",
-      "community": 2,
-      "community_name": "negatome.py",
+      "community": 110,
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "source_row_to_record()"
     },
     {
@@ -9681,8 +9681,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_negatome_rationale_50",
-      "community": 2,
-      "community_name": "negatome.py",
+      "community": 110,
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "return the provider row key after boundary-whitespace normalization."
     },
     {
@@ -9714,8 +9714,8 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_negatome_rationale_157",
-      "community": 2,
-      "community_name": "negatome.py",
+      "community": 110,
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "prove exact multiset subset membership and link every physical source row."
     },
     {
@@ -9726,7 +9726,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "negative_evidence/pipeline.py"
     },
     {
@@ -9738,7 +9738,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_load_yaml",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_load_yaml()"
     },
     {
@@ -9749,7 +9749,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_py_path",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "path"
     },
     {
@@ -9760,7 +9760,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_py_any",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "any"
     },
     {
@@ -9772,7 +9772,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_load_json",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_load_json()"
     },
     {
@@ -9784,7 +9784,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_resolve_inside",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_resolve_inside()"
     },
     {
@@ -9796,7 +9796,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_require_hash",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_require_hash()"
     },
     {
@@ -9808,7 +9808,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_validate_config",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_validate_config()"
     },
     {
@@ -9820,7 +9820,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_iter_table_summaries",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_iter_table_summaries()"
     },
     {
@@ -9832,7 +9832,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_verify_dataset_directory",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_verify_dataset_directory()"
     },
     {
@@ -9844,7 +9844,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_replace_prefix",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_replace_prefix()"
     },
     {
@@ -9856,7 +9856,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_write_json",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_write_json()"
     },
     {
@@ -9868,7 +9868,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_write_manifest",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_write_manifest()"
     },
     {
@@ -9880,7 +9880,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_make_read_only",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_make_read_only()"
     },
     {
@@ -9892,7 +9892,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_verify_inputs",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_verify_inputs()"
     },
     {
@@ -9904,7 +9904,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_write_table",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_write_table()"
     },
     {
@@ -9916,7 +9916,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_map_parent_records",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_map_parent_records()"
     },
     {
@@ -9928,7 +9928,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_overlap_rows_for_parent",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_overlap_rows_for_parent()"
     },
     {
@@ -9940,7 +9940,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_record_audit_rows",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_record_audit_rows()"
     },
     {
@@ -9952,7 +9952,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_intact_audit_rows",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_intact_audit_rows()"
     },
     {
@@ -9964,7 +9964,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_aggregate_metrics",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "_aggregate_metrics()"
     },
     {
@@ -9976,7 +9976,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_run_negative_evidence_audit",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "run_negative_evidence_audit()"
     },
     {
@@ -9988,7 +9988,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_build_argument_parser",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "build_argument_parser()"
     },
     {
@@ -9999,7 +9999,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_py_argumentparser",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "argumentparser"
     },
     {
@@ -10011,7 +10011,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_main",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "main()"
     },
     {
@@ -10022,7 +10022,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_pipeline_rationale_1",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "execute the immutable negatome/intact conditional negative-evidence audit."
     },
     {
@@ -10032,8 +10032,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_reference",
-      "community": 110,
-      "community_name": "stable_id",
+      "community": 109,
+      "community_name": "uniprot.py",
       "norm_label": "reference.py"
     },
     {
@@ -10045,8 +10045,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_reference_frozenreferenceindex",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": "frozenreferenceindex"
     },
     {
@@ -10057,8 +10057,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_reference_frozenreferenceindex_load",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": ".load()"
     },
     {
@@ -10068,8 +10068,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_reference_py_path",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": "path"
     },
     {
@@ -10080,8 +10080,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_reference_frozenreferenceindex_secondary_candidates",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 2,
+      "community_name": "negatome.py",
       "norm_label": "._secondary_candidates()"
     },
     {
@@ -10091,8 +10091,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_reference_py_any",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 2,
+      "community_name": "negatome.py",
       "norm_label": "any"
     },
     {
@@ -10103,8 +10103,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_reference_frozenreferenceindex_map_accession",
-      "community": 184,
-      "community_name": "unordered_pair",
+      "community": 2,
+      "community_name": "negatome.py",
       "norm_label": ".map_accession()"
     },
     {
@@ -10115,8 +10115,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_reference_pair_mapping_state",
-      "community": 110,
-      "community_name": "stable_id",
+      "community": 2,
+      "community_name": "negatome.py",
       "norm_label": "pair_mapping_state()"
     },
     {
@@ -10126,8 +10126,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_negative_evidence_reference_rationale_1",
-      "community": 110,
-      "community_name": "stable_id",
+      "community": 109,
+      "community_name": "uniprot.py",
       "norm_label": "map source accessions to the frozen human uniprot sequence reference."
     },
     {
@@ -10137,7 +10137,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_init",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "pair_artifacts/__init__.py"
     },
@@ -10148,7 +10148,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_init_rationale_1",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "sealed pair-level pu-r benchmark artifact construction."
     },
@@ -10159,7 +10159,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "construction.py"
     },
@@ -10172,7 +10172,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_cellspec",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "cellspec"
     },
@@ -10184,7 +10184,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_timestamp",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_timestamp()"
     },
@@ -10196,7 +10196,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_sql_string",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_sql_string()"
     },
@@ -10208,7 +10208,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_source_membership",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_source_membership()"
     },
@@ -10220,7 +10220,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_primary_state",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_primary_state()"
     },
@@ -10233,7 +10233,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_prepare_state",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_prepare_state()"
     },
     {
@@ -10243,7 +10243,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_py_any",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "any"
     },
@@ -10255,7 +10255,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_cell_specs",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_cell_specs()"
     },
@@ -10267,7 +10267,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_register_static_tables",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_register_static_tables()"
     },
@@ -10278,7 +10278,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_py_duckdbpyconnection",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "duckdbpyconnection"
     },
@@ -10290,7 +10290,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_register_cell_endpoints",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_register_cell_endpoints()"
     },
@@ -10302,7 +10302,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_candidate_base_sql",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_candidate_base_sql()"
     },
@@ -10314,7 +10314,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_allocation_rows",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_allocation_rows()"
     },
@@ -10326,7 +10326,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_copy_query_part",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_copy_query_part()"
     },
@@ -10337,7 +10337,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_py_path",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "path"
     },
@@ -10349,7 +10349,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_register_allocations",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_register_allocations()"
     },
@@ -10361,7 +10361,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_sample_query",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_sample_query()"
     },
@@ -10373,7 +10373,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_positive_rows",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_positive_rows()"
     },
@@ -10385,7 +10385,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_candidate_token",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_candidate_token()"
     },
@@ -10397,7 +10397,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_protected_candidate_query",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_protected_candidate_query()"
     },
@@ -10409,7 +10409,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_protected_truth_rows",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_protected_truth_rows()"
     },
@@ -10421,7 +10421,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_source_visible_rows",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_source_visible_rows()"
     },
@@ -10433,7 +10433,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_source_role",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_source_role()"
     },
@@ -10445,7 +10445,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_role_ledger_rows",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_role_ledger_rows()"
     },
@@ -10457,7 +10457,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_package_manifest",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_package_manifest()"
     },
@@ -10469,7 +10469,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_seal_package",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_seal_package()"
     },
@@ -10481,7 +10481,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_overlap_summary",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_overlap_summary()"
     },
@@ -10493,7 +10493,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_construct_into",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "_construct_into()"
     },
@@ -10505,7 +10505,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_construct_artifacts",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "construct_artifacts()"
     },
@@ -10517,7 +10517,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_build_argument_parser",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "build_argument_parser()"
     },
@@ -10528,7 +10528,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_py_argumentparser",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "argumentparser"
     },
@@ -10540,7 +10540,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_main",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "main()"
     },
@@ -10551,7 +10551,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_construction_rationale_1",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "construct and seal pair-level artifacts under the frozen dec-0024 protocol."
     },
@@ -10846,7 +10846,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "pair_artifacts/support.py"
     },
     {
@@ -10869,7 +10869,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_py_any",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "any"
     },
     {
@@ -10881,7 +10881,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_verify_documents",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "verify_documents()"
     },
     {
@@ -10892,7 +10892,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_py_path",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "path"
     },
     {
@@ -10928,7 +10928,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_run_bytes",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "_run_bytes()"
     },
     {
@@ -10940,7 +10940,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_certificate_fingerprint",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "certificate_fingerprint()"
     },
     {
@@ -10952,7 +10952,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_verify_key_pairs",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "verify_key_pairs()"
     },
     {
@@ -10963,7 +10963,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_rational_design",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "rational_design()"
     },
@@ -10976,7 +10976,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_write_rows_part",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "write_rows_part()"
     },
     {
@@ -10988,7 +10988,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_file_record",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "file_record()"
     },
     {
@@ -11000,7 +11000,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_dataset_summary",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "dataset_summary()"
     },
     {
@@ -11012,7 +11012,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_verify_arrow_schema",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "verify_arrow_schema()"
     },
     {
@@ -11023,8 +11023,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_deterministic_tar",
-      "community": 12,
-      "community_name": "pair_artifacts.py",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "deterministic_tar()"
     },
     {
@@ -11035,8 +11035,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_cms_encrypt",
-      "community": 17,
-      "community_name": "construction.py",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "cms_encrypt()"
     },
     {
@@ -11047,8 +11047,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_cms_decrypt",
-      "community": 12,
-      "community_name": "pair_artifacts.py",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "cms_decrypt()"
     },
     {
@@ -11072,7 +11072,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_manifest_payload_hash",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "manifest_payload_hash()"
     },
     {
@@ -11083,7 +11083,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_artifacts_support_rationale_1",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "fail-closed helpers for sealed pair-level pu-r benchmark artifacts."
     },
     {
@@ -11105,7 +11105,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_init",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "pair_protocol/__init__.py"
     },
     {
@@ -11116,7 +11116,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_init_rationale_1",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "frozen pair-level positive-unlabeled ranking protocol."
     },
     {
@@ -11127,7 +11127,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "pair_protocol/pipeline.py"
     },
     {
@@ -11139,7 +11139,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_timestamp",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_timestamp()"
     },
     {
@@ -11150,8 +11150,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_verify_explicit_summary",
-      "community": 17,
-      "community_name": "construction.py",
+      "community": 128,
+      "community_name": "sha256_file",
       "norm_label": "_verify_explicit_summary()"
     },
     {
@@ -11162,7 +11162,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_py_path",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "path"
     },
     {
@@ -11173,7 +11173,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_py_any",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "any"
     },
     {
@@ -11197,7 +11197,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_register_views",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_register_views()"
     },
     {
@@ -11208,7 +11208,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_py_duckdbpyconnection",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "duckdbpyconnection"
     },
     {
@@ -11220,7 +11220,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_load_endpoints",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_load_endpoints()"
     },
     {
@@ -11232,7 +11232,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_load_positive_pairs",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_load_positive_pairs()"
     },
     {
@@ -11243,7 +11243,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_py_pair",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "pair"
     },
     {
@@ -11255,7 +11255,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_primary_cell",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_primary_cell()"
     },
     {
@@ -11267,7 +11267,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_cell_summary",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_cell_summary()"
     },
     {
@@ -11279,7 +11279,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_subtract_positive_strata",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_subtract_positive_strata()"
     },
     {
@@ -11291,7 +11291,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_candidate_designs",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_candidate_designs()"
     },
     {
@@ -11303,7 +11303,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_evidence_completeness",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_evidence_completeness()"
     },
     {
@@ -11315,7 +11315,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_strict_source_analysis",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_strict_source_analysis()"
     },
     {
@@ -11327,7 +11327,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_degree_analysis",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_degree_analysis()"
     },
     {
@@ -11339,7 +11339,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_analyze",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "_analyze()"
     },
     {
@@ -11351,7 +11351,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_audit_protocol",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "audit_protocol()"
     },
     {
@@ -11363,7 +11363,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_build_argument_parser",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "build_argument_parser()"
     },
     {
@@ -11374,7 +11374,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_py_argumentparser",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "argumentparser"
     },
     {
@@ -11386,7 +11386,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_main",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "main()"
     },
     {
@@ -11397,7 +11397,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_pipeline_rationale_1",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "aggregate-only feasibility audit for the frozen pair-level pu-r protocol."
     },
     {
@@ -11408,7 +11408,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "pair_protocol/semantics.py"
     },
     {
@@ -11420,7 +11420,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_unordered_pair",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "unordered_pair()"
     },
     {
@@ -11431,7 +11431,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_py_pair",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "pair"
     },
     {
@@ -11442,7 +11442,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_pair_id",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "pair_id()"
     },
@@ -11455,7 +11455,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_c1_role",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "c1_role()"
     },
     {
@@ -11467,7 +11467,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_degree_bin",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "degree_bin()"
     },
     {
@@ -11479,7 +11479,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_degree_pair_stratum",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "degree_pair_stratum()"
     },
     {
@@ -11491,7 +11491,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_choose_two",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "choose_two()"
     },
     {
@@ -11503,7 +11503,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_pair_stratum_populations",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "pair_stratum_populations()"
     },
     {
@@ -11515,7 +11515,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_hamilton_sample_allocation",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "hamilton_sample_allocation()"
     },
     {
@@ -11527,7 +11527,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_sampling_design",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "sampling_design()"
     },
     {
@@ -11539,7 +11539,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_nearest_rank",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "nearest_rank()"
     },
     {
@@ -11551,7 +11551,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_degree_histogram",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "degree_histogram()"
     },
     {
@@ -11562,7 +11562,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_rationale_1",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "pure deterministic semantics for the pair-level pu-r protocol."
     },
     {
@@ -11573,7 +11573,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_rationale_35",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "return the canonical pair and reject self/same-sequence pairs."
     },
     {
@@ -11583,7 +11583,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_rationale_44",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "stable full-digest identifier for one unordered frozen sequence pair."
     },
@@ -11595,7 +11595,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_rationale_56",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "assign a train/train pair to the frozen label-blind 70/15/15 role."
     },
     {
@@ -11606,7 +11606,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_rationale_108",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "algebraic unordered-pair counts by fixed endpoint-degree bin pair."
     },
     {
@@ -11617,7 +11617,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_semantics_rationale_131",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "allocate a capped sample with one seat then exact hamilton apportionment."
     },
     {
@@ -11639,7 +11639,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_support_validate_config",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "validate_config()"
     },
@@ -11650,7 +11650,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_pair_protocol_support_py_any",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "any"
     },
@@ -11695,8 +11695,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_pre_split_audit_init",
-      "community": 207,
-      "community_name": "pre_split_audit/__init__.py",
+      "community": 20,
+      "community_name": "pre_split_feasibility.py",
       "norm_label": "pre_split_audit/__init__.py"
     },
     {
@@ -11706,8 +11706,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_pre_split_audit_init_rationale_1",
-      "community": 207,
-      "community_name": "pre_split_audit/__init__.py",
+      "community": 20,
+      "community_name": "pre_split_feasibility.py",
       "norm_label": "governance-bounded aggregate pre-split feasibility and leakage audit."
     },
     {
@@ -11799,8 +11799,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_pre_split_audit_pipeline_verify_inputs",
-      "community": 80,
-      "community_name": "pre_split_audit/pipeline.py",
+      "community": 146,
+      "community_name": "resolve_inside",
       "norm_label": "_verify_inputs()"
     },
     {
@@ -13140,8 +13140,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_reconciliation_writer",
-      "community": 5,
-      "community_name": "reconciliation/pipeline.py",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "writer.py"
     },
     {
@@ -13255,8 +13255,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_reconciliation_writer_rationale_1",
-      "community": 5,
-      "community_name": "reconciliation/pipeline.py",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "deterministic arrow/parquet output for duckdb reconciliation queries."
     },
     {
@@ -13277,8 +13277,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_init",
-      "community": 127,
-      "community_name": "sequence_component_audit/pipeline.py",
+      "community": 125,
+      "community_name": "sequence_components.py",
       "norm_label": "sequence_component_audit/__init__.py"
     },
     {
@@ -13288,8 +13288,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_init_rationale_1",
-      "community": 127,
-      "community_name": "sequence_component_audit/pipeline.py",
+      "community": 125,
+      "community_name": "sequence_components.py",
       "norm_label": "governance-bounded benchmark eligibility and sequence-component audit."
     },
     {
@@ -13829,8 +13829,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_support_load_yaml",
-      "community": 127,
-      "community_name": "sequence_component_audit/pipeline.py",
+      "community": 146,
+      "community_name": "resolve_inside",
       "norm_label": "load_yaml()"
     },
     {
@@ -13995,8 +13995,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_support_validate_config",
-      "community": 127,
-      "community_name": "sequence_component_audit/pipeline.py",
+      "community": 146,
+      "community_name": "resolve_inside",
       "norm_label": "validate_config()"
     },
     {
@@ -14042,7 +14042,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "tooling.py"
     },
     {
@@ -14054,7 +14054,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_load_yaml",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "_load_yaml()"
     },
     {
@@ -14065,7 +14065,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_py_path",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "path"
     },
     {
@@ -14076,7 +14076,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_py_any",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "any"
     },
     {
@@ -14088,7 +14088,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_validate_tar_members",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "validate_tar_members()"
     },
     {
@@ -14099,7 +14099,7 @@
       "_origin": "ast",
       "id": "tarinfo",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "tarinfo"
     },
     {
@@ -14111,7 +14111,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_resolve_inside",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "_resolve_inside()"
     },
     {
@@ -14123,7 +14123,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_verify_regular",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "_verify_regular()"
     },
     {
@@ -14135,7 +14135,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_verify_mmseqs_install",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "verify_mmseqs_install()"
     },
     {
@@ -14147,7 +14147,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_download",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "_download()"
     },
     {
@@ -14159,7 +14159,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_prepare_mmseqs_install",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "prepare_mmseqs_install()"
     },
     {
@@ -14170,7 +14170,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_rationale_1",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "checksum-pinned, fail-closed preparation of the mmseqs2 arm64 release."
     },
     {
@@ -14181,7 +14181,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_sequence_component_audit_tooling_rationale_31",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "reject links, special files, absolute names, and path traversal."
     },
     {
@@ -14401,7 +14401,7 @@
       "_origin": "ast",
       "id": "counter",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "counter"
     },
     {
@@ -16637,7 +16637,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "component_split.py"
     },
@@ -16650,7 +16650,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_independentdisjointset",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "independentdisjointset"
     },
@@ -16662,7 +16662,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_independentdisjointset_init",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": ".__init__()"
     },
@@ -16674,7 +16674,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_independentdisjointset_find",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": ".find()"
     },
@@ -16686,7 +16686,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_independentdisjointset_union",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": ".union()"
     },
@@ -16698,7 +16698,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_components",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_components()"
     },
@@ -16710,7 +16710,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_component_id",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_component_id()"
     },
@@ -16722,7 +16722,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_quantize",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_quantize()"
     },
@@ -16734,7 +16734,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_nearest",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_nearest()"
     },
@@ -16746,7 +16746,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_histogram",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_histogram()"
     },
@@ -16758,7 +16758,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_check_sidecar",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_check_sidecar()"
     },
@@ -16769,7 +16769,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_py_checks",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "checks"
     },
@@ -16780,7 +16780,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_py_path",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "path"
     },
@@ -16792,7 +16792,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_verify_run_inventory",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_verify_run_inventory()"
     },
@@ -16803,7 +16803,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_py_any",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "any"
     },
@@ -16815,8 +16815,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_verify_inputs",
-      "community": 146,
-      "community_name": "resolve_inside",
+      "community": 190,
+      "community_name": "component_split.py",
       "norm_label": "_verify_inputs()"
     },
     {
@@ -16827,7 +16827,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_read_outputs",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_read_outputs()"
     },
@@ -16839,7 +16839,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_load_state",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_load_state()"
     },
@@ -16850,7 +16850,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_py_duckdbpyconnection",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "duckdbpyconnection"
     },
@@ -16862,7 +16862,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_edges",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_edges()"
     },
@@ -16874,7 +16874,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_prepare",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_prepare()"
     },
@@ -16886,7 +16886,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_allocate",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_allocate()"
     },
@@ -16897,7 +16897,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_py_ndarray",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "ndarray"
     },
@@ -16909,7 +16909,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_opportunity_masks",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_opportunity_masks()"
     },
@@ -16921,7 +16921,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_evaluate",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_evaluate()"
     },
@@ -16933,7 +16933,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_search",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_search()"
     },
@@ -16945,7 +16945,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_rows_by",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_rows_by()"
     },
@@ -16957,7 +16957,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_same_value",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_same_value()"
     },
@@ -16969,7 +16969,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_contains",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_contains()"
     },
@@ -16981,7 +16981,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_validate_selected_outputs",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "_validate_selected_outputs()"
     },
@@ -16993,7 +16993,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_validate_split",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "validate_split()"
     },
@@ -17005,7 +17005,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_build_argument_parser",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "build_argument_parser()"
     },
@@ -17016,7 +17016,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_py_argumentparser",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "argumentparser"
     },
@@ -17028,7 +17028,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_main",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "main()"
     },
@@ -17039,7 +17039,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_component_split_rationale_1",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "independent validation for the frozen benchmark component split."
     },
@@ -18580,8 +18580,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_pair_protocol_verify_sidecar",
-      "community": 12,
-      "community_name": "pair_artifacts.py",
+      "community": 128,
+      "community_name": "sha256_file",
       "norm_label": "_verify_sidecar()"
     },
     {
@@ -18591,8 +18591,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_pair_protocol_py_path",
-      "community": 12,
-      "community_name": "pair_artifacts.py",
+      "community": 128,
+      "community_name": "sha256_file",
       "norm_label": "path"
     },
     {
@@ -18603,8 +18603,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_pair_protocol_verify_huri_evidence",
-      "community": 12,
-      "community_name": "pair_artifacts.py",
+      "community": 128,
+      "community_name": "sha256_file",
       "norm_label": "_verify_huri_evidence()"
     },
     {
@@ -20123,7 +20123,7 @@
       "_origin": "ast",
       "id": "src_ipin_openppi_validation_staging_write_report",
       "community": 167,
-      "community_name": "sha256_file",
+      "community_name": "_write_report",
       "norm_label": "_write_report()"
     },
     {
@@ -20952,8 +20952,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_unit_test_component_split_safety",
-      "community": 167,
-      "community_name": "sha256_file",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "test_component_split_safety.py"
     },
     {
@@ -20964,8 +20964,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_component_split_safety_test_config_freezes_primary_fallback_objective_and_scope",
-      "community": 167,
-      "community_name": "sha256_file",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "test_config_freezes_primary_fallback_objective_and_scope()"
     },
     {
@@ -20976,8 +20976,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_component_split_safety_test_schema_contains_only_split_skeleton_and_aggregate_opportunities",
-      "community": 167,
-      "community_name": "sha256_file",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "test_schema_contains_only_split_skeleton_and_aggregate_opportunities()"
     },
     {
@@ -20988,7 +20988,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_component_split_semantics",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "test_component_split_semantics.py"
     },
     {
@@ -21000,7 +21000,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_component_split_semantics_test_components_and_candidate_allocation_are_deterministic",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "test_components_and_candidate_allocation_are_deterministic()"
     },
     {
@@ -21012,7 +21012,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_component_split_semantics_test_quantization_is_nonnegative_nearest_half_up",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "test_quantization_is_nonnegative_nearest_half_up()"
     },
     {
@@ -21024,7 +21024,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_component_split_semantics_test_opportunity_masks_preserve_c1_exclusive_c2_and_strict_c3",
       "community": 0,
-      "community_name": "component_split.py",
+      "community_name": "component_split/pipeline.py",
       "norm_label": "test_opportunity_masks_preserve_c1_exclusive_c2_and_strict_c3()"
     },
     {
@@ -21034,7 +21034,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_unit_test_component_split_validation",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "test_component_split_validation.py"
     },
@@ -21046,7 +21046,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_component_split_validation_test_independent_components_are_transitive_and_order_stable",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "test_independent_components_are_transitive_and_order_stable()"
     },
@@ -21058,7 +21058,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_component_split_validation_test_independent_allocator_reproduces_frozen_hash_and_tie_rules",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "test_independent_allocator_reproduces_frozen_hash_and_tie_rules()"
     },
@@ -21070,7 +21070,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_component_split_validation_test_subset_comparison_is_float_tolerant_but_fail_closed",
-      "community": 0,
+      "community": 190,
       "community_name": "component_split.py",
       "norm_label": "test_subset_comparison_is_float_tolerant_but_fail_closed()"
     },
@@ -21426,8 +21426,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_unit_test_ingestion_parsers",
-      "community": 109,
-      "community_name": "uniprot.py",
+      "community": 137,
+      "community_name": "sifts.py",
       "norm_label": "test_ingestion_parsers.py"
     },
     {
@@ -21438,8 +21438,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_ingestion_parsers_test_schema_contract_rejects_bad_enum_and_missing_required",
-      "community": 109,
-      "community_name": "uniprot.py",
+      "community": 137,
+      "community_name": "sifts.py",
       "norm_label": "test_schema_contract_rejects_bad_enum_and_missing_required()"
     },
     {
@@ -21450,8 +21450,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_ingestion_parsers_test_parquet_writer_embeds_contract_and_preserves_no_label_guard",
-      "community": 109,
-      "community_name": "uniprot.py",
+      "community": 137,
+      "community_name": "sifts.py",
       "norm_label": "test_parquet_writer_embeds_contract_and_preserves_no_label_guard()"
     },
     {
@@ -21461,8 +21461,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_unit_test_ingestion_parsers_py_path",
-      "community": 109,
-      "community_name": "uniprot.py",
+      "community": 137,
+      "community_name": "sifts.py",
       "norm_label": "path"
     },
     {
@@ -21473,8 +21473,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_ingestion_parsers_test_stable_id_is_framed_and_deterministic",
-      "community": 109,
-      "community_name": "uniprot.py",
+      "community": 137,
+      "community_name": "sifts.py",
       "norm_label": "test_stable_id_is_framed_and_deterministic()"
     },
     {
@@ -21510,7 +21510,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_ingestion_parsers_test_intact_xml_primitives_preserve_negative_and_binary_semantics",
       "community": 129,
-      "community_name": "canonical_json",
+      "community_name": "intact.py",
       "norm_label": "test_intact_xml_primitives_preserve_negative_and_binary_semantics()"
     },
     {
@@ -21521,8 +21521,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_ingestion_parsers_test_sifts_optional_integer_does_not_coerce_missing",
-      "community": 109,
-      "community_name": "uniprot.py",
+      "community": 137,
+      "community_name": "sifts.py",
       "norm_label": "test_sifts_optional_integer_does_not_coerce_missing()"
     },
     {
@@ -21580,7 +21580,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_intact_mutation_reconstruction_v2",
       "community": 192,
-      "community_name": "intact_v2.py",
+      "community_name": "iter_reconstructed_mutation_rows",
       "norm_label": "test_intact_mutation_reconstruction_v2.py"
     },
     {
@@ -21592,7 +21592,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_intact_mutation_reconstruction_v2_header",
       "community": 192,
-      "community_name": "intact_v2.py",
+      "community_name": "iter_reconstructed_mutation_rows",
       "norm_label": "_header()"
     },
     {
@@ -21604,7 +21604,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_intact_mutation_reconstruction_v2_test_reconstructs_unquoted_multiline_mutation_record",
       "community": 192,
-      "community_name": "intact_v2.py",
+      "community_name": "iter_reconstructed_mutation_rows",
       "norm_label": "test_reconstructs_unquoted_multiline_mutation_record()"
     },
     {
@@ -21615,7 +21615,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_intact_mutation_reconstruction_v2_py_path",
       "community": 192,
-      "community_name": "intact_v2.py",
+      "community_name": "iter_reconstructed_mutation_rows",
       "norm_label": "path"
     },
     {
@@ -21627,7 +21627,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_intact_mutation_reconstruction_v2_test_reconstruction_refuses_invalid_boundary_accessions",
       "community": 192,
-      "community_name": "intact_v2.py",
+      "community_name": "iter_reconstructed_mutation_rows",
       "norm_label": "test_reconstruction_refuses_invalid_boundary_accessions()"
     },
     {
@@ -21696,8 +21696,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_archives_and_imex_test_imex_reconciliation_distinguishes_records_from_distinct_panel_pairs",
-      "community": 26,
-      "community_name": "scan_tar_gzip_archive",
+      "community": 15,
+      "community_name": "lambourne_audit/pipeline.py",
       "norm_label": "test_imex_reconciliation_distinguishes_records_from_distinct_panel_pairs()"
     },
     {
@@ -21720,7 +21720,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_overlap",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "test_lambourne_overlap.py"
     },
     {
@@ -21732,7 +21732,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_lambourne_overlap_test_pair_and_endpoint_contamination_are_distinct",
       "community": 184,
-      "community_name": "unordered_pair",
+      "community_name": "evidence.py",
       "norm_label": "test_pair_and_endpoint_contamination_are_distinct()"
     },
     {
@@ -22061,7 +22061,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_model_governance_protocol_safety",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "test_model_governance_protocol_safety.py"
     },
     {
@@ -22073,7 +22073,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_model_governance_protocol_safety_validated_config",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "_validated_config()"
     },
     {
@@ -22085,7 +22085,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_model_governance_protocol_safety_test_protocol_has_exactly_24_passing_fail_closed_checks",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "test_protocol_has_exactly_24_passing_fail_closed_checks()"
     },
     {
@@ -22097,7 +22097,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_model_governance_protocol_safety_test_protocol_is_design_only_and_declares_no_model_output",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "test_protocol_is_design_only_and_declares_no_model_output()"
     },
     {
@@ -22108,7 +22108,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_model_governance_protocol_safety_py_parametrize",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "parametrize"
     },
     {
@@ -22120,7 +22120,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_model_governance_protocol_safety_test_consequential_rule_mutations_fail_closed",
       "community": 143,
-      "community_name": "protocol.py",
+      "community_name": "require_apptainer",
       "norm_label": "test_consequential_rule_mutations_fail_closed()"
     },
     {
@@ -22261,7 +22261,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_negative_evidence_evidence",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "test_negative_evidence_evidence.py"
     },
     {
@@ -22272,8 +22272,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_negative_evidence_evidence_test_unordered_pair_and_ids_are_orientation_invariant",
-      "community": 110,
-      "community_name": "stable_id",
+      "community": 184,
+      "community_name": "evidence.py",
       "norm_label": "test_unordered_pair_and_ids_are_orientation_invariant()"
     },
     {
@@ -22285,7 +22285,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_negative_evidence_evidence_test_manual_stringent_tier_is_downgraded_by_direct_conflict",
       "community": 110,
-      "community_name": "stable_id",
+      "community_name": "negative_evidence/pipeline.py",
       "norm_label": "test_manual_stringent_tier_is_downgraded_by_direct_conflict()"
     },
     {
@@ -22413,7 +22413,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_pair_artifacts_safety",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "test_pair_artifacts_safety.py"
     },
     {
@@ -22425,7 +22425,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_pair_artifacts_safety_test_artifact_config_freezes_scope_sampling_and_sealing",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "test_artifact_config_freezes_scope_sampling_and_sealing()"
     },
     {
@@ -22437,7 +22437,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_pair_artifacts_safety_test_schema_has_only_positive_unlabeled_and_role_free_scorer_input",
       "community": 191,
-      "community_name": "pair_artifacts/support.py",
+      "community_name": "schema.py",
       "norm_label": "test_schema_has_only_positive_unlabeled_and_role_free_scorer_input()"
     },
     {
@@ -22459,7 +22459,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pair_artifacts_semantics_test_rational_design_and_candidate_token_are_exact",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "test_rational_design_and_candidate_token_are_exact()"
     },
@@ -22553,7 +22553,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_safety",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "test_pair_protocol_safety.py"
     },
@@ -22565,7 +22565,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_safety_test_protocol_config_freezes_scope_cutoffs_assignment_and_claims",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "test_protocol_config_freezes_scope_cutoffs_assignment_and_claims()"
     },
@@ -22577,7 +22577,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_safety_test_protocol_does_not_authorize_pair_or_sample_outputs",
-      "community": 17,
+      "community": 151,
       "community_name": "construction.py",
       "norm_label": "test_protocol_does_not_authorize_pair_or_sample_outputs()"
     },
@@ -22589,7 +22589,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_semantics",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "test_pair_protocol_semantics.py"
     },
     {
@@ -22601,7 +22601,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_semantics_test_pair_identity_and_c1_role_are_orientation_stable_and_frozen",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "test_pair_identity_and_c1_role_are_orientation_stable_and_frozen()"
     },
     {
@@ -22613,7 +22613,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_semantics_test_degree_bins_and_pair_populations_are_algebraic",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "test_degree_bins_and_pair_populations_are_algebraic()"
     },
     {
@@ -22625,7 +22625,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_semantics_test_hamilton_sampling_has_positive_exact_probabilities",
       "community": 17,
-      "community_name": "construction.py",
+      "community_name": "Counter",
       "norm_label": "test_hamilton_sampling_has_positive_exact_probabilities()"
     },
     {
@@ -22635,8 +22635,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_validation",
-      "community": 17,
-      "community_name": "construction.py",
+      "community": 12,
+      "community_name": "pair_artifacts.py",
       "norm_label": "test_pair_protocol_validation.py"
     },
     {
@@ -22647,8 +22647,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_validation_test_independent_hash_implementation_matches_frozen_fixtures",
-      "community": 17,
-      "community_name": "construction.py",
+      "community": 12,
+      "community_name": "pair_artifacts.py",
       "norm_label": "test_independent_hash_implementation_matches_frozen_fixtures()"
     },
     {
@@ -22659,8 +22659,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pair_protocol_validation_test_independent_apportionment_matches_frozen_integer_rules",
-      "community": 17,
-      "community_name": "construction.py",
+      "community": 12,
+      "community_name": "pair_artifacts.py",
       "norm_label": "test_independent_apportionment_matches_frozen_integer_rules()"
     },
     {
@@ -22670,8 +22670,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_unit_test_pipeline_v4_safety",
-      "community": 201,
-      "community_name": "pipeline_v4.py",
+      "community": 208,
+      "community_name": "test_pipeline_v4_safety.py",
       "norm_label": "test_pipeline_v4_safety.py"
     },
     {
@@ -22682,8 +22682,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pipeline_v4_safety_test_integrity_overrides_require_explicit_smoke_output",
-      "community": 201,
-      "community_name": "pipeline_v4.py",
+      "community": 208,
+      "community_name": "test_pipeline_v4_safety.py",
       "norm_label": "test_integrity_overrides_require_explicit_smoke_output()"
     },
     {
@@ -22694,8 +22694,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pipeline_v4_safety_test_integrity_overrides_accept_only_named_smoke_output",
-      "community": 201,
-      "community_name": "pipeline_v4.py",
+      "community": 208,
+      "community_name": "test_pipeline_v4_safety.py",
       "norm_label": "test_integrity_overrides_accept_only_named_smoke_output()"
     },
     {
@@ -22706,8 +22706,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pipeline_v4_safety_test_main_injects_v4_config_once",
-      "community": 201,
-      "community_name": "pipeline_v4.py",
+      "community": 208,
+      "community_name": "test_pipeline_v4_safety.py",
       "norm_label": "test_main_injects_v4_config_once()"
     },
     {
@@ -22717,8 +22717,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_unit_test_pipeline_v4_safety_py_monkeypatch",
-      "community": 201,
-      "community_name": "pipeline_v4.py",
+      "community": 208,
+      "community_name": "test_pipeline_v4_safety.py",
       "norm_label": "monkeypatch"
     },
     {
@@ -22773,8 +22773,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_unit_test_pre_split_safety",
-      "community": 167,
-      "community_name": "sha256_file",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "test_pre_split_safety.py"
     },
     {
@@ -22785,8 +22785,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pre_split_safety_test_config_preserves_pu_r_parent_and_all_prohibitions",
-      "community": 167,
-      "community_name": "sha256_file",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "test_config_preserves_pu_r_parent_and_all_prohibitions()"
     },
     {
@@ -22797,8 +22797,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_pre_split_safety_test_schema_is_aggregate_only_and_has_explicit_false_guards",
-      "community": 167,
-      "community_name": "sha256_file",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "test_schema_is_aggregate_only_and_has_explicit_false_guards()"
     },
     {
@@ -23398,7 +23398,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_sequence_component_safety",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "test_sequence_component_safety.py"
     },
     {
@@ -23409,8 +23409,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_sequence_component_safety_test_frozen_config_preserves_pu_r_and_all_prohibitions",
-      "community": 127,
-      "community_name": "sequence_component_audit/pipeline.py",
+      "community": 146,
+      "community_name": "resolve_inside",
       "norm_label": "test_frozen_config_preserves_pu_r_and_all_prohibitions()"
     },
     {
@@ -23421,8 +23421,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_sequence_component_safety_test_schema_has_only_bounded_tables_and_false_guard_columns",
-      "community": 128,
-      "community_name": "tooling.py",
+      "community": 191,
+      "community_name": "schema.py",
       "norm_label": "test_schema_has_only_bounded_tables_and_false_guard_columns()"
     },
     {
@@ -23433,8 +23433,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_unit_test_sequence_component_safety_test_dirty_and_hash_overrides_require_consistent_smoke_paths",
-      "community": 146,
-      "community_name": "resolve_inside",
+      "community": 128,
+      "community_name": "sha256_file",
       "norm_label": "test_dirty_and_hash_overrides_require_consistent_smoke_paths()"
     },
     {
@@ -23444,8 +23444,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_unit_test_sequence_component_safety_py_path",
-      "community": 146,
-      "community_name": "resolve_inside",
+      "community": 128,
+      "community_name": "sha256_file",
       "norm_label": "path"
     },
     {
@@ -23457,7 +23457,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_sequence_component_safety_test_tool_archive_validation_rejects_links_and_traversal",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "test_tool_archive_validation_rejects_links_and_traversal()"
     },
     {
@@ -23469,7 +23469,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_sequence_component_safety_test_tool_archive_validation_rejects_duplicate_members",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "test_tool_archive_validation_rejects_duplicate_members()"
     },
     {
@@ -23481,7 +23481,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_sequence_component_safety_test_validator_embeds_escaped_literals_for_duckdb_ddl",
       "community": 128,
-      "community_name": "tooling.py",
+      "community_name": "sha256_file",
       "norm_label": "test_validator_embeds_escaped_literals_for_duckdb_ddl()"
     },
     {
@@ -24126,7 +24126,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_staging_report_writer",
       "community": 167,
-      "community_name": "sha256_file",
+      "community_name": "_write_report",
       "norm_label": "test_staging_report_writer.py"
     },
     {
@@ -24138,7 +24138,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_staging_report_writer_test_validation_report_and_sidecar_are_immutable",
       "community": 167,
-      "community_name": "sha256_file",
+      "community_name": "_write_report",
       "norm_label": "test_validation_report_and_sidecar_are_immutable()"
     },
     {
@@ -24149,7 +24149,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_staging_report_writer_py_path",
       "community": 167,
-      "community_name": "sha256_file",
+      "community_name": "_write_report",
       "norm_label": "path"
     },
     {
@@ -24161,7 +24161,7 @@
       "_origin": "ast",
       "id": "tests_unit_test_staging_report_writer_test_validation_report_refuses_preexisting_sidecar",
       "community": 167,
-      "community_name": "sha256_file",
+      "community_name": "_write_report",
       "norm_label": "test_validation_report_refuses_preexisting_sidecar()"
     },
     {
@@ -28197,6 +28197,171 @@
       "community": 165,
       "community_name": "RESUME-003: Post-model-governance-protocol-freeze phase checkpoint",
       "norm_label": "14. fail-closed escalation"
+    },
+    {
+      "label": "RESUME-004-post-stage-1-public-training-freeze.md",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "resume-004-post-stage-1-public-training-freeze.md"
+    },
+    {
+      "label": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "resume-004: post-stage 1 public-training-freeze phase checkpoint"
+    },
+    {
+      "label": "1. Exact repository anchor and handoff invariant",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_1_exact_repository_anchor_and_handoff_invariant",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "1. exact repository anchor and handoff invariant"
+    },
+    {
+      "label": "2. Current authority",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_2_current_authority",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "2. current authority"
+    },
+    {
+      "label": "3. Immutable parent benchmark and sealed boundary",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_3_immutable_parent_benchmark_and_sealed_boundary",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "3. immutable parent benchmark and sealed boundary"
+    },
+    {
+      "label": "4. Accepted runtime, PLMs, and embeddings",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_4_accepted_runtime_plms_and_embeddings",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "4. accepted runtime, plms, and embeddings"
+    },
+    {
+      "label": "5. Frozen methods and training objective",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L140",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_5_frozen_methods_and_training_objective",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "5. frozen methods and training objective"
+    },
+    {
+      "label": "6. Frozen execution result and registry",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_6_frozen_execution_result_and_registry",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "6. frozen execution result and registry"
+    },
+    {
+      "label": "7. Training-monitor diagnostics",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L207",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_7_training_monitor_diagnostics",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "7. training-monitor diagnostics"
+    },
+    {
+      "label": "8. Independent validation",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L226",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_8_independent_validation",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "8. independent validation"
+    },
+    {
+      "label": "9. Scientific interpretation and current hold",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L242",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_9_scientific_interpretation_and_current_hold",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "9. scientific interpretation and current hold"
+    },
+    {
+      "label": "10. Verification record",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_10_verification_record",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "10. verification record"
+    },
+    {
+      "label": "11. Next-phase gate",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L277",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_11_next_phase_gate",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "11. next-phase gate"
+    },
+    {
+      "label": "12. Exact fresh-thread preflight",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L300",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_12_exact_fresh_thread_preflight",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "12. exact fresh-thread preflight"
+    },
+    {
+      "label": "13. Fail-closed escalation",
+      "file_type": "document",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L374",
+      "_origin": "ast",
+      "id": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_13_fail_closed_escalation",
+      "community": 207,
+      "community_name": "RESUME-004: Post-Stage 1 public-training-freeze phase checkpoint",
+      "norm_label": "13. fail-closed escalation"
     },
     {
       "label": "DEC-0017-accept-tf-isoform-y2h-disposition.md",
@@ -108343,6 +108508,160 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L260",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_10_verification_record",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L277",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_11_next_phase_gate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L300",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_12_exact_fresh_thread_preflight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L374",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_13_fail_closed_escalation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_1_exact_repository_anchor_and_handoff_invariant",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_2_current_authority",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_3_immutable_parent_benchmark_and_sealed_boundary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_4_accepted_runtime_plms_and_embeddings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_5_frozen_methods_and_training_objective",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_6_frozen_execution_result_and_registry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L207",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_7_training_monitor_diagnostics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L226",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_8_independent_validation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "governance/checkpoints/RESUME-004-post-stage-1-public-training-freeze.md",
+      "source_location": "L242",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_resume_004_post_stage_1_public_training_freeze_phase_checkpoint",
+      "target": "governance_checkpoints_resume_004_post_stage_1_public_training_freeze_9_scientific_interpretation_and_current_hold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "governance/decisions/DEC-0017-accept-tf-isoform-y2h-disposition.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -112411,5 +112730,5 @@
       "source_file": "docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.pdf"
     }
   ],
-  "built_at_commit": "1003d3e4a0270047d904f06e9acb025bce78cd94"
+  "built_at_commit": "fc3b8b3d89a14449a5c42da00ac54add1d1710a8"
 }

@@ -13,7 +13,8 @@ Changes to the primary target, metric, split, calibration universe, production p
 
 The current authoritative ledger is `gates/gate_status_v30.yaml`; the current
 scientific status is `PROJECT_STATUS_v30.md`; and the fresh-thread phase
-checkpoint is pending the post-Stage 1 acceptance commit. `DEC-0017`
+checkpoint is
+`checkpoints/RESUME-004-post-stage-1-public-training-freeze.md`. `DEC-0017`
 technically accepts the TF-isoform audit and its external-only quarantine.
 `DEC-0018` technically
 accepts the independently validated benchmark-eligibility and
