@@ -1,0 +1,159 @@
+{
+  "checks": [
+    {
+      "check_id": "production_registry_and_prior_independent_gate",
+      "detail": {
+        "production_evidence_commit": "a46639245fc34d9b53063ec46370a6139a2bd021",
+        "registry_sha256": "11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_all_647_artifact_rehash",
+      "detail": {
+        "artifact_count": 647,
+        "role_counts": {
+          "checkpoint_sidecar": 150,
+          "complete_pass_checkpoint": 120,
+          "complete_pass_metric": 150,
+          "compute_and_storage_accounting": 1,
+          "embedding_dependency": 16,
+          "executable_code": 10,
+          "frozen_public_input": 6,
+          "model_custody": 12,
+          "model_runtime": 1,
+          "orchestrator_log": 30,
+          "run_result": 30,
+          "run_state": 30,
+          "selected_checkpoint": 30,
+          "training_preparation": 63
+        },
+        "unique_bytes": 15124997716
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_model_objective_and_baseline_source_binding",
+      "detail": {
+        "scripts/model/run_stage1_training_matrix_v1.py": "94166e30ff22a2f219eeff62563d1e2cf930e48db5d5313634a12183508490d7",
+        "src/ipin_openppi/stage1/baselines.py": "26786946de618b82ea4f7e4ad821f5ee6cbd8123bce978365f794cb0912552b7",
+        "src/ipin_openppi/stage1/models.py": "653340c6aa7caa21672f855fec6b0562857984560b49b20a2e37a4c9579ede28",
+        "src/ipin_openppi/stage1/objective.py": "34258f553dd6406d9a5ef0fd0320cd703f7ecb4ca0d3f2bb4e9cbc598942eaab",
+        "src/ipin_openppi/stage1/training.py": "4000f8e5fab939e90f84d28a5343076d0d6b5b0e1e4f084669a259ac9bc6b0ee"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_public_training_visibility",
+      "detail": {
+        "P": 16799,
+        "U": 2000000
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_exact_rational_objective_weights",
+      "detail": {
+        "mean_weight_float64": 5.451115000000004,
+        "weight_sum_float64": 10902230.000000007
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_all_orders_and_positive_coverage",
+      "detail": {
+        "ceiling_count": 919,
+        "order_count": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_30_run_completeness_and_budget",
+      "detail": {
+        "comparisons": 300000000,
+        "run_count": 30,
+        "steps": 73350
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_150_checkpoint_RNG_order_weight_and_finiteness",
+      "detail": {
+        "checkpoint_count": 150,
+        "weight_sum": 10902230.000000007
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_training_only_checkpoint_selection",
+      "detail": {
+        "selected_pass_counts": {
+          "5": 30
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_selected_checkpoint_functional_symmetry",
+      "detail": {
+        "selected_checkpoints": 30,
+        "swap_max_absolute_difference": 0.0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_offline_single_GPU_logs_and_zero_resumes",
+      "detail": {
+        "initial_logs": 30,
+        "resume_logs": 0
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_ten_three_seed_ensembles",
+      "detail": {
+        "ensemble_count": 10
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_compute_storage_and_registry_totals",
+      "detail": {
+        "embedding_gpu_hours": 0.2120484686505774,
+        "final_governed_storage_bytes": 14959953220,
+        "matrix_run_count": 30,
+        "registered_bytes_unique": 15124997716,
+        "status_counts": {
+          "complete": 30
+        },
+        "total_gpu_hours_conservative": 0.45626144182586964,
+        "training_gpu_exposed_seconds_conservative": 879.1667034310522,
+        "wall_seconds": 880.7952692830004
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "independent_absence_of_leakage_sensitive_paths_and_temporaries",
+      "detail": {
+        "registered_paths": 647,
+        "temporary_files": false
+      },
+      "status": "pass"
+    }
+  ],
+  "independence": {
+    "imports_production_stage1_modules": false,
+    "model_framework_use": "checkpoint_deserialization_and_clean_room_functional_forward_only",
+    "production_evidence_commit": "a46639245fc34d9b53063ec46370a6139a2bd021",
+    "validation_method": "artifact_rehash_order_reconstruction_checkpoint_inspection_and_independent_forward"
+  },
+  "protocol_configuration_sha256": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+  "schema_version": 1,
+  "status": "pass",
+  "summary": {
+    "fail": 0,
+    "pass": 14,
+    "warning": 0
+  },
+  "training_artifact_registry_sha256": "11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318"
+}
