@@ -1,0 +1,66 @@
+schema_version: 37
+supersedes: governance/gates/gate_status_v36.yaml
+updated_date: "2026-08-19"
+programme_state: development_evaluation_complete_paused_for_completed_audit_scoring_census_correction
+
+gates:
+  model_governance:
+    status: accepted_frozen_unchanged
+    acceptance_decision: governance/decisions/DEC-0028-accept-model-governance-and-baseline-training-protocol.md
+  stage_1_training:
+    status: pass_complete_frozen_unchanged
+    training_registry_sha256: 11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318
+    additional_training_authorized: false
+  development_release:
+    status: pass_complete_exactly_once
+    archive_sha256: c8d1520d5dbc5b435a1ed5149cbd2f9a731fb3cee10cd651dd0a19b475741122
+    manifest_sha256: 3f58403138b878d912789f529dc1f8ec7d1db7356d6ccc4c3b88cfcb2f6554fa
+    additional_decryption_authorized: false
+  development_scoring_and_evaluation:
+    status: complete_results_unaccepted_pending_validation
+    scoring_manifest_sha256: c82be153593ad46101f1ce49e1c79d341da535c71b34ded748c63e478b10dc99
+    cell_count: 9
+    scorer_count: 49
+    selected_checkpoint_count: 30
+    ensemble_count: 10
+    scoring_rows: 9026108
+    training_or_checkpoint_change: false
+    protected_access: false
+  issue_0011:
+    status: confirmed_non_scientific_auditor_assertion_defect
+    issue: governance/issues/ISSUE-0011-completed-audit-scoring-row-census.md
+    authorization_decision: governance/decisions/DEC-0038-authorize-completed-audit-scoring-census-correction.md
+    incident_report: artifacts/validation/development_evaluation/development_release_and_evaluation_v1/failed_completed_audit_attempt_001_scoring_row_census/INCIDENT_REPORT.json
+    incident_report_sha256: e50b7657b19a9618f06e1d2b6ad102ffc56764e2e2b2e0c07d15c72019f9783c
+    failed_audit_checks_passed: 8
+    failed_audit_checks_failed: 1
+    package_table_rows: 9044323
+    score_matrix_rows: 9026108
+    correction_scope: completed_auditor_scoring_census_assertion_only
+  development_result_disposition:
+    status: pending_independent_validation_and_numbered_acceptance
+    frozen_evaluator_output: stop_complex_model_claim_and_stop_before_protected_evaluation
+    protected_advance_authorized: false
+  protected_test:
+    status: encrypted_evaluator_only_fully_sealed
+    candidate_or_truth_access_authorized: false
+    private_key_access_authorized: false
+    scoring_or_metric_authorized: false
+  compute:
+    hardware: at_most_one_NVIDIA_GH200_120GB
+    maximum_gpu_hours: 30
+    maximum_new_governed_storage_gib: 100
+    multi_gpu_or_multi_node_authorized: false
+
+global_prohibitions:
+  second_development_decryption: true
+  protected_candidate_truth_or_private_key_access: true
+  training_retraining_tuning_or_checkpoint_change: true
+  score_regeneration_or_new_scorer: true
+  pair_artifact_sampling_stratum_weight_or_protocol_change: true
+  metric_threshold_selection_or_kill_rule_change: true
+  negative_or_pseudo_negative_construction: true
+  external_panel_structure_residue_or_interface_work: true
+
+next_authorized_work_package: exact_issue_0011_auditor_census_fix_then_full_production_and_clean_room_completed_evaluation_validation
+return_to_governance_before_protected_test_required: true

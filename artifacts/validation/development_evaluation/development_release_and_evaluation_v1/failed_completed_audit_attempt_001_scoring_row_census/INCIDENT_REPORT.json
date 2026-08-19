@@ -1,0 +1,57 @@
+{
+  "auditor_source_commit": "59ec7c7df485279cce102e16073fd7d8cabe0dfc",
+  "auditor_source_sha256": "1b439e04c18f1b39d98e6318733383f2915c9b0b0c9e5c06fbd89c7339934c6b",
+  "date": "2026-08-19",
+  "failed_check": {
+    "check_id": "all_cell_manifests_rows_states_hashes_shapes_and_finite_scores",
+    "observed_scoring_rows": 9026108,
+    "incorrect_expected_rows": 9044323,
+    "other_checks_failed": 0,
+    "other_checks_passed": 8
+  },
+  "failed_evidence": {
+    "registry": {
+      "path": "artifacts/validation/development_evaluation/development_release_and_evaluation_v1/failed_completed_audit_attempt_001_scoring_row_census/DEVELOPMENT_EVALUATION_REGISTRY.json",
+      "sha256": "bc9d2e182a2cfc3199872e7099dc7b40bfb62214aebd9663f40201da7b410429"
+    },
+    "report": {
+      "path": "artifacts/validation/development_evaluation/development_release_and_evaluation_v1/failed_completed_audit_attempt_001_scoring_row_census/COMPLETED_EVALUATION_PRODUCTION_AUDIT_REPORT.json",
+      "sha256": "59b36f830f4541b82321c6d8637deee3fdeab88e3fdf335385d3c6e133360aab"
+    }
+  },
+  "incident_id": "failed_completed_audit_attempt_001_scoring_row_census",
+  "package_table_census": {
+    "manifest_path": ".private/development_release_and_evaluation_v1/release/DEVELOPMENT_PACKAGE_MANIFEST.json",
+    "manifest_sha256": "3f58403138b878d912789f529dc1f8ec7d1db7356d6ccc4c3b88cfcb2f6554fa",
+    "positive_rows": 26108,
+    "sampling_strata_rows": 134,
+    "source_visible_training_positive_rows": 18081,
+    "table_count": 13,
+    "total_rows": 9044323,
+    "unlabeled_rows": 9000000
+  },
+  "public_result_custody": {
+    "development_results_manifest_sha256": "e6b5455e3c1e0346b5b9c9a358db7abc628732b57bab2ec778992d2fbe9c8299",
+    "selection_and_kill_trace_sha256": "ac583545f2dd3c8305dc477cb2d414e75a31800afcb29ddaedc6276cab165c45",
+    "development_stage_disposition": "stop_complex_model_claim_and_stop_before_protected_evaluation"
+  },
+  "root_cause": "The completed-audit implementation compared the nine-cell score-row sum with the larger 13-table released-package row sum. The extra package rows are sampling-stratum and source-visible-training support tables and are never score-matrix rows.",
+  "schema_version": 1,
+  "scientific_or_artifact_impact": {
+    "benchmark_protocol_or_semantics_changed": false,
+    "development_decryption_repeated": false,
+    "metrics_or_public_results_changed": false,
+    "models_checkpoints_or_scores_changed": false,
+    "protected_candidates_truth_or_private_key_accessed": false,
+    "training_tuning_or_checkpoint_change": false
+  },
+  "scoring_cell_census": {
+    "cell_count": 9,
+    "positive_rows": 26108,
+    "scoring_manifest_path": ".private/development_release_and_evaluation_v1/evaluation/SCORING_RUN_MANIFEST.json",
+    "scoring_manifest_sha256": "c82be153593ad46101f1ce49e1c79d341da535c71b34ded748c63e478b10dc99",
+    "total_rows": 9026108,
+    "unlabeled_rows": 9000000
+  },
+  "status": "confirmed_completed_auditor_census_assertion_defect"
+}

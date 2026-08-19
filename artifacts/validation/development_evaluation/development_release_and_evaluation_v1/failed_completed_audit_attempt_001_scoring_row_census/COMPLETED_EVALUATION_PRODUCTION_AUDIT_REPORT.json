@@ -1,0 +1,105 @@
+{
+  "check_counts": {
+    "fail": 1,
+    "pass": 8,
+    "total": 9
+  },
+  "checks": [
+    {
+      "check_id": "complete_9_49_30_10_scoring_manifest_and_closed_boundaries",
+      "detail": {
+        "cells": 9,
+        "checkpoints": 30,
+        "ensembles": 10,
+        "scorers": 49
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_cell_manifests_rows_states_hashes_shapes_and_finite_scores",
+      "detail": {
+        "all_scores_finite": true,
+        "cell_count": 9,
+        "total_rows": 9026108
+      },
+      "status": "fail"
+    },
+    {
+      "check_id": "exact_scorer_order_and_all_ten_ensemble_columns",
+      "detail": {
+        "all_rows_checked": true,
+        "ensemble_count": 10,
+        "scorer_count": 49
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_9_by_49_point_metrics_primary_strata_hubs_and_correlations_recomputed",
+      "detail": {
+        "cell_count": 9,
+        "primary_degree_hub_cells": 3,
+        "scorer_count_each": 49
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "all_component_draws_bootstrap_hashes_finite_counts_and_intervals",
+      "detail": {
+        "cells": [
+          "C3_development",
+          "C2_development",
+          "C1_development"
+        ],
+        "replicates": 2000,
+        "scorers": 19
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "C1_novel_U_census_weights_uniqueness_and_all_metrics_recomputed",
+      "detail": {
+        "removed_U_rows": 182817,
+        "retained_U_rows": 817183,
+        "retained_pair_id_unique": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "selection_complexity_seed_and_kill_trace_exact_recomputation",
+      "detail": {
+        "disposition": "stop_complex_model_claim_and_stop_before_protected_evaluation",
+        "selected_candidate": "lightweight_esm2_150m_linear__linear_lr3e-4",
+        "stop_before_protected_evaluation": true
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "public_result_hashes_no_pair_identity_and_closed_protected_boundary",
+      "detail": {
+        "pair_identity_public": false,
+        "protected_access": false,
+        "registered_public_files": 7
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "private_execution_logs_and_reproducibility_flags_registered",
+      "detail": {
+        "log_count": 3
+      },
+      "status": "pass"
+    }
+  ],
+  "development_private_key_resolved_or_accessed": false,
+  "development_stage_disposition": "stop_complex_model_claim_and_stop_before_protected_evaluation",
+  "execution_id": "development_release_and_evaluation_execution_v1",
+  "pair_identity_public": false,
+  "production_audit_source_commit": "59ec7c7df485279cce102e16073fd7d8cabe0dfc",
+  "protected_candidates_or_truth_accessed": false,
+  "protected_private_key_resolved_or_accessed": false,
+  "registry_sha256": "bc9d2e182a2cfc3199872e7099dc7b40bfb62214aebd9663f40201da7b410429",
+  "schema_version": 1,
+  "status": "fail",
+  "stop_before_protected_evaluation": true,
+  "training_or_checkpoint_change": false
+}
