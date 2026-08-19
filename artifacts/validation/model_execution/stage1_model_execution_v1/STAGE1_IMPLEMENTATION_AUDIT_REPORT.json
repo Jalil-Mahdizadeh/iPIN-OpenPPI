@@ -1,0 +1,170 @@
+{
+  "checks": [
+    {
+      "check_id": "authority_identity",
+      "detail": {
+        "container": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+        "protocol": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "public_input_allowlist",
+      "detail": [
+        "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet",
+        "data/canonical/final_benchmark_component_split_v1/component_partition_assignments/part-00000.parquet",
+        "data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/sampling_strata/part-00000.parquet",
+        "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet"
+      ],
+      "status": "pass"
+    },
+    {
+      "check_id": "public_P_U_identity",
+      "detail": {
+        "P": 16799,
+        "U": 2000000,
+        "strata": 36
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "exact_two_candidates",
+      "detail": {
+        "esm2_150m": {
+          "checkpoint_sha256": "c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566",
+          "hidden_size": 640,
+          "layers": 30,
+          "repository": "facebook/esm2_t30_150M_UR50D",
+          "revision": "a695f6045e2e32885fa60af20c13cb35398ce30c"
+        },
+        "esm2_650m": {
+          "checkpoint_sha256": "a08adabb949fa67ad3c14b509d04fd60368b35007b0095e3358f81200c4f4db0",
+          "hidden_size": 1280,
+          "layers": 33,
+          "repository": "facebook/esm2_t33_650M_UR50D",
+          "revision": "08e4846e537177426273712802403f7ba8261b6c"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "embedding_window_coverage",
+      "detail": {
+        "minimum_coverage": 1,
+        "starts": [
+          0,
+          894,
+          1788,
+          2682,
+          3576,
+          4470,
+          5364,
+          6258,
+          6548
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "mandatory_zero_parameter_formulas",
+      "detail": "hash, degree, preferential attachment, component mass, and both length controls",
+      "status": "pass"
+    },
+    {
+      "check_id": "exact_interolog_orientation",
+      "detail": {
+        "score": 0.8
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "four_head_implementations",
+      "detail": {
+        "esm2_650m_linear_ablation": {
+          "parameters": 3842,
+          "swap_max_abs": 0.0
+        },
+        "esm2_650m_nonlinear_no_gate_ablation": {
+          "parameters": 426625,
+          "swap_max_abs": 0.0
+        },
+        "esm2_650m_partner_gated_primary": {
+          "parameters": 492417,
+          "swap_max_abs": 0.0
+        },
+        "lightweight_esm2_150m_linear": {
+          "parameters": 1922,
+          "swap_max_abs": 0.0
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "seeded_xavier_zero_bias_reproducibility",
+      "detail": {
+        "seed": 20260803
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "weighted_P_vs_U_objective",
+      "detail": {
+        "loss": 0.6882616654038429
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "exact_order_payload_and_permutation",
+      "detail": {
+        "order": [
+          0,
+          2,
+          1
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "positive_census_repetition_algebra",
+      "detail": {
+        "ceiling": 120,
+        "ceiling_count": 919,
+        "floor": 119
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "bounded_nonadaptive_matrix",
+      "detail": {
+        "comparisons": 300000000,
+        "runs": 30
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "scheduler_fixed_boundaries",
+      "detail": {
+        "final_fraction": 0.1,
+        "steps": 2445,
+        "warmup": 123
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "development_and_protected_absent",
+      "detail": "no sealed package filename in executable Stage 1 modules",
+      "status": "pass"
+    }
+  ],
+  "code_commit": "3b019ec191479bb26911e1e38f1526e3fe748396",
+  "protocol_configuration_sha256": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+  "schema_version": 1,
+  "status": "pass",
+  "summary": {
+    "fail": 0,
+    "pass": 15,
+    "warning": 0
+  }
+}
