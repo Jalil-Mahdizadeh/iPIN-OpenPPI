@@ -1,0 +1,36 @@
+Bootstrap: localimage
+From: containers/images/ipin-qual-arm64_0.1.0.sif
+
+%files
+    containers/cache/model-wheels/huggingface_hub-0.34.4-py3-none-any.whl /opt/ipin/wheels/
+    containers/cache/model-wheels/tokenizers-0.21.4-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl /opt/ipin/wheels/
+    containers/cache/model-wheels/transformers-4.55.2-py3-none-any.whl /opt/ipin/wheels/
+    containers/locks/ipin-model-arm64_0.1.0.requirements.lock /opt/ipin/requirements.lock
+
+%labels
+    ipin.model.image.title "iPIN-OpenPPI frozen PLM model runtime"
+    ipin.model.image.version "0.1.0"
+    ipin.model.image.created "2026-08-19"
+    ipin.model.image.role "offline-single-GH200-frozen-PLM-embedding-and-pair-head-training"
+    ipin.model.image.parent.sif.sha256 "9259e1953dadc502af8949fe56db1fba56f4e3711ccb7542e7feda94c4718ce5"
+    ipin.model.image.protocol.configuration.sha256 "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5"
+
+%post
+    python -m pip install --no-index --find-links=/opt/ipin/wheels --require-hashes --no-deps -r /opt/ipin/requirements.lock
+    rm -rf /opt/ipin/wheels
+
+%environment
+    export PYTHONNOUSERSITE=1
+    export PYTHONHASHSEED=0
+    export TOKENIZERS_PARALLELISM=false
+    export HF_HUB_OFFLINE=1
+    export TRANSFORMERS_OFFLINE=1
+    export HF_HUB_DISABLE_TELEMETRY=1
+    export HF_HUB_DISABLE_XET=1
+    export CUBLAS_WORKSPACE_CONFIG=:4096:8
+
+%test
+    python -c "import importlib.metadata as m, platform, torch; assert platform.machine() == 'aarch64'; assert torch.__version__ == '2.8.0a0+34c6371d24.nv25.08'; assert m.version('transformers') == '4.55.2'; assert m.version('huggingface-hub') == '0.34.4'; assert m.version('tokenizers') == '0.21.4'; assert m.version('safetensors') == '0.6.2'"
+
+%runscript
+    exec python "$@"

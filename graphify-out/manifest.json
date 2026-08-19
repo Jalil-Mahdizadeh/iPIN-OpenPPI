@@ -805,8 +805,8 @@
     "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
   },
   "README.md": {
-    "mtime": 1787090337.0,
-    "ast_hash": "33bf313a68c6935a4ab604ce6156050e",
+    "mtime": 1787090573.0,
+    "ast_hash": "d2324349f98cb855b24367a1d0dc1dd5",
     "semantic_hash": ""
   },
   "artifacts/validation/lambourne_y2h_audit_v1/attempts/attempt-001-validator-pre-fix/README.md": {
@@ -1140,8 +1140,8 @@
     "semantic_hash": "6e8f50f4dc4b1715e7c430ff98076f28"
   },
   "governance/README.md": {
-    "mtime": 1787090337.0,
-    "ast_hash": "d75fc1eaace0f186e098305e43ef04cf",
+    "mtime": 1787119826.0,
+    "ast_hash": "0769c0c3fe7ac5e5f4df5ad11edff496",
     "semantic_hash": ""
   },
   "governance/START_MANIFEST_v1.yaml": {
@@ -2265,8 +2265,8 @@
     "semantic_hash": ""
   },
   "governance/checkpoints/RESUME-003-post-model-governance-protocol-freeze.md": {
-    "mtime": 1787090337.0,
-    "ast_hash": "fcac03cf4310bd4a74802c7907193505",
+    "mtime": 1787090742.0,
+    "ast_hash": "39fddfc41e408e98629566c996cdb771",
     "semantic_hash": ""
   },
   "governance/decisions/DEC-0027-authorize-model-governance-and-baseline-training-protocol-design.md": {
@@ -2292,6 +2292,46 @@
   "scripts/model/README.md": {
     "mtime": 1787089667.0,
     "ast_hash": "30e6793b2d9a182f0ae44ea05106788b",
+    "semantic_hash": ""
+  },
+  "scripts/model/acquire_frozen_esm2_models_v1.py": {
+    "mtime": 1787120069.0,
+    "ast_hash": "510af804f4e5204154510e2daaa66c82",
+    "semantic_hash": ""
+  },
+  "scripts/platform/build_model_sif_v0_1_0.sh": {
+    "mtime": 1787120069.0,
+    "ast_hash": "2c42ac1b34a8e30d6c84a67279b836cb",
+    "semantic_hash": ""
+  },
+  "scripts/platform/download_model_image_wheels_v0_1_0.sh": {
+    "mtime": 1787120148.0,
+    "ast_hash": "8ba8fb52b8c3234735714018db4f41d3",
+    "semantic_hash": ""
+  },
+  "scripts/platform/qualify_model_runtime_v0_1_0.py": {
+    "mtime": 1787120148.0,
+    "ast_hash": "263f570687bc43c9bcc5c26588609851",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_stage1_model_custody.py": {
+    "mtime": 1787120148.0,
+    "ast_hash": "296885b6051fb8aa7576ba3593668c32",
+    "semantic_hash": ""
+  },
+  "governance/PROJECT_STATUS_v28.md": {
+    "mtime": 1787119775.0,
+    "ast_hash": "25e7f67114bf2b4f9832a581d5a13560",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0029-authorize-stage-1-executable-model-work.md": {
+    "mtime": 1787119826.0,
+    "ast_hash": "0749ec06ed5c97afa96695bcf4009898",
+    "semantic_hash": ""
+  },
+  "governance/gates/gate_status_v28.yaml": {
+    "mtime": 1787119775.0,
+    "ast_hash": "eccf9a6f8491d94d34a68b7cfbecd08f",
     "semantic_hash": ""
   }
 }
