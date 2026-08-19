@@ -1,0 +1,194 @@
+{
+  "artifacts": [
+    {
+      "bytes": 21855259,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/EMBEDDING_MANIFEST.json",
+      "sha256": "bc4ea08691cdd55f393fc6ebb6264c338c70846b82e5a9001c3ac2a57a34d27f"
+    },
+    {
+      "bytes": 68649,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/deterministic_repeat_report.json",
+      "sha256": "0609a9a3f074ac607f1a67642de6dae6a5a2299c9ea799ce5d331ed5a915cf9e"
+    },
+    {
+      "bytes": 43520128,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/pooled_embeddings.f32.npy",
+      "sha256": "4450a0a250e2ef84efcd48f627169b003097110e51b82530ba218f6a599ee7a0"
+    },
+    {
+      "bytes": 435328,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/repeat_embeddings.f32.npy",
+      "sha256": "62b709e47f5ec6410d9a852f75815384146db8c1628ac945a307dba69f7ba055"
+    },
+    {
+      "bytes": 43520128,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/standardized_embeddings.f32.npy",
+      "sha256": "deacaf3c087ca8da7ea5bd5fafe5760dfa53978bb58a145b4733e4d3ca949110"
+    },
+    {
+      "bytes": 111630,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/training_normalization.npz",
+      "sha256": "0638479d988ab37f63e8e034d372e4d7023f703140e46644b81c97390b98b72c"
+    },
+    {
+      "bytes": 21872257,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/EMBEDDING_MANIFEST.json",
+      "sha256": "878bd90d60dcfcf546479c94255e673ebd18f10756179cfcafac680028a53902"
+    },
+    {
+      "bytes": 68652,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/deterministic_repeat_report.json",
+      "sha256": "ffaecd7703db8d17726d0f0aead8bd9d981ff63265bc368ca0de73b13d9a5344"
+    },
+    {
+      "bytes": 87040128,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/pooled_embeddings.f32.npy",
+      "sha256": "54a216fcfda298ebdc250d370fbab4aba1dc440f8735dafb04c49db3231ffaf0"
+    },
+    {
+      "bytes": 870528,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/repeat_embeddings.f32.npy",
+      "sha256": "2e80986cb3209a81d9ba0e0191b60b595ecc35ac3880c2921669c9027a13aece"
+    },
+    {
+      "bytes": 87040128,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/standardized_embeddings.f32.npy",
+      "sha256": "d54d9d943088a9b0c301242b1c717c668c6561721496ea071cd5c512e5e3475c"
+    },
+    {
+      "bytes": 126990,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/training_normalization.npz",
+      "sha256": "1e1b8dde9441d56a5e98da089963e40d420657b38ec8b622695681e7cca7db08"
+    },
+    {
+      "bytes": 6739,
+      "path": "artifacts/validation/model_execution/stage1_model_execution_v1/MODEL_CUSTODY_MANIFEST.json",
+      "sha256": "a32399a1bdff8b56ff15509ec922e58f78a0e0bf6b860093db2f4952f48bbffe"
+    },
+    {
+      "bytes": 1533,
+      "path": "artifacts/validation/model_execution/stage1_model_execution_v1/MODEL_RUNTIME_QUALIFICATION_REPORT.json",
+      "sha256": "a96ceb38d5beca8e3c3d640f99341111ed477e9a39e61494e42555c3d17020ec"
+    },
+    {
+      "bytes": 6178533,
+      "path": "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet",
+      "sha256": "4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e"
+    },
+    {
+      "bytes": 851035,
+      "path": "data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet",
+      "sha256": "66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67"
+    }
+  ],
+  "candidates": [
+    {
+      "artifacts": [
+        {
+          "bytes": 21855259,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/EMBEDDING_MANIFEST.json",
+          "sha256": "bc4ea08691cdd55f393fc6ebb6264c338c70846b82e5a9001c3ac2a57a34d27f"
+        },
+        {
+          "bytes": 43520128,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/pooled_embeddings.f32.npy",
+          "sha256": "4450a0a250e2ef84efcd48f627169b003097110e51b82530ba218f6a599ee7a0"
+        },
+        {
+          "bytes": 111630,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/training_normalization.npz",
+          "sha256": "0638479d988ab37f63e8e034d372e4d7023f703140e46644b81c97390b98b72c"
+        },
+        {
+          "bytes": 43520128,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/standardized_embeddings.f32.npy",
+          "sha256": "deacaf3c087ca8da7ea5bd5fafe5760dfa53978bb58a145b4733e4d3ca949110"
+        },
+        {
+          "bytes": 68649,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/deterministic_repeat_report.json",
+          "sha256": "0609a9a3f074ac607f1a67642de6dae6a5a2299c9ea799ce5d331ed5a915cf9e"
+        },
+        {
+          "bytes": 435328,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/repeat_embeddings.f32.npy",
+          "sha256": "62b709e47f5ec6410d9a852f75815384146db8c1628ac945a307dba69f7ba055"
+        }
+      ],
+      "candidate_id": "esm2_150m",
+      "checkpoint_sha256": "c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566",
+      "code_commit": "0ab3740b1ce3ddb9f78fdb4ddd07981dff5a9c9c",
+      "embedding_bytes": 109511122,
+      "gpu_hours": 0.05902137911278664,
+      "manifest_sha256": "bc4ea08691cdd55f393fc6ebb6264c338c70846b82e5a9001c3ac2a57a34d27f",
+      "repository_revision": "a695f6045e2e32885fa60af20c13cb35398ce30c",
+      "tokenizer_file_hashes": {
+        "config.json": "e512f68ec444d99477703a9806639ca83da3dbc19f6c5fe428d6e5b7460972dc",
+        "special_tokens_map.json": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+        "tokenizer_config.json": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad",
+        "vocab.txt": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+      },
+      "vector_count": 17000
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 21872257,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/EMBEDDING_MANIFEST.json",
+          "sha256": "878bd90d60dcfcf546479c94255e673ebd18f10756179cfcafac680028a53902"
+        },
+        {
+          "bytes": 87040128,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/pooled_embeddings.f32.npy",
+          "sha256": "54a216fcfda298ebdc250d370fbab4aba1dc440f8735dafb04c49db3231ffaf0"
+        },
+        {
+          "bytes": 126990,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/training_normalization.npz",
+          "sha256": "1e1b8dde9441d56a5e98da089963e40d420657b38ec8b622695681e7cca7db08"
+        },
+        {
+          "bytes": 87040128,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/standardized_embeddings.f32.npy",
+          "sha256": "d54d9d943088a9b0c301242b1c717c668c6561721496ea071cd5c512e5e3475c"
+        },
+        {
+          "bytes": 68652,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/deterministic_repeat_report.json",
+          "sha256": "ffaecd7703db8d17726d0f0aead8bd9d981ff63265bc368ca0de73b13d9a5344"
+        },
+        {
+          "bytes": 870528,
+          "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_650m/repeat_embeddings.f32.npy",
+          "sha256": "2e80986cb3209a81d9ba0e0191b60b595ecc35ac3880c2921669c9027a13aece"
+        }
+      ],
+      "candidate_id": "esm2_650m",
+      "checkpoint_sha256": "a08adabb949fa67ad3c14b509d04fd60368b35007b0095e3358f81200c4f4db0",
+      "code_commit": "0ab3740b1ce3ddb9f78fdb4ddd07981dff5a9c9c",
+      "embedding_bytes": 197018683,
+      "gpu_hours": 0.15302708953779073,
+      "manifest_sha256": "878bd90d60dcfcf546479c94255e673ebd18f10756179cfcafac680028a53902",
+      "repository_revision": "08e4846e537177426273712802403f7ba8261b6c",
+      "tokenizer_file_hashes": {
+        "config.json": "539095c22efc52a09d6147074ba4ca119f76a890df5901213b2b55f7d2f96b2b",
+        "special_tokens_map.json": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+        "tokenizer_config.json": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad",
+        "vocab.txt": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+      },
+      "vector_count": 17000
+    }
+  ],
+  "container_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+  "endpoint_order_sha256": "c0374aee11a6aad6f25974c36cf789411ddd6e71186e8ff4c04223ab0c168d48",
+  "generated_by_code_commit": "0ab3740b1ce3ddb9f78fdb4ddd07981dff5a9c9c",
+  "protocol_configuration_sha256": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+  "protocol_id": "model_governance_and_baseline_training_protocol_v1",
+  "schema_version": 1,
+  "summary": {
+    "candidate_count": 2,
+    "embedding_bytes": 306529805,
+    "gpu_hours": 0.21204846865057736,
+    "vector_count": 34000
+  }
+}

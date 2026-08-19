@@ -1,0 +1,203 @@
+{
+  "checks": [
+    {
+      "check_id": "endpoint_and_normalization_population",
+      "detail": {
+        "endpoints": 17000,
+        "training_endpoints": 11900
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_model_runtime_strategy_binding",
+      "detail": {
+        "checkpoint_sha256": "c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566",
+        "code_commit": "0ab3740b1ce3ddb9f78fdb4ddd07981dff5a9c9c",
+        "container_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+        "repository_revision": "a695f6045e2e32885fa60af20c13cb35398ce30c"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_matrix_shape_dtype_finiteness",
+      "detail": {
+        "dtype": "float32",
+        "shape": [
+          17000,
+          640
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_one_complete_extraction_and_file_set",
+      "detail": {
+        "full_layout": {
+          "batches": 2690,
+          "residue_window_tokens": 10542687,
+          "windows": 19143
+        },
+        "output_files": [
+          "EMBEDDING_MANIFEST.json",
+          "deterministic_repeat_report.json",
+          "pooled_embeddings.f32.npy",
+          "repeat_embeddings.f32.npy",
+          "standardized_embeddings.f32.npy",
+          "training_normalization.npz"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_vector_manifest_complete_unique_and_hashed",
+      "detail": {
+        "cache_keys": 17000,
+        "vectors": 17000
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_training_only_normalization",
+      "detail": {
+        "population": 11900,
+        "standard_deviation_minimum": 0.04425176088424165
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_standardized_matrix_exact",
+      "detail": {
+        "dtype": "float32",
+        "maximum_absolute_difference": 0.0,
+        "shape": [
+          17000,
+          640
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_150m_bottom_hash_repeat_recomputed",
+      "detail": {
+        "maximum_absolute_difference": 0.0,
+        "repeat_count": 170,
+        "repeat_layout": {
+          "batches": 28,
+          "residue_window_tokens": 109487,
+          "windows": 194
+        },
+        "tolerance": 1e-06
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_model_runtime_strategy_binding",
+      "detail": {
+        "checkpoint_sha256": "a08adabb949fa67ad3c14b509d04fd60368b35007b0095e3358f81200c4f4db0",
+        "code_commit": "0ab3740b1ce3ddb9f78fdb4ddd07981dff5a9c9c",
+        "container_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+        "repository_revision": "08e4846e537177426273712802403f7ba8261b6c"
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_matrix_shape_dtype_finiteness",
+      "detail": {
+        "dtype": "float32",
+        "shape": [
+          17000,
+          1280
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_one_complete_extraction_and_file_set",
+      "detail": {
+        "full_layout": {
+          "batches": 2690,
+          "residue_window_tokens": 10542687,
+          "windows": 19143
+        },
+        "output_files": [
+          "EMBEDDING_MANIFEST.json",
+          "deterministic_repeat_report.json",
+          "pooled_embeddings.f32.npy",
+          "repeat_embeddings.f32.npy",
+          "standardized_embeddings.f32.npy",
+          "training_normalization.npz"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_vector_manifest_complete_unique_and_hashed",
+      "detail": {
+        "cache_keys": 17000,
+        "vectors": 17000
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_training_only_normalization",
+      "detail": {
+        "population": 11900,
+        "standard_deviation_minimum": 0.036234036150700186
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_standardized_matrix_exact",
+      "detail": {
+        "dtype": "float32",
+        "maximum_absolute_difference": 0.0,
+        "shape": [
+          17000,
+          1280
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "esm2_650m_bottom_hash_repeat_recomputed",
+      "detail": {
+        "maximum_absolute_difference": 0.0,
+        "repeat_count": 170,
+        "repeat_layout": {
+          "batches": 29,
+          "residue_window_tokens": 114421,
+          "windows": 199
+        },
+        "tolerance": 1e-06
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "public_label_blind_artifact_boundary",
+      "detail": {
+        "registered_artifacts": 16
+      },
+      "status": "pass"
+    },
+    {
+      "check_id": "embedding_compute_and_storage_budget",
+      "detail": {
+        "embedding_bytes": 306529805,
+        "gpu_hours": 0.21204846865057736,
+        "storage_ceiling_bytes": 107374182400
+      },
+      "status": "pass"
+    }
+  ],
+  "code_commit": "0ab3740b1ce3ddb9f78fdb4ddd07981dff5a9c9c",
+  "embedding_registry_path": "artifacts/validation/model_execution/stage1_model_execution_v1/EMBEDDING_ARTIFACT_REGISTRY.json",
+  "embedding_registry_sha256": "429e9b3c40827ea5a7513b3599a95d201cdc5eea1e0f99f8c384050cbfcbaed1",
+  "protocol_configuration_sha256": "3b001efa026a57d2937b041c26217ff87e3fdcda3ca1553d851bf347330333d5",
+  "schema_version": 1,
+  "status": "pass",
+  "summary": {
+    "fail": 0,
+    "pass": 17,
+    "warning": 0
+  }
+}
