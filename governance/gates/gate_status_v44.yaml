@@ -1,0 +1,21 @@
+schema_version: 44
+supersedes: governance/gates/gate_status_v43.yaml
+updated_date: "2026-09-10"
+programme_state: development_embedding_identity_correction_authorized
+authority: governance/decisions/DEC-0045-authorize-development-embedding-identity-correction.md
+gates:
+  prior_development_interpretation:
+    status: invalidated_by_confirmed_identity_mismatch
+    issue: governance/issues/ISSUE-0014-development-embedding-identity-mismatch.md
+  correction_tests:
+    status: pending
+  public_training_identity_and_score_agreement:
+    status: pending
+  corrected_development_scoring_and_metrics:
+    status: pending
+  independent_corrected_validation:
+    status: pending
+  separate_local_diagnostic:
+    status: unchanged_no_incremental_coarse_local_signal
+protected_evaluation_authorized: false
+training_or_architecture_change_authorized: false

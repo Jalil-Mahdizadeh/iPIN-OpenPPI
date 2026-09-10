@@ -22,6 +22,7 @@ from torch.nn import functional as F
 
 from ipin_openppi.stage1.baselines import kmer3_csr
 
+from .embedding_identity import align_embedding_matrix
 from .release import sha256_file
 from .semantics import DETERMINISTIC_SCORERS, degree_pair_stratum, validate_scorer_census
 
@@ -427,6 +428,7 @@ def score_cell(
     neighbor_max: np.ndarray,
     training_registry: Mapping[str, Any],
     embedding_paths: Mapping[str, Path],
+    embedding_manifests: Mapping[str, Mapping[str, Any]],
 ) -> dict[str, Any]:
     if output_root.exists():
         raise RuntimeError(f"cell score output already exists: {output_root}")
@@ -446,6 +448,7 @@ def score_cell(
     )
     score_matrix[:, : len(DETERMINISTIC_SCORERS)] = deterministic
     embedding_cache: dict[str, torch.Tensor] = {}
+    embedding_identity: dict[str, dict[str, Any]] = {}
     run_column: dict[str, int] = {}
     for column, run in enumerate(runs, start=len(DETERMINISTIC_SCORERS)):
         checkpoint_record = run["selected_checkpoint"]
@@ -463,7 +466,15 @@ def score_cell(
             expected_shape = (17_000, 640 if candidate_id == "esm2_150m" else 1_280)
             if matrix.dtype != np.float32 or matrix.shape != expected_shape:
                 raise RuntimeError("standardized embedding matrix identity drift")
-            embedding_cache[candidate_id] = torch.from_numpy(np.array(matrix, copy=True)).cuda()
+            aligned, identity = align_embedding_matrix(
+                matrix,
+                embedding_manifests[candidate_id],
+                universe.sequence_sha256,
+                candidate_id=candidate_id,
+                sequence_lengths=universe.lengths,
+            )
+            embedding_cache[candidate_id] = torch.from_numpy(aligned).cuda()
+            embedding_identity[candidate_id] = identity
         checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
         if int(checkpoint["pass_index"]) != 5 or int(checkpoint["global_step"]) != 2_445:
             raise RuntimeError("selected checkpoint cursor drift")
@@ -507,6 +518,7 @@ def score_cell(
         "scorer_count": len(scorer_ids),
         "score_shape": [rows.num_rows, len(scorer_ids)],
         "score_dtype": "float64",
+        "embedding_identity": embedding_identity,
         "rows": {"path": "rows.parquet", "bytes": rows_path.stat().st_size, "sha256": sha256_file(rows_path)},
         "scores": {"path": "scores.f64.npy", "bytes": score_path.stat().st_size, "sha256": sha256_file(score_path)},
         "scorers": {"path": "SCORERS.json", "bytes": scorer_path.stat().st_size, "sha256": sha256_file(scorer_path)},

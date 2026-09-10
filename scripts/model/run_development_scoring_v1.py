@@ -64,6 +64,12 @@ def main() -> None:
     config_path = (root / args.execution_config).resolve(strict=True)
     config = _load(config_path)
     configure_scoring_runtime()
+    if "identity_correction" in config:
+        preflight = json.loads((root / config["identity_correction"]["preflight_report"]).read_text())
+        if preflight["status"] != "pass" or preflight["execution_config_sha256"] != sha256_file(config_path):
+            raise RuntimeError("passing identity correction preflight required")
+        for relative, expected in preflight["source_hashes"].items():
+            _verified(root, relative, expected)
     inputs = config["frozen_inputs"]
     endpoint_path = _verified(root, inputs["endpoints"], inputs["endpoints_sha256"])
     partition_path = _verified(root, inputs["partitions"], inputs["partitions_sha256"])
@@ -93,6 +99,7 @@ def main() -> None:
     embedding_registry = json.loads(embedding_registry_path.read_text(encoding="utf-8"))
     artifact_by_path = {item["path"]: item for item in embedding_registry["artifacts"]}
     embedding_paths = {}
+    embedding_manifests = {}
     for candidate_id in ("esm2_150m", "esm2_650m"):
         relative = (
             "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/"
@@ -103,6 +110,16 @@ def main() -> None:
         if path.stat().st_size != int(record["bytes"]):
             raise RuntimeError("registered embedding byte count drift")
         embedding_paths[candidate_id] = path
+        manifest_relative = str(Path(relative).with_name("EMBEDDING_MANIFEST.json"))
+        manifest_record = artifact_by_path[manifest_relative]
+        manifest_path = _verified(root, manifest_relative, manifest_record["sha256"])
+        embedding_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        if (
+            embedding_manifest["normalization"]["standardized_matrix_path"] != relative
+            or embedding_manifest["normalization"]["standardized_matrix_sha256"] != record["sha256"]
+        ):
+            raise RuntimeError("embedding identity manifest is not bound to the frozen matrix")
+        embedding_manifests[candidate_id] = embedding_manifest
 
     output_root = root / config["development_release"]["evaluation_root"]
     if output_root.exists() and not args.resume:
@@ -140,6 +157,7 @@ def main() -> None:
                 neighbor_max=neighbor_max,
                 training_registry=training_registry,
                 embedding_paths=embedding_paths,
+                embedding_manifests=embedding_manifests,
             )
         )
     elapsed = time.monotonic() - started
@@ -163,6 +181,9 @@ def main() -> None:
         "protected_candidates_accessed": False,
         "protected_truth_accessed": False,
     }
+    if "identity_correction" in config:
+        run_manifest["identity_preflight_sha256"] = sha256_file(root / config["identity_correction"]["preflight_report"])
+        run_manifest["source_hashes"] = preflight["source_hashes"]
     _atomic_json(output_root / "SCORING_RUN_MANIFEST.json", run_manifest)
     print(f"development_scoring: PASS cells={len(manifests)} elapsed_seconds={elapsed:.3f}")
 

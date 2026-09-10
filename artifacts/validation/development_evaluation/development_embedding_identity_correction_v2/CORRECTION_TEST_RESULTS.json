@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-10",
+  "status": "pass",
+  "suite": "tests/unit",
+  "passed": 314,
+  "failed": 0,
+  "elapsed_seconds": 7.71,
+  "container": "containers/images/ipin-data-arm64_0.1.2.sif",
+  "command": "apptainer exec --cleanenv --containall --bind $PWD:$PWD --pwd $PWD containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 python -m pytest -q tests/unit",
+  "identity_regression_scope": [
+    "all_four_model_families",
+    "independent_storage_and_endpoint_order_permutations",
+    "manifest_list_order_independent_of_row_index",
+    "wrong_positional_lookup_changes_predictions",
+    "duplicate_missing_unknown_and_invalid_rows_rejected",
+    "sequence_length_and_candidate_identity_checked"
+  ],
+  "historical_validator_preserved": true,
+  "historical_degree_fixture_note": "The unit fixture now pins its current source bytes to isolate degree semantics; a separate regression confirms hash drift rejection. Historical production validator hashes remain unchanged."
+}

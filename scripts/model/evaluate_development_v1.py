@@ -86,6 +86,7 @@ def main() -> None:
     bootstrap_by_cell = {}
     cached = {}
     for cell_id in DEVELOPMENT_CELLS:
+        print(f"evaluating {cell_id}", flush=True)
         cell_root = private_root / "scores" / cell_id.replace(":", "__")
         rows, scores, scorer_ids, _ = _read_cell(cell_root)
         cached[cell_id] = (rows, scores, scorer_ids)
@@ -105,6 +106,7 @@ def main() -> None:
                 output_root=bootstrap_root,
             )
             bootstrap_by_cell[cell_id] = _load_bootstrap(bootstrap_root)
+        print(f"evaluation cell complete: {cell_id}", flush=True)
 
     public_training_u = pq.read_table(
         root / config["frozen_inputs"]["training_unlabeled"], columns=["pair_id"]

@@ -1,0 +1,171 @@
+schema_version: 1
+execution_id: development_embedding_identity_correction_v2
+status: authorized_identity_preflight_required
+scientific_protocol: model_governance_and_baseline_training_protocol_v1
+
+authority:
+  decision: governance/decisions/DEC-0045-authorize-development-embedding-identity-correction.md
+  decision_sha256: 7eef061c25bff58cdd0b936f4e7a339570d65fe08e2da93f5fdd0f4120710c6b
+  authority_source: explicit_user_instruction_2026_09_10
+
+runtime:
+  container: containers/images/ipin-model-arm64_0.1.0.sif
+  container_sha256: c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91
+  hardware: one_NVIDIA_GH200_120GB
+  maximum_gpu_count: 1
+  maximum_gpu_hours: 30
+  maximum_new_governed_storage_gib: 100
+  network: offline
+  encoder_inference: prohibited_use_frozen_embeddings
+  training_or_optimizer_step: prohibited
+
+frozen_inputs:
+  training_registry: artifacts/validation/model_execution/stage1_model_execution_v1/TRAINING_ARTIFACT_REGISTRY.json
+  training_registry_sha256: 11d7a92d6dd42ca78434783844cbba2ffb05ac789b76eca4399528d0d19ab318
+  independent_training_validation: artifacts/validation/model_execution/stage1_model_execution_v1/INDEPENDENT_TRAINING_ARTIFACT_VALIDATION_REPORT.json
+  independent_training_validation_sha256: b7178f659bd03b0b779d0de015cdb8b33af41e4ee7729fb2cb8d461a0e727a88
+  package_manifest: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/PACKAGE_MANIFEST.json
+  package_manifest_sha256: f0f850daf795481c8a1ae0ba64f6d050ae757f2738497ac0517003c6822015f5
+  endpoints: data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet
+  endpoints_sha256: 4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e
+  partitions: data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet
+  partitions_sha256: 66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67
+  training_positive: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet
+  training_positive_sha256: 4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499
+  training_unlabeled: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet
+  training_unlabeled_sha256: d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7
+  embedding_registry: artifacts/validation/model_execution/stage1_model_execution_v1/EMBEDDING_ARTIFACT_REGISTRY.json
+  embedding_registry_sha256: 429e9b3c40827ea5a7513b3599a95d201cdc5eea1e0f99f8c384050cbfcbaed1
+
+development_release:
+  ciphertext: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/sealed/development_release.cms
+  ciphertext_sha256: bbbd07472da621a34f45e95ab4b51c799fa0fc967d94de2aa3578e0cda0c1d41
+  plaintext_archive_sha256: c8d1520d5dbc5b435a1ed5149cbd2f9a731fb3cee10cd651dd0a19b475741122
+  certificate: governance/keys/pair_level_pu_r_benchmark_artifacts_v1/development_release_certificate.pem
+  certificate_sha256: 99e224e028db6629514f8b6b1d9784ca4ed7599f71ad88d4e276048c8f8341d9
+  private_key: .private/pair_level_pu_r_benchmark_artifacts_v1/development_release_private.pem
+  release_root: .private/development_release_and_evaluation_v1/release
+  evaluation_root: .private/development_embedding_identity_correction_v2/evaluation
+  production_audit_required_before_key_access: true
+  independent_validation_required_before_key_access: true
+  exact_decryption_count: 1
+
+protected_boundary:
+  protected_candidates_ciphertext: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/sealed/protected_candidates.cms
+  protected_candidates_ciphertext_sha256: 5ac1c30dbda85f6274f60febb2f4b01feda34c43bf87f4bbb690abe6c639ff63
+  protected_truth_ciphertext: data/canonical/pair_level_pu_r_benchmark_artifacts_v1/sealed/protected_truth.cms
+  protected_truth_ciphertext_sha256: 69824547667861694aff88a0f6e43526d4f3aa27f930d4a4ff44c924d29aa1e9
+  private_key_resolution_or_access: prohibited
+  decryption: prohibited
+  candidate_or_truth_access: prohibited
+
+scorers:
+  deterministic:
+    - deterministic_hash
+    - training_degree_sum
+    - preferential_attachment
+    - component_degree_mass_product
+    - training_common_neighbors
+    - sequence_length_sum
+    - sequence_length_ratio
+    - within_pair_3mer_cosine
+    - exact_training_interolog_3mer
+  deterministic_count: 9
+  selected_checkpoint_count: 30
+  ensemble_count: 10
+  ensemble_score: arithmetic_mean_of_three_frozen_seed_scores
+  additional_scorer: prohibited
+  score_dtype: float64
+  exact_swap_symmetry_absolute_tolerance: 0.000001
+
+evaluation:
+  cells:
+    - C3_development
+    - source_exclusive:HI-II-14:C3_development
+    - source_exclusive:HuRI:C3_development
+    - C2_development
+    - source_exclusive:HI-II-14:C2_development
+    - source_exclusive:HuRI:C2_development
+    - C1_development
+    - source_exclusive:HI-II-14:C1_development
+    - source_exclusive:HuRI:C1_development
+  primary_cells: [C3_development, C2_development, C1_development]
+  metric: horvitz_thompson_positive_vs_U_pairwise_concordance
+  exact_tie_credit: 0.5
+  cells_must_remain_separate: true
+  pooled_headline_metric: prohibited
+  preserve_original_rational_U_weights: true
+  bootstrap:
+    method: two_endpoint_component_pigeonhole_bootstrap
+    dependence_unit: frozen_local_domain_union_30_component
+    replicates: 2000
+    base_seed: "20260803"
+    cell_seed_payload: "sha256:{base_seed}:bootstrap:{cell_id}:first_8_bytes_unsigned_big_endian"
+    generator: PCG64DXSM
+    component_order: component_id_lexicographic_ascending
+    participating_component_draw: draw_same_count_with_replacement
+    distinct_component_pair_multiplier: product
+    same_component_pair_multiplier: one_component_multiplicity
+    interval: percentile_95
+    paired_draws: required
+  seed_stability_maximum_range: 0.02
+  selection_quantization: decimal_0.001_ROUND_HALF_UP
+  selection_order: [C3_development, C2_development, C1_development, lower_complexity, candidate_id]
+  complexity_order:
+    - lightweight_esm2_150m_linear
+    - esm2_650m_linear_ablation
+    - esm2_650m_nonlinear_no_gate_ablation
+    - esm2_650m_partner_gated_primary
+  individual_seed_selection: prohibited
+  source_or_novel_U_selection: prohibited
+
+degree_and_hub:
+  degree_bins: ["0", "1", "2", "3-4", "5-9", "10-19", "20-49", "50-99", "100+"]
+  pair_stratum: sorted_pair_of_endpoint_training_degree_bins
+  hub_endpoint_counts: {top_1_percent: 119, top_5_percent: 595, top_10_percent: 1190}
+  hub_minimum_degrees: {top_1_percent: 41, top_5_percent: 14, top_10_percent: 7}
+  hub_rank: training_degree_descending_then_sequence_sha256_ascending
+  quantitative_floor: {positive_pairs: 100, participating_components: 10}
+
+c1_novel_U:
+  cell: C1_development
+  positive_rows: unchanged_complete_cell
+  keep_U_if_pair_id_absent_from_public_training_U: true
+  original_rows_and_weights: retained
+  resampling_or_selection_use: prohibited
+
+complexity_thresholds:
+  partner_vs_strongest_simple_sequence_C3: 0.02
+  partner_vs_650m_linear_C3: 0.01
+  partner_vs_matched_no_gate_C3: 0.005
+  paired_interval_must_exclude_zero: true
+  supported_source_positive_direction_required: true
+  outside_top_10_percent_hub_gain_required: true
+  all_three_seeds_stable_required: true
+
+outputs:
+  validation_root: artifacts/validation/development_evaluation/development_embedding_identity_correction_v2
+  public_results_root: artifacts/results/development_evaluation/development_embedding_identity_correction_v2
+  private_score_rows_only: true
+  public_pair_identity: prohibited
+  production_registry: artifacts/validation/development_evaluation/development_embedding_identity_correction_v2/DEVELOPMENT_EVALUATION_REGISTRY.json
+
+  required_execution_logs: [SCORING_CONSOLE.log, EVALUATION_CONSOLE.log]
+
+identity_correction:
+  issue: governance/issues/ISSUE-0014-development-embedding-identity-mismatch.md
+  parent_config: configs/development_release_and_evaluation_execution_v1.yaml
+  parent_config_sha256: d74c683bbeb57e8b455efc789f487ca20df7a128ab0ec27b317dc602eda3e57d
+  preflight_report: artifacts/validation/development_evaluation/development_embedding_identity_correction_v2/IDENTITY_PREFLIGHT_REPORT.json
+  further_decryption: prohibited
+  protected_evaluation_authorized: false
+  source_paths:
+    - src/ipin_openppi/development_evaluation/embedding_identity.py
+    - src/ipin_openppi/development_evaluation/scoring.py
+    - src/ipin_openppi/development_evaluation/evaluation.py
+    - src/ipin_openppi/development_evaluation/semantics.py
+    - src/ipin_openppi/development_evaluation/completed_audit.py
+    - scripts/model/run_development_scoring_v1.py
+    - scripts/model/evaluate_development_v1.py
+    - scripts/model/audit_development_completed_v1.py
+    - scripts/model/audit_development_embedding_identity_preflight_v2.py

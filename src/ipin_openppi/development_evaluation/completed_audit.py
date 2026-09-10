@@ -116,6 +116,7 @@ def run_completed_audit(
     project_root: Path,
     config: Mapping[str, Any],
     production_source_commit: str,
+    config_path: Path | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     checks: list[dict[str, Any]] = []
     private_root = project_root / str(config["development_release"]["evaluation_root"])
@@ -418,9 +419,9 @@ def run_completed_audit(
         checks,
         "selection_complexity_seed_and_kill_trace_exact_recomputation",
         disposition == public_disposition
-        and disposition["development_stage_disposition"]
-        == "stop_complex_model_claim_and_stop_before_protected_evaluation"
-        and disposition["kill_trace"]["stop_before_protected_evaluation"] is True,
+        and disposition["development_stage_disposition"] == result_manifest["development_stage_disposition"]
+        and disposition["kill_trace"]["stop_before_protected_evaluation"]
+        == result_manifest["stop_before_protected_evaluation"],
         {
             "selected_candidate": disposition["selection_trace"]["selected_candidate_id"],
             "disposition": disposition["development_stage_disposition"],
@@ -472,18 +473,18 @@ def run_completed_audit(
     )
 
     log_records = []
-    for name in (
-        "SCORING_CONSOLE.log",
-        "SCORING_RESUME_CONSOLE.log",
-        "EVALUATION_CONSOLE.log",
-    ):
+    required_logs = config["outputs"].get(
+        "required_execution_logs",
+        ["SCORING_CONSOLE.log", "SCORING_RESUME_CONSOLE.log", "EVALUATION_CONSOLE.log"],
+    )
+    for name in required_logs:
         path = private_root.parent / name
         if path.is_file() and not path.is_symlink():
             log_records.append(_artifact_record(path, project_root))
     _check(
         checks,
         "private_execution_logs_and_reproducibility_flags_registered",
-        len(log_records) == 3
+        len(log_records) == len(required_logs)
         and result_manifest["training_or_checkpoint_change"] is False
         and result_manifest["protected_candidates_accessed"] is False
         and result_manifest["protected_truth_accessed"] is False,
@@ -497,7 +498,7 @@ def run_completed_audit(
         "status": "pass" if not failures else "fail",
         "production_audit_source_commit": production_source_commit,
         "execution_config_sha256": sha256_file(
-            project_root / "configs/development_release_and_evaluation_execution_v1.yaml"
+            config_path or project_root / "configs/development_release_and_evaluation_execution_v1.yaml"
         ),
         "training_registry_sha256": sha256_file(training_registry_path),
         "scoring_run_manifest": _artifact_record(scoring_manifest_path, project_root),
@@ -511,7 +512,8 @@ def run_completed_audit(
         "selected_checkpoint_count": 30,
         "ensemble_count": 10,
         "development_stage_disposition": disposition["development_stage_disposition"],
-        "stop_before_protected_evaluation": True,
+        "stop_before_protected_evaluation": disposition["kill_trace"]["stop_before_protected_evaluation"],
+        "protected_evaluation_authorized": False,
         "training_or_checkpoint_change": False,
         "development_decryption_repeated": False,
         "protected_candidates_truth_or_private_key_accessed": False,
@@ -529,7 +531,8 @@ def run_completed_audit(
         },
         "checks": checks,
         "development_stage_disposition": disposition["development_stage_disposition"],
-        "stop_before_protected_evaluation": True,
+        "stop_before_protected_evaluation": disposition["kill_trace"]["stop_before_protected_evaluation"],
+        "protected_evaluation_authorized": False,
         "development_private_key_resolved_or_accessed": False,
         "protected_private_key_resolved_or_accessed": False,
         "protected_candidates_or_truth_accessed": False,
@@ -552,6 +555,7 @@ def write_completed_evidence(
         project_root=project_root,
         config=config,
         production_source_commit=production_source_commit,
+        config_path=config_path,
     )
     _atomic_json(registry_path, registry)
     report = dict(report)
