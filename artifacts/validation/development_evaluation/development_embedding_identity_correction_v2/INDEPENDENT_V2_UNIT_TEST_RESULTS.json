@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "scope": "complete tests/unit suite including independent v2 identity and unchanged scientific-formula regression tests",
+  "container": "containers/images/ipin-data-arm64_0.1.2.sif",
+  "command": "apptainer exec --cleanenv --containall --bind $PWD:$PWD --pwd $PWD containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=src OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 python -m pytest -q tests/unit",
+  "passed": 329,
+  "failed": 0,
+  "elapsed_seconds": 11.50,
+  "training_or_checkpoint_change": false,
+  "protected_candidates_or_truth_accessed": false
+}
