@@ -1,0 +1,53 @@
+schema_version: 45
+supersedes: governance/gates/gate_status_v44.yaml
+updated_date: "2026-09-10"
+programme_state: development_embedding_identity_correction_complete_complex_claim_stopped
+authority: governance/decisions/DEC-0045-authorize-development-embedding-identity-correction.md
+gates:
+  prior_development_interpretation:
+    status: invalidated_by_confirmed_identity_mismatch_original_evidence_preserved
+    issue: governance/issues/ISSUE-0014-development-embedding-identity-mismatch.md
+  correction_tests:
+    status: pass
+    passed: 329
+    failed: 0
+  public_training_identity_and_score_agreement:
+    status: pass
+    encoders: 2
+    embedding_rows_each: 17000
+    mismatched_original_positions_each: 16999
+    public_training_pairs_checked: 2016799
+    frozen_checkpoints_checked: 30
+  corrected_development_scoring_and_metrics:
+    status: pass
+    cells: 9
+    rows: 9026108
+    scorers: 49
+    checkpoints: 30
+    ensembles: 10
+    original_scientific_rules_unchanged: true
+    original_rows_weights_and_bootstrap_draws_unchanged: true
+    production_audit_checks_passed: 9
+  independent_corrected_validation:
+    status: pass
+    checks_passed: 17
+    checks_failed: 0
+    learned_score_values_recomputed: 270783240
+    maximum_absolute_score_difference: 0.0
+    report_sha256: 3908652a7cd7e595197fca2ad19d74c06c9f77b66cf716b1cddd83b8630766a9
+  separate_local_diagnostic:
+    status: unchanged_no_incremental_coarse_local_signal
+scientific_result:
+  selected_candidate: lightweight_esm2_150m_linear__linear_lr3e-4
+  selected_C3_concordance: 0.784142246349548
+  selected_C3_component_bootstrap_95: [0.7428201383689814, 0.8527162689983394]
+  best_complex_C3_candidate: esm2_650m_partner_gated_primary__nonlinear_no_dropout
+  best_complex_C3_concordance: 0.7595539108084669
+  partner_gate_retained: false
+  disposition: stop_complex_model_claim_and_stop_before_protected_evaluation
+  scientific_stop_before_protected_evaluation: true
+protected_evaluation_authorized: false
+training_or_architecture_change_authorized: false
+protected_ciphertext_hashes_unchanged: true
+development_decryption_repeated: false
+external_expert_review_implied: false

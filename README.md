@@ -4,6 +4,27 @@ Evidence-aware, sequence-based prioritization of direct human heteromeric protei
 
 ## Current status
 
+As of 2026-09-10, the development embedding-identity correction authorized by
+[DEC-0045](governance/decisions/DEC-0045-authorize-development-embedding-identity-correction.md)
+is complete. The original learned-model evaluation indexed almost every
+protein's embedding incorrectly. Corrected reevaluation of all frozen models
+passed 329 unit tests, nine production audit checks and 17 standalone
+independent validation checks.
+
+The selected simple ESM-2 150M model's C3 positive-versus-unlabeled concordance
+is **0.784**, versus the invalid original **0.492**. The best C3 partner-gated
+model reaches **0.760** and still fails the original complexity gates.
+The project therefore has development ranking signal, but no demonstrated
+benefit for its proposed gated architecture. Protected evaluation remains
+unauthorized and sealed; this is not a calibrated probability-of-binding claim.
+
+See the [findings and corrected results](docs/reports/m1/M1_Research_Reassessment_and_Embedding_Identity_Findings_2026-09-10.md),
+[project status v45](governance/PROJECT_STATUS_v45.md), and
+[gate ledger v45](governance/gates/gate_status_v45.yaml).
+Original v1 evaluation artifacts remain preserved as incident evidence.
+
+## Historical pre-model checkpoint (v27)
+
 Arrhenius/Apptainer qualification, primary-source acquisition, evidence staging,
 source reconciliation, systematic-screen analysis, and the negative-evidence
 discovery audit are complete and accepted. The governance-bounded Lambourne
@@ -60,11 +81,10 @@ development/model-selection rules, C3/C2/C1 reporting, degree/hub and novel-U
 diagnostics, and complexity/kill gates. No model files, embeddings, training,
 development release, or protected evaluation are authorized or have begun.
 
-The fresh-thread phase-boundary checkpoint is
+The fresh-thread phase-boundary checkpoint at that stage was
 [RESUME-003](governance/checkpoints/RESUME-003-post-model-governance-protocol-freeze.md).
-The authoritative scientific status is
-[project status version 27](governance/PROJECT_STATUS_v27.md), and the
-authoritative ledger remains
+Its historical scientific status was
+[project status version 27](governance/PROJECT_STATUS_v27.md), with
 [gate status version 27](governance/gates/gate_status_v27.yaml).
 
 The binding scientific specification is [the Version 3 final blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md). All production computation must run on NAISS Arrhenius through immutable ARM64 Apptainer SIF images.
@@ -108,11 +128,15 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
 4. Preserve the `DEC-0024` information, pair-assignment, sampling, metric,
    uncertainty, holdout, and claim rules.
 5. Preserve the immutable `DEC-0026` pair artifacts; do not modify, extend,
-   resample, relabel, release development, or open protected candidates/truth.
+   resample, relabel or open protected candidates/truth. The bounded
+   development correction under `DEC-0045` is complete.
 6. Preserve the `DEC-0028` frozen model-governance and baseline/training
    protocol. Do not construct additional pair rows, negatives or pseudo-
    negatives, materialize the full candidate universe, integrate panels or
    structures, acquire model files, implement models, extract embeddings, or
    train unless a new numbered decision authorizes that bounded package.
+7. Preserve both the invalid original evaluation evidence and the corrected
+   `development_embedding_identity_correction_v2` evidence. The corrected
+   result does not authorize another phase or protected evaluation.
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.
