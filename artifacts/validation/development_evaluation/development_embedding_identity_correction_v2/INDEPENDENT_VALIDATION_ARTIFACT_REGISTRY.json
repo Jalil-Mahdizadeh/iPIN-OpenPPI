@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "execution_id": "development_embedding_identity_correction_v2",
+  "status": "pass",
+  "recorded_at_utc": "2026-09-10 21:50:51 UTC",
+  "authority": "governance/decisions/DEC-0045-authorize-development-embedding-identity-correction.md",
+  "production_source_commit": "5548baa20ae832abfc7f7eae41ecebd261f38c54",
+  "production_evidence_commit": "1bae702a98c488201b7c7078f3b665bcc026db90",
+  "independent_source_commit": "bcebdca7db1c5d69aff248f42dd38a006509e2dd",
+  "independent_validator": {
+    "path": "scripts/model/validate_development_completed_independent_v2.py",
+    "sha256": "70c69bb0a84b8cb9954b500ba06d977e6fa5bfd770a3d854319cbf999b8c6b18",
+    "bytes": 85891
+  },
+  "independent_validator_tests": {
+    "path": "tests/unit/test_development_completed_independent_validator_v2.py",
+    "sha256": "8b82c3c8d08f4a10ffe540bc2e9e8b48993e3e0c3b3abc56aaa6f8295fae7635",
+    "bytes": 5831
+  },
+  "independent_report": {
+    "path": "artifacts/validation/development_evaluation/development_embedding_identity_correction_v2/INDEPENDENT_COMPLETED_EVALUATION_VALIDATION_REPORT.json",
+    "sha256": "3908652a7cd7e595197fca2ad19d74c06c9f77b66cf716b1cddd83b8630766a9",
+    "bytes": 10677
+  },
+  "unit_test_evidence": {
+    "path": "artifacts/validation/development_evaluation/development_embedding_identity_correction_v2/INDEPENDENT_V2_UNIT_TEST_RESULTS.json",
+    "sha256": "2a5cf42ab35b5ad10162600d7488b6130b0c17f7a42bf5b2e1c0cce38db0809a",
+    "bytes": 603
+  },
+  "private_validation_log": {
+    "path": ".private/development_embedding_identity_correction_v2/INDEPENDENT_VALIDATION_CONSOLE.log",
+    "sha256": "153c0439e2ab74e359030b6e455f72d616e629999f88d48ebdccf8b8c990dfe0",
+    "bytes": 5587
+  },
+  "independent_checks": {
+    "pass": 17,
+    "fail": 0,
+    "total": 17
+  },
+  "learned_score_values_recomputed": 270783240,
+  "maximum_learned_score_difference": 0,
+  "protected_ciphertext_hash_checks": {
+    "match": true,
+    "decryption_performed": false,
+    "files": [
+      {
+        "path": "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/sealed/protected_candidates.cms",
+        "sha256": "5ac1c30dbda85f6274f60febb2f4b01feda34c43bf87f4bbb690abe6c639ff63",
+        "bytes": 409416269
+      },
+      {
+        "path": "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/sealed/protected_truth.cms",
+        "sha256": "69824547667861694aff88a0f6e43526d4f3aa27f930d4a4ff44c924d29aa1e9",
+        "bytes": 710738504
+      }
+    ]
+  },
+  "model_container": {
+    "path": "containers/images/ipin-model-arm64_0.1.0.sif",
+    "sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91"
+  },
+  "scientific_disposition": "stop_complex_model_claim_and_stop_before_protected_evaluation",
+  "selected_candidate": "lightweight_esm2_150m_linear__linear_lr3e-4",
+  "protected_evaluation_authorized": false,
+  "training_or_checkpoint_change": false,
+  "external_expert_review_implied": false
+}
