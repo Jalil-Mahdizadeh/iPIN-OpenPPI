@@ -1,0 +1,177 @@
+{
+  "decryption_or_private_key_access": false,
+  "encoders": {
+    "esm2_150m": {
+      "aligned_matrix_sha256": "fe9d83f87973c21fe77fdcd9a92bd676a1cb7b5122766172bcf9460761f6f61b",
+      "all_raw_vector_hashes_verified": true,
+      "all_standardized_values_reconstructed_exactly": true,
+      "embedding_row_permutation_sha256": "a8da8c941498882e0272451342fdd39ea09d0a713272b699e0888eda78df2533",
+      "endpoint_count": 17000,
+      "endpoint_order_sha256": "644f1b314b270de315d81583313e41cff8bafd986ea6293991dfe8284eb2f52c",
+      "public_pair_score_checks": [
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260803"
+        },
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260817"
+        },
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260831"
+        },
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260803"
+        },
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260817"
+        },
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260831"
+        }
+      ],
+      "reordered_row_count": 16999,
+      "strategy": "join_sequence_sha256_to_frozen_manifest_row_index_v2",
+      "training_P_and_U_index_identity_verified": true
+    },
+    "esm2_650m": {
+      "aligned_matrix_sha256": "d9bd7a55bbdff418d4107f16bd62cc4c7aab08c4be8de5c18774e2a0cea30cc1",
+      "all_raw_vector_hashes_verified": true,
+      "all_standardized_values_reconstructed_exactly": true,
+      "embedding_row_permutation_sha256": "a8da8c941498882e0272451342fdd39ea09d0a713272b699e0888eda78df2533",
+      "endpoint_count": 17000,
+      "endpoint_order_sha256": "644f1b314b270de315d81583313e41cff8bafd986ea6293991dfe8284eb2f52c",
+      "public_pair_score_checks": [
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "esm2_650m_linear_ablation__linear_lr3e-4__seed20260803"
+        },
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "esm2_650m_linear_ablation__linear_lr3e-4__seed20260817"
+        },
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "esm2_650m_linear_ablation__linear_lr3e-4__seed20260831"
+        },
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "esm2_650m_linear_ablation__linear_lr1e-3__seed20260803"
+        },
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "esm2_650m_linear_ablation__linear_lr1e-3__seed20260817"
+        },
+        {
+          "maximum_absolute_difference": 0.0,
+          "run_id": "esm2_650m_linear_ablation__linear_lr1e-3__seed20260831"
+        },
+        {
+          "maximum_absolute_difference": 1.621246337890625e-05,
+          "run_id": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260803"
+        },
+        {
+          "maximum_absolute_difference": 1.811981201171875e-05,
+          "run_id": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260817"
+        },
+        {
+          "maximum_absolute_difference": 1.71661376953125e-05,
+          "run_id": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260831"
+        },
+        {
+          "maximum_absolute_difference": 1.811981201171875e-05,
+          "run_id": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260803"
+        },
+        {
+          "maximum_absolute_difference": 2.288818359375e-05,
+          "run_id": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260817"
+        },
+        {
+          "maximum_absolute_difference": 2.47955322265625e-05,
+          "run_id": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260831"
+        },
+        {
+          "maximum_absolute_difference": 1.71661376953125e-05,
+          "run_id": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260803"
+        },
+        {
+          "maximum_absolute_difference": 1.52587890625e-05,
+          "run_id": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260817"
+        },
+        {
+          "maximum_absolute_difference": 1.9073486328125e-05,
+          "run_id": "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260831"
+        },
+        {
+          "maximum_absolute_difference": 2.86102294921875e-05,
+          "run_id": "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260803"
+        },
+        {
+          "maximum_absolute_difference": 2.47955322265625e-05,
+          "run_id": "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260817"
+        },
+        {
+          "maximum_absolute_difference": 2.288818359375e-05,
+          "run_id": "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260831"
+        },
+        {
+          "maximum_absolute_difference": 2.47955322265625e-05,
+          "run_id": "esm2_650m_partner_gated_primary__nonlinear_default__seed20260803"
+        },
+        {
+          "maximum_absolute_difference": 3.337860107421875e-05,
+          "run_id": "esm2_650m_partner_gated_primary__nonlinear_default__seed20260817"
+        },
+        {
+          "maximum_absolute_difference": 2.288818359375e-05,
+          "run_id": "esm2_650m_partner_gated_primary__nonlinear_default__seed20260831"
+        },
+        {
+          "maximum_absolute_difference": 2.6702880859375e-05,
+          "run_id": "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260803"
+        },
+        {
+          "maximum_absolute_difference": 2.47955322265625e-05,
+          "run_id": "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260817"
+        },
+        {
+          "maximum_absolute_difference": 2.288818359375e-05,
+          "run_id": "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260831"
+        }
+      ],
+      "reordered_row_count": 16999,
+      "strategy": "join_sequence_sha256_to_frozen_manifest_row_index_v2",
+      "training_P_and_U_index_identity_verified": true
+    }
+  },
+  "execution_config_sha256": "45feca41cedc0069f8a9ef499bb9136040dedf3dd851cbff62a2c2ebefc061b8",
+  "execution_id": "development_embedding_identity_correction_v2",
+  "generated_at_utc": "2026-09-10T21:12:24.167989+00:00",
+  "protected_candidates_or_truth_accessed": false,
+  "public_training_pairs_checked": {
+    "P": 16799,
+    "U": 2000000
+  },
+  "released_development_files_hash_verified": 13,
+  "schema_version": 2,
+  "score_agreement_absolute_tolerance": 0.0001,
+  "source_commit": "5548baa20ae832abfc7f7eae41ecebd261f38c54",
+  "source_hashes": {
+    "scripts/model/audit_development_completed_v1.py": "18cb40412176bdc412d224f6b5f91ca1a25281aabea3672cf2dccfbee399afd1",
+    "scripts/model/audit_development_embedding_identity_preflight_v2.py": "2141313873ca4c2d0c097929b92ab8e441710b155f753e91872406be1ed1e4f4",
+    "scripts/model/evaluate_development_v1.py": "899d14c05a179fe60fb69ac8f7473519686c9b1e6f1324f781baca50a370bade",
+    "scripts/model/run_development_scoring_v1.py": "6b202128fe5e2b453a913b43bb103bdbf91aa76ff2c07d98ce16aef3bf78db42",
+    "src/ipin_openppi/development_evaluation/completed_audit.py": "693f8b9614b31c6fe02d1e4aa81c2a47414c54810dd9354ef19f0ea60388c0aa",
+    "src/ipin_openppi/development_evaluation/embedding_identity.py": "09ab9a4783edf21813a1ed5be47cf1548869e47dd957050549e78556241ff12e",
+    "src/ipin_openppi/development_evaluation/evaluation.py": "df8b4949c3e94120a816ea981ad99dd4138826cd896e33153980ea4763fec38f",
+    "src/ipin_openppi/development_evaluation/scoring.py": "ef8d114ad88d69cd5366746d3cb90c9df3f26c1e481111c317de092651226da0",
+    "src/ipin_openppi/development_evaluation/semantics.py": "5e63276dbb769659dcb3ca636f0022c485a05bd82f5fc6855ee6aa5b2ee7bd00"
+  },
+  "status": "pass",
+  "tolerance_reason": "FP32 GEMM batch-shape rounding; input vectors agree exactly",
+  "training_or_checkpoint_change": false
+}

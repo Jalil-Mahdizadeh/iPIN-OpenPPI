@@ -1,0 +1,1000 @@
+{
+  "cells": {
+    "C1_development": {
+      "bootstrap_percentile_95_for_controls_and_ensembles": {
+        "component_degree_mass_product": [
+          0.6424727230987575,
+          0.8232995477275542
+        ],
+        "deterministic_hash": [
+          0.4761590957228401,
+          0.5094907288740104
+        ],
+        "esm2_650m_linear_ablation__linear_lr1e-3": [
+          0.8613622815532871,
+          0.8898995533167001
+        ],
+        "esm2_650m_linear_ablation__linear_lr3e-4": [
+          0.8553644419926656,
+          0.8841489394044302
+        ],
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": [
+          0.9288684311242194,
+          0.947082234234371
+        ],
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": [
+          0.928246751387428,
+          0.9463406217497943
+        ],
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": [
+          0.9256337886964218,
+          0.9446832696063785
+        ],
+        "esm2_650m_partner_gated_primary__nonlinear_conservative": [
+          0.9301509567206535,
+          0.9485241007331201
+        ],
+        "esm2_650m_partner_gated_primary__nonlinear_default": [
+          0.9321742943496837,
+          0.9500844272948413
+        ],
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout": [
+          0.9295296215537079,
+          0.9477594350845839
+        ],
+        "exact_training_interolog_3mer": [
+          0.5761362640876896,
+          0.6543486893446728
+        ],
+        "lightweight_esm2_150m_linear__linear_lr1e-3": [
+          0.837296001797223,
+          0.8706424321866446
+        ],
+        "lightweight_esm2_150m_linear__linear_lr3e-4": [
+          0.8323245187173908,
+          0.866204079259807
+        ],
+        "preferential_attachment": [
+          0.89473182781589,
+          0.9164960880271142
+        ],
+        "sequence_length_ratio": [
+          0.5298958590405372,
+          0.5821280490993924
+        ],
+        "sequence_length_sum": [
+          0.4220353050359097,
+          0.49546296150011687
+        ],
+        "training_common_neighbors": [
+          0.6590852253746832,
+          0.7047806243167788
+        ],
+        "training_degree_sum": [
+          0.8944285725001593,
+          0.9161548102221595
+        ],
+        "within_pair_3mer_cosine": [
+          0.4877858875744042,
+          0.5586238088839771
+        ]
+      },
+      "metrics": {
+        "component_degree_mass_product": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0005038572774338201,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6950187321647807,
+          "ht_positive_vs_U_concordance": 0.6950187321647807
+        },
+        "deterministic_hash": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0002951434432058129,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.49324689379684544,
+          "ht_positive_vs_U_concordance": 0.49324689379684544
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.00615392696708136,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8747526452290053,
+          "ht_positive_vs_U_concordance": 0.8747526452290053
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006144221201556046,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8745888727083506,
+          "ht_positive_vs_U_concordance": 0.8745888727083506
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.005938063057796396,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8744625532346153,
+          "ht_positive_vs_U_concordance": 0.8744625532346153
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.005954134461805823,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8745227459997144,
+          "ht_positive_vs_U_concordance": 0.8745227459997144
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.005482981539689209,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8690932963483712,
+          "ht_positive_vs_U_concordance": 0.8690932963483712
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.005888510127662666,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8685174106755202,
+          "ht_positive_vs_U_concordance": 0.8685174106755202
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.005508509786136555,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8686706420653983,
+          "ht_positive_vs_U_concordance": 0.8686706420653983
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.005489808825137708,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.868196903610543,
+          "ht_positive_vs_U_concordance": 0.868196903610543
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.024794769764536533,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9387364641709366,
+          "ht_positive_vs_U_concordance": 0.9387364641709366
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.017393595260525033,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9231806854979069,
+          "ht_positive_vs_U_concordance": 0.9231806854979069
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.015404626327848493,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.922826327982907,
+          "ht_positive_vs_U_concordance": 0.922826327982907
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.016726780524225035,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9216573906878268,
+          "ht_positive_vs_U_concordance": 0.9216573906878268
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.031904202166600955,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9381079143016724,
+          "ht_positive_vs_U_concordance": 0.9381079143016724
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.02126829947989031,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9222757823218466,
+          "ht_positive_vs_U_concordance": 0.9222757823218466
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.01861856368073979,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9192603888120693,
+          "ht_positive_vs_U_concordance": 0.9192603888120693
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.018264130941992477,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9210205974436942,
+          "ht_positive_vs_U_concordance": 0.9210205974436942
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.029763648926690204,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9362316824772925,
+          "ht_positive_vs_U_concordance": 0.9362316824772925
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0166696412363705,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9195453775380115,
+          "ht_positive_vs_U_concordance": 0.9195453775380115
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.01641917384673481,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9153221972760485,
+          "ht_positive_vs_U_concordance": 0.9153221972760485
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.01932770312435829,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9151782800767541,
+          "ht_positive_vs_U_concordance": 0.9151782800767541
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0249930003977835,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9401600442304383,
+          "ht_positive_vs_U_concordance": 0.9401600442304383
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.016453753868240984,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9246566599600031,
+          "ht_positive_vs_U_concordance": 0.9246566599600031
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.017124364884151953,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9237262943805274,
+          "ht_positive_vs_U_concordance": 0.9237262943805274
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.014838506205732132,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9243425356270147,
+          "ht_positive_vs_U_concordance": 0.9243425356270147
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.03488482770878912,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9416956260043104,
+          "ht_positive_vs_U_concordance": 0.9416956260043104
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.01880319605173369,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9261778593928025,
+          "ht_positive_vs_U_concordance": 0.9261778593928025
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.01756930427354757,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.925539894407922,
+          "ht_positive_vs_U_concordance": 0.925539894407922
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.018167609762021416,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9242302099043631,
+          "ht_positive_vs_U_concordance": 0.9242302099043631
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.02988937004475071,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9394956365455422,
+          "ht_positive_vs_U_concordance": 0.9394956365455422
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.01775544159247782,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9225653140065404,
+          "ht_positive_vs_U_concordance": 0.9225653140065404
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0186698739209422,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9222390269612976,
+          "ht_positive_vs_U_concordance": 0.9222390269612976
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.016655417089196274,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9213076192699563,
+          "ht_positive_vs_U_concordance": 0.9213076192699563
+        },
+        "exact_training_interolog_3mer": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.005450753663718351,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6209214147156702,
+          "ht_positive_vs_U_concordance": 0.6209214147156702
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0048900734717300135,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8534316962942555,
+          "ht_positive_vs_U_concordance": 0.8534316962942555
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.004628384561671871,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8532044720698584,
+          "ht_positive_vs_U_concordance": 0.8532044720698584
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.004974276587392431,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8533134779176472,
+          "ht_positive_vs_U_concordance": 0.8533134779176472
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.005111739284406131,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8531837175644035,
+          "ht_positive_vs_U_concordance": 0.8531837175644035
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.004766756739799347,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8485650687614544,
+          "ht_positive_vs_U_concordance": 0.8485650687614544
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.004396670029155631,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8476993151927752,
+          "ht_positive_vs_U_concordance": 0.8476993151927752
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.004932140496663481,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8480201989648358,
+          "ht_positive_vs_U_concordance": 0.8480201989648358
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.004799547456465103,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8476375978321549,
+          "ht_positive_vs_U_concordance": 0.8476375978321549
+        },
+        "preferential_attachment": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.007509733942438612,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9069423975969924,
+          "ht_positive_vs_U_concordance": 0.9069423975969924
+        },
+        "sequence_length_ratio": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.00035092581739127416,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.5526079991289637,
+          "ht_positive_vs_U_concordance": 0.5526079991289637
+        },
+        "sequence_length_sum": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.00027425223906915976,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.45994242451364115,
+          "ht_positive_vs_U_concordance": 0.45994242451364115
+        },
+        "training_common_neighbors": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0047483574436655625,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6810175917776872,
+          "ht_positive_vs_U_concordance": 0.6810175917776872
+        },
+        "training_degree_sum": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.007531662463292246,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.9067887878636159,
+          "ht_positive_vs_U_concordance": 0.9067887878636159
+        },
+        "within_pair_3mer_cosine": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.000746802507568535,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.5174725822527396,
+          "ht_positive_vs_U_concordance": 0.5174725822527396
+        }
+      },
+      "seed_checkpoint_intervals": "not_required_seed_stability_uses_point_metric_range"
+    },
+    "C2_development": {
+      "bootstrap_percentile_95_for_controls_and_ensembles": {
+        "component_degree_mass_product": [
+          0.4999999999999904,
+          0.5000000000000006
+        ],
+        "deterministic_hash": [
+          0.48713388428137167,
+          0.5066875777286671
+        ],
+        "esm2_650m_linear_ablation__linear_lr1e-3": [
+          0.7910722569370184,
+          0.8257471298789366
+        ],
+        "esm2_650m_linear_ablation__linear_lr3e-4": [
+          0.7903667741429935,
+          0.8297266985645523
+        ],
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": [
+          0.8243907371561294,
+          0.8765584413960981
+        ],
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": [
+          0.8403051365244936,
+          0.8792426495083209
+        ],
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": [
+          0.8354780024909175,
+          0.8719002176747125
+        ],
+        "esm2_650m_partner_gated_primary__nonlinear_conservative": [
+          0.837128209819098,
+          0.8708881487254793
+        ],
+        "esm2_650m_partner_gated_primary__nonlinear_default": [
+          0.8459176146105751,
+          0.8803127987522709
+        ],
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout": [
+          0.8440617114527592,
+          0.8796281715595831
+        ],
+        "exact_training_interolog_3mer": [
+          0.5435872837841499,
+          0.6554891193539972
+        ],
+        "lightweight_esm2_150m_linear__linear_lr1e-3": [
+          0.7799998358048036,
+          0.8237951844558046
+        ],
+        "lightweight_esm2_150m_linear__linear_lr3e-4": [
+          0.7793544296211752,
+          0.8250529660564525
+        ],
+        "preferential_attachment": [
+          0.4999999999999904,
+          0.5000000000000006
+        ],
+        "sequence_length_ratio": [
+          0.5348849556508571,
+          0.5818076120772787
+        ],
+        "sequence_length_sum": [
+          0.436638112654072,
+          0.5378797664712147
+        ],
+        "training_common_neighbors": [
+          0.4999999999999904,
+          0.5000000000000006
+        ],
+        "training_degree_sum": [
+          0.8227927097712394,
+          0.8530794888619072
+        ],
+        "within_pair_3mer_cosine": [
+          0.49361028728967254,
+          0.590925219103257
+        ]
+      },
+      "metrics": {
+        "component_degree_mass_product": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0009501520394415533,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.4999999999915132,
+          "ht_positive_vs_U_concordance": 0.4999999999915132
+        },
+        "deterministic_hash": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0009491957195418154,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.49799197254441696,
+          "ht_positive_vs_U_concordance": 0.49799197254441696
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006913259082305756,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8073005545289811,
+          "ht_positive_vs_U_concordance": 0.8073005545289811
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0069554123880499474,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8073885859543372,
+          "ht_positive_vs_U_concordance": 0.8073885859543372
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0068764986534228575,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.806546611836749,
+          "ht_positive_vs_U_concordance": 0.806546611836749
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.00684093323711253,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8068429421663443,
+          "ht_positive_vs_U_concordance": 0.8068429421663443
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.007238583923911975,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8083198730895508,
+          "ht_positive_vs_U_concordance": 0.8083198730895508
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.007254344683620029,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.808723547864895,
+          "ht_positive_vs_U_concordance": 0.808723547864895
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0073039243484149885,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8069446008026102,
+          "ht_positive_vs_U_concordance": 0.8069446008026102
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006925429324786693,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8058212896674045,
+          "ht_positive_vs_U_concordance": 0.8058212896674045
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.016747510676027148,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8501509173285068,
+          "ht_positive_vs_U_concordance": 0.8501509173285068
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.010862881478245913,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8276203708223897,
+          "ht_positive_vs_U_concordance": 0.8276203708223897
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.009966950130051751,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8075378997723612,
+          "ht_positive_vs_U_concordance": 0.8075378997723612
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.009207817081646863,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8179233155754395,
+          "ht_positive_vs_U_concordance": 0.8179233155754395
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.01745766268924264,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8586868157279997,
+          "ht_positive_vs_U_concordance": 0.8586868157279997
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.011613356180214482,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8293559042645812,
+          "ht_positive_vs_U_concordance": 0.8293559042645812
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.010602660551110595,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8305081307345494,
+          "ht_positive_vs_U_concordance": 0.8305081307345494
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.01038519371987554,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8230265540999896,
+          "ht_positive_vs_U_concordance": 0.8230265540999896
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.016427689096025863,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8519327247418158,
+          "ht_positive_vs_U_concordance": 0.8519327247418158
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.010602797916423278,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8240270250466949,
+          "ht_positive_vs_U_concordance": 0.8240270250466949
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.010034378394551052,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8131904540539188,
+          "ht_positive_vs_U_concordance": 0.8131904540539188
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.009125388765773032,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8107141911550456,
+          "ht_positive_vs_U_concordance": 0.8107141911550456
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.015637642420962654,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.852558880490708,
+          "ht_positive_vs_U_concordance": 0.852558880490708
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.00906581901570166,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8168047616516726,
+          "ht_positive_vs_U_concordance": 0.8168047616516726
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.009243830228877797,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8163962238704193,
+          "ht_positive_vs_U_concordance": 0.8163962238704193
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.010412310894981442,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8273106403889995,
+          "ht_positive_vs_U_concordance": 0.8273106403889995
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.019760395761626873,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8624171807608166,
+          "ht_positive_vs_U_concordance": 0.8624171807608166
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.011606631186517835,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8299220086238254,
+          "ht_positive_vs_U_concordance": 0.8299220086238254
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.010847753055817137,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.828807968384515,
+          "ht_positive_vs_U_concordance": 0.828807968384515
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.012648840487542676,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8348389202772318,
+          "ht_positive_vs_U_concordance": 0.8348389202772318
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.019167460261136252,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8622409681156199,
+          "ht_positive_vs_U_concordance": 0.8622409681156199
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.010842130723070702,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8286674198125893,
+          "ht_positive_vs_U_concordance": 0.8286674198125893
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.010610614396464489,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8303491089289362,
+          "ht_positive_vs_U_concordance": 0.8303491089289362
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.01193956606782605,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8279604347804355,
+          "ht_positive_vs_U_concordance": 0.8279604347804355
+        },
+        "exact_training_interolog_3mer": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0025388380676780787,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6081455864100266,
+          "ht_positive_vs_U_concordance": 0.6081455864100266
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0062975410552928565,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7997173050914131,
+          "ht_positive_vs_U_concordance": 0.7997173050914131
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006300381650020493,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7998740315847382,
+          "ht_positive_vs_U_concordance": 0.7998740315847382
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006226745269148823,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7982570892728929,
+          "ht_positive_vs_U_concordance": 0.7982570892728929
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006310031313890763,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8002274077120515,
+          "ht_positive_vs_U_concordance": 0.8002274077120515
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006232077551082324,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7997974202182104,
+          "ht_positive_vs_U_concordance": 0.7997974202182104
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006074449570665649,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7977347228212037,
+          "ht_positive_vs_U_concordance": 0.7977347228212037
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006200078281677057,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.798714487150813,
+          "ht_positive_vs_U_concordance": 0.798714487150813
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.00621872468695164,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7996733782182706,
+          "ht_positive_vs_U_concordance": 0.7996733782182706
+        },
+        "preferential_attachment": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0009501520394415533,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.4999999999915132,
+          "ht_positive_vs_U_concordance": 0.4999999999915132
+        },
+        "sequence_length_ratio": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0011112026466755375,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.5611487283300906,
+          "ht_positive_vs_U_concordance": 0.5611487283300906
+        },
+        "sequence_length_sum": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0009170793018541462,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.495916404817008,
+          "ht_positive_vs_U_concordance": 0.495916404817008
+        },
+        "training_common_neighbors": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0009501520394415533,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.4999999999915132,
+          "ht_positive_vs_U_concordance": 0.4999999999915132
+        },
+        "training_degree_sum": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.007638682961831261,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.8392632813073609,
+          "ht_positive_vs_U_concordance": 0.8392632813073609
+        },
+        "within_pair_3mer_cosine": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0011654101471925441,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.5489599244142938,
+          "ht_positive_vs_U_concordance": 0.5489599244142938
+        }
+      },
+      "seed_checkpoint_intervals": "not_required_seed_stability_uses_point_metric_range"
+    },
+    "C3_development": {
+      "bootstrap_percentile_95_for_controls_and_ensembles": {
+        "component_degree_mass_product": [
+          0.49999999999999145,
+          0.5000000000000111
+        ],
+        "deterministic_hash": [
+          0.4730224094360611,
+          0.5219783018543397
+        ],
+        "esm2_650m_linear_ablation__linear_lr1e-3": [
+          0.7153512112421881,
+          0.847826241334445
+        ],
+        "esm2_650m_linear_ablation__linear_lr3e-4": [
+          0.7293595555530812,
+          0.8511903838325248
+        ],
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": [
+          0.6637928370103563,
+          0.8099966729006407
+        ],
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": [
+          0.6753465754489683,
+          0.8282612018335919
+        ],
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": [
+          0.6672430887523061,
+          0.8344351752513851
+        ],
+        "esm2_650m_partner_gated_primary__nonlinear_conservative": [
+          0.6820960526906389,
+          0.8661853570451123
+        ],
+        "esm2_650m_partner_gated_primary__nonlinear_default": [
+          0.6799457953553567,
+          0.8740691219592981
+        ],
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout": [
+          0.69588077378502,
+          0.8761873168388481
+        ],
+        "exact_training_interolog_3mer": [
+          0.5257493426482096,
+          0.754754284382531
+        ],
+        "lightweight_esm2_150m_linear__linear_lr1e-3": [
+          0.7314542625520166,
+          0.8549525785189214
+        ],
+        "lightweight_esm2_150m_linear__linear_lr3e-4": [
+          0.7428201383689814,
+          0.8527162689983394
+        ],
+        "preferential_attachment": [
+          0.49999999999999145,
+          0.5000000000000111
+        ],
+        "sequence_length_ratio": [
+          0.5669951093863831,
+          0.742349922980613
+        ],
+        "sequence_length_sum": [
+          0.41826502583892855,
+          0.577579047494639
+        ],
+        "training_common_neighbors": [
+          0.49999999999999145,
+          0.5000000000000111
+        ],
+        "training_degree_sum": [
+          0.49999999999999145,
+          0.5000000000000111
+        ],
+        "within_pair_3mer_cosine": [
+          0.49809389706477586,
+          0.7264625851079812
+        ]
+      },
+      "metrics": {
+        "component_degree_mass_product": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0006969284379238757,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.49999999999082373,
+          "ht_positive_vs_U_concordance": 0.49999999999082373
+        },
+        "deterministic_hash": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0006766625794958664,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.49423254260362587,
+          "ht_positive_vs_U_concordance": 0.49423254260362587
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.003116493447592038,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7676447492194995,
+          "ht_positive_vs_U_concordance": 0.7676447492194995
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.00321960212439209,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7693998860847994,
+          "ht_positive_vs_U_concordance": 0.7693998860847994
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0029320016202770815,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7639852048487799,
+          "ht_positive_vs_U_concordance": 0.7639852048487799
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0031795788015674116,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7682327072768469,
+          "ht_positive_vs_U_concordance": 0.7682327072768469
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0026305836441816843,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7746779893960588,
+          "ht_positive_vs_U_concordance": 0.7746779893960588
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.002806192195124451,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7789875467910492,
+          "ht_positive_vs_U_concordance": 0.7789875467910492
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0026019438425622086,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7691212501026138,
+          "ht_positive_vs_U_concordance": 0.7691212501026138
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0024685728039046504,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7715803759304145,
+          "ht_positive_vs_U_concordance": 0.7715803759304145
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.002705155015576764,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7113861097064744,
+          "ht_positive_vs_U_concordance": 0.7113861097064744
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0015442563320789786,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6826762916069009,
+          "ht_positive_vs_U_concordance": 0.6826762916069009
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.001807988492624408,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.656736491827091,
+          "ht_positive_vs_U_concordance": 0.656736491827091
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.002846555220931943,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6939357331067312,
+          "ht_positive_vs_U_concordance": 0.6939357331067312
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.00291332923185521,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7280062337677902,
+          "ht_positive_vs_U_concordance": 0.7280062337677902
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0018242179201725986,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7064298640119823,
+          "ht_positive_vs_U_concordance": 0.7064298640119823
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.001984934156165262,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6888022478974859,
+          "ht_positive_vs_U_concordance": 0.6888022478974859
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0025009168394296683,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.696416272400302,
+          "ht_positive_vs_U_concordance": 0.696416272400302
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.004433234385269287,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7240972973436127,
+          "ht_positive_vs_U_concordance": 0.7240972973436127
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.004294977707947931,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7247248501033663,
+          "ht_positive_vs_U_concordance": 0.7247248501033663
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.002072689455176656,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6734410403918623,
+          "ht_positive_vs_U_concordance": 0.6734410403918623
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0021804313489913775,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6697639275884824,
+          "ht_positive_vs_U_concordance": 0.6697639275884824
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.008475488242554717,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7452557889545425,
+          "ht_positive_vs_U_concordance": 0.7452557889545425
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.011675957549219717,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7150354414941367,
+          "ht_positive_vs_U_concordance": 0.7150354414941367
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0017737024650057863,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6765081430414033,
+          "ht_positive_vs_U_concordance": 0.6765081430414033
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006937382528409722,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7377536255996548,
+          "ht_positive_vs_U_concordance": 0.7377536255996548
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.005760387353031417,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.751238315886056,
+          "ht_positive_vs_U_concordance": 0.751238315886056
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.004099887825545337,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7230556944742367,
+          "ht_positive_vs_U_concordance": 0.7230556944742367
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0022054858201925715,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6821769097074158,
+          "ht_positive_vs_U_concordance": 0.6821769097074158
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0035640847097750494,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7476303055112823,
+          "ht_positive_vs_U_concordance": 0.7476303055112823
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.006898366959422842,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7595539108084669,
+          "ht_positive_vs_U_concordance": 0.7595539108084669
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.002820158606021076,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7334700335470654,
+          "ht_positive_vs_U_concordance": 0.7334700335470654
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.002469661162300056,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.710915503746142,
+          "ht_positive_vs_U_concordance": 0.710915503746142
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.005352871438276602,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7364155174315544,
+          "ht_positive_vs_U_concordance": 0.7364155174315544
+        },
+        "exact_training_interolog_3mer": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0012107763431521976,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.635701358715407,
+          "ht_positive_vs_U_concordance": 0.635701358715407
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0027325746280809004,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7805595772545831,
+          "ht_positive_vs_U_concordance": 0.7805595772545831
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0027961610935930683,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7826633063935824,
+          "ht_positive_vs_U_concordance": 0.7826633063935824
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0025999051981529043,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7771175885129887,
+          "ht_positive_vs_U_concordance": 0.7771175885129887
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0027937018705420265,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7808551615812874,
+          "ht_positive_vs_U_concordance": 0.7808551615812874
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0024332478936636474,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.784142246349548,
+          "ht_positive_vs_U_concordance": 0.784142246349548
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260803": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0022973825457128054,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7802852653343181,
+          "ht_positive_vs_U_concordance": 0.7802852653343181
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260817": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.002538229852367101,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.78485708740903,
+          "ht_positive_vs_U_concordance": 0.78485708740903
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260831": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0024161525821772413,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.7830822807867035,
+          "ht_positive_vs_U_concordance": 0.7830822807867035
+        },
+        "preferential_attachment": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0006969284379238757,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.49999999999082373,
+          "ht_positive_vs_U_concordance": 0.49999999999082373
+        },
+        "sequence_length_ratio": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0011718937831375793,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6608800512102514,
+          "ht_positive_vs_U_concordance": 0.6608800512102514
+        },
+        "sequence_length_sum": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0006634104970962188,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.5204536763804425,
+          "ht_positive_vs_U_concordance": 0.5204536763804425
+        },
+        "training_common_neighbors": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0006969284379238757,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.49999999999082373,
+          "ht_positive_vs_U_concordance": 0.49999999999082373
+        },
+        "training_degree_sum": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0006969284379238757,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.49999999999082373,
+          "ht_positive_vs_U_concordance": 0.49999999999082373
+        },
+        "within_pair_3mer_cosine": {
+          "diagnostic_sampled_P_vs_U_AUPRC": 0.0015213801369552075,
+          "diagnostic_sampled_P_vs_U_AUROC": 0.6446826375227447,
+          "ht_positive_vs_U_concordance": 0.6446826375227447
+        }
+      },
+      "seed_checkpoint_intervals": "not_required_seed_stability_uses_point_metric_range"
+    }
+  },
+  "execution_id": "development_embedding_identity_correction_v2",
+  "generated_at_utc": "2026-09-10T21:29:42.770294+00:00",
+  "pair_identity_public": false,
+  "protected_candidates_accessed": false,
+  "protected_truth_accessed": false,
+  "reporting_order": [
+    "C3",
+    "C2",
+    "C1"
+  ],
+  "schema_version": 1,
+  "training_or_checkpoint_change": false
+}

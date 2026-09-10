@@ -1,0 +1,1501 @@
+{
+  "cells": {
+    "C1_development": {
+      "method": "unweighted_P_and_sampled_U_Pearson_diagnostic",
+      "values": {
+        "component_degree_mass_product": {
+          "component_degree_mass_product": 1.0,
+          "exact_training_interolog_3mer": 0.05955639389984231,
+          "preferential_attachment": 0.2790844004404179,
+          "sequence_length_ratio": 0.09118071886424722,
+          "sequence_length_sum": 0.059709554849636984,
+          "training_common_neighbors": 0.07538842427417133,
+          "training_degree_sum": 0.2790423574989248,
+          "within_pair_3mer_cosine": -0.008210051386730224
+        },
+        "deterministic_hash": {
+          "component_degree_mass_product": -0.0007211162770647903,
+          "exact_training_interolog_3mer": 0.0002844388591916997,
+          "preferential_attachment": -0.0005222341436561909,
+          "sequence_length_ratio": -0.00011400008031298998,
+          "sequence_length_sum": 0.0009024460534987813,
+          "training_common_neighbors": -0.003123450457036601,
+          "training_degree_sum": -0.0004419518252879145,
+          "within_pair_3mer_cosine": -0.0003640436169938818
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3": {
+          "component_degree_mass_product": 0.20070907413267505,
+          "exact_training_interolog_3mer": 0.18975227493634614,
+          "preferential_attachment": 0.47604761868736356,
+          "sequence_length_ratio": 0.0752660940836911,
+          "sequence_length_sum": 0.05488176012830108,
+          "training_common_neighbors": 0.18999832292330784,
+          "training_degree_sum": 0.48108978639225747,
+          "within_pair_3mer_cosine": 0.12434854653973844
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260803": {
+          "component_degree_mass_product": 0.2013458723286911,
+          "exact_training_interolog_3mer": 0.18495581219226773,
+          "preferential_attachment": 0.4772006649750599,
+          "sequence_length_ratio": 0.07500818292723545,
+          "sequence_length_sum": 0.04963333975288719,
+          "training_common_neighbors": 0.190208532398625,
+          "training_degree_sum": 0.4822575109200565,
+          "within_pair_3mer_cosine": 0.11912246492787215
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260817": {
+          "component_degree_mass_product": 0.19988785431568368,
+          "exact_training_interolog_3mer": 0.19431468352287773,
+          "preferential_attachment": 0.47587652005503434,
+          "sequence_length_ratio": 0.07585156119823201,
+          "sequence_length_sum": 0.05745607061847104,
+          "training_common_neighbors": 0.18951479764234225,
+          "training_degree_sum": 0.4808585307033777,
+          "within_pair_3mer_cosine": 0.12736856489635592
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260831": {
+          "component_degree_mass_product": 0.20024084685833396,
+          "exact_training_interolog_3mer": 0.1893323069091373,
+          "preferential_attachment": 0.4735086437349489,
+          "sequence_length_ratio": 0.07468852277884472,
+          "sequence_length_sum": 0.057352143415340166,
+          "training_common_neighbors": 0.1896515653448346,
+          "training_degree_sum": 0.4785800750402428,
+          "within_pair_3mer_cosine": 0.12612116047525043
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4": {
+          "component_degree_mass_product": 0.1912361408237039,
+          "exact_training_interolog_3mer": 0.19258811660176692,
+          "preferential_attachment": 0.44675291318076304,
+          "sequence_length_ratio": 0.07500856628509826,
+          "sequence_length_sum": 0.05029165230253317,
+          "training_common_neighbors": 0.18688222321411999,
+          "training_degree_sum": 0.45188619088614,
+          "within_pair_3mer_cosine": 0.12842542356159262
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260803": {
+          "component_degree_mass_product": 0.18923737380209596,
+          "exact_training_interolog_3mer": 0.1879205695658278,
+          "preferential_attachment": 0.445022288401987,
+          "sequence_length_ratio": 0.07392121184795591,
+          "sequence_length_sum": 0.04681322100695822,
+          "training_common_neighbors": 0.18626098970783275,
+          "training_degree_sum": 0.45017512115656527,
+          "within_pair_3mer_cosine": 0.1249054326795843
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260817": {
+          "component_degree_mass_product": 0.19102686711822947,
+          "exact_training_interolog_3mer": 0.19626917944820152,
+          "preferential_attachment": 0.4467285748548051,
+          "sequence_length_ratio": 0.07562600346330446,
+          "sequence_length_sum": 0.0520138623774878,
+          "training_common_neighbors": 0.18629294927921136,
+          "training_degree_sum": 0.4517688711391218,
+          "within_pair_3mer_cosine": 0.1301556130579526
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260831": {
+          "component_degree_mass_product": 0.19160131031388142,
+          "exact_training_interolog_3mer": 0.19170191418770252,
+          "preferential_attachment": 0.44420002529452896,
+          "sequence_length_ratio": 0.07475260168783032,
+          "sequence_length_sum": 0.05155591659254072,
+          "training_common_neighbors": 0.18629326051933084,
+          "training_degree_sum": 0.4493576359817979,
+          "within_pair_3mer_cosine": 0.12896974972821892
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": {
+          "component_degree_mass_product": 0.21609576810946646,
+          "exact_training_interolog_3mer": 0.3025092808915512,
+          "preferential_attachment": 0.5182391201149461,
+          "sequence_length_ratio": 0.05734411536497368,
+          "sequence_length_sum": 0.1987805509238159,
+          "training_common_neighbors": 0.22694913991251234,
+          "training_degree_sum": 0.5211980350366435,
+          "within_pair_3mer_cosine": 0.22968718570197696
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260803": {
+          "component_degree_mass_product": 0.19371076564555323,
+          "exact_training_interolog_3mer": 0.267913919808132,
+          "preferential_attachment": 0.46544252878972725,
+          "sequence_length_ratio": 0.056759076620782556,
+          "sequence_length_sum": 0.17756928324354881,
+          "training_common_neighbors": 0.20372874809226807,
+          "training_degree_sum": 0.46801984049927464,
+          "within_pair_3mer_cosine": 0.20836957965022865
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260817": {
+          "component_degree_mass_product": 0.18562900390356302,
+          "exact_training_interolog_3mer": 0.2835723728511448,
+          "preferential_attachment": 0.46555071423331146,
+          "sequence_length_ratio": 0.0468477459562677,
+          "sequence_length_sum": 0.1876374122208659,
+          "training_common_neighbors": 0.20317770877292615,
+          "training_degree_sum": 0.46822942950936053,
+          "within_pair_3mer_cosine": 0.21546601465310877
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260831": {
+          "component_degree_mass_product": 0.1985836675521339,
+          "exact_training_interolog_3mer": 0.25799465070736594,
+          "preferential_attachment": 0.4554950830110588,
+          "sequence_length_ratio": 0.049879616215550746,
+          "sequence_length_sum": 0.16679104761131916,
+          "training_common_neighbors": 0.2002494178603388,
+          "training_degree_sum": 0.45815303005087155,
+          "within_pair_3mer_cosine": 0.19095516541321464
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": {
+          "component_degree_mass_product": 0.21133160841423923,
+          "exact_training_interolog_3mer": 0.31610130131442393,
+          "preferential_attachment": 0.47651484364662877,
+          "sequence_length_ratio": 0.04893136325508438,
+          "sequence_length_sum": 0.21465789853305833,
+          "training_common_neighbors": 0.2096485367340214,
+          "training_degree_sum": 0.48008784939048743,
+          "within_pair_3mer_cosine": 0.23749737755721426
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260803": {
+          "component_degree_mass_product": 0.18172672743695234,
+          "exact_training_interolog_3mer": 0.28280259130011776,
+          "preferential_attachment": 0.42197124562511923,
+          "sequence_length_ratio": 0.04152456978431954,
+          "sequence_length_sum": 0.1948613391478077,
+          "training_common_neighbors": 0.18499635151171517,
+          "training_degree_sum": 0.4249796548295168,
+          "within_pair_3mer_cosine": 0.2167946099321486
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260817": {
+          "component_degree_mass_product": 0.17846954054834466,
+          "exact_training_interolog_3mer": 0.28201794613942865,
+          "preferential_attachment": 0.4199550749356446,
+          "sequence_length_ratio": 0.04121520683705222,
+          "sequence_length_sum": 0.19383674868300807,
+          "training_common_neighbors": 0.18645336441843663,
+          "training_degree_sum": 0.42334140695890154,
+          "within_pair_3mer_cosine": 0.21495713867073366
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260831": {
+          "component_degree_mass_product": 0.1974168024837233,
+          "exact_training_interolog_3mer": 0.26978360588471423,
+          "preferential_attachment": 0.41601818553322906,
+          "sequence_length_ratio": 0.046355342783460166,
+          "sequence_length_sum": 0.17817220673553436,
+          "training_common_neighbors": 0.18202105668066898,
+          "training_degree_sum": 0.4190576512371617,
+          "within_pair_3mer_cosine": 0.195468567661323
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": {
+          "component_degree_mass_product": 0.19417960459697295,
+          "exact_training_interolog_3mer": 0.3247337910170377,
+          "preferential_attachment": 0.47725661411331827,
+          "sequence_length_ratio": 0.05160440598742833,
+          "sequence_length_sum": 0.22718695859021631,
+          "training_common_neighbors": 0.2277794034157,
+          "training_degree_sum": 0.48088556470061533,
+          "within_pair_3mer_cosine": 0.25093567633494696
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260803": {
+          "component_degree_mass_product": 0.16008218384372366,
+          "exact_training_interolog_3mer": 0.2827237826276702,
+          "preferential_attachment": 0.4158502553348187,
+          "sequence_length_ratio": 0.04861305232541665,
+          "sequence_length_sum": 0.19826965456151618,
+          "training_common_neighbors": 0.20001888653742012,
+          "training_degree_sum": 0.4189297412573907,
+          "within_pair_3mer_cosine": 0.2227995835931205
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260817": {
+          "component_degree_mass_product": 0.16172084700278974,
+          "exact_training_interolog_3mer": 0.29179686644733954,
+          "preferential_attachment": 0.41661895210374605,
+          "sequence_length_ratio": 0.04249288249298266,
+          "sequence_length_sum": 0.21101008336165308,
+          "training_common_neighbors": 0.19977604144353778,
+          "training_degree_sum": 0.4198902641701532,
+          "within_pair_3mer_cosine": 0.23069635325513255
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260831": {
+          "component_degree_mass_product": 0.18614230457824538,
+          "exact_training_interolog_3mer": 0.2761235134716178,
+          "preferential_attachment": 0.4173055882091784,
+          "sequence_length_ratio": 0.04405465762356491,
+          "sequence_length_sum": 0.18608696596753904,
+          "training_common_neighbors": 0.19676242275087494,
+          "training_degree_sum": 0.42045875398623106,
+          "within_pair_3mer_cosine": 0.2041437379599793
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative": {
+          "component_degree_mass_product": 0.2130633511317037,
+          "exact_training_interolog_3mer": 0.3322701358021342,
+          "preferential_attachment": 0.4808101570783122,
+          "sequence_length_ratio": 0.04986585686254273,
+          "sequence_length_sum": 0.24993797671534618,
+          "training_common_neighbors": 0.22343267688608132,
+          "training_degree_sum": 0.48312344267370133,
+          "within_pair_3mer_cosine": 0.26948059727435403
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260803": {
+          "component_degree_mass_product": 0.1945772351702015,
+          "exact_training_interolog_3mer": 0.2956420956094415,
+          "preferential_attachment": 0.42928727485698637,
+          "sequence_length_ratio": 0.045630912498719554,
+          "sequence_length_sum": 0.22311682299492644,
+          "training_common_neighbors": 0.19895057644546352,
+          "training_degree_sum": 0.4311858536354936,
+          "within_pair_3mer_cosine": 0.23819498763163832
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260817": {
+          "component_degree_mass_product": 0.1876992160546543,
+          "exact_training_interolog_3mer": 0.3038347068279787,
+          "preferential_attachment": 0.4348574815269437,
+          "sequence_length_ratio": 0.043698178638331114,
+          "sequence_length_sum": 0.2280223233303823,
+          "training_common_neighbors": 0.20500479581230707,
+          "training_degree_sum": 0.43689622960959223,
+          "within_pair_3mer_cosine": 0.2512350590709319
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260831": {
+          "component_degree_mass_product": 0.19240259956594832,
+          "exact_training_interolog_3mer": 0.2970304660034563,
+          "preferential_attachment": 0.43297916221137117,
+          "sequence_length_ratio": 0.04516266325763332,
+          "sequence_length_sum": 0.22321754256797607,
+          "training_common_neighbors": 0.19892443658190662,
+          "training_degree_sum": 0.4352775575497724,
+          "within_pair_3mer_cosine": 0.23782501631159797
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default": {
+          "component_degree_mass_product": 0.20778717525656923,
+          "exact_training_interolog_3mer": 0.3255292305146466,
+          "preferential_attachment": 0.4436091322156539,
+          "sequence_length_ratio": 0.046737274818797206,
+          "sequence_length_sum": 0.23649397578673179,
+          "training_common_neighbors": 0.21225952674209628,
+          "training_degree_sum": 0.4468009647179445,
+          "within_pair_3mer_cosine": 0.25782990484357515
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260803": {
+          "component_degree_mass_product": 0.17345016290913404,
+          "exact_training_interolog_3mer": 0.29516172015982073,
+          "preferential_attachment": 0.39205878126816035,
+          "sequence_length_ratio": 0.03779078772406609,
+          "sequence_length_sum": 0.21052589146971434,
+          "training_common_neighbors": 0.1858348787180446,
+          "training_degree_sum": 0.39475240192598166,
+          "within_pair_3mer_cosine": 0.228536682805678
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260817": {
+          "component_degree_mass_product": 0.18559672765505544,
+          "exact_training_interolog_3mer": 0.2823075596022544,
+          "preferential_attachment": 0.3886596526940665,
+          "sequence_length_ratio": 0.04363796849740042,
+          "sequence_length_sum": 0.2124188091022317,
+          "training_common_neighbors": 0.19084298836700656,
+          "training_degree_sum": 0.3915657715202525,
+          "within_pair_3mer_cosine": 0.23049721698012507
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260831": {
+          "component_degree_mass_product": 0.1927320289250247,
+          "exact_training_interolog_3mer": 0.2868978294627554,
+          "preferential_attachment": 0.39722163003787664,
+          "sequence_length_ratio": 0.04271886534003177,
+          "sequence_length_sum": 0.2051564613514379,
+          "training_common_neighbors": 0.1870483205992961,
+          "training_degree_sum": 0.4000991946573172,
+          "within_pair_3mer_cosine": 0.2257036730044358
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout": {
+          "component_degree_mass_product": 0.20649956937800723,
+          "exact_training_interolog_3mer": 0.3307893898812692,
+          "preferential_attachment": 0.45584811757430227,
+          "sequence_length_ratio": 0.05005227685636177,
+          "sequence_length_sum": 0.2361433910896485,
+          "training_common_neighbors": 0.21965503048662033,
+          "training_degree_sum": 0.45910994630760127,
+          "within_pair_3mer_cosine": 0.26086168129092846
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260803": {
+          "component_degree_mass_product": 0.17015059351817,
+          "exact_training_interolog_3mer": 0.29485694300295573,
+          "preferential_attachment": 0.3941992267632435,
+          "sequence_length_ratio": 0.04537414828242726,
+          "sequence_length_sum": 0.2148345244115099,
+          "training_common_neighbors": 0.1927430912956907,
+          "training_degree_sum": 0.39696603741320224,
+          "within_pair_3mer_cosine": 0.2373289534753428
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260817": {
+          "component_degree_mass_product": 0.17478946283813576,
+          "exact_training_interolog_3mer": 0.29595749647704694,
+          "preferential_attachment": 0.4080027934891692,
+          "sequence_length_ratio": 0.03931556957104425,
+          "sequence_length_sum": 0.2055962174531082,
+          "training_common_neighbors": 0.19737761075994095,
+          "training_degree_sum": 0.4108337354897331,
+          "within_pair_3mer_cosine": 0.23388714321358256
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260831": {
+          "component_degree_mass_product": 0.2017118920118047,
+          "exact_training_interolog_3mer": 0.2866208456041463,
+          "preferential_attachment": 0.4064860821306104,
+          "sequence_length_ratio": 0.04780614964033028,
+          "sequence_length_sum": 0.2058110716642605,
+          "training_common_neighbors": 0.19245120311071742,
+          "training_degree_sum": 0.4095301203264127,
+          "within_pair_3mer_cosine": 0.22094974891341376
+        },
+        "exact_training_interolog_3mer": {
+          "component_degree_mass_product": 0.05955639389984231,
+          "exact_training_interolog_3mer": 1.0,
+          "preferential_attachment": 0.09551161038199149,
+          "sequence_length_ratio": -0.022067104511031183,
+          "sequence_length_sum": 0.6641254457094674,
+          "training_common_neighbors": 0.0644373447559745,
+          "training_degree_sum": 0.09563598474318641,
+          "within_pair_3mer_cosine": 0.6623327046536974
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3": {
+          "component_degree_mass_product": 0.16600988478779954,
+          "exact_training_interolog_3mer": 0.18056660748296777,
+          "preferential_attachment": 0.3810046922304554,
+          "sequence_length_ratio": 0.0821170461327016,
+          "sequence_length_sum": 0.04224911023654811,
+          "training_common_neighbors": 0.17655090273074472,
+          "training_degree_sum": 0.3858122851756534,
+          "within_pair_3mer_cosine": 0.12561540252145492
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260803": {
+          "component_degree_mass_product": 0.1650899107015899,
+          "exact_training_interolog_3mer": 0.18000239577637367,
+          "preferential_attachment": 0.38041185297886276,
+          "sequence_length_ratio": 0.08355857831427017,
+          "sequence_length_sum": 0.0405525683821466,
+          "training_common_neighbors": 0.17668158550908938,
+          "training_degree_sum": 0.3852054097918462,
+          "within_pair_3mer_cosine": 0.1257660775542046
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260817": {
+          "component_degree_mass_product": 0.16794884933115678,
+          "exact_training_interolog_3mer": 0.18047620908041576,
+          "preferential_attachment": 0.3810984779942933,
+          "sequence_length_ratio": 0.08185945223669208,
+          "sequence_length_sum": 0.04345319196719152,
+          "training_common_neighbors": 0.1758136250638551,
+          "training_degree_sum": 0.3859392314633747,
+          "within_pair_3mer_cosine": 0.12461366427699742
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260831": {
+          "component_degree_mass_product": 0.16455248195674746,
+          "exact_training_interolog_3mer": 0.18074444358955932,
+          "preferential_attachment": 0.38049734629275794,
+          "sequence_length_ratio": 0.08071535088833127,
+          "sequence_length_sum": 0.042630720080540106,
+          "training_common_neighbors": 0.1766910361781245,
+          "training_degree_sum": 0.38527311484083904,
+          "within_pair_3mer_cosine": 0.12613461848815927
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4": {
+          "component_degree_mass_product": 0.1564798228958389,
+          "exact_training_interolog_3mer": 0.1804751244855623,
+          "preferential_attachment": 0.3559143117513142,
+          "sequence_length_ratio": 0.08421351030557027,
+          "sequence_length_sum": 0.03810728727876896,
+          "training_common_neighbors": 0.17369519329032693,
+          "training_degree_sum": 0.3602951532599653,
+          "within_pair_3mer_cosine": 0.1276167742989839
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260803": {
+          "component_degree_mass_product": 0.15637712004169765,
+          "exact_training_interolog_3mer": 0.1767865603338351,
+          "preferential_attachment": 0.3541084860644271,
+          "sequence_length_ratio": 0.0842087782661017,
+          "sequence_length_sum": 0.035942958641380314,
+          "training_common_neighbors": 0.17328006118977238,
+          "training_degree_sum": 0.35850198441284187,
+          "within_pair_3mer_cosine": 0.12558015362234454
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260817": {
+          "component_degree_mass_product": 0.15607517638401922,
+          "exact_training_interolog_3mer": 0.18241854686365117,
+          "preferential_attachment": 0.3555986593113302,
+          "sequence_length_ratio": 0.08359573627282636,
+          "sequence_length_sum": 0.039426180180890995,
+          "training_common_neighbors": 0.17264617996486237,
+          "training_degree_sum": 0.3600241451355826,
+          "within_pair_3mer_cosine": 0.12821898179979113
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260831": {
+          "component_degree_mass_product": 0.1553076800806863,
+          "exact_training_interolog_3mer": 0.18028634937110405,
+          "preferential_attachment": 0.3542155084358416,
+          "sequence_length_ratio": 0.08393079900104168,
+          "sequence_length_sum": 0.03854549000966799,
+          "training_common_neighbors": 0.17329245584895242,
+          "training_degree_sum": 0.358492254267994,
+          "within_pair_3mer_cosine": 0.1276818004015754
+        },
+        "preferential_attachment": {
+          "component_degree_mass_product": 0.2790844004404179,
+          "exact_training_interolog_3mer": 0.09551161038199148,
+          "preferential_attachment": 1.0,
+          "sequence_length_ratio": 0.030325148891218845,
+          "sequence_length_sum": -0.0586650110902316,
+          "training_common_neighbors": 0.28166491252810494,
+          "training_degree_sum": 0.9967241685690189,
+          "within_pair_3mer_cosine": -0.0381500530660582
+        },
+        "sequence_length_ratio": {
+          "component_degree_mass_product": 0.09118071886424721,
+          "exact_training_interolog_3mer": -0.02206710451103118,
+          "preferential_attachment": 0.030325148891218845,
+          "sequence_length_ratio": 0.9999999999999998,
+          "sequence_length_sum": -0.012755791617733906,
+          "training_common_neighbors": 0.016656372515271606,
+          "training_degree_sum": 0.029494184415365374,
+          "within_pair_3mer_cosine": 0.04707240316948711
+        },
+        "sequence_length_sum": {
+          "component_degree_mass_product": 0.059709554849636984,
+          "exact_training_interolog_3mer": 0.6641254457094674,
+          "preferential_attachment": -0.0586650110902316,
+          "sequence_length_ratio": -0.012755791617733906,
+          "sequence_length_sum": 0.9999999999999999,
+          "training_common_neighbors": -0.01893759138628111,
+          "training_degree_sum": -0.05870538008995565,
+          "within_pair_3mer_cosine": 0.766893873442372
+        },
+        "training_common_neighbors": {
+          "component_degree_mass_product": 0.07538842427417135,
+          "exact_training_interolog_3mer": 0.06443734475597451,
+          "preferential_attachment": 0.28166491252810494,
+          "sequence_length_ratio": 0.016656372515271606,
+          "sequence_length_sum": -0.01893759138628111,
+          "training_common_neighbors": 1.0,
+          "training_degree_sum": 0.27836910185785,
+          "within_pair_3mer_cosine": 0.015668280202499985
+        },
+        "training_degree_sum": {
+          "component_degree_mass_product": 0.2790423574989248,
+          "exact_training_interolog_3mer": 0.09563598474318642,
+          "preferential_attachment": 0.9967241685690188,
+          "sequence_length_ratio": 0.02949418441536537,
+          "sequence_length_sum": -0.05870538008995565,
+          "training_common_neighbors": 0.2783691018578501,
+          "training_degree_sum": 1.0,
+          "within_pair_3mer_cosine": -0.03896063929047501
+        },
+        "within_pair_3mer_cosine": {
+          "component_degree_mass_product": -0.008210051386730224,
+          "exact_training_interolog_3mer": 0.6623327046536974,
+          "preferential_attachment": -0.0381500530660582,
+          "sequence_length_ratio": 0.04707240316948711,
+          "sequence_length_sum": 0.7668938734423719,
+          "training_common_neighbors": 0.015668280202499985,
+          "training_degree_sum": -0.03896063929047501,
+          "within_pair_3mer_cosine": 1.0
+        }
+      }
+    },
+    "C2_development": {
+      "method": "unweighted_P_and_sampled_U_Pearson_diagnostic",
+      "values": {
+        "component_degree_mass_product": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": null,
+          "preferential_attachment": null,
+          "sequence_length_ratio": null,
+          "sequence_length_sum": null,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": null
+        },
+        "deterministic_hash": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.0005761468050070564,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.00023824281235522638,
+          "sequence_length_sum": -0.0006674906858410371,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.0007458638136327965,
+          "within_pair_3mer_cosine": 0.00023128607241724354
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.14718527475148557,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.088973013011527,
+          "sequence_length_sum": 0.08291679961197149,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.34395874623733624,
+          "within_pair_3mer_cosine": 0.11366323773204713
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.14128166168014375,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.08878362850263816,
+          "sequence_length_sum": 0.07596885548199105,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.34420385582428564,
+          "within_pair_3mer_cosine": 0.10697959145710585
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.1530394630623895,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.09090536530560639,
+          "sequence_length_sum": 0.08533796582747316,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.34459113842668654,
+          "within_pair_3mer_cosine": 0.1180153893791164
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.14651200745567394,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.08679722104164571,
+          "sequence_length_sum": 0.08703119137935877,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.34140689540548497,
+          "within_pair_3mer_cosine": 0.1154336755778309
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.1318543910119358,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.09046867052574735,
+          "sequence_length_sum": 0.09133310005278687,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3322661939735863,
+          "within_pair_3mer_cosine": 0.10370924120736841
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.12770815947002953,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.09113407079227666,
+          "sequence_length_sum": 0.0828144022657622,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3300645226061647,
+          "within_pair_3mer_cosine": 0.09967195162050486
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.14083421623829764,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.09091409558653434,
+          "sequence_length_sum": 0.09217228880080841,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.33298567491929815,
+          "within_pair_3mer_cosine": 0.10953895083830832
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.12494953001692566,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.08791769723906119,
+          "sequence_length_sum": 0.09754130722510398,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.32844520292075435,
+          "within_pair_3mer_cosine": 0.10028037802370639
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.3084884427407833,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.0669168002834088,
+          "sequence_length_sum": 0.199251869404009,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.4033384948948436,
+          "within_pair_3mer_cosine": 0.27141333247804
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.2571164549944047,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.07670772445318538,
+          "sequence_length_sum": 0.18257027663983708,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.35134496792314074,
+          "within_pair_3mer_cosine": 0.23045347803114885
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.28094794575077464,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.039506218429708494,
+          "sequence_length_sum": 0.1609981416249142,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.34676993657046634,
+          "within_pair_3mer_cosine": 0.2428936838067862
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.255429714534711,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.0564154611585913,
+          "sequence_length_sum": 0.16927695471030021,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.33962199984046565,
+          "within_pair_3mer_cosine": 0.22488575267967426
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.3138372247429451,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06934611657978403,
+          "sequence_length_sum": 0.22158471370216481,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3773533420434138,
+          "within_pair_3mer_cosine": 0.2687012707638904
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.29193788534296783,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06565315740007073,
+          "sequence_length_sum": 0.1997040533598796,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.32361145625673127,
+          "within_pair_3mer_cosine": 0.2514534885028372
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.263011416151368,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.05617812843346629,
+          "sequence_length_sum": 0.19270553445213057,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.326338611918571,
+          "within_pair_3mer_cosine": 0.22815800025751887
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.24953160941795371,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.055879149961163034,
+          "sequence_length_sum": 0.17580392428479433,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3179007709413591,
+          "within_pair_3mer_cosine": 0.20919968430830366
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.3279754557303078,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.0692676451635888,
+          "sequence_length_sum": 0.22728733866989803,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3803196647002517,
+          "within_pair_3mer_cosine": 0.2886809850977271
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.2887614103416783,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.07738623407676024,
+          "sequence_length_sum": 0.2044879140807903,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.32248149486483924,
+          "within_pair_3mer_cosine": 0.2551686528122359
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.2907298443925348,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.04502495510912581,
+          "sequence_length_sum": 0.18948204170442742,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3145097002958538,
+          "within_pair_3mer_cosine": 0.25976833916349074
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.24813190087804254,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.05234552264516656,
+          "sequence_length_sum": 0.1794672079674255,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.32230012127412494,
+          "within_pair_3mer_cosine": 0.2135892205839803
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.3602629393340899,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06537014374700832,
+          "sequence_length_sum": 0.25648457488237725,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3736141386401304,
+          "within_pair_3mer_cosine": 0.3228143237139445
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.32568239619827527,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.0648101058118031,
+          "sequence_length_sum": 0.23661838722386466,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3190640329246312,
+          "within_pair_3mer_cosine": 0.2844082000020778
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.3036600268008575,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.05126179612902474,
+          "sequence_length_sum": 0.22084353980346846,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3246035517224468,
+          "within_pair_3mer_cosine": 0.28071814224203445
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.30367360243071007,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.053153272409470216,
+          "sequence_length_sum": 0.20707732192776984,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3240325542555912,
+          "within_pair_3mer_cosine": 0.271160000018856
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.33707252052446146,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.07148096786171702,
+          "sequence_length_sum": 0.24259156540355165,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3491347828009621,
+          "within_pair_3mer_cosine": 0.29821076334701024
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.3053164344496748,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06434848979941044,
+          "sequence_length_sum": 0.2177260331486058,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.29829811190890887,
+          "within_pair_3mer_cosine": 0.26333832969571
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.28084948030131546,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06046425954290593,
+          "sequence_length_sum": 0.20854851774974653,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.29795765139429536,
+          "within_pair_3mer_cosine": 0.2554318410599741
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.28283818745198164,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.059491844274476034,
+          "sequence_length_sum": 0.19930439753359563,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.30375701545209066,
+          "within_pair_3mer_cosine": 0.25013738747571257
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.33284550591164985,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.07494430992114286,
+          "sequence_length_sum": 0.24742236292213782,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.36416695911246866,
+          "within_pair_3mer_cosine": 0.2949063899371365
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.27557861194803024,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.08121263471939867,
+          "sequence_length_sum": 0.24110913877170104,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3030866000225746,
+          "within_pair_3mer_cosine": 0.2489707081340722
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.29590174899594307,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.05180250965989219,
+          "sequence_length_sum": 0.19941564075241378,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.31610197639687543,
+          "within_pair_3mer_cosine": 0.2622340705016976
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.28097326268322786,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.059052111038502435,
+          "sequence_length_sum": 0.19388519424998035,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.3130694657436835,
+          "within_pair_3mer_cosine": 0.24436336501227415
+        },
+        "exact_training_interolog_3mer": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 1.0,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.05076980929081148,
+          "sequence_length_sum": 0.6013477891195125,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.0630082457095993,
+          "within_pair_3mer_cosine": 0.7395236843718977
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.18625517302848843,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06671366780946104,
+          "sequence_length_sum": 0.04682621395380654,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.2753051720997185,
+          "within_pair_3mer_cosine": 0.1383823937456595
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.18884140128739996,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.0661294759602605,
+          "sequence_length_sum": 0.04440984704534238,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.2741791110271392,
+          "within_pair_3mer_cosine": 0.14036834197213963
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.18566853310918283,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06711456136887008,
+          "sequence_length_sum": 0.04753108453524674,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.2753396704715237,
+          "within_pair_3mer_cosine": 0.13728253211287214
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.18353724010744482,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06664546465922373,
+          "sequence_length_sum": 0.048369729544844274,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.2753563397490889,
+          "within_pair_3mer_cosine": 0.13696374101297998
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.16238511055460786,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.07126763063782021,
+          "sequence_length_sum": 0.04883537239394753,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.26233436323545184,
+          "within_pair_3mer_cosine": 0.1231962684239715
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.1653359248106239,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06743260535896084,
+          "sequence_length_sum": 0.046879663954038996,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.2597358913022063,
+          "within_pair_3mer_cosine": 0.12601282520966126
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.16484611689046252,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.07277783011957195,
+          "sequence_length_sum": 0.048302374239874483,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.26183777911846545,
+          "within_pair_3mer_cosine": 0.12406125042790413
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.15446651257735539,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.07251953200707152,
+          "sequence_length_sum": 0.05058620023050519,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.261421863976348,
+          "within_pair_3mer_cosine": 0.11761041902981371
+        },
+        "preferential_attachment": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": null,
+          "preferential_attachment": null,
+          "sequence_length_ratio": null,
+          "sequence_length_sum": null,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": null
+        },
+        "sequence_length_ratio": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.05076980929081147,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 1.0,
+          "sequence_length_sum": 0.05901846832464649,
+          "training_common_neighbors": null,
+          "training_degree_sum": 0.015514809279699428,
+          "within_pair_3mer_cosine": 0.05624340579180162
+        },
+        "sequence_length_sum": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.6013477891195125,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.059018468324646495,
+          "sequence_length_sum": 1.0,
+          "training_common_neighbors": null,
+          "training_degree_sum": -0.042442002187301986,
+          "within_pair_3mer_cosine": 0.696637443473063
+        },
+        "training_common_neighbors": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": null,
+          "preferential_attachment": null,
+          "sequence_length_ratio": null,
+          "sequence_length_sum": null,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": null
+        },
+        "training_degree_sum": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.0630082457095993,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.015514809279699428,
+          "sequence_length_sum": -0.04244200218730198,
+          "training_common_neighbors": null,
+          "training_degree_sum": 1.0,
+          "within_pair_3mer_cosine": -0.026781084982729
+        },
+        "within_pair_3mer_cosine": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.7395236843718977,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.05624340579180162,
+          "sequence_length_sum": 0.696637443473063,
+          "training_common_neighbors": null,
+          "training_degree_sum": -0.026781084982728996,
+          "within_pair_3mer_cosine": 1.0
+        }
+      }
+    },
+    "C3_development": {
+      "method": "unweighted_P_and_sampled_U_Pearson_diagnostic",
+      "values": {
+        "component_degree_mass_product": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": null,
+          "preferential_attachment": null,
+          "sequence_length_ratio": null,
+          "sequence_length_sum": null,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": null
+        },
+        "deterministic_hash": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.0007387657211684844,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 6.107276208409709e-06,
+          "sequence_length_sum": 0.00171238113247514,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.0007982615615125065
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.051299969611205566,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.1297920529728439,
+          "sequence_length_sum": 0.11762216979487679,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3003305728687299
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.045503646117434265,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.12936303853535758,
+          "sequence_length_sum": 0.10902364234378772,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.29591685885669355
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.057796073019930914,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.13237636612043285,
+          "sequence_length_sum": 0.12000553725810569,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.30043095429242483
+        },
+        "esm2_650m_linear_ablation__linear_lr1e-3__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.05034137475699919,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.12689405144764698,
+          "sequence_length_sum": 0.12315593269652063,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.302878072191373
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.009891047176299758,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.14236433732296958,
+          "sequence_length_sum": 0.13860921284916566,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3610573900683292
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.006836253974229404,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.14257760465817354,
+          "sequence_length_sum": 0.12533336460142105,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.35556615312859363
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.024118526614596104,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.1412530770274049,
+          "sequence_length_sum": 0.13860473249212757,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.35242437634250506
+        },
+        "esm2_650m_linear_ablation__linear_lr3e-4__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": -0.0011407683754639788,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.1404735402797008,
+          "sequence_length_sum": 0.14904747307559268,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3678893054882622
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.32097012453974194,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.04389259852080914,
+          "sequence_length_sum": 0.18666820576693438,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.095547995055185
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.2459778731146724,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06032485435477567,
+          "sequence_length_sum": 0.17316930614327228,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.0667315869724025
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.28704799438063855,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.002640702056626313,
+          "sequence_length_sum": 0.12499814462856748,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.0729309146773993
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_conservative__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.25920434396822456,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.046882709534483286,
+          "sequence_length_sum": 0.1642823008252393,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.09592340517797789
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.33174720122143125,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06034897145593175,
+          "sequence_length_sum": 0.21560604977798684,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.07784824891367514
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.3047752747023661,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06073073487410688,
+          "sequence_length_sum": 0.19526208678488935,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.0429863182566685
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.27310469165100726,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.040591503730371195,
+          "sequence_length_sum": 0.17605676392138622,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.07973053522708844
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_default__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.24513792967634335,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.04822382197078573,
+          "sequence_length_sum": 0.16373708998174114,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.07174561268470422
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.35304430080693655,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.0501512936874621,
+          "sequence_length_sum": 0.21259125383547772,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.09351392457991234
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.30519972968827896,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.06347493488707687,
+          "sequence_length_sum": 0.18469805739933662,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.01937808192224063
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.28304054555379626,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.0319395055405181,
+          "sequence_length_sum": 0.17152684689004602,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.1812536510204533
+        },
+        "esm2_650m_nonlinear_no_gate_ablation__nonlinear_no_dropout__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.26152607678806017,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.02488992726670129,
+          "sequence_length_sum": 0.15546755086697142,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.026291891939574985
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.38439501283584565,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.08287574130809044,
+          "sequence_length_sum": 0.2710510545586045,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.22492502777471343
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.3338444330891246,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.09918418737184719,
+          "sequence_length_sum": 0.2623753092200197,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.21377403099807177
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.3060457315844959,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.054508170739069696,
+          "sequence_length_sum": 0.21466551166679748,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.1566065063998135
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_conservative__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.311547500636395,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.051285323227296065,
+          "sequence_length_sum": 0.1940251737196746,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.18577571641825288
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.36192746389600106,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.07313057306963774,
+          "sequence_length_sum": 0.23627480130808887,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.1286265407526774
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.32302529476235625,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.08840575576156134,
+          "sequence_length_sum": 0.22480982630398436,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.13114573413139993
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.2965975682116238,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.037415281446986526,
+          "sequence_length_sum": 0.17688456488335094,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.025070214742949768
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_default__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.2806140528739432,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.056777172738090326,
+          "sequence_length_sum": 0.18643057050565315,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.16439683563873114
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.35490444392199316,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.0808774797854762,
+          "sequence_length_sum": 0.24518048898241304,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.14815816997211317
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.23602456810424888,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.13706905553550433,
+          "sequence_length_sum": 0.2734407670820305,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.2557237605146179
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.31624540265018275,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.03721859283305028,
+          "sequence_length_sum": 0.1707343210183564,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.06367168926487633
+        },
+        "esm2_650m_partner_gated_primary__nonlinear_no_dropout__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.30981169661896135,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.02673510467492125,
+          "sequence_length_sum": 0.15730343234654695,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.04889079303094411
+        },
+        "exact_training_interolog_3mer": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 1.0,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.098390577656331,
+          "sequence_length_sum": 0.5399991825788136,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3259155801625979
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.1053135236609901,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.08818909367012279,
+          "sequence_length_sum": 0.06808304895317449,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3360011651640431
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.10992795832818296,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.0856889718135294,
+          "sequence_length_sum": 0.06550250366152309,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3351748880772806
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.10440712784367874,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.08936378541128119,
+          "sequence_length_sum": 0.06854893083138543,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3370394613115322
+        },
+        "lightweight_esm2_150m_linear__linear_lr1e-3__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.10111264640423154,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.08915036550943709,
+          "sequence_length_sum": 0.06992613422608883,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3343410622863183
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.06095026666937779,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.09849855200295633,
+          "sequence_length_sum": 0.07778363406447296,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.36768133236287154
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260803": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.06921729240783252,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.09152141477216934,
+          "sequence_length_sum": 0.07634270295074926,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3638737537406919
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260817": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.06387587102318909,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.10192928613258945,
+          "sequence_length_sum": 0.07646122220276275,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3663280524415482
+        },
+        "lightweight_esm2_150m_linear__linear_lr3e-4__seed20260831": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.04864807600303212,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.10044083421583924,
+          "sequence_length_sum": 0.07927321357731827,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.3667594413630531
+        },
+        "preferential_attachment": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": null,
+          "preferential_attachment": null,
+          "sequence_length_ratio": null,
+          "sequence_length_sum": null,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": null
+        },
+        "sequence_length_ratio": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.098390577656331,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.9999999999999998,
+          "sequence_length_sum": 0.12328360990410778,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.1378075431382721
+        },
+        "sequence_length_sum": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.5399991825788136,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.12328360990410778,
+          "sequence_length_sum": 1.0,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 0.46562077766245963
+        },
+        "training_common_neighbors": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": null,
+          "preferential_attachment": null,
+          "sequence_length_ratio": null,
+          "sequence_length_sum": null,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": null
+        },
+        "training_degree_sum": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": null,
+          "preferential_attachment": null,
+          "sequence_length_ratio": null,
+          "sequence_length_sum": null,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": null
+        },
+        "within_pair_3mer_cosine": {
+          "component_degree_mass_product": null,
+          "exact_training_interolog_3mer": 0.3259155801625979,
+          "preferential_attachment": null,
+          "sequence_length_ratio": 0.13780754313827212,
+          "sequence_length_sum": 0.46562077766245963,
+          "training_common_neighbors": null,
+          "training_degree_sum": null,
+          "within_pair_3mer_cosine": 1.0
+        }
+      }
+    }
+  },
+  "execution_id": "development_embedding_identity_correction_v2",
+  "generated_at_utc": "2026-09-10T21:29:42.770294+00:00",
+  "pair_identity_public": false,
+  "protected_candidates_accessed": false,
+  "protected_truth_accessed": false,
+  "reporting_order": [
+    "C3",
+    "C2",
+    "C1"
+  ],
+  "schema_version": 1,
+  "training_or_checkpoint_change": false
+}
