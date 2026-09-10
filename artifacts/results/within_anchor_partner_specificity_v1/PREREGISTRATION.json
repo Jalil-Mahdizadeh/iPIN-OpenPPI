@@ -1,0 +1,227 @@
+{
+  "artifacts": [
+    {
+      "bytes": 6178533,
+      "path": "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet",
+      "sha256": "4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e"
+    },
+    {
+      "bytes": 851035,
+      "path": "data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet",
+      "sha256": "66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67"
+    },
+    {
+      "bytes": 992813,
+      "path": "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet",
+      "sha256": "4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499"
+    },
+    {
+      "bytes": 156475941,
+      "path": "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet",
+      "sha256": "d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7"
+    },
+    {
+      "bytes": 43520128,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/pooled_embeddings.f32.npy",
+      "sha256": "4450a0a250e2ef84efcd48f627169b003097110e51b82530ba218f6a599ee7a0"
+    },
+    {
+      "bytes": 21855259,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/EMBEDDING_MANIFEST.json",
+      "sha256": "bc4ea08691cdd55f393fc6ebb6264c338c70846b82e5a9001c3ac2a57a34d27f"
+    },
+    {
+      "bytes": 5883,
+      "path": "configs/within_anchor_partner_specificity_v1.yaml",
+      "sha256": "29c291bfd4d7282abb146a676ec08d8c8cb26b7e5a3b7f104a82ba1fe97ef918"
+    },
+    {
+      "bytes": 2094,
+      "path": "governance/decisions/DEC-0046-authorize-within-anchor-partner-specificity-diagnostic.md",
+      "sha256": "5a96940279a7c557b386f9d14d434c9ab648882258a6147272db47ef4f9ee073"
+    },
+    {
+      "bytes": 8625,
+      "path": "docs/protocols/WITHIN_ANCHOR_PARTNER_SPECIFICITY_v1.md",
+      "sha256": "9693e7b571b1b31838dd54ffd919e540dc5c8be7fe79efe36cc2a03706f0e669"
+    }
+  ],
+  "config": {
+    "authority": "governance/decisions/DEC-0046-authorize-within-anchor-partner-specificity-diagnostic.md",
+    "decision": {
+      "minimum_primary_delta": 0.02,
+      "other": "inconclusive_or_mixed_internal_evidence",
+      "paired_95_lower_must_exceed": 0.0,
+      "require_positive_delta_in_each_fold_and_seed": true,
+      "require_positive_delta_vs_endpoint_linear_and_each_fixed_pair_control": true,
+      "require_positive_propensity_stratified_delta": true,
+      "require_positive_quartet_delta_vs_length_and_kmer_controls": true,
+      "require_quartet_95_lower_above": 0.5,
+      "tight_negative_if_primary_95_upper_below": 0.02
+    },
+    "evaluation": {
+      "bootstrap": {
+        "conditional_on": "fitted_models_fixed_folds_and_released_candidate_panel",
+        "percentile": [
+          2.5,
+          97.5
+        ],
+        "replicates": 2000,
+        "scheme": "paired_component_Poisson_1_multiplier_all_unique_endpoint_components",
+        "seed": 20260914
+      },
+      "candidate_panel": "only_released_C3_P_and_sampled_U_rows_incident_to_anchor",
+      "eligibility": "at_least_one_released_P_and_one_sampled_U_partner",
+      "ensemble": "arithmetic_mean_raw_scores_across_fixed_seeds_within_fold",
+      "primary": "equal_anchor_macro_design_weighted_within_anchor_P_vs_U_concordance",
+      "primary_comparator": "endpoint_mlp64",
+      "propensity_sensitivity": {
+        "bins": 5,
+        "boundaries": "quintiles_of_endpoint_mlp64_fit_endpoint_scores_only",
+        "comparisons": "P_and_U_partners_in_same_bin_then_equal_anchor_mean"
+      },
+      "recall_at": [
+        10,
+        100
+      ],
+      "recall_interpretation": "unweighted_released_candidate_panel_only_not_full_universe",
+      "secondary_comparators": [
+        "endpoint_linear",
+        "length_ratio",
+        "kmer3_cosine",
+        "pooled_cosine"
+      ],
+      "ties": "half_credit"
+    },
+    "feasibility": {
+      "minimum_anchor_components_per_fold": 50,
+      "minimum_eligible_anchors_per_fold": 200,
+      "minimum_fit_positive_per_fold": 500,
+      "minimum_quartet_components_per_fold": 50,
+      "minimum_quartets_per_fold": 100,
+      "synthetic_power_component_effect_sd": [
+        0.05,
+        0.1,
+        0.2
+      ],
+      "synthetic_power_interpretation": "illustrative_component_only_sensitivity_not_empirical_power_guarantee",
+      "synthetic_power_target": 0.8
+    },
+    "inputs": {
+      "embedding_manifest": {
+        "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/EMBEDDING_MANIFEST.json",
+        "sha256": "bc4ea08691cdd55f393fc6ebb6264c338c70846b82e5a9001c3ac2a57a34d27f"
+      },
+      "embeddings": {
+        "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/pooled_embeddings.f32.npy",
+        "sha256": "4450a0a250e2ef84efcd48f627169b003097110e51b82530ba218f6a599ee7a0"
+      },
+      "endpoints": {
+        "path": "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet",
+        "rows": 17000,
+        "sha256": "4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e"
+      },
+      "partitions": {
+        "path": "data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet",
+        "rows": 17000,
+        "sha256": "66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67"
+      },
+      "positive": {
+        "path": "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet",
+        "rows": 16799,
+        "sha256": "4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499"
+      },
+      "unlabeled": {
+        "path": "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet",
+        "rows": 2000000,
+        "sha256": "d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7"
+      }
+    },
+    "models": [
+      "endpoint_linear",
+      "endpoint_mlp64",
+      "pair_linear"
+    ],
+    "normalization": {
+      "fit": "all_public_endpoints_outside_evaluation_fold",
+      "mean_and_population_std": "float64",
+      "output_dtype": "float32",
+      "standard_deviation_floor": 1e-06
+    },
+    "outputs": {
+      "generated": "artifacts/runs/within_anchor_partner_specificity_v1",
+      "results": "artifacts/results/within_anchor_partner_specificity_v1",
+      "validation": "artifacts/validation/within_anchor_partner_specificity_v1"
+    },
+    "protocol": "docs/protocols/WITHIN_ANCHOR_PARTNER_SPECIFICITY_v1.md",
+    "protocol_id": "within_anchor_partner_specificity_v1",
+    "quartets": {
+      "bootstrap_weight": "product_of_multipliers_of_unique_components_among_four_endpoints",
+      "crosses": "both_cross_edges_must_exist_in_released_C3_U_panel",
+      "enumerate": "both_distinct_cross_pairings_for_every_unordered_P_edge_pair",
+      "maximum_per_fold": 2000,
+      "maximum_uses_per_endpoint": 50,
+      "maximum_uses_per_positive_edge": 10,
+      "positives": "two_distinct_released_C3_P_edges_with_four_distinct_endpoints",
+      "selection": "ascending_salted_sha256_of_fold_and_oriented_endpoint_indices",
+      "statistic": "fraction_positive_raw_score_contrast_with_half_credit_for_ties",
+      "tie_absolute_tolerance": 1e-06,
+      "weighting": "uniform_selected_quartets_no_claim_of_population_HT_estimation"
+    },
+    "runtime": {
+      "container": "containers/images/ipin-model-arm64_0.1.0.sif",
+      "container_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+      "cpu_threads": 8,
+      "deterministic_algorithms": true,
+      "gpu_hours_ceiling": 2,
+      "tf32": false
+    },
+    "schema_version": 1,
+    "scientific_boundary": {
+      "development_informed_question_and_pair_head_choice": true,
+      "development_rows_used": false,
+      "interpretation": "prospectively_specified_internal_released_positive_vs_unlabeled_diagnostic",
+      "no_outcome_driven_search": true,
+      "protected_access": false,
+      "source_memberships_available": false
+    },
+    "split": {
+      "components": 5427,
+      "endpoints": 11900,
+      "evaluate": "both_endpoints_inside_evaluation_fold",
+      "fit": "both_endpoints_outside_evaluation_fold",
+      "folds": 3,
+      "public_partition": "train",
+      "rule": "descending_component_size_then_salted_sha256_assign_to_smallest_endpoint_fold_tie_lowest_index",
+      "salt": "ipin-openppi-partner-specificity-v1"
+    },
+    "training": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "checkpoint": "final_pass_only",
+      "comparisons_per_batch": 4096,
+      "complete_passes": 5,
+      "epsilon": 1e-08,
+      "final_learning_rate_fraction": 0.1,
+      "gradient_clip_norm": 1.0,
+      "learning_rate": 0.0003,
+      "objective": "globally_paired_P_vs_U_softplus_with_U_design_weight_over_fit_mean",
+      "optimizer": "AdamW",
+      "order": "PCG64DXSM_seed_plus_pass_permutation_of_canonical_numeric_pair_order",
+      "positive_repetition": "cycle_permuted_P_with_pass_minus_one_offset",
+      "seeds": [
+        20260911,
+        20260912,
+        20260913
+      ],
+      "warmup_fraction": 0.05,
+      "weight_decay": 0.0001
+    }
+  },
+  "created_utc": "2026-09-10T23:24:36.278708+00:00",
+  "external_registry": false,
+  "git_head": "6c02703ffad16e566f84f5cc7b3d2653363a7773",
+  "scope": "local_specification_before_this_study_census_and_model_fits"
+}

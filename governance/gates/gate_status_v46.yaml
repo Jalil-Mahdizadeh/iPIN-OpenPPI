@@ -1,0 +1,69 @@
+schema_version: 46
+supersedes: governance/gates/gate_status_v45.yaml
+updated_date: "2026-09-11"
+programme_state: internal_partner_specificity_signal_verified_protected_still_sealed
+authority: governance/decisions/DEC-0046-authorize-within-anchor-partner-specificity-diagnostic.md
+gates:
+  prospective_internal_specification:
+    status: pass
+    external_registry_claimed: false
+    development_informed_question_and_pair_head_choice: true
+    execution_freeze_sha256: 6f43af31884dd263adf3d2f9cf4c4dd23031f852592b2f786cd9f2c8f67607e0
+  public_training_feasibility:
+    status: pass
+    folds: 3
+    eligible_anchors: 3072
+    released_positive_rows: 5798
+    unlabeled_rows: 667877
+    selected_quartets: 6000
+    fold_0_largest_anchor_component_fraction: 0.36093023255813955
+  prescribed_training_and_scoring:
+    status: pass
+    fits: 27
+    seeds: 3
+    models: 3
+    passes_per_fit: 5
+    checkpoint_selection: final_pass_only
+    training_elapsed_seconds: 93.1943210720001
+    holdout_scores_created_only_after_all_fits_finished: true
+  tests:
+    status: pass
+    pre_execution_passed: 357
+    post_execution_passed: 357
+    new_tests: 28
+  numerical_reference_validation:
+    status: pass
+    independence: same_author_separate_numpy_scipy_forward_and_metric_algebra
+    checks_passed: 14
+    learned_score_values_checked: 6063075
+    forward_max_absolute_difference: 0.000006037015426230141
+    direct_primary_bootstrap_replicates_checked: 16
+    report_sha256: 4dbca62e4792121f0ec6e8f4bd944a1dbed46728afdc6f7ff37691bd02b4e2f1
+  supporting_arithmetic_audit:
+    status: pass
+    timing: post_readout_validation_only_no_new_estimands
+    quartet_replicates_checked: 2000
+    quartet_scorers_checked: 6
+    propensity_matching_and_panel_recalls_checked: true
+    matched_training_order_groups_checked: 45
+    report_sha256: e914e3315ce5b038439d7930be2b6df26a8471bcd0871cad1eb7b77405955315
+scientific_result:
+  metric: equal_anchor_macro_design_weighted_released_P_vs_U_concordance
+  pair_head: 0.6636119485662721
+  endpoint_linear: 0.5842033986597526
+  endpoint_mlp64: 0.5578937268603411
+  primary_delta: 0.10571822170593104
+  primary_delta_component_interval_95: [0.09372912157748807, 0.139638706758557]
+  quartet_observed_pairing_preference: 0.7278333333333333
+  quartet_component_interval_95: [0.681233577235222, 0.7839362020971177]
+  prespecified_signal_checks_passed: 8
+  disposition: useful_internal_partner_specific_signal_not_external_confirmation
+  physical_specificity_demonstrated: false
+  source_robustness_demonstrated: false
+  old_gated_architecture_claim_revived: false
+protected_evaluation_authorized: false
+protected_candidate_truth_or_key_access_performed: false
+development_rows_accessed: false
+encoder_extraction_or_tuning_performed: false
+external_expert_review_implied: false
+new_remote_push_authorized: false

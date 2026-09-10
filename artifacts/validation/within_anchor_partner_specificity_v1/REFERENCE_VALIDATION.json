@@ -1,0 +1,34 @@
+{
+  "all_anchor_points_and_quartet_points_checked": true,
+  "bootstrap_draws_reproduced": 2000,
+  "checks": [
+    "frozen_hashes",
+    "raw_embedding_join",
+    "public_pair_join_and_weights",
+    "component_folds",
+    "fit_only_normalization",
+    "C3_rows_and_panel",
+    "checkpoint_forward",
+    "seed_ensemble",
+    "quartet_eligibility_and_caps",
+    "all_anchor_points",
+    "all_quartet_points",
+    "direct_bootstrap_reference",
+    "paired_intervals",
+    "complete_fits"
+  ],
+  "created_utc": "2026-09-10T23:44:14.778162+00:00",
+  "forward_absolute_tolerance": 0.0001,
+  "forward_fp64_max_absolute_difference": 6.037015426230141e-06,
+  "full_direct_bootstrap_replicates_checked": 16,
+  "learned_score_values_checked": 6063075,
+  "pass": true,
+  "public_pair_joins_checked": 2016799,
+  "public_vector_values_checked": 7616000,
+  "result_artifact": {
+    "bytes": 7561,
+    "path": "artifacts/results/within_anchor_partner_specificity_v1/RESULTS.json",
+    "sha256": "f6e0c83cdee51dab99a1c7abe5b9c59deaa0970b30455f5b5e64200f3eefea7e"
+  },
+  "validator_independence": "same_author_separate_forward_and_metric_formulas_not_external_review"
+}

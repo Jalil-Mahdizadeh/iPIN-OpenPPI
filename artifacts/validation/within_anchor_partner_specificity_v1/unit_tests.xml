@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="26" failures="0" skipped="0" tests="26" time="8.123" timestamp="2026-09-11T01:29:04.186428" hostname="n140"><testcase classname="" name="tests.unit.test_component_split_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_component_split_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_component_split_validation.py:6: in &lt;module&gt;
+    from ipin_openppi.validation.component_split import _allocate, _components, _contains
+src/ipin_openppi/validation/component_split.py:16: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_estimand_policy_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_estimand_policy_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_estimand_policy_validation.py:8: in &lt;module&gt;
+    from ipin_openppi.benchmark.estimand_policy_validation import (
+src/ipin_openppi/benchmark/estimand_policy_validation.py:22: in &lt;module&gt;
+    from ipin_openppi.validation.staging import Checks, _write_report
+src/ipin_openppi/validation/staging.py:16: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_evidence_mapping_sql" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_evidence_mapping_sql.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_evidence_mapping_sql.py:3: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_huri_workbooks_v2" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_huri_workbooks_v2.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_huri_workbooks_v2.py:9: in &lt;module&gt;
+    from ipin_openppi.ingestion.huri_v2 import (
+src/ipin_openppi/ingestion/huri_v2.py:22: in &lt;module&gt;
+    import openpyxl
+E   ModuleNotFoundError: No module named 'openpyxl'</error></testcase><testcase classname="" name="tests.unit.test_intact_cardinality_v3" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_intact_cardinality_v3.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_intact_cardinality_v3.py:4: in &lt;module&gt;
+    from ipin_openppi.ingestion.pipeline_v4 import PARSER_VERSION
+src/ipin_openppi/ingestion/pipeline_v4.py:8: in &lt;module&gt;
+    from .huri_v2 import parse_huri
+src/ipin_openppi/ingestion/huri_v2.py:22: in &lt;module&gt;
+    import openpyxl
+E   ModuleNotFoundError: No module named 'openpyxl'</error></testcase><testcase classname="" name="tests.unit.test_lambourne_archives_and_imex" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_lambourne_archives_and_imex.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/unit/test_lambourne_archives_and_imex.py:12: in &lt;module&gt;
+    from ipin_openppi.lambourne_audit.pipeline import (
+src/ipin_openppi/lambourne_audit/pipeline.py:15: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_lambourne_overlap" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_lambourne_overlap.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_lambourne_overlap.py:1: in &lt;module&gt;
+    from ipin_openppi.lambourne_audit.overlap import (
+src/ipin_openppi/lambourne_audit/overlap.py:10: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_lambourne_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_lambourne_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/unit/test_lambourne_validation.py:6: in &lt;module&gt;
+    from ipin_openppi.validation.lambourne import (
+src/ipin_openppi/validation/lambourne.py:15: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_model_governance_protocol_safety" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_model_governance_protocol_safety.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_model_governance_protocol_safety.py:8: in &lt;module&gt;
+    from ipin_openppi.model_governance.protocol import (
+src/ipin_openppi/model_governance/__init__.py:3: in &lt;module&gt;
+    from .protocol import audit_protocol, validate_config
+src/ipin_openppi/model_governance/protocol.py:26: in &lt;module&gt;
+    from ipin_openppi.validation.staging import _write_report
+src/ipin_openppi/validation/staging.py:16: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_model_governance_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_model_governance_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_model_governance_validation.py:9: in &lt;module&gt;
+    from ipin_openppi.validation.model_governance import (
+src/ipin_openppi/validation/model_governance.py:28: in &lt;module&gt;
+    from ipin_openppi.validation.staging import _write_report
+src/ipin_openppi/validation/staging.py:16: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_negative_evidence_evidence" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_negative_evidence_evidence.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_negative_evidence_evidence.py:5: in &lt;module&gt;
+    from ipin_openppi.negative_evidence.evidence import (
+src/ipin_openppi/negative_evidence/evidence.py:10: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_negative_evidence_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_negative_evidence_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_negative_evidence_validation.py:1: in &lt;module&gt;
+    from ipin_openppi.validation.negative_evidence import (
+src/ipin_openppi/validation/negative_evidence.py:16: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_pair_artifacts_semantics" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_pair_artifacts_semantics.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_pair_artifacts_semantics.py:11: in &lt;module&gt;
+    from ipin_openppi.pair_artifacts.construction import _candidate_token
+src/ipin_openppi/pair_artifacts/construction.py:17: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_pair_protocol_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_pair_protocol_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_pair_protocol_validation.py:8: in &lt;module&gt;
+    from ipin_openppi.validation.pair_protocol import (
+src/ipin_openppi/validation/pair_protocol.py:17: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_pipeline_v4_safety" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_pipeline_v4_safety.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_pipeline_v4_safety.py:5: in &lt;module&gt;
+    from ipin_openppi.ingestion import pipeline_v4
+src/ipin_openppi/ingestion/pipeline_v4.py:8: in &lt;module&gt;
+    from .huri_v2 import parse_huri
+src/ipin_openppi/ingestion/huri_v2.py:22: in &lt;module&gt;
+    import openpyxl
+E   ModuleNotFoundError: No module named 'openpyxl'</error></testcase><testcase classname="" name="tests.unit.test_pre_split_mmseqs" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_pre_split_mmseqs.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_pre_split_mmseqs.py:6: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_pre_split_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_pre_split_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_pre_split_validation.py:9: in &lt;module&gt;
+    from ipin_openppi.validation.pre_split_feasibility import (
+src/ipin_openppi/validation/pre_split_feasibility.py:16: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_reconciliation_v1" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_reconciliation_v1.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_reconciliation_v1.py:3: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_reconciliation_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_reconciliation_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_reconciliation_validation.py:7: in &lt;module&gt;
+    from ipin_openppi.validation.reconciliation import _require_validation_scope
+src/ipin_openppi/validation/reconciliation.py:14: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_sequence_component_mmseqs" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_sequence_component_mmseqs.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_sequence_component_mmseqs.py:6: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_sequence_component_safety" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_sequence_component_safety.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_sequence_component_safety.py:16: in &lt;module&gt;
+    from ipin_openppi.validation.sequence_components import _independent_eligibility
+src/ipin_openppi/validation/sequence_components.py:18: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_staging_report_writer" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_staging_report_writer.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_staging_report_writer.py:8: in &lt;module&gt;
+    from ipin_openppi.validation.staging import _write_report
+src/ipin_openppi/validation/staging.py:16: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_staging_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_staging_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_staging_validation.py:3: in &lt;module&gt;
+    from ipin_openppi.validation.staging import (
+src/ipin_openppi/validation/staging.py:16: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_systematic_screen_audit" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_systematic_screen_audit.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_systematic_screen_audit.py:5: in &lt;module&gt;
+    from ipin_openppi.benchmark.systematic_screen_audit import (
+src/ipin_openppi/benchmark/systematic_screen_audit.py:21: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_systematic_screen_audit_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_systematic_screen_audit_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_systematic_screen_audit_validation.py:7: in &lt;module&gt;
+    from ipin_openppi.validation.staging import Checks
+src/ipin_openppi/validation/staging.py:16: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase><testcase classname="" name="tests.unit.test_tf_isoform_validation" time="0.000"><error message="collection failure">ImportError while importing test module '/work/tests/unit/test_tf_isoform_validation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/tests/unit/test_tf_isoform_validation.py:3: in &lt;module&gt;
+    from ipin_openppi.validation.tf_isoform import (
+src/ipin_openppi/validation/tf_isoform.py:17: in &lt;module&gt;
+    import duckdb
+E   ModuleNotFoundError: No module named 'duckdb'</error></testcase></testsuite></testsuites>

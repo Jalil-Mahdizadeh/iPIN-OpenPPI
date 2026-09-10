@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "protocol_id": "within_anchor_partner_specificity_v1",
+  "created_utc": "2026-09-10 23:47:56 UTC",
+  "execution_complete": true,
+  "numerical_validation_passed": true,
+  "scientific_disposition": "useful_internal_partner_specific_signal_not_external_confirmation",
+  "protected_access_performed": false,
+  "remote_push_performed": false,
+  "unit_test_summary": {
+    "pre_execution_passed": 357,
+    "post_execution_passed": 357,
+    "new_tests": 28,
+    "preserved_failed_attempt": "unit_tests.xml records missing DuckDB/OpenPyXL collection dependencies in the model-only image, not the final data-runtime test result"
+  },
+  "reference_validation": {
+    "all_learned_score_values_checked": 6063075,
+    "max_absolute_forward_difference": 0.000006037015426230141,
+    "direct_primary_bootstrap_replicates_checked": 16
+  },
+  "supporting_validation": {
+    "timing": "post_readout_arithmetic_only_no_new_estimands",
+    "all_quartet_replicates_checked": 2000
+  },
+  "local_generated_artifacts": "Input arrays, normalizers, checkpoints, scores and bootstrap arrays are hash-bound transitively by the included phase registries; ignored by Git under artifacts/runs/within_anchor_partner_specificity_v1/.",
+  "artifacts": [
+    {
+      "path": "configs/within_anchor_partner_specificity_v1.yaml",
+      "sha256": "29c291bfd4d7282abb146a676ec08d8c8cb26b7e5a3b7f104a82ba1fe97ef918",
+      "bytes": 5883
+    },
+    {
+      "path": "docs/protocols/WITHIN_ANCHOR_PARTNER_SPECIFICITY_v1.md",
+      "sha256": "9693e7b571b1b31838dd54ffd919e540dc5c8be7fe79efe36cc2a03706f0e669",
+      "bytes": 8625
+    },
+    {
+      "path": "docs/reports/m1/M1_Within_Anchor_Partner_Specificity_Diagnostic_v1.md",
+      "sha256": "16c72f9054797920ea8c46ca99f8e8f079b58d2dae7bfccefa457effa1a80025",
+      "bytes": 11831
+    },
+    {
+      "path": "governance/decisions/DEC-0046-authorize-within-anchor-partner-specificity-diagnostic.md",
+      "sha256": "5a96940279a7c557b386f9d14d434c9ab648882258a6147272db47ef4f9ee073",
+      "bytes": 2094
+    },
+    {
+      "path": "governance/PROJECT_STATUS_v46.md",
+      "sha256": "70daa38a98fa75c443b6b4c2da841da72f64d693927c5b76b313d5881040083f",
+      "bytes": 2388
+    },
+    {
+      "path": "governance/gates/gate_status_v46.yaml",
+      "sha256": "fd1b47adff2e80198bc3620b7047845608ce179d923f5753d6f5422475e230e9",
+      "bytes": 2839
+    },
+    {
+      "path": "scripts/model/README.md",
+      "sha256": "ef8f3d59ff604314b747fb970a86aed39410781bcdcdd7ccce3041c803226082",
+      "bytes": 4169
+    },
+    {
+      "path": "scripts/model/run_within_anchor_partner_specificity_v1.py",
+      "sha256": "61de91366c8814d5ff24627a59b6b12afc499e554c1bec32a3e65957ce652ac3",
+      "bytes": 194
+    },
+    {
+      "path": "scripts/model/audit_within_anchor_supporting_metrics_v1.py",
+      "sha256": "e019ac0385ab2f87447e84d70cde13b322dad44166fe89a9ce165c0545ec0b55",
+      "bytes": 7442
+    },
+    {
+      "path": "tests/unit/test_partner_specificity.py",
+      "sha256": "d34d900d43dd30cc636e9b07610a23c28fec0c9af21603d991b2ed7c043c1033",
+      "bytes": 11974
+    },
+    {
+      "path": "src/ipin_openppi/partner_specificity/__init__.py",
+      "sha256": "3b4e5a02ccee8a7732a129dc5093dd554f86e49c23f4105391d8ed8eccb3c776",
+      "bytes": 68
+    },
+    {
+      "path": "src/ipin_openppi/partner_specificity/data.py",
+      "sha256": "09e4a18ecca8cff1d103c2e4b4fbf9ec4928ee85733f375033515fc513a0d47a",
+      "bytes": 17536
+    },
+    {
+      "path": "src/ipin_openppi/partner_specificity/models.py",
+      "sha256": "a3b024fe8ecfd2a82dfd2ad489d68f5a3b424b2afe0dfcec679db9a0275448a6",
+      "bytes": 875
+    },
+    {
+      "path": "src/ipin_openppi/partner_specificity/pipeline.py",
+      "sha256": "a1063a5169c8f4c0ed5eb54c8cda0f5765034f9c5115481978c77d837d17f30b",
+      "bytes": 21729
+    },
+    {
+      "path": "src/ipin_openppi/partner_specificity/semantics.py",
+      "sha256": "3ddc3135ad9913ffed7718cc11f5164690c6e0c19ecfdcc82cc867f0cf870149",
+      "bytes": 10360
+    },
+    {
+      "path": "src/ipin_openppi/partner_specificity/validation.py",
+      "sha256": "0e5fe9fe5911b7763564643963dd4bd880e8f105b6d43f2af856cf763b0cd860",
+      "bytes": 14464
+    },
+    {
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/PREREGISTRATION.json",
+      "sha256": "4fd1a57e110ca3206c67ea07d4bd61e1558fdc4fdf7c26e80e45e196234d2bec",
+      "bytes": 9532
+    },
+    {
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/PREPARATION_RESUME.json",
+      "sha256": "22eb915700ee60ccbc93c92ad74201ebf691516cf2312bb0503b1a1ccc274f9e",
+      "bytes": 217
+    },
+    {
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/FEASIBILITY.json",
+      "sha256": "16517ea3b348b2aff5b2c563573071d2d093a8473ee529eee4a3f039a899fab8",
+      "bytes": 5151
+    },
+    {
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/EXECUTION_FREEZE.json",
+      "sha256": "6f43af31884dd263adf3d2f9cf4c4dd23031f852592b2f786cd9f2c8f67607e0",
+      "bytes": 6704
+    },
+    {
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/TRAINING_COMPLETE.json",
+      "sha256": "9b39eed10d5336eb5220c4413e1347c32b33f40f5141e96bcf8044a9f8ac2e14",
+      "bytes": 75121
+    },
+    {
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/SCORING_COMPLETE.json",
+      "sha256": "3730faed33e7e7761e3fbdb7223da8a341c2fc60d8af47fb0cece6ca0b629f43",
+      "bytes": 799
+    },
+    {
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/RESULTS.json",
+      "sha256": "f6e0c83cdee51dab99a1c7abe5b9c59deaa0970b30455f5b5e64200f3eefea7e",
+      "bytes": 7561
+    },
+    {
+      "path": "artifacts/validation/within_anchor_partner_specificity_v1/REFERENCE_VALIDATION.json",
+      "sha256": "4dbca62e4792121f0ec6e8f4bd944a1dbed46728afdc6f7ff37691bd02b4e2f1",
+      "bytes": 1150
+    },
+    {
+      "path": "artifacts/validation/within_anchor_partner_specificity_v1/SUPPORTING_METRIC_AUDIT.json",
+      "sha256": "e914e3315ce5b038439d7930be2b6df26a8471bcd0871cad1eb7b77405955315",
+      "bytes": 651
+    },
+    {
+      "path": "artifacts/validation/within_anchor_partner_specificity_v1/unit_tests.xml",
+      "sha256": "1a8e42d8bca0d40be658730156deba7e601c1c2cc885d6005683690fe4441e11",
+      "bytes": 19981
+    },
+    {
+      "path": "artifacts/validation/within_anchor_partner_specificity_v1/unit_tests_data_runtime.xml",
+      "sha256": "5264287c7c1d7182608ddfc7fa011e5cf4cf7c174642165aa84065ee7a5039fb",
+      "bytes": 53718
+    },
+    {
+      "path": "artifacts/validation/within_anchor_partner_specificity_v1/unit_tests_post_execution.xml",
+      "sha256": "f909fffd4047bba117543de1aeccf7c0083d9ae79734cc18a6d051d586dce601",
+      "bytes": 53718
+    }
+  ]
+}

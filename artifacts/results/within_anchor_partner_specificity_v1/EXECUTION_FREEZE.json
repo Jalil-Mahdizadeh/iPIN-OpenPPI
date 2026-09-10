@@ -1,0 +1,169 @@
+{
+  "artifacts": [
+    {
+      "bytes": 6178533,
+      "path": "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet",
+      "sha256": "4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e"
+    },
+    {
+      "bytes": 851035,
+      "path": "data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet",
+      "sha256": "66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67"
+    },
+    {
+      "bytes": 992813,
+      "path": "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/positive_pairs/part-00000.parquet",
+      "sha256": "4ac95c75051c7149e16e8f9a14689d1ea07f8c4e2b892a890b8a2c57ef66d499"
+    },
+    {
+      "bytes": 156475941,
+      "path": "data/canonical/pair_level_pu_r_benchmark_artifacts_v1/training/unlabeled_pairs/part-00000.parquet",
+      "sha256": "d562f860d93beb3b01ac4d658ed9e7bab41a8271baffe0176061ccc9a4a7adc7"
+    },
+    {
+      "bytes": 43520128,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/pooled_embeddings.f32.npy",
+      "sha256": "4450a0a250e2ef84efcd48f627169b003097110e51b82530ba218f6a599ee7a0"
+    },
+    {
+      "bytes": 21855259,
+      "path": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1/esm2_150m/EMBEDDING_MANIFEST.json",
+      "sha256": "bc4ea08691cdd55f393fc6ebb6264c338c70846b82e5a9001c3ac2a57a34d27f"
+    },
+    {
+      "bytes": 5883,
+      "path": "configs/within_anchor_partner_specificity_v1.yaml",
+      "sha256": "29c291bfd4d7282abb146a676ec08d8c8cb26b7e5a3b7f104a82ba1fe97ef918"
+    },
+    {
+      "bytes": 2094,
+      "path": "governance/decisions/DEC-0046-authorize-within-anchor-partner-specificity-diagnostic.md",
+      "sha256": "5a96940279a7c557b386f9d14d434c9ab648882258a6147272db47ef4f9ee073"
+    },
+    {
+      "bytes": 8625,
+      "path": "docs/protocols/WITHIN_ANCHOR_PARTNER_SPECIFICITY_v1.md",
+      "sha256": "9693e7b571b1b31838dd54ffd919e540dc5c8be7fe79efe36cc2a03706f0e669"
+    },
+    {
+      "bytes": 81056178,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/public_arrays.npz",
+      "sha256": "815dda34baa1d78b759b1a8c8ccb201fd75cb8686d93b241f6212df53dddf5f8"
+    },
+    {
+      "bytes": 30464128,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/raw_public_embeddings.npy",
+      "sha256": "f48c46a0613a82fbb3330bbb30480c09af169ad99e71e3443544c45317e26803"
+    },
+    {
+      "bytes": 7695968,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/endpoint_metadata.json",
+      "sha256": "d963c885ed2c34073f4e5922b8e8fdcb3ff5a8a2724e37b497471b7f7103385c"
+    },
+    {
+      "bytes": 9464171,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/evaluation_fold_0.npz",
+      "sha256": "bae2bf7becd2f83aeb3f7a506f1374d9bda6f1e0ff03c485268576df018ab2cd"
+    },
+    {
+      "bytes": 8242412,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/evaluation_fold_1.npz",
+      "sha256": "6db591f19e17f3dd185294937af524bbe6c78703d7f62bc985f75eb69d463203"
+    },
+    {
+      "bytes": 10304056,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/evaluation_fold_2.npz",
+      "sha256": "674d3032901fdd2fa959aef747b04f3de98a16850b57567bd3f7a304c14e5f9e"
+    },
+    {
+      "bytes": 68,
+      "path": "src/ipin_openppi/partner_specificity/__init__.py",
+      "sha256": "3b4e5a02ccee8a7732a129dc5093dd554f86e49c23f4105391d8ed8eccb3c776"
+    },
+    {
+      "bytes": 17536,
+      "path": "src/ipin_openppi/partner_specificity/data.py",
+      "sha256": "09e4a18ecca8cff1d103c2e4b4fbf9ec4928ee85733f375033515fc513a0d47a"
+    },
+    {
+      "bytes": 875,
+      "path": "src/ipin_openppi/partner_specificity/models.py",
+      "sha256": "a3b024fe8ecfd2a82dfd2ad489d68f5a3b424b2afe0dfcec679db9a0275448a6"
+    },
+    {
+      "bytes": 21729,
+      "path": "src/ipin_openppi/partner_specificity/pipeline.py",
+      "sha256": "a1063a5169c8f4c0ed5eb54c8cda0f5765034f9c5115481978c77d837d17f30b"
+    },
+    {
+      "bytes": 10360,
+      "path": "src/ipin_openppi/partner_specificity/semantics.py",
+      "sha256": "3ddc3135ad9913ffed7718cc11f5164690c6e0c19ecfdcc82cc867f0cf870149"
+    },
+    {
+      "bytes": 14464,
+      "path": "src/ipin_openppi/partner_specificity/validation.py",
+      "sha256": "0e5fe9fe5911b7763564643963dd4bd880e8f105b6d43f2af856cf763b0cd860"
+    },
+    {
+      "bytes": 4163,
+      "path": "src/ipin_openppi/stage1/models.py",
+      "sha256": "653340c6aa7caa21672f855fec6b0562857984560b49b20a2e37a4c9579ede28"
+    },
+    {
+      "bytes": 3856,
+      "path": "src/ipin_openppi/stage1/support.py",
+      "sha256": "02a7fc6f1b8cd831db058d18866f701a01e47723eaf36d9856e4f0877ce3ec24"
+    },
+    {
+      "bytes": 4191,
+      "path": "src/ipin_openppi/stage1/baselines.py",
+      "sha256": "26786946de618b82ea4f7e4ad821f5ee6cbd8123bce978365f794cb0912552b7"
+    },
+    {
+      "bytes": 4943,
+      "path": "src/ipin_openppi/stage1/constants.py",
+      "sha256": "b148173f9bbbd1280c4f644d122211ba671d3dd5ec6852e3cba2118bb3dedefb"
+    },
+    {
+      "bytes": 194,
+      "path": "scripts/model/run_within_anchor_partner_specificity_v1.py",
+      "sha256": "61de91366c8814d5ff24627a59b6b12afc499e554c1bec32a3e65957ce652ac3"
+    },
+    {
+      "bytes": 11974,
+      "path": "tests/unit/test_partner_specificity.py",
+      "sha256": "d34d900d43dd30cc636e9b07610a23c28fec0c9af21603d991b2ed7c043c1033"
+    },
+    {
+      "bytes": 9532,
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/PREREGISTRATION.json",
+      "sha256": "4fd1a57e110ca3206c67ea07d4bd61e1558fdc4fdf7c26e80e45e196234d2bec"
+    },
+    {
+      "bytes": 5151,
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/FEASIBILITY.json",
+      "sha256": "16517ea3b348b2aff5b2c563573071d2d093a8473ee529eee4a3f039a899fab8"
+    },
+    {
+      "bytes": 53718,
+      "path": "artifacts/validation/within_anchor_partner_specificity_v1/unit_tests_data_runtime.xml",
+      "sha256": "5264287c7c1d7182608ddfc7fa011e5cf4cf7c174642165aa84065ee7a5039fb"
+    },
+    {
+      "bytes": 217,
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/PREPARATION_RESUME.json",
+      "sha256": "22eb915700ee60ccbc93c92ad74201ebf691516cf2312bb0503b1a1ccc274f9e"
+    },
+    {
+      "bytes": 10656620544,
+      "path": "containers/images/ipin-model-arm64_0.1.0.sif",
+      "sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91"
+    }
+  ],
+  "created_utc": "2026-09-10T23:31:16.646673+00:00",
+  "fits_exist": false,
+  "git_head": "6c02703ffad16e566f84f5cc7b3d2653363a7773",
+  "performance_inspected": false,
+  "planned_fits": 27
+}

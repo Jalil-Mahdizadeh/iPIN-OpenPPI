@@ -1,0 +1,228 @@
+{
+  "bootstrap_artifacts": [
+    {
+      "bytes": 21708128,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/component_multipliers.npy",
+      "sha256": "0e526e60b09647734d44acdd46d111837e5d3e755bca15d73262c852c124bcfa"
+    },
+    {
+      "bytes": 146464,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/bootstrap_metrics.npz",
+      "sha256": "e00dc197fb17dc2b92b146cdc28bdae67eb22748fd31fccb4ad09119393e748e"
+    }
+  ],
+  "control_deltas": {
+    "endpoint_linear": 0.07940854990651958,
+    "kmer3_cosine": 0.11647612578151512,
+    "length_ratio": 0.12095192032973012,
+    "pooled_cosine": 0.11331893437873097
+  },
+  "created_utc": "2026-09-10T23:34:52.292428+00:00",
+  "decision": {
+    "checks": {
+      "all_frozen_controls_beaten": true,
+      "each_fold_positive": true,
+      "each_seed_positive": true,
+      "positive_primary_lower_bound": true,
+      "practical_primary_gain": true,
+      "propensity_sensitivity_positive": true,
+      "quartet_above_chance": true,
+      "quartet_beats_length_and_kmer": true
+    },
+    "disposition": "useful_internal_partner_specific_signal_not_external_confirmation",
+    "protected_evaluation_authorized": false
+  },
+  "folds": [
+    {
+      "anchors": 1075,
+      "fold": 0,
+      "macro": {
+        "endpoint_linear": 0.5725898418850304,
+        "endpoint_linear__20260911": 0.5745672018659967,
+        "endpoint_linear__20260912": 0.5675197466466778,
+        "endpoint_linear__20260913": 0.5717026081600532,
+        "endpoint_mlp64": 0.556589477205043,
+        "endpoint_mlp64__20260911": 0.5411518239177517,
+        "endpoint_mlp64__20260912": 0.5598319756413087,
+        "endpoint_mlp64__20260913": 0.5544379669430203,
+        "kmer3_cosine": 0.5214895343232092,
+        "length_ratio": 0.5469195758540121,
+        "pair_linear": 0.6505175268135998,
+        "pair_linear__20260911": 0.6528577857040573,
+        "pair_linear__20260912": 0.6481821670868837,
+        "pair_linear__20260913": 0.6489741759647417,
+        "pooled_cosine": 0.537737482400932
+      },
+      "panel_recall": {
+        "endpoint_linear": {
+          "10": 0.054154494729352215,
+          "100": 0.4317171125595982
+        },
+        "endpoint_mlp64": {
+          "10": 0.06076625576434561,
+          "100": 0.4534914132022078
+        },
+        "pair_linear": {
+          "10": 0.11341551560144189,
+          "100": 0.5640249024895134
+        }
+      },
+      "primary_delta": 0.09392804960855676
+    },
+    {
+      "anchors": 928,
+      "fold": 1,
+      "macro": {
+        "endpoint_linear": 0.6054277394196851,
+        "endpoint_linear__20260911": 0.5988346889291684,
+        "endpoint_linear__20260912": 0.6089251339743122,
+        "endpoint_linear__20260913": 0.6062980629927599,
+        "endpoint_mlp64": 0.5842796093274918,
+        "endpoint_mlp64__20260911": 0.5903933788677469,
+        "endpoint_mlp64__20260912": 0.5817970040632399,
+        "endpoint_mlp64__20260913": 0.5731471162785446,
+        "kmer3_cosine": 0.5618565788922469,
+        "length_ratio": 0.5432221437656787,
+        "pair_linear": 0.6937556253041066,
+        "pair_linear__20260911": 0.6922275214365261,
+        "pair_linear__20260912": 0.6947479482043641,
+        "pair_linear__20260913": 0.6932997613617434,
+        "pooled_cosine": 0.5712057827331622
+      },
+      "panel_recall": {
+        "endpoint_linear": {
+          "10": 0.06440078393386357,
+          "100": 0.5227917317546835
+        },
+        "endpoint_mlp64": {
+          "10": 0.10209455447458356,
+          "100": 0.4991467818391521
+        },
+        "pair_linear": {
+          "10": 0.1402459192440766,
+          "100": 0.6398041521956881
+        }
+      },
+      "primary_delta": 0.10947601597661476
+    },
+    {
+      "anchors": 1069,
+      "fold": 2,
+      "macro": {
+        "endpoint_linear": 0.5774572670485356,
+        "endpoint_linear__20260911": 0.5793996459774596,
+        "endpoint_linear__20260912": 0.5760603344701241,
+        "endpoint_linear__20260913": 0.5745967647251091,
+        "endpoint_mlp64": 0.5362996851858131,
+        "endpoint_mlp64__20260911": 0.5448534790525624,
+        "endpoint_mlp64__20260912": 0.5351743102249098,
+        "endpoint_mlp64__20260913": 0.5240317803848143,
+        "kmer3_cosine": 0.5601469532135812,
+        "length_ratio": 0.5378885998924646,
+        "pair_linear": 0.6506121088762932,
+        "pair_linear__20260911": 0.6521311519749399,
+        "pair_linear__20260912": 0.6487715336532348,
+        "pair_linear__20260913": 0.6497679295413303,
+        "pooled_cosine": 0.5447646207920956
+      },
+      "panel_recall": {
+        "endpoint_linear": {
+          "10": 0.10146349556977131,
+          "100": 0.429508050184333
+        },
+        "endpoint_mlp64": {
+          "10": 0.06446166248591749,
+          "100": 0.3996117909899382
+        },
+        "pair_linear": {
+          "10": 0.11557886302137459,
+          "100": 0.550222842333122
+        }
+      },
+      "primary_delta": 0.11431242369048002
+    }
+  ],
+  "inference_limit": "conditional_on_fitted_models_fixed_folds_and_released_panel_not_physical_specificity",
+  "macro_concordance": {
+    "endpoint_linear": 0.5842033986597526,
+    "endpoint_linear__20260911": 0.5835796077090231,
+    "endpoint_linear__20260912": 0.5829995929433278,
+    "endpoint_linear__20260913": 0.583160432200677,
+    "endpoint_mlp64": 0.5578937268603411,
+    "endpoint_mlp64__20260911": 0.5573149854843885,
+    "endpoint_mlp64__20260912": 0.5578868265675528,
+    "endpoint_mlp64__20260913": 0.5495088904953134,
+    "kmer3_cosine": 0.547135822784757,
+    "length_ratio": 0.542660028236542,
+    "pair_linear": 0.6636119485662721,
+    "pair_linear__20260911": 0.6644978714147683,
+    "pair_linear__20260912": 0.6624540022875515,
+    "pair_linear__20260913": 0.6626404083286058,
+    "pooled_cosine": 0.5502930141875412
+  },
+  "metric": "equal_anchor_macro_design_weighted_within_anchor_P_vs_U_concordance",
+  "model_ci95": {
+    "endpoint_mlp64": [
+      0.5361522747782089,
+      0.5786776041300994
+    ],
+    "pair_linear": [
+      0.652629673055744,
+      0.695832911084498
+    ]
+  },
+  "primary_delta": 0.10571822170593104,
+  "primary_delta_ci95": [
+    0.09372912157748807,
+    0.139638706758557
+  ],
+  "propensity_sensitivity": {
+    "delta": 0.12816910421161923,
+    "eligible_anchors": 3072
+  },
+  "quartets": {
+    "all_points": {
+      "endpoint_linear": 0.5,
+      "endpoint_linear__20260911": 0.5,
+      "endpoint_linear__20260912": 0.5,
+      "endpoint_linear__20260913": 0.5,
+      "endpoint_mlp64": 0.5,
+      "endpoint_mlp64__20260911": 0.5,
+      "endpoint_mlp64__20260912": 0.5,
+      "endpoint_mlp64__20260913": 0.5,
+      "kmer3_cosine": 0.631,
+      "length_ratio": 0.5375,
+      "pair_linear": 0.7278333333333333,
+      "pair_linear__20260911": 0.7263333333333334,
+      "pair_linear__20260912": 0.7253333333333334,
+      "pair_linear__20260913": 0.725,
+      "pooled_cosine": 0.6188333333333333
+    },
+    "ci95": [
+      0.681233577235222,
+      0.7839362020971177
+    ],
+    "control_deltas": {
+      "kmer3_cosine": 0.09683333333333333,
+      "length_ratio": 0.19033333333333335
+    },
+    "paired_control_ci95": {
+      "kmer3_cosine": [
+        0.03346265027573325,
+        0.15212256407564112
+      ],
+      "length_ratio": [
+        0.12132563538343048,
+        0.25023623009181123
+      ]
+    },
+    "point": 0.7278333333333333
+  },
+  "seed_deltas": [
+    0.10718288593037983,
+    0.10456717571999863,
+    0.11313151783329245
+  ],
+  "source_sensitivity": "not_available_in_public_training_package",
+  "valid_primary_replicates": 2000
+}

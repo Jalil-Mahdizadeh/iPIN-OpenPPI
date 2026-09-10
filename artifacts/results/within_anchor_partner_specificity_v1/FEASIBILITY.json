@@ -1,0 +1,181 @@
+{
+  "created_utc": "2026-09-10T23:28:47.381377+00:00",
+  "feasible": true,
+  "folds": [
+    {
+      "anchor_components": 598,
+      "candidate_panel_size_quantiles": [
+        246.0,
+        281.0,
+        291.0,
+        300.0,
+        351.0
+      ],
+      "cells": {
+        "p": {
+          "C1": 7367,
+          "C2": 7420,
+          "C3": 2012
+        },
+        "u": {
+          "C1": 882510,
+          "C2": 891839,
+          "C3": 225651
+        }
+      },
+      "checks": {
+        "anchor_components": true,
+        "anchors": true,
+        "fit_positive": true,
+        "quartet_components": true,
+        "quartets": true
+      },
+      "effective_anchor_components": 7.6311618846369695,
+      "eligible_anchors": 1075,
+      "eligible_quartets_before_caps": 123955,
+      "fold": 0,
+      "heldout_endpoints": 3967,
+      "illustrative_80pct_power_MDE": {
+        "0.05": 0.050708504183041715,
+        "0.1": 0.10141700836608343,
+        "0.2": 0.20283401673216686
+      },
+      "largest_anchor_component_fraction": 0.36093023255813955,
+      "pass": true,
+      "positive_but_zero_unlabeled_anchors": 0,
+      "quartet_components": 552,
+      "quartet_endpoints": 990,
+      "selected_quartets": 2000,
+      "zero_positive_anchors": 2892
+    },
+    {
+      "anchor_components": 631,
+      "candidate_panel_size_quantiles": [
+        223.0,
+        260.0,
+        271.0,
+        281.0,
+        320.0
+      ],
+      "cells": {
+        "p": {
+          "C1": 8123,
+          "C2": 7035,
+          "C3": 1641
+        },
+        "u": {
+          "C1": 942115,
+          "C2": 861662,
+          "C3": 196223
+        }
+      },
+      "checks": {
+        "anchor_components": true,
+        "anchors": true,
+        "fit_positive": true,
+        "quartet_components": true,
+        "quartets": true
+      },
+      "effective_anchor_components": 242.31401238041644,
+      "eligible_anchors": 928,
+      "eligible_quartets_before_caps": 85235,
+      "fold": 1,
+      "heldout_endpoints": 3967,
+      "illustrative_80pct_power_MDE": {
+        "0.05": 0.008998847013772873,
+        "0.1": 0.017997694027545745,
+        "0.2": 0.03599538805509149
+      },
+      "largest_anchor_component_fraction": 0.03556034482758621,
+      "pass": true,
+      "positive_but_zero_unlabeled_anchors": 0,
+      "quartet_components": 610,
+      "quartet_endpoints": 895,
+      "selected_quartets": 2000,
+      "zero_positive_anchors": 3039
+    },
+    {
+      "anchor_components": 638,
+      "candidate_panel_size_quantiles": [
+        250.0,
+        292.0,
+        303.0,
+        315.0,
+        362.0
+      ],
+      "cells": {
+        "p": {
+          "C1": 7107,
+          "C2": 7547,
+          "C3": 2145
+        },
+        "u": {
+          "C1": 843252,
+          "C2": 910745,
+          "C3": 246003
+        }
+      },
+      "checks": {
+        "anchor_components": true,
+        "anchors": true,
+        "fit_positive": true,
+        "quartet_components": true,
+        "quartets": true
+      },
+      "effective_anchor_components": 111.4780021461321,
+      "eligible_anchors": 1069,
+      "eligible_quartets_before_caps": 144582,
+      "fold": 2,
+      "heldout_endpoints": 3966,
+      "illustrative_80pct_power_MDE": {
+        "0.05": 0.013267269301731657,
+        "0.1": 0.026534538603463314,
+        "0.2": 0.05306907720692663
+      },
+      "largest_anchor_component_fraction": 0.07764265668849392,
+      "pass": true,
+      "positive_but_zero_unlabeled_anchors": 0,
+      "quartet_components": 606,
+      "quartet_endpoints": 1004,
+      "selected_quartets": 2000,
+      "zero_positive_anchors": 2897
+    }
+  ],
+  "no_model_fits_or_scores_created": true,
+  "prepared_artifacts": [
+    {
+      "bytes": 81056178,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/public_arrays.npz",
+      "sha256": "815dda34baa1d78b759b1a8c8ccb201fd75cb8686d93b241f6212df53dddf5f8"
+    },
+    {
+      "bytes": 30464128,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/raw_public_embeddings.npy",
+      "sha256": "f48c46a0613a82fbb3330bbb30480c09af169ad99e71e3443544c45317e26803"
+    },
+    {
+      "bytes": 7695968,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/endpoint_metadata.json",
+      "sha256": "d963c885ed2c34073f4e5922b8e8fdcb3ff5a8a2724e37b497471b7f7103385c"
+    },
+    {
+      "bytes": 9464171,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/evaluation_fold_0.npz",
+      "sha256": "bae2bf7becd2f83aeb3f7a506f1374d9bda6f1e0ff03c485268576df018ab2cd"
+    },
+    {
+      "bytes": 8242412,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/evaluation_fold_1.npz",
+      "sha256": "6db591f19e17f3dd185294937af524bbe6c78703d7f62bc985f75eb69d463203"
+    },
+    {
+      "bytes": 10304056,
+      "path": "artifacts/runs/within_anchor_partner_specificity_v1/evaluation_fold_2.npz",
+      "sha256": "674d3032901fdd2fa959aef747b04f3de98a16850b57567bd3f7a304c14e5f9e"
+    }
+  ],
+  "protocol_id": "within_anchor_partner_specificity_v1",
+  "source_robustness": "unavailable_in_public_training_package",
+  "verified_embedding_vectors": 11900,
+  "verified_public_pair_joins": 2016799
+}
