@@ -1,0 +1,73 @@
+schema_version: 51
+supersedes: governance/gates/gate_status_v50.yaml
+updated_date: '2026-09-11'
+authority: governance/decisions/DEC-0051-authorize-one-final-protected-evaluation.md
+programme_state: positive_final_C3_PU_ranking_result_current_model_development_stopped
+gates:
+  final_protected_evaluation:
+    status: completed_one_first_attempt
+    model: lightweight_esm2_150m_linear__linear_lr3e-4
+    frozen_seeds: [20260803, 20260817, 20260831]
+    candidate_rows: 9028821
+    scorer_count: 15
+    fixed_control_count: 11
+    separate_cells: 9
+    paired_component_bootstrap_draws: 2000
+    all_draws_finite: true
+    primary_cell: C3_test
+    C3_concordance: 0.7892487658713853
+    C3_percentile_95: [0.7081575143062996, 0.8457268089068927]
+    C3_all_11_prespecified_paired_lower_bounds_positive: true
+    highest_observed_C3_control_descriptive: sequence_length_ratio
+    highest_observed_C3_control_concordance: 0.5493020084116953
+    primary_C3_seed_range: 0.003878621689827222
+    all_cell_seed_ranges_below_0_02: true
+    C2_concordance: 0.8052990558636478
+    C2_superiority_over_training_degree_sum: not_demonstrated_not_equivalence
+    C1_concordance: 0.8434933190102009
+    C1_vs_preferential_attachment: model_inferior_paired_interval_excludes_zero
+    HI_II_14_source_exclusive_C3_concordance: 0.7106254275131997
+    HuRI_source_exclusive_C3_concordance: 0.7946293293238335
+    source_diagnostics: secondary_not_independent_replication_or_source_purged_training
+    results_sha256: 6cc8c3ba61039501b3e1b09dfcee442de8f4dfcd0c717a466b15f9e77ef3a02e
+  verification:
+    unique_scientific_custody_fixtures: 10
+    scientific_fixtures_passed_in_both_ordinary_and_restricted_runtime: true
+    publication_fixtures: 2
+    public_training_CPU_reference_rows: 128
+    public_training_CPU_reference_max_abs: 0.0
+    fixed_per_cell_swap_rows: 128
+    all_scorer_swap_max_abs: 0.0
+    original_reference_synthetic_bootstrap_values_checked: 18000
+    reference_max_abs: 4.440892098500626e-16
+    prior_registered_files_unchanged: 124
+    independent_external_replication: false
+  current_model_development:
+    status: stopped
+    original_complex_architecture_claim: not_established
+    previous_external_superiority_claim: unchanged_not_established
+    within_anchor_biological_specificity_from_this_final_test: not_established
+    calibrated_binding_prediction: not_established
+  SAVEXIS_separate_study:
+    status: conditional_candidate_unchanged_not_evaluation_ready
+    new_pilot_or_source_acquisition_authorized: false
+new_fits: 0
+new_embeddings: 0
+new_P_N_labels: 0
+test_based_model_or_seed_selection: false
+post_test_tuning: false
+test_attempt_consumed: true
+unused_protected_test_still_available: false
+protected_identity_or_row_prediction_output: false
+temporary_decrypted_plaintext_removed: true
+sealed_originals_preserved: true
+private_keys_inspected_in_reports_or_logs: false
+quarantined_pair_data_access: false
+network_namespace_claimed: false
+qualified_CPU_syscall_and_mount_isolation: true
+privileged_host_changes: false
+U_interpreted_as_negative: false
+exact_full_universe_rank_metric_claimed: false
+PLM_family_unseen_or_exhaustive_homology_claimed: false
+commit_or_push_performed: false
+next_automatic_experiment: none

@@ -1,0 +1,93 @@
+{
+  "namespace": "direct_binary_feasibility_v1",
+  "created_utc": "2026-09-11 08:10:34 UTC",
+  "decision": "current_model_track_stopped_conditional_data_pivot_only",
+  "bounded_triage_complete": true,
+  "complete_benchmark_feasibility_established": false,
+  "source_files_verified": 11,
+  "targeted_tests_passed": 8,
+  "pandas_reference_checked": true,
+  "prior_registered_files_unchanged": 109,
+  "new_model_scores": 0,
+  "new_P_N_labels": 0,
+  "protected_or_quarantined_pair_access": false,
+  "documentation_local_links_checked": 36,
+  "git_commit_or_push_performed": false,
+  "artifacts": [
+    {
+      "path": "configs/direct_binary_feasibility_v1.json",
+      "bytes": 1739,
+      "sha256": "262b0a732da93fa4ecb833c0d579837b9349d010e186e9663a0b75a33d71808d"
+    },
+    {
+      "path": "docs/protocols/DIRECT_BINARY_FEASIBILITY_v1.md",
+      "bytes": 4495,
+      "sha256": "84b4016d00d0209c498fa85512b5d90f817c9322d9d0fa4bb20609bec18592c3"
+    },
+    {
+      "path": "docs/reports/m1/M1_Direct_Binary_Feasibility_and_Project_Disposition_v1.md",
+      "bytes": 6019,
+      "sha256": "8aa9b769ba4d50bf1badc32bcc0fcdd952b47e9135b913d31170ce201b809b92"
+    },
+    {
+      "path": "governance/PROJECT_STATUS_v50.md",
+      "bytes": 2510,
+      "sha256": "8726d1c532244fa856b974572c74a09943e35f131caf1ab67cc07f608e5bae51"
+    },
+    {
+      "path": "governance/decisions/DEC-0050-bounded-direct-binary-feasibility-and-model-stop.md",
+      "bytes": 2391,
+      "sha256": "ef67a61d6954291a6956776f8994d13cc58976231f394108b7f39e45f253b419"
+    },
+    {
+      "path": "governance/gates/gate_status_v50.yaml",
+      "bytes": 2131,
+      "sha256": "6e9c0e5de222bee8eb0403ac493caded622dc5f3d2a1853befca669dca48344b"
+    },
+    {
+      "path": "scripts/data/audit_direct_binary_feasibility_v1.py",
+      "bytes": 7542,
+      "sha256": "e3cf573f34282515c01f292f3362bfafa9e9d5be84806263a80658ed71650bb2"
+    },
+    {
+      "path": "scripts/data/summarize_direct_binary_feasibility_v1.py",
+      "bytes": 6432,
+      "sha256": "673e98b5ff94e4608c65b80f47d426b13f7e9ad50ca2abcd98fd83c166805d6c"
+    },
+    {
+      "path": "scripts/data/validate_direct_binary_feasibility_v1.py",
+      "bytes": 5533,
+      "sha256": "e0210e538f3c67afdc45f2cc27f8edccddfa0e51821cba656a5aba86e4078470"
+    },
+    {
+      "path": "tests/unit/test_direct_binary_feasibility.py",
+      "bytes": 2369,
+      "sha256": "568b69423ec500df426412512d2898a35765c326459afa36c6d6348721d89c12"
+    },
+    {
+      "path": "artifacts/results/direct_binary_feasibility_v1/SOURCE_STRUCTURE.json",
+      "bytes": 3739,
+      "sha256": "d1ed0b5f38ac93a4bc66f6ecf4062d065381679be2d44444720367410decf7b9"
+    },
+    {
+      "path": "artifacts/results/direct_binary_feasibility_v1/PUBLIC_SOURCE_MANIFEST.json",
+      "bytes": 8056,
+      "sha256": "34c2103047747b4e018e40202d39118d4f7e4785f7df393fc9c27a2003532aa9"
+    },
+    {
+      "path": "artifacts/results/direct_binary_feasibility_v1/REPRODUCIBILITY.md",
+      "bytes": 2931,
+      "sha256": "c516a51d15e45b13f7572621163a7edbfb7ef227d358f1140daefb1cc51e4054"
+    },
+    {
+      "path": "artifacts/validation/direct_binary_feasibility_v1/unit_tests.xml",
+      "bytes": 1160,
+      "sha256": "adb1e0ea39a482f4b8770bbec0a9b2df1bfe2b268e009d6997e35a3426197b50"
+    },
+    {
+      "path": "artifacts/validation/direct_binary_feasibility_v1/REFERENCE_VALIDATION.json",
+      "bytes": 1929,
+      "sha256": "d624478bd3556a888a4874a91df58459e52e2481d4522bd9ae9fbe39ff7ed383"
+    }
+  ]
+}

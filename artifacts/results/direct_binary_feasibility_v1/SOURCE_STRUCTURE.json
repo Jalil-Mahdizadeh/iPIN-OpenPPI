@@ -1,0 +1,109 @@
+{
+  "P_N_labels_created": 0,
+  "QC_tables": {
+    "bradford_measurements.csv": {
+      "numeric_fields": {
+        "band_intensity": {
+          "blank": 0,
+          "finite": 672,
+          "nonpositive_finite": 198
+        },
+        "final_ngul": {
+          "blank": 0,
+          "finite": 672,
+          "nonpositive_finite": 70
+        }
+      },
+      "rows": 672
+    },
+    "followup_plasmids_FINAL.csv": {
+      "numeric_fields": {
+        "band_intensity": {
+          "blank": 0,
+          "finite": 191,
+          "nonpositive_finite": 25
+        },
+        "conc_ngul": {
+          "blank": 0,
+          "finite": 191,
+          "nonpositive_finite": 0
+        }
+      },
+      "rows": 191
+    },
+    "leukocyte_screen_plates.csv": {
+      "numeric_fields": {
+        "conc_ngul": {
+          "blank": 7,
+          "finite": 677,
+          "nonpositive_finite": 69
+        }
+      },
+      "rows": 684
+    }
+  },
+  "files": 11,
+  "gates": {
+    "actual_training_homology_interolog_exposure": "not_assessed",
+    "evaluable_P_N_definition": "unresolved_source_processing_and_missingness",
+    "exact_construct_and_QC_mapping": "partial_not_qualified",
+    "matched_P_N_support": "not_assessed_upstream_semantics_not_qualified",
+    "public_direct_assay_source": "candidate_pass",
+    "raw_measurement_opportunity": "available_with_axis_reconciliation_needed",
+    "resume_current_model_track": "no_go",
+    "separate_SAVEXIS_data_reconstruction_pilot": "conditional_candidate_not_started",
+    "untouched_precision_adequate_confirmation": "not_established"
+  },
+  "model_scores": 0,
+  "new_embeddings": 0,
+  "new_fits": 0,
+  "primary_matrix": {
+    "bait_axis_occurrences_not_in_metadata_aliases": 11,
+    "blank_cells_including_controls": 0,
+    "cells_including_controls": 363456,
+    "duplicate_bait_axis_occurrences": 0,
+    "exact_alias_rectangle_cells_not_QC_filtered": 355950,
+    "exact_alias_rectangle_finite_cells_not_QC_filtered": 355950,
+    "finite_cells_including_controls": 363456,
+    "measurement_columns": 631,
+    "not_a_negative_label_count": true,
+    "other_nonfinite_cells": 0,
+    "prey_axis_occurrences_not_in_metadata_aliases": 1,
+    "rows": 576,
+    "unique_baits_exactly_in_metadata_aliases": 565,
+    "unique_preys_exactly_in_metadata_aliases": 630
+  },
+  "protein_metadata": {
+    "aliases_with_multiple_metadata_rows": 0,
+    "exact_assayed_construct_validation": "not_completed",
+    "rows": 630,
+    "rows_with_blank_first_chain_plasmid_ID": 0,
+    "rows_with_first_chain_noncanonical_AA_characters": 82,
+    "rows_with_nonblank_AA_seq1": 629,
+    "rows_with_nonblank_AA_seq2": 36,
+    "rows_with_second_chain": 36,
+    "unique_screen_ids": 630,
+    "unique_source_symbol_aliases": 630
+  },
+  "scope": "structural_feasibility_only_no_labels_no_scores",
+  "secondary_matrix": {
+    "bait_axis_occurrences_not_in_metadata_aliases": 5,
+    "blank_cells_including_controls": 2,
+    "cells_including_controls": 36096,
+    "duplicate_bait_axis_occurrences": 0,
+    "exact_alias_rectangle_cells_not_QC_filtered": 34969,
+    "exact_alias_rectangle_finite_cells_not_QC_filtered": 34967,
+    "finite_cells_including_controls": 36094,
+    "measurement_columns": 188,
+    "not_a_negative_label_count": true,
+    "other_nonfinite_cells": 0,
+    "prey_axis_occurrences_not_in_metadata_aliases": 1,
+    "rows": 192,
+    "unique_baits_exactly_in_metadata_aliases": 187,
+    "unique_preys_exactly_in_metadata_aliases": 187
+  },
+  "source_commit": "82442448e9440c9e847415173979871950e27d77",
+  "source_manifest_sha256": "9c589e57efb17bf4191af196d976e09e54cdc350a4a8f677c2fec2183ad01505",
+  "summary_script_sha256": "673e98b5ff94e4608c65b80f47d426b13f7e9ad50ca2abcd98fd83c166805d6c",
+  "total_bytes": 3621415
+}

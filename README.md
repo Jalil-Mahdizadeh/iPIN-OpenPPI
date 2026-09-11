@@ -4,27 +4,44 @@ Evidence-aware, sequence-based prioritization of direct human heteromeric protei
 
 ## Current status
 
-As of 2026-09-11, the composition/order diagnostic is complete under
-[DEC-0049](governance/decisions/DEC-0049-authorize-composition-order-diagnostic.md).
-On the already examined BioPlex panels, **amino-acid composition alone is a
-serious competitor**: bait-macro concordance is 0.627 / 0.613 in 293T / HCT116,
-versus the learned head's 0.617 / 0.609. Native 3-mers beat composition-preserving
-shuffles by 0.039 / 0.035, but this does not establish superiority over AAC or
-identify a binding mechanism. The matched-partner test is inconclusive: fixed
-composition/length calipers retain only 22 / 3 positives; adding direct-similarity
-calipers leaves none. No calipers were relaxed.
+As of 2026-09-11, **the current learned-head development track is stopped** under
+[DEC-0050](governance/decisions/DEC-0050-bounded-direct-binary-feasibility-and-model-stop.md).
+Its incremental value over simple external controls has not been established.
+The research record is preserved; no further architecture sweep or automatic
+diagnostic is queued.
 
-This was a frozen explanatory analysis, **not fresh external validation**.
-No fits, new embeddings or new interaction acquisition. All 451 CPU tests
-before/after execution, the separate existing GPU regression and the numerical
-audit pass. The next priority is an opportunity/construct and matched-support
-feasibility audit for a dense direct-binary panel, before further model scoring.
-Protected evaluation stays sealed; the original architecture stop and the
-preceding external challenge's failed superiority gates remain unchanged.
+Under [DEC-0051](governance/decisions/DEC-0051-authorize-one-final-protected-evaluation.md),
+the user separately authorized **one final protected evaluation** of the
+development-selected frozen 150M ensemble. **It completed successfully:** primary
+C3 concordance is **0.789 [0.708, 0.846]**, above all eleven prespecified controls
+with positive paired intervals. C2 has no demonstrated advantage over degree
+sum; C1 is below preferential attachment. This is positive-unlabeled ranking,
+not biological classification accuracy. No retraining or test-based selection
+occurred. The test is now spent, not an unused future opportunity. See the
+[final-test report](docs/reports/m1/M1_Protected_Final_Test_v1.md),
+[protocol](docs/protocols/PROTECTED_FINAL_TEST_v1.md), and
+[current status v51](governance/PROJECT_STATUS_v51.md), with
+[gate ledger v51](governance/gates/gate_status_v51.yaml).
 
-See the [concise composition/order report](docs/reports/m1/M1_Composition_Order_Challenge_v1.md),
-[current status v49](governance/PROJECT_STATUS_v49.md), and
-[gate ledger v49](governance/gates/gate_status_v49.yaml).
+The bounded direct-binary feasibility check found a concrete candidate for a
+separate extracellular-specificity study: SAVEXIS. Eleven source files were
+version-pinned and audited. Dense measurements and construct/QC metadata exist,
+but assay processing and evaluable P/N semantics need reconciliation before
+matched support can be counted. Current training exposure and a sufficiently
+precise, pilot-separated confirmation design remain unassessed. This is a
+conditional data pivot, **not a rescued model or an evaluation-ready benchmark**.
+
+Eight targeted tests and a separate structural reference check pass; all 109
+registered files across the four preceding studies were unchanged in that
+feasibility assessment. It produced no fits, embeddings, model scores or P/N
+labels and accessed no protected or quarantined pair data. Quarantines remain
+closed; only the final evaluation above is now separately authorized.
+
+See the [concise feasibility/disposition report](docs/reports/m1/M1_Direct_Binary_Feasibility_and_Project_Disposition_v1.md),
+[feasibility status v50](governance/PROJECT_STATUS_v50.md), and
+[gate ledger v50](governance/gates/gate_status_v50.yaml).
+The [composition/order report](docs/reports/m1/M1_Composition_Order_Challenge_v1.md)
+documents the preceding diagnostic, including its insufficient matched support.
 The [external BioPlex report](docs/reports/m1/M1_External_BioPlex_Challenge_v1.md),
 prior [within-anchor](docs/reports/m1/M1_Within_Anchor_Partner_Specificity_Diagnostic_v1.md)
 and [homology/source](docs/reports/m1/M1_Homology_and_Source_Challenge_v1.md)
@@ -154,5 +171,9 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
    Additional source acquisition, model work or evaluation needs a new bounded
    decision. The published-source use note is
    [here](governance/licenses/BIOPLEX_PUBLISHED_RELEASE_USE_v1.md).
+9. Preserve DEC-0049 and the bounded DEC-0050 source audit. The current learned
+   head is not under active development. A conditional source candidate does
+   not authorize new labels, scoring, training, source expansion or author
+   contact; no next experiment is queued.
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.

@@ -1,0 +1,127 @@
+{
+  "registration": {
+    "acquisition_script_sha256": "7dd300fc86fbe3eb0fe29258139d64c464893d3dffd59798650d15e6c743e4c4",
+    "config_sha256": "262b0a732da93fa4ecb833c0d579837b9349d010e186e9663a0b75a33d71808d",
+    "external_preregistration": false,
+    "protocol_sha256": "84b4016d00d0209c498fa85512b5d90f817c9322d9d0fa4bb20609bec18592c3",
+    "registered_utc": "2026-09-11T07:56:03.919591+00:00",
+    "source_selection_informed_by_prior_metadata": true
+  },
+  "acquisition_recovery": {
+    "reason": "Strict UTF-8 parser stopped on source Windows-1252 metadata; add recorded strict fallback and verified resume, preserving all source bytes and registration.",
+    "script_sha256": "e3cf573f34282515c01f292f3362bfafa9e9d5be84806263a80658ed71650bb2",
+    "utc": "2026-09-11T07:57:01.235411+00:00"
+  },
+  "source_commit": "82442448e9440c9e847415173979871950e27d77",
+  "total_bytes": 3621415,
+  "labels_created": false,
+  "model_scores_computed": false,
+  "completed_with_script_sha256": "e3cf573f34282515c01f292f3362bfafa9e9d5be84806263a80658ed71650bb2",
+  "files": [
+    {
+      "bytes": 3379,
+      "git_blob_sha1": "517bb10b44e9ddd52d44b40bac351cd9a53bf970",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/README.md",
+      "sha256": "5c6549b4d38562528b4cf154353e1f44a4e5944eda8ec6db1d81ad0aba9f3b59",
+      "snapshot_utc": "2026-09-11T07:56:04+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/README.md"
+    },
+    {
+      "bytes": 35149,
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "snapshot_utc": "2026-09-11T07:56:04+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/LICENSE"
+    },
+    {
+      "bytes": 22545,
+      "git_blob_sha1": "6cfdaa0726504ad411e72f36c8a193449ebe97cd",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/organized_code_screen_processing/leuk_screen_data_processing_tidy.R",
+      "sha256": "ff3ca84f616ea0e84775b541abac664ce070f7a5a9d942fa539c9941a3ccb3aa",
+      "snapshot_utc": "2026-09-11T07:56:04+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/organized_code_screen_processing/leuk_screen_data_processing_tidy.R"
+    },
+    {
+      "bytes": 2511382,
+      "git_blob_sha1": "59c1b665677cc4e1f3c174f17d6f1484f05073bd",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/organized_code_screen_processing/leuk_interactome_180928.csv",
+      "sha256": "44e2167c4b043f05952423df41e8d925a169a3cc52b738a4d1ae8891740ccda5",
+      "snapshot_utc": "2026-09-11T07:56:04+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/organized_code_screen_processing/leuk_interactome_180928.csv"
+    },
+    {
+      "bytes": 251081,
+      "git_blob_sha1": "e0b59948dd32bd2e0d34f90e30adaf1b4e589af6",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/organized_code_screen_processing/Leukocyte_2ndary_screen_data.csv",
+      "sha256": "83bf95c1b6482397822d4c84a487a27989366053bf09feb93da45f093ea847a1",
+      "snapshot_utc": "2026-09-11T07:56:05+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/organized_code_screen_processing/Leukocyte_2ndary_screen_data.csv"
+    },
+    {
+      "bytes": 533797,
+      "git_blob_sha1": "2fdd4e9c4fc3b2f350f56e8576c543519905f3b7",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/organized_code_screen_processing/protein_metadata/leukocyte_proteins_final.csv",
+      "sha256": "7084c90da7a8e67facf240c8f875c25ce31d70907d64b219ec04e6d80f424e02",
+      "snapshot_utc": "2026-09-11T07:56:05+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/organized_code_screen_processing/protein_metadata/leukocyte_proteins_final.csv"
+    },
+    {
+      "bytes": 190229,
+      "git_blob_sha1": "110cfe93100d69d868b59b50796f26d569a40007",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/organized_code_screen_processing/protein_metadata/leukocyte_screen_plates.csv",
+      "sha256": "47127e44ab40b6ac6943f199bb667f5c92b09f05948ba1265a9cc991dbd97e5e",
+      "snapshot_utc": "2026-09-11T07:56:05+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/organized_code_screen_processing/protein_metadata/leukocyte_screen_plates.csv"
+    },
+    {
+      "bytes": 27958,
+      "git_blob_sha1": "4b7cec191c96e7bf9514e43889c7c5858f3dcc2f",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/organized_code_screen_processing/protein_metadata/bradford_measurements.csv",
+      "sha256": "5a5f94e934cc7cf84cebe51542398f7a6a5df893b0ba5ae1df753c880e7fa64b",
+      "snapshot_utc": "2026-09-11T07:56:06+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/organized_code_screen_processing/protein_metadata/bradford_measurements.csv"
+    },
+    {
+      "bytes": 9454,
+      "git_blob_sha1": "0c8b6b0f278739d460b2af89d88a52b8c018ceff",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/organized_code_screen_processing/protein_metadata/followup_plasmids_FINAL.csv",
+      "sha256": "cfa0e9d2f48418941a0856e96897e4917d4ef054682a9908f3436ec205bc7fe8",
+      "snapshot_utc": "2026-09-11T07:56:06+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/organized_code_screen_processing/protein_metadata/followup_plasmids_FINAL.csv"
+    },
+    {
+      "bytes": 18579,
+      "git_blob_sha1": "5b32c1794832c528e2db716bb9db6ec985293ab4",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/organized_code_screen_processing/protein_metadata/leuk_expected_manual.csv",
+      "sha256": "187d7f7c3e84ff946187e5c8f05334cd6290fb2927e6ddebb5ae64ae6d935bfb",
+      "snapshot_utc": "2026-09-11T07:56:06+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/organized_code_screen_processing/protein_metadata/leuk_expected_manual.csv"
+    },
+    {
+      "bytes": 17862,
+      "git_blob_sha1": "e00a168d5b0b4829f1be254d45bb25ecc3bc2a80",
+      "path": "artifacts/runs/direct_binary_feasibility_v1/raw/organized_code_screen_processing/protein_metadata/leuk_negatives_manual.csv",
+      "sha256": "8004771c93e6a6d82949f452a1c97152de3b66e09944d47ff4c7ca762198e395",
+      "snapshot_utc": "2026-09-11T07:57:01+00:00",
+      "timestamp_basis": "local_snapshot_file_mtime",
+      "url": "https://raw.githubusercontent.com/jshilts/shilts-et-al-2022-immunoreceptors/82442448e9440c9e847415173979871950e27d77/organized_code_screen_processing/protein_metadata/leuk_negatives_manual.csv"
+    }
+  ],
+  "source_payloads_redistributed": false,
+  "source_repository_declared_license": "GPL-3.0",
+  "paper_doi": "10.1038/s41586-022-05028-x",
+  "correction_doi": "10.1038/s41586-024-07928-6",
+  "source_selection_informed": true,
+  "external_preregistration": false
+}

@@ -1,0 +1,17 @@
+{
+  "execution_id": "protected_final_test_v1",
+  "scope": "synthetic aggregate publication only, not scorer or metric modification",
+  "container": "containers/images/ipin-data-arm64_0.1.2.sif",
+  "container_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+  "unique_test_cases_passed": 2,
+  "checks": [
+    "valid allowlisted aggregate is copied byte-for-byte",
+    "completion and receipt are created only once",
+    "unknown output fields are rejected",
+    "identity-bearing output is rejected",
+    "missing controls are rejected",
+    "incorrect paired point differences are rejected"
+  ],
+  "real_protected_data_used": false,
+  "same_author_not_independent_replication": true
+}
