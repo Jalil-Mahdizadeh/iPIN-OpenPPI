@@ -2,6 +2,13 @@
 
 Human-readable M0 platform, evidence, benchmark, modelling, gate, and release reports are stored here. Machine-readable run records remain under `artifacts/runs/`.
 
+The latest diagnostic is [C3 control-shift investigation](m1/M1_C3_Control_Shift_Investigation_v1.md).
+Exact scoring parity passed. Development's simple-control signal is concentrated
+in within-component positives and a smaller interaction-rich sequence component;
+the largest-component-only explanation was not supported. This is a development-only,
+post-hoc investigation using existing public test aggregates, with no change to
+either frozen model, the benchmark, or prior evaluation records.
+
 The current model disposition is [Frozen pair models v1](../models/FROZEN_PAIR_MODELS_v1.md),
 authorized by [DEC-0054](../../governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
 Both exact ensembles are preserved: the optimized residual-MLP ensemble is the

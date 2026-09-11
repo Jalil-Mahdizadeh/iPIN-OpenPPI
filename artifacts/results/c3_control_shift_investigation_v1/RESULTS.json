@@ -1,0 +1,1151 @@
+{
+  "access": {
+    "new_training_or_test_evaluation": false,
+    "repository_private_tree_mounted": false,
+    "test_aggregate_results_read": true,
+    "test_rows_truth_predictions_keys_opened": false
+  },
+  "analysis_code_sha256": "6140200a1c978825dd66836fd9d511cd65d05dab54b258ebc139bd68eb15bae1",
+  "bootstrap": {
+    "method": "existing_C3_development_component_pigeonhole_common_draws",
+    "not_a_dev_test_difference_interval": true,
+    "replicates": 2000,
+    "scores": {
+      "exact_training_interolog_3mer": {
+        "full_ci95": [
+          0.5257493426482097,
+          0.7547542843825311
+        ],
+        "without_largest_ci95": [
+          0.5031160216365226,
+          0.766136981987522
+        ],
+        "without_minus_full_paired_sensitivity_ci95": [
+          -0.047389626335194494,
+          0.10263985393531284
+        ]
+      },
+      "lightweight_esm2_150m_linear__linear_lr3e-4": {
+        "full_ci95": [
+          0.7428201383689814,
+          0.8527162689983394
+        ],
+        "without_largest_ci95": [
+          0.7363177190012623,
+          0.8600253478625285
+        ],
+        "without_minus_full_paired_sensitivity_ci95": [
+          -0.020855353779392627,
+          0.08245775585912853
+        ]
+      },
+      "sequence_length_ratio": {
+        "full_ci95": [
+          0.5669951093863831,
+          0.742349922980613
+        ],
+        "without_largest_ci95": [
+          0.5518599763778589,
+          0.7538458736141562
+        ],
+        "without_minus_full_paired_sensitivity_ci95": [
+          -0.050563760099198635,
+          0.07194718046692092
+        ]
+      },
+      "sequence_length_sum": {
+        "full_ci95": [
+          0.41826502583892855,
+          0.577579047494639
+        ],
+        "without_largest_ci95": [
+          0.39263833446403457,
+          0.589968240157214
+        ],
+        "without_minus_full_paired_sensitivity_ci95": [
+          -0.0947820985580911,
+          0.05455954986686161
+        ]
+      },
+      "within_pair_3mer_cosine": {
+        "full_ci95": [
+          0.49809389706477586,
+          0.7264625851079812
+        ],
+        "without_largest_ci95": [
+          0.48004242081658877,
+          0.7426828280582358
+        ],
+        "without_minus_full_paired_sensitivity_ci95": [
+          -0.12137352169108721,
+          0.06905955806533262
+        ]
+      }
+    }
+  },
+  "created_at_utc": "2026-09-11T18:50:16.332125+00:00",
+  "development": {
+    "both_P_and_U_without_largest": {
+      "concordance": {
+        "deterministic_hash": 0.49765173646117333,
+        "exact_training_interolog_3mer": 0.6957196780172501,
+        "lightweight_esm2_150m_linear__linear_lr3e-4": 0.8231122149311281,
+        "sequence_length_ratio": 0.6927185148258024,
+        "sequence_length_sum": 0.5322085466181825,
+        "within_pair_3mer_cosine": 0.6646876963227792
+      },
+      "positive_rows": 1167,
+      "unlabeled_rows": 559080
+    },
+    "full_concordance": {
+      "deterministic_hash": 0.4942325426126989,
+      "exact_training_interolog_3mer": 0.6357013587270732,
+      "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7841422463639401,
+      "sequence_length_ratio": 0.6608800512223824,
+      "sequence_length_sum": 0.5204536763899944,
+      "within_pair_3mer_cosine": 0.6446826375345773
+    },
+    "largest_component_groups": {
+      "both_in_largest": {
+        "HT_U_fraction": 0.06372400000000003,
+        "positive_fraction": 0.1814569536423841,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.48663038686897553,
+          "exact_training_interolog_3mer": 0.5083232299355893,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.8909873868659087,
+          "sequence_length_ratio": 0.7662579391811062,
+          "sequence_length_sum": 0.6602045888197943,
+          "within_pair_3mer_cosine": 0.8530750608321296
+        },
+        "positive_rows": 411,
+        "unlabeled_rows": 63724
+      },
+      "neither_in_largest": {
+        "HT_U_fraction": 0.5590800000000011,
+        "positive_fraction": 0.5152317880794702,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.497824996580244,
+          "exact_training_interolog_3mer": 0.7388088941797086,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7970396889521155,
+          "sequence_length_ratio": 0.6612496709593665,
+          "sequence_length_sum": 0.475235306351039,
+          "within_pair_3mer_cosine": 0.6803792356538904
+        },
+        "positive_rows": 1167,
+        "unlabeled_rows": 559080
+      },
+      "one_in_largest": {
+        "HT_U_fraction": 0.3771960000000003,
+        "positive_fraction": 0.3033112582781457,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.49267809171101296,
+          "exact_training_interolog_3mer": 0.5367580065583389,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.6983130349422402,
+          "sequence_length_ratio": 0.5972095152921109,
+          "sequence_length_sum": 0.5136592263562484,
+          "within_pair_3mer_cosine": 0.45937373508838886
+        },
+        "positive_rows": 687,
+        "unlabeled_rows": 377196
+      }
+    },
+    "largest_component_source_membership": {
+      "HI-II-14_exclusive": {
+        "positive_rows": 312,
+        "touching_largest": 148
+      },
+      "HuRI_exclusive": {
+        "positive_rows": 1677,
+        "touching_largest": 814
+      },
+      "both_sources": {
+        "positive_rows": 276,
+        "touching_largest": 136
+      }
+    },
+    "length_p10_p50_p90": {
+      "max_endpoint_length": {
+        "HT_U": [
+          330.0,
+          610.0,
+          1192.0
+        ],
+        "HT_U_without_largest": [
+          281.0,
+          589.0,
+          1262.0
+        ],
+        "P": [
+          395.0,
+          545.0,
+          773.0
+        ],
+        "P_without_largest": [
+          311.0,
+          520.0,
+          741.0
+        ]
+      },
+      "min_endpoint_length": {
+        "HT_U": [
+          128.0,
+          313.0,
+          592.0
+        ],
+        "HT_U_without_largest": [
+          122.0,
+          266.0,
+          562.0
+        ],
+        "P": [
+          176.0,
+          416.0,
+          537.0
+        ],
+        "P_without_largest": [
+          159.0,
+          404.0,
+          483.0
+        ]
+      }
+    },
+    "same_component": {
+      "HT_U_fraction": 0.06614400000000002,
+      "positive_fraction": 0.36423841059602646,
+      "positive_group_vs_full_U": {
+        "deterministic_hash": 0.49959593455338647,
+        "exact_training_interolog_3mer": 0.6929664975824174,
+        "lightweight_esm2_150m_linear__linear_lr3e-4": 0.9052516636403894,
+        "sequence_length_ratio": 0.8004529903108795,
+        "sequence_length_sum": 0.6201590672855682,
+        "within_pair_3mer_cosine": 0.8735163787923224
+      },
+      "positive_rows": 825,
+      "unlabeled_rows": 66144
+    },
+    "ten_largest_components": [
+      {
+        "HT_U_fraction": 0.4409200000000006,
+        "endpoint_size_rank": 1,
+        "endpoints": 643,
+        "positive_fraction": 0.4847682119205298,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.49041433334117923,
+          "exact_training_interolog_3mer": 0.5261143879864355,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7704343087497336,
+          "sequence_length_ratio": 0.6604872040155872,
+          "sequence_length_sum": 0.5685136379887779,
+          "within_pair_3mer_cosine": 0.6067428105717017
+        },
+        "positive_rows": 1098,
+        "unlabeled_rows": 440920
+      },
+      {
+        "HT_U_fraction": 0.060360000000000025,
+        "endpoint_size_rank": 2,
+        "endpoints": 78,
+        "positive_fraction": 0.05033112582781457,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.4775517193057341,
+          "exact_training_interolog_3mer": 0.34840234649806645,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.6494129166756071,
+          "sequence_length_ratio": 0.3967384166739454,
+          "sequence_length_sum": 0.2761340701811497,
+          "within_pair_3mer_cosine": 0.3122726973743282
+        },
+        "positive_rows": 114,
+        "unlabeled_rows": 60360
+      },
+      {
+        "HT_U_fraction": 0.047176000000000023,
+        "endpoint_size_rank": 3,
+        "endpoints": 61,
+        "positive_fraction": 0.3055187637969095,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.5009269797768019,
+          "exact_training_interolog_3mer": 0.8113308533291357,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7972731799190514,
+          "sequence_length_ratio": 0.7679337478405139,
+          "sequence_length_sum": 0.5546002911977806,
+          "within_pair_3mer_cosine": 0.7396634833879859
+        },
+        "positive_rows": 692,
+        "unlabeled_rows": 47176
+      },
+      {
+        "HT_U_fraction": 0.028008000000000016,
+        "endpoint_size_rank": 4,
+        "endpoints": 36,
+        "positive_fraction": 0.015011037527593819,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.5236234117725979,
+          "exact_training_interolog_3mer": 0.7050913235411569,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.4175146470679579,
+          "sequence_length_ratio": 0.761587397066798,
+          "sequence_length_sum": 0.628544323541412,
+          "within_pair_3mer_cosine": 0.6756845882466297
+        },
+        "positive_rows": 34,
+        "unlabeled_rows": 28008
+      },
+      {
+        "HT_U_fraction": 0.02727300000000002,
+        "endpoint_size_rank": 5,
+        "endpoints": 35,
+        "positive_fraction": 0.004415011037527594,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.48995550000831634,
+          "exact_training_interolog_3mer": 0.4724388000116352,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.16911240000354874,
+          "sequence_length_ratio": 0.6717846500106716,
+          "sequence_length_sum": 0.39799330000962224,
+          "within_pair_3mer_cosine": 0.3554277500073419
+        },
+        "positive_rows": 10,
+        "unlabeled_rows": 27273
+      },
+      {
+        "HT_U_fraction": 0.02032700000000001,
+        "endpoint_size_rank": 6,
+        "endpoints": 26,
+        "positive_fraction": 0.0075055187637969095,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.5492297058908276,
+          "exact_training_interolog_3mer": 0.4400828235385443,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7643517647149665,
+          "sequence_length_ratio": 0.42744270589067823,
+          "sequence_length_sum": 0.28573150000680186,
+          "within_pair_3mer_cosine": 0.3973600882433099
+        },
+        "positive_rows": 17,
+        "unlabeled_rows": 20327
+      },
+      {
+        "HT_U_fraction": 0.018940000000000012,
+        "endpoint_size_rank": 7,
+        "endpoints": 24,
+        "positive_fraction": 0.0004415011037527594,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.02620300000048282,
+          "exact_training_interolog_3mer": 0.6206365000155013,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.33404400000802487,
+          "sequence_length_ratio": 0.8909850000049715,
+          "sequence_length_sum": 0.7012560000136239,
+          "within_pair_3mer_cosine": 0.8119190000085772
+        },
+        "positive_rows": 1,
+        "unlabeled_rows": 18940
+      },
+      {
+        "HT_U_fraction": 0.01635500000000001,
+        "endpoint_size_rank": 8,
+        "endpoints": 21,
+        "positive_fraction": 0.0004415011037527594,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.6939670000139563,
+          "exact_training_interolog_3mer": 0.5561450000138188,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.6832690000144441,
+          "sequence_length_ratio": 0.5632230000140035,
+          "sequence_length_sum": 0.967524000001481,
+          "within_pair_3mer_cosine": 0.3927230000095556
+        },
+        "positive_rows": 1,
+        "unlabeled_rows": 16355
+      },
+      {
+        "HT_U_fraction": 0.014947000000000009,
+        "endpoint_size_rank": 9,
+        "endpoints": 19,
+        "positive_fraction": 0.0026490066225165563,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.44921916667402634,
+          "exact_training_interolog_3mer": 0.5118200000119206,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7021535000067441,
+          "sequence_length_ratio": 0.5025412500123566,
+          "sequence_length_sum": 0.23976150000563945,
+          "within_pair_3mer_cosine": 0.3313490833413624
+        },
+        "positive_rows": 6,
+        "unlabeled_rows": 14947
+      },
+      {
+        "HT_U_fraction": 0.012586000000000009,
+        "endpoint_size_rank": 10,
+        "endpoints": 16,
+        "positive_fraction": 0.002207505518763797,
+        "positive_group_vs_full_U": {
+          "deterministic_hash": 0.5433572000121304,
+          "exact_training_interolog_3mer": 0.7112728000068687,
+          "lightweight_esm2_150m_linear__linear_lr3e-4": 0.5743536000142939,
+          "sequence_length_ratio": 0.6746709000066032,
+          "sequence_length_sum": 0.4938317000087757,
+          "within_pair_3mer_cosine": 0.5653789000099999
+        },
+        "positive_rows": 5,
+        "unlabeled_rows": 12586
+      }
+    ],
+    "within_length_bin_full": {
+      "bins": {
+        "0": {
+          "concordance": {
+            "deterministic_hash": 0.3870980023170117,
+            "exact_training_interolog_3mer": 0.6417951137533129,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7904934652433827,
+            "sequence_length_ratio": 0.49958460919280046,
+            "sequence_length_sum": 0.5287979365071899,
+            "within_pair_3mer_cosine": 0.566611417196594
+          },
+          "positive_rows": 38,
+          "unlabeled_rows": 19354
+        },
+        "1": {
+          "concordance": {
+            "deterministic_hash": 0.5101832012033116,
+            "exact_training_interolog_3mer": 0.6331356857393345,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7636245313936711,
+            "sequence_length_ratio": 0.5408370636629808,
+            "sequence_length_sum": 0.6206743887411419,
+            "within_pair_3mer_cosine": 0.5876691647441992
+          },
+          "positive_rows": 209,
+          "unlabeled_rows": 116865
+        },
+        "10": {
+          "concordance": {
+            "deterministic_hash": 0.48524693299805477,
+            "exact_training_interolog_3mer": 0.5641187364933448,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7813129163513625,
+            "sequence_length_ratio": 0.5386300606417915,
+            "sequence_length_sum": 0.36708322373024516,
+            "within_pair_3mer_cosine": 0.6771885330884756
+          },
+          "positive_rows": 341,
+          "unlabeled_rows": 131495
+        },
+        "11": {
+          "concordance": {
+            "deterministic_hash": 0.5060128624277911,
+            "exact_training_interolog_3mer": 0.6681654908368622,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7364971392924241,
+            "sequence_length_ratio": 0.49788189365903324,
+            "sequence_length_sum": 0.4652870386301795,
+            "within_pair_3mer_cosine": 0.6136824614985203
+          },
+          "positive_rows": 32,
+          "unlabeled_rows": 58115
+        },
+        "15": {
+          "concordance": {
+            "deterministic_hash": 0.6523467359730464,
+            "exact_training_interolog_3mer": 0.731959944962489,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7754166029658475,
+            "sequence_length_ratio": 0.4666717627273763,
+            "sequence_length_sum": 0.6129796667175852,
+            "within_pair_3mer_cosine": 0.5721602201497866
+          },
+          "positive_rows": 2,
+          "unlabeled_rows": 6541
+        },
+        "2": {
+          "concordance": {
+            "deterministic_hash": 0.4594032060021743,
+            "exact_training_interolog_3mer": 0.6068081051081183,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7766242009409011,
+            "sequence_length_ratio": 0.6587397454843239,
+            "sequence_length_sum": 0.5871553231581308,
+            "within_pair_3mer_cosine": 0.5841607996830472
+          },
+          "positive_rows": 131,
+          "unlabeled_rows": 100759
+        },
+        "3": {
+          "concordance": {
+            "deterministic_hash": 0.6114336361623733,
+            "exact_training_interolog_3mer": 0.7042078440064354,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.49618435630407953,
+            "sequence_length_ratio": 0.7818014624421055,
+            "sequence_length_sum": 0.5796432528252923,
+            "within_pair_3mer_cosine": 0.5670684688678458
+          },
+          "positive_rows": 10,
+          "unlabeled_rows": 22565
+        },
+        "5": {
+          "concordance": {
+            "deterministic_hash": 0.48805143698080616,
+            "exact_training_interolog_3mer": 0.6980945193246769,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7615143248805788,
+            "sequence_length_ratio": 0.62831103284953,
+            "sequence_length_sum": 0.6918332908143578,
+            "within_pair_3mer_cosine": 0.7070668283262602
+          },
+          "positive_rows": 521,
+          "unlabeled_rows": 174586
+        },
+        "6": {
+          "concordance": {
+            "deterministic_hash": 0.5038314809399216,
+            "exact_training_interolog_3mer": 0.7020880230736312,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.8012032175392333,
+            "sequence_length_ratio": 0.7388820851992168,
+            "sequence_length_sum": 0.5789938426971777,
+            "within_pair_3mer_cosine": 0.7066595202061318
+          },
+          "positive_rows": 944,
+          "unlabeled_rows": 302447
+        },
+        "7": {
+          "concordance": {
+            "deterministic_hash": 0.5204529667536321,
+            "exact_training_interolog_3mer": 0.5904013135663101,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.632267232225275,
+            "sequence_length_ratio": 0.46938312266138343,
+            "sequence_length_sum": 0.47639207890700963,
+            "within_pair_3mer_cosine": 0.5194747019101976
+          },
+          "positive_rows": 37,
+          "unlabeled_rows": 67273
+        }
+      },
+      "positive_coverage": 1.0,
+      "positive_weighted_within_bin_concordance": {
+        "deterministic_hash": 0.49437039962630885,
+        "exact_training_interolog_3mer": 0.6652452117191734,
+        "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7789673408291751,
+        "sequence_length_ratio": 0.6485176201414079,
+        "sequence_length_sum": 0.5732721463566137,
+        "within_pair_3mer_cosine": 0.6767956981575434
+      }
+    },
+    "within_length_bin_without_largest": {
+      "bins": {
+        "0": {
+          "concordance": {
+            "deterministic_hash": 0.3786780297361238,
+            "exact_training_interolog_3mer": 0.6425458701293292,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.783125654842282,
+            "sequence_length_ratio": 0.4836920932495685,
+            "sequence_length_sum": 0.5191151524223774,
+            "within_pair_3mer_cosine": 0.569099093199691
+          },
+          "positive_rows": 36,
+          "unlabeled_rows": 17816
+        },
+        "1": {
+          "concordance": {
+            "deterministic_hash": 0.485024641942681,
+            "exact_training_interolog_3mer": 0.6718147300923886,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7790497284794904,
+            "sequence_length_ratio": 0.5404547780353355,
+            "sequence_length_sum": 0.5673143400843521,
+            "within_pair_3mer_cosine": 0.5819297982346037
+          },
+          "positive_rows": 139,
+          "unlabeled_rows": 90083
+        },
+        "10": {
+          "concordance": {
+            "deterministic_hash": 0.5279882513557217,
+            "exact_training_interolog_3mer": 0.7062332140988977,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.851004053814283,
+            "sequence_length_ratio": 0.610832954414763,
+            "sequence_length_sum": 0.3477962231970562,
+            "within_pair_3mer_cosine": 0.7422445810876991
+          },
+          "positive_rows": 83,
+          "unlabeled_rows": 42554
+        },
+        "11": {
+          "concordance": {
+            "deterministic_hash": 0.5507689507690943,
+            "exact_training_interolog_3mer": 0.7182819182820569,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.6899232565899609,
+            "sequence_length_ratio": 0.585324718658163,
+            "sequence_length_sum": 0.3552067218734671,
+            "within_pair_3mer_cosine": 0.5129189795856969
+          },
+          "positive_rows": 11,
+          "unlabeled_rows": 29970
+        },
+        "15": {
+          "concordance": {
+            "deterministic_hash": 0.649132624510312,
+            "exact_training_interolog_3mer": 0.7209942174966872,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.8109494497294696,
+            "sequence_length_ratio": 0.47183361313184524,
+            "sequence_length_sum": 0.5983958216750256,
+            "within_pair_3mer_cosine": 0.5451408319343115
+          },
+          "positive_rows": 2,
+          "unlabeled_rows": 5361
+        },
+        "2": {
+          "concordance": {
+            "deterministic_hash": 0.49728532047301205,
+            "exact_training_interolog_3mer": 0.6215124816444376,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.758428062392484,
+            "sequence_length_ratio": 0.6225766957643148,
+            "sequence_length_sum": 0.5930148812605761,
+            "within_pair_3mer_cosine": 0.635025200403399
+          },
+          "positive_rows": 39,
+          "unlabeled_rows": 54934
+        },
+        "3": {
+          "concordance": {
+            "deterministic_hash": 0.6542720306515122,
+            "exact_training_interolog_3mer": 0.7248850574714624,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.5945593869732616,
+            "sequence_length_ratio": 0.8746296296299444,
+            "sequence_length_sum": 0.5958141762452484,
+            "within_pair_3mer_cosine": 0.5474648786718777
+          },
+          "positive_rows": 8,
+          "unlabeled_rows": 19575
+        },
+        "5": {
+          "concordance": {
+            "deterministic_hash": 0.49174265805720946,
+            "exact_training_interolog_3mer": 0.7414895372432438,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7871153744558514,
+            "sequence_length_ratio": 0.6245086209300958,
+            "sequence_length_sum": 0.6944826791068286,
+            "within_pair_3mer_cosine": 0.7392275902474215
+          },
+          "positive_rows": 331,
+          "unlabeled_rows": 112308
+        },
+        "6": {
+          "concordance": {
+            "deterministic_hash": 0.5051397664053429,
+            "exact_training_interolog_3mer": 0.8277954005349206,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.87461111202622,
+            "sequence_length_ratio": 0.7876084126414242,
+            "sequence_length_sum": 0.5822578078271461,
+            "within_pair_3mer_cosine": 0.7806614313730614
+          },
+          "positive_rows": 491,
+          "unlabeled_rows": 137776
+        },
+        "7": {
+          "concordance": {
+            "deterministic_hash": 0.49492654266476,
+            "exact_training_interolog_3mer": 0.5886575547477283,
+            "lightweight_esm2_150m_linear__linear_lr3e-4": 0.7225085381459365,
+            "sequence_length_ratio": 0.4657675662233239,
+            "sequence_length_sum": 0.45834046271383017,
+            "within_pair_3mer_cosine": 0.5145268258627393
+          },
+          "positive_rows": 27,
+          "unlabeled_rows": 48703
+        }
+      },
+      "positive_coverage": 1.0,
+      "positive_weighted_within_bin_concordance": {
+        "deterministic_hash": 0.4978683362365951,
+        "exact_training_interolog_3mer": 0.7560297727729697,
+        "lightweight_esm2_150m_linear__linear_lr3e-4": 0.822739479031962,
+        "sequence_length_ratio": 0.6751489635359926,
+        "sequence_length_sum": 0.5891582069992556,
+        "within_pair_3mer_cosine": 0.7204297526125624
+      }
+    }
+  },
+  "input_records": [
+    {
+      "bytes": 55883,
+      "path": "artifacts/validation/model_optimization_v1/SEARCH_FREEZE.json",
+      "sha256": "c321841b6d79f4ca4256f14f9f7463a5bf3b5dc0085cfa554a1dc3ba4c906f67"
+    },
+    {
+      "bytes": 39094,
+      "path": "artifacts/validation/protected_final_test_v1/SCORER_FREEZE.json",
+      "sha256": "5f25e856ce74e9f93497c17c19eb45ab1cb49fd74a30ceca5b4f874727e0125f"
+    },
+    {
+      "bytes": 67748,
+      "path": "artifacts/results/protected_final_test_v1/FINAL_TEST_RESULTS.json",
+      "sha256": "6cc8c3ba61039501b3e1b09dfcee442de8f4dfcd0c717a466b15f9e77ef3a02e"
+    },
+    {
+      "bytes": 47814,
+      "path": "artifacts/results/development_evaluation/development_embedding_identity_correction_v2/PRIMARY_METRICS.json",
+      "sha256": "afe7b4af1315d350dfc3d5288eaa0f6d49771b6ebd6baa96f75f1278d698bff8"
+    },
+    {
+      "bytes": 6178533,
+      "path": "data/canonical/benchmark_eligibility_and_sequence_component_audit_v1/eligible_reference_sequences/part-00000.parquet",
+      "sha256": "4d1962734552a6d847da64e95a7fb7fc2cde07268ca5b043f5dc5e74fa46a43e"
+    },
+    {
+      "bytes": 851035,
+      "path": "data/canonical/final_benchmark_component_split_v1/endpoint_partition_assignments/part-00000.parquet",
+      "sha256": "66db8cd59e7cb8cf06ff3ad785448dfc7d5fdd24643811946246d129b0bd8a67"
+    },
+    {
+      "bytes": 77669,
+      "path": "artifacts/results/development_evaluation/development_embedding_identity_correction_v2/SOURCE_EXCLUSIVE_METRICS.json",
+      "sha256": "c8b0800aa3d9ae483ce1886a8dc79e6f7b5dccb3cbf3289b7e9cec3fe17949bc"
+    },
+    {
+      "bytes": 2856128,
+      "path": "features/aac_unit.npy",
+      "sha256": "38e7d78c5751a011a20121870aa8dce25a848692ca5a894229a01c8b4a224ccc"
+    },
+    {
+      "bytes": 75280,
+      "path": "features/adjacency.npz",
+      "sha256": "004a76c1b65e37563ec0a284be1f3ca976b9a9f8600cf9cf04160eb21282b3af"
+    },
+    {
+      "bytes": 136128,
+      "path": "features/component_mass.npy",
+      "sha256": "7f030c8f6ac7beb1a8a3c3da57a9d4a883c8db12c2a94bd174c834062e9399d2"
+    },
+    {
+      "bytes": 816003,
+      "path": "features/components.json",
+      "sha256": "bb18b6b8197b9044f371b4e540fa2d7fcf746cc54906c5d3728863889bf57967"
+    },
+    {
+      "bytes": 136128,
+      "path": "features/degree.npy",
+      "sha256": "2871f838fce64f27380dfa1dd083c30785c985ddd2b2c576962f4a2e02c7cd49"
+    },
+    {
+      "bytes": 1190003,
+      "path": "features/endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 8194,
+      "path": "features/head_20260803.npz",
+      "sha256": "efaa98ae02ac94d61e825b3b43f2614fd5232572a67e162b414f6174fcf0ae56"
+    },
+    {
+      "bytes": 8194,
+      "path": "features/head_20260817.npz",
+      "sha256": "15dba53ab5c5bc4ad1f70242422fa6ba33765fab7c7294fa20c216e84fe9d857"
+    },
+    {
+      "bytes": 8194,
+      "path": "features/head_20260831.npz",
+      "sha256": "0b7149ea20d02ed9b289f6743e133cf07cd4384fe10036664171d5537e0b1853"
+    },
+    {
+      "bytes": 16519451,
+      "path": "features/kmer.npz",
+      "sha256": "f2f8dc57b4ae60cac0caa4b9f6f011e419e68f155da037677074e9a7c3bbea7e"
+    },
+    {
+      "bytes": 136128,
+      "path": "features/length.npy",
+      "sha256": "5fbcd28712ee6bb03cd275d5e01b8ddb5a0d377e93cb11702dcfe50da0cce9d6"
+    },
+    {
+      "bytes": 635800128,
+      "path": "features/neighbor.npy",
+      "sha256": "8735990aa6706e992d4be7a7db131c20ee4645f94ed14a5b1c15827c6644b105"
+    },
+    {
+      "bytes": 87040128,
+      "path": "features/pooled_unit.npy",
+      "sha256": "1dd4c87c96ee2252f277d8d44ee419f47675c6ca93fb42c2c02a9d6427a27ac6"
+    },
+    {
+      "bytes": 13661,
+      "path": "features/public_training_fixture.parquet",
+      "sha256": "bd8b452056088629abaea289cc46c44ef37167fbc4b00da31902e0fb34e1c890"
+    },
+    {
+      "bytes": 1664,
+      "path": "features/public_training_fixture_reference.npy",
+      "sha256": "3a9566d0560aa3a3b16c31de17043e0f925cb57095212ce8336b98877df4efc0"
+    },
+    {
+      "bytes": 635800128,
+      "path": "features/similarities.npy",
+      "sha256": "694dd92e6f1405778dfe1b2c99e02c35ade3d57ec4aa21b9f1b87044cb4e60b6"
+    },
+    {
+      "bytes": 43520128,
+      "path": "features/standardized.npy",
+      "sha256": "2f736529935ed4c564970836cebd8194ef7021e6b9b81824ba79441113a31572"
+    },
+    {
+      "bytes": 65329143,
+      "path": "data/development_00.npz",
+      "sha256": "8a1f61a429a2b79c9a41dd1e7f6d02ece58bf93adc9a8c9b07233f930a5422e5"
+    },
+    {
+      "bytes": 65202198,
+      "path": "data/development_03.npz",
+      "sha256": "65b20fd98289f3eabb9c4040516a0a553e57d877c7ce32f681ccf895bc033cfb"
+    },
+    {
+      "bytes": 65290923,
+      "path": "data/development_04.npz",
+      "sha256": "44df9580d6bba6be6afca64c1fb362defbfe5728e2915c58e9965d1350e32b12"
+    },
+    {
+      "bytes": 5375,
+      "path": ".private/development_embedding_identity_correction_v2/evaluation/scores/C3_development/SCORERS.json",
+      "sha256": "ca89e39c553aefcd82744fbf47ebcac405571ee74855b457b15e8b295ec1f122"
+    },
+    {
+      "bytes": 392888008,
+      "path": ".private/development_embedding_identity_correction_v2/evaluation/scores/C3_development/scores.f64.npy",
+      "sha256": "b7250f5f96e5d3ebc5809ad8b67bdc646410325b45edd5b64eea828fe1294ec3"
+    },
+    {
+      "bytes": 38876993,
+      "path": ".private/development_embedding_identity_correction_v2/evaluation/scores/C3_development/rows.parquet",
+      "sha256": "d8e3dcd7dc30f59179d45c15e6b2e9fe4c3b079157f3d993c8708e937a85c1b3"
+    },
+    {
+      "bytes": 1780,
+      "path": ".private/development_embedding_identity_correction_v2/evaluation/scores/C3_development/CELL_SCORE_MANIFEST.json",
+      "sha256": "b7fb67447e0ebf84b789719fc8d0f2b073ff0ad17e2fc5817cbae890ced1d657"
+    }
+  ],
+  "label_blind_endpoint_partition_summary": {
+    "development": {
+      "components": 1071,
+      "endpoint_length_p10_p50_p90": [
+        173.0,
+        467.0,
+        895.0
+      ],
+      "endpoints": 2550,
+      "largest_component": 643,
+      "singleton_components": 796
+    },
+    "test": {
+      "components": 1284,
+      "endpoint_length_p10_p50_p90": [
+        162.0,
+        440.0,
+        1047.0
+      ],
+      "endpoints": 2550,
+      "largest_component": 111,
+      "singleton_components": 931
+    },
+    "train": {
+      "components": 5427,
+      "endpoint_length_p10_p50_p90": [
+        168.0,
+        418.5,
+        1050.0
+      ],
+      "endpoints": 11900,
+      "largest_component": 1624,
+      "singleton_components": 3992
+    }
+  },
+  "parity": {
+    "full_development_rows": 1002265,
+    "full_row_score_max_abs": {
+      "exact_training_interolog_3mer": 0.0,
+      "sequence_length_ratio": 0.0,
+      "sequence_length_sum": 0.0,
+      "within_pair_3mer_cosine": 0.0
+    },
+    "protected_CPU_scorer_development_sample_rows": 10457,
+    "protected_CPU_scorer_max_abs": {
+      "deterministic_hash": 0.0,
+      "exact_training_interolog_3mer": 0.0,
+      "sequence_length_ratio": 0.0,
+      "sequence_length_sum": 0.0,
+      "within_pair_3mer_cosine": 0.0
+    },
+    "published_concordance_max_abs": 1.4392154135123292e-11
+  },
+  "published_comparison": {
+    "C1": {
+      "deterministic_hash": {
+        "development": 0.49324689379684544,
+        "development_ci95": [
+          0.4761590957228401,
+          0.5094907288740104
+        ],
+        "test": 0.5071234356801843,
+        "test_ci95": [
+          0.4883278807270853,
+          0.5234199987689061
+        ]
+      },
+      "exact_training_interolog_3mer": {
+        "development": 0.6209214147156702,
+        "development_ci95": [
+          0.5761362640876896,
+          0.6543486893446728
+        ],
+        "test": 0.6331138199007801,
+        "test_ci95": [
+          0.5901965154536306,
+          0.6670380033848466
+        ]
+      },
+      "lightweight_esm2_150m_linear__linear_lr3e-4": {
+        "development": 0.8485650687614544,
+        "development_ci95": [
+          0.8323245187173908,
+          0.866204079259807
+        ],
+        "test": 0.8434933190102009,
+        "test_ci95": [
+          0.827234492066085,
+          0.8599873005641381
+        ]
+      },
+      "sequence_length_ratio": {
+        "development": 0.5526079991289637,
+        "development_ci95": [
+          0.5298958590405372,
+          0.5821280490993924
+        ],
+        "test": 0.5482846642570108,
+        "test_ci95": [
+          0.5247993976715785,
+          0.5758448484395945
+        ]
+      },
+      "sequence_length_sum": {
+        "development": 0.45994242451364115,
+        "development_ci95": [
+          0.4220353050359097,
+          0.49546296150011687
+        ],
+        "test": 0.47589335958336165,
+        "test_ci95": [
+          0.438684614212387,
+          0.5164686990681586
+        ]
+      },
+      "within_pair_3mer_cosine": {
+        "development": 0.5174725822527396,
+        "development_ci95": [
+          0.4877858875744042,
+          0.5586238088839771
+        ],
+        "test": 0.5241814279560632,
+        "test_ci95": [
+          0.49475681776650043,
+          0.5607180367285507
+        ]
+      }
+    },
+    "C2": {
+      "deterministic_hash": {
+        "development": 0.49799197254441696,
+        "development_ci95": [
+          0.48713388428137167,
+          0.5066875777286671
+        ],
+        "test": 0.4988676855487804,
+        "test_ci95": [
+          0.489441049389966,
+          0.5082448093571855
+        ]
+      },
+      "exact_training_interolog_3mer": {
+        "development": 0.6081455864100266,
+        "development_ci95": [
+          0.5435872837841499,
+          0.6554891193539972
+        ],
+        "test": 0.5359116782183855,
+        "test_ci95": [
+          0.4957359434068822,
+          0.58577084553411
+        ]
+      },
+      "lightweight_esm2_150m_linear__linear_lr3e-4": {
+        "development": 0.7997974202182104,
+        "development_ci95": [
+          0.7793544296211752,
+          0.8250529660564525
+        ],
+        "test": 0.8052990558636478,
+        "test_ci95": [
+          0.7744336841093672,
+          0.8355107016334549
+        ]
+      },
+      "sequence_length_ratio": {
+        "development": 0.5611487283300906,
+        "development_ci95": [
+          0.5348849556508571,
+          0.5818076120772787
+        ],
+        "test": 0.5352530621433551,
+        "test_ci95": [
+          0.500199576374371,
+          0.5715946052351373
+        ]
+      },
+      "sequence_length_sum": {
+        "development": 0.495916404817008,
+        "development_ci95": [
+          0.436638112654072,
+          0.5378797664712147
+        ],
+        "test": 0.40356881129661115,
+        "test_ci95": [
+          0.3415006538728079,
+          0.4703475875288034
+        ]
+      },
+      "within_pair_3mer_cosine": {
+        "development": 0.5489599244142938,
+        "development_ci95": [
+          0.49361028728967254,
+          0.590925219103257
+        ],
+        "test": 0.4618843989918311,
+        "test_ci95": [
+          0.406555166881545,
+          0.5235065440847702
+        ]
+      }
+    },
+    "C3": {
+      "deterministic_hash": {
+        "development": 0.49423254260362587,
+        "development_ci95": [
+          0.4730224094360611,
+          0.5219783018543397
+        ],
+        "test": 0.4911389256035018,
+        "test_ci95": [
+          0.4723744371514324,
+          0.5103087181265409
+        ]
+      },
+      "exact_training_interolog_3mer": {
+        "development": 0.635701358715407,
+        "development_ci95": [
+          0.5257493426482096,
+          0.754754284382531
+        ],
+        "test": 0.4840370870156003,
+        "test_ci95": [
+          0.4257058473759408,
+          0.5745713226805154
+        ]
+      },
+      "lightweight_esm2_150m_linear__linear_lr3e-4": {
+        "development": 0.784142246349548,
+        "development_ci95": [
+          0.7428201383689814,
+          0.8527162689983394
+        ],
+        "test": 0.7892487658713853,
+        "test_ci95": [
+          0.7081575143062996,
+          0.8457268089068927
+        ]
+      },
+      "sequence_length_ratio": {
+        "development": 0.6608800512102514,
+        "development_ci95": [
+          0.5669951093863831,
+          0.742349922980613
+        ],
+        "test": 0.5493020084116953,
+        "test_ci95": [
+          0.48438232532012826,
+          0.6066769957678905
+        ]
+      },
+      "sequence_length_sum": {
+        "development": 0.5204536763804425,
+        "development_ci95": [
+          0.41826502583892855,
+          0.577579047494639
+        ],
+        "test": 0.3272352459046566,
+        "test_ci95": [
+          0.25042109077091607,
+          0.4486943948662032
+        ]
+      },
+      "within_pair_3mer_cosine": {
+        "development": 0.6446826375227447,
+        "development_ci95": [
+          0.49809389706477586,
+          0.7264625851079812
+        ],
+        "test": 0.4939696202219086,
+        "test_ci95": [
+          0.4138817422453382,
+          0.5658292473904107
+        ]
+      }
+    },
+    "HI-II-14_exclusive_C3": {
+      "deterministic_hash": {
+        "development": 0.4554126314095888,
+        "test": 0.5113093643166884
+      },
+      "exact_training_interolog_3mer": {
+        "development": 0.6356151955088439,
+        "test": 0.5318901319749567
+      },
+      "lightweight_esm2_150m_linear__linear_lr3e-4": {
+        "development": 0.7421270560828426,
+        "test": 0.7106254275131997
+      },
+      "sequence_length_ratio": {
+        "development": 0.6240506490356733,
+        "test": 0.5062248308598752
+      },
+      "sequence_length_sum": {
+        "development": 0.5006289278853752,
+        "test": 0.4481636282571374
+      },
+      "within_pair_3mer_cosine": {
+        "development": 0.5805600448695044,
+        "test": 0.548961421936859
+      }
+    },
+    "HuRI_exclusive_C3": {
+      "deterministic_hash": {
+        "development": 0.4995460924256505,
+        "test": 0.48792638523728593
+      },
+      "exact_training_interolog_3mer": {
+        "development": 0.6278355557500938,
+        "test": 0.4725719668313682
+      },
+      "lightweight_esm2_150m_linear__linear_lr3e-4": {
+        "development": 0.7860623339215864,
+        "test": 0.7946293293238335
+      },
+      "sequence_length_ratio": {
+        "development": 0.6649760793041798,
+        "test": 0.5545914095820774
+      },
+      "sequence_length_sum": {
+        "development": 0.5254180465122746,
+        "test": 0.3023333354762732
+      },
+      "within_pair_3mer_cosine": {
+        "development": 0.6527321887245208,
+        "test": 0.4710401209235594
+      }
+    }
+  },
+  "runtime": {
+    "CUDA": "13.0",
+    "GPU": "NVIDIA GH200 120GB",
+    "container_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+    "elapsed_seconds": 18.09876164099842,
+    "torch": "2.8.0a0+34c6371d24.nv25.08"
+  },
+  "scope_document_sha256": "57451348ecb3fc77b4bdd6f6eb396e87e1d6e01d30c0c4310b165049a86c962f",
+  "status": "post_hoc_development_only_diagnostic",
+  "study_id": "c3_control_shift_investigation_v1"
+}

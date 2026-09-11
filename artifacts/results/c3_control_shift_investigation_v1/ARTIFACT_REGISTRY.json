@@ -1,0 +1,99 @@
+{
+  "artifacts": [
+    {
+      "bytes": 19576,
+      "path": "scripts/analysis/c3_control_shift_v1.py",
+      "sha256": "6140200a1c978825dd66836fd9d511cd65d05dab54b258ebc139bd68eb15bae1"
+    },
+    {
+      "bytes": 7177,
+      "path": "scripts/analysis/c3_control_shift_components_v1.py",
+      "sha256": "b61e77dcb82e2eb408d4197f5a41654a4f0ed65b5aeb8298f2315d8a2fbaf8ec"
+    },
+    {
+      "bytes": 2462,
+      "path": "scripts/analysis/run_c3_control_shift_v1.sh",
+      "sha256": "dada8a127e64419e636ae26a96d027b4b6b61ef7570ea06409a38c20445e5dd2"
+    },
+    {
+      "bytes": 3280,
+      "path": "tests/unit/test_c3_control_shift_v1.py",
+      "sha256": "b981f9d8d0426f34cebd1d1f77680684b568526f9dea7529a896800f9ad0638d"
+    },
+    {
+      "bytes": 3390,
+      "path": "tests/unit/test_c3_control_shift_evidence_v1.py",
+      "sha256": "222ac4b982e2259ace64d2c25d013691987d2b9f625a0959af68b81836bacb44"
+    },
+    {
+      "bytes": 3402,
+      "path": "docs/protocols/C3_CONTROL_SHIFT_INVESTIGATION_v1.md",
+      "sha256": "57451348ecb3fc77b4bdd6f6eb396e87e1d6e01d30c0c4310b165049a86c962f"
+    },
+    {
+      "bytes": 1583,
+      "path": "docs/protocols/C3_CONTROL_SHIFT_COMPONENT_SUPPLEMENT_v1.md",
+      "sha256": "ada081e77c3ea2fb781fba3a0914a05254f3e100cca0236c6c98f8c75a8f368f"
+    },
+    {
+      "bytes": 11814,
+      "path": "docs/reports/m1/M1_C3_Control_Shift_Investigation_v1.md",
+      "sha256": "28fe8781d40f368a2b1548a9fe9c3736ac7c4a685ac234fe62572acfb449a5a6"
+    },
+    {
+      "bytes": 39241,
+      "path": "artifacts/results/c3_control_shift_investigation_v1/RESULTS.json",
+      "sha256": "401d259d44c2874c4ee7d3a04c84a08325db7b323bf87764f7db6e01730c8db6"
+    },
+    {
+      "bytes": 241652,
+      "path": "artifacts/results/c3_control_shift_investigation_v1/COMPONENT_SUPPLEMENT.json",
+      "sha256": "6521bfb49a39393cab3bf8b43fe89fd6455decdf81bd405f80c0640577418482"
+    },
+    {
+      "bytes": 485,
+      "path": "artifacts/validation/c3_control_shift_investigation_v1/INTEGRITY_BEFORE.json",
+      "sha256": "16889a75cde47a8cc2db2f406bc56aa1f1f1f3e3d11f019b6cccf1c0fed54cf5"
+    },
+    {
+      "bytes": 485,
+      "path": "artifacts/validation/c3_control_shift_investigation_v1/INTEGRITY_AFTER.json",
+      "sha256": "16889a75cde47a8cc2db2f406bc56aa1f1f1f3e3d11f019b6cccf1c0fed54cf5"
+    },
+    {
+      "bytes": 204,
+      "path": "artifacts/validation/c3_control_shift_investigation_v1/UNIT_TESTS.xml",
+      "sha256": "83931615819319e97f47ca3100d5351a4a73b32617077443c024ce6f2ed96a4c"
+    },
+    {
+      "bytes": 4665,
+      "path": "artifacts/validation/c3_control_shift_investigation_v1/UNIT_TESTS_PASS.xml",
+      "sha256": "2e653b53f8053c552156587f59075a215d41bdd8b0e909bb31ba5799d6e4b10f"
+    },
+    {
+      "bytes": 5235,
+      "path": "artifacts/validation/c3_control_shift_investigation_v1/UNIT_TESTS_FINAL.xml",
+      "sha256": "00764297fd69c998f839aaea006a589837156da0fa6d7870b3f875d13099a23c"
+    }
+  ],
+  "basis_commit": "bc6b9f0ed389050dc4fc70ac96d3aadd2332d225",
+  "final_targeted_tests_passed": 38,
+  "new_training_or_test_evaluation": false,
+  "preservation": {
+    "both_spent_ledgers_and_completions_unchanged": true,
+    "bundle_files": 20,
+    "bundle_read_only": true,
+    "historical_registered_entries_verified": 210,
+    "models": 2,
+    "new_training_or_benchmark_scoring": false,
+    "passed": true,
+    "registry_sha256": "0b742d43e7da24285a9c2b5587d08cf3c4346073e33dbcaedf604d8a66c9fd83",
+    "release_id": "frozen_pair_models_v1",
+    "state_only_checkpoints": 6,
+    "synthetic_qualification_tests_passed": 38,
+    "test_truth_or_pairs_accessed": false
+  },
+  "status": "completed_post_hoc_development_only_diagnostic",
+  "study_id": "c3_control_shift_investigation_v1",
+  "test_aggregate_results_only": true
+}
