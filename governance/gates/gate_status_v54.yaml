@@ -1,0 +1,46 @@
+schema_version: 1
+status_version: 54
+date: '2026-09-11'
+decision: DEC-0054
+release_id: frozen_pair_models_v1
+previous_status: governance/gates/gate_status_v53.yaml
+model_registry: artifacts/models/frozen_pair_models_v1/MODEL_REGISTRY.json
+models:
+  best_performing_model: esm2_150m__residual_wide__epoch04_ensemble3
+  original_confirmatory_baseline: lightweight_esm2_150m_linear__linear_lr3e-4
+  both_frozen: true
+  baseline_retained: true
+  seeds: [20260803, 20260817, 20260831]
+  prediction_unit: equal_three_seed_raw_score_ensemble
+  checkpoint_or_ensemble_definition_changed: false
+designation:
+  timing: post_followup_test
+  scope: higher_observed_primary_C3_score_among_two_evaluated_PLM_ensembles
+  optimized_test_C3: 0.8079478806256634
+  baseline_test_C3: 0.7892487658713853
+  paired_C3_gain: 0.0186991147542781
+  paired_C3_percentile_95: [-0.0013583484514757354, 0.049999798255339706]
+  conclusive_primary_C3_superiority: false
+  optimized_is_original_confirmatory_model: false
+preservation:
+  private_read_only_bundle: .private/frozen_pair_models_v1/bundle
+  public_checkpoint_hashes: true
+  weights_publicly_redistributed: false
+  original_and_followup_evaluation_records_unchanged: true
+  original_failed_development_gate_unchanged: true
+  both_spent_ledgers_and_completions_unchanged: true
+  historical_registered_entries_verified: 210
+execution:
+  new_training_or_encoder_inference: false
+  new_benchmark_scoring_or_metric_recomputation: false
+  test_truth_or_pairs_accessed_for_release: false
+  new_test_set_created: false
+  further_evaluation_authorized_or_queued: false
+  synthetic_validation_permitted: true
+  commit_and_push_authorized: true
+claims:
+  PU_ranking_not_binding_accuracy: true
+  independent_replication: false
+  direct_binding_or_partner_specific_generalization_established: false
+  shortcut_free_generalization_established: false
+  bioplex_role: secondary_cross_assay_evidence_not_binary_binding_gate

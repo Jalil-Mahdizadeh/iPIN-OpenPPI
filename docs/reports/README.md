@@ -2,7 +2,15 @@
 
 Human-readable M0 platform, evidence, benchmark, modelling, gate, and release reports are stored here. Machine-readable run records remain under `artifacts/runs/`.
 
-The current completed study is
+The current model disposition is [Frozen pair models v1](../models/FROZEN_PAIR_MODELS_v1.md),
+authorized by [DEC-0054](../../governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
+Both exact ensembles are preserved: the optimized residual-MLP ensemble is the
+**best-performing model by observed benchmark score**; the affine ensemble is
+the **original confirmatory baseline**. No new experiment or evaluation was
+performed for this designation. See [status v54](../../governance/PROJECT_STATUS_v54.md)
+and the [public model registry](../../artifacts/models/frozen_pair_models_v1/MODEL_REGISTRY.json).
+
+The latest completed study is
 [Fixed-ensemble test follow-up](m1/M1_Model_Optimization_Followup_v1.md), authorized
 by [DEC-0053](../../governance/decisions/DEC-0053-authorize-fixed-ensemble-followup.md).
 The frozen optimized ensemble increased primary C3 test concordance from

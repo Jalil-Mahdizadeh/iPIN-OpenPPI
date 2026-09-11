@@ -4,6 +4,16 @@ Evidence-aware, sequence-based prioritization of direct human heteromeric protei
 
 ## Current status
 
+Both evaluated ensembles are frozen. The **optimized three-seed residual-MLP
+ensemble is the best-performing model by observed benchmark score**; the
+**affine three-seed ensemble remains the original confirmatory baseline**.
+Their exact checkpoints, shared encoder, normalization and ensemble definitions
+are preserved in the [model registry and cards](docs/models/FROZEN_PAIR_MODELS_v1.md)
+under [DEC-0054](governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
+This designation changes no weights or results and does not establish
+statistically conclusive primary C3 superiority. See
+[current status v54](governance/PROJECT_STATUS_v54.md).
+
 As of 2026-09-11, a surprisingly simple frozen-PLM sequence-pair model has strong
 positive-unlabeled ranking evidence for interaction-training-naïve proteins in
 this protected benchmark. Its original C3 development concordance is **0.784**;
@@ -35,7 +45,7 @@ The optimized C2/C1 point scores exceed the historical highlighted network
 controls, but this follow-up did not perform paired comparisons against those
 controls or establish the absence of shortcuts. See the
 [follow-up report](docs/reports/m1/M1_Model_Optimization_Followup_v1.md),
-[current status v53](governance/PROJECT_STATUS_v53.md), and
+[completed evaluation status v53](governance/PROJECT_STATUS_v53.md), and
 [follow-up protocol](docs/protocols/MODEL_OPTIMIZATION_FOLLOWUP_v1.md).
 No new test set was created. The existing test was already examined; this is
 a disclosed follow-up, not independent replication or a never-seen evaluation.
@@ -129,6 +139,7 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
 |---|---|
 | `docs/blueprints/` | Reviewed specifications and expert-group documents |
 | `docs/reports/` | Human-readable milestone, platform, and scientific reports |
+| `docs/models/` | Frozen model roles, exact prediction definitions and preservation records |
 | `governance/` | Start manifest, decisions, gates, risks, licenses, and novelty claims |
 | `configs/` | Versioned scientific, path, source, and gate configuration |
 | `containers/` | Apptainer definitions, locks, metadata, cache, and SIF images |

@@ -13,18 +13,28 @@ Changes to the primary target, metric, split, calibration universe, production p
 
 ## Current record
 
-The current scientific status is [v53](PROJECT_STATUS_v53.md), with
-[gate record v53](gates/gate_status_v53.yaml) and
+The current scientific status is [v54](PROJECT_STATUS_v54.md), with
+[gate record v54](gates/gate_status_v54.yaml).
+[DEC-0054](decisions/DEC-0054-freeze-and-designate-both-models.md) freezes both
+evaluated ensembles and designates the optimized ensemble **best-performing by
+observed benchmark score**, while retaining the affine ensemble as the
+**original confirmatory baseline**. The
+[dual-model registry and cards](../docs/models/FROZEN_PAIR_MODELS_v1.md) preserve
+exact checkpoint hashes and prediction definitions. This is a post-follow-up
+designation, not a new test, refit or statistically conclusive C3 superiority claim.
+
+The preceding completed evaluation is recorded in [status v53](PROJECT_STATUS_v53.md),
+[gate record v53](gates/gate_status_v53.yaml) and the
 [fixed-ensemble follow-up report](../docs/reports/m1/M1_Model_Optimization_Followup_v1.md).
 [DEC-0053](decisions/DEC-0053-authorize-fixed-ensemble-followup.md) records the
 user-authorized post-development, pre-follow-up-test amendment: evaluate the
 already-selected three-seed ensemble as a model, retaining individual-seed
 results as diagnostics. The failed original optimization gate remains intact.
 
-DEC-0051's original protected evaluation and DEC-0052's completed optimization
-are immutable historical records. DEC-0053 permits exactly one separate
-follow-up comparison on the existing, previously examined test; it does not
-reset the original spent ledger or authorize further model/test iteration.
+DEC-0051's original protected evaluation, DEC-0052's completed optimization and
+DEC-0053's completed follow-up are immutable historical records. DEC-0053's
+single separate follow-up on the previously examined test is consumed.
+DEC-0054 resets neither spent ledger and authorizes no further model/test iteration.
 Older numbered status files and `RESUME-*` checkpoints describe their original
 phase boundaries, not current authority. Unlabeled pairs are not negatives;
 direct-binding and genuine partner-specific generalization remain unresolved.
