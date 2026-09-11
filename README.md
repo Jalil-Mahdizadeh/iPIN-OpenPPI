@@ -4,24 +4,32 @@ Evidence-aware, sequence-based prioritization of direct human heteromeric protei
 
 ## Current status
 
-As of 2026-09-10, the development embedding-identity correction authorized by
-[DEC-0045](governance/decisions/DEC-0045-authorize-development-embedding-identity-correction.md)
-is complete. The original learned-model evaluation indexed almost every
-protein's embedding incorrectly. Corrected reevaluation of all frozen models
-passed 329 unit tests, nine production audit checks and 17 standalone
-independent validation checks.
+As of 2026-09-11, a locked external BioPlex challenge is complete under
+[DEC-0048](governance/decisions/DEC-0048-authorize-locked-external-bioplex-challenge.md).
+The pair head recovers independently generated co-associations, but **does not
+demonstrate added value over simple sequence similarities**: bait-macro
+concordance is 0.617 / 0.609 in 293T / HCT116, versus the strongest baseline
+points of 0.642 / 0.621. Balanced partner swaps favor the observed associations
+about 72% of the time, but superiority over direct similarities is uncertain.
+Neither cell passes the frozen all-comparator superiority gates.
 
-The selected simple ESM-2 150M model's C3 positive-versus-unlabeled concordance
-is **0.784**, versus the invalid original **0.492**. The best C3 partner-gated
-model reaches **0.760** and still fails the original complexity gates.
-The project therefore has development ranking signal, but no demonstrated
-benefit for its proposed gated architecture. Protected evaluation remains
-unauthorized and sealed; this is not a calibrated probability-of-binding claim.
+The protocol and homology-purged checkpoints were locked before acquisition;
+no new fits or embeddings were needed. All 416 tests across qualified CPU/GPU
+runtimes and the separate numerical audit pass. This supports a ranking research
+question, not a better-generalizing model, direct-binding validation, calibrated
+probabilities or architecture novelty. Protected evaluation remains sealed;
+the original gated/complexity stop remains unchanged.
 
-See the [findings and corrected results](docs/reports/m1/M1_Research_Reassessment_and_Embedding_Identity_Findings_2026-09-10.md),
-[project status v45](governance/PROJECT_STATUS_v45.md), and
-[gate ledger v45](governance/gates/gate_status_v45.yaml).
-Original v1 evaluation artifacts remain preserved as incident evidence.
+See the [concise external report](docs/reports/m1/M1_External_BioPlex_Challenge_v1.md),
+[current status v48](governance/PROJECT_STATUS_v48.md), and
+[gate ledger v48](governance/gates/gate_status_v48.yaml).
+Prior [within-anchor](docs/reports/m1/M1_Within_Anchor_Partner_Specificity_Diagnostic_v1.md)
+and [homology/source](docs/reports/m1/M1_Homology_and_Source_Challenge_v1.md)
+studies remain frozen. The earlier
+[embedding-identity correction](docs/reports/m1/M1_Research_Reassessment_and_Embedding_Identity_Findings_2026-09-10.md)
+restored development C3 concordance to 0.784 from invalid 0.492; that is a
+different endpoint/panel from the external numbers above. Original incident
+evidence is preserved.
 
 ## Historical pre-model checkpoint (v27)
 
@@ -138,5 +146,10 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
 7. Preserve both the invalid original evaluation evidence and the corrected
    `development_embedding_identity_correction_v2` evidence. The corrected
    result does not authorize another phase or protected evaluation.
+8. Preserve completed DEC-0046/0047/0048 studies and their freezes. BioPlex is
+   now spent diagnostic evidence; do not tune to rescue its superiority gates.
+   Additional source acquisition, model work or evaluation needs a new bounded
+   decision. The published-source use note is
+   [here](governance/licenses/BIOPLEX_PUBLISHED_RELEASE_USE_v1.md).
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.

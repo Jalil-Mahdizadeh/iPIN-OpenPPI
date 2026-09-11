@@ -1,0 +1,134 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2470,
+      "path": "configs/external_bioplex_challenge_v1.yaml",
+      "sha256": "1ef1d4cbd04e47eae77c8993b0ee51162e2a72ddd5542c75e968589b9cabafdc"
+    },
+    {
+      "bytes": 8077,
+      "path": "docs/protocols/EXTERNAL_BIOPLEX_CHALLENGE_v1.md",
+      "sha256": "d33dfed9a74792d532fa25dc0c10eac22d33d522bc488b490f79718fc78eb055"
+    },
+    {
+      "bytes": 2401,
+      "path": "governance/decisions/DEC-0048-authorize-locked-external-bioplex-challenge.md",
+      "sha256": "bf8417b30813d9271cd9725fa24195677508dd40970ff22d32511a37f245aa64"
+    },
+    {
+      "bytes": 5152,
+      "path": "docs/reports/m1/M1_External_BioPlex_Challenge_v1.md",
+      "sha256": "45b3e37cd73ba2a80803ec617e36871757e8c523f2eb6c7a415d0c4765588944"
+    },
+    {
+      "bytes": 3290,
+      "path": "governance/PROJECT_STATUS_v48.md",
+      "sha256": "5978e568c52894014811828d0b6f6b85d0032ab668f7f26d7da5522d9523cc8f"
+    },
+    {
+      "bytes": 3785,
+      "path": "governance/gates/gate_status_v48.yaml",
+      "sha256": "9d97c5ce08c235374708e0f81ef4602c0b50cc88992a5411bd4dd5a40dcae647"
+    },
+    {
+      "bytes": 196,
+      "path": "scripts/model/run_external_bioplex_challenge_v1.py",
+      "sha256": "6417404fb46116449c210d1ef47656c6613f741be8a591823b2e232173dd21bd"
+    },
+    {
+      "bytes": 8749,
+      "path": "tests/unit/test_external_bioplex.py",
+      "sha256": "95080d05fd9d74df42cb240064c1e48a4f749d1dd35d483ff92d0b04e767f014"
+    },
+    {
+      "bytes": 79,
+      "path": "src/ipin_openppi/external_bioplex/__init__.py",
+      "sha256": "8ff9bc5c316818fc87c334e7de2b17f0b94131a3d5648c8e2418e1fb42c31a98"
+    },
+    {
+      "bytes": 9749,
+      "path": "src/ipin_openppi/external_bioplex/data.py",
+      "sha256": "b9895c69d5064eaeb511d498e1f1642d284d86b79fa302cf7359b02ff1a7612a"
+    },
+    {
+      "bytes": 15329,
+      "path": "src/ipin_openppi/external_bioplex/pipeline.py",
+      "sha256": "91ca5eecc65404312d603d4c17cd5352d20100f556349d23dbd185add1957469"
+    },
+    {
+      "bytes": 8497,
+      "path": "src/ipin_openppi/external_bioplex/semantics.py",
+      "sha256": "6d0fed6d5a4c7c8d1b50fab4adad104a8757e5eebec5fc396b248f132a0e4fe2"
+    },
+    {
+      "bytes": 17821,
+      "path": "src/ipin_openppi/external_bioplex/validation.py",
+      "sha256": "208c80a18929a89e306ab2fe9e50c9e0fdf1a6cfb41b93079ae785e707bf9a92"
+    },
+    {
+      "bytes": 8243,
+      "path": "artifacts/results/external_bioplex_challenge_v1/ACQUISITION.json",
+      "sha256": "01848580c3d0ad80043b99d74cf2e0d45d1f0fd3cb1843615c64a8c1aef91ec4"
+    },
+    {
+      "bytes": 2239,
+      "path": "artifacts/results/external_bioplex_challenge_v1/EXECUTION_FREEZE.json",
+      "sha256": "8c0068f7a585cca285f83f2245991bb89109cdb38e635737aef9d75971266d97"
+    },
+    {
+      "bytes": 6091,
+      "path": "artifacts/results/external_bioplex_challenge_v1/FEASIBILITY.json",
+      "sha256": "d8ba05bba45d40c3cbae03347c7373cf2ada90f956effb2e939339591cd0275d"
+    },
+    {
+      "bytes": 11871,
+      "path": "artifacts/results/external_bioplex_challenge_v1/PREREGISTRATION.json",
+      "sha256": "b5602091b29eff414649bf33e2e6bdc065b79070c5d61dbebccecdd2f71fd236"
+    },
+    {
+      "bytes": 17568,
+      "path": "artifacts/results/external_bioplex_challenge_v1/RESULTS.json",
+      "sha256": "e8dcfbc67ba77a82ef7cac8a85fd7b497be8a85c21986d960ba56f11237a4a2a"
+    },
+    {
+      "bytes": 1397,
+      "path": "artifacts/results/external_bioplex_challenge_v1/SCORING_COMPLETE.json",
+      "sha256": "877691bfc67cb1bdb9f3f7df114a24a133525b65cfb11774653ec346cad7ad62"
+    },
+    {
+      "bytes": 589,
+      "path": "artifacts/validation/external_bioplex_challenge_v1/REFERENCE_VALIDATION.json",
+      "sha256": "fe1f29dddb854b0e1f4e0ba32b4c089a3c93e4b8c1ed447383dabe9fb3d9d101"
+    },
+    {
+      "bytes": 359,
+      "path": "artifacts/validation/external_bioplex_challenge_v1/gpu_control_post_execution.xml",
+      "sha256": "ab61111eb59a5a4c17d7704d674cda030749e95511054ce36f26575e90afca65"
+    },
+    {
+      "bytes": 359,
+      "path": "artifacts/validation/external_bioplex_challenge_v1/gpu_control_pre_execution.xml",
+      "sha256": "9099f960f44c9456aa61506dd99e9e0870c314ac255c38b1268709d241e61384"
+    },
+    {
+      "bytes": 61548,
+      "path": "artifacts/validation/external_bioplex_challenge_v1/unit_tests_post_execution.xml",
+      "sha256": "09a522c5bee29f69567bf766897fcacb2fbb57737e35bc46bbe41f5533cf3d71"
+    },
+    {
+      "bytes": 61549,
+      "path": "artifacts/validation/external_bioplex_challenge_v1/unit_tests_pre_execution.xml",
+      "sha256": "863275509ac670667de679f4a25c6c1863fe045ee2b8b8466588ac245308cdfa"
+    }
+  ],
+  "created_utc": "2026-09-11T01:42:13.776001+00:00",
+  "distinct_tests": 416,
+  "execution_complete": true,
+  "new_fits": 0,
+  "numerical_validation_passed": true,
+  "prior_two_study_closures_unchanged": true,
+  "protected_access": false,
+  "protocol_id": "external_bioplex_challenge_v1",
+  "publication_authorized_by_user": true,
+  "raw_and_large_arrays_remain_local": true
+}

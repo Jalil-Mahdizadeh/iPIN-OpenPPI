@@ -1,0 +1,195 @@
+{
+  "artifacts": [
+    {
+      "bytes": 506418,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/source_293T.npz",
+      "sha256": "407f68f0997d193dedf6e684ba1931e33726a8fc680a13ef2a62fd41c8ae6747"
+    },
+    {
+      "bytes": 3449029,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/panel_293T_0.npz",
+      "sha256": "ef155671bb6847554cdbeba42555abce92cc108621d2f755101ef57783073150"
+    },
+    {
+      "bytes": 2659791,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/panel_293T_1.npz",
+      "sha256": "7c804cecfe2ae9704ce6f012bc2cc1fb078bfe8263f58782e5d28563d1fccb49"
+    },
+    {
+      "bytes": 3717708,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/panel_293T_2.npz",
+      "sha256": "b7ec8420e80ec8ab5cc2e6cf66da41e3345fe000a8f542928216837ebc9c6091"
+    },
+    {
+      "bytes": 343634,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/source_HCT116.npz",
+      "sha256": "898a4fb35a84169a1acee866fb640f26b0260c3298fc9640e5d14b745b570848"
+    },
+    {
+      "bytes": 1585349,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/panel_HCT116_0.npz",
+      "sha256": "b8e5637af0cd3c78b160295bfb8df8440bc3fd3df7e23b2c2b8d51bcf65511e4"
+    },
+    {
+      "bytes": 1172709,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/panel_HCT116_1.npz",
+      "sha256": "bf3b99413d477d9b8427cbba74bd8d292449201861ebd3bea630046afeab8ba3"
+    },
+    {
+      "bytes": 1811527,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/panel_HCT116_2.npz",
+      "sha256": "b41db1cb4e4597668c7ff7629daf83136bd1dcacc27f7354da973ef8ba6481f2"
+    }
+  ],
+  "cells": {
+    "293T": {
+      "anchor_feasible": true,
+      "folds": [
+        {
+          "anchor_components": 249,
+          "anchor_feasible": true,
+          "anchors": 408,
+          "attrition": {
+            "outside_fold": 23865,
+            "previously_released_P": 59,
+            "sampled_U_now_source_P": 102
+          },
+          "candidate_quartets": 7365,
+          "fold": 0,
+          "positive_directed_edges": 3135,
+          "quartet_components": 283,
+          "quartet_feasible": true,
+          "quartets": 1428,
+          "unlabeled_directed_edges": 78710
+        },
+        {
+          "anchor_components": 270,
+          "anchor_feasible": true,
+          "anchors": 354,
+          "attrition": {
+            "outside_fold": 23997,
+            "previously_released_P": 36,
+            "sampled_U_now_source_P": 75
+          },
+          "candidate_quartets": 3393,
+          "fold": 1,
+          "positive_directed_edges": 3026,
+          "quartet_components": 287,
+          "quartet_feasible": true,
+          "quartets": 990,
+          "unlabeled_directed_edges": 60253
+        },
+        {
+          "anchor_components": 305,
+          "anchor_feasible": true,
+          "anchors": 434,
+          "attrition": {
+            "outside_fold": 23569,
+            "previously_released_P": 52,
+            "sampled_U_now_source_P": 89
+          },
+          "candidate_quartets": 4881,
+          "fold": 2,
+          "positive_directed_edges": 3438,
+          "quartet_components": 327,
+          "quartet_feasible": true,
+          "quartets": 1414,
+          "unlabeled_directed_edges": 84982
+        }
+      ],
+      "quartet_feasible": true,
+      "source_census": {
+        "bait_rows": 10128,
+        "directed_rows": 129687,
+        "directed_rows_unmapped": 102628,
+        "directed_unique_gene_edges": 129687,
+        "genes_unmapped_or_ambiguous": 7758,
+        "mapped_directed_reference_edges": 27059,
+        "mapped_genes": 6199,
+        "network_rows": 118162,
+        "network_unique_pairs": 118162,
+        "source_unique_baits": 10128,
+        "source_unique_preys": 10661
+      }
+    },
+    "HCT116": {
+      "anchor_feasible": true,
+      "folds": [
+        {
+          "anchor_components": 158,
+          "anchor_feasible": true,
+          "anchors": 235,
+          "attrition": {
+            "outside_fold": 16371,
+            "previously_released_P": 44,
+            "sampled_U_now_source_P": 51
+          },
+          "candidate_quartets": 2066,
+          "fold": 0,
+          "positive_directed_edges": 2058,
+          "quartet_components": 194,
+          "quartet_feasible": true,
+          "quartets": 803,
+          "unlabeled_directed_edges": 35307
+        },
+        {
+          "anchor_components": 161,
+          "anchor_feasible": true,
+          "anchors": 194,
+          "attrition": {
+            "outside_fold": 16440,
+            "previously_released_P": 24,
+            "sampled_U_now_source_P": 56
+          },
+          "candidate_quartets": 1541,
+          "fold": 1,
+          "positive_directed_edges": 2009,
+          "quartet_components": 180,
+          "quartet_feasible": true,
+          "quartets": 567,
+          "unlabeled_directed_edges": 25660
+        },
+        {
+          "anchor_components": 188,
+          "anchor_feasible": true,
+          "anchors": 265,
+          "attrition": {
+            "outside_fold": 16030,
+            "previously_released_P": 33,
+            "sampled_U_now_source_P": 52
+          },
+          "candidate_quartets": 2074,
+          "fold": 2,
+          "positive_directed_edges": 2410,
+          "quartet_components": 226,
+          "quartet_feasible": true,
+          "quartets": 861,
+          "unlabeled_directed_edges": 40381
+        }
+      ],
+      "quartet_feasible": true,
+      "source_census": {
+        "bait_rows": 5522,
+        "directed_rows": 77184,
+        "directed_rows_unmapped": 58711,
+        "directed_unique_gene_edges": 77184,
+        "genes_unmapped_or_ambiguous": 5662,
+        "mapped_directed_reference_edges": 18473,
+        "mapped_genes": 4453,
+        "network_rows": 70966,
+        "network_unique_pairs": 70966,
+        "source_unique_baits": 5522,
+        "source_unique_preys": 8065
+      }
+    }
+  },
+  "complete_pair_attempt_evaluability_log": false,
+  "created_utc": "2026-09-11T01:27:40.399713+00:00",
+  "external_scores_seen": false,
+  "new_fits": 0,
+  "qualifying_fit_eval_crosslinks": [
+    0,
+    0,
+    0
+  ]
+}

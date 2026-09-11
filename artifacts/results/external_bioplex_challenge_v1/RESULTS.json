@@ -1,0 +1,529 @@
+{
+  "all_external_challenges_pass": false,
+  "artifacts": [
+    {
+      "bytes": 21708128,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/component_multipliers.npy",
+      "sha256": "d261a3b5f66a56facaf190d085ed0db98cf301e4c325a1bd61917f1c1d895f1c"
+    },
+    {
+      "bytes": 580960,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/bootstrap_293T.npz",
+      "sha256": "61f2bc0f8ca59b5075678660da8fe419da1d397fee3cf747e1541fd903479a22"
+    },
+    {
+      "bytes": 580960,
+      "path": "artifacts/runs/external_bioplex_challenge_v1/bootstrap_HCT116.npz",
+      "sha256": "4d66dd1a46da025bfda3d0156369949221548fd4e94d8549f74428e3b7366ace"
+    }
+  ],
+  "cells": {
+    "293T": {
+      "anchor_signal_survives": false,
+      "anchor_status": "does_not_pass",
+      "anchors": 1196,
+      "deltas": {
+        "endpoint_linear": {
+          "ci95": [
+            0.15918326186541043,
+            0.20800589174878548
+          ],
+          "point": 0.16772419336135524,
+          "valid_replicates": 2000
+        },
+        "interolog_coverage": {
+          "ci95": [
+            0.11103389891590551,
+            0.15693524276697782
+          ],
+          "point": 0.11679858731873805,
+          "valid_replicates": 2000
+        },
+        "interolog_kmer": {
+          "ci95": [
+            0.06279378752737763,
+            0.1283725101066113
+          ],
+          "point": 0.07682355891789139,
+          "valid_replicates": 2000
+        },
+        "interolog_local": {
+          "ci95": [
+            0.11103389891590551,
+            0.15693531860293927
+          ],
+          "point": 0.11679901970143669,
+          "valid_replicates": 2000
+        },
+        "interolog_plm": {
+          "ci95": [
+            0.06565119601511618,
+            0.13170507548973262
+          ],
+          "point": 0.0826137172871454,
+          "valid_replicates": 2000
+        },
+        "kmer3_cosine": {
+          "ci95": [
+            -0.049218674523950685,
+            0.0035835176587053915
+          ],
+          "point": -0.0243865122641046,
+          "valid_replicates": 2000
+        },
+        "length_ratio": {
+          "ci95": [
+            0.0455074510795843,
+            0.09902100321974645
+          ],
+          "point": 0.06745824557993996,
+          "valid_replicates": 2000
+        },
+        "pooled_cosine": {
+          "ci95": [
+            -0.024661825135279182,
+            0.02962527673475777
+          ],
+          "point": 0.0029594266027054283,
+          "valid_replicates": 2000
+        }
+      },
+      "folds": [
+        {
+          "anchors": 408,
+          "fold": 0,
+          "macro": {
+            "endpoint_linear": 0.44762193512135384,
+            "endpoint_linear__20260911": 0.4321716136296042,
+            "endpoint_linear__20260912": 0.46487169203422185,
+            "endpoint_linear__20260913": 0.45124650101391756,
+            "interolog_coverage": 0.5007937670522865,
+            "interolog_kmer": 0.5313177220633555,
+            "interolog_local": 0.5007924995775135,
+            "interolog_plm": 0.5217593642749581,
+            "kmer3_cosine": 0.6287485735896818,
+            "length_ratio": 0.5346868152047234,
+            "pair_linear": 0.6264178576284944,
+            "pair_linear__20260911": 0.6214327504820859,
+            "pair_linear__20260912": 0.6267363693796919,
+            "pair_linear__20260913": 0.6272970206365898,
+            "pooled_cosine": 0.6019579258669224
+          },
+          "quartets": 1428
+        },
+        {
+          "anchors": 354,
+          "fold": 1,
+          "macro": {
+            "endpoint_linear": 0.45570343823520293,
+            "endpoint_linear__20260911": 0.4642984208684991,
+            "endpoint_linear__20260912": 0.4572051380420082,
+            "endpoint_linear__20260913": 0.4502065764265668,
+            "interolog_coverage": 0.5003624661488865,
+            "interolog_kmer": 0.5315205240092981,
+            "interolog_local": 0.5003624661488865,
+            "interolog_plm": 0.5136549196814824,
+            "kmer3_cosine": 0.6276902404162533,
+            "length_ratio": 0.5812039138328423,
+            "pair_linear": 0.6118674176102512,
+            "pair_linear__20260911": 0.6155697503857627,
+            "pair_linear__20260912": 0.6097575807269885,
+            "pair_linear__20260913": 0.6090079058305782,
+            "pooled_cosine": 0.6045963868662004
+          },
+          "quartets": 990
+        },
+        {
+          "anchors": 434,
+          "fold": 2,
+          "macro": {
+            "endpoint_linear": 0.44599013551545424,
+            "endpoint_linear__20260911": 0.44260488384107344,
+            "endpoint_linear__20260912": 0.4432539574253303,
+            "endpoint_linear__20260913": 0.456778950973384,
+            "interolog_coverage": 0.4999155307175411,
+            "interolog_kmer": 0.5559671616859989,
+            "interolog_local": 0.4999155307175411,
+            "interolog_plm": 0.563569015372831,
+            "kmer3_cosine": 0.6648413047801554,
+            "length_ratio": 0.5380833016698175,
+            "pair_linear": 0.612735182009695,
+            "pair_linear__20260911": 0.6138698158418603,
+            "pair_linear__20260912": 0.6110600244844854,
+            "pair_linear__20260913": 0.6101361071850325,
+            "pooled_cosine": 0.633505050270708
+          },
+          "quartets": 1414
+        }
+      ],
+      "macro": {
+        "endpoint_linear": 0.44942181060073694,
+        "endpoint_linear__20260911": 0.44546670479544576,
+        "endpoint_linear__20260912": 0.4547579320563768,
+        "endpoint_linear__20260913": 0.45294629196582914,
+        "interolog_coverage": 0.5003474166433541,
+        "interolog_kmer": 0.5403224450442008,
+        "interolog_local": 0.5003469842606555,
+        "interolog_plm": 0.5345322866749468,
+        "kmer3_cosine": 0.6415325162261968,
+        "length_ratio": 0.5496877583821522,
+        "pair_linear": 0.6171460039620922,
+        "pair_linear__20260911": 0.6169529714955003,
+        "pair_linear__20260912": 0.6160223017646613,
+        "pair_linear__20260913": 0.615656399332824,
+        "pooled_cosine": 0.6141865773593868
+      },
+      "quartet": {
+        "count": 3832,
+        "deltas": {
+          "endpoint_linear": {
+            "ci95": [
+              0.14808697368500678,
+              0.2858133806460006
+            ],
+            "point": 0.2275574112734864,
+            "valid_replicates": 2000
+          },
+          "interolog_coverage": {
+            "ci95": [
+              0.14745631391786576,
+              0.28377704413909377
+            ],
+            "point": 0.22546972860125258,
+            "valid_replicates": 2000
+          },
+          "interolog_kmer": {
+            "ci95": [
+              0.09209224122458395,
+              0.2855475719638397
+            ],
+            "point": 0.19963465553235904,
+            "valid_replicates": 2000
+          },
+          "interolog_local": {
+            "ci95": [
+              0.14745631391786576,
+              0.28377704413909377
+            ],
+            "point": 0.22546972860125258,
+            "valid_replicates": 2000
+          },
+          "interolog_plm": {
+            "ci95": [
+              0.039938783006543424,
+              0.19907813354793558
+            ],
+            "point": 0.12539144050104378,
+            "valid_replicates": 2000
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              -0.04806781605866532,
+              0.11563352986789133
+            ],
+            "point": 0.04070981210855951,
+            "valid_replicates": 2000
+          },
+          "length_ratio": {
+            "ci95": [
+              -0.02281659814186499,
+              0.19922577830635746
+            ],
+            "point": 0.10425365344467641,
+            "valid_replicates": 2000
+          },
+          "pooled_cosine": {
+            "ci95": [
+              -0.021108872851094532,
+              0.13631719526438493
+            ],
+            "point": 0.06380480167014613,
+            "valid_replicates": 2000
+          }
+        },
+        "interval": {
+          "ci95": [
+            0.6480869736850068,
+            0.7858133806460006
+          ],
+          "valid_replicates": 2000
+        },
+        "preference": {
+          "endpoint_linear": 0.5,
+          "endpoint_linear__20260911": 0.5,
+          "endpoint_linear__20260912": 0.5,
+          "endpoint_linear__20260913": 0.5,
+          "interolog_coverage": 0.5020876826722338,
+          "interolog_kmer": 0.5279227557411273,
+          "interolog_local": 0.5020876826722338,
+          "interolog_plm": 0.6021659707724426,
+          "kmer3_cosine": 0.6868475991649269,
+          "length_ratio": 0.62330375782881,
+          "pair_linear": 0.7275574112734864,
+          "pair_linear__20260911": 0.7210334029227558,
+          "pair_linear__20260912": 0.7299060542797495,
+          "pair_linear__20260913": 0.7220772442588727,
+          "pooled_cosine": 0.6637526096033403
+        }
+      },
+      "swap_signal_survives": false,
+      "swap_status": "does_not_pass"
+    },
+    "HCT116": {
+      "anchor_signal_survives": false,
+      "anchor_status": "does_not_pass",
+      "anchors": 694,
+      "deltas": {
+        "endpoint_linear": {
+          "ci95": [
+            0.1517444776381198,
+            0.20783068779992336
+          ],
+          "point": 0.16241156408207502,
+          "valid_replicates": 2000
+        },
+        "interolog_coverage": {
+          "ci95": [
+            0.09608656615161734,
+            0.15577882493254452
+          ],
+          "point": 0.10838857802246205,
+          "valid_replicates": 2000
+        },
+        "interolog_kmer": {
+          "ci95": [
+            0.0673815791039509,
+            0.14733163210384476
+          ],
+          "point": 0.08614311116383377,
+          "valid_replicates": 2000
+        },
+        "interolog_local": {
+          "ci95": [
+            0.09608656615161734,
+            0.1557780750887735
+          ],
+          "point": 0.10838511417697583,
+          "valid_replicates": 2000
+        },
+        "interolog_plm": {
+          "ci95": [
+            0.07783306166482823,
+            0.14918119104574115
+          ],
+          "point": 0.0979514409654485,
+          "valid_replicates": 2000
+        },
+        "kmer3_cosine": {
+          "ci95": [
+            -0.03077645355532512,
+            0.029933617354765487
+          ],
+          "point": -0.004041827874218362,
+          "valid_replicates": 2000
+        },
+        "length_ratio": {
+          "ci95": [
+            0.04323391397864678,
+            0.11396540889055515
+          ],
+          "point": 0.07414556960517182,
+          "valid_replicates": 2000
+        },
+        "pooled_cosine": {
+          "ci95": [
+            -0.04074416036422953,
+            0.02178201675351451
+          ],
+          "point": -0.011493935563198221,
+          "valid_replicates": 2000
+        }
+      },
+      "folds": [
+        {
+          "anchors": 235,
+          "fold": 0,
+          "macro": {
+            "endpoint_linear": 0.42426290763313507,
+            "endpoint_linear__20260911": 0.41431689701753954,
+            "endpoint_linear__20260912": 0.43990922306539776,
+            "endpoint_linear__20260913": 0.4239497622083808,
+            "interolog_coverage": 0.5029771543387362,
+            "interolog_kmer": 0.5308401509575448,
+            "interolog_local": 0.5029873837377464,
+            "interolog_plm": 0.5009438349364674,
+            "kmer3_cosine": 0.6199744856049879,
+            "length_ratio": 0.5029938731530569,
+            "pair_linear": 0.579055791430709,
+            "pair_linear__20260911": 0.5779701321696674,
+            "pair_linear__20260912": 0.5788791002047038,
+            "pair_linear__20260913": 0.5749925922658246,
+            "pooled_cosine": 0.6023023908605805
+          },
+          "quartets": 803
+        },
+        {
+          "anchors": 194,
+          "fold": 1,
+          "macro": {
+            "endpoint_linear": 0.4851393029819596,
+            "endpoint_linear__20260911": 0.48075249754127536,
+            "endpoint_linear__20260912": 0.48900230622252217,
+            "endpoint_linear__20260913": 0.48222083956869316,
+            "interolog_coverage": 0.4999399321323288,
+            "interolog_kmer": 0.5068374507626285,
+            "interolog_local": 0.4999399321323288,
+            "interolog_plm": 0.4856495260518336,
+            "kmer3_cosine": 0.5902835190303871,
+            "length_ratio": 0.6026833389813553,
+            "pair_linear": 0.6237442589521505,
+            "pair_linear__20260911": 0.6237956887117312,
+            "pair_linear__20260912": 0.6235552721506112,
+            "pair_linear__20260913": 0.623607030838932,
+            "pooled_cosine": 0.6340919084498989
+          },
+          "quartets": 567
+        },
+        {
+          "anchors": 265,
+          "fold": 2,
+          "macro": {
+            "endpoint_linear": 0.43910136313906456,
+            "endpoint_linear__20260911": 0.4302487854508221,
+            "endpoint_linear__20260912": 0.4460976563038117,
+            "endpoint_linear__20260913": 0.4456263049970067,
+            "interolog_coverage": 0.4999420510423986,
+            "interolog_kmer": 0.528441791345002,
+            "interolog_local": 0.4999420510423986,
+            "interolog_plm": 0.5395403225771781,
+            "kmer3_cosine": 0.6244917604254316,
+            "length_ratio": 0.5143892132745607,
+            "pair_linear": 0.6256973492610014,
+            "pair_linear__20260911": 0.6223378158765953,
+            "pair_linear__20260912": 0.6260324478701841,
+            "pair_linear__20260913": 0.6247538730795893,
+            "pooled_cosine": 0.6276082791186485
+          },
+          "quartets": 861
+        }
+      ],
+      "macro": {
+        "endpoint_linear": 0.4469462093719583,
+        "endpoint_linear__20260911": 0.43897173410172485,
+        "endpoint_linear__20260912": 0.4559956682248529,
+        "endpoint_linear__20260913": 0.4485158614113872,
+        "interolog_coverage": 0.5009691954315713,
+        "interolog_kmer": 0.5232146622901995,
+        "interolog_local": 0.5009726592770575,
+        "interolog_plm": 0.5114063324885848,
+        "kmer3_cosine": 0.6133996013282517,
+        "length_ratio": 0.5352122038488615,
+        "pair_linear": 0.6093577734540333,
+        "pair_linear__20260911": 0.6077217087568377,
+        "pair_linear__20260912": 0.6093730692088224,
+        "pair_linear__20260913": 0.6075832846272516,
+        "pooled_cosine": 0.6208517090172315
+      },
+      "quartet": {
+        "count": 2231,
+        "deltas": {
+          "endpoint_linear": {
+            "ci95": [
+              0.13253071655249332,
+              0.30576452216705674
+            ],
+            "point": 0.22344240251008518,
+            "valid_replicates": 2000
+          },
+          "interolog_coverage": {
+            "ci95": [
+              0.1312572199072739,
+              0.30448226505948905
+            ],
+            "point": 0.22142536978933214,
+            "valid_replicates": 2000
+          },
+          "interolog_kmer": {
+            "ci95": [
+              0.0666808507242951,
+              0.2961219130826525
+            ],
+            "point": 0.17906768265351858,
+            "valid_replicates": 2000
+          },
+          "interolog_local": {
+            "ci95": [
+              0.1312572199072739,
+              0.30448226505948905
+            ],
+            "point": 0.22142536978933214,
+            "valid_replicates": 2000
+          },
+          "interolog_plm": {
+            "ci95": [
+              0.0074661483262329995,
+              0.2418900263359102
+            ],
+            "point": 0.12348722545943525,
+            "valid_replicates": 2000
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              -0.030238683722203695,
+              0.18706946440164587
+            ],
+            "point": 0.0761990138951143,
+            "valid_replicates": 2000
+          },
+          "length_ratio": {
+            "ci95": [
+              0.006597381087461873,
+              0.2448863821032041
+            ],
+            "point": 0.12617660242043927,
+            "valid_replicates": 2000
+          },
+          "pooled_cosine": {
+            "ci95": [
+              -0.04343006214143759,
+              0.1679538315950549
+            ],
+            "point": 0.05737337516808605,
+            "valid_replicates": 2000
+          }
+        },
+        "interval": {
+          "ci95": [
+            0.6325307165524934,
+            0.8057645221670567
+          ],
+          "valid_replicates": 2000
+        },
+        "preference": {
+          "endpoint_linear": 0.5,
+          "endpoint_linear__20260911": 0.5,
+          "endpoint_linear__20260912": 0.5,
+          "endpoint_linear__20260913": 0.5,
+          "interolog_coverage": 0.502017032720753,
+          "interolog_kmer": 0.5443747198565666,
+          "interolog_local": 0.502017032720753,
+          "interolog_plm": 0.5999551770506499,
+          "kmer3_cosine": 0.6472433886149709,
+          "length_ratio": 0.5972658000896459,
+          "pair_linear": 0.7234424025100852,
+          "pair_linear__20260911": 0.7185118780815778,
+          "pair_linear__20260912": 0.7243388614970865,
+          "pair_linear__20260913": 0.7212012550425818,
+          "pooled_cosine": 0.6660690273419991
+        }
+      },
+      "swap_signal_survives": false,
+      "swap_status": "does_not_pass"
+    }
+  },
+  "created_utc": "2026-09-11T01:34:12.513175+00:00",
+  "estimand": "external_released_coassociation_P_versus_U_recovery_on_reused_public_endpoints",
+  "new_fits": 0,
+  "protected_access": false,
+  "protocol_id": "external_bioplex_challenge_v1"
+}

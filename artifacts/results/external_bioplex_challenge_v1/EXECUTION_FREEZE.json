@@ -1,0 +1,63 @@
+{
+  "artifacts": [
+    {
+      "bytes": 79,
+      "path": "src/ipin_openppi/external_bioplex/__init__.py",
+      "sha256": "8ff9bc5c316818fc87c334e7de2b17f0b94131a3d5648c8e2418e1fb42c31a98"
+    },
+    {
+      "bytes": 9749,
+      "path": "src/ipin_openppi/external_bioplex/data.py",
+      "sha256": "b9895c69d5064eaeb511d498e1f1642d284d86b79fa302cf7359b02ff1a7612a"
+    },
+    {
+      "bytes": 15329,
+      "path": "src/ipin_openppi/external_bioplex/pipeline.py",
+      "sha256": "91ca5eecc65404312d603d4c17cd5352d20100f556349d23dbd185add1957469"
+    },
+    {
+      "bytes": 8497,
+      "path": "src/ipin_openppi/external_bioplex/semantics.py",
+      "sha256": "6d0fed6d5a4c7c8d1b50fab4adad104a8757e5eebec5fc396b248f132a0e4fe2"
+    },
+    {
+      "bytes": 17821,
+      "path": "src/ipin_openppi/external_bioplex/validation.py",
+      "sha256": "208c80a18929a89e306ab2fe9e50c9e0fdf1a6cfb41b93079ae785e707bf9a92"
+    },
+    {
+      "bytes": 196,
+      "path": "scripts/model/run_external_bioplex_challenge_v1.py",
+      "sha256": "6417404fb46116449c210d1ef47656c6613f741be8a591823b2e232173dd21bd"
+    },
+    {
+      "bytes": 8749,
+      "path": "tests/unit/test_external_bioplex.py",
+      "sha256": "95080d05fd9d74df42cb240064c1e48a4f749d1dd35d483ff92d0b04e767f014"
+    },
+    {
+      "bytes": 8243,
+      "path": "artifacts/results/external_bioplex_challenge_v1/ACQUISITION.json",
+      "sha256": "01848580c3d0ad80043b99d74cf2e0d45d1f0fd3cb1843615c64a8c1aef91ec4"
+    },
+    {
+      "bytes": 6091,
+      "path": "artifacts/results/external_bioplex_challenge_v1/FEASIBILITY.json",
+      "sha256": "d8ba05bba45d40c3cbae03347c7373cf2ada90f956effb2e939339591cd0275d"
+    },
+    {
+      "bytes": 61549,
+      "path": "artifacts/validation/external_bioplex_challenge_v1/unit_tests_pre_execution.xml",
+      "sha256": "863275509ac670667de679f4a25c6c1863fe045ee2b8b8466588ac245308cdfa"
+    },
+    {
+      "bytes": 359,
+      "path": "artifacts/validation/external_bioplex_challenge_v1/gpu_control_pre_execution.xml",
+      "sha256": "9099f960f44c9456aa61506dd99e9e0870c314ac255c38b1268709d241e61384"
+    }
+  ],
+  "created_utc": "2026-09-11T01:32:11.661686+00:00",
+  "external_scores_seen": false,
+  "new_fits": 0,
+  "tested_distinct_cases": 416
+}

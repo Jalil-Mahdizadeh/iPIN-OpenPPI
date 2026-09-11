@@ -1,0 +1,198 @@
+{
+  "artifacts": [
+    {
+      "bytes": 30215,
+      "path": "data/raw/bioplex/external_bioplex_challenge_v1/interactions.html",
+      "sha256": "40be4b06e1147a8a7ee054c5712c50041e49550ce460ff2f67316542f7a3716b"
+    },
+    {
+      "bytes": 209203,
+      "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_3p0_293T_baitList.tsv",
+      "sha256": "c805dba8bb2b59b9fb8ef48673fcdc8ecb4494fe28388d8a35b4f4c132b5b4d5"
+    },
+    {
+      "bytes": 113703,
+      "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_3p0_HCT116_baitList.tsv",
+      "sha256": "56d3d9d0a8ecd399608339c030a4f51336e1d8469d5c20a2ce2dd6b2397025f1"
+    },
+    {
+      "bytes": 4308432,
+      "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_3.0_293T_DirectedEdges.tsv",
+      "sha256": "2c807b5c2c377465000b542e33a7d9aceeb20bb858842dcf540e3fb6dce54ee3"
+    },
+    {
+      "bytes": 2557223,
+      "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_3.0_HCT116_DirectedEdges.tsv",
+      "sha256": "1959ac2939668fe1056960e92a76ccead38898e126aa694aa628905d47540d1a"
+    },
+    {
+      "bytes": 12866060,
+      "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_293T_Network_10K_Dec_2019.tsv",
+      "sha256": "5a98def087fc77c7bf07aac79e2553fd64ea1a27a7d0c4617870476f3f120833"
+    },
+    {
+      "bytes": 7714364,
+      "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_HCT116_Network_5.5K_Dec_2019.tsv",
+      "sha256": "b37be6de6fe15e948151ab9480cfcb88a6795780cf7a4059b386b07f3c1e760d"
+    }
+  ],
+  "created_utc": "2026-09-11T01:21:18.927823+00:00",
+  "model_results_seen": false,
+  "raw_redistribution": false,
+  "responses": [
+    {
+      "artifact": {
+        "bytes": 30215,
+        "path": "data/raw/bioplex/external_bioplex_challenge_v1/interactions.html",
+        "sha256": "40be4b06e1147a8a7ee054c5712c50041e49550ce460ff2f67316542f7a3716b"
+      },
+      "completed_utc": "2026-09-11T01:21:12.164254+00:00",
+      "final_url": "https://bioplex.hms.harvard.edu/interactions.php",
+      "headers": {
+        "Content-Disposition": null,
+        "Content-Length": null,
+        "Content-Type": "text/html; charset=UTF-8",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "http_status": 200,
+      "key": "release_page",
+      "provider_checksum": "not_published_on_release_page",
+      "started_utc": "2026-09-11T01:21:11.635290+00:00",
+      "tls_verification": true,
+      "url": "https://bioplex.hms.harvard.edu/interactions.php"
+    },
+    {
+      "artifact": {
+        "bytes": 209203,
+        "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_3p0_293T_baitList.tsv",
+        "sha256": "c805dba8bb2b59b9fb8ef48673fcdc8ecb4494fe28388d8a35b4f4c132b5b4d5"
+      },
+      "completed_utc": "2026-09-11T01:21:12.790327+00:00",
+      "final_url": "https://bioplex.hms.harvard.edu/data/BioPlex_3p0_293T_baitList.tsv",
+      "headers": {
+        "Content-Disposition": null,
+        "Content-Length": "209203",
+        "Content-Type": "text/tab-separated-values",
+        "ETag": "\"33133-5efe58e2231c3\"",
+        "Last-Modified": "Thu, 15 Dec 2022 22:41:34 GMT"
+      },
+      "http_status": 200,
+      "key": "baits_293T",
+      "provider_checksum": "not_published_on_release_page",
+      "started_utc": "2026-09-11T01:21:12.168869+00:00",
+      "tls_verification": true,
+      "url": "https://bioplex.hms.harvard.edu/data/BioPlex_3p0_293T_baitList.tsv"
+    },
+    {
+      "artifact": {
+        "bytes": 113703,
+        "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_3p0_HCT116_baitList.tsv",
+        "sha256": "56d3d9d0a8ecd399608339c030a4f51336e1d8469d5c20a2ce2dd6b2397025f1"
+      },
+      "completed_utc": "2026-09-11T01:21:13.530172+00:00",
+      "final_url": "https://bioplex.hms.harvard.edu/data/BioPlex_3p0_HCT116_baitList.tsv",
+      "headers": {
+        "Content-Disposition": null,
+        "Content-Length": "113703",
+        "Content-Type": "text/tab-separated-values",
+        "ETag": "\"1bc27-5efe58ef30f13\"",
+        "Last-Modified": "Thu, 15 Dec 2022 22:41:48 GMT"
+      },
+      "http_status": 200,
+      "key": "baits_HCT116",
+      "provider_checksum": "not_published_on_release_page",
+      "started_utc": "2026-09-11T01:21:12.993484+00:00",
+      "tls_verification": true,
+      "url": "https://bioplex.hms.harvard.edu/data/BioPlex_3p0_HCT116_baitList.tsv"
+    },
+    {
+      "artifact": {
+        "bytes": 4308432,
+        "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_3.0_293T_DirectedEdges.tsv",
+        "sha256": "2c807b5c2c377465000b542e33a7d9aceeb20bb858842dcf540e3fb6dce54ee3"
+      },
+      "completed_utc": "2026-09-11T01:21:14.844263+00:00",
+      "final_url": "https://bioplex.hms.harvard.edu/data/BioPlex_3.0_293T_DirectedEdges.tsv",
+      "headers": {
+        "Content-Disposition": null,
+        "Content-Length": "4308432",
+        "Content-Type": "text/tab-separated-values",
+        "ETag": "\"41bdd0-5e8447cdf46a1\"",
+        "Last-Modified": "Fri, 09 Sep 2022 20:35:33 GMT"
+      },
+      "http_status": 200,
+      "key": "directed_293T",
+      "provider_checksum": "not_published_on_release_page",
+      "started_utc": "2026-09-11T01:21:13.567469+00:00",
+      "tls_verification": true,
+      "url": "https://bioplex.hms.harvard.edu/data/BioPlex_3.0_293T_DirectedEdges.tsv"
+    },
+    {
+      "artifact": {
+        "bytes": 2557223,
+        "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_3.0_HCT116_DirectedEdges.tsv",
+        "sha256": "1959ac2939668fe1056960e92a76ccead38898e126aa694aa628905d47540d1a"
+      },
+      "completed_utc": "2026-09-11T01:21:15.921430+00:00",
+      "final_url": "https://bioplex.hms.harvard.edu/data/BioPlex_3.0_HCT116_DirectedEdges.tsv",
+      "headers": {
+        "Content-Disposition": null,
+        "Content-Length": "2557223",
+        "Content-Type": "text/tab-separated-values",
+        "ETag": "\"270527-5e8447ce0fc22\"",
+        "Last-Modified": "Fri, 09 Sep 2022 20:35:34 GMT"
+      },
+      "http_status": 200,
+      "key": "directed_HCT116",
+      "provider_checksum": "not_published_on_release_page",
+      "started_utc": "2026-09-11T01:21:14.876895+00:00",
+      "tls_verification": true,
+      "url": "https://bioplex.hms.harvard.edu/data/BioPlex_3.0_HCT116_DirectedEdges.tsv"
+    },
+    {
+      "artifact": {
+        "bytes": 12866060,
+        "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_293T_Network_10K_Dec_2019.tsv",
+        "sha256": "5a98def087fc77c7bf07aac79e2553fd64ea1a27a7d0c4617870476f3f120833"
+      },
+      "completed_utc": "2026-09-11T01:21:17.418609+00:00",
+      "final_url": "https://bioplex.hms.harvard.edu/data/BioPlex_293T_Network_10K_Dec_2019.tsv",
+      "headers": {
+        "Content-Disposition": null,
+        "Content-Length": "12866060",
+        "Content-Type": "text/tab-separated-values",
+        "ETag": "\"c4520c-60f5313469186\"",
+        "Last-Modified": "Fri, 19 Jan 2024 21:22:20 GMT"
+      },
+      "http_status": 200,
+      "key": "network_293T",
+      "provider_checksum": "not_published_on_release_page",
+      "started_utc": "2026-09-11T01:21:15.971472+00:00",
+      "tls_verification": true,
+      "url": "https://bioplex.hms.harvard.edu/data/BioPlex_293T_Network_10K_Dec_2019.tsv"
+    },
+    {
+      "artifact": {
+        "bytes": 7714364,
+        "path": "data/raw/bioplex/external_bioplex_challenge_v1/BioPlex_HCT116_Network_5.5K_Dec_2019.tsv",
+        "sha256": "b37be6de6fe15e948151ab9480cfcb88a6795780cf7a4059b386b07f3c1e760d"
+      },
+      "completed_utc": "2026-09-11T01:21:18.878531+00:00",
+      "final_url": "https://bioplex.hms.harvard.edu/data/BioPlex_HCT116_Network_5.5K_Dec_2019.tsv",
+      "headers": {
+        "Content-Disposition": null,
+        "Content-Length": "7714364",
+        "Content-Type": "text/tab-separated-values",
+        "ETag": "\"75b63c-60f5315eeefe0\"",
+        "Last-Modified": "Fri, 19 Jan 2024 21:23:04 GMT"
+      },
+      "http_status": 200,
+      "key": "network_HCT116",
+      "provider_checksum": "not_published_on_release_page",
+      "started_utc": "2026-09-11T01:21:17.464992+00:00",
+      "tls_verification": true,
+      "url": "https://bioplex.hms.harvard.edu/data/BioPlex_HCT116_Network_5.5K_Dec_2019.tsv"
+    }
+  ]
+}

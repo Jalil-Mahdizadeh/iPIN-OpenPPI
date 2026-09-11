@@ -1,0 +1,95 @@
+schema_version: 48
+supersedes: governance/gates/gate_status_v47.yaml
+updated_date: '2026-09-11'
+programme_state: external_coassociation_signal_without_demonstrated_incremental_model_value
+authority: governance/decisions/DEC-0048-authorize-locked-external-bioplex-challenge.md
+gates:
+  pre_acquisition_lock:
+    status: pass
+    locked_checkpoints: 18
+    locked_before_interaction_acquisition: true
+    external_registry: false
+    prior_internal_results_informed_design: true
+    execution_freeze_sha256: 8c0068f7a585cca285f83f2245991bb89109cdb38e635737aef9d75971266d97
+  source_acquisition:
+    status: pass_published_releases_only
+    source: BioPlex_2021
+    cells: [293T, HCT116]
+    scientific_files: 6
+    release_page_snapshot: true
+    unpublished_releases_acquired: false
+    raw_redistribution: false
+    complete_pair_opportunity_log_available: false
+  fixed_scoring:
+    status: pass
+    model_arm: inherited_purged20
+    new_fits: 0
+    new_embeddings: 0
+    score_values: 5120535
+    elapsed_seconds: 8.526411194998218
+    retained_detected_fit_eval_crosslinks_by_fold: [0, 0, 0]
+  support:
+    '293T':
+      anchor_feasible: true
+      swap_feasible: true
+      anchors: 1196
+      positive_directed_edges: 9599
+      unlabeled_directed_edges: 223945
+      quartets: 3832
+    HCT116:
+      anchor_feasible: true
+      swap_feasible: true
+      anchors: 694
+      positive_directed_edges: 6477
+      unlabeled_directed_edges: 101348
+      quartets: 2231
+  external_anchor_superiority:
+    '293T': does_not_pass
+    HCT116: does_not_pass
+    pair_concordance: {'293T': 0.6171460039620922, HCT116: 0.6093577734540333}
+    strongest_point_comparator: {'293T': kmer3_cosine, HCT116: pooled_cosine}
+    strongest_point_comparator_concordance: {'293T': 0.6415325162261968, HCT116: 0.6208517090172315}
+    pair_minus_strongest_point_comparator_ci95:
+      '293T': [-0.049218674523950685, 0.0035835176587053915]
+      HCT116: [-0.04074416036422953, 0.02178201675351451]
+    every_fold_and_seed_beats_linear_unary: true
+    beats_all_four_transfer_controls_with_positive_paired_lower: true
+    superiority_over_direct_similarities_established: false
+    statistical_inferiority_or_equivalence_established: false
+  external_swap_superiority:
+    '293T': does_not_pass
+    HCT116: does_not_pass
+    pair_preference: {'293T': 0.7275574112734864, HCT116: 0.7234424025100852}
+    pair_ci95:
+      '293T': [0.6480869736850068, 0.7858133806460006]
+      HCT116: [0.6325307165524934, 0.8057645221670567]
+    above_additive_unary_tie: true
+    all_primary_intervals_valid_replicates: 2000
+    direct_similarity_paired_intervals_cross_zero: true
+  verification:
+    status: pass
+    distinct_tests: 416
+    CPU_tests_passed: 415
+    CUDA_test_passed_separately: 1
+    learned_score_values_checked: 2048214
+    maximum_forward_absolute_error: 0.0000017186066489927043
+    directed_panel_rows_checked: 341369
+    sampled_exhaustive_transfer_values_checked: 24576
+    independent_anchor_bootstrap_draws_per_cell: 16
+    independent_swap_bootstrap_draws_per_cell: 2000
+    same_author_numerical_audit_not_external_review: true
+scientific_result:
+  all_external_challenges_pass: false
+  readout_sha256: e8dcfbc67ba77a82ef7cac8a85fd7b497be8a85c21986d960ba56f11237a4a2a
+  external_experimental_source_used: true
+  independently_assembled_benchmark: false
+  endpoint: released_coassociation_positive_unlabeled_recovery
+  direct_binding_validation: false
+  unseen_family_claim: false
+  improved_external_predictor_claim: false
+  old_complex_architecture_claim_revived: false
+protected_evaluation_authorized: false
+protected_candidate_truth_or_key_access_performed: false
+development_evaluation_pairs_accessed: false
+prior_two_study_closures_unchanged: true
+commit_and_push_authorized_by_user: true

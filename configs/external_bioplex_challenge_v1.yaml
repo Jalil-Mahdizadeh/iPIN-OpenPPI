@@ -1,0 +1,55 @@
+schema_version: 1
+protocol_id: external_bioplex_challenge_v1
+authority: governance/decisions/DEC-0048-authorize-locked-external-bioplex-challenge.md
+protocol: docs/protocols/EXTERNAL_BIOPLEX_CHALLENGE_v1.md
+parent: homology_source_challenge_v1
+parent_execution_freeze_sha256: d62147bcb4f0f10170575161cb2b9cc016894e656aa210c0e65bc24c2fb1d08b
+protected_access: false
+development_access: false
+new_fits: 0
+model_arm: purged20
+models: [endpoint_linear, pair_linear]
+seeds: [20260911, 20260912, 20260913]
+cells: [293T, HCT116]
+source:
+  origin: https://bioplex.hms.harvard.edu
+  page: https://bioplex.hms.harvard.edu/interactions.php
+  publication: https://doi.org/10.1016/j.cell.2021.04.011
+  files:
+    network_293T: BioPlex_293T_Network_10K_Dec_2019.tsv
+    network_HCT116: BioPlex_HCT116_Network_5.5K_Dec_2019.tsv
+    directed_293T: BioPlex_3.0_293T_DirectedEdges.tsv
+    directed_HCT116: BioPlex_3.0_HCT116_DirectedEdges.tsv
+    baits_293T: BioPlex_3p0_293T_baitList.tsv
+    baits_HCT116: BioPlex_3p0_HCT116_baitList.tsv
+  maximum_file_bytes: 40000000
+  raw_redistribution: false
+  unpublished_releases: prohibited
+mapping: exact_unambiguous_public_reference_accession_no_isoform_stripping
+panel:
+  positives: directed_source_edges_absent_from_all_parent_public_P
+  unlabeled: parent_C3_U_excluding_either_orientation_of_current_source_P
+  anchors: published_baits_with_at_least_one_eligible_directed_positive
+  partners: proteins_observed_as_preys_in_same_cell_line
+  minimum_P_per_fold: 100
+  minimum_U_per_fold: 1000
+  minimum_anchors_per_fold: 50
+  minimum_anchor_components_per_fold: 20
+quartets:
+  salt: external-bioplex-v1-20260911
+  maximum_per_fold: 2000
+  positive_edge_cap: 10
+  endpoint_cap: 20
+  minimum_per_fold: 30
+  minimum_components_per_fold: 20
+  tie_tolerance: 0.000001
+controls: [endpoint_linear, interolog_kmer, interolog_plm, interolog_local, interolog_coverage, kmer3_cosine, pooled_cosine, length_ratio]
+bootstrap: {replicates: 2000, seed: 20260917, minimum_valid_fraction: 0.95}
+decision: {minimum_anchor_margin: 0.02, paired_lower_above: 0, quartet_lower_above: 0.5}
+runtime:
+  data_image: containers/images/ipin-data-arm64_0.1.2.sif
+  data_image_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  model_image: containers/images/ipin-model-arm64_0.1.0.sif
+  model_image_sha256: c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91
+  forward_absolute_tolerance: 0.0001
+  control_absolute_tolerance: 0.000002
