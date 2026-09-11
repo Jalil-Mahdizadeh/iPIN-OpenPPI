@@ -1,0 +1,52 @@
+{
+  "accelerator": {
+    "amp": false,
+    "cuda": "13.0",
+    "deterministic_algorithms": true,
+    "device": "NVIDIA GH200 120GB",
+    "probe_device": "cuda:0",
+    "tf32": false,
+    "torch": "2.8.0a0+34c6371d24.nv25.08"
+  },
+  "at_utc": "2026-09-11T12:17:43.688700+00:00",
+  "new_fit_or_encoder_inference": false,
+  "passed": true,
+  "protected_pairs_or_truth_accessed": false,
+  "qualification_wall_seconds_including_cpu": 17.495274433000304,
+  "replays": {
+    "cpu": {
+      "concordance_errors": [
+        1.1037526448376411e-09,
+        8.609271628934323e-09,
+        1.0375276082719154e-08,
+        5.739514308267246e-09
+      ],
+      "deterministic_repeat": true,
+      "max_abs_score_errors": [
+        4.3710072836766756e-06,
+        9.357929229736328e-06,
+        7.62939453125e-06,
+        9.059906005859375e-06
+      ],
+      "rows": 1002265,
+      "swap_max_abs": 0.0
+    },
+    "cuda": {
+      "concordance_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "deterministic_repeat": true,
+      "max_abs_score_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rows": 1002265,
+      "swap_max_abs": 0.0
+    }
+  }
+}

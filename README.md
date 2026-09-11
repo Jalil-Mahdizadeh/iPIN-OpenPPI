@@ -8,25 +8,38 @@ As of 2026-09-11, a surprisingly simple frozen-PLM sequence-pair model has stron
 positive-unlabeled ranking evidence for interaction-training-naïve proteins in
 this protected benchmark. Its original C3 development concordance is **0.784**;
 the original test is **0.789 [0.708, 0.846]**, above all eleven prespecified
-controls with positive paired intervals. Where endpoints have prior interaction
-exposure, network shortcuts remain strong: C2 has no demonstrated advantage
-over degree sum, and C1 is below preferential attachment. Concordance is not
+controls with positive paired intervals. For that original linear baseline,
+network shortcuts were strong: C2 had no demonstrated advantage over degree
+sum, and C1 was below preferential attachment. Concordance is not
 binary binding accuracy or a calibrated interaction probability. Genuine
 partner-specific/direct-binding generalization remains unresolved.
 
-[DEC-0052](governance/decisions/DEC-0052-development-only-optimization-and-conditional-followup.md)
-authorized a bounded **development-only architecture/parameter search**, now
-complete: 24 recipes across two frozen encoders and four symmetric head families,
-with three-seed evaluation of the top four. The winning residual-MLP ensemble
-improved development C3 to **0.799419**, gain **0.015277 [0.002942, 0.034460]**,
-but failed the prespecified individual-seed stability conditions. **No retest
-was performed; the original baseline remains the test-evaluated reference.**
-The GH200 GPU search took about three minutes within the two-hour cap. See the
-[optimization report](docs/reports/m1/M1_Model_Optimization_v1.md),
-[current status v52](governance/PROJECT_STATUS_v52.md), and
-[prospective search and protocol amendment](docs/protocols/MODEL_OPTIMIZATION_v1.md).
-No new test set is required; the existing test is explicitly already examined,
-so a follow-up is not an independent replication or a never-seen evaluation.
+The development-only [optimization search](docs/reports/m1/M1_Model_Optimization_v1.md)
+tested 24 fixed recipes on the GH200 GPU. Its selected three-seed residual-MLP
+ensemble improved development C3 to **0.799419**, gain
+**0.015277 [0.002942, 0.034460]**, while failing the original individual-seed
+conditions. [DEC-0053](governance/decisions/DEC-0053-authorize-fixed-ensemble-followup.md)
+subsequently accepted the **fixed ensemble** for one follow-up test, explicitly
+after development and before that follow-up; the failed old gate remains intact.
+
+| Test cell | Original ensemble | Optimized ensemble | Gain and paired 95% interval |
+|---|---:|---:|---|
+| **C3 (primary)** | 0.789249 | **0.807948** | +0.018699 [−0.001358, +0.050000] |
+| C2 | 0.805299 | 0.851301 | +0.046002 [+0.031561, +0.061559] |
+| C1 | 0.843493 | 0.916037 | +0.072544 [+0.063093, +0.081869] |
+
+The C3 point improvement agrees with development, but its paired interval
+includes zero: **the primary incremental benefit remains inconclusive**.
+All nine cell point gains are positive; secondary C2/C1 intervals exclude zero.
+The optimized C2/C1 point scores exceed the historical highlighted network
+controls, but this follow-up did not perform paired comparisons against those
+controls or establish the absence of shortcuts. See the
+[follow-up report](docs/reports/m1/M1_Model_Optimization_Followup_v1.md),
+[current status v53](governance/PROJECT_STATUS_v53.md), and
+[follow-up protocol](docs/protocols/MODEL_OPTIMIZATION_FOLLOWUP_v1.md).
+No new test set was created. The existing test was already examined; this is
+a disclosed follow-up, not independent replication or a never-seen evaluation.
+The single follow-up is consumed, with no further fitting or evaluation queued.
 
 The [original final-test report](docs/reports/m1/M1_Protected_Final_Test_v1.md),
 [original protocol](docs/protocols/PROTECTED_FINAL_TEST_v1.md),

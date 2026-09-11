@@ -1,0 +1,68 @@
+{
+  "execution_id": "model_optimization_followup_v1",
+  "date": "2026-09-11",
+  "model_image_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+  "data_image_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629",
+  "full_repository_cases_covered_across_runtime_partition": 494,
+  "cpu_model": {
+    "passed": 361,
+    "skipped": 2,
+    "deselected_for_data_image": 1,
+    "seconds": 8.05
+  },
+  "cpu_data": {
+    "passed": 131,
+    "skipped": 0,
+    "seconds": 6.4
+  },
+  "gpu": {
+    "passed": 12,
+    "skipped": 0,
+    "seconds": 4.84,
+    "both_cpu_skipped_cases_passed": true
+  },
+  "all_applicable_cases_passed_across_pinned_images": true,
+  "initial_environment_failures_retained": {
+    "model_image_full_collection_errors": 26,
+    "cause": "DuckDB and Excel readers belong to the pinned data image, not the model image.",
+    "model_partition_runtime_import_failure": 1,
+    "runtime_import_failure_case": "tests/unit/test_homology_source.py::test_source_projection_outputs_only_exact_public_positive_allowlist",
+    "data_initial_read_only_scratch_failures": 2,
+    "resolution": "Route 26 modules plus the lazy DuckDB case to the data image and bind fresh account-private temporary scratch at /project/artifacts/tmp. No source or dependency changes, no protected evaluation retry.",
+    "source_code_changed_to_make_tests_pass": false,
+    "installed_dependencies_changed": false
+  },
+  "final_commands": {
+    "model": "env -u APPTAINER_BIND -u APPTAINER_BINDPATH -u SINGULARITY_BIND -u SINGULARITY_BINDPATH apptainer exec --cleanenv --containall --no-home --no-mount bind-paths,home,cwd,hostfs --bind /nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI:/project:ro --bind /nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/model_optimization_followup_v1:/audit:rw --pwd /project containers/images/ipin-model-arm64_0.1.0.sif env PYTHONPATH=/project/src PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q -p no:cacheprovider --junitxml=/audit/FULL_MODEL_REGRESSION_TESTS_v2.xml tests --ignore=tests/unit/test_component_split_validation.py --ignore=tests/unit/test_estimand_policy_validation.py --ignore=tests/unit/test_evidence_mapping_sql.py --ignore=tests/unit/test_huri_workbooks_v2.py --ignore=tests/unit/test_intact_cardinality_v3.py --ignore=tests/unit/test_lambourne_archives_and_imex.py --ignore=tests/unit/test_lambourne_overlap.py --ignore=tests/unit/test_lambourne_validation.py --ignore=tests/unit/test_model_governance_protocol_safety.py --ignore=tests/unit/test_model_governance_validation.py --ignore=tests/unit/test_negative_evidence_evidence.py --ignore=tests/unit/test_negative_evidence_validation.py --ignore=tests/unit/test_pair_artifacts_semantics.py --ignore=tests/unit/test_pair_protocol_validation.py --ignore=tests/unit/test_pipeline_v4_safety.py --ignore=tests/unit/test_pre_split_mmseqs.py --ignore=tests/unit/test_pre_split_validation.py --ignore=tests/unit/test_reconciliation_v1.py --ignore=tests/unit/test_reconciliation_validation.py --ignore=tests/unit/test_sequence_component_mmseqs.py --ignore=tests/unit/test_sequence_component_safety.py --ignore=tests/unit/test_staging_report_writer.py --ignore=tests/unit/test_staging_validation.py --ignore=tests/unit/test_systematic_screen_audit.py --ignore=tests/unit/test_systematic_screen_audit_validation.py --ignore=tests/unit/test_tf_isoform_validation.py --deselect=tests/unit/test_homology_source.py::test_source_projection_outputs_only_exact_public_positive_allowlist",
+    "data": "env -u APPTAINER_BIND -u APPTAINER_BINDPATH -u SINGULARITY_BIND -u SINGULARITY_BINDPATH apptainer exec --cleanenv --containall --no-home --no-mount bind-paths,home,cwd,hostfs --bind /nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI:/project:ro --bind /nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/model_optimization_followup_v1:/audit:rw --bind /nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/tmp/followup-regression-U1h1bx:/project/artifacts/tmp:rw --pwd /project containers/images/ipin-data-arm64_0.1.2.sif env PYTHONPATH=/project/src PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q -p no:cacheprovider --junitxml=/audit/DATA_REGRESSION_TESTS_v2.xml tests/unit/test_component_split_validation.py tests/unit/test_estimand_policy_validation.py tests/unit/test_evidence_mapping_sql.py tests/unit/test_huri_workbooks_v2.py tests/unit/test_intact_cardinality_v3.py tests/unit/test_lambourne_archives_and_imex.py tests/unit/test_lambourne_overlap.py tests/unit/test_lambourne_validation.py tests/unit/test_model_governance_protocol_safety.py tests/unit/test_model_governance_validation.py tests/unit/test_negative_evidence_evidence.py tests/unit/test_negative_evidence_validation.py tests/unit/test_pair_artifacts_semantics.py tests/unit/test_pair_protocol_validation.py tests/unit/test_pipeline_v4_safety.py tests/unit/test_pre_split_mmseqs.py tests/unit/test_pre_split_validation.py tests/unit/test_reconciliation_v1.py tests/unit/test_reconciliation_validation.py tests/unit/test_sequence_component_mmseqs.py tests/unit/test_sequence_component_safety.py tests/unit/test_staging_report_writer.py tests/unit/test_staging_validation.py tests/unit/test_systematic_screen_audit.py tests/unit/test_systematic_screen_audit_validation.py tests/unit/test_tf_isoform_validation.py tests/unit/test_homology_source.py::test_source_projection_outputs_only_exact_public_positive_allowlist",
+    "gpu": "env -u APPTAINER_BIND -u APPTAINER_BINDPATH -u SINGULARITY_BIND -u SINGULARITY_BINDPATH apptainer exec --cleanenv --containall --no-home --nv --no-mount bind-paths,home,cwd,hostfs --bind /nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI:/project:ro --bind /nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/artifacts/validation/model_optimization_followup_v1:/audit:rw --pwd /project containers/images/ipin-model-arm64_0.1.0.sif env CUBLAS_WORKSPACE_CONFIG=:4096:8 PYTHONPATH=/project/src PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q -p no:cacheprovider --junitxml=/audit/GPU_FIXTURE_TESTS_v2.xml tests/test_model_optimization_v1.py tests/unit/test_homology_source.py::test_gpu_exhaustive_transfer_matches_brute_force_when_cuda_available"
+  },
+  "records": [
+    {
+      "path": "artifacts/validation/model_optimization_followup_v1/FULL_REGRESSION_TESTS.xml",
+      "sha256": "67145b29880865dfb2d656f76399d1c9f2bb7eabaa717a808c052240b6c94527"
+    },
+    {
+      "path": "artifacts/validation/model_optimization_followup_v1/FULL_MODEL_REGRESSION_TESTS.xml",
+      "sha256": "869aecd3ad9699661ba99fd766456ab60b8729806a8d0c0d6dee4544bb151be7"
+    },
+    {
+      "path": "artifacts/validation/model_optimization_followup_v1/DATA_REGRESSION_TESTS.xml",
+      "sha256": "a04a72fbf9b9fc4561527b55b8b297036a5ca16dc9843d30bb7624ec854ac107"
+    },
+    {
+      "path": "artifacts/validation/model_optimization_followup_v1/FULL_MODEL_REGRESSION_TESTS_v2.xml",
+      "sha256": "8754220c8c4343d979cdb066f6b4f7e4e55b18da4bb6b31ee1fc94a50a0096d7"
+    },
+    {
+      "path": "artifacts/validation/model_optimization_followup_v1/DATA_REGRESSION_TESTS_v2.xml",
+      "sha256": "1f6686994940603295fe3d7f38227a1bdd9d5b10a4ce3908bbf6d4c21722e0ab"
+    },
+    {
+      "path": "artifacts/validation/model_optimization_followup_v1/GPU_FIXTURE_TESTS_v2.xml",
+      "sha256": "e2f36c1f31031724b2685f96da3d5bf6daa9184677a404427b4144ec88becfa8"
+    }
+  ],
+  "protected_pair_or_truth_data_accessed_by_regression_tests": false,
+  "same_author_not_independent_replication": true
+}

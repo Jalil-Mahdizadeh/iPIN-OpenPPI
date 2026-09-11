@@ -3,15 +3,30 @@
 Human-readable M0 platform, evidence, benchmark, modelling, gate, and release reports are stored here. Machine-readable run records remain under `artifacts/runs/`.
 
 The current completed study is
+[Fixed-ensemble test follow-up](m1/M1_Model_Optimization_Followup_v1.md), authorized
+by [DEC-0053](../../governance/decisions/DEC-0053-authorize-fixed-ensemble-followup.md).
+The frozen optimized ensemble increased primary C3 test concordance from
+**0.789249 to 0.807948**, paired gain **0.018699 [−0.001358, 0.050000]**:
+positive point improvement, but not conclusive at the 95% interval criterion.
+Secondary C2/C1 gains are larger with positive paired intervals. All nine cells
+and all member results are reported. See [status v53](../../governance/PROJECT_STATUS_v53.md)
+and the [follow-up protocol](../protocols/MODEL_OPTIMIZATION_FOLLOWUP_v1.md).
+This is one disclosed comparison on the existing, previously examined test;
+no new test set, refitting, seed selection or test tuning. Original records remain
+immutable and no further evaluation is queued.
+
+The preceding completed study is
 [Development-only model optimization](m1/M1_Model_Optimization_v1.md), authorized by
 [DEC-0052](../../governance/decisions/DEC-0052-development-only-optimization-and-conditional-followup.md).
 Its [prospective protocol](../protocols/MODEL_OPTIMIZATION_v1.md) fixes 24 recipes,
 two GPU-hours, a three-seed stability/paired-interval improvement gate, and one
 conditional follow-up on the existing (already examined) test. The selected
 residual-MLP ensemble improved C3 development from 0.784142 to 0.799419, paired
-gain interval [0.002942, 0.034460], but failed individual-seed stability. **No
-follow-up test was performed.** See [status v52](../../governance/PROJECT_STATUS_v52.md).
-No test-informed selection or new test set; the original evaluation is immutable.
+gain interval [0.002942, 0.034460], but failed individual-seed stability. No
+follow-up occurred under that original gate. Its unchanged
+[status v52](../../governance/PROJECT_STATUS_v52.md) records that historical stop;
+DEC-0053 later accepted the ensemble as the prediction unit in an explicit
+post-development, pre-follow-up-test amendment rather than rewriting the gate.
 
 The original completed evaluation report is
 [One-time protected final test](m1/M1_Protected_Final_Test_v1.md)

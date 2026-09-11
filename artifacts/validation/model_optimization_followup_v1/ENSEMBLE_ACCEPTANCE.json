@@ -1,0 +1,22 @@
+{
+  "accepted_for_one_followup": true,
+  "amendment_after_development_before_followup_test": true,
+  "authorization": "DEC-0053",
+  "authorization_sha256": "1fb495c485a62d3ee6e94ad8b2e90466d8373f5fb7baa4794023868107324f9c",
+  "baseline": "lightweight_esm2_150m_linear__linear_lr3e-4",
+  "development_ensemble_gain": 0.015276757173512734,
+  "development_paired_ci95": [
+    0.0029423942893936103,
+    0.03445976176606338
+  ],
+  "execution_id": "model_optimization_followup_v1",
+  "individual_seed_checks_retained_as_diagnostics": true,
+  "model": "esm2_150m__residual_wide__epoch04_ensemble3",
+  "original_gate_passed": false,
+  "original_gate_sha256": "7414d39086c9fe6fd50edbe0480046697a52cbf08d5a6783995cd3f89f501f4b",
+  "protected_followup_access_started": false,
+  "recorded_at_utc": "2026-09-11T12:17:43.688766+00:00",
+  "search_freeze_sha256": "c321841b6d79f4ca4256f14f9f7463a5bf3b5dc0085cfa554a1dc3ba4c906f67",
+  "selection_or_checkpoint_changed": false,
+  "selection_sha256": "3a4fe7e5a960a6798638ca84cf2433b2fa195c3dfeccd680986ee15ef0ea2ce6"
+}

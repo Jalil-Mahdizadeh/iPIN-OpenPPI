@@ -1,4 +1,42 @@
-# Benchmark-design utilities
+# Benchmark and protected-evaluation utilities
+
+## Fixed-ensemble follow-up (DEC-0053)
+
+The [follow-up protocol](../../docs/protocols/MODEL_OPTIMIZATION_FOLLOWUP_v1.md)
+authorizes one comparison of the existing development-selected residual-MLP
+ensemble against the original baseline ensemble, without further fitting.
+
+- `prepare_model_optimization_followup_v1.py` checks historical integrity,
+  qualifies exact frozen checkpoint replay on the GPU and CPU using development
+  data, and freezes an allowlisted scorer bundle before test-pair access.
+- `run_model_optimization_followup_v1.sh` exposes the separate stages
+  `preflight`, `open`, `score`, `import-baseline`, `freeze-predictions`, `reserve`,
+  `evaluate`, and `publish`. The frozen bundle's copy is the executed operator.
+- `model_optimization_followup_core_v1.py` scores only the fixed candidate,
+  imports the original baseline predictions byte-for-byte, and reuses the
+  unchanged original paired component-bootstrap implementation.
+- `publish_model_optimization_followup_v1.py` permits only aggregate metrics
+  and a separate follow-up receipt/completion record; it sees no row data or keys.
+- `audit_model_optimization_followup_v1.py` checks the completed lineage,
+  historical hashes, stored bootstrap arithmetic and document consistency
+  without another decryption or scoring pass.
+- `normalize_followup_guard_log_v1.py` preserves raw UCX-prefixed probe stdout
+  and extracts its unchanged JSON attestation. This is a logging-only adapter,
+  not a change to the frozen guard or scientific evaluator.
+
+These are one-attempt study operators, not instructions to rerun a completed
+evaluation. A reservation consumes the follow-up even after failure. Never
+delete custody markers, overwrite frozen records, rerun the spent original
+`run_protected_final_test_v1.sh`, or invoke legacy development audits as current
+authorization checks. Their historical no-follow-up assertions are superseded
+only by the explicit DEC-0053 amendment; their sources and records stay intact.
+
+Protected scoring uses the original restricted CPU Apptainer boundary; the GPU
+is required for the pre-access model replay. Larger artifacts, checkpoints and
+all protected rows remain private. See the
+[completed report](../../docs/reports/m1/M1_Model_Optimization_Followup_v1.md).
+
+## Historical label-free benchmark-design stage
 
 These thin CLIs support the label-free benchmark-design stage. Reusable logic
 lives under `src/ipin_openppi/benchmark/` and

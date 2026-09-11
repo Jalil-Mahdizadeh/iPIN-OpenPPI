@@ -1,0 +1,76 @@
+{
+  "all_draws_finite": true,
+  "at_utc": "2026-09-11T12:41:22.116341+00:00",
+  "baseline_files_byte_identical": 36,
+  "execution_id": "model_optimization_followup_v1",
+  "freeze_before_candidate_access_and_truth_reservation": true,
+  "historical_integrity": {
+    "original_custody_sha256": {
+      "protected_evaluation_completion.json": "6f38d22ada537dad55a22687223a0294dc66be79fda4f031326cd937e9d17678",
+      "protected_evaluation_ledger.json": "e23a6a8980d3e9d148a40be8e9b3d1316ff1c2c6ed8f7f03ab2bd899b777914f"
+    },
+    "registered_files": 179,
+    "studies": [
+      {
+        "files": 28,
+        "registry_sha256": "3b6a7ef468289b03696d3f40be41b03ce0de4f5b421b9a8945ef89e2e75ba6cd",
+        "study": "within_anchor_partner_specificity_v1"
+      },
+      {
+        "files": 36,
+        "registry_sha256": "467020c4e7f56b7aecc1547c3af8a119ea0d535bee0b425108c0fbac8cc8af9c",
+        "study": "homology_source_challenge_v1"
+      },
+      {
+        "files": 24,
+        "registry_sha256": "7c29863ca35a174f839f7ac4f5d22ced37ca5661daaf897bc61ccc268dc3b666",
+        "study": "external_bioplex_challenge_v1"
+      },
+      {
+        "files": 21,
+        "registry_sha256": "4aa89767a955965655791c678212543b022d94f4278742037ba64c14b3fb9d38",
+        "study": "composition_order_challenge_v1"
+      },
+      {
+        "files": 15,
+        "registry_sha256": "6f7bfdc126acac72ab75981a82df625bc27dc9d724bee1f0ea38c5a051c6ce40",
+        "study": "direct_binary_feasibility_v1"
+      },
+      {
+        "files": 24,
+        "registry_sha256": "d23ec8f89188f08fca52be9280f21bbb9608dcbe6de901ce694d02853fcfa502",
+        "study": "protected_final_test_v1"
+      },
+      {
+        "files": 31,
+        "registry_sha256": "4143e7641660e3a1457d08ab989d1a58a69c5402f558fbf883325fd0fa5dcc56",
+        "study": "model_optimization_v1"
+      }
+    ],
+    "unchanged": true
+  },
+  "local_document_links_resolved": 57,
+  "new_decryption_scoring_fitting_or_protected_row_inspection": false,
+  "original_baseline_replay_max_abs": 0.0,
+  "passed": true,
+  "prediction_files_verified": 72,
+  "publication_byte_identical": true,
+  "same_author_not_independent_replication": true,
+  "scorer_source_and_input_records_verified": true,
+  "stored_bootstrap_groups_rechecked": 9,
+  "stored_bootstrap_replicates": 2000,
+  "stored_bootstrap_scorers_per_group": 8,
+  "temporary_candidate_and_truth_plaintext_absent": true,
+  "timeline": {
+    "aggregate_published": "2026-09-11T12:35:47.545776+00:00",
+    "baseline_import_completed": "2026-09-11T12:24:28.718640+00:00",
+    "candidate_predictions_completed": "2026-09-11T12:23:39.145669+00:00",
+    "candidate_session": "2026-09-11T12:19:44.218453+00:00",
+    "evaluation_entered": "2026-09-11T12:26:39.856164+00:00",
+    "followup_reserved": "2026-09-11T12:26:26.737501+00:00",
+    "predictions_frozen": "2026-09-11T12:25:22.023153+00:00",
+    "results_generated": "2026-09-11T12:34:50.313278+00:00",
+    "scorer_frozen": "2026-09-11T12:17:58.095135+00:00"
+  },
+  "validator_sha256": "4b7e220ff46a95389acb90ae428716230e683fbbc416ee47e37f86f3d74d339d"
+}

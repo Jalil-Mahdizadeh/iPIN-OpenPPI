@@ -1140,8 +1140,8 @@
     "semantic_hash": "6e8f50f4dc4b1715e7c430ff98076f28"
   },
   "governance/README.md": {
-    "mtime": 1787136355.0,
-    "ast_hash": "df3aec8bea1e7c1d8a598f2255b4b782",
+    "mtime": 1789129361.0,
+    "ast_hash": "be7b6511c71a2ca5a54b4357a9e536bc",
     "semantic_hash": ""
   },
   "governance/START_MANIFEST_v1.yaml": {
@@ -1500,8 +1500,8 @@
     "semantic_hash": "42aac734a976e48054be198357256366"
   },
   "scripts/benchmark/README.md": {
-    "mtime": 1786224585.0,
-    "ast_hash": "5a357fa4bc71bcff3555404abc0992f3",
+    "mtime": 1789129361.0,
+    "ast_hash": "446ceaf0b9124702a9210b8f18a0e773",
     "semantic_hash": ""
   },
   "scripts/data/RAW_VERIFICATION.md": {
@@ -4207,6 +4207,116 @@
   "governance/gates/gate_status_v52.yaml": {
     "mtime": 1789125552.0,
     "ast_hash": "c6c87c0720f06c6a2c223409e411b010",
+    "semantic_hash": ""
+  },
+  "artifacts/results/model_optimization_v1/ARTIFACT_REGISTRY.json": {
+    "mtime": 1789125753.0,
+    "ast_hash": "7fa89e63a4d85ee2ac070bb73f3107ec",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_followup_v1/ENSEMBLE_ACCEPTANCE.json": {
+    "mtime": 1789129084.0,
+    "ast_hash": "9f0dc28fca833983fd94cbeb6fb321b2",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_followup_v1/GPU_CPU_DEVELOPMENT_REPLAY.json": {
+    "mtime": 1789129084.0,
+    "ast_hash": "5ec9a32f54a28027b96b33c6cfd9ad2c",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_followup_v1/GUARD_LOG_NORMALIZATION.json": {
+    "mtime": 1789129278.0,
+    "ast_hash": "4caf888c1734ee42fed8707c3e1ceffc",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_followup_v1/HISTORICAL_INTEGRITY_BEFORE.json": {
+    "mtime": 1789129084.0,
+    "ast_hash": "879c0ba6b953001f8185acbc6434830a",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_followup_v1/PREACCESS_SYNTHETIC_TESTS.json": {
+    "mtime": 1789129084.0,
+    "ast_hash": "fa6a9570b2706796ce4fd19982311cee",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_followup_v1/REGRESSION_TESTS.json": {
+    "mtime": 1789129504.0,
+    "ast_hash": "c5d714269550eff467ee149dfb339205",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_followup_v1/SCORER_FREEZE.json": {
+    "mtime": 1789129084.0,
+    "ast_hash": "2b2560a874a44d578b6e384538394d37",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/audit_model_optimization_followup_v1.py": {
+    "mtime": 1789128962.0,
+    "ast_hash": "ee85e9f995d228ca8f504e82728a32ee",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/model_optimization_followup_core_v1.py": {
+    "mtime": 1789129040.0,
+    "ast_hash": "092ce9bad96a007ff3a37d4b51a61ab6",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/normalize_followup_guard_log_v1.py": {
+    "mtime": 1789129277.0,
+    "ast_hash": "85f04457c81423e28cf33f0b39a8d691",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/prepare_model_optimization_followup_v1.py": {
+    "mtime": 1789128295.0,
+    "ast_hash": "9b90fc4458e367f5460e5b65e58a05e1",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/publish_model_optimization_followup_v1.py": {
+    "mtime": 1789128648.0,
+    "ast_hash": "52168f1104f3ee3587b98a4e17d7d592",
+    "semantic_hash": ""
+  },
+  "scripts/benchmark/run_model_optimization_followup_v1.sh": {
+    "mtime": 1789128648.0,
+    "ast_hash": "360e6787a680b33aded77621f1035eaa",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_followup_guard_log_normalization_v1.py": {
+    "mtime": 1789129277.0,
+    "ast_hash": "26995c6fac78d9e36b8e313710fa9a42",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_model_optimization_followup_publication_v1.py": {
+    "mtime": 1789128845.0,
+    "ast_hash": "10c1725f6aec176683c129c78c910672",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_model_optimization_followup_v1.py": {
+    "mtime": 1789128845.0,
+    "ast_hash": "ab0984b09af8eaa4e0d2d49e3e6d0249",
+    "semantic_hash": ""
+  },
+  "docs/protocols/MODEL_OPTIMIZATION_FOLLOWUP_v1.md": {
+    "mtime": 1789127869.0,
+    "ast_hash": "cc9395ade10a72e1c09bae67e9e5e331",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0053-authorize-fixed-ensemble-followup.md": {
+    "mtime": 1789127869.0,
+    "ast_hash": "5326fa68a23a191b39ff8f7c271c6b9e",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260911_112332_alright__1__heavily_de_emphasize_the_bioplex_exper.md": {
+    "mtime": 1789125812.0,
+    "ast_hash": "058eef426e4891172e84555cf1c5627d",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260911_113047_commit_and_push_if_all_relevant_docs_and_files_are.md": {
+    "mtime": 1789126247.0,
+    "ast_hash": "367f941f73b3dad9d08ad16e469a7d81",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260911_115026_the_actual_model_being_proposed_is_a_three_seed_en.md": {
+    "mtime": 1789127426.0,
+    "ast_hash": "4ba4f28b052a24bce908e7454bb6f643",
     "semantic_hash": ""
   }
 }

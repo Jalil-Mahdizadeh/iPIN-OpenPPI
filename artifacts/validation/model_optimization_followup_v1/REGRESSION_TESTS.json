@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-11",
+  "execution_id": "model_optimization_followup_v1",
+  "model_sif_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+  "cpu_command": "PYTHONPATH=/project/src PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q -p no:cacheprovider --junitxml=/audit/REGRESSION_TESTS.xml tests/test_model_optimization_v1.py tests/unit/test_development_embedding_identity.py tests/unit/test_development_evaluation_semantics.py tests/unit/test_stage1_models_and_baselines.py tests/unit/test_stage1_embeddings_and_objective.py tests/unit/test_protected_final_test_v1.py tests/unit/test_protected_final_publication_v1.py tests/unit/test_model_optimization_followup_v1.py tests/unit/test_model_optimization_followup_publication_v1.py tests/unit/test_followup_guard_log_normalization_v1.py",
+  "cpu_passed": 79,
+  "cpu_skipped": 1,
+  "cpu_seconds": 5.86,
+  "cpu_junit_sha256": "c800832a377abfb595c833546d84c73ddd047cecd3392a2c9cf8f277764bead7",
+  "gpu_command": "PYTHONPATH=/project/src PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 CUBLAS_WORKSPACE_CONFIG=:4096:8 python -m pytest -q -p no:cacheprovider --junitxml=/audit/GPU_FIXTURE_TESTS.xml tests/test_model_optimization_v1.py",
+  "gpu_passed": 11,
+  "gpu_skipped": 0,
+  "gpu_seconds": 3.64,
+  "gpu_junit_sha256": "23d2d295bcbc39803719c55cac4cf054ea8b0faa83031ff705372b35751547a7",
+  "skipped_reason": "The CUDA-specific fixture is skipped only in the CPU invocation and passed in the separate GPU invocation.",
+  "separate_preaccess_synthetic_tests": 19,
+  "separate_protected_guard_synthetic_tests": 19,
+  "test_inputs_are_synthetic_or_public_development_not_protected_rows": true,
+  "same_author_not_independent_replication": true
+}

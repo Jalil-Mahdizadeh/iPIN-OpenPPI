@@ -1,0 +1,25 @@
+{
+  "console": "test_bundle_rejects_wrong_model_and_unaccepted_amendment (followup_fixture_0.FollowupFixtures.test_bundle_rejects_wrong_model_and_unaccepted_amendment) ... ok\ntest_ensemble_metric_is_not_mean_of_member_metrics (followup_fixture_0.FollowupFixtures.test_ensemble_metric_is_not_mean_of_member_metrics) ... ok\ntest_fixed_residual_scorer_matches_explicit_math (followup_fixture_0.FollowupFixtures.test_fixed_residual_scorer_matches_explicit_math) ... ok\ntest_nonfinite_state_and_zero_vectors_rejected (followup_fixture_0.FollowupFixtures.test_nonfinite_state_and_zero_vectors_rejected) ... ok\ntest_paired_decision_is_ensemble_level (followup_fixture_0.FollowupFixtures.test_paired_decision_is_ensemble_level) ... ok\ntest_synthetic_end_to_end_preserves_original_and_refuses_reentry (followup_fixture_0.FollowupFixtures.test_synthetic_end_to_end_preserves_original_and_refuses_reentry) ... ok\ntest_complete_schema_accepted (followup_fixture_1.FollowupPublicationFixtures.test_complete_schema_accepted) ... ok\ntest_identity_omissions_nonfinite_and_arithmetic_rejected (followup_fixture_1.FollowupPublicationFixtures.test_identity_omissions_nonfinite_and_arithmetic_rejected) ... ok\ntest_publish_once_with_separate_completion (followup_fixture_1.FollowupPublicationFixtures.test_publish_once_with_separate_completion) ... ok\ntest_bad_predictions_rejected (followup_fixture_2.FinalTestFixtures.test_bad_predictions_rejected) ... ok\ntest_bootstrap_matches_bruteforce_paired_reference (followup_fixture_2.FinalTestFixtures.test_bootstrap_matches_bruteforce_paired_reference) ... ok\ntest_head_math_and_swap (followup_fixture_2.FinalTestFixtures.test_head_math_and_swap) ... ok\ntest_interolog_matches_explicit_edges_fp64 (followup_fixture_2.FinalTestFixtures.test_interolog_matches_explicit_edges_fp64) ... ok\ntest_ledger_exclusive_and_persistent_after_failure (followup_fixture_2.FinalTestFixtures.test_ledger_exclusive_and_persistent_after_failure) ... ok\ntest_manifest_hash_and_path_checks (followup_fixture_2.FinalTestFixtures.test_manifest_hash_and_path_checks) ... ok\ntest_prediction_order_independent (followup_fixture_2.FinalTestFixtures.test_prediction_order_independent) ... ok\ntest_real_cms_decryption_hash_and_link_rejection (followup_fixture_2.FinalTestFixtures.test_real_cms_decryption_hash_and_link_rejection) ... ok\ntest_synthetic_end_to_end_and_one_first_gate (followup_fixture_2.FinalTestFixtures.test_synthetic_end_to_end_and_one_first_gate) ... ok\ntest_token_is_symmetric_and_cell_specific (followup_fixture_2.FinalTestFixtures.test_token_is_symmetric_and_cell_specific) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 1.493s\n\nOK\n",
+  "errors": 0,
+  "failures": 0,
+  "passed": true,
+  "synthetic_only": true,
+  "test_sources": [
+    {
+      "bytes": 12680,
+      "path": "tests/unit/test_model_optimization_followup_v1.py",
+      "sha256": "1f6bd3ab23b6173d510926ff7a7663189f643b1572a376151191dedcc7496c1b"
+    },
+    {
+      "bytes": 5561,
+      "path": "tests/unit/test_model_optimization_followup_publication_v1.py",
+      "sha256": "3b74e98e5bd116b24bad280c6e7b86a908ab0235f9180c1d699f016f311644b9"
+    },
+    {
+      "bytes": 13078,
+      "path": "tests/unit/test_protected_final_test_v1.py",
+      "sha256": "0304b4fd884bd2ab54fa31fb08bb6b2db96b6058fbdf773d7d7dd7259066412c"
+    }
+  ],
+  "tests_run": 19
+}

@@ -11,10 +11,29 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
-The current authoritative ledger is `gates/gate_status_v36.yaml`; the current
-scientific status is `PROJECT_STATUS_v36.md`; and the fresh-thread phase
-checkpoint is
-`checkpoints/RESUME-004-post-stage-1-public-training-freeze.md`. `DEC-0017`
+## Current record
+
+The current scientific status is [v53](PROJECT_STATUS_v53.md), with
+[gate record v53](gates/gate_status_v53.yaml) and
+[fixed-ensemble follow-up report](../docs/reports/m1/M1_Model_Optimization_Followup_v1.md).
+[DEC-0053](decisions/DEC-0053-authorize-fixed-ensemble-followup.md) records the
+user-authorized post-development, pre-follow-up-test amendment: evaluate the
+already-selected three-seed ensemble as a model, retaining individual-seed
+results as diagnostics. The failed original optimization gate remains intact.
+
+DEC-0051's original protected evaluation and DEC-0052's completed optimization
+are immutable historical records. DEC-0053 permits exactly one separate
+follow-up comparison on the existing, previously examined test; it does not
+reset the original spent ledger or authorize further model/test iteration.
+Older numbered status files and `RESUME-*` checkpoints describe their original
+phase boundaries, not current authority. Unlabeled pairs are not negatives;
+direct-binding and genuine partner-specific generalization remain unresolved.
+
+## Historical development activation (v36–v37)
+
+At that stage the authoritative ledger was `gates/gate_status_v36.yaml`, the
+scientific status was `PROJECT_STATUS_v36.md`, and the fresh-thread checkpoint
+was `checkpoints/RESUME-004-post-stage-1-public-training-freeze.md`. `DEC-0017`
 technically accepts the TF-isoform audit and its external-only quarantine.
 `DEC-0018` technically
 accepts the independently validated benchmark-eligibility and

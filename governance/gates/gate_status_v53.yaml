@@ -1,0 +1,89 @@
+schema_version: 1
+status_version: 53
+date: '2026-09-11'
+decision: DEC-0053
+study_id: model_optimization_followup_v1
+previous_status: governance/gates/gate_status_v52.yaml
+amendment:
+  timing: post_development_pre_followup_test
+  evaluation_unit: fixed_three_seed_raw_score_ensemble
+  original_development_gate_passed: false
+  original_gate_preserved_unchanged: true
+  accepted_for_one_followup: true
+  individual_seed_checks_are_diagnostics_not_vetoes: true
+  acceptance_sha256: 0ca44bcfe3e2cb1c969fc8f7ef73b18462954f57650a49750c5e66f4ad267200
+model:
+  candidate: esm2_150m__residual_wide__epoch04_ensemble3
+  baseline: lightweight_esm2_150m_linear__linear_lr3e-4
+  seeds: [20260803, 20260817, 20260831]
+  parameters_per_candidate_head: 498053
+  checkpoint_selection_changed: false
+  new_training_or_encoder_inference: false
+followup_test:
+  status: completed_one_followup_attempt
+  performed: true
+  authorization_consumed: true
+  primary_cell: C3_test
+  primary_point_gain_positive: true
+  primary_paired_interval_lower_above_zero: false
+  primary_incremental_improvement_conclusion: inconclusive_at_prespecified_95_percent_interval
+  primary_result_is_not_equivalence_or_no_benefit: true
+  candidate_rows: 9028821
+  cells: 9
+  scorers: 8
+  bootstrap_replicates: 2000
+  all_draws_finite: true
+  overall_cells:
+    C3_test:
+      baseline_concordance: 0.7892487658713853
+      candidate_concordance: 0.8079478806256634
+      difference: 0.0186991147542781
+      finite_paired_draws: 2000
+      paired_percentile_95: [-0.0013583484514757354, 0.049999798255339706]
+      positive_lower_bound: false
+    C2_test:
+      baseline_concordance: 0.8052990558636478
+      candidate_concordance: 0.85130120194772
+      difference: 0.04600214608407216
+      finite_paired_draws: 2000
+      paired_percentile_95: [0.031561086588310416, 0.0615592688291959]
+      positive_lower_bound: true
+    C1_test:
+      baseline_concordance: 0.8434933190102009
+      candidate_concordance: 0.9160374988139083
+      difference: 0.07254417980370742
+      finite_paired_draws: 2000
+      paired_percentile_95: [0.06309274546445345, 0.08186932142549487]
+      positive_lower_bound: true
+  all_nine_cell_point_gains_positive: true
+  C3_source_intervals_both_include_zero: true
+  C2_C1_source_intervals_all_above_zero: true
+  secondary_cells_are_descriptive: true
+  candidate_vs_network_paired_inference_performed: false
+integrity:
+  baseline_predictions_byte_identical_to_original: true
+  original_baseline_metric_replay_max_abs: 0.0
+  original_bootstrap_draw_metadata_replayed_exactly: true
+  original_ledger_and_completion_preserved: true
+  historical_registered_files_unchanged: 179
+  frozen_prediction_files: 72
+  scorer_freeze_sha256: 44da994b834a5db4a7c831d85b26f44607d92b7c5058e1176c03049f74b9c9ba
+  prediction_freeze_sha256: e1322d0205f6730d312ca0256caccf338e7adc19d8bc37fb2d5682a0688158ca
+  followup_ledger_sha256: 12d50bde100a74f68251ecc1fffe2f5d18f187a9b7ceefb8b633d569d5d28500
+  followup_result_sha256: 17ee30e6960f64b3a33a87fbdf12c08d226d25b7a7e76289e8781e03b68110f9
+  GPU_development_prediction_replay_exact: true
+  CPU_swap_errors_zero_all_test_cells: true
+  CPU_regression_passed: 492
+  GPU_regression_passed: 12
+  initial_environment_failures_retained: true
+disposition:
+  baseline_retained_as_immutable_reference: true
+  candidate_is_development_only: false
+  conclusively_superior_C3_replacement_established: false
+  original_test_previously_examined: true
+  independent_replication: false
+  new_test_set_created: false
+  direct_binding_or_partner_specific_generalization_established: false
+  bioplex_role: secondary_cross_assay_evidence_not_binary_binding_gate
+  no_further_experiment_or_test_queued: true
+  commit_and_push_authorized: true
