@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-08-19T12:50:48.526135+00:00",
+  "generated_at": "2026-09-11T08:25:09.886794+00:00",
   "nodes": {
+    "docs_protocols_public_training_local_representation_diagnostic_v1_prospective_nested_component_test": {
+      "code_fingerprint": "4d3f2ee8a4ecc46bb6bd878a0eaf8beb18aa89ce3b96aa18d239a0e9d001df33",
+      "label": "Prospective nested component test",
+      "last": "2026-09-10T23:46:24.764424+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-10T23:46:24.764424+00:00",
+          "outcome": "useful",
+          "q": "act according to your recommendations."
+        },
+        {
+          "date": "2026-09-10T22:58:12.858862+00:00",
+          "outcome": "useful",
+          "q": "what is the best next step? maybe a prospectively designed within-anchor partner-specificity test? what do you think?"
+        }
+      ],
+      "score": 1.982655617,
+      "source_file": "docs/protocols/PUBLIC_TRAINING_LOCAL_REPRESENTATION_DIAGNOSTIC_v1.md",
+      "status": "preferred",
+      "uses": 2
+    },
     "docs_reports_m0_m0_benchmark_eligibility_and_sequence_component_audit_final_v1_m0_final_report_benchmark_eligibility_and_sequence_component_audit": {
       "code_fingerprint": "b493ec74366f70a601c5bfcb957bb1018d164c4e3e73c9c33ffb6b3eedb69075",
       "label": "M0 final report: benchmark eligibility and sequence-component audit",
@@ -12,10 +33,70 @@
           "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
         }
       ],
-      "score": 0.773648493,
+      "score": 0.456672757,
       "source_file": "docs/reports/m0/M0_Benchmark_Eligibility_and_Sequence_Component_Audit_Final_v1.md",
       "status": "tentative",
       "uses": 1
+    },
+    "docs_reports_m0_m0_pair_level_pu_r_benchmark_protocol_final_v1_primary_pu_retrieval_metrics": {
+      "code_fingerprint": "4cae2023795237d9350a77ae52a8ac72abeff4e0c7ac57340d1bfeb838306627",
+      "label": "Primary PU-retrieval metrics",
+      "last": "2026-09-10T23:46:24.764424+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-10T23:46:24.764424+00:00",
+          "outcome": "useful",
+          "q": "act according to your recommendations."
+        },
+        {
+          "date": "2026-09-10T22:58:12.858862+00:00",
+          "outcome": "useful",
+          "q": "what is the best next step? maybe a prospectively designed within-anchor partner-specificity test? what do you think?"
+        }
+      ],
+      "score": 1.982655617,
+      "source_file": "docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md",
+      "status": "preferred",
+      "uses": 2
+    },
+    "docs_reports_m0_protected_test_evaluation_procedure_v1_protected_pair_level_pu_r_evaluation_procedure": {
+      "code_fingerprint": "4d74431c523ef950096685929bad8c98e24dd3aad81efb15c8dd6b7bb13477b8",
+      "label": "Protected pair-level PU-R evaluation procedure",
+      "last": "2026-09-11T08:18:26.564323+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T08:18:26.564323+00:00",
+          "outcome": "useful",
+          "q": "but there is still a frozen test set which has never been seen or studied. am i right?"
+        }
+      ],
+      "score": 0.99989215,
+      "source_file": "docs/reports/m0/PROTECTED_TEST_EVALUATION_PROCEDURE_v1.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "docs_reports_m1_m1_development_release_and_evaluation_final_v1_m1_development_release_and_evaluation_final_report_v1": {
+      "code_fingerprint": "ecefd3679291fe84e258cc15be9a9336b7a4f64f39bd7a3470722ad2537bec76",
+      "label": "M1 development release and evaluation final report v1",
+      "last": "2026-09-10T20:48:09.601548+00:00",
+      "neg": 1,
+      "provenance": [
+        {
+          "date": "2026-09-10T20:48:09.601548+00:00",
+          "outcome": "corrected",
+          "q": "this repo was supposed to be a research project on developing a model for protein-protein interaction prediction. However, in the end it became a dead end. explore it, understand it, and brainstorm and let me know if you beleive that it is actually a dead end."
+        },
+        {
+          "date": "2026-08-19T14:23:20.482806+00:00",
+          "outcome": "useful",
+          "q": "so this project is a real dead end?"
+        }
+      ],
+      "score": -0.397717213,
+      "source_file": "docs/reports/m1/M1_Development_Release_and_Evaluation_Final_v1.md",
+      "status": "contested",
+      "uses": 1,
+      "verdict": "dead end"
     },
     "governance_decisions_dec_0010_propose_pu_compatibility_primary_design_reference_sequence_pu_ranking": {
       "code_fingerprint": "971560e807656bf9c54898f3b1d83ca756d31e44d7e3b415b81309f41e4b906d",
@@ -43,10 +124,63 @@
           "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
         }
       ],
-      "score": 3.106336369,
+      "score": 1.833622383,
       "source_file": "governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md",
       "status": "preferred",
       "uses": 4
+    },
+    "governance_decisions_dec_0039_accept_development_evaluation_and_stop_complex_model_claim_dec_0039_accept_development_evaluation_and_stop_complex_model_claim": {
+      "code_fingerprint": "b5f9dd5041022321fdaeb77a3d623a480a6a250a2f5d61f1193930805b664bb5",
+      "label": "DEC-0039: Accept development evaluation and stop complex-model claim",
+      "last": "2026-08-19T14:23:20.482806+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-19T14:23:20.482806+00:00",
+          "outcome": "useful",
+          "q": "so this project is a real dead end?"
+        }
+      ],
+      "score": 0.591161597,
+      "source_file": "governance/decisions/DEC-0039-accept-development-evaluation-and-stop-complex-model-claim.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "governance_decisions_dec_0050_bounded_direct_binary_feasibility_and_model_stop_dec_0050_bound_the_data_feasibility_check_stop_the_current_model_track": {
+      "code_fingerprint": "ef67a61d6954291a6956776f8994d13cc58976231f394108b7f39e45f253b419",
+      "label": "DEC-0050: Bound the data feasibility check; stop the current model track",
+      "last": "2026-09-11T08:18:26.564323+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T08:18:26.564323+00:00",
+          "outcome": "useful",
+          "q": "but there is still a frozen test set which has never been seen or studied. am i right?"
+        },
+        {
+          "date": "2026-09-11T08:14:28.622814+00:00",
+          "outcome": "useful",
+          "q": "i did not fullt inderstand. what is the status of the project now? explain it cincisely in a simple language."
+        }
+      ],
+      "score": 1.999720679,
+      "source_file": "governance/decisions/DEC-0050-bounded-direct-binary-feasibility-and-model-stop.md",
+      "status": "preferred",
+      "uses": 2
+    },
+    "scripts_model_validate_public_training_local_representation_independent_v1": {
+      "code_fingerprint": "0a3601ea8a63de076e25fd57913bb97e6aac3b78b92297589920a83c0cf6b0c0",
+      "label": "validate_public_training_local_representation_independent_v1.py",
+      "last": "2026-08-19T14:23:20.482806+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-19T14:23:20.482806+00:00",
+          "outcome": "useful",
+          "q": "so this project is a real dead end?"
+        }
+      ],
+      "score": 0.591161597,
+      "source_file": "scripts/model/validate_public_training_local_representation_independent_v1.py",
+      "status": "tentative",
+      "uses": 1
     },
     "src_ipin_openppi_benchmark_systematic_screen_audit": {
       "code_fingerprint": "cb0604d7fbe2820b6ca88381cf389b749ba554de61f3ef93a8068fbc117278d6",
@@ -59,10 +193,155 @@
           "q": "Starting from accepted DEC-0022, freeze the pair-level PU-R benchmark protocol before any model work."
         }
       ],
-      "score": 0.779587525,
+      "score": 0.460178475,
       "source_file": "src/ipin_openppi/benchmark/systematic_screen_audit.py",
       "status": "tentative",
       "uses": 1
+    },
+    "src_ipin_openppi_composition_order_pipeline": {
+      "code_fingerprint": "20629beae7093bf661889f77033771ba7eb11c254584d527e7f1fa42e48b9865",
+      "label": "composition_order/pipeline.py",
+      "last": "2026-09-11T07:41:09.344125+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T07:41:09.344125+00:00",
+          "outcome": "useful",
+          "q": "is it a dead end project?"
+        },
+        {
+          "date": "2026-09-11T07:17:32.716365+00:00",
+          "outcome": "useful",
+          "q": "go ahead with the best next step. Think and act as a serior researcher in AI and bioinformatics. Then, commit and push."
+        }
+      ],
+      "score": 1.998209749,
+      "source_file": "src/ipin_openppi/composition_order/pipeline.py",
+      "status": "preferred",
+      "uses": 2
+    },
+    "src_ipin_openppi_composition_order_semantics": {
+      "code_fingerprint": "4a1a2bea265c72b8a2ff82799d66fbe3f34eda5869edc71f8e8806de1fd0f551",
+      "label": "composition_order/semantics.py",
+      "last": "2026-09-11T07:17:32.716365+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T07:17:32.716365+00:00",
+          "outcome": "useful",
+          "q": "go ahead with the best next step. Think and act as a serior researcher in AI and bioinformatics. Then, commit and push."
+        }
+      ],
+      "score": 0.998915628,
+      "source_file": "src/ipin_openppi/composition_order/semantics.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_ipin_openppi_composition_order_validation": {
+      "code_fingerprint": "bac1cd65f63bb0af886bf051f8edc13b6ee7bd8603e753e1d79e5828090f6baf",
+      "label": "composition_order/validation.py",
+      "last": "2026-09-11T07:41:09.344125+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T07:41:09.344125+00:00",
+          "outcome": "useful",
+          "q": "is it a dead end project?"
+        },
+        {
+          "date": "2026-09-11T07:17:32.716365+00:00",
+          "outcome": "useful",
+          "q": "go ahead with the best next step. Think and act as a serior researcher in AI and bioinformatics. Then, commit and push."
+        }
+      ],
+      "score": 1.998209749,
+      "source_file": "src/ipin_openppi/composition_order/validation.py",
+      "status": "preferred",
+      "uses": 2
+    },
+    "src_ipin_openppi_external_bioplex_semantics": {
+      "code_fingerprint": "6d0fed6d5a4c7c8d1b50fab4adad104a8757e5eebec5fc396b248f132a0e4fe2",
+      "label": "external_bioplex/semantics.py",
+      "last": "2026-09-11T07:17:32.716365+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T07:17:32.716365+00:00",
+          "outcome": "useful",
+          "q": "go ahead with the best next step. Think and act as a serior researcher in AI and bioinformatics. Then, commit and push."
+        }
+      ],
+      "score": 0.998915628,
+      "source_file": "src/ipin_openppi/external_bioplex/semantics.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_ipin_openppi_external_bioplex_validation": {
+      "code_fingerprint": "208c80a18929a89e306ab2fe9e50c9e0fdf1a6cfb41b93079ae785e707bf9a92",
+      "label": "external_bioplex/validation.py",
+      "last": "2026-09-11T07:41:09.344125+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T07:41:09.344125+00:00",
+          "outcome": "useful",
+          "q": "is it a dead end project?"
+        }
+      ],
+      "score": 0.999294121,
+      "source_file": "src/ipin_openppi/external_bioplex/validation.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_ipin_openppi_homology_source_data": {
+      "code_fingerprint": "213fa847ee055c0d4d73e817dcdf320564a2e84f2b3c7d199693742fe0acc176",
+      "label": "homology_source/data.py",
+      "last": "2026-09-11T01:40:41.276163+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T01:40:41.276163+00:00",
+          "outcome": "useful",
+          "q": "continue with the best next step, generate a concise report, update relevant docs, commit and push."
+        }
+      ],
+      "score": 0.993531153,
+      "source_file": "src/ipin_openppi/homology_source/data.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_ipin_openppi_homology_source_pipeline": {
+      "code_fingerprint": "c130766621ee5eba2662b1ecb97471751c6b8eded463aa9fca5f1d73167e1f9c",
+      "label": "homology_source/pipeline.py",
+      "last": "2026-09-11T01:40:41.276163+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T01:40:41.276163+00:00",
+          "outcome": "useful",
+          "q": "continue with the best next step, generate a concise report, update relevant docs, commit and push."
+        }
+      ],
+      "score": 0.993531153,
+      "source_file": "src/ipin_openppi/homology_source/pipeline.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_ipin_openppi_local_diagnostic_pipeline": {
+      "code_fingerprint": "d813380c140d0c5d5dbc25671b2ad6c01b807b99e760ee32861d592289dc1318",
+      "label": "local_diagnostic/pipeline.py",
+      "last": "2026-09-10T20:48:09.601548+00:00",
+      "neg": 1,
+      "provenance": [
+        {
+          "date": "2026-09-10T20:48:09.601548+00:00",
+          "outcome": "corrected",
+          "q": "this repo was supposed to be a research project on developing a model for protein-protein interaction prediction. However, in the end it became a dead end. explore it, understand it, and brainstorm and let me know if you beleive that it is actually a dead end."
+        },
+        {
+          "date": "2026-08-19T14:23:20.482806+00:00",
+          "outcome": "useful",
+          "q": "so this project is a real dead end?"
+        }
+      ],
+      "score": -0.397717213,
+      "source_file": "src/ipin_openppi/local_diagnostic/pipeline.py",
+      "status": "contested",
+      "uses": 1,
+      "verdict": "dead end"
     },
     "src_ipin_openppi_negative_evidence_evidence": {
       "code_fingerprint": "977cbc0d2a68666189581c6bab00fadc19d103b038bd2646e6cc74b11605b2cb",
@@ -75,8 +354,24 @@
           "q": "Starting from accepted DEC-0022, freeze the pair-level PU-R benchmark protocol before any model work."
         }
       ],
-      "score": 0.779587525,
+      "score": 0.460178475,
       "source_file": "src/ipin_openppi/negative_evidence/evidence.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_ipin_openppi_partner_specificity_pipeline": {
+      "code_fingerprint": "a1063a5169c8f4c0ed5eb54c8cda0f5765034f9c5115481978c77d837d17f30b",
+      "label": "partner_specificity/pipeline.py",
+      "last": "2026-09-11T00:46:58.658735+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T00:46:58.658735+00:00",
+          "outcome": "useful",
+          "q": "ok! now challenge the signal with stronger homology/interolog controls and source-aware validation, as you suggested."
+        }
+      ],
+      "score": 0.992675311,
+      "source_file": "src/ipin_openppi/partner_specificity/pipeline.py",
       "status": "tentative",
       "uses": 1
     },
@@ -91,7 +386,7 @@
           "q": "Starting from accepted DEC-0020, construct and freeze the final benchmark component split without any model involvement, using 30% local_domain_union as primary and sensitive_fl80_union only as a documented zero-valid-primary fallback."
         }
       ],
-      "score": 0.779197921,
+      "score": 0.459948499,
       "source_file": "src/ipin_openppi/pre_split_audit/__init__.py",
       "status": "tentative",
       "uses": 1
@@ -107,7 +402,7 @@
           "q": "Starting from accepted DEC-0020, construct and freeze the final benchmark component split without any model involvement, using 30% local_domain_union as primary and sensitive_fl80_union only as a documented zero-valid-primary fallback."
         }
       ],
-      "score": 0.779197921,
+      "score": 0.459948499,
       "source_file": "src/ipin_openppi/pre_split_audit/semantics.py",
       "status": "tentative",
       "uses": 1
@@ -123,7 +418,7 @@
           "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
         }
       ],
-      "score": 0.773648493,
+      "score": 0.456672757,
       "source_file": "src/ipin_openppi/sequence_component_audit/__init__.py",
       "status": "tentative",
       "uses": 1
@@ -139,7 +434,7 @@
           "q": "Starting from accepted DEC-0020, construct and freeze the final benchmark component split without any model involvement, using 30% local_domain_union as primary and sensitive_fl80_union only as a documented zero-valid-primary fallback."
         }
       ],
-      "score": 0.779197921,
+      "score": 0.459948499,
       "source_file": "src/ipin_openppi/sequence_component_audit/semantics.py",
       "status": "tentative",
       "uses": 1
@@ -147,16 +442,37 @@
     "src_ipin_openppi_validation_component_split": {
       "code_fingerprint": "17c488672a4355e3f078da9e676ea4b64bbac570be67c433b735e11210c5dfd7",
       "label": "component_split.py",
-      "last": "2026-08-08T18:12:37.826595+00:00",
+      "last": "2026-09-11T00:46:58.658735+00:00",
       "provenance": [
+        {
+          "date": "2026-09-11T00:46:58.658735+00:00",
+          "outcome": "useful",
+          "q": "ok! now challenge the signal with stronger homology/interolog controls and source-aware validation, as you suggested."
+        },
         {
           "date": "2026-08-08T18:12:37.826595+00:00",
           "outcome": "useful",
           "q": "Starting from accepted DEC-0022, freeze the pair-level PU-R benchmark protocol before any model work."
         }
       ],
-      "score": 0.779587525,
+      "score": 1.452853786,
       "source_file": "src/ipin_openppi/validation/component_split.py",
+      "status": "preferred",
+      "uses": 2
+    },
+    "src_ipin_openppi_validation_negative_evidence_rationale_1": {
+      "code_fingerprint": "548e7314eff3b4570f3ff39ced8c18b751222300b5d90311fff25677082b6d48",
+      "label": "Independent fail-closed validation for the conditional negative-evidence audit.",
+      "last": "2026-09-11T08:10:34.750279+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T08:10:34.750279+00:00",
+          "outcome": "useful",
+          "q": "Act according to your recommendation: one bounded independent direct-binary feasibility check after assessing whether the project is a dead end."
+        }
+      ],
+      "score": 0.999766,
+      "source_file": "src/ipin_openppi/validation/negative_evidence.py",
       "status": "tentative",
       "uses": 1
     },
@@ -171,8 +487,45 @@
           "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
         }
       ],
-      "score": 0.773648493,
+      "score": 0.456672757,
       "source_file": "src/ipin_openppi/validation/sequence_components.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_ipin_openppi_validation_systematic_screen_audit": {
+      "code_fingerprint": "31d3094303d34644cbf4d9cfa3afd4e74bbe5b1398be8af6f5761562d164f3f5",
+      "label": "validation/systematic_screen_audit.py",
+      "last": "2026-09-11T01:40:41.276163+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T01:40:41.276163+00:00",
+          "outcome": "useful",
+          "q": "continue with the best next step, generate a concise report, update relevant docs, commit and push."
+        },
+        {
+          "date": "2026-09-11T00:46:58.658735+00:00",
+          "outcome": "useful",
+          "q": "ok! now challenge the signal with stronger homology/interolog controls and source-aware validation, as you suggested."
+        }
+      ],
+      "score": 1.986206464,
+      "source_file": "src/ipin_openppi/validation/systematic_screen_audit.py",
+      "status": "preferred",
+      "uses": 2
+    },
+    "src_ipin_openppi_validation_systematic_screen_audit_rationale_1": {
+      "code_fingerprint": "31d3094303d34644cbf4d9cfa3afd4e74bbe5b1398be8af6f5761562d164f3f5",
+      "label": "Independent integrity gate for the systematic-screen metadata audit.",
+      "last": "2026-09-11T08:10:34.750279+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-11T08:10:34.750279+00:00",
+          "outcome": "useful",
+          "q": "Act according to your recommendation: one bounded independent direct-binary feasibility check after assessing whether the project is a dead end."
+        }
+      ],
+      "score": 0.999766,
+      "source_file": "src/ipin_openppi/validation/systematic_screen_audit.py",
       "status": "tentative",
       "uses": 1
     }
