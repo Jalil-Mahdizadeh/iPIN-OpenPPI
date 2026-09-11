@@ -4,52 +4,45 @@ Evidence-aware, sequence-based prioritization of direct human heteromeric protei
 
 ## Current status
 
-As of 2026-09-11, **the current learned-head development track is stopped** under
-[DEC-0050](governance/decisions/DEC-0050-bounded-direct-binary-feasibility-and-model-stop.md).
-Its incremental value over simple external controls has not been established.
-The research record is preserved; no further architecture sweep or automatic
-diagnostic is queued.
+As of 2026-09-11, a surprisingly simple frozen-PLM sequence-pair model has strong
+positive-unlabeled ranking evidence for interaction-training-naïve proteins in
+this protected benchmark. Its original C3 development concordance is **0.784**;
+the original test is **0.789 [0.708, 0.846]**, above all eleven prespecified
+controls with positive paired intervals. Where endpoints have prior interaction
+exposure, network shortcuts remain strong: C2 has no demonstrated advantage
+over degree sum, and C1 is below preferential attachment. Concordance is not
+binary binding accuracy or a calibrated interaction probability. Genuine
+partner-specific/direct-binding generalization remains unresolved.
 
-Under [DEC-0051](governance/decisions/DEC-0051-authorize-one-final-protected-evaluation.md),
-the user separately authorized **one final protected evaluation** of the
-development-selected frozen 150M ensemble. **It completed successfully:** primary
-C3 concordance is **0.789 [0.708, 0.846]**, above all eleven prespecified controls
-with positive paired intervals. C2 has no demonstrated advantage over degree
-sum; C1 is below preferential attachment. This is positive-unlabeled ranking,
-not biological classification accuracy. No retraining or test-based selection
-occurred. The test is now spent, not an unused future opportunity. See the
-[final-test report](docs/reports/m1/M1_Protected_Final_Test_v1.md),
-[protocol](docs/protocols/PROTECTED_FINAL_TEST_v1.md), and
-[current status v51](governance/PROJECT_STATUS_v51.md), with
-[gate ledger v51](governance/gates/gate_status_v51.yaml).
+[DEC-0052](governance/decisions/DEC-0052-development-only-optimization-and-conditional-followup.md)
+authorized a bounded **development-only architecture/parameter search**, now
+complete: 24 recipes across two frozen encoders and four symmetric head families,
+with three-seed evaluation of the top four. The winning residual-MLP ensemble
+improved development C3 to **0.799419**, gain **0.015277 [0.002942, 0.034460]**,
+but failed the prespecified individual-seed stability conditions. **No retest
+was performed; the original baseline remains the test-evaluated reference.**
+The GH200 GPU search took about three minutes within the two-hour cap. See the
+[optimization report](docs/reports/m1/M1_Model_Optimization_v1.md),
+[current status v52](governance/PROJECT_STATUS_v52.md), and
+[prospective search and protocol amendment](docs/protocols/MODEL_OPTIMIZATION_v1.md).
+No new test set is required; the existing test is explicitly already examined,
+so a follow-up is not an independent replication or a never-seen evaluation.
 
-The bounded direct-binary feasibility check found a concrete candidate for a
-separate extracellular-specificity study: SAVEXIS. Eleven source files were
-version-pinned and audited. Dense measurements and construct/QC metadata exist,
-but assay processing and evaluable P/N semantics need reconciliation before
-matched support can be counted. Current training exposure and a sufficiently
-precise, pilot-separated confirmation design remain unassessed. This is a
-conditional data pivot, **not a rescued model or an evaluation-ready benchmark**.
-
-Eight targeted tests and a separate structural reference check pass; all 109
-registered files across the four preceding studies were unchanged in that
-feasibility assessment. It produced no fits, embeddings, model scores or P/N
-labels and accessed no protected or quarantined pair data. Quarantines remain
-closed; only the final evaluation above is now separately authorized.
-
-See the [concise feasibility/disposition report](docs/reports/m1/M1_Direct_Binary_Feasibility_and_Project_Disposition_v1.md),
-[feasibility status v50](governance/PROJECT_STATUS_v50.md), and
-[gate ledger v50](governance/gates/gate_status_v50.yaml).
-The [composition/order report](docs/reports/m1/M1_Composition_Order_Challenge_v1.md)
-documents the preceding diagnostic, including its insufficient matched support.
-The [external BioPlex report](docs/reports/m1/M1_External_BioPlex_Challenge_v1.md),
-prior [within-anchor](docs/reports/m1/M1_Within_Anchor_Partner_Specificity_Diagnostic_v1.md)
-and [homology/source](docs/reports/m1/M1_Homology_and_Source_Challenge_v1.md)
-studies remain frozen. The earlier
+The [original final-test report](docs/reports/m1/M1_Protected_Final_Test_v1.md),
+[original protocol](docs/protocols/PROTECTED_FINAL_TEST_v1.md),
+[original status v51](governance/PROJECT_STATUS_v51.md), checkpoints, result,
+receipt and spent ledger remain immutable. The
 [embedding-identity correction](docs/reports/m1/M1_Research_Reassessment_and_Embedding_Identity_Findings_2026-09-10.md)
-restored development C3 concordance to 0.784 from invalid 0.492; that is a
-different endpoint/panel from the external numbers above. Original incident
-evidence is preserved.
+and the invalid earlier evaluation remain preserved as separate evidence.
+
+BioPlex AP-MS is **secondary cross-assay association evidence**, not a clean
+direct-binary interaction panel or a decisive verdict on this PU benchmark.
+Its frozen negative results are retained, but are neither a tuning target nor
+a selection/retest gate. The historical [diagnostic reports](docs/reports/README.md)
+also preserve the within-anchor, homology/source, composition/order and bounded
+direct-binary feasibility studies. SAVEXIS remains a conditional, unqualified
+candidate for a separate extracellular study; that possible pivot does not
+determine the present optimization experiment.
 
 ## Historical pre-model checkpoint (v27)
 
@@ -156,8 +149,9 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
 4. Preserve the `DEC-0024` information, pair-assignment, sampling, metric,
    uncertainty, holdout, and claim rules.
 5. Preserve the immutable `DEC-0026` pair artifacts; do not modify, extend,
-   resample, relabel or open protected candidates/truth. The bounded
-   development correction under `DEC-0045` is complete.
+   resample or relabel. The bounded development correction under `DEC-0045`
+   is complete. Further protected access is permitted only by DEC-0052's
+   conditional follow-up, after its development gate and scorer freeze.
 6. Preserve the `DEC-0028` frozen model-governance and baseline/training
    protocol. Do not construct additional pair rows, negatives or pseudo-
    negatives, materialize the full candidate universe, integrate panels or
@@ -167,13 +161,12 @@ The binding scientific specification is [the Version 3 final blueprint](docs/blu
    `development_embedding_identity_correction_v2` evidence. The corrected
    result does not authorize another phase or protected evaluation.
 8. Preserve completed DEC-0046/0047/0048 studies and their freezes. BioPlex is
-   now spent diagnostic evidence; do not tune to rescue its superiority gates.
-   Additional source acquisition, model work or evaluation needs a new bounded
-   decision. The published-source use note is
+   secondary, spent cross-assay evidence; do not tune to its results or use its
+   old superiority gates to determine the current PU experiment. The use note is
    [here](governance/licenses/BIOPLEX_PUBLISHED_RELEASE_USE_v1.md).
-9. Preserve DEC-0049 and the bounded DEC-0050 source audit. The current learned
-   head is not under active development. A conditional source candidate does
-   not authorize new labels, scoring, training, source expansion or author
-   contact; no next experiment is queued.
+9. Preserve DEC-0049/0050 and the original DEC-0051 evaluation. DEC-0052's bounded
+   optimization is complete and its conditional follow-up was not triggered.
+   No test-informed tuning, resetting the old ledger, source expansion,
+   quarantine access, new labels or automatic further experiment is authorized.
 
 Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.

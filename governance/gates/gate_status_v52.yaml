@@ -1,0 +1,50 @@
+schema_version: 1
+status_version: 52
+date: '2026-09-11'
+decision: DEC-0052
+study_id: model_optimization_v1
+previous_status: governance/gates/gate_status_v51.yaml
+search:
+  status: complete
+  preliminary_recipes: 24
+  promoted_recipes: 4
+  stage2_seeds_per_recipe: 3
+  total_fits: 36
+  total_epochs: 168
+  accelerator: NVIDIA GH200 120GB
+  gpu_process_seconds: 175.36715264400118
+  gpu_budget_seconds: 7200
+  selected_recipe: esm2_150m__residual_wide
+  selected_epoch: 4
+  search_freeze_sha256: c321841b6d79f4ca4256f14f9f7463a5bf3b5dc0085cfa554a1dc3ba4c906f67
+development_gate:
+  primary_cell: C3_development
+  baseline_concordance: 0.784142246349548
+  candidate_concordance: 0.7994190035230607
+  ensemble_gain: 0.015276757173512734
+  paired_gain_ci95: [0.0029423942893936103, 0.03445976176606338]
+  bootstrap_replicates: 2000
+  all_draws_finite: true
+  ensemble_gain_positive: true
+  paired_interval_lower_above_zero: true
+  matched_seed_gains: [0.01832637682025884, -0.003436567991249029, -0.005677275496952405]
+  all_matched_seed_gains_positive: false
+  candidate_seed_range: 0.021206636864825823
+  maximum_seed_range: 0.02
+  seed_range_pass: false
+  passed: false
+followup_test:
+  conditional_authorization_triggered: false
+  performed: false
+  ledger_reserved: false
+  original_ledger_preserved: true
+  existing_test_is_already_examined: true
+  new_test_set_created: false
+disposition:
+  baseline_replaced: false
+  new_candidate_is_development_only: true
+  additional_experiment_queued: false
+  prior_registered_files_unchanged: 148
+  bioplex_role: secondary_cross_assay_evidence_not_binary_binding_gate
+  direct_binding_or_partner_specific_generalization_established: false
+  commit_or_push_performed: false

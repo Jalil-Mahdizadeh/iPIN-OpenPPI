@@ -2,18 +2,29 @@
 
 Human-readable M0 platform, evidence, benchmark, modelling, gate, and release reports are stored here. Machine-readable run records remain under `artifacts/runs/`.
 
-The current evaluation report is
+The current completed study is
+[Development-only model optimization](m1/M1_Model_Optimization_v1.md), authorized by
+[DEC-0052](../../governance/decisions/DEC-0052-development-only-optimization-and-conditional-followup.md).
+Its [prospective protocol](../protocols/MODEL_OPTIMIZATION_v1.md) fixes 24 recipes,
+two GPU-hours, a three-seed stability/paired-interval improvement gate, and one
+conditional follow-up on the existing (already examined) test. The selected
+residual-MLP ensemble improved C3 development from 0.784142 to 0.799419, paired
+gain interval [0.002942, 0.034460], but failed individual-seed stability. **No
+follow-up test was performed.** See [status v52](../../governance/PROJECT_STATUS_v52.md).
+No test-informed selection or new test set; the original evaluation is immutable.
+
+The original completed evaluation report is
 [One-time protected final test](m1/M1_Protected_Final_Test_v1.md)
 (DEC-0051, 2026-09-11). The final test is complete: primary C3 concordance is
 0.789 [0.708, 0.846], above all eleven prespecified controls with positive
 paired intervals. C2/C1 do not establish improvement over strong degree
-controls. The test is spent; no model development is restarted. See
+controls. These are PU ranking results, not direct-binding accuracy. See
 [status v51](../../governance/PROJECT_STATUS_v51.md) and
 [gate ledger v51](../../governance/gates/gate_status_v51.yaml).
 
-The preceding research-disposition report is
+The historical research-disposition report is
 [Direct-binary feasibility and project disposition](m1/M1_Direct_Binary_Feasibility_and_Project_Disposition_v1.md)
-(DEC-0050, 2026-09-11): the current learned-head development track is stopped.
+(DEC-0050, 2026-09-11): its model-development stop is narrowly superseded by DEC-0052.
 SAVEXIS is a conditional candidate for a separate extracellular study, not an
 evaluation-ready rescue. No model experiment was run. See
 [status v50](../../governance/PROJECT_STATUS_v50.md) and
@@ -26,6 +37,11 @@ The preceding frozen research reports are:
 - [Homology/interolog and source challenge](m1/M1_Homology_and_Source_Challenge_v1.md).
 - [Within-anchor partner specificity](m1/M1_Within_Anchor_Partner_Specificity_Diagnostic_v1.md).
 - [Research reassessment and embedding-identity correction](m1/M1_Research_Reassessment_and_Embedding_Identity_Findings_2026-09-10.md).
+
+BioPlex AP-MS is retained as secondary cross-assay association evidence, not a
+valid decisive direct-binary panel, an optimization target, or a selection gate
+for the primary PU benchmark. The historical reports and null results are not
+rewritten or removed. Partner-specific and direct-binding claims remain open.
 
 The historical model-governance report is
 `docs/reports/m1/M1_Model_Governance_and_Baseline_Training_Protocol_Final_v1.md`.

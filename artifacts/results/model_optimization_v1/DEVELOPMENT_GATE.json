@@ -1,0 +1,39 @@
+{
+  "baseline_concordance": 0.784142246349548,
+  "baseline_seed_concordances": [
+    0.7802852653343181,
+    0.78485708740903,
+    0.7830822807867035
+  ],
+  "bootstrap_replicates": 2000,
+  "candidate_concordance": 0.7994190035230607,
+  "candidate_seed_concordances": [
+    0.7986116421545769,
+    0.781420519417781,
+    0.7774050052897511
+  ],
+  "candidate_seed_range": 0.021206636864825823,
+  "checks": {
+    "all_bootstrap_replicates_finite": true,
+    "all_three_matched_seed_gains_positive": false,
+    "candidate_seed_range_at_most_0_02": false,
+    "ensemble_gain_positive": true,
+    "paired_interval_lower_above_zero": true
+  },
+  "complete_search": true,
+  "computed_at_utc": "2026-09-11T11:12:16.484374+00:00",
+  "gain": 0.015276757173512734,
+  "interval_is_post_selection_development_screen_not_confirmatory": true,
+  "matched_seed_gains": [
+    0.01832637682025884,
+    -0.003436567991249029,
+    -0.005677275496952405
+  ],
+  "paired_gain_ci95": [
+    0.0029423942893936103,
+    0.03445976176606338
+  ],
+  "passed": false,
+  "search_freeze_sha256": "c321841b6d79f4ca4256f14f9f7463a5bf3b5dc0085cfa554a1dc3ba4c906f67",
+  "selection_sha256": "3a4fe7e5a960a6798638ca84cf2433b2fa195c3dfeccd680986ee15ef0ea2ce6"
+}

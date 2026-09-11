@@ -1,0 +1,162 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1220,
+      "path": "artifacts/results/model_optimization_v1/DEVELOPMENT_GATE.json",
+      "sha256": "7414d39086c9fe6fd50edbe0480046697a52cbf08d5a6783995cd3f89f501f4b"
+    },
+    {
+      "bytes": 145,
+      "path": "artifacts/results/model_optimization_v1/FIRST_FIT.json",
+      "sha256": "a658f3e3542890c126b4275bbff10adbec0aee8f367aa9233f7f2363959e1038"
+    },
+    {
+      "bytes": 99,
+      "path": "artifacts/results/model_optimization_v1/GPU_FIXTURE_TESTS.txt",
+      "sha256": "1143d3f93005e53b59586d8cc955c265e59394c06be2ddca362a498b81ab4d9d"
+    },
+    {
+      "bytes": 18276,
+      "path": "artifacts/results/model_optimization_v1/PROMOTION.json",
+      "sha256": "0b681c34205a436a11759ad0634b24cef81dd23f0ad988f339fd8928a68cd9d8"
+    },
+    {
+      "bytes": 504,
+      "path": "artifacts/results/model_optimization_v1/QUALIFICATION.json",
+      "sha256": "da445bcf9be3ddf8b0e9b36aea9e122796b401493a9f05a8568291ffef5e1003"
+    },
+    {
+      "bytes": 53480,
+      "path": "artifacts/results/model_optimization_v1/RESULTS.json",
+      "sha256": "1548ae8474e0f783f5250243cccd8e87d134f2915844d565a612bcfd6c4559fb"
+    },
+    {
+      "bytes": 20564,
+      "path": "artifacts/results/model_optimization_v1/SELECTION.json",
+      "sha256": "3a4fe7e5a960a6798638ca84cf2433b2fa195c3dfeccd680986ee15ef0ea2ce6"
+    },
+    {
+      "bytes": 153,
+      "path": "artifacts/results/model_optimization_v1/START.json",
+      "sha256": "06bccde3203317a5d85b6595372794cd6529a4a97e09f77069a0dbd983d3ccb0"
+    },
+    {
+      "bytes": 62697,
+      "path": "artifacts/results/model_optimization_v1/events.jsonl",
+      "sha256": "16714f90d0416768f328774bb79973fff503be83d80485a23e7a4c56c14e6e17"
+    },
+    {
+      "bytes": 2347,
+      "path": "artifacts/validation/model_optimization_v1/COMPLETED_SEARCH_AUDIT.json",
+      "sha256": "126444bbbf7a184d2ca44391b4f0393c549e3c429cf9bd818b8945a5a0cddb4b"
+    },
+    {
+      "bytes": 1942,
+      "path": "artifacts/validation/model_optimization_v1/FULL_CENSUS_AUDIT.json",
+      "sha256": "1758933c31ca5cff9051fb70cee89800f28f7cabcf95053f2dc00d8f97a71ed1"
+    },
+    {
+      "bytes": 1028,
+      "path": "artifacts/validation/model_optimization_v1/REGRESSION_TESTS.json",
+      "sha256": "10faa00a8459dcca82e4686057119a904cf56581bc92b3f35aa3565079bad2a5"
+    },
+    {
+      "bytes": 55883,
+      "path": "artifacts/validation/model_optimization_v1/SEARCH_FREEZE.json",
+      "sha256": "c321841b6d79f4ca4256f14f9f7463a5bf3b5dc0085cfa554a1dc3ba4c906f67"
+    },
+    {
+      "bytes": 55643,
+      "path": "artifacts/validation/model_optimization_v1/SEARCH_FREEZE_PREFIT_PLUGIN_FAILURE.json",
+      "sha256": "28b70556713145ade6b2ee59da900aca80395ab66f2b142ade8941a826e9cbb5"
+    },
+    {
+      "bytes": 1789,
+      "path": "configs/model_optimization_v1.json",
+      "sha256": "70f0e8c8e9e95b095d04368542e2329b399eca5240a6774eff9d576aa452c826"
+    },
+    {
+      "bytes": 8410,
+      "path": "docs/protocols/MODEL_OPTIMIZATION_v1.md",
+      "sha256": "ad7cf233168726e97e5a95839d6127cba4b733ce26133ed7750fa994325185a4"
+    },
+    {
+      "bytes": 1249,
+      "path": "docs/protocols/MODEL_OPTIMIZATION_v1_PREFIT_TECHNICAL_ERRATUM.md",
+      "sha256": "20933fe2d1cf7e927db059d537ab1ff8d9ff87f9ab508618693cc2220f478a5b"
+    },
+    {
+      "bytes": 7403,
+      "path": "docs/reports/m1/M1_Model_Optimization_v1.md",
+      "sha256": "199fba5fd71d9a56bfbd304af26e64a2951bce6b68b63bc72d3a39722506aa35"
+    },
+    {
+      "bytes": 2401,
+      "path": "governance/PROJECT_STATUS_v52.md",
+      "sha256": "bd89e549743d36cf8a9b77bdd8005b7f0aea1fe9915f061b22841f5534a6ce07"
+    },
+    {
+      "bytes": 2104,
+      "path": "governance/decisions/DEC-0052-development-only-optimization-and-conditional-followup.md",
+      "sha256": "c16ef4a33e92829e789f6bd3116713217c559c49d7db1b2d803a237544e3666e"
+    },
+    {
+      "bytes": 1713,
+      "path": "governance/gates/gate_status_v52.yaml",
+      "sha256": "9c4343d80f1162bb5984f7225d3d80307a765cfa79d114c0c2313cee04da68e4"
+    },
+    {
+      "bytes": 5125,
+      "path": "scripts/model/audit_model_optimization_v1.py",
+      "sha256": "bbeb0ae944fde6528a0956787bd38cf4a49b4928161437475bdc19839c41d1a3"
+    },
+    {
+      "bytes": 7805,
+      "path": "scripts/model/publish_model_optimization_v1.py",
+      "sha256": "044b702e2493d2b005672ffa6755700f412c59a068a022b842b6bd3eb65fc363"
+    },
+    {
+      "bytes": 1167,
+      "path": "scripts/model/run_model_optimization_v1.sh",
+      "sha256": "11b73ed4013ef9db4a8e80537b290b9a6a7de328112c8be3b6808a28004a461a"
+    },
+    {
+      "bytes": 80,
+      "path": "src/ipin_openppi/model_optimization/__init__.py",
+      "sha256": "f02e7b31592b96551bdae031d8840fedc3239dd50b8633348c2a3744fb0306a6"
+    },
+    {
+      "bytes": 2996,
+      "path": "src/ipin_openppi/model_optimization/common.py",
+      "sha256": "b271305fe99c5ffe6ee915e6a294c1e9e1b427adc1680a832f7616219808440e"
+    },
+    {
+      "bytes": 4403,
+      "path": "src/ipin_openppi/model_optimization/metrics.py",
+      "sha256": "9092d3ee3522567804f33d60ee58161a724f13071b905205e5dd27feed42b6d0"
+    },
+    {
+      "bytes": 3067,
+      "path": "src/ipin_openppi/model_optimization/models.py",
+      "sha256": "90574feb103458cf56ae6ddf7b2800bb53b7a97314353d7cc620995496a0ca59"
+    },
+    {
+      "bytes": 10136,
+      "path": "src/ipin_openppi/model_optimization/prepare.py",
+      "sha256": "0e9f2a4080f2784a5ac7a5bce1874aa186be21c8f1e6eccf013bf0284b840f78"
+    },
+    {
+      "bytes": 15796,
+      "path": "src/ipin_openppi/model_optimization/run.py",
+      "sha256": "1a4944edee2a55f20b110df36f074ce9ea4d0d83a4c900eee0b894e3eaf8a640"
+    },
+    {
+      "bytes": 4348,
+      "path": "tests/test_model_optimization_v1.py",
+      "sha256": "a8ecbdc5adc61fa54e46e35516f4fcfabb9c14a5630f4beb2438c8eeb166d60d"
+    }
+  ],
+  "closed_at_utc": "2026-09-11T11:22:33.179644+00:00",
+  "prior_148_files_unchanged": true,
+  "study_id": "model_optimization_v1"
+}

@@ -1,0 +1,18 @@
+{
+  "baseline_concordance": 0.784142246349548,
+  "baseline_replay_concordance_error": 0.0,
+  "baseline_replay_max_score_error": 2.7418136596679688e-06,
+  "passed": true,
+  "protected_inputs_mounted": false,
+  "runtime": {
+    "amp": false,
+    "cuda": "13.0",
+    "deterministic_algorithms": true,
+    "device": "NVIDIA GH200 120GB",
+    "probe_device": "cuda:0",
+    "tf32": false,
+    "torch": "2.8.0a0+34c6371d24.nv25.08"
+  },
+  "training_positive_rows": 16799,
+  "training_unlabeled_rows": 2000000
+}

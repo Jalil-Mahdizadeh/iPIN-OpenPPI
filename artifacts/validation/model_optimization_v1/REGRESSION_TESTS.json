@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-11",
+  "model_sif_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+  "command": "PYTHONPATH=src PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q -p no:cacheprovider tests/test_model_optimization_v1.py tests/unit/test_development_embedding_identity.py tests/unit/test_development_evaluation_semantics.py tests/unit/test_stage1_models_and_baselines.py tests/unit/test_stage1_embeddings_and_objective.py tests/unit/test_protected_final_test_v1.py tests/unit/test_protected_final_publication_v1.py",
+  "cpu_suite_passed": 68,
+  "cpu_suite_skipped": 1,
+  "cpu_suite_seconds": 5.22,
+  "skipped_reason": "CUDA-specific fixture is intentionally skipped in the CPU invocation and passed in the separate isolated GPU suite.",
+  "isolated_gpu_suite_passed": 11,
+  "isolated_gpu_suite_skipped": 0,
+  "gpu_suite_record": "artifacts/results/model_optimization_v1/GPU_FIXTURE_TESTS.txt",
+  "protected_pair_data_accessed": false,
+  "tests_by_same_author_not_independent_replication": true
+}

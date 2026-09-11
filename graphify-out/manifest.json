@@ -805,8 +805,8 @@
     "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
   },
   "README.md": {
-    "mtime": 1789118470.0,
-    "ast_hash": "edcd1ce203b1b5742d51597ea2baa5dc",
+    "mtime": 1789125552.0,
+    "ast_hash": "d7b7b775937fa2ab99d57fbc263f7fd3",
     "semantic_hash": ""
   },
   "artifacts/validation/lambourne_y2h_audit_v1/attempts/attempt-001-validator-pre-fix/README.md": {
@@ -1045,8 +1045,8 @@
     "semantic_hash": "543dec3e0dce4d28a34d2750fc03fe4a"
   },
   "docs/reports/README.md": {
-    "mtime": 1789118470.0,
-    "ast_hash": "801b38fbe167e111b5393b89c4bd5aaf",
+    "mtime": 1789125552.0,
+    "ast_hash": "a5510ff925a560840540c3b54997c0d5",
     "semantic_hash": ""
   },
   "docs/reports/m0/M0_Container_Gate_Final_Report_v1.md": {
@@ -4027,6 +4027,186 @@
   "governance/gates/gate_status_v51.yaml": {
     "mtime": 1789118470.0,
     "ast_hash": "c36947f2737b0ee2ad574075b689f14b",
+    "semantic_hash": ""
+  },
+  "artifacts/results/protected_final_test_v1/ARTIFACT_REGISTRY.json": {
+    "mtime": 1789118743.0,
+    "ast_hash": "64eae53a1ad82aed028228c97ade1299",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_v1/SEARCH_FREEZE.json": {
+    "mtime": 1789124921.0,
+    "ast_hash": "2d15acf1bf88a241c315ca321f398d1c",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_v1/SEARCH_FREEZE_PREFIT_PLUGIN_FAILURE.json": {
+    "mtime": 1789124653.0,
+    "ast_hash": "6b8ec38e6d001b5de9ec5ced965298bb",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/protected_final_test_v1/COMPLETED_AUDIT.json": {
+    "mtime": 1789118743.0,
+    "ast_hash": "18c3ba981eb98a2d15333d6e2ea5a0d4",
+    "semantic_hash": ""
+  },
+  "configs/model_optimization_v1.json": {
+    "mtime": 1789124053.0,
+    "ast_hash": "27a493c51090dba0fd1c480377deedb6",
+    "semantic_hash": ""
+  },
+  "scripts/model/publish_model_optimization_v1.py": {
+    "mtime": 1789125750.0,
+    "ast_hash": "0f58d558716f9a2cf5dc181ce718f3ac",
+    "semantic_hash": ""
+  },
+  "scripts/model/run_model_optimization_v1.sh": {
+    "mtime": 1789124818.0,
+    "ast_hash": "a5f27a64c4fe1161431b3a38cbb590fd",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/model_optimization/__init__.py": {
+    "mtime": 1789124053.0,
+    "ast_hash": "1e28ff91c72496ddb5f06751a144fedc",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/model_optimization/common.py": {
+    "mtime": 1789124053.0,
+    "ast_hash": "722f6e67248839d16fd916c2ba4972df",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/model_optimization/metrics.py": {
+    "mtime": 1789124212.0,
+    "ast_hash": "3bada07ce45a1ebccfc27f731adafa37",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/model_optimization/models.py": {
+    "mtime": 1789124053.0,
+    "ast_hash": "d84bdab233febef28e7b35c13098130e",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/model_optimization/prepare.py": {
+    "mtime": 1789124818.0,
+    "ast_hash": "17baa6c32dcb758b4ff32f91f269b298",
+    "semantic_hash": ""
+  },
+  "src/ipin_openppi/model_optimization/run.py": {
+    "mtime": 1789124818.0,
+    "ast_hash": "ee0914391a25443b7010c68560eb26c0",
+    "semantic_hash": ""
+  },
+  "tests/test_model_optimization_v1.py": {
+    "mtime": 1789124539.0,
+    "ast_hash": "c8661747db1d6a7d10c49e6418fe5ffd",
+    "semantic_hash": ""
+  },
+  "docs/protocols/MODEL_OPTIMIZATION_v1.md": {
+    "mtime": 1789124053.0,
+    "ast_hash": "d0402a21f61b212f255c8185ca6441ac",
+    "semantic_hash": ""
+  },
+  "docs/protocols/MODEL_OPTIMIZATION_v1_PREFIT_TECHNICAL_ERRATUM.md": {
+    "mtime": 1789124818.0,
+    "ast_hash": "5417372b196d037e573fdf8df2732acf",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0052-development-only-optimization-and-conditional-followup.md": {
+    "mtime": 1789124053.0,
+    "ast_hash": "58a03c2c30ecc1ff93fc40c4ecb2dab9",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260911_092710_conduct_the_model_s_performance_on_the_final_test.md": {
+    "mtime": 1789118830.0,
+    "ast_hash": "757d85b75547f74bc3dbcdec451b9311",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260911_095809_i_would_ignore_the_bioplex_experiment_because_it_i.md": {
+    "mtime": 1789120688.0,
+    "ast_hash": "c75fad264e57c044c0f19cc3d770a58a",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260911_100557_since_a_simple_plm_pair_model_was_successful__i_wo.md": {
+    "mtime": 1789121157.0,
+    "ast_hash": "a7f924bf6ec91605028f9eb63797096a",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260911_102114_i_do_not_agree_with_you__if_you_optimize_architect.md": {
+    "mtime": 1789122074.0,
+    "ast_hash": "1ccf7852ccb25aa2dd280e8c14b1a8a6",
+    "semantic_hash": ""
+  },
+  "artifacts/results/model_optimization_v1/DEVELOPMENT_GATE.json": {
+    "mtime": 1789125391.0,
+    "ast_hash": "995161409a61ca2debfb48589f532192",
+    "semantic_hash": ""
+  },
+  "artifacts/results/model_optimization_v1/FIRST_FIT.json": {
+    "mtime": 1789125391.0,
+    "ast_hash": "2e1b2dc45144c7452ff4a67378241935",
+    "semantic_hash": ""
+  },
+  "artifacts/results/model_optimization_v1/PROMOTION.json": {
+    "mtime": 1789125391.0,
+    "ast_hash": "b511b5b2dac869015cad7e8a4c43d3b0",
+    "semantic_hash": ""
+  },
+  "artifacts/results/model_optimization_v1/QUALIFICATION.json": {
+    "mtime": 1789125391.0,
+    "ast_hash": "c889f9cb6740e50f5ac69bccf28c00d9",
+    "semantic_hash": ""
+  },
+  "artifacts/results/model_optimization_v1/RESULTS.json": {
+    "mtime": 1789125391.0,
+    "ast_hash": "2d441b30d2a57d62ea1e5aebbf9e776c",
+    "semantic_hash": ""
+  },
+  "artifacts/results/model_optimization_v1/SELECTION.json": {
+    "mtime": 1789125391.0,
+    "ast_hash": "0f1669377b147b32fdf2570f7e64bdf7",
+    "semantic_hash": ""
+  },
+  "artifacts/results/model_optimization_v1/START.json": {
+    "mtime": 1789125391.0,
+    "ast_hash": "08e9e75b50b5a1a13f4c4d0e2ad91727",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_v1/COMPLETED_SEARCH_AUDIT.json": {
+    "mtime": 1789125391.0,
+    "ast_hash": "2aad0b4165374eb16eb87cc7d9e8ca70",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_v1/FULL_CENSUS_AUDIT.json": {
+    "mtime": 1789125660.0,
+    "ast_hash": "74508cad85e5167f75e3fb66f8051714",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/model_optimization_v1/REGRESSION_TESTS.json": {
+    "mtime": 1789125384.0,
+    "ast_hash": "5b5d7211035c733eeb2ac4430188b89a",
+    "semantic_hash": ""
+  },
+  "scripts/model/audit_model_optimization_v1.py": {
+    "mtime": 1789125652.0,
+    "ast_hash": "6d6cc273a8bc2328a5d18fe6d82a5073",
+    "semantic_hash": ""
+  },
+  "artifacts/results/model_optimization_v1/GPU_FIXTURE_TESTS.txt": {
+    "mtime": 1789125391.0,
+    "ast_hash": "3c7ca41e685dec9f4ba8b23c6c986987",
+    "semantic_hash": ""
+  },
+  "docs/reports/m1/M1_Model_Optimization_v1.md": {
+    "mtime": 1789125750.0,
+    "ast_hash": "c6bea7b154bf522d4d8fabb25b92201b",
+    "semantic_hash": ""
+  },
+  "governance/PROJECT_STATUS_v52.md": {
+    "mtime": 1789125552.0,
+    "ast_hash": "dc7a18a23f037f9c13ffbf61bbb92fb7",
+    "semantic_hash": ""
+  },
+  "governance/gates/gate_status_v52.yaml": {
+    "mtime": 1789125552.0,
+    "ast_hash": "c6c87c0720f06c6a2c223409e411b010",
     "semantic_hash": ""
   }
 }

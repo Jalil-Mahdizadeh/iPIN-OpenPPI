@@ -1,0 +1,28 @@
+{
+  "study_id": "model_optimization_v1",
+  "encoders": ["esm2_150m", "esm2_650m"],
+  "seeds": [20260803, 20260817, 20260831],
+  "batch_size": 8192,
+  "stage1_epochs": 3,
+  "promoted_recipes": 4,
+  "stage2_epochs": 8,
+  "stage2_evaluation_epochs": [4, 8],
+  "search_seconds": 6300,
+  "total_gpu_seconds": 7200,
+  "bootstrap_replicates": 2000,
+  "seed_range_limit": 0.02,
+  "recipes_per_encoder": [
+    {"name": "linear_slow", "family": "linear", "width": 0, "dropout": 0.0, "lr": 0.0001, "weight_decay": 0.01},
+    {"name": "linear_base_lr", "family": "linear", "width": 0, "dropout": 0.0, "lr": 0.0003, "weight_decay": 0.01},
+    {"name": "linear_fast", "family": "linear", "width": 0, "dropout": 0.0, "lr": 0.001, "weight_decay": 0.01},
+    {"name": "linear_regularized", "family": "linear", "width": 0, "dropout": 0.0, "lr": 0.001, "weight_decay": 0.1},
+    {"name": "mlp_small", "family": "mlp", "width": 64, "dropout": 0.1, "lr": 0.0003, "weight_decay": 0.01},
+    {"name": "mlp_wide", "family": "mlp", "width": 256, "dropout": 0.3, "lr": 0.0001, "weight_decay": 0.01},
+    {"name": "mlp_fast", "family": "mlp", "width": 128, "dropout": 0.1, "lr": 0.001, "weight_decay": 0.1},
+    {"name": "residual_small", "family": "residual_mlp", "width": 64, "dropout": 0.1, "lr": 0.0003, "weight_decay": 0.01},
+    {"name": "residual_wide", "family": "residual_mlp", "width": 256, "dropout": 0.3, "lr": 0.0001, "weight_decay": 0.01},
+    {"name": "residual_fast", "family": "residual_mlp", "width": 128, "dropout": 0.1, "lr": 0.001, "weight_decay": 0.1},
+    {"name": "bilinear_small", "family": "bilinear", "width": 32, "dropout": 0.0, "lr": 0.0003, "weight_decay": 0.01},
+    {"name": "bilinear_wide", "family": "bilinear", "width": 128, "dropout": 0.0, "lr": 0.001, "weight_decay": 0.1}
+  ]
+}
