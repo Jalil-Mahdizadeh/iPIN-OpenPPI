@@ -1,0 +1,4159 @@
+{
+  "artifacts": [
+    {
+      "bytes": 53158,
+      "path": "artifacts/runs/homology_source_challenge_v1/normalization_purged20_0.npz",
+      "sha256": "bd5fc4e7178772fd0eaedc0ed0c04a7fbf108f314e97803e6e1d23473a83eaf8"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_endpoint_linear_s20260911.pt",
+      "sha256": "5a530fe6d4f3739105ed05b40d0d372db82fcfbc002ea9f1b9eca248b1517b86"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_endpoint_linear_s20260911.json",
+      "sha256": "c1df6b76f8d1a74a0e6e21a228834d3a8de4c3fdf6eb2323b6d92e31ba2905c6"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_endpoint_linear_s20260912.pt",
+      "sha256": "a838214b653fed87fe95897bbee545f3ffa2a422c720f56612047347c4246774"
+    },
+    {
+      "bytes": 1993,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_endpoint_linear_s20260912.json",
+      "sha256": "d48d6baddc57a61f1a0c1cf35a82de56e6b0d26323c070ef4ca9513a6434b6b1"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_endpoint_linear_s20260913.pt",
+      "sha256": "7901c9076167a3fa69658499207e9c41bbfab6fe9536f4b315e200f8e6b432f4"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_endpoint_linear_s20260913.json",
+      "sha256": "63ed27270864b39e81982bde2c4ce7f4df030fc82fcdde446ea16069879e5dea"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_pair_linear_s20260911.pt",
+      "sha256": "7084b628e9cffa26ad93a5b3e3601cad2e89a8a48358c9b1e786d6cfc899355f"
+    },
+    {
+      "bytes": 1986,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_pair_linear_s20260911.json",
+      "sha256": "21236d880187544526304a89c044d5b5a050bd554eb5d17515cff2b73c79b95c"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_pair_linear_s20260912.pt",
+      "sha256": "b81bb2c491bc312227de3aaf85a4b0d9fd31f59a8c7c7e62bae46bfaaa134c36"
+    },
+    {
+      "bytes": 1986,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_pair_linear_s20260912.json",
+      "sha256": "b5fed9455be84fa2c434a8789e2ffbcae16b5404ec47270cef9fe16a48fd4f5a"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_pair_linear_s20260913.pt",
+      "sha256": "a673236cbb7cebc42d86b031cd4fe1d3c849dcf3beda46cc2a25c72fe55ed35a"
+    },
+    {
+      "bytes": 1985,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_pair_linear_s20260913.json",
+      "sha256": "7278721d56eca9156221111eca230fe73c69a208b13e968fbfce143ad7550f2f"
+    },
+    {
+      "bytes": 47950,
+      "path": "artifacts/runs/homology_source_challenge_v1/normalization_purged20_1.npz",
+      "sha256": "8374dc6cdd454a8af3fb9f5683d09949d6e76f0136c5d37d2c02a7b0f49e3c88"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_endpoint_linear_s20260911.pt",
+      "sha256": "b1354d83c5fdc4640d52db8098a5f5ea13711143a2bccb58371341fdb812e7b7"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_endpoint_linear_s20260911.json",
+      "sha256": "0939e80069e4bac9fdbfaf6720718a69df074185c4813b1f4d2ef6ab71dce0c5"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_endpoint_linear_s20260912.pt",
+      "sha256": "d0fa0103b9dce608c9b4d1fb887fe2a7d92b0f90cdf5664ed2c513d4a067b882"
+    },
+    {
+      "bytes": 1990,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_endpoint_linear_s20260912.json",
+      "sha256": "e5db46a7144c278ffd0989e145c227827abfe276fcdc1bafeb42f1a59dec92ac"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_endpoint_linear_s20260913.pt",
+      "sha256": "02b782a5b2839f3c1b52ddf44cd6342afedd685d2343f78c12f1800311a83efc"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_endpoint_linear_s20260913.json",
+      "sha256": "d0b3582ef623de6ca26f3aa44574e509efd54ae388931cee35858ea6a38c951e"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_pair_linear_s20260911.pt",
+      "sha256": "1b132147eca29e1cb1566ef55d8f0b24af3bffc1d035278cc135e7b2600524d1"
+    },
+    {
+      "bytes": 1984,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_pair_linear_s20260911.json",
+      "sha256": "282b41b99766139134d832ad02ff3d97fc824c6b3981d89b24171e4721b4fabe"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_pair_linear_s20260912.pt",
+      "sha256": "a95728117c6c6132e7fef44a6a96116447492a41d377c57a0a436e44d33731b8"
+    },
+    {
+      "bytes": 1986,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_pair_linear_s20260912.json",
+      "sha256": "b0bb5d318fefc8ee9ef9137882636fc29936956af6a73257500f7a57c00010da"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_pair_linear_s20260913.pt",
+      "sha256": "d24595be7c0f87bd64cca259b53a1818e411746005f0c024a9be2d62578092fa"
+    },
+    {
+      "bytes": 1985,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_pair_linear_s20260913.json",
+      "sha256": "a0bd3e018cc442d00e32258d1dfe909df93d0e6426568605c67021e0280c3309"
+    },
+    {
+      "bytes": 47806,
+      "path": "artifacts/runs/homology_source_challenge_v1/normalization_purged20_2.npz",
+      "sha256": "7582be415078065c0bb494d758757964191d50412587f0720c2778d4bcf7a454"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_endpoint_linear_s20260911.pt",
+      "sha256": "43d686f9c54f25fdf630c3a90cdff76315e281b5f9b5c2a3ed7d7dc5414031e3"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_endpoint_linear_s20260911.json",
+      "sha256": "09b98233331b40afec9655370e12e12ba9df4b54541ed6cb8fe78afb40f9231c"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_endpoint_linear_s20260912.pt",
+      "sha256": "23d426e11f37b8b790492b19e0fef1c821f324139d3e702a99e90a5c7ff50d73"
+    },
+    {
+      "bytes": 1991,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_endpoint_linear_s20260912.json",
+      "sha256": "fcffcb7432ea51bf11b6fed0179e9c0064593fcd63e4b9cf0246f61b6ce71b87"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_endpoint_linear_s20260913.pt",
+      "sha256": "457c599ec59d6c76b3fd118b31380a1ab39155aac4ca0196deb65aaddc4464d1"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_endpoint_linear_s20260913.json",
+      "sha256": "6585b25aeea5d7b259a740a5b93b720ba4a9f59d314239c9ef44b1aa6c281337"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_pair_linear_s20260911.pt",
+      "sha256": "e87045f7123eb20c8732312902ebbaf4de95ad5482c0c21e2de75fc98146dee7"
+    },
+    {
+      "bytes": 1986,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_pair_linear_s20260911.json",
+      "sha256": "b5cbd042561708c1e96a01e718612c7b316555369bb02979c9966b1a671aed55"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_pair_linear_s20260912.pt",
+      "sha256": "18fcfb9411f9146f7f4e9a1a2fcac6562b63e8f96c0f20c67a1e3fb0aeceb780"
+    },
+    {
+      "bytes": 1984,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_pair_linear_s20260912.json",
+      "sha256": "061fb1ae890af7f200d704f16aa9a5de86e95ee11612f79059c48712672caa29"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_pair_linear_s20260913.pt",
+      "sha256": "f7f9e3ddc3588707e6bbd47970aa51f48413dfcf4426fdc9df67c923800f1188"
+    },
+    {
+      "bytes": 1984,
+      "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_pair_linear_s20260913.json",
+      "sha256": "b83450379ba9e1ae5ea702def015e0ee2fceceb23dc66d9c979c2320594507c9"
+    },
+    {
+      "bytes": 74462,
+      "path": "artifacts/runs/homology_source_challenge_v1/normalization_hi_to_huri_0.npz",
+      "sha256": "5bcb1edc223b84d1c1c83ec69b56a7735dab4d97ee8806da3bdc5522d23d3a82"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_endpoint_linear_s20260911.pt",
+      "sha256": "932ca0e77ea1fbc73e9e53a112cc4e116794866d223d4ef894f67315891fc370"
+    },
+    {
+      "bytes": 1998,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_endpoint_linear_s20260911.json",
+      "sha256": "12833f66cfe4fc529f08add40b32bf437fde2e5baa938245fbcb3d37c8747dc0"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_endpoint_linear_s20260912.pt",
+      "sha256": "007842baae3121ffaf69d8bf17a0b2224fbaf886a271d7d4800ce656338a028d"
+    },
+    {
+      "bytes": 1994,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_endpoint_linear_s20260912.json",
+      "sha256": "3487bb6e7a5c0e72261d0af88c2f1847df4997d29d5d82f24257b48cc0cdfa85"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_endpoint_linear_s20260913.pt",
+      "sha256": "09f2adf5a7738b20a9c8bae79f02063ccdd3441a674a376f3f1321f2b53dde27"
+    },
+    {
+      "bytes": 2000,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_endpoint_linear_s20260913.json",
+      "sha256": "952b98c044c4ea72daa976057ba280b703a4a8dc6c411561cf6d1edb650b9890"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_pair_linear_s20260911.pt",
+      "sha256": "29d882237af16f2d6a5cf9a9c4c874c98fe62a14f729c699dea37a7e57bb0c3a"
+    },
+    {
+      "bytes": 1990,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_pair_linear_s20260911.json",
+      "sha256": "3bae2450c8c90f2660b95476d87178018038a4c8fa8f9f1d6b3f239bab506a49"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_pair_linear_s20260912.pt",
+      "sha256": "e729f409b01b9fab9d1f0b36c91019cf163c9d9209fde0bb7097dc7133aae2ab"
+    },
+    {
+      "bytes": 1991,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_pair_linear_s20260912.json",
+      "sha256": "bc769b1851483c9006f9f40b2d607399373d1b87da19680c414e8afe1ed6a22a"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_pair_linear_s20260913.pt",
+      "sha256": "416fd130b9ab6d2e5b9e2f27f4662be52d560813c5b7a309e22c2369e2d46220"
+    },
+    {
+      "bytes": 1993,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_pair_linear_s20260913.json",
+      "sha256": "5b8b6c8e32584036b67c417d469a750da594de0d6dbddc7cf046ebd8ba36fb04"
+    },
+    {
+      "bytes": 74462,
+      "path": "artifacts/runs/homology_source_challenge_v1/normalization_hi_to_huri_1.npz",
+      "sha256": "626b43a538e9c1ad8ba39cbd3338f645114aecdd4f2875396633e9ce9c7b935f"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_endpoint_linear_s20260911.pt",
+      "sha256": "54e83de6bbeb91f5b17cf53e247303c1f33fe1688ed3a4fe97fa6ab0f159b168"
+    },
+    {
+      "bytes": 2000,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_endpoint_linear_s20260911.json",
+      "sha256": "7f5d0027c8582c30e54c58c446d999b5215db613a7a72e101c3a52c4dbcd4925"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_endpoint_linear_s20260912.pt",
+      "sha256": "6ea633a1c67f37dd98ab8988ea48a218a578ebf5754ba8deb4ffc52c99370007"
+    },
+    {
+      "bytes": 1997,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_endpoint_linear_s20260912.json",
+      "sha256": "358b0bb4cff217a4b290273164d1a938af87a1fcf74b87bf96f794987c95d2d7"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_endpoint_linear_s20260913.pt",
+      "sha256": "f394a0e8c48bf33edc3c4c563b323669faa35e0c799a1ec8f994c5460ea47555"
+    },
+    {
+      "bytes": 1998,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_endpoint_linear_s20260913.json",
+      "sha256": "4e80d1d26f86d7f0257b9010ba48c23418cca00a4faad7d3c6d68d0e4ce9aeae"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_pair_linear_s20260911.pt",
+      "sha256": "892ac46b71efd10fb85250d836bb9f9c43b4ccfb5f7207ad73551837555e8b01"
+    },
+    {
+      "bytes": 1991,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_pair_linear_s20260911.json",
+      "sha256": "ea00d18767b6ab97e0771bb39a07c448230ac7e4d92a9a323bbf212428bb89c1"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_pair_linear_s20260912.pt",
+      "sha256": "9ef324574cc4caba2b2fb4b9e8130827bcd5d6797acac9ff785aaf640beb467d"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_pair_linear_s20260912.json",
+      "sha256": "22f11d504c4a523f5d3fbd47bbd1f3944a3c6d99bfb3271084831ed729856bab"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_pair_linear_s20260913.pt",
+      "sha256": "ca4b6b721f0594f21f3b706117f277790feeb06ca053ba2f7205b163c49a2b6f"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_pair_linear_s20260913.json",
+      "sha256": "9f342c8e152e05204862c2750a803c8f185597ad4ab0c5d2b2c971f020bc1219"
+    },
+    {
+      "bytes": 74470,
+      "path": "artifacts/runs/homology_source_challenge_v1/normalization_hi_to_huri_2.npz",
+      "sha256": "b4047befcea4289634d83a1ee68f4c7a60014783b325796d78224ad982006242"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_endpoint_linear_s20260911.pt",
+      "sha256": "ae5a4d9455c9be8995a9343ff33753b2a3dc4ce177a98cedabd82311b21cabbc"
+    },
+    {
+      "bytes": 2000,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_endpoint_linear_s20260911.json",
+      "sha256": "9c59723b8c8317a02603aa61cc31a2a955a923b766c3744355940e3c9dc172dc"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_endpoint_linear_s20260912.pt",
+      "sha256": "4b7ed105cdd790b446ba40e593d968629639b3fe31ae5ba300b4c95c4b18d123"
+    },
+    {
+      "bytes": 1999,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_endpoint_linear_s20260912.json",
+      "sha256": "d85be5cc298e7984726a8c652b8de44e0de2f51cb3d28ab00d1c5ac5a002eb7d"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_endpoint_linear_s20260913.pt",
+      "sha256": "0893fbb034e5923546b8ac0a4fc1630e31fd5d8bd7a7a744a7900d7ce8a1bc6e"
+    },
+    {
+      "bytes": 1999,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_endpoint_linear_s20260913.json",
+      "sha256": "98e0d906d0d3892f5de54865eb1f33874a15d972b07f89f2113af27f1f0a9d76"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_pair_linear_s20260911.pt",
+      "sha256": "fab3fe9bc2d969311b7561a483d6fcadc1a27787f0fddf5868dcb86bda0df542"
+    },
+    {
+      "bytes": 1991,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_pair_linear_s20260911.json",
+      "sha256": "6519a6cab4bd6cdc4abf4b2d82916e6fe06fd98aafaea2847c0256f88fa07cd0"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_pair_linear_s20260912.pt",
+      "sha256": "49820e02ed7ef4a473ebffa4885cbf97bd09957e1df7e6b2b88b04d32ac7e380"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_pair_linear_s20260912.json",
+      "sha256": "9226bdcf1bdf10fc293f90618f831a1a10c2bcc03384250312bbdc7a5765ac02"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_pair_linear_s20260913.pt",
+      "sha256": "5e1edac23825ee50b4ae57a935a0c9244c7524f7728c9262e97099edd6edeabb"
+    },
+    {
+      "bytes": 1990,
+      "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_pair_linear_s20260913.json",
+      "sha256": "b4dcea2b62db920e5d5a0675ac763334d6de0c1d8d9b9a35eedd09f4e5269ddd"
+    },
+    {
+      "bytes": 74462,
+      "path": "artifacts/runs/homology_source_challenge_v1/normalization_huri_to_hi_0.npz",
+      "sha256": "5bcb1edc223b84d1c1c83ec69b56a7735dab4d97ee8806da3bdc5522d23d3a82"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_endpoint_linear_s20260911.pt",
+      "sha256": "cc6e672e9f8c5e1c674f09e60ece3edd3a231f89f0dbcf127c991a25dbc11038"
+    },
+    {
+      "bytes": 1998,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_endpoint_linear_s20260911.json",
+      "sha256": "a83a7f0e31b15696745c3e2350aca6f9cf24520032882cfed888a9dbfb097c2c"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_endpoint_linear_s20260912.pt",
+      "sha256": "7c8d2519cb33d237baf20d3d474720e6e801dfc656239ca8fb9e6ae5738afdb8"
+    },
+    {
+      "bytes": 1998,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_endpoint_linear_s20260912.json",
+      "sha256": "a79170a10dc1dcaf397d9d1e84144e803499adb2ded67b26c88fc325a1f1b899"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_endpoint_linear_s20260913.pt",
+      "sha256": "bf61447ef1c4908a3eadcd25d41ed99ade46d8e60903bd7728995541a92e6071"
+    },
+    {
+      "bytes": 1997,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_endpoint_linear_s20260913.json",
+      "sha256": "1b68583b776bd51fea23e562abd610ebba5e12693e26e47ee64755546044303b"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_pair_linear_s20260911.pt",
+      "sha256": "5696ead78db624751677e4133a697e7539d1c99ee67ca017613f0d2424d53522"
+    },
+    {
+      "bytes": 1993,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_pair_linear_s20260911.json",
+      "sha256": "204e695bfc1b1aa85aa96f0de009b9f018387457ca857243580848797c38ccf7"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_pair_linear_s20260912.pt",
+      "sha256": "7c2d7b62c364e973e3ff85e3f4405fa54739cfb672f14543ad56ec3fd75c56df"
+    },
+    {
+      "bytes": 1989,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_pair_linear_s20260912.json",
+      "sha256": "b83a6fe478a1eed686ef5cc46c73907910fcce88e205e6a18d4011ffe8b53426"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_pair_linear_s20260913.pt",
+      "sha256": "adda448e349bbbd294ebd8929ba45ed8c526498de361ecb17b7e8f63a5eb4b06"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_pair_linear_s20260913.json",
+      "sha256": "4e26c6123fb2423e4eeacde23d137af97335d600f736a5b92852fba1ea57790d"
+    },
+    {
+      "bytes": 74462,
+      "path": "artifacts/runs/homology_source_challenge_v1/normalization_huri_to_hi_1.npz",
+      "sha256": "626b43a538e9c1ad8ba39cbd3338f645114aecdd4f2875396633e9ce9c7b935f"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_endpoint_linear_s20260911.pt",
+      "sha256": "ef3d78d3b884426d0c2f07ba8e00c0d023706e320d6c7bbc0064c6f9bfa427f4"
+    },
+    {
+      "bytes": 1995,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_endpoint_linear_s20260911.json",
+      "sha256": "ed9ee70085fd88ad7b3bb2a1840043ca5de6fd3de9fc20e471cf0f577d402bd9"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_endpoint_linear_s20260912.pt",
+      "sha256": "d7fffc50bf5b2e169d45de72fc308d6db2e7994101637723e336f1176de944e5"
+    },
+    {
+      "bytes": 1997,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_endpoint_linear_s20260912.json",
+      "sha256": "b9c090090f7a48c341f7471bb98610947288f661c35c2bb0e82363ad65f00eb8"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_endpoint_linear_s20260913.pt",
+      "sha256": "a9bc2a7be8ee71ebb5a99cce16560d38ca476d547f4a3c4712529c2b2f087585"
+    },
+    {
+      "bytes": 1999,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_endpoint_linear_s20260913.json",
+      "sha256": "8b13092178b124e288d5562888e02c4aa3dff2aafcffea5181d01ccbf3bc0468"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_pair_linear_s20260911.pt",
+      "sha256": "3e0a878e78b8f6c418d487b40449a9350a5a6801d4a0c8778a498034106f62bf"
+    },
+    {
+      "bytes": 1990,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_pair_linear_s20260911.json",
+      "sha256": "ef464a1cb486513c3f25d281d7dd775608a7bb6266eeb0b1d62c8916531bc53d"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_pair_linear_s20260912.pt",
+      "sha256": "6da67d8a57c7db404c8f2ccae650d12ecff9033734db212e30761dd54dabd55a"
+    },
+    {
+      "bytes": 1985,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_pair_linear_s20260912.json",
+      "sha256": "52d1b9d737f021411f6149e83cbd5934d41c7c2d97dbb575b29c97127c8ac202"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_pair_linear_s20260913.pt",
+      "sha256": "ff8202b4560ebc9aca2f35e18049354d4cc26d759a25fc46a2e263b3799dab74"
+    },
+    {
+      "bytes": 1990,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_pair_linear_s20260913.json",
+      "sha256": "a864d78c270c0795ddd2cc52095ae8c6b22a1a67dcf2622136ee33cd002593ee"
+    },
+    {
+      "bytes": 74470,
+      "path": "artifacts/runs/homology_source_challenge_v1/normalization_huri_to_hi_2.npz",
+      "sha256": "b4047befcea4289634d83a1ee68f4c7a60014783b325796d78224ad982006242"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_endpoint_linear_s20260911.pt",
+      "sha256": "895b4248a0dcb4cbdee2df1acbce85a8655ed4cbec3f2ea27f5084652e96b250"
+    },
+    {
+      "bytes": 1998,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_endpoint_linear_s20260911.json",
+      "sha256": "3ba5d2e84103e784f2b0b2b0b7849c8fc3078a6df82a9dd76c86ac301ae8c8b2"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_endpoint_linear_s20260912.pt",
+      "sha256": "cb6c8e37466e91d05d47489515b3c7a71dc9709e00f99e6f79ae62fbca602bd0"
+    },
+    {
+      "bytes": 1998,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_endpoint_linear_s20260912.json",
+      "sha256": "859bc2ac2c2020ace56c171c746de011d32dbe6925dd8d094a22caae508cb8cc"
+    },
+    {
+      "bytes": 4581,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_endpoint_linear_s20260913.pt",
+      "sha256": "93d6c2125cf233e0023547a9e6dd531b2a0bc48e8d30a1a7bbd28c965cbfeb0f"
+    },
+    {
+      "bytes": 1997,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_endpoint_linear_s20260913.json",
+      "sha256": "3a536f109b6a2c9e16de43bdfb338def3707e9ee7eb2eceaad1f4e4141fd911c"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_pair_linear_s20260911.pt",
+      "sha256": "2f0db00f170e075381a15b92239881a6371add3415fe573711f143932c85c2b2"
+    },
+    {
+      "bytes": 1993,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_pair_linear_s20260911.json",
+      "sha256": "ab08d2806894f26acc455d2b9d7919dfd5b5f8b335cd49e0c36b9f2c305b9b2a"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_pair_linear_s20260912.pt",
+      "sha256": "a97aa545c9289680db2a7beb10362bdc6ce83ac0c1106ff0ef623ff9992a8743"
+    },
+    {
+      "bytes": 1991,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_pair_linear_s20260912.json",
+      "sha256": "3fed52902766739fecadf9c2f28db74a28d6eb23b0ec8aa0880e98c1f8c061ac"
+    },
+    {
+      "bytes": 9765,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_pair_linear_s20260913.pt",
+      "sha256": "ba9199d64f6d8aab10c6af62d5e91066e588ff45eed337a103cc78f47768dd82"
+    },
+    {
+      "bytes": 1992,
+      "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_pair_linear_s20260913.json",
+      "sha256": "77466c9df6ba3511143ac83be522b2d70cbcaa1bad96eb32dffa17e12301c51c"
+    }
+  ],
+  "created_utc": "2026-09-11T00:35:59.729390+00:00",
+  "elapsed_seconds": 126.17487397900186,
+  "expected_fits": 54,
+  "new_holdout_scoring_performed": false,
+  "runs": [
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_endpoint_linear_s20260911.pt",
+        "sha256": "5a530fe6d4f3739105ed05b40d0d372db82fcfbc002ea9f1b9eca248b1517b86"
+      },
+      "elapsed_seconds": 1.6402854239968292,
+      "fit_P": 3595,
+      "fit_U": 414772,
+      "fold": 0,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "1317a60208bba591ed34e1b938b0f88bc2d242250d0356b9c29ebba99b59b751",
+            "u": "a4cf83894d72ccd15ab08466398be5557a25d89b57b969accdbe6c31c85d0b57"
+          },
+          "pass": 1,
+          "steps": 102,
+          "training_loss": 0.6717032862671506
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "32e9826c6b71faa6d87ab4674fe2cbbef1af9c13cbbca50bf6dcc63350b3b86d",
+            "u": "5d6bf8a5eec71c73851e478e3ca19bd9958eaa96e256043313353114ca3825c5"
+          },
+          "pass": 2,
+          "steps": 204,
+          "training_loss": 0.5118755103698435
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "7ca98f973f053fd8f1455a3851c891a32902cf5e150228fa0a0ff846d0cafdd6",
+            "u": "612fa30001d71b2279bec01ae30ee82fba9bfec6509fa42d8f400536edb006aa"
+          },
+          "pass": 3,
+          "steps": 306,
+          "training_loss": 0.4854937468211133
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "863271a7b12897414b77d3f2e42f8f598fdf30ec1882153bf6ad9a9f4d603be2",
+            "u": "71666328aac2121bcbb54ca05bdba3cf167128d9cbb608d0eddaadffbc2191f0"
+          },
+          "pass": 4,
+          "steps": 408,
+          "training_loss": 0.4742353439884015
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "bc1cb3a5e594a5d6fecd4690d6eab9d24cd91039a9b4275bdee46098fdffd3e5",
+            "u": "22f6f6c1169f31ec56e1f76119ec44ba55605b0558852b19590772cb9469ebe6"
+          },
+          "pass": 5,
+          "steps": 510,
+          "training_loss": 0.4695410593301055
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_endpoint_linear_s20260912.pt",
+        "sha256": "a838214b653fed87fe95897bbee545f3ffa2a422c720f56612047347c4246774"
+      },
+      "elapsed_seconds": 1.2978336219966877,
+      "fit_P": 3595,
+      "fit_U": 414772,
+      "fold": 0,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "32e9826c6b71faa6d87ab4674fe2cbbef1af9c13cbbca50bf6dcc63350b3b86d",
+            "u": "5d6bf8a5eec71c73851e478e3ca19bd9958eaa96e256043313353114ca3825c5"
+          },
+          "pass": 1,
+          "steps": 102,
+          "training_loss": 0.6086495563628647
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "7ca98f973f053fd8f1455a3851c891a32902cf5e150228fa0a0ff846d0cafdd6",
+            "u": "612fa30001d71b2279bec01ae30ee82fba9bfec6509fa42d8f400536edb006aa"
+          },
+          "pass": 2,
+          "steps": 204,
+          "training_loss": 0.5052421898353371
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "863271a7b12897414b77d3f2e42f8f598fdf30ec1882153bf6ad9a9f4d603be2",
+            "u": "71666328aac2121bcbb54ca05bdba3cf167128d9cbb608d0eddaadffbc2191f0"
+          },
+          "pass": 3,
+          "steps": 306,
+          "training_loss": 0.4794162283770945
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "bc1cb3a5e594a5d6fecd4690d6eab9d24cd91039a9b4275bdee46098fdffd3e5",
+            "u": "22f6f6c1169f31ec56e1f76119ec44ba55605b0558852b19590772cb9469ebe6"
+          },
+          "pass": 4,
+          "steps": 408,
+          "training_loss": 0.46843418461684116
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "a4eac078c95ed1a11c3d0efb9b5f1256143c0ce8cea4ada4e0b7d3efedb04265",
+            "u": "7b99b0f7356281ba6ee8356845e16d8fc5a9e9feb2b06febad4509a7ccc36e15"
+          },
+          "pass": 5,
+          "steps": 510,
+          "training_loss": 0.4641073715866243
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_endpoint_linear_s20260913.pt",
+        "sha256": "7901c9076167a3fa69658499207e9c41bbfab6fe9536f4b315e200f8e6b432f4"
+      },
+      "elapsed_seconds": 1.313750347999303,
+      "fit_P": 3595,
+      "fit_U": 414772,
+      "fold": 0,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "7ca98f973f053fd8f1455a3851c891a32902cf5e150228fa0a0ff846d0cafdd6",
+            "u": "612fa30001d71b2279bec01ae30ee82fba9bfec6509fa42d8f400536edb006aa"
+          },
+          "pass": 1,
+          "steps": 102,
+          "training_loss": 0.6132554100929298
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "863271a7b12897414b77d3f2e42f8f598fdf30ec1882153bf6ad9a9f4d603be2",
+            "u": "71666328aac2121bcbb54ca05bdba3cf167128d9cbb608d0eddaadffbc2191f0"
+          },
+          "pass": 2,
+          "steps": 204,
+          "training_loss": 0.508886798975337
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "bc1cb3a5e594a5d6fecd4690d6eab9d24cd91039a9b4275bdee46098fdffd3e5",
+            "u": "22f6f6c1169f31ec56e1f76119ec44ba55605b0558852b19590772cb9469ebe6"
+          },
+          "pass": 3,
+          "steps": 306,
+          "training_loss": 0.4832997234665051
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "a4eac078c95ed1a11c3d0efb9b5f1256143c0ce8cea4ada4e0b7d3efedb04265",
+            "u": "7b99b0f7356281ba6ee8356845e16d8fc5a9e9feb2b06febad4509a7ccc36e15"
+          },
+          "pass": 4,
+          "steps": 408,
+          "training_loss": 0.47236216107668766
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "84e38ab95382795272af0be3a5c6e30c09509e68b3104af285ea616a7269dd78",
+            "u": "5f08a188fe78d0b4d9ef86db3ae33ac3e93caf82e0099ccea7d4a8ec63d43d02"
+          },
+          "pass": 5,
+          "steps": 510,
+          "training_loss": 0.46735415541881087
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_pair_linear_s20260911.pt",
+        "sha256": "7084b628e9cffa26ad93a5b3e3601cad2e89a8a48358c9b1e786d6cfc899355f"
+      },
+      "elapsed_seconds": 1.3192375379985606,
+      "fit_P": 3595,
+      "fit_U": 414772,
+      "fold": 0,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "1317a60208bba591ed34e1b938b0f88bc2d242250d0356b9c29ebba99b59b751",
+            "u": "a4cf83894d72ccd15ab08466398be5557a25d89b57b969accdbe6c31c85d0b57"
+          },
+          "pass": 1,
+          "steps": 102,
+          "training_loss": 0.513598979111644
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "32e9826c6b71faa6d87ab4674fe2cbbef1af9c13cbbca50bf6dcc63350b3b86d",
+            "u": "5d6bf8a5eec71c73851e478e3ca19bd9958eaa96e256043313353114ca3825c5"
+          },
+          "pass": 2,
+          "steps": 204,
+          "training_loss": 0.3381337236618691
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "7ca98f973f053fd8f1455a3851c891a32902cf5e150228fa0a0ff846d0cafdd6",
+            "u": "612fa30001d71b2279bec01ae30ee82fba9bfec6509fa42d8f400536edb006aa"
+          },
+          "pass": 3,
+          "steps": 306,
+          "training_loss": 0.30610448143606217
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "863271a7b12897414b77d3f2e42f8f598fdf30ec1882153bf6ad9a9f4d603be2",
+            "u": "71666328aac2121bcbb54ca05bdba3cf167128d9cbb608d0eddaadffbc2191f0"
+          },
+          "pass": 4,
+          "steps": 408,
+          "training_loss": 0.29345498524734037
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "bc1cb3a5e594a5d6fecd4690d6eab9d24cd91039a9b4275bdee46098fdffd3e5",
+            "u": "22f6f6c1169f31ec56e1f76119ec44ba55605b0558852b19590772cb9469ebe6"
+          },
+          "pass": 5,
+          "steps": 510,
+          "training_loss": 0.28829389109678666
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_pair_linear_s20260912.pt",
+        "sha256": "b81bb2c491bc312227de3aaf85a4b0d9fd31f59a8c7c7e62bae46bfaaa134c36"
+      },
+      "elapsed_seconds": 1.2915361209998082,
+      "fit_P": 3595,
+      "fit_U": 414772,
+      "fold": 0,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "32e9826c6b71faa6d87ab4674fe2cbbef1af9c13cbbca50bf6dcc63350b3b86d",
+            "u": "5d6bf8a5eec71c73851e478e3ca19bd9958eaa96e256043313353114ca3825c5"
+          },
+          "pass": 1,
+          "steps": 102,
+          "training_loss": 0.4959912562640813
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "7ca98f973f053fd8f1455a3851c891a32902cf5e150228fa0a0ff846d0cafdd6",
+            "u": "612fa30001d71b2279bec01ae30ee82fba9bfec6509fa42d8f400536edb006aa"
+          },
+          "pass": 2,
+          "steps": 204,
+          "training_loss": 0.33843080793753866
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "863271a7b12897414b77d3f2e42f8f598fdf30ec1882153bf6ad9a9f4d603be2",
+            "u": "71666328aac2121bcbb54ca05bdba3cf167128d9cbb608d0eddaadffbc2191f0"
+          },
+          "pass": 3,
+          "steps": 306,
+          "training_loss": 0.3061215632366981
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "bc1cb3a5e594a5d6fecd4690d6eab9d24cd91039a9b4275bdee46098fdffd3e5",
+            "u": "22f6f6c1169f31ec56e1f76119ec44ba55605b0558852b19590772cb9469ebe6"
+          },
+          "pass": 4,
+          "steps": 408,
+          "training_loss": 0.2931488162213018
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "a4eac078c95ed1a11c3d0efb9b5f1256143c0ce8cea4ada4e0b7d3efedb04265",
+            "u": "7b99b0f7356281ba6ee8356845e16d8fc5a9e9feb2b06febad4509a7ccc36e15"
+          },
+          "pass": 5,
+          "steps": 510,
+          "training_loss": 0.28808331117677227
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f0_pair_linear_s20260913.pt",
+        "sha256": "a673236cbb7cebc42d86b031cd4fe1d3c849dcf3beda46cc2a25c72fe55ed35a"
+      },
+      "elapsed_seconds": 1.281903841001622,
+      "fit_P": 3595,
+      "fit_U": 414772,
+      "fold": 0,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "7ca98f973f053fd8f1455a3851c891a32902cf5e150228fa0a0ff846d0cafdd6",
+            "u": "612fa30001d71b2279bec01ae30ee82fba9bfec6509fa42d8f400536edb006aa"
+          },
+          "pass": 1,
+          "steps": 102,
+          "training_loss": 0.4861701324676085
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "863271a7b12897414b77d3f2e42f8f598fdf30ec1882153bf6ad9a9f4d603be2",
+            "u": "71666328aac2121bcbb54ca05bdba3cf167128d9cbb608d0eddaadffbc2191f0"
+          },
+          "pass": 2,
+          "steps": 204,
+          "training_loss": 0.33759381194710925
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "bc1cb3a5e594a5d6fecd4690d6eab9d24cd91039a9b4275bdee46098fdffd3e5",
+            "u": "22f6f6c1169f31ec56e1f76119ec44ba55605b0558852b19590772cb9469ebe6"
+          },
+          "pass": 3,
+          "steps": 306,
+          "training_loss": 0.3056510844242879
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "a4eac078c95ed1a11c3d0efb9b5f1256143c0ce8cea4ada4e0b7d3efedb04265",
+            "u": "7b99b0f7356281ba6ee8356845e16d8fc5a9e9feb2b06febad4509a7ccc36e15"
+          },
+          "pass": 4,
+          "steps": 408,
+          "training_loss": 0.2929690893532439
+        },
+        {
+          "U_comparisons": 414772,
+          "order_hashes": {
+            "p": "84e38ab95382795272af0be3a5c6e30c09509e68b3104af285ea616a7269dd78",
+            "u": "5f08a188fe78d0b4d9ef86db3ae33ac3e93caf82e0099ccea7d4a8ec63d43d02"
+          },
+          "pass": 5,
+          "steps": 510,
+          "training_loss": 0.28738335843194895
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_endpoint_linear_s20260911.pt",
+        "sha256": "b1354d83c5fdc4640d52db8098a5f5ea13711143a2bccb58371341fdb812e7b7"
+      },
+      "elapsed_seconds": 1.1391914769992582,
+      "fit_P": 3090,
+      "fit_U": 350754,
+      "fold": 1,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "f9a7612cab62419b4824d142454bb410a68ab439c223d392b7a64224a02a6953",
+            "u": "1ae995cda5fb442b6819f26bbe0a81bb58b6621e628defde04b41fc91df892c8"
+          },
+          "pass": 1,
+          "steps": 86,
+          "training_loss": 0.6672443427322614
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "eeba59949c2de757d5edca205948300fe606bd668c6323ffd432c4a189f418a3",
+            "u": "3a73df17ed00045bc91433c9b2df9db41c819358e32116f079ee960af5aa2216"
+          },
+          "pass": 2,
+          "steps": 172,
+          "training_loss": 0.5196151413705782
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "414379854d11414867f6ecd05a972798f3ce709061c9480ac8332f5ac0f5ca77",
+            "u": "04f6e766ab5f761d5762d23c655eab9e8343867ef7c9f5106073f03aed2615fa"
+          },
+          "pass": 3,
+          "steps": 258,
+          "training_loss": 0.49456407440421274
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "2c6e4a041b604632552696faff85a41bfc035f160ab6a78ef64fd8a02ca76c1f",
+            "u": "15fbe2acc6df4dda304df20196ad92662641491bf765ed96c15b4c33c0c32c8e"
+          },
+          "pass": 4,
+          "steps": 344,
+          "training_loss": 0.48397278791787934
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "7d7467137d37b215c824e4cc52d0adc2e7ef22265f3eedae9a68789269b52aac",
+            "u": "a48ca6a78c9716e8c2b2bfaf25e1e0daff7b97c2c1a55665343aca3d93572b9c"
+          },
+          "pass": 5,
+          "steps": 430,
+          "training_loss": 0.479268968351109
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_endpoint_linear_s20260912.pt",
+        "sha256": "d0fa0103b9dce608c9b4d1fb887fe2a7d92b0f90cdf5664ed2c513d4a067b882"
+      },
+      "elapsed_seconds": 1.1337626519998594,
+      "fit_P": 3090,
+      "fit_U": 350754,
+      "fold": 1,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "eeba59949c2de757d5edca205948300fe606bd668c6323ffd432c4a189f418a3",
+            "u": "3a73df17ed00045bc91433c9b2df9db41c819358e32116f079ee960af5aa2216"
+          },
+          "pass": 1,
+          "steps": 86,
+          "training_loss": 0.6342032522574557
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "414379854d11414867f6ecd05a972798f3ce709061c9480ac8332f5ac0f5ca77",
+            "u": "04f6e766ab5f761d5762d23c655eab9e8343867ef7c9f5106073f03aed2615fa"
+          },
+          "pass": 2,
+          "steps": 172,
+          "training_loss": 0.5225445584231782
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "2c6e4a041b604632552696faff85a41bfc035f160ab6a78ef64fd8a02ca76c1f",
+            "u": "15fbe2acc6df4dda304df20196ad92662641491bf765ed96c15b4c33c0c32c8e"
+          },
+          "pass": 3,
+          "steps": 258,
+          "training_loss": 0.49764343653734
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "7d7467137d37b215c824e4cc52d0adc2e7ef22265f3eedae9a68789269b52aac",
+            "u": "a48ca6a78c9716e8c2b2bfaf25e1e0daff7b97c2c1a55665343aca3d93572b9c"
+          },
+          "pass": 4,
+          "steps": 344,
+          "training_loss": 0.48603799709746726
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "05f82dd52aa992d13b9abd6d4abe9a2a23f68bbde36435142a40bf713ea94862",
+            "u": "a9d47abb06e10ca0abd41067ab6d12b2b4ae99210090f395d04e17526329bd6b"
+          },
+          "pass": 5,
+          "steps": 430,
+          "training_loss": 0.4809114669936795
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_endpoint_linear_s20260913.pt",
+        "sha256": "02b782a5b2839f3c1b52ddf44cd6342afedd685d2343f78c12f1800311a83efc"
+      },
+      "elapsed_seconds": 1.137913563001348,
+      "fit_P": 3090,
+      "fit_U": 350754,
+      "fold": 1,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "414379854d11414867f6ecd05a972798f3ce709061c9480ac8332f5ac0f5ca77",
+            "u": "04f6e766ab5f761d5762d23c655eab9e8343867ef7c9f5106073f03aed2615fa"
+          },
+          "pass": 1,
+          "steps": 86,
+          "training_loss": 0.6229446888407344
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "2c6e4a041b604632552696faff85a41bfc035f160ab6a78ef64fd8a02ca76c1f",
+            "u": "15fbe2acc6df4dda304df20196ad92662641491bf765ed96c15b4c33c0c32c8e"
+          },
+          "pass": 2,
+          "steps": 172,
+          "training_loss": 0.5244547729288959
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "7d7467137d37b215c824e4cc52d0adc2e7ef22265f3eedae9a68789269b52aac",
+            "u": "a48ca6a78c9716e8c2b2bfaf25e1e0daff7b97c2c1a55665343aca3d93572b9c"
+          },
+          "pass": 3,
+          "steps": 258,
+          "training_loss": 0.49963636081955115
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "05f82dd52aa992d13b9abd6d4abe9a2a23f68bbde36435142a40bf713ea94862",
+            "u": "a9d47abb06e10ca0abd41067ab6d12b2b4ae99210090f395d04e17526329bd6b"
+          },
+          "pass": 4,
+          "steps": 344,
+          "training_loss": 0.4878806303513204
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "34cda3cd91f125d176dad893af21cbe61d96f51588487870ec5c7edb1c69fe8c",
+            "u": "0021eb62ba2bceeea463846c98f398af6d7d29364f49e8076769e5a04ee59222"
+          },
+          "pass": 5,
+          "steps": 430,
+          "training_loss": 0.48377635331664604
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_pair_linear_s20260911.pt",
+        "sha256": "1b132147eca29e1cb1566ef55d8f0b24af3bffc1d035278cc135e7b2600524d1"
+      },
+      "elapsed_seconds": 1.1054897009998967,
+      "fit_P": 3090,
+      "fit_U": 350754,
+      "fold": 1,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "f9a7612cab62419b4824d142454bb410a68ab439c223d392b7a64224a02a6953",
+            "u": "1ae995cda5fb442b6819f26bbe0a81bb58b6621e628defde04b41fc91df892c8"
+          },
+          "pass": 1,
+          "steps": 86,
+          "training_loss": 0.5135556567269148
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "eeba59949c2de757d5edca205948300fe606bd668c6323ffd432c4a189f418a3",
+            "u": "3a73df17ed00045bc91433c9b2df9db41c819358e32116f079ee960af5aa2216"
+          },
+          "pass": 2,
+          "steps": 172,
+          "training_loss": 0.3435425893312479
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "414379854d11414867f6ecd05a972798f3ce709061c9480ac8332f5ac0f5ca77",
+            "u": "04f6e766ab5f761d5762d23c655eab9e8343867ef7c9f5106073f03aed2615fa"
+          },
+          "pass": 3,
+          "steps": 258,
+          "training_loss": 0.3100498199498668
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "2c6e4a041b604632552696faff85a41bfc035f160ab6a78ef64fd8a02ca76c1f",
+            "u": "15fbe2acc6df4dda304df20196ad92662641491bf765ed96c15b4c33c0c32c8e"
+          },
+          "pass": 4,
+          "steps": 344,
+          "training_loss": 0.2963649776516156
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "7d7467137d37b215c824e4cc52d0adc2e7ef22265f3eedae9a68789269b52aac",
+            "u": "a48ca6a78c9716e8c2b2bfaf25e1e0daff7b97c2c1a55665343aca3d93572b9c"
+          },
+          "pass": 5,
+          "steps": 430,
+          "training_loss": 0.29126491924218784
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_pair_linear_s20260912.pt",
+        "sha256": "a95728117c6c6132e7fef44a6a96116447492a41d377c57a0a436e44d33731b8"
+      },
+      "elapsed_seconds": 1.1063937689978047,
+      "fit_P": 3090,
+      "fit_U": 350754,
+      "fold": 1,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "eeba59949c2de757d5edca205948300fe606bd668c6323ffd432c4a189f418a3",
+            "u": "3a73df17ed00045bc91433c9b2df9db41c819358e32116f079ee960af5aa2216"
+          },
+          "pass": 1,
+          "steps": 86,
+          "training_loss": 0.5152330518345625
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "414379854d11414867f6ecd05a972798f3ce709061c9480ac8332f5ac0f5ca77",
+            "u": "04f6e766ab5f761d5762d23c655eab9e8343867ef7c9f5106073f03aed2615fa"
+          },
+          "pass": 2,
+          "steps": 172,
+          "training_loss": 0.3503745436507296
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "2c6e4a041b604632552696faff85a41bfc035f160ab6a78ef64fd8a02ca76c1f",
+            "u": "15fbe2acc6df4dda304df20196ad92662641491bf765ed96c15b4c33c0c32c8e"
+          },
+          "pass": 3,
+          "steps": 258,
+          "training_loss": 0.31403296123837926
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "7d7467137d37b215c824e4cc52d0adc2e7ef22265f3eedae9a68789269b52aac",
+            "u": "a48ca6a78c9716e8c2b2bfaf25e1e0daff7b97c2c1a55665343aca3d93572b9c"
+          },
+          "pass": 4,
+          "steps": 344,
+          "training_loss": 0.29951141916272433
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "05f82dd52aa992d13b9abd6d4abe9a2a23f68bbde36435142a40bf713ea94862",
+            "u": "a9d47abb06e10ca0abd41067ab6d12b2b4ae99210090f395d04e17526329bd6b"
+          },
+          "pass": 5,
+          "steps": 430,
+          "training_loss": 0.29296571361772733
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f1_pair_linear_s20260913.pt",
+        "sha256": "d24595be7c0f87bd64cca259b53a1818e411746005f0c024a9be2d62578092fa"
+      },
+      "elapsed_seconds": 1.1112024200010637,
+      "fit_P": 3090,
+      "fit_U": 350754,
+      "fold": 1,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "414379854d11414867f6ecd05a972798f3ce709061c9480ac8332f5ac0f5ca77",
+            "u": "04f6e766ab5f761d5762d23c655eab9e8343867ef7c9f5106073f03aed2615fa"
+          },
+          "pass": 1,
+          "steps": 86,
+          "training_loss": 0.49820601454536767
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "2c6e4a041b604632552696faff85a41bfc035f160ab6a78ef64fd8a02ca76c1f",
+            "u": "15fbe2acc6df4dda304df20196ad92662641491bf765ed96c15b4c33c0c32c8e"
+          },
+          "pass": 2,
+          "steps": 172,
+          "training_loss": 0.3453497829245981
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "7d7467137d37b215c824e4cc52d0adc2e7ef22265f3eedae9a68789269b52aac",
+            "u": "a48ca6a78c9716e8c2b2bfaf25e1e0daff7b97c2c1a55665343aca3d93572b9c"
+          },
+          "pass": 3,
+          "steps": 258,
+          "training_loss": 0.31158634149654363
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "05f82dd52aa992d13b9abd6d4abe9a2a23f68bbde36435142a40bf713ea94862",
+            "u": "a9d47abb06e10ca0abd41067ab6d12b2b4ae99210090f395d04e17526329bd6b"
+          },
+          "pass": 4,
+          "steps": 344,
+          "training_loss": 0.2968662919565815
+        },
+        {
+          "U_comparisons": 350754,
+          "order_hashes": {
+            "p": "34cda3cd91f125d176dad893af21cbe61d96f51588487870ec5c7edb1c69fe8c",
+            "u": "0021eb62ba2bceeea463846c98f398af6d7d29364f49e8076769e5a04ee59222"
+          },
+          "pass": 5,
+          "steps": 430,
+          "training_loss": 0.2920248601683936
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_endpoint_linear_s20260911.pt",
+        "sha256": "43d686f9c54f25fdf630c3a90cdff76315e281b5f9b5c2a3ed7d7dc5414031e3"
+      },
+      "elapsed_seconds": 1.1259910199987644,
+      "fit_P": 2905,
+      "fit_U": 344015,
+      "fold": 2,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "12701f9681160ff09e26849f6d4f7326ed5bd94d2d4ff31a80da02e02c650fd8",
+            "u": "86cfa389e6ba9258553b0118898923a19b907bf5082af3572270095a0910421e"
+          },
+          "pass": 1,
+          "steps": 84,
+          "training_loss": 0.6759216762990408
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "f7f679ad74b5b63524b77cf232de0a2d660f775ac714dbc4e83ed271d77986fc",
+            "u": "d120a7821b3ad03fe8abc9f90a1bccd90e90da2c429bf8ec09aa8959c554335a"
+          },
+          "pass": 2,
+          "steps": 168,
+          "training_loss": 0.5106034516427441
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "1874b80176e78b8f3af24173fb93122e1d65749815945ecf75ebd398da175d51",
+            "u": "e84c941bd539b50b1fa0d5d2262b5a7994fcb867a9d5949cc67f01b1d36d8a2a"
+          },
+          "pass": 3,
+          "steps": 252,
+          "training_loss": 0.4811216882129498
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "07e757afe6a678bbf4e48427d02d52056384ea5241e4eb54edc3b92f58446b5d",
+            "u": "582f28698c7e1020f534d0e318a102c657b21f9e2aa997b0abb16f4b56cb8ce6"
+          },
+          "pass": 4,
+          "steps": 336,
+          "training_loss": 0.46878740700295735
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "183eb6ed7ae4abf757df5bb71d41852c9468e783645683b92b4969cf9c5b47ab",
+            "u": "8d28bca2861edb326bdd1faafc2a641ff6b89c7f55f841c1fcc68989875fc5d7"
+          },
+          "pass": 5,
+          "steps": 420,
+          "training_loss": 0.4631304840232649
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_endpoint_linear_s20260912.pt",
+        "sha256": "23d426e11f37b8b790492b19e0fef1c821f324139d3e702a99e90a5c7ff50d73"
+      },
+      "elapsed_seconds": 1.1276827120018424,
+      "fit_P": 2905,
+      "fit_U": 344015,
+      "fold": 2,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "f7f679ad74b5b63524b77cf232de0a2d660f775ac714dbc4e83ed271d77986fc",
+            "u": "d120a7821b3ad03fe8abc9f90a1bccd90e90da2c429bf8ec09aa8959c554335a"
+          },
+          "pass": 1,
+          "steps": 84,
+          "training_loss": 0.6382827704818668
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "1874b80176e78b8f3af24173fb93122e1d65749815945ecf75ebd398da175d51",
+            "u": "e84c941bd539b50b1fa0d5d2262b5a7994fcb867a9d5949cc67f01b1d36d8a2a"
+          },
+          "pass": 2,
+          "steps": 168,
+          "training_loss": 0.5061526625300773
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "07e757afe6a678bbf4e48427d02d52056384ea5241e4eb54edc3b92f58446b5d",
+            "u": "582f28698c7e1020f534d0e318a102c657b21f9e2aa997b0abb16f4b56cb8ce6"
+          },
+          "pass": 3,
+          "steps": 252,
+          "training_loss": 0.479063430814195
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "183eb6ed7ae4abf757df5bb71d41852c9468e783645683b92b4969cf9c5b47ab",
+            "u": "8d28bca2861edb326bdd1faafc2a641ff6b89c7f55f841c1fcc68989875fc5d7"
+          },
+          "pass": 4,
+          "steps": 336,
+          "training_loss": 0.4671803411266318
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "0e9bcb8dcc569e1d8ab75578af4103dde010f69b79938155bbea3c3131955fb0",
+            "u": "a77982201bba0d24c49abb747c294c101a2b92f0ccffb1063a4986d173bcdcba"
+          },
+          "pass": 5,
+          "steps": 420,
+          "training_loss": 0.46247559888557643
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_endpoint_linear_s20260913.pt",
+        "sha256": "457c599ec59d6c76b3fd118b31380a1ab39155aac4ca0196deb65aaddc4464d1"
+      },
+      "elapsed_seconds": 1.1181326699988858,
+      "fit_P": 2905,
+      "fit_U": 344015,
+      "fold": 2,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "1874b80176e78b8f3af24173fb93122e1d65749815945ecf75ebd398da175d51",
+            "u": "e84c941bd539b50b1fa0d5d2262b5a7994fcb867a9d5949cc67f01b1d36d8a2a"
+          },
+          "pass": 1,
+          "steps": 84,
+          "training_loss": 0.6028390338505846
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "07e757afe6a678bbf4e48427d02d52056384ea5241e4eb54edc3b92f58446b5d",
+            "u": "582f28698c7e1020f534d0e318a102c657b21f9e2aa997b0abb16f4b56cb8ce6"
+          },
+          "pass": 2,
+          "steps": 168,
+          "training_loss": 0.5016442326763091
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "183eb6ed7ae4abf757df5bb71d41852c9468e783645683b92b4969cf9c5b47ab",
+            "u": "8d28bca2861edb326bdd1faafc2a641ff6b89c7f55f841c1fcc68989875fc5d7"
+          },
+          "pass": 3,
+          "steps": 252,
+          "training_loss": 0.47532291494473033
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "0e9bcb8dcc569e1d8ab75578af4103dde010f69b79938155bbea3c3131955fb0",
+            "u": "a77982201bba0d24c49abb747c294c101a2b92f0ccffb1063a4986d173bcdcba"
+          },
+          "pass": 4,
+          "steps": 336,
+          "training_loss": 0.4640495532048129
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "f7cf838b8e67c20bff78996144060956f90f8d8d21fb17086eb1d111f53c8c1f",
+            "u": "5cbc679ce624ff58b0d652efc286785f5ed71869be33ff6c5ab85180075b6664"
+          },
+          "pass": 5,
+          "steps": 420,
+          "training_loss": 0.4597723332655436
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_pair_linear_s20260911.pt",
+        "sha256": "e87045f7123eb20c8732312902ebbaf4de95ad5482c0c21e2de75fc98146dee7"
+      },
+      "elapsed_seconds": 1.0825504079984967,
+      "fit_P": 2905,
+      "fit_U": 344015,
+      "fold": 2,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "12701f9681160ff09e26849f6d4f7326ed5bd94d2d4ff31a80da02e02c650fd8",
+            "u": "86cfa389e6ba9258553b0118898923a19b907bf5082af3572270095a0910421e"
+          },
+          "pass": 1,
+          "steps": 84,
+          "training_loss": 0.5196248303574794
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "f7f679ad74b5b63524b77cf232de0a2d660f775ac714dbc4e83ed271d77986fc",
+            "u": "d120a7821b3ad03fe8abc9f90a1bccd90e90da2c429bf8ec09aa8959c554335a"
+          },
+          "pass": 2,
+          "steps": 168,
+          "training_loss": 0.3350312890697916
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "1874b80176e78b8f3af24173fb93122e1d65749815945ecf75ebd398da175d51",
+            "u": "e84c941bd539b50b1fa0d5d2262b5a7994fcb867a9d5949cc67f01b1d36d8a2a"
+          },
+          "pass": 3,
+          "steps": 252,
+          "training_loss": 0.29924950763618663
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "07e757afe6a678bbf4e48427d02d52056384ea5241e4eb54edc3b92f58446b5d",
+            "u": "582f28698c7e1020f534d0e318a102c657b21f9e2aa997b0abb16f4b56cb8ce6"
+          },
+          "pass": 4,
+          "steps": 336,
+          "training_loss": 0.28520688606912054
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "183eb6ed7ae4abf757df5bb71d41852c9468e783645683b92b4969cf9c5b47ab",
+            "u": "8d28bca2861edb326bdd1faafc2a641ff6b89c7f55f841c1fcc68989875fc5d7"
+          },
+          "pass": 5,
+          "steps": 420,
+          "training_loss": 0.27910872216641003
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_pair_linear_s20260912.pt",
+        "sha256": "18fcfb9411f9146f7f4e9a1a2fcac6562b63e8f96c0f20c67a1e3fb0aeceb780"
+      },
+      "elapsed_seconds": 1.076611264001258,
+      "fit_P": 2905,
+      "fit_U": 344015,
+      "fold": 2,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "f7f679ad74b5b63524b77cf232de0a2d660f775ac714dbc4e83ed271d77986fc",
+            "u": "d120a7821b3ad03fe8abc9f90a1bccd90e90da2c429bf8ec09aa8959c554335a"
+          },
+          "pass": 1,
+          "steps": 84,
+          "training_loss": 0.5142826151650983
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "1874b80176e78b8f3af24173fb93122e1d65749815945ecf75ebd398da175d51",
+            "u": "e84c941bd539b50b1fa0d5d2262b5a7994fcb867a9d5949cc67f01b1d36d8a2a"
+          },
+          "pass": 2,
+          "steps": 168,
+          "training_loss": 0.33759592160917334
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "07e757afe6a678bbf4e48427d02d52056384ea5241e4eb54edc3b92f58446b5d",
+            "u": "582f28698c7e1020f534d0e318a102c657b21f9e2aa997b0abb16f4b56cb8ce6"
+          },
+          "pass": 3,
+          "steps": 252,
+          "training_loss": 0.30143787302013486
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "183eb6ed7ae4abf757df5bb71d41852c9468e783645683b92b4969cf9c5b47ab",
+            "u": "8d28bca2861edb326bdd1faafc2a641ff6b89c7f55f841c1fcc68989875fc5d7"
+          },
+          "pass": 4,
+          "steps": 336,
+          "training_loss": 0.2870419419949453
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "0e9bcb8dcc569e1d8ab75578af4103dde010f69b79938155bbea3c3131955fb0",
+            "u": "a77982201bba0d24c49abb747c294c101a2b92f0ccffb1063a4986d173bcdcba"
+          },
+          "pass": 5,
+          "steps": 420,
+          "training_loss": 0.2811180343140131
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "purged20",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/purged20_f2_pair_linear_s20260913.pt",
+        "sha256": "f7f9e3ddc3588707e6bbd47970aa51f48413dfcf4426fdc9df67c923800f1188"
+      },
+      "elapsed_seconds": 1.0762282670002605,
+      "fit_P": 2905,
+      "fit_U": 344015,
+      "fold": 2,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "1874b80176e78b8f3af24173fb93122e1d65749815945ecf75ebd398da175d51",
+            "u": "e84c941bd539b50b1fa0d5d2262b5a7994fcb867a9d5949cc67f01b1d36d8a2a"
+          },
+          "pass": 1,
+          "steps": 84,
+          "training_loss": 0.4825379490451774
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "07e757afe6a678bbf4e48427d02d52056384ea5241e4eb54edc3b92f58446b5d",
+            "u": "582f28698c7e1020f534d0e318a102c657b21f9e2aa997b0abb16f4b56cb8ce6"
+          },
+          "pass": 2,
+          "steps": 168,
+          "training_loss": 0.3303578190048521
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "183eb6ed7ae4abf757df5bb71d41852c9468e783645683b92b4969cf9c5b47ab",
+            "u": "8d28bca2861edb326bdd1faafc2a641ff6b89c7f55f841c1fcc68989875fc5d7"
+          },
+          "pass": 3,
+          "steps": 252,
+          "training_loss": 0.2971989923029775
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "0e9bcb8dcc569e1d8ab75578af4103dde010f69b79938155bbea3c3131955fb0",
+            "u": "a77982201bba0d24c49abb747c294c101a2b92f0ccffb1063a4986d173bcdcba"
+          },
+          "pass": 4,
+          "steps": 336,
+          "training_loss": 0.2836048760445295
+        },
+        {
+          "U_comparisons": 344015,
+          "order_hashes": {
+            "p": "f7cf838b8e67c20bff78996144060956f90f8d8d21fb17086eb1d111f53c8c1f",
+            "u": "5cbc679ce624ff58b0d652efc286785f5ed71869be33ff6c5ab85180075b6664"
+          },
+          "pass": 5,
+          "steps": 420,
+          "training_loss": 0.27813366317467564
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_endpoint_linear_s20260911.pt",
+        "sha256": "932ca0e77ea1fbc73e9e53a112cc4e116794866d223d4ef894f67315891fc370"
+      },
+      "elapsed_seconds": 2.8597426489977806,
+      "fit_P": 1312,
+      "fit_U": 888565,
+      "fold": 0,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "33893003f44190a54debfa656b992bea459141b9ff71504b8c8fffbe9599e561",
+            "u": "44d051c17062b6ff1ed7f8187468b6d8e683725bc7743893069cac868770e1bc"
+          },
+          "pass": 1,
+          "steps": 217,
+          "training_loss": 0.5049038456607218
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "aa11fdccc2791d32e16285e11dd663cd48de05eab42a9a845051beee30984c55",
+            "u": "6027e70969ea7058267457c66b6b4953fcc4c0625b651cf66318e3ebbd1c3aad"
+          },
+          "pass": 2,
+          "steps": 434,
+          "training_loss": 0.3243012653270344
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "40a96d745ff679f09ec7de4c5bb46d4b3435e7bf5693a93559f38a4b25820af4",
+            "u": "7e1b6d7614bc3b29f2d722484e29b8ce562db76c0a61c0494f6caa00505cdb4a"
+          },
+          "pass": 3,
+          "steps": 651,
+          "training_loss": 0.30184806764154337
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "b3ef0b2603410e9f872800e013bb90a100d8970d060a3992d980d3c626372be4",
+            "u": "789d0c77fdcf1e0fca3de96afb426af2ab02bba35894c367fb2a6b1250947351"
+          },
+          "pass": 4,
+          "steps": 868,
+          "training_loss": 0.2912228810594402
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "f148abb266974dccfe2646679e346e30f734df090dccf57e42431a884b0f2d73",
+            "u": "f159919e89031a101af5615f3d61ee99524184de782b5e6acb0dee38f6a2c6f6"
+          },
+          "pass": 5,
+          "steps": 1085,
+          "training_loss": 0.2868867726124348
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_endpoint_linear_s20260912.pt",
+        "sha256": "007842baae3121ffaf69d8bf17a0b2224fbaf886a271d7d4800ce656338a028d"
+      },
+      "elapsed_seconds": 2.8585024649983097,
+      "fit_P": 1312,
+      "fit_U": 888565,
+      "fold": 0,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "aa11fdccc2791d32e16285e11dd663cd48de05eab42a9a845051beee30984c55",
+            "u": "6027e70969ea7058267457c66b6b4953fcc4c0625b651cf66318e3ebbd1c3aad"
+          },
+          "pass": 1,
+          "steps": 217,
+          "training_loss": 0.480517894280079
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "40a96d745ff679f09ec7de4c5bb46d4b3435e7bf5693a93559f38a4b25820af4",
+            "u": "7e1b6d7614bc3b29f2d722484e29b8ce562db76c0a61c0494f6caa00505cdb4a"
+          },
+          "pass": 2,
+          "steps": 434,
+          "training_loss": 0.324236340277937
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "b3ef0b2603410e9f872800e013bb90a100d8970d060a3992d980d3c626372be4",
+            "u": "789d0c77fdcf1e0fca3de96afb426af2ab02bba35894c367fb2a6b1250947351"
+          },
+          "pass": 3,
+          "steps": 651,
+          "training_loss": 0.3008880403296775
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "f148abb266974dccfe2646679e346e30f734df090dccf57e42431a884b0f2d73",
+            "u": "f159919e89031a101af5615f3d61ee99524184de782b5e6acb0dee38f6a2c6f6"
+          },
+          "pass": 4,
+          "steps": 868,
+          "training_loss": 0.2905681713406732
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "06bc2d8399a8afe3e8f1c1ffd4f5aeb6b50eb034107c888a824ea47d59a7bb98",
+            "u": "0fe5e49df6710347d4667146c4b54fdecc21256022296f827ca70733686c0fcb"
+          },
+          "pass": 5,
+          "steps": 1085,
+          "training_loss": 0.286211525178373
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_endpoint_linear_s20260913.pt",
+        "sha256": "09f2adf5a7738b20a9c8bae79f02063ccdd3441a674a376f3f1321f2b53dde27"
+      },
+      "elapsed_seconds": 2.8081943830002274,
+      "fit_P": 1312,
+      "fit_U": 888565,
+      "fold": 0,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "40a96d745ff679f09ec7de4c5bb46d4b3435e7bf5693a93559f38a4b25820af4",
+            "u": "7e1b6d7614bc3b29f2d722484e29b8ce562db76c0a61c0494f6caa00505cdb4a"
+          },
+          "pass": 1,
+          "steps": 217,
+          "training_loss": 0.47475914870923863
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "b3ef0b2603410e9f872800e013bb90a100d8970d060a3992d980d3c626372be4",
+            "u": "789d0c77fdcf1e0fca3de96afb426af2ab02bba35894c367fb2a6b1250947351"
+          },
+          "pass": 2,
+          "steps": 434,
+          "training_loss": 0.3222546055839911
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "f148abb266974dccfe2646679e346e30f734df090dccf57e42431a884b0f2d73",
+            "u": "f159919e89031a101af5615f3d61ee99524184de782b5e6acb0dee38f6a2c6f6"
+          },
+          "pass": 3,
+          "steps": 651,
+          "training_loss": 0.30017777359403597
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "06bc2d8399a8afe3e8f1c1ffd4f5aeb6b50eb034107c888a824ea47d59a7bb98",
+            "u": "0fe5e49df6710347d4667146c4b54fdecc21256022296f827ca70733686c0fcb"
+          },
+          "pass": 4,
+          "steps": 868,
+          "training_loss": 0.29025788478173525
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "cfa665b495ef560276b606104e689c935fac2e670012f7c8b2ba27a456b230e2",
+            "u": "3d2542c81055b81b74eb91fa94b617a79372b1f28369c2d18d3c5421f8c84125"
+          },
+          "pass": 5,
+          "steps": 1085,
+          "training_loss": 0.2868179620369954
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_pair_linear_s20260911.pt",
+        "sha256": "29d882237af16f2d6a5cf9a9c4c874c98fe62a14f729c699dea37a7e57bb0c3a"
+      },
+      "elapsed_seconds": 2.6924481940004625,
+      "fit_P": 1312,
+      "fit_U": 888565,
+      "fold": 0,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "33893003f44190a54debfa656b992bea459141b9ff71504b8c8fffbe9599e561",
+            "u": "44d051c17062b6ff1ed7f8187468b6d8e683725bc7743893069cac868770e1bc"
+          },
+          "pass": 1,
+          "steps": 217,
+          "training_loss": 0.351022121902024
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "aa11fdccc2791d32e16285e11dd663cd48de05eab42a9a845051beee30984c55",
+            "u": "6027e70969ea7058267457c66b6b4953fcc4c0625b651cf66318e3ebbd1c3aad"
+          },
+          "pass": 2,
+          "steps": 434,
+          "training_loss": 0.17741461479752454
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "40a96d745ff679f09ec7de4c5bb46d4b3435e7bf5693a93559f38a4b25820af4",
+            "u": "7e1b6d7614bc3b29f2d722484e29b8ce562db76c0a61c0494f6caa00505cdb4a"
+          },
+          "pass": 3,
+          "steps": 651,
+          "training_loss": 0.1518144694892384
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "b3ef0b2603410e9f872800e013bb90a100d8970d060a3992d980d3c626372be4",
+            "u": "789d0c77fdcf1e0fca3de96afb426af2ab02bba35894c367fb2a6b1250947351"
+          },
+          "pass": 4,
+          "steps": 868,
+          "training_loss": 0.14133059785590868
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "f148abb266974dccfe2646679e346e30f734df090dccf57e42431a884b0f2d73",
+            "u": "f159919e89031a101af5615f3d61ee99524184de782b5e6acb0dee38f6a2c6f6"
+          },
+          "pass": 5,
+          "steps": 1085,
+          "training_loss": 0.1368613414747722
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_pair_linear_s20260912.pt",
+        "sha256": "e729f409b01b9fab9d1f0b36c91019cf163c9d9209fde0bb7097dc7133aae2ab"
+      },
+      "elapsed_seconds": 2.752769069000351,
+      "fit_P": 1312,
+      "fit_U": 888565,
+      "fold": 0,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "aa11fdccc2791d32e16285e11dd663cd48de05eab42a9a845051beee30984c55",
+            "u": "6027e70969ea7058267457c66b6b4953fcc4c0625b651cf66318e3ebbd1c3aad"
+          },
+          "pass": 1,
+          "steps": 217,
+          "training_loss": 0.3443264512963405
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "40a96d745ff679f09ec7de4c5bb46d4b3435e7bf5693a93559f38a4b25820af4",
+            "u": "7e1b6d7614bc3b29f2d722484e29b8ce562db76c0a61c0494f6caa00505cdb4a"
+          },
+          "pass": 2,
+          "steps": 434,
+          "training_loss": 0.1761753762734364
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "b3ef0b2603410e9f872800e013bb90a100d8970d060a3992d980d3c626372be4",
+            "u": "789d0c77fdcf1e0fca3de96afb426af2ab02bba35894c367fb2a6b1250947351"
+          },
+          "pass": 3,
+          "steps": 651,
+          "training_loss": 0.15084617569974076
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "f148abb266974dccfe2646679e346e30f734df090dccf57e42431a884b0f2d73",
+            "u": "f159919e89031a101af5615f3d61ee99524184de782b5e6acb0dee38f6a2c6f6"
+          },
+          "pass": 4,
+          "steps": 868,
+          "training_loss": 0.14013253202213394
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "06bc2d8399a8afe3e8f1c1ffd4f5aeb6b50eb034107c888a824ea47d59a7bb98",
+            "u": "0fe5e49df6710347d4667146c4b54fdecc21256022296f827ca70733686c0fcb"
+          },
+          "pass": 5,
+          "steps": 1085,
+          "training_loss": 0.13609694915112744
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f0_pair_linear_s20260913.pt",
+        "sha256": "416fd130b9ab6d2e5b9e2f27f4662be52d560813c5b7a309e22c2369e2d46220"
+      },
+      "elapsed_seconds": 2.7893444430010277,
+      "fit_P": 1312,
+      "fit_U": 888565,
+      "fold": 0,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "40a96d745ff679f09ec7de4c5bb46d4b3435e7bf5693a93559f38a4b25820af4",
+            "u": "7e1b6d7614bc3b29f2d722484e29b8ce562db76c0a61c0494f6caa00505cdb4a"
+          },
+          "pass": 1,
+          "steps": 217,
+          "training_loss": 0.33811120436038666
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "b3ef0b2603410e9f872800e013bb90a100d8970d060a3992d980d3c626372be4",
+            "u": "789d0c77fdcf1e0fca3de96afb426af2ab02bba35894c367fb2a6b1250947351"
+          },
+          "pass": 2,
+          "steps": 434,
+          "training_loss": 0.1751841612620136
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "f148abb266974dccfe2646679e346e30f734df090dccf57e42431a884b0f2d73",
+            "u": "f159919e89031a101af5615f3d61ee99524184de782b5e6acb0dee38f6a2c6f6"
+          },
+          "pass": 3,
+          "steps": 651,
+          "training_loss": 0.15000880441239844
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "06bc2d8399a8afe3e8f1c1ffd4f5aeb6b50eb034107c888a824ea47d59a7bb98",
+            "u": "0fe5e49df6710347d4667146c4b54fdecc21256022296f827ca70733686c0fcb"
+          },
+          "pass": 4,
+          "steps": 868,
+          "training_loss": 0.14018594150893635
+        },
+        {
+          "U_comparisons": 888565,
+          "order_hashes": {
+            "p": "cfa665b495ef560276b606104e689c935fac2e670012f7c8b2ba27a456b230e2",
+            "u": "3d2542c81055b81b74eb91fa94b617a79372b1f28369c2d18d3c5421f8c84125"
+          },
+          "pass": 5,
+          "steps": 1085,
+          "training_loss": 0.13590321306460001
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_endpoint_linear_s20260911.pt",
+        "sha256": "54e83de6bbeb91f5b17cf53e247303c1f33fe1688ed3a4fe97fa6ab0f159b168"
+      },
+      "elapsed_seconds": 2.9723754379992897,
+      "fit_P": 1716,
+      "fit_U": 948522,
+      "fold": 1,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "fee216cf2db4f5f6f8561225caae097dcc9c8d41fe83dd2e7900328c4612d681",
+            "u": "e78dd6f2b9cd660d780eca82112934ce28132a716bab568745f13cf5db501435"
+          },
+          "pass": 1,
+          "steps": 232,
+          "training_loss": 0.49954364168733956
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "9fe56b87cb891f12055acf976b59df31e538972c45e27a203a5b2b41d922fab1",
+            "u": "8073c1345ee3f8d0a0f617006531c4effb3dc9c5463b4ee205acb4650ab63406"
+          },
+          "pass": 2,
+          "steps": 464,
+          "training_loss": 0.3312473337994192
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "995d36e9cae3de5209604a02fc7aa8a0e8493a11a728ac2235ce63ff55e72034",
+            "u": "3498a5099ae284491853c65f47b2deb3a0badbe3544d1ac6efd03a7ee33a3dd9"
+          },
+          "pass": 3,
+          "steps": 696,
+          "training_loss": 0.3044688003899508
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "9dd952b93ed2d4ee7220e6465d117c8da8cdf9787211b26c86e81567711ccf60",
+            "u": "cca907b265ec3dcb6ef1034931c5493ca26a45f361eee65b98ed08c39ba76a2e"
+          },
+          "pass": 4,
+          "steps": 928,
+          "training_loss": 0.29351033926248393
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "8f18f43923f3f0bf8d6a11b9ed212a26ce443951b9e7ed3beb8fc52eb5275eb7",
+            "u": "e28096259ec1bc50a472bb9d3226ee73a2110139cf4bdcbd737ee871b26aa6f0"
+          },
+          "pass": 5,
+          "steps": 1160,
+          "training_loss": 0.28905357038362284
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_endpoint_linear_s20260912.pt",
+        "sha256": "6ea633a1c67f37dd98ab8988ea48a218a578ebf5754ba8deb4ffc52c99370007"
+      },
+      "elapsed_seconds": 2.986823696999636,
+      "fit_P": 1716,
+      "fit_U": 948522,
+      "fold": 1,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "9fe56b87cb891f12055acf976b59df31e538972c45e27a203a5b2b41d922fab1",
+            "u": "8073c1345ee3f8d0a0f617006531c4effb3dc9c5463b4ee205acb4650ab63406"
+          },
+          "pass": 1,
+          "steps": 232,
+          "training_loss": 0.492904679509631
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "995d36e9cae3de5209604a02fc7aa8a0e8493a11a728ac2235ce63ff55e72034",
+            "u": "3498a5099ae284491853c65f47b2deb3a0badbe3544d1ac6efd03a7ee33a3dd9"
+          },
+          "pass": 2,
+          "steps": 464,
+          "training_loss": 0.33117470803308535
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "9dd952b93ed2d4ee7220e6465d117c8da8cdf9787211b26c86e81567711ccf60",
+            "u": "cca907b265ec3dcb6ef1034931c5493ca26a45f361eee65b98ed08c39ba76a2e"
+          },
+          "pass": 3,
+          "steps": 696,
+          "training_loss": 0.30421894058367843
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "8f18f43923f3f0bf8d6a11b9ed212a26ce443951b9e7ed3beb8fc52eb5275eb7",
+            "u": "e28096259ec1bc50a472bb9d3226ee73a2110139cf4bdcbd737ee871b26aa6f0"
+          },
+          "pass": 4,
+          "steps": 928,
+          "training_loss": 0.2924846619935449
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "c0a686b3625516de616712032e8b8e83427a6f1c949260e583da2f52a1128d75",
+            "u": "b9e05c7e9237f5f0f7f4a034a67818d87621cadf8cb4a42f714f7e87f5b9dfcc"
+          },
+          "pass": 5,
+          "steps": 1160,
+          "training_loss": 0.2884719966719733
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_endpoint_linear_s20260913.pt",
+        "sha256": "f394a0e8c48bf33edc3c4c563b323669faa35e0c799a1ec8f994c5460ea47555"
+      },
+      "elapsed_seconds": 2.996346314997936,
+      "fit_P": 1716,
+      "fit_U": 948522,
+      "fold": 1,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "995d36e9cae3de5209604a02fc7aa8a0e8493a11a728ac2235ce63ff55e72034",
+            "u": "3498a5099ae284491853c65f47b2deb3a0badbe3544d1ac6efd03a7ee33a3dd9"
+          },
+          "pass": 1,
+          "steps": 232,
+          "training_loss": 0.48261201621858507
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "9dd952b93ed2d4ee7220e6465d117c8da8cdf9787211b26c86e81567711ccf60",
+            "u": "cca907b265ec3dcb6ef1034931c5493ca26a45f361eee65b98ed08c39ba76a2e"
+          },
+          "pass": 2,
+          "steps": 464,
+          "training_loss": 0.33310895809910995
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "8f18f43923f3f0bf8d6a11b9ed212a26ce443951b9e7ed3beb8fc52eb5275eb7",
+            "u": "e28096259ec1bc50a472bb9d3226ee73a2110139cf4bdcbd737ee871b26aa6f0"
+          },
+          "pass": 3,
+          "steps": 696,
+          "training_loss": 0.3065843398589444
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "c0a686b3625516de616712032e8b8e83427a6f1c949260e583da2f52a1128d75",
+            "u": "b9e05c7e9237f5f0f7f4a034a67818d87621cadf8cb4a42f714f7e87f5b9dfcc"
+          },
+          "pass": 4,
+          "steps": 928,
+          "training_loss": 0.2954018871459572
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "7cd7bc83897acc3adf598c9ca059656b79cf410f90a76f1ef7c8b577d971f7ff",
+            "u": "72ba6c087c66ea96d085dbe675700c613cca52a2fdc3800bdd9b11b0f614a0d2"
+          },
+          "pass": 5,
+          "steps": 1160,
+          "training_loss": 0.2902233957612213
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_pair_linear_s20260911.pt",
+        "sha256": "892ac46b71efd10fb85250d836bb9f9c43b4ccfb5f7207ad73551837555e8b01"
+      },
+      "elapsed_seconds": 2.987430109998968,
+      "fit_P": 1716,
+      "fit_U": 948522,
+      "fold": 1,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "fee216cf2db4f5f6f8561225caae097dcc9c8d41fe83dd2e7900328c4612d681",
+            "u": "e78dd6f2b9cd660d780eca82112934ce28132a716bab568745f13cf5db501435"
+          },
+          "pass": 1,
+          "steps": 232,
+          "training_loss": 0.3502731175332043
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "9fe56b87cb891f12055acf976b59df31e538972c45e27a203a5b2b41d922fab1",
+            "u": "8073c1345ee3f8d0a0f617006531c4effb3dc9c5463b4ee205acb4650ab63406"
+          },
+          "pass": 2,
+          "steps": 464,
+          "training_loss": 0.18461789353179678
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "995d36e9cae3de5209604a02fc7aa8a0e8493a11a728ac2235ce63ff55e72034",
+            "u": "3498a5099ae284491853c65f47b2deb3a0badbe3544d1ac6efd03a7ee33a3dd9"
+          },
+          "pass": 3,
+          "steps": 696,
+          "training_loss": 0.1581845129167685
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "9dd952b93ed2d4ee7220e6465d117c8da8cdf9787211b26c86e81567711ccf60",
+            "u": "cca907b265ec3dcb6ef1034931c5493ca26a45f361eee65b98ed08c39ba76a2e"
+          },
+          "pass": 4,
+          "steps": 928,
+          "training_loss": 0.14801764586205213
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "8f18f43923f3f0bf8d6a11b9ed212a26ce443951b9e7ed3beb8fc52eb5275eb7",
+            "u": "e28096259ec1bc50a472bb9d3226ee73a2110139cf4bdcbd737ee871b26aa6f0"
+          },
+          "pass": 5,
+          "steps": 1160,
+          "training_loss": 0.14380726397246407
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_pair_linear_s20260912.pt",
+        "sha256": "9ef324574cc4caba2b2fb4b9e8130827bcd5d6797acac9ff785aaf640beb467d"
+      },
+      "elapsed_seconds": 2.9969459130006726,
+      "fit_P": 1716,
+      "fit_U": 948522,
+      "fold": 1,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "9fe56b87cb891f12055acf976b59df31e538972c45e27a203a5b2b41d922fab1",
+            "u": "8073c1345ee3f8d0a0f617006531c4effb3dc9c5463b4ee205acb4650ab63406"
+          },
+          "pass": 1,
+          "steps": 232,
+          "training_loss": 0.3617893637570553
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "995d36e9cae3de5209604a02fc7aa8a0e8493a11a728ac2235ce63ff55e72034",
+            "u": "3498a5099ae284491853c65f47b2deb3a0badbe3544d1ac6efd03a7ee33a3dd9"
+          },
+          "pass": 2,
+          "steps": 464,
+          "training_loss": 0.1852412265364928
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "9dd952b93ed2d4ee7220e6465d117c8da8cdf9787211b26c86e81567711ccf60",
+            "u": "cca907b265ec3dcb6ef1034931c5493ca26a45f361eee65b98ed08c39ba76a2e"
+          },
+          "pass": 3,
+          "steps": 696,
+          "training_loss": 0.15889480952323826
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "8f18f43923f3f0bf8d6a11b9ed212a26ce443951b9e7ed3beb8fc52eb5275eb7",
+            "u": "e28096259ec1bc50a472bb9d3226ee73a2110139cf4bdcbd737ee871b26aa6f0"
+          },
+          "pass": 4,
+          "steps": 928,
+          "training_loss": 0.14856580962837207
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "c0a686b3625516de616712032e8b8e83427a6f1c949260e583da2f52a1128d75",
+            "u": "b9e05c7e9237f5f0f7f4a034a67818d87621cadf8cb4a42f714f7e87f5b9dfcc"
+          },
+          "pass": 5,
+          "steps": 1160,
+          "training_loss": 0.14493453847896587
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f1_pair_linear_s20260913.pt",
+        "sha256": "ca4b6b721f0594f21f3b706117f277790feeb06ca053ba2f7205b163c49a2b6f"
+      },
+      "elapsed_seconds": 3.0226448960020207,
+      "fit_P": 1716,
+      "fit_U": 948522,
+      "fold": 1,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "995d36e9cae3de5209604a02fc7aa8a0e8493a11a728ac2235ce63ff55e72034",
+            "u": "3498a5099ae284491853c65f47b2deb3a0badbe3544d1ac6efd03a7ee33a3dd9"
+          },
+          "pass": 1,
+          "steps": 232,
+          "training_loss": 0.34912250237344367
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "9dd952b93ed2d4ee7220e6465d117c8da8cdf9787211b26c86e81567711ccf60",
+            "u": "cca907b265ec3dcb6ef1034931c5493ca26a45f361eee65b98ed08c39ba76a2e"
+          },
+          "pass": 2,
+          "steps": 464,
+          "training_loss": 0.18405712203748958
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "8f18f43923f3f0bf8d6a11b9ed212a26ce443951b9e7ed3beb8fc52eb5275eb7",
+            "u": "e28096259ec1bc50a472bb9d3226ee73a2110139cf4bdcbd737ee871b26aa6f0"
+          },
+          "pass": 3,
+          "steps": 696,
+          "training_loss": 0.1581946128141544
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "c0a686b3625516de616712032e8b8e83427a6f1c949260e583da2f52a1128d75",
+            "u": "b9e05c7e9237f5f0f7f4a034a67818d87621cadf8cb4a42f714f7e87f5b9dfcc"
+          },
+          "pass": 4,
+          "steps": 928,
+          "training_loss": 0.14817921657916974
+        },
+        {
+          "U_comparisons": 948522,
+          "order_hashes": {
+            "p": "7cd7bc83897acc3adf598c9ca059656b79cf410f90a76f1ef7c8b577d971f7ff",
+            "u": "72ba6c087c66ea96d085dbe675700c613cca52a2fdc3800bdd9b11b0f614a0d2"
+          },
+          "pass": 5,
+          "steps": 1160,
+          "training_loss": 0.1437647936390831
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_endpoint_linear_s20260911.pt",
+        "sha256": "ae5a4d9455c9be8995a9343ff33753b2a3dc4ce177a98cedabd82311b21cabbc"
+      },
+      "elapsed_seconds": 2.755469486997754,
+      "fit_P": 1353,
+      "fit_U": 849006,
+      "fold": 2,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "b87df7e33057e82d09add6da4f8b4a83db20b6dc7d180a54e11a554d8029def5",
+            "u": "7097b4c3999c6e5b80b33972dd95dff22abf40a6ba0368a6bed24f56b0a8caee"
+          },
+          "pass": 1,
+          "steps": 208,
+          "training_loss": 0.48396670787079926
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "4176058583976f283ceeff553d3dc382effe371ca7ee5734bae9b77a58241604",
+            "u": "2e38cb7d1744a1de5e28a336905f1eb997af7aac4dd8ae06f8a094ff70e738ec"
+          },
+          "pass": 2,
+          "steps": 416,
+          "training_loss": 0.33420220609825413
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "88ff9fc0aa4bba084ac9acebf1ede95f14fe73059ab40cf2dadf3cfe056e7ebe",
+            "u": "5587a6e166e0a5edf4d97c56668214430814b05f580b5d817e10ec268b3fc758"
+          },
+          "pass": 3,
+          "steps": 624,
+          "training_loss": 0.30885815384150495
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "1ed25eee0b7153790aeb8c0a27eb6fbc4c1ddaf411924b2d46c0afaaacde4696",
+            "u": "d8c116e4581e792579b6508253be3ce7655f9f62f1b7782f285121c16a7d86fb"
+          },
+          "pass": 4,
+          "steps": 832,
+          "training_loss": 0.2971025996660203
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "bdbb9388f9c9754973c9cdd1b010c8c0ef0bc830f246bc9cd3c6dc50a75713f1",
+            "u": "b648dfb6c2d10ff41c8ad8f7682145b61f0f13e951b9ec63e6736f38fa53543f"
+          },
+          "pass": 5,
+          "steps": 1040,
+          "training_loss": 0.29209095446493155
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_endpoint_linear_s20260912.pt",
+        "sha256": "4b7ed105cdd790b446ba40e593d968629639b3fe31ae5ba300b4c95c4b18d123"
+      },
+      "elapsed_seconds": 2.712950159002503,
+      "fit_P": 1353,
+      "fit_U": 849006,
+      "fold": 2,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "4176058583976f283ceeff553d3dc382effe371ca7ee5734bae9b77a58241604",
+            "u": "2e38cb7d1744a1de5e28a336905f1eb997af7aac4dd8ae06f8a094ff70e738ec"
+          },
+          "pass": 1,
+          "steps": 208,
+          "training_loss": 0.49632654058041265
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "88ff9fc0aa4bba084ac9acebf1ede95f14fe73059ab40cf2dadf3cfe056e7ebe",
+            "u": "5587a6e166e0a5edf4d97c56668214430814b05f580b5d817e10ec268b3fc758"
+          },
+          "pass": 2,
+          "steps": 416,
+          "training_loss": 0.33456614280043206
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "1ed25eee0b7153790aeb8c0a27eb6fbc4c1ddaf411924b2d46c0afaaacde4696",
+            "u": "d8c116e4581e792579b6508253be3ce7655f9f62f1b7782f285121c16a7d86fb"
+          },
+          "pass": 3,
+          "steps": 624,
+          "training_loss": 0.307870960360526
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "bdbb9388f9c9754973c9cdd1b010c8c0ef0bc830f246bc9cd3c6dc50a75713f1",
+            "u": "b648dfb6c2d10ff41c8ad8f7682145b61f0f13e951b9ec63e6736f38fa53543f"
+          },
+          "pass": 4,
+          "steps": 832,
+          "training_loss": 0.29639183169971745
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "874ba8e0d04fb742446fba8240cdc7a71d401a47b61a4d3915b57fa149cdab6e",
+            "u": "2e8a4c07ae1f9d9e306e74f26fe875becb87da3d063f59ad529c086b8821d8c8"
+          },
+          "pass": 5,
+          "steps": 1040,
+          "training_loss": 0.29197576125711466
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_endpoint_linear_s20260913.pt",
+        "sha256": "0893fbb034e5923546b8ac0a4fc1630e31fd5d8bd7a7a744a7900d7ce8a1bc6e"
+      },
+      "elapsed_seconds": 2.6728486440006236,
+      "fit_P": 1353,
+      "fit_U": 849006,
+      "fold": 2,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "88ff9fc0aa4bba084ac9acebf1ede95f14fe73059ab40cf2dadf3cfe056e7ebe",
+            "u": "5587a6e166e0a5edf4d97c56668214430814b05f580b5d817e10ec268b3fc758"
+          },
+          "pass": 1,
+          "steps": 208,
+          "training_loss": 0.4761368339656732
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "1ed25eee0b7153790aeb8c0a27eb6fbc4c1ddaf411924b2d46c0afaaacde4696",
+            "u": "d8c116e4581e792579b6508253be3ce7655f9f62f1b7782f285121c16a7d86fb"
+          },
+          "pass": 2,
+          "steps": 416,
+          "training_loss": 0.32987775636635813
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "bdbb9388f9c9754973c9cdd1b010c8c0ef0bc830f246bc9cd3c6dc50a75713f1",
+            "u": "b648dfb6c2d10ff41c8ad8f7682145b61f0f13e951b9ec63e6736f38fa53543f"
+          },
+          "pass": 3,
+          "steps": 624,
+          "training_loss": 0.30439592742953064
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "874ba8e0d04fb742446fba8240cdc7a71d401a47b61a4d3915b57fa149cdab6e",
+            "u": "2e8a4c07ae1f9d9e306e74f26fe875becb87da3d063f59ad529c086b8821d8c8"
+          },
+          "pass": 4,
+          "steps": 832,
+          "training_loss": 0.293604758885498
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "5864989ff11d30c0af17e84e67e5e52ff13ff43b75ac9c31481d553b09a9a446",
+            "u": "df89abc3ff16c93d513911d5fb46b31e94426fe2d7531ce176f5260536954feb"
+          },
+          "pass": 5,
+          "steps": 1040,
+          "training_loss": 0.28898971907128546
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_pair_linear_s20260911.pt",
+        "sha256": "fab3fe9bc2d969311b7561a483d6fcadc1a27787f0fddf5868dcb86bda0df542"
+      },
+      "elapsed_seconds": 2.636523876000865,
+      "fit_P": 1353,
+      "fit_U": 849006,
+      "fold": 2,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "b87df7e33057e82d09add6da4f8b4a83db20b6dc7d180a54e11a554d8029def5",
+            "u": "7097b4c3999c6e5b80b33972dd95dff22abf40a6ba0368a6bed24f56b0a8caee"
+          },
+          "pass": 1,
+          "steps": 208,
+          "training_loss": 0.34440302804617423
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "4176058583976f283ceeff553d3dc382effe371ca7ee5734bae9b77a58241604",
+            "u": "2e38cb7d1744a1de5e28a336905f1eb997af7aac4dd8ae06f8a094ff70e738ec"
+          },
+          "pass": 2,
+          "steps": 416,
+          "training_loss": 0.18285645577483828
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "88ff9fc0aa4bba084ac9acebf1ede95f14fe73059ab40cf2dadf3cfe056e7ebe",
+            "u": "5587a6e166e0a5edf4d97c56668214430814b05f580b5d817e10ec268b3fc758"
+          },
+          "pass": 3,
+          "steps": 624,
+          "training_loss": 0.15446973412698498
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "1ed25eee0b7153790aeb8c0a27eb6fbc4c1ddaf411924b2d46c0afaaacde4696",
+            "u": "d8c116e4581e792579b6508253be3ce7655f9f62f1b7782f285121c16a7d86fb"
+          },
+          "pass": 4,
+          "steps": 832,
+          "training_loss": 0.1431337381627675
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "bdbb9388f9c9754973c9cdd1b010c8c0ef0bc830f246bc9cd3c6dc50a75713f1",
+            "u": "b648dfb6c2d10ff41c8ad8f7682145b61f0f13e951b9ec63e6736f38fa53543f"
+          },
+          "pass": 5,
+          "steps": 1040,
+          "training_loss": 0.1383906927717293
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_pair_linear_s20260912.pt",
+        "sha256": "49820e02ed7ef4a473ebffa4885cbf97bd09957e1df7e6b2b88b04d32ac7e380"
+      },
+      "elapsed_seconds": 2.675790825000149,
+      "fit_P": 1353,
+      "fit_U": 849006,
+      "fold": 2,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "4176058583976f283ceeff553d3dc382effe371ca7ee5734bae9b77a58241604",
+            "u": "2e38cb7d1744a1de5e28a336905f1eb997af7aac4dd8ae06f8a094ff70e738ec"
+          },
+          "pass": 1,
+          "steps": 208,
+          "training_loss": 0.36744170566307754
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "88ff9fc0aa4bba084ac9acebf1ede95f14fe73059ab40cf2dadf3cfe056e7ebe",
+            "u": "5587a6e166e0a5edf4d97c56668214430814b05f580b5d817e10ec268b3fc758"
+          },
+          "pass": 2,
+          "steps": 416,
+          "training_loss": 0.18522739252090098
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "1ed25eee0b7153790aeb8c0a27eb6fbc4c1ddaf411924b2d46c0afaaacde4696",
+            "u": "d8c116e4581e792579b6508253be3ce7655f9f62f1b7782f285121c16a7d86fb"
+          },
+          "pass": 3,
+          "steps": 624,
+          "training_loss": 0.15579041992325926
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "bdbb9388f9c9754973c9cdd1b010c8c0ef0bc830f246bc9cd3c6dc50a75713f1",
+            "u": "b648dfb6c2d10ff41c8ad8f7682145b61f0f13e951b9ec63e6736f38fa53543f"
+          },
+          "pass": 4,
+          "steps": 832,
+          "training_loss": 0.1440405014242293
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "874ba8e0d04fb742446fba8240cdc7a71d401a47b61a4d3915b57fa149cdab6e",
+            "u": "2e8a4c07ae1f9d9e306e74f26fe875becb87da3d063f59ad529c086b8821d8c8"
+          },
+          "pass": 5,
+          "steps": 1040,
+          "training_loss": 0.13952122599987166
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "hi_to_huri",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/hi_to_huri_f2_pair_linear_s20260913.pt",
+        "sha256": "5e1edac23825ee50b4ae57a935a0c9244c7524f7728c9262e97099edd6edeabb"
+      },
+      "elapsed_seconds": 2.605286983001861,
+      "fit_P": 1353,
+      "fit_U": 849006,
+      "fold": 2,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "88ff9fc0aa4bba084ac9acebf1ede95f14fe73059ab40cf2dadf3cfe056e7ebe",
+            "u": "5587a6e166e0a5edf4d97c56668214430814b05f580b5d817e10ec268b3fc758"
+          },
+          "pass": 1,
+          "steps": 208,
+          "training_loss": 0.3518675098021832
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "1ed25eee0b7153790aeb8c0a27eb6fbc4c1ddaf411924b2d46c0afaaacde4696",
+            "u": "d8c116e4581e792579b6508253be3ce7655f9f62f1b7782f285121c16a7d86fb"
+          },
+          "pass": 2,
+          "steps": 416,
+          "training_loss": 0.18313532116375333
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "bdbb9388f9c9754973c9cdd1b010c8c0ef0bc830f246bc9cd3c6dc50a75713f1",
+            "u": "b648dfb6c2d10ff41c8ad8f7682145b61f0f13e951b9ec63e6736f38fa53543f"
+          },
+          "pass": 3,
+          "steps": 624,
+          "training_loss": 0.15452204650347162
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "874ba8e0d04fb742446fba8240cdc7a71d401a47b61a4d3915b57fa149cdab6e",
+            "u": "2e8a4c07ae1f9d9e306e74f26fe875becb87da3d063f59ad529c086b8821d8c8"
+          },
+          "pass": 4,
+          "steps": 832,
+          "training_loss": 0.1432477188009456
+        },
+        {
+          "U_comparisons": 849006,
+          "order_hashes": {
+            "p": "5864989ff11d30c0af17e84e67e5e52ff13ff43b75ac9c31481d553b09a9a446",
+            "u": "df89abc3ff16c93d513911d5fb46b31e94426fe2d7531ce176f5260536954feb"
+          },
+          "pass": 5,
+          "steps": 1040,
+          "training_loss": 0.1386493305566912
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_endpoint_linear_s20260911.pt",
+        "sha256": "cc6e672e9f8c5e1c674f09e60ece3edd3a231f89f0dbcf127c991a25dbc11038"
+      },
+      "elapsed_seconds": 2.798901268000918,
+      "fit_P": 6601,
+      "fit_U": 883276,
+      "fold": 0,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "2427c30faa067808568083320cb5f8d9807e8526efa885b12614e37d622c08f2",
+            "u": "12ffa9f43fad96cade6f3a1c6c4944bba7bee98d822860c3fb64cb60dc1fd2e0"
+          },
+          "pass": 1,
+          "steps": 216,
+          "training_loss": 0.6112529870091141
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "4bae9823065f1749a9f5722e37d5984618aa52fa118f8fad5f043fa4312f25aa",
+            "u": "b7f8e8c47776d4504938612d77055c8eec3435e7e126f7bdcc4acd39d4c063be"
+          },
+          "pass": 2,
+          "steps": 432,
+          "training_loss": 0.49409665850197065
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "7c46909ff00afd89ca789e9a1cbca64af4f2bbdf76fbee353014df295d5f9155",
+            "u": "bd0fb2fd464e1c9d2221af7215e52895ae051f464dd4a65ad463c166531c0b28"
+          },
+          "pass": 3,
+          "steps": 648,
+          "training_loss": 0.47360918708627864
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "043fa847f5277851616ad9774272baff2d47e07164424aceed0c60a52a665722",
+            "u": "7cee49f498af98f79db44e37e2f725f3d050ccfaa128d27115b38b20ec0ee438"
+          },
+          "pass": 4,
+          "steps": 864,
+          "training_loss": 0.4650021854274227
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "2ab30244628ee10da23bc05b5c1163a6d886273d0999190848c5b2b4583074bb",
+            "u": "5b3ec2d6c7f57ef7d246a7239b7fa001eece41dca6ad96d7241e6969507c8916"
+          },
+          "pass": 5,
+          "steps": 1080,
+          "training_loss": 0.4613879918415713
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_endpoint_linear_s20260912.pt",
+        "sha256": "7c8d2519cb33d237baf20d3d474720e6e801dfc656239ca8fb9e6ae5738afdb8"
+      },
+      "elapsed_seconds": 2.8074762360010936,
+      "fit_P": 6601,
+      "fit_U": 883276,
+      "fold": 0,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "4bae9823065f1749a9f5722e37d5984618aa52fa118f8fad5f043fa4312f25aa",
+            "u": "b7f8e8c47776d4504938612d77055c8eec3435e7e126f7bdcc4acd39d4c063be"
+          },
+          "pass": 1,
+          "steps": 216,
+          "training_loss": 0.5816356299103741
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "7c46909ff00afd89ca789e9a1cbca64af4f2bbdf76fbee353014df295d5f9155",
+            "u": "bd0fb2fd464e1c9d2221af7215e52895ae051f464dd4a65ad463c166531c0b28"
+          },
+          "pass": 2,
+          "steps": 432,
+          "training_loss": 0.4916828767323576
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "043fa847f5277851616ad9774272baff2d47e07164424aceed0c60a52a665722",
+            "u": "7cee49f498af98f79db44e37e2f725f3d050ccfaa128d27115b38b20ec0ee438"
+          },
+          "pass": 3,
+          "steps": 648,
+          "training_loss": 0.4716229422278771
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "2ab30244628ee10da23bc05b5c1163a6d886273d0999190848c5b2b4583074bb",
+            "u": "5b3ec2d6c7f57ef7d246a7239b7fa001eece41dca6ad96d7241e6969507c8916"
+          },
+          "pass": 4,
+          "steps": 864,
+          "training_loss": 0.4631100612925812
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "614e562c738d36aa2c097dfafb29260bdd5a3dcc941fcda6789cbd9fe11cf2ce",
+            "u": "3ed7444d240f9675270c4a2d11b97a31d825e020c8eb042298a9497b381679c1"
+          },
+          "pass": 5,
+          "steps": 1080,
+          "training_loss": 0.45954304244789623
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_endpoint_linear_s20260913.pt",
+        "sha256": "bf61447ef1c4908a3eadcd25d41ed99ade46d8e60903bd7728995541a92e6071"
+      },
+      "elapsed_seconds": 2.747850395000569,
+      "fit_P": 6601,
+      "fit_U": 883276,
+      "fold": 0,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "7c46909ff00afd89ca789e9a1cbca64af4f2bbdf76fbee353014df295d5f9155",
+            "u": "bd0fb2fd464e1c9d2221af7215e52895ae051f464dd4a65ad463c166531c0b28"
+          },
+          "pass": 1,
+          "steps": 216,
+          "training_loss": 0.5791607599247139
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "043fa847f5277851616ad9774272baff2d47e07164424aceed0c60a52a665722",
+            "u": "7cee49f498af98f79db44e37e2f725f3d050ccfaa128d27115b38b20ec0ee438"
+          },
+          "pass": 2,
+          "steps": 432,
+          "training_loss": 0.4912874386224457
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "2ab30244628ee10da23bc05b5c1163a6d886273d0999190848c5b2b4583074bb",
+            "u": "5b3ec2d6c7f57ef7d246a7239b7fa001eece41dca6ad96d7241e6969507c8916"
+          },
+          "pass": 3,
+          "steps": 648,
+          "training_loss": 0.4715561363585171
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "614e562c738d36aa2c097dfafb29260bdd5a3dcc941fcda6789cbd9fe11cf2ce",
+            "u": "3ed7444d240f9675270c4a2d11b97a31d825e020c8eb042298a9497b381679c1"
+          },
+          "pass": 4,
+          "steps": 864,
+          "training_loss": 0.46281808484482506
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "e16c4960594e303a9775a5c96177393c46d5c7aa95476cfbbd83c240b5bb7907",
+            "u": "e998554a44f2249cc17b7e1c24b286fb187de19434066cabd8a1500527f9da35"
+          },
+          "pass": 5,
+          "steps": 1080,
+          "training_loss": 0.4592445762646958
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_pair_linear_s20260911.pt",
+        "sha256": "5696ead78db624751677e4133a697e7539d1c99ee67ca017613f0d2424d53522"
+      },
+      "elapsed_seconds": 2.7616021949979768,
+      "fit_P": 6601,
+      "fit_U": 883276,
+      "fold": 0,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "2427c30faa067808568083320cb5f8d9807e8526efa885b12614e37d622c08f2",
+            "u": "12ffa9f43fad96cade6f3a1c6c4944bba7bee98d822860c3fb64cb60dc1fd2e0"
+          },
+          "pass": 1,
+          "steps": 216,
+          "training_loss": 0.46551669468902573
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "4bae9823065f1749a9f5722e37d5984618aa52fa118f8fad5f043fa4312f25aa",
+            "u": "b7f8e8c47776d4504938612d77055c8eec3435e7e126f7bdcc4acd39d4c063be"
+          },
+          "pass": 2,
+          "steps": 432,
+          "training_loss": 0.33129515761498546
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "7c46909ff00afd89ca789e9a1cbca64af4f2bbdf76fbee353014df295d5f9155",
+            "u": "bd0fb2fd464e1c9d2221af7215e52895ae051f464dd4a65ad463c166531c0b28"
+          },
+          "pass": 3,
+          "steps": 648,
+          "training_loss": 0.30926605386486167
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "043fa847f5277851616ad9774272baff2d47e07164424aceed0c60a52a665722",
+            "u": "7cee49f498af98f79db44e37e2f725f3d050ccfaa128d27115b38b20ec0ee438"
+          },
+          "pass": 4,
+          "steps": 864,
+          "training_loss": 0.3005242713544152
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "2ab30244628ee10da23bc05b5c1163a6d886273d0999190848c5b2b4583074bb",
+            "u": "5b3ec2d6c7f57ef7d246a7239b7fa001eece41dca6ad96d7241e6969507c8916"
+          },
+          "pass": 5,
+          "steps": 1080,
+          "training_loss": 0.29694479977599564
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_pair_linear_s20260912.pt",
+        "sha256": "7c2d7b62c364e973e3ff85e3f4405fa54739cfb672f14543ad56ec3fd75c56df"
+      },
+      "elapsed_seconds": 2.738009802000306,
+      "fit_P": 6601,
+      "fit_U": 883276,
+      "fold": 0,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "4bae9823065f1749a9f5722e37d5984618aa52fa118f8fad5f043fa4312f25aa",
+            "u": "b7f8e8c47776d4504938612d77055c8eec3435e7e126f7bdcc4acd39d4c063be"
+          },
+          "pass": 1,
+          "steps": 216,
+          "training_loss": 0.4602408511424435
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "7c46909ff00afd89ca789e9a1cbca64af4f2bbdf76fbee353014df295d5f9155",
+            "u": "bd0fb2fd464e1c9d2221af7215e52895ae051f464dd4a65ad463c166531c0b28"
+          },
+          "pass": 2,
+          "steps": 432,
+          "training_loss": 0.33341542849456157
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "043fa847f5277851616ad9774272baff2d47e07164424aceed0c60a52a665722",
+            "u": "7cee49f498af98f79db44e37e2f725f3d050ccfaa128d27115b38b20ec0ee438"
+          },
+          "pass": 3,
+          "steps": 648,
+          "training_loss": 0.309588466835428
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "2ab30244628ee10da23bc05b5c1163a6d886273d0999190848c5b2b4583074bb",
+            "u": "5b3ec2d6c7f57ef7d246a7239b7fa001eece41dca6ad96d7241e6969507c8916"
+          },
+          "pass": 4,
+          "steps": 864,
+          "training_loss": 0.30087296178030487
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "614e562c738d36aa2c097dfafb29260bdd5a3dcc941fcda6789cbd9fe11cf2ce",
+            "u": "3ed7444d240f9675270c4a2d11b97a31d825e020c8eb042298a9497b381679c1"
+          },
+          "pass": 5,
+          "steps": 1080,
+          "training_loss": 0.2969134940865094
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f0_pair_linear_s20260913.pt",
+        "sha256": "adda448e349bbbd294ebd8929ba45ed8c526498de361ecb17b7e8f63a5eb4b06"
+      },
+      "elapsed_seconds": 2.732168541999272,
+      "fit_P": 6601,
+      "fit_U": 883276,
+      "fold": 0,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "7c46909ff00afd89ca789e9a1cbca64af4f2bbdf76fbee353014df295d5f9155",
+            "u": "bd0fb2fd464e1c9d2221af7215e52895ae051f464dd4a65ad463c166531c0b28"
+          },
+          "pass": 1,
+          "steps": 216,
+          "training_loss": 0.4532971517766633
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "043fa847f5277851616ad9774272baff2d47e07164424aceed0c60a52a665722",
+            "u": "7cee49f498af98f79db44e37e2f725f3d050ccfaa128d27115b38b20ec0ee438"
+          },
+          "pass": 2,
+          "steps": 432,
+          "training_loss": 0.33274712175932797
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "2ab30244628ee10da23bc05b5c1163a6d886273d0999190848c5b2b4583074bb",
+            "u": "5b3ec2d6c7f57ef7d246a7239b7fa001eece41dca6ad96d7241e6969507c8916"
+          },
+          "pass": 3,
+          "steps": 648,
+          "training_loss": 0.30984009285960734
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "614e562c738d36aa2c097dfafb29260bdd5a3dcc941fcda6789cbd9fe11cf2ce",
+            "u": "3ed7444d240f9675270c4a2d11b97a31d825e020c8eb042298a9497b381679c1"
+          },
+          "pass": 4,
+          "steps": 864,
+          "training_loss": 0.30072259349198466
+        },
+        {
+          "U_comparisons": 883276,
+          "order_hashes": {
+            "p": "e16c4960594e303a9775a5c96177393c46d5c7aa95476cfbbd83c240b5bb7907",
+            "u": "e998554a44f2249cc17b7e1c24b286fb187de19434066cabd8a1500527f9da35"
+          },
+          "pass": 5,
+          "steps": 1080,
+          "training_loss": 0.29689658045301254
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_endpoint_linear_s20260911.pt",
+        "sha256": "ef3d78d3b884426d0c2f07ba8e00c0d023706e320d6c7bbc0064c6f9bfa427f4"
+      },
+      "elapsed_seconds": 3.00340091399994,
+      "fit_P": 7082,
+      "fit_U": 943156,
+      "fold": 1,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "77121c71c5d1e1f7cfe354ef06152547cb163e1a08079ca531c137a911aac18e",
+            "u": "bff1fb62a4a68e9cef14d216b58ae6d48ca20c2dd1d9cd598df5d0ae2f296d43"
+          },
+          "pass": 1,
+          "steps": 231,
+          "training_loss": 0.6105214771988073
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "31512948c7bb7a38cdeda1f12ff2cf55f16acdc4647e004f263712fcd5fa1699",
+            "u": "aacfbb987b48f89adf4d684694f147eabb3adde8794c24096eefb6073b246526"
+          },
+          "pass": 2,
+          "steps": 462,
+          "training_loss": 0.50575718852207
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "0d2f0d0687b1a32be6cddff9dfbd4e8bf427a32a256b4577e6cde1527fd6a853",
+            "u": "2b0eb3a4f7bbdd77c3fddbd661deeb2c0531773cf72d66eef1873f571fb62440"
+          },
+          "pass": 3,
+          "steps": 693,
+          "training_loss": 0.4868070637236721
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "37c86eccd035151fe7190c908723c54dda79abcbc1ff3f845a68df8a46debba4",
+            "u": "6858a136ed7549e720f621ad7d341200ce05409dc679164dfb174cc91039abff"
+          },
+          "pass": 4,
+          "steps": 924,
+          "training_loss": 0.47854685003419994
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "9688fbfb2a52486ed428adce776a2f393f6fa7b8613a4732d709be6f1122a6f2",
+            "u": "7c2c4a9b05236ce6e489858ae2011151faf0b513c4d8a3e4ffec99e811aebe08"
+          },
+          "pass": 5,
+          "steps": 1155,
+          "training_loss": 0.47493425340526957
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_endpoint_linear_s20260912.pt",
+        "sha256": "d7fffc50bf5b2e169d45de72fc308d6db2e7994101637723e336f1176de944e5"
+      },
+      "elapsed_seconds": 3.01682030700249,
+      "fit_P": 7082,
+      "fit_U": 943156,
+      "fold": 1,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "31512948c7bb7a38cdeda1f12ff2cf55f16acdc4647e004f263712fcd5fa1699",
+            "u": "aacfbb987b48f89adf4d684694f147eabb3adde8794c24096eefb6073b246526"
+          },
+          "pass": 1,
+          "steps": 231,
+          "training_loss": 0.5989745846429548
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "0d2f0d0687b1a32be6cddff9dfbd4e8bf427a32a256b4577e6cde1527fd6a853",
+            "u": "2b0eb3a4f7bbdd77c3fddbd661deeb2c0531773cf72d66eef1873f571fb62440"
+          },
+          "pass": 2,
+          "steps": 462,
+          "training_loss": 0.5087819501825174
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "37c86eccd035151fe7190c908723c54dda79abcbc1ff3f845a68df8a46debba4",
+            "u": "6858a136ed7549e720f621ad7d341200ce05409dc679164dfb174cc91039abff"
+          },
+          "pass": 3,
+          "steps": 693,
+          "training_loss": 0.4882054618480386
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "9688fbfb2a52486ed428adce776a2f393f6fa7b8613a4732d709be6f1122a6f2",
+            "u": "7c2c4a9b05236ce6e489858ae2011151faf0b513c4d8a3e4ffec99e811aebe08"
+          },
+          "pass": 4,
+          "steps": 924,
+          "training_loss": 0.47955999089439016
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "bfbb41a710049bcd4515410fb92f7d8338c696f098d0f566f954ecca09adee73",
+            "u": "66deb0df203b00a1096e92d12ee9d7b8ed2edcfe77fa485346e9e37243ca9056"
+          },
+          "pass": 5,
+          "steps": 1155,
+          "training_loss": 0.47597832512946275
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_endpoint_linear_s20260913.pt",
+        "sha256": "a9bc2a7be8ee71ebb5a99cce16560d38ca476d547f4a3c4712529c2b2f087585"
+      },
+      "elapsed_seconds": 2.965859061001538,
+      "fit_P": 7082,
+      "fit_U": 943156,
+      "fold": 1,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "0d2f0d0687b1a32be6cddff9dfbd4e8bf427a32a256b4577e6cde1527fd6a853",
+            "u": "2b0eb3a4f7bbdd77c3fddbd661deeb2c0531773cf72d66eef1873f571fb62440"
+          },
+          "pass": 1,
+          "steps": 231,
+          "training_loss": 0.5927321356925191
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "37c86eccd035151fe7190c908723c54dda79abcbc1ff3f845a68df8a46debba4",
+            "u": "6858a136ed7549e720f621ad7d341200ce05409dc679164dfb174cc91039abff"
+          },
+          "pass": 2,
+          "steps": 462,
+          "training_loss": 0.5089145822676713
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "9688fbfb2a52486ed428adce776a2f393f6fa7b8613a4732d709be6f1122a6f2",
+            "u": "7c2c4a9b05236ce6e489858ae2011151faf0b513c4d8a3e4ffec99e811aebe08"
+          },
+          "pass": 3,
+          "steps": 693,
+          "training_loss": 0.48899274886948657
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "bfbb41a710049bcd4515410fb92f7d8338c696f098d0f566f954ecca09adee73",
+            "u": "66deb0df203b00a1096e92d12ee9d7b8ed2edcfe77fa485346e9e37243ca9056"
+          },
+          "pass": 4,
+          "steps": 924,
+          "training_loss": 0.48021362623594943
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "b690c0a01fe2360e2f161b3016a6a63928896bf3979b40d6f7ca4030feb0306f",
+            "u": "79f7b2630a78a5729d8a778ebb91011b1c2614644f018c1158d5f4dc277e8f18"
+          },
+          "pass": 5,
+          "steps": 1155,
+          "training_loss": 0.47685155765922904
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_pair_linear_s20260911.pt",
+        "sha256": "3e0a878e78b8f6c418d487b40449a9350a5a6801d4a0c8778a498034106f62bf"
+      },
+      "elapsed_seconds": 2.911558605999744,
+      "fit_P": 7082,
+      "fit_U": 943156,
+      "fold": 1,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "77121c71c5d1e1f7cfe354ef06152547cb163e1a08079ca531c137a911aac18e",
+            "u": "bff1fb62a4a68e9cef14d216b58ae6d48ca20c2dd1d9cd598df5d0ae2f296d43"
+          },
+          "pass": 1,
+          "steps": 231,
+          "training_loss": 0.47235957873800805
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "31512948c7bb7a38cdeda1f12ff2cf55f16acdc4647e004f263712fcd5fa1699",
+            "u": "aacfbb987b48f89adf4d684694f147eabb3adde8794c24096eefb6073b246526"
+          },
+          "pass": 2,
+          "steps": 462,
+          "training_loss": 0.34970838016295663
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "0d2f0d0687b1a32be6cddff9dfbd4e8bf427a32a256b4577e6cde1527fd6a853",
+            "u": "2b0eb3a4f7bbdd77c3fddbd661deeb2c0531773cf72d66eef1873f571fb62440"
+          },
+          "pass": 3,
+          "steps": 693,
+          "training_loss": 0.3287738040148745
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "37c86eccd035151fe7190c908723c54dda79abcbc1ff3f845a68df8a46debba4",
+            "u": "6858a136ed7549e720f621ad7d341200ce05409dc679164dfb174cc91039abff"
+          },
+          "pass": 4,
+          "steps": 924,
+          "training_loss": 0.3207091729888869
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "9688fbfb2a52486ed428adce776a2f393f6fa7b8613a4732d709be6f1122a6f2",
+            "u": "7c2c4a9b05236ce6e489858ae2011151faf0b513c4d8a3e4ffec99e811aebe08"
+          },
+          "pass": 5,
+          "steps": 1155,
+          "training_loss": 0.3174536605945519
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_pair_linear_s20260912.pt",
+        "sha256": "6da67d8a57c7db404c8f2ccae650d12ecff9033734db212e30761dd54dabd55a"
+      },
+      "elapsed_seconds": 2.986155732000043,
+      "fit_P": 7082,
+      "fit_U": 943156,
+      "fold": 1,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "31512948c7bb7a38cdeda1f12ff2cf55f16acdc4647e004f263712fcd5fa1699",
+            "u": "aacfbb987b48f89adf4d684694f147eabb3adde8794c24096eefb6073b246526"
+          },
+          "pass": 1,
+          "steps": 231,
+          "training_loss": 0.4784184675089016
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "0d2f0d0687b1a32be6cddff9dfbd4e8bf427a32a256b4577e6cde1527fd6a853",
+            "u": "2b0eb3a4f7bbdd77c3fddbd661deeb2c0531773cf72d66eef1873f571fb62440"
+          },
+          "pass": 2,
+          "steps": 462,
+          "training_loss": 0.3517853830467088
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "37c86eccd035151fe7190c908723c54dda79abcbc1ff3f845a68df8a46debba4",
+            "u": "6858a136ed7549e720f621ad7d341200ce05409dc679164dfb174cc91039abff"
+          },
+          "pass": 3,
+          "steps": 693,
+          "training_loss": 0.329884019823701
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "9688fbfb2a52486ed428adce776a2f393f6fa7b8613a4732d709be6f1122a6f2",
+            "u": "7c2c4a9b05236ce6e489858ae2011151faf0b513c4d8a3e4ffec99e811aebe08"
+          },
+          "pass": 4,
+          "steps": 924,
+          "training_loss": 0.32128644175863
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "bfbb41a710049bcd4515410fb92f7d8338c696f098d0f566f954ecca09adee73",
+            "u": "66deb0df203b00a1096e92d12ee9d7b8ed2edcfe77fa485346e9e37243ca9056"
+          },
+          "pass": 5,
+          "steps": 1155,
+          "training_loss": 0.3181863483836844
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f1_pair_linear_s20260913.pt",
+        "sha256": "ff8202b4560ebc9aca2f35e18049354d4cc26d759a25fc46a2e263b3799dab74"
+      },
+      "elapsed_seconds": 2.9673493030022655,
+      "fit_P": 7082,
+      "fit_U": 943156,
+      "fold": 1,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "0d2f0d0687b1a32be6cddff9dfbd4e8bf427a32a256b4577e6cde1527fd6a853",
+            "u": "2b0eb3a4f7bbdd77c3fddbd661deeb2c0531773cf72d66eef1873f571fb62440"
+          },
+          "pass": 1,
+          "steps": 231,
+          "training_loss": 0.46830312436505783
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "37c86eccd035151fe7190c908723c54dda79abcbc1ff3f845a68df8a46debba4",
+            "u": "6858a136ed7549e720f621ad7d341200ce05409dc679164dfb174cc91039abff"
+          },
+          "pass": 2,
+          "steps": 462,
+          "training_loss": 0.3504035619188951
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "9688fbfb2a52486ed428adce776a2f393f6fa7b8613a4732d709be6f1122a6f2",
+            "u": "7c2c4a9b05236ce6e489858ae2011151faf0b513c4d8a3e4ffec99e811aebe08"
+          },
+          "pass": 3,
+          "steps": 693,
+          "training_loss": 0.3292338193583675
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "bfbb41a710049bcd4515410fb92f7d8338c696f098d0f566f954ecca09adee73",
+            "u": "66deb0df203b00a1096e92d12ee9d7b8ed2edcfe77fa485346e9e37243ca9056"
+          },
+          "pass": 4,
+          "steps": 924,
+          "training_loss": 0.3214103034991798
+        },
+        {
+          "U_comparisons": 943156,
+          "order_hashes": {
+            "p": "b690c0a01fe2360e2f161b3016a6a63928896bf3979b40d6f7ca4030feb0306f",
+            "u": "79f7b2630a78a5729d8a778ebb91011b1c2614644f018c1158d5f4dc277e8f18"
+          },
+          "pass": 5,
+          "steps": 1155,
+          "training_loss": 0.3180199385124129
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_endpoint_linear_s20260911.pt",
+        "sha256": "895b4248a0dcb4cbdee2df1acbce85a8655ed4cbec3f2ea27f5084652e96b250"
+      },
+      "elapsed_seconds": 2.709688963001099,
+      "fit_P": 6281,
+      "fit_U": 844078,
+      "fold": 2,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "65c0d1ca2dec69a9b72709695d30d998e001df8de7e1a323701ee20eb7e4d7c0",
+            "u": "90486f6aeed98ff9a6e85d7666d58272be3e041e61e1e36d6b9e07f77db956e8"
+          },
+          "pass": 1,
+          "steps": 207,
+          "training_loss": 0.6150453591035565
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "adf94aaf9bc78c1fa12ec9fae6958770c023fb26f4e9df6d571a9d81ecdad2f5",
+            "u": "74a7ac672f25b752cf5bb533679f04bb7efeb402b3f69b478954076547a98333"
+          },
+          "pass": 2,
+          "steps": 414,
+          "training_loss": 0.5003982104123997
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "1a2c985615264aefb98f3ec26d082bb9f654442ed90ceb642e6dc0b0893cc582",
+            "u": "cb1a18d32aa4e846f14cc51afc12f5939cf363f6017ea1015e74f5c2405f7ff2"
+          },
+          "pass": 3,
+          "steps": 621,
+          "training_loss": 0.4784763896044796
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "a9c29cf9ab985cdfa52d9d26734d3180dfe98b486ddc80d8eeee584357030620",
+            "u": "78297ef173c128e178b1839632156d2ab8ac232ff0185c27db4aed6805dd7906"
+          },
+          "pass": 4,
+          "steps": 828,
+          "training_loss": 0.46976424775864994
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "43d15fc40376ca9e8ae41b47134ba4a0baeecd7d7b43c974fd6441ddc1705832",
+            "u": "4faf09ddd7279647120dc837feb7ce0de25bec4da8076357e2b0cb3a3dad4c73"
+          },
+          "pass": 5,
+          "steps": 1035,
+          "training_loss": 0.46559685831309044
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_endpoint_linear_s20260912.pt",
+        "sha256": "cb6c8e37466e91d05d47489515b3c7a71dc9709e00f99e6f79ae62fbca602bd0"
+      },
+      "elapsed_seconds": 2.6332992870011367,
+      "fit_P": 6281,
+      "fit_U": 844078,
+      "fold": 2,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "adf94aaf9bc78c1fa12ec9fae6958770c023fb26f4e9df6d571a9d81ecdad2f5",
+            "u": "74a7ac672f25b752cf5bb533679f04bb7efeb402b3f69b478954076547a98333"
+          },
+          "pass": 1,
+          "steps": 207,
+          "training_loss": 0.5883156170597574
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "1a2c985615264aefb98f3ec26d082bb9f654442ed90ceb642e6dc0b0893cc582",
+            "u": "cb1a18d32aa4e846f14cc51afc12f5939cf363f6017ea1015e74f5c2405f7ff2"
+          },
+          "pass": 2,
+          "steps": 414,
+          "training_loss": 0.4982504063794278
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "a9c29cf9ab985cdfa52d9d26734d3180dfe98b486ddc80d8eeee584357030620",
+            "u": "78297ef173c128e178b1839632156d2ab8ac232ff0185c27db4aed6805dd7906"
+          },
+          "pass": 3,
+          "steps": 621,
+          "training_loss": 0.47744741168258265
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "43d15fc40376ca9e8ae41b47134ba4a0baeecd7d7b43c974fd6441ddc1705832",
+            "u": "4faf09ddd7279647120dc837feb7ce0de25bec4da8076357e2b0cb3a3dad4c73"
+          },
+          "pass": 4,
+          "steps": 828,
+          "training_loss": 0.4680216300250396
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "b3bcb591c08b7dd335b6ae4feed285ccb977277e8d99e94e1bb28ca0f0647aef",
+            "u": "622474876e814607da83ca8722dfd56f60e90d0d780ea82bb0dde41bd05e8fa2"
+          },
+          "pass": 5,
+          "steps": 1035,
+          "training_loss": 0.4646528097915814
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_endpoint_linear_s20260913.pt",
+        "sha256": "93d6c2125cf233e0023547a9e6dd531b2a0bc48e8d30a1a7bbd28c965cbfeb0f"
+      },
+      "elapsed_seconds": 2.6094934930006275,
+      "fit_P": 6281,
+      "fit_U": 844078,
+      "fold": 2,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "1a2c985615264aefb98f3ec26d082bb9f654442ed90ceb642e6dc0b0893cc582",
+            "u": "cb1a18d32aa4e846f14cc51afc12f5939cf363f6017ea1015e74f5c2405f7ff2"
+          },
+          "pass": 1,
+          "steps": 207,
+          "training_loss": 0.5846129193115133
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "a9c29cf9ab985cdfa52d9d26734d3180dfe98b486ddc80d8eeee584357030620",
+            "u": "78297ef173c128e178b1839632156d2ab8ac232ff0185c27db4aed6805dd7906"
+          },
+          "pass": 2,
+          "steps": 414,
+          "training_loss": 0.4967486615778838
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "43d15fc40376ca9e8ae41b47134ba4a0baeecd7d7b43c974fd6441ddc1705832",
+            "u": "4faf09ddd7279647120dc837feb7ce0de25bec4da8076357e2b0cb3a3dad4c73"
+          },
+          "pass": 3,
+          "steps": 621,
+          "training_loss": 0.4763002748627736
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "b3bcb591c08b7dd335b6ae4feed285ccb977277e8d99e94e1bb28ca0f0647aef",
+            "u": "622474876e814607da83ca8722dfd56f60e90d0d780ea82bb0dde41bd05e8fa2"
+          },
+          "pass": 4,
+          "steps": 828,
+          "training_loss": 0.4672159006434701
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "5715248ea1bc99a2edb0f44cce4c725777a8ba34a892ef0968943ba442cfc388",
+            "u": "73b29519f31fa4262fa33f5307a37300f06887e06dc60b0511c11dc0aab2042b"
+          },
+          "pass": 5,
+          "steps": 1035,
+          "training_loss": 0.4635965591663724
+        }
+      ],
+      "seed": 20260913
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_pair_linear_s20260911.pt",
+        "sha256": "2f0db00f170e075381a15b92239881a6371add3415fe573711f143932c85c2b2"
+      },
+      "elapsed_seconds": 2.581566290999035,
+      "fit_P": 6281,
+      "fit_U": 844078,
+      "fold": 2,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "65c0d1ca2dec69a9b72709695d30d998e001df8de7e1a323701ee20eb7e4d7c0",
+            "u": "90486f6aeed98ff9a6e85d7666d58272be3e041e61e1e36d6b9e07f77db956e8"
+          },
+          "pass": 1,
+          "steps": 207,
+          "training_loss": 0.47107972603745873
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "adf94aaf9bc78c1fa12ec9fae6958770c023fb26f4e9df6d571a9d81ecdad2f5",
+            "u": "74a7ac672f25b752cf5bb533679f04bb7efeb402b3f69b478954076547a98333"
+          },
+          "pass": 2,
+          "steps": 414,
+          "training_loss": 0.33463196752464314
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "1a2c985615264aefb98f3ec26d082bb9f654442ed90ceb642e6dc0b0893cc582",
+            "u": "cb1a18d32aa4e846f14cc51afc12f5939cf363f6017ea1015e74f5c2405f7ff2"
+          },
+          "pass": 3,
+          "steps": 621,
+          "training_loss": 0.31150279021972854
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "a9c29cf9ab985cdfa52d9d26734d3180dfe98b486ddc80d8eeee584357030620",
+            "u": "78297ef173c128e178b1839632156d2ab8ac232ff0185c27db4aed6805dd7906"
+          },
+          "pass": 4,
+          "steps": 828,
+          "training_loss": 0.30301115323020256
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "43d15fc40376ca9e8ae41b47134ba4a0baeecd7d7b43c974fd6441ddc1705832",
+            "u": "4faf09ddd7279647120dc837feb7ce0de25bec4da8076357e2b0cb3a3dad4c73"
+          },
+          "pass": 5,
+          "steps": 1035,
+          "training_loss": 0.29928093258320765
+        }
+      ],
+      "seed": 20260911
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_pair_linear_s20260912.pt",
+        "sha256": "a97aa545c9289680db2a7beb10362bdc6ce83ac0c1106ff0ef623ff9992a8743"
+      },
+      "elapsed_seconds": 2.5982840469987423,
+      "fit_P": 6281,
+      "fit_U": 844078,
+      "fold": 2,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "adf94aaf9bc78c1fa12ec9fae6958770c023fb26f4e9df6d571a9d81ecdad2f5",
+            "u": "74a7ac672f25b752cf5bb533679f04bb7efeb402b3f69b478954076547a98333"
+          },
+          "pass": 1,
+          "steps": 207,
+          "training_loss": 0.46808852413288926
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "1a2c985615264aefb98f3ec26d082bb9f654442ed90ceb642e6dc0b0893cc582",
+            "u": "cb1a18d32aa4e846f14cc51afc12f5939cf363f6017ea1015e74f5c2405f7ff2"
+          },
+          "pass": 2,
+          "steps": 414,
+          "training_loss": 0.33641571498132
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "a9c29cf9ab985cdfa52d9d26734d3180dfe98b486ddc80d8eeee584357030620",
+            "u": "78297ef173c128e178b1839632156d2ab8ac232ff0185c27db4aed6805dd7906"
+          },
+          "pass": 3,
+          "steps": 621,
+          "training_loss": 0.31288543560008836
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "43d15fc40376ca9e8ae41b47134ba4a0baeecd7d7b43c974fd6441ddc1705832",
+            "u": "4faf09ddd7279647120dc837feb7ce0de25bec4da8076357e2b0cb3a3dad4c73"
+          },
+          "pass": 4,
+          "steps": 828,
+          "training_loss": 0.30340520072917676
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "b3bcb591c08b7dd335b6ae4feed285ccb977277e8d99e94e1bb28ca0f0647aef",
+            "u": "622474876e814607da83ca8722dfd56f60e90d0d780ea82bb0dde41bd05e8fa2"
+          },
+          "pass": 5,
+          "steps": 1035,
+          "training_loss": 0.29963960805696743
+        }
+      ],
+      "seed": 20260912
+    },
+    {
+      "arm": "huri_to_hi",
+      "checkpoint": {
+        "bytes": 9765,
+        "path": "artifacts/runs/homology_source_challenge_v1/huri_to_hi_f2_pair_linear_s20260913.pt",
+        "sha256": "ba9199d64f6d8aab10c6af62d5e91066e588ff45eed337a103cc78f47768dd82"
+      },
+      "elapsed_seconds": 2.5971452350022446,
+      "fit_P": 6281,
+      "fit_U": 844078,
+      "fold": 2,
+      "model": "pair_linear",
+      "monitors": [
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "1a2c985615264aefb98f3ec26d082bb9f654442ed90ceb642e6dc0b0893cc582",
+            "u": "cb1a18d32aa4e846f14cc51afc12f5939cf363f6017ea1015e74f5c2405f7ff2"
+          },
+          "pass": 1,
+          "steps": 207,
+          "training_loss": 0.46049942865958876
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "a9c29cf9ab985cdfa52d9d26734d3180dfe98b486ddc80d8eeee584357030620",
+            "u": "78297ef173c128e178b1839632156d2ab8ac232ff0185c27db4aed6805dd7906"
+          },
+          "pass": 2,
+          "steps": 414,
+          "training_loss": 0.33513267542337194
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "43d15fc40376ca9e8ae41b47134ba4a0baeecd7d7b43c974fd6441ddc1705832",
+            "u": "4faf09ddd7279647120dc837feb7ce0de25bec4da8076357e2b0cb3a3dad4c73"
+          },
+          "pass": 3,
+          "steps": 621,
+          "training_loss": 0.31173909434182223
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "b3bcb591c08b7dd335b6ae4feed285ccb977277e8d99e94e1bb28ca0f0647aef",
+            "u": "622474876e814607da83ca8722dfd56f60e90d0d780ea82bb0dde41bd05e8fa2"
+          },
+          "pass": 4,
+          "steps": 828,
+          "training_loss": 0.3026403001360956
+        },
+        {
+          "U_comparisons": 844078,
+          "order_hashes": {
+            "p": "5715248ea1bc99a2edb0f44cce4c725777a8ba34a892ef0968943ba442cfc388",
+            "u": "73b29519f31fa4262fa33f5307a37300f06887e06dc60b0511c11dc0aab2042b"
+          },
+          "pass": 5,
+          "steps": 1035,
+          "training_loss": 0.2993159057734915
+        }
+      ],
+      "seed": 20260913
+    }
+  ]
+}

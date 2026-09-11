@@ -1,0 +1,98 @@
+schema_version: 47
+supersedes: governance/gates/gate_status_v46.yaml
+updated_date: '2026-09-11'
+programme_state: internal_homology_source_anchor_signal_verified_reverse_swap_inconclusive
+authority: governance/decisions/DEC-0047-authorize-homology-and-source-challenge.md
+gates:
+  local_prospective_specification:
+    status: pass
+    external_registry: false
+    prior_results_informed_design: true
+    execution_freeze_sha256: d62147bcb4f0f10170575161cb2b9cc016894e656aa210c0e65bc24c2fb1d08b
+  public_source_projection:
+    status: pass
+    public_P_annotated: 16799
+    memberships: {HI-II-14_only: 1970, HuRI_only: 13547, both: 1282}
+    additional_positive_identities_emitted: 0
+    evaluator_source_or_role_ledger_used: false
+    complete_assay_opportunity_log_available: false
+  fixed_training_and_scoring:
+    status: pass
+    new_fits: 54
+    passes: 5
+    seeds: 3
+    folds: 3
+    trained_heads: [endpoint_linear, pair_linear]
+    training_elapsed_seconds: 126.17487397900186
+    scoring_elapsed_seconds: 24.423785261999
+    score_values: 40420500
+    all_fits_completed_before_new_holdout_scores: true
+  homology_purge:
+    status: pass_for_detected_direct_edges
+    minimum_identity_percent: 20
+    minimum_span: 80
+    minimum_both_coverage_percent: 20
+    maximum_evalue: 0.001
+    removed_fitting_endpoints_by_fold: [2663, 3314, 3333]
+    retained_cross_edges_by_fold: [0, 0, 0]
+    new_30pct_links_crossing_original_folds: 344
+    original_graph_modified: false
+    open_claim_limitation: governance/issues/ISSUE-0015-residual-homology-in-frozen-component-folds.md
+  anchor_ranking_challenges:
+    union: pass
+    purged20: pass
+    hi_to_huri: pass
+    huri_to_hi: pass
+    pair_concordance: {union: 0.6636119485662721, purged20: 0.6573820273582053, hi_to_huri: 0.5934486202382677, huri_to_hi: 0.6231962039172179}
+    comparator_set: [endpoint_linear, interolog_kmer, interolog_plm, interolog_local, interolog_coverage]
+    every_comparator_paired_95_lower_positive: true
+    every_fold_and_seed_beats_linear_unary: true
+    intervals_conditional_not_external_population_guarantees: true
+  balanced_swaps:
+    union: pass
+    purged20: pass
+    hi_to_huri: pass
+    huri_to_hi: inconclusive_insufficient_frozen_support
+    huri_to_hi_quartets_by_fold: [29, 17, 20]
+    minimum_quartets_per_fold: 30
+    huri_to_hi_pair_preference: 0.5606060606060606
+    huri_to_hi_interval: [0.1586675020885547, 0.9524640088593577]
+    all_challenges_survived: false
+  tests:
+    status: pass_across_qualified_runtimes
+    distinct_tests_covered: 390
+    CPU_passed: 389
+    CUDA_test_passed_separately: 1
+    new_tests: 33
+  numerical_reference:
+    status: pass
+    same_author_not_external_review: true
+    source_annotations_checked: 16799
+    similarity_entries_checked: 566440000
+    learned_score_values_checked: 16168200
+    maximum_forward_difference: 0.000004295225560113636
+    exhaustive_transfer_sample_values_checked: 24576
+    all_anchor_and_quartet_points_checked: true
+    direct_anchor_bootstrap_replicates_per_arm: 16
+    quartet_bootstrap_replicates: 2000
+    all_training_row_orders_and_passes_checked: true
+  supporting_arithmetic:
+    status: pass
+    all_strata_and_decision_rules_checked: true
+    written_after_execution_freeze: true
+scientific_result:
+  disposition: internal_anchor_signal_survives_tested_controls_reverse_source_swap_unresolved
+  frozen_machine_readout_disposition: mixed_or_explained_internal_signal_inspect_each_challenge
+  readout_sha256: 6ff6e42efeb78e0368e37b67f012cda934240201586f3db08c86f79787ec40d6
+  physical_specificity_proven: false
+  independently_source_or_assay_validated: false
+  source_and_purge_jointly_tested: false
+  unseen_family_claim_authorized: false
+  old_gated_architecture_claim_revived: false
+protected_evaluation_authorized: false
+protected_candidate_truth_or_key_access_performed: false
+development_rows_accessed: false
+encoder_extraction_or_tuning_performed: false
+new_external_data_acquired: false
+external_review_implied: false
+new_remote_push_authorized: false

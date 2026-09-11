@@ -1,0 +1,197 @@
+{
+  "all_anchor_challenges_pass": true,
+  "artifacts": [
+    {
+      "bytes": 2925,
+      "path": "configs/homology_source_challenge_v1.yaml",
+      "sha256": "95a6924fc01f3fb037c3972f80389f596eda6150ef6aa125302f3b0a1aefb01f"
+    },
+    {
+      "bytes": 9338,
+      "path": "docs/protocols/HOMOLOGY_SOURCE_CHALLENGE_v1.md",
+      "sha256": "1f7eb6e1374084cae01cfa0c2c2b707bd44fcd8ef5bef47159972a2456ffd837"
+    },
+    {
+      "bytes": 16897,
+      "path": "docs/reports/m1/M1_Homology_and_Source_Challenge_v1.md",
+      "sha256": "dd0ab568a5fba47cd84665d425e436569c21e187d3d540938a5a19715c8ae0e8"
+    },
+    {
+      "bytes": 2175,
+      "path": "governance/decisions/DEC-0047-authorize-homology-and-source-challenge.md",
+      "sha256": "c48c089d1f059208e4de7f0659ed24767b41e48ed02d0b7012e141c37f41a944"
+    },
+    {
+      "bytes": 2528,
+      "path": "governance/issues/ISSUE-0015-residual-homology-in-frozen-component-folds.md",
+      "sha256": "467aae6c7abfc657c336e56da10a3b9b5b7ab431ad0305d4394f0cd74171123c"
+    },
+    {
+      "bytes": 3432,
+      "path": "governance/PROJECT_STATUS_v47.md",
+      "sha256": "dcfb6a8523f6a7335a07df32c6e92899a6aec81aab2a6edf98c779681eddbbb0"
+    },
+    {
+      "bytes": 4040,
+      "path": "governance/gates/gate_status_v47.yaml",
+      "sha256": "718f9331ecc33e7d4f510a19f1554698317c4f1c9a0149e2b6c0a5181cc064ce"
+    },
+    {
+      "bytes": 188,
+      "path": "scripts/model/run_homology_source_challenge_v1.py",
+      "sha256": "e31269bee0e125e989f6822abdc9bbb90a6b6e11bb96a4ddcfb6a166fca1d708"
+    },
+    {
+      "bytes": 7225,
+      "path": "scripts/model/audit_homology_source_support_v1.py",
+      "sha256": "39c7f8aa08e66784a14a8358fd34f330447159fa123c1699bc7ddd70ee6717d0"
+    },
+    {
+      "bytes": 4676,
+      "path": "scripts/model/close_homology_source_challenge_v1.py",
+      "sha256": "127a1b3f295a85eef8a6a55e324db7be1abd8a3dab0d523bc5da2abf5c05bd5c"
+    },
+    {
+      "bytes": 8200,
+      "path": "tests/unit/test_homology_source.py",
+      "sha256": "13440fdc71820981a121477fb62bb916f3edecd2f4662cb88f041d2d015e8f58"
+    },
+    {
+      "bytes": 65,
+      "path": "src/ipin_openppi/homology_source/__init__.py",
+      "sha256": "44d67ffd0912a00a787bbd99ac306f4056676d783f9bc74fc8ecc2f86336747e"
+    },
+    {
+      "bytes": 18639,
+      "path": "src/ipin_openppi/homology_source/data.py",
+      "sha256": "213fa847ee055c0d4d73e817dcdf320564a2e84f2b3c7d199693742fe0acc176"
+    },
+    {
+      "bytes": 22334,
+      "path": "src/ipin_openppi/homology_source/pipeline.py",
+      "sha256": "c130766621ee5eba2662b1ecb97471751c6b8eded463aa9fca5f1d73167e1f9c"
+    },
+    {
+      "bytes": 4416,
+      "path": "src/ipin_openppi/homology_source/semantics.py",
+      "sha256": "c94da05665a0ffd469048143153de53bff43ee3b5e7a3d92e1ade8af9861211c"
+    },
+    {
+      "bytes": 19429,
+      "path": "src/ipin_openppi/homology_source/validation.py",
+      "sha256": "1b6980c869482c52dfff2fc9b7a501a8da3d0a94ddae3edf02499623523d4f1f"
+    },
+    {
+      "bytes": 3575,
+      "path": "artifacts/results/homology_source_challenge_v1/EXECUTION_FREEZE.json",
+      "sha256": "d62147bcb4f0f10170575161cb2b9cc016894e656aa210c0e65bc24c2fb1d08b"
+    },
+    {
+      "bytes": 9482,
+      "path": "artifacts/results/homology_source_challenge_v1/FEASIBILITY.json",
+      "sha256": "f75bd0b56c514c9e3d9889f65d2233043f8260b61f3c40d45367a707ed83d24e"
+    },
+    {
+      "bytes": 6819,
+      "path": "artifacts/results/homology_source_challenge_v1/PREREGISTRATION.json",
+      "sha256": "e114760c53dca09a2e43e9a93697a21af091aeb8622624af210c4ed8a1a81c4a"
+    },
+    {
+      "bytes": 978,
+      "path": "artifacts/results/homology_source_challenge_v1/PRE_EXECUTION_PRECISION_CORRECTION.json",
+      "sha256": "124b6e858044120f0b2ab12e7cca5ac46f1a2073d66b053ca64c60356c77ba27"
+    },
+    {
+      "bytes": 54360,
+      "path": "artifacts/results/homology_source_challenge_v1/RESULTS.json",
+      "sha256": "6ff6e42efeb78e0368e37b67f012cda934240201586f3db08c86f79787ec40d6"
+    },
+    {
+      "bytes": 2623,
+      "path": "artifacts/results/homology_source_challenge_v1/SCORING_COMPLETE.json",
+      "sha256": "942aad8b698e5e8a9dce69ce811c9d39d83df15576a453c6f9a401df2b8e1069"
+    },
+    {
+      "bytes": 3099,
+      "path": "artifacts/results/homology_source_challenge_v1/SEARCH_COMPLETE.json",
+      "sha256": "985d6cd33a76eb765d884bea735ea41d4047ab281435a10390cd13a0af0eec48"
+    },
+    {
+      "bytes": 594,
+      "path": "artifacts/results/homology_source_challenge_v1/SOURCE_PROJECTION.json",
+      "sha256": "02804df89e83d1823f8282cde9b58258e93adb66402f817e17d9b2174a89120e"
+    },
+    {
+      "bytes": 147672,
+      "path": "artifacts/results/homology_source_challenge_v1/TRAINING_COMPLETE.json",
+      "sha256": "010e3c798694a951a12a4702993e254c584631c86f458cbcc4e1ceee1662455d"
+    },
+    {
+      "bytes": 1248,
+      "path": "artifacts/validation/homology_source_challenge_v1/HOMOLOGY_EDGE_AUDIT.json",
+      "sha256": "122c63193d5717f8975f67fc0814f8ff0bb12e70ede83d114bb83f57cdd37806"
+    },
+    {
+      "bytes": 735,
+      "path": "artifacts/validation/homology_source_challenge_v1/REFERENCE_VALIDATION.json",
+      "sha256": "5b601d9527e057d15113a6cfdc38233adb79e9c3bf7f8a8e940f174247975608"
+    },
+    {
+      "bytes": 384,
+      "path": "artifacts/validation/homology_source_challenge_v1/SUPPORTING_READOUT_AUDIT.json",
+      "sha256": "86d2a44eea9a0114281cb0e092345e63df3056292bd6e80ca2d47d04588a9e49"
+    },
+    {
+      "bytes": 359,
+      "path": "artifacts/validation/homology_source_challenge_v1/gpu_control_post_execution.xml",
+      "sha256": "f0134d7c52e9390d8fa64caccdd4a8a7db35bacfc3c4c6c74c294725ee18cb37"
+    },
+    {
+      "bytes": 359,
+      "path": "artifacts/validation/homology_source_challenge_v1/gpu_control_pre_execution.xml",
+      "sha256": "7c18181dbfa408295ce21702f986e79ad899c4a4a3390b6df5023ad91bfa4330"
+    },
+    {
+      "bytes": 271,
+      "path": "artifacts/validation/homology_source_challenge_v1/label_free_reference_pre_execution.json",
+      "sha256": "9975dbda7b141cb1f439d217f7a3be01df597061b6b4a436be09c277b3f3c8cf"
+    },
+    {
+      "bytes": 858,
+      "path": "artifacts/validation/homology_source_challenge_v1/pre_execution_precision_failure.txt",
+      "sha256": "2c04ada7ff1e5294534ec37d99a44501982c2a4ddbd83a9ee93fb9277142ab08"
+    },
+    {
+      "bytes": 57849,
+      "path": "artifacts/validation/homology_source_challenge_v1/unit_tests_before_freeze.xml",
+      "sha256": "640f362473f25de9cfa7c2e4e389aa25a5859bf0d550fcf290f97f7f9c8751a6"
+    },
+    {
+      "bytes": 57987,
+      "path": "artifacts/validation/homology_source_challenge_v1/unit_tests_final_pre_execution.xml",
+      "sha256": "a9d04c3dbb569c2f82a3394f62fba30d998544d658e68b12dbc7545cc2cbdf4e"
+    },
+    {
+      "bytes": 57987,
+      "path": "artifacts/validation/homology_source_challenge_v1/unit_tests_post_execution.xml",
+      "sha256": "0a7124244f60d5056060c253e975edb0b53d502090b91380580fba060649f545"
+    },
+    {
+      "bytes": 57486,
+      "path": "artifacts/validation/homology_source_challenge_v1/unit_tests_pre_execution.xml",
+      "sha256": "d8280fd68e814705ba81526e1aa671ea07383bcf86a7e71ecf14e6bdb968cc83"
+    }
+  ],
+  "created_utc": "2026-09-11T00:50:40.190727+00:00",
+  "distinct_tests_covered": 390,
+  "execution_complete": true,
+  "external_review_implied": false,
+  "generated_artifacts": "Ignored local arrays/checkpoints/scores are transitively hash-bound by the phase records; no raw source or large matrix redistribution.",
+  "numerical_validation_passed": true,
+  "prior_study_closure_artifacts_unchanged": true,
+  "protected_candidate_truth_or_key_access_performed": false,
+  "protocol_id": "homology_source_challenge_v1",
+  "remote_push_performed": false,
+  "reverse_source_swap": "inconclusive_insufficient_frozen_support",
+  "swap_challenges_passed": 3
+}

@@ -1,0 +1,12 @@
+Pre-execution label-free reference check, 2026-09-11.
+Command: reference_similarities in the pinned data image, before execution freeze.
+Outcome: AssertionError on 3-mer similarity, atol=2e-6, rtol=0.
+First failing block: 82 / 1,523,200 mismatched elements (0.00538%).
+Maximum absolute difference in that block: 1.49011612e-05.
+Example observed self cosine: 1.000015; FP64 reference: 1.000000.
+Cause: constructing the sparse 3-mer matrix in FP32 before sparse multiplication.
+Disposition: retain original matrix and feasibility manifest; recompute using
+FP64 sparse accumulation followed by FP32 storage, in a separate artifact.
+No learned fits, heldout transfer scores or new performance metrics existed.
+The original frozen tolerance and scientific recipe remain unchanged.
+This record transcribes the terminal failure; it is not a captured raw traceback.

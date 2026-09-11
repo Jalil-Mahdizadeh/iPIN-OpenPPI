@@ -1,0 +1,104 @@
+{
+  "artifacts": [
+    {
+      "bytes": 25120440,
+      "path": "artifacts/runs/homology_source_challenge_v1/mmseqs/alignments.tsv",
+      "sha256": "fca3c05b768bd7fc48cb638a6f1285cc2f3c8c8d758df31700255fb445374660"
+    },
+    {
+      "bytes": 6556641,
+      "path": "artifacts/runs/homology_source_challenge_v1/mmseqs/public.fasta",
+      "sha256": "dc9031de1837c62c0ed3548b84bfcf672a433eb85a004bedb636d63b47bed5f3"
+    },
+    {
+      "bytes": 911,
+      "path": "artifacts/runs/homology_source_challenge_v1/mmseqs/command_0.log",
+      "sha256": "f4649930a6ac1235815345606af4e246b0a447eadd46d6786b73036adba75e85"
+    },
+    {
+      "bytes": 9439,
+      "path": "artifacts/runs/homology_source_challenge_v1/mmseqs/command_1.log",
+      "sha256": "2a14fee63f23a31874eb5f331030dbfe7ecb50feec59b6974c092bec401ec808"
+    },
+    {
+      "bytes": 1052,
+      "path": "artifacts/runs/homology_source_challenge_v1/mmseqs/command_2.log",
+      "sha256": "a04e949fb9bea11329363070ce84e83bbe7f032f2bf375f1dcfa6191d368bf3e"
+    }
+  ],
+  "commands": [
+    [
+      "/work/artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/bin/mmseqs",
+      "createdb",
+      "/work/artifacts/runs/homology_source_challenge_v1/mmseqs/public.fasta",
+      "/work/artifacts/runs/homology_source_challenge_v1/mmseqs/db",
+      "--shuffle",
+      "0",
+      "--createdb-mode",
+      "0"
+    ],
+    [
+      "/work/artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/bin/mmseqs",
+      "search",
+      "/work/artifacts/runs/homology_source_challenge_v1/mmseqs/db",
+      "/work/artifacts/runs/homology_source_challenge_v1/mmseqs/db",
+      "/work/artifacts/runs/homology_source_challenge_v1/mmseqs/result",
+      "/work/artifacts/runs/homology_source_challenge_v1/mmseqs/tmp",
+      "--threads",
+      "8",
+      "-s",
+      "7.5",
+      "--min-seq-id",
+      "0.20",
+      "-c",
+      "0",
+      "--cov-mode",
+      "0",
+      "--min-aln-len",
+      "40",
+      "--alignment-mode",
+      "3",
+      "--add-self-matches",
+      "1",
+      "--max-seqs",
+      "20000",
+      "--max-accept",
+      "20000",
+      "--max-rejected",
+      "20000",
+      "--min-ungapped-score",
+      "0",
+      "-e",
+      "1e-3",
+      "--comp-bias-corr",
+      "1",
+      "--mask",
+      "1",
+      "--mask-lower-case",
+      "0",
+      "--spaced-kmer-mode",
+      "1",
+      "--db-load-mode",
+      "0",
+      "--compressed",
+      "0",
+      "--remove-tmp-files",
+      "1"
+    ],
+    [
+      "/work/artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/bin/mmseqs",
+      "convertalis",
+      "/work/artifacts/runs/homology_source_challenge_v1/mmseqs/db",
+      "/work/artifacts/runs/homology_source_challenge_v1/mmseqs/db",
+      "/work/artifacts/runs/homology_source_challenge_v1/mmseqs/result",
+      "/work/artifacts/runs/homology_source_challenge_v1/mmseqs/alignments.tsv",
+      "--format-output",
+      "query,target,mismatch,alnlen,qstart,qend,qlen,tstart,tend,tlen,evalue,bits",
+      "--threads",
+      "8"
+    ]
+  ],
+  "created_utc": "2026-09-11T00:23:17.064444+00:00",
+  "public_sequences": 11900,
+  "version": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f"
+}

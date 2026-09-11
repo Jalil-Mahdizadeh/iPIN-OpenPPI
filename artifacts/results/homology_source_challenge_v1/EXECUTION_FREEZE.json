@@ -1,0 +1,97 @@
+{
+  "artifacts": [
+    {
+      "bytes": 65,
+      "path": "src/ipin_openppi/homology_source/__init__.py",
+      "sha256": "44d67ffd0912a00a787bbd99ac306f4056676d783f9bc74fc8ecc2f86336747e"
+    },
+    {
+      "bytes": 18639,
+      "path": "src/ipin_openppi/homology_source/data.py",
+      "sha256": "213fa847ee055c0d4d73e817dcdf320564a2e84f2b3c7d199693742fe0acc176"
+    },
+    {
+      "bytes": 22334,
+      "path": "src/ipin_openppi/homology_source/pipeline.py",
+      "sha256": "c130766621ee5eba2662b1ecb97471751c6b8eded463aa9fca5f1d73167e1f9c"
+    },
+    {
+      "bytes": 4416,
+      "path": "src/ipin_openppi/homology_source/semantics.py",
+      "sha256": "c94da05665a0ffd469048143153de53bff43ee3b5e7a3d92e1ade8af9861211c"
+    },
+    {
+      "bytes": 19429,
+      "path": "src/ipin_openppi/homology_source/validation.py",
+      "sha256": "1b6980c869482c52dfff2fc9b7a501a8da3d0a94ddae3edf02499623523d4f1f"
+    },
+    {
+      "bytes": 188,
+      "path": "scripts/model/run_homology_source_challenge_v1.py",
+      "sha256": "e31269bee0e125e989f6822abdc9bbb90a6b6e11bb96a4ddcfb6a166fca1d708"
+    },
+    {
+      "bytes": 8200,
+      "path": "tests/unit/test_homology_source.py",
+      "sha256": "13440fdc71820981a121477fb62bb916f3edecd2f4662cb88f041d2d015e8f58"
+    },
+    {
+      "bytes": 57987,
+      "path": "artifacts/validation/homology_source_challenge_v1/unit_tests_final_pre_execution.xml",
+      "sha256": "a9d04c3dbb569c2f82a3394f62fba30d998544d658e68b12dbc7545cc2cbdf4e"
+    },
+    {
+      "bytes": 6819,
+      "path": "artifacts/results/homology_source_challenge_v1/PREREGISTRATION.json",
+      "sha256": "e114760c53dca09a2e43e9a93697a21af091aeb8622624af210c4ed8a1a81c4a"
+    },
+    {
+      "bytes": 594,
+      "path": "artifacts/results/homology_source_challenge_v1/SOURCE_PROJECTION.json",
+      "sha256": "02804df89e83d1823f8282cde9b58258e93adb66402f817e17d9b2174a89120e"
+    },
+    {
+      "bytes": 3099,
+      "path": "artifacts/results/homology_source_challenge_v1/SEARCH_COMPLETE.json",
+      "sha256": "985d6cd33a76eb765d884bea735ea41d4047ab281435a10390cd13a0af0eec48"
+    },
+    {
+      "bytes": 9482,
+      "path": "artifacts/results/homology_source_challenge_v1/FEASIBILITY.json",
+      "sha256": "f75bd0b56c514c9e3d9889f65d2233043f8260b61f3c40d45367a707ed83d24e"
+    },
+    {
+      "bytes": 978,
+      "path": "artifacts/results/homology_source_challenge_v1/PRE_EXECUTION_PRECISION_CORRECTION.json",
+      "sha256": "124b6e858044120f0b2ab12e7cca5ac46f1a2073d66b053ca64c60356c77ba27"
+    },
+    {
+      "bytes": 566440128,
+      "path": "artifacts/runs/homology_source_challenge_v1/similarity_kmer_fp64_accumulated.npy",
+      "sha256": "af9ef8193add6e5f3623ac1b99c65e8dcf2962bb02d20d22e3d562867bfe8956"
+    },
+    {
+      "bytes": 858,
+      "path": "artifacts/validation/homology_source_challenge_v1/pre_execution_precision_failure.txt",
+      "sha256": "2c04ada7ff1e5294534ec37d99a44501982c2a4ddbd83a9ee93fb9277142ab08"
+    },
+    {
+      "bytes": 359,
+      "path": "artifacts/validation/homology_source_challenge_v1/gpu_control_pre_execution.xml",
+      "sha256": "7c18181dbfa408295ce21702f986e79ad899c4a4a3390b6df5023ad91bfa4330"
+    },
+    {
+      "bytes": 271,
+      "path": "artifacts/validation/homology_source_challenge_v1/label_free_reference_pre_execution.json",
+      "sha256": "9975dbda7b141cb1f439d217f7a3be01df597061b6b4a436be09c277b3f3c8cf"
+    }
+  ],
+  "before_any_new_fits_or_scores": true,
+  "created_utc": "2026-09-11T00:33:29.808440+00:00",
+  "feasible_arms": [
+    "union",
+    "purged20",
+    "hi_to_huri",
+    "huri_to_hi"
+  ]
+}

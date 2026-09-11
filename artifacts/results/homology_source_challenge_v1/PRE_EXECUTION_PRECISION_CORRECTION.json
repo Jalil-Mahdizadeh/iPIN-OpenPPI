@@ -1,0 +1,25 @@
+{
+  "artifacts": [
+    {
+      "bytes": 566440128,
+      "path": "artifacts/runs/homology_source_challenge_v1/similarity_kmer_fp64_accumulated.npy",
+      "sha256": "af9ef8193add6e5f3623ac1b99c65e8dcf2962bb02d20d22e3d562867bfe8956"
+    },
+    {
+      "bytes": 858,
+      "path": "artifacts/validation/homology_source_challenge_v1/pre_execution_precision_failure.txt",
+      "sha256": "2c04ada7ff1e5294534ec37d99a44501982c2a4ddbd83a9ee93fb9277142ab08"
+    }
+  ],
+  "correction": "FP64_sparse_accumulation_then_FP32_storage",
+  "created_utc": "2026-09-11T00:31:30.362302+00:00",
+  "new_fits_or_scores_exist": false,
+  "original_artifact_preserved": {
+    "bytes": 566440128,
+    "path": "artifacts/runs/homology_source_challenge_v1/similarity_kmer.npy",
+    "sha256": "b8387eb06cc6ef8ee1d9ea93cfc821fcde532c989a5b34488a3ad3dfcb19f4ac"
+  },
+  "reason": "FP32_sparse_accumulation_exceeded_frozen_2e-6_tolerance",
+  "scientific_design_changed": false,
+  "tolerance_changed": false
+}

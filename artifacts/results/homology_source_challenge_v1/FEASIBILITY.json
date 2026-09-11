@@ -1,0 +1,322 @@
+{
+  "alignments": 465346,
+  "artifacts": [
+    {
+      "bytes": 566440128,
+      "path": "artifacts/runs/homology_source_challenge_v1/similarity_local.npy",
+      "sha256": "70a902bad68ca7d4ddc7fffafa50941959e46f0e0d31106fa7a1a8a316bc9fad"
+    },
+    {
+      "bytes": 566440128,
+      "path": "artifacts/runs/homology_source_challenge_v1/similarity_coverage.npy",
+      "sha256": "4ba48c72241d10ccb20776096f1a4cb86093fbd48f693c84582a24ac9050e450"
+    },
+    {
+      "bytes": 2743056,
+      "path": "artifacts/runs/homology_source_challenge_v1/purge_edges.npy",
+      "sha256": "09620189ff9ec9242663156240fd01fe0b31d3c7301117e57ec103b95cb6ac11"
+    },
+    {
+      "bytes": 566440128,
+      "path": "artifacts/runs/homology_source_challenge_v1/similarity_kmer.npy",
+      "sha256": "b8387eb06cc6ef8ee1d9ea93cfc821fcde532c989a5b34488a3ad3dfcb19f4ac"
+    },
+    {
+      "bytes": 566440128,
+      "path": "artifacts/runs/homology_source_challenge_v1/similarity_plm.npy",
+      "sha256": "dd436523c8cec0d4af4c189ff34d751e761e48f083af713917c2e2ca2801edca"
+    },
+    {
+      "bytes": 28770996,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_union_0.npz",
+      "sha256": "4a3ed713a66697603e13ea44944fe435f991fd65de6db5a1a332e03232c079c2"
+    },
+    {
+      "bytes": 30624806,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_union_1.npz",
+      "sha256": "5c2308fb3026ebbb4a002b53f36d1d71b044fed591ab7cd3ce18701b9232276f"
+    },
+    {
+      "bytes": 27553630,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_union_2.npz",
+      "sha256": "ea12e52239c335541d9dc013b4b3b254e2806338bd8551e813b0bfe761718572"
+    },
+    {
+      "bytes": 13773204,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_purged20_0.npz",
+      "sha256": "b21b682064145db804d6c7608a70912e833c00c69eb3d54097324b1c8eba1073"
+    },
+    {
+      "bytes": 11660990,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_purged20_1.npz",
+      "sha256": "229537176c71e8ca054eeefa9bd362008c96a043e7d852307bad363a70983ac1"
+    },
+    {
+      "bytes": 11544430,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_purged20_2.npz",
+      "sha256": "a98e24c67c6f2c65af84c6719794fb3bc843038ebda090380a8aca864356941f"
+    },
+    {
+      "bytes": 28964756,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_hi_to_huri_0.npz",
+      "sha256": "5c42091228f80c596d549e8803cd13b239281bcecda57a536a71c14c829aaced"
+    },
+    {
+      "bytes": 30829830,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_hi_to_huri_1.npz",
+      "sha256": "aa40ab83dbcc43cb0ca7cbe29bc8253573c083d5ae91c6f46e13da28065cd786"
+    },
+    {
+      "bytes": 27737758,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_hi_to_huri_2.npz",
+      "sha256": "1e7cfae179d2346b44a7caf80d1274315c562f6fa32402739e6094163084c663"
+    },
+    {
+      "bytes": 28795508,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_huri_to_hi_0.npz",
+      "sha256": "20bee684b02fb00d170960ca1a646b2a319ab34dc950cab9fdde2473c351db5d"
+    },
+    {
+      "bytes": 30658118,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_huri_to_hi_1.npz",
+      "sha256": "b40bee367afcedfb4912f9350bc2ec20953b9a6f97ee3b4ede4c1df31ceb1054"
+    },
+    {
+      "bytes": 27580062,
+      "path": "artifacts/runs/homology_source_challenge_v1/plan_huri_to_hi_2.npz",
+      "sha256": "efd3b4eb9e248cb7bb41dd2ad1a82698bc474933e2179e50adad6ea2324f9714"
+    }
+  ],
+  "created_utc": "2026-09-11T00:24:53.491148+00:00",
+  "feasible_arms": [
+    "union",
+    "purged20",
+    "hi_to_huri",
+    "huri_to_hi"
+  ],
+  "folds": [
+    {
+      "anchor_components": 598,
+      "anchor_feasible": true,
+      "anchors": 1075,
+      "arm": "union",
+      "direct_remote_cross_edges": 5861,
+      "evaluation_P": 2012,
+      "evaluation_U": 225651,
+      "fit_P": 7367,
+      "fit_U": 882510,
+      "fit_endpoints": 7933,
+      "fold": 0,
+      "quartet_components": 552,
+      "quartet_feasible": true,
+      "quartets": 2000,
+      "removed_fit_endpoints": 0,
+      "target_only_P_hidden_as_U": 0
+    },
+    {
+      "anchor_components": 631,
+      "anchor_feasible": true,
+      "anchors": 928,
+      "arm": "union",
+      "direct_remote_cross_edges": 4565,
+      "evaluation_P": 1641,
+      "evaluation_U": 196223,
+      "fit_P": 8123,
+      "fit_U": 942115,
+      "fit_endpoints": 7933,
+      "fold": 1,
+      "quartet_components": 610,
+      "quartet_feasible": true,
+      "quartets": 2000,
+      "removed_fit_endpoints": 0,
+      "target_only_P_hidden_as_U": 0
+    },
+    {
+      "anchor_components": 638,
+      "anchor_feasible": true,
+      "anchors": 1069,
+      "arm": "union",
+      "direct_remote_cross_edges": 5260,
+      "evaluation_P": 2145,
+      "evaluation_U": 246003,
+      "fit_P": 7107,
+      "fit_U": 843252,
+      "fit_endpoints": 7934,
+      "fold": 2,
+      "quartet_components": 606,
+      "quartet_feasible": true,
+      "quartets": 2000,
+      "removed_fit_endpoints": 0,
+      "target_only_P_hidden_as_U": 0
+    },
+    {
+      "anchor_components": 598,
+      "anchor_feasible": true,
+      "anchors": 1075,
+      "arm": "purged20",
+      "direct_remote_cross_edges": 0,
+      "evaluation_P": 2012,
+      "evaluation_U": 225651,
+      "fit_P": 3595,
+      "fit_U": 414772,
+      "fit_endpoints": 5270,
+      "fold": 0,
+      "quartet_components": 552,
+      "quartet_feasible": true,
+      "quartets": 2000,
+      "removed_fit_endpoints": 2663,
+      "target_only_P_hidden_as_U": 0
+    },
+    {
+      "anchor_components": 631,
+      "anchor_feasible": true,
+      "anchors": 928,
+      "arm": "purged20",
+      "direct_remote_cross_edges": 0,
+      "evaluation_P": 1641,
+      "evaluation_U": 196223,
+      "fit_P": 3090,
+      "fit_U": 350754,
+      "fit_endpoints": 4619,
+      "fold": 1,
+      "quartet_components": 610,
+      "quartet_feasible": true,
+      "quartets": 2000,
+      "removed_fit_endpoints": 3314,
+      "target_only_P_hidden_as_U": 0
+    },
+    {
+      "anchor_components": 638,
+      "anchor_feasible": true,
+      "anchors": 1069,
+      "arm": "purged20",
+      "direct_remote_cross_edges": 0,
+      "evaluation_P": 2145,
+      "evaluation_U": 246003,
+      "fit_P": 2905,
+      "fit_U": 344015,
+      "fit_endpoints": 4601,
+      "fold": 2,
+      "quartet_components": 606,
+      "quartet_feasible": true,
+      "quartets": 2000,
+      "removed_fit_endpoints": 3333,
+      "target_only_P_hidden_as_U": 0
+    },
+    {
+      "anchor_components": 512,
+      "anchor_feasible": true,
+      "anchors": 934,
+      "arm": "hi_to_huri",
+      "direct_remote_cross_edges": 5861,
+      "evaluation_P": 1561,
+      "evaluation_U": 225651,
+      "fit_P": 1312,
+      "fit_U": 888565,
+      "fit_endpoints": 7933,
+      "fold": 0,
+      "quartet_components": 448,
+      "quartet_feasible": true,
+      "quartets": 1191,
+      "removed_fit_endpoints": 0,
+      "target_only_P_hidden_as_U": 6055
+    },
+    {
+      "anchor_components": 563,
+      "anchor_feasible": true,
+      "anchors": 817,
+      "arm": "hi_to_huri",
+      "direct_remote_cross_edges": 4565,
+      "evaluation_P": 1385,
+      "evaluation_U": 196223,
+      "fit_P": 1716,
+      "fit_U": 948522,
+      "fit_endpoints": 7933,
+      "fold": 1,
+      "quartet_components": 531,
+      "quartet_feasible": true,
+      "quartets": 1398,
+      "removed_fit_endpoints": 0,
+      "target_only_P_hidden_as_U": 6407
+    },
+    {
+      "anchor_components": 555,
+      "anchor_feasible": true,
+      "anchors": 906,
+      "arm": "hi_to_huri",
+      "direct_remote_cross_edges": 5260,
+      "evaluation_P": 1723,
+      "evaluation_U": 246003,
+      "fit_P": 1353,
+      "fit_U": 849006,
+      "fit_endpoints": 7934,
+      "fold": 2,
+      "quartet_components": 507,
+      "quartet_feasible": true,
+      "quartets": 1287,
+      "removed_fit_endpoints": 0,
+      "target_only_P_hidden_as_U": 5754
+    },
+    {
+      "anchor_components": 186,
+      "anchor_feasible": true,
+      "anchors": 273,
+      "arm": "huri_to_hi",
+      "direct_remote_cross_edges": 5861,
+      "evaluation_P": 275,
+      "evaluation_U": 225651,
+      "fit_P": 6601,
+      "fit_U": 883276,
+      "fit_endpoints": 7933,
+      "fold": 0,
+      "quartet_components": 59,
+      "quartet_feasible": false,
+      "quartets": 29,
+      "removed_fit_endpoints": 0,
+      "target_only_P_hidden_as_U": 766
+    },
+    {
+      "anchor_components": 155,
+      "anchor_feasible": true,
+      "anchors": 173,
+      "arm": "huri_to_hi",
+      "direct_remote_cross_edges": 4565,
+      "evaluation_P": 145,
+      "evaluation_U": 196223,
+      "fit_P": 7082,
+      "fit_U": 943156,
+      "fit_endpoints": 7933,
+      "fold": 1,
+      "quartet_components": 56,
+      "quartet_feasible": false,
+      "quartets": 17,
+      "removed_fit_endpoints": 0,
+      "target_only_P_hidden_as_U": 1041
+    },
+    {
+      "anchor_components": 199,
+      "anchor_feasible": true,
+      "anchors": 270,
+      "arm": "huri_to_hi",
+      "direct_remote_cross_edges": 5260,
+      "evaluation_P": 243,
+      "evaluation_U": 246003,
+      "fit_P": 6281,
+      "fit_U": 844078,
+      "fit_endpoints": 7934,
+      "fold": 2,
+      "quartet_components": 49,
+      "quartet_feasible": false,
+      "quartets": 20,
+      "removed_fit_endpoints": 0,
+      "target_only_P_hidden_as_U": 826
+    }
+  ],
+  "qualifying_alignment_rows": 456878,
+  "quartet_feasible_arms": [
+    "union",
+    "purged20",
+    "hi_to_huri"
+  ],
+  "undirected_remote_edges": 171433
+}

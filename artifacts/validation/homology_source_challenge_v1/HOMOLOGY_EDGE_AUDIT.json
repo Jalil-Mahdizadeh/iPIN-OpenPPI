@@ -1,0 +1,54 @@
+{
+  "all_use_minimum_span_80_and_both_coverage_20pct_and_evalue_1e_3": true,
+  "counts": {
+    "20": {
+      "cross_fit_evaluation_after_purge": [
+        0,
+        0,
+        0
+      ],
+      "cross_fit_evaluation_per_fold": [
+        5861,
+        4565,
+        5260
+      ],
+      "cross_original_components": 11085,
+      "cross_original_folds": 7843,
+      "undirected_edges": 171433
+    },
+    "30": {
+      "cross_fit_evaluation_after_purge": [
+        0,
+        0,
+        0
+      ],
+      "cross_fit_evaluation_per_fold": [
+        263,
+        194,
+        231
+      ],
+      "cross_original_components": 507,
+      "cross_original_folds": 344,
+      "undirected_edges": 77646
+    },
+    "40": {
+      "cross_fit_evaluation_after_purge": [
+        0,
+        0,
+        0
+      ],
+      "cross_fit_evaluation_per_fold": [
+        5,
+        7,
+        6
+      ],
+      "cross_original_components": 9,
+      "cross_original_folds": 9,
+      "undirected_edges": 28430
+    }
+  },
+  "created_utc": "2026-09-11T00:37:32.052514+00:00",
+  "scientific_gate_or_fitting_changes": false,
+  "script_sha256": "39c7f8aa08e66784a14a8358fd34f330447159fa123c1699bc7ddd70ee6717d0",
+  "timing": "supplementary_label_free_context_after_execution_freeze"
+}
