@@ -1,0 +1,137 @@
+{
+  "CPU_tests_passed": 451,
+  "artifacts": [
+    {
+      "bytes": 2121,
+      "path": "configs/composition_order_challenge_v1.yaml",
+      "sha256": "39b4094afaf2e6acccde546eb85a898e6ea4dc9f3da18296063293412fe2d3d6"
+    },
+    {
+      "bytes": 8294,
+      "path": "docs/protocols/COMPOSITION_ORDER_CHALLENGE_v1.md",
+      "sha256": "a1a969b0ab8605bd068cd942905228318ce0c762a7a468c1a2fe8c46fe37302d"
+    },
+    {
+      "bytes": 1959,
+      "path": "governance/decisions/DEC-0049-authorize-composition-order-diagnostic.md",
+      "sha256": "37967f24e64903975600a3908a04215efbbd27f434f3731f8d2cbad6a81c168a"
+    },
+    {
+      "bytes": 5870,
+      "path": "docs/reports/m1/M1_Composition_Order_Challenge_v1.md",
+      "sha256": "f985f4191f710fc72b82eed615543604955f8a666346c3a5fb5b4a796019d022"
+    },
+    {
+      "bytes": 3654,
+      "path": "governance/PROJECT_STATUS_v49.md",
+      "sha256": "64c197f1e476e1201dce8922bde3229df253f09af094eb040345b56b56812aac"
+    },
+    {
+      "bytes": 4124,
+      "path": "governance/gates/gate_status_v49.yaml",
+      "sha256": "a1323128528451def90c3e80f3756a9220d051bb8ede4ae95d1a0680829fad55"
+    },
+    {
+      "bytes": 193,
+      "path": "scripts/model/run_composition_order_challenge_v1.py",
+      "sha256": "5e14cc0f6fb82f2168827d8740d50037d4a4665ad0424e4cf5f2d5ada25169c6"
+    },
+    {
+      "bytes": 11303,
+      "path": "tests/unit/test_composition_order.py",
+      "sha256": "892ecc8b99b506770b32d347673c2d3aec04575b80494a10ea0f697c444d24a1"
+    },
+    {
+      "bytes": 81,
+      "path": "src/ipin_openppi/composition_order/__init__.py",
+      "sha256": "9fb5e2a3d150852f85aa696110725df1febf85faf62f877618d457b3d8f57c4a"
+    },
+    {
+      "bytes": 5413,
+      "path": "src/ipin_openppi/composition_order/data.py",
+      "sha256": "3bf50cd302364746bdb109eb195f5cbb9843faa4bc3d8ff18bd8fc9a1b12034b"
+    },
+    {
+      "bytes": 13877,
+      "path": "src/ipin_openppi/composition_order/pipeline.py",
+      "sha256": "20629beae7093bf661889f77033771ba7eb11c254584d527e7f1fa42e48b9865"
+    },
+    {
+      "bytes": 7499,
+      "path": "src/ipin_openppi/composition_order/semantics.py",
+      "sha256": "4a1a2bea265c72b8a2ff82799d66fbe3f34eda5869edc71f8e8806de1fd0f551"
+    },
+    {
+      "bytes": 20158,
+      "path": "src/ipin_openppi/composition_order/validation.py",
+      "sha256": "bac1cd65f63bb0af886bf051f8edc13b6ee7bd8603e753e1d79e5828090f6baf"
+    },
+    {
+      "bytes": 15628,
+      "path": "artifacts/results/composition_order_challenge_v1/COMPUTATION_COMPLETE.json",
+      "sha256": "3508261c2466d6e0206406a2139a8bd93a6489462b8c7914937cc59bc9b0321f"
+    },
+    {
+      "bytes": 36534,
+      "path": "artifacts/results/composition_order_challenge_v1/EXECUTION_FREEZE.json",
+      "sha256": "22ef542741072758f87a327aecd65503df46be74576c0b3cc371bcd4408fd848"
+    },
+    {
+      "bytes": 8286,
+      "path": "artifacts/results/composition_order_challenge_v1/PREREGISTRATION.json",
+      "sha256": "153c6cfea9c4b16bf10a7d1a4a66fd0fc1bf57b015a0d96b50707a53df6c4c93"
+    },
+    {
+      "bytes": 44790,
+      "path": "artifacts/results/composition_order_challenge_v1/RESULTS.json",
+      "sha256": "64dfb122dc7d6f412766a145fd2b94fea17b79738989e21835ea03b2e8622f70"
+    },
+    {
+      "bytes": 1262,
+      "path": "artifacts/validation/composition_order_challenge_v1/REFERENCE_VALIDATION.json",
+      "sha256": "8738aec0873f9336ea73cb290d86ad1ed33e26cf2584342803040f1520d827ea"
+    },
+    {
+      "bytes": 359,
+      "path": "artifacts/validation/composition_order_challenge_v1/gpu_regression.xml",
+      "sha256": "df949e4ee39e2db4475ea195709903e8d01fc4f517e09b38d04ee357d7d0478b"
+    },
+    {
+      "bytes": 66210,
+      "path": "artifacts/validation/composition_order_challenge_v1/unit_tests_post_execution.xml",
+      "sha256": "868931724beb3d0dd8350335bc104b1d9a95ea1d26dfbf84f6c8a0f9b6644dc4"
+    },
+    {
+      "bytes": 66210,
+      "path": "artifacts/validation/composition_order_challenge_v1/unit_tests_pre_execution.xml",
+      "sha256": "c26129488ff926cbdcff6e69f964a65e91527e851d9a530d65a7fa3900ea764f"
+    }
+  ],
+  "created_utc": "2026-09-11T07:15:28.224726+00:00",
+  "execution_complete": true,
+  "fresh_validation": false,
+  "large_arrays_and_pair_scores_remain_local": true,
+  "new_embeddings": 0,
+  "new_fits": 0,
+  "numerical_validation_passed": true,
+  "prior_three_closures_unchanged": [
+    {
+      "bytes": 6758,
+      "path": "artifacts/results/within_anchor_partner_specificity_v1/ARTIFACT_REGISTRY.json",
+      "sha256": "3b6a7ef468289b03696d3f40be41b03ce0de4f5b421b9a8945ef89e2e75ba6cd"
+    },
+    {
+      "bytes": 7828,
+      "path": "artifacts/results/homology_source_challenge_v1/ARTIFACT_REGISTRY.json",
+      "sha256": "467020c4e7f56b7aecc1547c3af8a119ea0d535bee0b425108c0fbac8cc8af9c"
+    },
+    {
+      "bytes": 5024,
+      "path": "artifacts/results/external_bioplex_challenge_v1/ARTIFACT_REGISTRY.json",
+      "sha256": "7c29863ca35a174f839f7ac4f5d22ced37ca5661daaf897bc61ccc268dc3b666"
+    }
+  ],
+  "protected_access": false,
+  "protocol_id": "composition_order_challenge_v1",
+  "publication_authorized_by_user": true
+}

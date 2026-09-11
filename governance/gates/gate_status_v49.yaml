@@ -1,0 +1,93 @@
+schema_version: 49
+supersedes: governance/gates/gate_status_v48.yaml
+updated_date: '2026-09-11'
+programme_state: composition_competitive_order_increment_detected_matching_inconclusive
+authority: governance/decisions/DEC-0049-authorize-composition-order-diagnostic.md
+gates:
+  diagnostic_registration:
+    status: pass
+    prior_external_results_informed_design: true
+    fresh_validation: false
+    external_registry: false
+    registration_utc: '2026-09-11T06:55:52.015512+00:00'
+    execution_freeze_utc: '2026-09-11T07:06:20.028882+00:00'
+    execution_freeze_sha256: 22ef542741072758f87a327aecd65503df46be74576c0b3cc371bcd4408fd848
+  fixed_computation:
+    status: pass
+    public_endpoints: 11900
+    permutations_per_endpoint: 64
+    permutations_total: 761600
+    new_score_values: 1706845
+    new_fits: 0
+    new_embeddings: 0
+    new_interaction_acquisition: false
+    elapsed_seconds: 48.44969554200361
+  shuffle_stability:
+    status: pass_prespecified_half_sensitivity_check
+    half_macro_difference: {'293T': 0.00006006906434630199, HCT116: 0.0007311374596786768}
+    maximum_permitted: 0.01
+    monte_carlo_uncertainty_in_intervals: false
+  order_free_recovery:
+    status: supported_diagnostic_only
+    aac_concordance: {'293T': 0.6272920594523075, HCT116: 0.6128147741530721}
+    shuffled_concordance: {'293T': 0.6026517756351828, HCT116: 0.5784295650120358}
+    shuffled_lower_bounds_above_0p5_both_cells: true
+  native_order_increment:
+    status: supported_for_3mer_anchor_statistic_only
+    native_minus_shuffle_concordance: {'293T': 0.038880740591013985, HCT116: 0.03497003631621587}
+    ci95:
+      '293T': [0.030159238233754056, 0.07091404946191585]
+      HCT116: [0.020777797844903755, 0.07614110694626977]
+    material_point_margin: 0.02
+    native_vs_shuffle_quartet_superiority: unresolved
+    superiority_over_all_order_free_statistics: not_established
+  learned_value_over_aac:
+    status: not_established
+    pair_minus_aac: {'293T': -0.0101460554902153, HCT116: -0.003457000699038759}
+    ci95:
+      '293T': [-0.03336364053738197, 0.017101986286307047]
+      HCT116: [-0.029204264870487356, 0.02867874857215957]
+    statistical_inferiority_or_equivalence: not_established
+  matched_partner_specificity:
+    composition_length: inconclusive_insufficient_support
+    also_direct_similarity: inconclusive_no_support
+    composition_length_retained_P: {'293T': 22, HCT116: 3}
+    composition_length_retained_baits: {'293T': 22, HCT116: 3}
+    composition_length_comparisons: {'293T': 122, HCT116: 17}
+    strict_retained_P: {'293T': 0, HCT116: 0}
+    all_fold_support_floors_fail: true
+    HCT116_valid_matched_draws: 1561
+    HCT116_matched_ci_reported: false
+    calipers_relaxed: false
+    learned_score_used_for_selection: false
+  verification:
+    status: pass
+    CPU_tests_pre_and_post: 451
+    existing_GPU_regression_passed: 1
+    distinct_cases: 452
+    new_tests: 36
+    all_new_score_values_checked: 1706845
+    maximum_score_absolute_error: 0.0000000000000011657341758564144
+    AAC_vectors_checked: 11900
+    shuffle_endpoints_reconstructed: 64
+    shuffle_permutations_reconstructed: 4096
+    matched_comparisons_checked: 139
+    all_match_membership_points_intervals_flags_checked: true
+    global_and_matched_bootstrap_draws_per_cell: 16
+    quartet_bootstrap_draws_per_cell: 2000
+    prior_three_study_closures_unchanged: true
+    same_author_audit_not_external_review: true
+scientific_result:
+  readout_sha256: 64dfb122dc7d6f412766a145fd2b94fea17b79738989e21835ea03b2e8622f70
+  fresh_validation: false
+  causal_composition_attribution: false
+  learned_head_mechanism_identified: false
+  binding_specific_order_mechanism_identified: false
+  novel_or_better_generalizing_model_claim: false
+  original_architecture_stop: unchanged
+  DEC0048_external_superiority_gates: unchanged_does_not_pass
+next_priority: opportunity_construct_and_matched_support_feasibility_before_fresh_direct_binary_scoring
+protected_evaluation_authorized: false
+protected_candidate_truth_or_key_access_performed: false
+development_evaluation_pairs_accessed: false
+commit_and_push_authorized_by_user: true

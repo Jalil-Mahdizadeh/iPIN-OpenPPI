@@ -3,14 +3,16 @@
 Human-readable M0 platform, evidence, benchmark, modelling, gate, and release reports are stored here. Machine-readable run records remain under `artifacts/runs/`.
 
 The current research report is
-[External BioPlex challenge: concise findings](m1/M1_External_BioPlex_Challenge_v1.md)
-(DEC-0048, 2026-09-11): external co-association ranking signal survives, but the
-learned head does not demonstrate superiority over direct sequence similarities.
-See [status v48](../../governance/PROJECT_STATUS_v48.md) and
-[gate ledger v48](../../governance/gates/gate_status_v48.yaml).
+[Composition/order challenge: concise findings](m1/M1_Composition_Order_Challenge_v1.md)
+(DEC-0049, 2026-09-11): composition-only similarity competes with the learned
+head; native order helps the 3-mer anchor statistic, but matched-partner
+validation lacks support. This reuses spent BioPlex diagnostics, not fresh
+validation. See [status v49](../../governance/PROJECT_STATUS_v49.md) and
+[gate ledger v49](../../governance/gates/gate_status_v49.yaml).
 
 The preceding frozen research reports are:
 
+- [External BioPlex challenge](m1/M1_External_BioPlex_Challenge_v1.md).
 - [Homology/interolog and source challenge](m1/M1_Homology_and_Source_Challenge_v1.md).
 - [Within-anchor partner specificity](m1/M1_Within_Anchor_Partner_Specificity_Diagnostic_v1.md).
 - [Research reassessment and embedding-identity correction](m1/M1_Research_Reassessment_and_Embedding_Identity_Findings_2026-09-10.md).

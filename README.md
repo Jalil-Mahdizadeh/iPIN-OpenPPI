@@ -4,26 +4,29 @@ Evidence-aware, sequence-based prioritization of direct human heteromeric protei
 
 ## Current status
 
-As of 2026-09-11, a locked external BioPlex challenge is complete under
-[DEC-0048](governance/decisions/DEC-0048-authorize-locked-external-bioplex-challenge.md).
-The pair head recovers independently generated co-associations, but **does not
-demonstrate added value over simple sequence similarities**: bait-macro
-concordance is 0.617 / 0.609 in 293T / HCT116, versus the strongest baseline
-points of 0.642 / 0.621. Balanced partner swaps favor the observed associations
-about 72% of the time, but superiority over direct similarities is uncertain.
-Neither cell passes the frozen all-comparator superiority gates.
+As of 2026-09-11, the composition/order diagnostic is complete under
+[DEC-0049](governance/decisions/DEC-0049-authorize-composition-order-diagnostic.md).
+On the already examined BioPlex panels, **amino-acid composition alone is a
+serious competitor**: bait-macro concordance is 0.627 / 0.613 in 293T / HCT116,
+versus the learned head's 0.617 / 0.609. Native 3-mers beat composition-preserving
+shuffles by 0.039 / 0.035, but this does not establish superiority over AAC or
+identify a binding mechanism. The matched-partner test is inconclusive: fixed
+composition/length calipers retain only 22 / 3 positives; adding direct-similarity
+calipers leaves none. No calipers were relaxed.
 
-The protocol and homology-purged checkpoints were locked before acquisition;
-no new fits or embeddings were needed. All 416 tests across qualified CPU/GPU
-runtimes and the separate numerical audit pass. This supports a ranking research
-question, not a better-generalizing model, direct-binding validation, calibrated
-probabilities or architecture novelty. Protected evaluation remains sealed;
-the original gated/complexity stop remains unchanged.
+This was a frozen explanatory analysis, **not fresh external validation**.
+No fits, new embeddings or new interaction acquisition. All 451 CPU tests
+before/after execution, the separate existing GPU regression and the numerical
+audit pass. The next priority is an opportunity/construct and matched-support
+feasibility audit for a dense direct-binary panel, before further model scoring.
+Protected evaluation stays sealed; the original architecture stop and the
+preceding external challenge's failed superiority gates remain unchanged.
 
-See the [concise external report](docs/reports/m1/M1_External_BioPlex_Challenge_v1.md),
-[current status v48](governance/PROJECT_STATUS_v48.md), and
-[gate ledger v48](governance/gates/gate_status_v48.yaml).
-Prior [within-anchor](docs/reports/m1/M1_Within_Anchor_Partner_Specificity_Diagnostic_v1.md)
+See the [concise composition/order report](docs/reports/m1/M1_Composition_Order_Challenge_v1.md),
+[current status v49](governance/PROJECT_STATUS_v49.md), and
+[gate ledger v49](governance/gates/gate_status_v49.yaml).
+The [external BioPlex report](docs/reports/m1/M1_External_BioPlex_Challenge_v1.md),
+prior [within-anchor](docs/reports/m1/M1_Within_Anchor_Partner_Specificity_Diagnostic_v1.md)
 and [homology/source](docs/reports/m1/M1_Homology_and_Source_Challenge_v1.md)
 studies remain frozen. The earlier
 [embedding-identity correction](docs/reports/m1/M1_Research_Reassessment_and_Embedding_Identity_Findings_2026-09-10.md)

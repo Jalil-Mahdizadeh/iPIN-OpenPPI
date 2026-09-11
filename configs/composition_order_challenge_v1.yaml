@@ -1,0 +1,54 @@
+schema_version: 1
+protocol_id: composition_order_challenge_v1
+authority: governance/decisions/DEC-0049-authorize-composition-order-diagnostic.md
+protocol: docs/protocols/COMPOSITION_ORDER_CHALLENGE_v1.md
+parent: external_bioplex_challenge_v1
+parent_execution_freeze_sha256: 8c0068f7a585cca285f83f2245991bb89109cdb38e635737aef9d75971266d97
+parent_results_sha256: e8dcfbc67ba77a82ef7cac8a85fd7b497be8a85c21986d960ba56f11237a4a2a
+protected_access: false
+development_access: false
+new_fits: 0
+new_embeddings: 0
+new_source_acquisition: false
+fresh_validation: false
+cells: [293T, HCT116]
+folds: [0, 1, 2]
+shuffle:
+  replicates_per_endpoint: 64
+  salt: composition-order-v1-20260911
+  generator: PCG64DXSM
+  alphabet: ACDEFGHIKLMNPQRSTVWYX
+  unknown_residue: X
+  accumulation_dtype: float64
+  mean_vectors_are_not_renormalized: true
+  maximum_half_macro_difference: 0.01
+matching:
+  tiers: [composition_length, also_direct_similarity]
+  maximum_partner_length_ratio: 1.25
+  maximum_partner_composition_total_variation: 0.10
+  maximum_kmer3_score_difference: 0.01
+  maximum_pooled_score_difference: 0.01
+  minimum_U_per_positive: 5
+  minimum_positives_per_fold: 100
+  minimum_anchors_per_fold: 50
+  minimum_anchor_components_per_fold: 30
+  caliper_roundoff_tolerance: 0.000000000001
+scores: [pair_linear, endpoint_linear, kmer3_cosine, pooled_cosine, aac_cosine, shuffle_kmer3, order_excess]
+new_scores: [aac_cosine, shuffle_kmer3, order_excess, shuffle_half_a, shuffle_half_b]
+bootstrap:
+  source: artifacts/runs/external_bioplex_challenge_v1/component_multipliers.npy
+  replicates: 2000
+  seed: 20260917
+  minimum_valid_fraction: 0.95
+decision:
+  minimum_order_increment: 0.02
+  minimum_matched_pair_margin: 0.02
+  matched_controls: [endpoint_linear, kmer3_cosine, pooled_cosine, aac_cosine, shuffle_kmer3]
+  no_architecture_gate_can_be_reopened: true
+runtime:
+  data_image: containers/images/ipin-data-arm64_0.1.2.sif
+  data_image_sha256: 72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629
+  threads: 8
+  numerical_tolerance: 0.000000000001
+  reference_endpoint_count: 64
+  reference_anchor_bootstrap_draws: 16
