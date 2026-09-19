@@ -1,0 +1,6 @@
+WARNING: Not virtualizing pid namespace by configuration
+Independent rank-counting audit passed: C3_test
+Independent rank-counting audit passed: C2_test
+Independent rank-counting audit passed: C1_test
+{"at_utc": "2026-09-19T13:26:38.681562+00:00", "passed": true, "independent_metric_checks": 575820, "independent_max_abs_error": 0.0, "reproduced_reference_metrics": 135, "unchanged_source_artifacts": 267, "all_ensembles_verified": true, "selection_recomputed_from_development": true, "frozen_selections_not_changed_after_test": true, "evaluation": {"scope": "study", "path": "provenance/EVALUATION_COMPLETE.json", "bytes": 3201, "sha256": "23cc787ae1fc0d99c35edcddd2a14fabb6c57e5b947f139ec11b4dacc97a6dc4"}}
+audit completed in 21.56 s
