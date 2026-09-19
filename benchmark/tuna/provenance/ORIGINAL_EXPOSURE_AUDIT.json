@@ -1,0 +1,69 @@
+{
+  "at_utc": "2026-09-12T10:41:35.560096+00:00",
+  "audit": {
+    "documented_training": {
+      "exact_sequence_overlap_by_iPIN_partition": {
+        "development": {
+          "exact_sequence_matches": 384,
+          "iPIN_endpoints": 2550
+        },
+        "test": {
+          "exact_sequence_matches": 628,
+          "iPIN_endpoints": 2550
+        },
+        "train": {
+          "exact_sequence_matches": 2570,
+          "iPIN_endpoints": 11900
+        }
+      },
+      "missing_fasta_endpoints": 0,
+      "public_endpoints": 3884,
+      "public_negative_labeled_pairs": 64781,
+      "public_pairs": 129592,
+      "public_positive_pairs": 64811
+    },
+    "documented_validation": {
+      "exact_sequence_overlap_by_iPIN_partition": {
+        "development": {
+          "exact_sequence_matches": 430,
+          "iPIN_endpoints": 2550
+        },
+        "test": {
+          "exact_sequence_matches": 482,
+          "iPIN_endpoints": 2550
+        },
+        "train": {
+          "exact_sequence_matches": 2391,
+          "iPIN_endpoints": 11900
+        }
+      },
+      "missing_fasta_endpoints": 0,
+      "public_endpoints": 3535,
+      "public_negative_labeled_pairs": 26772,
+      "public_pairs": 53665,
+      "public_positive_pairs": 26893
+    }
+  },
+  "checkpoint_history_caveat": "Based on the training/validation files named by the pinned public Bernett configuration, not an independently authenticated complete checkpoint training log.",
+  "interpretation": "Any exact test-endpoint match disproves an unseen-endpoint guarantee for the original external model. It is retained in the requested descriptive comparison. Absence of an exact match does not establish absence of homologous or PLM-pretraining exposure.",
+  "scope": "Exact sequence identity of endpoints only; no similarity/component or protected exact-pair audit",
+  "sources": [
+    {
+      "bytes": 11561571,
+      "path": "/upstream/data/raw/bernett/human_swissprot_oneliner.fasta",
+      "sha256": "578b02750acb75416b897ee7de07f9f5a4f3a57ec7fbce4b4a62ec84a1851d0d"
+    },
+    {
+      "bytes": 2203064,
+      "path": "/upstream/data/processed/bernett/Intra1_interaction_1500_or_less.tsv",
+      "sha256": "bec107f8e07cc603ff247a8626aa9a06369b73256848fb5ccbf42dc31f998a58"
+    },
+    {
+      "bytes": 912321,
+      "path": "/upstream/data/processed/bernett/Intra0_interaction_1500_or_less.tsv",
+      "sha256": "105f30b038800f5cf7e598fc9dc6e34ddaabfa9451e32a6edd69d6cc52687a1f"
+    }
+  ],
+  "test_pairs_read": false,
+  "test_truth_read": false
+}

@@ -1,0 +1,29 @@
+2026-09-18T22:50:28.608237+00:00 starting tuna; pre-existing embeddings are prohibited
+mkdir -p failed for path /home/jalil/.config/matplotlib: [Errno 30] Read-only file system: '/home/jalil'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-r5zpymly because there was an issue with the default path (/home/jalil/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fresh full-context TUnA ESM extraction: 1829 sequences, 1165157 residues
+TUnA ESM: 4/1829 sequences; 15.2s
+TUnA ESM: 104/1829 sequences; 16.3s
+TUnA ESM: 204/1829 sequences; 17.4s
+TUnA ESM: 304/1829 sequences; 18.5s
+TUnA ESM: 404/1829 sequences; 19.6s
+TUnA ESM: 504/1829 sequences; 20.8s
+TUnA ESM: 604/1829 sequences; 22.0s
+TUnA ESM: 704/1829 sequences; 23.2s
+TUnA ESM: 804/1829 sequences; 24.4s
+TUnA ESM: 904/1829 sequences; 25.6s
+TUnA ESM: 1004/1829 sequences; 26.8s
+TUnA ESM: 1104/1829 sequences; 28.0s
+TUnA ESM: 1204/1829 sequences; 29.3s
+TUnA ESM: 1304/1829 sequences; 30.7s
+TUnA ESM: 1404/1829 sequences; 32.1s
+TUnA ESM: 1504/1829 sequences; 33.9s
+TUnA ESM: 1604/1829 sequences; 35.9s
+TUnA ESM: 1704/1829 sequences; 38.4s
+TUnA ESM: 1804/1829 sequences; 42.0s
+TUnA ESM: 1829/1829 sequences; 43.9s
+tuna_original: all 1919 pairs scored; native agreement error 1.79e-07
+tuna_retrained_seed20260803: all 1919 pairs scored; native agreement error 4.29e-06
+tuna_retrained_seed20260817: all 1919 pairs scored; native agreement error 4.29e-06
+tuna_retrained_seed20260831: all 1919 pairs scored; native agreement error 2.86e-06
+2026-09-18T22:51:22.467291+00:00 completed tuna

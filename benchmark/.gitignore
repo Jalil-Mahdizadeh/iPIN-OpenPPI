@@ -1,0 +1,37 @@
+# Generated artifacts stay local to this benchmark workspace.
+.work/
+.cache/
+.tmp/
+containers/images/
+containers/cache/
+containers/tmp/
+*/upstream/
+*/weights/
+*/data/
+*/private/
+*/runs/
+*/logs/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Downloaded models, generated tensors, and locally installed dependencies.
+# Keep scripts, configuration, provenance, and CSV/JSON reports in Git.
+*/assets/
+runtime/
+checkpoints/
+*.sif
+*.sif.*
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Machine-local knowledge-graph caches and root markers.
+**/graphify-out/cache/
+**/graphify-out/.graphify_root

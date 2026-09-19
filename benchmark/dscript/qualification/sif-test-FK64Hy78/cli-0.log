@@ -1,0 +1,8 @@
+2026-09-12 19:29:48.943 | INFO     | dscript.utils:log:49 - # Using CUDA device 0 - NVIDIA GH200 120GB
+2026-09-12 19:29:48.947 | INFO     | dscript.utils:log:49 - # Loading Model...
+2026-09-12 19:29:49.348 | INFO     | dscript.utils:log:49 - # Loading Sequences...
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 13287.13it/s]
+2026-09-12 19:29:49.354 | INFO     | dscript.utils:log:49 - # 3 Sequences Loaded
+2026-09-12 19:29:49.358 | INFO     | dscript.utils:log:49 - # Approximate Storage Required (varies by average sequence length): ~0.024GB
+2026-09-12 19:29:49.360 | INFO     | dscript.utils:log:49 - # Storing to /output/cli-embeddings.h5...
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 20.02it/s]100%|██████████| 3/3 [00:00<00:00, 20.00it/s]

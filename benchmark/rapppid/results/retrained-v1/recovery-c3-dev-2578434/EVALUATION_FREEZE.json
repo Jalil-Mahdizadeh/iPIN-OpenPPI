@@ -1,0 +1,83 @@
+{
+  "ad_hoc_development_look": true,
+  "at_utc": "2026-09-17T17:50:58.801414+00:00",
+  "authorization": "User requested C3-development results for the latest checkpoints after the training failure",
+  "checkpoint_selection_performed": false,
+  "completed_epoch8_claimed": false,
+  "data_manifest_sha256": "7f8c888ae82774cf9c2aad395af8c9cff7015a7a48a0b2368e13d181872edd98",
+  "ensemble": "FP64 arithmetic mean of all three saved-state logits; checkpoints have unequal training exposure",
+  "epoch4_reference": {
+    "bytes": 2074,
+    "path": "epoch4_reference.json",
+    "sha256": "dfd19132046dd0fe3edb802aacf9f7c6c9da2234686b32501c23fd255e7a778f"
+  },
+  "execution_id": "rapppid_recovery_c3_dev_2578434",
+  "inference": "Unchanged frozen native singleton endpoints/head; deterministic TRAIN-fitted tokenizer; first 1500 residues",
+  "members": [
+    {
+      "checkpoint": {
+        "bytes": 4567343,
+        "path": "checkpoints/seed_20260803.pt",
+        "sha256": "f332c9fbd42e9d3146ca7c54743acca66ab0fa5e6d583e89aca2ae41e4135c30"
+      },
+      "comparisons_in_current_epoch": 1502840,
+      "completed_epochs": 7,
+      "current_epoch_fraction": 0.75142,
+      "epoch_in_progress": 8,
+      "seed": 20260803,
+      "source_path": "/training/seed_20260803/resume.pt",
+      "source_sha256": "f332c9fbd42e9d3146ca7c54743acca66ab0fa5e6d583e89aca2ae41e4135c30",
+      "total_optimizer_updates": 387571
+    },
+    {
+      "checkpoint": {
+        "bytes": 4567343,
+        "path": "checkpoints/seed_20260817.pt",
+        "sha256": "2ea98f070c5f5f712c6c4dc31c2a8f7f2389f0329a5a73a4548bdde487a49060"
+      },
+      "comparisons_in_current_epoch": 1577920,
+      "completed_epochs": 7,
+      "current_epoch_fraction": 0.78896,
+      "epoch_in_progress": 8,
+      "seed": 20260817,
+      "source_path": "/training/seed_20260817/resume.pt",
+      "source_sha256": "2ea98f070c5f5f712c6c4dc31c2a8f7f2389f0329a5a73a4548bdde487a49060",
+      "total_optimizer_updates": 389448
+    },
+    {
+      "checkpoint": {
+        "bytes": 4567343,
+        "path": "checkpoints/seed_20260831.pt",
+        "sha256": "ac0facd77f4bbb70fe25f144556d90cdf28e4151b324c41aae6a5c0efd0a4ef8"
+      },
+      "comparisons_in_current_epoch": 1556480,
+      "completed_epochs": 7,
+      "current_epoch_fraction": 0.77824,
+      "epoch_in_progress": 8,
+      "seed": 20260831,
+      "source_path": "/training/seed_20260831/resume.pt",
+      "source_sha256": "ac0facd77f4bbb70fe25f144556d90cdf28e4151b324c41aae6a5c0efd0a4ef8",
+      "total_optimizer_updates": 388912
+    }
+  ],
+  "metric": "Full C3-development design-weighted P-versus-U concordance with exact-score half ties",
+  "numerical_training_repair_applied": false,
+  "sif_sha256": "e853a89768c5351927f90fd0ccfb2ad899a15a6fc239a9014726af0c34442d48",
+  "source_training_job": "2578434",
+  "test_pairs_read": false,
+  "test_truth_read": false,
+  "training_protocol_sha256": "4d7a912c278faa79477e8e65869963d4d984ec3059ff482ac4deafe04b3ee16e",
+  "training_resumed": false,
+  "wrapper_files": [
+    {
+      "bytes": 14097,
+      "path": "code/evaluate.py",
+      "sha256": "c114e96cf13d654c88551f7b3d791979f059d6c7f0a02886a451be31418697cc"
+    },
+    {
+      "bytes": 1589,
+      "path": "code/run.sh",
+      "sha256": "cf542a0a9472194ca6486aef9089b9132130d0bf31d38d2dae49c3721a5eb202"
+    }
+  ]
+}

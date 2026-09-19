@@ -1,0 +1,35 @@
+{
+  "ensemble_concordance": 0.6927444044230223,
+  "ensemble_predictions": {
+    "bytes": 8018248,
+    "path": "epoch_04_ensemble_C3_development.npy",
+    "sha256": "f384cbaffd7362311d2d55d8fdc9c4c2bc3565aef0be5c6d1bf8e76f6f15a60d"
+  },
+  "epoch": 4,
+  "member_concordance": {
+    "20260803": 0.6221851805822953,
+    "20260817": 0.6700128483529653,
+    "20260831": 0.6724363205378632
+  },
+  "members": [
+    {
+      "checkpoint_sha256": "fa0d7ae4478bd24e6c65e0deedc16a9e330dd9d9a534572ef0f4a47b477971a3",
+      "prediction_sha256": "e8d13c0668e179201f0f3d08fb984df0ff2134900d5094cd5edac0b8b8e276a2",
+      "report_sha256": "52c194c51b1f1fae9ca5291f81ec0127d1bb1e98f41a92411d09b4675493a631",
+      "seed": 20260803
+    },
+    {
+      "checkpoint_sha256": "310881b1603e5da2996af671cc0c9c8653c6a5744af90cce0da2ee568d8c51d7",
+      "prediction_sha256": "17a63f02baa993cfa9084766b8b637f2c7989331ba2617a0997b51344e68a479",
+      "report_sha256": "5019fa72139dffda102f82d92e69ee11170b08f6cc38901b9b1f5477750e0edd",
+      "seed": 20260817
+    },
+    {
+      "checkpoint_sha256": "e3a3104713fd1cde321f758376eb6ad87dfd04b0b330369c71f4926713099338",
+      "prediction_sha256": "34e9c81115d16db2c5bf1e540f628c2bddcd8f6699f2d616a3ded0512515e254",
+      "report_sha256": "119de1f5217c229a4dce0b92bbbd0dd1fbb288fa93039a24eec4a019aab603ad",
+      "seed": 20260831
+    }
+  ],
+  "rows": 1002265
+}

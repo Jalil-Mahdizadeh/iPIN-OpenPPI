@@ -1,0 +1,207 @@
+{
+  "U_is_not_negative": true,
+  "at_utc": "2026-09-12T20:56:15.671754+00:00",
+  "cells": {
+    "C1_test": {
+      "bootstrap": {
+        "multiplicities_sha256": "2f591281265a6b574ff12417a4952906a29b8fa51a257a349ebec0d388bcb958",
+        "participating_components": 2712,
+        "replicates": 2000,
+        "seed": 14703470518371876447
+      },
+      "metrics": {
+        "dscript_original": {
+          "concordance": 0.462863337771007,
+          "finite_bootstrap_draws": 2000,
+          "percentile_95": [
+            0.43214473119636576,
+            0.49272812261935206
+          ]
+        },
+        "ipin_baseline": {
+          "concordance": 0.8434933190102009,
+          "finite_bootstrap_draws": 2000,
+          "percentile_95": [
+            0.8272344920661558,
+            0.8599873005641019
+          ]
+        },
+        "ipin_optimized": {
+          "concordance": 0.9160374988139083,
+          "finite_bootstrap_draws": 2000,
+          "percentile_95": [
+            0.9049006109385317,
+            0.926426837873881
+          ]
+        }
+      },
+      "positive_pairs": 3187,
+      "unlabeled_pairs": 1000000
+    },
+    "C2_test": {
+      "bootstrap": {
+        "multiplicities_sha256": "c39d73cfb824ebb3d9eac53ab2f32352e201251ae8006468de99c2fe57f9c9df",
+        "participating_components": 3996,
+        "replicates": 2000,
+        "seed": 15257477101954047025
+      },
+      "metrics": {
+        "dscript_original": {
+          "concordance": 0.4392969221601146,
+          "finite_bootstrap_draws": 2000,
+          "percentile_95": [
+            0.39164338356842177,
+            0.4855889488729362
+          ]
+        },
+        "ipin_baseline": {
+          "concordance": 0.8052990558636478,
+          "finite_bootstrap_draws": 2000,
+          "percentile_95": [
+            0.7744336841094146,
+            0.8355107016334573
+          ]
+        },
+        "ipin_optimized": {
+          "concordance": 0.85130120194772,
+          "finite_bootstrap_draws": 2000,
+          "percentile_95": [
+            0.8273243714723908,
+            0.8714282110945231
+          ]
+        }
+      },
+      "positive_pairs": 13446,
+      "unlabeled_pairs": 1000000
+    },
+    "C3_test": {
+      "bootstrap": {
+        "multiplicities_sha256": "9ccc4ecd59662e22fb69fececfeaa833ab6b77226e7d5c017c82db07c721af78",
+        "participating_components": 1284,
+        "replicates": 2000,
+        "seed": 1241427528595832755
+      },
+      "metrics": {
+        "dscript_original": {
+          "concordance": 0.49867989134410917,
+          "finite_bootstrap_draws": 2000,
+          "percentile_95": [
+            0.42687044091210924,
+            0.5691435906904827
+          ]
+        },
+        "ipin_baseline": {
+          "concordance": 0.7892487658713853,
+          "finite_bootstrap_draws": 2000,
+          "percentile_95": [
+            0.7081575143067158,
+            0.8457268089070822
+          ]
+        },
+        "ipin_optimized": {
+          "concordance": 0.8079478806256634,
+          "finite_bootstrap_draws": 2000,
+          "percentile_95": [
+            0.7404795265291083,
+            0.8520127275594052
+          ]
+        }
+      },
+      "positive_pairs": 2379,
+      "unlabeled_pairs": 1000000
+    }
+  },
+  "differences": {
+    "C1_test": [
+      {
+        "candidate": "dscript_original",
+        "difference": -0.38062998123919384,
+        "finite_paired_draws": 2000,
+        "paired_percentile_95": [
+          -0.4195999260406491,
+          -0.3443498706925175
+        ],
+        "reference": "ipin_baseline"
+      },
+      {
+        "candidate": "dscript_original",
+        "difference": -0.45317416104290126,
+        "finite_paired_draws": 2000,
+        "paired_percentile_95": [
+          -0.4881942536060364,
+          -0.4208587472610397
+        ],
+        "reference": "ipin_optimized"
+      }
+    ],
+    "C2_test": [
+      {
+        "candidate": "dscript_original",
+        "difference": -0.3660021337035332,
+        "finite_paired_draws": 2000,
+        "paired_percentile_95": [
+          -0.435209078961008,
+          -0.301851567928279
+        ],
+        "reference": "ipin_baseline"
+      },
+      {
+        "candidate": "dscript_original",
+        "difference": -0.41200427978760534,
+        "finite_paired_draws": 2000,
+        "paired_percentile_95": [
+          -0.47061868365223103,
+          -0.3566044363998272
+        ],
+        "reference": "ipin_optimized"
+      }
+    ],
+    "C3_test": [
+      {
+        "candidate": "dscript_original",
+        "difference": -0.2905688745272761,
+        "finite_paired_draws": 2000,
+        "paired_percentile_95": [
+          -0.374743580001172,
+          -0.17271013215909348
+        ],
+        "reference": "ipin_baseline"
+      },
+      {
+        "candidate": "dscript_original",
+        "difference": -0.3092679892815542,
+        "finite_paired_draws": 2000,
+        "paired_percentile_95": [
+          -0.39012315029283773,
+          -0.20796466031184546
+        ],
+        "reference": "ipin_optimized"
+      }
+    ]
+  },
+  "elapsed_seconds": 29.45908091799356,
+  "execution_id": "dscript_original_benchmark_v1",
+  "historical_component_draws_reproduced": true,
+  "historical_reference_points_reproduced": true,
+  "metric_qualification": {
+    "covers_ties_unequal_weights_same_components": true,
+    "draws": {
+      "multiplicities_sha256": "93da2554abdfe29d0ef49d1af89f0cd1491971dc7512a4c77cb7c424874ae79d",
+      "participating_components": 9,
+      "replicates": 41,
+      "seed": 1241427528595832755
+    },
+    "maximum_absolute_error": 7.771561172376096e-16,
+    "passed": true,
+    "replicates": 41,
+    "rows": 71,
+    "scorers": 4,
+    "tolerance": 1e-12
+  },
+  "no_test_tuning": true,
+  "original_external_training_exposure": "possible; not a TRAIN-only comparison",
+  "original_model": "human_v1",
+  "prediction_freeze_sha256": "d818b56f7c7e885b65dfac43c411c7c971f64b1d0839882621ff238aad33e66a",
+  "temporary_decrypted_truth_removed": true,
+  "test_previously_examined": true
+}

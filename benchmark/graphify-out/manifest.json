@@ -1,0 +1,277 @@
+{
+  "REPOSITORY_SCOPE_AUDIT.json": {
+    "mtime": 1789209729.0,
+    "ast_hash": "f05df97c2f2bc4d0d49942c5805870c0",
+    "semantic_hash": ""
+  },
+  "containers/build_tuna.sh": {
+    "mtime": 1789206572.0,
+    "ast_hash": "b21ca5a9ba0c698b3256be9af7a1d8a4",
+    "semantic_hash": ""
+  },
+  "containers/fetch_tuna_dependencies.py": {
+    "mtime": 1789206572.0,
+    "ast_hash": "f1bf42b911ba5dc601451d71e786e3f6",
+    "semantic_hash": ""
+  },
+  "containers/manifests/tuna-inspect.json": {
+    "mtime": 1789207402.0,
+    "ast_hash": "da0e1b719e9a9395de6af496cdabfc2d",
+    "semantic_hash": ""
+  },
+  "containers/manifests/tuna-pypi-artifacts.json": {
+    "mtime": 1789206579.0,
+    "ast_hash": "223ffde320818bab6aa0a45cbe2e46ee",
+    "semantic_hash": ""
+  },
+  "tuna/final.sh": {
+    "mtime": 1789209461.0,
+    "ast_hash": "c624bda8857805943544a4cf51d3f22b",
+    "semantic_hash": ""
+  },
+  "tuna/provenance/EXECUTION_CODE_FREEZE.json": {
+    "mtime": 1789210004.0,
+    "ast_hash": "70770552bd7fb7599f77f3a35479ae25",
+    "semantic_hash": ""
+  },
+  "tuna/provenance/GPU_GUARD.json": {
+    "mtime": 1789210004.0,
+    "ast_hash": "e8eab7a64d9d1b79c5703dce7c8afe5b",
+    "semantic_hash": ""
+  },
+  "tuna/provenance/GUARDED_QUALIFICATION.json": {
+    "mtime": 1789210004.0,
+    "ast_hash": "0718430fd10e93030edb81ed2a4cf650",
+    "semantic_hash": ""
+  },
+  "tuna/provenance/METRIC_QUALIFICATION.json": {
+    "mtime": 1789210004.0,
+    "ast_hash": "fa2baa56357f4f2aef93fee08ebfe1b0",
+    "semantic_hash": ""
+  },
+  "tuna/provenance/ORIGINAL_EXPOSURE_AUDIT.json": {
+    "mtime": 1789210004.0,
+    "ast_hash": "d7ecc5fca4b1cd9064d0ab4486519e53",
+    "semantic_hash": ""
+  },
+  "tuna/provenance/PILOT.json": {
+    "mtime": 1789210004.0,
+    "ast_hash": "65178fc57e4552599143d74583732380",
+    "semantic_hash": ""
+  },
+  "tuna/provenance/PIPELINE_QUALIFICATION.json": {
+    "mtime": 1789210004.0,
+    "ast_hash": "c49aa078dc153ee7b9a3a308c995262e",
+    "semantic_hash": ""
+  },
+  "tuna/provenance/QUALIFICATION.json": {
+    "mtime": 1789210004.0,
+    "ast_hash": "02a52906877b299768a865a6397cc3fc",
+    "semantic_hash": ""
+  },
+  "tuna/provenance/REAL_QUALIFICATION.json": {
+    "mtime": 1789210004.0,
+    "ast_hash": "568bdedf4127c7423c53e059a8980107",
+    "semantic_hash": ""
+  },
+  "tuna/provenance/TRAINING_FREEZE.json": {
+    "mtime": 1789210004.0,
+    "ast_hash": "84ec573f14e4f899f061ee9367acf887",
+    "semantic_hash": ""
+  },
+  "tuna/queue_comparison.sh": {
+    "mtime": 1789209461.0,
+    "ast_hash": "046bca3ddae58ea7f974c7466dfb6a4c",
+    "semantic_hash": ""
+  },
+  "tuna/run.sh": {
+    "mtime": 1789207965.0,
+    "ast_hash": "819f22547c3c4fe73cd0b16492a04e7f",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/adapter.py": {
+    "mtime": 1789207477.0,
+    "ast_hash": "68ad81468726899dce398b326a9bb52c",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/audit_original_exposure.py": {
+    "mtime": 1789209694.0,
+    "ast_hash": "add9a5a814e5be13dc681fdf1a021ef7",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/benchmark_metrics.py": {
+    "mtime": 1789208801.0,
+    "ast_hash": "995a273ac7a103e0abc53f7c875f71a7",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/common.py": {
+    "mtime": 1789207035.0,
+    "ast_hash": "5984765b5c0c5dc9075d534747407647",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/comparison.py": {
+    "mtime": 1789209461.0,
+    "ast_hash": "e63eb1d62061c6653021bfcdd650b8b0",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/esm_cache.py": {
+    "mtime": 1789207477.0,
+    "ast_hash": "3555cf21a720bf42b141a6563ed5e681",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/freeze_execution.py": {
+    "mtime": 1789209578.0,
+    "ast_hash": "02f1dd014d8b8a3d3e80b59e89b6172f",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/freeze_training.py": {
+    "mtime": 1789208299.0,
+    "ast_hash": "b246bd1e8f250cf8d26679a0ee3f0162",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/frozen_scorer.py": {
+    "mtime": 1789208801.0,
+    "ast_hash": "a53e4302c01922578daa2cea7421ae81",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/gpu_guard.py": {
+    "mtime": 1789208635.0,
+    "ast_hash": "332304a98f98133ee584514daf5ba41c",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/pilot.py": {
+    "mtime": 1789208185.0,
+    "ast_hash": "dc66f5ae093a832fb6e8a24d8373c51d",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/prepare_data.py": {
+    "mtime": 1789207035.0,
+    "ast_hash": "915fb5a04a8cdb10ba014a5fafbfce15",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/qualify.py": {
+    "mtime": 1789207561.0,
+    "ast_hash": "f8413534361099c092c19a07b2e3d38a",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/qualify_real.py": {
+    "mtime": 1789208185.0,
+    "ast_hash": "dbce615bb6e9d5e9a779721b5a502db3",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/residues.py": {
+    "mtime": 1789207723.0,
+    "ast_hash": "a282668c61e564265f679c951e94b8f7",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/select_and_freeze.py": {
+    "mtime": 1789208903.0,
+    "ast_hash": "ab2f6ebe2f82aba54148749e0cfdb5d7",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/test_pipeline.py": {
+    "mtime": 1789209578.0,
+    "ast_hash": "09e678dfbda4719f9972e89028082f22",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/train.py": {
+    "mtime": 1789207849.0,
+    "ast_hash": "8ca622d1a7fd70c880654852bafb4086",
+    "semantic_hash": ""
+  },
+  "tuna/scripts/training.py": {
+    "mtime": 1789207849.0,
+    "ast_hash": "7d8104995d0815220c25a300d1d9c575",
+    "semantic_hash": ""
+  },
+  "tuna/submit_training.sh": {
+    "mtime": 1789208364.0,
+    "ast_hash": "b827769e9cf45fd35ed25e4b05e572b3",
+    "semantic_hash": ""
+  },
+  "workspace_guard.py": {
+    "mtime": 1789206502.0,
+    "ast_hash": "7dd1cc58caa3551d220203ff40790672",
+    "semantic_hash": ""
+  },
+  "PUBLISHED_MODEL_BENCHMARK_RECOMMENDATIONS.md": {
+    "mtime": 1789210004.0,
+    "ast_hash": "0dbfc0f0993944b04e3a716460562226",
+    "semantic_hash": ""
+  },
+  "containers/README.md": {
+    "mtime": 1789210004.0,
+    "ast_hash": "9c7ce08fcd673590373bbfa46851f50f",
+    "semantic_hash": ""
+  },
+  "containers/manifests/tuna-sif-sha256.txt": {
+    "mtime": 1789207402.0,
+    "ast_hash": "2510530fc23e3d594356473166f04e11",
+    "semantic_hash": ""
+  },
+  "containers/manifests/tuna-wheel-sha256.txt": {
+    "mtime": 1789206581.0,
+    "ast_hash": "72ce40e27a3cedbdab92c5a3ccbc1fb3",
+    "semantic_hash": ""
+  },
+  "dscript/README.md": {
+    "mtime": 1789206292.0,
+    "ast_hash": "7e79446492d050e1b1114c09d925bb95",
+    "semantic_hash": ""
+  },
+  "mint/README.md": {
+    "mtime": 1789206292.0,
+    "ast_hash": "32472f1a7942f1219114cafba8de2cc9",
+    "semantic_hash": ""
+  },
+  "pipr/README.md": {
+    "mtime": 1789206292.0,
+    "ast_hash": "d2af61fd1cd6f367535ca8573510a073",
+    "semantic_hash": ""
+  },
+  "plm_interact/README.md": {
+    "mtime": 1789206292.0,
+    "ast_hash": "1850dd230fb18000c97cd7d6b5d5e023",
+    "semantic_hash": ""
+  },
+  "ppitrans/README.md": {
+    "mtime": 1789206292.0,
+    "ast_hash": "23f62627c1c8161ae8b0eb10574bad1f",
+    "semantic_hash": ""
+  },
+  "pplm/README.md": {
+    "mtime": 1789206292.0,
+    "ast_hash": "5ec829659512b840b771d225178ac1ba",
+    "semantic_hash": ""
+  },
+  "rapppid/README.md": {
+    "mtime": 1789206292.0,
+    "ast_hash": "975b65f56ae0dab399dfb573449a1024",
+    "semantic_hash": ""
+  },
+  "sprint/README.md": {
+    "mtime": 1789206292.0,
+    "ast_hash": "de04669030e08779aa3c6554c236237c",
+    "semantic_hash": ""
+  },
+  "topsy_turvy/README.md": {
+    "mtime": 1789206292.0,
+    "ast_hash": "4c010de000205181c401ba1033dbbcfb",
+    "semantic_hash": ""
+  },
+  "tt3d/README.md": {
+    "mtime": 1789206292.0,
+    "ast_hash": "62add98f9772a4f243ef47213c37eacb",
+    "semantic_hash": ""
+  },
+  "tuna/README.md": {
+    "mtime": 1789210004.0,
+    "ast_hash": "fdae728a4611409828f81e138643e41d",
+    "semantic_hash": ""
+  },
+  "tuna/REPORT.md": {
+    "mtime": 1789210004.0,
+    "ast_hash": "8f5dffc69f699bfdccdc2793e90a8d03",
+    "semantic_hash": ""
+  }
+}

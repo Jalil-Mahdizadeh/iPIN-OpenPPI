@@ -1,0 +1,12 @@
+WARNING: Not virtualizing pid namespace by configuration
+environment PASS
+unmodified_upstream_source PASS
+Loading weights from local directory
+original_checkpoint_identity PASS
+bepler_berger_cpu_gpu_embeddings PASS
+original_checkpoint_cpu_gpu_inference PASS
+offline_native_cli PASS
+offline_native_blocked_cli_unique_pairs PASS
+native_length_boundary_characterized PASS
+selected_upstream_unit_tests PASS
+{"container_smoke_tests_passed": true, "failed_checks": [], "limitations": [{"type": "upstream_predictor_length_limit", "maximum_residues": 2000, "tested_failure_residues": 2001, "error": "The size of tensor a (2001) must match the size of tensor b (2000) at non-singleton dimension 2", "action": "No patch, cropping, or excluded benchmark rows; resolve before full benchmarking"}]}

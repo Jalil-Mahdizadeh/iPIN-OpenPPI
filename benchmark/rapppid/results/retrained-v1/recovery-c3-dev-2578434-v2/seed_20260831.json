@@ -1,0 +1,29 @@
+{
+  "C3_development_concordance": 0.6565409602730607,
+  "all_rows_finite": true,
+  "checkpoint": {
+    "bytes": 4567343,
+    "path": "checkpoints/seed_20260831.pt",
+    "sha256": "ac0facd77f4bbb70fe25f144556d90cdf28e4151b324c41aae6a5c0efd0a4ef8"
+  },
+  "comparisons_in_current_epoch": 1556480,
+  "completed_epochs": 7,
+  "current_epoch_fraction": 0.77824,
+  "difference_from_epoch4": -0.015895360264802427,
+  "epoch4_concordance": 0.6724363205378632,
+  "epoch_in_progress": 8,
+  "evaluation_seconds": 4.918205084999499,
+  "independent_metric_error": 1.4736878384269403e-11,
+  "learned_state_sha256": "d85eb5d5c8da88b25622d67f16e2004be231d0bd51d368e1bfa9328049f168d6",
+  "model": "seed_20260831",
+  "native_head_and_reversal_max_error": 9.5367431640625e-07,
+  "predictions": {
+    "bytes": 8018248,
+    "path": "seed_20260831_C3_development.npy",
+    "sha256": "902223dcf102a00c0220605dba7c4a1849bf71ff537a7477b974f7c31e9b3d69"
+  },
+  "seed": 20260831,
+  "source_path": "/training/seed_20260831/resume.pt",
+  "source_sha256": "ac0facd77f4bbb70fe25f144556d90cdf28e4151b324c41aae6a5c0efd0a4ef8",
+  "total_optimizer_updates": 388912
+}

@@ -1,0 +1,40 @@
+{
+  "at_utc": "2026-09-12T21:02:55.328606+00:00",
+  "passed": true,
+  "scorer_freeze_sha256": "4ceaf28210f74b4f8519d2e8b9453376ce08edf27dcf79ef5ef12fbb8fc0ee86",
+  "rows": {
+    "C1_test": 1003187,
+    "C2_test": 1013446,
+    "C3_test": 1002379
+  },
+  "total_rows": 3019012,
+  "stage_timestamps_in_order": [
+    "2026-09-12T19:57:48.096193+00:00",
+    "2026-09-12T19:59:20.852561+00:00",
+    "2026-09-12T20:55:18.040779+00:00",
+    "2026-09-12T20:55:30.025992+00:00",
+    "2026-09-12T20:55:37.931904+00:00",
+    "2026-09-12T20:55:46.193219+00:00",
+    "2026-09-12T20:56:15.671754+00:00"
+  ],
+  "slurm_accounting": "2338739|COMPLETED|0:0|00:44:01|n494",
+  "gpu_uuids_by_rank": [
+    "GPU-3ed6329f-8f91-9564-017d-8aa63e5c55ce",
+    "GPU-40e8a6d5-1f4c-5991-5265-2812ef74cae6",
+    "GPU-0343341a-a542-e9a3-cc55-3264acbcfd81",
+    "GPU-7b85ea7b-f545-0ea6-c6e1-5affda1df554"
+  ],
+  "maximum_symmetry_error_by_rank": {
+    "0": 8.940696716308594e-08,
+    "1": 8.940696716308594e-08,
+    "2": 2.2351741790771484e-08,
+    "3": 1.1175870895385742e-08
+  },
+  "all_2000_paired_draws_finite": true,
+  "historical_references_reproduced": true,
+  "frozen_files_and_image_verified": true,
+  "temporary_truth_absent": true,
+  "scope_audit_passed": true,
+  "training_performed": false,
+  "result_sha256": "d1cc407b7bcaeb2451880633585838a4f91005115587f925f3ebbdc9184d90da"
+}

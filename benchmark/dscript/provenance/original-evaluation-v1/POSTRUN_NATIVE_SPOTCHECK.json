@@ -1,0 +1,252 @@
+{
+  "at_utc": "2026-09-12T21:04:21.598251+00:00",
+  "maximum_absolute_score_error": 0.0,
+  "method": "Fresh unmodified native human_v1 predictor and lm_v1 encoder versus saved final per-row predictions; first supported-length row at offsets 0 and 50000 within each of four shards and each cell. Selection uses row position and sequence length only. No learned changes or score replacement.",
+  "pairs": 24,
+  "passed": true,
+  "records": [
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C1_test",
+      "lengths": [
+        626,
+        236
+      ],
+      "rank": 0,
+      "row_index": 0
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C1_test",
+      "lengths": [
+        270,
+        640
+      ],
+      "rank": 0,
+      "row_index": 50000
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C1_test",
+      "lengths": [
+        560,
+        206
+      ],
+      "rank": 1,
+      "row_index": 250796
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C1_test",
+      "lengths": [
+        97,
+        901
+      ],
+      "rank": 1,
+      "row_index": 300796
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C1_test",
+      "lengths": [
+        691,
+        275
+      ],
+      "rank": 2,
+      "row_index": 501593
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C1_test",
+      "lengths": [
+        325,
+        270
+      ],
+      "rank": 2,
+      "row_index": 551593
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C1_test",
+      "lengths": [
+        749,
+        516
+      ],
+      "rank": 3,
+      "row_index": 752390
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C1_test",
+      "lengths": [
+        448,
+        222
+      ],
+      "rank": 3,
+      "row_index": 802390
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C2_test",
+      "lengths": [
+        801,
+        454
+      ],
+      "rank": 0,
+      "row_index": 0
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C2_test",
+      "lengths": [
+        216,
+        171
+      ],
+      "rank": 0,
+      "row_index": 50000
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C2_test",
+      "lengths": [
+        367,
+        581
+      ],
+      "rank": 1,
+      "row_index": 253361
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C2_test",
+      "lengths": [
+        201,
+        484
+      ],
+      "rank": 1,
+      "row_index": 303361
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C2_test",
+      "lengths": [
+        176,
+        930
+      ],
+      "rank": 2,
+      "row_index": 506723
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C2_test",
+      "lengths": [
+        1848,
+        529
+      ],
+      "rank": 2,
+      "row_index": 556723
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C2_test",
+      "lengths": [
+        199,
+        1591
+      ],
+      "rank": 3,
+      "row_index": 760084
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C2_test",
+      "lengths": [
+        318,
+        479
+      ],
+      "rank": 3,
+      "row_index": 810084
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C3_test",
+      "lengths": [
+        411,
+        634
+      ],
+      "rank": 0,
+      "row_index": 0
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C3_test",
+      "lengths": [
+        221,
+        435
+      ],
+      "rank": 0,
+      "row_index": 50000
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C3_test",
+      "lengths": [
+        255,
+        282
+      ],
+      "rank": 1,
+      "row_index": 250594
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C3_test",
+      "lengths": [
+        171,
+        998
+      ],
+      "rank": 1,
+      "row_index": 300594
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C3_test",
+      "lengths": [
+        600,
+        649
+      ],
+      "rank": 2,
+      "row_index": 501189
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C3_test",
+      "lengths": [
+        424,
+        339
+      ],
+      "rank": 2,
+      "row_index": 551189
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C3_test",
+      "lengths": [
+        453,
+        785
+      ],
+      "rank": 3,
+      "row_index": 751784
+    },
+    {
+      "absolute_score_error": 0.0,
+      "cell": "C3_test",
+      "lengths": [
+        288,
+        549
+      ],
+      "rank": 3,
+      "row_index": 801784
+    }
+  ],
+  "tolerance": 1e-05,
+  "training_performed": false,
+  "truth_accessed": false
+}

@@ -1,0 +1,25 @@
+# Preserve example inputs, scripts, reports, scored CSVs, and provenance in Git.
+# Model artifacts and regenerated embeddings/predictions remain local.
+private/
+.private/
+runtime/
+cache/
+.cache/
+checkpoints/
+__pycache__/
+*.pyc
+*.sif
+*.sif.*
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Machine-local knowledge-graph caches and root markers.
+**/graphify-out/cache/
+**/graphify-out/.graphify_root

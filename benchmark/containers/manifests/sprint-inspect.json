@@ -1,0 +1,23 @@
+{
+	"data": {
+		"attributes": {
+			"labels": {
+				"benchmark.base.digest": "sha256:11dc1ccb427f0464a2369e645454c272bb0baece7357c892ba69d313b3a332cf",
+				"benchmark.candidate": "SPRINT-native-TRAIN-positive-graph",
+				"benchmark.scorer": "serial-native-unmodified",
+				"benchmark.upstream.commit": "b6272c76e1a943e6812b1b815607691819e6202e",
+				"benchmark.version": "1",
+				"org.label-schema.build-arch": "arm64",
+				"org.label-schema.build-date": "Thursday_17_September_2026_20:49:0_CEST",
+				"org.label-schema.schema-version": "1.0",
+				"org.label-schema.usage.apptainer.version": "1.5.3-1.el9",
+				"org.label-schema.usage.singularity.deffile.bootstrap": "docker",
+				"org.label-schema.usage.singularity.deffile.from": "ubuntu@sha256:11dc1ccb427f0464a2369e645454c272bb0baece7357c892ba69d313b3a332cf",
+				"org.opencontainers.image.base.digest": "sha256:11dc1ccb427f0464a2369e645454c272bb0baece7357c892ba69d313b3a332cf",
+				"org.opencontainers.image.base.name": "docker.io/library/ubuntu@sha256:11dc1ccb427f0464a2369e645454c272bb0baece7357c892ba69d313b3a332cf",
+				"org.opencontainers.image.version": "24.04"
+			}
+		}
+	},
+	"type": "container"
+}

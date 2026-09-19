@@ -1,0 +1,13 @@
+model,positive_subset,targets,macro_P_vs_U_concordance
+ipin_baseline,all_P,6,0.6408333333333333
+ipin_optimized,all_P,6,0.6802777777777779
+tuna_original,all_P,6,0.8287268518518519
+tuna_retrained,all_P,6,0.7431018518518518
+ipin_baseline,exclude_development_P,6,0.6072222222222222
+ipin_optimized,exclude_development_P,6,0.6513888888888889
+tuna_original,exclude_development_P,6,0.8047453703703704
+tuna_retrained,exclude_development_P,6,0.7234722222222224
+ipin_baseline,exclude_development_P_and_homomers,6,0.5804166666666667
+ipin_optimized,exclude_development_P_and_homomers,6,0.6256944444444444
+tuna_original,exclude_development_P_and_homomers,6,0.7892592592592592
+tuna_retrained,exclude_development_P_and_homomers,6,0.7044444444444444

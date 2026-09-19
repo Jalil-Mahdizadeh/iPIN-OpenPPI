@@ -1,0 +1,132 @@
+{
+  "started_utc": "2026-09-12T19:29:43.035982+00:00",
+  "checks": {
+    "environment": {
+      "passed": true,
+      "details": {
+        "architecture": "aarch64",
+        "python": "3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]",
+        "torch": "2.8.0a0+34c6371d24.nv25.08",
+        "cuda": "13.0",
+        "gpu": "NVIDIA GH200 120GB",
+        "numpy": "1.26.4",
+        "gpu_total_bytes": 102005473280,
+        "dscript_direct_and_added_dependency_requirements_satisfied": true,
+        "python_tcp_networking_denied": true
+      },
+      "seconds": 0.6757467050338164
+    },
+    "unmodified_upstream_source": {
+      "passed": true,
+      "details": {
+        "unmodified_upstream_python_files": 34
+      },
+      "seconds": 0.006313018035143614
+    },
+    "original_checkpoint_identity": {
+      "passed": true,
+      "details": {
+        "legacy_and_hf_state_dicts_bitwise_identical": true,
+        "state_dict_entries": 21,
+        "original_model": "human_v1",
+        "language_model": "lm_v1",
+        "embedding_dimension": 6165
+      },
+      "seconds": 0.002622700994834304
+    },
+    "bepler_berger_cpu_gpu_embeddings": {
+      "passed": true,
+      "details": {
+        "lengths": [
+          32,
+          47,
+          101
+        ],
+        "dimension": 6165,
+        "cpu_gpu_max_absolute_difference": 2.428889274597168e-06,
+        "gpu_repeat_bitwise_identical": true,
+        "native_api_matches_direct_transform": true
+      },
+      "seconds": 1.097206053091213
+    },
+    "original_checkpoint_cpu_gpu_inference": {
+      "passed": true,
+      "details": {
+        "pairs": 4,
+        "cpu_gpu_max_absolute_score_difference": 4.656612873077393e-10,
+        "reversed_pair_absolute_difference": 0.0,
+        "legacy_hf_predictions_bitwise_identical": true,
+        "gpu_repeat_bitwise_identical": true
+      },
+      "seconds": 0.40069568098988384
+    },
+    "offline_native_cli": {
+      "passed": true,
+      "details": {
+        "offline_native_embed_and_predict_serial": true,
+        "rows_expected": 4,
+        "rows_written": 4
+      },
+      "seconds": 7.9513025539927185
+    },
+    "offline_native_blocked_cli_unique_pairs": {
+      "passed": true,
+      "details": {
+        "offline_single_gpu_blocked_predict": true,
+        "unique_nonself_pairs": 3,
+        "coverage_note": "Duplicates and self-pairs must use a row-aware adapter/serial path; blocked CLI not qualified for them"
+      },
+      "seconds": 6.029909186065197
+    },
+    "native_length_boundary_characterized": {
+      "passed": true,
+      "details": {
+        "encoder_tested_lengths": [
+          2000,
+          2001,
+          7570
+        ],
+        "encoder_seconds": {
+          "2000": 0.06737688696011901,
+          "2001": 0.06466830207500607,
+          "7570": 0.24231148010585457
+        },
+        "predictor_2000_by_32_passed": true,
+        "predictor_2001_by_32_expected_failure": "The size of tensor a (2001) must match the size of tensor b (2000) at non-singleton dimension 2"
+      },
+      "seconds": 0.4040708710672334
+    },
+    "selected_upstream_unit_tests": {
+      "passed": true,
+      "details": {
+        "tests": 98,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "seconds": 3.870902140974067
+    }
+  },
+  "scope": "Synthetic inputs only; no iPIN data, no training, no optimizer steps",
+  "limitations": [
+    {
+      "type": "upstream_predictor_length_limit",
+      "maximum_residues": 2000,
+      "tested_failure_residues": 2001,
+      "error": "The size of tensor a (2001) must match the size of tensor b (2000) at non-singleton dimension 2",
+      "action": "No patch, cropping, or excluded benchmark rows; resolve before full benchmarking"
+    }
+  ],
+  "upstream_test_counts": {
+    "tests": 98,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "gpu_peak_allocated_bytes_main_process": 1080204800,
+  "completed_utc": "2026-09-12T19:30:04.572837+00:00",
+  "failed_checks": [],
+  "container_smoke_tests_passed": true,
+  "full_benchmark_ready": false,
+  "next_action": "Report to user and stop; resolve upstream length limit before benchmark work"
+}

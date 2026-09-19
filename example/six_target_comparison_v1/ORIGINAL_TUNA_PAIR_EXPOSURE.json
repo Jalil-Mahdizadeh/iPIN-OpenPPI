@@ -1,0 +1,87 @@
+{
+  "all_pair_orientations_checked": true,
+  "at_utc": "2026-09-18T22:54:19.241330+00:00",
+  "caveat": "Documented public Bernett training/validation files only; not an authenticated complete checkpoint history, homology audit, or language-model exposure audit.",
+  "preexisting_embeddings_used": false,
+  "script": {
+    "bytes": 4185,
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/audit_original_exposure.py",
+    "sha256": "898b8004c2a7878a3a5242ad2e4bfef273b6ad7b0a1886a37412b6f9d130aa0d"
+  },
+  "sequence_and_accession_pair_checks": true,
+  "summary": {
+    "panel_P_training_accession_labels": {
+      "pairs": 0,
+      "positive_pair_names": [],
+      "public_negative_labeled": 0,
+      "public_positive_labeled": 0
+    },
+    "panel_P_training_exact_sequence_labels": {
+      "pairs": 0,
+      "positive_pair_names": [],
+      "public_negative_labeled": 0,
+      "public_positive_labeled": 0
+    },
+    "panel_P_validation_accession_labels": {
+      "pairs": 3,
+      "positive_pair_names": [
+        "BCL2--BCL2L11",
+        "BCL2--BAD",
+        "BCL2--BBC3"
+      ],
+      "public_negative_labeled": 0,
+      "public_positive_labeled": 3
+    },
+    "panel_P_validation_exact_sequence_labels": {
+      "pairs": 3,
+      "positive_pair_names": [
+        "BCL2--BCL2L11",
+        "BCL2--BAD",
+        "BCL2--BBC3"
+      ],
+      "public_negative_labeled": 0,
+      "public_positive_labeled": 3
+    },
+    "panel_U_training_accession_labels": {
+      "pairs": 1,
+      "positive_pair_names": [],
+      "public_negative_labeled": 1,
+      "public_positive_labeled": 0
+    },
+    "panel_U_training_exact_sequence_labels": {
+      "pairs": 1,
+      "positive_pair_names": [],
+      "public_negative_labeled": 1,
+      "public_positive_labeled": 0
+    },
+    "panel_U_validation_accession_labels": {
+      "pairs": 2,
+      "positive_pair_names": [],
+      "public_negative_labeled": 2,
+      "public_positive_labeled": 0
+    },
+    "panel_U_validation_exact_sequence_labels": {
+      "pairs": 2,
+      "positive_pair_names": [],
+      "public_negative_labeled": 2,
+      "public_positive_labeled": 0
+    }
+  },
+  "verified_sources": [
+    {
+      "bytes": 11561571,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/raw/bernett/human_swissprot_oneliner.fasta",
+      "sha256": "578b02750acb75416b897ee7de07f9f5a4f3a57ec7fbce4b4a62ec84a1851d0d"
+    },
+    {
+      "bytes": 2203064,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/bernett/Intra1_interaction_1500_or_less.tsv",
+      "sha256": "bec107f8e07cc603ff247a8626aa9a06369b73256848fb5ccbf42dc31f998a58"
+    },
+    {
+      "bytes": 912321,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/bernett/Intra0_interaction_1500_or_less.tsv",
+      "sha256": "105f30b038800f5cf7e598fc9dc6e34ddaabfa9451e32a6edd69d6cc52687a1f"
+    }
+  ]
+}

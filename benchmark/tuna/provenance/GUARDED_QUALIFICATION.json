@@ -1,0 +1,46 @@
+{
+  "architecture": "aarch64",
+  "at_utc": "2026-09-12T10:25:06.559642+00:00",
+  "checkpoint": {
+    "bytes": 135352865,
+    "path": "/weights/bernett_original.pt",
+    "sha256": "bf2dd42af75d98324798b76837ca738e4ed230b096ee538ccdbaa001dcc88500"
+  },
+  "cuda": "13.0",
+  "elapsed_seconds": 2.223278402001597,
+  "errors": {
+    "factored_batch_padding_probability": 5.960464477539063e-08,
+    "native_order": 0.0,
+    "native_vs_factored_probability": 5.960464477539063e-08,
+    "native_vs_sdpa_factored_probability": 5.960464477539063e-08,
+    "native_vs_sdpa_native_probability": 5.960464477539063e-08,
+    "sdpa_endpoint_feature": 3.5762786865234375e-07,
+    "weighted_concordance": 0.0
+  },
+  "feature_absolute_tolerance": 0.0001,
+  "fixture": "fixed seeded synthetic residue matrices; no test interactions or labels",
+  "fixture_lengths": [
+    7,
+    31,
+    137,
+    513,
+    1025
+  ],
+  "formula_note": "Cached inference preserves this pinned implementation: block-diagonal attention masks, first-column pooling, AB/BA elementwise max. Training is not factorized.",
+  "gpu": "NVIDIA GH200 120GB",
+  "inaccessible_host_paths": {
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/.private": true,
+    "/repo": true,
+    "/source": true
+  },
+  "native_batch_note": "Released batch-one test predictor is the oracle; upstream mean-field broadcasting for B>1 is not used.",
+  "native_inference_batch_size": 1,
+  "network_isolation": "not claimed; no runtime network downloads",
+  "pair_count": 8,
+  "passed": true,
+  "peak_gpu_bytes": 554679808,
+  "pid_namespace_isolation": "not claimed; HPC configuration disables PID virtualization",
+  "precision": "FP32, TF32 disabled",
+  "probability_absolute_tolerance": 1e-05,
+  "torch": "2.8.0a0+34c6371d24.nv25.08"
+}

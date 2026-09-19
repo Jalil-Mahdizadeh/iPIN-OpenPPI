@@ -1,0 +1,56 @@
+Bootstrap: docker
+From: ubuntu@sha256:11dc1ccb427f0464a2369e645454c272bb0baece7357c892ba69d313b3a332cf
+
+%files
+    benchmark/sprint/upstream/Src /opt/sprint/Src
+    benchmark/sprint/upstream/makefile /opt/sprint/makefile
+    benchmark/sprint/upstream/LICENSE /opt/sprint/LICENSE
+    benchmark/sprint/upstream/toy_example /opt/sprint/toy_example
+    benchmark/sprint/upstream/HSP /opt/sprint/HSP
+    benchmark/containers/manifests/sprint-source.json /opt/sprint/source.json
+
+%post
+    set -eu
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update
+    apt-get install -y --no-install-recommends g++ make libboost-dev python3 libseccomp2 time
+    mkdir -p /opt/sprint/bin /opt/sprint/build
+    dpkg-query -W -f='${Package}\t${Version}\t${Architecture}\n' > /opt/sprint/build/packages.tsv
+    g++ --version > /opt/sprint/build/compiler.txt
+    cd /opt/sprint
+    g++ -O3 -fopenmp -Wall Src/compute_HSPs/compute_hsps.cpp -o bin/compute_HSPs -DPARAL
+    g++ -O3 -Wall Src/compute_HSPs/compute_hsps.cpp -o bin/compute_HSPs_serial
+    g++ -O3 -Wall Src/predict_interactions/predict_interactions.cpp -o bin/predict_interactions
+    g++ -O3 -fopenmp -Wall Src/predict_interactions/predict_interactions.cpp -o bin/predict_interactions_parallel -DPARAL
+    sha256sum bin/* > /opt/sprint/build/binaries.sha256
+
+%labels
+    benchmark.candidate SPRINT-native-TRAIN-positive-graph
+    benchmark.version 1
+    benchmark.upstream.commit b6272c76e1a943e6812b1b815607691819e6202e
+    benchmark.base.digest sha256:11dc1ccb427f0464a2369e645454c272bb0baece7357c892ba69d313b3a332cf
+    benchmark.scorer serial-native-unmodified
+
+%environment
+    export PATH=/opt/sprint/bin:$PATH
+    export PYTHONNOUSERSITE=1
+    export PYTHONDONTWRITEBYTECODE=1
+    export OMP_NUM_THREADS=1
+    export OPENBLAS_NUM_THREADS=1
+
+%test
+    python3 - <<'PY'
+import hashlib, json, platform
+from pathlib import Path
+assert platform.machine() == 'aarch64'
+root = Path('/opt/sprint')
+manifest = json.loads((root/'source.json').read_text())
+for item in manifest['files']:
+    if item['path'] == 'README.md': continue
+    assert hashlib.sha256((root/item['path']).read_bytes()).hexdigest() == item['sha256']
+assert all((root/'bin'/name).is_file() for name in ('compute_HSPs', 'compute_HSPs_serial', 'predict_interactions', 'predict_interactions_parallel'))
+print('Native ARM64 SPRINT source identity and binary census passed')
+PY
+
+%runscript
+    exec /opt/sprint/bin/predict_interactions "$@"

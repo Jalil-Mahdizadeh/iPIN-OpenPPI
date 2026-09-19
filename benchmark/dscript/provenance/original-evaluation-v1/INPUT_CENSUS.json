@@ -1,0 +1,61 @@
+{
+  "at_utc": "2026-09-12T20:06:11.976423+00:00",
+  "cells": {
+    "C1_test": {
+      "all_residues_retained": true,
+      "maximum_pair_area": 20343749,
+      "mean_endpoint_length": 473.21310782536057,
+      "mean_pair_area": 223882.2475301215,
+      "pair_area_quantiles": [
+        137616.0,
+        475408.0,
+        685032.0,
+        1409421.680000003,
+        20343749.0
+      ],
+      "pairs_excluded": 0,
+      "pairs_requiring_tiled_contact_maps": 22445,
+      "pairs_with_endpoint_over_2000": 20388,
+      "rows": 1003187,
+      "unique_endpoints": 4675
+    },
+    "C2_test": {
+      "all_residues_retained": true,
+      "maximum_pair_area": 23381460,
+      "mean_endpoint_length": 514.2004931688516,
+      "mean_pair_area": 262937.3873082532,
+      "pair_area_quantiles": [
+        160404.0,
+        565508.0,
+        811272.0,
+        1642907.8500000003,
+        23381460.0
+      ],
+      "pairs_excluded": 0,
+      "pairs_requiring_tiled_contact_maps": 32373,
+      "pairs_with_endpoint_over_2000": 22928,
+      "rows": 1013446,
+      "unique_endpoints": 7225
+    },
+    "C3_test": {
+      "all_residues_retained": true,
+      "maximum_pair_area": 52119450,
+      "mean_endpoint_length": 556.6256745203161,
+      "mean_pair_area": 309634.61787307996,
+      "pair_area_quantiles": [
+        187572.0,
+        678230.2000000022,
+        962442.2,
+        1897470.5399999942,
+        52119450.0
+      ],
+      "pairs_excluded": 0,
+      "pairs_requiring_tiled_contact_maps": 46058,
+      "pairs_with_endpoint_over_2000": 24955,
+      "rows": 1002379,
+      "unique_endpoints": 2550
+    }
+  },
+  "scores_read": false,
+  "test_truth_read": false
+}

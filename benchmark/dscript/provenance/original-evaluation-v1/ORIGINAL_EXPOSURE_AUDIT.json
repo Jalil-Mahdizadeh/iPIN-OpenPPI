@@ -1,0 +1,39 @@
+{
+  "commit": "0b3f7363b7d62fb99f5c8bfc6780833f088b8d84",
+  "sources": [
+    {
+      "path": "upstream/original-exposure/human.fasta",
+      "url": "https://raw.githubusercontent.com/samsledje/D-SCRIPT/0b3f7363b7d62fb99f5c8bfc6780833f088b8d84/data/seqs/human.fasta",
+      "sha256": "ff027c405225204c9c3469ee2aa6dee807253a00af96936f4776e3580319cb14",
+      "bytes": 30928643
+    },
+    {
+      "path": "upstream/original-exposure/human_train.tsv",
+      "url": "https://raw.githubusercontent.com/samsledje/D-SCRIPT/0b3f7363b7d62fb99f5c8bfc6780833f088b8d84/data/pairs/human_train.tsv",
+      "sha256": "a51caf0b590decf96911b09d1e2cc6afc9a9d669d4e67d8bb3c2f1c94e16cd0b",
+      "bytes": 18558848
+    }
+  ],
+  "public_pairs": 421792,
+  "public_positive_pairs": 38344,
+  "public_negative_labeled_pairs": 383448,
+  "public_pair_endpoints": 15816,
+  "missing_public_fasta_endpoints": 0,
+  "exact_sequence_overlap_by_iPIN_partition": {
+    "train": {
+      "iPIN_endpoints": 11900,
+      "exact_sequence_matches": 8471
+    },
+    "development": {
+      "iPIN_endpoints": 2550,
+      "exact_sequence_matches": 1921
+    },
+    "test": {
+      "iPIN_endpoints": 2550,
+      "exact_sequence_matches": 1738
+    }
+  },
+  "test_pairs_read": false,
+  "test_truth_read": false,
+  "caveat": "Audit of the public human-training files linked by official documentation, not independent authentication of the complete human_v1 checkpoint training history. Exact-sequence overlap is not a complete homology or interaction-pair audit. No test rows are excluded on this basis."
+}

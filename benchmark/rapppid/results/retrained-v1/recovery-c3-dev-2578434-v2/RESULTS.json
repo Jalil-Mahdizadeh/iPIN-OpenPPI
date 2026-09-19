@@ -1,0 +1,121 @@
+{
+  "at_utc": "2026-09-17T17:53:34.476043+00:00",
+  "caveat": "User-requested extra development look at unequal mid-epoch-8 recovery states; not a completed epoch-8 comparison",
+  "checkpoint_selection_performed": false,
+  "ensemble": {
+    "C3_development_concordance": 0.6994287796986639,
+    "all_rows_finite": true,
+    "difference_from_epoch4": 0.006684375275641585,
+    "epoch4_concordance": 0.6927444044230223,
+    "independent_metric_error": 1.3760437234111578e-11,
+    "model": "three_seed_mean_logit",
+    "predictions": {
+      "bytes": 8018248,
+      "path": "ensemble_C3_development.npy",
+      "sha256": "e0869df2d0ed575799ed1f5506044fb0acc0ee06ec12895fefa49eb13cdf742c"
+    }
+  },
+  "evaluation_slurm_allocation": "2598385",
+  "freeze_sha256": "0c6b9cca63d4c53c265bbbc86e5d392f25f86da0a516005dce715746eb3fa8d9",
+  "gpu": "NVIDIA GH200 120GB",
+  "members": [
+    {
+      "C3_development_concordance": 0.6793894547543157,
+      "all_rows_finite": true,
+      "checkpoint": {
+        "bytes": 4567343,
+        "path": "checkpoints/seed_20260803.pt",
+        "sha256": "f332c9fbd42e9d3146ca7c54743acca66ab0fa5e6d583e89aca2ae41e4135c30"
+      },
+      "comparisons_in_current_epoch": 1502840,
+      "completed_epochs": 7,
+      "current_epoch_fraction": 0.75142,
+      "difference_from_epoch4": 0.05720427417202034,
+      "epoch4_concordance": 0.6221851805822953,
+      "epoch_in_progress": 8,
+      "evaluation_seconds": 6.313644871996075,
+      "independent_metric_error": 1.4653500635120054e-11,
+      "learned_state_sha256": "6592a8aedf7a0f2ea279ca3c6dbbe9fa65f75745f7b0ff9d7e7593436323b22f",
+      "model": "seed_20260803",
+      "native_head_and_reversal_max_error": 9.5367431640625e-07,
+      "predictions": {
+        "bytes": 8018248,
+        "path": "seed_20260803_C3_development.npy",
+        "sha256": "8623534a1f537023b66dc77bc15ae10c10d8615e2fdba7b30e60752a4750b9e8"
+      },
+      "seed": 20260803,
+      "source_path": "/training/seed_20260803/resume.pt",
+      "source_sha256": "f332c9fbd42e9d3146ca7c54743acca66ab0fa5e6d583e89aca2ae41e4135c30",
+      "total_optimizer_updates": 387571
+    },
+    {
+      "C3_development_concordance": 0.6684855468072608,
+      "all_rows_finite": true,
+      "checkpoint": {
+        "bytes": 4567343,
+        "path": "checkpoints/seed_20260817.pt",
+        "sha256": "2ea98f070c5f5f712c6c4dc31c2a8f7f2389f0329a5a73a4548bdde487a49060"
+      },
+      "comparisons_in_current_epoch": 1577920,
+      "completed_epochs": 7,
+      "current_epoch_fraction": 0.78896,
+      "difference_from_epoch4": -0.0015273015457044625,
+      "epoch4_concordance": 0.6700128483529653,
+      "epoch_in_progress": 8,
+      "evaluation_seconds": 4.952582822996192,
+      "independent_metric_error": 1.481703648664734e-11,
+      "learned_state_sha256": "d7d388e1ca8cba2fc15286f24b24681163794444786829488c2f8a3755792250",
+      "model": "seed_20260817",
+      "native_head_and_reversal_max_error": 1.430511474609375e-06,
+      "predictions": {
+        "bytes": 8018248,
+        "path": "seed_20260817_C3_development.npy",
+        "sha256": "0757d392aea98ab6d7966d1287f25150ced98b5d9dc1d13a8a6da5ffe2f9f5eb"
+      },
+      "seed": 20260817,
+      "source_path": "/training/seed_20260817/resume.pt",
+      "source_sha256": "2ea98f070c5f5f712c6c4dc31c2a8f7f2389f0329a5a73a4548bdde487a49060",
+      "total_optimizer_updates": 389448
+    },
+    {
+      "C3_development_concordance": 0.6565409602730607,
+      "all_rows_finite": true,
+      "checkpoint": {
+        "bytes": 4567343,
+        "path": "checkpoints/seed_20260831.pt",
+        "sha256": "ac0facd77f4bbb70fe25f144556d90cdf28e4151b324c41aae6a5c0efd0a4ef8"
+      },
+      "comparisons_in_current_epoch": 1556480,
+      "completed_epochs": 7,
+      "current_epoch_fraction": 0.77824,
+      "difference_from_epoch4": -0.015895360264802427,
+      "epoch4_concordance": 0.6724363205378632,
+      "epoch_in_progress": 8,
+      "evaluation_seconds": 4.918205084999499,
+      "independent_metric_error": 1.4736878384269403e-11,
+      "learned_state_sha256": "d85eb5d5c8da88b25622d67f16e2004be231d0bd51d368e1bfa9328049f168d6",
+      "model": "seed_20260831",
+      "native_head_and_reversal_max_error": 9.5367431640625e-07,
+      "predictions": {
+        "bytes": 8018248,
+        "path": "seed_20260831_C3_development.npy",
+        "sha256": "902223dcf102a00c0220605dba7c4a1849bf71ff537a7477b974f7c31e9b3d69"
+      },
+      "seed": 20260831,
+      "source_path": "/training/seed_20260831/resume.pt",
+      "source_sha256": "ac0facd77f4bbb70fe25f144556d90cdf28e4151b324c41aae6a5c0efd0a4ef8",
+      "total_optimizer_updates": 388912
+    }
+  ],
+  "metric": "Full C3-development design-weighted P-versus-U concordance with exact-score half ties",
+  "passed": true,
+  "positive_pairs": 2265,
+  "test_pairs_read": false,
+  "test_truth_read": false,
+  "total_evaluation_seconds": 18.17229911200411,
+  "total_pairs": 1002265,
+  "training_checkpoints_unchanged": true,
+  "training_protocol_sha256": "4d7a912c278faa79477e8e65869963d4d984ec3059ff482ac4deafe04b3ee16e",
+  "training_resumed": false,
+  "unlabeled_pairs": 1000000
+}

@@ -1,0 +1,76 @@
+{
+  "P": 19,
+  "U": 1900,
+  "at_utc": "2026-09-18T22:51:49.369327+00:00",
+  "four_model_scores": 7676,
+  "fresh_embeddings_both_pipelines": true,
+  "input_alignment_finite_complete": true,
+  "no_preexisting_feature_cache_used": true,
+  "outputs": [
+    {
+      "bytes": 683546,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/all_six_targets_scores.csv",
+      "sha256": "f76cef3226c38d256cdc889790708e0cbcde04af95711b06b1b954ac179f093f"
+    },
+    {
+      "bytes": 107934,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/bcl2_four_model_scores.csv",
+      "sha256": "82869140e88b699d2840472ed1f2997fde42d60203af7275815d6ccc40c8a1b7"
+    },
+    {
+      "bytes": 108694,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/brca1_four_model_scores.csv",
+      "sha256": "36181cf01fb9701312f9478aed03dbdc1e6d1de9011cb5b7c63d250865426fa7"
+    },
+    {
+      "bytes": 108641,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/egfr_four_model_scores.csv",
+      "sha256": "f78d16a3ffdab66bf2f4c4f5df50bc64488a897246d10057e163821c192dd5dc"
+    },
+    {
+      "bytes": 144209,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/ern1_four_model_scores.csv",
+      "sha256": "78348b0c7c2271d51bba081a3691d4b5a8d638944b78282643b79435cc6d0fed"
+    },
+    {
+      "bytes": 83925,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/ipin_scores.csv",
+      "sha256": "f565ba834f794514ded8ae92e372b30722dc45c6a6dc32a2690cce204749c041"
+    },
+    {
+      "bytes": 108376,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/keap1_four_model_scores.csv",
+      "sha256": "2405f0a60b745431dd194d8598827c14ea3797f6bd2c797609a1d8cdc06df38b"
+    },
+    {
+      "bytes": 733,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/macro_metrics.csv",
+      "sha256": "8afd25c75297dd329da32bafa1bf66183809887519198474ae60c174408a4dcb"
+    },
+    {
+      "bytes": 15493,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/per_target_metrics.csv",
+      "sha256": "2b1d029ac5ced4b6e19bb11d1b65e29a75595c017694a0fac856de68f9832259"
+    },
+    {
+      "bytes": 8624,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/positive_partner_ranks.csv",
+      "sha256": "56c86c2fad647398e60a5a01fc706fa8fe938d72a66389253c491ada42352fd8"
+    },
+    {
+      "bytes": 108177,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/tp53_four_model_scores.csv",
+      "sha256": "17eb540d4cf993244bc362e78ed762683c66de1a9db686bc6e407f0234af39ef"
+    },
+    {
+      "bytes": 192593,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/example/six_target_comparison_v1/tuna_scores.csv",
+      "sha256": "0a08ec423ee9767573946763d34e014d4582bbdc40410282c4aaa15bae0c3cc6"
+    }
+  ],
+  "pairs": 1919,
+  "passed": true,
+  "preexisting_files_checked_unchanged": 26,
+  "protected_test_truth_or_scores_used": false,
+  "three_seed_ensemble_verified": true
+}

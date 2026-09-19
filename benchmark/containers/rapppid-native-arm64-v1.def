@@ -1,0 +1,51 @@
+Bootstrap: localimage
+From: containers/images/ipin-model-arm64_0.1.0.sif
+
+%files
+    benchmark/rapppid/runtime /opt/rapppid/runtime
+    benchmark/rapppid/upstream /opt/rapppid/upstream
+    benchmark/containers/manifests/rapppid-downloads.json /opt/rapppid/downloads.json
+    benchmark/containers/manifests/rapppid-runtime-downloads.json /opt/rapppid/runtime-downloads.json
+
+%labels
+    benchmark.candidate RAPPPID-original-released-mult
+    benchmark.version 1
+    benchmark.parent.sha256 c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91
+    benchmark.release 1690837077.519848_red-dreamy
+    benchmark.upstream.commit c3a28be56fb3bd96ccf8cc44ea9145cfcadeaf6c
+    benchmark.checkpoint.sha256 fe603efd3256517b9fcc3a6e473d842fab2e3fa8483f3dd2b3350b742a3c02fd
+    benchmark.retraining false
+
+%environment
+    export PYTHONPATH=/opt/rapppid/runtime:/opt/rapppid/upstream/rapppid
+    export PYTHONNOUSERSITE=1
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUBLAS_WORKSPACE_CONFIG=:4096:8
+    export NVIDIA_TF32_OVERRIDE=0
+    export OMP_NUM_THREADS=8
+    export OPENBLAS_NUM_THREADS=1
+    export MPLBACKEND=Agg
+
+%test
+    python - <<'PY'
+import hashlib, platform, torch, pytorch_lightning, sentencepiece
+from pathlib import Path
+from train import LSTMAWD
+from pytorch_lightning.callbacks import ModelCheckpoint
+root=Path('/opt/rapppid/upstream/data/pretrained_weights/1690837077.519848_red-dreamy')
+path=root/'1690837077.519848_red-dreamy.ckpt'
+assert platform.machine()=='aarch64' and pytorch_lightning.__version__=='1.3.8'
+assert hashlib.sha256(path.read_bytes()).hexdigest()=='fe603efd3256517b9fcc3a6e473d842fab2e3fa8483f3dd2b3350b742a3c02fd'
+with torch.serialization.safe_globals([ModelCheckpoint]):
+    checkpoint=torch.load(path,map_location='cpu',weights_only=True)
+model=LSTMAWD(**checkpoint['hyper_parameters'])
+model.load_state_dict(checkpoint['state_dict'],strict=True)
+assert model.class_head_name=='mult' and model.trunc_len==1500 and not model.rnn_dp.variational
+assert all(torch.equal(value,checkpoint['state_dict'][name]) for name,value in model.state_dict().items())
+tokenizer=sentencepiece.SentencePieceProcessor(model_file=str(root/'spm.model'))
+assert tokenizer.get_piece_size()==250
+print('Native imports, strict original-state load and tokenizer identity passed')
+PY
+
+%runscript
+    exec python "$@"

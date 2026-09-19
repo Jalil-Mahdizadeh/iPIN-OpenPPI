@@ -1,0 +1,108 @@
+{
+  "at_utc": "2026-09-12T10:41:36.126834+00:00",
+  "files": [
+    {
+      "path": "final.sbatch",
+      "sha256": "6bf2eb0c64eb71c554b624d589b8815c37a9fc66a2ee9bc81977c41bc47f7846"
+    },
+    {
+      "path": "final.sh",
+      "sha256": "1d86326c76f7bd4c7de95e4fe20c708facbf0b7c5fa2df1a2367cd7f4de294e7"
+    },
+    {
+      "path": "queue_comparison.sh",
+      "sha256": "212ac4023b96bbf87b56fb39fc4c069bd4dbe4e969f7b112edec35305aec27c1"
+    },
+    {
+      "path": "run.sh",
+      "sha256": "876fd898dce3d2d02553f8d3e43877314a307bdd7202fb139c169584399dba26"
+    },
+    {
+      "path": "scripts/adapter.py",
+      "sha256": "8260aceb8e4eb7a1c3a2a97297e9a9f8faa96598130259ebf52a49635a5fe025"
+    },
+    {
+      "path": "scripts/audit_original_exposure.py",
+      "sha256": "00948568b802c22117519381a58a613dfc078444f199158cddab35109f1d1936"
+    },
+    {
+      "path": "scripts/benchmark_metrics.py",
+      "sha256": "9ef404da2663da2c3365b2fe685412f61812e4603fc3ba1e45e0a3baf097b2b8"
+    },
+    {
+      "path": "scripts/common.py",
+      "sha256": "bc5fddb8bb8bea7d627f2435e445fe0b9cbfaf79a3a922a573fcf7a71e13f73d"
+    },
+    {
+      "path": "scripts/comparison.py",
+      "sha256": "61a10cc62b8337efd545857b05906aa730306024de85ae37358a5f0a1b43fe7c"
+    },
+    {
+      "path": "scripts/esm_cache.py",
+      "sha256": "42686a117c5ecd86ea854dde87c77ba162950406b4e5f0ea9b88cd179a58cbc6"
+    },
+    {
+      "path": "scripts/freeze_execution.py",
+      "sha256": "d6e65f9f298af6aa39b1eeab1e2590d42babb0cfe12c989d99be8cd202e35a8d"
+    },
+    {
+      "path": "scripts/freeze_training.py",
+      "sha256": "69c785ae0261eb16dc351d44fbf6d4618c5f4d258f6fc77bd224efefe8e5c009"
+    },
+    {
+      "path": "scripts/frozen_scorer.py",
+      "sha256": "36ac46b5b5ae51350d43dbee7237d99c57cdc0b329719e3aaca2d68bc1d86b1b"
+    },
+    {
+      "path": "scripts/gpu_guard.py",
+      "sha256": "6c1b386e4591d8fea1e4be98e0708d70107f263a12c4bcb5b911e867c8fdb0fa"
+    },
+    {
+      "path": "scripts/pilot.py",
+      "sha256": "3dd976416b5f5a6887a5c0e901f37d8fade6f7d7cfe3ca3803ab4a1c7f4b19b8"
+    },
+    {
+      "path": "scripts/prepare_data.py",
+      "sha256": "e6d9595e74141b39ff22bdeb73af2be4688834fa4c7f6f2289735901fe60cdbc"
+    },
+    {
+      "path": "scripts/qualify.py",
+      "sha256": "40b552763f72948f5e591df072cf4fdc07744cfe157f3fc6bca36776023bf684"
+    },
+    {
+      "path": "scripts/qualify_real.py",
+      "sha256": "1595d38f9fcebdf82879d50f733967357b9008b5317af41f6d4b05ca1a01d0f2"
+    },
+    {
+      "path": "scripts/residues.py",
+      "sha256": "c856a6e9c9255899b1acbf8010397c4c59548ec7271d47ce349c0925ea976d24"
+    },
+    {
+      "path": "scripts/select_and_freeze.py",
+      "sha256": "5b5ace5f6448e6c9427eb20b411d853abb840de736e79036d49b26512d3e4bc3"
+    },
+    {
+      "path": "scripts/test_pipeline.py",
+      "sha256": "57dc1c22528a2cfb65e560c7de345690db31a51035f89ae3fef281f4bbcc7401"
+    },
+    {
+      "path": "scripts/train.py",
+      "sha256": "54f8453c5e72df290b85ad37ad18e276de43e1b36d1237317537663b8aacbbad"
+    },
+    {
+      "path": "scripts/training.py",
+      "sha256": "c18cec5179935adc137d985de333387e53fe0a6c75673b4902e9b37dd52259cf"
+    },
+    {
+      "path": "submit_training.sh",
+      "sha256": "d80ef8b712a459e45e916c6f232d92d9973b7fd02fbb71dfc2f97d3f41ab62ca"
+    },
+    {
+      "path": "train_seeds.sbatch",
+      "sha256": "c271fad2a71ccd59d8d51ee84f69fbb71441fe05cb9948f3eacf6421bf248487"
+    }
+  ],
+  "test_pairs_read": false,
+  "test_truth_read": false,
+  "training_freeze_sha256": "86aa6d0cd3e1df135b4ea097686ed281a57186828f68da4936bbeba39589d8b5"
+}

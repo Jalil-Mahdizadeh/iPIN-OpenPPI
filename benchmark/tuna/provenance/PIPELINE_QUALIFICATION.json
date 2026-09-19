@@ -1,0 +1,31 @@
+{
+  "absolute_tolerance": 1e-05,
+  "at_utc": "2026-09-12T10:39:46.425514+00:00",
+  "bad_reference_inputs_rejected": 3,
+  "metric": {
+    "covers_ties_unequal_weights_same_components": true,
+    "draws": {
+      "multiplicities_sha256": "93da2554abdfe29d0ef49d1af89f0cd1491971dc7512a4c77cb7c424874ae79d",
+      "participating_components": 9,
+      "replicates": 41,
+      "seed": 1241427528595832755
+    },
+    "maximum_absolute_error": 7.771561172376096e-16,
+    "passed": true,
+    "replicates": 41,
+    "rows": 71,
+    "scorers": 4,
+    "tolerance": 1e-12
+  },
+  "minimal_scorer_max_absolute_errors": [
+    5.960464477539063e-08,
+    1.30385160446167e-08,
+    1.5832483768463135e-08,
+    9.778887033462524e-09,
+    0.0,
+    0.0
+  ],
+  "passed": true,
+  "test_pairs_read": false,
+  "test_truth_read": false
+}

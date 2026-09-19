@@ -1,0 +1,79 @@
+2026-09-18T22:51:49.039584+00:00 starting summarize; pre-existing embeddings are prohibited
+{
+  "macro_metrics": [
+    {
+      "model": "ipin_baseline",
+      "positive_subset": "all_P",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.6408333333333333
+    },
+    {
+      "model": "ipin_optimized",
+      "positive_subset": "all_P",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.6802777777777779
+    },
+    {
+      "model": "tuna_original",
+      "positive_subset": "all_P",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.8287268518518519
+    },
+    {
+      "model": "tuna_retrained",
+      "positive_subset": "all_P",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.7431018518518518
+    },
+    {
+      "model": "ipin_baseline",
+      "positive_subset": "exclude_development_P",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.6072222222222222
+    },
+    {
+      "model": "ipin_optimized",
+      "positive_subset": "exclude_development_P",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.6513888888888889
+    },
+    {
+      "model": "tuna_original",
+      "positive_subset": "exclude_development_P",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.8047453703703704
+    },
+    {
+      "model": "tuna_retrained",
+      "positive_subset": "exclude_development_P",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.7234722222222224
+    },
+    {
+      "model": "ipin_baseline",
+      "positive_subset": "exclude_development_P_and_homomers",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.5804166666666667
+    },
+    {
+      "model": "ipin_optimized",
+      "positive_subset": "exclude_development_P_and_homomers",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.6256944444444444
+    },
+    {
+      "model": "tuna_original",
+      "positive_subset": "exclude_development_P_and_homomers",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.7892592592592592
+    },
+    {
+      "model": "tuna_retrained",
+      "positive_subset": "exclude_development_P_and_homomers",
+      "targets": 6,
+      "macro_P_vs_U_concordance": 0.7044444444444444
+    }
+  ],
+  "validation": "passed"
+}
+2026-09-18T22:51:49.374366+00:00 completed summarize

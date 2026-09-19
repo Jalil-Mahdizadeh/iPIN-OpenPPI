@@ -1,0 +1,49 @@
+Bootstrap: localimage
+From: containers/images/ipin-model-arm64_0.1.0.sif
+
+%files
+    benchmark/containers/cache/plm-interact-wheels /opt/plm_interact/wheels
+    benchmark/plm_interact/assets /opt/plm_interact/assets
+    benchmark/plm_interact/upstream /opt/plm_interact/upstream
+    benchmark/containers/manifests/plm-interact-downloads.json /opt/plm_interact/downloads.json
+
+%labels
+    benchmark.candidate PLM-interact-original
+    benchmark.version 1
+    benchmark.parent.sha256 c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91
+    benchmark.model danliu1226/PLM-interact-650M-humanV11
+    benchmark.model.revision e86e392dec13dd0c23252c94947b04a7a9821b0e
+    benchmark.upstream.commit ab2ae6ae1aa81accf4c1f7f6f341164baf97809a
+
+%post
+    python -m pip install --no-index --find-links=/opt/plm_interact/wheels --no-deps \
+        PLMinteract==0.1.1 transformers==4.40.1 tokenizers==0.19.1 sentence-transformers==2.7.0 \
+        datasets==2.20.0 dill==0.3.8 multiprocess==0.70.16 fsspec==2024.5.0 pyarrow-hotfix==0.7 \
+        xxhash==3.5.0 biopython==1.85 seaborn==0.13.2
+    mkdir -p /opt/plm_interact/hf-cache
+
+%environment
+    export PYTHONPATH=/usr/local/lib/python3.12/dist-packages/PLMinteract
+    export HF_HOME=/opt/plm_interact/hf-cache
+    export PYTHONNOUSERSITE=1
+    export PYTHONDONTWRITEBYTECODE=1
+    export HF_HUB_OFFLINE=1
+    export TRANSFORMERS_OFFLINE=1
+    export HF_HUB_DISABLE_TELEMETRY=1
+    export TOKENIZERS_PARALLELISM=false
+    export CUBLAS_WORKSPACE_CONFIG=:4096:8
+    export OMP_NUM_THREADS=8
+    export OPENBLAS_NUM_THREADS=1
+    export MPLBACKEND=Agg
+
+%test
+    python - <<'PY'
+import platform, torch, transformers, tokenizers, datasets, sentence_transformers
+from PLMinteract.inference.inference_PPI_singleGPU import PLMinteract
+assert platform.machine() == 'aarch64'
+assert transformers.__version__ == '4.40.1'
+assert tokenizers.__version__ == '0.19.1'
+PY
+
+%runscript
+    exec python "$@"

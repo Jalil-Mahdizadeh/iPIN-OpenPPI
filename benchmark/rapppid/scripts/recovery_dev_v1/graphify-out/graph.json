@@ -1,0 +1,335 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "evaluate.py",
+      "file_type": "code",
+      "source_file": "evaluate.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "evaluate",
+      "community": 0,
+      "community_name": "evaluate.py",
+      "norm_label": "evaluate.py"
+    },
+    {
+      "label": "check_inputs()",
+      "file_type": "code",
+      "source_file": "evaluate.py",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "evaluate_check_inputs",
+      "community": 0,
+      "community_name": "evaluate.py",
+      "norm_label": "check_inputs()"
+    },
+    {
+      "label": "copy_exclusive()",
+      "file_type": "code",
+      "source_file": "evaluate.py",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "evaluate_copy_exclusive",
+      "community": 0,
+      "community_name": "evaluate.py",
+      "norm_label": "copy_exclusive()"
+    },
+    {
+      "label": "snapshot()",
+      "file_type": "code",
+      "source_file": "evaluate.py",
+      "source_location": "L43",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "evaluate_snapshot",
+      "community": 0,
+      "community_name": "evaluate.py",
+      "norm_label": "snapshot()"
+    },
+    {
+      "label": "metric_checked()",
+      "file_type": "code",
+      "source_file": "evaluate.py",
+      "source_location": "L93",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "evaluate_metric_checked",
+      "community": 2,
+      "community_name": "evaluate",
+      "norm_label": "metric_checked()"
+    },
+    {
+      "label": "save_predictions()",
+      "file_type": "code",
+      "source_file": "evaluate.py",
+      "source_location": "L115",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "evaluate_save_predictions",
+      "community": 2,
+      "community_name": "evaluate",
+      "norm_label": "save_predictions()"
+    },
+    {
+      "label": "evaluate()",
+      "file_type": "code",
+      "source_file": "evaluate.py",
+      "source_location": "L122",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "evaluate_evaluate",
+      "community": 2,
+      "community_name": "evaluate",
+      "norm_label": "evaluate()"
+    },
+    {
+      "label": "User-requested C3-DEV evaluation of the failed run's latest saved states. Never\u2026",
+      "file_type": "rationale",
+      "source_file": "evaluate.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "evaluate_rationale_1",
+      "community": 0,
+      "community_name": "evaluate.py",
+      "norm_label": "user-requested c3-dev evaluation of the failed run's latest saved states. never..."
+    },
+    {
+      "label": "run.sh",
+      "file_type": "code",
+      "source_file": "run.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "run",
+      "community": 1,
+      "community_name": "run.sh",
+      "norm_label": "run.sh"
+    },
+    {
+      "label": "run.sh script",
+      "file_type": "code",
+      "source_file": "run.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "run_sh__entry",
+      "community": 1,
+      "community_name": "run.sh",
+      "norm_label": "run.sh script"
+    },
+    {
+      "label": "APPTAINER_CACHEDIR",
+      "file_type": "code",
+      "source_file": "run.sh",
+      "source_location": "L9",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "run_apptainer_cachedir",
+      "community": 1,
+      "community_name": "run.sh",
+      "norm_label": "apptainer_cachedir"
+    },
+    {
+      "label": "APPTAINER_TMPDIR",
+      "file_type": "code",
+      "source_file": "run.sh",
+      "source_location": "L10",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "run_apptainer_tmpdir",
+      "community": 1,
+      "community_name": "run.sh",
+      "norm_label": "apptainer_tmpdir"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate",
+      "target": "evaluate_check_inputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate",
+      "target": "evaluate_copy_exclusive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate",
+      "target": "evaluate_evaluate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate",
+      "target": "evaluate_metric_checked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate",
+      "target": "evaluate_save_predictions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate",
+      "target": "evaluate_snapshot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate_rationale_1",
+      "target": "evaluate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate_evaluate",
+      "target": "evaluate_check_inputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate_snapshot",
+      "target": "evaluate_check_inputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate_snapshot",
+      "target": "evaluate_copy_exclusive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate_evaluate",
+      "target": "evaluate_metric_checked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "evaluate.py",
+      "source_location": "L177",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "evaluate_evaluate",
+      "target": "evaluate_save_predictions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "run.sh",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "run",
+      "target": "run_apptainer_cachedir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "run.sh",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "run",
+      "target": "run_apptainer_tmpdir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "run.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "run",
+      "target": "run_sh__entry",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "21aae1d6dc7e7f693df8ea8881aca9b841ab7ed6"
+}

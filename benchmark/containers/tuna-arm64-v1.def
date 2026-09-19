@@ -1,0 +1,32 @@
+Bootstrap: localimage
+From: containers/images/ipin-model-arm64_0.1.0.sif
+
+%files
+    benchmark/containers/cache/tuna-wheels /opt/tuna/wheels
+    benchmark/tuna/upstream/uncertaintyAwareDeepLearn/uncertaintyAwareDeepLearn /opt/tuna/vendor/uncertaintyAwareDeepLearn
+
+%labels
+    benchmark.candidate TUnA
+    benchmark.version 1
+    benchmark.parent.sha256 c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91
+    benchmark.tuna.commit b5bda8fee261a4f27821738db995cf5883dcd133
+    benchmark.gp.commit 18565eb86026800817857e37243ae81f15f089d7
+
+%post
+    python -m pip install --no-index --find-links=/opt/tuna/wheels --no-deps fair-esm==2.0.0 uncertainty-calibration==0.1.4 h5py==3.14.0
+
+%environment
+    export PYTHONPATH=/opt/tuna/vendor
+    export PYTHONNOUSERSITE=1
+    export PYTHONDONTWRITEBYTECODE=1
+    export HF_HUB_OFFLINE=1
+    export TRANSFORMERS_OFFLINE=1
+    export HF_HUB_DISABLE_TELEMETRY=1
+    export TOKENIZERS_PARALLELISM=false
+    export CUBLAS_WORKSPACE_CONFIG=:4096:8
+
+%test
+    python -c "import torch, esm, calibration, h5py; from uncertaintyAwareDeepLearn import VanillaRFFLayer; import platform; assert platform.machine() == 'aarch64'"
+
+%runscript
+    exec python "$@"

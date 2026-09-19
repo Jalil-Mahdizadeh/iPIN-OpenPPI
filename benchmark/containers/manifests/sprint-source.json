@@ -1,0 +1,87 @@
+{
+  "commit": "b6272c76e1a943e6812b1b815607691819e6202e",
+  "files": [
+    {
+      "bytes": 46879,
+      "path": "HSP/hsps_toy_example.hsp",
+      "sha256": "8ec05be792d1f3bb354cfb6a7b53d06426eb1e780331f0ecf428b5a098c75acc"
+    },
+    {
+      "bytes": 35141,
+      "path": "LICENSE",
+      "sha256": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2"
+    },
+    {
+      "bytes": 5344,
+      "path": "README.md",
+      "sha256": "9edd1e29d6d0f0fe21879b5d4a2ceb24ddf68a21fc064e6724ff1d54bba1cb5a"
+    },
+    {
+      "bytes": 17249,
+      "path": "Src/compute_HSPs/PtoHSP.h",
+      "sha256": "994e6a617c839cc12f29a229d5790449a203749a28565116971dd15a97d863a3"
+    },
+    {
+      "bytes": 4316,
+      "path": "Src/compute_HSPs/compute_hsps.cpp",
+      "sha256": "9a8d2a6c98c065cfac59fa1bc6078711367a4bf9d2da13e67ea6021cd2a1b81c"
+    },
+    {
+      "bytes": 25504,
+      "path": "Src/compute_HSPs/global_parameters.h",
+      "sha256": "5217f9a960d5f42d6b903e2fabe881ebb19f74cb75ecfdccbbef532b77ca1854"
+    },
+    {
+      "bytes": 5862,
+      "path": "Src/compute_HSPs/hash_table.h",
+      "sha256": "b47994810833b10398fd466d54adc93176048f1105fec4ee78366f2e60584508"
+    },
+    {
+      "bytes": 6537,
+      "path": "Src/predict_interactions/PtoHSP.h",
+      "sha256": "90dcd2de0f385ed0e9e62304e750917cbfb1988a3ac6c992b85fa22af262fa4a"
+    },
+    {
+      "bytes": 7302,
+      "path": "Src/predict_interactions/global_parameters.h",
+      "sha256": "c00ef97113603b34f436ce08ef04c26bd220deef84117dfa2363c819eee46a8f"
+    },
+    {
+      "bytes": 2646,
+      "path": "Src/predict_interactions/predict_interactions.cpp",
+      "sha256": "e80859e55349ec5209f8d077f6d4c9057d3ce00d68609acdb8324c4194479688"
+    },
+    {
+      "bytes": 5905,
+      "path": "Src/predict_interactions/scoreing_matrix.h",
+      "sha256": "92cadd42a0cb31129af069a125098e4bb14cb0bd4a2e62d6d0510bc9252bdb6d"
+    },
+    {
+      "bytes": 648,
+      "path": "makefile",
+      "sha256": "aed515c3d74bc0f3c491088a485f7b4b03b36cd40dd4d5dd631348da7571a677"
+    },
+    {
+      "bytes": 71495,
+      "path": "toy_example/protein_sequences.fasta",
+      "sha256": "9e37b4effc9a44091c2626c95be30f4efa9a6721f42b7b73d9c51b993f81635e"
+    },
+    {
+      "bytes": 2100,
+      "path": "toy_example/test_negative.txt",
+      "sha256": "9fcdb0b67295e3c3fb9306a77841dde581cfcbaac85acb262cde018973bf3e4d"
+    },
+    {
+      "bytes": 2100,
+      "path": "toy_example/test_positive.txt",
+      "sha256": "e2e60c335df2688ed57092d907615e5754d1e6dc9b41ee2e22ec7ec71ce69e67"
+    },
+    {
+      "bytes": 2100,
+      "path": "toy_example/train_positive.txt",
+      "sha256": "826c88212aabaac4a9253aef566fa3f5c40fb6f824edc8a5c2f84a25229a0cf8"
+    }
+  ],
+  "source_modified": false,
+  "upstream": "https://github.com/lucian-ilie/SPRINT"
+}

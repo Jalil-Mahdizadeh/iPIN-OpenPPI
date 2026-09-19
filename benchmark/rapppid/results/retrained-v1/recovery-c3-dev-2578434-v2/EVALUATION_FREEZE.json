@@ -1,0 +1,85 @@
+{
+  "ad_hoc_development_look": true,
+  "at_utc": "2026-09-17T17:53:09.828509+00:00",
+  "attempt_disclosure": "First attempt stopped before latest-checkpoint scoring: equivalent full-panel metric algorithms differed by 1.4264e-11 on the existing epoch-4 result. Verification tolerance is 1e-9 for million-row FP64 summation order; the historical scoring function is unchanged.",
+  "authorization": "User requested C3-development results for the latest checkpoints after the training failure",
+  "checkpoint_selection_performed": false,
+  "completed_epoch8_claimed": false,
+  "data_manifest_sha256": "7f8c888ae82774cf9c2aad395af8c9cff7015a7a48a0b2368e13d181872edd98",
+  "ensemble": "FP64 arithmetic mean of all three saved-state logits; checkpoints have unequal training exposure",
+  "epoch4_reference": {
+    "bytes": 2074,
+    "path": "epoch4_reference.json",
+    "sha256": "dfd19132046dd0fe3edb802aacf9f7c6c9da2234686b32501c23fd255e7a778f"
+  },
+  "execution_id": "rapppid_recovery_c3_dev_2578434_v2",
+  "independent_metric_tolerance": 1e-09,
+  "inference": "Unchanged frozen native singleton endpoints/head; deterministic TRAIN-fitted tokenizer; first 1500 residues",
+  "members": [
+    {
+      "checkpoint": {
+        "bytes": 4567343,
+        "path": "checkpoints/seed_20260803.pt",
+        "sha256": "f332c9fbd42e9d3146ca7c54743acca66ab0fa5e6d583e89aca2ae41e4135c30"
+      },
+      "comparisons_in_current_epoch": 1502840,
+      "completed_epochs": 7,
+      "current_epoch_fraction": 0.75142,
+      "epoch_in_progress": 8,
+      "seed": 20260803,
+      "source_path": "/training/seed_20260803/resume.pt",
+      "source_sha256": "f332c9fbd42e9d3146ca7c54743acca66ab0fa5e6d583e89aca2ae41e4135c30",
+      "total_optimizer_updates": 387571
+    },
+    {
+      "checkpoint": {
+        "bytes": 4567343,
+        "path": "checkpoints/seed_20260817.pt",
+        "sha256": "2ea98f070c5f5f712c6c4dc31c2a8f7f2389f0329a5a73a4548bdde487a49060"
+      },
+      "comparisons_in_current_epoch": 1577920,
+      "completed_epochs": 7,
+      "current_epoch_fraction": 0.78896,
+      "epoch_in_progress": 8,
+      "seed": 20260817,
+      "source_path": "/training/seed_20260817/resume.pt",
+      "source_sha256": "2ea98f070c5f5f712c6c4dc31c2a8f7f2389f0329a5a73a4548bdde487a49060",
+      "total_optimizer_updates": 389448
+    },
+    {
+      "checkpoint": {
+        "bytes": 4567343,
+        "path": "checkpoints/seed_20260831.pt",
+        "sha256": "ac0facd77f4bbb70fe25f144556d90cdf28e4151b324c41aae6a5c0efd0a4ef8"
+      },
+      "comparisons_in_current_epoch": 1556480,
+      "completed_epochs": 7,
+      "current_epoch_fraction": 0.77824,
+      "epoch_in_progress": 8,
+      "seed": 20260831,
+      "source_path": "/training/seed_20260831/resume.pt",
+      "source_sha256": "ac0facd77f4bbb70fe25f144556d90cdf28e4151b324c41aae6a5c0efd0a4ef8",
+      "total_optimizer_updates": 388912
+    }
+  ],
+  "metric": "Full C3-development design-weighted P-versus-U concordance with exact-score half ties",
+  "numerical_training_repair_applied": false,
+  "sif_sha256": "e853a89768c5351927f90fd0ccfb2ad899a15a6fc239a9014726af0c34442d48",
+  "source_training_job": "2578434",
+  "test_pairs_read": false,
+  "test_truth_read": false,
+  "training_protocol_sha256": "4d7a912c278faa79477e8e65869963d4d984ec3059ff482ac4deafe04b3ee16e",
+  "training_resumed": false,
+  "wrapper_files": [
+    {
+      "bytes": 15542,
+      "path": "code/evaluate.py",
+      "sha256": "32ecf3e9d0a1c80988a071f3a79c95052cb88eebf68c33873c284e77432f926d"
+    },
+    {
+      "bytes": 1592,
+      "path": "code/run.sh",
+      "sha256": "25e1227664381a5d1295645d52b16773fe1ebe28edd0288073aa4e3784e2d84c"
+    }
+  ]
+}

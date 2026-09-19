@@ -1,0 +1,55 @@
+Bootstrap: localimage
+From: containers/images/ipin-model-arm64_0.1.0.sif
+
+%files
+    benchmark/containers/cache/dscript-wheels /opt/dscript/wheels
+    benchmark/dscript/weights /opt/dscript/weights
+    benchmark/containers/manifests/dscript-downloads.json /opt/dscript/downloads.json
+
+%labels
+    benchmark.candidate D-SCRIPT-native
+    benchmark.version 1
+    benchmark.dscript.version 0.3.1
+    benchmark.original.model human_v1
+    benchmark.encoder lm_v1-Bepler-Berger-6165
+    benchmark.parent.sha256 c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91
+    benchmark.hf.revision 907ea0b745b1a555b19f2b3e73f2d98963caf365
+
+%post
+    python -m pip install --no-index --find-links=/opt/dscript/wheels --no-deps \
+        dscript==0.3.1 h5py==3.14.0 loguru==0.7.3 seaborn==0.13.2 packaging==24.2 biotite==1.2.0 biotraj==1.2.2
+    python - <<'PY'
+from pathlib import Path
+import dscript
+package = Path(dscript.__file__).parent
+for name in ("lm_v1", "human_v1"):
+    (package / f"dscript_{name}.pt").symlink_to(f"/opt/dscript/weights/dscript_{name}.pt")
+PY
+
+%environment
+    export PYTHONNOUSERSITE=1
+    export PYTHONDONTWRITEBYTECODE=1
+    export HF_HUB_OFFLINE=1
+    export TRANSFORMERS_OFFLINE=1
+    export HF_HUB_DISABLE_TELEMETRY=1
+    export TOKENIZERS_PARALLELISM=false
+    export CUBLAS_WORKSPACE_CONFIG=:4096:8
+    export OMP_NUM_THREADS=8
+    export OPENBLAS_NUM_THREADS=8
+    export MPLBACKEND=Agg
+
+%test
+    python - <<'PY'
+import platform
+import biotite.sequence, biotraj, h5py, loguru, seaborn, numpy, torch
+from dscript.pretrained import get_pretrained
+assert platform.machine() == "aarch64"
+assert numpy.__version__ == "1.26.4"
+assert str(torch.__version__).startswith("2.8.0a0+34c6371d24")
+assert get_pretrained("lm_v1").nin == 21
+assert get_pretrained("human_v1").embedding.nin == 6165
+PY
+    dscript --version
+
+%runscript
+    exec dscript "$@"
