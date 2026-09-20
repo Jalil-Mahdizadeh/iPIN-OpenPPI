@@ -1,0 +1,45 @@
+{
+  "at_utc": "2026-09-20T19:14:57.123029+00:00",
+  "exact_development_endpoints": 82,
+  "exact_pair_counts": {
+    "DEV_P": 0,
+    "DEV_U": 1,
+    "TRAIN_P": 0,
+    "TRAIN_U": 1
+  },
+  "exact_train_endpoints": 53,
+  "external_sequences": 30497,
+  "files": [
+    {
+      "bytes": 2562502,
+      "path": "benchmark/nonhuman_transfer_v1/exact_endpoint_exposure.csv",
+      "sha256": "7201a16a1ff5d0613890cfd6a68f65ac4bbfa7749f47d72c53e4e3442abdfa6f"
+    },
+    {
+      "bytes": 1830476,
+      "path": "benchmark/nonhuman_transfer_v1/exact_pair_exposure.csv",
+      "sha256": "c6a631de98cf4c42bd4cefb9647d5e9ce4f852361051f39ad729e78b7f3753f8"
+    },
+    {
+      "bytes": 5674128,
+      "path": "benchmark/nonhuman_transfer_v1/training_sequence_similarity.csv",
+      "sha256": "d92bc545719c7c40a62b3bbe6efb00f0e9ebade5a31bc03ea8fc0e0f0c295368"
+    }
+  ],
+  "human_development_endpoints": 7225,
+  "human_train_endpoints": 4675,
+  "method": "Exact sequence identity plus pinned local MMseqs2; not a pretraining or exhaustive homology audit",
+  "protected_test_pairs_or_truth_read": false,
+  "raw_matches": {
+    "bytes": 41209187,
+    "path": "benchmark/nonhuman_transfer_v1/local/homology/matches.tsv",
+    "sha256": "d4988fd9ca5a4cc64b2587aafacbf7c32010656234c772939cd5188b9745a45e"
+  },
+  "similarity_bin_counts": {
+    "30_to_50pct": 1649,
+    "50_to_80pct": 1335,
+    "at_least_80pct": 1522,
+    "below_30pct": 792,
+    "no_qualifying_hit": 25199
+  }
+}

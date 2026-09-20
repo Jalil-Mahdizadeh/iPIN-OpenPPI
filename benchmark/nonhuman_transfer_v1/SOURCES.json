@@ -1,0 +1,933 @@
+{
+  "at_utc": "2026-09-20T18:56:21.774771+00:00",
+  "attribution": "EMBL-EBI IntAct / IMEx; original studies retained per evidence record",
+  "config": {
+    "bytes": 1147,
+    "path": "benchmark/nonhuman_transfer_v1/config.json",
+    "sha256": "8253e85600c5b5d35605d5509bcf88f36452df84d02bc57cab3e99901a9fddf2"
+  },
+  "license_url": "https://www.ebi.ac.uk/intact/about",
+  "protocol": {
+    "bytes": 7156,
+    "path": "benchmark/nonhuman_transfer_v1/PROTOCOL.md",
+    "sha256": "a0d1d073e0d433a8140110fbe85faeeedb39eaa8bd7d777aaac1c3d3fa63d593"
+  },
+  "source_license": "CC-BY-4.0",
+  "sources": [
+    {
+      "artifact": {
+        "bytes": 69939513,
+        "path": "benchmark/nonhuman_transfer_v1/local/mouse.zip",
+        "sha256": "d1d228367f0e91a09f49407223c30adae43535286216054e8e574cb721d497eb"
+      },
+      "at_utc": "2026-09-20T18:56:20.808848+00:00",
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Length": "69939513",
+        "Content-Type": "application/zip",
+        "Date": "Sun, 20 Sep 2026 18:56:18 GMT",
+        "ETag": "\"42b3139-64857acbee8b4\"",
+        "Last-Modified": "Wed, 14 Jan 2026 11:47:37 GMT",
+        "Server": "Apache"
+      },
+      "members": [
+        {
+          "bytes": 35844718,
+          "crc32": 2021177200,
+          "name": "mouse_10090_01.xml"
+        },
+        {
+          "bytes": 81918,
+          "crc32": 468023554,
+          "name": "mouse_10090_01_negative.xml"
+        },
+        {
+          "bytes": 50715210,
+          "crc32": 1830029258,
+          "name": "mouse_10090_02.xml"
+        },
+        {
+          "bytes": 66789,
+          "crc32": 1954496588,
+          "name": "mouse_10090_02_negative.xml"
+        },
+        {
+          "bytes": 76613072,
+          "crc32": 1699141637,
+          "name": "mouse_10090_03.xml"
+        },
+        {
+          "bytes": 133107,
+          "crc32": 2459612410,
+          "name": "mouse_10090_03_negative.xml"
+        },
+        {
+          "bytes": 51381542,
+          "crc32": 1403682882,
+          "name": "mouse_10090_04.xml"
+        },
+        {
+          "bytes": 144837,
+          "crc32": 1978328733,
+          "name": "mouse_10090_04_negative.xml"
+        },
+        {
+          "bytes": 52193362,
+          "crc32": 2355079297,
+          "name": "mouse_10090_05.xml"
+        },
+        {
+          "bytes": 167602,
+          "crc32": 195995042,
+          "name": "mouse_10090_05_negative.xml"
+        },
+        {
+          "bytes": 55881052,
+          "crc32": 231884734,
+          "name": "mouse_10090_06.xml"
+        },
+        {
+          "bytes": 68303118,
+          "crc32": 1232594403,
+          "name": "mouse_10090_07.xml"
+        },
+        {
+          "bytes": 430430,
+          "crc32": 627273128,
+          "name": "mouse_10090_07_negative.xml"
+        },
+        {
+          "bytes": 147832982,
+          "crc32": 2895580527,
+          "name": "mouse_10090_08.xml"
+        },
+        {
+          "bytes": 40899,
+          "crc32": 3025404063,
+          "name": "mouse_10090_08_negative.xml"
+        },
+        {
+          "bytes": 103384236,
+          "crc32": 380645444,
+          "name": "mouse_10090_09.xml"
+        },
+        {
+          "bytes": 17178,
+          "crc32": 623772924,
+          "name": "mouse_10090_09_negative.xml"
+        },
+        {
+          "bytes": 44201088,
+          "crc32": 2427233307,
+          "name": "mouse_10090_10.xml"
+        },
+        {
+          "bytes": 120205132,
+          "crc32": 3248286431,
+          "name": "mouse_10090_11.xml"
+        },
+        {
+          "bytes": 70577238,
+          "crc32": 3170639509,
+          "name": "mouse_10090_12.xml"
+        },
+        {
+          "bytes": 71542083,
+          "crc32": 1028486686,
+          "name": "mouse_10090_13.xml"
+        }
+      ],
+      "species": "mouse",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/psi30/species/mouse.zip"
+    },
+    {
+      "artifact": {
+        "bytes": 36785678,
+        "path": "benchmark/nonhuman_transfer_v1/local/drome.zip",
+        "sha256": "3b476039f604cf6a416a07a9218fabe579d16e6c9d0ea2de18c45cdcfe465a8e"
+      },
+      "at_utc": "2026-09-20T18:56:20.036127+00:00",
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Length": "36785678",
+        "Content-Type": "application/zip",
+        "Date": "Sun, 20 Sep 2026 18:56:18 GMT",
+        "ETag": "\"2314e0e-64857af684c21\"",
+        "Last-Modified": "Wed, 14 Jan 2026 11:48:22 GMT",
+        "Server": "Apache"
+      },
+      "members": [
+        {
+          "bytes": 17610279,
+          "crc32": 743119986,
+          "name": "drome_7227_01.xml"
+        },
+        {
+          "bytes": 17635184,
+          "crc32": 3383278872,
+          "name": "drome_7227_02.xml"
+        },
+        {
+          "bytes": 17950641,
+          "crc32": 3523464846,
+          "name": "drome_7227_03.xml"
+        },
+        {
+          "bytes": 17114121,
+          "crc32": 4241467206,
+          "name": "drome_7227_04.xml"
+        },
+        {
+          "bytes": 17446469,
+          "crc32": 1703448257,
+          "name": "drome_7227_05.xml"
+        },
+        {
+          "bytes": 17476116,
+          "crc32": 1265154510,
+          "name": "drome_7227_06.xml"
+        },
+        {
+          "bytes": 17790884,
+          "crc32": 3732138693,
+          "name": "drome_7227_07.xml"
+        },
+        {
+          "bytes": 17407046,
+          "crc32": 4166650502,
+          "name": "drome_7227_08.xml"
+        },
+        {
+          "bytes": 17296377,
+          "crc32": 1815817039,
+          "name": "drome_7227_09.xml"
+        },
+        {
+          "bytes": 16773713,
+          "crc32": 2735927012,
+          "name": "drome_7227_10.xml"
+        },
+        {
+          "bytes": 15584370,
+          "crc32": 3159094331,
+          "name": "drome_7227_11.xml"
+        },
+        {
+          "bytes": 21251313,
+          "crc32": 1235109318,
+          "name": "drome_7227_12.xml"
+        },
+        {
+          "bytes": 24293390,
+          "crc32": 3751946432,
+          "name": "drome_7227_13.xml"
+        },
+        {
+          "bytes": 28143773,
+          "crc32": 4242566243,
+          "name": "drome_7227_14.xml"
+        },
+        {
+          "bytes": 76789262,
+          "crc32": 1540740801,
+          "name": "drome_7227_15.xml"
+        },
+        {
+          "bytes": 91776,
+          "crc32": 831902395,
+          "name": "drome_7227_15_negative.xml"
+        },
+        {
+          "bytes": 16164902,
+          "crc32": 3277018604,
+          "name": "drome_7227_16.xml"
+        },
+        {
+          "bytes": 26529860,
+          "crc32": 2111792201,
+          "name": "drome_7227_17.xml"
+        },
+        {
+          "bytes": 16783141,
+          "crc32": 1629830431,
+          "name": "drome_7227_18.xml"
+        },
+        {
+          "bytes": 16647868,
+          "crc32": 3871348615,
+          "name": "drome_7227_19.xml"
+        },
+        {
+          "bytes": 16999211,
+          "crc32": 3695256421,
+          "name": "drome_7227_20.xml"
+        },
+        {
+          "bytes": 16468679,
+          "crc32": 549237086,
+          "name": "drome_7227_21.xml"
+        },
+        {
+          "bytes": 16504629,
+          "crc32": 427394115,
+          "name": "drome_7227_22.xml"
+        },
+        {
+          "bytes": 15934660,
+          "crc32": 3388975664,
+          "name": "drome_7227_23.xml"
+        },
+        {
+          "bytes": 16359686,
+          "crc32": 1397109553,
+          "name": "drome_7227_24.xml"
+        },
+        {
+          "bytes": 16359844,
+          "crc32": 542805407,
+          "name": "drome_7227_25.xml"
+        },
+        {
+          "bytes": 120605593,
+          "crc32": 2011083037,
+          "name": "drome_7227_26.xml"
+        },
+        {
+          "bytes": 49818144,
+          "crc32": 1574791266,
+          "name": "drome_7227_27.xml"
+        }
+      ],
+      "species": "fly",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/psi30/species/drome.zip"
+    },
+    {
+      "artifact": {
+        "bytes": 16174123,
+        "path": "benchmark/nonhuman_transfer_v1/local/caeel.zip",
+        "sha256": "837c570c2054cc380f324e837f65bb498632a9cdfc932c82b2581ec39f902e19"
+      },
+      "at_utc": "2026-09-20T18:56:19.242429+00:00",
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Length": "16174123",
+        "Content-Type": "application/zip",
+        "Date": "Sun, 20 Sep 2026 18:56:18 GMT",
+        "ETag": "\"f6cc2b-64857a9d7512e\"",
+        "Last-Modified": "Wed, 14 Jan 2026 11:46:49 GMT",
+        "Server": "Apache"
+      },
+      "members": [
+        {
+          "bytes": 18651014,
+          "crc32": 950533217,
+          "name": "caeel_6239_01.xml"
+        },
+        {
+          "bytes": 17671620,
+          "crc32": 2738582614,
+          "name": "caeel_6239_02.xml"
+        },
+        {
+          "bytes": 20250732,
+          "crc32": 4202715510,
+          "name": "caeel_6239_03.xml"
+        },
+        {
+          "bytes": 12471406,
+          "crc32": 717524473,
+          "name": "caeel_6239_04.xml"
+        },
+        {
+          "bytes": 16185377,
+          "crc32": 3171423194,
+          "name": "caeel_6239_05.xml"
+        },
+        {
+          "bytes": 21426743,
+          "crc32": 1536340163,
+          "name": "caeel_6239_06.xml"
+        },
+        {
+          "bytes": 25532,
+          "crc32": 3132965228,
+          "name": "caeel_6239_06_negative.xml"
+        },
+        {
+          "bytes": 15462178,
+          "crc32": 1625344766,
+          "name": "caeel_6239_07.xml"
+        },
+        {
+          "bytes": 14959166,
+          "crc32": 680431406,
+          "name": "caeel_6239_08.xml"
+        },
+        {
+          "bytes": 18595828,
+          "crc32": 1316146492,
+          "name": "caeel_6239_09.xml"
+        },
+        {
+          "bytes": 20112281,
+          "crc32": 1580885730,
+          "name": "caeel_6239_10.xml"
+        },
+        {
+          "bytes": 22463187,
+          "crc32": 2402405950,
+          "name": "caeel_6239_11.xml"
+        },
+        {
+          "bytes": 12347948,
+          "crc32": 3513432155,
+          "name": "caeel_6239_12.xml"
+        },
+        {
+          "bytes": 12324420,
+          "crc32": 1609048255,
+          "name": "caeel_6239_13.xml"
+        },
+        {
+          "bytes": 12485019,
+          "crc32": 1191720049,
+          "name": "caeel_6239_14.xml"
+        },
+        {
+          "bytes": 12136806,
+          "crc32": 389879502,
+          "name": "caeel_6239_15.xml"
+        },
+        {
+          "bytes": 12405282,
+          "crc32": 381434049,
+          "name": "caeel_6239_16.xml"
+        },
+        {
+          "bytes": 12391847,
+          "crc32": 214101482,
+          "name": "caeel_6239_17.xml"
+        },
+        {
+          "bytes": 12040138,
+          "crc32": 1302517937,
+          "name": "caeel_6239_18.xml"
+        },
+        {
+          "bytes": 12007950,
+          "crc32": 383341502,
+          "name": "caeel_6239_19.xml"
+        },
+        {
+          "bytes": 12418469,
+          "crc32": 1193385396,
+          "name": "caeel_6239_20.xml"
+        },
+        {
+          "bytes": 12399232,
+          "crc32": 841182779,
+          "name": "caeel_6239_21.xml"
+        },
+        {
+          "bytes": 13742734,
+          "crc32": 2202824288,
+          "name": "caeel_6239_22.xml"
+        }
+      ],
+      "species": "worm",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/psi30/species/caeel.zip"
+    },
+    {
+      "artifact": {
+        "bytes": 70839610,
+        "path": "benchmark/nonhuman_transfer_v1/local/yeast.zip",
+        "sha256": "ccede025c1142ea293f92d4c7f12d27ccbd0d554c1f382ae50ac4b7ab0524bb4"
+      },
+      "at_utc": "2026-09-20T18:56:21.490724+00:00",
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Length": "70839610",
+        "Content-Type": "application/zip",
+        "Date": "Sun, 20 Sep 2026 18:56:19 GMT",
+        "ETag": "\"438ed3a-64857b3d2bbae\"",
+        "Last-Modified": "Wed, 14 Jan 2026 11:49:36 GMT",
+        "Server": "Apache"
+      },
+      "members": [
+        {
+          "bytes": 18341950,
+          "crc32": 3710537320,
+          "name": "yeast_559292_01.xml"
+        },
+        {
+          "bytes": 42068547,
+          "crc32": 946114873,
+          "name": "yeast_559292_02.xml"
+        },
+        {
+          "bytes": 50539829,
+          "crc32": 2784207516,
+          "name": "yeast_559292_03.xml"
+        },
+        {
+          "bytes": 17324774,
+          "crc32": 928504347,
+          "name": "yeast_559292_04.xml"
+        },
+        {
+          "bytes": 28396662,
+          "crc32": 1824432063,
+          "name": "yeast_559292_05.xml"
+        },
+        {
+          "bytes": 29880279,
+          "crc32": 1562219913,
+          "name": "yeast_559292_06.xml"
+        },
+        {
+          "bytes": 28168,
+          "crc32": 3568857437,
+          "name": "yeast_559292_06_negative.xml"
+        },
+        {
+          "bytes": 25595715,
+          "crc32": 3036300535,
+          "name": "yeast_559292_07.xml"
+        },
+        {
+          "bytes": 34274434,
+          "crc32": 3954960559,
+          "name": "yeast_559292_08.xml"
+        },
+        {
+          "bytes": 21467801,
+          "crc32": 1273669693,
+          "name": "yeast_559292_09.xml"
+        },
+        {
+          "bytes": 21692849,
+          "crc32": 1656366909,
+          "name": "yeast_559292_10.xml"
+        },
+        {
+          "bytes": 20984258,
+          "crc32": 4226312135,
+          "name": "yeast_559292_11.xml"
+        },
+        {
+          "bytes": 20845735,
+          "crc32": 3793564651,
+          "name": "yeast_559292_12.xml"
+        },
+        {
+          "bytes": 20255677,
+          "crc32": 2510642067,
+          "name": "yeast_559292_13.xml"
+        },
+        {
+          "bytes": 19575788,
+          "crc32": 4137889590,
+          "name": "yeast_559292_14.xml"
+        },
+        {
+          "bytes": 19729053,
+          "crc32": 3830753420,
+          "name": "yeast_559292_15.xml"
+        },
+        {
+          "bytes": 20578331,
+          "crc32": 3270990710,
+          "name": "yeast_559292_16.xml"
+        },
+        {
+          "bytes": 20751814,
+          "crc32": 2434345571,
+          "name": "yeast_559292_17.xml"
+        },
+        {
+          "bytes": 20101496,
+          "crc32": 3500170988,
+          "name": "yeast_559292_18.xml"
+        },
+        {
+          "bytes": 36949326,
+          "crc32": 2786435765,
+          "name": "yeast_559292_19.xml"
+        },
+        {
+          "bytes": 14811700,
+          "crc32": 237739234,
+          "name": "yeast_559292_20.xml"
+        },
+        {
+          "bytes": 30704162,
+          "crc32": 1619717537,
+          "name": "yeast_559292_21.xml"
+        },
+        {
+          "bytes": 35139836,
+          "crc32": 158889744,
+          "name": "yeast_559292_22.xml"
+        },
+        {
+          "bytes": 33005489,
+          "crc32": 951693814,
+          "name": "yeast_559292_23.xml"
+        },
+        {
+          "bytes": 35487107,
+          "crc32": 4283507286,
+          "name": "yeast_559292_24.xml"
+        },
+        {
+          "bytes": 103982,
+          "crc32": 2738718404,
+          "name": "yeast_559292_24_negative.xml"
+        },
+        {
+          "bytes": 32974400,
+          "crc32": 204752172,
+          "name": "yeast_559292_25.xml"
+        },
+        {
+          "bytes": 32940156,
+          "crc32": 1571015663,
+          "name": "yeast_559292_26.xml"
+        },
+        {
+          "bytes": 39763298,
+          "crc32": 1935011002,
+          "name": "yeast_559292_27.xml"
+        },
+        {
+          "bytes": 39791582,
+          "crc32": 4214679671,
+          "name": "yeast_559292_28.xml"
+        },
+        {
+          "bytes": 34816532,
+          "crc32": 3832411046,
+          "name": "yeast_559292_29.xml"
+        },
+        {
+          "bytes": 33661804,
+          "crc32": 4276390513,
+          "name": "yeast_559292_30.xml"
+        },
+        {
+          "bytes": 35754526,
+          "crc32": 4246744632,
+          "name": "yeast_559292_31.xml"
+        },
+        {
+          "bytes": 36270549,
+          "crc32": 1418938512,
+          "name": "yeast_559292_32.xml"
+        },
+        {
+          "bytes": 66345,
+          "crc32": 898872126,
+          "name": "yeast_559292_32_negative.xml"
+        },
+        {
+          "bytes": 37044275,
+          "crc32": 4048151685,
+          "name": "yeast_559292_33.xml"
+        },
+        {
+          "bytes": 41300652,
+          "crc32": 1127974475,
+          "name": "yeast_559292_34.xml"
+        },
+        {
+          "bytes": 45479274,
+          "crc32": 2176950712,
+          "name": "yeast_559292_35.xml"
+        },
+        {
+          "bytes": 38285277,
+          "crc32": 1532772408,
+          "name": "yeast_559292_36.xml"
+        },
+        {
+          "bytes": 25638179,
+          "crc32": 620157884,
+          "name": "yeast_559292_37.xml"
+        },
+        {
+          "bytes": 16177734,
+          "crc32": 391553144,
+          "name": "yeast_559292_38.xml"
+        },
+        {
+          "bytes": 33611190,
+          "crc32": 3578724647,
+          "name": "yeast_559292_39.xml"
+        },
+        {
+          "bytes": 42862033,
+          "crc32": 1663694914,
+          "name": "yeast_559292_40.xml"
+        },
+        {
+          "bytes": 68302030,
+          "crc32": 3390574381,
+          "name": "yeast_559292_41.xml"
+        },
+        {
+          "bytes": 48428048,
+          "crc32": 4231382227,
+          "name": "yeast_559292_42.xml"
+        },
+        {
+          "bytes": 107837145,
+          "crc32": 1971703975,
+          "name": "yeast_559292_43.xml"
+        },
+        {
+          "bytes": 63981153,
+          "crc32": 3554320795,
+          "name": "yeast_559292_44.xml"
+        }
+      ],
+      "species": "yeast",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/psi30/species/yeast.zip"
+    },
+    {
+      "artifact": {
+        "bytes": 22043374,
+        "path": "benchmark/nonhuman_transfer_v1/local/arath.zip",
+        "sha256": "9bf3ea491e2b489c0fd02acdf03caa27a222613645d61494f17e5f4a71c1cdb0"
+      },
+      "at_utc": "2026-09-20T18:56:21.246736+00:00",
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Length": "22043374",
+        "Content-Type": "application/zip",
+        "Date": "Sun, 20 Sep 2026 18:56:20 GMT",
+        "ETag": "\"1505aee-64857ad6ccbd7\"",
+        "Last-Modified": "Wed, 14 Jan 2026 11:47:49 GMT",
+        "Server": "Apache"
+      },
+      "members": [
+        {
+          "bytes": 15957605,
+          "crc32": 683373840,
+          "name": "arath_3702_01.xml"
+        },
+        {
+          "bytes": 21208464,
+          "crc32": 14663703,
+          "name": "arath_3702_02.xml"
+        },
+        {
+          "bytes": 23169283,
+          "crc32": 2062574578,
+          "name": "arath_3702_03.xml"
+        },
+        {
+          "bytes": 25011277,
+          "crc32": 2515397400,
+          "name": "arath_3702_04.xml"
+        },
+        {
+          "bytes": 14743168,
+          "crc32": 3607534871,
+          "name": "arath_3702_05.xml"
+        },
+        {
+          "bytes": 13303094,
+          "crc32": 388472054,
+          "name": "arath_3702_06.xml"
+        },
+        {
+          "bytes": 13424445,
+          "crc32": 225664471,
+          "name": "arath_3702_07.xml"
+        },
+        {
+          "bytes": 30345529,
+          "crc32": 2170991307,
+          "name": "arath_3702_08.xml"
+        },
+        {
+          "bytes": 15526394,
+          "crc32": 2404892108,
+          "name": "arath_3702_09.xml"
+        },
+        {
+          "bytes": 15288246,
+          "crc32": 2596931776,
+          "name": "arath_3702_10.xml"
+        },
+        {
+          "bytes": 15566327,
+          "crc32": 1940727327,
+          "name": "arath_3702_11.xml"
+        },
+        {
+          "bytes": 15304869,
+          "crc32": 2784202635,
+          "name": "arath_3702_12.xml"
+        },
+        {
+          "bytes": 14991557,
+          "crc32": 2383689970,
+          "name": "arath_3702_13.xml"
+        },
+        {
+          "bytes": 26164733,
+          "crc32": 1796831099,
+          "name": "arath_3702_14.xml"
+        },
+        {
+          "bytes": 14973462,
+          "crc32": 3415081324,
+          "name": "arath_3702_15.xml"
+        },
+        {
+          "bytes": 24264382,
+          "crc32": 3559710219,
+          "name": "arath_3702_16.xml"
+        },
+        {
+          "bytes": 27731550,
+          "crc32": 3688905883,
+          "name": "arath_3702_17.xml"
+        },
+        {
+          "bytes": 28448296,
+          "crc32": 2132677531,
+          "name": "arath_3702_18.xml"
+        },
+        {
+          "bytes": 28519812,
+          "crc32": 1593635655,
+          "name": "arath_3702_19.xml"
+        },
+        {
+          "bytes": 27467571,
+          "crc32": 2427528134,
+          "name": "arath_3702_20.xml"
+        },
+        {
+          "bytes": 27575213,
+          "crc32": 1614203434,
+          "name": "arath_3702_21.xml"
+        },
+        {
+          "bytes": 29593782,
+          "crc32": 1221246943,
+          "name": "arath_3702_22.xml"
+        },
+        {
+          "bytes": 31890965,
+          "crc32": 2565468713,
+          "name": "arath_3702_23.xml"
+        },
+        {
+          "bytes": 30551851,
+          "crc32": 610550949,
+          "name": "arath_3702_24.xml"
+        },
+        {
+          "bytes": 14776320,
+          "crc32": 947329839,
+          "name": "arath_3702_25.xml"
+        },
+        {
+          "bytes": 14657555,
+          "crc32": 479423917,
+          "name": "arath_3702_26.xml"
+        },
+        {
+          "bytes": 15058931,
+          "crc32": 2399162497,
+          "name": "arath_3702_27.xml"
+        },
+        {
+          "bytes": 24745010,
+          "crc32": 1109388359,
+          "name": "arath_3702_28.xml"
+        },
+        {
+          "bytes": 10875755,
+          "crc32": 1890937324,
+          "name": "arath_3702_29.xml"
+        }
+      ],
+      "species": "arabidopsis",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/psi30/species/arath.zip"
+    },
+    {
+      "artifact": {
+        "bytes": 9705084,
+        "path": "benchmark/nonhuman_transfer_v1/local/ecoli.zip",
+        "sha256": "3d85d771f8224300c0112ad5a752be5bb649377cf75c946e9efb706a61b6c599"
+      },
+      "at_utc": "2026-09-20T18:56:21.767790+00:00",
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Length": "9705084",
+        "Content-Type": "application/zip",
+        "Date": "Sun, 20 Sep 2026 18:56:20 GMT",
+        "ETag": "\"94167c-64857a9e049a2\"",
+        "Last-Modified": "Wed, 14 Jan 2026 11:46:49 GMT",
+        "Server": "Apache"
+      },
+      "members": [
+        {
+          "bytes": 37038670,
+          "crc32": 2037015248,
+          "name": "ecoli_83333_01.xml"
+        },
+        {
+          "bytes": 35384754,
+          "crc32": 3792674746,
+          "name": "ecoli_83333_02.xml"
+        },
+        {
+          "bytes": 34093818,
+          "crc32": 3068877035,
+          "name": "ecoli_83333_03.xml"
+        },
+        {
+          "bytes": 39169608,
+          "crc32": 2235680449,
+          "name": "ecoli_83333_04.xml"
+        },
+        {
+          "bytes": 61644974,
+          "crc32": 3442405751,
+          "name": "ecoli_83333_05.xml"
+        }
+      ],
+      "species": "ecoli",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/psi30/species/ecoli.zip"
+    }
+  ]
+}

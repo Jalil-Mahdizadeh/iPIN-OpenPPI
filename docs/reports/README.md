@@ -7,6 +7,14 @@ The subsequent [published-model comparisons](../../benchmark/README.md) and
 their reports alongside their implementations. The chronology below describes
 the core iPIN studies and preserves their phase-specific decisions.
 
+The [non-human transfer report](../../benchmark/nonhuman_transfer_v1/REPORT.md)
+evaluates the three frozen iPIN models within mouse, fly, worm, budding yeast,
+Arabidopsis, and E. coli K-12. Fifty targets per species yield 1,385 P and 60,000 U
+rows. The study retains a prescoring evidence adjustment, validates selected
+evidence directly against original IntAct XML, recomputes embeddings, audits
+actual human TRAIN/development exposure and sequence similarity, and reports
+all known-positive retrieval metrics and exploratory paired comparisons.
+
 The current application contains 37 nominated P and 5,550 U across twelve human
 targets, scored by all three frozen iPIN models and original published TUnA.
 It compares P against context, background, low-plausibility, context + background,

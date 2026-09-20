@@ -1,4 +1,4 @@
-# Published-model benchmarks
+# Model benchmarks
 
 Current aggregate results, checked against the completed local reports on
 20 September 2026. These comparisons reuse the frozen iPIN C1/C2/C3 test panels
@@ -13,6 +13,14 @@ registration preserves the benchmark's weights, predictions, selection, and
 results; the authors' original TUnA remains a separate comparator.
 
 ## Completed comparisons
+
+The table below concerns the human C1/C2/C3 benchmark. A separate
+[non-human transfer evaluation](nonhuman_transfer_v1/REPORT.md) applies all three
+unchanged frozen iPIN ensembles within six organisms: 300 targets, 1,385 P rows,
+and 60,000 U rows. It reports species-specific background/matched retrieval,
+training-exposure and sequence-similarity sensitivities, and exploratory paired
+target-bootstrap intervals. Its candidate design differs from human C3; it is
+not an additional C1/C2/C3 test or a new model-selection step.
 
 | Predictor | C1 | C2 | C3 | Result record |
 |---|---:|---:|---:|---|

@@ -10,13 +10,15 @@ verified noninteractions.
 The repository contains the evidence-processing and benchmark pipeline, two
 frozen pooled iPIN ensembles, the frozen TUnA-retrained ensemble as iPIN model 3,
 completed comparisons with five published methods, and
-twelve protein-screening examples. Start with these records:
+twelve human protein-screening examples, plus a six-organism external transfer
+evaluation of all three frozen models. Start with these records:
 
 | Area | Current reference |
 |---|---|
 | Frozen iPIN predictors | [Three-model registry and cards](docs/models/FROZEN_PAIR_MODELS_v2.md) |
 | Published-method comparisons | [Benchmark results and execution status](benchmark/README.md) |
 | Protein-screening examples | [Expanded four-model comparison](example/twelve_target_comparison_v2/REPORT.md), [current panel index](example/INDEX.md) |
+| Non-human transfer | [Six-organism frozen-model evaluation](benchmark/nonhuman_transfer_v1/REPORT.md) |
 | Scientific reports and diagnostics | [Report index](docs/reports/README.md) |
 | Core model freeze and decisions | [Governance index](governance/README.md) |
 | Implementation and tests | [Source map](src/README.md), [entry points](scripts/README.md), [test policy](tests/README.md) |
@@ -76,6 +78,15 @@ training-data explanation; the small example does not establish general superior
 A separate [U score comparison](example/u_context_background_analysis_v1/REPORT.md)
 finds modestly higher scores for context-matched than background candidates in
 all three models, with target-specific results and exploratory uncertainty estimates.
+
+The [non-human transfer study](benchmark/nonhuman_transfer_v1/REPORT.md) evaluates
+the three unchanged models within mouse, fly, worm, budding yeast, Arabidopsis,
+and E. coli K-12: 300 targets, 1,385 positive rows and 60,000 unlabeled rows.
+It compares background and length/degree-matched candidate pools, with fresh
+embeddings, original IntAct evidence validation, exact human-training exposure
+checks, sequence-similarity strata, and complete retrieval metrics. Candidate
+sets and evidence differ from human C3, so the two score scales do not directly
+estimate a controlled species effect.
 
 Concordance is neither binary binding accuracy nor calibrated interaction
 probability. Genuine partner-specific/direct-binding generalization remains

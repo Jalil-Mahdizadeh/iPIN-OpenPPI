@@ -1,0 +1,127 @@
+{
+  "at_utc": "2026-09-20T19:30:55.900704+00:00",
+  "conclusions_are_descriptive": true,
+  "highest_overall_point_model": "tuna_retrained",
+  "no_frozen_model_changed": true,
+  "overall_equal_species": {
+    "ipin_baseline": 0.6164916931216932,
+    "ipin_optimized": 0.6343900793650795,
+    "tuna_retrained": 0.6478206349206349
+  },
+  "primary": "equal-target PU concordance for matched U within species",
+  "selection": {
+    "P": 1385,
+    "U": 60000,
+    "at_utc": "2026-09-20T19:09:16.697423+00:00",
+    "inputs": [
+      {
+        "bytes": 7419,
+        "path": "benchmark/nonhuman_transfer_v1/PROTOCOL.md",
+        "sha256": "97d22f06118c0fb36bb83d67068b6dba15a384e3f0b5b91e7b166e5da36176ba"
+      },
+      {
+        "bytes": 1147,
+        "path": "benchmark/nonhuman_transfer_v1/config.json",
+        "sha256": "8253e85600c5b5d35605d5509bcf88f36452df84d02bc57cab3e99901a9fddf2"
+      },
+      {
+        "bytes": 36046,
+        "path": "benchmark/nonhuman_transfer_v1/SOURCE_PARSING_v2.json",
+        "sha256": "f79af158b29d6fbc6ae9d5df582f6ef32b5d4f59366177261fca7c22897d7995"
+      }
+    ],
+    "max_length": 2000,
+    "model_scores_read": false,
+    "outputs": [
+      {
+        "bytes": 22265023,
+        "path": "benchmark/nonhuman_transfer_v1/panels.csv",
+        "sha256": "70f76b5ff0bf230a938bc90b2ed0f4b8423f997bd9ad73ac1f9b18b423b7977c"
+      },
+      {
+        "bytes": 34665,
+        "path": "benchmark/nonhuman_transfer_v1/targets.csv",
+        "sha256": "ebcd7776c8d22ed68e04aeb507d0183e47685848753d91878b8ae6d048c69d69"
+      },
+      {
+        "bytes": 3428791,
+        "path": "benchmark/nonhuman_transfer_v1/proteins.csv",
+        "sha256": "269fcad35da6b5c74b34995af5d3ecfd48a627eb2d40c19fe48eda84a7d769ef"
+      },
+      {
+        "bytes": 101546,
+        "path": "benchmark/nonhuman_transfer_v1/selected_evidence.json.gz",
+        "sha256": "1c49ff289645957f134b87b7d37d8061f94f2c3a7b7ab5a48b7c36b88e08301b"
+      },
+      {
+        "bytes": 10289389,
+        "path": "benchmark/nonhuman_transfer_v1/selected_sequences.json.gz",
+        "sha256": "a18e6937b24f68060b8274ed4169b3cd2f35edf9ecc41e4743feaea74d7018d8"
+      }
+    ],
+    "pairs": 61385,
+    "script": {
+      "bytes": 6636,
+      "path": "benchmark/nonhuman_transfer_v1/build_panels.py",
+      "sha256": "0287dbbdcd7e27f3ecf609d5160e91429b70e45567cae54120cd9218fe4ae7e9"
+    },
+    "species": [
+      {
+        "eligible_targets": 449,
+        "insufficient_candidate_pool_skips": 0,
+        "matched_tier_counts": {
+          "0": 5000
+        },
+        "selected_targets": 50,
+        "species": "mouse"
+      },
+      {
+        "eligible_targets": 5849,
+        "insufficient_candidate_pool_skips": 0,
+        "matched_tier_counts": {
+          "0": 5000
+        },
+        "selected_targets": 50,
+        "species": "fly"
+      },
+      {
+        "eligible_targets": 1943,
+        "insufficient_candidate_pool_skips": 0,
+        "matched_tier_counts": {
+          "0": 5000
+        },
+        "selected_targets": 50,
+        "species": "worm"
+      },
+      {
+        "eligible_targets": 2198,
+        "insufficient_candidate_pool_skips": 0,
+        "matched_tier_counts": {
+          "0": 5000
+        },
+        "selected_targets": 50,
+        "species": "yeast"
+      },
+      {
+        "eligible_targets": 3586,
+        "insufficient_candidate_pool_skips": 0,
+        "matched_tier_counts": {
+          "0": 5000
+        },
+        "selected_targets": 50,
+        "species": "arabidopsis"
+      },
+      {
+        "eligible_targets": 748,
+        "insufficient_candidate_pool_skips": 0,
+        "matched_tier_counts": {
+          "0": 5000
+        },
+        "selected_targets": 50,
+        "species": "ecoli"
+      }
+    ],
+    "total_residues": 14492932,
+    "unique_sequences": 30497
+  }
+}

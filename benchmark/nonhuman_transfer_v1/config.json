@@ -1,0 +1,24 @@
+{
+  "study": "nonhuman_transfer_v1",
+  "seed": 20260920,
+  "source_release": "2026-01-09",
+  "source_base": "https://ftp.ebi.ac.uk/pub/databases/intact/2026-01-09/psi30/species/",
+  "species": [
+    {"id": "mouse", "name": "Mus musculus", "taxid": 10090, "archive": "mouse.zip"},
+    {"id": "fly", "name": "Drosophila melanogaster", "taxid": 7227, "archive": "drome.zip"},
+    {"id": "worm", "name": "Caenorhabditis elegans", "taxid": 6239, "archive": "caeel.zip"},
+    {"id": "yeast", "name": "Saccharomyces cerevisiae S288C", "taxid": 559292, "archive": "yeast.zip"},
+    {"id": "arabidopsis", "name": "Arabidopsis thaliana", "taxid": 3702, "archive": "arath.zip"},
+    {"id": "ecoli", "name": "Escherichia coli K-12", "taxid": 83333, "archive": "ecoli.zip"}
+  ],
+  "minimum_sequence_length": 50,
+  "maximum_sequence_length": 2000,
+  "targets_per_species": 50,
+  "minimum_positive_partners": 2,
+  "maximum_positive_partners": 10,
+  "background_U_per_target": 100,
+  "matched_U_per_target": 100,
+  "cutoffs": [5, 10, 20],
+  "bootstrap_draws": 10000,
+  "model_registry_sha256": "faf2d585dbfee34ca3fe19487bc7a821f744014cdcdb94e95e4b657097110878"
+}

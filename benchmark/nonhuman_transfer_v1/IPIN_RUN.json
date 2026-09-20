@@ -1,0 +1,105 @@
+{
+  "SIF_sha256": "c4bddf5f7b40cf7c5bbfba82f47ef2b1bbc5786c7bb36d98b020ca09761aad91",
+  "at_utc": "2026-09-20T19:19:48.624140+00:00",
+  "device": "NVIDIA GH200 120GB",
+  "elapsed_seconds": 317.18398553800944,
+  "embedding_artifact": {
+    "bytes": 163952650,
+    "path": "/project/benchmark/nonhuman_transfer_v1/ipin_fresh_embeddings.npz",
+    "sha256": "eee0a6fb945235b48b659cfe4091352ac85f0114d27107906f5dfa4881e69723"
+  },
+  "extraction": {
+    "batches": 4140,
+    "elapsed_seconds": 303.3507528540067,
+    "gpu_hours": 0.08426409801500187,
+    "residue_window_tokens": 16162752,
+    "windows": 32799
+  },
+  "freshly_embedded_sequences": 30497,
+  "model_registry": {
+    "bytes": 23121,
+    "path": "/project/.private/frozen_pair_models_v1/bundle/MODEL_REGISTRY.json",
+    "sha256": "0b742d43e7da24285a9c2b5587d08cf3c4346073e33dbcaedf604d8a66c9fd83"
+  },
+  "normalizer": {
+    "bytes": 111630,
+    "path": "/project/.private/frozen_pair_models_v1/bundle/features/training_normalization.npz",
+    "sha256": "0638479d988ab37f63e8e034d372e4d7023f703140e46644b81c97390b98b72c"
+  },
+  "pair_order_symmetry_passed": true,
+  "preexisting_feature_cache_reads": 0,
+  "score_artifact": {
+    "bytes": 2768421,
+    "path": "/project/benchmark/nonhuman_transfer_v1/ipin_scores.csv",
+    "sha256": "89c16c91164b866b13aa2bb05d8af24458e3748ba96e4839a5d46b2d5eb6f15e"
+  },
+  "script_sha256": "cb2516da91f39ea9a32262a79807ca6bda53e00ea17ae80ab0669a2c26da7db0",
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "verified_model_inputs": [
+    {
+      "bytes": 1705,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/encoder/README.md",
+      "sha256": "462a2f24724e19c6be0efab926315c294a863c9a9770e2c8b3d859b2d81a07de"
+    },
+    {
+      "bytes": 779,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/encoder/config.json",
+      "sha256": "e512f68ec444d99477703a9806639ca83da3dbc19f6c5fe428d6e5b7460972dc"
+    },
+    {
+      "bytes": 595257706,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/encoder/model.safetensors",
+      "sha256": "c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566"
+    },
+    {
+      "bytes": 125,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/encoder/special_tokens_map.json",
+      "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1"
+    },
+    {
+      "bytes": 95,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/encoder/tokenizer_config.json",
+      "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad"
+    },
+    {
+      "bytes": 93,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/encoder/vocab.txt",
+      "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+    },
+    {
+      "bytes": 18849,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/code/embeddings.py",
+      "sha256": "7d03572fa3d7d8c6b86fb8652b2b866f27f266b6cec4c2695e237aa796bb264f"
+    },
+    {
+      "bytes": 8194,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/heads/affine/20260803.npz",
+      "sha256": "efaa98ae02ac94d61e825b3b43f2614fd5232572a67e162b414f6174fcf0ae56"
+    },
+    {
+      "bytes": 8194,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/heads/affine/20260817.npz",
+      "sha256": "15dba53ab5c5bc4ad1f70242422fa6ba33765fab7c7294fa20c216e84fe9d857"
+    },
+    {
+      "bytes": 8194,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/heads/affine/20260831.npz",
+      "sha256": "0b7149ea20d02ed9b289f6743e133cf07cd4384fe10036664171d5537e0b1853"
+    },
+    {
+      "bytes": 1994318,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/heads/optimized/20260803.npz",
+      "sha256": "f46452e84cb30df1c785a6af982f83d37ba892855b5af0a848aac4610890cabc"
+    },
+    {
+      "bytes": 1994318,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/heads/optimized/20260817.npz",
+      "sha256": "08a67b0309a2d3d2928c9f188f73180a4e917f457a087ea1206c85bbae828463"
+    },
+    {
+      "bytes": 1994318,
+      "path": "/project/.private/frozen_pair_models_v1/bundle/heads/optimized/20260831.npz",
+      "sha256": "2f5fbe82194f88b8afb6ce90c8db1b1b2ed87cd1d03484ffec0375e2774c17f1"
+    }
+  ]
+}

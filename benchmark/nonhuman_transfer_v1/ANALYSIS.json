@@ -1,0 +1,16 @@
+{
+  "U_is_unlabeled": true,
+  "at_utc": "2026-09-20T19:28:27.728000+00:00",
+  "bootstrap_draws": 10000,
+  "macro_metric_rows": 126,
+  "paired_contrasts": 630,
+  "per_target_metric_rows": 5373,
+  "script": {
+    "bytes": 13230,
+    "path": "benchmark/nonhuman_transfer_v1/analyze.py",
+    "sha256": "56a8970da288bb9ddbbfd36d432edb71a772cc66cfd282219293546768df6a86"
+  },
+  "seed": 20260920,
+  "thresholds_fitted": false,
+  "uncertainty": "Exploratory paired target bootstrap; fixed panels; residual homology, study and reused-partner dependencies"
+}

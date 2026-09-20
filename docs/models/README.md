@@ -25,6 +25,13 @@ records for the first two models. Published-model comparisons are indexed in
 [benchmark/](../../benchmark/README.md); the original TUnA predictor remains a
 separate comparator.
 
+External transfer: [six non-human organisms](../../benchmark/nonhuman_transfer_v1/REPORT.md).
+The three unchanged ensembles score 61,385 rows for 300 targets, with
+species-specific retrieval and exact/related human-training exposure audits.
+This evaluation does not retrain, promote, or alter a model; the versioned
+cards and registry remain immutable. Non-human taxids do not establish absence
+from sequence pretraining or absence of homologous human training proteins.
+
 Current biological application: [expanded twelve-target comparison](../../example/twelve_target_comparison_v2/REPORT.md)
 and [panel index](../../example/INDEX.md). All three unchanged models and original
 published TUnA score 5,587 pairs with fresh embeddings. Five candidate sets compare
