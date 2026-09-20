@@ -1,22 +1,26 @@
 # Model registry
 
-Current release: [Frozen pair models v1](FROZEN_PAIR_MODELS_v1.md),
-authorized by [DEC-0054](../../governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
+Current catalogue: [Frozen pair models v2](FROZEN_PAIR_MODELS_v2.md),
+authorized by [DEC-0055](../../governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md).
 
-- Higher observed benchmark score among the two frozen iPIN ensembles:
-  `esm2_150m__residual_wide__epoch04_ensemble3`.
 - Original confirmatory baseline:
   `lightweight_esm2_150m_linear__linear_lr3e-4`.
+- Optimized pooled residual-MLP ensemble:
+  `esm2_150m__residual_wide__epoch04_ensemble3`.
+- Third frozen iPIN model, TUnA-retrained (PU-TUnA):
+  `tuna_retrained_ensemble`, aliases `tuna-retrained` and `ipin_tuna_retrained`.
 
-Both are frozen three-seed ensembles. Their prediction is the equal mean of
-raw member scores. The optimized C3 test point is higher, but its paired gain
-interval includes zero; the best-performing designation is not a statistically
-conclusive superiority claim.
+All three retain their exact three-seed prediction definitions. The first two
+average raw member scores; TUnA-retrained averages mean-field-adjusted logits
+and retains its trained GP covariance. TUnA-retrained has the highest observed
+C3 point score, but its paired difference from optimized pooled iPIN includes
+zero. Registration is not a statistically conclusive superiority claim.
 
 Exact hashes, model roles and preserved inputs are in the
-[machine-readable registry](../../artifacts/models/frozen_pair_models_v1/MODEL_REGISTRY.json).
+[machine-readable registry](../../artifacts/models/frozen_pair_models_v2/MODEL_REGISTRY.json).
 Private model weights remain local and are not distributed in this Git repository.
 
-Published-model comparisons are indexed separately in
-[benchmark/](../../benchmark/README.md). The designation above concerns the two
-iPIN ensembles; it does not rank iPIN above every published comparator.
+The [v1 registry and cards](FROZEN_PAIR_MODELS_v1.md) remain unchanged historical
+records for the first two models. Published-model comparisons are indexed in
+[benchmark/](../../benchmark/README.md); the original TUnA predictor remains a
+separate comparator.

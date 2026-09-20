@@ -18,5 +18,5 @@ Core executable entry points are in [scripts/](../scripts/README.md), including
 the protected final-test and fixed-ensemble evaluators. Published-method adapters
 and their own runners live in [benchmark/](../benchmark/README.md); example
 scoring lives in [example/](../example/six_target_comparison_v1/README.md).
-The [frozen model cards](../docs/models/FROZEN_PAIR_MODELS_v1.md) define the
+The [frozen model cards](../docs/models/FROZEN_PAIR_MODELS_v2.md) define the
 preserved predictors. Scientific execution and tests require an accepted SIF.

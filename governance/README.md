@@ -13,7 +13,16 @@ Changes to the primary target, metric, split, calibration universe, production p
 
 ## Core model record
 
-The core iPIN model disposition is [v54](PROJECT_STATUS_v54.md), with
+The current model disposition is [v55](PROJECT_STATUS_v55.md), with
+[gate v55](gates/gate_status_v55.yaml).
+[DEC-0055](decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md)
+registers the unchanged epoch-4 TUnA-retrained ensemble as the third frozen iPIN
+model. The [three-model registry and cards](../docs/models/FROZEN_PAIR_MODELS_v2.md)
+preserve its exact states, GP covariance, inference definition, and provenance,
+while retaining the previous two-model release. This is post-result preservation,
+with no new training, scoring, evaluation, or superiority claim.
+
+The preceding two-model disposition is [v54](PROJECT_STATUS_v54.md), with
 [gate record v54](gates/gate_status_v54.yaml).
 [DEC-0054](decisions/DEC-0054-freeze-and-designate-both-models.md) freezes both
 evaluated iPIN ensembles and designates the optimized ensemble **higher-scoring
@@ -26,7 +35,7 @@ designation, not a new test, refit or statistically conclusive C3 superiority cl
 The [repository overview](../README.md), [published-model benchmark index](../benchmark/README.md),
 and [six-target application](../example/six_target_comparison_v1/REPORT.md)
 describe subsequent work and its own execution records. Status v54 is the
-core-model freeze record, not a live inventory of every later repository study.
+preceding two-model freeze record, not a live inventory of later repository work.
 
 The preceding completed evaluation is recorded in [status v53](PROJECT_STATUS_v53.md),
 [gate record v53](gates/gate_status_v53.yaml) and the

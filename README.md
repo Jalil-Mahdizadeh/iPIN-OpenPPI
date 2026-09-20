@@ -8,24 +8,34 @@ verified noninteractions.
 ## Current project
 
 The repository contains the evidence-processing and benchmark pipeline, two
-frozen iPIN ensembles, completed comparisons with five published methods, and
+frozen pooled iPIN ensembles, the frozen TUnA-retrained ensemble as iPIN model 3,
+completed comparisons with five published methods, and
 six protein-screening examples. Start with these records:
 
 | Area | Current reference |
 |---|---|
-| Frozen iPIN predictors | [Model registry and cards](docs/models/FROZEN_PAIR_MODELS_v1.md) |
+| Frozen iPIN predictors | [Three-model registry and cards](docs/models/FROZEN_PAIR_MODELS_v2.md) |
 | Published-method comparisons | [Benchmark results and execution status](benchmark/README.md) |
 | Protein-screening examples | [Six-target comparison](example/six_target_comparison_v1/REPORT.md) |
 | Scientific reports and diagnostics | [Report index](docs/reports/README.md) |
 | Core model freeze and decisions | [Governance index](governance/README.md) |
 | Implementation and tests | [Source map](src/README.md), [entry points](scripts/README.md), [test policy](tests/README.md) |
 
-Both iPIN predictors use frozen ESM-2 150M sequence representations, training-only
+The two pooled iPIN predictors use frozen ESM-2 150M sequence representations, training-only
 normalization, symmetric pair features, and equal-weight three-seed raw-score
 ensembles. The original affine ensemble is the confirmatory baseline; the
 optimized residual-MLP ensemble has the higher observed scores of these two
 iPIN models. Exact checkpoints and prediction definitions are frozen under
 [DEC-0054](governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
+
+Under [DEC-0055](governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md),
+**TUnA-retrained is the third frozen iPIN model** (`tuna_retrained_ensemble`).
+It retains the selected epoch-4 checkpoints for all three seeds, full-context
+residue representations, trained GP covariance, and the equal mean of
+mean-field-adjusted logits. Its C1/C2/C3 concordances are
+**0.948619 / 0.880401 / 0.815875**. This registration preserves the completed
+PU-TUnA adaptation and its published architecture attribution; the existing
+two-model freeze remains unchanged.
 
 | Test cell | Original iPIN | Optimized iPIN | Gain and paired 95% interval |
 |---|---:|---:|---|
@@ -79,8 +89,8 @@ The [Version 3 blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Bluep
 [pair protocol](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md),
 and [artifact report](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Artifacts_Final_v1.md)
 record the scientific design. Numbered protocols, status files, and checkpoints
-describe their original phase boundaries. The core model disposition is
-[status v54](governance/PROJECT_STATUS_v54.md); subsequent benchmark and example
+describe their original phase boundaries. The current three-model disposition is
+[status v55](governance/PROJECT_STATUS_v55.md); benchmark and example
 work is documented in its own directories.
 
 ## Repository layout

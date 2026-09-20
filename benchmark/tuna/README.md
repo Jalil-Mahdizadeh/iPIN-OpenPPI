@@ -1,5 +1,11 @@
 # TUnA benchmark
 
+The completed retrained predictor is **iPIN model 3, TUnA-retrained (PU-TUnA)**,
+frozen under [DEC-0055](../../governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md).
+The [v2 model catalogue](../../docs/models/FROZEN_PAIR_MODELS_v2.md) preserves its
+epoch-4 three-seed states and exact prediction definition. The benchmark's
+original selection and result records are unchanged.
+
 Status: **original and retrained C1/C2/C3 comparisons completed on 12 September
 2026**. The C3-development-selected retrained ensemble uses all three seeds at
 epoch 4. Its C1/C2/C3 concordance is **0.948619 / 0.880401 / 0.815875**; original

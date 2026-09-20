@@ -7,6 +7,13 @@ The subsequent [published-model comparisons](../../benchmark/README.md) and
 their reports alongside their implementations. The chronology below describes
 the core iPIN studies and preserves their phase-specific decisions.
 
+The current model catalogue is [Frozen pair models v2](../models/FROZEN_PAIR_MODELS_v2.md):
+the original affine ensemble, optimized pooled residual-MLP ensemble, and
+TUnA-retrained as the third frozen iPIN model under
+[DEC-0055](../../governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md).
+This preservation action uses the completed TUnA records and performs no new
+training or benchmark evaluation. See [status v55](../../governance/PROJECT_STATUS_v55.md).
+
 The latest diagnostic is [C3 control-shift investigation](m1/M1_C3_Control_Shift_Investigation_v1.md).
 Exact scoring parity passed. Development's simple-control signal is concentrated
 in within-component positives and a smaller interaction-rich sequence component;
@@ -14,7 +21,7 @@ the largest-component-only explanation was not supported. This is a development-
 post-hoc investigation using existing public test aggregates, with no change to
 either frozen model, the benchmark, or prior evaluation records.
 
-The current model disposition is [Frozen pair models v1](../models/FROZEN_PAIR_MODELS_v1.md),
+The preceding two-model disposition is [Frozen pair models v1](../models/FROZEN_PAIR_MODELS_v1.md),
 authorized by [DEC-0054](../../governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
 Both exact ensembles are preserved: the optimized residual-MLP ensemble is the
 **higher-scoring of the two frozen iPIN models**; the affine ensemble is

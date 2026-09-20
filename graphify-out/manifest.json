@@ -805,8 +805,8 @@
     "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
   },
   "README.md": {
-    "mtime": 1789892686.0,
-    "ast_hash": "92be592d13057a87cc1d28be4e8515a5",
+    "mtime": 1789901430.0,
+    "ast_hash": "d46e71dcdc56a1b8327050a0162a88d8",
     "semantic_hash": ""
   },
   "artifacts/validation/lambourne_y2h_audit_v1/attempts/attempt-001-validator-pre-fix/README.md": {
@@ -1045,8 +1045,8 @@
     "semantic_hash": "543dec3e0dce4d28a34d2750fc03fe4a"
   },
   "docs/reports/README.md": {
-    "mtime": 1789892882.0,
-    "ast_hash": "5418c036f66fdfbb17e2e0c287373d02",
+    "mtime": 1789901430.0,
+    "ast_hash": "b9c10a79e0f6d627c8a6ed499710f408",
     "semantic_hash": ""
   },
   "docs/reports/m0/M0_Container_Gate_Final_Report_v1.md": {
@@ -1140,8 +1140,8 @@
     "semantic_hash": "6e8f50f4dc4b1715e7c430ff98076f28"
   },
   "governance/README.md": {
-    "mtime": 1789892882.0,
-    "ast_hash": "728ae8837d0ed07141f14f66a6a6444a",
+    "mtime": 1789901591.0,
+    "ast_hash": "3683aabf753cfa2ca742a81e3ed4ed5f",
     "semantic_hash": ""
   },
   "governance/START_MANIFEST_v1.yaml": {
@@ -1440,8 +1440,8 @@
     "semantic_hash": "c503c9951913e719f60748caafebbfc8"
   },
   "releases/README.md": {
-    "mtime": 1789892686.0,
-    "ast_hash": "a996fecf5445deb196496ddf474ecca0",
+    "mtime": 1789901431.0,
+    "ast_hash": "db7df4f5182b8eaf511875addfebdeaa",
     "semantic_hash": ""
   },
   "schemas/README.md": {
@@ -1495,8 +1495,8 @@
     "semantic_hash": "0dcb7ccc50315f35f4d8b8a35e2dbeec"
   },
   "scripts/README.md": {
-    "mtime": 1789892686.0,
-    "ast_hash": "c2a9f34b198a00b27e02f31752b982a4",
+    "mtime": 1789901591.0,
+    "ast_hash": "f48e867ec62e4fce0792b3c7c1b56c1d",
     "semantic_hash": ""
   },
   "scripts/benchmark/README.md": {
@@ -1525,8 +1525,8 @@
     "semantic_hash": ""
   },
   "src/README.md": {
-    "mtime": 1789892686.0,
-    "ast_hash": "1a3373469d4052a5824ab17697e6ebd9",
+    "mtime": 1789901431.0,
+    "ast_hash": "bd225825b055b388110724024146146c",
     "semantic_hash": ""
   },
   "src/ipin_openppi/ingestion/ACTIVE_PARSER.md": {
@@ -2290,7 +2290,7 @@
     "semantic_hash": ""
   },
   "scripts/model/README.md": {
-    "mtime": 1789084076.0,
+    "mtime": 1789901591.0,
     "ast_hash": "f03cf2d5c1122cb3b91bd06f81e92059",
     "semantic_hash": ""
   },
@@ -4390,8 +4390,8 @@
     "semantic_hash": ""
   },
   "docs/models/README.md": {
-    "mtime": 1789892882.0,
-    "ast_hash": "4cb79e35b2abcab35695888d563ba1d6",
+    "mtime": 1789901430.0,
+    "ast_hash": "d574351f89df388f8bc17a33ed2b774b",
     "semantic_hash": ""
   },
   "docs/reports/m1/M1_Model_Optimization_Followup_v1.md": {
@@ -5820,8 +5820,8 @@
     "semantic_hash": ""
   },
   "benchmark/README.md": {
-    "mtime": 1789892823.0,
-    "ast_hash": "7ad25347626b5c81867c305aa6c3dad9",
+    "mtime": 1789901430.0,
+    "ast_hash": "6ef22ed0dee5ed0bf1c88a57dec4f734",
     "semantic_hash": ""
   },
   "benchmark/containers/README.md": {
@@ -5980,8 +5980,8 @@
     "semantic_hash": ""
   },
   "benchmark/tuna/README.md": {
-    "mtime": 1789892823.0,
-    "ast_hash": "b85403198b233bf2c9ad024d872a00e1",
+    "mtime": 1789901430.0,
+    "ast_hash": "e6e0edf2e43769d7940b846030d79f8e",
     "semantic_hash": ""
   },
   "benchmark/tuna/REPORT.md": {
@@ -6037,6 +6037,56 @@
   "graphify-out/memory/query_20260911_190104_investigate_why_fixed_control_scores_fall_from_dev.md": {
     "mtime": 1789153319.0,
     "ast_hash": "83727232123b2ff2d14851072dde74f0",
+    "semantic_hash": ""
+  },
+  "artifacts/models/frozen_pair_models_v2/ARTIFACT_REGISTRY.json": {
+    "mtime": 1789901636.0,
+    "ast_hash": "535ebef68ff7b5bea2a32d4861bf58ee",
+    "semantic_hash": ""
+  },
+  "artifacts/models/frozen_pair_models_v2/MODEL_REGISTRY.json": {
+    "mtime": 1789901628.0,
+    "ast_hash": "50e4a1d3c2d7e4895a5c91ebc4dc8a5e",
+    "semantic_hash": ""
+  },
+  "artifacts/validation/frozen_pair_models_v2/FREEZE_AUDIT.json": {
+    "mtime": 1789901636.0,
+    "ast_hash": "933a40d91ca80bbb225b09ff797d5635",
+    "semantic_hash": ""
+  },
+  "scripts/model/freeze_pair_models_v2.py": {
+    "mtime": 1789901246.0,
+    "ast_hash": "cb5823f8c9043ef2d1334efad5a5da31",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_frozen_pair_models_v2.py": {
+    "mtime": 1789901246.0,
+    "ast_hash": "316c0190b463430d365953ab1ec80f6c",
+    "semantic_hash": ""
+  },
+  "docs/models/FROZEN_PAIR_MODELS_v2.md": {
+    "mtime": 1789901430.0,
+    "ast_hash": "e16722e81a7fdef27290f13645b8ea05",
+    "semantic_hash": ""
+  },
+  "governance/PROJECT_STATUS_v55.md": {
+    "mtime": 1789901246.0,
+    "ast_hash": "eb3ce048fe0aec466d961695c4e1101e",
+    "semantic_hash": ""
+  },
+  "governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md": {
+    "mtime": 1789901246.0,
+    "ast_hash": "31f5a35502b4354478db9502b1460843",
+    "semantic_hash": ""
+  },
+  "governance/gates/gate_status_v55.yaml": {
+    "mtime": 1789901246.0,
+    "ast_hash": "c2c88ce9f8c95cc3216c54dbe0af6e58",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260920_105455_freeze_tuna_retrained_as_the_third_ipin_model.md": {
+    "mtime": 1789901695.0,
+    "ast_hash": "b052c1c4cb8c099a3df18b1e6fdb77a5",
     "semantic_hash": ""
   }
 }

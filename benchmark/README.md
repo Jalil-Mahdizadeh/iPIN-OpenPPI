@@ -6,6 +6,12 @@ and reference predictions. Each predictor scored all 3,019,012 requested rows.
 The metric is design-weighted positive-versus-unlabeled concordance; C3 is
 primary. Unlabeled pairs are not verified negatives.
 
+The completed epoch-4 PU-TUnA ensemble is also registered as **the third frozen
+iPIN model**, under its unchanged result ID `tuna_retrained_ensemble`. See the
+[three-model catalogue](../docs/models/FROZEN_PAIR_MODELS_v2.md). This later
+registration preserves the benchmark's weights, predictions, selection, and
+results; the authors' original TUnA remains a separate comparator.
+
 ## Completed comparisons
 
 | Predictor | C1 | C2 | C3 | Result record |

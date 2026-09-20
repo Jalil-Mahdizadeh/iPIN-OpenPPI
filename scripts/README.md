@@ -21,3 +21,11 @@ Published-model runners and scheduler files live with each method under
 [example/](../example/six_target_comparison_v1/README.md). Run scientific entry
 points inside their qualified ARM64 SIF and use a new run directory. Completed
 single-use evaluations are not general-purpose rerun commands.
+
+Current model-preservation entry points are
+`model/freeze_pair_models_v2.py` for the [three-model catalogue](../docs/models/FROZEN_PAIR_MODELS_v2.md)
+(pinned TUnA SIF), and `model/freeze_pair_models_v1.py` for the unchanged original
+two-model release (pinned core model SIF). Both default to read-only verification;
+`--create` refuses an existing release. The v2 verifier also checks v1 custody.
+Some subdirectory READMEs belong to historical checksum-bound releases and
+retain their phase-specific instructions.

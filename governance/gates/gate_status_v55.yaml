@@ -1,0 +1,46 @@
+schema_version: 1
+status_version: 55
+date: '2026-09-20'
+decision: DEC-0055
+release_id: frozen_pair_models_v2
+previous_status: governance/gates/gate_status_v54.yaml
+model_registry: artifacts/models/frozen_pair_models_v2/MODEL_REGISTRY.json
+models:
+  original_confirmatory_baseline: lightweight_esm2_150m_linear__linear_lr3e-4
+  optimized_pooled_model: esm2_150m__residual_wide__epoch04_ensemble3
+  third_frozen_model: tuna_retrained_ensemble
+  all_three_frozen: true
+  original_two_definitions_changed: false
+  third_model_seeds: [20260803, 20260817, 20260831]
+  third_model_selected_epoch: 4
+  third_model_prediction_unit: equal_three_seed_mean_field_adjusted_logit_ensemble
+  sigmoid_applied: false
+  gp_covariance_refitted: false
+  training_normalizer_used: false
+designation:
+  timing: post_benchmark_and_example_results
+  architecture_attribution: published_Bernett_TUnA_with_iPIN_TRAIN_PU_adaptation
+  third_model_test_C3: 0.8158745071491785
+  optimized_pooled_test_C3: 0.8079478806256634
+  paired_C3_gain: 0.007926626523515168
+  paired_C3_percentile_95: [-0.02897800459680547, 0.038272189226343775]
+  conclusive_primary_C3_superiority: false
+preservation:
+  private_read_only_bundle: .private/frozen_pair_models_v2/bundle
+  previous_private_bundle: .private/frozen_pair_models_v1/bundle
+  previous_release_preserved: true
+  public_checkpoint_hashes: true
+  weights_publicly_redistributed: false
+  original_TUnA_selection_and_evaluation_records_unchanged: true
+execution:
+  new_training_or_encoder_inference: false
+  new_benchmark_scoring_or_metric_recomputation: false
+  test_truth_or_pairs_accessed_for_release: false
+  evaluation_ledger_reset: false
+  synthetic_validation_permitted: true
+claims:
+  PU_ranking_not_binding_accuracy: true
+  calibrated_binding_probability: false
+  independent_replication: false
+  direct_binding_or_partner_specific_generalization_established: false
+  original_TUnA_architecture_claim: false
