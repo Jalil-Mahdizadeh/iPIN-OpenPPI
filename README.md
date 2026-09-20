@@ -64,6 +64,10 @@ screening budgets. The [report](example/twelve_target_comparison_v1/REPORT.md)
 discloses training/development overlaps and sensitivity analyses. This separate
 descriptive application retains the original six-target results.
 
+A separate [U score comparison](example/u_context_background_analysis_v1/REPORT.md)
+finds modestly higher scores for context-matched than background candidates in
+all three models, with target-specific results and exploratory uncertainty estimates.
+
 Concordance is neither binary binding accuracy nor calibrated interaction
 probability. Genuine partner-specific/direct-binding generalization remains
 unresolved. BioPlex AP-MS provides secondary cross-assay association evidence;

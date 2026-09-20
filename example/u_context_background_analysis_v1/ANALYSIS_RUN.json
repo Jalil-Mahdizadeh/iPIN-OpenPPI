@@ -1,0 +1,118 @@
+{
+  "at_utc": "2026-09-20T13:47:02.663416+00:00",
+  "schema": "ipin_context_background_scores_v1",
+  "inputs": [
+    {
+      "path": "example/ERN1/panel_manifest.json",
+      "sha256": "5cd3235ef594caa34cb0661bd7ef0bfa2ab7d0f915ef5f0bcd20896235a45ab3"
+    },
+    {
+      "path": "example/TP53/panel_manifest.json",
+      "sha256": "86582487408ad3ff6d56e3f339efc0c0e8d4a48d6bc423fbd5c72ca31950fadf"
+    },
+    {
+      "path": "example/EGFR/panel_manifest.json",
+      "sha256": "660338b1718de3ec294a5657a04b1bb15556c7c64ffb2f663571dae709bdd455"
+    },
+    {
+      "path": "example/BCL2/panel_manifest.json",
+      "sha256": "1b5141c4bb9c8ff7dbe9e750dd143c1342ab79eacddcc2bba359d00a82379541"
+    },
+    {
+      "path": "example/KEAP1/panel_manifest.json",
+      "sha256": "515a0dc4b28c83ab1550a80d4cc0330483cd704ed424dabfa0e63dfbc83a751f"
+    },
+    {
+      "path": "example/BRCA1/panel_manifest.json",
+      "sha256": "b9e4a3e9f00c74ae0a4eccdeb7cdb9b2dca9ec8478cc957f7f68da63bbfd0333"
+    },
+    {
+      "path": "example/KRAS/panel_manifest.json",
+      "sha256": "00253795ad5162f0eb6f412778111926769aeba7634242c380de248fd6eb6ca6"
+    },
+    {
+      "path": "example/CDK2/panel_manifest.json",
+      "sha256": "c7d275241e131e1288e5eb6c84d4ca016260720a93c4f3eef145bdc05a078e4e"
+    },
+    {
+      "path": "example/HIF1A/panel_manifest.json",
+      "sha256": "6be70a5aac55936f9ba98bf8d2b807c327bf6639f67455eaaf130510eba41fc9"
+    },
+    {
+      "path": "example/CTNNB1/panel_manifest.json",
+      "sha256": "dfd17cffb4d782583cfdb29734eb4b1c8b998b2419b9da75de4ec93d9c4d6aa9"
+    },
+    {
+      "path": "example/TNFRSF1A/panel_manifest.json",
+      "sha256": "b1d54a7b1bf99372776fed03c7891f3e52b0925bcf0d533fe92b85c92d23f155"
+    },
+    {
+      "path": "example/BECN1/panel_manifest.json",
+      "sha256": "cc6f7add2aad0ccc22e012d0ad3b83e02771202cfaa6104f3d5c083624fb3295"
+    },
+    {
+      "path": "example/twelve_target_comparison_v1/RUN_MANIFEST.json",
+      "sha256": "ef61492d0b348ab56fb12e930c234990ca2ce226b42f6b169967394d87bd43ff"
+    },
+    {
+      "path": "example/twelve_target_comparison_v1/all_twelve_targets_scores.csv",
+      "sha256": "cd44ac541640a9d7ab8a7ba5abaa71419da198d0ae01ccd5c7bf654d6d3085d0"
+    },
+    {
+      "path": "example/twelve_target_comparison_v1/per_target_metrics.csv",
+      "sha256": "c7740fb06f9ee89ec1e9980aac07a64ebd6df47197ae7211e9e7619c5d9a622d"
+    },
+    {
+      "path": "example/twelve_target_comparison_v1/panel_config.json",
+      "sha256": "567aa6568c9c2a6bfee0e0df81e730c044ea145e010a13c06bfdd8fd679ec458"
+    },
+    {
+      "path": "example/twelve_target_comparison_v1/sources/reviewed_human.tsv",
+      "sha256": "59e4773da73e76674c46649a122f5941136f5c5e372a0e309138e53029db0755"
+    }
+  ],
+  "protocol_sha256": "ca45c25fb5f5f3046892fa8529f7dbabacc46fa589e581e1cb60ddc2cec7cd89",
+  "analysis_source_sha256": "d9cfea67bd3a848d6ff8dcd0a94336b88db8713c6cc6e2f24c5817010c8560e5",
+  "runtime": {
+    "python": "3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "image": "containers/images/ipin-data-arm64_0.1.2.sif",
+    "image_sha256": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+  },
+  "bootstrap": {
+    "draws": 100000,
+    "seed": 20260920,
+    "unit": "target",
+    "method": "percentile"
+  },
+  "sign_flip_patterns": 4096,
+  "scores_recomputed": false,
+  "protected_test_access": false,
+  "outputs": [
+    {
+      "path": "example/u_context_background_analysis_v1/candidate_annotations.csv",
+      "sha256": "936340d9f9cc4bb9d1d400104697525a9212498b4c58f33db578446b8b205477"
+    },
+    {
+      "path": "example/u_context_background_analysis_v1/leave_one_target_out.csv",
+      "sha256": "ef7f9f096c74bb924208e6fde94b8d090fc727cbd1a173806ec809ae0be502c0"
+    },
+    {
+      "path": "example/u_context_background_analysis_v1/matching_diagnostics.csv",
+      "sha256": "f7c5a0922bbad6df481b1ce54093df7a3cb6538f846f060d599373e82881ab2f"
+    },
+    {
+      "path": "example/u_context_background_analysis_v1/per_anchor_scores.csv",
+      "sha256": "c5ee9e9ad6fb6c4a9ba0e7d8d65ddba68b07658977a907d17a9f6070dbfae312"
+    },
+    {
+      "path": "example/u_context_background_analysis_v1/per_target_scores.csv",
+      "sha256": "4faf0549fddf6c9b9df87b16defeaa84f81bf6761a57d06879ab9f4413ec8d11"
+    },
+    {
+      "path": "example/u_context_background_analysis_v1/summary.csv",
+      "sha256": "ed00dea0a1600e1ee7bbbe9680ef091477f7f3d2592cf7dd15f4474929aec428"
+    }
+  ]
+}

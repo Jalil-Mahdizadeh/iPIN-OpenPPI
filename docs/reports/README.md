@@ -15,6 +15,13 @@ and [independent audit](../../example/twelve_target_comparison_v1/INDEPENDENT_VA
 accompany the report. The original [six-target comparison](../../example/six_target_comparison_v1/REPORT.md)
 is preserved as a historical record.
 
+The [context-versus-background U score analysis](../../example/u_context_background_analysis_v1/REPORT.md)
+compares the two sampling groups using the preserved twelve-target scores.
+It reports matched rank effects, whole-target uncertainty estimates, raw score
+summaries, context-membership and length diagnostics, and retrieval consequences.
+The direction is modestly positive for context U in all three models; these are
+exploratory score differences, with no claim about the groups' true interaction rates.
+
 The current model catalogue is [Frozen pair models v2](../models/FROZEN_PAIR_MODELS_v2.md):
 the original affine ensemble, optimized pooled residual-MLP ensemble, and
 TUnA-retrained as the third frozen iPIN model under

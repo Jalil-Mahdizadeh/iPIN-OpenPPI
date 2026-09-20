@@ -1,16 +1,16 @@
 # Graph Report - iPIN-OpenPPI  (2026-09-20)
 
 ## Corpus Check
-- 1140 files · ~1,243,689 words
+- 1154 files · ~1,274,413 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5677 nodes · 13305 edges · 450 communities (333 shown, 117 thin omitted)
-- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 483 edges (avg confidence: 0.75)
+- 5739 nodes · 13390 edges · 458 communities (342 shown, 116 thin omitted)
+- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 485 edges (avg confidence: 0.75)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `10965452`
+- Built from commit: `d157a266`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,8 +19,8 @@
 - tf_isoform_audit/pipeline.py
 - read
 - sha256_file
-- test_composition_order.py
-- reconciliation/pipeline.py
+- lambourne.py
+- sql_string
 - benchmark/systematic_screen_audit.py
 - verify_raw_acquisition.py
 - acquire_manifest_assets.py
@@ -41,7 +41,7 @@
 - Preacquisition Index v6
 - Issue 0003: HuRI Attempted Pair Universe
 - execute
-- component_split/semantics.py
+- negatome.py
 - test_external_bioplex.py
 - Source Policy 001
 - run_four_gpu_qualification.sh
@@ -124,7 +124,7 @@
 - iPIN-OpenPPI
 - Test Policy
 - ingestion/common.py
-- evaluation.py
+- completed_audit.py
 - graphify reference: extra exports and benchmark
 - DEC-0018: Accept the benchmark-eligibility and sequence-component audit
 - iPIN-OpenPPI project status and execution checkpoint
@@ -139,9 +139,9 @@
 - derived/README.md
 - raw/README.md
 - data/README.md
-- project_root_from
+- require_apptainer
 - M0 final report: pre-split feasibility and leakage stress-test
-- partner_specificity/pipeline.py
+- external_bioplex/pipeline.py
 - sha256_file
 - intact.py
 - DEC-0026: Accept and freeze the pair-level PU-R benchmark artifacts
@@ -150,7 +150,7 @@
 - Q: explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work.
 - Q: what is the exact next step?
 - sha
-- huri.py
+- stable_id
 - lambourne_audit/pipeline.py
 - sequence_component_audit/pipeline.py
 - M0 final benchmark component split
@@ -160,7 +160,7 @@
 - main
 - M0 Pair-Level PU-R Benchmark Protocol Final v1
 - development_evaluation/semantics.py
-- pair_protocol/pipeline.py
+- Counter
 - DEC-0024: Accept and freeze the pair-level PU-R benchmark protocol
 - DEC-0022: Accept and freeze the final benchmark component split
 - iPIN-OpenPPI project status and execution checkpoint
@@ -201,20 +201,20 @@
 - negative_evidence/pipeline.py
 - DEC-0031: Accept Stage 1 public training and development-release readiness
 - publish_model_optimization_followup_v1.py
-- stable_id
+- analyze.py
 - local_diagnostic/pipeline.py
 - scan_tar_gzip_archive
 - RESUME-006: Post-local-representation-diagnostic stop checkpoint
 - DEC-0033: Accept development pre-release qualification and activate release
 - f
 - attempt-001-partition-label-pre-fix/README.md
-- stage1/training.py
+- Do context and background U receive different scores?
 - M1 model runtime and custody qualification final report v1
 - DEC-0030: Accept model runtime and custody for Stage 1
 - iPIN-OpenPPI project status and execution checkpoint
 - iPIN-OpenPPI project status and execution checkpoint
-- ingestion/pipeline.py
-- estimand_policy_validation.py
+- reconciliation/pipeline.py
+- project_root_from
 - model_optimization/run.py
 - DEC-0032: Authorize development release and frozen-scorer evaluation
 - test_homology_source.py
@@ -266,14 +266,14 @@
 - component_split/pipeline.py
 - Q: this repo was supposed to be a research project on developing a model for protein-protein interaction prediction. However, in the end it became a dead end. explore it, understand it, and brainstorm and let me know if you beleive that it is actually a dead end.
 - summarize_direct_binary_feasibility_v1.py
-- git_provenance
+- protocol.py
 - DEC-0044-accept-local-representation-diagnostic-and-stop-branch.md
 - ISSUE-0014-development-embedding-identity-mismatch.md
 - PROJECT_STATUS_v43.md
 - PROJECT_STATUS_v44.md
-- model_optimization/metrics.py
+- test_estimand_policy_validation.py
 - FinalTestFixtures
-- completed_audit.py
+- test_systematic_screen_audit_validation.py
 - Homology/interolog and source-aware challenge: findings
 - Within-anchor partner-specificity diagnostic: results
 - close_protected_final_test_v1.py
@@ -293,14 +293,14 @@
 - DEC-0048-authorize-locked-external-bioplex-challenge.md
 - DEC-0046: Authorize a within-anchor partner-specificity diagnostic
 - PROJECT_STATUS_v45.md
-- composition_order/validation.py
+- composition_order/data.py
 - BIOPLEX_PUBLISHED_RELEASE_USE_v1.md
 - score_ire1_ipin_panel2.py
 - build_panels.py
 - DEC-0047-authorize-homology-and-source-challenge.md
 - ISSUE-0015-residual-homology-in-frozen-component-folds.md
 - PROJECT_STATUS_v47.md
-- homology_source/data.py
+- partner_specificity/pipeline.py
 - FollowupPublicationFixtures
 - Q: ok, act according to your recommendation, apply the new model on the test set, compare it with the baseline model, update the repo, commit and push.
 - One-time protected final test v1
@@ -326,7 +326,7 @@
 - DEC-0050-bounded-direct-binary-feasibility-and-model-stop.md
 - PROJECT_STATUS_v50.md
 - sprint/scripts/comparison.py
-- Counter
+- intact_v2.py
 - Q: commit and push if all relevant docs and files are up to date.
 - Development-only model optimization v1
 - validate
@@ -336,8 +336,8 @@
 - Q: I would ignore the BioPlex experiment because it is not a valid binary interaction panel. Moreover, the unseen test's results is extremely interesting and align very well with the development results. A surprisingly simple frozen-PLM sequence model generalizes strongly to interaction-naïve proteins in a rigorously protected PU benchmark, while network shortcuts dominate when endpoints have prior interaction exposure and genuine partner-specific/direct-binding generalization remains unresolved.
 - Q: since a simple PLM pair model was successful, I would like to suggest a model-architecture optimization on the train/development panel. If it showed improvment, we re-test on the test panel. What do you think?
 - Q: I do not agree with you. If you optimize architecture/hyperparameters exclusively on the development panel, freeze the final model, and then evaluate that final model on the test set, that is a standard and defensible train/dev/test workflow. We only apply the optimized model if it shows improvement on the development panel over the base model. We do not need to develop another unseen test set.
-- validate_degree_metadata
-- load_contract
+- test_development_scoring_and_release.py
+- uniprot.py
 - Published PPI models for an iPIN-OpenPPI manuscript benchmark
 - test_huri_workbooks_v2.py
 - Q: The actual model being proposed is a three-seed ensemble. Its prediction is the averaged ensemble score—not any individual seed.
@@ -350,26 +350,26 @@
 - test_c3_control_shift_v1.py
 - freeze_pair_models_v2.py
 - Original released RAPPPID C1/C2/C3 benchmark
-- prepare_model_optimization_followup_v1.py
-- D-SCRIPT benchmark report
-- evidence.py
+- model_optimization/metrics.py
+- ArrowQueryDatasetWriter
+- build_candidate_relations
 - scripts/pipeline.py
 - test_c3_control_shift_evidence_v1.py
-- stage1/models.py
+- test_development_completed_independent_validator_v2.py
 - TUnA benchmark — startup and execution report
 - score_frozen_models.py
-- Matched-data D-SCRIPT retraining and automatic test evaluation
+- D-SCRIPT benchmark report
 - RetrievalMetricsTests
 - test_frozen_pair_models_v2.py
 - run_c3_control_shift_v1.sh
-- Fixed-ensemble test follow-up v1
+- ParquetBatchWriter
 - Twelve-target comparison of the three frozen iPIN models
-- _components
+- setup_input_views
 - Q: in the 'example' folder where i conducted a real six-target benchmark, what else matrics we can calculate besides the P-vs-U concoedance?
 - Six-target comparison: all embeddings recomputed
 - ComparisonTests
 - recovery_test_v1/run.py
-- deterministic_components
+- validate_manifest
 - Original PLM-interact C1/C2/C3 benchmark
 - RAPPPID matched-data retraining
 - Frozen iPIN pair models v2
@@ -449,6 +449,7 @@
 - TNFRSF1A biological partner panel
 - Twelve-target application of the frozen iPIN catalogue
 - Twelve-target metric protocol
+- Matched-data D-SCRIPT retraining and automatic test evaluation
 - sprint_source_manifest.py
 - mint/README.md
 - pipr/README.md
@@ -461,6 +462,13 @@
 - scripts/policy.py
 - topsy_turvy/README.md
 - tt3d/README.md
+- u_context_background_analysis_v1/render_report.py
+- Q: i want you to double the size of example from 6 to 12, apply all three frozen ipin models, calculate all metrics you mentioned + PU concordance, update all files and docs. ask questions if clarifications needed.
+- Q: explain how P pairs are designed
+- Q: explain the U pair selection in a simple language.
+- Q: investigate if there is a meaningful difference between two groups scores.
+- Frozen pair models v1
+- degree_pair_stratum
 
 ## God Nodes (most connected - your core abstractions)
 1. `sha256_file()` - 127 edges
@@ -494,7 +502,7 @@
 - **Conditional Non-detection Governance** — governance_source_surveys_public_experimental_nondetection_survey_v1_nondetection_survey, governance_risks_risk_register_risk_register, schemas_canonical_negative_evidence_audit_v1_negative_evidence_audit_schema, schemas_warehouse_evidence_warehouse_v1_evidence_warehouse_schema [INFERRED 0.85]
 - **Version 3 Blueprint Provenance** — docs_blueprints_ipin_openppi_final_computational_blueprint_and_workflow_v3_final_computational_blueprint_v3, docs_blueprints_ipin_openppi_expert_project_blueprint_v2_professional_expert_project_blueprint_v2, docs_blueprints_ipin_openppi_independent_technical_review_independent_technical_review, docs_blueprints_ipin_openppi_response_to_independent_review_technical_response_to_independent_review, docs_blueprints_ipin_openppi_expert_comments_on_review_response_expert_group_comments [EXTRACTED 1.00]
 
-## Communities (450 total, 117 thin omitted)
+## Communities (458 total, 116 thin omitted)
 
 ### Community 0 - "validate_development_completed_independent_v1.py"
 Cohesion: 0.18
@@ -509,16 +517,16 @@ Cohesion: 0.08
 Nodes (72): bootstrap(), component_counts(), qualify(), The historical weighted PU metric and paired component draws, on GPU. CPU…, main(), Resumable full-length FP32 native LM cache, without a fixed PPI projection., arrays(), concordance() (+64 more)
 
 ### Community 3 - "sha256_file"
-Cohesion: 0.13
-Nodes (40): AtomicDatasetDirectory, Path, Create a dataset in a sibling temporary directory, then rename atomically., sha256_file(), build_argument_parser(), _decrypt_checked(), evaluate_protected(), main() (+32 more)
+Cohesion: 0.11
+Nodes (52): sha256_file(), build_argument_parser(), _decrypt_checked(), evaluate_protected(), main(), open_protected_candidates(), _prediction_rows(), _project_scorer_inputs() (+44 more)
 
-### Community 4 - "test_composition_order.py"
-Cohesion: 0.12
-Nodes (25): Frozen explanatory diagnostics of composition, order and partner matching., build_matches(), diagnostic_flags(), encode(), frequencies(), lower_above(), Order-free controls and matched within-bait estimands; no fitting., Enumerate all caliper-eligible U, never consulting a learned score. (+17 more)
+### Community 4 - "lambourne.py"
+Cohesion: 0.15
+Nodes (29): build_parser(), contains_record_level_report_keys(), _glob(), _independent_evidence_checks(), independent_orf_id(), independent_raw_outcome(), _independent_source_metrics(), _load_json() (+21 more)
 
-### Community 5 - "reconciliation/pipeline.py"
-Cohesion: 0.05
-Nodes (65): RecordBatch, build_candidate_relations(), DuckDBPyConnection, Priority-ordered participant-to-sequence candidate generation., Stop after the first route yielding candidates for a participant., _validate_policy(), build_evidence_mapping_relation(), DuckDBPyConnection (+57 more)
+### Community 5 - "sql_string"
+Cohesion: 0.17
+Nodes (21): build_evidence_mapping_relation(), DuckDBPyConnection, Evidence-level sequence-mapping coverage and pair projection relation., build_huri_work_tables(), DuckDBPyConnection, HuRI detailed-evidence to provider-pair representation reconciliation., build_mapping_work_tables(), DuckDBPyConnection (+13 more)
 
 ### Community 6 - "benchmark/systematic_screen_audit.py"
 Cohesion: 0.12
@@ -533,23 +541,23 @@ Cohesion: 0.15
 Nodes (41): OpenerDirector, acquire_asset(), AcquisitionError, atomic_json(), build_https_opener(), build_plan(), detect_format(), ensure_inside_apptainer() (+33 more)
 
 ### Community 9 - "validation/systematic_screen_audit.py"
-Cohesion: 0.13
-Nodes (37): Benchmark-design audits and policy support., build_argument_parser(), _json_field(), _load_json(), _load_yaml(), main(), _nested(), Any (+29 more)
+Cohesion: 0.20
+Nodes (25): Benchmark-design audits and policy support., build_argument_parser(), _json_field(), _load_json(), _load_yaml(), main(), _nested(), Any (+17 more)
 
 ### Community 10 - "model_governance.py"
 Cohesion: 0.11
 Nodes (33): build_argument_parser(), _independent_input_verification(), independent_repetition_counts(), independent_run_budget(), independent_selection_key(), independent_window_starts(), IndependentChecks, _load_json() (+25 more)
 
 ### Community 11 - "tf_isoform.py"
-Cohesion: 0.07
-Nodes (64): load_asset_index(), build_parser(), contains_record_level_report_keys(), _glob(), _independent_evidence_checks(), independent_orf_id(), independent_raw_outcome(), _independent_source_metrics() (+56 more)
+Cohesion: 0.13
+Nodes (34): build_parser(), contains_record_keys(), _evidence_checks(), _glob(), _independent_filter(), independent_y2h_outcome(), _load_json(), _load_yaml() (+26 more)
 
 ### Community 12 - "twelve_target_comparison_v1/REPORT.md"
 Cohesion: 0.06
 Nodes (26): BCL2: three frozen iPIN models, Positive-partner ranks, BECN1: three frozen iPIN models, Positive-partner ranks, BRCA1: three frozen iPIN models, Positive-partner ranks, CDK2: three frozen iPIN models, Positive-partner ranks (+18 more)
 
 ### Community 13 - "ValueError"
-Cohesion: 0.14
+Cohesion: 0.15
 Nodes (30): main(), main(), main(), Book, Cell, _raw_bool(), _append_contact_row(), _append_fusion_row() (+22 more)
 
 ### Community 14 - "iPIN-OpenPPI Novelty Claim Matrix"
@@ -558,15 +566,15 @@ Nodes (28): EMBL-EBI Terms of Use snapshot, HuRI Downloads and Terms snapshot, I
 
 ### Community 15 - "lambourne_audit/source.py"
 Cohesion: 0.10
-Nodes (31): benchmark_claim_identifiability(), classify_paper_outcome(), OutcomeSemantics, Any, Pure semantic rules for the Lambourne Y2H-v1 audit. These functions…, Independently count the final Zhang subset and preserve all five outcomes., Frozen claim boundary used by both the pipeline and independent validator., Map the five reported states to assay-bounded semantics, fail closed. (+23 more)
+Nodes (30): benchmark_claim_identifiability(), classify_paper_outcome(), OutcomeSemantics, Any, Pure semantic rules for the Lambourne Y2H-v1 audit. These functions…, Independently count the final Zhang subset and preserve all five outcomes., Frozen claim boundary used by both the pipeline and independent validator., Map the five reported states to assay-bounded semantics, fail closed. (+22 more)
 
 ### Community 16 - "staging.py"
-Cohesion: 0.12
-Nodes (29): build_argument_parser(), Checks, DatasetSummary, _iter_summaries(), _load_json(), _load_yaml(), main(), _nested() (+21 more)
+Cohesion: 0.10
+Nodes (33): build_argument_parser(), Checks, DatasetSummary, _iter_summaries(), _load_json(), _load_yaml(), main(), _nested() (+25 more)
 
 ### Community 17 - "scoring.py"
-Cohesion: 0.14
-Nodes (34): prepare(), Path, Public-input-only preparation; never resolve or read evaluator keys., main(), _atomic_json(), _load(), main(), Path (+26 more)
+Cohesion: 0.13
+Nodes (36): prepare(), Path, Public-input-only preparation; never resolve or read evaluator keys., main(), _atomic_json(), _load(), main(), Path (+28 more)
 
 ### Community 18 - "DEC-0012: Accept negative-evidence discovery audit"
 Cohesion: 0.26
@@ -577,12 +585,12 @@ Cohesion: 0.13
 Nodes (26): LRScheduler, assert_nested_equal(), execute_fixture(), main(), make_model(), parse_args(), Any, Module (+18 more)
 
 ### Community 20 - "pre_split_feasibility.py"
-Cohesion: 0.11
-Nodes (37): Any, validate_config(), build_argument_parser(), _check_sidecar(), _compare_fields(), _components(), _degree_values(), _distribution() (+29 more)
+Cohesion: 0.12
+Nodes (35): Any, validate_config(), build_argument_parser(), _check_sidecar(), _compare_fields(), _components(), _degree_values(), _distribution() (+27 more)
 
 ### Community 21 - "component_split.py"
-Cohesion: 0.16
-Nodes (30): _allocate(), build_argument_parser(), _check_sidecar(), _component_id(), _contains(), _edges(), _evaluate(), _histogram() (+22 more)
+Cohesion: 0.07
+Nodes (55): Governance-bounded final benchmark component-partition skeleton., allocate_candidate(), base_component_order(), candidate_order_indices(), deterministic_components(), DisjointSet, evaluate_candidate(), opportunity_masks() (+47 more)
 
 ### Community 22 - "validate"
 Cohesion: 0.30
@@ -600,13 +608,13 @@ Nodes (16): Gate Status v3, Gate Status v4, Gate Status v5, Gate Status v6, Gate
 Cohesion: 0.24
 Nodes (14): DistributedDataParallel, execute(), main(), make_model(), parse_args(), Any, Module, Namespace (+6 more)
 
-### Community 26 - "component_split/semantics.py"
-Cohesion: 0.19
-Nodes (19): allocate_candidate(), base_component_order(), candidate_order_indices(), evaluate_candidate(), opportunity_masks(), _pool_counts(), prepare_allocation(), PreparedAllocation (+11 more)
+### Community 26 - "negatome.py"
+Cohesion: 0.12
+Nodes (21): _dataset_semantics(), NegatomeRow, parse_mi_accession(), parse_negatome_file(), Any, Path, Lossless parsing and parent/stringent reconciliation for Negatome 2.0., Prove exact multiset subset membership and link every physical source row. (+13 more)
 
 ### Community 27 - "test_external_bioplex.py"
-Cohesion: 0.12
-Nodes (25): tsv(), make_panel(), project_source(), Validate source-local inventories before the exact public projection., Restrict source-local evidence and orient existing U, never invent U., example_data(), parametrize, quartet_fixture() (+17 more)
+Cohesion: 0.13
+Nodes (26): tsv(), make_panel(), project_source(), Validate source-local inventories before the exact public projection., Restrict source-local evidence and orient existing U, never invent U., select_directed_quartets(), example_data(), parametrize (+18 more)
 
 ### Community 28 - "Source Policy 001"
 Cohesion: 0.19
@@ -733,16 +741,16 @@ Cohesion: 0.67
 Nodes (3): Executable Entry Points, Arrhenius Slurm Jobs, Source Modules
 
 ### Community 80 - "pre_split_audit/pipeline.py"
-Cohesion: 0.06
-Nodes (62): Governance-bounded aggregate pre-split feasibility and leakage audit., _allocation_summary(), _base_component_order(), _build_aggregate_tables(), build_argument_parser(), _claim_rows(), _component_degree_row(), _component_summary() (+54 more)
+Cohesion: 0.07
+Nodes (59): Governance-bounded aggregate pre-split feasibility and leakage audit., _allocation_summary(), _base_component_order(), _build_aggregate_tables(), build_argument_parser(), _claim_rows(), _component_degree_row(), _component_summary() (+51 more)
 
 ### Community 109 - "ingestion/common.py"
-Cohesion: 0.10
-Nodes (29): DataType, Schema, canonical_json(), Shared ingestion primitives with deterministic IDs and atomic Parquet output., RawAsset, strip_version(), Typed context shared by source parsers., _arrow_type() (+21 more)
+Cohesion: 0.08
+Nodes (34): DataType, Schema, load_asset_index(), Shared ingestion primitives with deterministic IDs and atomic Parquet output., RawAsset, verify_asset(), ParsingContext, Any (+26 more)
 
-### Community 110 - "evaluation.py"
-Cohesion: 0.25
-Nodes (21): _atomic_json(), main(), Path, apply_selection_and_kill_rules(), c1_novel_u_metrics(), _candidate_metadata(), _component_indexes(), degree_and_hub_diagnostics() (+13 more)
+### Community 110 - "completed_audit.py"
+Cohesion: 0.13
+Nodes (40): main(), _atomic_json(), main(), Path, _artifact_record(), _atomic_json(), _check(), contains_public_pair_identity() (+32 more)
 
 ### Community 111 - "graphify reference: extra exports and benchmark"
 Cohesion: 0.22
@@ -777,28 +785,28 @@ Cohesion: 0.50
 Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify reference: commit hook and native CLAUDE.md integration
 
 ### Community 120 - "benchmark/README.md"
-Cohesion: 0.08
-Nodes (18): RAPPPID latest recovery checkpoints: C1/C2/C3 test, Completed comparisons, Execution and provenance, Predictor scope and limitations, Published-model benchmarks, TUnA benchmark, TUnA final benchmark results, Apptainer environments (+10 more)
+Cohesion: 0.10
+Nodes (14): RAPPPID latest recovery checkpoints: C1/C2/C3 test, Completed comparisons, Execution and provenance, Predictor scope and limitations, Published-model benchmarks, TUnA benchmark, TUnA final benchmark results, Apptainer environments (+6 more)
 
-### Community 125 - "project_root_from"
-Cohesion: 0.09
-Nodes (43): main(), project_root_from(), require_apptainer(), Governance-bounded benchmark eligibility and sequence-component audit., _download(), _load_yaml(), prepare_mmseqs_install(), Any (+35 more)
+### Community 125 - "require_apptainer"
+Cohesion: 0.08
+Nodes (47): main(), require_apptainer(), load_contract(), Path, Governance-bounded benchmark eligibility and sequence-component audit., validate_config(), _download(), _load_yaml() (+39 more)
 
 ### Community 126 - "M0 final report: pre-split feasibility and leakage stress-test"
 Cohesion: 0.11
 Nodes (17): 1. Scope and immutable inputs, 2.1 Positive-network summaries, 2.2 Similarity challenges, 2.3 Ephemeral allocation trials, 2. Governed methods, 3.1 Source composition, 3.2 Endpoint degree and hub concentration, 3.3 ALL-source component positive-edge load (+9 more)
 
-### Community 127 - "partner_specificity/pipeline.py"
-Cohesion: 0.05
-Nodes (85): save_npz(), compute(), evaluate(), match_census(), point_record(), A single frozen execution: features and matches, then explanatory readout., restricted_queries(), score_map() (+77 more)
+### Community 127 - "external_bioplex/pipeline.py"
+Cohesion: 0.06
+Nodes (78): save_npz(), Frozen explanatory diagnostics of composition, order and partner matching., compute(), evaluate(), match_census(), point_record(), A single frozen execution: features and matches, then explanatory readout., restricted_queries() (+70 more)
 
 ### Community 128 - "sha256_file"
 Cohesion: 0.06
-Nodes (77): main(), Exact constants frozen by DEC-0028 and activated by DEC-0030., _all_finite(), _artifact(), audit_embeddings(), _check(), _max_standardization_difference(), Any (+69 more)
+Nodes (73): close(), passed_tests(), main(), Exact constants frozen by DEC-0028 and activated by DEC-0030., _all_finite(), _artifact(), audit_embeddings(), _check() (+65 more)
 
 ### Community 129 - "intact.py"
-Cohesion: 0.42
-Nodes (22): Element, _attributes(), _child(), _children(), _confidence_values(), _cv_term(), _descendant_text(), _interaction_xrefs() (+14 more)
+Cohesion: 0.25
+Nodes (33): Element, _assay_family(), _attributes(), _child(), _children(), _confidence_values(), _cv_term(), _descendant_text() (+25 more)
 
 ### Community 130 - "DEC-0026: Accept and freeze the pair-level PU-R benchmark artifacts"
 Cohesion: 0.20
@@ -821,20 +829,20 @@ Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: what is the exact next step?, Source Nodes
 
 ### Community 135 - "sha"
-Cohesion: 0.25
-Nodes (18): audit(), Path, Read-only full-census replay of development selection and training records., close(), historical_integrity(), Path, Immutable artifact helpers and the prospective recipe census., read() (+10 more)
+Cohesion: 0.24
+Nodes (20): audit(), Path, close(), publish(), Path, Validate the completed development search and release aggregate evidence only., historical_integrity(), Path (+12 more)
 
-### Community 136 - "huri.py"
-Cohesion: 0.26
-Nodes (20): _ensembl_by_kind(), _feature_parts(), _identifiers(), _identifiers_for_database(), _interaction_semantics(), _pair_token(), parse_huri(), _parse_identifier() (+12 more)
+### Community 136 - "stable_id"
+Cohesion: 0.16
+Nodes (28): canonical_json(), stable_id(), strip_version(), _ensembl_by_kind(), _feature_parts(), _identifiers(), _identifiers_for_database(), _interaction_semantics() (+20 more)
 
 ### Community 137 - "lambourne_audit/pipeline.py"
-Cohesion: 0.15
-Nodes (31): Governance-bounded audit of the Lambourne et al. human Y2H-v1 panel., load_negatome_pair_index(), _aggregate_panel_metrics(), _archive_inventory_rows(), _bool_value(), _build_panel_rows(), build_parser(), _family_ids_for_candidates() (+23 more)
+Cohesion: 0.12
+Nodes (37): Governance-bounded audit of the Lambourne et al. human Y2H-v1 panel., load_negatome_pair_index(), load_sequence_family_maps(), Path, Return accession and exact-sequence mappings for frozen UniRef100/90/50., _aggregate_panel_metrics(), _archive_inventory_rows(), _bool_value() (+29 more)
 
 ### Community 138 - "sequence_component_audit/pipeline.py"
 Cohesion: 0.11
-Nodes (50): Path, Fail-closed configuration and output guards for component splitting., require_output_paths(), Fail-closed guards for the pair-level PU-R protocol freeze., Fail-closed configuration and output guards for the pre-split audit., build_argument_parser(), _build_components(), _build_eligibility() (+42 more)
+Nodes (53): Fail-closed configuration and output guards for component splitting., Path, Fail-closed guards for the pair-level PU-R protocol freeze., resolve_and_verify_documents(), _verify_inputs(), Path, Fail-closed configuration and output guards for the pre-split audit., require_output_paths() (+45 more)
 
 ### Community 139 - "M0 final benchmark component split"
 Cohesion: 0.14
@@ -862,11 +870,11 @@ Nodes (18): Candidate algebra and deterministic unlabeled sampling, Claim bounda
 
 ### Community 145 - "development_evaluation/semantics.py"
 Cohesion: 0.09
-Nodes (47): main(), _check(), _fixture_rows(), Any, ndarray, Path, Table, Production pre-release audit for the DEC-0032 executable boundary. (+39 more)
+Nodes (44): main(), _check(), _fixture_rows(), Any, ndarray, Path, Table, Production pre-release audit for the DEC-0032 executable boundary. (+36 more)
 
-### Community 146 - "pair_protocol/pipeline.py"
-Cohesion: 0.09
-Nodes (44): Frozen pair-level positive-unlabeled ranking protocol., _analyze(), audit_protocol(), build_argument_parser(), _candidate_designs(), _cell_summary(), _degree_analysis(), _evidence_completeness() (+36 more)
+### Community 146 - "Counter"
+Cohesion: 0.11
+Nodes (41): Counter, Frozen pair-level positive-unlabeled ranking protocol., _analyze(), audit_protocol(), build_argument_parser(), _candidate_designs(), _cell_summary(), _degree_analysis() (+33 more)
 
 ### Community 147 - "DEC-0024: Accept and freeze the pair-level PU-R benchmark protocol"
 Cohesion: 0.17
@@ -885,8 +893,8 @@ Cohesion: 0.25
 Nodes (7): Binding C1/C2/C3 semantics, Continuing prohibitions, DEC-0023: Authorize the pair-level PU-R benchmark protocol freeze, Decision, Evidence and holdout boundary, Required frozen protocol, Required validation and return
 
 ### Community 151 - "overlap.py"
-Cohesion: 0.10
-Nodes (23): FamilyMap, build_contamination_index(), contamination_flags(), ContaminationIndex, _family_pair_signatures(), load_sequence_family_maps(), Any, Path (+15 more)
+Cohesion: 0.23
+Nodes (11): FamilyMap, build_contamination_index(), contamination_flags(), ContaminationIndex, _family_pair_signatures(), Any, DuckDBPyConnection, Frozen evidence overlap and bounded UniRef contamination utilities. (+3 more)
 
 ### Community 152 - "iPIN-OpenPPI project status and execution checkpoint"
 Cohesion: 0.29
@@ -949,8 +957,8 @@ Cohesion: 0.23
 Nodes (14): dtype, EsmModel, EsmTokenizer, atomic_json(), checkpoint_restart_fixture(), configure_determinism(), main(), parse_args() (+6 more)
 
 ### Community 167 - "construction.py"
-Cohesion: 0.10
-Nodes (56): _allocation_rows(), build_argument_parser(), _candidate_base_sql(), _candidate_token(), _cell_specs(), CellSpec, construct_artifacts(), _construct_into() (+48 more)
+Cohesion: 0.11
+Nodes (46): _allocation_rows(), build_argument_parser(), _candidate_base_sql(), _candidate_token(), _cell_specs(), CellSpec, construct_artifacts(), _construct_into() (+38 more)
 
 ### Community 168 - "M1 model-governance and baseline/training-protocol report v1"
 Cohesion: 0.18
@@ -1001,16 +1009,16 @@ Cohesion: 0.26
 Nodes (20): main(), _atomic_json(), _load_json(), _load_yaml(), _private_target(), _public_regular(), Any, Path (+12 more)
 
 ### Community 182 - "Fixed-ensemble follow-up on the existing test v1"
-Cohesion: 0.40
-Nodes (5): Fixed-ensemble follow-up on the existing test v1, Fixed predictor and acceptance, Metrics and interpretation, Qualification before access, Staged execution and baseline
+Cohesion: 0.18
+Nodes (10): Fixed-ensemble follow-up on the existing test v1, Fixed predictor and acceptance, Metrics and interpretation, Qualification before access, Staged execution and baseline, Execution, amendment and verification, Fixed-ensemble test follow-up v1, Outcome (+2 more)
 
 ### Community 183 - "protected_final_core_v1.py"
 Cohesion: 0.14
 Nodes (40): cell_path(), evaluate(), freeze_predictions(), import_baseline(), now(), open_candidates(), qualify(), One fixed-ensemble follow-up; reuse frozen primitives without changing them.… (+32 more)
 
 ### Community 184 - "negative_evidence/pipeline.py"
-Cohesion: 0.09
-Nodes (48): conflict_overlays(), effective_tier(), permitted_role(), Reliability tiers and conflict overlays for conditional negative evidence., reliability_tier(), index_intact_negatives(), IntactNegativeRecord, load_intact_negative_records() (+40 more)
+Cohesion: 0.10
+Nodes (49): conflict_overlays(), effective_tier(), permitted_role(), Reliability tiers and conflict overlays for conditional negative evidence., reliability_tier(), build_positive_pair_index(), _glob(), index_intact_negatives() (+41 more)
 
 ### Community 185 - "DEC-0031: Accept Stage 1 public training and development-release readiness"
 Cohesion: 0.25
@@ -1020,9 +1028,9 @@ Nodes (7): Accepted execution, Continuing prohibitions, DEC-0031: Accept Stage 1
 Cohesion: 0.24
 Nodes (13): digest(), encode(), exclusive(), finite(), interval(), main(), Strictly allowlisted aggregate publication; no row, model or key inputs., validate() (+5 more)
 
-### Community 188 - "stable_id"
-Cohesion: 0.47
-Nodes (5): stable_id(), AuditReferenceMaps, Any, Deterministic mapping of exact TF clones and ORFeome partner constructs., _sorted_strings()
+### Community 188 - "analyze.py"
+Cohesion: 0.22
+Nodes (18): context_matches(), holm(), main(), prepare(), Exploratory context/background score comparison on preserved example data., Fraction of cross-group comparisons won by context, with half for ties., read_csv(), score_description() (+10 more)
 
 ### Community 189 - "local_diagnostic/pipeline.py"
 Cohesion: 0.11
@@ -1044,9 +1052,9 @@ Nodes (6): Accepted implementation and evidence, Activated release boundary, Con
 Cohesion: 0.06
 Nodes (94): main(), now(), Run original-only benchmark on the already allocated interactive GPU., canonical(), close(), full_hsp(), hsps(), predict() (+86 more)
 
-### Community 195 - "stage1/training.py"
-Cohesion: 0.11
-Nodes (27): main(), parameter_count(), Tensor, weighted_pairwise_logistic_loss(), _all_finite(), atomic_torch_checkpoint(), configure_reproducibility(), _order_record() (+19 more)
+### Community 195 - "Do context and background U receive different scores?"
+Cohesion: 0.13
+Nodes (13): Context versus background U score analysis, Descriptive checks and sensitivity, Main comparison, Statistical implementation references, Context versus background U scores, Reproduce, Consequence for positive-partner retrieval, Do context and background U receive different scores? (+5 more)
 
 ### Community 196 - "M1 model runtime and custody qualification final report v1"
 Cohesion: 0.29
@@ -1064,17 +1072,17 @@ Nodes (4): Accepted runtime and custody, Active execution boundary, Continuing h
 Cohesion: 0.33
 Nodes (5): Accepted pre-release qualification, Active development-only execution, Continuing boundary, iPIN-OpenPPI project status and execution checkpoint, Required return
 
-### Community 200 - "ingestion/pipeline.py"
-Cohesion: 0.30
-Nodes (13): utc_now(), verify_asset(), build_argument_parser(), main(), _make_read_only(), parse_primary_sources(), Any, ArgumentParser (+5 more)
+### Community 200 - "reconciliation/pipeline.py"
+Cohesion: 0.14
+Nodes (21): AtomicDatasetDirectory, Path, Create a dataset in a sibling temporary directory, then rename atomically., utc_now(), Deterministic source, identifier, sequence, and construct reconciliation., build_argument_parser(), _iter_manifest_files(), main() (+13 more)
 
-### Community 201 - "estimand_policy_validation.py"
-Cohesion: 0.13
-Nodes (36): add_check(), load_yaml(), main(), nested_get(), Any, Path, sha256_file(), validate_manifest() (+28 more)
+### Community 201 - "project_root_from"
+Cohesion: 0.29
+Nodes (16): build_argument_parser(), _load_json(), _load_yaml(), main(), _nested(), Any, ArgumentParser, Checks (+8 more)
 
 ### Community 202 - "model_optimization/run.py"
-Cohesion: 0.20
-Nodes (17): build(), load_state(), Module, Small symmetric heads for existing, training-standardized frozen PLM vectors., save_state(), arrays(), configure_cuda(), Deadline (+9 more)
+Cohesion: 0.14
+Nodes (24): build(), load_state(), Module, Small symmetric heads for existing, training-standardized frozen PLM vectors., save_state(), arrays(), configure_cuda(), Deadline (+16 more)
 
 ### Community 203 - "DEC-0032: Authorize development release and frozen-scorer evaluation"
 Cohesion: 0.17
@@ -1109,8 +1117,8 @@ Cohesion: 0.33
 Nodes (5): Accepted preconditions, Authorized development package, Continuing boundary, iPIN-OpenPPI project status and execution checkpoint, Required return
 
 ### Community 213 - "stage1/audit.py"
-Cohesion: 0.13
-Nodes (29): audit_stage1_implementation(), _check(), Any, Path, Production audit of the frozen Stage 1 implementation before execution., build_training_graph(), common_neighbors_score(), component_mass_product_score() (+21 more)
+Cohesion: 0.05
+Nodes (72): main(), EndpointHead, Matched additive endpoint controls; the historical pair head is unchanged., audit_stage1_implementation(), _check(), Any, Path, Production audit of the frozen Stage 1 implementation before execution. (+64 more)
 
 ### Community 214 - "read"
 Cohesion: 0.10
@@ -1218,7 +1226,7 @@ Nodes (4): Authority, Authorized work, DEC-0045: Authorize development embedding
 
 ### Community 244 - "pipeline_v4.py"
 Cohesion: 0.12
-Nodes (16): Source-specific, provenance-preserving ingestion for iPIN-OpenPPI., _CardinalityCorrectingWriter, _correct_participant_cardinality(), _emit_interaction_v3(), Any, IntAct parser revision with exact unary/binary/n-ary semantics. Revision 2…, main(), _option_present() (+8 more)
+Nodes (18): Source-specific, provenance-preserving ingestion for iPIN-OpenPPI., _CardinalityCorrectingWriter, _correct_participant_cardinality(), _emit_interaction_v3(), parse_intact(), Any, Path, IntAct parser revision with exact unary/binary/n-ary semantics. Revision 2… (+10 more)
 
 ### Community 245 - "Q: Act on the proposed next step and determine quickly whether a local, residue/domain-aware representation shows incremental public-training signal."
 Cohesion: 0.40
@@ -1229,8 +1237,8 @@ Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: so this project is a real dead end?, Source Nodes
 
 ### Community 250 - "component_split/pipeline.py"
-Cohesion: 0.15
-Nodes (26): Governance-bounded final benchmark component-partition skeleton., build_argument_parser(), _edge_set(), _load_graphs(), _load_parent_state(), _load_positive_pairs(), main(), Any (+18 more)
+Cohesion: 0.13
+Nodes (29): build_argument_parser(), _edge_set(), _load_graphs(), _load_parent_state(), _load_positive_pairs(), main(), Any, ArgumentParser (+21 more)
 
 ### Community 251 - "Q: this repo was supposed to be a research project on developing a model for protein-protein interaction prediction. However, in the end it became a dead end. explore it, understand it, and brainstorm and let me know if you beleive that it is actually a dead end."
 Cohesion: 0.40
@@ -1240,21 +1248,21 @@ Nodes (4): Answer, Outcome, Q: this repo was supposed to be a research project o
 Cohesion: 0.25
 Nodes (16): csv_inventory(), digest(), git_blob(), json_bytes(), main(), Path, Bounded source acquisition/schema inventory; no outcome labels or model scores.…, Inventory missingness without replacing missing values by assay zeros. (+8 more)
 
-### Community 253 - "git_provenance"
-Cohesion: 0.18
-Nodes (24): git_provenance(), Static governance for the first bounded model protocol., _all_false(), _all_prohibited(), audit_protocol(), build_argument_parser(), _check(), load_yaml() (+16 more)
+### Community 253 - "protocol.py"
+Cohesion: 0.19
+Nodes (22): Static governance for the first bounded model protocol., _all_false(), _all_prohibited(), audit_protocol(), build_argument_parser(), _check(), load_yaml(), main() (+14 more)
 
-### Community 258 - "model_optimization/metrics.py"
-Cohesion: 0.16
-Nodes (16): publish(), Path, Validate the completed development search and release aggregate evidence only., bootstrap(), gate(), point(), ndarray, Exact weighted PU concordance and paired component resampling on CUDA. (+8 more)
+### Community 258 - "test_estimand_policy_validation.py"
+Cohesion: 0.36
+Nodes (14): _failures(), _policy(), test_accepted_status_is_rejected_before_expert_approval(), test_calibration_metric_cannot_become_primary(), test_construct_threshold_cannot_be_weakened(), test_effective_policy_is_rejected_before_expert_approval(), test_frozen_proposal_semantics_pass(), test_label_authority_is_rejected() (+6 more)
 
 ### Community 259 - "FinalTestFixtures"
 Cohesion: 0.08
 Nodes (5): SimpleNamespace, FollowupFixtures, Synthetic-only fixed-ensemble, import, token and one-attempt custody tests., FinalTestFixtures, Synthetic-only final-test harness checks; never load protected data.
 
-### Community 260 - "completed_audit.py"
-Cohesion: 0.20
-Nodes (19): main(), _artifact_record(), _atomic_json(), _check(), contains_public_pair_identity(), ensemble_columns_exact(), _load_json(), Any (+11 more)
+### Community 260 - "test_systematic_screen_audit_validation.py"
+Cohesion: 0.36
+Nodes (12): _audit(), _config(), _guardrail_failures(), parametrize, Path, test_report_scope_must_share_run_directory(), test_report_scope_rules(), test_valid_audit_guardrails_pass() (+4 more)
 
 ### Community 261 - "Homology/interolog and source-aware challenge: findings"
 Cohesion: 0.18
@@ -1316,9 +1324,9 @@ Nodes (4): Answer, Outcome, Q: what is the best next step? maybe a prospectively
 Cohesion: 0.50
 Nodes (3): Authority and scope, Boundaries, DEC-0046: Authorize a within-anchor partner-specificity diagnostic
 
-### Community 280 - "composition_order/validation.py"
-Cohesion: 0.09
-Nodes (36): edges(), readout(), close(), passed_tests(), Independent counter/direct-comparison audit; same author, not peer review., Include a unit-multiplier draw for the point, then explicit per-bait ratios., reference_matched(), reference_matches() (+28 more)
+### Community 280 - "composition_order/data.py"
+Cohesion: 0.08
+Nodes (44): edges(), readout(), config(), freeze(), prior_closures(), Fail-closed, append-only registration for a diagnostic of existing evidence., register(), runtime() (+36 more)
 
 ### Community 282 - "score_ire1_ipin_panel2.py"
 Cohesion: 0.44
@@ -1328,9 +1336,9 @@ Nodes (12): canonical_json(), fetch_uniprot(), main(), Any, Path, read_pairs(), 
 Cohesion: 0.35
 Nodes (10): download(), intact_partners(), location(), main(), prior_neighbors(), Reuse only verified source bytes from this new run, never scored features., read_pool(), selection_key() (+2 more)
 
-### Community 287 - "homology_source/data.py"
-Cohesion: 0.10
-Nodes (59): config(), freeze(), prior_closures(), Fail-closed, append-only registration for a diagnostic of existing evidence., register(), runtime(), save_numpy(), verify_freeze() (+51 more)
+### Community 287 - "partner_specificity/pipeline.py"
+Cohesion: 0.07
+Nodes (82): acquire(), allowed_url(), AllowlistedRedirect, config(), freeze(), Immutable registration and bounded published-source acquisition., register(), verify_freeze() (+74 more)
 
 ### Community 288 - "FollowupPublicationFixtures"
 Cohesion: 0.43
@@ -1382,7 +1390,7 @@ Nodes (4): Answer, Outcome, Q: is it a dead end project?, Source Nodes
 
 ### Community 304 - "pair_artifacts.py"
 Cohesion: 0.08
-Nodes (54): build_argument_parser(), _candidate_sql(), _candidate_union_check(), Checks, _decrypt_package(), _expected_positive_keys(), IndependentSpec, main() (+46 more)
+Nodes (53): build_argument_parser(), _candidate_sql(), _candidate_union_check(), Checks, _decrypt_package(), _expected_positive_keys(), IndependentSpec, main() (+45 more)
 
 ### Community 306 - "validate_direct_binary_feasibility_v1.py"
 Cohesion: 0.67
@@ -1400,9 +1408,9 @@ Nodes (4): Answer, Outcome, Q: alright! 1- Heavily de-emphasize the BioPlex expe
 Cohesion: 0.16
 Nodes (33): bootstrap(), component_counts(), qualify(), The historical weighted PU metric and paired component draws, on GPU. CPU…, concordance(), cuda(), now(), Small, benchmark-local I/O and numerical helpers; no repository mutations. (+25 more)
 
-### Community 313 - "Counter"
-Cohesion: 0.10
-Nodes (31): Counter, ParquetBatchWriter, Any, Write validated, fixed-schema Parquet parts and retain exact statistics., ParsingContext, Any, _assay_family(), _emit_interaction() (+23 more)
+### Community 313 - "intact_v2.py"
+Cohesion: 0.28
+Nodes (11): iter_reconstructed_mutation_rows(), parse_intact(), _parse_mutations_v2(), Any, Path, Active IntAct parser with deterministic repair of malformed TSV line wraps. The…, Yield logical TSV rows with their inclusive physical-line span., _header() (+3 more)
 
 ### Community 314 - "Q: commit and push if all relevant docs and files are up to date."
 Cohesion: 0.40
@@ -1421,7 +1429,7 @@ Cohesion: 0.11
 Nodes (15): Data-informed component supplement, C3 control-shift investigation v1, Diagnostic sequence, Question and boundaries, 1. What actually changed?, 2. Scoring parity passed, 3-mer: within-component positives dominate its excess over chance, 3. The largest-component hypothesis did not hold up (+7 more)
 
 ### Community 318 - "PreservationFixtures"
-Cohesion: 0.17
+Cohesion: 0.16
 Nodes (7): skipUnless, features(), PairHead, Tensor, PreservationFixtures, Synthetic preservation tests: no benchmark pairs, labels or evaluation entry., registry_fixture()
 
 ### Community 319 - "Q: conduct the model's performance on the final test."
@@ -1440,21 +1448,21 @@ Nodes (4): Answer, Outcome, Q: since a simple PLM pair model was successful, I w
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: I do not agree with you. If you optimize architecture/hyperparameters exclusively on the development panel, freeze the final model, and then evaluate that final model on the test set, that is a standard and defensible train/dev/test workflow. We only apply the optimized model if it shows improvement on the development panel over the base model. We do not need to develop another unseen test set., Source Nodes
 
-### Community 323 - "validate_degree_metadata"
-Cohesion: 0.27
-Nodes (9): Keep source-design strata distinct from pooled scorer features., validate_degree_metadata(), _degree_rows(), parametrize, Table, test_issue_0009_permissive_concat_changes_only_nullability_metadata(), test_issue_0010_primary_degree_metadata_requires_pooled_graph_identity(), test_issue_0010_source_design_degree_is_validated_by_frozen_stratum() (+1 more)
+### Community 323 - "test_development_scoring_and_release.py"
+Cohesion: 0.32
+Nodes (7): _degree_rows(), parametrize, Table, test_issue_0009_permissive_concat_changes_only_nullability_metadata(), test_issue_0010_primary_degree_metadata_requires_pooled_graph_identity(), test_issue_0010_source_design_degree_is_validated_by_frozen_stratum(), test_optimized_checkpoint_scorer_matches_frozen_model()
 
-### Community 324 - "load_contract"
-Cohesion: 0.10
-Nodes (22): load_contract(), Path, _extract_release(), _mapping_row(), _optional_int(), _parse_gzip_tsv(), parse_sifts(), Any (+14 more)
+### Community 324 - "uniprot.py"
+Cohesion: 0.15
+Nodes (20): _clean_annotation(), iter_fasta(), parse_dat_metadata(), _parse_fasta_header(), parse_uniprot(), Any, Path, Streaming UniProt flat-file, FASTA, and identifier-mapping parser. (+12 more)
 
 ### Community 325 - "Published PPI models for an iPIN-OpenPPI manuscript benchmark"
 Cohesion: 0.05
 Nodes (40): 0. Binding comparison and workspace requirements, 10. Reusing the existing test: valid follow-up, clear disclosure, 11. High-value scientific questions beyond a leaderboard, 12. A staged implementation plan, 13. What the manuscript and reproducibility package should contain, 1. Recommendation in brief, 2. What “the same philosophy” should mean here, 3. Why the comparison needs more than retraining a classifier (+32 more)
 
 ### Community 326 - "test_huri_workbooks_v2.py"
-Cohesion: 0.39
-Nodes (6): _asset(), CaptureWriter, _config(), test_contact_annotation_is_typed_but_never_label_authorized(), test_fusion_interference_preserves_orientation_and_missingness(), test_workbook_headers_are_strict()
+Cohesion: 0.33
+Nodes (7): _asset(), CaptureWriter, _config(), test_contact_annotation_is_typed_but_never_label_authorized(), test_fusion_interference_preserves_orientation_and_missingness(), test_staging_v2_contract_and_active_parser_version(), test_workbook_headers_are_strict()
 
 ### Community 327 - "Q: The actual model being proposed is a three-seed ensemble. Its prediction is the averaged ensemble score—not any individual seed."
 Cohesion: 0.40
@@ -1484,17 +1492,17 @@ Nodes (10): create(), inputs(), pinned(), Path, qualify_states(), Register the u
 Cohesion: 0.10
 Nodes (17): RAPPPID benchmark, Artifacts, Coverage, verification and timing, Exact selected states and inference policy, RAPPPID: latest saved checkpoints on C1/C2/C3 test, Results, Container and numerical qualification, Evaluation protocol and timing (+9 more)
 
-### Community 337 - "prepare_model_optimization_followup_v1.py"
-Cohesion: 0.39
-Nodes (6): audit(), Close this follow-up without decryption, scoring, fitting or new truth access., historical_check(), prepare(), Verify fixed state and GPU/CPU development replay before protected access., synthetic_tests()
+### Community 337 - "model_optimization/metrics.py"
+Cohesion: 0.19
+Nodes (12): audit(), Close this follow-up without decryption, scoring, fitting or new truth access., historical_check(), prepare(), Verify fixed state and GPU/CPU development replay before protected access., synthetic_tests(), Read-only full-census replay of development selection and training records., bootstrap() (+4 more)
 
-### Community 338 - "D-SCRIPT benchmark report"
-Cohesion: 0.22
-Nodes (9): Completed stage: matched-data retraining and testing, Completed stage: original-checkpoint test comparison, D-SCRIPT benchmark report, Earlier stage: native container qualification, Native model identity and environment, Reproduction and artifacts, Status, Stop point (+1 more)
-
-### Community 339 - "evidence.py"
+### Community 338 - "ArrowQueryDatasetWriter"
 Cohesion: 0.18
-Nodes (16): DuckDBPyConnection, Aggregate the record-level positive view left by build_positive_pair_index., source_specific_positive_index(), build_positive_pair_index(), _glob(), Any, DuckDBPyConnection, Path (+8 more)
+Nodes (8): RecordBatch, ArrowQueryDatasetWriter, Any, DuckDBPyConnection, Path, Table, Deterministic Arrow/Parquet output for DuckDB reconciliation queries., Stream a DuckDB query into fixed-schema, checksummed Parquet parts.
+
+### Community 339 - "build_candidate_relations"
+Cohesion: 0.21
+Nodes (10): build_candidate_relations(), DuckDBPyConnection, Priority-ordered participant-to-sequence candidate generation., Stop after the first route yielding candidates for a participant., _validate_policy(), _fixture_connection(), DuckDBPyConnection, test_manifest_file_discovery_stops_at_table_summary() (+2 more)
 
 ### Community 340 - "scripts/pipeline.py"
 Cohesion: 0.32
@@ -1504,9 +1512,9 @@ Nodes (16): container(), Host-side, allowlisted container launcher; no inherited
 Cohesion: 0.48
 Nodes (6): Public aggregate consistency checks; no pair data or model execution., read(), test_analysis_sources_and_first_result_remain_hash_bound(), test_exact_parity_and_original_bootstrap_reproduction(), test_exhaustive_component_and_positive_group_census(), test_sensitivity_intervals_and_scopes_are_explicit()
 
-### Community 342 - "stage1/models.py"
-Cohesion: 0.13
-Nodes (17): EndpointHead, Matched additive endpoint controls; the historical pair head is unchanged., build_model(), commutative_features(), exact_cosine(), initialize_exact(), LinearPairHead, NonlinearPairHead (+9 more)
+### Community 342 - "test_development_completed_independent_validator_v2.py"
+Cohesion: 0.52
+Nodes (5): _manifest(), _module(), parametrize, test_independent_identity_map_fails_closed(), test_independent_storage_coordinate_translation_matches_training_forward()
 
 ### Community 343 - "TUnA benchmark — startup and execution report"
 Cohesion: 0.20
@@ -1516,25 +1524,25 @@ Nodes (10): Data and training philosophy, Evaluation and isolation, Fidelity and
 Cohesion: 0.35
 Nodes (16): accession_to_endpoint(), affine_member(), checked_file(), ensemble_scores(), load_registry(), load_state(), main(), optimized_member() (+8 more)
 
-### Community 345 - "Matched-data D-SCRIPT retraining and automatic test evaluation"
-Cohesion: 0.11
-Nodes (17): Execution and files, Frozen comparison, Length-safe implementation and qualification, Original D-SCRIPT on the iPIN test panels, Original-model exposure caveat, Results and interpretation, D-SCRIPT benchmark, Original D-SCRIPT benchmark results (+9 more)
+### Community 345 - "D-SCRIPT benchmark report"
+Cohesion: 0.10
+Nodes (18): Execution and files, Frozen comparison, Length-safe implementation and qualification, Original D-SCRIPT on the iPIN test panels, Original-model exposure caveat, Results and interpretation, D-SCRIPT benchmark, Completed stage: matched-data retraining and testing (+10 more)
 
 ### Community 347 - "test_frozen_pair_models_v2.py"
 Cohesion: 0.29
 Nodes (8): fixture(), parametrize, Synthetic tests of three-model custody; no model weights or pair data used., test_a_different_seed_state_or_feature_file_is_rejected(), test_declared_superiority_is_not_part_of_this_freeze(), test_missing_or_reordered_members_are_rejected(), test_prediction_definition_drift_is_rejected(), test_three_models_retain_exact_existing_definitions()
 
-### Community 349 - "Fixed-ensemble test follow-up v1"
-Cohesion: 0.40
-Nodes (5): Execution, amendment and verification, Fixed-ensemble test follow-up v1, Outcome, Scientific reading, Source and seed diagnostics
+### Community 349 - "ParquetBatchWriter"
+Cohesion: 0.31
+Nodes (3): ParquetBatchWriter, Any, Write validated, fixed-schema Parquet parts and retain exact statistics.
 
 ### Community 350 - "Twelve-target comparison of the three frozen iPIN models"
 Cohesion: 0.40
 Nodes (5): Equal-target results, Execution and validation, Exposure and sensitivity, Individual targets: P-versus-U concordance, Twelve-target comparison of the three frozen iPIN models
 
-### Community 351 - "_components"
-Cohesion: 0.36
-Nodes (4): _components(), IndependentDisjointSet, test_independent_allocator_reproduces_frozen_hash_and_tie_rules(), test_independent_components_are_transitive_and_order_stable()
+### Community 351 - "setup_input_views"
+Cohesion: 0.24
+Nodes (10): parquet_glob(), Path, collect_metrics(), Any, DuckDBPyConnection, Path, Collect compact deterministic audit metrics from work relations., Register immutable staging tables with explicit source provenance. (+2 more)
 
 ### Community 352 - "Q: in the 'example' folder where i conducted a real six-target benchmark, what else matrics we can calculate besides the P-vs-U concoedance?"
 Cohesion: 0.40
@@ -1547,6 +1555,10 @@ Nodes (5): Interpretation and exposure limits, Main comparison, Reproducibility 
 ### Community 355 - "recovery_test_v1/run.py"
 Cohesion: 0.58
 Nodes (9): container(), copy(), main(), now(), prepare(), read(), record(), sha() (+1 more)
+
+### Community 356 - "validate_manifest"
+Cohesion: 0.56
+Nodes (8): add_check(), load_yaml(), main(), nested_get(), Any, Path, sha256_file(), validate_manifest()
 
 ### Community 357 - "Original PLM-interact C1/C2/C3 benchmark"
 Cohesion: 0.13
@@ -1812,39 +1824,71 @@ Nodes (4): Exposure, Nominated positives, TNFRSF1A biological partner panel, Unl
 Cohesion: 0.50
 Nodes (4): Execution, Inputs and exact predictors, Metrics, audits, and artifact map, Twelve-target application of the frozen iPIN catalogue
 
+### Community 436 - "Matched-data D-SCRIPT retraining and automatic test evaluation"
+Cohesion: 0.25
+Nodes (8): Checkpoint selection and test comparison, Files and monitoring, Historical startup snapshot, Matched-data D-SCRIPT retraining and automatic test evaluation, Model and frozen training recipe, Qualification and provenance, Slurm chain and timing margin, Verified startup and handoff
+
+### Community 449 - "u_context_background_analysis_v1/render_report.py"
+Cohesion: 0.53
+Nodes (5): main(), percent(), Render a descriptive report and standalone scientific figure from fixed tables., read(), table()
+
+### Community 450 - "Q: i want you to double the size of example from 6 to 12, apply all three frozen ipin models, calculate all metrics you mentioned + PU concordance, update all files and docs. ask questions if clarifications needed."
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: i want you to double the size of example from 6 to 12, apply all three frozen ipin models, calculate all metrics you mentioned + PU concordance, update all files and docs. ask questions if clarifications needed., Source Nodes
+
+### Community 451 - "Q: explain how P pairs are designed"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: explain how P pairs are designed, Source Nodes
+
+### Community 454 - "Q: explain the U pair selection in a simple language."
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: explain the U pair selection in a simple language., Source Nodes
+
+### Community 455 - "Q: investigate if there is a meaningful difference between two groups scores."
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: investigate if there is a meaningful difference between two groups scores., Source Nodes
+
+### Community 456 - "Frozen pair models v1"
+Cohesion: 0.50
+Nodes (4): Claim boundaries, Exact prediction definition, Frozen pair models v1, Preservation and verification
+
+### Community 457 - "degree_pair_stratum"
+Cohesion: 0.67
+Nodes (4): degree_bin(), degree_pair_stratum(), parametrize, test_degree_bins()
+
 ## Knowledge Gaps
-- **1209 isolated node(s):** `build_dscript.sh script`, `APPTAINER_CACHEDIR`, `APPTAINER_TMPDIR`, `TMPDIR`, `PYTHONDONTWRITEBYTECODE` (+1204 more)
+- **1231 isolated node(s):** `build_dscript.sh script`, `APPTAINER_CACHEDIR`, `APPTAINER_TMPDIR`, `TMPDIR`, `PYTHONDONTWRITEBYTECODE` (+1226 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **117 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **116 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Work-memory lessons
 
 **Preferred sources** — corroborated by past sessions; start here.
-- `Reference-sequence Positive-Unlabeled Ranking` (4× useful, score=1.485203054)
-- `protected_final_core_v1.py` (2× useful, score=1.627142486)
-- `ensemble_columns_exact()` (2× useful, score=1.624585909)
-- `DEC-0050: Bound the data feasibility check; stop the current model track` (2× useful, score=1.61973986)
-- `composition_order/pipeline.py` (2× useful, score=1.618516032)
-- `composition_order/validation.py` (2× useful, score=1.618516032)
-- `validation/systematic_screen_audit.py` (2× useful, score=1.608793574)
-- `Prospective nested component test` (2× useful, score=1.605917449)
-- `Primary PU-retrieval metrics` (2× useful, score=1.605917449)
-- `component_split.py` (2× useful, score=1.176786944)
+- `Reference-sequence Positive-Unlabeled Ranking` (4× useful, score=1.481822841)
+- `build_panels.py` (3× useful, score=2.997868875)
+- `protected_final_core_v1.py` (2× useful, score=1.623439228)
+- `ensemble_columns_exact()` (2× useful, score=1.62088847)
+- `DEC-0050: Bound the data feasibility check; stop the current model track` (2× useful, score=1.61605345)
+- `composition_order/pipeline.py` (2× useful, score=1.614832407)
+- `composition_order/validation.py` (2× useful, score=1.614832407)
+- `validation/systematic_screen_audit.py` (2× useful, score=1.605132077)
+- `Prospective nested component test` (2× useful, score=1.602262498)
+- `Primary PU-retrieval metrics` (2× useful, score=1.602262498)
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `f()` connect `f` to `read`, `recovery_test_v1/comparison.py`, `plm_interact/scripts/comparison.py`, `scripts/pipeline.py`, `read`, `sprint/scripts/comparison.py`, `read`, `validate_development_prerelease_independent_v1.py`, `homology_source/data.py`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
-- **Why does `assign_folds()` connect `homology_source/data.py` to `f`, `ValueError`, `partner_specificity/pipeline.py`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+- **Why does `f()` connect `f` to `read`, `recovery_test_v1/comparison.py`, `plm_interact/scripts/comparison.py`, `scripts/pipeline.py`, `read`, `sprint/scripts/comparison.py`, `read`, `validate_development_prerelease_independent_v1.py`, `partner_specificity/pipeline.py`?**
+  _High betweenness centrality (0.032) - this node is a cross-community bridge._
+- **Why does `assign_folds()` connect `partner_specificity/pipeline.py` to `f`, `ValueError`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
 - **Why does `concordance()` connect `qualify_training.py` to `ValueError`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Are the 160 inferred relationships involving `ValueError` (e.g. with `concordance()` and `.cpred()`) actually correct?**
-  _`ValueError` has 160 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 83 inferred relationships involving `Counter` (e.g. with `main()` and `run()`) actually correct?**
-  _`Counter` has 83 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 162 inferred relationships involving `ValueError` (e.g. with `concordance()` and `.cpred()`) actually correct?**
+  _`ValueError` has 162 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 84 inferred relationships involving `Counter` (e.g. with `main()` and `main()`) actually correct?**
+  _`Counter` has 84 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `build_dscript.sh script`, `APPTAINER_CACHEDIR`, `APPTAINER_TMPDIR` to the rest of the system?**
-  _1209 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1231 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `tf_isoform_audit/pipeline.py` be split into smaller, more focused modules?**
   _Cohesion score 0.07204968944099378 - nodes in this community are weakly interconnected._

@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "parent_outputs_checked_unchanged": 110,
+  "all_111_anchor_A_values_match_scipy_U": true,
+  "all_context_membership_checks_passed": true,
+  "synthetic_tie_and_reversal_checks": true,
+  "sign_flip_checks": [
+    {
+      "model": "ipin_baseline",
+      "exact_sign_flip_matches_scipy": true
+    },
+    {
+      "model": "ipin_optimized",
+      "exact_sign_flip_matches_scipy": true
+    },
+    {
+      "model": "tuna_retrained",
+      "exact_sign_flip_matches_scipy": true
+    }
+  ],
+  "rows": {
+    "scores": 3737,
+    "U": 3700,
+    "anchors": 37,
+    "target_model": 36
+  },
+  "background_satisfying_context_rule": 388
+}
