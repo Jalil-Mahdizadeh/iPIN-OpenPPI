@@ -1,0 +1,73 @@
+{
+  "all_37_positives_checked": true,
+  "author_covariance_native_eval_recomputation_in_memory": true,
+  "authors_checkpoint": {
+    "bytes": 135352865,
+    "path": "benchmark/tuna/weights/bernett_original.pt",
+    "sha256": "bf2dd42af75d98324798b76837ca738e4ed230b096ee538ccdbaa001dcc88500"
+  },
+  "device": "NVIDIA GH200 120GB",
+  "elapsed_seconds": 7.393431520991726,
+  "model_training_or_selection": false,
+  "native_agreement_tolerance": 1e-05,
+  "native_fixture_max_absolute_error": 1.7881393432617188e-07,
+  "native_recomputed_vs_frozen_covariance_max_absolute_error": 0.0,
+  "native_unaccelerated_batch_one_fixture_count": 50,
+  "original_probability_one_count": 0,
+  "original_probability_zero_count": 0,
+  "original_vs_runtime_differing_state_keys": [],
+  "passed": true,
+  "precision": "FP32; TF32 disabled; no autocast",
+  "pretrained_checkpoint_files_unchanged": true,
+  "protected_test_records_read": false,
+  "qualifications": [
+    {
+      "all_parameters_and_buffers_unchanged": true,
+      "all_saved_pair_scores_max_absolute_error": 0.0,
+      "checkpoint": {
+        "bytes": 135358343,
+        "path": "benchmark/tuna/runs/scorer_bundle/weights/tuna_original.pt",
+        "sha256": "fce619249663193ea17766fd6afa43abcf110a49a5a91d625450cfa966586ae2"
+      },
+      "member": "tuna_original"
+    },
+    {
+      "all_parameters_and_buffers_unchanged": true,
+      "all_saved_pair_scores_max_absolute_error": 0.0,
+      "checkpoint": {
+        "bytes": 135359451,
+        "path": ".private/frozen_pair_models_v2/bundle/weights/tuna_retrained_seed20260803.pt",
+        "sha256": "c96b6cd4dcde5edc766d1028d8f22a410a072b1376d26cb392f09c3801793ebd"
+      },
+      "member": "tuna_retrained_seed20260803"
+    },
+    {
+      "all_parameters_and_buffers_unchanged": true,
+      "all_saved_pair_scores_max_absolute_error": 0.0,
+      "checkpoint": {
+        "bytes": 135359451,
+        "path": ".private/frozen_pair_models_v2/bundle/weights/tuna_retrained_seed20260817.pt",
+        "sha256": "f1444b8d43efcf4d76a73a6f4a0419d395651b493f5e21dc8ab1dd002a7e0c02"
+      },
+      "member": "tuna_retrained_seed20260817"
+    },
+    {
+      "all_parameters_and_buffers_unchanged": true,
+      "all_saved_pair_scores_max_absolute_error": 0.0,
+      "checkpoint": {
+        "bytes": 135359451,
+        "path": ".private/frozen_pair_models_v2/bundle/weights/tuna_retrained_seed20260831.pt",
+        "sha256": "45aae93319be687cec386d7875a78d4a4b5068a635874abe67b6d9ab1a23727c"
+      },
+      "member": "tuna_retrained_seed20260831"
+    }
+  ],
+  "reused_parent_residue_and_endpoint_arrays": true,
+  "runtime_checkpoint_covariance_refitted": false,
+  "swap_cache": {
+    "bytes": 493912,
+    "path": "example/original_tuna_investigation_v1/query_swap_scores.npz",
+    "sha256": "0469bf8187a736a80fee7257fbff4baa01f59fa49c6845eefed07dff15059634"
+  },
+  "torch": "2.8.0a0+34c6371d24.nv25.08"
+}

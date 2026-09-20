@@ -67,6 +67,12 @@ screening budgets, with fresh sequences and embeddings. Evidence tiers distingui
 unlabeled. Exposure and evidence sensitivities accompany the results. Prior
 six-target and twelve-target applications remain preserved historical records.
 
+The [original TUnA investigation](example/original_tuna_investigation_v1/REPORT.md)
+finds that EGFR accounts for most of its net example advantage over retrained
+TUnA. Native scoring checks pass, and original TRAIN contains positive pairs
+between sequence relatives of all three EGFR positives. This is a plausible
+training-data explanation; the small example does not establish general superiority.
+
 A separate [U score comparison](example/u_context_background_analysis_v1/REPORT.md)
 finds modestly higher scores for context-matched than background candidates in
 all three models, with target-specific results and exploratory uncertainty estimates.

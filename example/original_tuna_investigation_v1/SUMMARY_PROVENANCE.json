@@ -1,0 +1,21 @@
+{
+  "ancillary_TRAIN_sources": [
+    {
+      "bytes": 48270006,
+      "path": "benchmark/tuna/data/training.npz",
+      "sha256": "43ae252277820ffe527dad1ed4839d5673cff279b6c8c943ff4b5350a9283ca6"
+    },
+    {
+      "bytes": 12312031,
+      "path": "benchmark/tuna/data/sequences.json",
+      "sha256": "bc7a91661ea05cbfdcf3551b9a4d18c149ac077549ebbcf0be7e7ef5d94ace77"
+    }
+  ],
+  "no_model_training": true,
+  "protected_test_records_read": false,
+  "script": {
+    "bytes": 9081,
+    "path": "example/original_tuna_investigation_v1/summarize.py",
+    "sha256": "2113ccddc1e416df24f2a61a4cfd884eea1b5bcdbbd7001cedc0bb15a09959ee"
+  }
+}

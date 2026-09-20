@@ -1,0 +1,16 @@
+{
+  "checked_metric_rows": {
+    "partner_only_baselines.csv": 180,
+    "query_swap_metrics.csv": 1440,
+    "score_component_metrics.csv": 180
+  },
+  "fractional_topK_independently_checked": true,
+  "frozen_inputs_unchanged": true,
+  "leave_one_target_out_rows": 360,
+  "native_authors_fixture_rows": 50,
+  "parent_scientific_artifacts_unchanged": 107,
+  "passed": true,
+  "protected_test_records_read": false,
+  "sklearn_ROC_AP_NDCG_oracles": true,
+  "target_contribution_rows": 360
+}

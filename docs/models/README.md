@@ -32,3 +32,8 @@ context, background and biologically selected low-plausibility U, with all prior
 retrieval metrics, exposure checks and evidence-tier sensitivities. Original TUnA
 is a comparator; the registry still has three iPIN models. Versioned model cards
 and their checksum-bound freeze records remain unchanged.
+
+The [original TUnA example audit](../../example/original_tuna_investigation_v1/REPORT.md)
+verifies the authors' checkpoint directly and finds a plausible transfer route
+through analogous training pairs for EGFR. Its net lead is sensitive to EGFR;
+the registered predictors and all completed benchmark records remain unchanged.

@@ -1,0 +1,18 @@
+{
+  "freeze": {
+    "bytes": 2159,
+    "path": "example/original_tuna_investigation_v1/HOMOLOGY_INPUT_FREEZE.json",
+    "sha256": "e119ebe8b5fea0021ebd2d11c2dc7340553efcf5922b2a04e4eae30729f0c078"
+  },
+  "matches": {
+    "bytes": 121640,
+    "path": "example/original_tuna_investigation_v1/homology_local/matches.tsv",
+    "sha256": "24f1814fe8df2bdab100d8f1f3b082acb5de87649028c70916f30a31644042fe"
+  },
+  "mmseqs_version": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f",
+  "passed": true,
+  "protected_test_records_read": false,
+  "query_accessions": 46,
+  "reference_accessions": 7419,
+  "reported_local_matches": 1678
+}

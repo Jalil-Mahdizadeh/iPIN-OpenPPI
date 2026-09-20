@@ -12,6 +12,13 @@ matched-positive comparisons, and exposure/evidence sensitivities. The
 [selection rules](twelve_target_comparison_v2/SELECTION.md) distinguish stronger
 compartment separation from EGFR's weaker tier; no U is a verified negative.
 
+The [original TUnA investigation](original_tuna_investigation_v1/REPORT.md)
+verifies native scoring and examines target contributions, training exposure,
+sequence relatives, query replacement, and uncertainty adjustment. EGFR dominates
+the net advantage over retrained TUnA; original TRAIN contains analogous positive
+pairs between relatives of all three EGFR positives. This supports a plausible
+transfer explanation without establishing general superiority or causality.
+
 | Target | P | U | Latest results |
 |---|---:|---:|---|
 | ERN1 | 4 | 600 | [Results v3](ERN1/RESULTS_v3.md) |

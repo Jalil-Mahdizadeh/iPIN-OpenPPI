@@ -20,6 +20,13 @@ cover tie rules and exposure/evidence sensitivities. The original
 [twelve-target v1](../../example/twelve_target_comparison_v1/REPORT.md) remain
 preserved historical records.
 
+The [original TUnA investigation](../../example/original_tuna_investigation_v1/REPORT.md)
+checks native checkpoint agreement, target influence, exact and related-protein
+training exposure, query replacement, simple partner-only controls, and GP
+uncertainty adjustment. The net example lead is concentrated in EGFR, whose
+positive pairs have analogous positives in original TRAIN. This is an exploratory
+explanation, with frozen models and completed application records preserved.
+
 The [context-versus-background U score analysis](../../example/u_context_background_analysis_v1/REPORT.md)
 compares the two sampling groups using the preserved twelve-target scores.
 It reports matched rank effects, whole-target uncertainty estimates, raw score

@@ -1,0 +1,38 @@
+{
+  "at_utc": "2026-09-20T17:26:20.402591+00:00",
+  "exploratory_after_homology": true,
+  "inputs": [
+    {
+      "bytes": 12312031,
+      "path": "benchmark/tuna/data/sequences.json",
+      "sha256": "bc7a91661ea05cbfdcf3551b9a4d18c149ac077549ebbcf0be7e7ef5d94ace77"
+    },
+    {
+      "bytes": 48270006,
+      "path": "benchmark/tuna/data/training.npz",
+      "sha256": "43ae252277820ffe527dad1ed4839d5673cff279b6c8c943ff4b5350a9283ca6"
+    },
+    {
+      "bytes": 65329143,
+      "path": "benchmark/tuna/data/development_00.npz",
+      "sha256": "8a1f61a429a2b79c9a41dd1e7f6d02ece58bf93adc9a8c9b07233f930a5422e5"
+    },
+    {
+      "bytes": 66373789,
+      "path": "benchmark/tuna/data/development_01.npz",
+      "sha256": "65d6ce7e4c106e3f14949f70b5f5852a471438573824db3f99f0713c40bee3c0"
+    },
+    {
+      "bytes": 65669441,
+      "path": "benchmark/tuna/data/development_02.npz",
+      "sha256": "3aa68097a097d0022dba3593cae292cfda8f477ea8d4cd3342fb29eda6992393"
+    }
+  ],
+  "original_test_or_ipin_test_pairs_read": false,
+  "script": {
+    "bytes": 5021,
+    "path": "example/original_tuna_investigation_v1/relative_pair_audit.py",
+    "sha256": "82a3f3d324a60dc4c3acc9d39d813a6437420a96e60cdab78eed6d4256c75d8f"
+  },
+  "selection": "Each endpoint's maximum-bits TRAIN local match; no PPI-label selection"
+}

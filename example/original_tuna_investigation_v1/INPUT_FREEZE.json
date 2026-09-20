@@ -1,0 +1,110 @@
+{
+  "at_utc": "2026-09-20T17:17:49.823571+00:00",
+  "cached_parent_features_reused_for_diagnostics": true,
+  "exploratory": true,
+  "inputs": [
+    {
+      "bytes": 4384,
+      "path": "example/original_tuna_investigation_v1/PROTOCOL.md",
+      "sha256": "8466be9a413a7b8607a6553672b6f7cfb5e323b36d86f00a8c3cac68d92f03e2"
+    },
+    {
+      "bytes": 15193,
+      "path": "example/original_tuna_investigation_v1/investigate.py",
+      "sha256": "3eb98b1f04ea606b557ef0b73efc44284696abdcdaaa527a91410104e777034f"
+    },
+    {
+      "bytes": 8568,
+      "path": "example/original_tuna_investigation_v1/gpu_diagnostics.py",
+      "sha256": "4bc14e8a7ce9ee05097a2d40c8f4dfea2b24c1cd345e378385243d7007b80611"
+    },
+    {
+      "bytes": 24582,
+      "path": "example/twelve_target_comparison_v2/RUN_MANIFEST.json",
+      "sha256": "f2ca21556a94c6b0281ee5bdecd18e1e941abd0589cc633bcb13c0402599948d"
+    },
+    {
+      "bytes": 280843,
+      "path": "example/twelve_target_comparison_v2/sequence_order.json",
+      "sha256": "5d3d6ff358bc1cfa4237f404ecdccf51d80e5dcd2f69bd00dbaa105802f8b9d4"
+    },
+    {
+      "bytes": 4681,
+      "path": "benchmark/tuna/scripts/adapter.py",
+      "sha256": "8260aceb8e4eb7a1c3a2a97297e9a9f8faa96598130259ebf52a49635a5fe025"
+    },
+    {
+      "bytes": 32170,
+      "path": "artifacts/models/frozen_pair_models_v2/MODEL_REGISTRY.json",
+      "sha256": "faf2d585dbfee34ca3fe19487bc7a821f744014cdcdb94e95e4b657097110878"
+    },
+    {
+      "bytes": 135352865,
+      "path": "benchmark/tuna/weights/bernett_original.pt",
+      "sha256": "bf2dd42af75d98324798b76837ca738e4ed230b096ee538ccdbaa001dcc88500"
+    },
+    {
+      "bytes": 135358343,
+      "path": "benchmark/tuna/runs/scorer_bundle/weights/tuna_original.pt",
+      "sha256": "fce619249663193ea17766fd6afa43abcf110a49a5a91d625450cfa966586ae2"
+    },
+    {
+      "bytes": 135359451,
+      "path": ".private/frozen_pair_models_v2/bundle/weights/tuna_retrained_seed20260803.pt",
+      "sha256": "c96b6cd4dcde5edc766d1028d8f22a410a072b1376d26cb392f09c3801793ebd"
+    },
+    {
+      "bytes": 135359451,
+      "path": ".private/frozen_pair_models_v2/bundle/weights/tuna_retrained_seed20260817.pt",
+      "sha256": "f1444b8d43efcf4d76a73a6f4a0419d395651b493f5e21dc8ab1dd002a7e0c02"
+    },
+    {
+      "bytes": 135359451,
+      "path": ".private/frozen_pair_models_v2/bundle/weights/tuna_retrained_seed20260831.pt",
+      "sha256": "45aae93319be687cec386d7875a78d4a4b5068a635874abe67b6d9ab1a23727c"
+    },
+    {
+      "bytes": 1027200,
+      "path": "example/twelve_target_comparison_v2/tuna_original_fresh_endpoint_features.npy",
+      "sha256": "b4d1bd9a1ec08a5c0f2a303693b661b7d6feb054ff2ca95ad58b73b8f6d83bc7"
+    },
+    {
+      "bytes": 1027200,
+      "path": "example/twelve_target_comparison_v2/tuna_retrained_seed20260803_fresh_endpoint_features.npy",
+      "sha256": "14940cefe65960a72557cb720e68288067157d10c990c08b8c42e1781e41553c"
+    },
+    {
+      "bytes": 1027200,
+      "path": "example/twelve_target_comparison_v2/tuna_retrained_seed20260817_fresh_endpoint_features.npy",
+      "sha256": "8bc08db9f9db32e7fb5f3cb27f3a6e9fa369ac3aecd8943f8273f6a602839dc9"
+    },
+    {
+      "bytes": 1027200,
+      "path": "example/twelve_target_comparison_v2/tuna_retrained_seed20260831_fresh_endpoint_features.npy",
+      "sha256": "b5ffd62a21a4f0abdf5a0fa6bff7ffcf2e940553e28108faeb9a69acea1f6640"
+    },
+    {
+      "bytes": 6227047168,
+      "path": "example/twelve_target_comparison_v2/tuna_fresh_residues.h5",
+      "sha256": "28627583dc2124c6849b80c3d8391736f8a153a6ef4e69b33aa6593139128a3a"
+    },
+    {
+      "bytes": 11561571,
+      "path": "benchmark/tuna/upstream/TUnA/data/raw/bernett/human_swissprot_oneliner.fasta",
+      "sha256": "578b02750acb75416b897ee7de07f9f5a4f3a57ec7fbce4b4a62ec84a1851d0d"
+    },
+    {
+      "bytes": 2203064,
+      "path": "benchmark/tuna/upstream/TUnA/data/processed/bernett/Intra1_interaction_1500_or_less.tsv",
+      "sha256": "bec107f8e07cc603ff247a8626aa9a06369b73256848fb5ccbf42dc31f998a58"
+    },
+    {
+      "bytes": 912321,
+      "path": "benchmark/tuna/upstream/TUnA/data/processed/bernett/Intra0_interaction_1500_or_less.tsv",
+      "sha256": "105f30b038800f5cf7e598fc9dc6e34ddaabfa9451e32a6edd69d6cc52687a1f"
+    }
+  ],
+  "model_training_or_selection": false,
+  "parent_scientific_artifacts_verified": 107,
+  "protected_test_records_read": false
+}

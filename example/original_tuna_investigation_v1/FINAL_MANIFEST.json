@@ -1,0 +1,264 @@
+{
+  "cached_parent_residue_and_endpoint_arrays_reused": true,
+  "completed_at_utc": "2026-09-20T17:38:13.659961+00:00",
+  "earlier_historical_artifacts_preserved": 159,
+  "exploratory": true,
+  "followup_validation_passed": true,
+  "frozen_parameters_and_covariances_unchanged": true,
+  "homology_followup_after_initial_diagnostics": true,
+  "interpretation": "Reproducible query-dependent example strength; plausible transfer from related TRAIN protein pairs; EGFR dominates net macro lead; no causal attribution or general superiority established.",
+  "models_in_query_replacement": [
+    "tuna_original",
+    "tuna_retrained"
+  ],
+  "no_model_training_or_selection": true,
+  "parent_scientific_artifacts_preserved": 107,
+  "primary_analysis_after_parent_scores": true,
+  "primary_metric_validation_passed": true,
+  "protected_test_records_read": false,
+  "registry_unchanged": true,
+  "same_actual_pair_scores_reproduced_for_all_four_TUnA_members": true,
+  "schema": "original_tuna_investigation_v1",
+  "scientific_outputs": [
+    {
+      "bytes": 650,
+      "path": "example/original_tuna_investigation_v1/FOLLOWUP_VALIDATION.json",
+      "sha256": "95e0be1873523d9d200adc50ab33878cf7a86b89e1ba45b6828a00e3c04c46fb"
+    },
+    {
+      "bytes": 2887,
+      "path": "example/original_tuna_investigation_v1/GPU_DIAGNOSTICS.json",
+      "sha256": "ec51fde7ad01e4ec284fe0a5d4e27b1c86a889b837967810e17e2d7a5cf4fd5a"
+    },
+    {
+      "bytes": 1491,
+      "path": "example/original_tuna_investigation_v1/HOMOLOGY_FOLLOWUP.md",
+      "sha256": "e7ea6eeb2e39c4c7b23e4a56733f2f013287e26cee5fb1eacd589c1a119ddae4"
+    },
+    {
+      "bytes": 2159,
+      "path": "example/original_tuna_investigation_v1/HOMOLOGY_INPUT_FREEZE.json",
+      "sha256": "e119ebe8b5fea0021ebd2d11c2dc7340553efcf5922b2a04e4eae30729f0c078"
+    },
+    {
+      "bytes": 620,
+      "path": "example/original_tuna_investigation_v1/HOMOLOGY_RUN.json",
+      "sha256": "68d876062dc764b21d3fc870de9a23040e502254a1786156f265a6d27aa4f6fc"
+    },
+    {
+      "bytes": 486,
+      "path": "example/original_tuna_investigation_v1/INDEPENDENT_VALIDATION.json",
+      "sha256": "21c4db97f37599d2b6ea77d4a4e0bb6b801bec352bb5746f1894799087848d9a"
+    },
+    {
+      "bytes": 4378,
+      "path": "example/original_tuna_investigation_v1/INPUT_FREEZE.json",
+      "sha256": "1c24bad4c8454f8fc87d6b58cce8c6ba6cc9a3a5310fe93087d1a48de14e0bfa"
+    },
+    {
+      "bytes": 4384,
+      "path": "example/original_tuna_investigation_v1/PROTOCOL.md",
+      "sha256": "8466be9a413a7b8607a6553672b6f7cfb5e323b36d86f00a8c3cac68d92f03e2"
+    },
+    {
+      "bytes": 2974,
+      "path": "example/original_tuna_investigation_v1/README.md",
+      "sha256": "937d3b8546f831f92d4f7ec604acb3a1c7ad68abfb96d421465a2bd7964ff3c1"
+    },
+    {
+      "bytes": 1317,
+      "path": "example/original_tuna_investigation_v1/RELATIVE_PAIR_AUDIT_INPUTS.json",
+      "sha256": "1704d01a6abdb9a1714b6fefade9a5f3e77e00cec5157d681f61462f8c3db608"
+    },
+    {
+      "bytes": 12358,
+      "path": "example/original_tuna_investigation_v1/REPORT.md",
+      "sha256": "136f09efe980e7a3beac2c228213f5b76c3d3354be82ecaf4798502f19876920"
+    },
+    {
+      "bytes": 463,
+      "path": "example/original_tuna_investigation_v1/SUMMARY.json",
+      "sha256": "0387e21d5dfd470c6fb84b94282bfbd87430623af013b7e2c5a53d7908742d38"
+    },
+    {
+      "bytes": 637,
+      "path": "example/original_tuna_investigation_v1/SUMMARY_PROVENANCE.json",
+      "sha256": "9850687ac119be224efc2dc928b1927b398f7e123800356b6285ef138a026553"
+    },
+    {
+      "bytes": 4149,
+      "path": "example/original_tuna_investigation_v1/authors_checkpoint_native_predictions.csv",
+      "sha256": "0c9fff1250c4d08efbfadafaaab8b5f7baa832249f1df2a3dc9262c63447d3c4"
+    },
+    {
+      "bytes": 5576,
+      "path": "example/original_tuna_investigation_v1/diagnostic_macro_metrics.csv",
+      "sha256": "794828b7e078160c63f1d8afe865e2ca82ce7ccc45c3c56730c25a7edd6366d2"
+    },
+    {
+      "bytes": 11753,
+      "path": "example/original_tuna_investigation_v1/endpoint_exposure_summary.csv",
+      "sha256": "cd276e6865618997a843c77fc55ea8e7d953cd5d4d520e066522c564c0c32cb6"
+    },
+    {
+      "bytes": 13305,
+      "path": "example/original_tuna_investigation_v1/exposure_sensitivity.csv",
+      "sha256": "866fcd92814f29b6c5527219065412030133aa27d79a64c99fe2c4e77c24f0b2"
+    },
+    {
+      "bytes": 3309,
+      "path": "example/original_tuna_investigation_v1/finalize.py",
+      "sha256": "e395e0a830daccd07591d7ec257dbe7315d0701debbc1cff9f6a4d098e197ac0"
+    },
+    {
+      "bytes": 8568,
+      "path": "example/original_tuna_investigation_v1/gpu_diagnostics.py",
+      "sha256": "4bc14e8a7ce9ee05097a2d40c8f4dfea2b24c1cd345e378385243d7007b80611"
+    },
+    {
+      "bytes": 6100,
+      "path": "example/original_tuna_investigation_v1/homology_followup.py",
+      "sha256": "0db801573ede83f485c7ff1de5bbab9d8584b8400731381f377f58c67ff44bed"
+    },
+    {
+      "bytes": 15193,
+      "path": "example/original_tuna_investigation_v1/investigate.py",
+      "sha256": "3eb98b1f04ea606b557ef0b73efc44284696abdcdaaa527a91410104e777034f"
+    },
+    {
+      "bytes": 20201,
+      "path": "example/original_tuna_investigation_v1/investigation.pdf",
+      "sha256": "989970e0ce70002648f676363ce2750bedd6b0b7c6552458c3ad0ab7c8a1887a"
+    },
+    {
+      "bytes": 206319,
+      "path": "example/original_tuna_investigation_v1/investigation.png",
+      "sha256": "b7ed9e1a78e15cf0cba3ef20efbc3ee6e6dd69a98e566932c74305c889f97cb7"
+    },
+    {
+      "bytes": 49474,
+      "path": "example/original_tuna_investigation_v1/investigation.svg",
+      "sha256": "63a7fca06482764bdd80509d981951145a83a6bf71c5bdde0bfe6418da220084"
+    },
+    {
+      "bytes": 1514,
+      "path": "example/original_tuna_investigation_v1/ipin_training_endpoint_context.csv",
+      "sha256": "db770f718ed54d5ce8a7121f3cd3a2a639043245a3de86afc704b71a764b4613"
+    },
+    {
+      "bytes": 41024,
+      "path": "example/original_tuna_investigation_v1/leave_one_target_out.csv",
+      "sha256": "b390dee559976ba183c8794d3f72b944056c39b9ba6b8ea9ee7c311381f2f05d"
+    },
+    {
+      "bytes": 5242,
+      "path": "example/original_tuna_investigation_v1/nominated_and_relative_pair_exposure.csv",
+      "sha256": "7239874ed90d8719f980f66f7adf307ddd2fec04cfc945b9d89810b1b3ae36a2"
+    },
+    {
+      "bytes": 143,
+      "path": "example/original_tuna_investigation_v1/original_public_source_counts.csv",
+      "sha256": "afa0b17dbbefef0cd5a72ea9899b065153fbeeaee85d796e57aad1cb8e83ac86"
+    },
+    {
+      "bytes": 544899,
+      "path": "example/original_tuna_investigation_v1/original_score_components.csv",
+      "sha256": "ffbec768bfb4a26f608f31b788e28e4220e603837d1a34677f5f292317d28a1d"
+    },
+    {
+      "bytes": 555669,
+      "path": "example/original_tuna_investigation_v1/pair_endpoint_exposure.csv",
+      "sha256": "5f896eb4f3a263dc22893a6fb2380df32501513fa4d76238f67ec385db7aee60"
+    },
+    {
+      "bytes": 5024,
+      "path": "example/original_tuna_investigation_v1/paired_target_bootstrap.csv",
+      "sha256": "8dbb74c8b842ef1619feddb0e7ab537f08e1056e91b7b73a620bacfc6df2bbc1"
+    },
+    {
+      "bytes": 51934,
+      "path": "example/original_tuna_investigation_v1/partner_only_baselines.csv",
+      "sha256": "d45d1c753654415c9bd75410ee5135fca9a4f226be4e5fe718867865a25e0001"
+    },
+    {
+      "bytes": 344257,
+      "path": "example/original_tuna_investigation_v1/query_swap_metrics.csv",
+      "sha256": "f760c09dbdf1f2ae3db89da8957bdfd1aee3653dd9ef4851ed7586c4b92135c3"
+    },
+    {
+      "bytes": 25430,
+      "path": "example/original_tuna_investigation_v1/query_swap_summary.csv",
+      "sha256": "ea8bf7773bc8fbe0f0719941353828ae5dbc9bb1c9fdeb16d0672675b38ab314"
+    },
+    {
+      "bytes": 5021,
+      "path": "example/original_tuna_investigation_v1/relative_pair_audit.py",
+      "sha256": "82a3f3d324a60dc4c3acc9d39d813a6437420a96e60cdab78eed6d4256c75d8f"
+    },
+    {
+      "bytes": 940,
+      "path": "example/original_tuna_investigation_v1/relative_protein_names.tsv",
+      "sha256": "002b780ba1464518a7be7ab471801457fb7ed1679c1093614ed58421c03a240f"
+    },
+    {
+      "bytes": 312,
+      "path": "example/original_tuna_investigation_v1/relative_protein_names_source.json",
+      "sha256": "573a7b0697fe0afcf24ac3de45d366029b2bfca15959d2bcd373f457aafcc453"
+    },
+    {
+      "bytes": 1828067,
+      "path": "example/original_tuna_investigation_v1/replacement_partner_propensity.csv",
+      "sha256": "f29a25eb902dc267a5b7784304151c17a31acfde4f9e2743c46cf8d5d796777b"
+    },
+    {
+      "bytes": 44032,
+      "path": "example/original_tuna_investigation_v1/score_component_metrics.csv",
+      "sha256": "84a7f4b3e9d9763f05b48267622161996cb429f95dfcc897fe89b2fa182605c8"
+    },
+    {
+      "bytes": 7022,
+      "path": "example/original_tuna_investigation_v1/score_degree_correlations.csv",
+      "sha256": "bb42520415a189c630ebfca4f2836af14dea268ae97abe44470b013319ed0404"
+    },
+    {
+      "bytes": 14463,
+      "path": "example/original_tuna_investigation_v1/sequence_relative_matches.csv",
+      "sha256": "0b64db185a1bb7b1d09e391697c52f5d8f264751bebc3da5eb0d02926f38130d"
+    },
+    {
+      "bytes": 2637,
+      "path": "example/original_tuna_investigation_v1/sequence_relative_pair_exposure.csv",
+      "sha256": "44f64c95d907baf64cec708152cc687e6ba1828e803daacf0a366c8a4154521b"
+    },
+    {
+      "bytes": 9081,
+      "path": "example/original_tuna_investigation_v1/summarize.py",
+      "sha256": "2113ccddc1e416df24f2a61a4cfd884eea1b5bcdbbd7001cedc0bb15a09959ee"
+    },
+    {
+      "bytes": 46725,
+      "path": "example/original_tuna_investigation_v1/target_contributions.csv",
+      "sha256": "a9a1b103af8e361a2438d3e5f6727486fe1aab362b11ab15d49bc688de9defcd"
+    },
+    {
+      "bytes": 5160,
+      "path": "example/original_tuna_investigation_v1/validate.py",
+      "sha256": "dfa40a9f3dae814eceaf8edb6e28178e389569468903a2e6e5dde9db85b6b7c3"
+    },
+    {
+      "bytes": 5278,
+      "path": "example/original_tuna_investigation_v1/validate_followups.py",
+      "sha256": "4d3bd65b24e740b10ab888e407e0e2e3adfa08a19c2280549dd0de8efe554aa3"
+    }
+  ],
+  "scientific_runtime_images": {
+    "benchmark/containers/images/tuna-arm64-v1.sif": "98070c7c2d206d8421817849e11ffce308016dc982938a7d9a3ef3141ab1dec1",
+    "containers/images/ipin-data-arm64_0.1.2.sif": "72e4a13299df1c7036dbf5c8845f3a1d9d02bf6143bd2e4ee675aabd03112629"
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "python": "3.12.3",
+    "scipy": "1.15.3",
+    "sklearn": "1.6.1"
+  }
+}

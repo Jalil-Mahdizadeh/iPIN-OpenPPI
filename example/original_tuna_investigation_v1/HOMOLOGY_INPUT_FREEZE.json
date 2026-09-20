@@ -1,0 +1,63 @@
+{
+  "at_utc": "2026-09-20T17:22:25.115802+00:00",
+  "binary": {
+    "bytes": 16025624,
+    "path": "artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/bin/mmseqs",
+    "sha256": "d5f6d96578e3dbcd1d8772bb575b112e9dd1dbf077d150914962a2356ae0d75d"
+  },
+  "command": [
+    "/project/artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/bin/mmseqs",
+    "easy-search",
+    "/project/example/original_tuna_investigation_v1/homology_local/query.fasta",
+    "/project/example/original_tuna_investigation_v1/homology_local/reference.fasta",
+    "/project/example/original_tuna_investigation_v1/homology_local/matches.tsv",
+    "/project/example/original_tuna_investigation_v1/homology_local/tmp",
+    "--threads",
+    "8",
+    "-s",
+    "7.5",
+    "-e",
+    "0.001",
+    "--max-seqs",
+    "7419",
+    "--max-accept",
+    "7419",
+    "--max-rejected",
+    "7419",
+    "--alignment-mode",
+    "3",
+    "--format-output",
+    "query,target,fident,alnlen,qstart,qend,qlen,tstart,tend,tlen,evalue,bits,qcov,tcov"
+  ],
+  "exploratory_followup": true,
+  "local_inputs": [
+    {
+      "bytes": 29384,
+      "path": "example/original_tuna_investigation_v1/homology_local/query.fasta",
+      "sha256": "02c0c664dcbb40d4a7da970ff01ca45f49f3e06d899f852dbc68d67b17bf2b03"
+    },
+    {
+      "bytes": 4072015,
+      "path": "example/original_tuna_investigation_v1/homology_local/reference.fasta",
+      "sha256": "2361f25524ee8225dfbb7f98b1c34430467391acc6751f2b576cf0c88e8413e9"
+    }
+  ],
+  "primary_freeze": {
+    "bytes": 4378,
+    "path": "example/original_tuna_investigation_v1/INPUT_FREEZE.json",
+    "sha256": "1c24bad4c8454f8fc87d6b58cce8c6ba6cc9a3a5310fe93087d1a48de14e0bfa"
+  },
+  "protocol": {
+    "bytes": 1491,
+    "path": "example/original_tuna_investigation_v1/HOMOLOGY_FOLLOWUP.md",
+    "sha256": "e7ea6eeb2e39c4c7b23e4a56733f2f013287e26cee5fb1eacd589c1a119ddae4"
+  },
+  "query_sequences": 46,
+  "reference_sequences": 7419,
+  "script": {
+    "bytes": 6100,
+    "path": "example/original_tuna_investigation_v1/homology_followup.py",
+    "sha256": "0db801573ede83f485c7ff1de5bbab9d8584b8400731381f377f58c67ff44bed"
+  },
+  "version": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f"
+}

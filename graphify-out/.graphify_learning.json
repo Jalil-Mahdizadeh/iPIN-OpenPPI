@@ -1,6 +1,22 @@
 {
-  "generated_at": "2026-09-20T15:00:00.747865+00:00",
+  "generated_at": "2026-09-20T17:37:39.483127+00:00",
   "nodes": {
+    "benchmark_tuna_scripts_adapter": {
+      "code_fingerprint": "8260aceb8e4eb7a1c3a2a97297e9a9f8faa96598130259ebf52a49635a5fe025",
+      "label": "adapter.py",
+      "last": "2026-09-20T17:37:23.031777+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-20T17:37:23.031777+00:00",
+          "outcome": "useful",
+          "q": "how possible the original tuna is so good? investigate it."
+        }
+      ],
+      "score": 0.999995601,
+      "source_file": "benchmark/tuna/scripts/adapter.py",
+      "status": "tentative",
+      "uses": 1
+    },
     "benchmark_tuna_scripts_frozen_scorer": {
       "code_fingerprint": "36ac46b5b5ae51350d43dbee7237d99c57cdc0b329719e3aaca2d68bc1d86b1b",
       "label": "tuna/scripts/frozen_scorer.py",
@@ -12,7 +28,7 @@
           "q": "freeze tuna-retrained as the third ipin model."
         }
       ],
-      "score": 0.996075149,
+      "score": 0.993558825,
       "source_file": "benchmark/tuna/scripts/frozen_scorer.py",
       "status": "tentative",
       "uses": 1
@@ -28,7 +44,7 @@
           "q": "freeze tuna-retrained as the third ipin model."
         }
       ],
-      "score": 0.996075149,
+      "score": 0.993558825,
       "source_file": "docs/models/FROZEN_PAIR_MODELS_v1.md",
       "status": "tentative",
       "uses": 1
@@ -49,7 +65,7 @@
           "q": "what is the best next step? maybe a prospectively designed within-anchor partner-specificity test? what do you think?"
         }
       ],
-      "score": 1.600246456,
+      "score": 1.596203852,
       "source_file": "docs/protocols/PUBLIC_TRAINING_LOCAL_REPRESENTATION_DIAGNOSTIC_v1.md",
       "status": "preferred",
       "uses": 2
@@ -65,7 +81,7 @@
           "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
         }
       ],
-      "score": 0.368590972,
+      "score": 0.367659823,
       "source_file": "docs/reports/m0/M0_Benchmark_Eligibility_and_Sequence_Component_Audit_Final_v1.md",
       "status": "tentative",
       "uses": 1
@@ -86,7 +102,7 @@
           "q": "what is the best next step? maybe a prospectively designed within-anchor partner-specificity test? what do you think?"
         }
       ],
-      "score": 1.600246456,
+      "score": 1.596203852,
       "source_file": "docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md",
       "status": "preferred",
       "uses": 2
@@ -123,7 +139,7 @@
           "q": "but there is still a frozen test set which has never been seen or studied. am i right?"
         }
       ],
-      "score": 2.423091662,
+      "score": 2.416970354,
       "source_file": "docs/reports/m0/PROTECTED_TEST_EVALUATION_PROCEDURE_v1.md",
       "status": "contested",
       "uses": 4,
@@ -146,7 +162,7 @@
           "q": "so this project is a real dead end?"
         }
       ],
-      "score": -0.321006611,
+      "score": -0.320195672,
       "source_file": "docs/reports/m1/M1_Development_Release_and_Evaluation_Final_v1.md",
       "status": "contested",
       "uses": 1,
@@ -163,7 +179,7 @@
           "q": "I would ignore the BioPlex experiment because it is not a valid binary interaction panel. Moreover, the unseen test's results is extremely interesting and align very well with the development results. A surprisingly simple frozen-PLM sequence model generalizes strongly to interaction-naïve proteins in a rigorously protected PU benchmark, while network shortcuts dominate when endpoints have prior interaction exposure and genuine partner-specific/direct-binding generalization remains unresolved."
         }
       ],
-      "score": 0.808327842,
+      "score": 0.806285813,
       "source_file": "docs/reports/m1/M1_Direct_Binary_Feasibility_and_Project_Disposition_v1.md",
       "status": "tentative",
       "uses": 1
@@ -179,7 +195,7 @@
           "q": "explain how P pairs are designed"
         }
       ],
-      "score": 0.998504676,
+      "score": 0.995982215,
       "source_file": "example/BECN1/README.md",
       "status": "tentative",
       "uses": 1
@@ -195,7 +211,7 @@
           "q": "explain how P pairs are designed"
         }
       ],
-      "score": 0.998504676,
+      "score": 0.995982215,
       "source_file": "example/KRAS/README.md",
       "status": "tentative",
       "uses": 1
@@ -211,7 +227,7 @@
           "q": "in the 'example' folder where i conducted a real six-target benchmark, what else matrics we can calculate besides the P-vs-U concoedance?"
         }
       ],
-      "score": 0.996375261,
+      "score": 0.993858179,
       "source_file": "example/six_target_comparison_v1/README.md",
       "status": "tentative",
       "uses": 1
@@ -227,7 +243,7 @@
           "q": "in the 'example' folder where i conducted a real six-target benchmark, what else matrics we can calculate besides the P-vs-U concoedance?"
         }
       ],
-      "score": 0.996375261,
+      "score": 0.993858179,
       "source_file": "example/six_target_comparison_v1/REPORT.md",
       "status": "tentative",
       "uses": 1
@@ -248,7 +264,7 @@
           "q": "explain how P pairs are designed"
         }
       ],
-      "score": 1.997467754,
+      "score": 1.992421673,
       "source_file": "example/twelve_target_comparison_v1/REPORT.md",
       "status": "preferred",
       "uses": 2
@@ -264,7 +280,7 @@
           "q": "since a simple PLM pair model was successful, I would like to suggest a model-architecture optimization on the train/development panel. If it showed improvment, we re-test on the test panel. What do you think?"
         }
       ],
-      "score": 0.808429192,
+      "score": 0.806386907,
       "source_file": "governance/checkpoints/RESUME-003-post-model-governance-protocol-freeze.md",
       "status": "tentative",
       "uses": 1
@@ -295,7 +311,7 @@
           "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
         }
       ],
-      "score": 1.479958342,
+      "score": 1.476219614,
       "source_file": "governance/decisions/DEC-0010-propose-pu-compatibility-primary-design.md",
       "status": "preferred",
       "uses": 4
@@ -311,7 +327,7 @@
           "q": "so this project is a real dead end?"
         }
       ],
-      "score": 0.477139975,
+      "score": 0.475934605,
       "source_file": "governance/decisions/DEC-0039-accept-development-evaluation-and-stop-complex-model-claim.md",
       "status": "tentative",
       "uses": 1
@@ -332,7 +348,7 @@
           "q": "i did not fullt inderstand. what is the status of the project now? explain it cincisely in a simple language."
         }
       ],
-      "score": 1.614020056,
+      "score": 1.609942656,
       "source_file": "governance/decisions/DEC-0050-bounded-direct-binary-feasibility-and-model-stop.md",
       "status": "preferred",
       "uses": 2
@@ -348,7 +364,7 @@
           "q": "Investigate why fixed control scores fall from development C3 to test C3, document it, and preserve both frozen models."
         }
       ],
-      "score": 0.815400076,
+      "score": 0.813340181,
       "source_file": "scripts/analysis/c3_control_shift_v1.py",
       "status": "tentative",
       "uses": 1
@@ -364,7 +380,7 @@
           "q": "freeze both models, make the optimized ensemble the best-performing model while retaining the affine model as the original confirmatory baseline. Then, commit and push"
         }
       ],
-      "score": 0.810922722,
+      "score": 0.808874138,
       "source_file": "scripts/benchmark/model_optimization_followup_core_v1.py",
       "status": "tentative",
       "uses": 1
@@ -385,7 +401,7 @@
           "q": "ok, act according to your recommendation, apply the new model on the test set, compare it with the baseline model, update the repo, commit and push."
         }
       ],
-      "score": 1.621396542,
+      "score": 1.617300507,
       "source_file": "scripts/benchmark/protected_final_core_v1.py",
       "status": "preferred",
       "uses": 2
@@ -401,7 +417,7 @@
           "q": "so this project is a real dead end?"
         }
       ],
-      "score": 0.477139975,
+      "score": 0.475934605,
       "source_file": "scripts/model/validate_public_training_local_representation_independent_v1.py",
       "status": "tentative",
       "uses": 1
@@ -422,7 +438,7 @@
           "q": "Starting from accepted DEC-0022, freeze the pair-level PU-R benchmark protocol before any model work."
         }
       ],
-      "score": 1.370628811,
+      "score": 1.367166275,
       "source_file": "src/ipin_openppi/benchmark/systematic_screen_audit.py",
       "status": "preferred",
       "uses": 2
@@ -443,7 +459,7 @@
           "q": "go ahead with the best next step. Think and act as a serior researcher in AI and bioinformatics. Then, commit and push."
         }
       ],
-      "score": 1.61280055,
+      "score": 1.608726231,
       "source_file": "src/ipin_openppi/composition_order/pipeline.py",
       "status": "preferred",
       "uses": 2
@@ -459,7 +475,7 @@
           "q": "go ahead with the best next step. Think and act as a serior researcher in AI and bioinformatics. Then, commit and push."
         }
       ],
-      "score": 0.80624753,
+      "score": 0.804210756,
       "source_file": "src/ipin_openppi/composition_order/semantics.py",
       "status": "tentative",
       "uses": 1
@@ -480,7 +496,7 @@
           "q": "go ahead with the best next step. Think and act as a serior researcher in AI and bioinformatics. Then, commit and push."
         }
       ],
-      "score": 1.61280055,
+      "score": 1.608726231,
       "source_file": "src/ipin_openppi/composition_order/validation.py",
       "status": "preferred",
       "uses": 2
@@ -501,7 +517,7 @@
           "q": "conduct the model's performance on the final test."
         }
       ],
-      "score": 1.618848993,
+      "score": 1.614759394,
       "source_file": "src/ipin_openppi/development_evaluation/completed_audit.py",
       "status": "preferred",
       "uses": 2
@@ -517,7 +533,7 @@
           "q": "Investigate why fixed control scores fall from development C3 to test C3, document it, and preserve both frozen models."
         }
       ],
-      "score": 0.815400076,
+      "score": 0.813340181,
       "source_file": "src/ipin_openppi/development_evaluation/scoring.py",
       "status": "tentative",
       "uses": 1
@@ -533,7 +549,7 @@
           "q": "Investigate why fixed control scores fall from development C3 to test C3, document it, and preserve both frozen models."
         }
       ],
-      "score": 0.815400076,
+      "score": 0.813340181,
       "source_file": "src/ipin_openppi/development_evaluation/scoring.py",
       "status": "tentative",
       "uses": 1
@@ -549,7 +565,7 @@
           "q": "conduct the model's performance on the final test."
         }
       ],
-      "score": 0.807926271,
+      "score": 0.805885256,
       "source_file": "src/ipin_openppi/development_evaluation/scoring.py",
       "status": "tentative",
       "uses": 1
@@ -565,7 +581,7 @@
           "q": "Investigate why fixed control scores fall from development C3 to test C3, document it, and preserve both frozen models."
         }
       ],
-      "score": 0.815400076,
+      "score": 0.813340181,
       "source_file": "src/ipin_openppi/development_evaluation/semantics.py",
       "status": "tentative",
       "uses": 1
@@ -581,7 +597,7 @@
           "q": "go ahead with the best next step. Think and act as a serior researcher in AI and bioinformatics. Then, commit and push."
         }
       ],
-      "score": 0.80624753,
+      "score": 0.804210756,
       "source_file": "src/ipin_openppi/external_bioplex/semantics.py",
       "status": "tentative",
       "uses": 1
@@ -597,7 +613,7 @@
           "q": "is it a dead end project?"
         }
       ],
-      "score": 0.80655302,
+      "score": 0.804515475,
       "source_file": "src/ipin_openppi/external_bioplex/validation.py",
       "status": "tentative",
       "uses": 1
@@ -613,7 +629,7 @@
           "q": "continue with the best next step, generate a concise report, update relevant docs, commit and push."
         }
       ],
-      "score": 0.801901597,
+      "score": 0.799875803,
       "source_file": "src/ipin_openppi/homology_source/data.py",
       "status": "tentative",
       "uses": 1
@@ -629,7 +645,7 @@
           "q": "continue with the best next step, generate a concise report, update relevant docs, commit and push."
         }
       ],
-      "score": 0.801901597,
+      "score": 0.799875803,
       "source_file": "src/ipin_openppi/homology_source/pipeline.py",
       "status": "tentative",
       "uses": 1
@@ -645,7 +661,7 @@
           "q": "conduct a brainstorm around how can add 50 true negatives (or likely negatives) per positive, so that there will be 150 U per P."
         }
       ],
-      "score": 0.999208294,
+      "score": 0.996684055,
       "source_file": "src/ipin_openppi/lambourne_audit/pipeline.py",
       "status": "tentative",
       "uses": 1
@@ -667,7 +683,7 @@
           "q": "so this project is a real dead end?"
         }
       ],
-      "score": -0.321006611,
+      "score": -0.320195672,
       "source_file": "src/ipin_openppi/local_diagnostic/pipeline.py",
       "status": "contested",
       "uses": 1,
@@ -690,7 +706,7 @@
           "q": "commit and push if all relevant docs and files are up to date."
         }
       ],
-      "score": -0.0002553,
+      "score": -0.000254655,
       "source_file": "src/ipin_openppi/model_optimization/metrics.py",
       "status": "contested",
       "uses": 1,
@@ -707,7 +723,7 @@
           "q": "alright! 1- Heavily de-emphasize the BioPlex experiment. 2- Prospectively amend the repo’s one-shot protocol while preserving the original evaluation and its records. 3- Initiate model-architecture/parameter optimization experiments and try diffent models, architecture, parameters, etc., select the best performing development-based model, and re-test it on the test panel if it outperforms the baselone on the development panel. No new test set needed. First, ask questions if more clarifications needed."
         }
       ],
-      "score": 0.809436057,
+      "score": 0.807391228,
       "source_file": "src/ipin_openppi/model_optimization/models.py",
       "status": "tentative",
       "uses": 1
@@ -723,7 +739,7 @@
           "q": "Starting from accepted DEC-0022, freeze the pair-level PU-R benchmark protocol before any model work."
         }
       ],
-      "score": 0.371420517,
+      "score": 0.37048222,
       "source_file": "src/ipin_openppi/negative_evidence/evidence.py",
       "status": "tentative",
       "uses": 1
@@ -739,7 +755,7 @@
           "q": "conduct a brainstorm around how can add 50 true negatives (or likely negatives) per positive, so that there will be 150 U per P."
         }
       ],
-      "score": 0.999208294,
+      "score": 0.996684055,
       "source_file": "src/ipin_openppi/negative_evidence/pipeline.py",
       "status": "tentative",
       "uses": 1
@@ -755,7 +771,7 @@
           "q": "ok! now challenge the signal with stronger homology/interolog controls and source-aware validation, as you suggested."
         }
       ],
-      "score": 0.801210828,
+      "score": 0.799186778,
       "source_file": "src/ipin_openppi/partner_specificity/pipeline.py",
       "status": "tentative",
       "uses": 1
@@ -771,7 +787,7 @@
           "q": "Starting from accepted DEC-0020, construct and freeze the final benchmark component split without any model involvement, using 30% local_domain_union as primary and sensitive_fl80_union only as a documented zero-valid-primary fallback."
         }
       ],
-      "score": 0.371234897,
+      "score": 0.37029707,
       "source_file": "src/ipin_openppi/pre_split_audit/__init__.py",
       "status": "tentative",
       "uses": 1
@@ -787,7 +803,7 @@
           "q": "Starting from accepted DEC-0020, construct and freeze the final benchmark component split without any model involvement, using 30% local_domain_union as primary and sensitive_fl80_union only as a documented zero-valid-primary fallback."
         }
       ],
-      "score": 0.371234897,
+      "score": 0.37029707,
       "source_file": "src/ipin_openppi/pre_split_audit/semantics.py",
       "status": "tentative",
       "uses": 1
@@ -803,7 +819,7 @@
           "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
         }
       ],
-      "score": 0.368590972,
+      "score": 0.367659823,
       "source_file": "src/ipin_openppi/sequence_component_audit/__init__.py",
       "status": "tentative",
       "uses": 1
@@ -819,7 +835,7 @@
           "q": "Starting from accepted DEC-0020, construct and freeze the final benchmark component split without any model involvement, using 30% local_domain_union as primary and sensitive_fl80_union only as a documented zero-valid-primary fallback."
         }
       ],
-      "score": 0.371234897,
+      "score": 0.37029707,
       "source_file": "src/ipin_openppi/sequence_component_audit/semantics.py",
       "status": "tentative",
       "uses": 1
@@ -835,7 +851,7 @@
           "q": "I would ignore the BioPlex experiment because it is not a valid binary interaction panel. Moreover, the unseen test's results is extremely interesting and align very well with the development results. A surprisingly simple frozen-PLM sequence model generalizes strongly to interaction-naïve proteins in a rigorously protected PU benchmark, while network shortcuts dominate when endpoints have prior interaction exposure and genuine partner-specific/direct-binding generalization remains unresolved."
         }
       ],
-      "score": 0.808327842,
+      "score": 0.806285813,
       "source_file": "src/ipin_openppi/stage1/models.py",
       "status": "tentative",
       "uses": 1
@@ -856,7 +872,7 @@
           "q": "Starting from accepted DEC-0022, freeze the pair-level PU-R benchmark protocol before any model work."
         }
       ],
-      "score": 1.172631345,
+      "score": 1.169668998,
       "source_file": "src/ipin_openppi/validation/component_split.py",
       "status": "preferred",
       "uses": 2
@@ -872,7 +888,7 @@
           "q": "Act according to your recommendation: one bounded independent direct-binary feasibility check after assessing whether the project is a dead end."
         }
       ],
-      "score": 0.806933885,
+      "score": 0.804895377,
       "source_file": "src/ipin_openppi/validation/negative_evidence.py",
       "status": "tentative",
       "uses": 1
@@ -888,7 +904,7 @@
           "q": "explore this repo deeply and fully understand it first. You can use the graphify skill if it helps a better navigation. Resume from governance/checkpoints/RESUME-001-post-tf-isoform-audit.md. First, perform a minimal governance cleanup only: accept the TF-isoform audit and DEC-0016 disposition as technically complete; preserve the panel as external-only and unsuitable for training negatives, universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family benchmarking; do not reopen, recompute, or extend either audit. Then begin the previously authorized sequence-component audit exactly from the checkpoint scope. Preserve the primary PU-R design, remain fail-closed, run relevant validation and tests, and commit and push all completed work."
         }
       ],
-      "score": 0.368590972,
+      "score": 0.367659823,
       "source_file": "src/ipin_openppi/validation/sequence_components.py",
       "status": "tentative",
       "uses": 1
@@ -909,7 +925,7 @@
           "q": "ok! now challenge the signal with stronger homology/interolog controls and source-aware validation, as you suggested."
         }
       ],
-      "score": 1.603112425,
+      "score": 1.599062581,
       "source_file": "src/ipin_openppi/validation/systematic_screen_audit.py",
       "status": "preferred",
       "uses": 2
@@ -925,7 +941,7 @@
           "q": "Act according to your recommendation: one bounded independent direct-binary feasibility check after assessing whether the project is a dead end."
         }
       ],
-      "score": 0.806933885,
+      "score": 0.804895377,
       "source_file": "src/ipin_openppi/validation/systematic_screen_audit.py",
       "status": "tentative",
       "uses": 1
@@ -941,7 +957,7 @@
           "q": "commit and push if all relevant docs and files are up to date."
         }
       ],
-      "score": 0.809530267,
+      "score": 0.8074852,
       "source_file": "tests/test_model_optimization_v1.py",
       "status": "tentative",
       "uses": 1
