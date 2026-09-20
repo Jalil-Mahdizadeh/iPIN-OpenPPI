@@ -25,9 +25,10 @@ records for the first two models. Published-model comparisons are indexed in
 [benchmark/](../../benchmark/README.md); the original TUnA predictor remains a
 separate comparator.
 
-Current biological application: [twelve-target comparison](../../example/twelve_target_comparison_v1/REPORT.md)
-and [panel index](../../example/README.md). All three unchanged models score
-3,737 pairs with fresh embeddings; the report includes known-positive retrieval
-metrics, matched-control comparisons, and training/development exposure
-sensitivities. Versioned model cards and their checksum-bound freeze records
-remain unchanged.
+Current biological application: [expanded twelve-target comparison](../../example/twelve_target_comparison_v2/REPORT.md)
+and [panel index](../../example/INDEX.md). All three unchanged models and original
+published TUnA score 5,587 pairs with fresh embeddings. Five candidate sets compare
+context, background and biologically selected low-plausibility U, with all prior
+retrieval metrics, exposure checks and evidence-tier sensitivities. Original TUnA
+is a comparator; the registry still has three iPIN models. Versioned model cards
+and their checksum-bound freeze records remain unchanged.

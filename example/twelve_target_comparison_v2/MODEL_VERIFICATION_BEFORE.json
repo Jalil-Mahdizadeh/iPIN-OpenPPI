@@ -1,0 +1,17 @@
+{
+  "release_id": "frozen_pair_models_v2",
+  "passed": true,
+  "models": 3,
+  "third_model": "tuna_retrained_ensemble",
+  "registry_sha256": "faf2d585dbfee34ca3fe19487bc7a821f744014cdcdb94e95e4b657097110878",
+  "new_state_only_checkpoints": 3,
+  "all_registered_member_checkpoints": 9,
+  "bundle_files": 30,
+  "bundle_read_only": true,
+  "previous_release_unchanged_and_verified": true,
+  "TUnA_evaluation_records_unchanged": true,
+  "synthetic_qualification_passed": true,
+  "unit_tests": {"errors": 0, "failures": 0, "skipped": 3, "tests": 538},
+  "new_training_or_benchmark_scoring": false,
+  "test_truth_or_pairs_accessed": false
+}

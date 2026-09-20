@@ -1,0 +1,38 @@
+{
+  "schema": "ipin_twelve_target_extension_v1",
+  "selection_basis": "Six additional human targets spanning six biological processes; nominated from literature and curated records before scoring. No model scores were used in target or partner selection.",
+  "sampling_salt": "ipin-twelve-target-panel-v1-20260920",
+  "original_targets": ["ERN1", "TP53", "EGFR", "BCL2", "KEAP1", "BRCA1"],
+  "new_targets": [
+    {"gene": "KRAS", "accession": "P01116", "process": "RAS signaling", "positives": [
+      {"gene": "RAF1", "accession": "P04049", "compartment": "cytoplasm", "url": "https://www.rcsb.org/structure/6XI7", "note": "Direct KRAS-RAF1 RBD/CRD complex; binding depends on the KRAS nucleotide state."},
+      {"gene": "BRAF", "accession": "P15056", "compartment": "cytoplasm", "url": "https://www.rcsb.org/structure/8DGS", "note": "Direct KRAS contact in the RAS/RAF recruitment complex; binding alone does not imply BRAF activation."},
+      {"gene": "ARAF", "accession": "P10398", "compartment": "cytoplasm", "url": "https://www.rcsb.org/structure/2MSE", "note": "NMR-supported KRAS-ARAF RAS-binding-domain interaction in a membrane context. The three RAF partners are homologous and are not independent biological families."}
+    ]},
+    {"gene": "CDK2", "accession": "P24941", "process": "Cell-cycle control", "positives": [
+      {"gene": "CCNA2", "accession": "P20248", "compartment": "nucleus", "url": "https://www.rcsb.org/structure/1JSU", "note": "Cyclin A2 directly binds CDK2 in the crystallized cyclin A-CDK2-p27 complex."},
+      {"gene": "CCNE1", "accession": "P24864", "compartment": "nucleus", "url": "https://www.rcsb.org/structure/1W98", "note": "Human cyclin E1-CDK2 complex; kinase activity additionally depends on phosphorylation."},
+      {"gene": "CDKN1B", "accession": "P46527", "compartment": "nucleus", "url": "https://www.rcsb.org/structure/1JSU", "note": "The p27 inhibitory domain directly contacts CDK2 and cyclin A in the ternary structure."}
+    ]},
+    {"gene": "HIF1A", "accession": "Q16665", "process": "Oxygen sensing and hypoxic transcription", "positives": [
+      {"gene": "ARNT", "accession": "P27540", "compartment": "nucleus", "url": "https://www.uniprot.org/uniprotkb/Q16665/entry", "note": "Curated human HIF1A-ARNT heterodimer; structural support from the HIF-1alpha:ARNT DNA-bound complex (PDB 4ZPR)."},
+      {"gene": "VHL", "accession": "P40337", "compartment": "cytoplasm", "url": "https://www.rcsb.org/structure/1LQB", "note": "Direct recognition of a hydroxylated HIF1A peptide by VHL; canonical sequence input does not encode the required proline hydroxylation."},
+      {"gene": "EP300", "accession": "Q09472", "compartment": "nucleus", "url": "https://www.rcsb.org/structure/1L3E", "note": "HIF1A C-terminal activation domain directly binds the p300 CH1 domain; oxygen-dependent modifications regulate recruitment."}
+    ]},
+    {"gene": "CTNNB1", "accession": "P35222", "process": "Cell adhesion and Wnt transcription", "positives": [
+      {"gene": "CDH1", "accession": "P12830", "compartment": "cell membrane", "url": "https://www.uniprot.org/uniprotkb/P35222/entry", "note": "Curated human beta-catenin-E-cadherin interaction; E-cadherin cytoplasmic tail binds beta-catenin. Homologous structural support: PDB 1I7X (murine proteins)."},
+      {"gene": "CTNNA1", "accession": "P35221", "compartment": "cytoplasm", "url": "https://www.uniprot.org/uniprotkb/P35222/entry", "note": "Curated human beta-catenin-alpha-E-catenin interaction; distinct from alpha-N-catenin (CTNNA2)."},
+      {"gene": "TCF7L2", "accession": "Q9NQB0", "compartment": "nucleus", "url": "https://www.rcsb.org/structure/1JDH", "note": "Direct beta-catenin-TCF4 (TCF7L2) binding supports Wnt-dependent transcription."}
+    ]},
+    {"gene": "TNFRSF1A", "accession": "P19438", "process": "Inflammatory receptor signaling", "positives": [
+      {"gene": "TNF", "accession": "P01375", "compartment": "cell membrane", "url": "https://www.uniprot.org/uniprotkb/P19438/entry", "note": "Curated direct TNF-TNFR1 ligand-receptor binding; TNF exists as membrane-bound precursor and cleaved soluble ligand."},
+      {"gene": "LTA", "accession": "P01374", "compartment": "secreted", "url": "https://www.rcsb.org/structure/1TNR", "note": "Human soluble lymphotoxin-alpha homotrimer directly binds TNFR1; distinct from lymphotoxin-alpha/beta receptor specificity."},
+      {"gene": "TRADD", "accession": "Q15628", "compartment": "cytoplasm", "url": "https://pubmed.ncbi.nlm.nih.gov/7758105/", "note": "Direct interaction of TRADD and TNFR1 death domains; downstream complex membership alone is not used as positive evidence."}
+    ]},
+    {"gene": "BECN1", "accession": "Q14457", "process": "Autophagy regulation", "positives": [
+      {"gene": "ATG14", "accession": "Q6ZNE5", "compartment": "endoplasmic reticulum", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2592660/", "note": "Human ATG14 coiled-coil interaction with Beclin 1; mutually exclusive with UVRAG-containing complexes."},
+      {"gene": "UVRAG", "accession": "Q9P2Y5", "compartment": "endoplasmic reticulum", "url": "https://www.rcsb.org/structure/5YR0", "note": "Direct Beclin 1-UVRAG coiled-coil heterodimer."},
+      {"gene": "BCL2", "accession": "P10415", "compartment": "endoplasmic reticulum", "url": "https://www.uniprot.org/uniprotkb/Q14457/entry", "note": "Curated human BECN1-BCL2 interaction through the Beclin 1 BH3 domain; structural support in PDB 5VAX uses an engineered BCL2/BCL2L1 construct."}
+    ]}
+  ]
+}

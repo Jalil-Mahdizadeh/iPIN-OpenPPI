@@ -33,11 +33,13 @@ exact checkpoint hashes and prediction definitions. This is a post-follow-up
 designation, not a new test, refit or statistically conclusive C3 superiority claim.
 
 The [repository overview](../README.md), [published-model benchmark index](../benchmark/README.md),
-and [twelve-target application](../example/twelve_target_comparison_v1/REPORT.md)
+and [expanded twelve-target application](../example/twelve_target_comparison_v2/REPORT.md)
 describe subsequent work and its own execution records. The user-authorized
 application extension preserves the three frozen predictors and all original
-six-target records; its [scope record](../example/twelve_target_comparison_v1/AUTHORIZATION.md)
-and [metric protocol](../example/twelve_target_comparison_v1/METRICS.md) retain
+six-target and twelve-target records. It adds 50 low-plausibility U per positive
+with explicit evidence tiers and reapplies all three frozen iPIN models plus
+original TUnA. Its [scope record](../example/twelve_target_comparison_v2/AUTHORIZATION.md)
+and [metric protocol](../example/twelve_target_comparison_v2/METRICS.md) retain
 authority and analysis definitions. Status v55 records the model freeze;
 example applications keep their separate versioned reports.
 

@@ -18,9 +18,10 @@ Core scheduler declarations live under [slurm/](../slurm/README.md).
 
 Published-model runners and scheduler files live with each method under
 [benchmark/](../benchmark/README.md), while the twelve-target application is under
-[example/](../example/twelve_target_comparison_v1/README.md). Its local scripts
-construct panels, score all three frozen models, compute retrieval metrics,
-independently validate results, and render reports/figures. Run scientific entry
+[example/](../example/twelve_target_comparison_v2/README.md). Its local scripts
+add annotated low-plausibility U, score all three frozen iPIN models and original
+TUnA, compare five candidate sets, independently validate results, and render
+reports/figures. Run scientific entry
 points inside their qualified ARM64 SIF and use a new run directory. Completed
 single-use evaluations are not general-purpose rerun commands.
 

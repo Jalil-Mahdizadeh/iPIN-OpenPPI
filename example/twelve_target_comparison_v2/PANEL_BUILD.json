@@ -1,0 +1,1068 @@
+{
+  "at_utc": "2026-09-20T14:41:40.472501+00:00",
+  "builder_sha256": "9bfdd40fd6530921cdbb133534dded200794d0b3c128a90bf690e16e0ff0788f",
+  "configuration_sha256": "567aa6568c9c2a6bfee0e0df81e730c044ea145e010a13c06bfdd8fd679ec458",
+  "feasibility": [
+    {
+      "anchor": "ERN1",
+      "available_by_tier": {
+        "A_compartment_separation": 824
+      },
+      "target": "ERN1"
+    },
+    {
+      "anchor": "HSPA5",
+      "available_by_tier": {
+        "A_compartment_separation": 1199
+      },
+      "target": "ERN1"
+    },
+    {
+      "anchor": "PDIA6",
+      "available_by_tier": {
+        "A_compartment_separation": 1315
+      },
+      "target": "ERN1"
+    },
+    {
+      "anchor": "SEC61A1",
+      "available_by_tier": {
+        "A_compartment_separation": 1317
+      },
+      "target": "ERN1"
+    },
+    {
+      "anchor": "MDM2",
+      "available_by_tier": {
+        "A_compartment_separation": 465
+      },
+      "target": "TP53"
+    },
+    {
+      "anchor": "MDM4",
+      "available_by_tier": {
+        "A_compartment_separation": 469
+      },
+      "target": "TP53"
+    },
+    {
+      "anchor": "EP300",
+      "available_by_tier": {
+        "A_compartment_separation": 59
+      },
+      "target": "TP53"
+    },
+    {
+      "anchor": "GRB2",
+      "available_by_tier": {
+        "A_compartment_separation": 7,
+        "B_secondary_location_overlap": 266
+      },
+      "target": "EGFR"
+    },
+    {
+      "anchor": "SHC1",
+      "available_by_tier": {
+        "A_compartment_separation": 9,
+        "B_secondary_location_overlap": 429
+      },
+      "target": "EGFR"
+    },
+    {
+      "anchor": "CBL",
+      "available_by_tier": {
+        "A_compartment_separation": 4,
+        "B_secondary_location_overlap": 342
+      },
+      "target": "EGFR"
+    },
+    {
+      "anchor": "BCL2L11",
+      "available_by_tier": {
+        "A_compartment_separation": 572
+      },
+      "target": "BCL2"
+    },
+    {
+      "anchor": "BAD",
+      "available_by_tier": {
+        "A_compartment_separation": 540
+      },
+      "target": "BCL2"
+    },
+    {
+      "anchor": "BBC3",
+      "available_by_tier": {
+        "A_compartment_separation": 567
+      },
+      "target": "BCL2"
+    },
+    {
+      "anchor": "NFE2L2",
+      "available_by_tier": {
+        "A_compartment_separation": 454
+      },
+      "target": "KEAP1"
+    },
+    {
+      "anchor": "CUL3",
+      "available_by_tier": {
+        "A_compartment_separation": 368
+      },
+      "target": "KEAP1"
+    },
+    {
+      "anchor": "SQSTM1",
+      "available_by_tier": {
+        "A_compartment_separation": 542
+      },
+      "target": "KEAP1"
+    },
+    {
+      "anchor": "BARD1",
+      "available_by_tier": {
+        "A_compartment_separation": 332
+      },
+      "target": "BRCA1"
+    },
+    {
+      "anchor": "PALB2",
+      "available_by_tier": {
+        "A_compartment_separation": 152
+      },
+      "target": "BRCA1"
+    },
+    {
+      "anchor": "BRIP1",
+      "available_by_tier": {
+        "A_compartment_separation": 144
+      },
+      "target": "BRCA1"
+    },
+    {
+      "anchor": "RAF1",
+      "available_by_tier": {
+        "A_compartment_separation": 456
+      },
+      "target": "KRAS"
+    },
+    {
+      "anchor": "BRAF",
+      "available_by_tier": {
+        "A_compartment_separation": 383
+      },
+      "target": "KRAS"
+    },
+    {
+      "anchor": "ARAF",
+      "available_by_tier": {
+        "A_compartment_separation": 472
+      },
+      "target": "KRAS"
+    },
+    {
+      "anchor": "CCNA2",
+      "available_by_tier": {
+        "A_compartment_separation": 581
+      },
+      "target": "CDK2"
+    },
+    {
+      "anchor": "CCNE1",
+      "available_by_tier": {
+        "A_compartment_separation": 603
+      },
+      "target": "CDK2"
+    },
+    {
+      "anchor": "CDKN1B",
+      "available_by_tier": {
+        "A_compartment_separation": 589
+      },
+      "target": "CDK2"
+    },
+    {
+      "anchor": "ARNT",
+      "available_by_tier": {
+        "A_compartment_separation": 355
+      },
+      "target": "HIF1A"
+    },
+    {
+      "anchor": "VHL",
+      "available_by_tier": {
+        "A_compartment_separation": 581
+      },
+      "target": "HIF1A"
+    },
+    {
+      "anchor": "EP300",
+      "available_by_tier": {
+        "A_compartment_separation": 57
+      },
+      "target": "HIF1A"
+    },
+    {
+      "anchor": "CDH1",
+      "available_by_tier": {
+        "A_compartment_separation": 295
+      },
+      "target": "CTNNB1"
+    },
+    {
+      "anchor": "CTNNA1",
+      "available_by_tier": {
+        "A_compartment_separation": 288
+      },
+      "target": "CTNNB1"
+    },
+    {
+      "anchor": "TCF7L2",
+      "available_by_tier": {
+        "A_compartment_separation": 467
+      },
+      "target": "CTNNB1"
+    },
+    {
+      "anchor": "TNF",
+      "available_by_tier": {
+        "A_compartment_separation": 862
+      },
+      "target": "TNFRSF1A"
+    },
+    {
+      "anchor": "LTA",
+      "available_by_tier": {
+        "A_compartment_separation": 716
+      },
+      "target": "TNFRSF1A"
+    },
+    {
+      "anchor": "TRADD",
+      "available_by_tier": {
+        "A_compartment_separation": 1147
+      },
+      "target": "TNFRSF1A"
+    },
+    {
+      "anchor": "ATG14",
+      "available_by_tier": {
+        "A_compartment_separation": 509
+      },
+      "target": "BECN1"
+    },
+    {
+      "anchor": "UVRAG",
+      "available_by_tier": {
+        "A_compartment_separation": 401
+      },
+      "target": "BECN1"
+    },
+    {
+      "anchor": "BCL2",
+      "available_by_tier": {
+        "A_compartment_separation": 618
+      },
+      "target": "BECN1"
+    }
+  ],
+  "frozen_sequence_source_sha256": "bc7a91661ea05cbfdcf3551b9a4d18c149ac077549ebbcf0be7e7ef5d94ace77",
+  "model_scores_read": false,
+  "original_tuna_training_validation_sources": [
+    {
+      "path": "benchmark/tuna/upstream/TUnA/data/raw/bernett/human_swissprot_oneliner.fasta",
+      "sha256": "578b02750acb75416b897ee7de07f9f5a4f3a57ec7fbce4b4a62ec84a1851d0d"
+    },
+    {
+      "path": "benchmark/tuna/upstream/TUnA/data/processed/bernett/Intra1_interaction_1500_or_less.tsv",
+      "sha256": "bec107f8e07cc603ff247a8626aa9a06369b73256848fb5ccbf42dc31f998a58"
+    },
+    {
+      "path": "benchmark/tuna/upstream/TUnA/data/processed/bernett/Intra0_interaction_1500_or_less.tsv",
+      "sha256": "105f30b038800f5cf7e598fc9dc6e34ddaabfa9451e32a6edd69d6cc52687a1f"
+    }
+  ],
+  "passed": true,
+  "protected_test_truth_read": false,
+  "selection_protocol_sha256": "03f4800b4c11e0f75f0f498cb4f61abf0c4098b64214ee146d38e799d7dadf66",
+  "selection_sha256": "1fcce41e4fe043fc21491d4dcd6863a4b1e4b2a38b66b235a16d8440b7201383",
+  "source_metadata": [
+    {
+      "bytes": 7460135,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "max-age=86400,must-revalidate",
+        "connection": "Upgrade, close",
+        "content-length": "7460135",
+        "content-security-policy": "upgrade-insecure-requests;",
+        "content-type": "application/zip",
+        "date": "Sun, 20 Sep 2026 14:29:18 GMT",
+        "etag": "\"71d527-653576c918440\"",
+        "last-modified": "Wed, 03 Jun 2026 11:06:49 GMT",
+        "server": "Apache",
+        "strict-transport-security": "max-age=31536000;",
+        "upgrade": "h2"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/hpa_proteinatlas.tsv.zip.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:29:18.956532+00:00",
+      "sha256": "ad401f8519ecdee5b67b0ad3bf28175d402d1ea0ad6c542b90fcab2bee39b470",
+      "url": "https://www.proteinatlas.org/download/proteinatlas.tsv.zip"
+    },
+    {
+      "bytes": 122461,
+      "headers": {
+        "connection": "Upgrade, close",
+        "content-security-policy": "upgrade-insecure-requests;",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Sun, 20 Sep 2026 14:25:35 GMT",
+        "server": "Apache",
+        "set-cookie": "selected_atlas=cell; path=/",
+        "strict-transport-security": "max-age=31536000;",
+        "transfer-encoding": "chunked",
+        "upgrade": "h2",
+        "vary": "Accept-Encoding"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/hpa_subcellular_data.html.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:35.802058+00:00",
+      "sha256": "565564e62f7bd07b4fc5d9b42b873d806233d35234c4c3b60728e8096e79477a",
+      "url": "https://www.proteinatlas.org/humanproteome/subcellular/data"
+    },
+    {
+      "bytes": 252331,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "max-age=86400,must-revalidate",
+        "connection": "Upgrade, close",
+        "content-length": "252331",
+        "content-security-policy": "upgrade-insecure-requests;",
+        "content-type": "application/zip",
+        "date": "Sun, 20 Sep 2026 14:25:35 GMT",
+        "etag": "\"3d9ab-642e4335d6780\"",
+        "last-modified": "Thu, 06 Nov 2025 02:55:42 GMT",
+        "server": "Apache",
+        "strict-transport-security": "max-age=31536000;",
+        "upgrade": "h2"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/hpa_subcellular_location.tsv.zip.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:35.788754+00:00",
+      "sha256": "a9466882bd3328416bcde77c32a6bcb2a17d70183af90e98d032f6f5f781d504",
+      "url": "https://www.proteinatlas.org/download/tsv/subcellular_location.tsv.zip"
+    },
+    {
+      "bytes": 158876,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:16 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "150",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_O75460_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:17.016237+00:00",
+      "sha256": "8092534ef15224b2bc2863c7e3fbf3cc13f44c7fc63fb4f3bc4b0eb047629a52",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AO75460%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 2632630,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:16 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "1947",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_P00533_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:17.255775+00:00",
+      "sha256": "67c824e264f9b6ecb7fd6985625d79a0154840730c985107b3101f0dcd505b5e",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AP00533%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 1790477,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:17 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "1538",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_P01116_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:17.839097+00:00",
+      "sha256": "ab5acc2d30c253b3b6605d68f4d015b70f4c8f7ca8e0826c1a2011fe2a4d08e7",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AP01116%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 1807561,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:16 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "1091",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_P04637_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:17.182454+00:00",
+      "sha256": "76259234719a60f828bf1cf376262f95cd20104621ca90f395ef09da0ef8327d",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AP04637%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 172956,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:16 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "173",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_P10415_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:17.005036+00:00",
+      "sha256": "9b0fd131549d4f77f246691094d2e8021d8240ffcdbfb522166f445c49ed1f41",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AP10415%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 303720,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:17 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "242",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_P19438_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:18.112320+00:00",
+      "sha256": "c7c4161e18d73cc04221468bae7f7a6548a58fcfceee3d0ba181dc12920b4065",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AP19438%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 542311,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:17 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "533",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_P24941_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:17.975444+00:00",
+      "sha256": "c1b3e8317b9d4cec09c9b41998841a861fd2381cc50cdffacf48aa2f0f5944c4",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AP24941%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 1204037,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:17 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "691",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_P35222_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:18.033096+00:00",
+      "sha256": "a97e230c494e7af8fc5ecdea863d40471ebcd17193d4c4c33389fdbf3a1d0e77",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AP35222%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 210444,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:17 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "164",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_P38398_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:17.276836+00:00",
+      "sha256": "9856c75917703e02c97cc4fce89e195cb4b3d5608345996e7f4aeeb4100c1249",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AP38398%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 546841,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:17 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "458",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_Q14145_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:17.341781+00:00",
+      "sha256": "bc7f96fe31f7ee6f40170501743acfb597a8967f94fc73aae955aa989b5cc3a2",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AQ14145%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 417390,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:18 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "386",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_Q14457_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:18.197345+00:00",
+      "sha256": "1b58fc3592160adc20459418ba5e34e1edd17b08795587e6c36f570d1b7f6981",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AQ14457%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 345985,
+      "headers": {
+        "connection": "close",
+        "content-type": "text/plain",
+        "date": "Sun, 20 Sep 2026 14:35:17 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-psicquic-count": "250",
+        "x-psicquic-impl": "Reference Implementation",
+        "x-psicquic-impl-version": "1.5.3",
+        "x-psicquic-spec-version": "1.4",
+        "x-psicquic-supports-formats": "xml25, tab25, tab26, tab27, tab28, biopax, xgmml, rdf-xml, rdf-xml-abbrev, rdf-n3, rdf-turtle, count, biopax-L2, biopax-L3"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/intact_Q16665_0.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:35:17.913511+00:00",
+      "sha256": "409653b7a4eaf086ede8ac492f5d760299185b1be48d0cd1f3a765956bf54d1e",
+      "url": "https://www.ebi.ac.uk/Tools/webservices/psicquic/intact/webservices/current/search/query/id%3AQ16665%2A?format=tab25&firstResult=0&maxResults=2500"
+    },
+    {
+      "bytes": 29331431,
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-type": "text/plain;format=tsv",
+        "date": "Sun, 20 Sep 2026 14:25:36 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/reviewed_human_annotations.tsv.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:48.909157+00:00",
+      "sha256": "4fa1d8b8b8ec9e74bcaad1e4f69ad1c6361ca09ae1ba6d1c63a9c89d3ce1e333",
+      "url": "https://rest.uniprot.org/uniprotkb/stream?query=reviewed%3Atrue+AND+organism_id%3A9606+AND+existence%3A1&format=tsv&fields=accession%2Cgene_primary%2Clength%2Ccc_subcellular_location%2Cft_transmem%2Csequence%2Ccc_subunit%2Cprotein_existence%2Cxref_ensembl%2Cft_topo_dom%2Cft_signal%2Ccc_tissue_specificity"
+    },
+    {
+      "bytes": 106620,
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:37 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "miss cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_O75460.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:37.501714+00:00",
+      "sha256": "338d38e7ce95339cf1b19f432859f3d5b5673ec681df8523672b9c1db5b3726d",
+      "url": "https://rest.uniprot.org/uniprotkb/O75460.json"
+    },
+    {
+      "bytes": 418611,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-length": "418611",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:38 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "hit cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_P00533.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:38.637939+00:00",
+      "sha256": "90c459656751eac791efc2f369f49145d38cc949f5b41bf628180ac0a6874b02",
+      "url": "https://rest.uniprot.org/uniprotkb/P00533.json"
+    },
+    {
+      "bytes": 266929,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-length": "266929",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:40 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "hit cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_P01116.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:40.528763+00:00",
+      "sha256": "54e2d937a79f84a4b9e6039fe4de4632290b1456cfc069b71b98dcd1880140fa",
+      "url": "https://rest.uniprot.org/uniprotkb/P01116.json"
+    },
+    {
+      "bytes": 874741,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-length": "874741",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:40 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "hit cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_P04637.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:40.571749+00:00",
+      "sha256": "6bdb471fae5b0d4c92a1e2fd63f35b49e3826188e82ff54fcddec70c4e63e114",
+      "url": "https://rest.uniprot.org/uniprotkb/P04637.json"
+    },
+    {
+      "bytes": 105991,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-length": "105991",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:35 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "hit cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_P10415.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:35.939309+00:00",
+      "sha256": "b094569bd91396aca06330306168450bf83dba573909b537cf658e838c136b0b",
+      "url": "https://rest.uniprot.org/uniprotkb/P10415.json"
+    },
+    {
+      "bytes": 92464,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-length": "92464",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:39 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "hit cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_P19438.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:39.525553+00:00",
+      "sha256": "c0c92e7c2d5e357dddae3b61d6ed699619adb656ae24a5774eeb05f41643c4a6",
+      "url": "https://rest.uniprot.org/uniprotkb/P19438.json"
+    },
+    {
+      "bytes": 283255,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-length": "283255",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:36 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "hit cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_P24941.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:36.676827+00:00",
+      "sha256": "5b3e153148467b81793eaeff5e12205f639900c7ace45e231f7e2c56d36c3a74",
+      "url": "https://rest.uniprot.org/uniprotkb/P24941.json"
+    },
+    {
+      "bytes": 244123,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-length": "244123",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:37 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "hit cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_P35222.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:37.513581+00:00",
+      "sha256": "56e8551bbbfd91227366597d91a3c805bd374ba2388c99a49b4930cf2e4700ba",
+      "url": "https://rest.uniprot.org/uniprotkb/P35222.json"
+    },
+    {
+      "bytes": 279017,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-length": "279017",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:36 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "hit cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_P38398.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:36.563313+00:00",
+      "sha256": "d2dd4fec6406c53f3624d834cf63b528a68c88c855a01d95a62e6e063a11ecbf",
+      "url": "https://rest.uniprot.org/uniprotkb/P38398.json"
+    },
+    {
+      "bytes": 143512,
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:39 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "miss cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_Q14145.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:39.587930+00:00",
+      "sha256": "f7084519e078a05a41f1383847cb4e783acdb6f7e1e99fff0c633eca79166e2f",
+      "url": "https://rest.uniprot.org/uniprotkb/Q14145.json"
+    },
+    {
+      "bytes": 124246,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-length": "124246",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:35 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "hit cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_Q14457.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:36.000782+00:00",
+      "sha256": "24bb91ceadc0b47806e8908b3f7f99afee327bc570fda880214c8bb7eadcc8fa",
+      "url": "https://rest.uniprot.org/uniprotkb/Q14457.json"
+    },
+    {
+      "bytes": 144575,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+        "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+        "access-control-max-age": "1728000",
+        "cache-control": "public, max-age=43200",
+        "connection": "close",
+        "content-length": "144575",
+        "content-type": "application/json",
+        "date": "Sun, 20 Sep 2026 14:25:38 GMT",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+        "x-api-deployment-date": "02-September-2026",
+        "x-cache": "hit cached",
+        "x-uniprot-release": "2026_03",
+        "x-uniprot-release-date": "02-September-2026"
+      },
+      "path": "example/twelve_target_comparison_v2/sources/uniprot_Q16665.json.metadata.json",
+      "retrieved_at_utc": "2026-09-20T14:25:38.484441+00:00",
+      "sha256": "d42d530fabc72db9ce5c00ff3308dcab8b525ec6bdd3fef6727b1f16ad6692b0",
+      "url": "https://rest.uniprot.org/uniprotkb/Q16665.json"
+    }
+  ],
+  "targets": [
+    {
+      "P": 4,
+      "U": 600,
+      "csv_sha256": "29bdb8dee0f1688e0ea1db24959feaa604bc982a6e8058622eccd39fd640d1bc",
+      "manifest_sha256": "7a4b5f7dc5d45380b6c8b50f79ca31906f72ce529304dbef20e9ddd38365660b",
+      "new_U_by_tier": {
+        "A_compartment_separation": 200
+      },
+      "target": "ERN1"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "e93242c6c762f277bf94b5ea18c5a74163d3ef539b1c3c18c544b543dd4b8cc9",
+      "manifest_sha256": "e95a1b7fab75f3531815fc37cdd3bbca7cf63a9c158b815ca5355f4c663f1828",
+      "new_U_by_tier": {
+        "A_compartment_separation": 150
+      },
+      "target": "TP53"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "3426d9d62ebbd9c0def19ff9158448ae75f641ee02e40325ac47cd2d186272d5",
+      "manifest_sha256": "1c33e9cf40e0f3507498045f81c5972ba2a8bbd6c3aba7357bc08f162ebc461c",
+      "new_U_by_tier": {
+        "A_compartment_separation": 11,
+        "B_secondary_location_overlap": 139
+      },
+      "target": "EGFR"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "a4b5ef15ff999e0c70be4fd0360b39e579f6e91b8ce5a9477d1bc477bc083c7f",
+      "manifest_sha256": "a4c90aefe8daffbea5e96c1a01aeb3668cadc40879f1254178312fb75728a613",
+      "new_U_by_tier": {
+        "A_compartment_separation": 150
+      },
+      "target": "BCL2"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "398153fced4d432f4024c220887f39dbc5419c78e61a3eb79d07f15579ffd938",
+      "manifest_sha256": "536265eb68697f9786dd2e799c2110169d95880533cd428847fce956e8bb21ea",
+      "new_U_by_tier": {
+        "A_compartment_separation": 150
+      },
+      "target": "KEAP1"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "623500c96ea1f53f516163ce96282547f33cde0e08ad44c2800b2809933eff6f",
+      "manifest_sha256": "444559177d9ae7ed42db78a7ed2e7d2f78a8212291aa3e69475bb14e6fc39016",
+      "new_U_by_tier": {
+        "A_compartment_separation": 150
+      },
+      "target": "BRCA1"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "3b1fc2455b63ed2ce067a03a83ab163d0c611a2e8cce3ebb93be50ac22e324b3",
+      "manifest_sha256": "f7ee8301c82c95bb9d9029073fcd8c36a61544a77fa875a4b5c98819eb900bbb",
+      "new_U_by_tier": {
+        "A_compartment_separation": 150
+      },
+      "target": "KRAS"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "cb5065d70da24bd123a82417216eb0a1ea3f191adc646ea8ba69060931199a45",
+      "manifest_sha256": "90d800e9f4abcc1ba0b724549fdf22aa693bf512dc7afa4cc73e5b77ff56e2be",
+      "new_U_by_tier": {
+        "A_compartment_separation": 150
+      },
+      "target": "CDK2"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "b415e1b25593c1f91dc5472576402db7fb8a51f2199253592707b71633a489d0",
+      "manifest_sha256": "b9ec1e080a146b3a363658379356ac76227fcb639fe446905f0bb79b82208dff",
+      "new_U_by_tier": {
+        "A_compartment_separation": 150
+      },
+      "target": "HIF1A"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "2e0e4809b2e463b5b8d784950399a116d60ce57847f1c3f2e3a768bd378d35bb",
+      "manifest_sha256": "525763d0244069032705d76d0c939e840a9a0f6b87d92e0c13eec083b2165d5d",
+      "new_U_by_tier": {
+        "A_compartment_separation": 150
+      },
+      "target": "CTNNB1"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "177c53a343f94b3a4407f945f320ad689cb9f31381aadc3e82eac925ed210f65",
+      "manifest_sha256": "7445b7fa2bc968f518de3fb82469614ff4124ff842adaef818e12d050f884b54",
+      "new_U_by_tier": {
+        "A_compartment_separation": 150
+      },
+      "target": "TNFRSF1A"
+    },
+    {
+      "P": 3,
+      "U": 450,
+      "csv_sha256": "d6dd6462ecec47bba18c6e6045b1ae6bbeb967918dd5e680b36277c71f3c5c1a",
+      "manifest_sha256": "183dc975dc420bf746f031f3bdecfa578e492d70b70b29e4372cd51a57dff441",
+      "new_U_by_tier": {
+        "A_compartment_separation": 150
+      },
+      "target": "BECN1"
+    }
+  ],
+  "training_development_sources": [
+    {
+      "path": "benchmark/tuna/data/training.npz",
+      "sha256": "43ae252277820ffe527dad1ed4839d5673cff279b6c8c943ff4b5350a9283ca6"
+    },
+    {
+      "path": "benchmark/tuna/data/development_00.npz",
+      "sha256": "8a1f61a429a2b79c9a41dd1e7f6d02ece58bf93adc9a8c9b07233f930a5422e5"
+    },
+    {
+      "path": "benchmark/tuna/data/development_01.npz",
+      "sha256": "65d6ce7e4c106e3f14949f70b5f5852a471438573824db3f99f0713c40bee3c0"
+    },
+    {
+      "path": "benchmark/tuna/data/development_02.npz",
+      "sha256": "3aa68097a097d0022dba3593cae292cfda8f477ea8d4cd3342fb29eda6992393"
+    }
+  ]
+}

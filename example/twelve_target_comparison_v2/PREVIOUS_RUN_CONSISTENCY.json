@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-09-20T14:52:27.229646+00:00",
+  "models": [
+    {
+      "maximum_absolute_score_difference": 0.0,
+      "model": "ipin_baseline",
+      "pairs": 3737,
+      "previous_folder": "twelve_target_comparison_v1",
+      "within_previous_panel_rank_changes": 0
+    },
+    {
+      "maximum_absolute_score_difference": 0.0,
+      "model": "ipin_optimized",
+      "pairs": 3737,
+      "previous_folder": "twelve_target_comparison_v1",
+      "within_previous_panel_rank_changes": 0
+    },
+    {
+      "maximum_absolute_score_difference": 1.1126200357480798e-05,
+      "model": "tuna_retrained",
+      "pairs": 3737,
+      "previous_folder": "twelve_target_comparison_v1",
+      "within_previous_panel_rank_changes": 0
+    },
+    {
+      "maximum_absolute_score_difference": 3.5762786865234375e-07,
+      "model": "tuna_original",
+      "pairs": 1919,
+      "previous_folder": "six_target_comparison_v1",
+      "within_previous_panel_rank_changes": 0
+    }
+  ],
+  "note": "Fresh FP32 extraction batches can change rounding; rankings compared only within the same old candidate sets."
+}

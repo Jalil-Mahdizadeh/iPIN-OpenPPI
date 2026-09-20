@@ -16,7 +16,7 @@ twelve protein-screening examples. Start with these records:
 |---|---|
 | Frozen iPIN predictors | [Three-model registry and cards](docs/models/FROZEN_PAIR_MODELS_v2.md) |
 | Published-method comparisons | [Benchmark results and execution status](benchmark/README.md) |
-| Protein-screening examples | [Twelve-target comparison](example/twelve_target_comparison_v1/REPORT.md), [panel index](example/README.md) |
+| Protein-screening examples | [Expanded four-model comparison](example/twelve_target_comparison_v2/REPORT.md), [current panel index](example/INDEX.md) |
 | Scientific reports and diagnostics | [Report index](docs/reports/README.md) |
 | Core model freeze and decisions | [Governance index](governance/README.md) |
 | Implementation and tests | [Source map](src/README.md), [entry points](scripts/README.md), [test policy](tests/README.md) |
@@ -56,13 +56,16 @@ and SPRINT. TUnA's retrained ensemble has C3 concordance 0.815875; its paired
 difference from optimized iPIN also includes zero. Retraining coverage and
 checkpoint-selection limitations differ by method, especially RAPPPID's
 partially trained recovery ensemble. The [benchmark index](benchmark/README.md)
-links each result and its caveats. The twelve-target application scores 37
-nominated positives and 3,700 unlabeled pairs with all three frozen iPIN models.
-It uses freshly retrieved sequences and recomputed embeddings, and reports PU
-concordance, AP/MAP, MRR, recall, NDCG, enrichment, and target success at fixed
-screening budgets. The [report](example/twelve_target_comparison_v1/REPORT.md)
-discloses training/development overlaps and sensitivity analyses. This separate
-descriptive application retains the original six-target results.
+links each result and its caveats. The expanded twelve-target application scores
+37 nominated positives and 5,550 unlabeled pairs with all three frozen iPIN models
+and original published TUnA. Each positive has 50 context-matched, 50 background,
+and 50 low-plausibility U. The [report](example/twelve_target_comparison_v2/REPORT.md)
+compares all five requested candidate sets using PU concordance, AP/MAP, MRR,
+positive ranks, recall, NDCG, enrichment, precision and target success at fixed
+screening budgets, with fresh sequences and embeddings. Evidence tiers distinguish
+1,711 compartment-separated additions from 139 weaker EGFR candidates; all remain
+unlabeled. Exposure and evidence sensitivities accompany the results. Prior
+six-target and twelve-target applications remain preserved historical records.
 
 A separate [U score comparison](example/u_context_background_analysis_v1/REPORT.md)
 finds modestly higher scores for context-matched than background candidates in

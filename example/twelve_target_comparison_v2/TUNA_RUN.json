@@ -1,0 +1,300 @@
+{
+  "GP_covariance_refitted": false,
+  "SIF_sha256": "98070c7c2d206d8421817849e11ffce308016dc982938a7d9a3ef3141ab1dec1",
+  "adapter_code": {
+    "bytes": 4681,
+    "path": "/project/.private/frozen_pair_models_v2/bundle/code/adapter.py",
+    "sha256": "8260aceb8e4eb7a1c3a2a97297e9a9f8faa96598130259ebf52a49635a5fe025"
+  },
+  "at_utc": "2026-09-20T14:51:24.807161+00:00",
+  "device": "NVIDIA GH200 120GB",
+  "elapsed_seconds": 87.13134183800139,
+  "esm_cache_code": {
+    "bytes": 9715,
+    "path": "/project/.private/frozen_pair_models_v2/bundle/code/esm_cache.py",
+    "sha256": "42686a117c5ecd86ea854dde87c77ba162950406b4e5f0ea9b88cd179a58cbc6"
+  },
+  "esm_qualification": {
+    "absolute_tolerance": 0.0002,
+    "at_utc": "2026-09-20T14:50:10.987552+00:00",
+    "encoder_sha256": "c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566",
+    "fixture_lengths": [
+      318,
+      481,
+      1141
+    ],
+    "padding_max_absolute_error": 1.2874603271484375e-05,
+    "passed": true,
+    "precision": "FP32; TF32 disabled; no autocast",
+    "sdpa_vs_native_max_absolute_error": 1.621246337890625e-05,
+    "test_pairs_or_truth_read": false,
+    "transformers_vs_native_max_absolute_error": 1.52587890625e-05
+  },
+  "fresh_residues": {
+    "bytes": 6227047168,
+    "path": "/project/example/twelve_target_comparison_v2/tuna_fresh_residues.h5",
+    "sha256": "28627583dc2124c6849b80c3d8391736f8a153a6ef4e69b33aa6593139128a3a"
+  },
+  "freshly_computed_endpoint_representations_per_member": 4012,
+  "freshly_embedded_sequences": 4012,
+  "ignored_unused_encoder_keys": [
+    "esm.embeddings.position_ids",
+    "esm.embeddings.position_embeddings.weight"
+  ],
+  "native_qualification": [
+    {
+      "all_parameters_and_buffers_unchanged": true,
+      "fixture_rows_zero_based": [
+        0,
+        604,
+        1057,
+        1510,
+        1963,
+        2416,
+        2869,
+        3322,
+        3775,
+        4012,
+        4228,
+        4681,
+        5134
+      ],
+      "member": "tuna_original",
+      "native_max_absolute_error": 1.7881393432617188e-07,
+      "pair_order_symmetry_passed": true,
+      "tolerance": 1e-05
+    },
+    {
+      "all_parameters_and_buffers_unchanged": true,
+      "fixture_rows_zero_based": [
+        0,
+        604,
+        1057,
+        1510,
+        1963,
+        2416,
+        2869,
+        3322,
+        3775,
+        4012,
+        4228,
+        4681,
+        5134
+      ],
+      "member": "tuna_retrained_seed20260803",
+      "native_max_absolute_error": 9.5367431640625e-06,
+      "pair_order_symmetry_passed": true,
+      "tolerance": 1e-05
+    },
+    {
+      "all_parameters_and_buffers_unchanged": true,
+      "fixture_rows_zero_based": [
+        0,
+        604,
+        1057,
+        1510,
+        1963,
+        2416,
+        2869,
+        3322,
+        3775,
+        4012,
+        4228,
+        4681,
+        5134
+      ],
+      "member": "tuna_retrained_seed20260817",
+      "native_max_absolute_error": 5.7220458984375e-06,
+      "pair_order_symmetry_passed": true,
+      "tolerance": 1e-05
+    },
+    {
+      "all_parameters_and_buffers_unchanged": true,
+      "fixture_rows_zero_based": [
+        0,
+        604,
+        1057,
+        1510,
+        1963,
+        2416,
+        2869,
+        3322,
+        3775,
+        4012,
+        4228,
+        4681,
+        5134
+      ],
+      "member": "tuna_retrained_seed20260831",
+      "native_max_absolute_error": 2.86102294921875e-06,
+      "pair_order_symmetry_passed": true,
+      "tolerance": 1e-05
+    }
+  ],
+  "preexisting_feature_cache_reads": 0,
+  "score_artifact": {
+    "bytes": 564172,
+    "path": "/project/example/twelve_target_comparison_v2/tuna_scores.csv",
+    "sha256": "0fb24daad89d7186fb4fb375bcb117e10aa982ff67d41872a70f95dea196ab68"
+  },
+  "scorer_freeze": {
+    "bytes": 4609,
+    "path": "/project/.private/frozen_pair_models_v2/bundle/provenance/SCORER_FREEZE.json",
+    "sha256": "e0d903371767f866a1a86392999823481aff083354be9f731c72b5b099e2410f"
+  },
+  "script_sha256": "cb2516da91f39ea9a32262a79807ca6bda53e00ea17ae80ab0669a2c26da7db0",
+  "seeds": [
+    20260803,
+    20260817,
+    20260831
+  ],
+  "selected_epoch": 4,
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "verified_model_inputs": [
+    {
+      "bytes": 135359451,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/weights/tuna_retrained_seed20260803.pt",
+      "sha256": "c96b6cd4dcde5edc766d1028d8f22a410a072b1376d26cb392f09c3801793ebd"
+    },
+    {
+      "bytes": 135359451,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/weights/tuna_retrained_seed20260817.pt",
+      "sha256": "f1444b8d43efcf4d76a73a6f4a0419d395651b493f5e21dc8ab1dd002a7e0c02"
+    },
+    {
+      "bytes": 135359451,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/weights/tuna_retrained_seed20260831.pt",
+      "sha256": "45aae93319be687cec386d7875a78d4a4b5068a635874abe67b6d9ab1a23727c"
+    },
+    {
+      "bytes": 1190003,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 816003,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/components.json",
+      "sha256": "bb18b6b8197b9044f371b4e540fa2d7fcf746cc54906c5d3728863889bf57967"
+    },
+    {
+      "bytes": 5082,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/SELECTION.json",
+      "sha256": "ce3bc88b0da71684db6a1ab898224091e20820301bd69b07ab0f63f19c929a88"
+    },
+    {
+      "bytes": 591,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/FROZEN_SCORER_QUALIFICATION.json",
+      "sha256": "92dd43200146fa598913c856d876b4cc0b5f31246b89adbfea3c1a8d34e82b22"
+    },
+    {
+      "bytes": 6279,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/provenance/TRAINING_FREEZE.json",
+      "sha256": "86aa6d0cd3e1df135b4ea097686ed281a57186828f68da4936bbeba39589d8b5"
+    },
+    {
+      "bytes": 4609,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/provenance/SCORER_FREEZE.json",
+      "sha256": "e0d903371767f866a1a86392999823481aff083354be9f731c72b5b099e2410f"
+    },
+    {
+      "bytes": 3572,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/provenance/EXECUTION_CODE_FREEZE.json",
+      "sha256": "b7746361b31f12cc6978311ec68bfab7b253b8841b0e831d21776e815dcff5c0"
+    },
+    {
+      "bytes": 11449,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/provenance/RESULTS.json",
+      "sha256": "b08d1388b03968144ee2457fc81340a5990594b79a9216fb6a3091661eacb989"
+    },
+    {
+      "bytes": 585,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/provenance/PREDICTION_FREEZE.json",
+      "sha256": "cef9a5b73b1658f0d1acc98ce8c14af0e7a81d7cdaf3253766912f457b379a21"
+    },
+    {
+      "bytes": 278,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/provenance/EVALUATION_RESERVATION.json",
+      "sha256": "a8d07276943881604c8f54aab0710877ab71f63727b4b9ffcdcb718d3c365640"
+    },
+    {
+      "bytes": 1274,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/provenance/RESIDUE_CACHE_MANIFEST.json",
+      "sha256": "f8b7ea5d6bcea150aadbc6ba94bc89261f8b2a7dc0d8d901cabb64bccbfc66db"
+    },
+    {
+      "bytes": 4681,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/code/adapter.py",
+      "sha256": "8260aceb8e4eb7a1c3a2a97297e9a9f8faa96598130259ebf52a49635a5fe025"
+    },
+    {
+      "bytes": 9715,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/code/esm_cache.py",
+      "sha256": "42686a117c5ecd86ea854dde87c77ba162950406b4e5f0ea9b88cd179a58cbc6"
+    },
+    {
+      "bytes": 2504,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/code/common.py",
+      "sha256": "bc5fddb8bb8bea7d627f2435e445fe0b9cbfaf79a3a922a573fcf7a71e13f73d"
+    },
+    {
+      "bytes": 2322,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/code/frozen_scorer.py",
+      "sha256": "36ac46b5b5ae51350d43dbee7237d99c57cdc0b329719e3aaca2d68bc1d86b1b"
+    },
+    {
+      "bytes": 2539,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/upstream/TUnA/results/bernett/TUnA/main.py",
+      "sha256": "61c617dd8d6d6f45291792a152a9d6bc6035a1645930e170756cfdeeaf498efa"
+    },
+    {
+      "bytes": 4125,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/upstream/TUnA/results/bernett/TUnA/lookahead.py",
+      "sha256": "8c1ec5a59901d891d421a379cb0d7dfeca3a48c9635b1128d2e4738758026ae2"
+    },
+    {
+      "bytes": 15282,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/upstream/TUnA/results/bernett/TUnA/utils.py",
+      "sha256": "34070f3b7b94a41a7aaa952e4ded8d0926283434363f9d381c256abc520b5338"
+    },
+    {
+      "bytes": 2181,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/upstream/TUnA/results/bernett/TUnA/inference.py",
+      "sha256": "3648da39032b67bb8b6533bc527d601e51bd7a2c59ce2ec08e1fcbf796cc70ea"
+    },
+    {
+      "bytes": 13636,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/upstream/TUnA/results/bernett/TUnA/model.py",
+      "sha256": "56a44effe653ac21a985438d98301463971ad587415f59bbe6fe4c192d4f2c93"
+    },
+    {
+      "bytes": 10508,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/upstream/uncertaintyAwareDeepLearn/uncertaintyAwareDeepLearn/classic_rffs.py",
+      "sha256": "f1e898d9dcd93d5b3493811ebb0ac0fdd1f0a29835e749e994b3a9a190898ad1"
+    },
+    {
+      "bytes": 157,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/upstream/uncertaintyAwareDeepLearn/uncertaintyAwareDeepLearn/__init__.py",
+      "sha256": "ea7c9272c64cd4246beb7c8ebd969d40351e5b79551457554d5cfcea398d9273"
+    },
+    {
+      "bytes": 1068,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/upstream/TUnA/LICENSE",
+      "sha256": "57b4e93fe477383b8fae57b6c945b1b11693ed7a06e64f2fd25e3d900e72f0ad"
+    },
+    {
+      "bytes": 1075,
+      "path": "/project/.private/frozen_pair_models_v2/bundle/upstream/uncertaintyAwareDeepLearn/LICENSE",
+      "sha256": "bf9af2c762f6f862f1dda503de9b29c8726aea2141894dd5a4ab64f88e4c5d1e"
+    },
+    {
+      "bytes": 135358343,
+      "path": "/project/benchmark/tuna/runs/scorer_bundle/weights/tuna_original.pt",
+      "sha256": "fce619249663193ea17766fd6afa43abcf110a49a5a91d625450cfa966586ae2"
+    },
+    {
+      "bytes": 4609,
+      "path": "/project/benchmark/tuna/runs/scorer_bundle/SCORER_FREEZE.json",
+      "sha256": "e0d903371767f866a1a86392999823481aff083354be9f731c72b5b099e2410f"
+    }
+  ]
+}

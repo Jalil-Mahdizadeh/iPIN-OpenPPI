@@ -3,17 +3,22 @@
 Core platform, evidence, benchmark, modelling, gate, and release reports are
 stored here. Machine-readable core run records remain under `artifacts/runs/`.
 The subsequent [published-model comparisons](../../benchmark/README.md) and
-[twelve-target application](../../example/twelve_target_comparison_v1/REPORT.md) keep
+[expanded twelve-target application](../../example/twelve_target_comparison_v2/REPORT.md) keep
 their reports alongside their implementations. The chronology below describes
 the core iPIN studies and preserves their phase-specific decisions.
 
-The current application contains 37 nominated P and 3,700 U across twelve human
-targets, scored by all three frozen iPIN models. It adds AP/MAP, MRR, recall,
-NDCG, enrichment, and target success to PU concordance, with explicit tie rules
-and exposure sensitivities. The [metric protocol](../../example/twelve_target_comparison_v1/METRICS.md)
-and [independent audit](../../example/twelve_target_comparison_v1/INDEPENDENT_VALIDATION.json)
-accompany the report. The original [six-target comparison](../../example/six_target_comparison_v1/REPORT.md)
-is preserved as a historical record.
+The current application contains 37 nominated P and 5,550 U across twelve human
+targets, scored by all three frozen iPIN models and original published TUnA.
+It compares P against context, background, low-plausibility, context + background,
+and all U, using the complete PU concordance and retrieval metric suite.
+The [selection protocol](../../example/twelve_target_comparison_v2/SELECTION.md)
+distinguishes 1,711 compartment-separated additions and 139 weaker EGFR candidates;
+none are verified negatives. The [metric protocol](../../example/twelve_target_comparison_v2/METRICS.md)
+and [independent audit](../../example/twelve_target_comparison_v2/INDEPENDENT_VALIDATION.json)
+cover tie rules and exposure/evidence sensitivities. The original
+[six-target comparison](../../example/six_target_comparison_v1/REPORT.md) and
+[twelve-target v1](../../example/twelve_target_comparison_v1/REPORT.md) remain
+preserved historical records.
 
 The [context-versus-background U score analysis](../../example/u_context_background_analysis_v1/REPORT.md)
 compares the two sampling groups using the preserved twelve-target scores.

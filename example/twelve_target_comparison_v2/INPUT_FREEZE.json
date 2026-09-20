@@ -1,0 +1,316 @@
+{
+  "P": 37,
+  "U": 5550,
+  "accessions": 4012,
+  "all_embeddings_recomputed": true,
+  "at_utc": "2026-09-20T14:43:38.720906+00:00",
+  "elapsed_seconds": 60.815645034002955,
+  "implementation_files": [
+    {
+      "path": "example/twelve_target_comparison_v2/build_panels.py",
+      "sha256": "9bfdd40fd6530921cdbb133534dded200794d0b3c128a90bf690e16e0ff0788f"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/selection.py",
+      "sha256": "1fcce41e4fe043fc21491d4dcd6863a4b1e4b2a38b66b235a16d8440b7201383"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/original_exposure.py",
+      "sha256": "d3aeb084c2da45c8e0771d176803f3a4613ea992bcb0b269a87853bed6890ac5"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/metrics.py",
+      "sha256": "08ea14321541efd58ce041428790e6990a820a2ab5564b348a40968b7fb92ae7"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/run_comparison.py",
+      "sha256": "cb2516da91f39ea9a32262a79807ca6bda53e00ea17ae80ab0669a2c26da7db0"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/analysis_outputs.py",
+      "sha256": "555d7cf5e1a06e1b01bcedc1f828b4d4d601dd78378ac3bd55c3346093d5f1dd"
+    }
+  ],
+  "input_files": [
+    {
+      "path": "example/twelve_target_comparison_v2/panels/ERN1/ern1_ipin_panel.csv",
+      "sha256": "29bdb8dee0f1688e0ea1db24959feaa604bc982a6e8058622eccd39fd640d1bc"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/ERN1/panel_manifest.json",
+      "sha256": "7a4b5f7dc5d45380b6c8b50f79ca31906f72ce529304dbef20e9ddd38365660b"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/TP53/tp53_ipin_panel.csv",
+      "sha256": "e93242c6c762f277bf94b5ea18c5a74163d3ef539b1c3c18c544b543dd4b8cc9"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/TP53/panel_manifest.json",
+      "sha256": "e95a1b7fab75f3531815fc37cdd3bbca7cf63a9c158b815ca5355f4c663f1828"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/EGFR/egfr_ipin_panel.csv",
+      "sha256": "3426d9d62ebbd9c0def19ff9158448ae75f641ee02e40325ac47cd2d186272d5"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/EGFR/panel_manifest.json",
+      "sha256": "1c33e9cf40e0f3507498045f81c5972ba2a8bbd6c3aba7357bc08f162ebc461c"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/BCL2/bcl2_ipin_panel.csv",
+      "sha256": "a4b5ef15ff999e0c70be4fd0360b39e579f6e91b8ce5a9477d1bc477bc083c7f"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/BCL2/panel_manifest.json",
+      "sha256": "a4c90aefe8daffbea5e96c1a01aeb3668cadc40879f1254178312fb75728a613"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/KEAP1/keap1_ipin_panel.csv",
+      "sha256": "398153fced4d432f4024c220887f39dbc5419c78e61a3eb79d07f15579ffd938"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/KEAP1/panel_manifest.json",
+      "sha256": "536265eb68697f9786dd2e799c2110169d95880533cd428847fce956e8bb21ea"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/BRCA1/brca1_ipin_panel.csv",
+      "sha256": "623500c96ea1f53f516163ce96282547f33cde0e08ad44c2800b2809933eff6f"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/BRCA1/panel_manifest.json",
+      "sha256": "444559177d9ae7ed42db78a7ed2e7d2f78a8212291aa3e69475bb14e6fc39016"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/KRAS/kras_ipin_panel.csv",
+      "sha256": "3b1fc2455b63ed2ce067a03a83ab163d0c611a2e8cce3ebb93be50ac22e324b3"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/KRAS/panel_manifest.json",
+      "sha256": "f7ee8301c82c95bb9d9029073fcd8c36a61544a77fa875a4b5c98819eb900bbb"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/CDK2/cdk2_ipin_panel.csv",
+      "sha256": "cb5065d70da24bd123a82417216eb0a1ea3f191adc646ea8ba69060931199a45"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/CDK2/panel_manifest.json",
+      "sha256": "90d800e9f4abcc1ba0b724549fdf22aa693bf512dc7afa4cc73e5b77ff56e2be"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/HIF1A/hif1a_ipin_panel.csv",
+      "sha256": "b415e1b25593c1f91dc5472576402db7fb8a51f2199253592707b71633a489d0"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/HIF1A/panel_manifest.json",
+      "sha256": "b9ec1e080a146b3a363658379356ac76227fcb639fe446905f0bb79b82208dff"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/CTNNB1/ctnnb1_ipin_panel.csv",
+      "sha256": "2e0e4809b2e463b5b8d784950399a116d60ce57847f1c3f2e3a768bd378d35bb"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/CTNNB1/panel_manifest.json",
+      "sha256": "525763d0244069032705d76d0c939e840a9a0f6b87d92e0c13eec083b2165d5d"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/TNFRSF1A/tnfrsf1a_ipin_panel.csv",
+      "sha256": "177c53a343f94b3a4407f945f320ad689cb9f31381aadc3e82eac925ed210f65"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/TNFRSF1A/panel_manifest.json",
+      "sha256": "7445b7fa2bc968f518de3fb82469614ff4124ff842adaef818e12d050f884b54"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/BECN1/becn1_ipin_panel.csv",
+      "sha256": "d6dd6462ecec47bba18c6e6045b1ae6bbeb967918dd5e680b36277c71f3c5c1a"
+    },
+    {
+      "path": "example/twelve_target_comparison_v2/panels/BECN1/panel_manifest.json",
+      "sha256": "183dc975dc420bf746f031f3bdecfa578e492d70b70b29e4372cd51a57dff441"
+    }
+  ],
+  "maximum_sequence_length": 4678,
+  "metric_protocol_sha256": "58d18e7987900b24307918fa969a937d3e7dd1e02c49d79aaf95eb190c056cd0",
+  "metrics_prespecified": "P-versus-U concordance; AP and macro MAP; expected first-positive rank and reciprocal rank/MRR; recovered-positive counts, recall, known-positive precision, EF, NDCG and target success at K=5,10,20; equal-target averages; all/context/background U and exposure/homomer subsets; original/additional/all-target cohorts; all five U candidate sets; original-TUnA exposure sensitivities; evidence-tier sensitivities.",
+  "model_registry": {
+    "bytes": 32170,
+    "path": "/project/artifacts/models/frozen_pair_models_v2/MODEL_REGISTRY.json",
+    "sha256": "faf2d585dbfee34ca3fe19487bc7a821f744014cdcdb94e95e4b657097110878"
+  },
+  "no_training_or_model_selection": true,
+  "original_file_hashes": {
+    "example/BCL2/README.md": "028f1f2296c07ede4304aaa75115443017ce74086e774de21def17443711e41c",
+    "example/BCL2/RESULTS_v2.md": "fc99e958cdb83462f4a6fd0a7d18e3428a996396d15dd1eae42d510668397431",
+    "example/BCL2/bcl2_ipin_panel.csv": "0499eb5d1c44953d6517d64283eb205fdf3c982c1b8800814a9480a6f8207c6e",
+    "example/BCL2/bcl2_three_model_scores.csv": "51c080ee46d529f7455900e64e3315e0ab201cd5de30afc2e2ef5a7fa4b1f8ea",
+    "example/BCL2/panel_manifest.json": "1b5141c4bb9c8ff7dbe9e750dd143c1342ab79eacddcc2bba359d00a82379541",
+    "example/BECN1/README.md": "ff9b3a23a989563424a19c00ed9d3fb41ade46385cda97eb8eb89a3e6cdf742b",
+    "example/BECN1/RESULTS_v2.md": "178d54e54f2f61475c6d886cf0cf82f7a06f7c3373a5ab66d9a5fe806492c4aa",
+    "example/BECN1/becn1_ipin_panel.csv": "2ca9ac0b5d1db106de3886f037e5465eb0dae8d86cebd7256975f9074a709b61",
+    "example/BECN1/becn1_three_model_scores.csv": "3b1cd7c884437e43e1face8bd138dcc7e1dc3acd5ffc35f5d363cd13e51d3c4f",
+    "example/BECN1/panel_manifest.json": "cc6f7add2aad0ccc22e012d0ad3b83e02771202cfaa6104f3d5c083624fb3295",
+    "example/BRCA1/README.md": "72c8d10c0e842902e497aa5eff74d67ce698162e7d793bbda281b067c4115ee9",
+    "example/BRCA1/RESULTS_v2.md": "54024c462d7e1e31b0535020da7160bebcad34699bb4f375fc7495b0e418ff74",
+    "example/BRCA1/brca1_ipin_panel.csv": "3b5ec9f22aefbc23bbf5a80e91b5ef63d7250f9eefec6e9d56e1ebe52057ae51",
+    "example/BRCA1/brca1_three_model_scores.csv": "3fc5e93f0f7ac1f1b75110660f8c5d173946c20ed11168b7a0c755940262a8d8",
+    "example/BRCA1/panel_manifest.json": "b9e4a3e9f00c74ae0a4eccdeb7cdb9b2dca9ec8478cc957f7f68da63bbfd0333",
+    "example/CDK2/README.md": "d296c1e4b84b265dcd24c1f4ec3795a8c44ab30c73928a84f7e6fba57dbd1c0d",
+    "example/CDK2/RESULTS_v2.md": "c5e1ecf3b408a52674ab6cc1cdda083c4b6c02602c9cfcfe375d3b63b6b551c9",
+    "example/CDK2/cdk2_ipin_panel.csv": "04face947c4db08d011e16e6c70d1d865e205f8ee4122dd0463af5f936f22506",
+    "example/CDK2/cdk2_three_model_scores.csv": "4930e12d87e56fb71011062b591d6c74ba715dad68dfda168a656fc36f3fac38",
+    "example/CDK2/panel_manifest.json": "c7d275241e131e1288e5eb6c84d4ca016260720a93c4f3eef145bdc05a078e4e",
+    "example/CTNNB1/README.md": "fb29851aad4d004a89e918ca169bba91c2030611bdbd5c50fa3eb89e7eaecde5",
+    "example/CTNNB1/RESULTS_v2.md": "ead598fbfbb89a93cf7e12aecf0265bb199f018b598dfdcee536044e4f6e0b58",
+    "example/CTNNB1/ctnnb1_ipin_panel.csv": "08d93d0ceac61730bb5b2d13024f96f0c76f4d0434400064e5c6fe04a1a42099",
+    "example/CTNNB1/ctnnb1_three_model_scores.csv": "d0aace74f1ebf107749fa310a16cee5d4670f6ee4548b2edb531bca8cd655c7a",
+    "example/CTNNB1/panel_manifest.json": "dfd17cffb4d782583cfdb29734eb4b1c8b998b2419b9da75de4ec93d9c4d6aa9",
+    "example/EGFR/README.md": "85101ac7256edbe15bc5aec6cb2bd006eded91f36750388bc30b6e305d8a89ac",
+    "example/EGFR/RESULTS_v2.md": "20a5df99c80cf6f9ed32ea243249ea48579ad5934390ec6ff7432bc45cd494ad",
+    "example/EGFR/egfr_ipin_panel.csv": "b56d6ddb7084b948266718d2efb23bcc046f392834ca6a6e94d6e19a2b4f7f38",
+    "example/EGFR/egfr_three_model_scores.csv": "41421bb2a60e4e36e4b631afa8f769c591dce9723ce65312f25efc8c9a9cdb05",
+    "example/EGFR/panel_manifest.json": "660338b1718de3ec294a5657a04b1bb15556c7c64ffb2f663571dae709bdd455",
+    "example/ERN1/README.md": "b2d6050a996e4cf161e4b643fef28655fa8b31d5980dfe95a54e14d24a743f68",
+    "example/ERN1/RESULTS_v2.md": "8d3156fe36ae3701b8cfcbfc037e27dda4ac3563d7ae0acfa84444d09a2329e3",
+    "example/ERN1/ern1_ipin_panel.csv": "1e193a23b83b6aac54e00378b93eed7ea7fb0e0e31f0a772edb45624136b49e2",
+    "example/ERN1/ern1_three_model_scores.csv": "9c5a85e39a21e398e3b7531b78c6cae9025f2350813463fbab53d677f421f296",
+    "example/ERN1/panel_manifest.json": "5cd3235ef594caa34cb0661bd7ef0bfa2ab7d0f915ef5f0bcd20896235a45ab3",
+    "example/HIF1A/README.md": "31ddec8caa95baf1e37be26b4be538a429db64544370b54f203cccf3bec5ea96",
+    "example/HIF1A/RESULTS_v2.md": "8a28a0a27f95b9d016bb43d38e1440d1358cfdab63577c50274a2fea4bebdc15",
+    "example/HIF1A/hif1a_ipin_panel.csv": "2193ca1fb341e40f4203bdeadd6f73deda456d12735309ee55c891986959ae0d",
+    "example/HIF1A/hif1a_three_model_scores.csv": "86eb1d8be7d6f106b1fdcecf4207b78ffdb175bda6337b0e89c89cee692a052e",
+    "example/HIF1A/panel_manifest.json": "6be70a5aac55936f9ba98bf8d2b807c327bf6639f67455eaaf130510eba41fc9",
+    "example/KEAP1/README.md": "93617b5203b668d4b71e69d6245bef7adaf19a8b2dd0100ecf0b71d49467953e",
+    "example/KEAP1/RESULTS_v2.md": "7577a51be6b10823ebe38759c786b479c8ad4e852abe44e4bd6d54b947cb7a08",
+    "example/KEAP1/keap1_ipin_panel.csv": "ccf1c39c8ba87abaecc600664bba944fe3bb3d64472578d65a5cf957a9003d23",
+    "example/KEAP1/keap1_three_model_scores.csv": "84abf9fe8091b052a90769edbd580a4551c74288b5e508161d3d4caca509a229",
+    "example/KEAP1/panel_manifest.json": "515a0dc4b28c83ab1550a80d4cc0330483cd704ed424dabfa0e63dfbc83a751f",
+    "example/KRAS/README.md": "aa67f108a6b12c5443300edc2440bdfe9ff4c246d1d649f8feacd5524188073a",
+    "example/KRAS/RESULTS_v2.md": "2b99d4913af4497c9320bbedac2fd7c991cd8789b1f4d36e287f59b229338f0a",
+    "example/KRAS/kras_ipin_panel.csv": "05617db7c7d8946592a18b354c147316332c73251ee3bb7d8b106ae0c7714b08",
+    "example/KRAS/kras_three_model_scores.csv": "56a26bffb4313a6a229acad2ab4d8dbc6bf2777710301f9be2bf3680f3fe642e",
+    "example/KRAS/panel_manifest.json": "00253795ad5162f0eb6f412778111926769aeba7634242c380de248fd6eb6ca6",
+    "example/README.md": "5bba3b3518cc69004b4e87954590860b87f54506e5af54741cd8513fe49ee712",
+    "example/TNFRSF1A/README.md": "950d532823bf374e884d78e7f7e7eb3b37ab6a3f45cd3561481d597e481943c0",
+    "example/TNFRSF1A/RESULTS_v2.md": "06d317471e3434b2aeed62f998f170d8576ba25a6a583490198521997eb37f23",
+    "example/TNFRSF1A/panel_manifest.json": "b1d54a7b1bf99372776fed03c7891f3e52b0925bcf0d533fe92b85c92d23f155",
+    "example/TNFRSF1A/tnfrsf1a_ipin_panel.csv": "2a682329629b320270ec4d65a314274b4493bb04abed1a778215af9e796671da",
+    "example/TNFRSF1A/tnfrsf1a_three_model_scores.csv": "500185cc2bf6aa15b7bab11c5d78570c0ccac5454449ddaac25eddc43bf573c7",
+    "example/TP53/README.md": "73e6392c164147d9bbd665c44e16252f244631e7b088eff4b71034841f474b77",
+    "example/TP53/RESULTS_v2.md": "3f8f4e91bf41e823bb092bbab4e52342136fd2134d2c6395c36d6eeefaef8a1e",
+    "example/TP53/panel_manifest.json": "86582487408ad3ff6d56e3f339efc0c0e8d4a48d6bc423fbd5c72ca31950fadf",
+    "example/TP53/tp53_ipin_panel.csv": "c99995beb4ec58b92e24a7010977a7e210da816f98005305cfc4f49d2bf0ad46",
+    "example/TP53/tp53_three_model_scores.csv": "366bc1edb69dc6b25f340b36782d7457b68c3d97338b6469f388def935b328cd",
+    "example/six_target_comparison_v1/INDEPENDENT_VALIDATION.json": "a1c1d8cb363245dcfc0b2355b3598fed4449308dfb505c7e5c2e7fd96f142b91",
+    "example/six_target_comparison_v1/INPUT_FREEZE.json": "883e81231acf52cdc948062b181cd920d48001247d3f963bd33da536281b46f5",
+    "example/six_target_comparison_v1/IPIN_RUN.json": "1c67663147f3d57f5dd2e533085823cba3f69a427fd5203217ea8cdcf9ae12ae",
+    "example/six_target_comparison_v1/ORIGINAL_TUNA_PAIR_EXPOSURE.json": "c44bd088a5d6bba2058d660b4b9bc25ab5199b62e1baa61ad997cebf7183dc98",
+    "example/six_target_comparison_v1/README.md": "ab1f4dc811428d5b1907a08aec177d4dfcca08db877cd6e711494b8fe909132e",
+    "example/six_target_comparison_v1/REPORT.md": "6e813856b5ac55963f0ac332c8285e01d2c9d931aa1e50f657fe8b5ce6bce6b9",
+    "example/six_target_comparison_v1/TUNA_ESM_QUALIFICATION.json": "ccd9b8462f014b7c976b7b2550d269f40930ca9fc5f1c5a9a33c1614791a1084",
+    "example/six_target_comparison_v1/TUNA_RUN.json": "2753e7f64ae2b576be472fc7ea41ca3e6c07d05fe4fe73cdaa8f6ad5b6af0600",
+    "example/six_target_comparison_v1/VALIDATION.json": "8a68cb2c011e6bd8d892a5b879e49364fde7a91a836ee250607169746963d4a0",
+    "example/six_target_comparison_v1/all_six_targets_scores.csv": "f76cef3226c38d256cdc889790708e0cbcde04af95711b06b1b954ac179f093f",
+    "example/six_target_comparison_v1/audit_original_exposure.py": "898b8004c2a7878a3a5242ad2e4bfef273b6ad7b0a1886a37412b6f9d130aa0d",
+    "example/six_target_comparison_v1/bcl2_four_model_scores.csv": "82869140e88b699d2840472ed1f2997fde42d60203af7275815d6ccc40c8a1b7",
+    "example/six_target_comparison_v1/brca1_four_model_scores.csv": "36181cf01fb9701312f9478aed03dbdc1e6d1de9011cb5b7c63d250865426fa7",
+    "example/six_target_comparison_v1/egfr_four_model_scores.csv": "f78d16a3ffdab66bf2f4c4f5df50bc64488a897246d10057e163821c192dd5dc",
+    "example/six_target_comparison_v1/ern1_four_model_scores.csv": "78348b0c7c2271d51bba081a3691d4b5a8d638944b78282643b79435cc6d0fed",
+    "example/six_target_comparison_v1/ipin_scores.csv": "f565ba834f794514ded8ae92e372b30722dc45c6a6dc32a2690cce204749c041",
+    "example/six_target_comparison_v1/keap1_four_model_scores.csv": "2405f0a60b745431dd194d8598827c14ea3797f6bd2c797609a1d8cdc06df38b",
+    "example/six_target_comparison_v1/macro_metrics.csv": "8afd25c75297dd329da32bafa1bf66183809887519198474ae60c174408a4dcb",
+    "example/six_target_comparison_v1/original_tuna_pair_exposure.csv": "b20ff7bfa3a0d7801ae78168409670467c89016254e5b10762f72e904beb203f",
+    "example/six_target_comparison_v1/pairs.json": "6ecb1738404e1869cdc2b55c87789615dce530e34c22ab20bb396a7a8e67a106",
+    "example/six_target_comparison_v1/per_target_metrics.csv": "2b1d029ac5ced4b6e19bb11d1b65e29a75595c017694a0fac856de68f9832259",
+    "example/six_target_comparison_v1/positive_partner_ranks.csv": "56c86c2fad647398e60a5a01fc706fa8fe938d72a66389253c491ada42352fd8",
+    "example/six_target_comparison_v1/run_comparison.py": "517688758d260884083b633b420aae537a32b212c028e7de73f261f3bf288388",
+    "example/six_target_comparison_v1/sequence_order.json": "349a32ab71f811e522d6f28dfec16750d1db3799919008fa46e06c92c0693719",
+    "example/six_target_comparison_v1/test_comparison.py": "8b4af9353eb2c2cde25bf5fa4a6e428ad89ad65450784fc95a77ab462e7d61fd",
+    "example/six_target_comparison_v1/tp53_four_model_scores.csv": "17eb540d4cf993244bc362e78ed762683c66de1a9db686bc6e407f0234af39ef",
+    "example/six_target_comparison_v1/tuna_scores.csv": "0a08ec423ee9767573946763d34e014d4582bbdc40410282c4aaa15bae0c3cc6",
+    "example/six_target_comparison_v1/uniprot_sequences.json": "7fffeb26e85770a35390977faf6a5da079fa56885396c5966bf03a63902c4f63",
+    "example/six_target_comparison_v1/validate_results.py": "d0d6bc41cb0f61e1a3fa243e1b19f1465f86f5d9faf6c468221db52e097545f3",
+    "example/twelve_target_comparison_v1/AUTHORIZATION.md": "e381829b1813f4c74abb0ddf4049a9bb85988d01d793e4e992cb5792874dd4cc",
+    "example/twelve_target_comparison_v1/INDEPENDENT_VALIDATION.json": "636ffa080318109a5134751d95832cd92d82eaf29cbb240a2797f429eb6e8217",
+    "example/twelve_target_comparison_v1/INPUT_FREEZE.json": "aa5c365b9b77e010883d607a5506f6dd723dcac2c4e2a12f1241af60a14ffdcb",
+    "example/twelve_target_comparison_v1/IPIN_RUN.json": "2b41e12b33778147f026bf7f9c86d21b8f08ab74ee4e1b4584f0f0215f3ba7b0",
+    "example/twelve_target_comparison_v1/METRICS.md": "2d7718a9262db7c6937f67037698e8e8ac0c90f9efabf738fd8c3c31b2ed4bed",
+    "example/twelve_target_comparison_v1/METRIC_TESTS.xml": "798165729c71f2a65961ebffdebe08fc15de5589ae52f381b31398fb5ca50b3f",
+    "example/twelve_target_comparison_v1/ORIGINAL_SIX_CONSISTENCY.json": "42b8bf40b3602da7ae669bec503703e3ca5ba88516d6a51b3e7625290999fdd6",
+    "example/twelve_target_comparison_v1/PANEL_BUILD.json": "2d22941e2d4478a9b0775f05f98e43e5495aa1ead701d4fd597d8b52bc92d692",
+    "example/twelve_target_comparison_v1/README.md": "1572dbf784b00f3e40c9567c9fb9407969a9abf0fc25b257579e24d58ac4685f",
+    "example/twelve_target_comparison_v1/REPORT.md": "9c004a9f4ca05855bec46898befeaab259cf9bdec68877771257a1ecf3c79312",
+    "example/twelve_target_comparison_v1/RUN_MANIFEST.json": "ef61492d0b348ab56fb12e930c234990ca2ce226b42f6b169967394d87bd43ff",
+    "example/twelve_target_comparison_v1/TUNA_ESM_QUALIFICATION.json": "d5036a5490807f3e181d9484faf92cc7f88083e95379861636e455fd08d7d341",
+    "example/twelve_target_comparison_v1/TUNA_RUN.json": "4cb43a2491a53f6159b8399ecba1d4e1477991e86781937cdda59cab904b5510",
+    "example/twelve_target_comparison_v1/UNIT_TESTS.xml": "141c410a1aa10561f317ac4fad9b09d2557d4e4ab3b7c76c6add8d7a35f578d7",
+    "example/twelve_target_comparison_v1/VALIDATION.json": "d2c04ffff08a8121ee9a70b9d10b6113e855232fe3f8881fd001de0f15e7d90f",
+    "example/twelve_target_comparison_v1/all_twelve_targets_scores.csv": "cd44ac541640a9d7ab8a7ba5abaa71419da198d0ae01ccd5c7bf654d6d3085d0",
+    "example/twelve_target_comparison_v1/analysis_outputs.py": "147bc71955eff60db31f05260e6c3388d6f834fdb8c5379fc3c95d92374b8515",
+    "example/twelve_target_comparison_v1/bcl2_three_model_scores.csv": "51c080ee46d529f7455900e64e3315e0ab201cd5de30afc2e2ef5a7fa4b1f8ea",
+    "example/twelve_target_comparison_v1/becn1_three_model_scores.csv": "3b1cd7c884437e43e1face8bd138dcc7e1dc3acd5ffc35f5d363cd13e51d3c4f",
+    "example/twelve_target_comparison_v1/brca1_three_model_scores.csv": "3fc5e93f0f7ac1f1b75110660f8c5d173946c20ed11168b7a0c755940262a8d8",
+    "example/twelve_target_comparison_v1/build_panels.py": "75fd587cd2b2e309aef5c270f531a85a5f96577458cda427819f2018088529fd",
+    "example/twelve_target_comparison_v1/cdk2_three_model_scores.csv": "4930e12d87e56fb71011062b591d6c74ba715dad68dfda168a656fc36f3fac38",
+    "example/twelve_target_comparison_v1/ctnnb1_three_model_scores.csv": "d0aace74f1ebf107749fa310a16cee5d4670f6ee4548b2edb531bca8cd655c7a",
+    "example/twelve_target_comparison_v1/egfr_three_model_scores.csv": "41421bb2a60e4e36e4b631afa8f769c591dce9723ce65312f25efc8c9a9cdb05",
+    "example/twelve_target_comparison_v1/ern1_three_model_scores.csv": "9c5a85e39a21e398e3b7531b78c6cae9025f2350813463fbab53d677f421f296",
+    "example/twelve_target_comparison_v1/finish_run.py": "f7065628c00520b175d96c309785e1fbb346fdd8cc30bf0f4ff3366cb2d85d7a",
+    "example/twelve_target_comparison_v1/hif1a_three_model_scores.csv": "86eb1d8be7d6f106b1fdcecf4207b78ffdb175bda6337b0e89c89cee692a052e",
+    "example/twelve_target_comparison_v1/ipin_scores.csv": "b7767ea38253fdbc63a8fd5a20373ecc3d07bd545ce2a1468bce43ac1e02b0d5",
+    "example/twelve_target_comparison_v1/keap1_three_model_scores.csv": "84abf9fe8091b052a90769edbd580a4551c74288b5e508161d3d4caca509a229",
+    "example/twelve_target_comparison_v1/kras_three_model_scores.csv": "56a26bffb4313a6a229acad2ab4d8dbc6bf2777710301f9be2bf3680f3fe642e",
+    "example/twelve_target_comparison_v1/macro_metrics.csv": "67950999375ff5fa6a33147273119b936249001dc598864d3bcfbc6285086977",
+    "example/twelve_target_comparison_v1/matched_positive_metrics.csv": "f0f7c8797b77bb0f5c601a508d313ef742c4b9a92464016bbfbc3f46d9dc947f",
+    "example/twelve_target_comparison_v1/metrics.py": "08ea14321541efd58ce041428790e6990a820a2ab5564b348a40968b7fb92ae7",
+    "example/twelve_target_comparison_v1/pairs.json": "af56a25c20816146478eeb5f62ae9d4c140caca71cdec06695d8d4e6ac3f3fd0",
+    "example/twelve_target_comparison_v1/panel_config.json": "567aa6568c9c2a6bfee0e0df81e730c044ea145e010a13c06bfdd8fd679ec458",
+    "example/twelve_target_comparison_v1/per_target_metrics.csv": "c7740fb06f9ee89ec1e9980aac07a64ebd6df47197ae7211e9e7619c5d9a622d",
+    "example/twelve_target_comparison_v1/positive_partner_ranks.csv": "5f2fbdb3d3fcc2777b0c3fdfa3933aeb7294aa5fa805bbd549fe4f15e8147947",
+    "example/twelve_target_comparison_v1/render_report.py": "d1ecb8f2ad080ef67a4f9b972edc1d01be2080f32e7cdc8fca27e12d85e0033e",
+    "example/twelve_target_comparison_v1/retrieval_curves.csv": "e33cde092d401feaf10ea8556acf0d81c1bcc68d935fda9e3331b4ea446507d6",
+    "example/twelve_target_comparison_v1/retrieval_summary.pdf": "8cfc641db950b3f1057f2f436a007ae7aab90eba403990e076a52dbe1e4cd8ef",
+    "example/twelve_target_comparison_v1/retrieval_summary.png": "7d591a691998ca8b6658537e1bb7809e9e22b0ff92dc263d5121da4be025532d",
+    "example/twelve_target_comparison_v1/retrieval_summary.svg": "dc3508bab0b98211fb2d091bc60a48c5acd66402235472ea7ba02bb1953f32f0",
+    "example/twelve_target_comparison_v1/run_comparison.py": "8b487c60200f25781d0efb1ae11d0d355e6c3c84856924ee45be9742787ac160",
+    "example/twelve_target_comparison_v1/sequence_order.json": "4fc9497c9727b5250f0d932cd03d623b1ddd9965467adf6eb379b381ad4fcf95",
+    "example/twelve_target_comparison_v1/test_metrics.py": "3f6c46ff0159a267a8590070a2b59dc01b7ed52d538caa06e220f444062badc1",
+    "example/twelve_target_comparison_v1/tnfrsf1a_three_model_scores.csv": "500185cc2bf6aa15b7bab11c5d78570c0ccac5454449ddaac25eddc43bf573c7",
+    "example/twelve_target_comparison_v1/tp53_three_model_scores.csv": "366bc1edb69dc6b25f340b36782d7457b68c3d97338b6469f388def935b328cd",
+    "example/twelve_target_comparison_v1/tuna_scores.csv": "fcd5be4366ec8b348c1ed1430ff4084477cee491cb3d1ed16bd25294984151b5",
+    "example/twelve_target_comparison_v1/uniprot_sequences.json": "8b82bfb4041963eb316c5510d3f3de888d2dfd856fff38eb7b5f726bac78d711",
+    "example/twelve_target_comparison_v1/validate_results.py": "c933451406e37ff4bd472f6cfaee196e00dcbea4b59ebd8f71d7b0b9f63cdd19",
+    "example/u_context_background_analysis_v1/ANALYSIS_RUN.json": "bf2f54ee4bca20f608942293bddf2e9b7695e603394311d55d47fa656d43542d",
+    "example/u_context_background_analysis_v1/FINAL_MANIFEST.json": "3469960636f0ffc48310c251564847d9d976c1cc8b941517822a4836dedf9f0f",
+    "example/u_context_background_analysis_v1/INDEPENDENT_VALIDATION.json": "a08e584970d06b2fa064bb4b3d94698a7e567955c423fae1f31bdcc139bfa707",
+    "example/u_context_background_analysis_v1/PROTOCOL.md": "ca45c25fb5f5f3046892fa8529f7dbabacc46fa589e581e1cb60ddc2cec7cd89",
+    "example/u_context_background_analysis_v1/README.md": "5d842a184d5d37f2737eae83ea1aa3506f6768ac385fc5bb93c92ccb2c1bf7de",
+    "example/u_context_background_analysis_v1/REPORT.md": "b71502a6dcfe739b0bf7b78b316bb817b4421289ed0ada05d8e3658644424ab7",
+    "example/u_context_background_analysis_v1/VALIDATION.json": "02854f6cb7873607898481063c0ad5a6f749d1366a41eacff39f0485673d697d",
+    "example/u_context_background_analysis_v1/analyze.py": "d9cfea67bd3a848d6ff8dcd0a94336b88db8713c6cc6e2f24c5817010c8560e5",
+    "example/u_context_background_analysis_v1/candidate_annotations.csv": "936340d9f9cc4bb9d1d400104697525a9212498b4c58f33db578446b8b205477",
+    "example/u_context_background_analysis_v1/leave_one_target_out.csv": "ef7f9f096c74bb924208e6fde94b8d090fc727cbd1a173806ec809ae0be502c0",
+    "example/u_context_background_analysis_v1/matching_diagnostics.csv": "f7c5a0922bbad6df481b1ce54093df7a3cb6538f846f060d599373e82881ab2f",
+    "example/u_context_background_analysis_v1/per_anchor_scores.csv": "c5ee9e9ad6fb6c4a9ba0e7d8d65ddba68b07658977a907d17a9f6070dbfae312",
+    "example/u_context_background_analysis_v1/per_target_scores.csv": "4faf0549fddf6c9b9df87b16defeaa84f81bf6761a57d06879ab9f4413ec8d11",
+    "example/u_context_background_analysis_v1/render_report.py": "5ec83b6a94b2d025cb91259f1ee40b38d220ee813d745560d8169efd5a2182ad",
+    "example/u_context_background_analysis_v1/score_comparison.pdf": "91e6e0a172c0e9ac650858f4fe03579df569c9eaf4ad0ea78f021386df7362aa",
+    "example/u_context_background_analysis_v1/score_comparison.png": "29cc27054729ee10d0941ebee5390c6d6de09de40db43e59546b811e8154e11a",
+    "example/u_context_background_analysis_v1/score_comparison.svg": "d06a189eb83ad1f9b8a8941ee63370804cb6caa622303068c5434132118a2f5c",
+    "example/u_context_background_analysis_v1/summary.csv": "ed00dea0a1600e1ee7bbbe9680ef091477f7f3d2592cf7dd15f4474929aec428",
+    "example/u_context_background_analysis_v1/validate.py": "d608d77ad2e6963f3166050940332be7970646d2afd1879f4842041084e6f077"
+  },
+  "pair_manifest_sha256": "654997840e8cb684b6ecdb819438bdc705cbd7bd6dc28a7828d49cb5250028cd",
+  "pairs": 5587,
+  "panel_configuration_sha256": "567aa6568c9c2a6bfee0e0df81e730c044ea145e010a13c06bfdd8fd679ec458",
+  "preexisting_embedding_or_feature_cache_reuse": false,
+  "script_sha256": "cb2516da91f39ea9a32262a79807ca6bda53e00ea17ae80ab0669a2c26da7db0",
+  "selection_protocol_sha256": "03f4800b4c11e0f75f0f498cb4f61abf0c4098b64214ee146d38e799d7dadf66",
+  "sequence_snapshot": {
+    "bytes": 3504207,
+    "path": "/project/example/twelve_target_comparison_v2/uniprot_sequences.json",
+    "sha256": "00c78ee7002158a929019dfb2e7328c1196ea6707b58d9c36749d11edd246316"
+  },
+  "total_residues": 2431755,
+  "unique_sequences": 4012,
+  "unlabeled_is_not_negative": true
+}
