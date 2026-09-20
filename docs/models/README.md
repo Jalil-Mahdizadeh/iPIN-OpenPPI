@@ -24,3 +24,10 @@ The [v1 registry and cards](FROZEN_PAIR_MODELS_v1.md) remain unchanged historica
 records for the first two models. Published-model comparisons are indexed in
 [benchmark/](../../benchmark/README.md); the original TUnA predictor remains a
 separate comparator.
+
+Current biological application: [twelve-target comparison](../../example/twelve_target_comparison_v1/REPORT.md)
+and [panel index](../../example/README.md). All three unchanged models score
+3,737 pairs with fresh embeddings; the report includes known-positive retrieval
+metrics, matched-control comparisons, and training/development exposure
+sensitivities. Versioned model cards and their checksum-bound freeze records
+remain unchanged.

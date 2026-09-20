@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-09-20T11:43:18.217775+00:00",
+  "models": [
+    {
+      "maximum_absolute_score_difference": 0.0,
+      "model": "ipin_baseline",
+      "note": "Fresh extraction on expanded sequence batches can change FP32 rounding; no parameters or preprocessing changed.",
+      "pairs": 1919,
+      "rank_changes": 0
+    },
+    {
+      "maximum_absolute_score_difference": 0.0,
+      "model": "ipin_optimized",
+      "note": "Fresh extraction on expanded sequence batches can change FP32 rounding; no parameters or preprocessing changed.",
+      "pairs": 1919,
+      "rank_changes": 0
+    },
+    {
+      "maximum_absolute_score_difference": 1.1285146078066077e-05,
+      "model": "tuna_retrained",
+      "note": "Fresh extraction on expanded sequence batches can change FP32 rounding; no parameters or preprocessing changed.",
+      "pairs": 1919,
+      "rank_changes": 0
+    }
+  ]
+}

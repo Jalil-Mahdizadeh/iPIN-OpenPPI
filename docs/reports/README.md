@@ -3,9 +3,17 @@
 Core platform, evidence, benchmark, modelling, gate, and release reports are
 stored here. Machine-readable core run records remain under `artifacts/runs/`.
 The subsequent [published-model comparisons](../../benchmark/README.md) and
-[six-target application](../../example/six_target_comparison_v1/REPORT.md) keep
+[twelve-target application](../../example/twelve_target_comparison_v1/REPORT.md) keep
 their reports alongside their implementations. The chronology below describes
 the core iPIN studies and preserves their phase-specific decisions.
+
+The current application contains 37 nominated P and 3,700 U across twelve human
+targets, scored by all three frozen iPIN models. It adds AP/MAP, MRR, recall,
+NDCG, enrichment, and target success to PU concordance, with explicit tie rules
+and exposure sensitivities. The [metric protocol](../../example/twelve_target_comparison_v1/METRICS.md)
+and [independent audit](../../example/twelve_target_comparison_v1/INDEPENDENT_VALIDATION.json)
+accompany the report. The original [six-target comparison](../../example/six_target_comparison_v1/REPORT.md)
+is preserved as a historical record.
 
 The current model catalogue is [Frozen pair models v2](../models/FROZEN_PAIR_MODELS_v2.md):
 the original affine ensemble, optimized pooled residual-MLP ensemble, and

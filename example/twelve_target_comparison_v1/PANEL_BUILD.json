@@ -1,0 +1,174 @@
+{
+  "at_utc": "2026-09-20T11:29:48.565690+00:00",
+  "builder_sha256": "75fd587cd2b2e309aef5c270f531a85a5f96577458cda427819f2018088529fd",
+  "configuration_sha256": "567aa6568c9c2a6bfee0e0df81e730c044ea145e010a13c06bfdd8fd679ec458",
+  "model_scores_read": false,
+  "new_targets": [
+    {
+      "P": 3,
+      "U": 300,
+      "csv_sha256": "05617db7c7d8946592a18b354c147316332c73251ee3bb7d8b106ae0c7714b08",
+      "manifest_sha256": "00253795ad5162f0eb6f412778111926769aeba7634242c380de248fd6eb6ca6",
+      "positive_exposure": {
+        "ARAF": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "BRAF": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "RAF1": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        }
+      },
+      "target": "KRAS"
+    },
+    {
+      "P": 3,
+      "U": 300,
+      "csv_sha256": "04face947c4db08d011e16e6c70d1d865e205f8ee4122dd0463af5f936f22506",
+      "manifest_sha256": "c7d275241e131e1288e5eb6c84d4ca016260720a93c4f3eef145bdc05a078e4e",
+      "positive_exposure": {
+        "CCNA2": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "CCNE1": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "CDKN1B": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        }
+      },
+      "target": "CDK2"
+    },
+    {
+      "P": 3,
+      "U": 300,
+      "csv_sha256": "2193ca1fb341e40f4203bdeadd6f73deda456d12735309ee55c891986959ae0d",
+      "manifest_sha256": "6be70a5aac55936f9ba98bf8d2b807c327bf6639f67455eaaf130510eba41fc9",
+      "positive_exposure": {
+        "ARNT": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "EP300": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "VHL": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        }
+      },
+      "target": "HIF1A"
+    },
+    {
+      "P": 3,
+      "U": 300,
+      "csv_sha256": "08d93d0ceac61730bb5b2d13024f96f0c76f4d0434400064e5c6fe04a1a42099",
+      "manifest_sha256": "dfd17cffb4d782583cfdb29734eb4b1c8b998b2419b9da75de4ec93d9c4d6aa9",
+      "positive_exposure": {
+        "CDH1": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "CTNNA1": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "TCF7L2": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        }
+      },
+      "target": "CTNNB1"
+    },
+    {
+      "P": 3,
+      "U": 300,
+      "csv_sha256": "2a682329629b320270ec4d65a314274b4493bb04abed1a778215af9e796671da",
+      "manifest_sha256": "b1d54a7b1bf99372776fed03c7891f3e52b0925bcf0d533fe92b85c92d23f155",
+      "positive_exposure": {
+        "LTA": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "TNF": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "TRADD": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        }
+      },
+      "target": "TNFRSF1A"
+    },
+    {
+      "P": 3,
+      "U": 300,
+      "csv_sha256": "2ca9ac0b5d1db106de3886f037e5465eb0dae8d86cebd7256975f9074a709b61",
+      "manifest_sha256": "cc6f7add2aad0ccc22e012d0ad3b83e02771202cfaa6104f3d5c083624fb3295",
+      "positive_exposure": {
+        "ATG14": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": true,
+          "TRAIN_U": false
+        },
+        "BCL2": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": false,
+          "TRAIN_U": false
+        },
+        "UVRAG": {
+          "DEV_P": false,
+          "DEV_U": false,
+          "TRAIN_P": true,
+          "TRAIN_U": false
+        }
+      },
+      "target": "BECN1"
+    }
+  ],
+  "passed": true,
+  "protected_test_truth_read": false,
+  "source_snapshots": "sources/ (retained locally; excluded from Git)",
+  "uniprot_release": "2026_03"
+}

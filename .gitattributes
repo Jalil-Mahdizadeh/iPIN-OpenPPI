@@ -1,2 +1,5 @@
 # Checksum-bound JUnit tracebacks are retained verbatim, including whitespace.
 artifacts/validation/model_optimization_followup_v1/*.xml -text -whitespace
+
+# Preserve checksum-bound Matplotlib SVG output verbatim.
+example/twelve_target_comparison_v1/*.svg -text -whitespace linguist-generated=true

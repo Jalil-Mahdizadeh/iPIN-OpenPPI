@@ -4,8 +4,12 @@
   checksum, split, training, scoring, and publication tests. Fixtures are created
   within the tests and their temporary directories.
 - `test_model_optimization_v1.py` covers the optimization models and objective.
-- [Example comparison tests](../example/six_target_comparison_v1/test_comparison.py)
-  live with the application and are collected separately from `tests/`.
+- Example tests live with the applications and are collected separately from
+  `tests/`: [historical comparison tests](../example/six_target_comparison_v1/test_comparison.py)
+  and [twelve-target metric tests](../example/twelve_target_comparison_v1/test_metrics.py).
+  The latter check exhaustive tie orderings, cutoff recovery, first-positive
+  rank/MRR, and invalid inputs. The [independent result validator](../example/twelve_target_comparison_v1/validate_results.py)
+  checks actual scores/metrics and exposure in the TUnA SIF, which includes h5py.
 - Published-method numerical and container qualifications are documented in
   each [benchmark directory](../benchmark/README.md).
 
@@ -24,6 +28,8 @@ PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
   python -B -m pytest -q -p no:cacheprovider tests
 PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
   python -B -m pytest -q -p no:cacheprovider example/six_target_comparison_v1/test_comparison.py
+PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
+  python -B -m pytest -q -p no:cacheprovider example/twelve_target_comparison_v1/test_metrics.py
 ```
 
 CPU execution skips CUDA-only parity tests. These tests do not authorize

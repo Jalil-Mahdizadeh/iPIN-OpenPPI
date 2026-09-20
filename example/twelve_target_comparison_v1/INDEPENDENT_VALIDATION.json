@@ -1,0 +1,49 @@
+{
+  "all_U_absent_from_checked_TRAIN_development_pairs": true,
+  "all_twelve_published_CSVs_byte_identical": true,
+  "at_utc": "2026-09-20T11:44:32.081680+00:00",
+  "curve_rows_verified": 1800,
+  "exact_pair_exposed_positives": [
+    {
+      "DEV_P": true,
+      "DEV_U": false,
+      "TRAIN_P": false,
+      "TRAIN_U": false,
+      "partner": "SQSTM1",
+      "target": "KEAP1"
+    },
+    {
+      "DEV_P": false,
+      "DEV_U": false,
+      "TRAIN_P": true,
+      "TRAIN_U": false,
+      "partner": "ATG14",
+      "target": "BECN1"
+    },
+    {
+      "DEV_P": false,
+      "DEV_U": false,
+      "TRAIN_P": true,
+      "TRAIN_U": false,
+      "partner": "UVRAG",
+      "target": "BECN1"
+    }
+  ],
+  "fresh_embedding_artifacts_verified": true,
+  "frozen_parameters_unchanged": true,
+  "macro_rows_verified": 135,
+  "matched_metric_rows_independently_recomputed": 333,
+  "metric_rows_independently_recomputed": 540,
+  "new_U_length_compartment_transmembrane_exclusion_constraints_verified": true,
+  "original_files_unchanged": true,
+  "pairs": 3737,
+  "passed": true,
+  "positive_rank_rows_verified": 111,
+  "protected_test_pairs_or_truth_read": false,
+  "three_model_scores": 11211,
+  "validator": {
+    "bytes": 16542,
+    "path": "/project/example/twelve_target_comparison_v1/validate_results.py",
+    "sha256": "c933451406e37ff4bd472f6cfaee196e00dcbea4b59ebd8f71d7b0b9f63cdd19"
+  }
+}

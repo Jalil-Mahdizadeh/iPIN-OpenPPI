@@ -17,8 +17,10 @@ publication logic; preserve their registered identities when inspecting them.
 Core scheduler declarations live under [slurm/](../slurm/README.md).
 
 Published-model runners and scheduler files live with each method under
-[benchmark/](../benchmark/README.md), while the six-target application is under
-[example/](../example/six_target_comparison_v1/README.md). Run scientific entry
+[benchmark/](../benchmark/README.md), while the twelve-target application is under
+[example/](../example/twelve_target_comparison_v1/README.md). Its local scripts
+construct panels, score all three frozen models, compute retrieval metrics,
+independently validate results, and render reports/figures. Run scientific entry
 points inside their qualified ARM64 SIF and use a new run directory. Completed
 single-use evaluations are not general-purpose rerun commands.
 

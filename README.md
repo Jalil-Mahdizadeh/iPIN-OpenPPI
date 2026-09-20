@@ -10,13 +10,13 @@ verified noninteractions.
 The repository contains the evidence-processing and benchmark pipeline, two
 frozen pooled iPIN ensembles, the frozen TUnA-retrained ensemble as iPIN model 3,
 completed comparisons with five published methods, and
-six protein-screening examples. Start with these records:
+twelve protein-screening examples. Start with these records:
 
 | Area | Current reference |
 |---|---|
 | Frozen iPIN predictors | [Three-model registry and cards](docs/models/FROZEN_PAIR_MODELS_v2.md) |
 | Published-method comparisons | [Benchmark results and execution status](benchmark/README.md) |
-| Protein-screening examples | [Six-target comparison](example/six_target_comparison_v1/REPORT.md) |
+| Protein-screening examples | [Twelve-target comparison](example/twelve_target_comparison_v1/REPORT.md), [panel index](example/README.md) |
 | Scientific reports and diagnostics | [Report index](docs/reports/README.md) |
 | Core model freeze and decisions | [Governance index](governance/README.md) |
 | Implementation and tests | [Source map](src/README.md), [entry points](scripts/README.md), [test policy](tests/README.md) |
@@ -56,9 +56,13 @@ and SPRINT. TUnA's retrained ensemble has C3 concordance 0.815875; its paired
 difference from optimized iPIN also includes zero. Retraining coverage and
 checkpoint-selection limitations differ by method, especially RAPPPID's
 partially trained recovery ensemble. The [benchmark index](benchmark/README.md)
-links each result and its caveats. The six-target example uses a fresh UniProt
-sequence snapshot and is a separate descriptive application, not a replacement
-benchmark or a new training set.
+links each result and its caveats. The twelve-target application scores 37
+nominated positives and 3,700 unlabeled pairs with all three frozen iPIN models.
+It uses freshly retrieved sequences and recomputed embeddings, and reports PU
+concordance, AP/MAP, MRR, recall, NDCG, enrichment, and target success at fixed
+screening budgets. The [report](example/twelve_target_comparison_v1/REPORT.md)
+discloses training/development overlaps and sensitivity analyses. This separate
+descriptive application retains the original six-target results.
 
 Concordance is neither binary binding accuracy nor calibrated interaction
 probability. Genuine partner-specific/direct-binding generalization remains
@@ -101,7 +105,7 @@ work is documented in its own directories.
 | `scripts/` | Data, benchmark, model, analysis, and platform entry points |
 | `tests/` | Synthetic unit, safety, validation, and model tests |
 | `benchmark/` | Published-method implementations, execution records, aggregate comparisons, and dedicated containers |
-| `example/` | Six target panels, frozen-model scoring, and descriptive comparisons |
+| `example/` | Twelve target panels, three-model scoring, retrieval metrics, and preserved historical examples |
 | `docs/` | Blueprints, scientific protocols, reports, and model cards |
 | `governance/` | Decisions, phase-specific status records, gates, risks, and licenses |
 | `configs/`, `schemas/` | Versioned configuration and data contracts |

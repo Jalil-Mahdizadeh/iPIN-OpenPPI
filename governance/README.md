@@ -33,9 +33,13 @@ exact checkpoint hashes and prediction definitions. This is a post-follow-up
 designation, not a new test, refit or statistically conclusive C3 superiority claim.
 
 The [repository overview](../README.md), [published-model benchmark index](../benchmark/README.md),
-and [six-target application](../example/six_target_comparison_v1/REPORT.md)
-describe subsequent work and its own execution records. Status v54 is the
-preceding two-model freeze record, not a live inventory of later repository work.
+and [twelve-target application](../example/twelve_target_comparison_v1/REPORT.md)
+describe subsequent work and its own execution records. The user-authorized
+application extension preserves the three frozen predictors and all original
+six-target records; its [scope record](../example/twelve_target_comparison_v1/AUTHORIZATION.md)
+and [metric protocol](../example/twelve_target_comparison_v1/METRICS.md) retain
+authority and analysis definitions. Status v55 records the model freeze;
+example applications keep their separate versioned reports.
 
 The preceding completed evaluation is recorded in [status v53](PROJECT_STATUS_v53.md),
 [gate record v53](gates/gate_status_v53.yaml) and the

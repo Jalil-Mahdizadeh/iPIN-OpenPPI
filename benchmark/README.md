@@ -58,8 +58,12 @@ adaptations have their own declared objectives and are not interchangeable with
 the authors' original recipes. These are disclosed comparisons on previously
 examined test panels, with pointwise paired component-bootstrap intervals.
 They do not establish calibrated binding probabilities or universal biological
-superiority. The [six-target example](../example/six_target_comparison_v1/REPORT.md)
-is a separate descriptive application using freshly retrieved sequences.
+superiority. The [twelve-target example](../example/twelve_target_comparison_v1/REPORT.md)
+is a separate descriptive application of all three frozen iPIN models using
+freshly retrieved sequences and recomputed embeddings. Its 3,737 pairs have
+known-positive retrieval metrics and exposure sensitivities. The original
+[six-target comparison](../example/six_target_comparison_v1/REPORT.md) remains
+unchanged, including its original-TUnA comparator.
 
 The remaining candidate directories contain planning notes, not completed
 evaluations. The [recommendation document](PUBLISHED_MODEL_BENCHMARK_RECOMMENDATIONS.md)

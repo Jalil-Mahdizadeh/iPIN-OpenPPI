@@ -17,6 +17,7 @@ pipeline and its independent validation stages:
 Core executable entry points are in [scripts/](../scripts/README.md), including
 the protected final-test and fixed-ensemble evaluators. Published-method adapters
 and their own runners live in [benchmark/](../benchmark/README.md); example
-scoring lives in [example/](../example/six_target_comparison_v1/README.md).
+three-model scoring and retrieval analysis live in the
+[twelve-target application](../example/twelve_target_comparison_v1/README.md).
 The [frozen model cards](../docs/models/FROZEN_PAIR_MODELS_v2.md) define the
 preserved predictors. Scientific execution and tests require an accepted SIF.
