@@ -1,10 +1,17 @@
 # D-SCRIPT benchmark report
 
-## Current stage: matched-data retraining and automatic testing
+## Completed stage: matched-data retraining and testing
 
-The user authorized D-SCRIPT retraining and subsequent C1/C2/C3 evaluation. The native SIF and full-residue cache are qualified, and the training/selection/test protocol is frozen. **All three fresh PPI heads are training healthily on distinct GPUs** in job **2342911**: at least 9,472 comparisons per seed, finite losses/gradients, declining early loss, and verified recovery checkpoints. Eight epochs are planned; C3-DEV alone chooses epoch 4 or 8 for the three-seed ensemble. Four two-epoch Slurm stages each have a 72-hour limit, followed by 24-hour selection and test jobs. The final test job is **2342916**. Monitoring is paused as requested; the job chain continues.
+The three-seed PU-D-SCRIPT evaluation completed on 18 September 2026. C3
+development selected epoch 4; retrained C1/C2/C3 concordance is
+**0.504429 / 0.481321 / 0.511437**. All requested rows and all seed results are
+reported in the [completed results](results/retrained-v1/RESULTS.md), with
+[paired intervals](results/retrained-v1/paired_differences.csv). Original
+D-SCRIPT and both iPIN reference predictions were reused unchanged.
 
-See [RETRAINING_REPORT.md](RETRAINING_REPORT.md) for the declared PU objective, native regularizer, qualification, timing estimate, job chain and startup status. Original D-SCRIPT results below are preserved; no retrained test metric is available yet.
+See [RETRAINING_REPORT.md](RETRAINING_REPORT.md) for the declared PU objective,
+native regularizer, qualification, and historical job/startup record. The
+[README](README.md) links the current result records.
 
 ## Completed stage: original-checkpoint test comparison
 

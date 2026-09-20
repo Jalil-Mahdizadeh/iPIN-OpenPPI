@@ -1,12 +1,22 @@
 # PLM-interact benchmark
 
-Status at 18:27 CEST, 16 September 2026: the dedicated SIF is built and qualified. The original **650M humanV11** C1/C2/C3 benchmark is running as Slurm job **2555430** on **n538**, with four GH200 GPUs. Expected completion: approximately **03:30–06:30 CEST, 17 September** (9–12 hours from job start; 72-hour safety limit). No performance results are available yet and no retraining is scheduled. See the [execution report](REPORT.md) for qualification evidence, frozen input policies and timing.
+Status: **original 650M humanV11 evaluation completed on 17 September 2026**.
+C1/C2/C3 concordance is **0.558772 / 0.532392 / 0.567018**, with complete finite
+coverage. No matched-data retraining was performed. See the
+[completed results](results/original-v1/RESULTS.md), the
+[cross-method index](../README.md), and the [execution report](REPORT.md) for
+qualification evidence, frozen input policies, and historical startup timing.
 
-On successful completion, `results/original-v1/RESULTS.md`, `scores.csv`, `paired_differences.csv` and `coverage.csv` will report original PLM-interact against the frozen baseline and optimized iPIN predictions on the identical test cells.
+Completed outputs in `results/original-v1/` include `RESULTS.md`, `scores.csv`,
+`paired_differences.csv`, and `coverage.csv`, comparing original PLM-interact
+against the frozen baseline and optimized iPIN predictions on identical cells.
 
 Upstream: [official repository](https://github.com/liudan111/PLM-interact).
 
-Required comparison: authors' original released predictor and a separately identified predictor retrained on iPIN TRAIN, each evaluated on the identical C1/C2/C3 test cells against the frozen baseline and optimized iPIN ensembles. Development data alone determine retraining choices. Original-checkpoint interaction exposure is disclosed; an original training objective is not an original pretrained model.
+Completed scope: the authors' original released predictor against both frozen
+iPIN ensembles. The broader benchmark plan's retrained comparison remains
+unperformed for this method. Original-checkpoint interaction exposure is
+disclosed in the execution and result records.
 
 All candidate-specific code, configurations, downloads, data, weights, runs, logs, and reports belong in this directory. Shared containers belong in `../containers/`; reuse of an existing read-only repository SIF requires recorded dependency and numerical qualification. Existing repository data/models are read-only inputs.
 

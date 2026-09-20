@@ -11,17 +11,22 @@ This directory is the durable source of project authority and scientific change 
 
 Changes to the primary target, metric, split, calibration universe, production platform, or claim ceiling require a numbered blueprint amendment approved by the expert group.
 
-## Current record
+## Core model record
 
-The current scientific status is [v54](PROJECT_STATUS_v54.md), with
+The core iPIN model disposition is [v54](PROJECT_STATUS_v54.md), with
 [gate record v54](gates/gate_status_v54.yaml).
 [DEC-0054](decisions/DEC-0054-freeze-and-designate-both-models.md) freezes both
-evaluated ensembles and designates the optimized ensemble **best-performing by
-observed benchmark score**, while retaining the affine ensemble as the
+evaluated iPIN ensembles and designates the optimized ensemble **higher-scoring
+of these two models**, while retaining the affine ensemble as the
 **original confirmatory baseline**. The
 [dual-model registry and cards](../docs/models/FROZEN_PAIR_MODELS_v1.md) preserve
 exact checkpoint hashes and prediction definitions. This is a post-follow-up
 designation, not a new test, refit or statistically conclusive C3 superiority claim.
+
+The [repository overview](../README.md), [published-model benchmark index](../benchmark/README.md),
+and [six-target application](../example/six_target_comparison_v1/REPORT.md)
+describe subsequent work and its own execution records. Status v54 is the
+core-model freeze record, not a live inventory of every later repository study.
 
 The preceding completed evaluation is recorded in [status v53](PROJECT_STATUS_v53.md),
 [gate record v53](gates/gate_status_v53.yaml) and the

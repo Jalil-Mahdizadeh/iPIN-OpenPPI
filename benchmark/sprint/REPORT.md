@@ -1,5 +1,12 @@
 # Native SPRINT benchmark
 
+Current completion record: [final results](results/original-v1/RESULTS.md),
+completed 17 September 2026 with full C1/C2/C3 coverage. See the
+[README](README.md) for current status. The dated snapshot below preserves
+the pre-completion qualification, preprocessing, and execution history.
+
+## Historical startup snapshot
+
 Status checked: **2026-09-17, approximately 21:02 CEST**.
 
 The dedicated SIF is built and qualified. Full HSP preprocessing is running;

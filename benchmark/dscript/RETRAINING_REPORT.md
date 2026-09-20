@@ -1,5 +1,12 @@
 # Matched-data D-SCRIPT retraining and automatic test evaluation
 
+Completed on 18 September 2026: [final results](results/retrained-v1/RESULTS.md).
+C3 development selected the epoch-4 three-seed ensemble. The
+[README](README.md) provides current status; the dated startup record below
+preserves the original recipe, job chain, and handoff evidence.
+
+## Historical startup snapshot
+
 Recipe frozen on 2026-09-12 UTC. Status: **training healthy; monitoring paused as requested**. Startup was verified at 2026-09-12 22:01 UTC (2026-09-13 00:01 CEST). User authorized retraining, automatic C1/C2/C3 testing, generous Slurm limits, and a pause after healthy startup. Original D-SCRIPT evaluation is already complete and remains unchanged; see [original evaluation report](ORIGINAL_EVALUATION_REPORT.md).
 
 ## Verified startup and handoff

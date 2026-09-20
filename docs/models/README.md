@@ -3,7 +3,7 @@
 Current release: [Frozen pair models v1](FROZEN_PAIR_MODELS_v1.md),
 authorized by [DEC-0054](../../governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
 
-- Best-performing model by observed benchmark score:
+- Higher observed benchmark score among the two frozen iPIN ensembles:
   `esm2_150m__residual_wide__epoch04_ensemble3`.
 - Original confirmatory baseline:
   `lightweight_esm2_150m_linear__linear_lr3e-4`.
@@ -16,3 +16,7 @@ conclusive superiority claim.
 Exact hashes, model roles and preserved inputs are in the
 [machine-readable registry](../../artifacts/models/frozen_pair_models_v1/MODEL_REGISTRY.json).
 Private model weights remain local and are not distributed in this Git repository.
+
+Published-model comparisons are indexed separately in
+[benchmark/](../../benchmark/README.md). The designation above concerns the two
+iPIN ensembles; it does not rank iPIN above every published comparator.

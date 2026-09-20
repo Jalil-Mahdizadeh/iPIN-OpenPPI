@@ -1,6 +1,8 @@
 # Published PPI models for an iPIN-OpenPPI manuscript benchmark
 
-Prepared: 12 September 2026. Revised to include the requested original-versus-retrained comparison and authorize starting TUnA. This document is the plan; actual execution status/results belong in each candidate's report.
+Prepared: 12 September 2026. This document preserves the original comparison
+plan and its execution assumptions. Current completion status and results are
+in the [benchmark index](README.md) and linked candidate result records.
 
 Scope: a new comparison on the existing iPIN-OpenPPI dataset, preserving its positive–unlabeled (PU) interpretation and generalization philosophy. Implementation starts with TUnA. All new files, scripts, model/data downloads, configurations, logs, results, and containers must remain under `benchmark/`. Existing repository inputs, frozen models, historical protocols, and ledgers remain read-only.
 
@@ -25,7 +27,13 @@ Each candidate has its own directory: `tuna/`, `dscript/`, `plm_interact/`, `rap
 
 If an original checkpoint is unavailable, report the missing original result explicitly. For a nonparametric algorithm such as SPRINT, explain that neural-checkpoint retraining is not applicable rather than fabricating two learned models. Start TUnA first; other candidate directories are organizational preparation, not authorization to run every model simultaneously.
 
-Execution update: TUnA has a dedicated ARM64 SIF, a verified full-length residue cache, qualified GPU inference/evaluation, and three-seed retraining in progress. The final comparison is queued after successful training. See [TUnA startup report](tuna/REPORT.md). Other candidate folders are prepared; their candidate-specific images and runs remain pending, to be qualified as each candidate is started.
+Execution update, 20 September 2026: completed comparisons are available for
+TUnA, D-SCRIPT, PLM-interact, RAPPPID, and SPRINT. TUnA and D-SCRIPT include
+development-selected three-seed retrained ensembles; RAPPPID reports its
+explicitly selected partial-training recovery ensemble. PLM-interact has an
+original-model result only, and SPRINT uses the permitted TRAIN-positive graph.
+The [benchmark index](README.md) distinguishes these completed scopes from the
+remaining planning-only candidates.
 
 ## 1. Recommendation in brief
 

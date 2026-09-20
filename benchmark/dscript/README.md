@@ -1,6 +1,13 @@
 # D-SCRIPT benchmark
 
-Status: **three-seed retraining is running healthily**, with a qualified native SIF/cache, frozen recipe, finite losses/gradients and verified recovery checkpoints. Eight epochs, C3-DEV selection at epoch 4 or 8; four 72-hour training stages, then 24-hour selection/test jobs. Current training job: **2342911**. Final test job: **2342916**. Monitoring has paused as requested; jobs continue. See [RETRAINING_REPORT.md](RETRAINING_REPORT.md) for the startup snapshot, full job chain and monitoring paths.
+Status: **original and retrained C1/C2/C3 evaluations are complete**. The retrained
+three-seed ensemble selected epoch 4 using C3 development and completed evaluation
+on 18 September 2026. Its C1/C2/C3 concordance is
+**0.504429 / 0.481321 / 0.511437**. All seeds are reported, including the weak
+third seed. See [retrained results](results/retrained-v1/RESULTS.md),
+[paired comparisons](results/retrained-v1/paired_differences.csv), and the
+[cross-method index](../README.md). [RETRAINING_REPORT.md](RETRAINING_REPORT.md)
+preserves the frozen recipe and dated startup/job history.
 
 Original `human_v1` evaluation remains completed and verified (job 2338739; 2026-09-12): all 3,019,012 rows retained, with weighted P-versus-U concordance **0.462863 / 0.439297 / 0.498680**. See [original report](ORIGINAL_EVALUATION_REPORT.md) and [original comparison CSV](results/original-v1/scores.csv). These original results are unchanged.
 

@@ -1,10 +1,17 @@
 # TUnA benchmark — startup and execution report
 
+Current completion record: [final results](results/RESULTS.md), completed
+12 September 2026. Both original and epoch-4 three-seed retrained predictors
+have full C1/C2/C3 results. See the [README](README.md) for current status.
+The dated snapshot below preserves the pre-completion execution history.
+
+## Historical startup snapshot
+
 Snapshot: 12 September 2026, approximately 10:45 UTC / 12:45 Stockholm time.
 
 TUnA implementation and numerical qualification are complete. Three independent PU-retraining seeds are running on Arrhenius; the released-versus-retrained C1/C2/C3 comparison is queued to run automatically after successful training. **No new TUnA test-performance result is available at this snapshot.** Training loss and pilot measurements below are not test metrics.
 
-## Required comparison and current jobs
+## Required comparison and jobs at startup
 
 | Predictor | C1 test | C2 test | C3 test |
 |---|---|---|---|

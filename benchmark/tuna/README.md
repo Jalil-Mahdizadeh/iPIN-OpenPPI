@@ -1,6 +1,12 @@
 # TUnA benchmark
 
-Status at 12 September 2026 startup: qualified; three-seed training running as Slurm job `2325231`; automatic final comparison queued as `2326461` with an `afterok` dependency. See [REPORT.md](REPORT.md) for the scientific protocol, measured feasibility, caveats, and operational history. This is not yet a completed test-performance result.
+Status: **original and retrained C1/C2/C3 comparisons completed on 12 September
+2026**. The C3-development-selected retrained ensemble uses all three seeds at
+epoch 4. Its C1/C2/C3 concordance is **0.948619 / 0.880401 / 0.815875**; original
+TUnA scores **0.716166 / 0.698193 / 0.695658**. See the
+[completed results](results/RESULTS.md) and [paired intervals](results/paired_differences.csv).
+The primary retrained-versus-optimized-iPIN C3 interval includes zero.
+[REPORT.md](REPORT.md) preserves the protocol, qualification, and startup history.
 
 Upstream: [official repository](https://github.com/Wang-lab-UCSD/TUnA).
 
@@ -10,6 +16,6 @@ All candidate-specific code, configurations, downloads, data, weights, runs, log
 
 If an original checkpoint is unavailable or cannot be reproduced faithfully, report that limitation explicitly rather than substituting a newly trained model under the original label.
 
-The dedicated image is `../containers/images/tuna-arm64-v1.sif`. Entry points are [run.sh](run.sh), [train_seeds.sbatch](train_seeds.sbatch), and [final.sh](final.sh). Do not resubmit them while the recorded jobs are active. The final pipeline refuses changed frozen code, incomplete training, overwritten predictions, or a repeated truth-access reservation.
+The dedicated image is `../containers/images/tuna-arm64-v1.sif`. Entry points are [run.sh](run.sh), [train_seeds.sbatch](train_seeds.sbatch), and [final.sh](final.sh). The evaluation is completed and its truth-access reservation is spent. The final pipeline refuses changed frozen code, incomplete training, overwritten predictions, or a repeated truth-access reservation.
 
-After successful completion, aggregate outputs will be `results/scores.csv`, `results/paired_differences.csv`, `results/RESULTS.json`, and `results/RESULTS.md`. Protected per-pair predictions remain under ignored `private/`; they are not included in the public aggregate CSVs.
+Completed aggregate outputs are `results/scores.csv`, `results/paired_differences.csv`, `results/RESULTS.json`, and `results/RESULTS.md`. Protected per-pair predictions remain under ignored `private/`; they are not included in the public aggregate CSVs. See the [cross-method index](../README.md) for the other completed comparisons.

@@ -1,5 +1,12 @@
 # Original PLM-interact C1/C2/C3 benchmark
 
+Current completion record: [final results](results/original-v1/RESULTS.md),
+completed 17 September 2026. Original 650M humanV11 has full C1/C2/C3 results;
+no matched-data retraining was performed. See the [README](README.md) for current
+status. The dated snapshot below preserves the pre-completion execution history.
+
+## Historical startup snapshot
+
 Status at **18:27 CEST, 16 September 2026**: the dedicated SIF is built and qualified; original-model C1/C2/C3 scoring is **running** as Slurm job **2555430** on **n538**, using four distinct GH200 GPUs. No test performance metrics are available yet, and test truth remains unopened. Expected completion is approximately **03:30–06:30 CEST, 17 September**, subject to production throughput and final metric calculation. No PLM-interact retraining is authorized or scheduled by this run. D-SCRIPT continues unchanged on its separate node.
 
 ## Execution summary

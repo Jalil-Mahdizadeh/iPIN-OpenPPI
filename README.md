@@ -1,196 +1,125 @@
 # iPIN-OpenPPI
 
-Evidence-aware, sequence-based prioritization of direct human heteromeric protein-protein interactions.
+Evidence-aware, sequence-based prioritization of direct human heteromeric
+protein–protein interactions. The implemented benchmark measures ranking of
+released positives against sampled unlabeled pairs; unlabeled pairs are not
+verified noninteractions.
 
-## Current status
+## Current project
 
-Both evaluated ensembles are frozen. The **optimized three-seed residual-MLP
-ensemble is the best-performing model by observed benchmark score**; the
-**affine three-seed ensemble remains the original confirmatory baseline**.
-Their exact checkpoints, shared encoder, normalization and ensemble definitions
-are preserved in the [model registry and cards](docs/models/FROZEN_PAIR_MODELS_v1.md)
-under [DEC-0054](governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
-This designation changes no weights or results and does not establish
-statistically conclusive primary C3 superiority. See
-[current status v54](governance/PROJECT_STATUS_v54.md).
+The repository contains the evidence-processing and benchmark pipeline, two
+frozen iPIN ensembles, completed comparisons with five published methods, and
+six protein-screening examples. Start with these records:
 
-As of 2026-09-11, a surprisingly simple frozen-PLM sequence-pair model has strong
-positive-unlabeled ranking evidence for interaction-training-naïve proteins in
-this protected benchmark. Its original C3 development concordance is **0.784**;
-the original test is **0.789 [0.708, 0.846]**, above all eleven prespecified
-controls with positive paired intervals. For that original linear baseline,
-network shortcuts were strong: C2 had no demonstrated advantage over degree
-sum, and C1 was below preferential attachment. Concordance is not
-binary binding accuracy or a calibrated interaction probability. Genuine
-partner-specific/direct-binding generalization remains unresolved.
+| Area | Current reference |
+|---|---|
+| Frozen iPIN predictors | [Model registry and cards](docs/models/FROZEN_PAIR_MODELS_v1.md) |
+| Published-method comparisons | [Benchmark results and execution status](benchmark/README.md) |
+| Protein-screening examples | [Six-target comparison](example/six_target_comparison_v1/REPORT.md) |
+| Scientific reports and diagnostics | [Report index](docs/reports/README.md) |
+| Core model freeze and decisions | [Governance index](governance/README.md) |
+| Implementation and tests | [Source map](src/README.md), [entry points](scripts/README.md), [test policy](tests/README.md) |
 
-The development-only [optimization search](docs/reports/m1/M1_Model_Optimization_v1.md)
-tested 24 fixed recipes on the GH200 GPU. Its selected three-seed residual-MLP
-ensemble improved development C3 to **0.799419**, gain
-**0.015277 [0.002942, 0.034460]**, while failing the original individual-seed
-conditions. [DEC-0053](governance/decisions/DEC-0053-authorize-fixed-ensemble-followup.md)
-subsequently accepted the **fixed ensemble** for one follow-up test, explicitly
-after development and before that follow-up; the failed old gate remains intact.
+Both iPIN predictors use frozen ESM-2 150M sequence representations, training-only
+normalization, symmetric pair features, and equal-weight three-seed raw-score
+ensembles. The original affine ensemble is the confirmatory baseline; the
+optimized residual-MLP ensemble has the higher observed scores of these two
+iPIN models. Exact checkpoints and prediction definitions are frozen under
+[DEC-0054](governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
 
-| Test cell | Original ensemble | Optimized ensemble | Gain and paired 95% interval |
+| Test cell | Original iPIN | Optimized iPIN | Gain and paired 95% interval |
 |---|---:|---:|---|
-| **C3 (primary)** | 0.789249 | **0.807948** | +0.018699 [−0.001358, +0.050000] |
+| **C3 (primary)** | 0.789249 | 0.807948 | +0.018699 [−0.001358, +0.050000] |
 | C2 | 0.805299 | 0.851301 | +0.046002 [+0.031561, +0.061559] |
 | C1 | 0.843493 | 0.916037 | +0.072544 [+0.063093, +0.081869] |
 
-The C3 point improvement agrees with development, but its paired interval
-includes zero: **the primary incremental benefit remains inconclusive**.
-All nine cell point gains are positive; secondary C2/C1 intervals exclude zero.
-The optimized C2/C1 point scores exceed the historical highlighted network
-controls, but this follow-up did not perform paired comparisons against those
-controls or establish the absence of shortcuts. See the
-[follow-up report](docs/reports/m1/M1_Model_Optimization_Followup_v1.md),
-[completed evaluation status v53](governance/PROJECT_STATUS_v53.md), and
-[follow-up protocol](docs/protocols/MODEL_OPTIMIZATION_FOLLOWUP_v1.md).
-No new test set was created. The existing test was already examined; this is
-a disclosed follow-up, not independent replication or a never-seen evaluation.
-The single follow-up is consumed, with no further fitting or evaluation queued.
+The primary C3 gain remains inconclusive because its paired interval includes
+zero. The optimized-model evaluation is a disclosed follow-up on the existing,
+previously examined test, not independent replication. See the
+[original final-test report](docs/reports/m1/M1_Protected_Final_Test_v1.md) and
+[fixed-ensemble follow-up](docs/reports/m1/M1_Model_Optimization_Followup_v1.md).
+The original evaluation, the follow-up, and their spent access ledgers remain
+separate records.
 
-The [original final-test report](docs/reports/m1/M1_Protected_Final_Test_v1.md),
-[original protocol](docs/protocols/PROTECTED_FINAL_TEST_v1.md),
-[original status v51](governance/PROJECT_STATUS_v51.md), checkpoints, result,
-receipt and spent ledger remain immutable. The
-[embedding-identity correction](docs/reports/m1/M1_Research_Reassessment_and_Embedding_Identity_Findings_2026-09-10.md)
-and the invalid earlier evaluation remain preserved as separate evidence.
+Published-method results are complete for TUnA, D-SCRIPT, PLM-interact, RAPPPID,
+and SPRINT. TUnA's retrained ensemble has C3 concordance 0.815875; its paired
+difference from optimized iPIN also includes zero. Retraining coverage and
+checkpoint-selection limitations differ by method, especially RAPPPID's
+partially trained recovery ensemble. The [benchmark index](benchmark/README.md)
+links each result and its caveats. The six-target example uses a fresh UniProt
+sequence snapshot and is a separate descriptive application, not a replacement
+benchmark or a new training set.
 
-BioPlex AP-MS is **secondary cross-assay association evidence**, not a clean
-direct-binary interaction panel or a decisive verdict on this PU benchmark.
-Its frozen negative results are retained, but are neither a tuning target nor
-a selection/retest gate. The historical [diagnostic reports](docs/reports/README.md)
-also preserve the within-anchor, homology/source, composition/order and bounded
-direct-binary feasibility studies. SAVEXIS remains a conditional, unqualified
-candidate for a separate extracellular study; that possible pivot does not
-determine the present optimization experiment.
+Concordance is neither binary binding accuracy nor calibrated interaction
+probability. Genuine partner-specific/direct-binding generalization remains
+unresolved. BioPlex AP-MS provides secondary cross-assay association evidence;
+its frozen negative findings are retained in the [report index](docs/reports/README.md).
 
-## Historical pre-model checkpoint (v27)
+## Pipeline and benchmark design
 
-Arrhenius/Apptainer qualification, primary-source acquisition, evidence staging,
-source reconciliation, systematic-screen analysis, and the negative-evidence
-discovery audit are complete and accepted. The governance-bounded Lambourne
-2026 and 2025 TF-isoform audits are complete and independently validated. The
-TF-isoform audit and its [DEC-0016 disposition](governance/decisions/DEC-0016-propose-tf-isoform-y2h-disposition.md)
-are technically accepted by [DEC-0017](governance/decisions/DEC-0017-accept-tf-isoform-y2h-disposition.md).
+1. Acquire checksum-registered source snapshots and preserve assay, construct,
+   orientation, evaluability, and outcome semantics during ingestion and
+   reconciliation.
+2. Audit eligible sequences, homology components, and leakage before freezing
+   the endpoint split: 17,000 endpoints in 7,782 components, partitioned into
+   11,900 training, 2,550 development, and 2,550 test endpoints.
+3. Construct the frozen pair-level positive–unlabeled benchmark with explicit
+   evidence visibility, deterministic sampling, and design weights. Training
+   uses 16,799 positives; development and protected packages are separated.
+4. Prepare sequence representations and fit models on training inputs. Use
+   development data for model selection and freeze the full scorer before its
+   separately authorized evaluation.
+5. Report C3 as primary, C2/C1 as secondary, and use paired component-bootstrap
+   uncertainty. C3 tests two interaction-training-naïve endpoints; sequence
+   pretraining exposure and broader biological generalization require separate
+   interpretation.
 
-Both external panels remain quarantined from the primary design. In particular,
-the TF-isoform panel is external-only and is unsuitable for training negatives,
-universal-nonbinding claims, prevalence, calibration, or unseen-endpoint/family
-benchmarking.
-
-The bounded eligibility and sequence-component audit is complete, independently
-validated, and technically accepted by [DEC-0018](governance/decisions/DEC-0018-accept-benchmark-eligibility-and-sequence-component-audit.md).
-Its [final report](docs/reports/m0/M0_Benchmark_Eligibility_and_Sequence_Component_Audit_Final_v1.md)
-freezes 17,000 eligible sequence endpoints and deterministic 40%/30%/20%
-component inventories without materializing candidate pairs or constructing
-labels or splits.
-
-[DEC-0020](governance/decisions/DEC-0020-accept-pre-split-feasibility-and-leakage-stress-test.md)
-accepts the independently validated aggregate pre-split feasibility and
-leakage stress-test and its fail-closed homology and claim boundaries.
-
-[DEC-0022](governance/decisions/DEC-0022-accept-final-benchmark-component-split.md)
-accepts and freezes the 17,000-endpoint, 7,782-component
-11,900/2,550/2,550 training/development/test skeleton under 30%
-local_domain_union.
-
-[DEC-0024](governance/decisions/DEC-0024-accept-pair-level-pu-r-benchmark-protocol.md)
-accepts and freezes the independently validated pair-level PU-R protocol before
-model work. Its [protocol report](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md)
-defines evidence visibility, exact C1/C2/C3 withholding, deterministic
-unlabeled sampling, PU-retrieval metrics, clustered uncertainty, supported
-named-source diagnostics, and inactive unsupported holdouts.
-
-[DEC-0026](governance/decisions/DEC-0026-accept-pair-level-pu-r-benchmark-artifacts.md)
-accepts and freezes the independently validated pair-level benchmark artifacts
-constructed exactly under that protocol. The
-[artifact report](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Artifacts_Final_v1.md)
-records 16,799 training positives, 20,000,000 deterministic sampled-unlabeled
-cell rows, separately sealed development/protected-candidate/protected-truth
-packages, exact probabilities and weights, and zero positive-as-unlabeled or
-public protected-identity leakage. Unlabeled pairs remain unlabeled, not
-negatives. Development release, protected evaluation, and executable model
-work remain unauthorized.
-
-[DEC-0028](governance/decisions/DEC-0028-accept-model-governance-and-baseline-training-protocol.md)
-accepts and freezes the independently validated, deliberately simple first-
-stage [model protocol](docs/protocols/MODEL_GOVERNANCE_AND_BASELINE_TRAINING_PROTOCOL_v1.md).
-It fixes exact frozen ESM-2 candidates and exposure limits, mandatory shortcut
-and sequence baselines, a design-weighted P-versus-U objective, one symmetric
-partner-gated pooled head with minimal ablations, a finite 30-run budget,
-development/model-selection rules, C3/C2/C1 reporting, degree/hub and novel-U
-diagnostics, and complexity/kill gates. No model files, embeddings, training,
-development release, or protected evaluation are authorized or have begun.
-
-The fresh-thread phase-boundary checkpoint at that stage was
-[RESUME-003](governance/checkpoints/RESUME-003-post-model-governance-protocol-freeze.md).
-Its historical scientific status was
-[project status version 27](governance/PROJECT_STATUS_v27.md), with
-[gate status version 27](governance/gates/gate_status_v27.yaml).
-
-The binding scientific specification is [the Version 3 final blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md). All production computation must run on NAISS Arrhenius through immutable ARM64 Apptainer SIF images.
+The [Version 3 blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md),
+[frozen split decision](governance/decisions/DEC-0022-accept-final-benchmark-component-split.md),
+[pair protocol](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md),
+and [artifact report](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Artifacts_Final_v1.md)
+record the scientific design. Numbered protocols, status files, and checkpoints
+describe their original phase boundaries. The core model disposition is
+[status v54](governance/PROJECT_STATUS_v54.md); subsequent benchmark and example
+work is documented in its own directories.
 
 ## Repository layout
 
 | Path | Purpose |
 |---|---|
-| `docs/blueprints/` | Reviewed specifications and expert-group documents |
-| `docs/reports/` | Human-readable milestone, platform, and scientific reports |
-| `docs/models/` | Frozen model roles, exact prediction definitions and preservation records |
-| `governance/` | Start manifest, decisions, gates, risks, licenses, and novelty claims |
-| `configs/` | Versioned scientific, path, source, and gate configuration |
-| `containers/` | Apptainer definitions, locks, metadata, cache, and SIF images |
-| `data/` | Source manifests, immutable raw snapshots, staging, canonical data, derived data, and frozen splits |
-| `src/` | Project implementation by functional work package |
-| `scripts/` | Thin, auditable entry points for platform, data, benchmark, model, and release tasks |
-| `slurm/` | Arrhenius job specifications and scheduler logs |
-| `tests/` | Unit, integration, fixture, and reproducibility tests |
-| `artifacts/` | Run manifests, logs, checkpoints, embeddings, metrics, figures, tables, reports, and project-local caches |
-| `releases/` | Immutable release candidates and final release packages |
+| `src/ipin_openppi/` | Evidence processing, benchmark construction, modeling, diagnostics, and validation |
+| `scripts/` | Data, benchmark, model, analysis, and platform entry points |
+| `tests/` | Synthetic unit, safety, validation, and model tests |
+| `benchmark/` | Published-method implementations, execution records, aggregate comparisons, and dedicated containers |
+| `example/` | Six target panels, frozen-model scoring, and descriptive comparisons |
+| `docs/` | Blueprints, scientific protocols, reports, and model cards |
+| `governance/` | Decisions, phase-specific status records, gates, risks, and licenses |
+| `configs/`, `schemas/` | Versioned configuration and data contracts |
+| `containers/` | Core ARM64 Apptainer recipes, dependency locks, and image provenance |
+| `slurm/` | Core Arrhenius job specifications and scheduler logs |
+| `data/` | Source manifests and local raw, staging, canonical, derived, and split data |
+| `artifacts/` | Registries, validation evidence, run records, and local generated products |
+| `releases/` | Public-release policy |
+| `graphify-out/` | Repository knowledge graph and navigation reports |
 
-## Non-negotiable operating rules
+## Execution and preservation
 
-1. Keep every project artifact beneath this repository root; keep private keys and
-   credentials in account-protected locations outside source control.
-2. Do not install or run a native project Python environment on the host.
-3. Run scientific code inside a checksum-identified ARM64 Apptainer SIF.
-4. Treat `data/raw/` as immutable after source checksum registration.
-5. Give every material run a unique directory and machine-readable manifest.
-6. Never overwrite a frozen split, source snapshot, container image, or release; create a new version.
-7. Preserve assay, construct, orientation, selection, evaluability, and outcome semantics.
-8. Describe untested predictions as computational hypotheses, never validated interactions.
+All production computation runs on NAISS Arrhenius in checksum-identified ARM64
+Apptainer SIF images. The [container guide](containers/README.md) identifies the
+qualification, data, and model environments. Scientific Python dependencies
+belong inside an accepted SIF; do not install or run a native project environment
+on the host. See the [test guide](tests/README.md) for synthetic validation.
 
-## Current governance hold
+Keep project artifacts under this repository and credentials in protected
+locations outside source control. Give each material run a unique directory and
+machine-readable manifest. Raw sources, frozen splits, model weights, container
+images, sealed truth, and completed scientific results must not be overwritten;
+new scientific work requires its own version and authorization. Preserve the
+[embedding-identity correction](docs/reports/m1/M1_Research_Reassessment_and_Embedding_Identity_Findings_2026-09-10.md)
+and the earlier invalid evaluation as distinct evidence. Never reset a spent
+evaluation ledger or tune on protected test results.
 
-1. Preserve the completed external-panel audits and their immutable evidence;
-   do not reopen, recompute, or extend them.
-2. Preserve the accepted eligibility/component and pre-split leakage audits,
-   their immutable manifests, and the primary PU-R design.
-3. Preserve the immutable `DEC-0022` endpoint/component split.
-4. Preserve the `DEC-0024` information, pair-assignment, sampling, metric,
-   uncertainty, holdout, and claim rules.
-5. Preserve the immutable `DEC-0026` pair artifacts; do not modify, extend,
-   resample or relabel. The bounded development correction under `DEC-0045`
-   is complete. Further protected access is permitted only by DEC-0052's
-   conditional follow-up, after its development gate and scorer freeze.
-6. Preserve the `DEC-0028` frozen model-governance and baseline/training
-   protocol. Do not construct additional pair rows, negatives or pseudo-
-   negatives, materialize the full candidate universe, integrate panels or
-   structures, acquire model files, implement models, extract embeddings, or
-   train unless a new numbered decision authorizes that bounded package.
-7. Preserve both the invalid original evaluation evidence and the corrected
-   `development_embedding_identity_correction_v2` evidence. The corrected
-   result does not authorize another phase or protected evaluation.
-8. Preserve completed DEC-0046/0047/0048 studies and their freezes. BioPlex is
-   secondary, spent cross-assay evidence; do not tune to its results or use its
-   old superiority gates to determine the current PU experiment. The use note is
-   [here](governance/licenses/BIOPLEX_PUBLISHED_RELEASE_USE_v1.md).
-9. Preserve DEC-0049/0050 and the original DEC-0051 evaluation. DEC-0052's bounded
-   optimization is complete and its conditional follow-up was not triggered.
-   No test-informed tuning, resetting the old ledger, source expansion,
-   quarantine access, new labels or automatic further experiment is authorized.
-
-Generated data and images are intentionally excluded from source control but remain in their designated project-local directories.
+Generated datasets, private predictions, checkpoints, and SIF images remain
+local and are intentionally excluded from Git. A checkout contains the code,
+configuration, provenance, and public aggregates, not every execution input.
+Untested predictions are computational hypotheses, not validated interactions.

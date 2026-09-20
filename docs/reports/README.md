@@ -1,6 +1,11 @@
 # Project reports
 
-Human-readable M0 platform, evidence, benchmark, modelling, gate, and release reports are stored here. Machine-readable run records remain under `artifacts/runs/`.
+Core platform, evidence, benchmark, modelling, gate, and release reports are
+stored here. Machine-readable core run records remain under `artifacts/runs/`.
+The subsequent [published-model comparisons](../../benchmark/README.md) and
+[six-target application](../../example/six_target_comparison_v1/REPORT.md) keep
+their reports alongside their implementations. The chronology below describes
+the core iPIN studies and preserves their phase-specific decisions.
 
 The latest diagnostic is [C3 control-shift investigation](m1/M1_C3_Control_Shift_Investigation_v1.md).
 Exact scoring parity passed. Development's simple-control signal is concentrated
@@ -12,12 +17,12 @@ either frozen model, the benchmark, or prior evaluation records.
 The current model disposition is [Frozen pair models v1](../models/FROZEN_PAIR_MODELS_v1.md),
 authorized by [DEC-0054](../../governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
 Both exact ensembles are preserved: the optimized residual-MLP ensemble is the
-**best-performing model by observed benchmark score**; the affine ensemble is
+**higher-scoring of the two frozen iPIN models**; the affine ensemble is
 the **original confirmatory baseline**. No new experiment or evaluation was
 performed for this designation. See [status v54](../../governance/PROJECT_STATUS_v54.md)
 and the [public model registry](../../artifacts/models/frozen_pair_models_v1/MODEL_REGISTRY.json).
 
-The latest completed study is
+The completed core-model follow-up is
 [Fixed-ensemble test follow-up](m1/M1_Model_Optimization_Followup_v1.md), authorized
 by [DEC-0053](../../governance/decisions/DEC-0053-authorize-fixed-ensemble-followup.md).
 The frozen optimized ensemble increased primary C3 test concordance from
@@ -28,7 +33,7 @@ and all member results are reported. See [status v53](../../governance/PROJECT_S
 and the [follow-up protocol](../protocols/MODEL_OPTIMIZATION_FOLLOWUP_v1.md).
 This is one disclosed comparison on the existing, previously examined test;
 no new test set, refitting, seed selection or test tuning. Original records remain
-immutable and no further evaluation is queued.
+immutable; this core follow-up authorizes no additional evaluation.
 
 The preceding completed study is
 [Development-only model optimization](m1/M1_Model_Optimization_v1.md), authorized by
