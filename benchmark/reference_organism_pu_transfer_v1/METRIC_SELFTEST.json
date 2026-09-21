@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-09-21T10:44:35.355950+00:00",
+  "cases": 203,
+  "implementation": {
+    "bytes": 4209,
+    "path": "example/twelve_target_comparison_v1/metrics.py",
+    "sha256": "08ea14321541efd58ce041428790e6990a820a2ab5564b348a40968b7fb92ae7"
+  },
+  "maximum_error": 1.1102230246251565e-16,
+  "oracle": "sklearn AUROC/AP and enumerated possible P ranks",
+  "status": "passed"
+}

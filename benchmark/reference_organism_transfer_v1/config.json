@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "study_id": "reference_organism_transfer_v1",
+  "human_taxid": 9606,
+  "reviewed_reference_taxids": [83333, 559292],
+  "primary_reference_taxid": 559292,
+  "primary_pubmed_id": "27107014",
+  "scope": "Retrospective evaluation of published human–laboratory-reference protein interactions",
+  "user_scope_decision": "Use nonpathogenic reference organisms",
+  "other_taxids_eligible": false,
+  "source_manifest": {
+    "path": "benchmark/host_pathogen_transfer_v1/SOURCE_PARSING_v2.json",
+    "sha256": "053509350b52b8fc9eec57531ca3126431b253d23cca22440a36c3483f5990a7"
+  },
+  "taxonomy": {
+    "path": "benchmark/host_pathogen_transfer_v1/taxonomy_lineages_v2.csv",
+    "sha256": "47000fd90773c557e4c00fe31003e3bb9d2d939029d54fcd991d2093366d408d"
+  },
+  "reference_classification_sources": {
+    "83333": "https://genomes.atcc.org/genomes/531534bd23a542ae",
+    "559292": "https://genomes.atcc.org/genomes/7a25fb7d25a24eb8"
+  },
+  "primary_publication": "https://pubmed.ncbi.nlm.nih.gov/27107014/",
+  "source_review_date": "2026-09-21",
+  "frozen_model_parameters_required": true,
+  "published_pairs_only": true,
+  "model_scoring_enabled": false
+}

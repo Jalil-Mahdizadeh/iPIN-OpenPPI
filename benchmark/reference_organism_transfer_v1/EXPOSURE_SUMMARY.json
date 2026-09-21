@@ -1,0 +1,41 @@
+{
+  "exact_pair_counts": {
+    "DEV_P": 0,
+    "DEV_U": 0,
+    "TRAIN_P": 0,
+    "TRAIN_U": 0
+  },
+  "organisms": [
+    {
+      "exact_development": 0,
+      "exact_train": 0,
+      "organism": "S288C",
+      "proteins": 545,
+      "similarity_bins": {
+        "30_to_50pct": 36,
+        "50_to_80pct": 20,
+        "at_least_80pct": 3,
+        "below_30pct": 19,
+        "no_qualifying_hit": 467
+      },
+      "taxid": 559292,
+      "train_homolog_30pct_both80": 59
+    },
+    {
+      "exact_development": 266,
+      "exact_train": 206,
+      "organism": "Human",
+      "proteins": 466,
+      "similarity_bins": {
+        "30_to_50pct": 7,
+        "50_to_80pct": 6,
+        "at_least_80pct": 264,
+        "below_30pct": 2,
+        "no_qualifying_hit": 187
+      },
+      "taxid": 9606,
+      "train_homolog_30pct_both80": 277
+    }
+  ],
+  "pretraining_exposure_audited": false
+}

@@ -1,0 +1,33 @@
+{
+  "all_scoring_pairs_present_in_verified_published_input": true,
+  "all_selected_endpoints_have_exact_reference_or_human_taxonomy": true,
+  "model_scores_read": false,
+  "same_mapping_rule_for_both_outcomes": true,
+  "selection": {
+    "bytes": 2256,
+    "path": "benchmark/reference_organism_transfer_v1/PANEL_SELECTION.json",
+    "sha256": "b5c6a9cb5617fb55e816006a9815fb32332a6e0f69973b45bef871529c3ee3b7"
+  },
+  "status": "passed",
+  "summary": {
+    "comparison_endpoint": "Published orthogonal-assay confirmation among previously reported interactions",
+    "excluded_calls": {
+      "no": 5,
+      "yes": 11
+    },
+    "exclusion_reasons": {
+      "no_verified_sequence_pair_mapping": 16
+    },
+    "included_assay_rows": 75,
+    "included_calls": {
+      "no": 39,
+      "yes": 36
+    },
+    "published_assay_rows": 91,
+    "published_calls": {
+      "no": 44,
+      "yes": 47
+    },
+    "unconfirmed_interpreted_as_biological_negative": false
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "P": 1555,
+  "U": 155500,
+  "U_per_P": 100,
+  "at_utc": "2026-09-21T10:48:57.084920+00:00",
+  "files": [
+    {
+      "bytes": 32170,
+      "path": "artifacts/models/frozen_pair_models_v2/MODEL_REGISTRY.json",
+      "sha256": "faf2d585dbfee34ca3fe19487bc7a821f744014cdcdb94e95e4b657097110878"
+    },
+    {
+      "bytes": 14460,
+      "path": "benchmark/host_pathogen_transfer_v1/SOURCE_PARSING_v2.json",
+      "sha256": "053509350b52b8fc9eec57531ca3126431b253d23cca22440a36c3483f5990a7"
+    },
+    {
+      "bytes": 51855,
+      "path": "benchmark/host_pathogen_transfer_v1/local/Plasmodium.zip",
+      "sha256": "2a577a277edfeb277f9f616fa5c14725808a21457006994edeee0f6a025e019a"
+    },
+    {
+      "bytes": 557556,
+      "path": "benchmark/host_pathogen_transfer_v1/local/canal.zip",
+      "sha256": "4d6db5ee2a939689259d2a71b4c38997831462ddc0f56cef0c129949fb6017cc"
+    },
+    {
+      "bytes": 21017299,
+      "path": "benchmark/host_pathogen_transfer_v1/local/source_parsed_v2.json.gz",
+      "sha256": "e2ae7f0e03f0d421ac460b1b39d2e0c166c2f8c2ce76c7eee6ece3f0e213cce7"
+    },
+    {
+      "bytes": 64262,
+      "path": "benchmark/host_pathogen_transfer_v1/local/toxgo.zip",
+      "sha256": "d1e53dd56ee0b301c425069fe5a4b2b506ff1abc7931d615e28a705268e5bfc8"
+    },
+    {
+      "bytes": 6974,
+      "path": "benchmark/nonhuman_transfer_v1/audit_exposure.py",
+      "sha256": "261ac9d1012d92f3e9049b56c22348281d892a730681f7cf6730cb40bc916f2a"
+    },
+    {
+      "bytes": 9943,
+      "path": "benchmark/nonhuman_transfer_v1/score_models.py",
+      "sha256": "6843555414815669d74a6675f4a40bb5eee089564d119b1fd65dce80c6da3b0a"
+    },
+    {
+      "bytes": 1508,
+      "path": "benchmark/reference_organism_pu_transfer_v1/EXPOSURE_AUDIT.json",
+      "sha256": "b83734f05ecce43bb495c024e802bd482202e7afa4fe4bf6c1bfb1177d64ef18"
+    },
+    {
+      "bytes": 2691,
+      "path": "benchmark/reference_organism_pu_transfer_v1/HOMOLOGY_INPUT_FREEZE.json",
+      "sha256": "ecddf150b0cf9a19ece183c1efdde31b0aae75fb48b41bfa6e925f9cf5c7565d"
+    },
+    {
+      "bytes": 385,
+      "path": "benchmark/reference_organism_pu_transfer_v1/METRIC_SELFTEST.json",
+      "sha256": "511b40447d52c9d73cd5b78137130674765a004f2df3fe420d9d471b1d61e4eb"
+    },
+    {
+      "bytes": 5777,
+      "path": "benchmark/reference_organism_pu_transfer_v1/PANEL_SELECTION.json",
+      "sha256": "a37baf6700d1667439b95d3a9663a43d55160c607d0865e8a25af1187ff4b591"
+    },
+    {
+      "bytes": 826,
+      "path": "benchmark/reference_organism_pu_transfer_v1/PANEL_VALIDATION.json",
+      "sha256": "5d0b64585437bf5e502c3c9328af5d7f04b1eb874e329a9dc7af97cf5a50d8a1"
+    },
+    {
+      "bytes": 6177,
+      "path": "benchmark/reference_organism_pu_transfer_v1/PROTOCOL.md",
+      "sha256": "a5a84df665afc5b051ab45feb6f6016147b7e5ddc876cb2e4355a58a281997c1"
+    },
+    {
+      "bytes": 10378,
+      "path": "benchmark/reference_organism_pu_transfer_v1/analyze.py",
+      "sha256": "a5bf3706846fe8a6062dbc111095aeb899ad93aabdfc7bdf7a6b16fece77e39b"
+    },
+    {
+      "bytes": 443,
+      "path": "benchmark/reference_organism_pu_transfer_v1/audit_exposure.py",
+      "sha256": "2810f55b49028fb50e91f0ffb30f5ccb2c81b95ac7e45ea147fc7536bf0d5e39"
+    },
+    {
+      "bytes": 9518,
+      "path": "benchmark/reference_organism_pu_transfer_v1/build_panels.py",
+      "sha256": "27ef7b76c95cf4382fcfae2b7d11825eb3045b3038d0c06fb44cd4e681e8e0c2"
+    },
+    {
+      "bytes": 751,
+      "path": "benchmark/reference_organism_pu_transfer_v1/config.json",
+      "sha256": "c3fcd18cc76027d33f99dda224b6d2f8bf58cecbe5ff75669ae4824e7ec6f690"
+    },
+    {
+      "bytes": 2413133,
+      "path": "benchmark/reference_organism_pu_transfer_v1/eligible_human_pool.csv",
+      "sha256": "bd62e350a003e58a907f0a039ce6f7d4a9221d2d9183ecce515177834bd91594"
+    },
+    {
+      "bytes": 1785164,
+      "path": "benchmark/reference_organism_pu_transfer_v1/exact_endpoint_exposure.csv",
+      "sha256": "a25bc734fc4c955353ce97b4ee57f258fa299b647aa71572c368b03fbe152a93"
+    },
+    {
+      "bytes": 4914689,
+      "path": "benchmark/reference_organism_pu_transfer_v1/exact_pair_exposure.csv",
+      "sha256": "6229a0dd8eff7816eaa2f246711c0ac986a9513010f81f2ad78ce464d249912e"
+    },
+    {
+      "bytes": 216854,
+      "path": "benchmark/reference_organism_pu_transfer_v1/excluded_pairs.csv",
+      "sha256": "3570934b947d5862b73b8409bfd9e071c06a113a18d035a25cd1a9d60e92e626"
+    },
+    {
+      "bytes": 9974,
+      "path": "benchmark/reference_organism_pu_transfer_v1/finalize.py",
+      "sha256": "89d8ea53383d5443ce328f5591c6058147066f29d1bf447b002e6e4b1a54ca4b"
+    },
+    {
+      "bytes": 91190066,
+      "path": "benchmark/reference_organism_pu_transfer_v1/panels.csv",
+      "sha256": "5d351a7a2613a6be5a05efa3aef0de689e946865add26c5ad3b8532155e5569e"
+    },
+    {
+      "bytes": 213067,
+      "path": "benchmark/reference_organism_pu_transfer_v1/positive_assignments.csv",
+      "sha256": "ddb2179d6dea4fecdc9d395de9c72df3aee0430e8565f4f66a309c71b5e489dd"
+    },
+    {
+      "bytes": 1746250,
+      "path": "benchmark/reference_organism_pu_transfer_v1/proteins.csv",
+      "sha256": "0142d6ff52be4217695f35071f4abc6848e96e0481f3fcb62d9b2e2fe1fe529c"
+    },
+    {
+      "bytes": 118646,
+      "path": "benchmark/reference_organism_pu_transfer_v1/published_evidence.json.gz",
+      "sha256": "6839751778461721d0f73f4ed731ec3da15ce26684777fa749ea8e9427ee3661"
+    },
+    {
+      "bytes": 343773,
+      "path": "benchmark/reference_organism_pu_transfer_v1/published_pairs.csv",
+      "sha256": "8a3dcb38be3966a203657510335396b779cf66bd818cff43606a839e53557b5b"
+    },
+    {
+      "bytes": 3515,
+      "path": "benchmark/reference_organism_pu_transfer_v1/score_models.py",
+      "sha256": "be9eae90b0a37e5b3629dbbb9e8c86741fbc91c7d4c83939ae004d310b05d983"
+    },
+    {
+      "bytes": 7063907,
+      "path": "benchmark/reference_organism_pu_transfer_v1/selected_sequences.json.gz",
+      "sha256": "ed0391a90dd201abccabb09321585e4f118359f6621156d6612ff4302d93164f"
+    },
+    {
+      "bytes": 3247,
+      "path": "benchmark/reference_organism_pu_transfer_v1/study_utils.py",
+      "sha256": "aba527d9ddd7aa4fa16bbc3683e97a63a7192ec14ee78e5c22687bee9f346a7d"
+    },
+    {
+      "bytes": 43720,
+      "path": "benchmark/reference_organism_pu_transfer_v1/targets.csv",
+      "sha256": "95610c2e3601185c6d7ebf08ea51548fbc9b223f18c5ac45c25219b6b9c600bf"
+    },
+    {
+      "bytes": 4704449,
+      "path": "benchmark/reference_organism_pu_transfer_v1/training_sequence_similarity.csv",
+      "sha256": "030c0e04b8114e44a3fb5f1ab860cf31229c83e05f825e7bc6c766818c7fcd93"
+    },
+    {
+      "bytes": 4442,
+      "path": "benchmark/reference_organism_pu_transfer_v1/validate_panels.py",
+      "sha256": "a9831ec1a2b11cec2a61082d2a360defbb2e6ac917ea44ab422b942bcf06c3ed"
+    },
+    {
+      "bytes": 8368,
+      "path": "benchmark/reference_organism_pu_transfer_v1/validate_results.py",
+      "sha256": "2d4a06c7eb6c08e41e50bbbed51f926ee8f7767acfd359dbe448bf3b7b2c98a3"
+    },
+    {
+      "bytes": 4819,
+      "path": "benchmark/reference_organism_transfer_v1/SOURCE_PREPARATION.json",
+      "sha256": "86211c11a049c5af42099010ba4cf9f7500b2ee302cc0f475d37f1b35fc05e50"
+    },
+    {
+      "bytes": 18391,
+      "path": "benchmark/reference_organism_transfer_v1/assay_comparison.csv",
+      "sha256": "e16960471d3989d83e8215ce3307790cf1c123b8ce142b3063bd28b060fd2d13"
+    },
+    {
+      "bytes": 118646,
+      "path": "benchmark/reference_organism_transfer_v1/published_evidence.json.gz",
+      "sha256": "6839751778461721d0f73f4ed731ec3da15ce26684777fa749ea8e9427ee3661"
+    },
+    {
+      "bytes": 343773,
+      "path": "benchmark/reference_organism_transfer_v1/published_pairs.csv",
+      "sha256": "8a3dcb38be3966a203657510335396b779cf66bd818cff43606a839e53557b5b"
+    },
+    {
+      "bytes": 156138,
+      "path": "benchmark/reference_organism_transfer_v1/published_proteins.csv",
+      "sha256": "c93a26b5f8da1b69d386fcf778f811e1621262c41e251dbc1e3ff9c2ca449bfd"
+    },
+    {
+      "bytes": 314391,
+      "path": "benchmark/reference_organism_transfer_v1/published_sequences.json.gz",
+      "sha256": "81287d4ff89446d90fc1c9c1b13dc561466d1716e796bda3587f99d71885eeba"
+    },
+    {
+      "bytes": 1025219998,
+      "path": "data/raw/intact/2026-01-09/psi30/species/human.zip",
+      "sha256": "5ce1b8fefafa8e008f806ccbcc77acf7be28d3953afd9a7d5d56587eeb5da898"
+    },
+    {
+      "bytes": 12047,
+      "path": "example/score_frozen_models.py",
+      "sha256": "1976f3ff4b75c198b191b19af0d79fe6e1cf48d5b5059638d51e3d90f492584e"
+    },
+    {
+      "bytes": 4209,
+      "path": "example/twelve_target_comparison_v1/metrics.py",
+      "sha256": "08ea14321541efd58ce041428790e6990a820a2ab5564b348a40968b7fb92ae7"
+    },
+    {
+      "bytes": 27892,
+      "path": "example/twelve_target_comparison_v2/run_comparison.py",
+      "sha256": "cb2516da91f39ea9a32262a79807ca6bda53e00ea17ae80ab0669a2c26da7db0"
+    },
+    {
+      "bytes": 18849,
+      "path": "src/ipin_openppi/stage1/embeddings.py",
+      "sha256": "7d03572fa3d7d8c6b86fb8652b2b866f27f266b6cec4c2695e237aa796bb264f"
+    }
+  ],
+  "globally_distinct_U": true,
+  "model_registry_sha256": "faf2d585dbfee34ca3fe19487bc7a821f744014cdcdb94e95e4b657097110878",
+  "models": [
+    "ipin_baseline",
+    "ipin_optimized",
+    "tuna_retrained"
+  ],
+  "no_new_panel_inference_yet": true,
+  "pairs": 157055,
+  "primary_aggregation": "equal_positive",
+  "primary_endpoint": "P_vs_unlabeled_concordance",
+  "prior_positive_scores_seen": true,
+  "secondary_aggregation": "equal_yeast_target",
+  "selection_uses_model_scores": false
+}

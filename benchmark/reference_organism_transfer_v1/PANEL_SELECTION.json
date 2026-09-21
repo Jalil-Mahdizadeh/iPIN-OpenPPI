@@ -1,0 +1,71 @@
+{
+  "comparison": {
+    "comparison_endpoint": "Published orthogonal-assay confirmation among previously reported interactions",
+    "excluded_calls": {
+      "no": 5,
+      "yes": 11
+    },
+    "exclusion_reasons": {
+      "no_verified_sequence_pair_mapping": 16
+    },
+    "included_assay_rows": 75,
+    "included_calls": {
+      "no": 39,
+      "yes": 36
+    },
+    "published_assay_rows": 91,
+    "published_calls": {
+      "no": 44,
+      "yes": 47
+    },
+    "unconfirmed_interpreted_as_biological_negative": false
+  },
+  "inputs": [
+    {
+      "bytes": 1214,
+      "path": "benchmark/reference_organism_transfer_v1/COMPARISON_SOURCES.json",
+      "sha256": "d4e674ac57148c39fa462a7493bad5d38a6a1a48b0dfd1fbf2d00ff6eb28a480"
+    },
+    {
+      "bytes": 4819,
+      "path": "benchmark/reference_organism_transfer_v1/SOURCE_PREPARATION.json",
+      "sha256": "86211c11a049c5af42099010ba4cf9f7500b2ee302cc0f475d37f1b35fc05e50"
+    },
+    {
+      "bytes": 5036,
+      "path": "benchmark/reference_organism_transfer_v1/EVALUATION_PROTOCOL.md",
+      "sha256": "208ec5701e574bbb65b48206cd8d7744bce053c143f0beb77793ac842567741e"
+    }
+  ],
+  "model_scores_read": false,
+  "outputs": [
+    {
+      "bytes": 376813,
+      "path": "benchmark/reference_organism_transfer_v1/panels.csv",
+      "sha256": "8ef2b9ac930fae5df9745fab10c1e7f61f3ca49cf2b36df238c1b958a3dea9f4"
+    },
+    {
+      "bytes": 304890,
+      "path": "benchmark/reference_organism_transfer_v1/selected_sequences.json.gz",
+      "sha256": "c961d401f528565beaefd188bb04c6ecd640b929cbf14b9b4fb15047258d3e86"
+    },
+    {
+      "bytes": 18391,
+      "path": "benchmark/reference_organism_transfer_v1/assay_comparison.csv",
+      "sha256": "e16960471d3989d83e8215ce3307790cf1c123b8ce142b3063bd28b060fd2d13"
+    },
+    {
+      "bytes": 12313,
+      "path": "benchmark/reference_organism_transfer_v1/comparison_mapping_audit.csv",
+      "sha256": "22c7f0aefabd79f1bd0f58d220ee32d36523f2c6d15d2f523d678f83725ffa7e"
+    }
+  ],
+  "pairs": 1555,
+  "published_pairs_only": true,
+  "script": {
+    "bytes": 8386,
+    "path": "benchmark/reference_organism_transfer_v1/build_comparison.py",
+    "sha256": "e566e0308dfd3659dbd3aa992f471f6c92d0949c712e226a9f6ca00e61822af1"
+  },
+  "unique_sequences": 1011
+}

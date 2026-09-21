@@ -1,0 +1,33 @@
+{
+  "U_per_P": 100,
+  "all_original_P_retained": true,
+  "analysis": {
+    "bytes": 71916,
+    "path": "benchmark/reference_organism_pu_transfer_v1/ANALYSIS.json",
+    "sha256": "78987504a903342431edc6a40c97c798a36af422df1617ff03a4b6efa820f386"
+  },
+  "at_utc": "2026-09-21T11:00:10.526284+00:00",
+  "draws_per_series": 10000,
+  "independent_oracles": [
+    "sklearn AUROC/AP",
+    "explicit possible ranks",
+    "multinomial target-weight bootstrap"
+  ],
+  "maximum_metric_error": 2.1316282072803006e-14,
+  "model_identity_and_symmetry_passed": true,
+  "panel_validation": {
+    "bytes": 826,
+    "path": "benchmark/reference_organism_pu_transfer_v1/PANEL_VALIDATION.json",
+    "sha256": "5d0b64585437bf5e502c3c9328af5d7f04b1eb874e329a9dc7af97cf5a50d8a1"
+  },
+  "scalar_metric_checks": 66252,
+  "status": "passed",
+  "unique_U": 155500,
+  "validated_bootstrap_series": 96,
+  "validated_per_positive_model_rows": 6558,
+  "validator": {
+    "bytes": 8368,
+    "path": "benchmark/reference_organism_pu_transfer_v1/validate_results.py",
+    "sha256": "2d4a06c7eb6c08e41e50bbbed51f926ee8f7767acfd359dbe448bf3b7b2c98a3"
+  }
+}

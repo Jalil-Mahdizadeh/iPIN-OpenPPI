@@ -1,0 +1,20 @@
+{
+  "cases": 315,
+  "checks": [
+    "weighted_AUROC_against_sklearn",
+    "weighted_AP_against_sklearn",
+    "ties",
+    "perfect",
+    "reversed",
+    "zero_weight_observations"
+  ],
+  "maximum_absolute_error": 2.220446049250313e-16,
+  "model_scores_read": false,
+  "script": {
+    "bytes": 12116,
+    "path": "benchmark/reference_organism_transfer_v1/analyze.py",
+    "sha256": "9a2308a455d1a5ad50b22aa2983405471e28cab09d3ef4c1f58576247ac2007a"
+  },
+  "status": "passed",
+  "tolerance": 1e-12
+}

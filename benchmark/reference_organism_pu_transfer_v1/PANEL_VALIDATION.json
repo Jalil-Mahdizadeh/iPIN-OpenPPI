@@ -1,0 +1,27 @@
+{
+  "P": 1555,
+  "P_U_overlap": 0,
+  "U": 155500,
+  "all_39_assay_unconfirmed_remain_P": true,
+  "all_original_P_retained": true,
+  "at_utc": "2026-09-21T10:41:17.283557+00:00",
+  "per_P_U": 100,
+  "protected_test_records_read": false,
+  "reported_pairs_in_U": 0,
+  "reused_U_pairs": 0,
+  "selection": {
+    "bytes": 5777,
+    "path": "benchmark/reference_organism_pu_transfer_v1/PANEL_SELECTION.json",
+    "sha256": "a37baf6700d1667439b95d3a9663a43d55160c607d0865e8a25af1187ff4b591"
+  },
+  "sequence_hashes_and_taxids_verified": true,
+  "status": "passed",
+  "total_pairs": 157055,
+  "unique_P": 1555,
+  "unique_U": 155500,
+  "validator": {
+    "bytes": 4442,
+    "path": "benchmark/reference_organism_pu_transfer_v1/validate_panels.py",
+    "sha256": "a9831ec1a2b11cec2a61082d2a360defbb2e6ac917ea44ab422b942bcf06c3ed"
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "at_utc": "2026-09-21T09:08:10.236295+00:00",
+  "biological_noninteraction_claim": false,
+  "bootstrap": {
+    "all_mapped_assays": {
+      "components": 38,
+      "largest_component_pairs": 12,
+      "requested_draws": 10000,
+      "valid_draws": 10000
+    },
+    "no_exact_train_or_development_endpoint": {
+      "components": 18,
+      "largest_component_pairs": 7,
+      "requested_draws": 10000,
+      "valid_draws": 10000
+    }
+  },
+  "bootstrap_seed": 20260921,
+  "endpoint": "published_assay_confirmation",
+  "input_freeze": {
+    "bytes": 9382,
+    "path": "benchmark/reference_organism_transfer_v1/INPUT_FREEZE.json",
+    "sha256": "8ec0e8ce053732120b1820fdfce11fd5ed9f404e073865875b99054824771e7f"
+  },
+  "metrics": [
+    {
+      "AP": 0.622169125616837,
+      "AP_ci_high": 0.8130928117317181,
+      "AP_ci_low": 0.4249361802606731,
+      "AP_prevalence_reference": 0.48,
+      "AUROC": 0.6474358974358975,
+      "AUROC_ci_high": 0.7717405239687848,
+      "AUROC_ci_low": 0.49255235004403275,
+      "Spearman_assay_score": 0.27701280227596015,
+      "cohort": "all_mapped_assays",
+      "components": 38,
+      "confirmed": 36,
+      "largest_component_pairs": 12,
+      "model": "ipin_baseline",
+      "pairs": 75,
+      "unconfirmed": 39,
+      "valid_bootstrap_draws": 10000
+    },
+    {
+      "AP": 0.6545141995115594,
+      "AP_ci_high": 0.811921675422459,
+      "AP_ci_low": 0.47316739092830284,
+      "AP_prevalence_reference": 0.48,
+      "AUROC": 0.6901709401709402,
+      "AUROC_ci_high": 0.8000065132435953,
+      "AUROC_ci_low": 0.5369399996555169,
+      "Spearman_assay_score": 0.35345661450924604,
+      "cohort": "all_mapped_assays",
+      "components": 38,
+      "confirmed": 36,
+      "largest_component_pairs": 12,
+      "model": "ipin_optimized",
+      "pairs": 75,
+      "unconfirmed": 39,
+      "valid_bootstrap_draws": 10000
+    },
+    {
+      "AP": 0.6529351433292017,
+      "AP_ci_high": 0.8423127889861021,
+      "AP_ci_low": 0.4492991377197152,
+      "AP_prevalence_reference": 0.48,
+      "AUROC": 0.7207977207977208,
+      "AUROC_ci_high": 0.8529415612398805,
+      "AUROC_ci_low": 0.546338840807763,
+      "Spearman_assay_score": 0.43396870554765293,
+      "cohort": "all_mapped_assays",
+      "components": 38,
+      "confirmed": 36,
+      "largest_component_pairs": 12,
+      "model": "tuna_retrained",
+      "pairs": 75,
+      "unconfirmed": 39,
+      "valid_bootstrap_draws": 10000
+    },
+    {
+      "AP": 0.6470130545297123,
+      "AP_ci_high": 0.8601047308446316,
+      "AP_ci_low": 0.4087209665334665,
+      "AP_prevalence_reference": 0.47058823529411764,
+      "AUROC": 0.6631944444444444,
+      "AUROC_ci_high": 0.826924740484429,
+      "AUROC_ci_low": 0.46222128851540617,
+      "Spearman_assay_score": 0.32620320855614976,
+      "cohort": "no_exact_train_or_development_endpoint",
+      "components": 18,
+      "confirmed": 16,
+      "largest_component_pairs": 7,
+      "model": "ipin_baseline",
+      "pairs": 34,
+      "unconfirmed": 18,
+      "valid_bootstrap_draws": 10000
+    },
+    {
+      "AP": 0.6187551738972054,
+      "AP_ci_high": 0.8568636932548336,
+      "AP_ci_low": 0.36739485315625836,
+      "AP_prevalence_reference": 0.47058823529411764,
+      "AUROC": 0.6493055555555556,
+      "AUROC_ci_high": 0.8125,
+      "AUROC_ci_low": 0.3986519607843138,
+      "Spearman_assay_score": 0.3414820473644003,
+      "cohort": "no_exact_train_or_development_endpoint",
+      "components": 18,
+      "confirmed": 16,
+      "largest_component_pairs": 7,
+      "model": "ipin_optimized",
+      "pairs": 34,
+      "unconfirmed": 18,
+      "valid_bootstrap_draws": 10000
+    },
+    {
+      "AP": 0.7569894509253776,
+      "AP_ci_high": 0.9412869446590619,
+      "AP_ci_low": 0.4947417219450452,
+      "AP_prevalence_reference": 0.47058823529411764,
+      "AUROC": 0.8055555555555556,
+      "AUROC_ci_high": 0.9309273785425101,
+      "AUROC_ci_low": 0.5769230769230769,
+      "Spearman_assay_score": 0.6473644003055767,
+      "cohort": "no_exact_train_or_development_endpoint",
+      "components": 18,
+      "confirmed": 16,
+      "largest_component_pairs": 7,
+      "model": "tuna_retrained",
+      "pairs": 34,
+      "unconfirmed": 18,
+      "valid_bootstrap_draws": 10000
+    }
+  ],
+  "model_outputs": [
+    {
+      "bytes": 67733,
+      "path": "benchmark/reference_organism_transfer_v1/ipin_scores.csv",
+      "sha256": "e4843684c4a33477e79a43093b421b82e4616e66b20ae219295aa8f6e4c2612a"
+    },
+    {
+      "bytes": 126422,
+      "path": "benchmark/reference_organism_transfer_v1/tuna_scores.csv",
+      "sha256": "ebfba5ab9a8d014857732263d718ae3af4c5caeef9acd8ad6d2aefd28410e535"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 23741,
+      "path": "benchmark/reference_organism_transfer_v1/assay_model_scores.csv",
+      "sha256": "5cfb1e4397b334c844ca2d18c1e429b7f0ed96d2cfb2d9a0424abdf65fc41260"
+    },
+    {
+      "bytes": 467751,
+      "path": "benchmark/reference_organism_transfer_v1/all_model_scores.csv",
+      "sha256": "71066d802367f9a685813d01ed7130a690ff9b1eb23d0fe933dced516a66e34b"
+    },
+    {
+      "bytes": 1454,
+      "path": "benchmark/reference_organism_transfer_v1/metrics.csv",
+      "sha256": "ccaf38463d1adeeb3e3a878ac096009e7147a0b5d05faef5953f3372cf897175"
+    },
+    {
+      "bytes": 1553,
+      "path": "benchmark/reference_organism_transfer_v1/paired_differences.csv",
+      "sha256": "a2579df1a9f01b064efd1f5c53ed9d66e40b33b37736436f4eb26715243af023"
+    },
+    {
+      "bytes": 10168,
+      "path": "benchmark/reference_organism_transfer_v1/bootstrap_components.csv",
+      "sha256": "ec6097f901abbe173b6006e4f6ced6223519467fdf3ee9e65b8a8f3121feaaeb"
+    },
+    {
+      "bytes": 114637,
+      "path": "benchmark/reference_organism_transfer_v1/assay_confirmation.png",
+      "sha256": "eeaf1f4c2bcaa9c42c3b390b72aeff13e831123aeb71a0167c70aad2a586dd12"
+    },
+    {
+      "bytes": 19792,
+      "path": "benchmark/reference_organism_transfer_v1/assay_confirmation.pdf",
+      "sha256": "67a7c6266cbe663c842583161c5b112bc4e5a0d0e131f5e4abf0b42305bf86de"
+    },
+    {
+      "bytes": 63558,
+      "path": "benchmark/reference_organism_transfer_v1/assay_confirmation.svg",
+      "sha256": "7d78096926792a616bcce17883c0c03a9faa28af2ae138b032d3fab870f8eb42"
+    }
+  ],
+  "paired_differences": [
+    {
+      "ci_high": 0.10625332446808512,
+      "ci_low": -0.0373752228163992,
+      "cohort": "all_mapped_assays",
+      "difference_a_minus_b": 0.042735042735042694,
+      "metric": "AUROC",
+      "model_a": "ipin_optimized",
+      "model_b": "ipin_baseline"
+    },
+    {
+      "ci_high": 0.13262498550417587,
+      "ci_low": -0.07710727566421928,
+      "cohort": "all_mapped_assays",
+      "difference_a_minus_b": 0.03234507389472241,
+      "metric": "AP",
+      "model_a": "ipin_optimized",
+      "model_b": "ipin_baseline"
+    },
+    {
+      "ci_high": 0.18350209155264555,
+      "ci_low": -0.041394830659536544,
+      "cohort": "all_mapped_assays",
+      "difference_a_minus_b": 0.07336182336182329,
+      "metric": "AUROC",
+      "model_a": "tuna_retrained",
+      "model_b": "ipin_baseline"
+    },
+    {
+      "ci_high": 0.16309725308372017,
+      "ci_low": -0.09899156127412433,
+      "cohort": "all_mapped_assays",
+      "difference_a_minus_b": 0.030766017712364646,
+      "metric": "AP",
+      "model_a": "tuna_retrained",
+      "model_b": "ipin_baseline"
+    },
+    {
+      "ci_high": 0.13520851103977713,
+      "ci_low": -0.06593436293436303,
+      "cohort": "all_mapped_assays",
+      "difference_a_minus_b": 0.030626780626780592,
+      "metric": "AUROC",
+      "model_a": "tuna_retrained",
+      "model_b": "ipin_optimized"
+    },
+    {
+      "ci_high": 0.1136393385022228,
+      "ci_low": -0.07981324397268655,
+      "cohort": "all_mapped_assays",
+      "difference_a_minus_b": -0.0015790561823577631,
+      "metric": "AP",
+      "model_a": "tuna_retrained",
+      "model_b": "ipin_optimized"
+    },
+    {
+      "ci_high": 0.07708806818181806,
+      "ci_low": -0.1597222222222222,
+      "cohort": "no_exact_train_or_development_endpoint",
+      "difference_a_minus_b": -0.01388888888888884,
+      "metric": "AUROC",
+      "model_a": "ipin_optimized",
+      "model_b": "ipin_baseline"
+    },
+    {
+      "ci_high": 0.09613853114909117,
+      "ci_low": -0.15000926789470787,
+      "cohort": "no_exact_train_or_development_endpoint",
+      "difference_a_minus_b": -0.028257880632506893,
+      "metric": "AP",
+      "model_a": "ipin_optimized",
+      "model_b": "ipin_baseline"
+    },
+    {
+      "ci_high": 0.3134920634920635,
+      "ci_low": -0.06000462962962968,
+      "cohort": "no_exact_train_or_development_endpoint",
+      "difference_a_minus_b": 0.14236111111111116,
+      "metric": "AUROC",
+      "model_a": "tuna_retrained",
+      "model_b": "ipin_baseline"
+    },
+    {
+      "ci_high": 0.31961109381829383,
+      "ci_low": -0.10007259188277094,
+      "cohort": "no_exact_train_or_development_endpoint",
+      "difference_a_minus_b": 0.10997639639566537,
+      "metric": "AP",
+      "model_a": "tuna_retrained",
+      "model_b": "ipin_baseline"
+    },
+    {
+      "ci_high": 0.31641276041666655,
+      "ci_low": 0.021051525873507254,
+      "cohort": "no_exact_train_or_development_endpoint",
+      "difference_a_minus_b": 0.15625,
+      "metric": "AUROC",
+      "model_a": "tuna_retrained",
+      "model_b": "ipin_optimized"
+    },
+    {
+      "ci_high": 0.33164284407986333,
+      "ci_low": -0.06568969148172867,
+      "cohort": "no_exact_train_or_development_endpoint",
+      "difference_a_minus_b": 0.13823427702817226,
+      "metric": "AP",
+      "model_a": "tuna_retrained",
+      "model_b": "ipin_optimized"
+    }
+  ],
+  "published_pairs_scored": 1555,
+  "script": {
+    "bytes": 12116,
+    "path": "benchmark/reference_organism_transfer_v1/analyze.py",
+    "sha256": "9a2308a455d1a5ad50b22aa2983405471e28cab09d3ef4c1f58576247ac2007a"
+  },
+  "status": "analyzed"
+}

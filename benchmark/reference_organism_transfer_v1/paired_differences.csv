@@ -1,0 +1,13 @@
+cohort,model_a,model_b,metric,difference_a_minus_b,ci_low,ci_high
+all_mapped_assays,ipin_optimized,ipin_baseline,AUROC,0.042735042735042694,-0.0373752228163992,0.10625332446808512
+all_mapped_assays,ipin_optimized,ipin_baseline,AP,0.03234507389472241,-0.07710727566421928,0.13262498550417587
+all_mapped_assays,tuna_retrained,ipin_baseline,AUROC,0.07336182336182329,-0.041394830659536544,0.18350209155264555
+all_mapped_assays,tuna_retrained,ipin_baseline,AP,0.030766017712364646,-0.09899156127412433,0.16309725308372017
+all_mapped_assays,tuna_retrained,ipin_optimized,AUROC,0.030626780626780592,-0.06593436293436303,0.13520851103977713
+all_mapped_assays,tuna_retrained,ipin_optimized,AP,-0.0015790561823577631,-0.07981324397268655,0.1136393385022228
+no_exact_train_or_development_endpoint,ipin_optimized,ipin_baseline,AUROC,-0.01388888888888884,-0.1597222222222222,0.07708806818181806
+no_exact_train_or_development_endpoint,ipin_optimized,ipin_baseline,AP,-0.028257880632506893,-0.15000926789470787,0.09613853114909117
+no_exact_train_or_development_endpoint,tuna_retrained,ipin_baseline,AUROC,0.14236111111111116,-0.06000462962962968,0.3134920634920635
+no_exact_train_or_development_endpoint,tuna_retrained,ipin_baseline,AP,0.10997639639566537,-0.10007259188277094,0.31961109381829383
+no_exact_train_or_development_endpoint,tuna_retrained,ipin_optimized,AUROC,0.15625,0.021051525873507254,0.31641276041666655
+no_exact_train_or_development_endpoint,tuna_retrained,ipin_optimized,AP,0.13823427702817226,-0.06568969148172867,0.33164284407986333

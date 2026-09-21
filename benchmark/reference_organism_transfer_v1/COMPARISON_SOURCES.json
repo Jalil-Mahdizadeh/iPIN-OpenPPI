@@ -1,0 +1,30 @@
+{
+  "api_documentation": "https://europepmc.org/RestfulWebService",
+  "at_utc": "2026-09-21T08:35:54.268179+00:00",
+  "model_scores_read": false,
+  "pmcid": "PMC4848758",
+  "pmid": "27107014",
+  "source": "Europe PMC public article REST API",
+  "sources": [
+    {
+      "bytes": 207270,
+      "path": "benchmark/reference_organism_transfer_v1/local/PMC4848758.xml",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4848758/fullTextXML",
+      "response_headers": {
+        "Content-Type": "application/xml"
+      },
+      "sha256": "e00369d5c4e018e7d30de5560240a80ea7e5b1a6a8f10aa42982c73b392835c2",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4848758/fullTextXML"
+    },
+    {
+      "bytes": 2818323,
+      "path": "benchmark/reference_organism_transfer_v1/local/PMC4848758_supplements.zip",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4848758/supplementaryFiles",
+      "response_headers": {
+        "Content-Type": "application/zip"
+      },
+      "sha256": "6e734d30163387c46d49dfbe8e785c4d93cd6fbc4af2d8f8018773d9884d49d5",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4848758/supplementaryFiles"
+    }
+  ]
+}

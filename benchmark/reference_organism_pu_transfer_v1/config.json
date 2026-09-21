@@ -1,0 +1,17 @@
+{
+  "study_id": "reference_organism_pu_transfer_v1",
+  "reference_taxid": 559292,
+  "human_taxid": 9606,
+  "expected_P": 1555,
+  "U_per_P": 100,
+  "globally_distinct_U": true,
+  "seed": 20260921,
+  "minimum_sequence_length": 50,
+  "maximum_sequence_length": 2000,
+  "cutoffs": [5, 10, 20],
+  "bootstrap_draws": 10000,
+  "model_registry_sha256": "faf2d585dbfee34ca3fe19487bc7a821f744014cdcdb94e95e4b657097110878",
+  "source_manifest_sha256": "053509350b52b8fc9eec57531ca3126431b253d23cca22440a36c3483f5990a7",
+  "published_pairs_sha256": "8a3dcb38be3966a203657510335396b779cf66bd818cff43606a839e53557b5b",
+  "user_instruction": "Keep all 1555 P pairs and build 100 globally distinct U pairs for each P pair; expand the human protein pool as needed."
+}

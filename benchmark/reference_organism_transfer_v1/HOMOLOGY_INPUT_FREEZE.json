@@ -1,0 +1,80 @@
+{
+  "at_utc": "2026-09-21T08:44:36.495260+00:00",
+  "binary": {
+    "bytes": 16025624,
+    "path": "artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/bin/mmseqs",
+    "sha256": "d5f6d96578e3dbcd1d8772bb575b112e9dd1dbf077d150914962a2356ae0d75d"
+  },
+  "command": [
+    "/project/artifacts/cache/tools/mmseqs2/18-8cc5c/mmseqs/bin/mmseqs",
+    "easy-search",
+    "/project/benchmark/reference_organism_transfer_v1/local/homology/query.fasta",
+    "/project/benchmark/reference_organism_transfer_v1/local/homology/train.fasta",
+    "/project/benchmark/reference_organism_transfer_v1/local/homology/matches.tsv",
+    "/project/benchmark/reference_organism_transfer_v1/local/homology/tmp",
+    "--threads",
+    "8",
+    "-s",
+    "7.5",
+    "-e",
+    "0.001",
+    "--max-seqs",
+    "4675",
+    "--max-accept",
+    "4675",
+    "--max-rejected",
+    "4675",
+    "--alignment-mode",
+    "3",
+    "--format-output",
+    "query,target,fident,alnlen,qstart,qend,qlen,tstart,tend,tlen,evalue,bits,qcov,tcov"
+  ],
+  "external_sequences": 1011,
+  "input_records": [
+    {
+      "bytes": 12312031,
+      "path": "benchmark/tuna/data/sequences.json",
+      "sha256": "bc7a91661ea05cbfdcf3551b9a4d18c149ac077549ebbcf0be7e7ef5d94ace77"
+    },
+    {
+      "bytes": 48270006,
+      "path": "benchmark/tuna/data/training.npz",
+      "sha256": "43ae252277820ffe527dad1ed4839d5673cff279b6c8c943ff4b5350a9283ca6"
+    },
+    {
+      "bytes": 65329143,
+      "path": "benchmark/tuna/data/development_00.npz",
+      "sha256": "8a1f61a429a2b79c9a41dd1e7f6d02ece58bf93adc9a8c9b07233f930a5422e5"
+    },
+    {
+      "bytes": 66373789,
+      "path": "benchmark/tuna/data/development_01.npz",
+      "sha256": "65d6ce7e4c106e3f14949f70b5f5852a471438573824db3f99f0713c40bee3c0"
+    },
+    {
+      "bytes": 65669441,
+      "path": "benchmark/tuna/data/development_02.npz",
+      "sha256": "3aa68097a097d0022dba3593cae292cfda8f477ea8d4cd3342fb29eda6992393"
+    }
+  ],
+  "local_files": [
+    {
+      "bytes": 488481,
+      "path": "benchmark/reference_organism_transfer_v1/local/homology/query.fasta",
+      "sha256": "6ecaf962ff41cf978eb5ae7ecfe7881ce143d96c08a1d1df8c8b5d93fe2c9619"
+    },
+    {
+      "bytes": 2526346,
+      "path": "benchmark/reference_organism_transfer_v1/local/homology/train.fasta",
+      "sha256": "aa218dc52be63598443e02907d0dc5a763a8cd70a469033b5068b7eb99371ed5"
+    }
+  ],
+  "protected_test_records_read": false,
+  "reference_endpoints": 4675,
+  "script": {
+    "bytes": 6974,
+    "path": "benchmark/nonhuman_transfer_v1/audit_exposure.py",
+    "sha256": "261ac9d1012d92f3e9049b56c22348281d892a730681f7cf6730cb40bc916f2a"
+  },
+  "version": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f"
+}

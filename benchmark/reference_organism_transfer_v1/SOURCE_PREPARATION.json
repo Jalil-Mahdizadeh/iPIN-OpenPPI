@@ -1,0 +1,137 @@
+{
+  "at_utc": "2026-09-21T08:24:39.441538+00:00",
+  "code": {
+    "bytes": 20878,
+    "path": "benchmark/reference_organism_transfer_v1/prepare.py",
+    "sha256": "e4f389593aec2b80210d64d443bf443bb4c4a21d7b29b9c8256eb117b983c460"
+  },
+  "config": {
+    "bytes": 1175,
+    "path": "benchmark/reference_organism_transfer_v1/config.json",
+    "sha256": "7d07095d57cc534d3f6da1de549a6f957139db58594ec1d997c3e758d576ebfc"
+  },
+  "coverage": {
+    "human_proteins": 466,
+    "primary_evidence_records": 4216,
+    "primary_pairs": 1555,
+    "primary_publications": 1,
+    "reference_proteins": 545
+  },
+  "inputs": [
+    {
+      "path": "benchmark/host_pathogen_transfer_v1/SOURCE_PARSING_v2.json",
+      "sha256": "053509350b52b8fc9eec57531ca3126431b253d23cca22440a36c3483f5990a7"
+    },
+    {
+      "path": "benchmark/host_pathogen_transfer_v1/taxonomy_lineages_v2.csv",
+      "sha256": "47000fd90773c557e4c00fe31003e3bb9d2d939029d54fcd991d2093366d408d"
+    },
+    {
+      "bytes": 21017299,
+      "path": "benchmark/host_pathogen_transfer_v1/local/source_parsed_v2.json.gz",
+      "sha256": "e2ae7f0e03f0d421ac460b1b39d2e0c166c2f8c2ce76c7eee6ece3f0e213cce7"
+    },
+    {
+      "bytes": 1025219998,
+      "path": "data/raw/intact/2026-01-09/psi30/species/human.zip",
+      "sha256": "5ce1b8fefafa8e008f806ccbcc77acf7be28d3953afd9a7d5d56587eeb5da898"
+    }
+  ],
+  "model_inference_run": false,
+  "model_scores_read": false,
+  "negative_member_review": {
+    "interactions_reviewed": 939,
+    "members_reviewed": 46,
+    "reference_human_candidate_records": 0,
+    "scope": "Explicit negative archive members; not an exhaustive search of published comparison data"
+  },
+  "nonnumeric_publication_alias_record_counts": {
+    "pubmed:unassigned1279": 4216
+  },
+  "original_xml_validation": {
+    "all_selected_records_verified": true,
+    "detection_method_record_counts": {
+      "MI:0397": 1330,
+      "MI:0398": 1330,
+      "MI:1356": 1556
+    },
+    "evidence_records": 4216,
+    "members": [
+      "human_9606_77.xml",
+      "human_9606_78.xml",
+      "human_9606_79.xml"
+    ]
+  },
+  "outputs": [
+    {
+      "bytes": 467,
+      "path": "benchmark/reference_organism_transfer_v1/TAXON_ELIGIBILITY.csv",
+      "sha256": "637d7e990e75635b00d183633682a50fa660d8bc037846674dd8cb1213d16fbe"
+    },
+    {
+      "bytes": 343773,
+      "path": "benchmark/reference_organism_transfer_v1/published_pairs.csv",
+      "sha256": "8a3dcb38be3966a203657510335396b779cf66bd818cff43606a839e53557b5b"
+    },
+    {
+      "bytes": 156138,
+      "path": "benchmark/reference_organism_transfer_v1/published_proteins.csv",
+      "sha256": "c93a26b5f8da1b69d386fcf778f811e1621262c41e251dbc1e3ff9c2ca449bfd"
+    },
+    {
+      "bytes": 314391,
+      "path": "benchmark/reference_organism_transfer_v1/published_sequences.json.gz",
+      "sha256": "81287d4ff89446d90fc1c9c1b13dc561466d1716e796bda3587f99d71885eeba"
+    },
+    {
+      "bytes": 118646,
+      "path": "benchmark/reference_organism_transfer_v1/published_evidence.json.gz",
+      "sha256": "6839751778461721d0f73f4ed731ec3da15ce26684777fa749ea8e9427ee3661"
+    },
+    {
+      "bytes": 1137,
+      "path": "benchmark/reference_organism_transfer_v1/SOURCE_REVIEW.md",
+      "sha256": "94289f0d5ee2b33144d3c11ec3455cfc5e01286c149cc06b7c396b64ae0f80a1"
+    }
+  ],
+  "protected_test_records_read": false,
+  "protocol": {
+    "bytes": 4871,
+    "path": "benchmark/reference_organism_transfer_v1/PROTOCOL.md",
+    "sha256": "087c6c651dbcfff80f9e58a148b13d00bf7f10140dbcb9d99e6cda10bba74413"
+  },
+  "ranking_evaluation_ready": false,
+  "remaining_gates": [
+    "published_comparison_set_and_assay_interpretation",
+    "training_and_development_exposure_audit",
+    "inference_input_and_model_freeze"
+  ],
+  "runtime_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/containers/images/ipin-data-arm64_0.1.2.sif",
+  "runtime_image_lock": {
+    "bytes": 110,
+    "path": "containers/locks/ipin-data-arm64_0.1.2.sif.sha256",
+    "sha256": "c0b92766388a985e10c81896faa94259e69a2c74d68c247efdd6b61be2e36fa7"
+  },
+  "runtime_qualification": {
+    "bytes": 2125,
+    "path": "containers/manifests/ipin-data-arm64_0.1.2.qualification.json",
+    "sha256": "eecd46cc558e0857f9182360206d13e0e5c88ffc16f5ab3a8e872466ac1de274"
+  },
+  "schema_version": 1,
+  "scope": {
+    "human_taxid": 9606,
+    "other_taxids_eligible": false,
+    "primary_pubmed_id": "27107014",
+    "primary_reference_taxid": 559292,
+    "reviewed_reference_taxids": [
+      83333,
+      559292
+    ]
+  },
+  "sequence_identity_interpretation": "Archived reference taxonomy; experimental culture/construct authenticity not independently established",
+  "source_field_renames": {
+    "pathogen_*": "reference_*"
+  },
+  "status": "published_positive_source_prepared",
+  "study_id": "reference_organism_transfer_v1"
+}

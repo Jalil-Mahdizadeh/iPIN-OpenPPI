@@ -4,7 +4,12 @@ artifacts/validation/model_optimization_followup_v1/*.xml -text -whitespace
 # Preserve checksum-bound Matplotlib SVG output verbatim.
 example/twelve_target_comparison_v1/*.svg -text -whitespace linguist-generated=true
 benchmark/nonhuman_transfer_v1/*.svg -text -whitespace linguist-generated=true
+benchmark/reference_organism_transfer_v1/*.svg -text -whitespace linguist-generated=true
+benchmark/reference_organism_pu_transfer_v1/*.svg -text -whitespace linguist-generated=true
 
 # Retain checksum-bound CSV output with standard CRLF record endings.
 example/u_context_background_analysis_v1/*.csv -text whitespace=cr-at-eol
 example/original_tuna_investigation_v1/*.csv -text whitespace=cr-at-eol
+benchmark/reference_organism_transfer_v1/*.csv -text whitespace=cr-at-eol
+benchmark/reference_organism_pu_transfer_v1/*.csv -text whitespace=cr-at-eol
+benchmark/host_pathogen_transfer_v1/taxonomy_lineages_v2.csv -text whitespace=cr-at-eol

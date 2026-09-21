@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-09-21T09:05:04.520248+00:00",
+  "input_freeze": {
+    "bytes": 9382,
+    "path": "benchmark/reference_organism_transfer_v1/INPUT_FREEZE.json",
+    "sha256": "8ec0e8ce053732120b1820fdfce11fd5ed9f404e073865875b99054824771e7f"
+  },
+  "published_reference_pairs_only": true,
+  "qualified_implementation": {
+    "bytes": 9943,
+    "path": "benchmark/nonhuman_transfer_v1/score_models.py",
+    "sha256": "6843555414815669d74a6675f4a40bb5eee089564d119b1fd65dce80c6da3b0a"
+  },
+  "runtime_container": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/containers/images/tuna-arm64-v1.sif",
+  "wrapper": {
+    "bytes": 4419,
+    "path": "benchmark/reference_organism_transfer_v1/score_models.py",
+    "sha256": "e7f71020ec20c890f3f7a450079bf0c8e3b01709db53651e2c71d2d438a9f8f1"
+  }
+}
