@@ -1,0 +1,87 @@
+{
+  "at_utc": "2026-09-24T21:54:47.805060+00:00",
+  "elapsed_this_process_seconds": 2816.747411219985,
+  "epochs": 8,
+  "files": [
+    {
+      "bytes": 757,
+      "path": "epoch_01.json",
+      "sha256": "454b26bd48f96575fadaf49e7ec9fdba4cc4dd513208d12012d0fc4fa0afaf5d"
+    },
+    {
+      "bytes": 7866610,
+      "path": "epoch_01.pt",
+      "sha256": "99a3c2824d2bcd104ac0b961e3aa17e97b59361509951297d070bdcc19a3a339"
+    },
+    {
+      "bytes": 4009188,
+      "path": "epoch_01_C3_development.npy",
+      "sha256": "162c96d8c1dba7b101ee22d7553349fac9fb371e5bf28ee05df79c06fd30d3d5"
+    },
+    {
+      "bytes": 757,
+      "path": "epoch_02.json",
+      "sha256": "397ecbe4c8279eb208d06c5efd0ea6fb7e038c10cdc283d16b598abdfcaf9f90"
+    },
+    {
+      "bytes": 7866610,
+      "path": "epoch_02.pt",
+      "sha256": "e5154e71e2a77aaf412c5a2a0a80d4c2275583c051f4308781280c66e51d10af"
+    },
+    {
+      "bytes": 4009188,
+      "path": "epoch_02_C3_development.npy",
+      "sha256": "8d6d59729771adc0060180870d7f1f68e0c3650be54190b02e454c450fce570e"
+    },
+    {
+      "bytes": 756,
+      "path": "epoch_04.json",
+      "sha256": "a113c1473cdb57788753e7a6628cfb6c1dcf169c6f921df9cfad3d49185eb70f"
+    },
+    {
+      "bytes": 7866610,
+      "path": "epoch_04.pt",
+      "sha256": "a70f90f349e04c4ac9f27563d7cf8f7b7c1e35e218c25d3d97f4aa704595c4cc"
+    },
+    {
+      "bytes": 4009188,
+      "path": "epoch_04_C3_development.npy",
+      "sha256": "e4d4cf6179ad096dc1596cad865d9709c9294379eb768f17e14c6a0b5e127a07"
+    },
+    {
+      "bytes": 756,
+      "path": "epoch_06.json",
+      "sha256": "0f392e820c7f735fecc487d13463adedc59b2a90e2f61f265c54b51b5986d339"
+    },
+    {
+      "bytes": 7866610,
+      "path": "epoch_06.pt",
+      "sha256": "b85e6454e3dbdd81c17575d51455431c9f716ca82aa772247f5a83a80aebf8ac"
+    },
+    {
+      "bytes": 4009188,
+      "path": "epoch_06_C3_development.npy",
+      "sha256": "228b8b0f4496e6f17da6e8a6e777e6e1efa6dd2e05f40b6bb5d3cffce9ac6511"
+    },
+    {
+      "bytes": 757,
+      "path": "epoch_08.json",
+      "sha256": "00937811cf00cc69e05afda6d96d351b627cd13ce4570973689995092a94aa69"
+    },
+    {
+      "bytes": 7866610,
+      "path": "epoch_08.pt",
+      "sha256": "1a914170917fa7c22bead5e979d9ad0d160f1f206da89e6d93da5ebb8d13cc22"
+    },
+    {
+      "bytes": 4009188,
+      "path": "epoch_08_C3_development.npy",
+      "sha256": "543bedd54b1d684a515d310052b44c19cbb3cddbfb377588756e2ce3c4c6a100"
+    }
+  ],
+  "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+  "recipe": "cross_attention_wide",
+  "seed": 20260831,
+  "test_pairs_read": false,
+  "test_truth_read": false
+}

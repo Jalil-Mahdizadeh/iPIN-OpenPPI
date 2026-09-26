@@ -4,6 +4,14 @@ The current primary/default human iPIN model is **iPIN-TUnA-31k**, registered
 under [DEC-0056](../governance/decisions/DEC-0056-designate-ipin-tuna-31k-primary-model.md)
 in the [four-model catalogue](../docs/models/FROZEN_PAIR_MODELS_v3.md).
 
+The completed [partner-conditioned residue study](partner_conditioned_residue_v1/results/RESULTS.md)
+also has its code, training history, selection records and aggregate results
+in this directory. Its [publication note](partner_conditioned_residue_v1/PUBLICATION.md)
+distinguishes completed results from the preserved startup documentation.
+Subsequent data-scaling and comparison studies are published under
+[experiments](../experiments/README.md), including the
+[default-model transfer comparison](../experiments/default_ipin_transfer_comparison_v1/REPORT.md).
+
 ## Expanded test2 comparison, 26 September 2026
 
 The [completed 15-predictor comparison](../experiments/x_pair_test2_v1/results/RESULTS.md)

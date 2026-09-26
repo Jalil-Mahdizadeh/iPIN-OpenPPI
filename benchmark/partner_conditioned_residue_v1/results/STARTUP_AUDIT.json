@@ -1,0 +1,47 @@
+{
+  "at_utc": "2026-09-24T19:36:15.303484+00:00",
+  "passed": true,
+  "training_job": "2943130",
+  "training_node": "n587",
+  "comparison_job": "2943131",
+  "comparison_dependency": "afterok:2943130",
+  "control_members_completed": 3,
+  "advanced_workers": [
+    {
+      "at_utc": "2026-09-24T19:36:08.857824+00:00",
+      "recipe": "attention_pool",
+      "seed": 20260803,
+      "event": "progress",
+      "epoch": 1,
+      "comparisons_done": 1536000,
+      "loss": 0.04537045507307126,
+      "gradient_norm": 2.1971778869628906,
+      "epoch_seconds": 145.6944584060111
+    },
+    {
+      "at_utc": "2026-09-24T19:36:04.969995+00:00",
+      "recipe": "cross_attention",
+      "seed": 20260803,
+      "event": "progress",
+      "epoch": 1,
+      "comparisons_done": 1280000,
+      "loss": 0.05594165239663533,
+      "gradient_norm": 2.218104600906372,
+      "epoch_seconds": 141.79854885698296
+    },
+    {
+      "at_utc": "2026-09-24T19:35:55.555570+00:00",
+      "recipe": "cross_attention_wide",
+      "seed": 20260803,
+      "event": "progress",
+      "epoch": 1,
+      "comparisons_done": 768000,
+      "loss": 0.12497404054898477,
+      "gradient_norm": 3.627232313156128,
+      "epoch_seconds": 132.36543224699562
+    }
+  ],
+  "training_freeze_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+  "new_test_results_available": false,
+  "code_graph_updated": true
+}

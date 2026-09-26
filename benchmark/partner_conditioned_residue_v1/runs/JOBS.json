@@ -1,0 +1,21 @@
+{
+  "submitted_at_utc": "2026-09-24T19:24:59.802588+00:00",
+  "status": "submitted",
+  "jobs": [
+    {
+      "stage": "training",
+      "job_id": "2943130",
+      "dependency_afterok": null
+    },
+    {
+      "stage": "selection_and_C123_comparison",
+      "job_id": "2943131",
+      "dependency_afterok": "2943130"
+    }
+  ],
+  "interactive_control": {
+    "pid": 1439873,
+    "slurm_allocation": "2939302",
+    "log": "logs/interactive-mean_pool.log"
+  }
+}

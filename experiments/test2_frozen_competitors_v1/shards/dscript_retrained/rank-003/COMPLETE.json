@@ -1,0 +1,60 @@
+{
+  "at_utc": "2026-09-26T11:26:56.569483+00:00",
+  "bundle_sha256": "44573a95fdd145e8c0d714376690d61c4e76b5f65139b3d7922d04ed14699577",
+  "code_sha256": "2e843918799876bda690cca423af1e5f8b8344037efd35e0fba6529da2ecef9a",
+  "elapsed_seconds": 2162.882536289,
+  "files": [
+    {
+      "bytes": 2007840,
+      "cell": "C1",
+      "left": 187904,
+      "path": "C1.npy",
+      "reversal_max_absolute_error": 1.9073486328125e-06,
+      "right": 250645,
+      "scorers": [
+        "dscript_retrained",
+        "dscript_seed_20260803",
+        "dscript_seed_20260817",
+        "dscript_seed_20260831"
+      ],
+      "sha256": "cdf42fef23f853c4408dad1743203a1fd435f5c56030926fea504f8ee96d93b9"
+    },
+    {
+      "bytes": 2045280,
+      "cell": "C2",
+      "left": 190464,
+      "path": "C2.npy",
+      "reversal_max_absolute_error": 2.86102294921875e-06,
+      "right": 254375,
+      "scorers": [
+        "dscript_retrained",
+        "dscript_seed_20260803",
+        "dscript_seed_20260817",
+        "dscript_seed_20260831"
+      ],
+      "sha256": "d91f25ab53001815010b7ca6bccceeea088ddb6ccf7b5707f14bdfc3ce4d9a20"
+    },
+    {
+      "bytes": 2000704,
+      "cell": "C3",
+      "left": 188416,
+      "path": "C3.npy",
+      "reversal_max_absolute_error": 1.7881393432617188e-06,
+      "right": 250934,
+      "scorers": [
+        "dscript_retrained",
+        "dscript_seed_20260803",
+        "dscript_seed_20260817",
+        "dscript_seed_20260831"
+      ],
+      "sha256": "3b95fff896e182b1b7342da56963933f3ec13b87c819375caf9b607f514ba672"
+    }
+  ],
+  "learned_parameters_unchanged": true,
+  "method": "dscript_retrained",
+  "rank": 3,
+  "sequence_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "test_truth_read": false,
+  "training_performed": false,
+  "workers": 4
+}

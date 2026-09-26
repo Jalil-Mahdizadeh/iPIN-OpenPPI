@@ -1,0 +1,22 @@
+# Protected candidates, cached predictions, embeddings and sequence assets.
+/data/
+/legacy/
+/results/predictions/
+/features/**
+!/features/**/
+!/features/**/COMPLETE.json
+/predictions/**
+!/predictions/**/
+!/predictions/**/COMPLETE.json
+/shards/**
+!/shards/**/
+!/shards/**/*.json
+# SPRINT provenance is public; generated HSP and score payloads stay local.
+/sprint/*
+!/sprint/*.json
+/logs/
+/preflight/*
+!/preflight/PREFLIGHT.json
+/.cache/
+__pycache__/
+*.pyc

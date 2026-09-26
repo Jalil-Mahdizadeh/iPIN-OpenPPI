@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-09-26T10:30:22.181155+00:00",
+  "bundle_sha256": "b017edbfd1c0f22a60aef80812316c4b27d023ce9e9725ec5b0dcb161573e41f",
+  "checks": {
+    "archived_legacy_replay_max_errors": {
+      "rapppid_original_released_mult": 1.1920928955078125e-07
+    },
+    "learned_parameters_unchanged": true,
+    "native_tokenizer_and_1500_residue_policy_preserved": true
+  },
+  "code_sha256": "5380b0700088bee05b135d2359ef99f0b2c355ed7dc304d903f39abe5c51d93d",
+  "elapsed_seconds": 5.913949715002673,
+  "files": [
+    {
+      "bytes": 2005474,
+      "path": "added_C1.npz",
+      "sha256": "cf193df8d63e61e7b92c88e326e276a6a090439c3df91ac2cd9ff7f9a6dd2c79"
+    },
+    {
+      "bytes": 2035314,
+      "path": "added_C2.npz",
+      "sha256": "3a2608b5181d476d2dc209e8bb35a75f48dd37dd45a02e4b03e054acf8b2515e"
+    },
+    {
+      "bytes": 2007786,
+      "path": "added_C3.npz",
+      "sha256": "628556354d51ec1ce849cd1798efdba6b6fb3ae4fc2e9ced15b704626d1fb1b5"
+    }
+  ],
+  "method": "rapppid_original",
+  "sequence_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "test_truth_read": false,
+  "training_performed": false
+}

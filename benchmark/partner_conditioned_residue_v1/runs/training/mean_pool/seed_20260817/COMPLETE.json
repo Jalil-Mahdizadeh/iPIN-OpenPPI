@@ -1,0 +1,87 @@
+{
+  "at_utc": "2026-09-24T19:30:50.759875+00:00",
+  "elapsed_this_process_seconds": 173.86579780699685,
+  "epochs": 8,
+  "files": [
+    {
+      "bytes": 724,
+      "path": "epoch_01.json",
+      "sha256": "e243d24693f44d097f36c5cd6a7331e433f8f56940c1eb3a078c1b0a5b52e168"
+    },
+    {
+      "bytes": 1996229,
+      "path": "epoch_01.pt",
+      "sha256": "44fff2ac95e5ca949304f7214a38a1051a35fd475c8cce0fd70fc559cb0f2300"
+    },
+    {
+      "bytes": 4009188,
+      "path": "epoch_01_C3_development.npy",
+      "sha256": "0bc2bee1578b16ac36130f120ad48298cb3cfad527cde01b711a75715afb64e4"
+    },
+    {
+      "bytes": 724,
+      "path": "epoch_02.json",
+      "sha256": "e1be65a0d7728c9ce2fe4b1c0d2c5d20a6026e9bf1714aea5df3c08db59109e3"
+    },
+    {
+      "bytes": 1996229,
+      "path": "epoch_02.pt",
+      "sha256": "98937272ef7b7f7eac5683d0f3422545deaf3bcb2adf2b8309423a5647557b7d"
+    },
+    {
+      "bytes": 4009188,
+      "path": "epoch_02_C3_development.npy",
+      "sha256": "a05c45bfdb4eeffe3aedf469182425acbd78c8947125fa92238b42df478b5bdd"
+    },
+    {
+      "bytes": 724,
+      "path": "epoch_04.json",
+      "sha256": "709403e5658e682364d9716b3af14a682b221017def83967f412d2aca42f6a61"
+    },
+    {
+      "bytes": 1996229,
+      "path": "epoch_04.pt",
+      "sha256": "be13b334b727e1031cfbf024429c6ccc5730dff5e13b08a56794460aaee4dbe0"
+    },
+    {
+      "bytes": 4009188,
+      "path": "epoch_04_C3_development.npy",
+      "sha256": "46d7a48c5daba9d007e4fb7a0c92707bcc4b6978476fa1f2a64d50c038ae7936"
+    },
+    {
+      "bytes": 724,
+      "path": "epoch_06.json",
+      "sha256": "77e1ae97722eb5b4d8285b9f4540c552003ff0a95e6b7d6e45566cca08047535"
+    },
+    {
+      "bytes": 1996229,
+      "path": "epoch_06.pt",
+      "sha256": "0cb9e992e2c14fc13efe36fa3736b266e30008d3a43492bc036f738dce373d0e"
+    },
+    {
+      "bytes": 4009188,
+      "path": "epoch_06_C3_development.npy",
+      "sha256": "bcc0d646cbbe3ed962bea72ba9c615b2dad5cce6f11db0eca181274c6d6731d9"
+    },
+    {
+      "bytes": 724,
+      "path": "epoch_08.json",
+      "sha256": "b4140fe57478978036de7607748eb88df3d69d322443dfc4c6de73d0206cdb03"
+    },
+    {
+      "bytes": 1996229,
+      "path": "epoch_08.pt",
+      "sha256": "6395d5a98d18f8cdf1b7332b268fb4f7faf8da428ecb5e79a87002a43e0e6c6a"
+    },
+    {
+      "bytes": 4009188,
+      "path": "epoch_08_C3_development.npy",
+      "sha256": "891b46c5947bd7b7fb3ad8046ea42b3411b32fe680db24dfcc25985f6beffeaf"
+    }
+  ],
+  "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+  "recipe": "mean_pool",
+  "seed": 20260817,
+  "test_pairs_read": false,
+  "test_truth_read": false
+}

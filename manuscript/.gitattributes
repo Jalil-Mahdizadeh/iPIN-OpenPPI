@@ -1,0 +1,7 @@
+# Source fingerprints and portable reproduction depend on exact bytes.
+* -text
+*.csv whitespace=cr-at-eol
+# Preserve reviewed generated text and bibliography formatting.
+build/manuscript-pandoc.md whitespace=-blank-at-eof
+references.bib whitespace=-blank-at-eof
+tables/table-s1.md whitespace=-blank-at-eof

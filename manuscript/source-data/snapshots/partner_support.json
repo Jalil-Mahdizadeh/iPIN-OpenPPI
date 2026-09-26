@@ -1,0 +1,142 @@
+{
+  "folds": [
+    {
+      "anchor_components": 598,
+      "candidate_panel_size_quantiles": [
+        246.0,
+        281.0,
+        291.0,
+        300.0,
+        351.0
+      ],
+      "cells": {
+        "p": {
+          "C1": 7367,
+          "C2": 7420,
+          "C3": 2012
+        },
+        "u": {
+          "C1": 882510,
+          "C2": 891839,
+          "C3": 225651
+        }
+      },
+      "checks": {
+        "anchor_components": true,
+        "anchors": true,
+        "fit_positive": true,
+        "quartet_components": true,
+        "quartets": true
+      },
+      "effective_anchor_components": 7.6311618846369695,
+      "eligible_anchors": 1075,
+      "eligible_quartets_before_caps": 123955,
+      "fold": 0,
+      "heldout_endpoints": 3967,
+      "illustrative_80pct_power_MDE": {
+        "0.05": 0.050708504183041715,
+        "0.1": 0.10141700836608343,
+        "0.2": 0.20283401673216686
+      },
+      "largest_anchor_component_fraction": 0.36093023255813955,
+      "pass": true,
+      "positive_but_zero_unlabeled_anchors": 0,
+      "quartet_components": 552,
+      "quartet_endpoints": 990,
+      "selected_quartets": 2000,
+      "zero_positive_anchors": 2892
+    },
+    {
+      "anchor_components": 631,
+      "candidate_panel_size_quantiles": [
+        223.0,
+        260.0,
+        271.0,
+        281.0,
+        320.0
+      ],
+      "cells": {
+        "p": {
+          "C1": 8123,
+          "C2": 7035,
+          "C3": 1641
+        },
+        "u": {
+          "C1": 942115,
+          "C2": 861662,
+          "C3": 196223
+        }
+      },
+      "checks": {
+        "anchor_components": true,
+        "anchors": true,
+        "fit_positive": true,
+        "quartet_components": true,
+        "quartets": true
+      },
+      "effective_anchor_components": 242.31401238041644,
+      "eligible_anchors": 928,
+      "eligible_quartets_before_caps": 85235,
+      "fold": 1,
+      "heldout_endpoints": 3967,
+      "illustrative_80pct_power_MDE": {
+        "0.05": 0.008998847013772873,
+        "0.1": 0.017997694027545745,
+        "0.2": 0.03599538805509149
+      },
+      "largest_anchor_component_fraction": 0.03556034482758621,
+      "pass": true,
+      "positive_but_zero_unlabeled_anchors": 0,
+      "quartet_components": 610,
+      "quartet_endpoints": 895,
+      "selected_quartets": 2000,
+      "zero_positive_anchors": 3039
+    },
+    {
+      "anchor_components": 638,
+      "candidate_panel_size_quantiles": [
+        250.0,
+        292.0,
+        303.0,
+        315.0,
+        362.0
+      ],
+      "cells": {
+        "p": {
+          "C1": 7107,
+          "C2": 7547,
+          "C3": 2145
+        },
+        "u": {
+          "C1": 843252,
+          "C2": 910745,
+          "C3": 246003
+        }
+      },
+      "checks": {
+        "anchor_components": true,
+        "anchors": true,
+        "fit_positive": true,
+        "quartet_components": true,
+        "quartets": true
+      },
+      "effective_anchor_components": 111.4780021461321,
+      "eligible_anchors": 1069,
+      "eligible_quartets_before_caps": 144582,
+      "fold": 2,
+      "heldout_endpoints": 3966,
+      "illustrative_80pct_power_MDE": {
+        "0.05": 0.013267269301731657,
+        "0.1": 0.026534538603463314,
+        "0.2": 0.05306907720692663
+      },
+      "largest_anchor_component_fraction": 0.07764265668849392,
+      "pass": true,
+      "positive_but_zero_unlabeled_anchors": 0,
+      "quartet_components": 606,
+      "quartet_endpoints": 1004,
+      "selected_quartets": 2000,
+      "zero_positive_anchors": 2897
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+data/
+private/
+# Keep compact execution evidence; tensors and predictions remain local.
+/runs/**
+!/runs/
+!/runs/**/
+!/runs/*.json
+!/runs/results/*.json
+!/runs/results/*.md
+!/runs/results/*.csv
+!/runs/results/*.png
+!/runs/results/*.pdf
+!/runs/results/*.svg
+!/runs/residue_cache/*_MANIFEST.json
+!/runs/residue_cache/*_QUALIFICATION.json
+!/runs/training/*/seed_*/*.json
+!/runs/training/*/seed_*/events.jsonl
+logs/
+work/
+__pycache__/
+*.pyc

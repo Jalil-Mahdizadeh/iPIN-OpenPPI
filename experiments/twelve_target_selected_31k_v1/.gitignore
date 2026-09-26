@@ -1,0 +1,9 @@
+# Public panel scores and metrics are retained; learned features are reproducible.
+*.npy
+*.npz
+*.pt
+*.log
+/.cache/
+/tmp/
+__pycache__/
+*.pyc

@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-09-24T19:23:01.113090+00:00",
+  "formal_training_started": false,
+  "new_development_results_seen": false,
+  "changes": [
+    "Add per-recipe locking to permit interactive control training while SLURM workers queue.",
+    "Also evaluate epoch 1 to detect early overfitting with the smaller batch.",
+    "Use 8-hour training and 4-hour comparison reservations based on measured pilots."
+  ]
+}

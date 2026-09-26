@@ -1,0 +1,66 @@
+{
+  "at_utc": "2026-09-26T10:34:05.293561+00:00",
+  "bundle_sha256": "e0d903371767f866a1a86392999823481aff083354be9f731c72b5b099e2410f",
+  "checks": {
+    "exact_saved_covariance_preserved": true,
+    "member_checks": [
+      {
+        "legacy_replay_max_error": 1.9073486328125e-06,
+        "member": "tuna_retrained_seed20260803"
+      },
+      {
+        "legacy_replay_max_error": 1.9073486328125e-06,
+        "member": "tuna_retrained_seed20260817"
+      },
+      {
+        "legacy_replay_max_error": 1.9073486328125e-06,
+        "member": "tuna_retrained_seed20260831"
+      },
+      {
+        "legacy_replay_max_error": 5.960464477539063e-08,
+        "member": "tuna_original"
+      }
+    ],
+    "parameters_and_buffers_unchanged": true,
+    "selected_budget": 31188,
+    "selected_epoch": 1
+  },
+  "code_sha256": "5380b0700088bee05b135d2359ef99f0b2c355ed7dc304d903f39abe5c51d93d",
+  "elapsed_seconds": 27.73578266800905,
+  "files": [
+    {
+      "bytes": 72231982,
+      "path": "legacy_C1.npz",
+      "sha256": "835146c5fcf91b8614303e60953a92bae0034de6348025a766f4ab45213b3604"
+    },
+    {
+      "bytes": 18048958,
+      "path": "added_C1.npz",
+      "sha256": "79d5980f7b0cf0bb49b6765fa2cff1263b0ca5a05158e8b03070920cc1e940e0"
+    },
+    {
+      "bytes": 72970630,
+      "path": "legacy_C2.npz",
+      "sha256": "bb33ef896fb54d0a74a7f78851599403ef488e7ad5c4b9f623c709d0876f0c0c"
+    },
+    {
+      "bytes": 18317518,
+      "path": "added_C2.npz",
+      "sha256": "f882cbaba82d0757ec89146bedc35b71f9713222cd6cb339efacaa15338d994a"
+    },
+    {
+      "bytes": 72173806,
+      "path": "legacy_C3.npz",
+      "sha256": "21a4d0d2aed24df09f5a3c5508ef6c6c667441aab6c1cd064bab56f2ba8a5739"
+    },
+    {
+      "bytes": 18069766,
+      "path": "added_C3.npz",
+      "sha256": "4f26262096a322e3fa87505bebabef737d4c554970a54fc85d4c580bd50a88a3"
+    }
+  ],
+  "method": "tuna",
+  "sequence_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "test_truth_read": false,
+  "training_performed": false
+}

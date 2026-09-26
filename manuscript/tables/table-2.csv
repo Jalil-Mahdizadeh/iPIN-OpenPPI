@@ -1,0 +1,3 @@
+model,model_id,encoder,embedding_dimension,parameters_per_head,ensemble_members,selected_pass_or_epoch,batch_comparisons,learning_rate,weight_decay,dropout,hidden_width,training_passes,source_file,source_key
+Optimized residual,esm2_150m__residual_wide__epoch04_ensemble3,facebook/esm2_t30_150M_UR50D,640,498053,3,4,8192,0.0001,0.01,0.3,256,8,artifacts/models/frozen_pair_models_v1/MODEL_REGISTRY.json,models/esm2_150m__residual_wide__epoch04_ensemble3
+Original affine,lightweight_esm2_150m_linear__linear_lr3e-4,facebook/esm2_t30_150M_UR50D,640,1922,3,5,4096,0.0003,0.0001,0.0,0,5,artifacts/models/frozen_pair_models_v1/MODEL_REGISTRY.json,models/lightweight_esm2_150m_linear__linear_lr3e-4

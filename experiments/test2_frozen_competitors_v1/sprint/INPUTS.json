@@ -1,0 +1,67 @@
+{
+  "bundle_sha256": "d87959a9210e6809a9ca8c6002944af3a57d0c70a17c6c59ba3a80d2bebf1282",
+  "files": [
+    {
+      "bytes": 10139746,
+      "path": "proteins.fasta",
+      "sha256": "a8eddf254d0cd2995632298270b07d0f1ebf2d7e6c207e1b9f5a713ba2eb82df"
+    },
+    {
+      "bytes": 235186,
+      "path": "train_positive.txt",
+      "sha256": "491ea909d4c3c0eb6b5fc6e130a4a5b9d9025a4b1d7123af18ca81762a0794af"
+    },
+    {
+      "bytes": 52849524,
+      "path": "pairs.txt",
+      "sha256": "090bbfebd51bd6730a2a3ad869255a883c4e7cf0db15be7b0568915ef188efb6"
+    },
+    {
+      "bytes": 0,
+      "path": "empty.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "parts": [
+    {
+      "candidate_sha256": "c05d80dc37885bdce8f280512b2857119ca7ab7eb628c1167e4de6f344436dec",
+      "cell": "C1",
+      "cohort": "legacy",
+      "rows": 1003187
+    },
+    {
+      "candidate_sha256": "d713c8422cd8bbed882de138cea957bd8ab00832a85fd9ab0f72954c22c3c445",
+      "cell": "C1",
+      "cohort": "added",
+      "rows": 250645
+    },
+    {
+      "candidate_sha256": "ee244fb7a33c076dd3fb9a98dd82679c68a02e7df8e41fb591b349d2773b681e",
+      "cell": "C2",
+      "cohort": "legacy",
+      "rows": 1013446
+    },
+    {
+      "candidate_sha256": "7c4bd1ceca0712829bd9b540ecfb270099f1f62623f61bc055d1a9a1852f5eee",
+      "cell": "C2",
+      "cohort": "added",
+      "rows": 254375
+    },
+    {
+      "candidate_sha256": "fbef879841207fd8390320af8f3ce0a622adf5b34a90af50b75990532928a20e",
+      "cell": "C3",
+      "cohort": "legacy",
+      "rows": 1002379
+    },
+    {
+      "candidate_sha256": "fb51de51cdc38519794a5962a666b521c9b6f139eee7a95161d8e24a8656fedd",
+      "cell": "C3",
+      "cohort": "added",
+      "rows": 250934
+    }
+  ],
+  "routing_marker_is_not_ground_truth": true,
+  "sequence_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "sequences": 17583,
+  "test_truth_read": false
+}

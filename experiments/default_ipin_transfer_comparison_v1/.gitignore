@@ -1,0 +1,12 @@
+# Large public CSVs are deposited as lossless .csv.gz copies (PUBLICATION.md).
+/*/all_model_scores.csv
+/*/default_model_scores.csv
+/*/exact_pair_exposure.csv
+*.npy
+*.npz
+*.pt
+*.log
+/.cache/
+/tmp/
+__pycache__/
+*.pyc

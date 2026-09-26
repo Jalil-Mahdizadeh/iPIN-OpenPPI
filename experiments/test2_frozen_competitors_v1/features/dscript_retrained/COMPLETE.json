@@ -1,0 +1,35 @@
+{
+  "at_utc": "2026-09-26T10:21:37.341961+00:00",
+  "bundle_sha256": "44573a95fdd145e8c0d714376690d61c4e76b5f65139b3d7922d04ed14699577",
+  "code_sha256": "d3836d3caf720adf5d10c9ee1a243ff25e09e77b629695f7938a602a9be765cf",
+  "elapsed_seconds": 34.62795900199853,
+  "files": [
+    {
+      "bytes": 297736928,
+      "path": "dscript_seed_20260803.npy",
+      "sha256": "8e07d5c72a51a2e7e1acdbfecf35a6914e989098c27dad717228fe169c5badc7"
+    },
+    {
+      "bytes": 297736928,
+      "path": "dscript_seed_20260817.npy",
+      "sha256": "4b9937305061997878267d36aab40b8f88ae75985af4de2cc97d228dbf1eb356"
+    },
+    {
+      "bytes": 297736928,
+      "path": "dscript_seed_20260831.npy",
+      "sha256": "dac87a14c8f26807156c401a96a8dc0cb66531c3c5a829fe7d2524babfb388e3"
+    }
+  ],
+  "learned_parameters_unchanged": true,
+  "method": "dscript_retrained",
+  "native_projection_replay_errors": {
+    "dscript_seed_20260803": 0.0,
+    "dscript_seed_20260817": 0.0,
+    "dscript_seed_20260831": 0.0
+  },
+  "new_sequence_endpoints": 583,
+  "old_sequence_endpoints_unchanged": 17000,
+  "projection_tolerance": 0.0002,
+  "sequence_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "test_pairs_or_truth_read": false
+}

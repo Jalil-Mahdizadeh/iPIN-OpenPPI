@@ -1,0 +1,20 @@
+{
+  "study_id": "partner_conditioned_residue_v1",
+  "seeds": [20260803, 20260817, 20260831],
+  "epochs": 8,
+  "evaluation_epochs": [1, 2, 4, 6, 8],
+  "comparison_batch": 256,
+  "training_residues": 512,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "gradient_clip": 5.0,
+  "checkpoint_steps": 1000,
+  "maximum_promoted_advanced_models": 2,
+  "promotion_reference_C3_development": 0.8044558035378994,
+  "recipes": [
+    {"name": "mean_pool", "dimension": 128, "tokens": 8, "cross_layers": 0, "local_branch": false},
+    {"name": "attention_pool", "dimension": 128, "tokens": 8, "cross_layers": 0, "local_branch": true},
+    {"name": "cross_attention", "dimension": 128, "tokens": 8, "cross_layers": 1, "local_branch": true},
+    {"name": "cross_attention_wide", "dimension": 192, "tokens": 16, "cross_layers": 2, "local_branch": true}
+  ]
+}

@@ -9,6 +9,10 @@ at ten candidates per target. Original TUnA still leads some retrieval metrics.
 Seventeen of 37 positives occur in 31k training P; the report provides a common
 exposure-excluded sensitivity. This remains a descriptive application.
 
+The follow-up's [implementation and run records](../experiments/twelve_target_selected_31k_v1/README.md),
+[full public scores](../experiments/twelve_target_selected_31k_v1/output/all_twelve_targets_scores.csv),
+rank tables and figures are also deposited under `experiments/`.
+
 The underlying [expanded twelve-target, four-model comparison](twelve_target_comparison_v2/REPORT.md) contains
 37 nominated positives and 5,550 unlabeled pairs. Each positive has 50 original
 context U, 50 original background U and 50 new low-plausibility U. All three frozen

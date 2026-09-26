@@ -1,0 +1,123 @@
+{
+  "GP_covariance_refitted": false,
+  "GP_fitted_set_before_eval": true,
+  "at_utc": "2026-09-26T14:23:54.588203+00:00",
+  "cuda": "13.0",
+  "default_model": "ipin_tuna_31k_ensemble",
+  "elapsed_seconds": 28.04259406401252,
+  "gpu": "NVIDIA GH200 120GB",
+  "input_freeze_sha256": "cb228873fa885138e1077d39929506a2f495c4069eff51716b8d3bbda3a1369b",
+  "learned_features_recomputed": true,
+  "outputs": [
+    {
+      "bytes": 64151869,
+      "path": "reference_organism_pu_transfer_v1/default_model_scores.csv",
+      "scope": "experiment",
+      "sha256": "9979eda0677bf80b88d0401659d3813ac4676050fe6e0580dfbfd0afa0e99bb8"
+    },
+    {
+      "bytes": 1427163,
+      "path": "reference_organism_pu_transfer_v1/sequence_order.json",
+      "scope": "experiment",
+      "sha256": "a6b35f6b5e476aa9912d6372eed2a5d0d223370b672d07bd6387b29dce85186e"
+    },
+    {
+      "bytes": 5219456,
+      "path": "reference_organism_pu_transfer_v1/ipin_tuna_31k_seed20260803_endpoint_features.npy",
+      "scope": "experiment",
+      "sha256": "59ca268a6daad9c3d0ef0a2332bb70f58085c68998ff51ee1f566b7fa149d71d"
+    },
+    {
+      "bytes": 5219456,
+      "path": "reference_organism_pu_transfer_v1/ipin_tuna_31k_seed20260817_endpoint_features.npy",
+      "scope": "experiment",
+      "sha256": "bbea41e08c4b82c69c3481bd84dbfc565f3109bef7d8255f3bfde208efe524b4"
+    },
+    {
+      "bytes": 5219456,
+      "path": "reference_organism_pu_transfer_v1/ipin_tuna_31k_seed20260831_endpoint_features.npy",
+      "scope": "experiment",
+      "sha256": "7d2da88756f524f22d77f59ad09600add796b4168bc171ccf204e142c0266811"
+    }
+  ],
+  "pairs": 157055,
+  "precision": "FP32 model, attention, residues and GP buffers; FP64 member-score mean; no AMP/TF32",
+  "qualifications": [
+    {
+      "checkpoint": {
+        "bytes": 135357993,
+        "path": "weights/ipin_tuna_31k_seed20260803.pt",
+        "sha256": "f29ee395d747ff07cffba14d028430fa9c9ab1e7559a71b678b8541a22f7f979"
+      },
+      "elapsed_seconds": 6.124100533008459,
+      "fixture_rows_zero_based": [
+        0,
+        24325,
+        80749,
+        100471,
+        102865,
+        145345,
+        156123
+      ],
+      "native_max_absolute_error": 1.9073486328125e-06,
+      "native_tolerance": 1e-05,
+      "pair_order_symmetry_passed": true,
+      "parameters_and_buffers_unchanged": true,
+      "saved_GP_covariance_preserved": true,
+      "seed": 20260803
+    },
+    {
+      "checkpoint": {
+        "bytes": 135357993,
+        "path": "weights/ipin_tuna_31k_seed20260817.pt",
+        "sha256": "7581d4f43354201914ba38924f58bd2e10b4babb9f56ccf6c104276190c97f59"
+      },
+      "elapsed_seconds": 6.1013372180023,
+      "fixture_rows_zero_based": [
+        0,
+        24325,
+        80749,
+        100471,
+        102865,
+        145345,
+        156123
+      ],
+      "native_max_absolute_error": 3.0994415283203125e-06,
+      "native_tolerance": 1e-05,
+      "pair_order_symmetry_passed": true,
+      "parameters_and_buffers_unchanged": true,
+      "saved_GP_covariance_preserved": true,
+      "seed": 20260817
+    },
+    {
+      "checkpoint": {
+        "bytes": 135357993,
+        "path": "weights/ipin_tuna_31k_seed20260831.pt",
+        "sha256": "707f56e0007e0af10d6949924d4c7afc096b9d87cf2375bb050dd12b9d11e66a"
+      },
+      "elapsed_seconds": 6.097454991991981,
+      "fixture_rows_zero_based": [
+        0,
+        24325,
+        80749,
+        100471,
+        102865,
+        145345,
+        156123
+      ],
+      "native_max_absolute_error": 1.9073486328125e-06,
+      "native_tolerance": 1e-05,
+      "pair_order_symmetry_passed": true,
+      "parameters_and_buffers_unchanged": true,
+      "saved_GP_covariance_preserved": true,
+      "seed": 20260831
+    }
+  ],
+  "registry_sha256": "59983c1f75f355619eb40f4159e9417e3426f1573c4a2066f0dc327b6793bd7f",
+  "residues": 10052084,
+  "sequences": 20388,
+  "study": "reference_organism_pu_transfer_v1",
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "training_or_selection": false,
+  "verified_historical_ESM_cache_reused": true
+}

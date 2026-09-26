@@ -1,0 +1,23 @@
+{
+  "at_utc": "2026-09-26T04:16:22.351686+00:00",
+  "budget": 25000,
+  "checkpoint": {
+    "bytes": 135357993,
+    "path": "/output/training/budget_25000/seed_20260831/epoch_04.pt",
+    "sha256": "c68270b5370c5e2a581886ad4ac5e093c0143b177cc64685c5a289279f2d2e67"
+  },
+  "epoch": 4,
+  "execution_sha256": "be67d329b7efa320b2149294cffaa922ea20415c034f1ba5ffcb1007f418bec2",
+  "metrics": {
+    "dev_1": 0.7585680909559575,
+    "dev_1_reconciled": 0.746194512699492,
+    "dev_2_macro": 0.7013859496097186,
+    "dev_added": 0.656577386519945
+  },
+  "prediction": {
+    "bytes": 5012476,
+    "path": "/output/training/budget_25000/seed_20260831/epoch_04_C3.npz",
+    "sha256": "97904a6f913708353ae2e8f4b11f0aa5d9ca166f52fa5a47900ae750f7c347c0"
+  },
+  "seed": 20260831
+}

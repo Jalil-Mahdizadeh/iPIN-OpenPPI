@@ -1,0 +1,14 @@
+panel,analysis,model,model_id,condition,dataset,metric,estimate,CI_low,CI_high,source_file,source_key,components,label,order,detail,relationship,next_order
+a,split,,,train,,endpoint_partition,11900,,,artifacts/validation/benchmark_design/final_benchmark_component_split_v1/AUDIT_REPORT.json,aggregate_metrics/partition_summaries,5427,Training,,,,
+a,split,,,development,,endpoint_partition,2550,,,artifacts/validation/benchmark_design/final_benchmark_component_split_v1/AUDIT_REPORT.json,aggregate_metrics/partition_summaries,1071,Development,,,,
+a,split,,,test,,endpoint_partition,2550,,,artifacts/validation/benchmark_design/final_benchmark_component_split_v1/AUDIT_REPORT.json,aggregate_metrics/partition_summaries,1284,Protected test,,,,
+b,design,,,C1,,exposed_endpoints,2,,,configs/pair_level_pu_r_benchmark_protocol_v1.yaml,pair_assignment/C1,,Held-out pair; both endpoints exposed,,,,
+b,design,,,C2,,exposed_endpoints,1,,,configs/pair_level_pu_r_benchmark_protocol_v1.yaml,pair_assignment/C2,,One endpoint exposed; one held out,,,,
+b,design,,,C3,,exposed_endpoints,0,,,configs/pair_level_pu_r_benchmark_protocol_v1.yaml,pair_assignment/C3,,Both endpoints held out,,,,
+c,schematic,,,,,,,,,src/ipin_openppi/model_optimization/models.py,PairHead/features,,Sequence A / Sequence B,1,Shared frozen encoder,directed_processing_step,2
+c,schematic,,,,,,,,,src/ipin_openppi/model_optimization/models.py,PairHead/features,,ESM-2 150M,2,Residue means → training standardization,directed_processing_step,3
+c,schematic,,,,,,,,,src/ipin_openppi/model_optimization/models.py,PairHead/features,,Symmetric pair features,3,sum | absolute difference | product | cosine,directed_processing_step,4
+c,schematic,,,,,,,,,src/ipin_openppi/model_optimization/models.py,PairHead/features,,Residual head,4,Affine branch + LayerNorm → 256 → GELU → scalar,directed_processing_step,5
+c,schematic,,,,,,,,,src/ipin_openppi/model_optimization/models.py,PairHead/features,,Interaction-associated ranking,5,Mean raw score across three seeds,directed_processing_step,
+a,schematic,,,P,,,,,,configs/pair_level_pu_r_benchmark_protocol_v1.yaml,candidate_universes/state_semantics,,Released positive interactions,,,,
+a,schematic,,,U,,,,,,configs/pair_level_pu_r_benchmark_protocol_v1.yaml,candidate_universes/state_semantics,,Unlabeled eligible pairs,,,,

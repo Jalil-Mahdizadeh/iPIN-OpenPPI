@@ -1,0 +1,91 @@
+{
+  "dscript_original": {
+    "bundle": "benchmark/dscript/runs/original-v1/scorer_bundle",
+    "image": "benchmark/containers/images/dscript-native-arm64-v1.sif",
+    "private": "benchmark/dscript/private/original-v1",
+    "scorer_freeze_sha256": "4ceaf28210f74b4f8519d2e8b9453376ce08edf27dcf79ef5ef12fbb8fc0ee86",
+    "scorers": [
+      "dscript_original"
+    ]
+  },
+  "dscript_retrained": {
+    "bundle": "benchmark/dscript/runs/retrained-v1/scorer_bundle",
+    "image": "benchmark/containers/images/dscript-native-arm64-v1.sif",
+    "private": "benchmark/dscript/private/retrained-v1",
+    "scorer_freeze_sha256": "44573a95fdd145e8c0d714376690d61c4e76b5f65139b3d7922d04ed14699577",
+    "scorers": [
+      "dscript_retrained",
+      "dscript_seed_20260803",
+      "dscript_seed_20260817",
+      "dscript_seed_20260831"
+    ]
+  },
+  "partner": {
+    "bundle": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle",
+    "image": "benchmark/containers/images/tuna-arm64-v1.sif",
+    "private": "benchmark/partner_conditioned_residue_v1/private",
+    "scorer_freeze_sha256": "6e3bb5965ec511bbfdb5b73ed73c7b9dab84c7a7abd322990f333aa6b5a50b86",
+    "scorers": [
+      "cross_attention_ensemble",
+      "cross_attention_seed20260803",
+      "cross_attention_seed20260817",
+      "cross_attention_seed20260831",
+      "mean_pool_ensemble",
+      "mean_pool_seed20260803",
+      "mean_pool_seed20260817",
+      "mean_pool_seed20260831"
+    ]
+  },
+  "plm": {
+    "bundle": "benchmark/plm_interact/runs/original-v1/scorer_bundle",
+    "image": "benchmark/containers/images/plm-interact-native-arm64-v1.sif",
+    "private": "benchmark/plm_interact/private/original-v1",
+    "scorer_freeze_sha256": "6b9acdd2c66b0c001e6ac1f60abd15274cec6856a6de09257a22c5febd47c734",
+    "scorers": [
+      "plm_interact_original_650m_humanv11"
+    ]
+  },
+  "rapppid_original": {
+    "bundle": "benchmark/rapppid/runs/original-v1/scorer_bundle",
+    "image": "benchmark/containers/images/rapppid-native-arm64-v1.sif",
+    "private": "benchmark/rapppid/private/original-v1",
+    "scorer_freeze_sha256": "b017edbfd1c0f22a60aef80812316c4b27d023ce9e9725ec5b0dcb161573e41f",
+    "scorers": [
+      "rapppid_original_released_mult"
+    ]
+  },
+  "rapppid_recovery": {
+    "bundle": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle",
+    "image": "benchmark/containers/images/rapppid-native-arm64-v1.sif",
+    "private": "benchmark/rapppid/private/recovery-test-v1",
+    "scorer_freeze_sha256": "4334869256c8b53ae27fd8e7c99da821db9d5f1ce11dac35dd0437a309aa3dce",
+    "scorers": [
+      "rapppid_recovery_mean_logit",
+      "rapppid_recovery_seed_20260803",
+      "rapppid_recovery_seed_20260817",
+      "rapppid_recovery_seed_20260831"
+    ]
+  },
+  "sprint": {
+    "bundle": "benchmark/sprint/runs/original-v1/scorer_bundle",
+    "image": "benchmark/containers/images/sprint-native-arm64-v1.sif",
+    "private": "benchmark/sprint/private/original-v1",
+    "scorer_freeze_sha256": "d87959a9210e6809a9ca8c6002944af3a57d0c70a17c6c59ba3a80d2bebf1282",
+    "scorers": [
+      "sprint_native_train_positive_graph"
+    ]
+  },
+  "tuna": {
+    "bundle": "benchmark/tuna/runs/scorer_bundle",
+    "image": "benchmark/containers/images/tuna-arm64-v1.sif",
+    "private": "benchmark/tuna/private",
+    "scorer_freeze_sha256": "e0d903371767f866a1a86392999823481aff083354be9f731c72b5b099e2410f",
+    "scorers": [
+      "tuna_original",
+      "tuna_retrained_ensemble",
+      "tuna_retrained_seed20260803",
+      "tuna_retrained_seed20260817",
+      "tuna_retrained_seed20260831"
+    ]
+  }
+}

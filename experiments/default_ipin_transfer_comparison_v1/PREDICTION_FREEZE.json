@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-09-26T14:23:54.627772+00:00",
+  "complete": true,
+  "input_freeze": {
+    "bytes": 57395,
+    "path": "INPUT_FREEZE.json",
+    "scope": "experiment",
+    "sha256": "cb228873fa885138e1077d39929506a2f495c4069eff51716b8d3bbda3a1369b"
+  },
+  "runs": [
+    {
+      "bytes": 4147,
+      "path": "nonhuman_transfer_v1/SCORING_RUN.json",
+      "scope": "experiment",
+      "sha256": "49c1219df9ef5fc87b5747cde136e2aafdf985f0712fe0e7b172fddd554669b3"
+    },
+    {
+      "bytes": 4014,
+      "path": "reference_organism_pu_transfer_v1/SCORING_RUN.json",
+      "scope": "experiment",
+      "sha256": "89c1270e50cbb00a24c8f9270ac1b3b159f57b36b65cd15503afe417320f4399"
+    }
+  ]
+}

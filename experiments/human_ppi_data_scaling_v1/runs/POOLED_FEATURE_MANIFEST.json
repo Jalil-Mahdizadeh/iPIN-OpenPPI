@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-09-25T09:31:37.192980+00:00",
+  "details": {
+    "batches": 250,
+    "elapsed_seconds": 22.141437226033304,
+    "gpu_hours": 0.006150399229453696,
+    "residue_window_tokens": 944652,
+    "windows": 1117
+  },
+  "features": {
+    "bytes": 45012608,
+    "path": "/output/pooled_features.npy",
+    "sha256": "a12f3f79cd20fc5ed017362b2f29ca4eca156c58ff333c6175a7d90aa12588b5"
+  },
+  "fixture_max_absolute_error": 0.0,
+  "normalizer_sha256": "0638479d988ab37f63e8e034d372e4d7023f703140e46644b81c97390b98b72c",
+  "old_vectors_reused": 17000,
+  "original_extractor_sha256": "7d03572fa3d7d8c6b86fb8652b2b866f27f266b6cec4c2695e237aa796bb264f",
+  "test_pairs_or_truth_read": false,
+  "tolerance": 0.0002
+}

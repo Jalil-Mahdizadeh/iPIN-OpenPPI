@@ -1,0 +1,51 @@
+{
+  "at_utc": "2026-09-26T10:50:29.835835+00:00",
+  "bundle_sha256": "4ceaf28210f74b4f8519d2e8b9453376ce08edf27dcf79ef5ef12fbb8fc0ee86",
+  "code_sha256": "2e843918799876bda690cca423af1e5f8b8344037efd35e0fba6529da2ecef9a",
+  "elapsed_seconds": 726.0443599229984,
+  "files": [
+    {
+      "bytes": 503936,
+      "cell": "C1",
+      "left": 62464,
+      "path": "C1.npy",
+      "reversal_max_absolute_error": 0.0,
+      "right": 125440,
+      "scorers": [
+        "dscript_original"
+      ],
+      "sha256": "791f5e1a37a242b62b82b9d428ff6721efc43db16940d01770ddc7313461f710"
+    },
+    {
+      "bytes": 508032,
+      "cell": "C2",
+      "left": 63488,
+      "path": "C2.npy",
+      "reversal_max_absolute_error": 0.0,
+      "right": 126976,
+      "scorers": [
+        "dscript_original"
+      ],
+      "sha256": "82e44e5cee3696c55c1ab0b1241dd48f3ffe5053e0153fc5c1e4151284b364e4"
+    },
+    {
+      "bytes": 503936,
+      "cell": "C3",
+      "left": 62464,
+      "path": "C3.npy",
+      "reversal_max_absolute_error": 0.0,
+      "right": 125440,
+      "scorers": [
+        "dscript_original"
+      ],
+      "sha256": "8b3b2926f3be57e9acb090d72cdcd7cd4c44a59085a93b13c5899acfb0a4935e"
+    }
+  ],
+  "learned_parameters_unchanged": true,
+  "method": "dscript_original",
+  "rank": 1,
+  "sequence_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "test_truth_read": false,
+  "training_performed": false,
+  "workers": 4
+}

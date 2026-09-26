@@ -1,0 +1,20 @@
+{
+  "C3_development_concordance": 0.7080862311331213,
+  "at_utc": "2026-09-24T19:30:07.781937+00:00",
+  "checkpoint": {
+    "bytes": 1996229,
+    "path": "/output/training/mean_pool/seed_20260817/epoch_06.pt",
+    "sha256": "0cb9e992e2c14fc13efe36fa3736b266e30008d3a43492bc036f738dce373d0e"
+  },
+  "development_predictions": {
+    "bytes": 4009188,
+    "path": "/output/training/mean_pool/seed_20260817/epoch_06_C3_development.npy",
+    "sha256": "bcc0d646cbbe3ed962bea72ba9c615b2dad5cce6f11db0eca181274c6d6731d9"
+  },
+  "epoch": 6,
+  "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+  "recipe": "mean_pool",
+  "seed": 20260817,
+  "test_pairs_read": false,
+  "test_truth_read": false
+}

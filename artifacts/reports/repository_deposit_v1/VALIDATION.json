@@ -1,0 +1,136 @@
+{
+  "deposit_id": "repository_deposit_v1",
+  "at_utc": "2026-09-26T18:19:57.323592+00:00",
+  "status": "pass",
+  "purpose": "Publication integrity and preservation checks; no new scientific evaluation.",
+  "public_files_verified": 752,
+  "public_bytes": 95615967,
+  "static_checks": {
+    "counts": {
+      "files": 694,
+      "json_parsed": 415,
+      "shell_parsed": 22,
+      "python_parsed": 100,
+      "jsonl_parsed": 24
+    },
+    "parse_or_size_failures": [],
+    "secret_pattern_file_hits": []
+  },
+  "preservation_and_links": {
+    "relative_markdown_links_checked": 252,
+    "unpublished_link_targets": [],
+    "baseline_hashed_files_unchanged": 872,
+    "baseline_large_binary_files_size_mtime_unchanged": 581,
+    "intentional_existing_file_edits": [
+      "benchmark/partner_conditioned_residue_v1/.gitignore",
+      "experiments/human_ppi_data_scaling_v1/.gitignore",
+      "manuscript/README.md"
+    ],
+    "unexpected_existing_file_changes": [],
+    "pandoc_resource_path_resolutions": [
+      {
+        "source": "manuscript/build/manuscript-pandoc.md",
+        "target": "figure-1.png",
+        "resolved_to": "manuscript/figure-1.png",
+        "rule": "Pandoc --resource-path=. from manuscript root, as documented in manuscript/README.md"
+      },
+      {
+        "source": "manuscript/build/manuscript-pandoc.md",
+        "target": "figure-2.png",
+        "resolved_to": "manuscript/figure-2.png",
+        "rule": "Pandoc --resource-path=. from manuscript root, as documented in manuscript/README.md"
+      },
+      {
+        "source": "manuscript/build/manuscript-pandoc.md",
+        "target": "figure-3.png",
+        "resolved_to": "manuscript/figure-3.png",
+        "rule": "Pandoc --resource-path=. from manuscript root, as documented in manuscript/README.md"
+      },
+      {
+        "source": "manuscript/build/manuscript-pandoc.md",
+        "target": "figure-4.png",
+        "resolved_to": "manuscript/figure-4.png",
+        "rule": "Pandoc --resource-path=. from manuscript root, as documented in manuscript/README.md"
+      },
+      {
+        "source": "manuscript/build/manuscript-pandoc.md",
+        "target": "figure-5.png",
+        "resolved_to": "manuscript/figure-5.png",
+        "rule": "Pandoc --resource-path=. from manuscript root, as documented in manuscript/README.md"
+      },
+      {
+        "source": "manuscript/build/manuscript-pandoc.md",
+        "target": "figure-6.png",
+        "resolved_to": "manuscript/figure-6.png",
+        "rule": "Pandoc --resource-path=. from manuscript root, as documented in manuscript/README.md"
+      },
+      {
+        "source": "manuscript/build/supplementary-pandoc.md",
+        "target": "figure-s1.png",
+        "resolved_to": "manuscript/figure-s1.png",
+        "rule": "Pandoc --resource-path=. from manuscript root, as documented in manuscript/README.md"
+      }
+    ]
+  },
+  "preserved_frozen_records": [
+    {
+      "manifest": "experiments/x_pair_test2_v1/PUBLICATION_MANIFEST.json",
+      "records_verified": 58,
+      "mismatches": 0
+    },
+    {
+      "manifest": "artifacts/models/frozen_pair_models_v3/ARTIFACT_REGISTRY.json",
+      "records_verified": 33,
+      "mismatches": 0
+    },
+    {
+      "manifest": "experiments/x_pair_test2_v1/COMPLETE.json",
+      "records_verified": 50,
+      "mismatches": 0
+    },
+    {
+      "manifest": "experiments/default_ipin_transfer_comparison_v1/FINAL_MANIFEST.json",
+      "records_verified": 59,
+      "mismatches": 0
+    },
+    {
+      "manifest": "experiments/twelve_target_selected_31k_v1/PRESERVATION.json",
+      "records_verified": 30,
+      "mismatches": 0
+    }
+  ],
+  "lossless_compressed_public_tables": 6,
+  "manuscript_validation": {
+    "status": "pass",
+    "checks_passed": 101,
+    "original_source_hashes_verified": 20,
+    "references": 34,
+    "runtime": "existing pinned ipin-model-arm64_0.1.0.sif",
+    "figures_or_scientific_text_changed": false
+  },
+  "staged_checkout": {
+    "status": "pass",
+    "public_files_verified": 752,
+    "preserved_registry_artifacts_verified": 91,
+    "lossless_tables_verified": 6,
+    "protected_data_or_models_required": false,
+    "source": "Git index only; excluded runtime/private files absent",
+    "checkout_files": 797,
+    "staged_changes": 704
+  },
+  "whitespace_policy": "Checksum-bound historical text retains its original final blank lines; exact-byte and narrow whitespace attributes preserve it.",
+  "knowledge_graph": {
+    "update": "graphify update . completed, AST only",
+    "published": false,
+    "warnings": "840 source files yielded no AST nodes; 79 nodes from 14 files outside the scan corpus were retained by the graph safety guard. Local graph remains partial and includes unpublished/session state."
+  },
+  "limitations": [
+    "The high-confidence credential-pattern scan is not a guarantee of absence of all possible secrets.",
+    "Large binary preservation uses size and mtime against the initial inventory; named scientific freeze records were additionally verified by full SHA-256.",
+    "Full scientific reruns require the local/private inputs and runtime assets described in DEPOSIT.md.",
+    "The manuscript is a historical draft with submission metadata placeholders."
+  ],
+  "training_or_scientific_evaluation_performed": false,
+  "local_assets_deleted": false,
+  "git_diff_cached_check": "pass"
+}

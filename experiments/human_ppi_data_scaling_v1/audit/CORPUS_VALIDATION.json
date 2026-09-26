@@ -1,0 +1,26 @@
+{
+  "accepted_component_partitions_disjoint": true,
+  "all_added_holdout_candidates_disjoint": true,
+  "all_training_pairs_disjoint_from_all_holdout_candidates": true,
+  "at_utc": "2026-09-25T09:36:58.090456+00:00",
+  "corpus_freeze_sha256": "808e86b4e067dd83392f150e834bd5bc72d96e359cde706c4f5082630ae69f6b",
+  "inherited_legacy_overlap": {
+    "C1": {
+      "legacy_candidate_overlap": 91781,
+      "reconciled_positive_overlap": 57
+    },
+    "C2": {
+      "legacy_candidate_overlap": 0,
+      "reconciled_positive_overlap": 0
+    },
+    "C3": {
+      "legacy_candidate_overlap": 0,
+      "reconciled_positive_overlap": 0
+    }
+  },
+  "interpretation": "C1 legacy U sampling overlaps dev/test. Version-2 reconciliation can make shared rows P. Preserve requested old panels; disclose inherited overlap. C3 is unaffected; test-2 is historical follow-up.",
+  "parent_checksums_verified": true,
+  "passed": true,
+  "positive_nesting_verified": true,
+  "test_truth_read_by_curator_only": true
+}

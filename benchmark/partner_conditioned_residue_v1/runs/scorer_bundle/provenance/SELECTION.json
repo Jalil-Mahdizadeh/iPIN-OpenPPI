@@ -1,0 +1,1939 @@
+{
+  "all_candidates": [
+    {
+      "C3_development_concordance": 0.779089694929102,
+      "all_three_seeds_retained": true,
+      "epoch": 1,
+      "members": [
+        {
+          "C3_development_concordance": 0.7750919785935411,
+          "at_utc": "2026-09-24T19:25:26.183908+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_01.pt",
+            "sha256": "ed6837ccbe45a06101b8d4ceb67f10f7e2c38e0a1d81fb4abd832914fe25924d"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_01_C3_development.npy",
+            "sha256": "0686a22d4071eb8a721bc168a197d02b8bd65089c6bcb50f362ff3c7ad7f1a34"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7515344494550761,
+          "at_utc": "2026-09-24T19:28:18.845526+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_01.pt",
+            "sha256": "44fff2ac95e5ca949304f7214a38a1051a35fd475c8cce0fd70fc559cb0f2300"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_01_C3_development.npy",
+            "sha256": "0bc2bee1578b16ac36130f120ad48298cb3cfad527cde01b711a75715afb64e4"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7772758406242293,
+          "at_utc": "2026-09-24T19:31:12.712841+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_01.pt",
+            "sha256": "46423caebaeb6e7da801430f7472ba693d50042fdce4e3240baf6d02671a5b51"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_01_C3_development.npy",
+            "sha256": "e1427440873bfc53178dcb031ac14dadeafa27f1617c686fe8c61a65925ced19"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": false,
+        "name": "mean_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7724936048629394,
+      "all_three_seeds_retained": true,
+      "epoch": 2,
+      "members": [
+        {
+          "C3_development_concordance": 0.7879343044210286,
+          "at_utc": "2026-09-24T19:25:48.079380+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_02.pt",
+            "sha256": "3431e39471d2e820518244ae80d4e9150400c118bdadb3119be6526fef7cd54d"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_02_C3_development.npy",
+            "sha256": "a276e8ce0e486ff114a3a5a54ea033a50081173bc9d4867038fecbda774836bb"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7400697000067155,
+          "at_utc": "2026-09-24T19:28:40.722954+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_02.pt",
+            "sha256": "98937272ef7b7f7eac5683d0f3422545deaf3bcb2adf2b8309423a5647557b7d"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_02_C3_development.npy",
+            "sha256": "a05c45bfdb4eeffe3aedf469182425acbd78c8947125fa92238b42df478b5bdd"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7361314209787763,
+          "at_utc": "2026-09-24T19:31:34.668302+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_02.pt",
+            "sha256": "c0a05bc3839c1fabef82d6ea6b33c43313ff80789da3be8a5076b1da5d794450"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_02_C3_development.npy",
+            "sha256": "8e711546eccae6ab1e12a0276cca4d1ecff7e829180823d57c58c3ca39e8236b"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": false,
+        "name": "mean_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7584869907350875,
+      "all_three_seeds_retained": true,
+      "epoch": 4,
+      "members": [
+        {
+          "C3_development_concordance": 0.7646711320151961,
+          "at_utc": "2026-09-24T19:26:31.049975+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_04.pt",
+            "sha256": "e25e2594f6d6a78d6dd3f1461cb22eecb368076a8ee8cb6898480904fefe270f"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_04_C3_development.npy",
+            "sha256": "3d0e44d3f2c45b0b36e2199845ef9ad13f81a20abbc0d4bc090bb5bbdcb956c3"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7232685589473444,
+          "at_utc": "2026-09-24T19:29:23.801476+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_04.pt",
+            "sha256": "be13b334b727e1031cfbf024429c6ccc5730dff5e13b08a56794460aaee4dbe0"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_04_C3_development.npy",
+            "sha256": "46d7a48c5daba9d007e4fb7a0c92707bcc4b6978476fa1f2a64d50c038ae7936"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7183197225241246,
+          "at_utc": "2026-09-24T19:32:17.858652+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_04.pt",
+            "sha256": "8e2559fcf8cde9a00c1a825dee78edeefe4fa0ab1c67dfc7b7fd6bdbf0cb1bef"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_04_C3_development.npy",
+            "sha256": "e342f7a2478b359d24e2360eaee5844b883286f5b9816b5ae418af9fe0167e65"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": false,
+        "name": "mean_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.740824915900998,
+      "all_three_seeds_retained": true,
+      "epoch": 6,
+      "members": [
+        {
+          "C3_development_concordance": 0.7434700485717314,
+          "at_utc": "2026-09-24T19:27:13.936798+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_06.pt",
+            "sha256": "18c90f4455a5d85fefdcd7a84bce08f4ab10c15a1cb1c716ad70a252995dc4bf"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_06_C3_development.npy",
+            "sha256": "b100fc5277341ab1e83c601b7476fb9fa2c0d51d2e2bcacea653f9a2683e2a4c"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7080862311331213,
+          "at_utc": "2026-09-24T19:30:07.781937+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_06.pt",
+            "sha256": "0cb9e992e2c14fc13efe36fa3736b266e30008d3a43492bc036f738dce373d0e"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_06_C3_development.npy",
+            "sha256": "bcc0d646cbbe3ed962bea72ba9c615b2dad5cce6f11db0eca181274c6d6731d9"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.6910117653502085,
+          "at_utc": "2026-09-24T19:33:01.066818+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_06.pt",
+            "sha256": "bb31ca67ba225f36065301c34b95fc0530e90a8c2305af90bdf64418b5a61b66"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_06_C3_development.npy",
+            "sha256": "006b99149686a954e8c9b6109f90c058c93c1b27955f7626e5e8750936d52e5e"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": false,
+        "name": "mean_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7427617863199599,
+      "all_three_seeds_retained": true,
+      "epoch": 8,
+      "members": [
+        {
+          "C3_development_concordance": 0.7310230373133227,
+          "at_utc": "2026-09-24T19:27:56.852148+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_08.pt",
+            "sha256": "b469a471304a690e06bb0c998af7c7e989828a902efde7eeaa3752a6e59365f0"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_08_C3_development.npy",
+            "sha256": "e56f20f8415b86e19c02c8906f61a1d72cb6cf55c62bda1250a62d2c423c92cc"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7249811671147534,
+          "at_utc": "2026-09-24T19:30:50.728999+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_08.pt",
+            "sha256": "6395d5a98d18f8cdf1b7332b268fb4f7faf8da428ecb5e79a87002a43e0e6c6a"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_08_C3_development.npy",
+            "sha256": "891b46c5947bd7b7fb3ad8046ea42b3411b32fe680db24dfcc25985f6beffeaf"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.6988016384184716,
+          "at_utc": "2026-09-24T19:33:44.702672+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_08.pt",
+            "sha256": "d202b75746af27254e3113dad2555a17e30d1e5b38be2d4a15e7fbf3cbdabce0"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_08_C3_development.npy",
+            "sha256": "06581a27bf9e83aec07f013fbfc6326562fe94b81e0ee595352ca6c012622bbb"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": false,
+        "name": "mean_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7958525706462993,
+      "all_three_seeds_retained": true,
+      "epoch": 1,
+      "members": [
+        {
+          "C3_development_concordance": 0.7623680545318967,
+          "at_utc": "2026-09-24T19:36:53.973756+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_01.pt",
+            "sha256": "4a6e6c353012aae97ba2dc2b87447f45e0da2d80f61a433165c0578f60040c93"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_01_C3_development.npy",
+            "sha256": "f08ab73e95594104cc22720c8f2649eed536cf398e8d9c2433a2aa086104dd8e"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7830578761654934,
+          "at_utc": "2026-09-24T20:02:25.458938+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_01.pt",
+            "sha256": "3317af8661ce8b4fe8c9edfdd28e3f56919f751b2f1cbcb8bc79bbb88173d887"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_01_C3_development.npy",
+            "sha256": "cc332f2feb4118e1858131315d1aedde43b8cb1bb53dd86aff4742964bfabf7f"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7641747942669498,
+          "at_utc": "2026-09-24T20:28:16.321722+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_01.pt",
+            "sha256": "ef5967c6508fa6f8f9db5f43444c92f0e5d3e56dda4765383968b25bc58708b7"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_01_C3_development.npy",
+            "sha256": "f2cd38572f8ca6400da9c1540d5940ffe969399ae8eedcc6b16a8dca3d968cb0"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "attention_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7867679543108628,
+      "all_three_seeds_retained": true,
+      "epoch": 2,
+      "members": [
+        {
+          "C3_development_concordance": 0.7713393518832662,
+          "at_utc": "2026-09-24T19:40:02.769967+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_02.pt",
+            "sha256": "0e17250b151a1b8dea0e940f31ee607457c90202b2fda3fa19bda09e326caf53"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_02_C3_development.npy",
+            "sha256": "95030fac9bd81f2b8ad0797078011cbb6cf7622515def9f373721be3420bff2b"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7618927094985863,
+          "at_utc": "2026-09-24T20:05:39.456229+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_02.pt",
+            "sha256": "685ef902f70eaaee48555221bbcefb3171b733f9363b5245ffac2412fb112cb4"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_02_C3_development.npy",
+            "sha256": "4b67b240be16543bb924b9a9c3987bb4b25a606bddc1c653836ba5ceeaf3d7c7"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7343034119274723,
+          "at_utc": "2026-09-24T20:31:29.271828+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_02.pt",
+            "sha256": "77dd12530a6164306dba715771948f34b01cc890d6adbd5b998afcc462dd8aa0"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_02_C3_development.npy",
+            "sha256": "28fc2473e4f240fb9431bbe240e5c9c5c6910f722ea0cd6f1ce9488983f1207c"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "attention_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7867794081740842,
+      "all_three_seeds_retained": true,
+      "epoch": 4,
+      "members": [
+        {
+          "C3_development_concordance": 0.7852340439353882,
+          "at_utc": "2026-09-24T19:46:20.728087+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_04.pt",
+            "sha256": "005feb1fc309a59b40ffe4f9d13ec892a23424f65a606c472d7872e9cf5a25ef"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_04_C3_development.npy",
+            "sha256": "7e9361ef78ad4e62f2b4cf96376e15dd7231b097681bff060bdee13dfb74b5da"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7310751578438089,
+          "at_utc": "2026-09-24T20:12:14.613045+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_04.pt",
+            "sha256": "20fa5a59e3fc97dd93b5249d53d8e11dff9cbad51d8e4ddc58f391685b91e80e"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_04_C3_development.npy",
+            "sha256": "e77dd8e5f63aeb5fd650bc88a54a0ef4aa3f78432ebd1ce65e28e72b3fbe6827"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7384637366515255,
+          "at_utc": "2026-09-24T20:37:49.150388+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_04.pt",
+            "sha256": "a7af66c3d50ca3cbb97c3e3bc09053c58cdbba414268ebf9cc1cb5e3c3a3c3ec"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_04_C3_development.npy",
+            "sha256": "d37eea3d8e1f78d1998d6b6a57dd48c465841895239f38782d562cb0dcb944d7"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "attention_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7714009799183285,
+      "all_three_seeds_retained": true,
+      "epoch": 6,
+      "members": [
+        {
+          "C3_development_concordance": 0.759179331353251,
+          "at_utc": "2026-09-24T19:52:46.120575+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_06.pt",
+            "sha256": "9549647b4693f25f5c9c42ff0b190ffdc7c2aeda7481e90d241981a6782c09d2"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_06_C3_development.npy",
+            "sha256": "6fe2b9022b5bccd0eb668879d797b01ee3f1303864f5703093e3033ca3d5affa"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7557524207575269,
+          "at_utc": "2026-09-24T20:18:37.928913+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_06.pt",
+            "sha256": "2794c2d575ff64ccd26c43028928ccb3baf3d2920bd393738192f22cf2726c05"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_06_C3_development.npy",
+            "sha256": "b5acc817658c5b1fa14e1e06654192bf5f23adbfef505b2219debc0c3942aa14"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7021475269389711,
+          "at_utc": "2026-09-24T20:44:14.792176+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_06.pt",
+            "sha256": "bd9c5bd61a00964a50b1c5944ff47db73208fd0e91af454ed93e0edf482222fc"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_06_C3_development.npy",
+            "sha256": "d72f88ddbe0383a12df6930a640e028064a627bed6751a601a6322796e47fbfa"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "attention_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7530657136933261,
+      "all_three_seeds_retained": true,
+      "epoch": 8,
+      "members": [
+        {
+          "C3_development_concordance": 0.7500985609341452,
+          "at_utc": "2026-09-24T19:59:11.588630+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_08.pt",
+            "sha256": "bd500226eca094a1d6b11d5c063c554f1471b1bd79aaa9ffd3eaaec197069fb4"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_08_C3_development.npy",
+            "sha256": "e9dfe5a1b4a0865005fc0396d49238c10d640e7d88c322b438e5db4cd8b8bb55"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7177425000073319,
+          "at_utc": "2026-09-24T20:25:02.865349+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_08.pt",
+            "sha256": "81a6a9dcb9f63a16e51f1534894fd80f17772266867ce200703d86a302da52ed"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_08_C3_development.npy",
+            "sha256": "4229540cbe28f1b1bdc9ba23a2ceb032cb7f91dbec23666d450307c086324485"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.6914313615970236,
+          "at_utc": "2026-09-24T20:50:35.670428+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_08.pt",
+            "sha256": "f485e734e6eccd6cff96419da1597dcee62804cc94dfd56c9e604a5b837bd244"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_08_C3_development.npy",
+            "sha256": "fa148a5659741dd52b45bd7d5751a3feef23fb99bf2cd78169a6d0949c61c490"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "attention_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7954921178867543,
+      "all_three_seeds_retained": true,
+      "epoch": 1,
+      "members": [
+        {
+          "C3_development_concordance": 0.7561925856577151,
+          "at_utc": "2026-09-24T19:37:27.037282+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_01.pt",
+            "sha256": "f005f31d55a3ccdb0193461aaaae7c336ff2beaceab13a87fc233d19f4ca1c5b"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_01_C3_development.npy",
+            "sha256": "959f805020a1b90d20a71e7ffbae58039b060b8757438be7b82af3b7b589040e"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7967036971362708,
+          "at_utc": "2026-09-24T20:07:33.098176+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_01.pt",
+            "sha256": "c1b7299ce5e1ac70551841a40b423cbcb854add9a6f2bbd757872e401613fa05"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_01_C3_development.npy",
+            "sha256": "5905928d41c6ceca52ed0d98a3228340cd6193a9e1f1975c1de279311ad11b7d"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.751939107953353,
+          "at_utc": "2026-09-24T20:38:04.266167+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_01.pt",
+            "sha256": "8f8b07c923c8943e38af7a5211e632e778ee47a3d29684ca8c246f3a8534e0d9"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_01_C3_development.npy",
+            "sha256": "9b44bd1c3800caf6e4e5a6157dcd8451eda47eaa492209c59f7c8163b10f26f3"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 1,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "cross_attention",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.8054747997850595,
+      "all_three_seeds_retained": true,
+      "epoch": 2,
+      "members": [
+        {
+          "C3_development_concordance": 0.7842500068497847,
+          "at_utc": "2026-09-24T19:41:08.505421+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_02.pt",
+            "sha256": "5f18c4200250a02c3b52ceef25083baefbb939290597d419eca2aea95f12ec81"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_02_C3_development.npy",
+            "sha256": "cd15641472812cdfc38205298343f42a44cca1b9468445caec2e32b68a651483"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7696834891893884,
+          "at_utc": "2026-09-24T20:11:22.898781+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_02.pt",
+            "sha256": "61cd78aaa19f93f7fb56bff58317229d8c6458bd479778a264658c1f6bc42b56"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_02_C3_development.npy",
+            "sha256": "8947854ecaa59153302ebccbede7ebb242f2454198476fdc7ba5a3f1305c1c87"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7683785165624346,
+          "at_utc": "2026-09-24T20:41:55.418550+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_02.pt",
+            "sha256": "b4c1739933a6489062e3c360a8d38f14231510dc6d52367c70eba948e4ce942f"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_02_C3_development.npy",
+            "sha256": "15d53b72e1792fdcf76ebd539bbe25e5d72460308c8151795d979683fd19b6bc"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 1,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "cross_attention",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7942332929419503,
+      "all_three_seeds_retained": true,
+      "epoch": 4,
+      "members": [
+        {
+          "C3_development_concordance": 0.760194144818886,
+          "at_utc": "2026-09-24T19:48:38.046879+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_04.pt",
+            "sha256": "55968e527503d410678246562d1803b5cbab316cf741447740bf0a0986389bcc"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_04_C3_development.npy",
+            "sha256": "7727b2ab59ca16401f7433bb0928bc214ef370e9a7a64a60b4dc081107b8fcdd"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7675298165627195,
+          "at_utc": "2026-09-24T20:18:59.470443+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_04.pt",
+            "sha256": "7ee953ddf9593801121aa500f66eb7a84034e85e7b396cb84230aa9795cd33a2"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_04_C3_development.npy",
+            "sha256": "54a9bdeb43277b3f4f49dc20035dd5cb8af2f86635ed470d693ac486bffc094a"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7617253311321354,
+          "at_utc": "2026-09-24T20:49:32.933119+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_04.pt",
+            "sha256": "fa04eb928dbf340dbb1f50cf3868ef38c3ad1caa8e6c76e6f1ea797d32dd294a"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_04_C3_development.npy",
+            "sha256": "34f6488e46d2052db3512d29f04874646e00569bae9d84ed84dab191c524b78b"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 1,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "cross_attention",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7750689905142502,
+      "all_three_seeds_retained": true,
+      "epoch": 6,
+      "members": [
+        {
+          "C3_development_concordance": 0.7373293898525173,
+          "at_utc": "2026-09-24T19:56:09.712045+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_06.pt",
+            "sha256": "bbd342791e3c7fea7c15a841d1b50a85a101b24f3c5d21eb301e501b5b840a5c"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_06_C3_development.npy",
+            "sha256": "9a01edb3438f33ffff86f9f8d50920c292d7d6235be435c2f5513f3b119ea58f"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7464257028765462,
+          "at_utc": "2026-09-24T20:26:35.879802+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_06.pt",
+            "sha256": "5e3157da25abfdd9eb957e62dbb5d6de46ccf6d6f1461415bf444333f24ffb22"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_06_C3_development.npy",
+            "sha256": "b365d4ede00138a7fcb00f7964050a3df1eb8ba6360336d9d3fa4b019e47a570"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7472133030973721,
+          "at_utc": "2026-09-24T20:57:12.586794+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_06.pt",
+            "sha256": "eee23c9667731ebfb28fe42470bd8a03ea1184a881328b99fc5019cc82d0b083"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_06_C3_development.npy",
+            "sha256": "031b058d4e9f05f0e79db196166e0829208c7bcfa7f85cf35b6ed54681eca61e"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 1,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "cross_attention",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.767914591397423,
+      "all_three_seeds_retained": true,
+      "epoch": 8,
+      "members": [
+        {
+          "C3_development_concordance": 0.714832025835606,
+          "at_utc": "2026-09-24T20:03:42.631911+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_08.pt",
+            "sha256": "bdd59555fbef00525c05d739d14caf0a367be7c594780161b3d0dc06166b3f10"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_08_C3_development.npy",
+            "sha256": "6940b7d4ea1bf5752542f81387d02c698926278367e46b449ebf09bd519bc11f"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.762695287203066,
+          "at_utc": "2026-09-24T20:34:12.834772+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_08.pt",
+            "sha256": "d993e307d606b71d3bf62aa9438c96f6084e60946533df1d38d89b90e6022071"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_08_C3_development.npy",
+            "sha256": "5b1c8dc2b6bd795b56ccb1159088aca2555d0301475a5f20cdee585d94313784"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7103533094996245,
+          "at_utc": "2026-09-24T21:04:53.475438+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_08.pt",
+            "sha256": "d8e0f0aa222d701fba5531aa16eec87736ace8ae099d63d89a7faaa4de1bfe85"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_08_C3_development.npy",
+            "sha256": "f95d52a598ddfe4e46bc7425a0fa60822fa33bda6ab90c19089ddeb7e8ca9ba0"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 1,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "cross_attention",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7795414618163874,
+      "all_three_seeds_retained": true,
+      "epoch": 1,
+      "members": [
+        {
+          "C3_development_concordance": 0.7623005198740662,
+          "at_utc": "2026-09-24T19:39:30.660970+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_01.pt",
+            "sha256": "e0c452adf8371f99fa0f996456608d82f83aa334e4b6a87ae0f0b1239523db07"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_01_C3_development.npy",
+            "sha256": "f867a4932706b5e027531af09809dc3ced0ecee9ddbfc6f0990256f5bc3ce11d"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7535801505584182,
+          "at_utc": "2026-09-24T20:26:23.341190+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_01.pt",
+            "sha256": "1f350b1c070a3b1ffcd6f2172231638d0df639a81ea173c638302dfdb267d474"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_01_C3_development.npy",
+            "sha256": "5243b01684698e9dbeecac41f81b21bbc883ad88e2d7ac1770e7511ee0ece763"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7346998194329114,
+          "at_utc": "2026-09-24T21:13:48.264919+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_01.pt",
+            "sha256": "99a3c2824d2bcd104ac0b961e3aa17e97b59361509951297d070bdcc19a3a339"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_01_C3_development.npy",
+            "sha256": "162c96d8c1dba7b101ee22d7553349fac9fb371e5bf28ee05df79c06fd30d3d5"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 2,
+        "dimension": 192,
+        "local_branch": true,
+        "name": "cross_attention_wide",
+        "tokens": 16
+      }
+    },
+    {
+      "C3_development_concordance": 0.7900637503372638,
+      "all_three_seeds_retained": true,
+      "epoch": 2,
+      "members": [
+        {
+          "C3_development_concordance": 0.7831686774895505,
+          "at_utc": "2026-09-24T19:45:15.607027+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_02.pt",
+            "sha256": "0b3ac1edf95be4810efd2fe9a1923a21819b8f05fea7c3d83b993c317411b44f"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_02_C3_development.npy",
+            "sha256": "6d1c29245f97bcdd4bef1b1f58b02961366677ec1e737de5dec353b3df4de271"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7725609761653084,
+          "at_utc": "2026-09-24T20:32:16.615173+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_02.pt",
+            "sha256": "d63401f881a27aa5bc06b1a38378db790b1a92096818c9f654e2974a20f921af"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_02_C3_development.npy",
+            "sha256": "b66245d1ea43690ac00827bbb09e09551c43e3885d1e349585c94b0f017db0c0"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7014167253942157,
+          "at_utc": "2026-09-24T21:19:41.052285+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_02.pt",
+            "sha256": "e5154e71e2a77aaf412c5a2a0a80d4c2275583c051f4308781280c66e51d10af"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_02_C3_development.npy",
+            "sha256": "8d6d59729771adc0060180870d7f1f68e0c3650be54190b02e454c450fce570e"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 2,
+        "dimension": 192,
+        "local_branch": true,
+        "name": "cross_attention_wide",
+        "tokens": 16
+      }
+    },
+    {
+      "C3_development_concordance": 0.7875139284828032,
+      "all_three_seeds_retained": true,
+      "epoch": 4,
+      "members": [
+        {
+          "C3_development_concordance": 0.7744957335602614,
+          "at_utc": "2026-09-24T19:56:50.672811+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_04.pt",
+            "sha256": "21d726e47667c0f87e3a7ecd19fdcb5e30da63dde3d56d583fc0bcc277fc22cd"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_04_C3_development.npy",
+            "sha256": "5faa2a6ae7097555b329aecb42768b8dd24494e277e08c612deb9f33720947c0"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.757963921419411,
+          "at_utc": "2026-09-24T20:44:14.190638+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_04.pt",
+            "sha256": "6092dd832025f7a514b538b59e8c70fb21e25b6b4d4a98cc4371ded4300a5ac5"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_04_C3_development.npy",
+            "sha256": "0c0cd0dbf22e79529d846f7b23a9056130e50a804c78cfba667d587bb6be723e"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.715275617887469,
+          "at_utc": "2026-09-24T21:31:26.453972+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_04.pt",
+            "sha256": "a70f90f349e04c4ac9f27563d7cf8f7b7c1e35e218c25d3d97f4aa704595c4cc"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_04_C3_development.npy",
+            "sha256": "e4d4cf6179ad096dc1596cad865d9709c9294379eb768f17e14c6a0b5e127a07"
+          },
+          "epoch": 4,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 2,
+        "dimension": 192,
+        "local_branch": true,
+        "name": "cross_attention_wide",
+        "tokens": 16
+      }
+    },
+    {
+      "C3_development_concordance": 0.7888220697633793,
+      "all_three_seeds_retained": true,
+      "epoch": 6,
+      "members": [
+        {
+          "C3_development_concordance": 0.7527711995653238,
+          "at_utc": "2026-09-24T20:08:26.611081+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_06.pt",
+            "sha256": "198acdcbdf1d5052216b2854f1ee56ac5a2dfd027fe2096f5c1c133a91d2ee36"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_06_C3_development.npy",
+            "sha256": "655eb7908d4f997996889eb680890e279e81a530fead66751cc52596fc158222"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7613026918389798,
+          "at_utc": "2026-09-24T20:56:00.888068+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_06.pt",
+            "sha256": "ebaa4ed5ebd583fec358241dfe1aca7c578df7a04059af70ea0ef64164030666"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_06_C3_development.npy",
+            "sha256": "0a8dc772b7ef7e955b6733ad18fe1dda339fc09f224a32e84b8ad1113f288341"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.741193285658021,
+          "at_utc": "2026-09-24T21:43:13.794690+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_06.pt",
+            "sha256": "b85e6454e3dbdd81c17575d51455431c9f716ca82aa772247f5a83a80aebf8ac"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_06_C3_development.npy",
+            "sha256": "228b8b0f4496e6f17da6e8a6e777e6e1efa6dd2e05f40b6bb5d3cffce9ac6511"
+          },
+          "epoch": 6,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 2,
+        "dimension": 192,
+        "local_branch": true,
+        "name": "cross_attention_wide",
+        "tokens": 16
+      }
+    },
+    {
+      "C3_development_concordance": 0.780847446363836,
+      "all_three_seeds_retained": true,
+      "epoch": 8,
+      "members": [
+        {
+          "C3_development_concordance": 0.7623535580636965,
+          "at_utc": "2026-09-24T20:20:31.771694+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_08.pt",
+            "sha256": "931da00c8eeb82d62ba37939dddcb9bb8f68d584522c34eb78bccbbef6092f0a"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_08_C3_development.npy",
+            "sha256": "31a37e95a26f906e723915519dc58a4d38d1d6b256bb2993074f38ecac0bf1a3"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7675356490133228,
+          "at_utc": "2026-09-24T21:07:50.826900+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_08.pt",
+            "sha256": "a34c777d71257cefdb847e1403bfc3f3d70caece03f51a9783121a6c79666742"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_08_C3_development.npy",
+            "sha256": "89a2e055e921b317522956be07c55c895ac267385cc88b8e5136b88c4342f25e"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.6937754479102085,
+          "at_utc": "2026-09-24T21:54:47.480395+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_08.pt",
+            "sha256": "1a914170917fa7c22bead5e979d9ad0d160f1f206da89e6d93da5ebb8d13cc22"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_08_C3_development.npy",
+            "sha256": "543bedd54b1d684a515d310052b44c19cbb3cddbfb377588756e2ce3c4c6a100"
+          },
+          "epoch": 8,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 2,
+        "dimension": 192,
+        "local_branch": true,
+        "name": "cross_attention_wide",
+        "tokens": 16
+      }
+    }
+  ],
+  "at_utc": "2026-09-24T21:55:11.623970+00:00",
+  "best_per_recipe": [
+    {
+      "C3_development_concordance": 0.779089694929102,
+      "all_three_seeds_retained": true,
+      "epoch": 1,
+      "members": [
+        {
+          "C3_development_concordance": 0.7750919785935411,
+          "at_utc": "2026-09-24T19:25:26.183908+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_01.pt",
+            "sha256": "ed6837ccbe45a06101b8d4ceb67f10f7e2c38e0a1d81fb4abd832914fe25924d"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_01_C3_development.npy",
+            "sha256": "0686a22d4071eb8a721bc168a197d02b8bd65089c6bcb50f362ff3c7ad7f1a34"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7515344494550761,
+          "at_utc": "2026-09-24T19:28:18.845526+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_01.pt",
+            "sha256": "44fff2ac95e5ca949304f7214a38a1051a35fd475c8cce0fd70fc559cb0f2300"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_01_C3_development.npy",
+            "sha256": "0bc2bee1578b16ac36130f120ad48298cb3cfad527cde01b711a75715afb64e4"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7772758406242293,
+          "at_utc": "2026-09-24T19:31:12.712841+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_01.pt",
+            "sha256": "46423caebaeb6e7da801430f7472ba693d50042fdce4e3240baf6d02671a5b51"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_01_C3_development.npy",
+            "sha256": "e1427440873bfc53178dcb031ac14dadeafa27f1617c686fe8c61a65925ced19"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": false,
+        "name": "mean_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7958525706462993,
+      "all_three_seeds_retained": true,
+      "epoch": 1,
+      "members": [
+        {
+          "C3_development_concordance": 0.7623680545318967,
+          "at_utc": "2026-09-24T19:36:53.973756+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_01.pt",
+            "sha256": "4a6e6c353012aae97ba2dc2b87447f45e0da2d80f61a433165c0578f60040c93"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260803/epoch_01_C3_development.npy",
+            "sha256": "f08ab73e95594104cc22720c8f2649eed536cf398e8d9c2433a2aa086104dd8e"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7830578761654934,
+          "at_utc": "2026-09-24T20:02:25.458938+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_01.pt",
+            "sha256": "3317af8661ce8b4fe8c9edfdd28e3f56919f751b2f1cbcb8bc79bbb88173d887"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260817/epoch_01_C3_development.npy",
+            "sha256": "cc332f2feb4118e1858131315d1aedde43b8cb1bb53dd86aff4742964bfabf7f"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7641747942669498,
+          "at_utc": "2026-09-24T20:28:16.321722+00:00",
+          "checkpoint": {
+            "bytes": 3270234,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_01.pt",
+            "sha256": "ef5967c6508fa6f8f9db5f43444c92f0e5d3e56dda4765383968b25bc58708b7"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/attention_pool/seed_20260831/epoch_01_C3_development.npy",
+            "sha256": "f2cd38572f8ca6400da9c1540d5940ffe969399ae8eedcc6b16a8dca3d968cb0"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "attention_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "attention_pool",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.8054747997850595,
+      "all_three_seeds_retained": true,
+      "epoch": 2,
+      "members": [
+        {
+          "C3_development_concordance": 0.7842500068497847,
+          "at_utc": "2026-09-24T19:41:08.505421+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_02.pt",
+            "sha256": "5f18c4200250a02c3b52ceef25083baefbb939290597d419eca2aea95f12ec81"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_02_C3_development.npy",
+            "sha256": "cd15641472812cdfc38205298343f42a44cca1b9468445caec2e32b68a651483"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7696834891893884,
+          "at_utc": "2026-09-24T20:11:22.898781+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_02.pt",
+            "sha256": "61cd78aaa19f93f7fb56bff58317229d8c6458bd479778a264658c1f6bc42b56"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_02_C3_development.npy",
+            "sha256": "8947854ecaa59153302ebccbede7ebb242f2454198476fdc7ba5a3f1305c1c87"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7683785165624346,
+          "at_utc": "2026-09-24T20:41:55.418550+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_02.pt",
+            "sha256": "b4c1739933a6489062e3c360a8d38f14231510dc6d52367c70eba948e4ce942f"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_02_C3_development.npy",
+            "sha256": "15d53b72e1792fdcf76ebd539bbe25e5d72460308c8151795d979683fd19b6bc"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 1,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "cross_attention",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.7900637503372638,
+      "all_three_seeds_retained": true,
+      "epoch": 2,
+      "members": [
+        {
+          "C3_development_concordance": 0.7831686774895505,
+          "at_utc": "2026-09-24T19:45:15.607027+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_02.pt",
+            "sha256": "0b3ac1edf95be4810efd2fe9a1923a21819b8f05fea7c3d83b993c317411b44f"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260803/epoch_02_C3_development.npy",
+            "sha256": "6d1c29245f97bcdd4bef1b1f58b02961366677ec1e737de5dec353b3df4de271"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7725609761653084,
+          "at_utc": "2026-09-24T20:32:16.615173+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_02.pt",
+            "sha256": "d63401f881a27aa5bc06b1a38378db790b1a92096818c9f654e2974a20f921af"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260817/epoch_02_C3_development.npy",
+            "sha256": "b66245d1ea43690ac00827bbb09e09551c43e3885d1e349585c94b0f017db0c0"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7014167253942157,
+          "at_utc": "2026-09-24T21:19:41.052285+00:00",
+          "checkpoint": {
+            "bytes": 7866610,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_02.pt",
+            "sha256": "e5154e71e2a77aaf412c5a2a0a80d4c2275583c051f4308781280c66e51d10af"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention_wide/seed_20260831/epoch_02_C3_development.npy",
+            "sha256": "8d6d59729771adc0060180870d7f1f68e0c3650be54190b02e454c450fce570e"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention_wide",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 2,
+        "dimension": 192,
+        "local_branch": true,
+        "name": "cross_attention_wide",
+        "tokens": 16
+      }
+    }
+  ],
+  "primary_candidate": "cross_attention_ensemble",
+  "promotion_reference_C3_development": 0.8044558035378994,
+  "selected": [
+    {
+      "C3_development_concordance": 0.8054747997850595,
+      "all_three_seeds_retained": true,
+      "epoch": 2,
+      "members": [
+        {
+          "C3_development_concordance": 0.7842500068497847,
+          "at_utc": "2026-09-24T19:41:08.505421+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_02.pt",
+            "sha256": "5f18c4200250a02c3b52ceef25083baefbb939290597d419eca2aea95f12ec81"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260803/epoch_02_C3_development.npy",
+            "sha256": "cd15641472812cdfc38205298343f42a44cca1b9468445caec2e32b68a651483"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7696834891893884,
+          "at_utc": "2026-09-24T20:11:22.898781+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_02.pt",
+            "sha256": "61cd78aaa19f93f7fb56bff58317229d8c6458bd479778a264658c1f6bc42b56"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260817/epoch_02_C3_development.npy",
+            "sha256": "8947854ecaa59153302ebccbede7ebb242f2454198476fdc7ba5a3f1305c1c87"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7683785165624346,
+          "at_utc": "2026-09-24T20:41:55.418550+00:00",
+          "checkpoint": {
+            "bytes": 4067750,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_02.pt",
+            "sha256": "b4c1739933a6489062e3c360a8d38f14231510dc6d52367c70eba948e4ce942f"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/cross_attention/seed_20260831/epoch_02_C3_development.npy",
+            "sha256": "15d53b72e1792fdcf76ebd539bbe25e5d72460308c8151795d979683fd19b6bc"
+          },
+          "epoch": 2,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "cross_attention",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 1,
+        "dimension": 128,
+        "local_branch": true,
+        "name": "cross_attention",
+        "tokens": 8
+      }
+    },
+    {
+      "C3_development_concordance": 0.779089694929102,
+      "all_three_seeds_retained": true,
+      "epoch": 1,
+      "members": [
+        {
+          "C3_development_concordance": 0.7750919785935411,
+          "at_utc": "2026-09-24T19:25:26.183908+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_01.pt",
+            "sha256": "ed6837ccbe45a06101b8d4ceb67f10f7e2c38e0a1d81fb4abd832914fe25924d"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260803/epoch_01_C3_development.npy",
+            "sha256": "0686a22d4071eb8a721bc168a197d02b8bd65089c6bcb50f362ff3c7ad7f1a34"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260803,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7515344494550761,
+          "at_utc": "2026-09-24T19:28:18.845526+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_01.pt",
+            "sha256": "44fff2ac95e5ca949304f7214a38a1051a35fd475c8cce0fd70fc559cb0f2300"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260817/epoch_01_C3_development.npy",
+            "sha256": "0bc2bee1578b16ac36130f120ad48298cb3cfad527cde01b711a75715afb64e4"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260817,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        },
+        {
+          "C3_development_concordance": 0.7772758406242293,
+          "at_utc": "2026-09-24T19:31:12.712841+00:00",
+          "checkpoint": {
+            "bytes": 1996229,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_01.pt",
+            "sha256": "46423caebaeb6e7da801430f7472ba693d50042fdce4e3240baf6d02671a5b51"
+          },
+          "development_predictions": {
+            "bytes": 4009188,
+            "path": "/output/training/mean_pool/seed_20260831/epoch_01_C3_development.npy",
+            "sha256": "e1427440873bfc53178dcb031ac14dadeafa27f1617c686fe8c61a65925ced19"
+          },
+          "epoch": 1,
+          "protocol_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527",
+          "recipe": "mean_pool",
+          "seed": 20260831,
+          "test_pairs_read": false,
+          "test_truth_read": false
+        }
+      ],
+      "recipe": {
+        "cross_layers": 0,
+        "dimension": 128,
+        "local_branch": false,
+        "name": "mean_pool",
+        "tokens": 8
+      }
+    }
+  ],
+  "study_id": "partner_conditioned_residue_v1",
+  "test_pairs_read": false,
+  "test_truth_read": false,
+  "training_freeze_sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527"
+}

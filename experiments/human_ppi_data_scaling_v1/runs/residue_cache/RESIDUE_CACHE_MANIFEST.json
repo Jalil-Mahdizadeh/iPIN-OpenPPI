@@ -1,0 +1,31 @@
+{
+  "at_utc": "2026-09-25T09:31:00.469872+00:00",
+  "cache": {
+    "bytes": 25558969544,
+    "path": "/output/residue_cache/residues.h5",
+    "sha256": "9f0136f5cf3d8a5d439ff4592204016e0391cefbbbf3eaba9e2f84319661cf7c"
+  },
+  "elapsed_seconds": 79.37624153599609,
+  "new_embeddings": 583,
+  "old_embeddings_reused": 17000,
+  "parent_cache_sha256": "f05ecf25cc8a34f9b0b8e1bc934f98c5988623e71a0b0de6accd9433bb0f80c7",
+  "precision": "full-context FP32; no truncation; frozen ESM layer30",
+  "qualification": {
+    "absolute_tolerance": 0.0002,
+    "at_utc": "2026-09-25T09:30:20.911822+00:00",
+    "encoder_sha256": "c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566",
+    "fixture_lengths": [
+      273,
+      423,
+      1101
+    ],
+    "padding_max_absolute_error": 3.337860107421875e-06,
+    "passed": true,
+    "precision": "FP32; TF32 disabled; no autocast",
+    "sdpa_vs_native_max_absolute_error": 2.2172927856445312e-05,
+    "test_pairs_or_truth_read": false,
+    "transformers_vs_native_max_absolute_error": 1.6808509826660156e-05
+  },
+  "sequences_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "test_pairs_or_truth_read": false
+}

@@ -1,0 +1,20 @@
+# Publish frozen implementation snapshots and compact training evidence.
+/runs/**
+!/runs/
+!/runs/**/
+!/runs/*.json
+!/runs/DEVELOPMENT.md
+!/runs/code/*.py
+!/runs/prefit_v0/*.json
+!/runs/prefit_v0/code/*.py
+!/runs/data/DATA_MANIFEST.json
+!/runs/scorer_bundle/FROZEN_SCORER_QUALIFICATION.json
+!/runs/scorer_bundle/SCORER_FREEZE.json
+!/runs/scorer_bundle/code/*.py
+!/runs/scorer_bundle/provenance/*.json
+!/runs/training/*/seed_*/*.json
+!/runs/training/*/seed_*/events.jsonl
+/logs/
+/private/
+__pycache__/
+*.pyc

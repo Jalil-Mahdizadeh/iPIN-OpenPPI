@@ -1,0 +1,101 @@
+{
+  "GP_covariance_refitted": false,
+  "GP_fitted_flag_set_before_eval": true,
+  "budget": 31188,
+  "completed_at_utc": "2026-09-26T09:45:19.111367+00:00",
+  "cuda": "13.0",
+  "elapsed_seconds": 11.811761940996803,
+  "epoch": 1,
+  "gpu": "NVIDIA GH200 120GB",
+  "input_freeze_sha256": "3caaa7316a9c77a1891158997646a9242c246a07af2c3cd0e7081bf22eb46ee7",
+  "pairs": 5587,
+  "precision": "FP32; TF32 disabled; no autocast",
+  "qualifications": [
+    {
+      "checkpoint_sha256": "f29ee395d747ff07cffba14d028430fa9c9ab1e7559a71b678b8541a22f7f979",
+      "elapsed_seconds": 2.0751679590030108,
+      "fixture_rows_zero_based": [
+        0,
+        604,
+        1057,
+        1510,
+        1963,
+        2416,
+        2869,
+        3322,
+        3775,
+        4012,
+        4228,
+        4681,
+        5134
+      ],
+      "native_max_absolute_error": 2.726912498474121e-06,
+      "native_tolerance": 1e-05,
+      "pair_order_symmetry_passed": true,
+      "parameters_and_buffers_unchanged": true,
+      "saved_GP_covariance_preserved": true,
+      "seed": 20260803
+    },
+    {
+      "checkpoint_sha256": "7581d4f43354201914ba38924f58bd2e10b4babb9f56ccf6c104276190c97f59",
+      "elapsed_seconds": 1.677250742999604,
+      "fixture_rows_zero_based": [
+        0,
+        604,
+        1057,
+        1510,
+        1963,
+        2416,
+        2869,
+        3322,
+        3775,
+        4012,
+        4228,
+        4681,
+        5134
+      ],
+      "native_max_absolute_error": 3.0994415283203125e-06,
+      "native_tolerance": 1e-05,
+      "pair_order_symmetry_passed": true,
+      "parameters_and_buffers_unchanged": true,
+      "saved_GP_covariance_preserved": true,
+      "seed": 20260817
+    },
+    {
+      "checkpoint_sha256": "707f56e0007e0af10d6949924d4c7afc096b9d87cf2375bb050dd12b9d11e66a",
+      "elapsed_seconds": 1.6761888850014657,
+      "fixture_rows_zero_based": [
+        0,
+        604,
+        1057,
+        1510,
+        1963,
+        2416,
+        2869,
+        3322,
+        3775,
+        4012,
+        4228,
+        4681,
+        5134
+      ],
+      "native_max_absolute_error": 2.1457672119140625e-06,
+      "native_tolerance": 1e-05,
+      "pair_order_symmetry_passed": true,
+      "parameters_and_buffers_unchanged": true,
+      "saved_GP_covariance_preserved": true,
+      "seed": 20260831
+    }
+  ],
+  "recomputed_endpoint_features_per_seed": 4012,
+  "reused_verified_ESM_residues": true,
+  "score_sha256": "38b3811bcc8642672b4ab3a9a0775039ba48a440e68a705501e4b792021b5604",
+  "seeds": [
+    20260803,
+    20260817,
+    20260831
+  ],
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "training_or_reselection": false,
+  "unique_sequences": 4012
+}

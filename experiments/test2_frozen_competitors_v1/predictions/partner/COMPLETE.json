@@ -1,0 +1,45 @@
+{
+  "at_utc": "2026-09-26T10:32:39.768134+00:00",
+  "bundle_sha256": "6e3bb5965ec511bbfdb5b73ed73c7b9dab84c7a7abd322990f333aa6b5a50b86",
+  "checks": {
+    "all_three_seeds_retained": true,
+    "legacy_replay_max_errors": {
+      "cross_attention_ensemble": 2.2252400704303454e-06,
+      "cross_attention_seed20260803": 2.86102294921875e-06,
+      "cross_attention_seed20260817": 3.814697265625e-06,
+      "cross_attention_seed20260831": 3.814697265625e-06,
+      "mean_pool_ensemble": 1.9371509552001953e-06,
+      "mean_pool_seed20260803": 3.814697265625e-06,
+      "mean_pool_seed20260817": 2.9206275939941406e-06,
+      "mean_pool_seed20260831": 2.86102294921875e-06
+    },
+    "normalizer_refitted": false,
+    "selected_recipes_unchanged": [
+      "cross_attention_ensemble",
+      "mean_pool_ensemble"
+    ]
+  },
+  "code_sha256": "5380b0700088bee05b135d2359ef99f0b2c355ed7dc304d903f39abe5c51d93d",
+  "elapsed_seconds": 27.114377195990528,
+  "files": [
+    {
+      "bytes": 16043542,
+      "path": "added_C1.npz",
+      "sha256": "4222296cc36302fbfcbc077723af30434804abff5c969f226cc38cdb213c2b66"
+    },
+    {
+      "bytes": 16282262,
+      "path": "added_C2.npz",
+      "sha256": "b3526e458ea354fc913b8c4787ad8385190a1ce2a6399efad7b6587d18e347c4"
+    },
+    {
+      "bytes": 16062038,
+      "path": "added_C3.npz",
+      "sha256": "8516a8b8a620af0ad8b6154cac29f1d3d0e4474e8bb426da1f7ad54b6b6aff89"
+    }
+  ],
+  "method": "partner",
+  "sequence_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "test_truth_read": false,
+  "training_performed": false
+}

@@ -1,0 +1,4 @@
+# Preserve bytes referenced by scientific freeze records on every platform.
+* -text
+*.csv whitespace=cr-at-eol
+*.svg -whitespace linguist-generated=true

@@ -1,0 +1,58 @@
+{
+  "at_utc": "2026-09-24T19:04:36.464451+00:00",
+  "files": [
+    {
+      "bytes": 65329143,
+      "path": "development_00.npz",
+      "sha256": "8a1f61a429a2b79c9a41dd1e7f6d02ece58bf93adc9a8c9b07233f930a5422e5"
+    },
+    {
+      "bytes": 66373789,
+      "path": "development_01.npz",
+      "sha256": "65d6ce7e4c106e3f14949f70b5f5852a471438573824db3f99f0713c40bee3c0"
+    },
+    {
+      "bytes": 65669441,
+      "path": "development_02.npz",
+      "sha256": "3aa68097a097d0022dba3593cae292cfda8f477ea8d4cd3342fb29eda6992393"
+    },
+    {
+      "bytes": 1190003,
+      "path": "endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 43520128,
+      "path": "global_means.npy",
+      "sha256": "8766394428207ca44940a4d61281c6cd39c01d01a9ad01a0bb991f0765111a6c"
+    },
+    {
+      "bytes": 43520128,
+      "path": "global_standardized.npy",
+      "sha256": "a047147544cb2628b9473f97499d907dd4db35e60a56e34fdf96f3d843f43a75"
+    },
+    {
+      "bytes": 10740,
+      "path": "normalizer.npz",
+      "sha256": "fdf8ef25366779de352f55fd8b216508f9c309dc49617bfd632aea933bf92ade"
+    },
+    {
+      "bytes": 12312031,
+      "path": "sequences.json",
+      "sha256": "bc7a91661ea05cbfdcf3551b9a4d18c149ac077549ebbcf0be7e7ef5d94ace77"
+    },
+    {
+      "bytes": 48270006,
+      "path": "training.npz",
+      "sha256": "43ae252277820ffe527dad1ed4839d5673cff279b6c8c943ff4b5350a9283ca6"
+    }
+  ],
+  "proteins": 17000,
+  "residue_cache_sha256_verified": "f05ecf25cc8a34f9b0b8e1bc934f98c5988623e71a0b0de6accd9433bb0f80c7",
+  "residue_manifest_sha256": "f8b7ea5d6bcea150aadbc6ba94bc89261f8b2a7dc0d8d901cabb64bccbfc66db",
+  "residues": 9237157,
+  "source_manifest_sha256": "48d9ae181d0cb4d4fbcaf3d5078febeb98bcf6a311f59982295b4c6ae8847dff",
+  "standardizer_fitted_to": "11900 TRAIN sequence endpoints only",
+  "test_pairs_read": false,
+  "test_truth_read": false
+}

@@ -1,0 +1,210 @@
+{
+  "optimization_and_search": {
+    "status": "frozen_not_executed",
+    "seeds": [
+      20260803,
+      20260817,
+      20260831
+    ],
+    "seed_controls": {
+      "pythonhashseed": "run_seed",
+      "python_random": "run_seed",
+      "numpy_generator": "PCG64DXSM_run_seed",
+      "torch_cpu": "run_seed",
+      "torch_cuda_all": "run_seed",
+      "torch_deterministic_algorithms": true,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "allow_tf32": false,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "batch": {
+      "pairwise_comparisons": 4096,
+      "drop_last": false,
+      "gradient_accumulation_steps": 1
+    },
+    "optimizer": {
+      "name": "AdamW",
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "epsilon": 1e-08,
+      "gradient_global_norm_clip": 1.0
+    },
+    "scheduler": {
+      "name": "linear_warmup_then_cosine_decay",
+      "total_training_passes": 5,
+      "steps_per_pass": 489,
+      "total_steps": 2445,
+      "warmup_steps": 123,
+      "final_learning_rate_fraction": 0.1
+    },
+    "linear_recipes": [
+      {
+        "recipe_id": "linear_lr3e-4",
+        "learning_rate": 0.0003,
+        "weight_decay": 0.0001,
+        "dropout": 0.0
+      },
+      {
+        "recipe_id": "linear_lr1e-3",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.0
+      }
+    ],
+    "nonlinear_recipes": [
+      {
+        "recipe_id": "nonlinear_conservative",
+        "learning_rate": 0.0003,
+        "weight_decay": 0.0001,
+        "dropout": 0.1
+      },
+      {
+        "recipe_id": "nonlinear_default",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.1
+      },
+      {
+        "recipe_id": "nonlinear_no_dropout",
+        "learning_rate": 0.001,
+        "weight_decay": 1e-05,
+        "dropout": 0.0
+      }
+    ],
+    "search_method": "complete_enumeration_of_prespecified_recipes_no_adaptive_search",
+    "trainable_model_families": 4,
+    "seed_runs": {
+      "lightweight_esm2_150m_linear": 6,
+      "esm2_650m_linear_ablation": 6,
+      "esm2_650m_nonlinear_no_gate_ablation": 9,
+      "esm2_650m_partner_gated_primary": 9,
+      "total": 30
+    },
+    "total_pairwise_comparisons_ceiling": 300000000,
+    "adaptive_search_bayesian_optimization_or_optuna": "prohibited",
+    "recipe_or_seed_addition_after_development_release": "prohibited"
+  },
+  "embedding_strategy": {
+    "status": "frozen_not_executed",
+    "endpoint_population": "all_17000_frozen_reference_sequences_label_blind",
+    "backbone_parameters_trainable": false,
+    "model_mode": "eval",
+    "autograd": "disabled",
+    "representation": "final_hidden_state_residue_mean",
+    "special_tokens_in_pool": false,
+    "input_sequence": "exact_uppercase_frozen_reference_sequence_no_truncation_or_replacement",
+    "tokenization": "tokenizer_from_same_frozen_repository_revision",
+    "forward_dtype": "float32",
+    "accumulation_dtype": "float32",
+    "output_dtype": "float32",
+    "windowing": {
+      "maximum_residues": 1022,
+      "overlap_residues": 128,
+      "stride_residues": 894,
+      "start_rule": "ascending_0_plus_stride_then_append_length_minus_1022_if_not_already_present",
+      "short_sequence_rule": "single_full_length_window",
+      "residue_overlap_rule": "arithmetic_mean_of_all_window_representations_covering_each_residue",
+      "sequence_pool_rule": "arithmetic_mean_of_the_overlap_averaged_representations_of_all_residues",
+      "empty_sequence": "fail"
+    },
+    "deterministic_batching": {
+      "order": "sequence_length_ascending_then_reference_sequence_sha256_ascending",
+      "maximum_residue_tokens_per_batch": 4096,
+      "oversize_window_rule": "one_window_batch"
+    },
+    "normalization_for_trainable_heads": {
+      "population": "11900_training_partition_endpoint_embeddings_only",
+      "formula": "per_dimension_z_score",
+      "standard_deviation_floor": 1e-06,
+      "heldout_endpoint_statistics_used": false
+    },
+    "cache_root": "artifacts/embeddings/model_governance_and_baseline_training_protocol_v1",
+    "cache_key": "sha256_of_candidate_revision_checkpoint_hash_embedding_strategy_and_sequence_sha256",
+    "required_manifest_fields": [
+      "sequence_sha256",
+      "sequence_length",
+      "candidate_id",
+      "repository_revision",
+      "checkpoint_sha256",
+      "tokenizer_file_hashes",
+      "strategy_id",
+      "vector_dimension",
+      "vector_dtype",
+      "vector_sha256",
+      "container_sha256",
+      "code_commit"
+    ],
+    "all_17000_embeddings_complete_unique_finite_before_training": true,
+    "duplicate_extraction_check_fraction": 0.01,
+    "duplicate_selection": "bottom_sha256_by_candidate_id_and_sequence_sha256",
+    "duplicate_max_absolute_difference": 1e-06
+  },
+  "plm_provenance": {
+    "candidate_count": 2,
+    "family": "ESM-2",
+    "provider": "Meta_AI_at_Meta",
+    "architecture_source": "https://github.com/facebookresearch/esm",
+    "architecture_source_status": "archived_read_only_since_2024-08-01",
+    "architecture_license": "MIT",
+    "architecture_license_url": "https://github.com/facebookresearch/esm/blob/main/LICENSE",
+    "paper": "https://www.science.org/doi/10.1126/science.ade2574",
+    "documented_pretraining_objective": "masked_language_modeling",
+    "documented_corpus": "UR50_D_dynamic_member_sampling_derived_from_UniRef50",
+    "documented_uniref_release": "2021_04",
+    "corpus_evidence_url": "https://github.com/facebookresearch/esm/discussions/667",
+    "exact_per_step_sequence_draw_log_available": false,
+    "exact_endpoint_membership_audit_completed": false,
+    "ppi_pair_supervision_documented_in_pretraining": false,
+    "exposure_disposition": "exact_or_homologous_exposure_of_any_benchmark_endpoint_is_unknown_and_possible",
+    "shared_claim_limits": {
+      "sequence_only_pretraining_may_be_stated": true,
+      "exact_benchmark_endpoint_unseen": "prohibited",
+      "homolog_or_family_unseen": "prohibited",
+      "plm_unseen_protein": "prohibited",
+      "c3_implies_plm_unseen": "prohibited",
+      "temporal_cleanliness_from_plm_corpus": "prohibited",
+      "no_pair_label_pretraining": "not_established_beyond_provider_documentation",
+      "150m_vs_650m_difference_is_exposure_effect": "prohibited",
+      "pretraining_exposure_caused_observed_gain_or_loss": "prohibited"
+    },
+    "candidates": {
+      "esm2_150m": {
+        "role": "mandatory_lightweight_frozen_plm_pair_baseline",
+        "repository": "facebook/esm2_t30_150M_UR50D",
+        "repository_url": "https://huggingface.co/facebook/esm2_t30_150M_UR50D",
+        "repository_revision": "a695f6045e2e32885fa60af20c13cb35398ce30c",
+        "checkpoint_file": "model.safetensors",
+        "checkpoint_sha256": "c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566",
+        "checkpoint_bytes": 595257706,
+        "pickle_weights_permitted": false,
+        "trust_remote_code": false,
+        "license": "MIT",
+        "layers": 30,
+        "parameters": 150000000,
+        "hidden_size": 640,
+        "attention_heads": 20,
+        "maximum_residues_per_window": 1022,
+        "final_representation_layer": 30
+      },
+      "esm2_650m": {
+        "role": "primary_frozen_sequence_encoder_candidate",
+        "repository": "facebook/esm2_t33_650M_UR50D",
+        "repository_url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D",
+        "repository_revision": "08e4846e537177426273712802403f7ba8261b6c",
+        "checkpoint_file": "model.safetensors",
+        "checkpoint_sha256": "a08adabb949fa67ad3c14b509d04fd60368b35007b0095e3358f81200c4f4db0",
+        "checkpoint_bytes": 2609506392,
+        "pickle_weights_permitted": false,
+        "trust_remote_code": false,
+        "license": "MIT",
+        "layers": 33,
+        "parameters": 650000000,
+        "hidden_size": 1280,
+        "attention_heads": 20,
+        "maximum_residues_per_window": 1022,
+        "final_representation_layer": 33
+      }
+    }
+  }
+}

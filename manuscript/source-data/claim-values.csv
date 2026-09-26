@@ -1,0 +1,4 @@
+panel,analysis,model,model_id,condition,dataset,metric,estimate,CI_low,CI_high,source_file,source_key
+,followup,iPIN optimized,esm2_150m__residual_wide__epoch04_ensemble3,C1_test,Protected follow-up,optimized_minus_affine,0.0725441798037074,0.0630927454644535,0.0818693214254949,artifacts/results/model_optimization_followup_v1/FOLLOWUP_TEST_RESULTS.json,cells/C1_test/ensemble_minus_baseline
+,followup,iPIN optimized,esm2_150m__residual_wide__epoch04_ensemble3,C2_test,Protected follow-up,optimized_minus_affine,0.0460021460840722,0.0315610865883104,0.0615592688291959,artifacts/results/model_optimization_followup_v1/FOLLOWUP_TEST_RESULTS.json,cells/C2_test/ensemble_minus_baseline
+,followup,iPIN optimized,esm2_150m__residual_wide__epoch04_ensemble3,C3_test,Protected follow-up,optimized_minus_affine,0.0186991147542781,-0.00135834845147574,0.0499997982553397,artifacts/results/model_optimization_followup_v1/FOLLOWUP_TEST_RESULTS.json,cells/C3_test/ensemble_minus_baseline

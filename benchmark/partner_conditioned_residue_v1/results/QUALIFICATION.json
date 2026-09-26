@@ -1,0 +1,152 @@
+{
+  "QUALIFICATION.json": {
+    "PU_gradient_oracle": true,
+    "TRAIN_only_normalization": true,
+    "at_utc": "2026-09-24T19:08:16.530421+00:00",
+    "metric": {
+      "covers_ties_unequal_weights_same_components": true,
+      "draws": {
+        "multiplicities_sha256": "93da2554abdfe29d0ef49d1af89f0cd1491971dc7512a4c77cb7c424874ae79d",
+        "participating_components": 9,
+        "replicates": 41,
+        "seed": 1241427528595832755
+      },
+      "maximum_absolute_error": 7.771561172376096e-16,
+      "passed": true,
+      "replicates": 41,
+      "rows": 71,
+      "scorers": 4,
+      "tolerance": 1e-12
+    },
+    "models": [
+      {
+        "batching_error": 3.5762786865234375e-07,
+        "padding_error": 0.0,
+        "partner_conditioning_effect": null,
+        "recipe": "mean_pool",
+        "symmetry_error": 0.0
+      },
+      {
+        "batching_error": 1.564621925354004e-07,
+        "padding_error": 0.0,
+        "partner_conditioning_effect": null,
+        "recipe": "attention_pool",
+        "symmetry_error": 0.0
+      },
+      {
+        "batching_error": 1.043081283569336e-07,
+        "padding_error": 0.0,
+        "partner_conditioning_effect": 0.6408875584602356,
+        "recipe": "cross_attention",
+        "symmetry_error": 0.0
+      },
+      {
+        "batching_error": 1.1175870895385742e-07,
+        "padding_error": 0.0,
+        "partner_conditioning_effect": 1.133927583694458,
+        "recipe": "cross_attention_wide",
+        "symmetry_error": 0.0
+      }
+    ],
+    "passed": true,
+    "test_pairs_read": false,
+    "test_truth_read": false
+  },
+  "REAL_QUALIFICATION.json": {
+    "at_utc": "2026-09-24T19:11:05.984113+00:00",
+    "cuda": "13.0",
+    "device": "NVIDIA GH200 120GB",
+    "fixtures": "TRAIN endpoints/pairs only",
+    "passed": true,
+    "pilot_fits_discarded": true,
+    "recipes": [
+      {
+        "cached_score_error": 0.0,
+        "estimated_training_seconds_per_epoch_excluding_dev": 20.722335522266803,
+        "final_pilot_gradient_norm": 1.7537940740585327,
+        "final_pilot_loss": 0.3183717141641271,
+        "fixture_lengths": [
+          25,
+          419,
+          5795
+        ],
+        "full_length_token_error": 0.0,
+        "head_seconds_per_4096_pairs": 0.00274027104023844,
+        "parameters": 498053,
+        "recipe": "mean_pool",
+        "resume_maximum_absolute_error": 0.0,
+        "seconds_per_training_batch": 0.002652289200341329
+      },
+      {
+        "cached_score_error": 0.0,
+        "estimated_training_seconds_per_epoch_excluding_dev": 133.01459132048186,
+        "final_pilot_gradient_norm": 1.685375452041626,
+        "final_pilot_loss": 0.31072150136008114,
+        "fixture_lengths": [
+          25,
+          419,
+          5795
+        ],
+        "full_length_token_error": 0.0,
+        "head_seconds_per_4096_pairs": 0.004563511989545077,
+        "parameters": 814728,
+        "recipe": "attention_pool",
+        "resume_maximum_absolute_error": 3.725290298461914e-09,
+        "seconds_per_training_batch": 0.01702477810322307
+      },
+      {
+        "cached_score_error": 0.0,
+        "estimated_training_seconds_per_epoch_excluding_dev": 164.7287037123402,
+        "final_pilot_gradient_norm": 1.7216529846191406,
+        "final_pilot_loss": 0.3127405194647177,
+        "fixture_lengths": [
+          25,
+          419,
+          5795
+        ],
+        "full_length_token_error": 0.0,
+        "head_seconds_per_4096_pairs": 0.011009049019776285,
+        "parameters": 1013000,
+        "recipe": "cross_attention",
+        "resume_maximum_absolute_error": 7.450580596923828e-09,
+        "seconds_per_training_batch": 0.021083924703998492
+      },
+      {
+        "cached_score_error": 0.0,
+        "estimated_training_seconds_per_epoch_excluding_dev": 254.47583461657047,
+        "final_pilot_gradient_norm": 1.6906331777572632,
+        "final_pilot_loss": 0.30577811435187785,
+        "fixture_lengths": [
+          25,
+          419,
+          5795
+        ],
+        "full_length_token_error": 0.0,
+        "head_seconds_per_4096_pairs": 0.016656914027407765,
+        "parameters": 1961608,
+        "recipe": "cross_attention_wide",
+        "resume_maximum_absolute_error": 7.450580596923828e-09,
+        "seconds_per_training_batch": 0.03257082229829393
+      }
+    ],
+    "test_pairs_read": false,
+    "test_truth_read": false,
+    "torch": "2.8.0a0+34c6371d24.nv25.08"
+  },
+  "PIPELINE_QUALIFICATION.json": {
+    "at_utc": "2026-09-24T19:23:40.134220+00:00",
+    "balanced_P_and_complete_U_training_orders": true,
+    "duplicate_missing_nonfinite_reference_rejected": true,
+    "dynamic_multimodel_ensembles": true,
+    "frozen_roundtrip_max_error": 0.0,
+    "frozen_swap_error": 0.0,
+    "passed": true,
+    "recipe_lock_exclusion_and_release": true,
+    "reference_token_permutation_and_TUnA_column": true,
+    "stratified_sampling_and_short_sequence_padding": true,
+    "strict_development_promotion_and_no_promotion": true,
+    "tampered_artifact_and_path_traversal_rejected": true,
+    "test_pairs_read": false,
+    "test_truth_read": false
+  }
+}

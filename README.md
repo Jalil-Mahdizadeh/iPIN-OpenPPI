@@ -18,9 +18,12 @@ non-human transfer evaluations. Start with these records:
 |---|---|
 | Primary model and historical references | [Four-model registry and cards](docs/models/FROZEN_PAIR_MODELS_v3.md) |
 | Latest human comparison | [15-predictor test2 comparison including X-PAIR](docs/reports/m1/M1_XPAIR_Test2_Comparison_v1.md) |
+| Completed research studies | [All five experiments: code, reports and results](experiments/README.md) |
 | Published-method comparisons | [Current and historical benchmark results](benchmark/README.md) |
 | Protein-screening examples | [Selected 31k on the fixed panel](artifacts/models/frozen_pair_models_v3/evidence/twelve_targets/REPORT.md), [panel index](example/INDEX.md) |
-| Non-human transfer | [Six-organism frozen-model evaluation](benchmark/nonhuman_transfer_v1/REPORT.md) |
+| Non-human transfer | [Default 31k comparison](experiments/default_ipin_transfer_comparison_v1/REPORT.md), [historical six-organism evaluation](benchmark/nonhuman_transfer_v1/REPORT.md) |
+| Manuscript materials | [Historical draft, figures, tables and portable source data](manuscript/README.md) |
+| Git deposit and local assets | [Publication inventory, exclusions and checksums](DEPOSIT.md) |
 | Scientific reports and diagnostics | [Report index](docs/reports/README.md) |
 | Core model freeze and decisions | [Governance index](governance/README.md) |
 | Implementation and tests | [Source map](src/README.md), [entry points](scripts/README.md), [test policy](tests/README.md) |
@@ -167,7 +170,8 @@ work is documented in its own directories.
 | `tests/` | Synthetic unit, safety, validation, and model tests |
 | `benchmark/` | Published-method implementations, execution records, aggregate comparisons, and dedicated containers |
 | `example/` | Target panels, retrieval metrics and preserved historical applications |
-| `experiments/` | Local scaling, selected-31k panel and test2 studies; promotion aggregates are preserved in the v3 release |
+| `experiments/` | Published scaling, test2, selected-31k panel, transfer and X-PAIR studies; large/private execution assets stay local |
+| `manuscript/` | Historical affine/optimized-model draft, figures, tables, aggregate snapshots and regeneration scripts |
 | `docs/` | Blueprints, scientific protocols, reports, and model cards |
 | `governance/` | Decisions, phase-specific status records, gates, risks, and licenses |
 | `configs/`, `schemas/` | Versioned configuration and data contracts |

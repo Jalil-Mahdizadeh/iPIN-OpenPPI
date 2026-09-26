@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-09-26T10:53:09.703905+00:00",
+  "reason": "Status reads explicit active job registry so that a replacement PLM rank after cluster prolog failure and its new comparison dependency are visible. All predictor and metric code remain unchanged.",
+  "changes": [
+    {
+      "path": "scripts/status.py",
+      "previous_sha256": "1b4d49a3c2eced37b0a9edaaf96cc5bfcb92cc2bc0a66fa13509baebbf5031c3",
+      "sha256": "13e80c03db0757415d82535bbfedcb4c303f98d622863d0d7282c58cccd5476a"
+    }
+  ],
+  "retry_metadata": "PLM_JOB_RETRY_01.json",
+  "comparison_metadata": "EVALUATION_JOB_RETRY_01.json"
+}

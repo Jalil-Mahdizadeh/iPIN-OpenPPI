@@ -1,0 +1,13 @@
+{
+  "job_id": "3032004",
+  "replaces_failed_task": "3031955_15",
+  "reason": "SLURM NODE_FAIL / prolog failure on n577 before scoring process started",
+  "array_tasks": [
+    15
+  ],
+  "excluded_failed_node": "n577",
+  "unchanged_scorer_rank": 15,
+  "unchanged_worker_count": 16,
+  "walltime": "12:00:00",
+  "at_utc": "2026-09-26T10:52:48.997916+00:00"
+}

@@ -1,0 +1,51 @@
+{
+  "at_utc": "2026-09-26T11:26:15.691801+00:00",
+  "bundle_sha256": "6b9acdd2c66b0c001e6ac1f60abd15274cec6856a6de09257a22c5febd47c734",
+  "code_sha256": "2e843918799876bda690cca423af1e5f8b8344037efd35e0fba6529da2ecef9a",
+  "elapsed_seconds": 2211.2504809610036,
+  "files": [
+    {
+      "bytes": 123008,
+      "cell": "C1",
+      "left": 31232,
+      "path": "C1.npy",
+      "reversal_max_absolute_error": 3.7834979593753815e-10,
+      "right": 46592,
+      "scorers": [
+        "plm_interact_original_650m_humanv11"
+      ],
+      "sha256": "3a856e76448e8ff31fbd29c33b3a123e119c24236409360031f1f87c165fc913"
+    },
+    {
+      "bytes": 127104,
+      "cell": "C2",
+      "left": 31744,
+      "path": "C2.npy",
+      "reversal_max_absolute_error": 4.220055416226387e-10,
+      "right": 47616,
+      "scorers": [
+        "plm_interact_original_650m_humanv11"
+      ],
+      "sha256": "0e62840440ff692d66e6e1731295bb8f27a9ea148263766f5901f91b0e93c10b"
+    },
+    {
+      "bytes": 127104,
+      "cell": "C3",
+      "left": 31232,
+      "path": "C3.npy",
+      "reversal_max_absolute_error": 1.4551915228366852e-10,
+      "right": 47104,
+      "scorers": [
+        "plm_interact_original_650m_humanv11"
+      ],
+      "sha256": "022d3bb3794638a78dbde27d0d0a26ef501f8487f4cb0287e3be597299c3b21d"
+    }
+  ],
+  "learned_parameters_unchanged": true,
+  "method": "plm",
+  "rank": 2,
+  "sequence_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "test_truth_read": false,
+  "training_performed": false,
+  "workers": 16
+}

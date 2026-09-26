@@ -1,0 +1,225 @@
+{
+  "bootstrap": {
+    "multiplicities_sha256": "9d78b2611dcdcc4d0c7babdba4b63134f6040e89665b23534ebd6968457468ff",
+    "participating_components": 2704,
+    "replicates": 2000,
+    "seed": 5701678270088497330
+  },
+  "cohort_counts": [
+    {
+      "P": 3613,
+      "U": 907793,
+      "cohort": 0
+    },
+    {
+      "P": 645,
+      "U": 250000,
+      "cohort": 1
+    }
+  ],
+  "excluded_candidate_rows": 91781,
+  "models": {
+    "cross_attention_ensemble": {
+      "PU_concordance": 0.8181119739475924,
+      "ci95": [
+        0.7903897488569342,
+        0.8466925287883695
+      ],
+      "finite_replicates": 2000
+    },
+    "dscript_original": {
+      "PU_concordance": 0.5403284411798273,
+      "ci95": [
+        0.5003002315536154,
+        0.5797526690135253
+      ],
+      "finite_replicates": 2000
+    },
+    "dscript_retrained": {
+      "PU_concordance": 0.5175974477286268,
+      "ci95": [
+        0.4778454273667236,
+        0.5441872601314021
+      ],
+      "finite_replicates": 2000
+    },
+    "ipin_baseline": {
+      "PU_concordance": 0.7455856646019339,
+      "ci95": [
+        0.7195191416041913,
+        0.7762352194852997
+      ],
+      "finite_replicates": 2000
+    },
+    "ipin_optimized": {
+      "PU_concordance": 0.7953029181782907,
+      "ci95": [
+        0.7682432849112499,
+        0.8257265412487673
+      ],
+      "finite_replicates": 2000
+    },
+    "mean_pool_ensemble": {
+      "PU_concordance": 0.800445580239521,
+      "ci95": [
+        0.7727533245509174,
+        0.8294416749720671
+      ],
+      "finite_replicates": 2000
+    },
+    "plm_interact_original_650m_humanv11": {
+      "PU_concordance": 0.6863395345903838,
+      "ci95": [
+        0.6541906043055183,
+        0.7135696475820602
+      ],
+      "finite_replicates": 2000
+    },
+    "rapppid_original_released_mult": {
+      "PU_concordance": 0.6598120605611013,
+      "ci95": [
+        0.6291153746732382,
+        0.6828432115944499
+      ],
+      "finite_replicates": 2000
+    },
+    "rapppid_recovery_mean_logit": {
+      "PU_concordance": 0.7211628149287705,
+      "ci95": [
+        0.686314955100821,
+        0.7462428926781965
+      ],
+      "finite_replicates": 2000
+    },
+    "selected_31k": {
+      "PU_concordance": 0.887219279335052,
+      "ci95": [
+        0.8709329690374841,
+        0.9021117144973826
+      ],
+      "finite_replicates": 2000
+    },
+    "sprint_native_train_positive_graph": {
+      "PU_concordance": 0.737838673266689,
+      "ci95": [
+        0.7052667090524036,
+        0.7705387379225881
+      ],
+      "finite_replicates": 2000
+    },
+    "tuna_original": {
+      "PU_concordance": 0.6823339995441328,
+      "ci95": [
+        0.6559957037414367,
+        0.7151608585048441
+      ],
+      "finite_replicates": 2000
+    },
+    "tuna_retrained_ensemble": {
+      "PU_concordance": 0.8230930250501725,
+      "ci95": [
+        0.7973018472621275,
+        0.8503058445850469
+      ],
+      "finite_replicates": 2000
+    }
+  },
+  "paired_differences": {
+    "cross_attention_ensemble": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.04424475806538438,
+        0.09318742589938121
+      ],
+      "selected_31k_minus_reference": 0.06910730538745957
+    },
+    "dscript_original": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.3101585179364845,
+        0.38826670990323375
+      ],
+      "selected_31k_minus_reference": 0.3468908381552247
+    },
+    "dscript_retrained": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.34112371576114103,
+        0.41304898800812384
+      ],
+      "selected_31k_minus_reference": 0.36962183160642514
+    },
+    "ipin_baseline": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.11705262562346849,
+        0.16240227338651045
+      ],
+      "selected_31k_minus_reference": 0.14163361473311809
+    },
+    "ipin_optimized": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.06848079978062438,
+        0.11282041374198505
+      ],
+      "selected_31k_minus_reference": 0.09191636115676127
+    },
+    "mean_pool_ensemble": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.06257155248420268,
+        0.10895450639454052
+      ],
+      "selected_31k_minus_reference": 0.08677369909553101
+    },
+    "plm_interact_original_650m_humanv11": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.17386512549801744,
+        0.23402300239762594
+      ],
+      "selected_31k_minus_reference": 0.2008797447446682
+    },
+    "rapppid_original_released_mult": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.20380411599698595,
+        0.2556814713555968
+      ],
+      "selected_31k_minus_reference": 0.22740721877395065
+    },
+    "rapppid_recovery_mean_logit": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.14252715803121055,
+        0.19986764960471443
+      ],
+      "selected_31k_minus_reference": 0.1660564644062814
+    },
+    "sprint_native_train_positive_graph": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.12185317569348983,
+        0.1785723419417022
+      ],
+      "selected_31k_minus_reference": 0.149380606068363
+    },
+    "tuna_original": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.17386096545283258,
+        0.22950064349341004
+      ],
+      "selected_31k_minus_reference": 0.2048852797909192
+    },
+    "tuna_retrained_ensemble": {
+      "finite_replicates": 2000,
+      "paired_ci95": [
+        0.04299904314871771,
+        0.08545796497073381
+      ],
+      "selected_31k_minus_reference": 0.0641262542848795
+    }
+  }
+}

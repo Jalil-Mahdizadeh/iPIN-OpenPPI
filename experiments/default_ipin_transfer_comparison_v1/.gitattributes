@@ -1,0 +1,8 @@
+* -text
+*.csv whitespace=cr-at-eol
+*.csv.gz binary
+# Preserve the frozen files' original final blank lines.
+PROTOCOL.md whitespace=-blank-at-eof
+README.md whitespace=-blank-at-eof
+run.sh whitespace=-blank-at-eof
+scripts/*.py whitespace=-blank-at-eof

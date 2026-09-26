@@ -1,0 +1,559 @@
+{
+  "at_utc": "2026-09-25T09:19:50.579960+00:00",
+  "binary_two_hybrid_methods": [
+    "MI:0018",
+    "MI:0397",
+    "MI:0398",
+    "MI:0399",
+    "MI:1112",
+    "MI:1356"
+  ],
+  "deferred_or_ineligible": {
+    "beyond_qualified_full_context_length": 4,
+    "pair_with_ineligible_new_endpoint": 111
+  },
+  "exact_construct_sequences_claimed": false,
+  "excluded": [
+    "nonhuman participants",
+    "complex expansion",
+    "ambiguous/isoform projection",
+    "explicit mutant or modified evidence",
+    "holdup/PMID36115835 pending positive-call audit"
+  ],
+  "huri_view_rows": 77686,
+  "inputs": [
+    {
+      "bytes": 10272584,
+      "path": "data/staging/primary_sources_v1/intact_imex/evidence_records/part-00000.parquet",
+      "sha256": "20a4764462beaa75bed0328dc2eb9883442b32be61ccb348123c3f0fe533da10"
+    },
+    {
+      "bytes": 9546093,
+      "path": "data/staging/primary_sources_v1/intact_imex/evidence_records/part-00001.parquet",
+      "sha256": "e28f814ce90765b2cdeb4dfb196bad7b15644889c0c4f3965c899a59dffc53e2"
+    },
+    {
+      "bytes": 9749803,
+      "path": "data/staging/primary_sources_v1/intact_imex/evidence_records/part-00002.parquet",
+      "sha256": "2a435b1a62b87ea2e3dcc83901ee22056f9348116c58ae6fc04f9fa9e92f502e"
+    },
+    {
+      "bytes": 8513461,
+      "path": "data/staging/primary_sources_v1/intact_imex/evidence_records/part-00003.parquet",
+      "sha256": "1b25dc064a1f1f4710a80c2577a9baab748b467faf23c915294b2c3e2a61e7b2"
+    },
+    {
+      "bytes": 10349523,
+      "path": "data/staging/primary_sources_v1/intact_imex/evidence_records/part-00004.parquet",
+      "sha256": "ead063175714f18df34f51e05c7fc5d9402c46bf4af8777065e47dd05ee6ff2c"
+    },
+    {
+      "bytes": 5817348,
+      "path": "data/staging/primary_sources_v1/intact_imex/evidence_records/part-00005.parquet",
+      "sha256": "1934640eb2e9e9ca72566460ae109412316db2bc00ed07625bc3433cbae16382"
+    },
+    {
+      "bytes": 7931188,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00000.parquet",
+      "sha256": "db721cfcf74d6973ff77e5549b9219baf06f2bdf72b609382e01b8d85176a32e"
+    },
+    {
+      "bytes": 7920984,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00001.parquet",
+      "sha256": "ffa1788df1cb881fbb5e0df1f1057a0f9c72380e30ef691dc0ef66feeba98789"
+    },
+    {
+      "bytes": 7919991,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00002.parquet",
+      "sha256": "c004acd8b55239373f9db028634897ef30065d3fa92bcaa0d80df371a79f7aac"
+    },
+    {
+      "bytes": 7927536,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00003.parquet",
+      "sha256": "da20452c5230711a55245253ea9218ae6fc4969734d736c58e27641c8df69a72"
+    },
+    {
+      "bytes": 9778840,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00004.parquet",
+      "sha256": "03983565ac922bb437a26374741139df578b04faa130ff0786eb09b6e3f8b9a5"
+    },
+    {
+      "bytes": 10096667,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00005.parquet",
+      "sha256": "f5a2c27c59c87a8ebc7096d0a4d1eb6d1953c1495c9c733ca76ab4160cf9c8ac"
+    },
+    {
+      "bytes": 9986651,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00006.parquet",
+      "sha256": "239ee657d09f47c448599bf003c46ce57627738657d83205dd2e20250cd46af2"
+    },
+    {
+      "bytes": 9969612,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00007.parquet",
+      "sha256": "5c39b5c997e1fbd1fddd6b1963c2d54beb960b30c4f747bbbccafac1e25f182d"
+    },
+    {
+      "bytes": 10128720,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00008.parquet",
+      "sha256": "393ae21dd95c4be7f98930f97e7bbe91bce7b206e1e0e5a06867266aa309eed3"
+    },
+    {
+      "bytes": 9931056,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00009.parquet",
+      "sha256": "a276b4263dc06f1027448f96245b2025fc99ac44b8f747262dd9909324c4bf3a"
+    },
+    {
+      "bytes": 10004705,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00010.parquet",
+      "sha256": "3cfe2468571824d66c12cd6f85c880ef970700eeed71aa062010cd17edc8fa33"
+    },
+    {
+      "bytes": 10074680,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00011.parquet",
+      "sha256": "e2b1b4eabafa1249834f4cd4b56bd61abff802ebb6b8260ea9913bcfe6cff00b"
+    },
+    {
+      "bytes": 10047897,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00012.parquet",
+      "sha256": "981ba2174caf2f8271918fb914bb4c75800944e837e19915fe697dcb0467d61d"
+    },
+    {
+      "bytes": 9763818,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00013.parquet",
+      "sha256": "57f2606a507e22c506e3d1aa209b3c89bc58ff5341fa3eae0c71b1794c7a2d0e"
+    },
+    {
+      "bytes": 10160295,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00014.parquet",
+      "sha256": "a813d1c2c18d6a446de818300e4c7435b1eca6ca7e2e27925a646ce52ee32c8b"
+    },
+    {
+      "bytes": 9881283,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00015.parquet",
+      "sha256": "a7d25770690d6a7ad41f998502009acfd6838a46aa0bc42e58accbb5509c91c9"
+    },
+    {
+      "bytes": 10126418,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00016.parquet",
+      "sha256": "ed842df4d8e63d6641dfc4c81626bce00a9ec5365b555059c202eb204f4dcb3f"
+    },
+    {
+      "bytes": 9880238,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00017.parquet",
+      "sha256": "a061dac69f082aeefa012ff19225b90b63aac23f8c05cf02a19dce56cbf138eb"
+    },
+    {
+      "bytes": 9944463,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00018.parquet",
+      "sha256": "c4fc9b2301f2b6c281c1caed8a45e615cab4474346f257140a8979842b2fb112"
+    },
+    {
+      "bytes": 10140469,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00019.parquet",
+      "sha256": "985f4fe5a0725c3a6b31d1feebf6ad04f417ca99c2e3f74fb9861d8ff31d18e1"
+    },
+    {
+      "bytes": 10165117,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00020.parquet",
+      "sha256": "6ff17eeb655f7a2a0aee6758dd464f6ed1d58d3bd869af588b9969758afb2a00"
+    },
+    {
+      "bytes": 9890884,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00021.parquet",
+      "sha256": "ad048359173fa1faae917cdc8dedc446e9c6e933da516ad6b71c15c58f576eb6"
+    },
+    {
+      "bytes": 2114017,
+      "path": "data/canonical/primary_reconciliation_v1/participant_sequence_mappings/part-00022.parquet",
+      "sha256": "b62f962158f61a12562020c9f4021c0b147948625c04e1e1093a33a7a1d4472e"
+    },
+    {
+      "bytes": 10582786,
+      "path": "data/canonical/primary_reconciliation_v1/evidence_mapping_summaries/part-00000.parquet",
+      "sha256": "7e715b87435a17cdddc5ca920f4e7b3e9afd40492a43ba11e09295c3831edf98"
+    },
+    {
+      "bytes": 10587603,
+      "path": "data/canonical/primary_reconciliation_v1/evidence_mapping_summaries/part-00001.parquet",
+      "sha256": "db60b5fa5a054262f36d7a6367788835b30a6ba7b219f1b1c04370c0391134c0"
+    },
+    {
+      "bytes": 9733133,
+      "path": "data/canonical/primary_reconciliation_v1/evidence_mapping_summaries/part-00002.parquet",
+      "sha256": "dd1d070bec201c27338e3f3bed47aa4d62fcd0dc30593eea323ab7cfeafbcc0d"
+    },
+    {
+      "bytes": 9549164,
+      "path": "data/canonical/primary_reconciliation_v1/evidence_mapping_summaries/part-00003.parquet",
+      "sha256": "d8ae831f87ae28ee1dfe5ca096f2a51d2e3a1ed153acea79cc084563084294b4"
+    },
+    {
+      "bytes": 9546093,
+      "path": "data/canonical/primary_reconciliation_v1/evidence_mapping_summaries/part-00004.parquet",
+      "sha256": "79c4f1468ee7e8c3b00c74e9c235f8db35093f8e51d49ba4c204fdb7a560276f"
+    },
+    {
+      "bytes": 9529816,
+      "path": "data/canonical/primary_reconciliation_v1/evidence_mapping_summaries/part-00005.parquet",
+      "sha256": "82369e9ad58b5cb1df011eff37d1a09a83ee38a7cbab2cb95fcb139f2e5267c4"
+    },
+    {
+      "bytes": 9545539,
+      "path": "data/canonical/primary_reconciliation_v1/evidence_mapping_summaries/part-00006.parquet",
+      "sha256": "c7286d2274c2a5fc802ce2055b7e6da567632d8901d3ebda11a3c48f86e80778"
+    },
+    {
+      "bytes": 7049533,
+      "path": "data/canonical/primary_reconciliation_v1/evidence_mapping_summaries/part-00007.parquet",
+      "sha256": "60dc7351cfb6c98d33bb95629d95e325cccb256609f446fb6e9497d1aa8b7426"
+    },
+    {
+      "bytes": 4822892,
+      "path": "data/staging/primary_sources_v1/intact_imex/participant_features/part-00000.parquet",
+      "sha256": "e7c1e9d48b19f82aacbc8b31d2d7a05446a37ab85eeb88b4737b7827dc8086ff"
+    },
+    {
+      "bytes": 4620989,
+      "path": "data/staging/primary_sources_v1/intact_imex/participant_features/part-00001.parquet",
+      "sha256": "4d4f8ca3f83f72483a6487a55029504edcac5ae0a6fe7116b7435e6f7726581a"
+    },
+    {
+      "bytes": 4846315,
+      "path": "data/staging/primary_sources_v1/intact_imex/participant_features/part-00002.parquet",
+      "sha256": "e56962dae95bdbf798d06a465ee1faa7c1b67626200376fc42d72464fc90c9dd"
+    },
+    {
+      "bytes": 4824647,
+      "path": "data/staging/primary_sources_v1/intact_imex/participant_features/part-00003.parquet",
+      "sha256": "9003286b8948a810e0845ed903f5a0436ac16e7fe6118c9a5c9f76ad2ed9fbef"
+    },
+    {
+      "bytes": 4347914,
+      "path": "data/staging/primary_sources_v1/intact_imex/participant_features/part-00004.parquet",
+      "sha256": "69876720e42cad1aba9bb4d1efeda36c632d8d68f09c7f549361c8721148e6a8"
+    },
+    {
+      "bytes": 3553820,
+      "path": "data/staging/primary_sources_v1/intact_imex/participant_features/part-00005.parquet",
+      "sha256": "0bad0b5b9eb735695e989cc6f1b71c14b4f80276bc7f6dd74c78e1db22cebf63"
+    },
+    {
+      "bytes": 3415447,
+      "path": "data/staging/primary_sources_v1/intact_imex/participant_features/part-00006.parquet",
+      "sha256": "adde97b9082f4f1487addc5d3221c36fe14361964f1e6912fe4d24c8b7b0745a"
+    },
+    {
+      "bytes": 3556859,
+      "path": "data/staging/primary_sources_v1/intact_imex/participant_features/part-00007.parquet",
+      "sha256": "9f3cbbfa1d1fbfe87d40a16c32bad25f5d6a3d470b376671824f75cb2586ca68"
+    },
+    {
+      "bytes": 5175691,
+      "path": "data/staging/primary_sources_v1/intact_imex/participant_features/part-00008.parquet",
+      "sha256": "8e813790322ba9cbe1aa55cc48f9de94c85808d2ddfdbd513b5ef9d79915e268"
+    },
+    {
+      "bytes": 2891585,
+      "path": "data/staging/primary_sources_v1/intact_imex/participant_features/part-00009.parquet",
+      "sha256": "22f64d7b6978accd7c95b4bd127b34f93b648610a4fade12d681a72441cfc99f"
+    },
+    {
+      "bytes": 6414497,
+      "path": "data/staging/primary_sources_v1/intact_imex/mutations/part-00000.parquet",
+      "sha256": "4b08ecf6b5698f361df42331a12aa6e3af753f14269b99fc576534e101efe09c"
+    },
+    {
+      "bytes": 31107719,
+      "path": "data/staging/primary_sources_v1/uniprot/protein_sequences/part-00000.parquet",
+      "sha256": "94ea27607eaeb542c31c778ce298bd454ebcd11f995da84464a06d5975cc917d"
+    },
+    {
+      "bytes": 16420842,
+      "path": "data/staging/primary_sources_v1/uniprot/protein_sequences/part-00001.parquet",
+      "sha256": "1c173df96c367de514d1334de8803e7fd5fcc9aad23409692e182eaa29306f96"
+    },
+    {
+      "bytes": 3157716,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00000.parquet",
+      "sha256": "de89210b25882da58abfcbaac6f8d96e310c17873a4da35591c6eb47f9eaf6eb"
+    },
+    {
+      "bytes": 3001606,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00001.parquet",
+      "sha256": "51db4ec6d246c0bcd3e7462bc8c90de208527cbfb5ef3a0d96845c174f165dba"
+    },
+    {
+      "bytes": 2988055,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00002.parquet",
+      "sha256": "3f6643d812f4b08c963f5422175b504887c30a8695836d33cd0eba04c608e233"
+    },
+    {
+      "bytes": 2941896,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00003.parquet",
+      "sha256": "60b684d53b352773334216f7bd58dfffdfb8a3da30245f649e27631a0b93ed6e"
+    },
+    {
+      "bytes": 3026117,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00004.parquet",
+      "sha256": "8c5cdde9d1a59b4904b6ede4f6e2032487ed3d952ed55217afd37f42ced214e3"
+    },
+    {
+      "bytes": 3050822,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00005.parquet",
+      "sha256": "b1e4679017e7e3c156efec5888d15cc9e0c7134d27aa18442e3ec5fc225c4634"
+    },
+    {
+      "bytes": 3074898,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00006.parquet",
+      "sha256": "77b4eff5207c7da1889ec6fb33f89085ff02ea11e0974cc5f3d6af4d4d5a6d77"
+    },
+    {
+      "bytes": 3089939,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00007.parquet",
+      "sha256": "92dfc33b5b976f9adb0c2c318c6c449ecd64f77fe75e0fb43afe81adabe0de9b"
+    },
+    {
+      "bytes": 3098742,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00008.parquet",
+      "sha256": "5153a2e9967f1ec1ab511b7a527ae7e51f6b31ce95127259edd384b6ab90b870"
+    },
+    {
+      "bytes": 3013591,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00009.parquet",
+      "sha256": "bf70bff7f7ad6804706ecfa5e4a610da2d67d0ce3a17ed26b9f125c6658147b4"
+    },
+    {
+      "bytes": 2907234,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00010.parquet",
+      "sha256": "7ed78b02f2f182b850784a1b311175d560f78d25caa5d651fe33b6fc8d2d4755"
+    },
+    {
+      "bytes": 2921173,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00011.parquet",
+      "sha256": "a8fdfa01343f0281209b632bcdb556935b600729e96370ed344559b4ec388df0"
+    },
+    {
+      "bytes": 2912766,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00012.parquet",
+      "sha256": "c921bb8f367428f973f13b70394de5664fc0736ca55c20410d65ed8c74c9f986"
+    },
+    {
+      "bytes": 2918567,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00013.parquet",
+      "sha256": "fb9201c078315c040b017f7db7803ec085693be0cc35cbf60871a372e62be1fb"
+    },
+    {
+      "bytes": 2923763,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00014.parquet",
+      "sha256": "ad36414f531ca58a1c377fe6b6336d693b2dcee9389df6f261a4060aaa3947eb"
+    },
+    {
+      "bytes": 3048569,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00015.parquet",
+      "sha256": "8429ed0f76ea68cc9b1ebba6c466c53ca9c2e245c993de49bcfa909c74ad32cc"
+    },
+    {
+      "bytes": 3152875,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00016.parquet",
+      "sha256": "1b7a6f32209848795d6b6d8e66eb2e89ddfe6e8ec872634c95ae6a8fea4ba403"
+    },
+    {
+      "bytes": 3081340,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00017.parquet",
+      "sha256": "6549e47a101e08d1e4d48c3d971d0784ccdb7ab521dd5541564ba25ad6885c5e"
+    },
+    {
+      "bytes": 3093125,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00018.parquet",
+      "sha256": "8c6f713b098ee0d962724a5ee6f7df803a66668d13db6de07786d6e70be886ea"
+    },
+    {
+      "bytes": 3116945,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00019.parquet",
+      "sha256": "1a81b859838347bb0990f0ac39845c4d94f9a68026caa04c145f9efe596a4160"
+    },
+    {
+      "bytes": 3102623,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00020.parquet",
+      "sha256": "7416c281d7b3ff15a076b9b6f1fa822f1461cc08ede2fce486cf63c86c933f3a"
+    },
+    {
+      "bytes": 3051934,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00021.parquet",
+      "sha256": "ba1336d7d5c71ae14bc92cc4c408027f2b8269545bc3e55a501cae5d782f18de"
+    },
+    {
+      "bytes": 3088400,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00022.parquet",
+      "sha256": "df6643cd38c637b8103c94dc1e20096d6a1826bc0b0a2d150783fb656a66a85a"
+    },
+    {
+      "bytes": 3019991,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00023.parquet",
+      "sha256": "14702bdd02741a994712dc986c785963232b8ba0fbbe5360be7ddf0de2b056a1"
+    },
+    {
+      "bytes": 3204342,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00024.parquet",
+      "sha256": "991db5e266d536d9d18e6a8bc87f85568d302028a2512f1bf03ea32ba08cd72c"
+    },
+    {
+      "bytes": 3258634,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00025.parquet",
+      "sha256": "4de18c8dad1215f01594bda4bc6b4fbe6ab7a7a444187b73ae9f6ccdae42a8c7"
+    },
+    {
+      "bytes": 3137141,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00026.parquet",
+      "sha256": "d975622f9772b4df8a2d24a002ea77e0b3c7e5a0ec53f7a62120d49f27e76c77"
+    },
+    {
+      "bytes": 3209204,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00027.parquet",
+      "sha256": "2f7cea3678bb418bd05b178055773e4119c93358ebb5a7e4d45f281e34cee597"
+    },
+    {
+      "bytes": 3197022,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00028.parquet",
+      "sha256": "09a0dbfb7f399320b41edae2b8708ec7ee71c651c3311f50a22b65fef3794324"
+    },
+    {
+      "bytes": 3201300,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00029.parquet",
+      "sha256": "349a22a0abfd7bc1b5e57db658cbf5da152c8635646f9f5cf31787d28366dda6"
+    },
+    {
+      "bytes": 3202073,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00030.parquet",
+      "sha256": "a43f481c8df49ab7b263e57c2e80aa6c462b19bdfe6a10d7d4a6c67d5c6c01db"
+    },
+    {
+      "bytes": 3090498,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00031.parquet",
+      "sha256": "f8eacc0426b38245924806d9aa283d102c38c3d15da2d8adb0da9cff384331ae"
+    },
+    {
+      "bytes": 3247110,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00032.parquet",
+      "sha256": "a35755b965915c87d388cea8fc756f6e6fa223094efaa2800ab0410dab645526"
+    },
+    {
+      "bytes": 3265008,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00033.parquet",
+      "sha256": "f83bdebcb2da24b44f3d509dfd8955c236239443f0b2f8673ecdfda59cbdbad9"
+    },
+    {
+      "bytes": 3272415,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00034.parquet",
+      "sha256": "16bed3f40c27f3788c16885fffe05a68deb23224e606342ce21b32293fcd6a73"
+    },
+    {
+      "bytes": 3288956,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00035.parquet",
+      "sha256": "547b0b815d651a4dacfa60907eec8a335b01586452af43029341a4dffaff20c4"
+    },
+    {
+      "bytes": 3275283,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00036.parquet",
+      "sha256": "312d5649c32bb75f691a1e5ec55712faf91c7f3587740e4c81af0d09f577738d"
+    },
+    {
+      "bytes": 3263845,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00037.parquet",
+      "sha256": "0a0dedfd2a6c3ca44ba73c9b44a5dbba8f9c15f1ee4d7f38f131b36dd64fdc71"
+    },
+    {
+      "bytes": 3262076,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00038.parquet",
+      "sha256": "3fe1e88bd0b3bc0239c9ed7e7e4080010bb5396ed235355a84bb308e2c8e642a"
+    },
+    {
+      "bytes": 3261525,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00039.parquet",
+      "sha256": "7548172f1fa6e204350c2118d0ca6e4cd419795f82d986189cd6bfda56de3481"
+    },
+    {
+      "bytes": 3257225,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00040.parquet",
+      "sha256": "6e218f825784eb8b7bf6d4db6ab3f269c381091f3e08c762f0171d676727586b"
+    },
+    {
+      "bytes": 3254165,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00041.parquet",
+      "sha256": "775fbfba68991f97cc098a6ad42316e31d678dc6163981cca2adcbe52359d8ca"
+    },
+    {
+      "bytes": 3257974,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00042.parquet",
+      "sha256": "031198076147f0e3c3fa03fd5bb5979ffbc3a633bcbfc30a5fb3603451fff56a"
+    },
+    {
+      "bytes": 2562793,
+      "path": "data/staging/primary_sources_v1/uniprot/identifier_mappings/part-00043.parquet",
+      "sha256": "61f1f5d327718141e9038d79af89144da6be601c916012a289b52fc399a6c9df"
+    },
+    {
+      "bytes": 4045391,
+      "path": "data/staging/primary_sources_v1/huri/source_pair_views/part-00000.parquet",
+      "sha256": "1ae6786b60f13ff68228533c63263c08abf6259d712fcecf03f216d19165b541"
+    }
+  ],
+  "intact_qualified_evidence_rows": 200388,
+  "legacy_policies_unchanged": true,
+  "new_candidate_endpoints": 803,
+  "original_endpoints": 17000,
+  "outputs": [
+    {
+      "bytes": 2517147,
+      "path": "private/huri_qualified_views.parquet",
+      "sha256": "40aa1db6e432118022790485bfed4fbdfd0234dc5c943bfe28342f3b358fa14b"
+    },
+    {
+      "bytes": 7704041,
+      "path": "private/intact_qualified_evidence.parquet",
+      "sha256": "05dc2f7ccdabe18a84efbf875a993f0a8d81cc8af5d7c437face414a7920f001"
+    },
+    {
+      "bytes": 1257931,
+      "path": "private/qualified_pairs.parquet",
+      "sha256": "bb5b8311708474a9b4a5e41811d3656d2fd52f1bed85f8fa5ff667c07d671b1d"
+    },
+    {
+      "bytes": 15112531,
+      "path": "private/sequence_candidates.json",
+      "sha256": "c96dd3de9a608b1c22d9a2a7531e561213f6c8c5d33e831b611c8df1bd35ce73"
+    }
+  ],
+  "qualified_unique_pairs_before_split": 104302,
+  "reference_projection": "IntAct mapped hash must equal canonical hash; unique canonical gene map for HuRI views",
+  "scope": "human-human reference-sequence binary PPI",
+  "source_membership_counts": {
+    "HI-II-14": 1680,
+    "HI-II-14|HuRI": 565,
+    "HI-II-14|HuRI|IntAct": 4019,
+    "HI-II-14|HuRI|IntAct|Lit-BM": 196,
+    "HI-II-14|HuRI|IntAct|Lit-BM|Test_space_screens-19": 7,
+    "HI-II-14|HuRI|IntAct|Test_space_screens-19": 50,
+    "HI-II-14|HuRI|Lit-BM": 5,
+    "HI-II-14|HuRI|Test_space_screens-19": 8,
+    "HI-II-14|IntAct": 5789,
+    "HI-II-14|IntAct|Lit-BM": 90,
+    "HI-II-14|IntAct|Test_space_screens-19": 20,
+    "HI-II-14|Lit-BM": 12,
+    "HI-II-14|Test_space_screens-19": 3,
+    "HuRI": 14741,
+    "HuRI|IntAct": 29769,
+    "HuRI|IntAct|Lit-BM": 341,
+    "HuRI|IntAct|Lit-BM|Test_space_screens-19": 6,
+    "HuRI|IntAct|Test_space_screens-19": 271,
+    "HuRI|Lit-BM": 39,
+    "HuRI|Test_space_screens-19": 115,
+    "IntAct": 34601,
+    "IntAct|Lit-BM": 4375,
+    "IntAct|Lit-BM|Test_space_screens-19": 4,
+    "IntAct|Test_space_screens-19": 461,
+    "Lit-BM": 6941,
+    "Lit-BM|Test_space_screens-19": 1,
+    "Test_space_screens-19": 193
+  }
+}

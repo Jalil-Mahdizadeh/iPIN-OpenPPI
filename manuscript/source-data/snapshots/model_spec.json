@@ -1,0 +1,149 @@
+{
+  "models": {
+    "esm2_150m__residual_wide__epoch04_ensemble3": {
+      "aggregation": "arithmetic_mean_of_three_FP32_raw_scores_in_FP64",
+      "head_family": "residual_mlp",
+      "inference_mode": "eval_no_grad_no_dropout",
+      "member_weights": [
+        1,
+        1,
+        1
+      ],
+      "members": [
+        {
+          "seed": 20260803,
+          "state": {
+            "bytes": 1994318,
+            "path": "heads/optimized/20260803.npz",
+            "sha256": "f46452e84cb30df1c785a6af982f83d37ba892855b5af0a848aac4610890cabc"
+          },
+          "training_checkpoint": {
+            "bytes": 1994318,
+            "path": ".private/model_optimization_v1/runs/stage2__esm2_150m__residual_wide__seed20260803/epoch_04.npz",
+            "sha256": "f46452e84cb30df1c785a6af982f83d37ba892855b5af0a848aac4610890cabc"
+          }
+        },
+        {
+          "seed": 20260817,
+          "state": {
+            "bytes": 1994318,
+            "path": "heads/optimized/20260817.npz",
+            "sha256": "08a67b0309a2d3d2928c9f188f73180a4e917f457a087ea1206c85bbae828463"
+          },
+          "training_checkpoint": {
+            "bytes": 1994318,
+            "path": ".private/model_optimization_v1/runs/stage2__esm2_150m__residual_wide__seed20260817/epoch_04.npz",
+            "sha256": "08a67b0309a2d3d2928c9f188f73180a4e917f457a087ea1206c85bbae828463"
+          }
+        },
+        {
+          "seed": 20260831,
+          "state": {
+            "bytes": 1994318,
+            "path": "heads/optimized/20260831.npz",
+            "sha256": "2f5fbe82194f88b8afb6ce90c8db1b1b2ed87cd1d03484ffec0375e2774c17f1"
+          },
+          "training_checkpoint": {
+            "bytes": 1994318,
+            "path": ".private/model_optimization_v1/runs/stage2__esm2_150m__residual_wide__seed20260831/epoch_04.npz",
+            "sha256": "2f5fbe82194f88b8afb6ce90c8db1b1b2ed87cd1d03484ffec0375e2774c17f1"
+          }
+        }
+      ],
+      "original_confirmatory_evaluation": false,
+      "original_scorer_frozen_at_utc": "2026-09-11T12:17:58.095135+00:00",
+      "parameters_per_head": 498053,
+      "seeds": [
+        20260803,
+        20260817,
+        20260831
+      ],
+      "selected_epoch": 4,
+      "selected_pass": null,
+      "status": "frozen",
+      "weight_divisor": 3
+    },
+    "lightweight_esm2_150m_linear__linear_lr3e-4": {
+      "aggregation": "arithmetic_mean_of_three_FP32_raw_scores_in_FP64",
+      "head_family": "affine",
+      "inference_mode": "eval_no_grad_no_dropout",
+      "member_weights": [
+        1,
+        1,
+        1
+      ],
+      "members": [
+        {
+          "seed": 20260803,
+          "state": {
+            "bytes": 8194,
+            "path": "heads/affine/20260803.npz",
+            "sha256": "efaa98ae02ac94d61e825b3b43f2614fd5232572a67e162b414f6174fcf0ae56"
+          },
+          "training_checkpoint": {
+            "bytes": 40117,
+            "pass_index": 5,
+            "path": "artifacts/checkpoints/stage1_model_execution_v1/lightweight_esm2_150m_linear__linear_lr3e-4__seed20260803/pass_05.pt",
+            "sha256": "12000b462796bbbcc9640398b32fd3677bdb1123e7c71f6e845942685bc7c414"
+          }
+        },
+        {
+          "seed": 20260817,
+          "state": {
+            "bytes": 8194,
+            "path": "heads/affine/20260817.npz",
+            "sha256": "15dba53ab5c5bc4ad1f70242422fa6ba33765fab7c7294fa20c216e84fe9d857"
+          },
+          "training_checkpoint": {
+            "bytes": 40117,
+            "pass_index": 5,
+            "path": "artifacts/checkpoints/stage1_model_execution_v1/lightweight_esm2_150m_linear__linear_lr3e-4__seed20260817/pass_05.pt",
+            "sha256": "a8e49be1aa2e809cf7c5decfe552c3bab385dad91da530f60040a57138c74f0d"
+          }
+        },
+        {
+          "seed": 20260831,
+          "state": {
+            "bytes": 8194,
+            "path": "heads/affine/20260831.npz",
+            "sha256": "0b7149ea20d02ed9b289f6743e133cf07cd4384fe10036664171d5537e0b1853"
+          },
+          "training_checkpoint": {
+            "bytes": 40053,
+            "pass_index": 5,
+            "path": "artifacts/checkpoints/stage1_model_execution_v1/lightweight_esm2_150m_linear__linear_lr3e-4__seed20260831/pass_05.pt",
+            "sha256": "1c5da531407f838666c7c995e1062cdb4e7d8d9f81094667524f8e7276093bab"
+          }
+        }
+      ],
+      "original_confirmatory_evaluation": true,
+      "original_scorer_frozen_at_utc": "2026-09-11T08:50:34.675078+00:00",
+      "parameters_per_head": 1922,
+      "seeds": [
+        20260803,
+        20260817,
+        20260831
+      ],
+      "selected_epoch": null,
+      "selected_pass": 5,
+      "status": "frozen",
+      "weight_divisor": 3
+    }
+  },
+  "encoder": {
+    "candidate_id": "esm2_150m",
+    "repository": "facebook/esm2_t30_150M_UR50D",
+    "repository_revision": "a695f6045e2e32885fa60af20c13cb35398ce30c"
+  },
+  "embedding_dimension": 640,
+  "optimized_recipe": {
+    "dropout": 0.3,
+    "encoder": "esm2_150m",
+    "family": "residual_mlp",
+    "id": "esm2_150m__residual_wide",
+    "lr": 0.0001,
+    "name": "residual_wide",
+    "weight_decay": 0.01,
+    "width": 256
+  }
+}

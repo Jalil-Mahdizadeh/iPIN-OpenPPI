@@ -1,0 +1,29 @@
+{
+  "all_5587_panel_rows_and_metadata_preserved": true,
+  "all_historical_scores_identical": true,
+  "at_utc": "2026-09-26T09:45:39.693255+00:00",
+  "historical_metric_reproduction": [
+    {
+      "file": "per_target_metrics.csv",
+      "maximum_absolute_difference": 0.0,
+      "passed": true,
+      "rows_reproduced": 1640
+    },
+    {
+      "file": "macro_metrics.csv",
+      "maximum_absolute_difference": 0.0,
+      "passed": true,
+      "rows_reproduced": 560
+    },
+    {
+      "file": "positive_partner_ranks.csv",
+      "maximum_absolute_difference": 0.0,
+      "passed": true,
+      "rows_reproduced": 740
+    }
+  ],
+  "historical_subsets": "Preserved original exposure flags; the two additional subsets conservatively remove newly audited 31k training/selection exposure for all five models",
+  "metric_code": "Unmodified example/twelve_target_comparison_v2/metrics.py",
+  "passed": true,
+  "three_seed_mean_exact": true
+}

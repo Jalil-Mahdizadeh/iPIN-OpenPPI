@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-09-26T10:48:29.600795+00:00",
+  "reason": "Convert queued PLM gang allocation to independently scheduled single-GPU array tasks; unchanged 16 scorer ranks, native scoring code, model, batches and checkpoint identities. Status points to replacement job records.",
+  "original_execution_freeze_sha256": "a0922dbbc1a4800d25f0477891b7b6cd5de517c0a3853d97e9b9dcf57a2ca205",
+  "changes": [
+    {
+      "path": "scripts/status.py",
+      "previous_sha256": "2be93322a3d7b25a314988afa9b89acbe82c91b1f0c198b188deae2b0a3211f2",
+      "sha256": "1b4d49a3c2eced37b0a9edaaf96cc5bfcb92cc2bc0a66fa13509baebbf5031c3"
+    },
+    {
+      "path": "plm_array.sbatch",
+      "previous_sha256": null,
+      "sha256": "52a2b8a10030294981cf3c6fa1388a06dc49d2bbce89cf356697f10931dc2365"
+    },
+    {
+      "path": "plm_array_worker.sh",
+      "previous_sha256": null,
+      "sha256": "9f12e7b077ef03527ac865883f328943ebc73047f27562316c65ed8f05058881"
+    }
+  ],
+  "scoring_code_unchanged": true,
+  "evaluation_code_unchanged": true
+}

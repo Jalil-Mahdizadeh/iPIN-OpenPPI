@@ -1,0 +1,81 @@
+{
+  "at_utc": "2026-09-24T19:11:05.984113+00:00",
+  "cuda": "13.0",
+  "device": "NVIDIA GH200 120GB",
+  "fixtures": "TRAIN endpoints/pairs only",
+  "passed": true,
+  "pilot_fits_discarded": true,
+  "recipes": [
+    {
+      "cached_score_error": 0.0,
+      "estimated_training_seconds_per_epoch_excluding_dev": 20.722335522266803,
+      "final_pilot_gradient_norm": 1.7537940740585327,
+      "final_pilot_loss": 0.3183717141641271,
+      "fixture_lengths": [
+        25,
+        419,
+        5795
+      ],
+      "full_length_token_error": 0.0,
+      "head_seconds_per_4096_pairs": 0.00274027104023844,
+      "parameters": 498053,
+      "recipe": "mean_pool",
+      "resume_maximum_absolute_error": 0.0,
+      "seconds_per_training_batch": 0.002652289200341329
+    },
+    {
+      "cached_score_error": 0.0,
+      "estimated_training_seconds_per_epoch_excluding_dev": 133.01459132048186,
+      "final_pilot_gradient_norm": 1.685375452041626,
+      "final_pilot_loss": 0.31072150136008114,
+      "fixture_lengths": [
+        25,
+        419,
+        5795
+      ],
+      "full_length_token_error": 0.0,
+      "head_seconds_per_4096_pairs": 0.004563511989545077,
+      "parameters": 814728,
+      "recipe": "attention_pool",
+      "resume_maximum_absolute_error": 3.725290298461914e-09,
+      "seconds_per_training_batch": 0.01702477810322307
+    },
+    {
+      "cached_score_error": 0.0,
+      "estimated_training_seconds_per_epoch_excluding_dev": 164.7287037123402,
+      "final_pilot_gradient_norm": 1.7216529846191406,
+      "final_pilot_loss": 0.3127405194647177,
+      "fixture_lengths": [
+        25,
+        419,
+        5795
+      ],
+      "full_length_token_error": 0.0,
+      "head_seconds_per_4096_pairs": 0.011009049019776285,
+      "parameters": 1013000,
+      "recipe": "cross_attention",
+      "resume_maximum_absolute_error": 7.450580596923828e-09,
+      "seconds_per_training_batch": 0.021083924703998492
+    },
+    {
+      "cached_score_error": 0.0,
+      "estimated_training_seconds_per_epoch_excluding_dev": 254.47583461657047,
+      "final_pilot_gradient_norm": 1.6906331777572632,
+      "final_pilot_loss": 0.30577811435187785,
+      "fixture_lengths": [
+        25,
+        419,
+        5795
+      ],
+      "full_length_token_error": 0.0,
+      "head_seconds_per_4096_pairs": 0.016656914027407765,
+      "parameters": 1961608,
+      "recipe": "cross_attention_wide",
+      "resume_maximum_absolute_error": 7.450580596923828e-09,
+      "seconds_per_training_batch": 0.03257082229829393
+    }
+  ],
+  "test_pairs_read": false,
+  "test_truth_read": false,
+  "torch": "2.8.0a0+34c6371d24.nv25.08"
+}

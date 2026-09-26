@@ -1,0 +1,366 @@
+{
+  "P": 37,
+  "U": 5550,
+  "at_utc": "2026-09-26T09:44:52.443993+00:00",
+  "embeddings": "Reuse verified historical full-length FP32 ESM residue embeddings; recompute learned endpoint features",
+  "inputs": [
+    {
+      "bytes": 4380253,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/pairs.json",
+      "relative_path": "pairs.json",
+      "sha256": "654997840e8cb684b6ecdb819438bdc705cbd7bd6dc28a7828d49cb5250028cd"
+    },
+    {
+      "bytes": 3504207,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/uniprot_sequences.json",
+      "relative_path": "uniprot_sequences.json",
+      "sha256": "00c78ee7002158a929019dfb2e7328c1196ea6707b58d9c36749d11edd246316"
+    },
+    {
+      "bytes": 280843,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/sequence_order.json",
+      "relative_path": "sequence_order.json",
+      "sha256": "5d3d6ff358bc1cfa4237f404ecdccf51d80e5dcd2f69bd00dbaa105802f8b9d4"
+    },
+    {
+      "bytes": 2238334,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/all_twelve_targets_scores.csv",
+      "relative_path": "all_twelve_targets_scores.csv",
+      "sha256": "83c0b11378b4339289cdf78e588a70311f66841cc8f99c79c6f1f302b28e1f93"
+    },
+    {
+      "bytes": 246394,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/ipin_scores.csv",
+      "relative_path": "ipin_scores.csv",
+      "sha256": "fc836fcc6ec1349ca564feb82bea55a6eaa44b875928f0c62f2f2690dde45013"
+    },
+    {
+      "bytes": 564172,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/tuna_scores.csv",
+      "relative_path": "tuna_scores.csv",
+      "sha256": "0fb24daad89d7186fb4fb375bcb117e10aa982ff67d41872a70f95dea196ab68"
+    },
+    {
+      "bytes": 429674,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/per_target_metrics.csv",
+      "relative_path": "per_target_metrics.csv",
+      "sha256": "4e3cc30219c0d35d30c2c6c74835e66ceb22f208ad2f4386c5eec10beb3db018"
+    },
+    {
+      "bytes": 246140,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/macro_metrics.csv",
+      "relative_path": "macro_metrics.csv",
+      "sha256": "f8fbba663ed9ab9c30da5e10fedcac8392b2d8c9b929c9208ec7734696562f8b"
+    },
+    {
+      "bytes": 67708,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/positive_partner_ranks.csv",
+      "relative_path": "positive_partner_ranks.csv",
+      "sha256": "13e91db9c3f2e309135e38b3a139e293d1b0c7ff691fe564583f110e96ccb788"
+    },
+    {
+      "bytes": 4209,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/metrics.py",
+      "relative_path": "metrics.py",
+      "sha256": "08ea14321541efd58ce041428790e6990a820a2ab5564b348a40968b7fb92ae7"
+    },
+    {
+      "bytes": 10757,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/analysis_outputs.py",
+      "relative_path": "analysis_outputs.py",
+      "sha256": "555d7cf5e1a06e1b01bcedc1f828b4d4d601dd78378ac3bd55c3346093d5f1dd"
+    },
+    {
+      "bytes": 27892,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/run_comparison.py",
+      "relative_path": "run_comparison.py",
+      "sha256": "cb2516da91f39ea9a32262a79807ca6bda53e00ea17ae80ab0669a2c26da7db0"
+    },
+    {
+      "bytes": 5513,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/panel_config.json",
+      "relative_path": "panel_config.json",
+      "sha256": "567aa6568c9c2a6bfee0e0df81e730c044ea145e010a13c06bfdd8fd679ec458"
+    },
+    {
+      "bytes": 3483,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/METRICS.md",
+      "relative_path": "METRICS.md",
+      "sha256": "58d18e7987900b24307918fa969a937d3e7dd1e02c49d79aaf95eb190c056cd0"
+    },
+    {
+      "bytes": 15208,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/REPORT.md",
+      "relative_path": "REPORT.md",
+      "sha256": "cd2d98388d6ca35495b5ed72119244f145aed843bf55c4e3ed24a557d27a771d"
+    },
+    {
+      "bytes": 10472,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/TUNA_RUN.json",
+      "relative_path": "TUNA_RUN.json",
+      "sha256": "7536b55a1b8cf7c7b32bb9851f24ccae78e4a733a93c93b42d73b690edef3a89"
+    },
+    {
+      "bytes": 4217,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/IPIN_RUN.json",
+      "relative_path": "IPIN_RUN.json",
+      "sha256": "796fd3d36e33d49fe8c601f4606a57aabd5852eb67e20b8cdde3cbdccf1648ec"
+    },
+    {
+      "bytes": 26690,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/INPUT_FREEZE.json",
+      "relative_path": "INPUT_FREEZE.json",
+      "sha256": "6aa9c22f571dae51d18143c728ac20c5f0c4a0a589f7f9c7e04168054da6cac8"
+    },
+    {
+      "bytes": 24582,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/RUN_MANIFEST.json",
+      "relative_path": "RUN_MANIFEST.json",
+      "sha256": "f2ca21556a94c6b0281ee5bdecd18e1e941abd0589cc633bcb13c0402599948d"
+    },
+    {
+      "bytes": 6227047168,
+      "mount": "panel",
+      "path": "example/twelve_target_comparison_v2/tuna_fresh_residues.h5",
+      "relative_path": "tuna_fresh_residues.h5",
+      "sha256": "28627583dc2124c6849b80c3d8391736f8a153a6ef4e69b33aa6593139128a3a"
+    },
+    {
+      "bytes": 45404,
+      "mount": "model",
+      "path": "experiments/human_ppi_data_scaling_v1/runs/SELECTION.json",
+      "relative_path": "SELECTION.json",
+      "sha256": "3a2b76cf605c94263b9141410c054b5aa79b34a416fcfe7bd784a370338c4f36"
+    },
+    {
+      "bytes": 7537,
+      "mount": "model",
+      "path": "experiments/human_ppi_data_scaling_v1/runs/SCORER_FREEZE.json",
+      "relative_path": "SCORER_FREEZE.json",
+      "sha256": "8e8704f77eecca395f2d7cea24931a19c2d573255339a6b51be7865366aad48d"
+    },
+    {
+      "bytes": 16310,
+      "mount": "audit",
+      "path": "experiments/human_ppi_data_scaling_v1/audit/EXECUTION_FREEZE.json",
+      "relative_path": "EXECUTION_FREEZE.json",
+      "sha256": "be67d329b7efa320b2149294cffaa922ea20415c034f1ba5ffcb1007f418bec2"
+    },
+    {
+      "bytes": 135357993,
+      "mount": "model",
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/scaled_31188_seed20260803.pt",
+      "relative_path": "frozen/scaled_31188_seed20260803.pt",
+      "sha256": "f29ee395d747ff07cffba14d028430fa9c9ab1e7559a71b678b8541a22f7f979"
+    },
+    {
+      "bytes": 135357993,
+      "mount": "model",
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/scaled_31188_seed20260817.pt",
+      "relative_path": "frozen/scaled_31188_seed20260817.pt",
+      "sha256": "7581d4f43354201914ba38924f58bd2e10b4babb9f56ccf6c104276190c97f59"
+    },
+    {
+      "bytes": 135357993,
+      "mount": "model",
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/scaled_31188_seed20260831.pt",
+      "relative_path": "frozen/scaled_31188_seed20260831.pt",
+      "sha256": "707f56e0007e0af10d6949924d4c7afc096b9d87cf2375bb050dd12b9d11e66a"
+    },
+    {
+      "bytes": 4681,
+      "mount": "native",
+      "path": "benchmark/tuna/scripts/adapter.py",
+      "relative_path": "adapter.py",
+      "sha256": "8260aceb8e4eb7a1c3a2a97297e9a9f8faa96598130259ebf52a49635a5fe025"
+    },
+    {
+      "bytes": 2504,
+      "mount": "native",
+      "path": "benchmark/tuna/scripts/common.py",
+      "relative_path": "common.py",
+      "sha256": "bc5fddb8bb8bea7d627f2435e445fe0b9cbfaf79a3a922a573fcf7a71e13f73d"
+    },
+    {
+      "bytes": 4843,
+      "mount": "native",
+      "path": "benchmark/tuna/scripts/training.py",
+      "relative_path": "training.py",
+      "sha256": "c18cec5179935adc137d985de333387e53fe0a6c75673b4902e9b37dd52259cf"
+    },
+    {
+      "bytes": 8070,
+      "mount": "native",
+      "path": "benchmark/tuna/scripts/gpu_guard.py",
+      "relative_path": "gpu_guard.py",
+      "sha256": "6c1b386e4591d8fea1e4be98e0708d70107f263a12c4bcb5b911e867c8fdb0fa"
+    },
+    {
+      "bytes": 2181,
+      "mount": "upstream",
+      "path": "benchmark/tuna/upstream/TUnA/results/bernett/TUnA/inference.py",
+      "relative_path": "results/bernett/TUnA/inference.py",
+      "sha256": "3648da39032b67bb8b6533bc527d601e51bd7a2c59ce2ec08e1fcbf796cc70ea"
+    },
+    {
+      "bytes": 4125,
+      "mount": "upstream",
+      "path": "benchmark/tuna/upstream/TUnA/results/bernett/TUnA/lookahead.py",
+      "relative_path": "results/bernett/TUnA/lookahead.py",
+      "sha256": "8c1ec5a59901d891d421a379cb0d7dfeca3a48c9635b1128d2e4738758026ae2"
+    },
+    {
+      "bytes": 2539,
+      "mount": "upstream",
+      "path": "benchmark/tuna/upstream/TUnA/results/bernett/TUnA/main.py",
+      "relative_path": "results/bernett/TUnA/main.py",
+      "sha256": "61c617dd8d6d6f45291792a152a9d6bc6035a1645930e170756cfdeeaf498efa"
+    },
+    {
+      "bytes": 13636,
+      "mount": "upstream",
+      "path": "benchmark/tuna/upstream/TUnA/results/bernett/TUnA/model.py",
+      "relative_path": "results/bernett/TUnA/model.py",
+      "sha256": "56a44effe653ac21a985438d98301463971ad587415f59bbe6fe4c192d4f2c93"
+    },
+    {
+      "bytes": 15282,
+      "mount": "upstream",
+      "path": "benchmark/tuna/upstream/TUnA/results/bernett/TUnA/utils.py",
+      "relative_path": "results/bernett/TUnA/utils.py",
+      "sha256": "34070f3b7b94a41a7aaa952e4ded8d0926283434363f9d381c256abc520b5338"
+    },
+    {
+      "bytes": 1230813,
+      "mount": "studydata",
+      "path": "experiments/human_ppi_data_scaling_v1/data/endpoints.json",
+      "relative_path": "endpoints.json",
+      "sha256": "8386f56ff0ac54c204ac728fd943790e8706b5742942c307b05616e29855d0b0"
+    },
+    {
+      "bytes": 14492406,
+      "mount": "studydata",
+      "path": "experiments/human_ppi_data_scaling_v1/data/sequences.json",
+      "relative_path": "sequences.json",
+      "sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6"
+    },
+    {
+      "bytes": 269282,
+      "mount": "studydata",
+      "path": "experiments/human_ppi_data_scaling_v1/data/training_16799.npz",
+      "relative_path": "training_16799.npz",
+      "sha256": "9bca9433ca549c6e8f8f57a3cfa4659b8391f45aa4da62ca1fced4301d8656a2"
+    },
+    {
+      "bytes": 499506,
+      "mount": "studydata",
+      "path": "experiments/human_ppi_data_scaling_v1/data/training_31188.npz",
+      "relative_path": "training_31188.npz",
+      "sha256": "5765e5ad1fafb062f00d71bae08de91109819893255cdff876031c7858bdcb18"
+    },
+    {
+      "bytes": 48000746,
+      "mount": "studydata",
+      "path": "experiments/human_ppi_data_scaling_v1/data/training_unlabeled.npz",
+      "relative_path": "training_unlabeled.npz",
+      "sha256": "ff8893c665007608cb30786eb3891fb2df365f62f877d76ca7eb239286701e76"
+    },
+    {
+      "bytes": 25057607,
+      "mount": "studydata",
+      "path": "experiments/human_ppi_data_scaling_v1/data/development/reconciled/C3.npz",
+      "relative_path": "development/reconciled/C3.npz",
+      "sha256": "36720be60ac044fc13ca5ca8dca01d42ea3509c3311a534b87bf2c14aeb31b2a"
+    },
+    {
+      "bytes": 6269157,
+      "mount": "studydata",
+      "path": "experiments/human_ppi_data_scaling_v1/data/development/added/C3.npz",
+      "relative_path": "development/added/C3.npz",
+      "sha256": "f3fa4ebc4cd8ec5ddfc5230b2888abe4efcaeca342c09342ec00847b6f354b8c"
+    },
+    {
+      "bytes": 10666606592,
+      "mount": "runtime",
+      "path": "benchmark/containers/images/tuna-arm64-v1.sif",
+      "relative_path": "tuna.sif",
+      "sha256": "98070c7c2d206d8421817849e11ffce308016dc982938a7d9a3ef3141ab1dec1"
+    },
+    {
+      "bytes": 22017,
+      "mount": "code",
+      "path": "experiments/twelve_target_selected_31k_v1/scripts/compare_panel.py",
+      "relative_path": "compare_panel.py",
+      "sha256": "402fe682dc480303acee07d50ef66b1cdb93420c1bc8655d358e71197c62fcac"
+    },
+    {
+      "bytes": 4850,
+      "mount": "code",
+      "path": "experiments/twelve_target_selected_31k_v1/scripts/freeze_inputs.py",
+      "relative_path": "freeze_inputs.py",
+      "sha256": "7f35713831f4b847780d39146708a8809450aa508c6a872f823733506ee53d4d"
+    },
+    {
+      "bytes": 1362,
+      "mount": "code",
+      "path": "experiments/twelve_target_selected_31k_v1/scripts/panel_io.py",
+      "relative_path": "panel_io.py",
+      "sha256": "a79ec90e7c7f567fb6b411b3447f22f83bc9c24656a0788477388fcd688fbbf8"
+    },
+    {
+      "bytes": 7736,
+      "mount": "code",
+      "path": "experiments/twelve_target_selected_31k_v1/scripts/score_panel.py",
+      "relative_path": "score_panel.py",
+      "sha256": "0d4167bdf2b70c71d9b454ccaeddc62f0eb7f7bf429c2365f0bcfdc5c566a1a8"
+    },
+    {
+      "bytes": 1496,
+      "mount": "code",
+      "path": "experiments/twelve_target_selected_31k_v1/scripts/verify_outputs.py",
+      "relative_path": "verify_outputs.py",
+      "sha256": "4896c60009120ad82f9cdba654f04c408ff97030811915f76a366ab123f9615f"
+    },
+    {
+      "bytes": 2072,
+      "mount": "launch",
+      "path": "experiments/twelve_target_selected_31k_v1/run.sh",
+      "relative_path": "run.sh",
+      "sha256": "4ac8cc7c5afcb1970832a31ab8d73545b5e5fcbe4f911fccb0455f54005f12f3"
+    }
+  ],
+  "model_selection_or_training": false,
+  "old_predictors": "Archived scores, verified and re-evaluated with the original metric code",
+  "pair_count": 5587,
+  "panel_pairs_or_labels_changed": false,
+  "scoring": "Mean of three seed mean-field-adjusted logits; exact saved GP covariance",
+  "seeds": [
+    20260803,
+    20260817,
+    20260831
+  ],
+  "selected_budget": 31188,
+  "selected_epoch": 1,
+  "source_panel": "example/twelve_target_comparison_v2",
+  "tracked_status_before": " M graphify-out/.graphify_labels.json\n M graphify-out/.graphify_labels.json.sig\n M graphify-out/.graphify_learning.json\n M graphify-out/GRAPH_REPORT.md\n M graphify-out/cache/stat-index.json\n M graphify-out/graph.html\n M graphify-out/graph.json\n M graphify-out/manifest.json\n M graphify-out/reflections/LESSONS.md\n",
+  "unique_sequences": 4012
+}

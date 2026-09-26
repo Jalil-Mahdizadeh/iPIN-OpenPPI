@@ -1,0 +1,39 @@
+{
+  "execution_freeze_verified": true,
+  "final_job_completed": true,
+  "final_job_elapsed_seconds": 585,
+  "fresh_control_epoch": 1,
+  "fresh_control_minus_frozen_C3_test1": {
+    "difference": 0.05139703299690268,
+    "paired_ci95": [
+      0.02209914077262142,
+      0.10230986250417384
+    ]
+  },
+  "historical_parent_files_checked": 11,
+  "historical_parent_hash_failures": [],
+  "maximum_point_recompute_error": 0.0,
+  "new_training_performed": false,
+  "remaining_interpretation_limits": [
+    "C1 reconciled views retain positive pair role violations and 57 shared dev/test positives.",
+    "Training U differs from the historical recipe and includes TRAIN endpoints absent from its P sample.",
+    "No family balancing; source composition and redundancy change with P count.",
+    "Historical test follow-up, not independent replication.",
+    "Final scoring recalculates covariance; numerical impact measured separately without model reselection."
+  ],
+  "reported_metrics_and_intervals_preserved": true,
+  "review_at_utc": "2026-09-26T09:19:48.532172+00:00",
+  "scorer_replay_maximum_test_point_change": 0.0002916484571429123,
+  "selected_budget": 31188,
+  "selected_epoch": 1,
+  "training_jobs_completed": 12,
+  "verified_counts": {
+    "bootstrap_model_summaries": 65,
+    "checkpoint_hashes": 60,
+    "checkpoint_prediction_hashes": 60,
+    "development_metric_points": 81,
+    "prediction_file_hashes": 12,
+    "scorer_artifact_hashes": 30,
+    "test_metric_points": 60
+  }
+}

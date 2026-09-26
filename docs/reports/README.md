@@ -17,6 +17,14 @@ exploratory subgroup intervals include zero. Complete results, cohort scores,
 exposure checks, qualification and provenance are kept in
 [the experiment](../../experiments/x_pair_test2_v1/README.md).
 
+The [experiment index](../../experiments/README.md) also links the completed
+data-scaling study, original test2 competitor comparison, selected-31k panel,
+and default-model transfer results. Their code, reports, compact run evidence
+and figures are deposited with the
+[repository publication inventory](../../DEPOSIT.md). The
+[manuscript package](../../manuscript/README.md) is a preserved historical draft
+about the original affine/optimized studies, not the later 31k/X-PAIR work.
+
 The [non-human transfer report](../../benchmark/nonhuman_transfer_v1/REPORT.md)
 evaluates the three frozen iPIN models within mouse, fly, worm, budding yeast,
 Arabidopsis, and E. coli K-12. Fifty targets per species yield 1,385 P and 60,000 U

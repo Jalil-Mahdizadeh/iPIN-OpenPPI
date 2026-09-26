@@ -1,0 +1,110 @@
+{
+  "metrics": {
+    "intact_negative_records": 939,
+    "intact_negative_reference_pair_usable_records": 453,
+    "label_authorized_rows": 0,
+    "mapped_parent_records_by_family": {
+      "manual_experimental_negative": 1408,
+      "structure_derived_noncontact": 222
+    },
+    "overlap": {
+      "cross_source_link_count": 0,
+      "exact_ordered_source_links": 0,
+      "exact_unordered_source_links": 0,
+      "frozen_sequence_pair_links": 0,
+      "intact_negative_records_with_overlap": 0,
+      "negatome_parent_records_with_overlap": 0
+    },
+    "parent_pair_mapping_states": {
+      "both_unique_human": 1630,
+      "neither_unique_human": 4453,
+      "one_unique_human": 485
+    },
+    "parent_record_total": 6568,
+    "parent_records_by_family": {
+      "manual_experimental_negative": 2171,
+      "structure_derived_noncontact": 4397
+    },
+    "participant_mapping_confidences": {
+      "A_exact_frozen_identifier": 3704,
+      "B_unique_frozen_secondary_accession": 32,
+      "C_canonical_isoform1_alias": 9,
+      "D_unmapped_or_ambiguous": 9391
+    },
+    "participant_mapping_rows": 13136,
+    "participant_mapping_states": {
+      "ambiguous_frozen_accession": 38,
+      "canonical_isoform1_alias": 9,
+      "exact_isoform": 38,
+      "exact_primary_canonical": 3666,
+      "not_in_frozen_human_reference": 9353,
+      "secondary_accession_unique": 32
+    },
+    "positive_conflicts": {
+      "any_current_positive": 237,
+      "broader_CF_B": 183,
+      "direct_CF_D": 153
+    },
+    "positive_index": {
+      "combined_positive_index_unique_pairs": 212732,
+      "mapped_permitted_pair_view_rows": 79386,
+      "mapped_permitted_pair_view_unique_pairs": 71044,
+      "mapped_positive_evidence_rows": 619837,
+      "mapped_positive_evidence_unique_pairs": 194277,
+      "permitted_pair_views": [
+        "HI-II-14",
+        "HuRI",
+        "Lit-BM",
+        "Test_space_screens-19"
+      ]
+    },
+    "reliability_tiers": {
+      "ME-1": 1216,
+      "ME-2": 192,
+      "MX": 4938,
+      "SN-1": 154,
+      "SN-2": 68
+    },
+    "source_row_total": 12720,
+    "source_rows": {
+      "manual": 2171,
+      "manual_stringent": 1991,
+      "pdb": 4397,
+      "pdb_stringent": 4161
+    },
+    "universal_nonbinding_rows": 0
+  },
+  "pnu_feasibility": {
+    "blocking_identifiability_conditions": [
+      "no_complete_human_pair_level_selected_attempted_evaluable_population",
+      "Negatome_manual_construct_orientation_conditions_and_technical_evaluability_missing",
+      "IntAct_negatives_are_heterogeneous_curated_records_without_sampling_denominator",
+      "negative_source_selection_and_assay_sensitivity_are_unknown",
+      "biological_class_prior_is_not_identified"
+    ],
+    "bounded_manual_conditional_publications": 315,
+    "bounded_manual_conditional_records": 1188,
+    "bounded_manual_conditional_stratum_numerically_adequate": true,
+    "bounded_manual_conditional_unique_sequence_pairs": 1163,
+    "conditional_P_plus_N_plus_U_diagnostic_feasible": true,
+    "conditional_P_plus_N_plus_U_training_role_authorized": false,
+    "intact_negative_records_total": 939,
+    "intact_negative_reference_pair_usable_records": 453,
+    "positive_negative_unlabeled_design_evaluated": true,
+    "primary_population_calibrated_PNU_scientifically_identified": false,
+    "primary_population_calibrated_PNU_statistically_feasible": false,
+    "recommended_optional_role": "protected_source_assay_stratified_conditional_diagnostic_only",
+    "recommended_primary_design": "retain_reference_sequence_positive_unlabeled_ranking_PU_R",
+    "structure_noncontacts_join_manual_negative_class": false,
+    "universal_nonbinding_interpretation": false
+  },
+  "scientific_conclusion": {
+    "all_939_intact_negative_records_enumerated": true,
+    "every_usable_negatome_pair_checked_against_current_positive_index": true,
+    "historical_stringency_treated_as_current_conflict_clearance": false,
+    "manual_and_structure_noncontact_kept_separate": true,
+    "primary_design_should_change_from_PU_R": false,
+    "universal_nonbinding_interpretation": false,
+    "universal_nonbinding_source_found": false
+  }
+}
