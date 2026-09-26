@@ -1,0 +1,82 @@
+{
+  "files": [
+    {
+      "path": "run.sh",
+      "bytes": 2149,
+      "sha256": "074556df168aaec1427cffdbbb2653b9901e0200cf3b4848746e7b34bafee362"
+    },
+    {
+      "path": "scripts/acquire_ankh.py",
+      "bytes": 2211,
+      "sha256": "9369dee4de413d2f2a6e05cde348c74be0470e58f6db446d6c981c8f3a175a3a"
+    },
+    {
+      "path": "scripts/collect.py",
+      "bytes": 3719,
+      "sha256": "14b426f9816367df9df812df41999039c7fc0330c69adef28457d068f433d830"
+    },
+    {
+      "path": "scripts/embedding.py",
+      "bytes": 4358,
+      "sha256": "11bfc989530865aaffb178684550c5517d1c90d4f0942e2b81766ae9cfa1cf7c"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "bytes": 17874,
+      "sha256": "333b3448fda4a17e7edce0ff6368f61bf58ff444a8cb51b07c29c65ab054bca9"
+    },
+    {
+      "path": "scripts/exposure.py",
+      "bytes": 3906,
+      "sha256": "63cd445c0b14670ca810b56d6b0c7840b57e3ee4a30141be5336313e05fa7534"
+    },
+    {
+      "path": "scripts/integration.py",
+      "bytes": 3686,
+      "sha256": "aea3c0b4b4a5a18cdc49129d332975d7c4e1b4a2e01d32e0991d220bf4bd8cb5"
+    },
+    {
+      "path": "scripts/io_utils.py",
+      "bytes": 1847,
+      "sha256": "4d3b6403b227933327294347aee0192bf07e6bda59c2c75737709d63cd00ec0e"
+    },
+    {
+      "path": "scripts/native.py",
+      "bytes": 2890,
+      "sha256": "b2739aab3fca75e78a8d927edb42da720f4d987994afaf9e97f9f27786bfd1ad"
+    },
+    {
+      "path": "scripts/prepare.py",
+      "bytes": 5796,
+      "sha256": "e5b7f8ab3759bedc9a3709d3a5a72e57e7608bd30e14f7852d670eaf76560fbb"
+    },
+    {
+      "path": "scripts/preserve.py",
+      "bytes": 873,
+      "sha256": "1785a3d517e9fbe24eabeed2113087faef729992d567e7e8b0eb74211f5a4ba5"
+    },
+    {
+      "path": "scripts/score.py",
+      "bytes": 9222,
+      "sha256": "6da572e6b17e1af2671fbb92d566d3afeeb1c0acddc93990e2aac1f9fe8da90c"
+    },
+    {
+      "path": "embedding.sbatch",
+      "bytes": 557,
+      "sha256": "4af74068d3bbd7c9f2735f4bb120772e8dc4132b621f47a24627216457d6ac1d"
+    },
+    {
+      "path": "evaluate.sbatch",
+      "bytes": 768,
+      "sha256": "2550d9897e0808dc14aa4ea045d57a88adc1cf2a4ee6247cff42035d804bab68"
+    },
+    {
+      "path": "score.sbatch",
+      "bytes": 552,
+      "sha256": "8331cf7ed4e1c0339c4768b43899ed020fc578b4cdc9fdedc58a4144f8587f16"
+    }
+  ],
+  "embedding_array": 3040577,
+  "scoring_array": 3040586,
+  "evaluation_job": 3040611
+}

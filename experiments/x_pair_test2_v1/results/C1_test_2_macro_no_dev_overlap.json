@@ -1,0 +1,399 @@
+{
+  "bootstrap": {
+    "multiplicities_sha256": "9d78b2611dcdcc4d0c7babdba4b63134f6040e89665b23534ebd6968457468ff",
+    "participating_components": 2704,
+    "replicates": 2000,
+    "seed": 5701678270088497330
+  },
+  "bootstrap_file": {
+    "bytes": 240628,
+    "path": "results/bootstrap_C1_test_2_macro_no_dev_overlap.npz",
+    "sha256": "5a3e77d608ba4e5e7a59e3bc480d3b23db43bbca3cf41dc1a8999b2ccfb928f6"
+  },
+  "cell": "C1",
+  "cohort_counts": [
+    {
+      "P": 3613,
+      "U": 907793,
+      "cohort": "legacy"
+    },
+    {
+      "P": 645,
+      "U": 250000,
+      "cohort": "added"
+    }
+  ],
+  "excluded_candidate_rows": 91781,
+  "model_order": [
+    "selected_31k",
+    "ipin_baseline",
+    "ipin_optimized",
+    "tuna_retrained_ensemble",
+    "tuna_original",
+    "dscript_original",
+    "dscript_retrained",
+    "plm_interact_original_650m_humanv11",
+    "rapppid_original_released_mult",
+    "rapppid_recovery_mean_logit",
+    "sprint_native_train_positive_graph",
+    "cross_attention_ensemble",
+    "mean_pool_ensemble",
+    "multitask_xfair",
+    "interaction_xfair"
+  ],
+  "models": {
+    "cross_attention_ensemble": {
+      "PU_concordance": 0.8181119739475924,
+      "ci95": [
+        0.7903897488569342,
+        0.8466925287883695
+      ]
+    },
+    "dscript_original": {
+      "PU_concordance": 0.5403284411798273,
+      "ci95": [
+        0.5003002315536154,
+        0.5797526690135253
+      ]
+    },
+    "dscript_retrained": {
+      "PU_concordance": 0.5175974477286268,
+      "ci95": [
+        0.4778454273667236,
+        0.5441872601314021
+      ]
+    },
+    "interaction_xfair": {
+      "PU_concordance": 0.7004528606261922,
+      "ci95": [
+        0.6734414143104874,
+        0.7254222525547075
+      ]
+    },
+    "ipin_baseline": {
+      "PU_concordance": 0.7455856646019339,
+      "ci95": [
+        0.7195191416041913,
+        0.7762352194852997
+      ]
+    },
+    "ipin_optimized": {
+      "PU_concordance": 0.7953029181782907,
+      "ci95": [
+        0.7682432849112499,
+        0.8257265412487673
+      ]
+    },
+    "mean_pool_ensemble": {
+      "PU_concordance": 0.800445580239521,
+      "ci95": [
+        0.7727533245509174,
+        0.8294416749720671
+      ]
+    },
+    "multitask_xfair": {
+      "PU_concordance": 0.7030063054754463,
+      "ci95": [
+        0.6762246934229685,
+        0.7284994782880407
+      ]
+    },
+    "plm_interact_original_650m_humanv11": {
+      "PU_concordance": 0.6863395345903838,
+      "ci95": [
+        0.6541906043055183,
+        0.7135696475820602
+      ]
+    },
+    "rapppid_original_released_mult": {
+      "PU_concordance": 0.6598120605611013,
+      "ci95": [
+        0.6291153746732382,
+        0.6828432115944499
+      ]
+    },
+    "rapppid_recovery_mean_logit": {
+      "PU_concordance": 0.7211628149287705,
+      "ci95": [
+        0.686314955100821,
+        0.7462428926781965
+      ]
+    },
+    "selected_31k": {
+      "PU_concordance": 0.887219279335052,
+      "ci95": [
+        0.8709329690374841,
+        0.9021117144973826
+      ]
+    },
+    "sprint_native_train_positive_graph": {
+      "PU_concordance": 0.737838673266689,
+      "ci95": [
+        0.7052667090524036,
+        0.7705387379225881
+      ]
+    },
+    "tuna_original": {
+      "PU_concordance": 0.6823339995441328,
+      "ci95": [
+        0.6559957037414367,
+        0.7151608585048441
+      ]
+    },
+    "tuna_retrained_ensemble": {
+      "PU_concordance": 0.8230930250501725,
+      "ci95": [
+        0.7973018472621275,
+        0.8503058445850469
+      ]
+    }
+  },
+  "paired_differences": [
+    {
+      "ci95": [
+        -0.2105615434872751,
+        -0.16024464115592332
+      ],
+      "difference": -0.18421297385960567,
+      "model": "multitask_xfair",
+      "reference": "selected_31k"
+    },
+    {
+      "ci95": [
+        -0.07472009398071215,
+        -0.013633316513984093
+      ],
+      "difference": -0.04257935912648758,
+      "model": "multitask_xfair",
+      "reference": "ipin_baseline"
+    },
+    {
+      "ci95": [
+        -0.1225024720834206,
+        -0.06352086309771772
+      ],
+      "difference": -0.0922966127028444,
+      "model": "multitask_xfair",
+      "reference": "ipin_optimized"
+    },
+    {
+      "ci95": [
+        -0.1490253166692498,
+        -0.09226023419711586
+      ],
+      "difference": -0.12008671957472616,
+      "model": "multitask_xfair",
+      "reference": "tuna_retrained_ensemble"
+    },
+    {
+      "ci95": [
+        -0.016039634925481844,
+        0.04996159055026126
+      ],
+      "difference": 0.020672305931313528,
+      "model": "multitask_xfair",
+      "reference": "tuna_original"
+    },
+    {
+      "ci95": [
+        0.13196226231635222,
+        0.19759601102450258
+      ],
+      "difference": 0.16267786429561903,
+      "model": "multitask_xfair",
+      "reference": "dscript_original"
+    },
+    {
+      "ci95": [
+        0.15250845554424894,
+        0.22814566961406735
+      ],
+      "difference": 0.18540885774681948,
+      "model": "multitask_xfair",
+      "reference": "dscript_retrained"
+    },
+    {
+      "ci95": [
+        -0.006612164062162389,
+        0.046305183141015005
+      ],
+      "difference": 0.01666677088506252,
+      "model": "multitask_xfair",
+      "reference": "plm_interact_original_650m_humanv11"
+    },
+    {
+      "ci95": [
+        0.015324680750076087,
+        0.07572775417903509
+      ],
+      "difference": 0.04319424491434498,
+      "model": "multitask_xfair",
+      "reference": "rapppid_original_released_mult"
+    },
+    {
+      "ci95": [
+        -0.049510018605462176,
+        0.0204399453213914
+      ],
+      "difference": -0.018156509453324254,
+      "model": "multitask_xfair",
+      "reference": "rapppid_recovery_mean_logit"
+    },
+    {
+      "ci95": [
+        -0.06334425217418843,
+        -0.002492361859240952
+      ],
+      "difference": -0.03483236779124266,
+      "model": "multitask_xfair",
+      "reference": "sprint_native_train_positive_graph"
+    },
+    {
+      "ci95": [
+        -0.14511104898862276,
+        -0.08694346195893916
+      ],
+      "difference": -0.1151056684721461,
+      "model": "multitask_xfair",
+      "reference": "cross_attention_ensemble"
+    },
+    {
+      "ci95": [
+        -0.12803011981762896,
+        -0.06866512561019726
+      ],
+      "difference": -0.09743927476407466,
+      "model": "multitask_xfair",
+      "reference": "mean_pool_ensemble"
+    },
+    {
+      "ci95": [
+        -0.2122751704137279,
+        -0.16127091512132835
+      ],
+      "difference": -0.1867664187088598,
+      "model": "interaction_xfair",
+      "reference": "selected_31k"
+    },
+    {
+      "ci95": [
+        -0.07920081321986512,
+        -0.015828288912182294
+      ],
+      "difference": -0.04513280397574171,
+      "model": "interaction_xfair",
+      "reference": "ipin_baseline"
+    },
+    {
+      "ci95": [
+        -0.12677408089318917,
+        -0.06528936546363032
+      ],
+      "difference": -0.09485005755209852,
+      "model": "interaction_xfair",
+      "reference": "ipin_optimized"
+    },
+    {
+      "ci95": [
+        -0.15120598195463292,
+        -0.09404817474714239
+      ],
+      "difference": -0.12264016442398029,
+      "model": "interaction_xfair",
+      "reference": "tuna_retrained_ensemble"
+    },
+    {
+      "ci95": [
+        -0.01861188289981233,
+        0.04816413083803283
+      ],
+      "difference": 0.0181188610820594,
+      "model": "interaction_xfair",
+      "reference": "tuna_original"
+    },
+    {
+      "ci95": [
+        0.12867880972624846,
+        0.19618815013488855
+      ],
+      "difference": 0.1601244194463649,
+      "model": "interaction_xfair",
+      "reference": "dscript_original"
+    },
+    {
+      "ci95": [
+        0.14958935026324746,
+        0.22700811690311185
+      ],
+      "difference": 0.18285541289756535,
+      "model": "interaction_xfair",
+      "reference": "dscript_retrained"
+    },
+    {
+      "ci95": [
+        -0.007221890835790543,
+        0.041054380730461075
+      ],
+      "difference": 0.014113326035808393,
+      "model": "interaction_xfair",
+      "reference": "plm_interact_original_650m_humanv11"
+    },
+    {
+      "ci95": [
+        0.013288259800482996,
+        0.07364232477124867
+      ],
+      "difference": 0.040640800065090854,
+      "model": "interaction_xfair",
+      "reference": "rapppid_original_released_mult"
+    },
+    {
+      "ci95": [
+        -0.051808406991170564,
+        0.01718975095166197
+      ],
+      "difference": -0.02070995430257838,
+      "model": "interaction_xfair",
+      "reference": "rapppid_recovery_mean_logit"
+    },
+    {
+      "ci95": [
+        -0.06716372001014337,
+        -0.00419524892558048
+      ],
+      "difference": -0.037385812640496785,
+      "model": "interaction_xfair",
+      "reference": "sprint_native_train_positive_graph"
+    },
+    {
+      "ci95": [
+        -0.14874328399779477,
+        -0.08874639027914671
+      ],
+      "difference": -0.11765911332140022,
+      "model": "interaction_xfair",
+      "reference": "cross_attention_ensemble"
+    },
+    {
+      "ci95": [
+        -0.13175613863629626,
+        -0.07019446240791001
+      ],
+      "difference": -0.09999271961332878,
+      "model": "interaction_xfair",
+      "reference": "mean_pool_ensemble"
+    }
+  ],
+  "prediction_freeze_sha256": "becdd1d868f45c7e1daa2f26ded6df2a8825523b5bdbd6cf2ccad7d5024263bf",
+  "raw_logit_macro_diagnostic_only": {
+    "interaction_xfair": 0.7004528606261922,
+    "multitask_xfair": 0.7030063054754463
+  },
+  "reference_replay": {
+    "cell": "C1",
+    "max_selected_31k_draw_error": 0.0,
+    "passed": true,
+    "view": "test_2_macro_no_dev_overlap"
+  },
+  "view": "test_2_macro_no_dev_overlap"
+}

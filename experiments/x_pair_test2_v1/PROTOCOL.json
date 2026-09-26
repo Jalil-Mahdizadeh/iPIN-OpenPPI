@@ -1,0 +1,97 @@
+{
+  "U_is_confirmed_negative": false,
+  "at_utc": "2026-09-26T16:23:41.200542+00:00",
+  "bootstrap": "Inherited component identities and deterministic draws; paired to selected 31k",
+  "bootstrap_replicates": 2000,
+  "candidate_rows": 3774966,
+  "cells": [
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "embedding_workers": 8,
+  "endpoint_residues": 3756330,
+  "endpoints_above_training_maximum_2000": 100,
+  "exposure": "Audit exact unordered sequence pairs in released interaction/interface train and validation; secondary exclusion views",
+  "length_policy": "Upstream --seq_len all; full context; no sequence truncation",
+  "maximum_length": 7570,
+  "metric": "0.5 design-weighted P/U concordance on reconciled legacy + 0.5 on added cohort",
+  "minimum_length": 25,
+  "models": [
+    "multitask_xfair",
+    "interaction_xfair"
+  ],
+  "native_score": "FP32 sigmoid of native interaction logit; logits also retained",
+  "no_training_or_model_selection": true,
+  "other_released_checkpoints": "Not selected or evaluated; no picking checkpoints using test2",
+  "panels": [
+    {
+      "candidate": {
+        "bytes": 16051482,
+        "path": "data/candidates/legacy_C1.npz",
+        "sha256": "c05d80dc37885bdce8f280512b2857119ca7ab7eb628c1167e4de6f344436dec"
+      },
+      "cell": "C1",
+      "cohort": "legacy",
+      "rows": 1003187
+    },
+    {
+      "candidate": {
+        "bytes": 4010810,
+        "path": "data/candidates/added_C1.npz",
+        "sha256": "d713c8422cd8bbed882de138cea957bd8ab00832a85fd9ab0f72954c22c3c445"
+      },
+      "cell": "C1",
+      "cohort": "added",
+      "rows": 250645
+    },
+    {
+      "candidate": {
+        "bytes": 16215626,
+        "path": "data/candidates/legacy_C2.npz",
+        "sha256": "ee244fb7a33c076dd3fb9a98dd82679c68a02e7df8e41fb591b349d2773b681e"
+      },
+      "cell": "C2",
+      "cohort": "legacy",
+      "rows": 1013446
+    },
+    {
+      "candidate": {
+        "bytes": 4070490,
+        "path": "data/candidates/added_C2.npz",
+        "sha256": "7c4bd1ceca0712829bd9b540ecfb270099f1f62623f61bc055d1a9a1852f5eee"
+      },
+      "cell": "C2",
+      "cohort": "added",
+      "rows": 254375
+    },
+    {
+      "candidate": {
+        "bytes": 16038554,
+        "path": "data/candidates/legacy_C3.npz",
+        "sha256": "fbef879841207fd8390320af8f3ce0a622adf5b34a90af50b75990532928a20e"
+      },
+      "cell": "C3",
+      "cohort": "legacy",
+      "rows": 1002379
+    },
+    {
+      "candidate": {
+        "bytes": 4015434,
+        "path": "data/candidates/added_C3.npz",
+        "sha256": "fb51de51cdc38519794a5962a666b521c9b6f139eee7a95161d8e24a8656fedd"
+      },
+      "cell": "C3",
+      "cohort": "added",
+      "rows": 250934
+    }
+  ],
+  "precision": "FP32, TF32 disabled; compared with the unchanged upstream forward function",
+  "primary_cell": "C3",
+  "primary_model": "multitask_xfair",
+  "scoring_workers": 8,
+  "test2_is_fresh_independent": false,
+  "test_endpoints": 7320,
+  "test_labels_mounted_for_scoring": false,
+  "unique_pairs": 3774966
+}

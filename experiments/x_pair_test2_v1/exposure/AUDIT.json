@@ -1,0 +1,89 @@
+{
+  "at_utc": "2026-09-26T16:30:26.312089+00:00",
+  "bit_labels": {
+    "1": "interaction_train_P",
+    "2": "interaction_train_U",
+    "4": "interaction_val_P",
+    "8": "interaction_val_U",
+    "16": "interface_train",
+    "32": "interface_val"
+  },
+  "caveat": "Exact sequence matching cannot exclude homologous pairs, fragments, sequence variants, or pretraining exposure. Endpoint exposure is recorded separately; test2 C1/C2/C3 definitions remain relative to iPIN training.",
+  "files": [
+    {
+      "bytes": 7550448,
+      "path": "exposure/unique_pairs.npz",
+      "sha256": "4f901485695e17fe3fee36f5762d85fb3472ae9c4684202a1b54c95f9164ed51"
+    },
+    {
+      "bytes": 35682,
+      "path": "exposure/endpoints.npz",
+      "sha256": "56eed10e61f4c2a8854c8b4beb5844c1bdf189d9fe65d9a362823f15428598c3"
+    }
+  ],
+  "interaction_only_mask": "normalized flags & 15 == 0",
+  "primary_mask": "normalized flags == 0: excludes any exact or Ankh-normalized pair in either task train/val",
+  "rows": [
+    {
+      "exact_test_pairs": 15447,
+      "normalized_test_pairs": 15447,
+      "source_rows": 1724263,
+      "split": "train",
+      "task": "interaction"
+    },
+    {
+      "exact_test_pairs": 1910,
+      "normalized_test_pairs": 1910,
+      "source_rows": 215533,
+      "split": "val",
+      "task": "interaction"
+    },
+    {
+      "exact_test_pairs": 50,
+      "normalized_test_pairs": 50,
+      "source_rows": 41938,
+      "split": "train",
+      "task": "interface"
+    },
+    {
+      "exact_test_pairs": 4,
+      "normalized_test_pairs": 4,
+      "source_rows": 5242,
+      "split": "val",
+      "task": "interface"
+    }
+  ],
+  "sources": [
+    {
+      "bytes": 16311350,
+      "path": "sources/datasets/xpair_datasets/X-fair/interaction/sequences.fasta",
+      "sha256": "0cefd1ff7f5de6926c60e1be174a640716cd2d1703fead0df01ae55fd274effa"
+    },
+    {
+      "bytes": 72751699,
+      "path": "sources/datasets/xpair_datasets/X-fair/interaction/interaction_train.tsv",
+      "sha256": "a6e7dd0b7c9cc0b33d65affc7b0eb4d7591a7de6481b691150f9f424f1281312"
+    },
+    {
+      "bytes": 9093943,
+      "path": "sources/datasets/xpair_datasets/X-fair/interaction/interaction_val.tsv",
+      "sha256": "7bcb6125fa71a12c42be887d8485d7b40ce1e2dd450d5f223f0c6cce77c8e4b4"
+    },
+    {
+      "bytes": 15553015,
+      "path": "sources/datasets/xpair_datasets/X-fair/interface/sequences.fasta",
+      "sha256": "a3a091a1178deffa69206a18082abbf26765463859459c854cbc0f7e8d2dfc44"
+    },
+    {
+      "bytes": 25735900,
+      "path": "sources/datasets/xpair_datasets/X-fair/interface/interface_train.tsv",
+      "sha256": "c0ee97ee471bdbcea85c4a9f3a0b65a6b48458a16cb9ff7b029eab375e4341c0"
+    },
+    {
+      "bytes": 3248393,
+      "path": "sources/datasets/xpair_datasets/X-fair/interface/interface_val.tsv",
+      "sha256": "8bd62cbe001608d8c998f662a22d26d93e8241d77b6d14e4331d600dbd2bf59a"
+    }
+  ],
+  "test_labels_read": false
+}

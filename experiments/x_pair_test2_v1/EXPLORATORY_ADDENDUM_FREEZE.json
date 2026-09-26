@@ -1,0 +1,28 @@
+{
+  "at_utc": "2026-09-26T16:55:30.650873+00:00",
+  "exploratory_after_primary_results": true,
+  "primary_implementation_freeze": {
+    "path": "IMPLEMENTATION_FREEZE.json",
+    "bytes": 2388,
+    "sha256": "ca91a4b34150d4e8ce4ccba94852ababdb0bfcf6baef0797ab1d381a632b5f24"
+  },
+  "primary_python_scripts_unchanged": true,
+  "runner_change": "Only added cohort_detail as an evaluation-mode alias; original modes retain the same command and mounts.",
+  "files": [
+    {
+      "path": "run.sh",
+      "bytes": 2169,
+      "sha256": "8cac8ed93262db9628cd49f1cafa58d263e391cf20fbbc84dd07a328773838a0"
+    },
+    {
+      "path": "scripts/cohort_detail.py",
+      "bytes": 2773,
+      "sha256": "64bb5f417948e9633b322792cc9d2d1ee1ef31a74ac0819568ed69da891c6459"
+    },
+    {
+      "path": "results/C3_COHORT_EXPLORATORY.json",
+      "bytes": 5926,
+      "sha256": "2cd751324241aed30bfd2d64e0a5f97bf7e819657d71cfb131e414dfab29e664"
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "commit": "897646a4a768acd488f4163ff07dd5a1183d52b1",
+  "files": [
+    {
+      "bytes": 81,
+      "path": "sources/X-PAIR/.gitignore",
+      "sha256": "1217cb3bf5edb045fac5c6ed2a836d2dcb60b71282e2ccad2b3b3b36e5da5008"
+    },
+    {
+      "bytes": 20906,
+      "path": "sources/X-PAIR/LICENSE",
+      "sha256": "0acaeb27eba9519d0dbc968d07119968a471578f912d79837ec7c3d88cb69ee0"
+    },
+    {
+      "bytes": 3917,
+      "path": "sources/X-PAIR/README.md",
+      "sha256": "374b2d75a772adb689e017e374d8ea6ef5675ad6151a2bea30a164557e13e7f8"
+    },
+    {
+      "bytes": 3200,
+      "path": "sources/X-PAIR/demo/README.md",
+      "sha256": "bb04d596b33327ba5c6ed67639cc613066d424f2aecb6c89cf4b311bc6ebae5b"
+    },
+    {
+      "bytes": 938,
+      "path": "sources/X-PAIR/demo/interaction_sequences.fasta",
+      "sha256": "746968bb516df9a808d4e948d0dc28c3c73fd1737a7a3ab3c8fc4a3ead4ea0b8"
+    },
+    {
+      "bytes": 1190,
+      "path": "sources/X-PAIR/demo/interface_sequences.fasta",
+      "sha256": "2113654926ee133798c8520898346dbd58b98640493aa25803d87c94e3df1e52"
+    },
+    {
+      "bytes": 98,
+      "path": "sources/X-PAIR/demo/predict/pairs.tsv",
+      "sha256": "1b6bb9d9919b5d968e438e618d3165f96f68d17a8797ea5571aa1ab8d7b059af"
+    },
+    {
+      "bytes": 383,
+      "path": "sources/X-PAIR/demo/predict/sequences.fasta",
+      "sha256": "a9fdf86319fdc7f4ebc41d5a312f32b5b52e44f40051076969505b736c13d988"
+    },
+    {
+      "bytes": 81,
+      "path": "sources/X-PAIR/demo/test/interaction_test.tsv",
+      "sha256": "97b546ddb392053617ddd5e1f931a131fbc47f791b0a7073cf690257ec7b6269"
+    },
+    {
+      "bytes": 436,
+      "path": "sources/X-PAIR/demo/test/interface_test.tsv",
+      "sha256": "7e52d263d61c50b57842c678516e7a2dd3910caea018544d97917bedb8d0fcf9"
+    },
+    {
+      "bytes": 81,
+      "path": "sources/X-PAIR/demo/train/interaction_train.tsv",
+      "sha256": "94c71d8449a49dfc3452603288b86851c62046dedf58f9b7f058a4744b5fa232"
+    },
+    {
+      "bytes": 81,
+      "path": "sources/X-PAIR/demo/train/interaction_val.tsv",
+      "sha256": "3d167137c5ca0a58a568091607a19ae4112aaed7fe865911875e8afd96310438"
+    },
+    {
+      "bytes": 396,
+      "path": "sources/X-PAIR/demo/train/interface_train.tsv",
+      "sha256": "f86406ae74e67958b574d1dead79aa5a256c3e633e22c5622176bac683dd16ce"
+    },
+    {
+      "bytes": 472,
+      "path": "sources/X-PAIR/demo/train/interface_val.tsv",
+      "sha256": "6703c649f6c6c59f973152fd62a9b31b44b58be8f587fb1a64203bb6d18b69e1"
+    },
+    {
+      "bytes": 10551,
+      "path": "sources/X-PAIR/docs/documentation.md",
+      "sha256": "8bf9569ef13acb3c6715c86e324a767860b598d54e0ca9102c6d6d9356c6551c"
+    },
+    {
+      "bytes": 1199090,
+      "path": "sources/X-PAIR/docs/logo.png",
+      "sha256": "9286aa313c74ddddee676e15d8e84cc81f6501d80cf617356b37e5f3a32baa49"
+    },
+    {
+      "bytes": 5686501,
+      "path": "sources/X-PAIR/pretrained_models/interaction_bernett.ckpt",
+      "sha256": "17bf35197982c28fe25de1a45cf4cae67b94ae2edacc3db7967cd4f4c6da0fc6"
+    },
+    {
+      "bytes": 5686501,
+      "path": "sources/X-PAIR/pretrained_models/interaction_dscript.ckpt",
+      "sha256": "b2629356df2206e6d29058c4f65daf75e30c9b874da27fa282c282affb6738bf"
+    },
+    {
+      "bytes": 5686757,
+      "path": "sources/X-PAIR/pretrained_models/interaction_xfair.ckpt",
+      "sha256": "32a005ecf436a9031288ddbecd748f3c474185cff8506f3e75bf553187cb02c7"
+    },
+    {
+      "bytes": 5619249,
+      "path": "sources/X-PAIR/pretrained_models/interface_pioneer.ckpt",
+      "sha256": "7ab260dc7917205367cb56ba8f706b36ffa502540c44a5395a1a51457a4c6bd1"
+    },
+    {
+      "bytes": 5619441,
+      "path": "sources/X-PAIR/pretrained_models/interface_xfair.ckpt",
+      "sha256": "46d9e06dae4b41db27a5584e31f0bbf849d78aa24070a6c58b20fcddeb7b25fa"
+    },
+    {
+      "bytes": 5690969,
+      "path": "sources/X-PAIR/pretrained_models/multitask_human.ckpt",
+      "sha256": "8201745d632eb1d86fdd9f4fe546f3c0efd4f1d0a40c30fefc37da8c5a4668d4"
+    },
+    {
+      "bytes": 5691097,
+      "path": "sources/X-PAIR/pretrained_models/multitask_xfair.ckpt",
+      "sha256": "d8c50d03cd6107d2b411d7095a34243ec1b31e6b7cc1d590329c9328c1e8df72"
+    },
+    {
+      "bytes": 5691161,
+      "path": "sources/X-PAIR/pretrained_models/multitask_xmultispecies.ckpt",
+      "sha256": "3488197883aee6191e92efb085975e21a86512818646978f490e90c79c26f393"
+    },
+    {
+      "bytes": 1218,
+      "path": "sources/X-PAIR/pyproject.toml",
+      "sha256": "06e6cc9d89f8716a7dbc58d97876cfa01042d0708fc79d58451699f49560f3f1"
+    },
+    {
+      "bytes": 22,
+      "path": "sources/X-PAIR/xpair/__init__.py",
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+    },
+    {
+      "bytes": 5691097,
+      "path": "sources/X-PAIR/xpair/default_model/multitask_xfair.ckpt",
+      "sha256": "d8c50d03cd6107d2b411d7095a34243ec1b31e6b7cc1d590329c9328c1e8df72"
+    },
+    {
+      "bytes": 28911,
+      "path": "sources/X-PAIR/xpair/model.py",
+      "sha256": "f25ee737de6939b08bb7b472e214c2925549af51f31979f3d50aa7cee539a5ef"
+    },
+    {
+      "bytes": 7622,
+      "path": "sources/X-PAIR/xpair/predict.py",
+      "sha256": "379d0088cdae00d780b678ebf42e2d1e5b4f6fc20e1a564cdaab3d59f986f79f"
+    },
+    {
+      "bytes": 7614,
+      "path": "sources/X-PAIR/xpair/test.py",
+      "sha256": "6871f68c28998dbb5d297ff108e43b7ce8e5bb20cd9dd53b5c2e87ebd8e8d35c"
+    },
+    {
+      "bytes": 8389,
+      "path": "sources/X-PAIR/xpair/train.py",
+      "sha256": "0ec70e994985c65bbad79975342ea2baf15a0812a8e954b72f183a393f8060eb"
+    },
+    {
+      "bytes": 0,
+      "path": "sources/X-PAIR/xpair/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5404,
+      "path": "sources/X-PAIR/xpair/utils/attention.py",
+      "sha256": "e377e55304b6003aa9ddbaca1725420595f32b5f06ddc13de911c489e76a42f1"
+    },
+    {
+      "bytes": 19079,
+      "path": "sources/X-PAIR/xpair/utils/datamodule.py",
+      "sha256": "47b855941ccca4c5ff806b2e9f5eafa5adcc98bde514f069a8023d6cce0dd36b"
+    },
+    {
+      "bytes": 18523,
+      "path": "sources/X-PAIR/xpair/utils/dataset.py",
+      "sha256": "24f909091b6e16545197908c8f2ebd8d979b67742ab444b02eba2c2a9884f6c9"
+    },
+    {
+      "bytes": 8022,
+      "path": "sources/X-PAIR/xpair/utils/embedding_menager.py",
+      "sha256": "ec87561842ce85df8679cf73c9bc6a4bf14dbd7073fdb3fc0ea53928f1d489db"
+    },
+    {
+      "bytes": 6944,
+      "path": "sources/X-PAIR/xpair/utils/utils.py",
+      "sha256": "5f4dff0abe3e74b5c089ca8b35ad3ed650620adf5288c7bb6aaf80ae0da9a48c"
+    }
+  ],
+  "models": {
+    "interaction_xfair": {
+      "bytes": 5686757,
+      "path": "sources/X-PAIR/pretrained_models/interaction_xfair.ckpt",
+      "sha256": "32a005ecf436a9031288ddbecd748f3c474185cff8506f3e75bf553187cb02c7"
+    },
+    "multitask_xfair": {
+      "bytes": 5691097,
+      "path": "sources/X-PAIR/pretrained_models/multitask_xfair.ckpt",
+      "sha256": "d8c50d03cd6107d2b411d7095a34243ec1b31e6b7cc1d590329c9328c1e8df72"
+    }
+  },
+  "primary": "multitask_xfair",
+  "selection": "Released default; interaction-only counterpart is prespecified secondary"
+}

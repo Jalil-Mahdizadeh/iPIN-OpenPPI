@@ -1,0 +1,1516 @@
+{
+  "all_originals_verified": true,
+  "at_utc": "2026-09-26T16:23:38.428289+00:00",
+  "files": [
+    {
+      "bytes": 16310,
+      "path": "experiments/human_ppi_data_scaling_v1/audit/EXECUTION_FREEZE.json",
+      "sha256": "be67d329b7efa320b2149294cffaa922ea20415c034f1ba5ffcb1007f418bec2"
+    },
+    {
+      "bytes": 9077,
+      "path": "experiments/human_ppi_data_scaling_v1/audit/CORPUS_FREEZE.json",
+      "sha256": "808e86b4e067dd83392f150e834bd5bc72d96e359cde706c4f5082630ae69f6b"
+    },
+    {
+      "bytes": 812,
+      "path": "experiments/human_ppi_data_scaling_v1/audit/CANDIDATE_FREEZE.json",
+      "sha256": "82058b84814932e3833c62f346da5a44b410a80d06303e5909f04981e257f0a9"
+    },
+    {
+      "bytes": 993,
+      "path": "experiments/human_ppi_data_scaling_v1/audit/CORPUS_VALIDATION.json",
+      "sha256": "d2bdc4a5e594f719e81e4ebacd4556c12218318d6d6a3d6023ee2949367bcaa6"
+    },
+    {
+      "bytes": 14492406,
+      "path": "experiments/human_ppi_data_scaling_v1/data/sequences.json",
+      "sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6"
+    },
+    {
+      "bytes": 1230813,
+      "path": "experiments/human_ppi_data_scaling_v1/data/endpoints.json",
+      "sha256": "8386f56ff0ac54c204ac728fd943790e8706b5742942c307b05616e29855d0b0"
+    },
+    {
+      "bytes": 1469,
+      "path": "experiments/human_ppi_data_scaling_v1/data/PROTOCOL.json",
+      "sha256": "679cead7f931c7d9b21195ad1a70a794d92770efa36c93f0a293490f15847ab2"
+    },
+    {
+      "bytes": 65669441,
+      "path": "experiments/human_ppi_data_scaling_v1/data/legacy/development_02.npz",
+      "sha256": "3aa68097a097d0022dba3593cae292cfda8f477ea8d4cd3342fb29eda6992393"
+    },
+    {
+      "bytes": 6267057,
+      "path": "experiments/human_ppi_data_scaling_v1/data/development/added/C1.npz",
+      "sha256": "f29c4eaa55291cddc5578ad4e7129749f2499fa25750b8f39e429b59b1eed1c9"
+    },
+    {
+      "bytes": 4010810,
+      "path": "experiments/human_ppi_data_scaling_v1/private/candidates/added_C1.npz",
+      "sha256": "d713c8422cd8bbed882de138cea957bd8ab00832a85fd9ab0f72954c22c3c445"
+    },
+    {
+      "bytes": 4070490,
+      "path": "experiments/human_ppi_data_scaling_v1/private/candidates/added_C2.npz",
+      "sha256": "7c4bd1ceca0712829bd9b540ecfb270099f1f62623f61bc055d1a9a1852f5eee"
+    },
+    {
+      "bytes": 4015434,
+      "path": "experiments/human_ppi_data_scaling_v1/private/candidates/added_C3.npz",
+      "sha256": "fb51de51cdc38519794a5962a666b521c9b6f139eee7a95161d8e24a8656fedd"
+    },
+    {
+      "bytes": 16051482,
+      "path": "experiments/human_ppi_data_scaling_v1/private/candidates/legacy_C1.npz",
+      "sha256": "c05d80dc37885bdce8f280512b2857119ca7ab7eb628c1167e4de6f344436dec"
+    },
+    {
+      "bytes": 16215626,
+      "path": "experiments/human_ppi_data_scaling_v1/private/candidates/legacy_C2.npz",
+      "sha256": "ee244fb7a33c076dd3fb9a98dd82679c68a02e7df8e41fb591b349d2773b681e"
+    },
+    {
+      "bytes": 16038554,
+      "path": "experiments/human_ppi_data_scaling_v1/private/candidates/legacy_C3.npz",
+      "sha256": "fbef879841207fd8390320af8f3ce0a622adf5b34a90af50b75990532928a20e"
+    },
+    {
+      "bytes": 6267107,
+      "path": "experiments/human_ppi_data_scaling_v1/private/test/added/C1.npz",
+      "sha256": "c6b061c236585e13092922b354d4bae02defb8411528c1cd52d1095948d84b1e"
+    },
+    {
+      "bytes": 6360357,
+      "path": "experiments/human_ppi_data_scaling_v1/private/test/added/C2.npz",
+      "sha256": "ea5cd5a041a7aefc9e90081876f4f2b8e54c5a492d2b3eb77acd5fea4cd1506b"
+    },
+    {
+      "bytes": 6274332,
+      "path": "experiments/human_ppi_data_scaling_v1/private/test/added/C3.npz",
+      "sha256": "f63ad7dc06f2ace33dc7c8d4c969246d86f9144c329a494ef11b15b18e997db6"
+    },
+    {
+      "bytes": 25080657,
+      "path": "experiments/human_ppi_data_scaling_v1/private/test/legacy/C1.npz",
+      "sha256": "77a3c28a6cd0b38daab82431504ecb7f04a1c19b431c8280b7973b4d96584991"
+    },
+    {
+      "bytes": 25337132,
+      "path": "experiments/human_ppi_data_scaling_v1/private/test/legacy/C2.npz",
+      "sha256": "a4a2dc689c000f7c6ef4b30de9543b2649c11d76cbfbc587f1ac9abd1c128ebb"
+    },
+    {
+      "bytes": 25060457,
+      "path": "experiments/human_ppi_data_scaling_v1/private/test/legacy/C3.npz",
+      "sha256": "f4a6e4be2e06fe7175978c0977acb66a06f62bb6c7cca5fde24de51be9a63647"
+    },
+    {
+      "bytes": 25080657,
+      "path": "experiments/human_ppi_data_scaling_v1/private/test/reconciled/C1.npz",
+      "sha256": "22404097967ce4613ad5e62f596ec0868984968d53977865410622eb9d4d0469"
+    },
+    {
+      "bytes": 25337132,
+      "path": "experiments/human_ppi_data_scaling_v1/private/test/reconciled/C2.npz",
+      "sha256": "b4063c92da36a5daad963d9cdd5ee9301445de7cb5c34a5ed5a7759bda781e0f"
+    },
+    {
+      "bytes": 25060457,
+      "path": "experiments/human_ppi_data_scaling_v1/private/test/reconciled/C3.npz",
+      "sha256": "9ab1f4e877d8c888049505ac1c63e4a2c305c1b207ffbfaf45898dd4e7dcfee4"
+    },
+    {
+      "bytes": 45404,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/SELECTION.json",
+      "sha256": "3a2b76cf605c94263b9141410c054b5aa79b34a416fcfe7bd784a370338c4f36"
+    },
+    {
+      "bytes": 7537,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/SCORER_FREEZE.json",
+      "sha256": "8e8704f77eecca395f2d7cea24931a19c2d573255339a6b51be7865366aad48d"
+    },
+    {
+      "bytes": 5103,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/PREDICTION_FREEZE.json",
+      "sha256": "5bb866e1df22439a48ad40a64cb02a30085189079d2cde2cfada19698d92995a"
+    },
+    {
+      "bytes": 135357993,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/scaled_31188_seed20260803.pt",
+      "sha256": "f29ee395d747ff07cffba14d028430fa9c9ab1e7559a71b678b8541a22f7f979"
+    },
+    {
+      "bytes": 4501376,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/scaled_31188_seed20260803.npy",
+      "sha256": "ee5deafceae2141bcd3c39fb00c3f05b0e8ea8fcc8d6b6b18b8a0528f33aa9d7"
+    },
+    {
+      "bytes": 135357993,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/scaled_31188_seed20260817.pt",
+      "sha256": "7581d4f43354201914ba38924f58bd2e10b4babb9f56ccf6c104276190c97f59"
+    },
+    {
+      "bytes": 4501376,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/scaled_31188_seed20260817.npy",
+      "sha256": "94472146cf8a9df67eee21eb6feab12d2f7e45fc140c00b97a76aacd01d50842"
+    },
+    {
+      "bytes": 135357993,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/scaled_31188_seed20260831.pt",
+      "sha256": "707f56e0007e0af10d6949924d4c7afc096b9d87cf2375bb050dd12b9d11e66a"
+    },
+    {
+      "bytes": 4501376,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/scaled_31188_seed20260831.npy",
+      "sha256": "e5b12c0313e31df56ff6a0637f45e84dfa2d0053830c7f733f726520804e18c2"
+    },
+    {
+      "bytes": 135359451,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/baseline_seed20260803.pt",
+      "sha256": "c96b6cd4dcde5edc766d1028d8f22a410a072b1376d26cb392f09c3801793ebd"
+    },
+    {
+      "bytes": 4501376,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/baseline_seed20260803.npy",
+      "sha256": "3a15fb2b880b949fbff6bd4c9a4e2404ed674ed1296e2a873fbc4690a61ece6a"
+    },
+    {
+      "bytes": 135359451,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/baseline_seed20260817.pt",
+      "sha256": "f1444b8d43efcf4d76a73a6f4a0419d395651b493f5e21dc8ab1dd002a7e0c02"
+    },
+    {
+      "bytes": 4501376,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/baseline_seed20260817.npy",
+      "sha256": "ca8d70b09030f5d6505d23e161ae70450a2c79fced08168c994c824bdb70274a"
+    },
+    {
+      "bytes": 135359451,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/baseline_seed20260831.pt",
+      "sha256": "45aae93319be687cec386d7875a78d4a4b5068a635874abe67b6d9ab1a23727c"
+    },
+    {
+      "bytes": 4501376,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/frozen/baseline_seed20260831.npy",
+      "sha256": "c2a96c14125edcd25a38b8a796c825b47079e2b0ef96cbb1ae4ec9e2fa77b86c"
+    },
+    {
+      "bytes": 56180294,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/predictions/test_legacy_C1.npz",
+      "sha256": "662419526fdbd137bfaa528f342fc3dc4e59a7951f67893fd4f37f1a7171e5d5"
+    },
+    {
+      "bytes": 14037942,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/predictions/test_added_C1.npz",
+      "sha256": "a3f76bf8be8b0e07a44668353aad3a499a119b4a8df2e7bde0b4c12442fc835c"
+    },
+    {
+      "bytes": 56754798,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/predictions/test_legacy_C2.npz",
+      "sha256": "889ce97b96e081a02cdb5d8e0774a604663f9217d875934538ca1835e84b305a"
+    },
+    {
+      "bytes": 14246822,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/predictions/test_added_C2.npz",
+      "sha256": "c2911bef0161ddf86bf680007629856b9d51925ae875f069c046268b6f5314b7"
+    },
+    {
+      "bytes": 56135046,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/predictions/test_legacy_C3.npz",
+      "sha256": "37cf64df2bc67a4ed869411023c69427ec36662f3edd636228304064e6cbb2a6"
+    },
+    {
+      "bytes": 14054126,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/predictions/test_added_C3.npz",
+      "sha256": "5d4172de6a916ebbaa63ac5737573467a48397114f64ee90c7b8cc19bdea24a3"
+    },
+    {
+      "bytes": 1186,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/residue_cache/RESIDUE_CACHE_MANIFEST.json",
+      "sha256": "14406efa758fc0504c8cc11797d4f62c1e4ec5138e475f7153f82ca2a988e0be"
+    },
+    {
+      "bytes": 25558969544,
+      "path": "experiments/human_ppi_data_scaling_v1/runs/residue_cache/residues.h5",
+      "sha256": "9f0136f5cf3d8a5d439ff4592204016e0391cefbbbf3eaba9e2f84319661cf7c"
+    },
+    {
+      "bytes": 825,
+      "path": "benchmark/tuna/private/session/SESSION.json",
+      "sha256": "0a21329fdbed17f399dd97e30454f6d8dc80e15c6df0ec481facebdc5434080a"
+    },
+    {
+      "bytes": 35580274,
+      "path": "benchmark/tuna/private/session/cell-06.parquet",
+      "sha256": "3bce60dcef85f8a9ec60f49a65d604b4be8254e486bcad24cfa83206d46fd022"
+    },
+    {
+      "bytes": 36119796,
+      "path": "benchmark/tuna/private/session/cell-03.parquet",
+      "sha256": "126105a384ee93d1d5ed519e8cd7c1730b6b6826550884164ef557ed03fd086c"
+    },
+    {
+      "bytes": 35159693,
+      "path": "benchmark/tuna/private/session/cell-00.parquet",
+      "sha256": "a23a1ad82dbc42e879240142e227d8901d1d84b2636f66d250593686e6cee91e"
+    },
+    {
+      "bytes": 3864,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/SCORER_FREEZE.json",
+      "sha256": "4ceaf28210f74b4f8519d2e8b9453376ce08edf27dcf79ef5ef12fbb8fc0ee86"
+    },
+    {
+      "bytes": 4504,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/code/benchmark_metrics.py",
+      "sha256": "9ef404da2663da2c3365b2fe685412f61812e4603fc3ba1e45e0a3baf097b2b8"
+    },
+    {
+      "bytes": 2647,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/code/common.py",
+      "sha256": "20c67e528d2f6e50a7248c52db0bc92fab399e8feb159831e36fbb00172573b2"
+    },
+    {
+      "bytes": 19893,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/code/comparison.py",
+      "sha256": "a1c689a4b24bec24eb7834af9caa75fb9b8845929a40b2addf84dcdead82fc9a"
+    },
+    {
+      "bytes": 2256,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/code/frozen_scorer.py",
+      "sha256": "8e9b3c1e2887c76771e6d8e7df18710b2bcd9acb969af5a6bec2ed72d65ae0f2"
+    },
+    {
+      "bytes": 8070,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/code/gpu_guard.py",
+      "sha256": "6c1b386e4591d8fea1e4be98e0708d70107f263a12c4bcb5b911e867c8fdb0fa"
+    },
+    {
+      "bytes": 3544,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/code/native_adapter.py",
+      "sha256": "0266c81f593870267ddadb8897499926176bde691aa8d3ee1d3467c93b296d7d"
+    },
+    {
+      "bytes": 5821,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/code/score_shard.py",
+      "sha256": "9e22d25679142c2fe87f35e5ac804985c7f0e2e05f7abecfe477b9dd3de75290"
+    },
+    {
+      "bytes": 816003,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/components.json",
+      "sha256": "bb18b6b8197b9044f371b4e540fa2d7fcf746cc54906c5d3728863889bf57967"
+    },
+    {
+      "bytes": 1190003,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 136136,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/features/offsets.npy",
+      "sha256": "78d879267d285e90d51e22ab304f00b1c051cd7ee348f11baf3a868bb97682cd"
+    },
+    {
+      "bytes": 3694862928,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/features/projected.npy",
+      "sha256": "7786f98b2bbf7308331248eebd49caba31592b76a50dd81583297038e3aeb33f"
+    },
+    {
+      "bytes": 120396,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/lengths.json",
+      "sha256": "b229d7c450f9cf95047938455a8b07c577360c33f07f024b5c9f96d7e795780e"
+    },
+    {
+      "bytes": 2566,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/provenance/ADAPTER_QUALIFICATION.json",
+      "sha256": "00d8c3b5682c0dd6be21d4edd6fb6a8046d7ce337b660444501c1737d002cc36"
+    },
+    {
+      "bytes": 154,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/provenance/FROZEN_SCORER_QUALIFICATION.json",
+      "sha256": "86e5b3ce30604d1225672db7e55d6ba221a8d4f6bbdd727dbe356002e878b73f"
+    },
+    {
+      "bytes": 403,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/provenance/METRIC_QUALIFICATION.json",
+      "sha256": "b1c8b8b199face891c0930350464bba2c62a1723f120699d5794a63f582cee80"
+    },
+    {
+      "bytes": 3896,
+      "path": "benchmark/dscript/runs/original-v1/scorer_bundle/provenance/TILING_QUALIFICATION.json",
+      "sha256": "4878339534ebd020b7a61b17b4c9504170a1472d16668bfac8f022d3d7d45353"
+    },
+    {
+      "bytes": 11045695488,
+      "path": "benchmark/containers/images/dscript-native-arm64-v1.sif",
+      "sha256": "bfcee514eeb908a05bde701f230066baca9fb45fab2a811732f8e16a14a3912c"
+    },
+    {
+      "bytes": 973,
+      "path": "benchmark/dscript/private/original-v1/predictions/PREDICTIONS.json",
+      "sha256": "0ca09cb7c4d0d72740146f040e01215ba260b7953a8e630770c9b8e6a693f042"
+    },
+    {
+      "bytes": 825,
+      "path": "benchmark/dscript/private/original-v1/session/SESSION.json",
+      "sha256": "772e3af262d6c36ef9701def6bfb361f65ebff7b9ba448922242165abeed554f"
+    },
+    {
+      "bytes": 34726769,
+      "path": "benchmark/dscript/private/original-v1/predictions/cell-06.parquet",
+      "sha256": "6f18b30f2bb388229797f7373ae0e14f1e371946077f8ea647418190dd850558"
+    },
+    {
+      "bytes": 35123928,
+      "path": "benchmark/dscript/private/original-v1/predictions/cell-03.parquet",
+      "sha256": "6d3667ba1245f3abb3f1db83ef692940082a24ed84de764b50efc82a1680ff40"
+    },
+    {
+      "bytes": 34826488,
+      "path": "benchmark/dscript/private/original-v1/predictions/cell-00.parquet",
+      "sha256": "76a4a0afb563193d683c50b3e210ed57633666d5ec41d6c5853d417c2742f4e8"
+    },
+    {
+      "bytes": 4612,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/SCORER_FREEZE.json",
+      "sha256": "44573a95fdd145e8c0d714376690d61c4e76b5f65139b3d7922d04ed14699577"
+    },
+    {
+      "bytes": 5670,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/SELECTION.json",
+      "sha256": "159407d52580d1d6ef87134af3f3a10a512d3104a9d09c5b98734f50a0765aac"
+    },
+    {
+      "bytes": 4504,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/code/benchmark_metrics.py",
+      "sha256": "9ef404da2663da2c3365b2fe685412f61812e4603fc3ba1e45e0a3baf097b2b8"
+    },
+    {
+      "bytes": 2647,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/code/common.py",
+      "sha256": "20c67e528d2f6e50a7248c52db0bc92fab399e8feb159831e36fbb00172573b2"
+    },
+    {
+      "bytes": 22361,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/code/comparison.py",
+      "sha256": "692037fc7f7d6920ef77795b15b0eb061635ff279280d05223f817c807bcb0fd"
+    },
+    {
+      "bytes": 1939,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/code/frozen_scorer.py",
+      "sha256": "1884e9d95cac0bf5daefc8bbea498c967fbea6866bdd5f0d98fcc0154aec794f"
+    },
+    {
+      "bytes": 8070,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/code/gpu_guard.py",
+      "sha256": "6c1b386e4591d8fea1e4be98e0708d70107f263a12c4bcb5b911e867c8fdb0fa"
+    },
+    {
+      "bytes": 5406,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/code/model.py",
+      "sha256": "8fe0b76cedbf04094b58ce9169e44c3d5dc877ef8f9ecb2cf16365239e6bb544"
+    },
+    {
+      "bytes": 3544,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/code/native_adapter.py",
+      "sha256": "0266c81f593870267ddadb8897499926176bde691aa8d3ee1d3467c93b296d7d"
+    },
+    {
+      "bytes": 5703,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/code/score_shard.py",
+      "sha256": "cb8996ade9e85352b80bdcfce169945d9f6fb2a2f4beb4bf622209ea1e4b7f73"
+    },
+    {
+      "bytes": 816003,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/components.json",
+      "sha256": "bb18b6b8197b9044f371b4e540fa2d7fcf746cc54906c5d3728863889bf57967"
+    },
+    {
+      "bytes": 1190003,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 3694862928,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/features/dscript_seed_20260803.npy",
+      "sha256": "f73240fd800b27a3d2a56afe81cf659fba3c5766523d247332586ce135b95735"
+    },
+    {
+      "bytes": 3694862928,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/features/dscript_seed_20260817.npy",
+      "sha256": "19d6cb3b8d79e6641a21b61bdc267a66d928fe64ce5c9f35d9a2e8e7ec8a3433"
+    },
+    {
+      "bytes": 3694862928,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/features/dscript_seed_20260831.npy",
+      "sha256": "84dfd896c17a2bbd6df10accce039fc71a6db77f47f629217fc4afd198a39bdf"
+    },
+    {
+      "bytes": 136136,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/features/offsets.npy",
+      "sha256": "78d879267d285e90d51e22ab304f00b1c051cd7ee348f11baf3a868bb97682cd"
+    },
+    {
+      "bytes": 120396,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/lengths.json",
+      "sha256": "b229d7c450f9cf95047938455a8b07c577360c33f07f024b5c9f96d7e795780e"
+    },
+    {
+      "bytes": 709,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/provenance/FROZEN_SCORER_QUALIFICATION.json",
+      "sha256": "913cdcee3e87a12fd7fbbe3f0e2cc5cb957e7e216b415c6020a42ca3325a6a14"
+    },
+    {
+      "bytes": 8535,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/provenance/TRAINING_FREEZE.json",
+      "sha256": "ad076c1852a3af36106cd861d724063674055e5724795788c3824b006a36d286"
+    },
+    {
+      "bytes": 2585542,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/weights/dscript_seed_20260803.pt",
+      "sha256": "6dae043f5b84722fdc2a3d28b67e991bd4ef12f138a9f3fb444d7e4825fbf20a"
+    },
+    {
+      "bytes": 2585542,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/weights/dscript_seed_20260817.pt",
+      "sha256": "9c3e7a2260635ce076bdf8fb5059dc4c386317c58783465455678d06e848b914"
+    },
+    {
+      "bytes": 2585542,
+      "path": "benchmark/dscript/runs/retrained-v1/scorer_bundle/weights/dscript_seed_20260831.pt",
+      "sha256": "c0f4b17e269614f266ae9d551bff41c71c2e853f28a912abdab4b3f0ba406755"
+    },
+    {
+      "bytes": 973,
+      "path": "benchmark/dscript/private/retrained-v1/predictions/PREDICTIONS.json",
+      "sha256": "a62f25af709d36902e8250740c62f541ac46be5f7eac414da19b996963ffab69"
+    },
+    {
+      "bytes": 825,
+      "path": "benchmark/dscript/private/retrained-v1/session/SESSION.json",
+      "sha256": "397730c3813c28e81fee364cc44ab134716227da35f85942d9408353d5c65741"
+    },
+    {
+      "bytes": 44559415,
+      "path": "benchmark/dscript/private/retrained-v1/predictions/cell-06.parquet",
+      "sha256": "0fdba56254488822c52ebe0a6c92e8efbdc2770f5db4cbfc8a8003546c58e8c4"
+    },
+    {
+      "bytes": 44919035,
+      "path": "benchmark/dscript/private/retrained-v1/predictions/cell-03.parquet",
+      "sha256": "7848bc87ffa8b4eb1e680d16d31a716f06e10bce5add78a10e53cb05d55f4f8a"
+    },
+    {
+      "bytes": 44323779,
+      "path": "benchmark/dscript/private/retrained-v1/predictions/cell-00.parquet",
+      "sha256": "fcfa0c3acd632642e5d329381ba4694eb78ed786a3993a1396ce858adc5176d6"
+    },
+    {
+      "bytes": 4046,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/SCORER_FREEZE.json",
+      "sha256": "6b9acdd2c66b0c001e6ac1f60abd15274cec6856a6de09257a22c5febd47c734"
+    },
+    {
+      "bytes": 4504,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/code/benchmark_metrics.py",
+      "sha256": "9ef404da2663da2c3365b2fe685412f61812e4603fc3ba1e45e0a3baf097b2b8"
+    },
+    {
+      "bytes": 2589,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/code/common.py",
+      "sha256": "296fc3d3ca5bf0f0889849ccd0c0e8782fec3d65f9939f4391ccbe42ed68431f"
+    },
+    {
+      "bytes": 19288,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/code/comparison.py",
+      "sha256": "818f77312daf54ff68af01e115160f928a7b123d085876236d7f3a37e809220d"
+    },
+    {
+      "bytes": 2555,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/code/frozen_scorer.py",
+      "sha256": "8dd9dfe4460ad86218895854d5098499759f335da11c3f126c4a0e973024eb8c"
+    },
+    {
+      "bytes": 8070,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/code/gpu_guard.py",
+      "sha256": "6c1b386e4591d8fea1e4be98e0708d70107f263a12c4bcb5b911e867c8fdb0fa"
+    },
+    {
+      "bytes": 1840,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/code/native_model.py",
+      "sha256": "79f6f327228147d717a472c830d95e0f391a03056966da780d6833aee9ea63b8"
+    },
+    {
+      "bytes": 6756,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/code/score_shard.py",
+      "sha256": "8bd6e0fdb1d21d768bb3957f7b0ddf0d1959397ad7c140644de84135325e76f1"
+    },
+    {
+      "bytes": 816003,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/components.json",
+      "sha256": "bb18b6b8197b9044f371b4e540fa2d7fcf746cc54906c5d3728863889bf57967"
+    },
+    {
+      "bytes": 1190003,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 120396,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/lengths.json",
+      "sha256": "b229d7c450f9cf95047938455a8b07c577360c33f07f024b5c9f96d7e795780e"
+    },
+    {
+      "bytes": 10284,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/provenance/DOWNLOADS.json",
+      "sha256": "7ec1947d9f0d1678f112a056e45564a896a6007604ccaab27b7f4cf3ac96a297"
+    },
+    {
+      "bytes": 3834,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/provenance/QUALIFICATION.json",
+      "sha256": "4e5145791debff53cd4b012c33aabbff1be4d93b5dfc3693d6bbd0338ddaf247"
+    },
+    {
+      "bytes": 9339160,
+      "path": "benchmark/plm_interact/runs/original-v1/scorer_bundle/sequences.json",
+      "sha256": "236c2531e66a9e0d65bc187bbeca7b83c09cbf977b3f52b7678698920ac9c7cd"
+    },
+    {
+      "bytes": 13101785088,
+      "path": "benchmark/containers/images/plm-interact-native-arm64-v1.sif",
+      "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+    },
+    {
+      "bytes": 1478,
+      "path": "benchmark/plm_interact/private/original-v1/predictions/PREDICTIONS.json",
+      "sha256": "f0d4bffc050cdbf7b97047df08c2357f52dd4cd71028a6786d3064af563502b2"
+    },
+    {
+      "bytes": 825,
+      "path": "benchmark/plm_interact/private/original-v1/session/SESSION.json",
+      "sha256": "9244b915d7e07a63f012df988839a40115d72aa8bf0d69b12d25afc2b5aed8e1"
+    },
+    {
+      "bytes": 37103027,
+      "path": "benchmark/plm_interact/private/original-v1/predictions/cell-06.parquet",
+      "sha256": "444c51b2ea756e230fd20b5a555b6fe01ad18797499430856aa3aea8295b58ff"
+    },
+    {
+      "bytes": 37473727,
+      "path": "benchmark/plm_interact/private/original-v1/predictions/cell-03.parquet",
+      "sha256": "6ad605894150ac41832fb4d95fe5bb5398e534d0bb4ac1c081c7f279d7b68f2a"
+    },
+    {
+      "bytes": 37040865,
+      "path": "benchmark/plm_interact/private/original-v1/predictions/cell-00.parquet",
+      "sha256": "b7344d72bec9101c78457ccbf85ade112142f98a1c86610f27326ea420960c70"
+    },
+    {
+      "bytes": 4886,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/SCORER_FREEZE.json",
+      "sha256": "b017edbfd1c0f22a60aef80812316c4b27d023ce9e9725ec5b0dcb161573e41f"
+    },
+    {
+      "bytes": 4505,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/code/benchmark_metrics.py",
+      "sha256": "5cdff53eb60c68c2977dc9fabea7303c670bd969884da56986f139b0638e85bc"
+    },
+    {
+      "bytes": 2585,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/code/common.py",
+      "sha256": "b348949d85643b764afe2166abfaec1fc8d7956c83969e40ddbe87505710451e"
+    },
+    {
+      "bytes": 19566,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/code/comparison.py",
+      "sha256": "c8b1f5db12589d5b4d5eb5939304ae313c1a96f09249e89a1290076f9cc4cb90"
+    },
+    {
+      "bytes": 1786,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/code/frozen_scorer.py",
+      "sha256": "f998db1f79944424d543410e1e7008a132beb9cc3b8abaab9c153c15241c05dd"
+    },
+    {
+      "bytes": 8071,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/code/gpu_guard.py",
+      "sha256": "83ca9c0742a45d50c83a509eec2a61baa2b2bbe39bd511eaf81b6420495a6494"
+    },
+    {
+      "bytes": 4081,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/code/native_model.py",
+      "sha256": "df4863eb3c0a30b79c23e4a3d903b94910c729b0e3389986bab09908f8241187"
+    },
+    {
+      "bytes": 6793,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/code/score_shard.py",
+      "sha256": "792168c6a1ef60160b4eaa877d11428217986ddc9fbacbe21fdafe61355328d8"
+    },
+    {
+      "bytes": 816003,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/components.json",
+      "sha256": "bb18b6b8197b9044f371b4e540fa2d7fcf746cc54906c5d3728863889bf57967"
+    },
+    {
+      "bytes": 4352128,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/embeddings.npy",
+      "sha256": "948e5dab8bc8e06f60ea47b0697453598d8c9ce4fdbcef22ae1c643ec5cddf53"
+    },
+    {
+      "bytes": 1190003,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 120396,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/lengths.json",
+      "sha256": "b229d7c450f9cf95047938455a8b07c577360c33f07f024b5c9f96d7e795780e"
+    },
+    {
+      "bytes": 637,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/provenance/CACHE.json",
+      "sha256": "f33690aad59c9aa98407885ee2fa53c0375d4281c7c31ecdfdc3871176be89e0"
+    },
+    {
+      "bytes": 9194,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/provenance/DOWNLOADS.json",
+      "sha256": "3c66a856313b1250ec81bc4ea12f7ca6870d2689ee079dd2b4888cd9dd2080b0"
+    },
+    {
+      "bytes": 4533,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/provenance/QUALIFICATION.json",
+      "sha256": "8161a7c42f738def09f70575d120e0552d7552bf53ec8d266e06c8cde0a34169"
+    },
+    {
+      "bytes": 6835,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/provenance/RUNTIME_DOWNLOADS.json",
+      "sha256": "39acd00bf2a45f6407a711a33cec71d3feec156601f0ede4e6cf15514e586074"
+    },
+    {
+      "bytes": 9339160,
+      "path": "benchmark/rapppid/runs/original-v1/scorer_bundle/sequences.json",
+      "sha256": "236c2531e66a9e0d65bc187bbeca7b83c09cbf977b3f52b7678698920ac9c7cd"
+    },
+    {
+      "bytes": 10677870592,
+      "path": "benchmark/containers/images/rapppid-native-arm64-v1.sif",
+      "sha256": "e853a89768c5351927f90fd0ccfb2ad899a15a6fc239a9014726af0c34442d48"
+    },
+    {
+      "bytes": 1473,
+      "path": "benchmark/rapppid/private/original-v1/predictions/PREDICTIONS.json",
+      "sha256": "cdf7b9194fa1cbafd2c4ca1cdd0c9b262e14b758a2bdf58234f9e3ee1fb6d5f0"
+    },
+    {
+      "bytes": 825,
+      "path": "benchmark/rapppid/private/original-v1/session/SESSION.json",
+      "sha256": "150133c3e5e22f438cae85407f85de7918a9af0d496e60e7eb5a1cdc18dab36e"
+    },
+    {
+      "bytes": 36738613,
+      "path": "benchmark/rapppid/private/original-v1/predictions/cell-06.parquet",
+      "sha256": "334929cad3f93d94f562c8308961b9125fd6ec9edb4213472b983a31b20f6842"
+    },
+    {
+      "bytes": 37124538,
+      "path": "benchmark/rapppid/private/original-v1/predictions/cell-03.parquet",
+      "sha256": "24c7b0ce6d68044428d850e5a1131327af903441b75b4c1e0a9c90cdbd7ae22e"
+    },
+    {
+      "bytes": 36750018,
+      "path": "benchmark/rapppid/private/original-v1/predictions/cell-00.parquet",
+      "sha256": "b67c17e7f505615b74676c2917cb5c3785b46399961bcd2b8dda390d16c0baf4"
+    },
+    {
+      "bytes": 7555,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/SCORER_FREEZE.json",
+      "sha256": "4334869256c8b53ae27fd8e7c99da821db9d5f1ce11dac35dd0437a309aa3dce"
+    },
+    {
+      "bytes": 4072,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/QUALIFICATION.json",
+      "sha256": "b49905cf519d903fd4529620794a3cb891e46cf679215246b3de910e7b647815"
+    },
+    {
+      "bytes": 7860,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/SELECTION.json",
+      "sha256": "17aaac14e173809ebb35c215f7f41e2fc2e98b5bd7766ce1def2f433300fd2e7"
+    },
+    {
+      "bytes": 4567343,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/checkpoints/seed_20260803.pt",
+      "sha256": "f332c9fbd42e9d3146ca7c54743acca66ab0fa5e6d583e89aca2ae41e4135c30"
+    },
+    {
+      "bytes": 4567343,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/checkpoints/seed_20260817.pt",
+      "sha256": "2ea98f070c5f5f712c6c4dc31c2a8f7f2389f0329a5a73a4548bdde487a49060"
+    },
+    {
+      "bytes": 4567343,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/checkpoints/seed_20260831.pt",
+      "sha256": "ac0facd77f4bbb70fe25f144556d90cdf28e4151b324c41aae6a5c0efd0a4ef8"
+    },
+    {
+      "bytes": 4505,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/code/benchmark_metrics.py",
+      "sha256": "5cdff53eb60c68c2977dc9fabea7303c670bd969884da56986f139b0638e85bc"
+    },
+    {
+      "bytes": 3769,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/code/common.py",
+      "sha256": "2ac49c44b1991c4c0b33e0675c9f5da3e0418ed2b267f18393702a5570d851c4"
+    },
+    {
+      "bytes": 23084,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/code/comparison.py",
+      "sha256": "0c80553a03356abe80a6a0e930dc4a38a360d8c863484f969ce03e7a76a8b0ee"
+    },
+    {
+      "bytes": 2565,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/code/frozen_scorer.py",
+      "sha256": "3763e3fbe9221337f439302e50f3072e886accfd912e45682d5c17176f2178c2"
+    },
+    {
+      "bytes": 8070,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/code/gpu_guard.py",
+      "sha256": "6c1b386e4591d8fea1e4be98e0708d70107f263a12c4bcb5b911e867c8fdb0fa"
+    },
+    {
+      "bytes": 8337,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/code/model.py",
+      "sha256": "f4e0b7af227f17ffc4ade8075c2c92259a21d693282e998ae7e4487bcbba7fc0"
+    },
+    {
+      "bytes": 7839,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/code/qualify_freeze.py",
+      "sha256": "c5654ffdd71ccf2cf0bd6be1395c1b61a4b0a7d5a4c7a58f591cbd9791062fb5"
+    },
+    {
+      "bytes": 12618,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/code/run.py",
+      "sha256": "8578177836ac948ee69ba53fc39c747d43a2231a4906ac0421be7e558a5b45ea"
+    },
+    {
+      "bytes": 2569,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/code/score.py",
+      "sha256": "09355e58a944b913be030a07c191d3447708e993c6c938c1126252ba68eb80ce"
+    },
+    {
+      "bytes": 816003,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/components.json",
+      "sha256": "bb18b6b8197b9044f371b4e540fa2d7fcf746cc54906c5d3728863889bf57967"
+    },
+    {
+      "bytes": 4352128,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/embeddings_20260803.npy",
+      "sha256": "beb897ff5a9f60de24f8eaa69d6de008fc2bd908b5197d5c76011766b7ca34b7"
+    },
+    {
+      "bytes": 4352128,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/embeddings_20260817.npy",
+      "sha256": "f5a5aa2920df0ff848b2ffb5c6653ce4d0db5f85a6f700380594fc5ccdf39911"
+    },
+    {
+      "bytes": 4352128,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/embeddings_20260831.npy",
+      "sha256": "65f0cf4be0832dde8343e2da4046dd81fde6d04dc6f0ac64628a6ff0ac9e925c"
+    },
+    {
+      "bytes": 1190003,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 120396,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/lengths.json",
+      "sha256": "b229d7c450f9cf95047938455a8b07c577360c33f07f024b5c9f96d7e795780e"
+    },
+    {
+      "bytes": 242824,
+      "path": "benchmark/rapppid/runs/recovery-test-v1/scorer_bundle/spm.model",
+      "sha256": "1ac71901b484b3ad5dbffbd47f6b5265d712ffc54e93514469d1ebb5b7675560"
+    },
+    {
+      "bytes": 1706,
+      "path": "benchmark/rapppid/private/recovery-test-v1/predictions/PREDICTIONS.json",
+      "sha256": "1acbef7d334a2b28170c790ddaa2995737495dc0dfb3241a931b6a6b46218efe"
+    },
+    {
+      "bytes": 825,
+      "path": "benchmark/rapppid/private/recovery-test-v1/session/SESSION.json",
+      "sha256": "a691c16804217b410f8ba9930a9ecdcb2374d7feaf078bfd9aa1d926209631b9"
+    },
+    {
+      "bytes": 54026067,
+      "path": "benchmark/rapppid/private/recovery-test-v1/predictions/cell-06.parquet",
+      "sha256": "73909e5d2275be5877cd15d54ebe3456b0e68a89ded42fa3b1b68469caeb6bf8"
+    },
+    {
+      "bytes": 54538686,
+      "path": "benchmark/rapppid/private/recovery-test-v1/predictions/cell-03.parquet",
+      "sha256": "7b8cc358481a527eac606540bd0c9fce4afdb67184cf78c0fe86c5a09f026a8f"
+    },
+    {
+      "bytes": 53894557,
+      "path": "benchmark/rapppid/private/recovery-test-v1/predictions/cell-00.parquet",
+      "sha256": "5b5fa089ddee8979ff1ec63f9d957e37c39bc11e34941e44658c9894c94d845a"
+    },
+    {
+      "bytes": 5741,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/SCORER_FREEZE.json",
+      "sha256": "d87959a9210e6809a9ca8c6002944af3a57d0c70a17c6c59ba3a80d2bebf1282"
+    },
+    {
+      "bytes": 1317,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/DATA_FREEZE.json",
+      "sha256": "8557c5960f12abe137e3992390bb3cf56b3c78387865c2e1979ec85837af37ea"
+    },
+    {
+      "bytes": 483,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/HSP_COMPLETE.json",
+      "sha256": "85c9ff1157fa2d71e4c67a88778a132e04bcbc7ac3aecf43ea1d91d4641883d0"
+    },
+    {
+      "bytes": 4766,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/INITIAL_FREEZE.json",
+      "sha256": "0bd3845bde7965300ba6dc70d4418922c7cb89d805c804906a5dcb79ebe8517d"
+    },
+    {
+      "bytes": 403,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/METRIC_QUALIFICATION.json",
+      "sha256": "b1c8b8b199face891c0930350464bba2c62a1723f120699d5794a63f582cee80"
+    },
+    {
+      "bytes": 1463,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/NATIVE_QUALIFICATION.json",
+      "sha256": "c7760197a2523f02efd49e31a4a0ee9ba1d0a295fc186fbb60c982534097b960"
+    },
+    {
+      "bytes": 974522526,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/canonical.hsp",
+      "sha256": "dd2d93d3993df79b02388e80ba7bd7ba32290353f7b6efaffa7d3b7b31007316"
+    },
+    {
+      "bytes": 4505,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/benchmark_metrics.py",
+      "sha256": "5cdff53eb60c68c2977dc9fabea7303c670bd969884da56986f139b0638e85bc"
+    },
+    {
+      "bytes": 2384,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/common.py",
+      "sha256": "7635c5c8e794970ae77cc084874b722c80129c13e69d842849462e837424cd95"
+    },
+    {
+      "bytes": 19958,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/comparison.py",
+      "sha256": "cde8bfef2a291aa4c34f2f046bff62d9d9acf4d3bee5c574b3c9ce06014b6edd"
+    },
+    {
+      "bytes": 8071,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/gpu_guard.py",
+      "sha256": "83ca9c0742a45d50c83a509eec2a61baa2b2bbe39bd511eaf81b6420495a6494"
+    },
+    {
+      "bytes": 3267,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/launcher.py",
+      "sha256": "1582c9e57cb2eb83daa904cfd328d6d62dd6413c3467aaad826e3d6ac867f3d5"
+    },
+    {
+      "bytes": 8326,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/native.py",
+      "sha256": "d66499be8c2025cc3f385c50ae125dc5e5999a25df8f16d65034ca4c7d220ac8"
+    },
+    {
+      "bytes": 9560,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/pipeline.py",
+      "sha256": "3b2b676e42a23390d059dd19c1d38a192213521e8505e6eb49f60ce1ce10fbfb"
+    },
+    {
+      "bytes": 2382,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/policy.py",
+      "sha256": "19e09299d79d58020af1330a6a743317e870cbaf1f123bcd6cc17ffe5ad4a93c"
+    },
+    {
+      "bytes": 2580,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/prepare_data.py",
+      "sha256": "58d041861558c9ef5f7a5a1e68849ab431ab38bce99311649ebf72629a57bbce"
+    },
+    {
+      "bytes": 1532,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/scope_guard.py",
+      "sha256": "00ed75010717c7db4998f20774d113135cb876a908b159e6f83972dae58c31a8"
+    },
+    {
+      "bytes": 4102,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/score_adapter.py",
+      "sha256": "f297b080bc7d37ee244a1dcdc0290690673b1921cddf0e7c226fc0522cea6f2b"
+    },
+    {
+      "bytes": 1233,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/code/submit.py",
+      "sha256": "d94d33646dba9662aaed7e9698bbce8c139fceec867b44a5b63a046c1b37a5e2"
+    },
+    {
+      "bytes": 816003,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/components.json",
+      "sha256": "bb18b6b8197b9044f371b4e540fa2d7fcf746cc54906c5d3728863889bf57967"
+    },
+    {
+      "bytes": 1190003,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 9390157,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/proteins.fasta",
+      "sha256": "c73850cee318688a587d945f6580adee468a10baf080a79ef71ea1e45c8a662f"
+    },
+    {
+      "bytes": 235186,
+      "path": "benchmark/sprint/runs/original-v1/scorer_bundle/train_positive.txt",
+      "sha256": "491ea909d4c3c0eb6b5fc6e130a4a5b9d9025a4b1d7123af18ca81762a0794af"
+    },
+    {
+      "bytes": 180064256,
+      "path": "benchmark/containers/images/sprint-native-arm64-v1.sif",
+      "sha256": "699112807a7829b1b4268fa83d358a206d62de5a5a0f7c7d199beb18f9f47f09"
+    },
+    {
+      "bytes": 1608,
+      "path": "benchmark/sprint/private/original-v1/predictions/PREDICTIONS.json",
+      "sha256": "c33252813945717acc590b71326b383ed9707c9ab4fc674d531e068098bbf27c"
+    },
+    {
+      "bytes": 825,
+      "path": "benchmark/sprint/private/original-v1/session/SESSION.json",
+      "sha256": "8af5cac1b446380eb762e1409e04108699b04e6136bc192ebe9a774b2886c7cb"
+    },
+    {
+      "bytes": 39742419,
+      "path": "benchmark/sprint/private/original-v1/predictions/cell-06.parquet",
+      "sha256": "42ab7b84b3b43e11d751db40717f52c2e444cd0994faa895d1fc77073c8fc7a0"
+    },
+    {
+      "bytes": 39997607,
+      "path": "benchmark/sprint/private/original-v1/predictions/cell-03.parquet",
+      "sha256": "40d7723ada7af03789e615ff0071e407c145901a853b8e13cac4247c15808f17"
+    },
+    {
+      "bytes": 39323152,
+      "path": "benchmark/sprint/private/original-v1/predictions/cell-00.parquet",
+      "sha256": "b99e6185d601ed53703aeaf0a90c7bb1a23831665230009ed4cabc743361bf5e"
+    },
+    {
+      "bytes": 4609,
+      "path": "benchmark/tuna/runs/scorer_bundle/SCORER_FREEZE.json",
+      "sha256": "e0d903371767f866a1a86392999823481aff083354be9f731c72b5b099e2410f"
+    },
+    {
+      "bytes": 591,
+      "path": "benchmark/tuna/runs/scorer_bundle/FROZEN_SCORER_QUALIFICATION.json",
+      "sha256": "92dd43200146fa598913c856d876b4cc0b5f31246b89adbfea3c1a8d34e82b22"
+    },
+    {
+      "bytes": 5082,
+      "path": "benchmark/tuna/runs/scorer_bundle/SELECTION.json",
+      "sha256": "ce3bc88b0da71684db6a1ab898224091e20820301bd69b07ab0f63f19c929a88"
+    },
+    {
+      "bytes": 4504,
+      "path": "benchmark/tuna/runs/scorer_bundle/code/benchmark_metrics.py",
+      "sha256": "9ef404da2663da2c3365b2fe685412f61812e4603fc3ba1e45e0a3baf097b2b8"
+    },
+    {
+      "bytes": 2504,
+      "path": "benchmark/tuna/runs/scorer_bundle/code/common.py",
+      "sha256": "bc5fddb8bb8bea7d627f2435e445fe0b9cbfaf79a3a922a573fcf7a71e13f73d"
+    },
+    {
+      "bytes": 19986,
+      "path": "benchmark/tuna/runs/scorer_bundle/code/comparison.py",
+      "sha256": "61a10cc62b8337efd545857b05906aa730306024de85ae37358a5f0a1b43fe7c"
+    },
+    {
+      "bytes": 2322,
+      "path": "benchmark/tuna/runs/scorer_bundle/code/frozen_scorer.py",
+      "sha256": "36ac46b5b5ae51350d43dbee7237d99c57cdc0b329719e3aaca2d68bc1d86b1b"
+    },
+    {
+      "bytes": 8070,
+      "path": "benchmark/tuna/runs/scorer_bundle/code/gpu_guard.py",
+      "sha256": "6c1b386e4591d8fea1e4be98e0708d70107f263a12c4bcb5b911e867c8fdb0fa"
+    },
+    {
+      "bytes": 816003,
+      "path": "benchmark/tuna/runs/scorer_bundle/components.json",
+      "sha256": "bb18b6b8197b9044f371b4e540fa2d7fcf746cc54906c5d3728863889bf57967"
+    },
+    {
+      "bytes": 1190003,
+      "path": "benchmark/tuna/runs/scorer_bundle/endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 4352128,
+      "path": "benchmark/tuna/runs/scorer_bundle/features/tuna_original.npy",
+      "sha256": "6928a59384d80c0b9f079a3826bd876af6ffc3ad9e06e637421617caa8b639df"
+    },
+    {
+      "bytes": 4352128,
+      "path": "benchmark/tuna/runs/scorer_bundle/features/tuna_retrained_seed20260803.npy",
+      "sha256": "00f2c959fd0994e572e0967ba15364beda9a20ec93b85f10660b953a4ca61315"
+    },
+    {
+      "bytes": 4352128,
+      "path": "benchmark/tuna/runs/scorer_bundle/features/tuna_retrained_seed20260817.npy",
+      "sha256": "db0cfec3ee7262e2cd78c7357daceb5adbaaa184c87baacd48e78ca83496602e"
+    },
+    {
+      "bytes": 4352128,
+      "path": "benchmark/tuna/runs/scorer_bundle/features/tuna_retrained_seed20260831.npy",
+      "sha256": "d1dfe0e75bb5153c0c5ca6711f5845d3263030b034213b8ca4bfae493eb4908d"
+    },
+    {
+      "bytes": 948,
+      "path": "benchmark/tuna/runs/scorer_bundle/provenance/GPU_GUARD.json",
+      "sha256": "d6d7c727cbb4e9afc8ac8e22aa53747d42a67fd119291a26f3294e4c0d57624f"
+    },
+    {
+      "bytes": 1777,
+      "path": "benchmark/tuna/runs/scorer_bundle/provenance/GUARDED_QUALIFICATION.json",
+      "sha256": "55b029cbcfbc5c243747fa41a8f8e897a6cf72a1f9d83cea4e74c9d2ffedfeb0"
+    },
+    {
+      "bytes": 2425,
+      "path": "benchmark/tuna/runs/scorer_bundle/provenance/PILOT.json",
+      "sha256": "1688affdb7901d060e653733f2072a3b0c3c164ba7061cc8c6b779a83c4fe718"
+    },
+    {
+      "bytes": 1778,
+      "path": "benchmark/tuna/runs/scorer_bundle/provenance/QUALIFICATION.json",
+      "sha256": "d72dee5c8be20e4dfd47b9237a1a3ebe768478ced5e29617732a0cbe7df3dc44"
+    },
+    {
+      "bytes": 531,
+      "path": "benchmark/tuna/runs/scorer_bundle/provenance/REAL_QUALIFICATION.json",
+      "sha256": "7f12f2dce57e9063b1b9d5610b38a9cebd54cb505ea141844ba7bdee1e095b0f"
+    },
+    {
+      "bytes": 6279,
+      "path": "benchmark/tuna/runs/scorer_bundle/provenance/TRAINING_FREEZE.json",
+      "sha256": "86aa6d0cd3e1df135b4ea097686ed281a57186828f68da4936bbeba39589d8b5"
+    },
+    {
+      "bytes": 135358343,
+      "path": "benchmark/tuna/runs/scorer_bundle/weights/tuna_original.pt",
+      "sha256": "fce619249663193ea17766fd6afa43abcf110a49a5a91d625450cfa966586ae2"
+    },
+    {
+      "bytes": 135359451,
+      "path": "benchmark/tuna/runs/scorer_bundle/weights/tuna_retrained_seed20260803.pt",
+      "sha256": "c96b6cd4dcde5edc766d1028d8f22a410a072b1376d26cb392f09c3801793ebd"
+    },
+    {
+      "bytes": 135359451,
+      "path": "benchmark/tuna/runs/scorer_bundle/weights/tuna_retrained_seed20260817.pt",
+      "sha256": "f1444b8d43efcf4d76a73a6f4a0419d395651b493f5e21dc8ab1dd002a7e0c02"
+    },
+    {
+      "bytes": 135359451,
+      "path": "benchmark/tuna/runs/scorer_bundle/weights/tuna_retrained_seed20260831.pt",
+      "sha256": "45aae93319be687cec386d7875a78d4a4b5068a635874abe67b6d9ab1a23727c"
+    },
+    {
+      "bytes": 10666606592,
+      "path": "benchmark/containers/images/tuna-arm64-v1.sif",
+      "sha256": "98070c7c2d206d8421817849e11ffce308016dc982938a7d9a3ef3141ab1dec1"
+    },
+    {
+      "bytes": 1071,
+      "path": "benchmark/tuna/private/predictions/PREDICTIONS.json",
+      "sha256": "5f73a4f5d6299d064b1f5f29bb6a2da4d26aa107d96551504df4ce8ee660adef"
+    },
+    {
+      "bytes": 56800763,
+      "path": "benchmark/tuna/private/predictions/cell-06.parquet",
+      "sha256": "f403640d580517a81bd94e535c4798fa98f99fd721ee505fcab0dfeaaf29f6f4"
+    },
+    {
+      "bytes": 57294580,
+      "path": "benchmark/tuna/private/predictions/cell-03.parquet",
+      "sha256": "31fa3b1a95ac36d36d7153e0cc8748f392d5d16a3bba1cc7503b52a5d21ae888"
+    },
+    {
+      "bytes": 56570978,
+      "path": "benchmark/tuna/private/predictions/cell-00.parquet",
+      "sha256": "fcf8e13baa3b0c14209730892bc5bf70d4c73d7807962f23f8d3f70fc7fbec18"
+    },
+    {
+      "bytes": 8095,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/SCORER_FREEZE.json",
+      "sha256": "6e3bb5965ec511bbfdb5b73ed73c7b9dab84c7a7abd322990f333aa6b5a50b86"
+    },
+    {
+      "bytes": 531,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/FROZEN_SCORER_QUALIFICATION.json",
+      "sha256": "18184d2c88505c9af7fd6893b868ec2b9bf51a969eed3df9afae85907280280a"
+    },
+    {
+      "bytes": 4504,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/code/benchmark_metrics.py",
+      "sha256": "9ef404da2663da2c3365b2fe685412f61812e4603fc3ba1e45e0a3baf097b2b8"
+    },
+    {
+      "bytes": 2504,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/code/common.py",
+      "sha256": "bc5fddb8bb8bea7d627f2435e445fe0b9cbfaf79a3a922a573fcf7a71e13f73d"
+    },
+    {
+      "bytes": 23933,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/code/comparison.py",
+      "sha256": "b9934282cf02ffd1633735838a766605b63d0428c6c5c33ae202c2fba36c39d5"
+    },
+    {
+      "bytes": 5999,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/code/data.py",
+      "sha256": "4a0466812aab33b5e92a81dbb8fd35b2fd9ee45237472bcaf875c1840ea63f9c"
+    },
+    {
+      "bytes": 2835,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/code/frozen_scorer.py",
+      "sha256": "09919893756587a5aaf36d680469e499cb886343cea72eff86fb2b6cc191c714"
+    },
+    {
+      "bytes": 8070,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/code/gpu_guard.py",
+      "sha256": "6c1b386e4591d8fea1e4be98e0708d70107f263a12c4bcb5b911e867c8fdb0fa"
+    },
+    {
+      "bytes": 3817,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/code/model.py",
+      "sha256": "c82d1a1eae9b41773d8bd7e1e8a84b57a9d73e91d56aa5c4cea9022fa2e877fe"
+    },
+    {
+      "bytes": 816003,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/components.json",
+      "sha256": "bb18b6b8197b9044f371b4e540fa2d7fcf746cc54906c5d3728863889bf57967"
+    },
+    {
+      "bytes": 1190003,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/endpoints.json",
+      "sha256": "7268cafef3623854e95348bd9bab5a8eefb9e04f2a75d1df02e620c23cd6d4f1"
+    },
+    {
+      "bytes": 69632128,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/features/cross_attention_seed20260803.npy",
+      "sha256": "841111fe24c2739849032c7777417ba030351526e6c33e4a383af0d88db44a9c"
+    },
+    {
+      "bytes": 69632128,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/features/cross_attention_seed20260817.npy",
+      "sha256": "c68dd3af80f2615bf46cac15e9c352df39080a3497299b768f2a1f5bebaa6e63"
+    },
+    {
+      "bytes": 69632128,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/features/cross_attention_seed20260831.npy",
+      "sha256": "3cdf13c5926e1fc2d152946c7dc9a47c32fae1da2712775fda470e6ca655c3bb"
+    },
+    {
+      "bytes": 68128,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/features/mean_pool_seed20260803.npy",
+      "sha256": "30553eb8227e2c79475eca24dc9d63f8b1552ebcd6912149a49506413c622f6a"
+    },
+    {
+      "bytes": 68128,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/features/mean_pool_seed20260817.npy",
+      "sha256": "30553eb8227e2c79475eca24dc9d63f8b1552ebcd6912149a49506413c622f6a"
+    },
+    {
+      "bytes": 68128,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/features/mean_pool_seed20260831.npy",
+      "sha256": "30553eb8227e2c79475eca24dc9d63f8b1552ebcd6912149a49506413c622f6a"
+    },
+    {
+      "bytes": 43520128,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/global_standardized.npy",
+      "sha256": "a047147544cb2628b9473f97499d907dd4db35e60a56e34fdf96f3d843f43a75"
+    },
+    {
+      "bytes": 10740,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/normalizer.npz",
+      "sha256": "fdf8ef25366779de352f55fd8b216508f9c309dc49617bfd632aea933bf92ade"
+    },
+    {
+      "bytes": 613,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/provenance/PIPELINE_QUALIFICATION.json",
+      "sha256": "9af79f6b340f523263a3997feeaaac8c38a7667c749c7cd67ad671b733e9bad0"
+    },
+    {
+      "bytes": 1456,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/provenance/QUALIFICATION.json",
+      "sha256": "a2bf61ff70986e23515576cb0866e25768a685eab5fcc85534a5702a729c62fc"
+    },
+    {
+      "bytes": 2612,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/provenance/REAL_QUALIFICATION.json",
+      "sha256": "ab104f4f399620831533302029ac5448c0d197a8eb92ea89b0b46f6e6229b70a"
+    },
+    {
+      "bytes": 78956,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/provenance/SELECTION.json",
+      "sha256": "a101736315301a869a5761d2ef347698410e1f7bc4c83ff430c8e316f0679d0f"
+    },
+    {
+      "bytes": 10122,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/provenance/TRAINING_FREEZE.json",
+      "sha256": "a24159bbf971427c1395422bd5e2bea46f693d319fb39f8d774ef051eb9e0527"
+    },
+    {
+      "bytes": 4067750,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/weights/cross_attention_seed20260803.pt",
+      "sha256": "5f18c4200250a02c3b52ceef25083baefbb939290597d419eca2aea95f12ec81"
+    },
+    {
+      "bytes": 4067750,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/weights/cross_attention_seed20260817.pt",
+      "sha256": "61cd78aaa19f93f7fb56bff58317229d8c6458bd479778a264658c1f6bc42b56"
+    },
+    {
+      "bytes": 4067750,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/weights/cross_attention_seed20260831.pt",
+      "sha256": "b4c1739933a6489062e3c360a8d38f14231510dc6d52367c70eba948e4ce942f"
+    },
+    {
+      "bytes": 1996229,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/weights/mean_pool_seed20260803.pt",
+      "sha256": "ed6837ccbe45a06101b8d4ceb67f10f7e2c38e0a1d81fb4abd832914fe25924d"
+    },
+    {
+      "bytes": 1996229,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/weights/mean_pool_seed20260817.pt",
+      "sha256": "44fff2ac95e5ca949304f7214a38a1051a35fd475c8cce0fd70fc559cb0f2300"
+    },
+    {
+      "bytes": 1996229,
+      "path": "benchmark/partner_conditioned_residue_v1/runs/scorer_bundle/weights/mean_pool_seed20260831.pt",
+      "sha256": "46423caebaeb6e7da801430f7472ba693d50042fdce4e3240baf6d02671a5b51"
+    },
+    {
+      "bytes": 1075,
+      "path": "benchmark/partner_conditioned_residue_v1/private/predictions/PREDICTIONS.json",
+      "sha256": "149389ff2fffaee34c862622972de1f377376db7853839a022fcd81f6c87ae94"
+    },
+    {
+      "bytes": 825,
+      "path": "benchmark/partner_conditioned_residue_v1/private/session/SESSION.json",
+      "sha256": "bda869bdbe0f449a62f40546b05a80dd7fc664a3ac37dc204ee717feb27eaf89"
+    },
+    {
+      "bytes": 75184632,
+      "path": "benchmark/partner_conditioned_residue_v1/private/predictions/cell-06.parquet",
+      "sha256": "ff27894e2221d82911af625e0131125ff758723406bcb233c1f18f019b4ae516"
+    },
+    {
+      "bytes": 75826609,
+      "path": "benchmark/partner_conditioned_residue_v1/private/predictions/cell-03.parquet",
+      "sha256": "2de76d3c4337b6898c41e39acac5a07e89b1fdf7564c09bf2e5d6fa3cb297de4"
+    },
+    {
+      "bytes": 74846601,
+      "path": "benchmark/partner_conditioned_residue_v1/private/predictions/cell-00.parquet",
+      "sha256": "583472c0f161bad245c7b9c6d86d31fd98d8ff0621366157836fefeb5e48039e"
+    },
+    {
+      "bytes": 4681,
+      "path": "benchmark/tuna/scripts/adapter.py",
+      "sha256": "8260aceb8e4eb7a1c3a2a97297e9a9f8faa96598130259ebf52a49635a5fe025"
+    },
+    {
+      "bytes": 4843,
+      "path": "benchmark/tuna/scripts/training.py",
+      "sha256": "c18cec5179935adc137d985de333387e53fe0a6c75673b4902e9b37dd52259cf"
+    },
+    {
+      "bytes": 2504,
+      "path": "benchmark/tuna/scripts/common.py",
+      "sha256": "bc5fddb8bb8bea7d627f2435e445fe0b9cbfaf79a3a922a573fcf7a71e13f73d"
+    },
+    {
+      "bytes": 8070,
+      "path": "benchmark/tuna/scripts/gpu_guard.py",
+      "sha256": "6c1b386e4591d8fea1e4be98e0708d70107f263a12c4bcb5b911e867c8fdb0fa"
+    },
+    {
+      "bytes": 4504,
+      "path": "benchmark/tuna/scripts/benchmark_metrics.py",
+      "sha256": "9ef404da2663da2c3365b2fe685412f61812e4603fc3ba1e45e0a3baf097b2b8"
+    },
+    {
+      "bytes": 3744,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/macro_metrics.py",
+      "sha256": "abcb3616b01710f53a1b842f4ebf32c9883a070c1f37c62ec323bf627dfacdd4"
+    },
+    {
+      "bytes": 1866,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/study.py",
+      "sha256": "b2235c62b16f9b158e516ccc087d64e5aea5f94f9fb21c9dce860cb9437678fd"
+    },
+    {
+      "bytes": 56044,
+      "path": "experiments/test2_frozen_competitors_v1/INPUT_FREEZE.json",
+      "sha256": "16e46c5ca339b7dc71cf7712e60a6f632fd66f5b6db696b98bc80dc8e588add0"
+    },
+    {
+      "bytes": 2272,
+      "path": "experiments/test2_frozen_competitors_v1/PROTOCOL.json",
+      "sha256": "ed2311cc4a0e884d91945c01538b2e927c6ff241ad972dbe3266973f4ae1229c"
+    },
+    {
+      "bytes": 7764,
+      "path": "experiments/test2_frozen_competitors_v1/results/PREDICTION_FREEZE.json",
+      "sha256": "d0298fa647e15e9605d004cf6b011100eab89df32e8a9570244a617bf034daed"
+    },
+    {
+      "bytes": 41224,
+      "path": "experiments/test2_frozen_competitors_v1/results/RESULTS.json",
+      "sha256": "dc9945534fcf2da625c40d59a4b5da1f1a86867920bed5e2bd87423b39afc914"
+    },
+    {
+      "bytes": 5180,
+      "path": "experiments/test2_frozen_competitors_v1/results/scores.csv",
+      "sha256": "bbd6def7732c6b411b5531f3a4c111a46a791d2e7b4e80099b94ffcb71c5aef6"
+    },
+    {
+      "bytes": 4964,
+      "path": "experiments/test2_frozen_competitors_v1/results/paired_differences.csv",
+      "sha256": "71955556e64392cfd061afe2e8614dc3be40dac402d6b824032f3b0bcfa838ae"
+    },
+    {
+      "bytes": 5334,
+      "path": "experiments/test2_frozen_competitors_v1/results/cohort_scores.csv",
+      "sha256": "9e36838daedb7ca4a21b9d5c74a638afceeec99148984adb97a4eda79c629cd2"
+    },
+    {
+      "bytes": 18066,
+      "path": "experiments/test2_frozen_competitors_v1/scripts/evaluate.py",
+      "sha256": "5433affb9d6b197aadd82ebda2308b845d4d727252f9ef6b2cb54167db31355d"
+    },
+    {
+      "bytes": 62240316,
+      "path": "experiments/test2_frozen_competitors_v1/results/predictions/added_C3.npz",
+      "sha256": "64ddffe8565fb24afb03933822cf16f6b3f2fdb14d8f0332ce2be44686bb9677"
+    },
+    {
+      "bytes": 251343292,
+      "path": "experiments/test2_frozen_competitors_v1/results/predictions/legacy_C2.npz",
+      "sha256": "77d309c015275d342a3c517009e87a9c3a6157fefd275398f07ea2c4f963411f"
+    },
+    {
+      "bytes": 248799060,
+      "path": "experiments/test2_frozen_competitors_v1/results/predictions/legacy_C1.npz",
+      "sha256": "707d443a82ff43041a4e13e065aff249032d5dcc12adf0152236ac7096449bc6"
+    },
+    {
+      "bytes": 248598676,
+      "path": "experiments/test2_frozen_competitors_v1/results/predictions/legacy_C3.npz",
+      "sha256": "11ef338cb10bec4e45f5a9828ac4ac235bc7afcf4c1c05e870af80d9f1880ba1"
+    },
+    {
+      "bytes": 63093684,
+      "path": "experiments/test2_frozen_competitors_v1/results/predictions/added_C2.npz",
+      "sha256": "969ae4b4c9d18116b0f29c9cec71718ea85f27bc72d0c70d7a3cc9dd6bdf45f3"
+    },
+    {
+      "bytes": 62168644,
+      "path": "experiments/test2_frozen_competitors_v1/results/predictions/added_C1.npz",
+      "sha256": "a00c9953f2969faa4b5aaca30a6f5fe66f519fd061a9abaff84a15dfd8c7ed66"
+    },
+    {
+      "bytes": 208612,
+      "path": "experiments/test2_frozen_competitors_v1/results/bootstrap_C1_test_2_macro_no_dev_overlap.npz",
+      "sha256": "cf294f92cf17a7619843c717dbed5796758f2d94c8312fa5722e78ead5694ac7"
+    },
+    {
+      "bytes": 208612,
+      "path": "experiments/test2_frozen_competitors_v1/results/bootstrap_C1_test_2_macro.npz",
+      "sha256": "4b6a0c4edeb320094cd3784c697e10b06055e162af7a6bcc69f19faae832126a"
+    },
+    {
+      "bytes": 208612,
+      "path": "experiments/test2_frozen_competitors_v1/results/bootstrap_C2_test_2_macro.npz",
+      "sha256": "2e9e3df685d9859abc7933b00cd8edb7e8a5b6fcda053831764411bd6f739aaf"
+    },
+    {
+      "bytes": 208612,
+      "path": "experiments/test2_frozen_competitors_v1/results/bootstrap_C3_test_2_macro.npz",
+      "sha256": "937811e073d2ddbe237df0a655937cc4513ddff58a3ea254f4bae3d58bb78291"
+    },
+    {
+      "bytes": 5108,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/extend_embeddings.py",
+      "sha256": "e18f8842afe7b981fd6ae6155ca336d4bda950a3070447f5a9058edff4ad1e98"
+    },
+    {
+      "bytes": 5000,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/validate_corpus.py",
+      "sha256": "30747b1aad09e49066095f6a33d7b0ed5d967139703d2f5fad9091855cf6a13b"
+    },
+    {
+      "bytes": 1897,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/submit.py",
+      "sha256": "ca55212f4e7ad35e53f406d0ba563e3e0653b993b565031a59e348743e009cf9"
+    },
+    {
+      "bytes": 4295,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/freeze_execution.py",
+      "sha256": "da6d5b947d78f917590d8c679e49be53c9f195e0105336bdc72309034ab95328"
+    },
+    {
+      "bytes": 9786,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/source_audit.py",
+      "sha256": "b725c7f81857683e4b18983c49479e1be6773fefaa4daff2046db8711d016ee8"
+    },
+    {
+      "bytes": 2933,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/select_models.py",
+      "sha256": "5b4c6b2cd765e11f12ba8b6e307b86cc742783a85e0328ab99a06bb30eb8b577"
+    },
+    {
+      "bytes": 2640,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/qualify_study.py",
+      "sha256": "3a7ad9d5e94258b1b53f991a825ea380a188dd0bea5a661284b7c980967bb7a4"
+    },
+    {
+      "bytes": 6507,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/train_curve.py",
+      "sha256": "569538c0518be60e73c516c4cd2fab48bd8bbba757d777779bc24a279ecdff2e"
+    },
+    {
+      "bytes": 10492,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/evaluate_panels.py",
+      "sha256": "873139f4469ca5436a2e5cea5749652f530cccac4dae7c3d2eda55a603e6d6c7"
+    },
+    {
+      "bytes": 16245,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/build_corpus.py",
+      "sha256": "007707d4beec5e9cf92adc03b3a529a2f7f0e2c852f9be4dd576226cc1732020"
+    },
+    {
+      "bytes": 6236,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/anchor_sequences.py",
+      "sha256": "06d56fa611d3054bc4b29bfd2dd4eb2f9c4203e9dd36b17acb71e7fbaff99a24"
+    },
+    {
+      "bytes": 5550,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/score_panels.py",
+      "sha256": "069ffecb094567d44a759794fd830fb998accb4a628ef4687e7a6edded4aa765"
+    },
+    {
+      "bytes": 3042,
+      "path": "experiments/human_ppi_data_scaling_v1/scripts/freeze_features.py",
+      "sha256": "940043df47cdcb17df8c300e109a8928e05b73fcebd2caee2b53d49b8a8f30a9"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "bootstrap": {
+    "multiplicities_sha256": "73b1e65a3c4792244c0de46405ac105e58ce2895fbc98d98c859848adafd6dda",
+    "participating_components": 2704,
+    "replicates": 2000,
+    "seed": 491285503286066356
+  },
+  "bootstrap_file": {
+    "bytes": 48532,
+    "path": "results/bootstrap_C1_test_2_macro_no_dev_or_XPAIR_pair_exposure.npz",
+    "sha256": "5599619721498be0e7bc58ed39c4fe8bce1a16cea01777b0e5c00f036586b089"
+  },
+  "cell": "C1",
+  "cohort_counts": [
+    {
+      "P": 3527,
+      "U": 903821,
+      "cohort": "legacy"
+    },
+    {
+      "P": 595,
+      "U": 248915,
+      "cohort": "added"
+    }
+  ],
+  "excluded_candidate_rows": 96974,
+  "model_order": [
+    "selected_31k",
+    "multitask_xfair",
+    "interaction_xfair"
+  ],
+  "models": {
+    "interaction_xfair": {
+      "PU_concordance": 0.6904081308631383,
+      "ci95": [
+        0.6615737565746481,
+        0.7175004993799544
+      ]
+    },
+    "multitask_xfair": {
+      "PU_concordance": 0.6932044042764748,
+      "ci95": [
+        0.6636501176659358,
+        0.7203292772142994
+      ]
+    },
+    "selected_31k": {
+      "PU_concordance": 0.8874425769305353,
+      "ci95": [
+        0.872241913713723,
+        0.9025957779524696
+      ]
+    }
+  },
+  "paired_differences": [
+    {
+      "ci95": [
+        -0.22270067553281025,
+        -0.16933474909081406
+      ],
+      "difference": -0.19423817265406051,
+      "model": "multitask_xfair",
+      "reference": "selected_31k"
+    },
+    {
+      "ci95": [
+        -0.22471165340164334,
+        -0.17210229026078794
+      ],
+      "difference": -0.19703444606739695,
+      "model": "interaction_xfair",
+      "reference": "selected_31k"
+    }
+  ],
+  "prediction_freeze_sha256": "becdd1d868f45c7e1daa2f26ded6df2a8825523b5bdbd6cf2ccad7d5024263bf",
+  "raw_logit_macro_diagnostic_only": {
+    "interaction_xfair": 0.6904081308631383,
+    "multitask_xfair": 0.6932044042764748
+  },
+  "reference_replay": null,
+  "view": "test_2_macro_no_dev_or_XPAIR_pair_exposure"
+}

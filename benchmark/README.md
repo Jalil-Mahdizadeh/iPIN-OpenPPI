@@ -6,30 +6,47 @@ in the [four-model catalogue](../docs/models/FROZEN_PAIR_MODELS_v3.md).
 
 ## Expanded test2 comparison, 26 September 2026
 
-The [completed 13-predictor comparison](../artifacts/models/frozen_pair_models_v3/evidence/test2/RESULTS.md)
+The [completed 15-predictor comparison](../experiments/x_pair_test2_v1/results/RESULTS.md)
 covers all 3,774,966 rows in the expanded C1/C2/C3 test2 partitions. Its macro
 metric gives equal weight to weighted P/U concordance on reconciled legacy and
 added cohorts. These values have a different candidate/label scope from the
 historical benchmark below.
 
-| Registered model | C1 test2 macro | C2 test2 macro | C3 test2 macro |
+| Predictor | C1 test2 macro | C2 test2 macro | C3 test2 macro |
 |---|---:|---:|---:|
 | **iPIN-TUnA-31k (primary)** | **0.886903** | **0.827113** | **0.786652** |
 | Original iPIN | 0.744322 | 0.718876 | 0.726124 |
 | Optimized pooled iPIN | 0.793734 | 0.750272 | 0.742563 |
 | Historical PU-TUnA, 17k | 0.821205 | 0.772189 | 0.743871 |
+| Released X-PAIR default multitask | 0.704050 | 0.693652 | 0.741983 |
+| Released X-PAIR interaction-only | 0.701583 | 0.680655 | 0.733382 |
 
-The primary model ranks first among all 13 predictors in each macro partition.
-Its C3 gain over historical PU-TUnA is +0.042781 [0.019768, 0.070150]. All 12 paired C3
-pointwise 95% intervals are positive and unadjusted for multiplicity.
-PLM-interact leads added C3 alone (0.767828 versus 0.740105). Test2 is a
+The primary model ranks first among all 15 predictors in each macro partition.
+Its C3 gain over historical PU-TUnA is +0.042781 [0.019768, 0.070150]; the gain
+over default X-PAIR is +0.044669 [0.012224, 0.075317]. All 14 paired C3
+pointwise 95% intervals favor selected 31k and are unadjusted for multiplicity.
+On added C3 alone, X-PAIR interaction-only/default score 0.783830/0.773173,
+PLM-interact 0.767828, and selected 31k 0.740105. The exploratory X-PAIR-versus-31k
+cohort intervals include zero. Test2 is a
 historical follow-up; different training corpora and selection histories prevent
 a controlled architecture comparison. See the
-[promotion report](../docs/reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md) and
-[paired contrasts](../artifacts/models/frozen_pair_models_v3/evidence/test2/paired_differences.csv).
+[X-PAIR comparison report](../docs/reports/m1/M1_XPAIR_Test2_Comparison_v1.md),
+[original promotion report](../docs/reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md), and
+[X-PAIR paired contrasts](../experiments/x_pair_test2_v1/results/paired_differences.csv).
 Original experiment data/results remain under `experiments/test2_frozen_competitors_v1/`;
 aggregate release copies are byte-identical. The original TUnA architecture
 retains attribution, and all earlier benchmark records remain unchanged.
+
+X-PAIR uses the released default `multitask_xfair` and prespecified secondary
+`interaction_xfair`, with newly computed full-length Ankh-large embeddings.
+Both cover every candidate; no retraining or test-based checkpoint selection
+occurred. The audit found 17,380 exact training/validation pair overlaps
+(982 benchmark P, 16,398 U). Removing those pairs gives C3 macro 0.780593 for
+selected 31k versus 0.725758 for default X-PAIR, paired gain
++0.054834 [0.019269, 0.087869]. Exact matching does not rule out homologs,
+fragments or pretraining exposure. C1/C2/C3 remain defined relative to iPIN
+training, not X-PAIR training. All new experiment artifacts remain under
+`experiments/x_pair_test2_v1/`; the original 13-predictor release stays intact.
 
 ## Original benchmark, 20 September 2026
 
@@ -76,6 +93,11 @@ results where applicable, and paired contrasts are in each result directory's
 
 ## Predictor scope and limitations
 
+- [X-PAIR](../experiments/x_pair_test2_v1/README.md): two released X-fair
+  checkpoints, evaluated on expanded test2 on 26 September 2026 with no new
+  training. Native inference, coverage, preservation and exact-pair exposure
+  checks passed. [Interpretation](../experiments/x_pair_test2_v1/results/INTERPRETATION.md)
+  distinguishes the combined metric from the added-C3 subgroup.
 - [TUnA](tuna/README.md): released Bernett predictor and a separately identified
   three-seed PU adaptation, selected at epoch 4 using C3 development. Completed
   12 September 2026.

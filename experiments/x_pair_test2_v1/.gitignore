@@ -1,0 +1,17 @@
+sources/*
+!sources/XPAIR_FREEZE.json
+!sources/ANKH_FREEZE.json
+!sources/ankh_pinned_metadata.json
+!sources/zenodo_21457017.json
+runtime/
+features/
+data/
+shards/
+qualification/*
+!qualification/METRIC.json
+logs/
+INITIAL_GIT_STATUS.txt
+*.pt
+*.npy
+*.npz
+__pycache__/

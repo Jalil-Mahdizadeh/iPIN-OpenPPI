@@ -10,3 +10,9 @@ preserved locally; their weights remain local. The v3 release publishes
 metadata, aggregate evidence and verification code. Public benchmark aggregates are indexed in
 [benchmark/](../benchmark/README.md). A future approved package should create
 its own versioned output directory and manifest.
+
+The [X-PAIR test2 comparison](../docs/reports/m1/M1_XPAIR_Test2_Comparison_v1.md)
+publishes a subsequent experiment's aggregate results and evaluation scripts
+under `experiments/x_pair_test2_v1/`. It leaves the v3 registry, model card,
+promotion report and release checksums unchanged; no new model release or
+default-model change is made.

@@ -7,6 +7,12 @@ The current primary/default human iPIN model is **iPIN-TUnA-31k**, the selected
 record the exact predictor, test2 comparison and limitations. This directory
 preserves the earlier original/17k-retrained benchmark unchanged.
 
+The later [X-PAIR test2 follow-up](../../docs/reports/m1/M1_XPAIR_Test2_Comparison_v1.md)
+retains selected 31k's lead on the three combined test2 metrics. X-PAIR's higher
+added-C3 point estimates have exploratory intervals spanning zero. Its outputs
+are in `experiments/x_pair_test2_v1/`; this historical TUnA benchmark keeps its
+original dataset, checkpoint selection and results.
+
 The completed retrained predictor is **iPIN model 3, TUnA-retrained (PU-TUnA)**,
 frozen under [DEC-0055](../../governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md).
 The [v2 model catalogue](../../docs/models/FROZEN_PAIR_MODELS_v2.md) preserves its

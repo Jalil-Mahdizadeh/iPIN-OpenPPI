@@ -1,0 +1,82 @@
+{
+  "bootstrap": {
+    "multiplicities_sha256": "882a66ef0801813ae6b6022aa3f959c954f97955d508866f3b53fe57c9f7301d",
+    "participating_components": 1327,
+    "replicates": 2000,
+    "seed": 15289175545179118195
+  },
+  "bootstrap_file": {
+    "bytes": 48532,
+    "path": "results/bootstrap_C3_test_2_macro_no_XPAIR_pair_exposure.npz",
+    "sha256": "a1af4333df20eff6a601dae9e3c596929ce3cab3854057885883879fc60f8392"
+  },
+  "cell": "C3",
+  "cohort_counts": [
+    {
+      "P": 2632,
+      "U": 995120,
+      "cohort": "legacy"
+    },
+    {
+      "P": 825,
+      "U": 248915,
+      "cohort": "added"
+    }
+  ],
+  "excluded_candidate_rows": 5821,
+  "model_order": [
+    "selected_31k",
+    "multitask_xfair",
+    "interaction_xfair"
+  ],
+  "models": {
+    "interaction_xfair": {
+      "PU_concordance": 0.7167363640456589,
+      "ci95": [
+        0.6789026319739064,
+        0.7503031743816245
+      ]
+    },
+    "multitask_xfair": {
+      "PU_concordance": 0.7257584738994647,
+      "ci95": [
+        0.6864432333739175,
+        0.7569829321418442
+      ]
+    },
+    "selected_31k": {
+      "PU_concordance": 0.7805926337663884,
+      "ci95": [
+        0.7461241272795481,
+        0.8030775261379359
+      ]
+    }
+  },
+  "paired_differences": [
+    {
+      "ci95": [
+        -0.08786886445369986,
+        -0.01926937312751344
+      ],
+      "difference": -0.05483415986692375,
+      "model": "multitask_xfair",
+      "reference": "selected_31k"
+    },
+    {
+      "ci95": [
+        -0.10023749720200827,
+        -0.018603431266554858
+      ],
+      "difference": -0.06385626972072955,
+      "model": "interaction_xfair",
+      "reference": "selected_31k"
+    }
+  ],
+  "prediction_freeze_sha256": "becdd1d868f45c7e1daa2f26ded6df2a8825523b5bdbd6cf2ccad7d5024263bf",
+  "raw_logit_macro_diagnostic_only": {
+    "interaction_xfair": 0.7167363640456589,
+    "multitask_xfair": 0.7257584751168695
+  },
+  "reference_replay": null,
+  "view": "test_2_macro_no_XPAIR_pair_exposure"
+}

@@ -1,0 +1,104 @@
+{
+  "_id": "63242b200fc33e3d14ddd7e6",
+  "id": "ElnaggarLab/ankh-large",
+  "private": false,
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "t5",
+    "text2text-generation",
+    "biology",
+    "protein",
+    "protein language model",
+    "protein embedding",
+    "doi:10.57967/hf/0275",
+    "license:cc-by-nc-sa-4.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "downloads": 10778,
+  "likes": 14,
+  "modelId": "ElnaggarLab/ankh-large",
+  "author": "ElnaggarLab",
+  "sha": "74b371dbfa3ee0a05d32ae74df0c2e0b82d6b9a6",
+  "lastModified": "2023-12-18T12:55:11.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "T5ForConditionalGeneration"
+    ],
+    "model_type": "t5",
+    "tokenizer_config": {
+      "eos_token": "</s>",
+      "pad_token": "<pad>",
+      "unk_token": "<unk>"
+    }
+  },
+  "cardData": {
+    "license": "cc-by-nc-sa-4.0",
+    "tags": [
+      "biology",
+      "protein",
+      "protein language model",
+      "protein embedding"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForSeq2SeqLM",
+    "pipeline_tag": "text2text-generation",
+    "processor": "AutoTokenizer"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "637fa167e56685c01bc97f08a420ea76330cf6df",
+      "size": 1384
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "2d81e102686b79c43653d7f3355824c8b4626b61",
+      "size": 111
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "1abf33e52ee3d6be67d780ec57d32ac2b27b5306",
+      "size": 849
+    },
+    {
+      "rfilename": "pytorch_model.bin",
+      "blobId": "d9ca299978133e3df6c6f4f1f4f4838a0705c4bd",
+      "size": 7515077421,
+      "lfs": {
+        "sha256": "517b6e8b279dedcb477af240b35c46bd6eb3307723eb281e60d4b2c8a87b889b",
+        "size": 7515077421,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "55b145827029ae9672e50d4bb368540daacce791",
+      "size": 2585
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "212c5ef08819fa2463c6289ba4ef7db30e715c0a",
+      "size": 31153
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "d7fe02ba6f2b18d9ccfa19ac129c9fdc9ec24d09",
+      "size": 2851
+    }
+  ],
+  "spaces": [
+    "eduagarcia/multilingual-tokenizer-leaderboard",
+    "yushize/Embedding-predictor"
+  ],
+  "createdAt": "2022-09-16T07:52:00.000Z",
+  "usedStorage": 22544909621
+}

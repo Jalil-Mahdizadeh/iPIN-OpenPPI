@@ -1,0 +1,160 @@
+{
+  "at_utc": "2026-09-26T17:35:03.673267+00:00",
+  "embeddings": {
+    "cases": 6,
+    "max_abs_error": 0.0,
+    "maximum_length": 7570,
+    "minimum_length": 25,
+    "passed": true,
+    "provenance": {
+      "encoder_freeze_sha256": "5a369e2aeb6305279afd32fc356f65adfcf885999620a2270f4389f9f887644c",
+      "encoder_script_sha256": "b2739aab3fca75e78a8d927edb42da720f4d987994afaf9e97f9f27786bfd1ad",
+      "runtime_sha256": "bdf82f59ed32902cce854b90a2b694b925f491aeaa141cfcb83811696b787527"
+    },
+    "source_record": {
+      "bytes": 1026,
+      "path": "qualification/EMBEDDING.json",
+      "sha256": "a774aa510352d0865a98f45a0a104261f5640bd4624c298691d4575dc87d9e55"
+    }
+  },
+  "integration": {
+    "identity_alignment": [
+      {
+        "panel": "legacy_C1",
+        "passed": true,
+        "rows": 1003187
+      },
+      {
+        "panel": "added_C1",
+        "passed": true,
+        "rows": 250645
+      },
+      {
+        "panel": "legacy_C2",
+        "passed": true,
+        "rows": 1013446
+      },
+      {
+        "panel": "added_C2",
+        "passed": true,
+        "rows": 254375
+      },
+      {
+        "panel": "legacy_C3",
+        "passed": true,
+        "rows": 1002379
+      },
+      {
+        "panel": "added_C3",
+        "passed": true,
+        "rows": 250934
+      }
+    ],
+    "models": {
+      "interaction_xfair": {
+        "cases": 52,
+        "max_abs_logit_error": 2.86102294921875e-06,
+        "max_abs_probability_error": 2.2351741790771484e-07
+      },
+      "multitask_xfair": {
+        "cases": 52,
+        "max_abs_logit_error": 2.86102294921875e-06,
+        "max_abs_probability_error": 3.725290298461914e-07
+      }
+    },
+    "passed": true,
+    "source_record": {
+      "bytes": 9655,
+      "path": "qualification/INTEGRATION.json",
+      "sha256": "db1236d11985ad1757a574bb7f673d7e6ee7c18652601079825dc29db0eb0438"
+    }
+  },
+  "metric": {
+    "at_utc": "2026-09-26T16:49:38.701524+00:00",
+    "cohorts": 2,
+    "max_absolute_error": 2.220446049250313e-16,
+    "passed": true,
+    "replicates": 37,
+    "tolerance": 1e-12
+  },
+  "prediction_coverage": {
+    "candidate_rows": 3774966,
+    "complete_finite_candidate_coverage": true,
+    "source_weights_unchanged": true,
+    "test_truth_read_during_scoring_or_assembly": false
+  },
+  "preservation": {
+    "at_utc": "2026-09-26T16:51:27.586631+00:00",
+    "input_freeze": {
+      "bytes": 62200,
+      "path": "INPUT_FREEZE.json",
+      "sha256": "b04987ec57f291d52456d24a1c2f7355ec209fb287b3a8e5902ce85aa9b04395"
+    },
+    "original_files": 302,
+    "passed": true,
+    "released_sources_and_weights_unchanged": true
+  },
+  "reference_replay": [
+    {
+      "cell": "C1",
+      "max_selected_31k_draw_error": 0.0,
+      "passed": true,
+      "view": "test_2_macro"
+    },
+    {
+      "cell": "C1",
+      "max_selected_31k_draw_error": 0.0,
+      "passed": true,
+      "view": "test_2_macro_no_dev_overlap"
+    },
+    {
+      "cell": "C2",
+      "max_selected_31k_draw_error": 0.0,
+      "passed": true,
+      "view": "test_2_macro"
+    },
+    {
+      "cell": "C3",
+      "max_selected_31k_draw_error": 0.0,
+      "passed": true,
+      "view": "test_2_macro"
+    }
+  ],
+  "scope": "Aggregate summary of completed local numerical and preservation checks; fixture identities and per-pair scores omitted.",
+  "scoring": {
+    "logit_tolerance": 0.0002,
+    "models": {
+      "interaction_xfair": {
+        "batch_size": 64,
+        "errors": {
+          "batch_singleton_logits": 4.76837158203125e-07,
+          "cache_logits": 0.0,
+          "padded_cache_logits": 4.0531158447265625e-06,
+          "padded_probability": 4.0978193283081055e-07,
+          "swap_logits": 0.0
+        },
+        "parameters": 469634,
+        "state_unchanged": true
+      },
+      "multitask_xfair": {
+        "batch_size": 64,
+        "errors": {
+          "batch_singleton_logits": 1.5497207641601562e-06,
+          "cache_logits": 0.0,
+          "padded_cache_logits": 7.033348083496094e-06,
+          "padded_probability": 1.1920928955078125e-06,
+          "swap_logits": 0.0
+        },
+        "parameters": 469634,
+        "state_unchanged": true
+      }
+    },
+    "passed": true,
+    "probability_tolerance": 1e-05,
+    "source_record": {
+      "bytes": 6180,
+      "path": "qualification/SCORING.json",
+      "sha256": "3c8726fd9eb6dea8ba0d6c7090a90e9e55f77b8b55485b3080012a17e42a2867"
+    }
+  }
+}

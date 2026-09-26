@@ -17,7 +17,7 @@ non-human transfer evaluations. Start with these records:
 | Area | Current reference |
 |---|---|
 | Primary model and historical references | [Four-model registry and cards](docs/models/FROZEN_PAIR_MODELS_v3.md) |
-| Latest human comparison | [31k promotion and 13-predictor test2 results](docs/reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md) |
+| Latest human comparison | [15-predictor test2 comparison including X-PAIR](docs/reports/m1/M1_XPAIR_Test2_Comparison_v1.md) |
 | Published-method comparisons | [Current and historical benchmark results](benchmark/README.md) |
 | Protein-screening examples | [Selected 31k on the fixed panel](artifacts/models/frozen_pair_models_v3/evidence/twelve_targets/REPORT.md), [panel index](example/INDEX.md) |
 | Non-human transfer | [Six-organism frozen-model evaluation](benchmark/nonhuman_transfer_v1/REPORT.md) |
@@ -30,10 +30,18 @@ Under [DEC-0056](governance/decisions/DEC-0056-designate-ipin-tuna-31k-primary-m
 experiment ID `selected_31k` remains an alias. It retains the published Bernett
 TUnA architecture, the iPIN PU adaptation, all three selected seeds, and the
 exact saved GP covariance. Its **C1/C2/C3 test2 macro concordances are
-0.886903 / 0.827113 / 0.786652**, highest among the 13 evaluated predictors.
+0.886903 / 0.827113 / 0.786652**, highest among the 15 evaluated predictors,
+including the two released X-PAIR checkpoints in the
+[completed follow-up](experiments/x_pair_test2_v1/results/INTERPRETATION.md).
 The paired C3 gain over historical 17k PU-TUnA is **+0.042781
 [0.019768, 0.070150]**. Intervals are pointwise, without multiplicity correction.
-PLM-interact scores higher on added C3 alone (0.767828 versus 0.740105).
+Default X-PAIR scores **0.704050 / 0.693652 / 0.741983** on C1/C2/C3.
+The paired C3 gain of selected 31k over default X-PAIR is **+0.044669
+[0.012224, 0.075317]** and persists after excluding exact X-PAIR training and
+validation pair overlaps. On added C3 alone, X-PAIR scores higher by point
+estimate (0.773173 default; 0.783830 interaction-only; selected 31k 0.740105),
+but its exploratory paired intervals include zero. PLM-interact also scores
+higher on that cohort (0.767828).
 Test2 is a previously examined follow-up, and the twelve-target panel has
 training exposure. The designation is scoped to human P/U ranking.
 
@@ -74,7 +82,9 @@ The original evaluation, the follow-up, and their spent access ledgers remain
 separate records.
 
 Published-method results are complete for TUnA, D-SCRIPT, PLM-interact, RAPPPID,
-and SPRINT. TUnA's retrained ensemble has C3 concordance 0.815875; its paired
+SPRINT, and released X-PAIR. X-PAIR was evaluated on expanded test2 only,
+with outputs in [experiments/x_pair_test2_v1](experiments/x_pair_test2_v1/README.md).
+On the original benchmark, TUnA's retrained ensemble has C3 concordance 0.815875; its paired
 difference from optimized iPIN also includes zero. Retraining coverage and
 checkpoint-selection limitations differ by method, especially RAPPPID's
 partially trained recovery ensemble. The [benchmark index](benchmark/README.md)

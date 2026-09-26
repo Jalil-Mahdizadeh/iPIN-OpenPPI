@@ -4,6 +4,14 @@ Prepared: 12 September 2026. This document preserves the original comparison
 plan and its execution assumptions. Current completion status and results are
 in the [benchmark index](README.md) and linked candidate result records.
 
+Later follow-up, 26 September 2026: released X-PAIR default multitask and
+interaction-only checkpoints have been evaluated on expanded frozen test2,
+bringing that comparison to 15 predictors. This later user-authorized study
+uses `experiments/x_pair_test2_v1/`, without retraining X-PAIR. See its
+[comparison report](../docs/reports/m1/M1_XPAIR_Test2_Comparison_v1.md) for scores,
+paired uncertainty and external-training exposure. The original plan below
+retains its earlier dataset, workspace and retraining scope.
+
 Scope: a new comparison on the existing iPIN-OpenPPI dataset, preserving its positive–unlabeled (PU) interpretation and generalization philosophy. Implementation starts with TUnA. All new files, scripts, model/data downloads, configurations, logs, results, and containers must remain under `benchmark/`. Existing repository inputs, frozen models, historical protocols, and ledgers remain read-only.
 
 Hardware and execution assumptions incorporate your clarification: the current Arrhenius session exposes one GPU; additional jobs can be submitted to separate nodes with four GPUs per node. **GPU evaluation is allowed for the proposed benchmark.** The historical CPU-only evaluation restriction is not a requirement of this proposal. Existing historical protocol files remain unchanged.

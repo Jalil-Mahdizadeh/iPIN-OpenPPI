@@ -23,11 +23,20 @@ architecture attribution, evidence and exact prediction definitions. Private
 weights, endpoint identities and embeddings remain local. The published Bernett
 TUnA architecture and iPIN PU adaptation retain explicit attribution.
 
-The [promotion report](../reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md) contains
-the complete 13-predictor test2 comparison and its paired uncertainty. The primary
-model leads C1/C2/C3 test2 macro, while PLM-interact leads added C3 alone. These
-historically examined P/U results do not establish universal superiority,
-independent replication or calibrated interaction probabilities.
+The latest [15-predictor test2 follow-up](../reports/m1/M1_XPAIR_Test2_Comparison_v1.md)
+adds released default and interaction-only X-PAIR to the original comparison.
+Selected 31k leads all three macro scores; its C3 gain over default X-PAIR is
++0.044669 [0.012224, 0.075317], and the gain persists after exact-pair exposure
+exclusion. X-PAIR has higher added-C3 point estimates, with exploratory paired
+intervals including zero. These historically examined P/U results do not
+establish universal superiority, independent replication or calibrated
+interaction probabilities. X-PAIR remains an external comparator; the four
+registered iPIN predictors and default pointer are unchanged.
+
+The checksum-bound [promotion report](../reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md)
+and v3 model card retain their original 13-predictor evidence and release scope.
+The new experiment reports subsequent evidence separately, with all results
+under [experiments/x_pair_test2_v1](../../experiments/x_pair_test2_v1/README.md).
 
 The [v1](FROZEN_PAIR_MODELS_v1.md) and [v2](FROZEN_PAIR_MODELS_v2.md) cards,
 registries and private bundles remain unchanged historical records. In v2,

@@ -1,0 +1,210 @@
+{
+  "at_utc": "2026-09-26T16:52:49.335967+00:00",
+  "exploratory_after_primary_results": true,
+  "intervals": "Pointwise paired component bootstrap, 2000 draws; not multiplicity-adjusted",
+  "panels": {
+    "C3_added_full_exploratory": {
+      "P": 934,
+      "U": 250000,
+      "bootstrap": {
+        "multiplicities_sha256": "e7706fab77f95b400ff7d9bed7f749a924ad41f5d168700e3ab8e3ae7df857e5",
+        "participating_components": 1327,
+        "replicates": 2000,
+        "seed": 16664901087004968238
+      },
+      "contrasts": {
+        "interaction_xfair": {
+          "XPAIR_minus_selected_31k": 0.0437244839400428,
+          "paired_ci95": [
+            -0.010593270406732462,
+            0.09429089419858619
+          ]
+        },
+        "multitask_xfair": {
+          "XPAIR_minus_selected_31k": 0.033067481798715215,
+          "paired_ci95": [
+            -0.012104924790601759,
+            0.07923428070861264
+          ]
+        }
+      },
+      "models": {
+        "interaction_xfair": {
+          "PU_concordance": 0.7838299336188437,
+          "ci95": [
+            0.7341175001891669,
+            0.8242693031976389
+          ]
+        },
+        "multitask_xfair": {
+          "PU_concordance": 0.7731729314775161,
+          "ci95": [
+            0.7300074675423786,
+            0.8131508015888286
+          ]
+        },
+        "selected_31k": {
+          "PU_concordance": 0.7401054496788009,
+          "ci95": [
+            0.6911028040466238,
+            0.7831915505318775
+          ]
+        }
+      }
+    },
+    "C3_added_no_XPAIR_pair_exposure_exploratory": {
+      "P": 825,
+      "U": 248915,
+      "bootstrap": {
+        "multiplicities_sha256": "09ca24bbb1e41e7ab21bd05a0f44927943843a34327a6af8c0513f5701b1a918",
+        "participating_components": 1327,
+        "replicates": 2000,
+        "seed": 17281111394108184434
+      },
+      "contrasts": {
+        "interaction_xfair": {
+          "XPAIR_minus_selected_31k": 0.03149681253001657,
+          "paired_ci95": [
+            -0.024866316533425407,
+            0.08434975358175135
+          ]
+        },
+        "multitask_xfair": {
+          "XPAIR_minus_selected_31k": 0.02056470049712722,
+          "paired_ci95": [
+            -0.025880378919732838,
+            0.07028843720053782
+          ]
+        }
+      },
+      "models": {
+        "interaction_xfair": {
+          "PU_concordance": 0.7618628070066512,
+          "ci95": [
+            0.7077852790801327,
+            0.8023743487430393
+          ]
+        },
+        "multitask_xfair": {
+          "PU_concordance": 0.7509306949737619,
+          "ci95": [
+            0.7045659524014409,
+            0.7898247930316749
+          ]
+        },
+        "selected_31k": {
+          "PU_concordance": 0.7303659944766346,
+          "ci95": [
+            0.6791011793962215,
+            0.7741880641882006
+          ]
+        }
+      }
+    },
+    "C3_legacy_full_exploratory": {
+      "P": 2757,
+      "U": 999622,
+      "bootstrap": {
+        "multiplicities_sha256": "b543d7814a82995a1f82ac254542fd58f0119cb7798948a76f1448aa554a1606",
+        "participating_components": 1283,
+        "replicates": 2000,
+        "seed": 13759876999519140081
+      },
+      "contrasts": {
+        "interaction_xfair": {
+          "XPAIR_minus_selected_31k": -0.1502640863675968,
+          "paired_ci95": [
+            -0.2016394823571614,
+            -0.06961843033555323
+          ]
+        },
+        "multitask_xfair": {
+          "XPAIR_minus_selected_31k": -0.12240477571506447,
+          "paired_ci95": [
+            -0.1666042052431064,
+            -0.06894898603016286
+          ]
+        }
+      },
+      "models": {
+        "interaction_xfair": {
+          "PU_concordance": 0.6829339769399505,
+          "ci95": [
+            0.6435616519468504,
+            0.7278431951041049
+          ]
+        },
+        "multitask_xfair": {
+          "PU_concordance": 0.7107932875924828,
+          "ci95": [
+            0.6593481242896779,
+            0.7520358573706696
+          ]
+        },
+        "selected_31k": {
+          "PU_concordance": 0.8331980633075473,
+          "ci95": [
+            0.7761063249903183,
+            0.8669617320580293
+          ]
+        }
+      }
+    },
+    "C3_legacy_no_XPAIR_pair_exposure_exploratory": {
+      "P": 2632,
+      "U": 995120,
+      "bootstrap": {
+        "multiplicities_sha256": "4a4650bd90d1e3a2083a6a3660bb525138b8d8eb59214cccf125092a73098bf6",
+        "participating_components": 1283,
+        "replicates": 2000,
+        "seed": 15612900024549831503
+      },
+      "contrasts": {
+        "interaction_xfair": {
+          "XPAIR_minus_selected_31k": -0.15920935197147557,
+          "paired_ci95": [
+            -0.21267472398716336,
+            -0.08012306660353324
+          ]
+        },
+        "multitask_xfair": {
+          "XPAIR_minus_selected_31k": -0.1302330202309746,
+          "paired_ci95": [
+            -0.17327558699691784,
+            -0.07788968753626822
+          ]
+        }
+      },
+      "models": {
+        "interaction_xfair": {
+          "PU_concordance": 0.6716099210846666,
+          "ci95": [
+            0.6299360574447903,
+            0.7168613162329747
+          ]
+        },
+        "multitask_xfair": {
+          "PU_concordance": 0.7005862528251675,
+          "ci95": [
+            0.6467499393164731,
+            0.7444661195833769
+          ]
+        },
+        "selected_31k": {
+          "PU_concordance": 0.8308192730561421,
+          "ci95": [
+            0.7708453003783033,
+            0.8685905063047222
+          ]
+        }
+      }
+    }
+  },
+  "prediction_freeze_sha256": "becdd1d868f45c7e1daa2f26ded6df2a8825523b5bdbd6cf2ccad7d5024263bf",
+  "reason": "Investigate opposite rankings in legacy and added C3; no model selection or score changes",
+  "script": {
+    "bytes": 2773,
+    "path": "scripts/cohort_detail.py",
+    "sha256": "64bb5f417948e9633b322792cc9d2d1ee1ef31a74ac0819568ed69da891c6459"
+  }
+}

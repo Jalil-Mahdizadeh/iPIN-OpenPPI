@@ -1,0 +1,82 @@
+{
+  "bootstrap": {
+    "multiplicities_sha256": "88a5d7abbd18e7336712232fae00f66a799f351577b31770f599648079a6a71c",
+    "participating_components": 4031,
+    "replicates": 2000,
+    "seed": 4036261260771737855
+  },
+  "bootstrap_file": {
+    "bytes": 48532,
+    "path": "results/bootstrap_C2_test_2_macro_no_XPAIR_pair_exposure.npz",
+    "sha256": "16e84ea9ed3f51e18cb3cb435e337a60c3d8439dc191f828e297c8fed3fc3fe6"
+  },
+  "cell": "C2",
+  "cohort_counts": [
+    {
+      "P": 13547,
+      "U": 995304,
+      "cohort": "legacy"
+    },
+    {
+      "P": 4052,
+      "U": 248967,
+      "cohort": "added"
+    }
+  ],
+  "excluded_candidate_rows": 5951,
+  "model_order": [
+    "selected_31k",
+    "multitask_xfair",
+    "interaction_xfair"
+  ],
+  "models": {
+    "interaction_xfair": {
+      "PU_concordance": 0.6705050673207493,
+      "ci95": [
+        0.6400704882965322,
+        0.6958093248466919
+      ]
+    },
+    "multitask_xfair": {
+      "PU_concordance": 0.6835380246567553,
+      "ci95": [
+        0.6646555221485203,
+        0.7050704668805925
+      ]
+    },
+    "selected_31k": {
+      "PU_concordance": 0.8266384808879277,
+      "ci95": [
+        0.8105549967687949,
+        0.8393669882970133
+      ]
+    }
+  },
+  "paired_differences": [
+    {
+      "ci95": [
+        -0.16207722289525292,
+        -0.12232190163987866
+      ],
+      "difference": -0.1431004562311724,
+      "model": "multitask_xfair",
+      "reference": "selected_31k"
+    },
+    {
+      "ci95": [
+        -0.1856635068216132,
+        -0.126782711293338
+      ],
+      "difference": -0.15613341356717836,
+      "model": "interaction_xfair",
+      "reference": "selected_31k"
+    }
+  ],
+  "prediction_freeze_sha256": "becdd1d868f45c7e1daa2f26ded6df2a8825523b5bdbd6cf2ccad7d5024263bf",
+  "raw_logit_macro_diagnostic_only": {
+    "interaction_xfair": 0.6705050673207495,
+    "multitask_xfair": 0.6835380248860297
+  },
+  "reference_replay": null,
+  "view": "test_2_macro_no_XPAIR_pair_exposure"
+}

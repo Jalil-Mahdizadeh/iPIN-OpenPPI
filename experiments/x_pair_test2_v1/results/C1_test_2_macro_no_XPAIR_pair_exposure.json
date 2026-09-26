@@ -1,0 +1,82 @@
+{
+  "bootstrap": {
+    "multiplicities_sha256": "020e16f43376915477f7a2d4900b799c7ec119bd188719fbf2074ae8a39f2879",
+    "participating_components": 2704,
+    "replicates": 2000,
+    "seed": 2628469645127011871
+  },
+  "bootstrap_file": {
+    "bytes": 48532,
+    "path": "results/bootstrap_C1_test_2_macro_no_XPAIR_pair_exposure.npz",
+    "sha256": "bff630557293c2285c068aa32e4e021778121b01c96f0ecd7558a728cafd860a"
+  },
+  "cell": "C1",
+  "cohort_counts": [
+    {
+      "P": 3581,
+      "U": 995133,
+      "cohort": "legacy"
+    },
+    {
+      "P": 595,
+      "U": 248915,
+      "cohort": "added"
+    }
+  ],
+  "excluded_candidate_rows": 5608,
+  "model_order": [
+    "selected_31k",
+    "multitask_xfair",
+    "interaction_xfair"
+  ],
+  "models": {
+    "interaction_xfair": {
+      "PU_concordance": 0.691452997188224,
+      "ci95": [
+        0.663080697909515,
+        0.7174254814809973
+      ]
+    },
+    "multitask_xfair": {
+      "PU_concordance": 0.6941586069241678,
+      "ci95": [
+        0.6654504174978175,
+        0.7217524438597607
+      ]
+    },
+    "selected_31k": {
+      "PU_concordance": 0.8871209154601636,
+      "ci95": [
+        0.8721378880330939,
+        0.9027926135938067
+      ]
+    }
+  },
+  "paired_differences": [
+    {
+      "ci95": [
+        -0.22155931289974062,
+        -0.16780309374467436
+      ],
+      "difference": -0.19296230853599583,
+      "model": "multitask_xfair",
+      "reference": "selected_31k"
+    },
+    {
+      "ci95": [
+        -0.2240433239698405,
+        -0.17070205218678955
+      ],
+      "difference": -0.19566791827193963,
+      "model": "interaction_xfair",
+      "reference": "selected_31k"
+    }
+  ],
+  "prediction_freeze_sha256": "becdd1d868f45c7e1daa2f26ded6df2a8825523b5bdbd6cf2ccad7d5024263bf",
+  "raw_logit_macro_diagnostic_only": {
+    "interaction_xfair": 0.691452997188224,
+    "multitask_xfair": 0.6941586069241678
+  },
+  "reference_replay": null,
+  "view": "test_2_macro_no_XPAIR_pair_exposure"
+}

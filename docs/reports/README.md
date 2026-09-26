@@ -7,6 +7,16 @@ The subsequent [published-model comparisons](../../benchmark/README.md) and
 their reports alongside their implementations. The chronology below describes
 the core iPIN studies and preserves their phase-specific decisions.
 
+The latest human comparison is [released X-PAIR on frozen test2](m1/M1_XPAIR_Test2_Comparison_v1.md).
+It adds default multitask and interaction-only X-PAIR to the 13 existing
+predictors on all 3,774,966 candidate pairs. Selected 31k remains highest on
+C1/C2/C3 macro; its C3 gain over default X-PAIR is +0.044669
+[0.012224, 0.075317], and persists after excluding exact X-PAIR training and
+validation pair overlaps. X-PAIR has higher added-C3 point estimates, but
+exploratory subgroup intervals include zero. Complete results, cohort scores,
+exposure checks, qualification and provenance are kept in
+[the experiment](../../experiments/x_pair_test2_v1/README.md).
+
 The [non-human transfer report](../../benchmark/nonhuman_transfer_v1/REPORT.md)
 evaluates the three frozen iPIN models within mouse, fly, worm, budding yeast,
 Arabidopsis, and E. coli K-12. Fifty targets per species yield 1,385 P and 60,000 U
@@ -50,10 +60,13 @@ The current model catalogue is [Frozen pair models v3](../models/FROZEN_PAIR_MOD
 [DEC-0056](../../governance/decisions/DEC-0056-designate-ipin-tuna-31k-primary-model.md),
 with the previous three models retained unchanged. The
 [primary-model promotion report](m1/M1_iPIN_TUnA_31k_Promotion_v1.md) records
-all 13 test2 predictors, C1/C2/C3 macro scores, paired C3 intervals, cohort
-exceptions and the descriptive twelve-target result. The 31k model leads all
-three macro partitions; PLM-interact leads added C3 alone. Test2 is a historical
-follow-up. See [status v56](../../governance/PROJECT_STATUS_v56.md).
+the original 13 test2 predictors, C1/C2/C3 macro scores, paired C3 intervals,
+cohort exceptions and the descriptive twelve-target result. The 31k model
+leads all three macro partitions in that record; PLM-interact leads its added
+C3 cohort. That promotion report and [status v56](../../governance/PROJECT_STATUS_v56.md)
+remain checksum-bound historical records. The X-PAIR follow-up above adds
+later evidence without changing the model designation. Test2 remains a
+historical follow-up.
 
 The preceding [v2 catalogue](../models/FROZEN_PAIR_MODELS_v2.md),
 [DEC-0055](../../governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md)

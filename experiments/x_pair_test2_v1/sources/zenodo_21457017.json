@@ -1,0 +1,131 @@
+{
+  "created": "2026-07-21T09:22:38.600267+00:00",
+  "modified": "2026-07-21T09:22:38.838722+00:00",
+  "id": 21457017,
+  "conceptrecid": "21457016",
+  "doi": "10.5281/zenodo.21457017",
+  "conceptdoi": "10.5281/zenodo.21457016",
+  "doi_url": "https://doi.org/10.5281/zenodo.21457017",
+  "metadata": {
+    "title": "X-PAIR datasets",
+    "doi": "10.5281/zenodo.21457017",
+    "publication_date": "2026-07-20",
+    "description": "<p>This repository contains the processed datasets used to train and evaluate <strong>X-PAIR</strong>, a <strong>multi-task deep-learning model</strong> designed to<strong> </strong>jointly predict <strong>protein&ndash;protein interactions </strong>and<strong> residue-level interfaces</strong>.</p>\n<p>The datasets were constructed from publicly available biological resources. Protein&ndash;protein interaction data were obtained from <strong>STRING v12.0</strong>, while non-interacting pairs were generated using the \"neighbour exclusion strategy\" introduced in SENSE-PPI. As STRING reports same-organism interactions, the interaction dataset contains only intra-species protein pairs.&nbsp;Residue-level interface annotations were obtained from <strong>PPI3D</strong>&nbsp;and may include both intra-species and inter-species protein interactions. The original data were processed through dedicated filtering and curation pipelines to generate high-quality, non-redundant datasets suitable for model training and evaluation.</p>\n<p>Four dataset collections are provided:</p>\n<ul>\n<li><strong>X-fair</strong>, a homology-aware benchmark containing both interaction and interface data, designed to reduce information leakage;</li>\n<li><strong>X-human</strong>, containing both interaction and interface data and designed to evaluate cross-species generalisation from human-only training data;&nbsp;</li>\n<li><strong>X-multispecies</strong>, also containing both interaction and interface data and designed to evaluate generalisation using a broader multi-species training set;</li>\n<li><strong>X-taxonomic-interface</strong>, an interface-only benchmark designed to assess residue-level interface prediction across different taxonomic groups.</li>\n</ul>\n<p>For each dataset collection, training, validation, and test splits are provided. The splits are distributed as tab-separated files containing protein identifiers and the corresponding ground-truth labels, together with FASTA files containing the amino acid sequences associated with the proteins included in each dataset.</p>\n<p class=\"p1\">Additional information is provided in the README.md file included in the dataset folder. Detailed preprocessing, filtering, and dataset construction procedures are described in the X-PAIR manuscript.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Rescalli, Sara",
+        "affiliation": "Sorbonne Universit\u00e9",
+        "orcid": "0009-0004-6277-3428"
+      },
+      {
+        "name": "Carbone, Alessandra",
+        "affiliation": "Sorbonne Universit\u00e9",
+        "orcid": "0000-0003-2098-5743"
+      }
+    ],
+    "keywords": [
+      "PPI",
+      "protein-protein interaction",
+      "protein interface",
+      "protein sequence",
+      "deep learning"
+    ],
+    "version": "1.0",
+    "references": [
+      "Szklarczyk et al. (2023). The STRING database in 2023: protein\u2013protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Research, 51(D1), D638\u2013D646.",
+      "Dapk\u016bnas et al. (2024). PPI3D: a web server for searching, analyzing and modeling protein\u2013protein, protein\u2013peptide and protein\u2013nucleic acid interactions. Nucleic Acids Research, 52(W1), W264\u2013W271.",
+      "Volzhenin et al. (2024). SENSE-PPI reconstructs interactomes within, across, and between species at the genome scale. iScience, 27(7), 110371."
+    ],
+    "custom": {
+      "code:codeRepository": "http://gitlab.lcqb.upmc.fr/srescalli/X-PAIR.git"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "21457016"
+          }
+        }
+      ]
+    }
+  },
+  "title": "X-PAIR datasets",
+  "links": {
+    "self": "https://zenodo.org/api/records/21457017",
+    "self_html": "https://zenodo.org/records/21457017",
+    "preview_html": "https://zenodo.org/records/21457017?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.21457017",
+    "self_doi": "https://doi.org/10.5281/zenodo.21457017",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.21457017",
+    "reserve_doi": "https://zenodo.org/api/records/21457017/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/21457016",
+    "parent_html": "https://zenodo.org/records/21457016",
+    "parent_doi": "https://doi.org/10.5281/zenodo.21457016",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.21457016",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:21457017/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:21457017/sequence/default",
+    "files": "https://zenodo.org/api/records/21457017/files",
+    "media_files": "https://zenodo.org/api/records/21457017/media-files",
+    "archive": "https://zenodo.org/api/records/21457017/files-archive",
+    "archive_media": "https://zenodo.org/api/records/21457017/media-files-archive",
+    "latest": "https://zenodo.org/api/records/21457017/versions/latest",
+    "latest_html": "https://zenodo.org/records/21457017/latest",
+    "versions": "https://zenodo.org/api/records/21457017/versions",
+    "draft": "https://zenodo.org/api/records/21457017/draft",
+    "access_links": "https://zenodo.org/api/records/21457017/access/links",
+    "access_grants": "https://zenodo.org/api/records/21457017/access/grants",
+    "access_users": "https://zenodo.org/api/records/21457017/access/users",
+    "access_request": "https://zenodo.org/api/records/21457017/access/request",
+    "access": "https://zenodo.org/api/records/21457017/access",
+    "communities": "https://zenodo.org/api/records/21457017/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/21457017/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/21457017/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/21457017/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/21457017/quota-increase",
+    "requests": "https://zenodo.org/api/records/21457017/requests"
+  },
+  "updated": "2026-07-21T09:22:38.838722+00:00",
+  "recid": "21457017",
+  "revision": 3,
+  "files": [
+    {
+      "id": "23bf1197-1835-4518-b7ce-7ba2937a0933",
+      "key": "xpair_datasets.tar.gz",
+      "size": 198532332,
+      "checksum": "md5:6311ab8eecd461a53d1eeab2379929ea",
+      "links": {
+        "self": "https://zenodo.org/api/records/21457017/files/xpair_datasets.tar.gz/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1761213"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 3,
+    "unique_downloads": 3,
+    "views": 21,
+    "unique_views": 19,
+    "version_downloads": 3,
+    "version_unique_downloads": 3,
+    "version_unique_views": 19,
+    "version_views": 21
+  },
+  "state": "done",
+  "submitted": true
+}

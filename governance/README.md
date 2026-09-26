@@ -19,11 +19,19 @@ The current model disposition is [v56](PROJECT_STATUS_v56.md), with
 designates **iPIN-TUnA-31k** (`ipin_tuna_31k_ensemble`) as the primary/default
 human PPI predictor in the [four-model catalogue](../docs/models/FROZEN_PAIR_MODELS_v3.md).
 The existing 31,188-P, epoch-1 three-seed ensemble is preserved unchanged.
-Its test2 macro scores lead all 13 evaluated predictors, with positive pointwise
-C3 paired intervals; PLM-interact leads added C3 alone. This is a post-result
-designation on a historical benchmark, with published TUnA attribution and
-all three older model definitions retained. See the
+The original 13-predictor promotion evidence is preserved in the
 [promotion report](../docs/reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md).
+This is a post-result designation on a historical benchmark, with published
+TUnA attribution and all three older model definitions retained.
+
+The subsequent user-authorized [X-PAIR comparison](../docs/reports/m1/M1_XPAIR_Test2_Comparison_v1.md)
+adds two released checkpoints and brings the test2 comparison to 15 predictors.
+Selected 31k retains the highest C1/C2/C3 macro scores; its C3 gain over default
+X-PAIR is +0.044669 [0.012224, 0.075317] and persists under exact-pair exposure
+exclusion. X-PAIR has higher added-C3 point estimates, with exploratory
+intervals including zero. The [execution/publication record](../experiments/x_pair_test2_v1/PUBLICATION.md)
+records scope and provenance. No iPIN predictor, default pointer, original
+release artifact or historical gate is changed by this comparison.
 
 The preceding three-model disposition is [v55](PROJECT_STATUS_v55.md), with
 [gate v55](gates/gate_status_v55.yaml).
