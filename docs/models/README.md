@@ -1,46 +1,45 @@
 # Model registry
 
-Current catalogue: [Frozen pair models v2](FROZEN_PAIR_MODELS_v2.md),
-authorized by [DEC-0055](../../governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md).
+**iPIN-TUnA-31k is the primary/default iPIN predictor for human PPI ranking.**
+The current catalogue is [Frozen pair models v3](FROZEN_PAIR_MODELS_v3.md),
+authorized by [DEC-0056](../../governance/decisions/DEC-0056-designate-ipin-tuna-31k-primary-model.md).
 
-- Original confirmatory baseline:
-  `lightweight_esm2_150m_linear__linear_lr3e-4`.
-- Optimized pooled residual-MLP ensemble:
-  `esm2_150m__residual_wide__epoch04_ensemble3`.
-- Third frozen iPIN model, TUnA-retrained (PU-TUnA):
-  `tuna_retrained_ensemble`, aliases `tuna-retrained` and `ipin_tuna_retrained`.
+| Predictor | Registry ID | Role |
+|---|---|---|
+| iPIN-TUnA-31k | `ipin_tuna_31k_ensemble` | Primary/default human model |
+| Original iPIN | `lightweight_esm2_150m_linear__linear_lr3e-4` | Historical confirmatory reference |
+| Optimized pooled iPIN | `esm2_150m__residual_wide__epoch04_ensemble3` | Historical pooled reference |
+| TUnA-retrained / PU-TUnA, 17k | `tuna_retrained_ensemble` | Historical epoch-4 reference |
 
-All three retain their exact three-seed prediction definitions. The first two
-average raw member scores; TUnA-retrained averages mean-field-adjusted logits
-and retains its trained GP covariance. TUnA-retrained has the highest observed
-C3 point score, but its paired difference from optimized pooled iPIN includes
-zero. Registration is not a statistically conclusive superiority claim.
+The primary model retains all three selected epoch-1 members trained on 31,188
+positive pairs, exact saved GP covariance, and equal FP64 averaging of FP32
+mean-field-adjusted logits. Its aliases are `iPIN-TUnA-31k`, `ipin-tuna-31k`
+and the completed experiment ID `selected_31k`. The earlier `tuna-retrained`
+and `ipin_tuna_retrained` aliases continue to identify the 17k epoch-4 ensemble.
 
-Exact hashes, model roles and preserved inputs are in the
-[machine-readable registry](../../artifacts/models/frozen_pair_models_v2/MODEL_REGISTRY.json).
-Private model weights remain local and are not distributed in this Git repository.
+The [machine-readable registry](../../artifacts/models/frozen_pair_models_v3/MODEL_REGISTRY.json)
+records both primary/default pointers, checkpoint hashes, seed order, runtime,
+architecture attribution, evidence and exact prediction definitions. Private
+weights, endpoint identities and embeddings remain local. The published Bernett
+TUnA architecture and iPIN PU adaptation retain explicit attribution.
 
-The [v1 registry and cards](FROZEN_PAIR_MODELS_v1.md) remain unchanged historical
-records for the first two models. Published-model comparisons are indexed in
-[benchmark/](../../benchmark/README.md); the original TUnA predictor remains a
-separate comparator.
+The [promotion report](../reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md) contains
+the complete 13-predictor test2 comparison and its paired uncertainty. The primary
+model leads C1/C2/C3 test2 macro, while PLM-interact leads added C3 alone. These
+historically examined P/U results do not establish universal superiority,
+independent replication or calibrated interaction probabilities.
 
-External transfer: [six non-human organisms](../../benchmark/nonhuman_transfer_v1/REPORT.md).
-The three unchanged ensembles score 61,385 rows for 300 targets, with
-species-specific retrieval and exact/related human-training exposure audits.
-This evaluation does not retrain, promote, or alter a model; the versioned
-cards and registry remain immutable. Non-human taxids do not establish absence
-from sequence pretraining or absence of homologous human training proteins.
+The [v1](FROZEN_PAIR_MODELS_v1.md) and [v2](FROZEN_PAIR_MODELS_v2.md) cards,
+registries and private bundles remain unchanged historical records. In v2,
+historical TUnA's C3 difference from optimized pooled iPIN included zero; that
+statement retains its original dataset/model scope. Original published TUnA
+remains a comparator rather than a registered iPIN model.
 
-Current biological application: [expanded twelve-target comparison](../../example/twelve_target_comparison_v2/REPORT.md)
-and [panel index](../../example/INDEX.md). All three unchanged models and original
-published TUnA score 5,587 pairs with fresh embeddings. Five candidate sets compare
-context, background and biologically selected low-plausibility U, with all prior
-retrieval metrics, exposure checks and evidence-tier sensitivities. Original TUnA
-is a comparator; the registry still has three iPIN models. Versioned model cards
-and their checksum-bound freeze records remain unchanged.
+The [selected-31k twelve-target report](../../artifacts/models/frozen_pair_models_v3/evidence/twelve_targets/REPORT.md)
+adds the primary predictor to the unchanged 5,587-row panel. Exposure is explicit:
+17/37 panel positives occur in 31k training P. Common exposure-excluded results
+are reported separately. See the [panel index](../../example/INDEX.md).
 
-The [original TUnA example audit](../../example/original_tuna_investigation_v1/REPORT.md)
-verifies the authors' checkpoint directly and finds a plausible transfer route
-through analogous training pairs for EGFR. Its net lead is sensitive to EGFR;
-the registered predictors and all completed benchmark records remain unchanged.
+The [six-organism transfer evaluation](../../benchmark/nonhuman_transfer_v1/REPORT.md)
+applies the previous three models; it does not evaluate iPIN-TUnA-31k. Its
+species-specific evidence and human-training exposure audits remain unchanged.

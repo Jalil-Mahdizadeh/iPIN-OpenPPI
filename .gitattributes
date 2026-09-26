@@ -13,3 +13,8 @@ example/original_tuna_investigation_v1/*.csv -text whitespace=cr-at-eol
 benchmark/reference_organism_transfer_v1/*.csv -text whitespace=cr-at-eol
 benchmark/reference_organism_pu_transfer_v1/*.csv -text whitespace=cr-at-eol
 benchmark/host_pathogen_transfer_v1/taxonomy_lineages_v2.csv -text whitespace=cr-at-eol
+
+# Preserve the primary-model registry and its copied aggregate evidence exactly.
+artifacts/models/frozen_pair_models_v3/** -text
+artifacts/models/frozen_pair_models_v3/evidence/**/*.csv whitespace=cr-at-eol
+artifacts/validation/frozen_pair_models_v3/*.xml -text

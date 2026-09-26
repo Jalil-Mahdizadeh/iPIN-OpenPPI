@@ -13,10 +13,22 @@ Changes to the primary target, metric, split, calibration universe, production p
 
 ## Core model record
 
-The current model disposition is [v55](PROJECT_STATUS_v55.md), with
+The current model disposition is [v56](PROJECT_STATUS_v56.md), with
+[gate v56](gates/gate_status_v56.yaml).
+[DEC-0056](decisions/DEC-0056-designate-ipin-tuna-31k-primary-model.md)
+designates **iPIN-TUnA-31k** (`ipin_tuna_31k_ensemble`) as the primary/default
+human PPI predictor in the [four-model catalogue](../docs/models/FROZEN_PAIR_MODELS_v3.md).
+The existing 31,188-P, epoch-1 three-seed ensemble is preserved unchanged.
+Its test2 macro scores lead all 13 evaluated predictors, with positive pointwise
+C3 paired intervals; PLM-interact leads added C3 alone. This is a post-result
+designation on a historical benchmark, with published TUnA attribution and
+all three older model definitions retained. See the
+[promotion report](../docs/reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md).
+
+The preceding three-model disposition is [v55](PROJECT_STATUS_v55.md), with
 [gate v55](gates/gate_status_v55.yaml).
 [DEC-0055](decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md)
-registers the unchanged epoch-4 TUnA-retrained ensemble as the third frozen iPIN
+registered the unchanged epoch-4 TUnA-retrained ensemble as the third frozen iPIN
 model. The [three-model registry and cards](../docs/models/FROZEN_PAIR_MODELS_v2.md)
 preserve its exact states, GP covariance, inference definition, and provenance,
 while retaining the previous two-model release. This is post-result preservation,
@@ -40,7 +52,7 @@ six-target and twelve-target records. It adds 50 low-plausibility U per positive
 with explicit evidence tiers and reapplies all three frozen iPIN models plus
 original TUnA. Its [scope record](../example/twelve_target_comparison_v2/AUTHORIZATION.md)
 and [metric protocol](../example/twelve_target_comparison_v2/METRICS.md) retain
-authority and analysis definitions. Status v55 records the model freeze;
+authority and analysis definitions. Status v55 records that historical model freeze;
 example applications keep their separate versioned reports.
 
 The preceding completed evaluation is recorded in [status v53](PROJECT_STATUS_v53.md),

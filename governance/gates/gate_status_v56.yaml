@@ -1,0 +1,51 @@
+schema_version: 1
+status_version: 56
+date: '2026-09-26'
+decision: DEC-0056
+release_id: frozen_pair_models_v3
+previous_status: governance/gates/gate_status_v55.yaml
+model_registry: artifacts/models/frozen_pair_models_v3/MODEL_REGISTRY.json
+primary_model: ipin_tuna_31k_ensemble
+default_model: ipin_tuna_31k_ensemble
+models:
+  primary_display_name: iPIN-TUnA-31k
+  registered_models: 4
+  historical_reference_models: 3
+  previous_definitions_changed: false
+  primary_training_positive_pairs: 31188
+  primary_seeds: [20260803, 20260817, 20260831]
+  primary_selected_epoch: 1
+  prediction_unit: equal_three_seed_mean_field_adjusted_logit_ensemble
+  gp_fitted_before_eval: true
+  gp_covariance_refitted: false
+  sigmoid_applied: false
+designation:
+  timing: after_completed_scaling_panel_and_test2_comparisons
+  architecture_attribution: published_Bernett_TUnA_with_iPIN_TRAIN_PU_adaptation
+  test2_macro_C1: 0.8869025740138452
+  test2_macro_C2: 0.8271125021602953
+  test2_macro_C3: 0.7866517564931741
+  C3_gain_vs_historical_17k_TUnA: 0.04278090217171293
+  C3_paired_95_interval: [0.0197677744254852, 0.07014974775126026]
+  positive_pointwise_C3_contrasts: 12
+  multiplicity_adjusted: false
+  PLM_interact_higher_on_added_C3: true
+preservation:
+  private_read_only_bundle: .private/frozen_pair_models_v3/bundle
+  previous_releases_unchanged: true
+  source_results_unchanged: true
+  weights_publicly_redistributed: false
+execution:
+  new_training_or_encoder_inference: false
+  new_benchmark_scoring_or_metric_recomputation: false
+  test_truth_or_pairs_accessed_for_release: false
+  evaluation_ledger_reset: false
+  synthetic_validation_permitted: true
+claims:
+  scope: human_PPI_positive_versus_unlabeled_ranking
+  previously_examined_test: true
+  independent_replication: false
+  universal_superiority: false
+  calibrated_binding_probability: false
+  direct_binding_or_partner_specific_generalization_established: false
+  original_TUnA_architecture_claim: false

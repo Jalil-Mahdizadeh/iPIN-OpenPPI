@@ -4,6 +4,11 @@
   checksum, split, training, scoring, and publication tests. Fixtures are created
   within the tests and their temporary directories.
 - `test_model_optimization_v1.py` covers the optimization models and objective.
+- `test_frozen_pair_models_v3.py` checks primary/default identity, preservation
+  of historical model definitions and aliases, exact seed/checkpoint membership,
+  saved-covariance semantics, bounded claims and refusal to overwrite a release.
+  Run it with the v1/v2 custody tests in the pinned TUnA image. The v3 freeze
+  additionally qualifies actual states using synthetic residues on CPU.
 - Example tests live with the applications and are collected separately from
   `tests/`: [historical comparison tests](../example/six_target_comparison_v1/test_comparison.py)
   and [twelve-target metric tests](../example/twelve_target_comparison_v1/test_metrics.py).

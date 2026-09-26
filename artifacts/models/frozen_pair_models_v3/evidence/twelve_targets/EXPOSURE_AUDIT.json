@@ -1,0 +1,46 @@
+{
+  "U_pool_overlap_is_potential_training_exposure": true,
+  "at_utc": "2026-09-26T09:45:37.705009+00:00",
+  "counts": {
+    "newly_added_train_P": {
+      "P": 15,
+      "U": 2
+    },
+    "selected_31k_prior_pair": {
+      "P": 17,
+      "U": 75
+    },
+    "selection_dev_added_P": {
+      "P": 0,
+      "U": 0
+    },
+    "selection_dev_added_U": {
+      "P": 0,
+      "U": 2
+    },
+    "selection_dev_legacy_P": {
+      "P": 0,
+      "U": 0
+    },
+    "selection_dev_legacy_U": {
+      "P": 0,
+      "U": 0
+    },
+    "train_17k_P": {
+      "P": 2,
+      "U": 0
+    },
+    "train_31k_P": {
+      "P": 17,
+      "U": 2
+    },
+    "train_U_pool": {
+      "P": 0,
+      "U": 71
+    }
+  },
+  "homology_overlap_assessed": false,
+  "matching": "Unordered pairs; exact sequence identity OR shared annotated UniProt accession",
+  "panel_labels_changed": false,
+  "selected_dev": "C3 reconciled legacy plus C3 added, used for the frozen checkpoint selection"
+}

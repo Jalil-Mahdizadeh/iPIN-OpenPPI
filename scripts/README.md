@@ -26,9 +26,13 @@ points inside their qualified ARM64 SIF and use a new run directory. Completed
 single-use evaluations are not general-purpose rerun commands.
 
 Current model-preservation entry points are
-`model/freeze_pair_models_v2.py` for the [three-model catalogue](../docs/models/FROZEN_PAIR_MODELS_v2.md)
-(pinned TUnA SIF), and `model/freeze_pair_models_v1.py` for the unchanged original
-two-model release (pinned core model SIF). Both default to read-only verification;
-`--create` refuses an existing release. The v2 verifier also checks v1 custody.
+`model/freeze_pair_models_v3.py` for the [four-model catalogue and primary iPIN-TUnA-31k](../docs/models/FROZEN_PAIR_MODELS_v3.md),
+`model/freeze_pair_models_v2.py` for the historical three-model release (both
+use the pinned TUnA SIF), and `model/freeze_pair_models_v1.py` for the original
+two-model release (pinned core model SIF). Each defaults to read-only verification;
+`--create` refuses an existing release. The v3 verifier checks v2 and v1 custody,
+selected-state identities, aggregate provenance and private bundle checksums.
+Creation uses synthetic residues for real-state qualification; it performs no
+training, encoder inference, benchmark scoring, truth access or metric recomputation.
 Some subdirectory READMEs belong to historical checksum-bound releases and
 retain their phase-specific instructions.

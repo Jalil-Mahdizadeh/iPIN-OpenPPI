@@ -7,21 +7,41 @@ verified noninteractions.
 
 ## Current project
 
-The repository contains the evidence-processing and benchmark pipeline, two
-frozen pooled iPIN ensembles, the frozen TUnA-retrained ensemble as iPIN model 3,
-completed comparisons with five published methods, and
-twelve human protein-screening examples, plus a six-organism external transfer
-evaluation of all three frozen models. Start with these records:
+**iPIN-TUnA-31k is the primary/default iPIN predictor for human PPI ranking.**
+The current catalogue contains this selected 31,188-positive, epoch-1,
+three-seed ensemble and three preserved historical reference models.
+The repository also contains the evidence-processing pipeline, completed
+published-method comparisons, twelve human screening examples and historical
+non-human transfer evaluations. Start with these records:
 
 | Area | Current reference |
 |---|---|
-| Frozen iPIN predictors | [Three-model registry and cards](docs/models/FROZEN_PAIR_MODELS_v2.md) |
-| Published-method comparisons | [Benchmark results and execution status](benchmark/README.md) |
-| Protein-screening examples | [Expanded four-model comparison](example/twelve_target_comparison_v2/REPORT.md), [current panel index](example/INDEX.md) |
+| Primary model and historical references | [Four-model registry and cards](docs/models/FROZEN_PAIR_MODELS_v3.md) |
+| Latest human comparison | [31k promotion and 13-predictor test2 results](docs/reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md) |
+| Published-method comparisons | [Current and historical benchmark results](benchmark/README.md) |
+| Protein-screening examples | [Selected 31k on the fixed panel](artifacts/models/frozen_pair_models_v3/evidence/twelve_targets/REPORT.md), [panel index](example/INDEX.md) |
 | Non-human transfer | [Six-organism frozen-model evaluation](benchmark/nonhuman_transfer_v1/REPORT.md) |
 | Scientific reports and diagnostics | [Report index](docs/reports/README.md) |
 | Core model freeze and decisions | [Governance index](governance/README.md) |
 | Implementation and tests | [Source map](src/README.md), [entry points](scripts/README.md), [test policy](tests/README.md) |
+
+Under [DEC-0056](governance/decisions/DEC-0056-designate-ipin-tuna-31k-primary-model.md),
+`ipin_tuna_31k_ensemble` is the primary/default registry entry; the completed
+experiment ID `selected_31k` remains an alias. It retains the published Bernett
+TUnA architecture, the iPIN PU adaptation, all three selected seeds, and the
+exact saved GP covariance. Its **C1/C2/C3 test2 macro concordances are
+0.886903 / 0.827113 / 0.786652**, highest among the 13 evaluated predictors.
+The paired C3 gain over historical 17k PU-TUnA is **+0.042781
+[0.019768, 0.070150]**. Intervals are pointwise, without multiplicity correction.
+PLM-interact scores higher on added C3 alone (0.767828 versus 0.740105).
+Test2 is a previously examined follow-up, and the twelve-target panel has
+training exposure. The designation is scoped to human P/U ranking.
+
+The new [v3 release](docs/models/FROZEN_PAIR_MODELS_v3.md) preserves the exact
+prediction unit and aggregate evidence. The three earlier models retain their
+existing IDs, aliases, weights and historical results.
+
+## Historical reference models and applications
 
 The two pooled iPIN predictors use frozen ESM-2 150M sequence representations, training-only
 normalization, symmetric pair features, and equal-weight three-seed raw-score
@@ -31,7 +51,7 @@ iPIN models. Exact checkpoints and prediction definitions are frozen under
 [DEC-0054](governance/decisions/DEC-0054-freeze-and-designate-both-models.md).
 
 Under [DEC-0055](governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md),
-**TUnA-retrained is the third frozen iPIN model** (`tuna_retrained_ensemble`).
+TUnA-retrained was registered as the third iPIN model (`tuna_retrained_ensemble`).
 It retains the selected epoch-4 checkpoints for all three seeds, full-context
 residue representations, trained GP covariance, and the equal mean of
 mean-field-adjusted logits. Its C1/C2/C3 concordances are
@@ -45,8 +65,8 @@ two-model freeze remains unchanged.
 | C2 | 0.805299 | 0.851301 | +0.046002 [+0.031561, +0.061559] |
 | C1 | 0.843493 | 0.916037 | +0.072544 [+0.063093, +0.081869] |
 
-The primary C3 gain remains inconclusive because its paired interval includes
-zero. The optimized-model evaluation is a disclosed follow-up on the existing,
+The historical optimized-versus-original C3 gain remains inconclusive because
+its paired interval includes zero. That evaluation is a disclosed follow-up on the existing,
 previously examined test, not independent replication. See the
 [original final-test report](docs/reports/m1/M1_Protected_Final_Test_v1.md) and
 [fixed-ensemble follow-up](docs/reports/m1/M1_Model_Optimization_Followup_v1.md).
@@ -59,7 +79,7 @@ difference from optimized iPIN also includes zero. Retraining coverage and
 checkpoint-selection limitations differ by method, especially RAPPPID's
 partially trained recovery ensemble. The [benchmark index](benchmark/README.md)
 links each result and its caveats. The expanded twelve-target application scores
-37 nominated positives and 5,550 unlabeled pairs with all three frozen iPIN models
+37 nominated positives and 5,550 unlabeled pairs with the three historical iPIN models
 and original published TUnA. Each positive has 50 context-matched, 50 background,
 and 50 low-plausibility U. The [report](example/twelve_target_comparison_v2/REPORT.md)
 compares all five requested candidate sets using PU concordance, AP/MAP, MRR,
@@ -93,7 +113,7 @@ probability. Genuine partner-specific/direct-binding generalization remains
 unresolved. BioPlex AP-MS provides secondary cross-assay association evidence;
 its frozen negative findings are retained in the [report index](docs/reports/README.md).
 
-## Pipeline and benchmark design
+## Original pipeline and benchmark design
 
 1. Acquire checksum-registered source snapshots and preserve assay, construct,
    orientation, evaluability, and outcome semantics during ingestion and
@@ -112,13 +132,20 @@ its frozen negative findings are retained in the [report index](docs/reports/REA
    pretraining exposure and broader biological generalization require separate
    interpretation.
 
+The later human data-scaling study preserves the original partitions and adds
+eligible evidence/endpoints, producing nested training budgets up to 31,188 P
+and a 17,583-sequence universe. It selects using C3 development and evaluates
+both legacy and added cohorts. Test2 macro scores above are distinct from the
+historical test scores; the [promotion report](docs/reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md)
+records the comparison and its limits.
+
 The [Version 3 blueprint](docs/blueprints/iPIN_OpenPPI_Final_Computational_Blueprint_and_Workflow_v3.md),
 [frozen split decision](governance/decisions/DEC-0022-accept-final-benchmark-component-split.md),
 [pair protocol](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Protocol_Final_v1.md),
 and [artifact report](docs/reports/m0/M0_Pair_Level_PU_R_Benchmark_Artifacts_Final_v1.md)
 record the scientific design. Numbered protocols, status files, and checkpoints
-describe their original phase boundaries. The current three-model disposition is
-[status v55](governance/PROJECT_STATUS_v55.md); benchmark and example
+describe their original phase boundaries. The current four-model disposition is
+[status v56](governance/PROJECT_STATUS_v56.md); benchmark and example
 work is documented in its own directories.
 
 ## Repository layout
@@ -129,7 +156,8 @@ work is documented in its own directories.
 | `scripts/` | Data, benchmark, model, analysis, and platform entry points |
 | `tests/` | Synthetic unit, safety, validation, and model tests |
 | `benchmark/` | Published-method implementations, execution records, aggregate comparisons, and dedicated containers |
-| `example/` | Twelve target panels, three-model scoring, retrieval metrics, and preserved historical examples |
+| `example/` | Target panels, retrieval metrics and preserved historical applications |
+| `experiments/` | Local scaling, selected-31k panel and test2 studies; promotion aggregates are preserved in the v3 release |
 | `docs/` | Blueprints, scientific protocols, reports, and model cards |
 | `governance/` | Decisions, phase-specific status records, gates, risks, and licenses |
 | `configs/`, `schemas/` | Versioned configuration and data contracts |

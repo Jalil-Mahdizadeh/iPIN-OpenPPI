@@ -1,0 +1,1468 @@
+{
+  "all_epoch_points": [
+    {
+      "budget": 16799,
+      "epoch": 1,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260803/epoch_01.pt",
+            "sha256": "e781014aae8f7e5fb2b21925734200dae66de9627eb270b997991b6999bd211a"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260817/epoch_01.pt",
+            "sha256": "b185243cc2f3f3e7e9cadbca9e27ee047245ff02453241966a5239c664ab3ae8"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260831/epoch_01.pt",
+            "sha256": "e7b9038d9562dc45ce9c6e80542938420e5c9ad1517c482037f7b2229578dee6"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8267044437141995,
+        "dev_1_reconciled": 0.8077765987515478,
+        "dev_2_macro": 0.7453864836948936,
+        "dev_added": 0.6829963686382393
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7686310911762465,
+          "dev_1_reconciled": 0.7528477410393799,
+          "dev_2_macro": 0.6998963491991947,
+          "dev_added": 0.6469449573590097
+        },
+        {
+          "dev_1": 0.820103979696689,
+          "dev_1_reconciled": 0.7980668570909536,
+          "dev_2_macro": 0.7304800351479528,
+          "dev_added": 0.6628932132049519
+        },
+        {
+          "dev_1": 0.7973306101606937,
+          "dev_1_reconciled": 0.7813769926253235,
+          "dev_2_macro": 0.7239252322136246,
+          "dev_added": 0.6664734718019257
+        }
+      ]
+    },
+    {
+      "budget": 16799,
+      "epoch": 2,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260803/epoch_02.pt",
+            "sha256": "0e820335ff1b298e321872ae9c14b49fddf04f207a68423591447ab2cef0a837"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260817/epoch_02.pt",
+            "sha256": "e475b5b3d9efdb8900fc2a2abd978853c2a6441528018f848a5cb71d59485d4d"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260831/epoch_02.pt",
+            "sha256": "9d0dc8a2efa9782a77a3df5a470c6fe17552532b131ba230a78a73ad81b0be18"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8339590501157944,
+        "dev_1_reconciled": 0.8131894298957045,
+        "dev_2_macro": 0.7453789157731618,
+        "dev_added": 0.677568401650619
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.775842248130019,
+          "dev_1_reconciled": 0.7576726397873403,
+          "dev_2_macro": 0.7030556747767513,
+          "dev_added": 0.6484387097661624
+        },
+        {
+          "dev_1": 0.8261150346632365,
+          "dev_1_reconciled": 0.8034071021439273,
+          "dev_2_macro": 0.7313208330527063,
+          "dev_added": 0.6592345639614855
+        },
+        {
+          "dev_1": 0.8020716626990746,
+          "dev_1_reconciled": 0.7852271234470382,
+          "dev_2_macro": 0.7209135080784022,
+          "dev_added": 0.6565998927097662
+        }
+      ]
+    },
+    {
+      "budget": 16799,
+      "epoch": 4,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260803/epoch_04.pt",
+            "sha256": "4ae303006b359973cc7f0770cd896551ad61e7028cad5390733f43866ede35f1"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260817/epoch_04.pt",
+            "sha256": "51df9902a9249c8714d375d3db94dc929150206286849b2c0978ede39db392a8"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260831/epoch_04.pt",
+            "sha256": "5bdf07d32d5fb44539d97ed5b873c191881a37853c0274406de0a0b3702f3a85"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8376111624774871,
+        "dev_1_reconciled": 0.815200561538547,
+        "dev_2_macro": 0.7430941610993973,
+        "dev_added": 0.6709877606602477
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7770559781519317,
+          "dev_1_reconciled": 0.7571471194027254,
+          "dev_2_macro": 0.6994251676793544,
+          "dev_added": 0.6417032159559835
+        },
+        {
+          "dev_1": 0.8197704106014851,
+          "dev_1_reconciled": 0.7957144659242079,
+          "dev_2_macro": 0.7158042398396831,
+          "dev_added": 0.6358940137551582
+        },
+        {
+          "dev_1": 0.8094150487913232,
+          "dev_1_reconciled": 0.7912996326345618,
+          "dev_2_macro": 0.7257164394259467,
+          "dev_added": 0.6601332462173315
+        }
+      ]
+    },
+    {
+      "budget": 16799,
+      "epoch": 6,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260803/epoch_06.pt",
+            "sha256": "5b1598ff57cf8ccf3f2384238b4d362ef91b9e51e3ff2104a146bdfe085f9c62"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260817/epoch_06.pt",
+            "sha256": "d09b7a342d0d4f41abe501cc64fdb0fcbd4698e40812db3369012553e507c130"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260831/epoch_06.pt",
+            "sha256": "16b2e57d7be90480faa1baca93e86d1ea589ee6fb43ea033989f116252d0e0c0"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8288902419478067,
+        "dev_1_reconciled": 0.8059384070728883,
+        "dev_2_macro": 0.7324510508541884,
+        "dev_added": 0.6589636946354883
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7626196986817523,
+          "dev_1_reconciled": 0.742573881365302,
+          "dev_2_macro": 0.6860539461847143,
+          "dev_added": 0.6295340110041265
+        },
+        {
+          "dev_1": 0.8086129492329891,
+          "dev_1_reconciled": 0.7847176333118966,
+          "dev_2_macro": 0.7058663476050542,
+          "dev_added": 0.6270150618982119
+        },
+        {
+          "dev_1": 0.7965901666721609,
+          "dev_1_reconciled": 0.7776333195039425,
+          "dev_2_macro": 0.7084907945525214,
+          "dev_added": 0.6393482696011004
+        }
+      ]
+    },
+    {
+      "budget": 16799,
+      "epoch": 8,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260803/epoch_08.pt",
+            "sha256": "57249343a37c17d4fb30c480714817511a620754b971ebb67bcbe256c2544e3d"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260817/epoch_08.pt",
+            "sha256": "dd6ad1ee17c1981133e483911836bc86b265014625979600403e9a3cc67b10a5"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260831/epoch_08.pt",
+            "sha256": "f151fcdeb328a485de22c3049961d333b1be3ac8d39b12b2d6b50a5ad4f25506"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8297203986806685,
+        "dev_1_reconciled": 0.8056274670877936,
+        "dev_2_macro": 0.7288191915906643,
+        "dev_added": 0.652010916093535
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7699908569596802,
+          "dev_1_reconciled": 0.7476126159918985,
+          "dev_2_macro": 0.6865078155612863,
+          "dev_added": 0.625403015130674
+        },
+        {
+          "dev_1": 0.7983214340013043,
+          "dev_1_reconciled": 0.774700816312428,
+          "dev_2_macro": 0.6946274287889513,
+          "dev_added": 0.6145540412654745
+        },
+        {
+          "dev_1": 0.7991421240673262,
+          "dev_1_reconciled": 0.7800289742449048,
+          "dev_2_macro": 0.7121365490206643,
+          "dev_added": 0.6442441237964237
+        }
+      ]
+    },
+    {
+      "budget": 20000,
+      "epoch": 1,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260803/epoch_01.pt",
+            "sha256": "9984c2b48e4f89e1e50f8cd802532c84c3cef48cb7c01937c140dbdf4e9405cd"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260817/epoch_01.pt",
+            "sha256": "802e76d5a60748588990d12b62bad3e434f65286ca2c0d626e2caf47a13d8582"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260831/epoch_01.pt",
+            "sha256": "a67e4b90ee73474f158bb5ca47c7e2d52bef50e2cb072f5dff54cc9d3c77d6c6"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8124782827873758,
+        "dev_1_reconciled": 0.7985338504571273,
+        "dev_2_macro": 0.7569607037705168,
+        "dev_added": 0.7153875570839064
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7887143551938189,
+          "dev_1_reconciled": 0.776249462600933,
+          "dev_2_macro": 0.7331643984256384,
+          "dev_added": 0.6900793342503438
+        },
+        {
+          "dev_1": 0.8079036154584074,
+          "dev_1_reconciled": 0.7907154524895953,
+          "dev_2_macro": 0.7442539422007812,
+          "dev_added": 0.697792431911967
+        },
+        {
+          "dev_1": 0.740087441728205,
+          "dev_1_reconciled": 0.7320283258005227,
+          "dev_2_macro": 0.7034741010020495,
+          "dev_added": 0.6749198762035763
+        }
+      ]
+    },
+    {
+      "budget": 20000,
+      "epoch": 2,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260803/epoch_02.pt",
+            "sha256": "4837600b7da2af4275bb6766296d186bb17101a1922eca63dbf928ad3fa28661"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260817/epoch_02.pt",
+            "sha256": "c7b51c8055a57f32baa7bb4d8bcaa664a3a3ec6ec7b7bd9a7eb49c7a6a8278ae"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260831/epoch_02.pt",
+            "sha256": "e0249f33bf3f02d6e1b7a5f0807d39da51a9981843dc064e33559bb4a940a071"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8145384613744663,
+        "dev_1_reconciled": 0.7972628922670663,
+        "dev_2_macro": 0.7439814736438495,
+        "dev_added": 0.6907000550206327
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7676173615959371,
+          "dev_1_reconciled": 0.7551594114733051,
+          "dev_2_macro": 0.7169451018852083,
+          "dev_added": 0.6787307922971115
+        },
+        {
+          "dev_1": 0.7971800481294724,
+          "dev_1_reconciled": 0.7742655774597227,
+          "dev_2_macro": 0.7083046525537953,
+          "dev_added": 0.642343727647868
+        },
+        {
+          "dev_1": 0.7480738613750316,
+          "dev_1_reconciled": 0.7386991575338699,
+          "dev_2_macro": 0.6996800574464398,
+          "dev_added": 0.6606609573590096
+        }
+      ]
+    },
+    {
+      "budget": 20000,
+      "epoch": 4,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260803/epoch_04.pt",
+            "sha256": "4ee15ccfe1615d503de392f79900dcf6b48e2a3705a15ac72bab8f03cf27c369"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260817/epoch_04.pt",
+            "sha256": "0d9d9fd75130f51b792224ea3ace6ed09f4c65ecb647130a6a7c61a4f34ba8ce"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260831/epoch_04.pt",
+            "sha256": "cfa04dd712257faf7d66cbeaabcf5d10420f7285b1bbfdae49422158232fe155"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8188604055243798,
+        "dev_1_reconciled": 0.8023589107838301,
+        "dev_2_macro": 0.7498701624070457,
+        "dev_added": 0.6973814140302613
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7697444825671297,
+          "dev_1_reconciled": 0.7577134798916217,
+          "dev_2_macro": 0.7194199503997312,
+          "dev_added": 0.6811264209078405
+        },
+        {
+          "dev_1": 0.7931393419485059,
+          "dev_1_reconciled": 0.7730282823675112,
+          "dev_2_macro": 0.7123022498495053,
+          "dev_added": 0.6515762173314993
+        },
+        {
+          "dev_1": 0.7676743763859257,
+          "dev_1_reconciled": 0.7558625943529772,
+          "dev_2_macro": 0.7118112462824033,
+          "dev_added": 0.6677598982118295
+        }
+      ]
+    },
+    {
+      "budget": 20000,
+      "epoch": 6,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260803/epoch_06.pt",
+            "sha256": "bfdb98d8561083ac3fccff31601a8b65c9de54352fc816f464d627c0a3695d4d"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260817/epoch_06.pt",
+            "sha256": "665d32efdf50a571825a9bc49284208b27ba600277d3dc565580a496db0fab8f"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260831/epoch_06.pt",
+            "sha256": "5f96fd771a9cbaae0666ec9731c3036ffe4b9af9d204afd3f05e87aa6877523f"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8232291496744468,
+        "dev_1_reconciled": 0.8079198100271598,
+        "dev_2_macro": 0.7607689765404024,
+        "dev_added": 0.7136181430536451
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7713545580637973,
+          "dev_1_reconciled": 0.7604032853137269,
+          "dev_2_macro": 0.7266249879113339,
+          "dev_added": 0.6928466905089409
+        },
+        {
+          "dev_1": 0.7970417958116349,
+          "dev_1_reconciled": 0.778196286630828,
+          "dev_2_macro": 0.7214121845808885,
+          "dev_added": 0.6646280825309492
+        },
+        {
+          "dev_1": 0.7794189644652575,
+          "dev_1_reconciled": 0.7669317580357223,
+          "dev_2_macro": 0.7249010275735696,
+          "dev_added": 0.6828702971114168
+        }
+      ]
+    },
+    {
+      "budget": 20000,
+      "epoch": 8,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260803/epoch_08.pt",
+            "sha256": "ad5931d13e205df3c2c9297f15f10b61fa12b1b44161bdf2f80fe393a0375ec8"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260817/epoch_08.pt",
+            "sha256": "0a93fbb7b9bd0e1eabfb089eb8042890efeef793936c41b33f1377c33b28d55c"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260831/epoch_08.pt",
+            "sha256": "98a72632a825e8054e4151e06ee6680609fc93f61fdb557489763bbd6b775d14"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8113241094979096,
+        "dev_1_reconciled": 0.7945123919580301,
+        "dev_2_macro": 0.7455741698442144,
+        "dev_added": 0.6966359477303988
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7546641532073962,
+          "dev_1_reconciled": 0.7415397386136365,
+          "dev_2_macro": 0.7047659587153464,
+          "dev_added": 0.6679921788170563
+        },
+        {
+          "dev_1": 0.7860648624783364,
+          "dev_1_reconciled": 0.7676926885321784,
+          "dev_2_macro": 0.7165660815425678,
+          "dev_added": 0.6654394745529574
+        },
+        {
+          "dev_1": 0.7662720289245064,
+          "dev_1_reconciled": 0.7521909637572943,
+          "dev_2_macro": 0.7063041503793349,
+          "dev_added": 0.6604173370013755
+        }
+      ]
+    },
+    {
+      "budget": 25000,
+      "epoch": 1,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260803/epoch_01.pt",
+            "sha256": "27f3459379fc55a0f6b05a3dcc6924a7fcfc56b0998d2926f28e0bb9438721ba"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260817/epoch_01.pt",
+            "sha256": "e59e7f80708c3908479b4c27e389fee29ca882d52e92ac5da910306a1cbd5fde"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260831/epoch_01.pt",
+            "sha256": "45a0be8cab15fc743e04edfaa82202e0bee6e8dbcdbd7f0f135f83d15ddb0c25"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8265900145751183,
+        "dev_1_reconciled": 0.8136232930717873,
+        "dev_2_macro": 0.7703653824368565,
+        "dev_added": 0.7271074718019257
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.8216436642441187,
+          "dev_1_reconciled": 0.807725638634358,
+          "dev_2_macro": 0.7577676515042491,
+          "dev_added": 0.7078096643741403
+        },
+        {
+          "dev_1": 0.8262680121466625,
+          "dev_1_reconciled": 0.8113586557104591,
+          "dev_2_macro": 0.7629833292307453,
+          "dev_added": 0.7146080027510316
+        },
+        {
+          "dev_1": 0.7487215662315108,
+          "dev_1_reconciled": 0.7398467609746655,
+          "dev_2_macro": 0.7086115207899463,
+          "dev_added": 0.677376280605227
+        }
+      ]
+    },
+    {
+      "budget": 25000,
+      "epoch": 2,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260803/epoch_02.pt",
+            "sha256": "fae39a272ef3cc9ced8891a8b9b69a876f49b5baf89714a2348e0e01a5a2d345"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260817/epoch_02.pt",
+            "sha256": "6cc384ac3a793df944b26e8c9b0efde8cce6e87e75cf6d84ce6ae8762d07c3d2"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260831/epoch_02.pt",
+            "sha256": "f35a82a7d7189ab8886a309bffdc83c64d69cd5b181acd6908e9c65179136e72"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8343349271577016,
+        "dev_1_reconciled": 0.8200928258205593,
+        "dev_2_macro": 0.7747357320299495,
+        "dev_added": 0.7293786382393398
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.8036478660103219,
+          "dev_1_reconciled": 0.7889821438188435,
+          "dev_2_macro": 0.7406174171638922,
+          "dev_added": 0.6922526905089409
+        },
+        {
+          "dev_1": 0.8165562053035681,
+          "dev_1_reconciled": 0.8015964057873523,
+          "dev_2_macro": 0.7557301478730434,
+          "dev_added": 0.7098638899587345
+        },
+        {
+          "dev_1": 0.7732889159003737,
+          "dev_1_reconciled": 0.761911525962715,
+          "dev_2_macro": 0.7218807547282626,
+          "dev_added": 0.6818499834938102
+        }
+      ]
+    },
+    {
+      "budget": 25000,
+      "epoch": 4,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260803/epoch_04.pt",
+            "sha256": "d4ea1691d7c6b6cfe42c578d1f227ec824799a9b75afb027cce0824de4beb55e"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260817/epoch_04.pt",
+            "sha256": "b50ac390c1f63dd0105e809cd9f6c7eb54e1da71fea8d71f9b1304002cb69a4d"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260831/epoch_04.pt",
+            "sha256": "c68270b5370c5e2a581886ad4ac5e093c0143b177cc64685c5a289279f2d2e67"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8264005509987933,
+        "dev_1_reconciled": 0.8114731155527785,
+        "dev_2_macro": 0.7641025990418637,
+        "dev_added": 0.7167320825309491
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.8024486596084067,
+          "dev_1_reconciled": 0.7875831354786484,
+          "dev_2_macro": 0.7404408964876048,
+          "dev_added": 0.6932986574965612
+        },
+        {
+          "dev_1": 0.7931747697628484,
+          "dev_1_reconciled": 0.7783807215103776,
+          "dev_2_macro": 0.733890851814336,
+          "dev_added": 0.6894009821182944
+        },
+        {
+          "dev_1": 0.7585680909559575,
+          "dev_1_reconciled": 0.746194512699492,
+          "dev_2_macro": 0.7013859496097186,
+          "dev_added": 0.656577386519945
+        }
+      ]
+    },
+    {
+      "budget": 25000,
+      "epoch": 6,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260803/epoch_06.pt",
+            "sha256": "85cb115b26ee6251e127c791c241db62cf97da451845af971985c4d6a28e0c18"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260817/epoch_06.pt",
+            "sha256": "6127d6d63d19bd707eb0d8d14e620ed7ca704743b0b35f754bba4c38ba7c26ab"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260831/epoch_06.pt",
+            "sha256": "3a37b40cd0cfc77b39353faff3a492e901c50997ef445aa496e6ed356fe3c266"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8284660540892012,
+        "dev_1_reconciled": 0.8126519400178644,
+        "dev_2_macro": 0.7597176756485471,
+        "dev_added": 0.7067834112792297
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.8009377205355576,
+          "dev_1_reconciled": 0.7854415468807991,
+          "dev_2_macro": 0.7364234075531919,
+          "dev_added": 0.6874052682255847
+        },
+        {
+          "dev_1": 0.7933379472464096,
+          "dev_1_reconciled": 0.7778127155967611,
+          "dev_2_macro": 0.725812279393979,
+          "dev_added": 0.6738118431911967
+        },
+        {
+          "dev_1": 0.7736715518829335,
+          "dev_1_reconciled": 0.7592911741037075,
+          "dev_2_macro": 0.7067527507382362,
+          "dev_added": 0.6542143273727649
+        }
+      ]
+    },
+    {
+      "budget": 25000,
+      "epoch": 8,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260803/epoch_08.pt",
+            "sha256": "9891bb8389c92bd575a911cb42847ce4111460b80655eebc2b969ce506cafd60"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260817/epoch_08.pt",
+            "sha256": "a9b24a3751018b5c065e1dc0ccc53058274661120c0aa25c6b104d33fb185b6d"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260831/epoch_08.pt",
+            "sha256": "b661859dd998e7b9a72204fbf9ad69896868d89492e993bcb448a1adef817857"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8165349476876556,
+        "dev_1_reconciled": 0.8023059773579181,
+        "dev_2_macro": 0.7582482032594267,
+        "dev_added": 0.7141904291609353
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7952182887475246,
+          "dev_1_reconciled": 0.7816934634163057,
+          "dev_2_macro": 0.739903382327135,
+          "dev_added": 0.6981133012379642
+        },
+        {
+          "dev_1": 0.7821796106018977,
+          "dev_1_reconciled": 0.7670092563724301,
+          "dev_2_macro": 0.7196502705521022,
+          "dev_added": 0.6722912847317744
+        },
+        {
+          "dev_1": 0.7526499975783322,
+          "dev_1_reconciled": 0.7400694512597473,
+          "dev_2_macro": 0.6998805770741652,
+          "dev_added": 0.6596917028885831
+        }
+      ]
+    },
+    {
+      "budget": 31188,
+      "epoch": 1,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260803/epoch_01.pt",
+            "sha256": "f29ee395d747ff07cffba14d028430fa9c9ab1e7559a71b678b8541a22f7f979"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260817/epoch_01.pt",
+            "sha256": "7581d4f43354201914ba38924f58bd2e10b4babb9f56ccf6c104276190c97f59"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260831/epoch_01.pt",
+            "sha256": "707f56e0007e0af10d6949924d4c7afc096b9d87cf2375bb050dd12b9d11e66a"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8244254269373382,
+        "dev_1_reconciled": 0.8131560774348604,
+        "dev_2_macro": 0.7789176315647479,
+        "dev_added": 0.7446791856946355
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7863576633612027,
+          "dev_1_reconciled": 0.7775150494690445,
+          "dev_2_macro": 0.7467032757661591,
+          "dev_added": 0.7158915020632737
+        },
+        {
+          "dev_1": 0.7869306039796902,
+          "dev_1_reconciled": 0.7759347157174623,
+          "dev_2_macro": 0.7415371212700104,
+          "dev_added": 0.7071395268225585
+        },
+        {
+          "dev_1": 0.8022767792556387,
+          "dev_1_reconciled": 0.7892513823273192,
+          "dev_2_macro": 0.7504940267895193,
+          "dev_added": 0.7117366712517194
+        }
+      ]
+    },
+    {
+      "budget": 31188,
+      "epoch": 2,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260803/epoch_02.pt",
+            "sha256": "5b5f558063e8b5b432381b1b08b6e5daf37b7cc05b26444f7db044b3813a0ac2"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260817/epoch_02.pt",
+            "sha256": "2849b08ec5b19aaf974aadc015269b260d552bd92434c95edb2fd7f47c394e8d"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260831/epoch_02.pt",
+            "sha256": "a22bbd0e11772e0c57812bb1c4512c55cc659e71afbbb8ee2f52530526a8fb13"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8306051088356882,
+        "dev_1_reconciled": 0.8166788549098953,
+        "dev_2_macro": 0.774165653039542,
+        "dev_added": 0.7316524511691885
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7854556227433159,
+          "dev_1_reconciled": 0.7754047264661839,
+          "dev_2_macro": 0.7417663948699558,
+          "dev_added": 0.7081280632737277
+        },
+        {
+          "dev_1": 0.7931923064078908,
+          "dev_1_reconciled": 0.7771975188701749,
+          "dev_2_macro": 0.7317147896964354,
+          "dev_added": 0.686232060522696
+        },
+        {
+          "dev_1": 0.7926736174455237,
+          "dev_1_reconciled": 0.7791415328299665,
+          "dev_2_macro": 0.7371458750807329,
+          "dev_added": 0.6951502173314993
+        }
+      ]
+    },
+    {
+      "budget": 31188,
+      "epoch": 4,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260803/epoch_04.pt",
+            "sha256": "e00c270f4227cee06d27b8deeb024f09655bf632d2d51911c50d8b62af67cce2"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260817/epoch_04.pt",
+            "sha256": "c1f3ef1fdba3d8ddb7949899125b710f05ebfa71b2372e775d437cd74b5a1c53"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260831/epoch_04.pt",
+            "sha256": "f27da690f401d8023cf83a7f4a2c9491f60111cfd2cf18729f8913b266c2c09a"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8273394421688879,
+        "dev_1_reconciled": 0.8129925920266982,
+        "dev_2_macro": 0.7721869535099103,
+        "dev_added": 0.7313813149931224
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7733130108229239,
+          "dev_1_reconciled": 0.7639131282480035,
+          "dev_2_macro": 0.7321657924596277,
+          "dev_added": 0.7004184566712517
+        },
+        {
+          "dev_1": 0.7898616227433767,
+          "dev_1_reconciled": 0.775155402619909,
+          "dev_2_macro": 0.7360040658216465,
+          "dev_added": 0.6968527290233838
+        },
+        {
+          "dev_1": 0.7880122240679067,
+          "dev_1_reconciled": 0.7724252624837702,
+          "dev_2_macro": 0.7270569462350075,
+          "dev_added": 0.6816886299862448
+        }
+      ]
+    },
+    {
+      "budget": 31188,
+      "epoch": 6,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260803/epoch_06.pt",
+            "sha256": "f43970246473e96c751fc9c83817f57f945d82051b9c3da79e3a97b0c1234306"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260817/epoch_06.pt",
+            "sha256": "a0350d1e3d43182cd69c728ec971f8ddb304f037f268c627d2fd213b1692c728"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260831/epoch_06.pt",
+            "sha256": "23f9f50bffa7d97d0f8e1e12f9c18a661a7f9270839ab746e6b7507353be0e9e"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.826032771970286,
+        "dev_1_reconciled": 0.8112841067754482,
+        "dev_2_macro": 0.7700285802102826,
+        "dev_added": 0.728773053645117
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7728639772689315,
+          "dev_1_reconciled": 0.7630243214261859,
+          "dev_2_macro": 0.7317311098190077,
+          "dev_added": 0.7004378982118294
+        },
+        {
+          "dev_1": 0.7747596878648151,
+          "dev_1_reconciled": 0.7610770770771442,
+          "dev_2_macro": 0.7207617228576918,
+          "dev_added": 0.6804463686382394
+        },
+        {
+          "dev_1": 0.7933364019926707,
+          "dev_1_reconciled": 0.7754313706857743,
+          "dev_2_macro": 0.7297852974474264,
+          "dev_added": 0.6841392242090784
+        }
+      ]
+    },
+    {
+      "budget": 31188,
+      "epoch": 8,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260803/epoch_08.pt",
+            "sha256": "e032bd4c415a5af904818d5aba8f26dfe226833c23c2a9b44ccbae18cfc528cb"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260817/epoch_08.pt",
+            "sha256": "e3f94420ab0b4244a8e29670e05dc9f3ca2aaf3a80d014eef3773aa82134fd36"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260831/epoch_08.pt",
+            "sha256": "0423d5adb02148bdc07d031aba754c91b21222b8a0aad4332cb94bbeea8ce699"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.817208379696701,
+        "dev_1_reconciled": 0.8028660357778911,
+        "dev_2_macro": 0.7653490178889455,
+        "dev_added": 0.727832
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7614513640239986,
+          "dev_1_reconciled": 0.7511549087391302,
+          "dev_2_macro": 0.7226767844933615,
+          "dev_added": 0.6941986602475928
+        },
+        {
+          "dev_1": 0.7734969589465633,
+          "dev_1_reconciled": 0.7609516228656705,
+          "dev_2_macro": 0.7257383176226564,
+          "dev_added": 0.6905250123796424
+        },
+        {
+          "dev_1": 0.7811832737367833,
+          "dev_1_reconciled": 0.7643565638017079,
+          "dev_2_macro": 0.7227416477880617,
+          "dev_added": 0.6811267317744154
+        }
+      ]
+    }
+  ],
+  "at_utc": "2026-09-26T08:55:28.433192+00:00",
+  "best_per_budget": [
+    {
+      "budget": 16799,
+      "epoch": 1,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260803/epoch_01.pt",
+            "sha256": "e781014aae8f7e5fb2b21925734200dae66de9627eb270b997991b6999bd211a"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260817/epoch_01.pt",
+            "sha256": "b185243cc2f3f3e7e9cadbca9e27ee047245ff02453241966a5239c664ab3ae8"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_16799/seed_20260831/epoch_01.pt",
+            "sha256": "e7b9038d9562dc45ce9c6e80542938420e5c9ad1517c482037f7b2229578dee6"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8267044437141995,
+        "dev_1_reconciled": 0.8077765987515478,
+        "dev_2_macro": 0.7453864836948936,
+        "dev_added": 0.6829963686382393
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7686310911762465,
+          "dev_1_reconciled": 0.7528477410393799,
+          "dev_2_macro": 0.6998963491991947,
+          "dev_added": 0.6469449573590097
+        },
+        {
+          "dev_1": 0.820103979696689,
+          "dev_1_reconciled": 0.7980668570909536,
+          "dev_2_macro": 0.7304800351479528,
+          "dev_added": 0.6628932132049519
+        },
+        {
+          "dev_1": 0.7973306101606937,
+          "dev_1_reconciled": 0.7813769926253235,
+          "dev_2_macro": 0.7239252322136246,
+          "dev_added": 0.6664734718019257
+        }
+      ]
+    },
+    {
+      "budget": 20000,
+      "epoch": 6,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260803/epoch_06.pt",
+            "sha256": "bfdb98d8561083ac3fccff31601a8b65c9de54352fc816f464d627c0a3695d4d"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260817/epoch_06.pt",
+            "sha256": "665d32efdf50a571825a9bc49284208b27ba600277d3dc565580a496db0fab8f"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_20000/seed_20260831/epoch_06.pt",
+            "sha256": "5f96fd771a9cbaae0666ec9731c3036ffe4b9af9d204afd3f05e87aa6877523f"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8232291496744468,
+        "dev_1_reconciled": 0.8079198100271598,
+        "dev_2_macro": 0.7607689765404024,
+        "dev_added": 0.7136181430536451
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7713545580637973,
+          "dev_1_reconciled": 0.7604032853137269,
+          "dev_2_macro": 0.7266249879113339,
+          "dev_added": 0.6928466905089409
+        },
+        {
+          "dev_1": 0.7970417958116349,
+          "dev_1_reconciled": 0.778196286630828,
+          "dev_2_macro": 0.7214121845808885,
+          "dev_added": 0.6646280825309492
+        },
+        {
+          "dev_1": 0.7794189644652575,
+          "dev_1_reconciled": 0.7669317580357223,
+          "dev_2_macro": 0.7249010275735696,
+          "dev_added": 0.6828702971114168
+        }
+      ]
+    },
+    {
+      "budget": 25000,
+      "epoch": 2,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260803/epoch_02.pt",
+            "sha256": "fae39a272ef3cc9ced8891a8b9b69a876f49b5baf89714a2348e0e01a5a2d345"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260817/epoch_02.pt",
+            "sha256": "6cc384ac3a793df944b26e8c9b0efde8cce6e87e75cf6d84ce6ae8762d07c3d2"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_25000/seed_20260831/epoch_02.pt",
+            "sha256": "f35a82a7d7189ab8886a309bffdc83c64d69cd5b181acd6908e9c65179136e72"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8343349271577016,
+        "dev_1_reconciled": 0.8200928258205593,
+        "dev_2_macro": 0.7747357320299495,
+        "dev_added": 0.7293786382393398
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.8036478660103219,
+          "dev_1_reconciled": 0.7889821438188435,
+          "dev_2_macro": 0.7406174171638922,
+          "dev_added": 0.6922526905089409
+        },
+        {
+          "dev_1": 0.8165562053035681,
+          "dev_1_reconciled": 0.8015964057873523,
+          "dev_2_macro": 0.7557301478730434,
+          "dev_added": 0.7098638899587345
+        },
+        {
+          "dev_1": 0.7732889159003737,
+          "dev_1_reconciled": 0.761911525962715,
+          "dev_2_macro": 0.7218807547282626,
+          "dev_added": 0.6818499834938102
+        }
+      ]
+    },
+    {
+      "budget": 31188,
+      "epoch": 1,
+      "members": [
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260803/epoch_01.pt",
+            "sha256": "f29ee395d747ff07cffba14d028430fa9c9ab1e7559a71b678b8541a22f7f979"
+          },
+          "seed": 20260803
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260817/epoch_01.pt",
+            "sha256": "7581d4f43354201914ba38924f58bd2e10b4babb9f56ccf6c104276190c97f59"
+          },
+          "seed": 20260817
+        },
+        {
+          "checkpoint": {
+            "bytes": 135357993,
+            "path": "training/budget_31188/seed_20260831/epoch_01.pt",
+            "sha256": "707f56e0007e0af10d6949924d4c7afc096b9d87cf2375bb050dd12b9d11e66a"
+          },
+          "seed": 20260831
+        }
+      ],
+      "metrics": {
+        "dev_1": 0.8244254269373382,
+        "dev_1_reconciled": 0.8131560774348604,
+        "dev_2_macro": 0.7789176315647479,
+        "dev_added": 0.7446791856946355
+      },
+      "seed_metrics": [
+        {
+          "dev_1": 0.7863576633612027,
+          "dev_1_reconciled": 0.7775150494690445,
+          "dev_2_macro": 0.7467032757661591,
+          "dev_added": 0.7158915020632737
+        },
+        {
+          "dev_1": 0.7869306039796902,
+          "dev_1_reconciled": 0.7759347157174623,
+          "dev_2_macro": 0.7415371212700104,
+          "dev_added": 0.7071395268225585
+        },
+        {
+          "dev_1": 0.8022767792556387,
+          "dev_1_reconciled": 0.7892513823273192,
+          "dev_2_macro": 0.7504940267895193,
+          "dev_added": 0.7117366712517194
+        }
+      ]
+    }
+  ],
+  "execution_sha256": "be67d329b7efa320b2149294cffaa922ea20415c034f1ba5ffcb1007f418bec2",
+  "fresh_control": {
+    "budget": 16799,
+    "epoch": 1,
+    "members": [
+      {
+        "checkpoint": {
+          "bytes": 135357993,
+          "path": "training/budget_16799/seed_20260803/epoch_01.pt",
+          "sha256": "e781014aae8f7e5fb2b21925734200dae66de9627eb270b997991b6999bd211a"
+        },
+        "seed": 20260803
+      },
+      {
+        "checkpoint": {
+          "bytes": 135357993,
+          "path": "training/budget_16799/seed_20260817/epoch_01.pt",
+          "sha256": "b185243cc2f3f3e7e9cadbca9e27ee047245ff02453241966a5239c664ab3ae8"
+        },
+        "seed": 20260817
+      },
+      {
+        "checkpoint": {
+          "bytes": 135357993,
+          "path": "training/budget_16799/seed_20260831/epoch_01.pt",
+          "sha256": "e7b9038d9562dc45ce9c6e80542938420e5c9ad1517c482037f7b2229578dee6"
+        },
+        "seed": 20260831
+      }
+    ],
+    "metrics": {
+      "dev_1": 0.8267044437141995,
+      "dev_1_reconciled": 0.8077765987515478,
+      "dev_2_macro": 0.7453864836948936,
+      "dev_added": 0.6829963686382393
+    },
+    "seed_metrics": [
+      {
+        "dev_1": 0.7686310911762465,
+        "dev_1_reconciled": 0.7528477410393799,
+        "dev_2_macro": 0.6998963491991947,
+        "dev_added": 0.6469449573590097
+      },
+      {
+        "dev_1": 0.820103979696689,
+        "dev_1_reconciled": 0.7980668570909536,
+        "dev_2_macro": 0.7304800351479528,
+        "dev_added": 0.6628932132049519
+      },
+      {
+        "dev_1": 0.7973306101606937,
+        "dev_1_reconciled": 0.7813769926253235,
+        "dev_2_macro": 0.7239252322136246,
+        "dev_added": 0.6664734718019257
+      }
+    ]
+  },
+  "selected": {
+    "budget": 31188,
+    "epoch": 1,
+    "members": [
+      {
+        "checkpoint": {
+          "bytes": 135357993,
+          "path": "training/budget_31188/seed_20260803/epoch_01.pt",
+          "sha256": "f29ee395d747ff07cffba14d028430fa9c9ab1e7559a71b678b8541a22f7f979"
+        },
+        "seed": 20260803
+      },
+      {
+        "checkpoint": {
+          "bytes": 135357993,
+          "path": "training/budget_31188/seed_20260817/epoch_01.pt",
+          "sha256": "7581d4f43354201914ba38924f58bd2e10b4babb9f56ccf6c104276190c97f59"
+        },
+        "seed": 20260817
+      },
+      {
+        "checkpoint": {
+          "bytes": 135357993,
+          "path": "training/budget_31188/seed_20260831/epoch_01.pt",
+          "sha256": "707f56e0007e0af10d6949924d4c7afc096b9d87cf2375bb050dd12b9d11e66a"
+        },
+        "seed": 20260831
+      }
+    ],
+    "metrics": {
+      "dev_1": 0.8244254269373382,
+      "dev_1_reconciled": 0.8131560774348604,
+      "dev_2_macro": 0.7789176315647479,
+      "dev_added": 0.7446791856946355
+    },
+    "seed_metrics": [
+      {
+        "dev_1": 0.7863576633612027,
+        "dev_1_reconciled": 0.7775150494690445,
+        "dev_2_macro": 0.7467032757661591,
+        "dev_added": 0.7158915020632737
+      },
+      {
+        "dev_1": 0.7869306039796902,
+        "dev_1_reconciled": 0.7759347157174623,
+        "dev_2_macro": 0.7415371212700104,
+        "dev_added": 0.7071395268225585
+      },
+      {
+        "dev_1": 0.8022767792556387,
+        "dev_1_reconciled": 0.7892513823273192,
+        "dev_2_macro": 0.7504940267895193,
+        "dev_added": 0.7117366712517194
+      }
+    ]
+  },
+  "selection_rule": "three-seed mean scores; common epoch per budget; maximize 0.5*C3 reconciled-legacy concordance + 0.5*C3 added concordance",
+  "test_pairs_read": false,
+  "test_truth_read": false,
+  "tie_break": "smaller positive budget, then earlier epoch; strict numeric ordering without a tolerance"
+}

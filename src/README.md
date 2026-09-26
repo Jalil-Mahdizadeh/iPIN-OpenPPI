@@ -19,5 +19,9 @@ the protected final-test and fixed-ensemble evaluators. Published-method adapter
 and their own runners live in [benchmark/](../benchmark/README.md); example
 three-model scoring and retrieval analysis live in the
 [twelve-target application](../example/twelve_target_comparison_v1/README.md).
-The [frozen model cards](../docs/models/FROZEN_PAIR_MODELS_v2.md) define the
-preserved predictors. Scientific execution and tests require an accepted SIF.
+The [v3 model cards](../docs/models/FROZEN_PAIR_MODELS_v3.md) define four
+preserved predictors, with **iPIN-TUnA-31k** as primary/default for human PPI
+ranking. Historical runners retain their original model scope. The
+[v3 preservation entry point](../scripts/model/freeze_pair_models_v3.py)
+registers the exact selected ensemble and verifies prior releases. Scientific
+execution and tests require an accepted SIF.

@@ -1,0 +1,81 @@
+{
+  "C1_sensitivity": "Remove every legacy or added C1 development candidate identity, without altering the complete requested test2",
+  "U_is_confirmed_negative": false,
+  "at_utc": "2026-09-26T10:12:51.286161+00:00",
+  "bootstrap_replicates": 2000,
+  "candidates": {
+    "added_C1": {
+      "endpoints": 4675,
+      "rows": 250645
+    },
+    "added_C2": {
+      "endpoints": 7320,
+      "rows": 254375
+    },
+    "added_C3": {
+      "endpoints": 2645,
+      "rows": 250934
+    },
+    "legacy_C1": {
+      "endpoints": 4675,
+      "rows": 1003187
+    },
+    "legacy_C2": {
+      "endpoints": 7225,
+      "rows": 1013446
+    },
+    "legacy_C3": {
+      "endpoints": 2550,
+      "rows": 1002379
+    }
+  },
+  "development_only_unpromoted_recipes": [
+    "attention_pool",
+    "cross_attention_wide"
+  ],
+  "excluded_planning_only_methods": [
+    "Topsy-Turvy",
+    "TT3D",
+    "PIPR",
+    "PPITrans",
+    "PPLM",
+    "MINT"
+  ],
+  "legacy_predictions": "Reuse verified, identity-aligned archived scores; recompute selected/frozen PU-TUnA with exact covariance",
+  "no_training_or_model_selection": true,
+  "paired_component_bootstrap": "Use the frozen scaling study component graph and deterministic draws, shared across all models",
+  "primary_cell": "C3",
+  "primary_metric": "0.5 weighted P/U concordance on reconciled legacy + 0.5 on added test cohort",
+  "primary_models": [
+    "selected_31k",
+    "ipin_baseline",
+    "ipin_optimized",
+    "tuna_retrained_ensemble",
+    "tuna_original",
+    "dscript_original",
+    "dscript_retrained",
+    "plm_interact_original_650m_humanv11",
+    "rapppid_original_released_mult",
+    "rapppid_recovery_mean_logit",
+    "sprint_native_train_positive_graph",
+    "cross_attention_ensemble",
+    "mean_pool_ensemble"
+  ],
+  "selected": {
+    "budget": 31188,
+    "epoch": 1,
+    "seeds": [
+      20260803,
+      20260817,
+      20260831
+    ]
+  },
+  "sprint": "Unchanged native algorithm and 16,799-P graph; recompute transductive HSP preprocessing on all 17,583 frozen sequences and score both cohorts",
+  "test2_is_fresh_independent": false,
+  "test_cells": [
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "tuna_covariance": "Preserve exact saved GP covariance: set fitted before eval; do not reproduce the historical reload-order drift"
+}

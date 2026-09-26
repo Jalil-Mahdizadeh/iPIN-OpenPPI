@@ -15,8 +15,11 @@ evidence directly against original IntAct XML, recomputes embeddings, audits
 actual human TRAIN/development exposure and sequence similarity, and reports
 all known-positive retrieval metrics and exploratory paired comparisons.
 
-The current application contains 37 nominated P and 5,550 U across twelve human
-targets, scored by all three frozen iPIN models and original published TUnA.
+The original expanded application contains 37 nominated P and 5,550 U across
+twelve human targets, scored by the three historical iPIN models and original
+published TUnA. The [selected-31k follow-up](../../artifacts/models/frozen_pair_models_v3/evidence/twelve_targets/REPORT.md)
+adds the current primary model to those unchanged candidates and reports training
+exposure and a common exposure-excluded sensitivity.
 It compares P against context, background, low-plausibility, context + background,
 and all U, using the complete PU concordance and retrieval metric suite.
 The [selection protocol](../../example/twelve_target_comparison_v2/SELECTION.md)
@@ -42,14 +45,22 @@ summaries, context-membership and length diagnostics, and retrieval consequences
 The direction is modestly positive for context U in all three models; these are
 exploratory score differences, with no claim about the groups' true interaction rates.
 
-The current model catalogue is [Frozen pair models v2](../models/FROZEN_PAIR_MODELS_v2.md):
-the original affine ensemble, optimized pooled residual-MLP ensemble, and
-TUnA-retrained as the third frozen iPIN model under
-[DEC-0055](../../governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md).
-This preservation action uses the completed TUnA records and performs no new
-training or benchmark evaluation. See [status v55](../../governance/PROJECT_STATUS_v55.md).
+The current model catalogue is [Frozen pair models v3](../models/FROZEN_PAIR_MODELS_v3.md).
+**iPIN-TUnA-31k** is the primary/default human predictor under
+[DEC-0056](../../governance/decisions/DEC-0056-designate-ipin-tuna-31k-primary-model.md),
+with the previous three models retained unchanged. The
+[primary-model promotion report](m1/M1_iPIN_TUnA_31k_Promotion_v1.md) records
+all 13 test2 predictors, C1/C2/C3 macro scores, paired C3 intervals, cohort
+exceptions and the descriptive twelve-target result. The 31k model leads all
+three macro partitions; PLM-interact leads added C3 alone. Test2 is a historical
+follow-up. See [status v56](../../governance/PROJECT_STATUS_v56.md).
 
-The latest diagnostic is [C3 control-shift investigation](m1/M1_C3_Control_Shift_Investigation_v1.md).
+The preceding [v2 catalogue](../models/FROZEN_PAIR_MODELS_v2.md),
+[DEC-0055](../../governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md)
+and [status v55](../../governance/PROJECT_STATUS_v55.md) preserve registration
+of the historical epoch-4 17k PU-TUnA as the third model.
+
+An earlier core diagnostic is [C3 control-shift investigation](m1/M1_C3_Control_Shift_Investigation_v1.md).
 Exact scoring parity passed. Development's simple-control signal is concentrated
 in within-component positives and a smaller interaction-rich sequence component;
 the largest-component-only explanation was not supported. This is a development-only,

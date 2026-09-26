@@ -1,5 +1,12 @@
 # TUnA benchmark
 
+The current primary/default human iPIN model is **iPIN-TUnA-31k**, the selected
+31,188-P epoch-1 ensemble from the later scaling study. Its
+[v3 model card](../../docs/models/FROZEN_PAIR_MODELS_v3.md) and
+[promotion report](../../docs/reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md)
+record the exact predictor, test2 comparison and limitations. This directory
+preserves the earlier original/17k-retrained benchmark unchanged.
+
 The completed retrained predictor is **iPIN model 3, TUnA-retrained (PU-TUnA)**,
 frozen under [DEC-0055](../../governance/decisions/DEC-0055-freeze-tuna-retrained-as-third-ipin-model.md).
 The [v2 model catalogue](../../docs/models/FROZEN_PAIR_MODELS_v2.md) preserves its

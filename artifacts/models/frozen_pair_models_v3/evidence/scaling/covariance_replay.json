@@ -1,0 +1,263 @@
+{
+  "C3_development": {
+    "fresh_control": {
+      "saved_covariance_replay": {
+        "dev_1": 0.8267044428311974,
+        "dev_1_reconciled": 0.80777659758884,
+        "dev_2_macro": 0.7453864831135397,
+        "dev_added": 0.6829963686382393
+      },
+      "selection": {
+        "dev_1": 0.8267044437141995,
+        "dev_1_reconciled": 0.8077765987515478,
+        "dev_2_macro": 0.7453864836948936,
+        "dev_added": 0.6829963686382393
+      }
+    },
+    "ipin_tuna_frozen": {
+      "saved_covariance_replay": {
+        "dev_1": 0.8044558030963983,
+        "dev_1_reconciled": 0.7768824654192991,
+        "dev_2_macro": 0.6958034555432121,
+        "dev_added": 0.6147244456671251
+      },
+      "selection": null
+    },
+    "selected": {
+      "saved_covariance_replay": {
+        "dev_1": 0.8244254273788394,
+        "dev_1_reconciled": 0.813156077628645,
+        "dev_2_macro": 0.7789176316616402,
+        "dev_added": 0.7446791856946355
+      },
+      "selection": {
+        "dev_1": 0.8244254269373382,
+        "dev_1_reconciled": 0.8131560774348604,
+        "dev_2_macro": 0.7789176315647479,
+        "dev_added": 0.7446791856946355
+      }
+    }
+  },
+  "exact_saved_covariance_retained": true,
+  "maximum_absolute_test_point_change": 0.0002916484571429123,
+  "original_artifacts_modified": false,
+  "purpose": "Post-completion numerical replay audit, not model reselection",
+  "replay_environment": {
+    "container": "benchmark/containers/images/tuna-arm64-v1.sif",
+    "execution": "interactive GPU inference only; no SLURM jobs submitted",
+    "guard": "benchmark/tuna/scripts/gpu_guard.py",
+    "inputs_mounted_read_only": true
+  },
+  "replay_script_sha256": "d6374e206df13c3ac31a3aaa483b273e9310f6a2443def1d148bb21ab388403c",
+  "replay_script_source": "\"\"\"Read-only post-completion replay; preserve the exact saved GP covariance.\n\nNo training, checkpoint selection, or modification of frozen study artifacts.\n\"\"\"\nimport json\nfrom pathlib import Path\nimport numpy as np\nimport torch\nfrom common import arrays, concordance, cuda, sha\nfrom training import make_model\nfrom adapter import cached_scores\n\nrun = Path('/output')\nfrozen = json.loads((run/'SCORER_FREEZE.json').read_text())\nselected = json.loads((run/'SELECTION.json').read_text())\npublished = json.loads((run/'results/RESULTS.json').read_text())\nmembers = {r['name']: r for r in frozen['members']}\ndevice = cuda()\npanels = {}\nfor cell in ('C1', 'C2', 'C3'):\n    for cohort in ('legacy', 'added'):\n        panels[f'test_{cohort}_{cell}'] = arrays(f'/truth/{cohort}/{cell}.npz')\npanels['development_legacy_C3'] = arrays('/data/legacy/development_00.npz')\npanels['development_added_C3'] = arrays('/data/development/added/C3.npz')\nmodels = {\n    'selected': f\"scaled_{selected['selected']['budget']}\",\n    'fresh_control': f\"scaled_{selected['fresh_control']['budget']}\",\n    'ipin_tuna_frozen': 'baseline',\n}\npredictions = {panel: {} for panel in panels}\nfor label, prefix in models.items():\n    sums = {name: np.zeros(len(data['a']), np.float64) for name, data in panels.items()}\n    for seed in (20260803, 20260817, 20260831):\n        member = members[f'{prefix}_seed{seed}']\n        for key in ('weights', 'features'):\n            assert sha(run/member[key]['path']) == member[key]['sha256']\n        model = make_model(seed, device)\n        state = torch.load(run/member['weights']['path'], map_location=device, weights_only=True)\n        model.load_state_dict(state, strict=True)\n        # Mark fitted BEFORE eval, preventing native float32 pinv from replacing\n        # the checkpoint's training-only covariance.\n        model.gp_layer.fitted = True\n        model.eval()\n        assert torch.equal(model.gp_layer.covariance, state['gp_layer.covariance'])\n        z = torch.as_tensor(np.load(run/member['features']['path'], allow_pickle=False), device=device)\n        for name, data in panels.items():\n            sums[name] += cached_scores(model, z, data['a'], data['b']).astype(np.float64) / 3\n        assert torch.equal(model.gp_layer.covariance, state['gp_layer.covariance'])\n        print(json.dumps({'replayed': label, 'seed': seed}), flush=True)\n        del model, state, z\n    for name in panels:\n        predictions[name][label] = sums[name]\n\ncomparison = {}\nfor cell in ('C1', 'C2', 'C3'):\n    data = {\n        'test_1': panels[f'test_legacy_{cell}'],\n        'test_1_reconciled': arrays(f'/truth/reconciled/{cell}.npz'),\n        'test_added': panels[f'test_added_{cell}'],\n    }\n    for view, panel in data.items():\n        pred = predictions[f\"test_{'added' if view == 'test_added' else 'legacy'}_{cell}\"]\n        key = cell + ':' + view\n        comparison[key] = {}\n        for label in models:\n            point = concordance(pred[label], panel['positive'], panel['weight'])\n            old = published['test'][key]['models'][label]['PU_concordance']\n            comparison[key][label] = {'saved_covariance_replay': point, 'published': old, 'difference': point-old}\n    key = cell + ':test_2_macro'\n    comparison[key] = {}\n    for label in models:\n        point = (comparison[cell+':test_1_reconciled'][label]['saved_covariance_replay'] + comparison[cell+':test_added'][label]['saved_covariance_replay'])/2\n        old = published['test'][key]['models'][label]['PU_concordance']\n        comparison[key][label] = {'saved_covariance_replay': point, 'published': old, 'difference': point-old}\n\ndevelopment = {}\nfor label in models:\n    vals = {}\n    for view, data, cohort in (\n        ('dev_1', panels['development_legacy_C3'], 'legacy'),\n        ('dev_1_reconciled', arrays('/data/development/reconciled/C3.npz'), 'legacy'),\n        ('dev_added', panels['development_added_C3'], 'added'),\n    ):\n        vals[view] = concordance(predictions[f'development_{cohort}_C3'][label], data['positive'], data['weight'])\n    vals['dev_2_macro'] = .5*(vals['dev_1_reconciled']+vals['dev_added'])\n    reference = selected['selected']['metrics'] if label=='selected' else selected['fresh_control']['metrics'] if label=='fresh_control' else None\n    development[label] = {'saved_covariance_replay': vals, 'selection': reference}\n\nresult = {\n    'purpose': 'Post-completion numerical replay audit, not model reselection',\n    'selection_sha256': sha(run/'SELECTION.json'),\n    'scorer_freeze_sha256': sha(run/'SCORER_FREEZE.json'),\n    'original_artifacts_modified': False,\n    'training_performed': False,\n    'exact_saved_covariance_retained': True,\n    'test_point_comparison': comparison,\n    'C3_development': development,\n    'maximum_absolute_test_point_change': max(abs(v['difference']) for row in comparison.values() for v in row.values()),\n}\nPath('/review/SCORER_REPLAY_REVIEW.json').write_text(json.dumps(result, indent=2, sort_keys=True)+'\\n')\nprint(json.dumps(result), flush=True)\n",
+  "review_at_utc": "2026-09-26T09:19:48.530295+00:00",
+  "scorer_freeze_sha256": "8e8704f77eecca395f2d7cea24931a19c2d573255339a6b51be7865366aad48d",
+  "selection_sha256": "3a2b76cf605c94263b9141410c054b5aa79b34a416fcfe7bd784a370338c4f36",
+  "test_point_comparison": {
+    "C1:test_1": {
+      "fresh_control": {
+        "difference": -2.2295814319894802e-05,
+        "published": 0.9241112146023318,
+        "saved_covariance_replay": 0.9240889187880119
+      },
+      "ipin_tuna_frozen": {
+        "difference": -1.0182084220211607e-07,
+        "published": 0.948619522993367,
+        "saved_covariance_replay": 0.9486194211725248
+      },
+      "selected": {
+        "difference": 5.992234325402634e-07,
+        "published": 0.9006148735846673,
+        "saved_covariance_replay": 0.9006154728080998
+      }
+    },
+    "C1:test_1_reconciled": {
+      "fresh_control": {
+        "difference": -5.3011047483231266e-05,
+        "published": 0.8930082258392859,
+        "saved_covariance_replay": 0.8929552147918026
+      },
+      "ipin_tuna_frozen": {
+        "difference": -1.6084040321828752e-07,
+        "published": 0.9159545134225281,
+        "saved_covariance_replay": 0.9159543525821249
+      },
+      "selected": {
+        "difference": -1.8323058001978865e-06,
+        "published": 0.8986387073289687,
+        "saved_covariance_replay": 0.8986368750231685
+      }
+    },
+    "C1:test_2_macro": {
+      "fresh_control": {
+        "difference": -0.00015799699660978828,
+        "published": 0.802568178035922,
+        "saved_covariance_replay": 0.8024101810393122
+      },
+      "ipin_tuna_frozen": {
+        "difference": -2.959240775757266e-07,
+        "published": 0.8212051280290935,
+        "saved_covariance_replay": 0.8212048321050159
+      },
+      "selected": {
+        "difference": -1.2385920341917434e-05,
+        "published": 0.8869149598660347,
+        "saved_covariance_replay": 0.8869025739456928
+      }
+    },
+    "C1:test_added": {
+      "fresh_control": {
+        "difference": -0.0002629829457364563,
+        "published": 0.7121281302325582,
+        "saved_covariance_replay": 0.7118651472868217
+      },
+      "ipin_tuna_frozen": {
+        "difference": -4.3100775193316565e-07,
+        "published": 0.7264557426356589,
+        "saved_covariance_replay": 0.726455311627907
+      },
+      "selected": {
+        "difference": -2.2939534883748003e-05,
+        "published": 0.8751912124031008,
+        "saved_covariance_replay": 0.8751682728682171
+      }
+    },
+    "C2:test_1": {
+      "fresh_control": {
+        "difference": -6.263912257808979e-05,
+        "published": 0.8854171602835885,
+        "saved_covariance_replay": 0.8853545211610104
+      },
+      "ipin_tuna_frozen": {
+        "difference": -1.1899418450589394e-07,
+        "published": 0.8804014202210094,
+        "saved_covariance_replay": 0.8804013012268249
+      },
+      "selected": {
+        "difference": -1.2720645906627581e-05,
+        "published": 0.8606168430956675,
+        "saved_covariance_replay": 0.8606041224497609
+      }
+    },
+    "C2:test_1_reconciled": {
+      "fresh_control": {
+        "difference": -6.855488735091342e-05,
+        "published": 0.879630923817284,
+        "saved_covariance_replay": 0.8795623689299331
+      },
+      "ipin_tuna_frozen": {
+        "difference": -1.3183706459862776e-07,
+        "published": 0.8745967106194743,
+        "saved_covariance_replay": 0.8745965787824097
+      },
+      "selected": {
+        "difference": -1.4275262933738375e-05,
+        "published": 0.8590313827893309,
+        "saved_covariance_replay": 0.8590171075263972
+      }
+    },
+    "C2:test_2_macro": {
+      "fresh_control": {
+        "difference": -0.00018010167224691287,
+        "published": 0.7758171668229278,
+        "saved_covariance_replay": 0.7756370651506809
+      },
+      "ipin_tuna_frozen": {
+        "difference": -2.2866138937871483e-07,
+        "published": 0.7721887434240229,
+        "saved_covariance_replay": 0.7721885147626335
+      },
+      "selected": {
+        "difference": -3.8053517181113605e-05,
+        "published": 0.8271505558518083,
+        "saved_covariance_replay": 0.8271125023346272
+      }
+    },
+    "C2:test_added": {
+      "fresh_control": {
+        "difference": -0.0002916484571429123,
+        "published": 0.6720034098285715,
+        "saved_covariance_replay": 0.6717117613714286
+      },
+      "ipin_tuna_frozen": {
+        "difference": -3.254857142698242e-07,
+        "published": 0.6697807762285715,
+        "saved_covariance_replay": 0.6697804507428572
+      },
+      "selected": {
+        "difference": -6.183177142848884e-05,
+        "published": 0.7952697289142857,
+        "saved_covariance_replay": 0.7952078971428572
+      }
+    },
+    "C3:test_1": {
+      "fresh_control": {
+        "difference": -0.00017935014711922825,
+        "published": 0.867271786257893,
+        "saved_covariance_replay": 0.8670924361107738
+      },
+      "ipin_tuna_frozen": {
+        "difference": -2.4653215646708304e-07,
+        "published": 0.8158747532609903,
+        "saved_covariance_replay": 0.8158745067288339
+      },
+      "selected": {
+        "difference": -4.617002942430837e-05,
+        "published": 0.8443840531770341,
+        "saved_covariance_replay": 0.8443378831476098
+      }
+    },
+    "C3:test_1_reconciled": {
+      "fresh_control": {
+        "difference": -0.00021891934926432377,
+        "published": 0.8462691158808675,
+        "saved_covariance_replay": 0.8460501965316032
+      },
+      "ipin_tuna_frozen": {
+        "difference": -2.3875546528717706e-07,
+        "published": 0.8011408954622495,
+        "saved_covariance_replay": 0.8011406567067842
+      },
+      "selected": {
+        "difference": -5.7480741140203406e-05,
+        "published": 0.8332555447743882,
+        "saved_covariance_replay": 0.833198064033248
+      }
+    },
+    "C3:test_2_macro": {
+      "fresh_control": {
+        "difference": -0.0002547648138184755,
+        "published": 0.7700847356706264,
+        "saved_covariance_replay": 0.7698299708568079
+      },
+      "ipin_tuna_frozen": {
+        "difference": -2.7355332143930156e-07,
+        "published": 0.7438711297439727,
+        "saved_covariance_replay": 0.7438708561906513
+      },
+      "selected": {
+        "difference": -7.201017785063435e-05,
+        "published": 0.7867237670338751,
+        "saved_covariance_replay": 0.7866517568560245
+      }
+    },
+    "C3:test_added": {
+      "fresh_control": {
+        "difference": -0.0002906102783726272,
+        "published": 0.6939003554603854,
+        "saved_covariance_replay": 0.6936097451820128
+      },
+      "ipin_tuna_frozen": {
+        "difference": -3.0835117770244835e-07,
+        "published": 0.6866013640256959,
+        "saved_covariance_replay": 0.6866010556745182
+      },
+      "selected": {
+        "difference": -8.653961456106529e-05,
+        "published": 0.7401919892933619,
+        "saved_covariance_replay": 0.7401054496788009
+      }
+    }
+  },
+  "training_performed": false
+}

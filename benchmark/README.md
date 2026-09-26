@@ -1,18 +1,51 @@
 # Model benchmarks
 
-Current aggregate results, checked against the completed local reports on
+The current primary/default human iPIN model is **iPIN-TUnA-31k**, registered
+under [DEC-0056](../governance/decisions/DEC-0056-designate-ipin-tuna-31k-primary-model.md)
+in the [four-model catalogue](../docs/models/FROZEN_PAIR_MODELS_v3.md).
+
+## Expanded test2 comparison, 26 September 2026
+
+The [completed 13-predictor comparison](../artifacts/models/frozen_pair_models_v3/evidence/test2/RESULTS.md)
+covers all 3,774,966 rows in the expanded C1/C2/C3 test2 partitions. Its macro
+metric gives equal weight to weighted P/U concordance on reconciled legacy and
+added cohorts. These values have a different candidate/label scope from the
+historical benchmark below.
+
+| Registered model | C1 test2 macro | C2 test2 macro | C3 test2 macro |
+|---|---:|---:|---:|
+| **iPIN-TUnA-31k (primary)** | **0.886903** | **0.827113** | **0.786652** |
+| Original iPIN | 0.744322 | 0.718876 | 0.726124 |
+| Optimized pooled iPIN | 0.793734 | 0.750272 | 0.742563 |
+| Historical PU-TUnA, 17k | 0.821205 | 0.772189 | 0.743871 |
+
+The primary model ranks first among all 13 predictors in each macro partition.
+Its C3 gain over historical PU-TUnA is +0.042781 [0.019768, 0.070150]. All 12 paired C3
+pointwise 95% intervals are positive and unadjusted for multiplicity.
+PLM-interact leads added C3 alone (0.767828 versus 0.740105). Test2 is a
+historical follow-up; different training corpora and selection histories prevent
+a controlled architecture comparison. See the
+[promotion report](../docs/reports/m1/M1_iPIN_TUnA_31k_Promotion_v1.md) and
+[paired contrasts](../artifacts/models/frozen_pair_models_v3/evidence/test2/paired_differences.csv).
+Original experiment data/results remain under `experiments/test2_frozen_competitors_v1/`;
+aggregate release copies are byte-identical. The original TUnA architecture
+retains attribution, and all earlier benchmark records remain unchanged.
+
+## Original benchmark, 20 September 2026
+
+Historical aggregate results, checked against the completed local reports on
 20 September 2026. These comparisons reuse the frozen iPIN C1/C2/C3 test panels
 and reference predictions. Each predictor scored all 3,019,012 requested rows.
 The metric is design-weighted positive-versus-unlabeled concordance; C3 is
 primary. Unlabeled pairs are not verified negatives.
 
-The completed epoch-4 PU-TUnA ensemble is also registered as **the third frozen
+The completed epoch-4 PU-TUnA ensemble was registered as **the third frozen
 iPIN model**, under its unchanged result ID `tuna_retrained_ensemble`. See the
 [three-model catalogue](../docs/models/FROZEN_PAIR_MODELS_v2.md). This later
 registration preserves the benchmark's weights, predictions, selection, and
 results; the authors' original TUnA remains a separate comparator.
 
-## Completed comparisons
+### Completed original-panel comparisons
 
 The table below concerns the human C1/C2/C3 benchmark. A separate
 [non-human transfer evaluation](nonhuman_transfer_v1/REPORT.md) applies all three

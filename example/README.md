@@ -1,6 +1,15 @@
 # Protein-screening examples
 
-The current application compares the **three frozen iPIN models on twelve human
+The current application adds **iPIN-TUnA-31k**, the primary human iPIN model,
+to the unchanged expanded twelve-target panel of **37 P and 5,550 U**.
+See the [current panel index](INDEX.md),
+[selected-31k report](../artifacts/models/frozen_pair_models_v3/evidence/twelve_targets/REPORT.md),
+and [v3 model card](../docs/models/FROZEN_PAIR_MODELS_v3.md). Training exposure
+and common exposure-excluded comparisons are reported explicitly.
+
+## Historical twelve-target v1 panel
+
+The original application compares the **three historical iPIN models on twelve human
 targets: 37 nominated positives and 3,700 unlabeled pairs**. Start with the
 [twelve-target report](twelve_target_comparison_v1/REPORT.md),
 [metric definitions](twelve_target_comparison_v1/METRICS.md), and
@@ -35,9 +44,9 @@ original four-predictor results, including the authors' original TUnA comparator
 Its files and the original six input panels are preserved. The new comparison
 uses the three registered iPIN predictors; original TUnA remains in the historical
 record. Original target READMEs describe their preparation; `RESULTS_v2.md` and
-`*_three_model_scores.csv` contain current inference.
+`*_three_model_scores.csv` contain the historical v1 inference.
 
 The older `ire1_ipin_panel*.csv` files and scoring scripts are retained examples.
 `score_frozen_models.py` and `score_ire1_ipin_panel2.py` retain their historical
-two-pooled-model scope. Use the twelve-target pipeline for current three-model
-application and arbitrary panel-sequence embedding.
+two-pooled-model scope. The twelve-target pipelines retain their documented
+three/four-model scope; the current primary-model comparison is linked above.
