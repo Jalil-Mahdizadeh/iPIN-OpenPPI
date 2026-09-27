@@ -1,0 +1,7 @@
+# Preserve checksum-bound scientific artifacts byte for byte.
+* -text
+*.csv whitespace=cr-at-eol
+*.svg -whitespace linguist-generated=true
+
+# Two trailing spaces deliberately create Markdown hard line breaks.
+control-explained.md whitespace=-blank-at-eol

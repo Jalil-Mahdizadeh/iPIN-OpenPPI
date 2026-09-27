@@ -1,0 +1,79 @@
+{
+  "at_utc": "2026-09-27T18:53:14.557716+00:00",
+  "code": [
+    {
+      "bytes": 5272,
+      "path": "/code/sequence_features.py",
+      "sha256": "958d4abd0cdc110733aab8f02545746979cff0e8f366177edb19ae4753ce9178"
+    },
+    {
+      "bytes": 4862,
+      "path": "/code/control_io.py",
+      "sha256": "0bfd1fcf9eab9a97dbd5716190b2c1464da0a963d1675cc9b3d878c96b6fe0d2"
+    },
+    {
+      "bytes": 2939,
+      "path": "/code/control_math.py",
+      "sha256": "ee02a3b65581a76fccaaeddcf01cc3f4c7e74b53a662c8c669e9f9ad2bf33a42"
+    }
+  ],
+  "evaluation_pairs_or_truth_mounted": false,
+  "extended_standardized_replay_max_error": 0.0,
+  "files": [
+    {
+      "bytes": 45012608,
+      "path": "raw_pooled.npy",
+      "sha256": "95b264f463d96155fe4f63e7ba0eb46df7d3bd50f5057e8bfd63be1ebf353c61"
+    },
+    {
+      "bytes": 45012608,
+      "path": "standardized_train2.npy",
+      "sha256": "3d0a23bce0b33f7a347d84cdeb8cfdf25a43d14cb31a7a93f97c1035564d4a91"
+    },
+    {
+      "bytes": 109454,
+      "path": "train2_normalization.npz",
+      "sha256": "00d782a8931e295b36a2aa4e2b3be71a19be774d863acaba96cfb2f601289e21"
+    },
+    {
+      "bytes": 17627663,
+      "path": "kmer.npz",
+      "sha256": "b4a551ae55435bccb0f0289a3112555e234d13d459de905694128cb84eebc3ea"
+    },
+    {
+      "bytes": 2954072,
+      "path": "aac_unit.npy",
+      "sha256": "dcd5ff465faf1debe3fde6fbd2d62d400e47f3d704563a79a3843efc2ba6d7a3"
+    },
+    {
+      "bytes": 145566,
+      "path": "adjacency.npz",
+      "sha256": "3e720db89052947c36edf4608e78f9abf0b9a3b8b0e82d12b8446d9141823aeb"
+    },
+    {
+      "bytes": 846636,
+      "path": "graph.npz",
+      "sha256": "5545c8da02fc37633cbe9f523cc93452fb414e03c7456a1173cfd8d812799fb8"
+    },
+    {
+      "bytes": 2292479,
+      "path": "ROW_MANIFEST.json",
+      "sha256": "93ec36ef9d45a59e5a8ebf4d9b97a8ef7885c52a62521a84b93b9dbb6c8c13f5"
+    }
+  ],
+  "heldout_degree_and_component_mass_zero": true,
+  "identity_join": "Explicit original embedding manifest sequence_sha256 -> row_index; new vectors in declared frozen sequence order.",
+  "input_freeze_sha256": "06dcde8d90c508dc9d650deefa38ebdb0bfe787bd47562f70043c3cb2914a475",
+  "protocol_sha256": "833ebe798b91df346d6ada34b222866915ff08fb07343e5bc2c80d856d558cf0",
+  "raw_fixture_max_error": 0.0,
+  "sequence_manifest_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "training_exposed_endpoints": 8130,
+  "training_normalizer_endpoints": 12307,
+  "windowed_extraction": {
+    "batches": 250,
+    "elapsed_seconds": 22.35704825099674,
+    "gpu_hours": 0.006210291180832428,
+    "residue_window_tokens": 944652,
+    "windows": 1117
+  }
+}

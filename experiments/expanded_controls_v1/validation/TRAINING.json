@@ -1,0 +1,398 @@
+{
+  "at_utc": "2026-09-27T19:06:39.677680+00:00",
+  "development_or_test_pairs_mounted": false,
+  "development_or_test_selection": false,
+  "elapsed_seconds": 47.50909094300005,
+  "feature_freeze_sha256": "c4d8a30c306e9477a4fa69014b5f64c62080138c53f20e390338efc723a38262",
+  "files": [
+    {
+      "bytes": 4581,
+      "path": "endpoint_linear_seed20260911.pt",
+      "sha256": "e62178702ec5efe0abb806237ce721d3e41ef81b033377dade0802ebc4f713fd"
+    },
+    {
+      "bytes": 1861,
+      "path": "endpoint_linear_seed20260911.json",
+      "sha256": "a8b49cb009401e0f220cfa22b6fff501edf3848e00856478e8ee58e4fea99290"
+    },
+    {
+      "bytes": 4581,
+      "path": "endpoint_linear_seed20260912.pt",
+      "sha256": "ebd98d3a1cb88e91837f1e0c9ff418772022bd8aec8013ba5f3087dfcf72a69c"
+    },
+    {
+      "bytes": 1864,
+      "path": "endpoint_linear_seed20260912.json",
+      "sha256": "572aa3afd49c115ed0370772b10f63bc811b89a9f1691e028341fec89219c107"
+    },
+    {
+      "bytes": 4581,
+      "path": "endpoint_linear_seed20260913.pt",
+      "sha256": "1e427fd5756fd044eb5140d1ec920bdb5dc21f1665b371c79d325730aa32d7c6"
+    },
+    {
+      "bytes": 1866,
+      "path": "endpoint_linear_seed20260913.json",
+      "sha256": "4f02e7b0c01b9a656674d3f7b28584e1a0d63ae0ea267862e4615594fefca317"
+    },
+    {
+      "bytes": 166749,
+      "path": "endpoint_mlp64_seed20260911.pt",
+      "sha256": "ed529102d866abc8fc833625fd29aa5619ef7adbdec9a3c761ba9f0031bb409e"
+    },
+    {
+      "bytes": 1866,
+      "path": "endpoint_mlp64_seed20260911.json",
+      "sha256": "576a5b303f943ac18804bc5f6e6c7ab6d87b5b435bfba3abf63790568f4b88ac"
+    },
+    {
+      "bytes": 166749,
+      "path": "endpoint_mlp64_seed20260912.pt",
+      "sha256": "3c08b397cdfbaccaa2d8bae6f8c61de3089500b569c7a0eef3beb2372c75fa28"
+    },
+    {
+      "bytes": 1865,
+      "path": "endpoint_mlp64_seed20260912.json",
+      "sha256": "70c625df2c51b20a5d54859a01b25f3ba4b27eb94f5d80b5412ac5c2f56d06f7"
+    },
+    {
+      "bytes": 166749,
+      "path": "endpoint_mlp64_seed20260913.pt",
+      "sha256": "9d6f52cf6ac5379b4c273c49e993b3d5b6c714ec3c66829f8a8cc4d9b19a279b"
+    },
+    {
+      "bytes": 1865,
+      "path": "endpoint_mlp64_seed20260913.json",
+      "sha256": "516e7b60e0fc0ed209ca288c4f6773fc8cd884ab43f21170ada3a99ba9799f66"
+    },
+    {
+      "bytes": 1127578,
+      "path": "unary_scores.npz",
+      "sha256": "a52614aaf51b9a9e0bf1ad878a9447da779d943f1f23181f07644b145e32b45d"
+    }
+  ],
+  "gpu": "NVIDIA GH200 120GB",
+  "implementation_freeze_sha256": "1e2581c7ef1ccdd4778ad16c2be7902b473e035321619d52646fa04aea12598f",
+  "input_freeze_sha256": "06dcde8d90c508dc9d650deefa38ebdb0bfe787bd47562f70043c3cb2914a475",
+  "runs": [
+    {
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "endpoint_linear_seed20260911.pt",
+        "sha256": "e62178702ec5efe0abb806237ce721d3e41ef81b033377dade0802ebc4f713fd"
+      },
+      "complete_passes": 5,
+      "elapsed_seconds": 6.212171741994098,
+      "fit_P": 31188,
+      "fit_U": 2000000,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "P_order_sha256": "e686b40bbe4eb48dedf7c14e0c876f7af823eb5fc616426474acddde73e3523c",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "2e172abb4ae59a658960df4125cc096b3922ddce0da63a6ec77309605d801b10",
+          "pass": 1,
+          "training_loss": 0.5346436965130069
+        },
+        {
+          "P_order_sha256": "8951ab93a1f70e66440053b17f18747862a794d5f7f557d19ca0a20369a0cf6c",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "18fe78c2f2db90b614ba4e66a819609ca1f2102d2e29e9e1df1ba1f0b052fcda",
+          "pass": 2,
+          "training_loss": 0.4506134092092299
+        },
+        {
+          "P_order_sha256": "27c4d8d29d883074070fd2a295c97792295dbdbd3c495289e24227f5b2b781ca",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "3e34ce10445dc2cb3f1bd5bdcf6cc609661996a360456f95b10787989c5acecc",
+          "pass": 3,
+          "training_loss": 0.44047804834025
+        },
+        {
+          "P_order_sha256": "73910ba2b6eeb9214c2ce49bda67a9e6230ff40ced50869141ca2defc61f724e",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "de8b2ace493947b5e2a5bbba49f448b36550eb927ae794df96961d83c1f55102",
+          "pass": 4,
+          "training_loss": 0.4364157013833813
+        },
+        {
+          "P_order_sha256": "9404aa6108f0c6404aaf2d2117701163a17a46485d6cad898d79f66e00c126d1",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "ce47554358d4169de7a9cbfbcbb0c53cc984aa059752d9e393ea59b95d9bcbaa",
+          "pass": 5,
+          "training_loss": 0.434879961441203
+        }
+      ],
+      "parameters": 641,
+      "run": "endpoint_linear_seed20260911",
+      "seed": 20260911,
+      "steps": 2445
+    },
+    {
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "endpoint_linear_seed20260912.pt",
+        "sha256": "ebd98d3a1cb88e91837f1e0c9ff418772022bd8aec8013ba5f3087dfcf72a69c"
+      },
+      "complete_passes": 5,
+      "elapsed_seconds": 5.783208075008588,
+      "fit_P": 31188,
+      "fit_U": 2000000,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "P_order_sha256": "8951ab93a1f70e66440053b17f18747862a794d5f7f557d19ca0a20369a0cf6c",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "18fe78c2f2db90b614ba4e66a819609ca1f2102d2e29e9e1df1ba1f0b052fcda",
+          "pass": 1,
+          "training_loss": 0.5356364221638972
+        },
+        {
+          "P_order_sha256": "27c4d8d29d883074070fd2a295c97792295dbdbd3c495289e24227f5b2b781ca",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "3e34ce10445dc2cb3f1bd5bdcf6cc609661996a360456f95b10787989c5acecc",
+          "pass": 2,
+          "training_loss": 0.4511654487846675
+        },
+        {
+          "P_order_sha256": "73910ba2b6eeb9214c2ce49bda67a9e6230ff40ced50869141ca2defc61f724e",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "de8b2ace493947b5e2a5bbba49f448b36550eb927ae794df96961d83c1f55102",
+          "pass": 3,
+          "training_loss": 0.4404662391118681
+        },
+        {
+          "P_order_sha256": "9404aa6108f0c6404aaf2d2117701163a17a46485d6cad898d79f66e00c126d1",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "ce47554358d4169de7a9cbfbcbb0c53cc984aa059752d9e393ea59b95d9bcbaa",
+          "pass": 4,
+          "training_loss": 0.4363230868528205
+        },
+        {
+          "P_order_sha256": "7c7f4fe34f381a37fa2e743c99910c7297dd823245e110ed81d4a5475aa6603a",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "50f8971bf1981c9106b19ca56cd397dbc36da26d170c311a7afc390335bd29bb",
+          "pass": 5,
+          "training_loss": 0.4345657862401863
+        }
+      ],
+      "parameters": 641,
+      "run": "endpoint_linear_seed20260912",
+      "seed": 20260912,
+      "steps": 2445
+    },
+    {
+      "checkpoint": {
+        "bytes": 4581,
+        "path": "endpoint_linear_seed20260913.pt",
+        "sha256": "1e427fd5756fd044eb5140d1ec920bdb5dc21f1665b371c79d325730aa32d7c6"
+      },
+      "complete_passes": 5,
+      "elapsed_seconds": 5.735948706016643,
+      "fit_P": 31188,
+      "fit_U": 2000000,
+      "model": "endpoint_linear",
+      "monitors": [
+        {
+          "P_order_sha256": "27c4d8d29d883074070fd2a295c97792295dbdbd3c495289e24227f5b2b781ca",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "3e34ce10445dc2cb3f1bd5bdcf6cc609661996a360456f95b10787989c5acecc",
+          "pass": 1,
+          "training_loss": 0.5287285734366755
+        },
+        {
+          "P_order_sha256": "73910ba2b6eeb9214c2ce49bda67a9e6230ff40ced50869141ca2defc61f724e",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "de8b2ace493947b5e2a5bbba49f448b36550eb927ae794df96961d83c1f55102",
+          "pass": 2,
+          "training_loss": 0.45027872219726256
+        },
+        {
+          "P_order_sha256": "9404aa6108f0c6404aaf2d2117701163a17a46485d6cad898d79f66e00c126d1",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "ce47554358d4169de7a9cbfbcbb0c53cc984aa059752d9e393ea59b95d9bcbaa",
+          "pass": 3,
+          "training_loss": 0.4404646323189066
+        },
+        {
+          "P_order_sha256": "7c7f4fe34f381a37fa2e743c99910c7297dd823245e110ed81d4a5475aa6603a",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "50f8971bf1981c9106b19ca56cd397dbc36da26d170c311a7afc390335bd29bb",
+          "pass": 4,
+          "training_loss": 0.4364813340625191
+        },
+        {
+          "P_order_sha256": "5c8a3a211bc273d2761cd870d52128112e4b3653090c4c7d7941c9cd50bb3a05",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "1acbf1425fc721cceac7d5073f9b826dee375c8b33c1769e9d85327330f7287e",
+          "pass": 5,
+          "training_loss": 0.43473547621022074
+        }
+      ],
+      "parameters": 641,
+      "run": "endpoint_linear_seed20260913",
+      "seed": 20260913,
+      "steps": 2445
+    },
+    {
+      "checkpoint": {
+        "bytes": 166749,
+        "path": "endpoint_mlp64_seed20260911.pt",
+        "sha256": "ed529102d866abc8fc833625fd29aa5619ef7adbdec9a3c761ba9f0031bb409e"
+      },
+      "complete_passes": 5,
+      "elapsed_seconds": 9.725287111010402,
+      "fit_P": 31188,
+      "fit_U": 2000000,
+      "model": "endpoint_mlp64",
+      "monitors": [
+        {
+          "P_order_sha256": "e686b40bbe4eb48dedf7c14e0c876f7af823eb5fc616426474acddde73e3523c",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "2e172abb4ae59a658960df4125cc096b3922ddce0da63a6ec77309605d801b10",
+          "pass": 1,
+          "training_loss": 0.40171872184880725
+        },
+        {
+          "P_order_sha256": "8951ab93a1f70e66440053b17f18747862a794d5f7f557d19ca0a20369a0cf6c",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "18fe78c2f2db90b614ba4e66a819609ca1f2102d2e29e9e1df1ba1f0b052fcda",
+          "pass": 2,
+          "training_loss": 0.24760362171997674
+        },
+        {
+          "P_order_sha256": "27c4d8d29d883074070fd2a295c97792295dbdbd3c495289e24227f5b2b781ca",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "3e34ce10445dc2cb3f1bd5bdcf6cc609661996a360456f95b10787989c5acecc",
+          "pass": 3,
+          "training_loss": 0.20455563957022618
+        },
+        {
+          "P_order_sha256": "73910ba2b6eeb9214c2ce49bda67a9e6230ff40ced50869141ca2defc61f724e",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "de8b2ace493947b5e2a5bbba49f448b36550eb927ae794df96961d83c1f55102",
+          "pass": 4,
+          "training_loss": 0.18793208002534864
+        },
+        {
+          "P_order_sha256": "9404aa6108f0c6404aaf2d2117701163a17a46485d6cad898d79f66e00c126d1",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "ce47554358d4169de7a9cbfbcbb0c53cc984aa059752d9e393ea59b95d9bcbaa",
+          "pass": 5,
+          "training_loss": 0.1812851273695
+        }
+      ],
+      "parameters": 41089,
+      "run": "endpoint_mlp64_seed20260911",
+      "seed": 20260911,
+      "steps": 2445
+    },
+    {
+      "checkpoint": {
+        "bytes": 166749,
+        "path": "endpoint_mlp64_seed20260912.pt",
+        "sha256": "3c08b397cdfbaccaa2d8bae6f8c61de3089500b569c7a0eef3beb2372c75fa28"
+      },
+      "complete_passes": 5,
+      "elapsed_seconds": 9.476293151994469,
+      "fit_P": 31188,
+      "fit_U": 2000000,
+      "model": "endpoint_mlp64",
+      "monitors": [
+        {
+          "P_order_sha256": "8951ab93a1f70e66440053b17f18747862a794d5f7f557d19ca0a20369a0cf6c",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "18fe78c2f2db90b614ba4e66a819609ca1f2102d2e29e9e1df1ba1f0b052fcda",
+          "pass": 1,
+          "training_loss": 0.4119525892742624
+        },
+        {
+          "P_order_sha256": "27c4d8d29d883074070fd2a295c97792295dbdbd3c495289e24227f5b2b781ca",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "3e34ce10445dc2cb3f1bd5bdcf6cc609661996a360456f95b10787989c5acecc",
+          "pass": 2,
+          "training_loss": 0.2524435879376912
+        },
+        {
+          "P_order_sha256": "73910ba2b6eeb9214c2ce49bda67a9e6230ff40ced50869141ca2defc61f724e",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "de8b2ace493947b5e2a5bbba49f448b36550eb927ae794df96961d83c1f55102",
+          "pass": 3,
+          "training_loss": 0.20872450609461943
+        },
+        {
+          "P_order_sha256": "9404aa6108f0c6404aaf2d2117701163a17a46485d6cad898d79f66e00c126d1",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "ce47554358d4169de7a9cbfbcbb0c53cc984aa059752d9e393ea59b95d9bcbaa",
+          "pass": 4,
+          "training_loss": 0.1918096555245171
+        },
+        {
+          "P_order_sha256": "7c7f4fe34f381a37fa2e743c99910c7297dd823245e110ed81d4a5475aa6603a",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "50f8971bf1981c9106b19ca56cd397dbc36da26d170c311a7afc390335bd29bb",
+          "pass": 5,
+          "training_loss": 0.185087538155023
+        }
+      ],
+      "parameters": 41089,
+      "run": "endpoint_mlp64_seed20260912",
+      "seed": 20260912,
+      "steps": 2445
+    },
+    {
+      "checkpoint": {
+        "bytes": 166749,
+        "path": "endpoint_mlp64_seed20260913.pt",
+        "sha256": "9d6f52cf6ac5379b4c273c49e993b3d5b6c714ec3c66829f8a8cc4d9b19a279b"
+      },
+      "complete_passes": 5,
+      "elapsed_seconds": 9.575968782010023,
+      "fit_P": 31188,
+      "fit_U": 2000000,
+      "model": "endpoint_mlp64",
+      "monitors": [
+        {
+          "P_order_sha256": "27c4d8d29d883074070fd2a295c97792295dbdbd3c495289e24227f5b2b781ca",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "3e34ce10445dc2cb3f1bd5bdcf6cc609661996a360456f95b10787989c5acecc",
+          "pass": 1,
+          "training_loss": 0.3933686161780429
+        },
+        {
+          "P_order_sha256": "73910ba2b6eeb9214c2ce49bda67a9e6230ff40ced50869141ca2defc61f724e",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "de8b2ace493947b5e2a5bbba49f448b36550eb927ae794df96961d83c1f55102",
+          "pass": 2,
+          "training_loss": 0.24065351997499068
+        },
+        {
+          "P_order_sha256": "9404aa6108f0c6404aaf2d2117701163a17a46485d6cad898d79f66e00c126d1",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "ce47554358d4169de7a9cbfbcbb0c53cc984aa059752d9e393ea59b95d9bcbaa",
+          "pass": 3,
+          "training_loss": 0.2001137145931669
+        },
+        {
+          "P_order_sha256": "7c7f4fe34f381a37fa2e743c99910c7297dd823245e110ed81d4a5475aa6603a",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "50f8971bf1981c9106b19ca56cd397dbc36da26d170c311a7afc390335bd29bb",
+          "pass": 4,
+          "training_loss": 0.1847241700020014
+        },
+        {
+          "P_order_sha256": "5c8a3a211bc273d2761cd870d52128112e4b3653090c4c7d7941c9cd50bb3a05",
+          "U_comparisons": 2000000,
+          "U_order_sha256": "1acbf1425fc721cceac7d5073f9b826dee375c8b33c1769e9d85327330f7287e",
+          "pass": 5,
+          "training_loss": 0.178462229215469
+        }
+      ],
+      "parameters": 41089,
+      "run": "endpoint_mlp64_seed20260913",
+      "seed": 20260913,
+      "steps": 2445
+    }
+  ],
+  "torch_version": "2.8.0a0+34c6371d24.nv25.08"
+}

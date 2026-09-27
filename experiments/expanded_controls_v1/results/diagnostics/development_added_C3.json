@@ -1,0 +1,574 @@
+{
+  "anchor": {
+    "anchor_components": 332,
+    "anchors": 630,
+    "models": {
+      "aac_cosine": {
+        "ci95": [
+          0.5345349467671007,
+          0.6173496600021803
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5653220892394392
+      },
+      "component_degree_mass_product": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "deterministic_hash": {
+        "ci95": [
+          0.46294344827837086,
+          0.5256814675015382
+        ],
+        "finite_replicates": 2000,
+        "point": 0.49431719289414194
+      },
+      "endpoint_linear": {
+        "ci95": [
+          0.6273891809283907,
+          0.7087941786174033
+        ],
+        "finite_replicates": 2000,
+        "point": 0.6728796180294473
+      },
+      "endpoint_mlp64": {
+        "ci95": [
+          0.6198548264968701,
+          0.7054719139408288
+        ],
+        "finite_replicates": 2000,
+        "point": 0.6767042792932517
+      },
+      "exact_training_interolog_3mer": {
+        "ci95": [
+          0.5010886119815865,
+          0.6104294909898073
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5687537377138738
+      },
+      "interolog_alignment_coverage": {
+        "ci95": [
+          0.5011435173615998,
+          0.5421790761908242
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5136568632181469
+      },
+      "interolog_alignment_local": {
+        "ci95": [
+          0.5011845992635885,
+          0.543886920491025
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5145542033004966
+      },
+      "interolog_pooled_150m": {
+        "ci95": [
+          0.5213775379772903,
+          0.6392357852098581
+        ],
+        "finite_replicates": 2000,
+        "point": 0.60316570914186
+      },
+      "pooled_150m_cosine": {
+        "ci95": [
+          0.5752323106209549,
+          0.6715986219990009
+        ],
+        "finite_replicates": 2000,
+        "point": 0.6157776030552182
+      },
+      "preferential_attachment": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "selected_31k": {
+        "ci95": [
+          0.6815103883721597,
+          0.7508945086166539
+        ],
+        "finite_replicates": 2000,
+        "point": 0.7096632480132806
+      },
+      "sequence_length_ratio": {
+        "ci95": [
+          0.5213660462825984,
+          0.5971557578332136
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5451634846198418
+      },
+      "sequence_length_sum": {
+        "ci95": [
+          0.4965686406618611,
+          0.5830442425207282
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5380691340928314
+      },
+      "training_common_neighbors": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "training_degree_sum": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "within_pair_3mer_cosine": {
+        "ci95": [
+          0.5421282776618503,
+          0.632266231787531
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5812160965094233
+      }
+    },
+    "paired_differences": {
+      "aac_cosine": {
+        "ci95": [
+          0.08865578137384704,
+          0.19711291763998223
+        ],
+        "finite_replicates": 2000,
+        "point": 0.14434115877384146
+      },
+      "component_degree_mass_product": {
+        "ci95": [
+          0.18151038837215966,
+          0.2508945086166538
+        ],
+        "finite_replicates": 2000,
+        "point": 0.20966324801328062
+      },
+      "deterministic_hash": {
+        "ci95": [
+          0.17078504833386274,
+          0.2737403594385055
+        ],
+        "finite_replicates": 2000,
+        "point": 0.21534605511913868
+      },
+      "endpoint_linear": {
+        "ci95": [
+          0.01225163792892198,
+          0.08482187608309556
+        ],
+        "finite_replicates": 2000,
+        "point": 0.03678362998383333
+      },
+      "endpoint_mlp64": {
+        "ci95": [
+          0.013460718369969765,
+          0.09288051737633322
+        ],
+        "finite_replicates": 2000,
+        "point": 0.0329589687200289
+      },
+      "exact_training_interolog_3mer": {
+        "ci95": [
+          0.09356475307269117,
+          0.23027937959260392
+        ],
+        "finite_replicates": 2000,
+        "point": 0.1409095102994068
+      },
+      "interolog_alignment_coverage": {
+        "ci95": [
+          0.16093187021600622,
+          0.23761046001186975
+        ],
+        "finite_replicates": 2000,
+        "point": 0.19600638479513377
+      },
+      "interolog_alignment_local": {
+        "ci95": [
+          0.1598983150109597,
+          0.2378935587075772
+        ],
+        "finite_replicates": 2000,
+        "point": 0.195109044712784
+      },
+      "interolog_pooled_150m": {
+        "ci95": [
+          0.067219707717464,
+          0.2095000101921004
+        ],
+        "finite_replicates": 2000,
+        "point": 0.10649753887142066
+      },
+      "pooled_150m_cosine": {
+        "ci95": [
+          0.03845047584729029,
+          0.151422799799982
+        ],
+        "finite_replicates": 2000,
+        "point": 0.0938856449580624
+      },
+      "preferential_attachment": {
+        "ci95": [
+          0.18151038837215966,
+          0.2508945086166538
+        ],
+        "finite_replicates": 2000,
+        "point": 0.20966324801328062
+      },
+      "sequence_length_ratio": {
+        "ci95": [
+          0.10971755906540158,
+          0.2050358658736712
+        ],
+        "finite_replicates": 2000,
+        "point": 0.16449976339343886
+      },
+      "sequence_length_sum": {
+        "ci95": [
+          0.10880677225964437,
+          0.23829281397035285
+        ],
+        "finite_replicates": 2000,
+        "point": 0.1715941139204492
+      },
+      "training_common_neighbors": {
+        "ci95": [
+          0.18151038837215966,
+          0.2508945086166538
+        ],
+        "finite_replicates": 2000,
+        "point": 0.20966324801328062
+      },
+      "training_degree_sum": {
+        "ci95": [
+          0.18151038837215966,
+          0.2508945086166538
+        ],
+        "finite_replicates": 2000,
+        "point": 0.20966324801328062
+      },
+      "within_pair_3mer_cosine": {
+        "ci95": [
+          0.0689129999451914,
+          0.18465995494129192
+        ],
+        "finite_replicates": 2000,
+        "point": 0.12844715150385733
+      }
+    },
+    "support_floor_met": true
+  },
+  "bootstrap": {
+    "components": 8047,
+    "multipliers_sha256": "de4d72334198251b717ecbbe0ec575b14878e3c2222a77b25425236f62c9df34",
+    "replicates": 2000,
+    "scheme": "paired Poisson(1) extended-component multipliers",
+    "seed": 20260927
+  },
+  "bootstrap_file": {
+    "bytes": 547542,
+    "path": "bootstrap_development_added_C3.npz",
+    "sha256": "6b2d3ee9301f99967a63d61cfff67602f9e5d4d685297a1686b0543afd5168f2"
+  },
+  "cell": "C3",
+  "cohort": "added",
+  "panel_file": {
+    "bytes": 106784,
+    "path": "diagnostic_panels/development_added_C3.npz",
+    "sha256": "1a4aea044ce437f02be253bd1f5b1d2f795a9136e13ff25d66c987312de24ee5"
+  },
+  "partition": "development",
+  "prediction_freeze_sha256": "7351e5aa95fc5a74ee287ac014467f34144d5e94c03d84e531c0e47cb03e4880",
+  "quartet": {
+    "eligible_matchings": 2652,
+    "models": {
+      "aac_cosine": {
+        "ci95": [
+          0.4555046865359151,
+          0.69709933851174
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5590361445783133
+      },
+      "component_degree_mass_product": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "deterministic_hash": {
+        "ci95": [
+          0.3537425994149419,
+          0.593208802512502
+        ],
+        "finite_replicates": 2000,
+        "point": 0.4819277108433735
+      },
+      "endpoint_linear": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "endpoint_mlp64": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "exact_training_interolog_3mer": {
+        "ci95": [
+          0.455885481030337,
+          0.7008115761845557
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5460843373493975
+      },
+      "interolog_alignment_coverage": {
+        "ci95": [
+          0.4865156944441575,
+          0.5788546849087894
+        ],
+        "finite_replicates": 2000,
+        "point": 0.533433734939759
+      },
+      "interolog_alignment_local": {
+        "ci95": [
+          0.49106712679718567,
+          0.5824489308649347
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5385542168674698
+      },
+      "interolog_pooled_150m": {
+        "ci95": [
+          0.468432512865286,
+          0.722767085420818
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5759036144578313
+      },
+      "pooled_150m_cosine": {
+        "ci95": [
+          0.46957042434627855,
+          0.7128042343557562
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5632530120481928
+      },
+      "preferential_attachment": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "selected_31k": {
+        "ci95": [
+          0.5395311191789787,
+          0.7785196074284021
+        ],
+        "finite_replicates": 2000,
+        "point": 0.6385542168674698
+      },
+      "sequence_length_ratio": {
+        "ci95": [
+          0.44330690883548246,
+          0.6348857875865479
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5382530120481928
+      },
+      "sequence_length_sum": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "training_common_neighbors": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "training_degree_sum": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5
+      },
+      "within_pair_3mer_cosine": {
+        "ci95": [
+          0.4908990163631735,
+          0.7309148812970467
+        ],
+        "finite_replicates": 2000,
+        "point": 0.5933734939759037
+      }
+    },
+    "paired_differences": {
+      "aac_cosine": {
+        "ci95": [
+          -0.04482920250667776,
+          0.2268098857848433
+        ],
+        "finite_replicates": 2000,
+        "point": 0.07951807228915653
+      },
+      "component_degree_mass_product": {
+        "ci95": [
+          0.03953111917897871,
+          0.27851960742840215
+        ],
+        "finite_replicates": 2000,
+        "point": 0.13855421686746983
+      },
+      "deterministic_hash": {
+        "ci95": [
+          0.01853602451213708,
+          0.3518659881255301
+        ],
+        "finite_replicates": 2000,
+        "point": 0.15662650602409633
+      },
+      "endpoint_linear": {
+        "ci95": [
+          0.03953111917897871,
+          0.27851960742840215
+        ],
+        "finite_replicates": 2000,
+        "point": 0.13855421686746983
+      },
+      "endpoint_mlp64": {
+        "ci95": [
+          0.03953111917897871,
+          0.27851960742840215
+        ],
+        "finite_replicates": 2000,
+        "point": 0.13855421686746983
+      },
+      "exact_training_interolog_3mer": {
+        "ci95": [
+          -0.07328653987147969,
+          0.22627336493457173
+        ],
+        "finite_replicates": 2000,
+        "point": 0.09246987951807228
+      },
+      "interolog_alignment_coverage": {
+        "ci95": [
+          0.009590486384297795,
+          0.2690539779202739
+        ],
+        "finite_replicates": 2000,
+        "point": 0.10512048192771084
+      },
+      "interolog_alignment_local": {
+        "ci95": [
+          0.005916286987328271,
+          0.2657123827791986
+        ],
+        "finite_replicates": 2000,
+        "point": 0.09999999999999998
+      },
+      "interolog_pooled_150m": {
+        "ci95": [
+          -0.09033734917267879,
+          0.2240677313709369
+        ],
+        "finite_replicates": 2000,
+        "point": 0.06265060240963849
+      },
+      "pooled_150m_cosine": {
+        "ci95": [
+          -0.06545998469423252,
+          0.212482957204778
+        ],
+        "finite_replicates": 2000,
+        "point": 0.07530120481927705
+      },
+      "preferential_attachment": {
+        "ci95": [
+          0.03953111917897871,
+          0.27851960742840215
+        ],
+        "finite_replicates": 2000,
+        "point": 0.13855421686746983
+      },
+      "sequence_length_ratio": {
+        "ci95": [
+          -0.020409812631949353,
+          0.2603378350746233
+        ],
+        "finite_replicates": 2000,
+        "point": 0.10030120481927707
+      },
+      "sequence_length_sum": {
+        "ci95": [
+          0.03953111917897871,
+          0.27851960742840215
+        ],
+        "finite_replicates": 2000,
+        "point": 0.13855421686746983
+      },
+      "training_common_neighbors": {
+        "ci95": [
+          0.03953111917897871,
+          0.27851960742840215
+        ],
+        "finite_replicates": 2000,
+        "point": 0.13855421686746983
+      },
+      "training_degree_sum": {
+        "ci95": [
+          0.03953111917897871,
+          0.27851960742840215
+        ],
+        "finite_replicates": 2000,
+        "point": 0.13855421686746983
+      },
+      "within_pair_3mer_cosine": {
+        "ci95": [
+          -0.08581843273730949,
+          0.18851808534915554
+        ],
+        "finite_replicates": 2000,
+        "point": 0.04518072289156616
+      }
+    },
+    "participating_components": 328,
+    "selected": 1660,
+    "support_floor_met": true,
+    "unary_cancellation_max_error": {
+      "endpoint_linear": 8.881784197001252e-16,
+      "endpoint_mlp64": 2.6645352591003757e-15
+    }
+  }
+}

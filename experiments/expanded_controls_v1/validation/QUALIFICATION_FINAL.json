@@ -1,0 +1,90 @@
+{
+  "at_utc": "2026-09-27T19:05:18.204850+00:00",
+  "code": [
+    {
+      "bytes": 4001,
+      "path": "/code/alignment.py",
+      "sha256": "fbde61ea1f5478518a77571fb040369881ae57dc45fa68827e8839328a08f373"
+    },
+    {
+      "bytes": 5227,
+      "path": "/code/control_io.py",
+      "sha256": "8b729063a06e4b499cc6de8bf75123a87a7a93f72881775859c3e562cca89a0c"
+    },
+    {
+      "bytes": 2939,
+      "path": "/code/control_math.py",
+      "sha256": "ee02a3b65581a76fccaaeddcf01cc3f4c7e74b53a662c8c669e9f9ad2bf33a42"
+    },
+    {
+      "bytes": 2155,
+      "path": "/code/control_metrics.py",
+      "sha256": "2e64c3dc19306f28c3392b638f4061cd608d1888be7c3fd8c20e17821f90371b"
+    },
+    {
+      "bytes": 3567,
+      "path": "/code/diagnostic_math.py",
+      "sha256": "fcb1b0376ea3964bcc4f2ef039dcdbde250b365a8f542dedfab5c323484d99f6"
+    },
+    {
+      "bytes": 11562,
+      "path": "/code/diagnostics.py",
+      "sha256": "a844001bce9c79ed4d8512f0ba0480197bf441b40e8b7ee4a701db4cf17b8573"
+    },
+    {
+      "bytes": 13190,
+      "path": "/code/evaluate.py",
+      "sha256": "57af5e34223067a3cb273b8aa4a5327f8adc33b8be7e6d90845e9294d418de5a"
+    },
+    {
+      "bytes": 3356,
+      "path": "/code/freeze.py",
+      "sha256": "f338cb8350735ef28f225ca88b06117167abf3f022e99945fe20423377bf1f4b"
+    },
+    {
+      "bytes": 8529,
+      "path": "/code/prepare.py",
+      "sha256": "d19b1b3572655e23f88e96f0903f9705e6e83440393adf6db0f4fca5e5f62e31"
+    },
+    {
+      "bytes": 957,
+      "path": "/code/qualify.py",
+      "sha256": "e23b47658513110e90930992c6e1bb214e0fa458359f7163db316215d54ca788"
+    },
+    {
+      "bytes": 11397,
+      "path": "/code/score.py",
+      "sha256": "bb7c289af28318fc80a015a5561af467873fa21d005010fa23a032be3c549b98"
+    },
+    {
+      "bytes": 5272,
+      "path": "/code/sequence_features.py",
+      "sha256": "958d4abd0cdc110733aab8f02545746979cff0e8f366177edb19ae4753ce9178"
+    },
+    {
+      "bytes": 7342,
+      "path": "/code/train_unary.py",
+      "sha256": "198b2235e5f4ca035177691e451c5e07b7c4886e6d91768bcd2dab8d1c379d42"
+    },
+    {
+      "bytes": 11202,
+      "path": "/code/validate.py",
+      "sha256": "23f41709d1b58f5a934c236b18b4a659301901433aa6940c860cdc23dba11aa0"
+    }
+  ],
+  "macro_bootstrap_oracle": {
+    "cohorts": 2,
+    "max_absolute_error": 2.220446049250313e-16,
+    "passed": true,
+    "replicates": 37,
+    "tolerance": 1e-12
+  },
+  "tests": [
+    {
+      "bytes": 6852,
+      "path": "/tests/test_controls.py",
+      "sha256": "cea999a50ca5d8e0f623938c0fe5aaf349120fab296728ab87f88419240d1e32"
+    }
+  ],
+  "unit_oracles_passed": true
+}

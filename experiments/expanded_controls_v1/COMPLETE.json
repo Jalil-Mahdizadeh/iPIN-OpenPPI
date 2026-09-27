@@ -1,0 +1,86 @@
+{
+  "U_is_confirmed_negative": false,
+  "additional_diagnostic_controls": 5,
+  "at_utc": "2026-09-27T19:26:19.453431+00:00",
+  "candidate_rows_checked": 7547402,
+  "complete": true,
+  "diagnostic_qualification": "Within-anchor ranking exceeds all sixteen controls. Selected partner-swap preference exceeds additive controls, but paired intervals include zero against pooled ESM2, 3-mer and amino-acid-composition cosines.",
+  "endpoint_training_runs": 6,
+  "files": [
+    {
+      "bytes": 8855,
+      "path": "PROTOCOL.json",
+      "sha256": "7510c7307cd13f8e1b8ea05f0cbff6fc7d3fb51707956c51d4121fdf032b19b2"
+    },
+    {
+      "bytes": 16658,
+      "path": "INPUT_FREEZE.json",
+      "sha256": "06dcde8d90c508dc9d650deefa38ebdb0bfe787bd47562f70043c3cb2914a475"
+    },
+    {
+      "bytes": 9516,
+      "path": "IMPLEMENTATION_FREEZE.json",
+      "sha256": "1e2581c7ef1ccdd4778ad16c2be7902b473e035321619d52646fa04aea12598f"
+    },
+    {
+      "bytes": 666,
+      "path": "PRE_EXECUTION_CLARIFICATION.json",
+      "sha256": "e80bbb326e13eaad72a0bec497fd0a484ea3d29b3f5e4d7127860db841974980"
+    },
+    {
+      "bytes": 2600,
+      "path": "validation/QUALIFICATION_FINAL.json",
+      "sha256": "9185e8ddf4a0091b867432f25f65dc3f7bcf065efdfed1f9670c725df5a81a0e"
+    },
+    {
+      "bytes": 8790,
+      "path": "validation/PREDICTION_FREEZE.json",
+      "sha256": "7351e5aa95fc5a74ee287ac014467f34144d5e94c03d84e531c0e47cb03e4880"
+    },
+    {
+      "bytes": 1524,
+      "path": "validation/NUMERICAL_VALIDATION_ADDENDUM.json",
+      "sha256": "c72e21fa581073730c3f069d3c8b5dfe7bb79058593030dab96414281863122f"
+    },
+    {
+      "bytes": 75016,
+      "path": "validation/POINT_PRECISION_AUDIT.json",
+      "sha256": "3e7d4d1852387b63ff3f77e1256ca87694741bd60893470e31a498937ac129f2"
+    },
+    {
+      "bytes": 1359,
+      "path": "validation/VALIDATION.json",
+      "sha256": "f05518dd1d5b98ec93dec7937b7114a8213695b4a05faddd3cea60485345ea7d"
+    },
+    {
+      "bytes": 199697,
+      "path": "results/RESULTS.json",
+      "sha256": "3aade2695d5da5bd11471b0826718f3d57285dac910a4bad8727a6c57681fd48"
+    },
+    {
+      "bytes": 104107,
+      "path": "results/diagnostics/RESULTS.json",
+      "sha256": "17b80e457c6394d010768f6ba712d57ee6d5cca4ff6f177fa051f64063daada0"
+    },
+    {
+      "bytes": 7453,
+      "path": "results/INTERPRETATION.md",
+      "sha256": "d25e6068870bee1af2bafa8e900f6800b0eb4612533acb01cc666bdb9461704a"
+    }
+  ],
+  "historical_parent_files_preserved": 54,
+  "intervals_adjusted_for_multiplicity": false,
+  "intervals_and_contrasts_checked": 1089,
+  "numerical_validation": "Separate final validator passes after an independently explained full-panel FP64 summation-order tolerance clarification; original scientific outputs and validator retained.",
+  "original_fixed_controls": 11,
+  "predictors": 17,
+  "primary_macro_views": 7,
+  "primary_result": "Selected 31k exceeds all sixteen controls on test2 C1/C2/C3 macro; all corresponding pointwise paired intervals exclude zero. C1 degree-sum comparison has a lower bound close to zero.",
+  "reference_test2_points_and_draws_exact": true,
+  "scope": "Direct controls on development2/test2 plus C3 within-anchor and partner-swap diagnostics; no internal homology-purged/source-restricted refitting studies.",
+  "selected_31k_frozen": true,
+  "study_id": "expanded_controls_v1",
+  "synthetic_tests_passed": 11,
+  "test2_is_fresh_independent": false,
+  "training_candidate_overlap": 0
+}

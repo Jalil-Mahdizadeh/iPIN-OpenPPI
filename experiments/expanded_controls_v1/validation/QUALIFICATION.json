@@ -1,0 +1,55 @@
+{
+  "at_utc": "2026-09-27T18:51:19.123013+00:00",
+  "code": [
+    {
+      "bytes": 4001,
+      "path": "/code/alignment.py",
+      "sha256": "fbde61ea1f5478518a77571fb040369881ae57dc45fa68827e8839328a08f373"
+    },
+    {
+      "bytes": 4862,
+      "path": "/code/control_io.py",
+      "sha256": "0bfd1fcf9eab9a97dbd5716190b2c1464da0a963d1675cc9b3d878c96b6fe0d2"
+    },
+    {
+      "bytes": 2939,
+      "path": "/code/control_math.py",
+      "sha256": "ee02a3b65581a76fccaaeddcf01cc3f4c7e74b53a662c8c669e9f9ad2bf33a42"
+    },
+    {
+      "bytes": 3567,
+      "path": "/code/diagnostic_math.py",
+      "sha256": "fcb1b0376ea3964bcc4f2ef039dcdbde250b365a8f542dedfab5c323484d99f6"
+    },
+    {
+      "bytes": 8529,
+      "path": "/code/prepare.py",
+      "sha256": "d19b1b3572655e23f88e96f0903f9705e6e83440393adf6db0f4fca5e5f62e31"
+    },
+    {
+      "bytes": 876,
+      "path": "/code/qualify.py",
+      "sha256": "381f0455caa7cfee5b16a7e3e6567d481acb1b56e7bc0025a081d6a70047faf5"
+    },
+    {
+      "bytes": 5272,
+      "path": "/code/sequence_features.py",
+      "sha256": "958d4abd0cdc110733aab8f02545746979cff0e8f366177edb19ae4753ce9178"
+    }
+  ],
+  "macro_bootstrap_oracle": {
+    "cohorts": 2,
+    "max_absolute_error": 2.220446049250313e-16,
+    "passed": true,
+    "replicates": 37,
+    "tolerance": 1e-12
+  },
+  "tests": [
+    {
+      "bytes": 5933,
+      "path": "/tests/test_controls.py",
+      "sha256": "0ded270d73f35cb785672dd315b88cd73f4d21ef9d0ff39c29e1064007eb96bd"
+    }
+  ],
+  "unit_oracles_passed": true
+}

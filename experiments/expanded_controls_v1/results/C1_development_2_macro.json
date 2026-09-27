@@ -1,0 +1,887 @@
+{
+  "bootstrap": {
+    "multiplicities_sha256": "8d9244233770d8d8d73ff1a3a83d3140dd673cac6bdabcaafc4266d16873e7bd",
+    "participating_components": 2704,
+    "replicates": 2000,
+    "seed": 11829162180991002511
+  },
+  "bootstrap_file": {
+    "bytes": 819646,
+    "path": "bootstrap_C1_development_2_macro.npz",
+    "sha256": "10b69285a6e53938520b36c08f2aaa3b46b9cd41dc63d2318d240394e30ba0af"
+  },
+  "cell": "C1",
+  "cohort_counts": {
+    "added": {
+      "P": 643,
+      "U": 250000
+    },
+    "legacy": {
+      "P": 3780,
+      "U": 999479
+    }
+  },
+  "cohorts": {
+    "added": {
+      "models": {
+        "aac_cosine": {
+          "PU_concordance": 0.5968696920684292,
+          "ci95": [
+            0.5508105852664377,
+            0.6363730072360918
+          ],
+          "finite_replicates": 2000
+        },
+        "component_degree_mass_product": {
+          "PU_concordance": 0.6981420497667186,
+          "ci95": [
+            0.656808404046562,
+            0.7859112652047444
+          ],
+          "finite_replicates": 2000
+        },
+        "deterministic_hash": {
+          "PU_concordance": 0.5030898227060653,
+          "ci95": [
+            0.46398965850154533,
+            0.5401273855794452
+          ],
+          "finite_replicates": 2000
+        },
+        "endpoint_linear": {
+          "PU_concordance": 0.7511370886469673,
+          "ci95": [
+            0.7013080197975136,
+            0.7962939029133403
+          ],
+          "finite_replicates": 2000
+        },
+        "endpoint_mlp64": {
+          "PU_concordance": 0.8582342395023329,
+          "ci95": [
+            0.827942077116745,
+            0.8842615930013168
+          ],
+          "finite_replicates": 2000
+        },
+        "exact_training_interolog_3mer": {
+          "PU_concordance": 0.6651752908242613,
+          "ci95": [
+            0.606349682147269,
+            0.7112963248687536
+          ],
+          "finite_replicates": 2000
+        },
+        "interolog_alignment_coverage": {
+          "PU_concordance": 0.7021895552099533,
+          "ci95": [
+            0.6160715067484782,
+            0.7535252057552637
+          ],
+          "finite_replicates": 2000
+        },
+        "interolog_alignment_local": {
+          "PU_concordance": 0.7017991508553655,
+          "ci95": [
+            0.6167233424676353,
+            0.7529167266076132
+          ],
+          "finite_replicates": 2000
+        },
+        "interolog_pooled_150m": {
+          "PU_concordance": 0.7258849611197512,
+          "ci95": [
+            0.666135834286199,
+            0.7723401966457746
+          ],
+          "finite_replicates": 2000
+        },
+        "pooled_150m_cosine": {
+          "PU_concordance": 0.6088671539657854,
+          "ci95": [
+            0.5659608443085621,
+            0.6589710332638947
+          ],
+          "finite_replicates": 2000
+        },
+        "preferential_attachment": {
+          "PU_concordance": 0.8641794245723173,
+          "ci95": [
+            0.8342277704522986,
+            0.8879667690690649
+          ],
+          "finite_replicates": 2000
+        },
+        "selected_31k": {
+          "PU_concordance": 0.8843653748055987,
+          "ci95": [
+            0.8550428820640662,
+            0.9047746379370261
+          ],
+          "finite_replicates": 2000
+        },
+        "sequence_length_ratio": {
+          "PU_concordance": 0.529687166407465,
+          "ci95": [
+            0.4827661421645041,
+            0.5955123147074279
+          ],
+          "finite_replicates": 2000
+        },
+        "sequence_length_sum": {
+          "PU_concordance": 0.553704133748056,
+          "ci95": [
+            0.4898241823236287,
+            0.608040543659806
+          ],
+          "finite_replicates": 2000
+        },
+        "training_common_neighbors": {
+          "PU_concordance": 0.6360211446345256,
+          "ci95": [
+            0.5975583937960074,
+            0.668457784632268
+          ],
+          "finite_replicates": 2000
+        },
+        "training_degree_sum": {
+          "PU_concordance": 0.8636506220839812,
+          "ci95": [
+            0.8341018417935866,
+            0.887623895070684
+          ],
+          "finite_replicates": 2000
+        },
+        "within_pair_3mer_cosine": {
+          "PU_concordance": 0.5636725972006221,
+          "ci95": [
+            0.5060071793672583,
+            0.624783122127187
+          ],
+          "finite_replicates": 2000
+        }
+      },
+      "paired_differences": {
+        "aac_cosine": {
+          "ci95": [
+            0.23941347811741748,
+            0.3337987866255834
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.2874956827371695
+        },
+        "component_degree_mass_product": {
+          "ci95": [
+            0.0976787170562745,
+            0.22805222703901415
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.18622332503888017
+        },
+        "deterministic_hash": {
+          "ci95": [
+            0.33550031553263243,
+            0.42287512120465015
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.38127555209953345
+        },
+        "endpoint_linear": {
+          "ci95": [
+            0.09660235547769762,
+            0.16969343943112272
+          ],
+          "family": "additional_diagnostic",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.13322828615863147
+        },
+        "endpoint_mlp64": {
+          "ci95": [
+            0.007153917955857961,
+            0.04315263033301074
+          ],
+          "family": "additional_diagnostic",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.02613113530326583
+        },
+        "exact_training_interolog_3mer": {
+          "ci95": [
+            0.16667528745800161,
+            0.2795161900383534
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.21919008398133744
+        },
+        "interolog_alignment_coverage": {
+          "ci95": [
+            0.13789079737972698,
+            0.26022196501695805
+          ],
+          "family": "additional_diagnostic",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.18217581959564544
+        },
+        "interolog_alignment_local": {
+          "ci95": [
+            0.1389594393088495,
+            0.2598734504302711
+          ],
+          "family": "additional_diagnostic",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.18256622395023325
+        },
+        "interolog_pooled_150m": {
+          "ci95": [
+            0.11744985373998724,
+            0.21120109993909644
+          ],
+          "family": "additional_diagnostic",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.15848041368584753
+        },
+        "pooled_150m_cosine": {
+          "ci95": [
+            0.2168639492364917,
+            0.32110594256515473
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.27549822083981335
+        },
+        "preferential_attachment": {
+          "ci95": [
+            -0.0010893056270953906,
+            0.0413206357637331
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.020185950233281402
+        },
+        "sequence_length_ratio": {
+          "ci95": [
+            0.28295624216827714,
+            0.40522682276959154
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.3546782083981337
+        },
+        "sequence_length_sum": {
+          "ci95": [
+            0.26323683440457485,
+            0.4000918032088868
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.3306612410575427
+        },
+        "training_common_neighbors": {
+          "ci95": [
+            0.21616405729288532,
+            0.2814997856719554
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.2483442301710731
+        },
+        "training_degree_sum": {
+          "ci95": [
+            -0.0008603360296085325,
+            0.04177902872612289
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.02071475272161749
+        },
+        "within_pair_3mer_cosine": {
+          "ci95": [
+            0.2467340880513027,
+            0.3866735183318653
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.3206927776049766
+        }
+      }
+    },
+    "legacy": {
+      "models": {
+        "aac_cosine": {
+          "PU_concordance": 0.5354159624025596,
+          "ci95": [
+            0.5073375521809365,
+            0.5693233004550246
+          ],
+          "finite_replicates": 2000
+        },
+        "component_degree_mass_product": {
+          "PU_concordance": 0.664630029196093,
+          "ci95": [
+            0.6177436905948298,
+            0.7730401453597787
+          ],
+          "finite_replicates": 2000
+        },
+        "deterministic_hash": {
+          "PU_concordance": 0.4920172988268335,
+          "ci95": [
+            0.4744367055887949,
+            0.5075207901893599
+          ],
+          "finite_replicates": 2000
+        },
+        "endpoint_linear": {
+          "PU_concordance": 0.7119018727232895,
+          "ci95": [
+            0.6911924868241714,
+            0.7309851034987801
+          ],
+          "finite_replicates": 2000
+        },
+        "endpoint_mlp64": {
+          "PU_concordance": 0.8590539955922072,
+          "ci95": [
+            0.8460762046368355,
+            0.8728739069717081
+          ],
+          "finite_replicates": 2000
+        },
+        "exact_training_interolog_3mer": {
+          "PU_concordance": 0.600032357339405,
+          "ci95": [
+            0.5605973470251642,
+            0.6291271870501131
+          ],
+          "finite_replicates": 2000
+        },
+        "interolog_alignment_coverage": {
+          "PU_concordance": 0.6269012077454333,
+          "ci95": [
+            0.5825893424295319,
+            0.6588200051968126
+          ],
+          "finite_replicates": 2000
+        },
+        "interolog_alignment_local": {
+          "PU_concordance": 0.6260489120930132,
+          "ci95": [
+            0.5822627335075297,
+            0.6578708593591096
+          ],
+          "finite_replicates": 2000
+        },
+        "interolog_pooled_150m": {
+          "PU_concordance": 0.6705495512452246,
+          "ci95": [
+            0.6435692920444278,
+            0.6994127064696299
+          ],
+          "finite_replicates": 2000
+        },
+        "pooled_150m_cosine": {
+          "PU_concordance": 0.5480396579883712,
+          "ci95": [
+            0.5216999663071561,
+            0.5820467049662661
+          ],
+          "finite_replicates": 2000
+        },
+        "preferential_attachment": {
+          "PU_concordance": 0.885263659137254,
+          "ci95": [
+            0.874033534749677,
+            0.8964476104751167
+          ],
+          "finite_replicates": 2000
+        },
+        "selected_31k": {
+          "PU_concordance": 0.8959679462931923,
+          "ci95": [
+            0.8845750819506807,
+            0.9075602086085692
+          ],
+          "finite_replicates": 2000
+        },
+        "sequence_length_ratio": {
+          "PU_concordance": 0.5498216961418395,
+          "ci95": [
+            0.5271124252698918,
+            0.5779902638301149
+          ],
+          "finite_replicates": 2000
+        },
+        "sequence_length_sum": {
+          "PU_concordance": 0.4726282010976967,
+          "ci95": [
+            0.4392030830423619,
+            0.5066399014171077
+          ],
+          "finite_replicates": 2000
+        },
+        "training_common_neighbors": {
+          "PU_concordance": 0.6876235629625493,
+          "ci95": [
+            0.6667903663583588,
+            0.7080184342445606
+          ],
+          "finite_replicates": 2000
+        },
+        "training_degree_sum": {
+          "PU_concordance": 0.8860190969428543,
+          "ci95": [
+            0.8747516985824706,
+            0.8968072100648788
+          ],
+          "finite_replicates": 2000
+        },
+        "within_pair_3mer_cosine": {
+          "PU_concordance": 0.5208179813988296,
+          "ci95": [
+            0.4923812951821029,
+            0.5585552419282563
+          ],
+          "finite_replicates": 2000
+        }
+      },
+      "paired_differences": {
+        "aac_cosine": {
+          "ci95": [
+            0.3284244158799965,
+            0.38803912018132686
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.3605519838906327
+        },
+        "component_degree_mass_product": {
+          "ci95": [
+            0.12334746115048471,
+            0.27668135918083536
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.23133791709709928
+        },
+        "deterministic_hash": {
+          "ci95": [
+            0.3850345836207507,
+            0.42537117896313026
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.40395064746635884
+        },
+        "endpoint_linear": {
+          "ci95": [
+            0.16858671969079675,
+            0.20298282535512183
+          ],
+          "family": "additional_diagnostic",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.1840660735699028
+        },
+        "endpoint_mlp64": {
+          "ci95": [
+            0.028985943396439486,
+            0.0443476371751833
+          ],
+          "family": "additional_diagnostic",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.03691395070098513
+        },
+        "exact_training_interolog_3mer": {
+          "ci95": [
+            0.26423010623333615,
+            0.34059940373158426
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.29593558895378735
+        },
+        "interolog_alignment_coverage": {
+          "ci95": [
+            0.23486211054434353,
+            0.31574124694587274
+          ],
+          "family": "additional_diagnostic",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.269066738547759
+        },
+        "interolog_alignment_local": {
+          "ci95": [
+            0.23618619641454705,
+            0.3160627863292632
+          ],
+          "family": "additional_diagnostic",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.26991903420017915
+        },
+        "interolog_pooled_150m": {
+          "ci95": [
+            0.1986943645582499,
+            0.2540522351868547
+          ],
+          "family": "additional_diagnostic",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.22541839504796768
+        },
+        "pooled_150m_cosine": {
+          "ci95": [
+            0.313782772917546,
+            0.37487474922638303
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.34792828830482114
+        },
+        "preferential_attachment": {
+          "ci95": [
+            0.002672473125016378,
+            0.01919261440344548
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.010704287155938297
+        },
+        "sequence_length_ratio": {
+          "ci95": [
+            0.3179396968608761,
+            0.37106915834711485
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.3461462501513528
+        },
+        "sequence_length_sum": {
+          "ci95": [
+            0.3872817398896039,
+            0.46179947777257646
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.4233397451954956
+        },
+        "training_common_neighbors": {
+          "ci95": [
+            0.19104414277557458,
+            0.22875154265040615
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.20834438333064298
+        },
+        "training_degree_sum": {
+          "ci95": [
+            0.0021373873622085038,
+            0.01843685658024321
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.009948849350338018
+        },
+        "within_pair_3mer_cosine": {
+          "ci95": [
+            0.336459085364018,
+            0.4040655433088141
+          ],
+          "family": "original_fixed",
+          "finite_replicates": 2000,
+          "selected_31k_minus_control": 0.3751499648943627
+        }
+      }
+    }
+  },
+  "excluded_candidate_rows": 0,
+  "models": {
+    "aac_cosine": {
+      "PU_concordance": 0.5661428272354945,
+      "ci95": [
+        0.5415225177094872,
+        0.5931027452784193
+      ],
+      "finite_replicates": 2000
+    },
+    "component_degree_mass_product": {
+      "PU_concordance": 0.6813860394814057,
+      "ci95": [
+        0.6417653382523764,
+        0.775275778055097
+      ],
+      "finite_replicates": 2000
+    },
+    "deterministic_hash": {
+      "PU_concordance": 0.4975535607664494,
+      "ci95": [
+        0.47649079867685906,
+        0.5173485062554778
+      ],
+      "finite_replicates": 2000
+    },
+    "endpoint_linear": {
+      "PU_concordance": 0.7315194806851284,
+      "ci95": [
+        0.7029857850065989,
+        0.758587143827562
+      ],
+      "finite_replicates": 2000
+    },
+    "endpoint_mlp64": {
+      "PU_concordance": 0.8586441175472701,
+      "ci95": [
+        0.8418401334154113,
+        0.8740860065588977
+      ],
+      "finite_replicates": 2000
+    },
+    "exact_training_interolog_3mer": {
+      "PU_concordance": 0.6326038240818331,
+      "ci95": [
+        0.5930577309431324,
+        0.6602308571473342
+      ],
+      "finite_replicates": 2000
+    },
+    "interolog_alignment_coverage": {
+      "PU_concordance": 0.6645453814776934,
+      "ci95": [
+        0.6032380905273932,
+        0.6997493604962931
+      ],
+      "finite_replicates": 2000
+    },
+    "interolog_alignment_local": {
+      "PU_concordance": 0.6639240314741893,
+      "ci95": [
+        0.6033344009705189,
+        0.6989195894132529
+      ],
+      "finite_replicates": 2000
+    },
+    "interolog_pooled_150m": {
+      "PU_concordance": 0.698217256182488,
+      "ci95": [
+        0.6613796024515973,
+        0.7281878774444779
+      ],
+      "finite_replicates": 2000
+    },
+    "pooled_150m_cosine": {
+      "PU_concordance": 0.5784534059770783,
+      "ci95": [
+        0.5538785285670662,
+        0.6120325785003358
+      ],
+      "finite_replicates": 2000
+    },
+    "preferential_attachment": {
+      "PU_concordance": 0.8747215418547857,
+      "ci95": [
+        0.8582535775246088,
+        0.8877617566530199
+      ],
+      "finite_replicates": 2000
+    },
+    "selected_31k": {
+      "PU_concordance": 0.8901666605493955,
+      "ci95": [
+        0.8748201337783633,
+        0.9026770439992273
+      ],
+      "finite_replicates": 2000
+    },
+    "sequence_length_ratio": {
+      "PU_concordance": 0.5397544312746523,
+      "ci95": [
+        0.5103319627416976,
+        0.5815001365867829
+      ],
+      "finite_replicates": 2000
+    },
+    "sequence_length_sum": {
+      "PU_concordance": 0.5131661674228764,
+      "ci95": [
+        0.4755827145781093,
+        0.5438640573842398
+      ],
+      "finite_replicates": 2000
+    },
+    "training_common_neighbors": {
+      "PU_concordance": 0.6618223537985375,
+      "ci95": [
+        0.6382427819421486,
+        0.6809606406499562
+      ],
+      "finite_replicates": 2000
+    },
+    "training_degree_sum": {
+      "PU_concordance": 0.8748348595134178,
+      "ci95": [
+        0.8582765118022081,
+        0.8879610633288965
+      ],
+      "finite_replicates": 2000
+    },
+    "within_pair_3mer_cosine": {
+      "PU_concordance": 0.5422452892997258,
+      "ci95": [
+        0.5100901547237232,
+        0.5811529856109612
+      ],
+      "finite_replicates": 2000
+    }
+  },
+  "paired_differences": {
+    "aac_cosine": {
+      "ci95": [
+        0.2929330802592608,
+        0.34919290939632663
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.32402383331390106
+    },
+    "component_degree_mass_product": {
+      "ci95": [
+        0.11280712679511155,
+        0.24832901375571867
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.20878062106798978
+    },
+    "deterministic_hash": {
+      "ci95": [
+        0.3687354778864417,
+        0.4157904022338767
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.3926130997829461
+    },
+    "endpoint_linear": {
+      "ci95": [
+        0.13792747757868154,
+        0.18042772015602299
+      ],
+      "family": "additional_diagnostic",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.15864717986426713
+    },
+    "endpoint_mlp64": {
+      "ci95": [
+        0.02058431475898933,
+        0.04135870548296477
+      ],
+      "family": "additional_diagnostic",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.031522543002125425
+    },
+    "exact_training_interolog_3mer": {
+      "ci95": [
+        0.22861354642946025,
+        0.29789490612261027
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.2575628364675624
+    },
+    "interolog_alignment_coverage": {
+      "ci95": [
+        0.1916106017383598,
+        0.2828823956165085
+      ],
+      "family": "additional_diagnostic",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.22562127907170215
+    },
+    "interolog_alignment_local": {
+      "ci95": [
+        0.1926431783214673,
+        0.28310351996796024
+      ],
+      "family": "additional_diagnostic",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.2262426290752062
+    },
+    "interolog_pooled_150m": {
+      "ci95": [
+        0.1651629508105173,
+        0.22620742903949512
+      ],
+      "family": "additional_diagnostic",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.19194940436690755
+    },
+    "pooled_150m_cosine": {
+      "ci95": [
+        0.2767974462166679,
+        0.3370241346378908
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.31171325457231724
+    },
+    "preferential_attachment": {
+      "ci95": [
+        0.0039017883575869884,
+        0.027293442484353083
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.01544511869460985
+    },
+    "sequence_length_ratio": {
+      "ci95": [
+        0.3070051449841379,
+        0.38375339853844503
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.35041222927474325
+    },
+    "sequence_length_sum": {
+      "ci95": [
+        0.33981428505563743,
+        0.41980548143717583
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.3770004931265192
+    },
+    "training_common_neighbors": {
+      "ci95": [
+        0.2102483965684316,
+        0.24905189377251646
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.22834430675085804
+    },
+    "training_degree_sum": {
+      "ci95": [
+        0.004033710754501924,
+        0.026783568224634933
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.015331801035977755
+    },
+    "within_pair_3mer_cosine": {
+      "ci95": [
+        0.30171479537058776,
+        0.38393061107581333
+      ],
+      "family": "original_fixed",
+      "finite_replicates": 2000,
+      "selected_31k_minus_control": 0.3479213712496697
+    }
+  },
+  "partition": "development",
+  "prediction_freeze_sha256": "7351e5aa95fc5a74ee287ac014467f34144d5e94c03d84e531c0e47cb03e4880",
+  "reference_replay": null,
+  "view": "development_2_macro"
+}

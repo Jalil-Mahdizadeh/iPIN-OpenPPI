@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-09-27T18:56:26.488987+00:00",
+  "reason": "Source review found explicit nonnegative clipping of the historical pooled-embedding transfer kernel. Preserve that definition and disclose FP64 storage. No fitted controls or candidate predictions yet exist.",
+  "initial_protocol_sha256": "833ebe798b91df346d6ada34b222866915ff08fb07343e5bc2c80d856d558cf0",
+  "clarified_protocol_sha256": "7510c7307cd13f8e1b8ea05f0cbff6fc7d3fb51707956c51d4121fdf032b19b2",
+  "affected_control": "interolog_pooled_150m",
+  "outcomes_inspected": false,
+  "feature_and_alignment_preprocessing_unchanged": true,
+  "source": "src/ipin_openppi/homology_source/data.py:251"
+}

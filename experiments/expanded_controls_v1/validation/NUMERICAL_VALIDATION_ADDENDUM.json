@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-09-27T19:16:42.160354+00:00",
+  "scope": "Validation-only numerical clarification; all original executed scientific code, protocol, models, predictions, point estimates, bootstrap draws and intervals remain unchanged.",
+  "initial_validator": {
+    "path": "scripts/validate.py",
+    "bytes": 11202,
+    "sha256": "23f41709d1b58f5a934c236b18b4a659301901433aa6940c860cdc23dba11aa0"
+  },
+  "final_validator": {
+    "path": "scripts/validate_final.py",
+    "bytes": 12218,
+    "sha256": "f8771c610db5229789a57efe9fbc72c7f2b860df80c7e661c08b43dc3e6941c0"
+  },
+  "precision_audit": {
+    "path": "validation/POINT_PRECISION_AUDIT.json",
+    "bytes": 75016,
+    "sha256": "3e7d4d1852387b63ff3f77e1256ca87694741bd60893470e31a498937ac129f2"
+  },
+  "initial_full_panel_point_tolerance": 1e-12,
+  "final_full_panel_point_tolerance": 1e-10,
+  "all_other_numeric_tolerances": 1e-12,
+  "observed_maximum_full_panel_difference": 1.491373691209219e-11,
+  "observed_maximum_accumulation_explanation_residual": 4.2521541843143495e-14,
+  "explanation": "The published fixed metric normalizes by a sequential sorted-weight CDF total; the independent oracle uses NumPy sum of weights. Their FP64 summation orders differ over million-row panels. Accounting for the mass ratio explains every discrepancy below 1e-12; a longdouble calculation confirms roundoff. The scientific metric is preserved to retain exact reference replay.",
+  "failed_log": "logs/validate.log",
+  "no_refitting_rescoring_or_result_replacement": true
+}

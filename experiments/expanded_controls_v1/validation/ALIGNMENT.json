@@ -1,0 +1,122 @@
+{
+  "at_utc": "2026-09-27T18:55:42.593706+00:00",
+  "code": [
+    {
+      "bytes": 4001,
+      "path": "/code/alignment.py",
+      "sha256": "fbde61ea1f5478518a77571fb040369881ae57dc45fa68827e8839328a08f373"
+    },
+    {
+      "bytes": 4862,
+      "path": "/code/control_io.py",
+      "sha256": "0bfd1fcf9eab9a97dbd5716190b2c1464da0a963d1675cc9b3d878c96b6fe0d2"
+    }
+  ],
+  "commands": [
+    [
+      "/mmseqs/mmseqs",
+      "createdb",
+      "/work/alignment/sequences.fasta",
+      "/work/alignment/db",
+      "--shuffle",
+      "0",
+      "--createdb-mode",
+      "0"
+    ],
+    [
+      "/mmseqs/mmseqs",
+      "search",
+      "/work/alignment/db",
+      "/work/alignment/db",
+      "/work/alignment/result",
+      "/work/alignment/tmp",
+      "--threads",
+      "16",
+      "-s",
+      "7.5",
+      "--min-seq-id",
+      "0.20",
+      "-c",
+      "0",
+      "--cov-mode",
+      "0",
+      "--min-aln-len",
+      "40",
+      "--alignment-mode",
+      "3",
+      "--add-self-matches",
+      "1",
+      "--max-seqs",
+      "20000",
+      "--max-accept",
+      "20000",
+      "--max-rejected",
+      "20000",
+      "--min-ungapped-score",
+      "0",
+      "-e",
+      "1e-3",
+      "--comp-bias-corr",
+      "1",
+      "--mask",
+      "1",
+      "--mask-lower-case",
+      "0",
+      "--spaced-kmer-mode",
+      "1",
+      "--db-load-mode",
+      "0",
+      "--compressed",
+      "0",
+      "--remove-tmp-files",
+      "1"
+    ],
+    [
+      "/mmseqs/mmseqs",
+      "convertalis",
+      "/work/alignment/db",
+      "/work/alignment/db",
+      "/work/alignment/result",
+      "/work/alignment/alignments.tsv",
+      "--format-output",
+      "query,target,mismatch,alnlen,qstart,qend,qlen,tstart,tend,tlen,evalue,bits",
+      "--threads",
+      "16"
+    ]
+  ],
+  "detected_purge_rule_edges": 329375,
+  "eligible_self_min40": 17579,
+  "evaluation_pairs_or_truth_mounted": false,
+  "files": [
+    {
+      "bytes": 2473295240,
+      "path": "similarity_local.npy",
+      "sha256": "550fff3301aa65192ed14ca740cd507fb66e8e20e5266df1f136c6f70d9be18f"
+    },
+    {
+      "bytes": 2473295240,
+      "path": "similarity_coverage.npy",
+      "sha256": "0e118d06feba89616b12dcfb26bcecadec42841e750741ec03abb0720487a1f4"
+    }
+  ],
+  "protocol_sha256": "833ebe798b91df346d6ada34b222866915ff08fb07343e5bc2c80d856d558cf0",
+  "qualified_alignments": 897274,
+  "reported_alignments": 918272,
+  "search_artifacts": [
+    {
+      "bytes": 50417777,
+      "path": "/work/alignment/alignments.tsv",
+      "sha256": "aeb80406d30de02494fd6eca7bb13d1aa689fd7cf3779f63e19a336cbf5735dd"
+    },
+    {
+      "bytes": 10111053,
+      "path": "/work/alignment/sequences.fasta",
+      "sha256": "0c3be52e54398a4e757af59e9e0080833627302a5c33945b8ba94b5014a79b86"
+    }
+  ],
+  "self_alignments": 17583,
+  "sequence_manifest_sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6",
+  "sequences": 17583,
+  "train_to_heldout_purge_rule_edges": 13736,
+  "version": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f"
+}

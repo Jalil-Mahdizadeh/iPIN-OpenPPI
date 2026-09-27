@@ -4,6 +4,15 @@ Versioned research studies that include data construction, training, model
 selection, and evaluation belong here. Each study keeps its own protocol,
 provenance, generated inputs, and outputs.
 
+- [Expanded benchmark controls](expanded_controls_v1/README.md): completed
+  dev2/test2 evaluation of the eleven original fixed controls, fitted endpoint
+  controls and additional homology-transfer kernels, plus C3 within-anchor and
+  partner-swap diagnostics. Selected 31k leads global concordance; swaps exceed
+  additive controls but do not resolve its advantage over the strongest simple
+  sequence controls. See the [interpretation](expanded_controls_v1/results/INTERPRETATION.md),
+  [results](expanded_controls_v1/results/RESULTS.md),
+  [diagnostics](expanded_controls_v1/results/diagnostics/RESULTS.md), and
+  [publication scope](expanded_controls_v1/PUBLICATION.md).
 - [Released X-PAIR on frozen test2](x_pair_test2_v1/README.md): completed
   comparison of two released checkpoints with the 13 existing predictors.
   Selected 31k leads C1/C2/C3 macro; X-PAIR's higher added-C3 point estimates
@@ -31,9 +40,10 @@ provenance, generated inputs, and outputs.
 
 Historical benchmark implementations and their frozen results remain in
 `../benchmark/`. Studies may consume those artifacts read-only.
-All five studies have their implementation, protocol, compact execution
-evidence, aggregate results and figures in Git. Protected human benchmark
+Completed studies retain their implementation, protocol, compact execution
+evidence, aggregate results and figures. Protected human benchmark
 records, weights, embeddings, environments and bulky generated intermediates
-remain local. See the [repository deposit inventory](../DEPOSIT.md) for the
-complete scope and verification instructions. Existing frozen release copies
-remain unchanged.
+remain local. See each study's publication scope for its review inventory and
+the [repository deposit inventory](../DEPOSIT.md) for the earlier deposit's
+scope and verification instructions. Existing frozen release copies remain
+unchanged.

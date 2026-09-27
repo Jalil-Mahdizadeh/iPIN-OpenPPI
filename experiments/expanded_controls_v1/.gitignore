@@ -1,0 +1,16 @@
+/data/
+/features/
+/training/
+/predictions/
+/work/
+/logs/
+/runtime/
+/results/*.npz
+/results/*.npy
+/results/diagnostic_panels/
+/results/**/*.npz
+/results/**/*.npy
+/results/**/diagnostic_panels/
+__pycache__/
+.pytest_cache/
+.cache/
